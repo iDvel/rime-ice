@@ -1,0 +1,67 @@
+﻿# Rime schema
+# vim: set sw=2 sts=2 et:
+# encoding: utf-8
+
+schema:
+  schema_id: melt_eng
+  name: Easy English Nano
+  version: "0.2.2"
+  author:
+    - Patrick <ipatrickmac@gmail.com>
+    - tumuyan <tumuyan@21cn.com>
+  description:
+    Easy English Nano，只包含少量常用词汇，方便中英文混合输入度方案调用。
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ ASCII-OFF, ASCII-ON ]
+
+engine:
+  processors:
+    - ascii_composer
+    - key_binder
+    - speller
+    - recognizer
+#關閉標點符號轉換（對應symbols.yaml）    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - matcher
+    - ascii_segmentor
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - table_translator
+    - punct_translator
+  filters:
+    - uniquifier
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA-_
+  delimiter: " '"
+  algebra:
+# 拼写规则的本质，是把字典按照规则改写，而不是把输入的按键码转写。
+    - derive/['\-_+,.]+//
+# 把大小写混写的单词转写为全小写
+    - derive/^(.+)$/\L$1/
+# 把小写的单词转写为全大写写
+    - derive/^([a-z].+)$/\U$1/
+# 把单词转写为首字母大写
+    - derive/^([a-zA-Z])/\U$1/
+# 把小写的单词转写为前2字母大写
+    - derive/^([a-z][a-z])/\U$1/
+translator:
+  dictionary: melt_eng
+  spelling_hints: 9
+
+key_binder:
+  import_preset: default
+
+punctuator:
+  import_preset: default
+
+recognizer:
+  import_preset: default

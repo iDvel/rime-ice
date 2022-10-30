@@ -1,0 +1,304 @@
+# Rime schema
+# encoding: utf-8
+
+
+# 方案说明
+schema:
+  schema_id: rime_ice
+  name: 雾凇拼音
+  version: "1.0.0"
+  author:
+    - Dvel
+  description: |
+    https://github.com/iDvel/rime-ice
+  dependencies:
+    - melt_eng
+    - liangfen
+
+
+# 功能开关
+switches:
+  - name: ascii_mode
+    states: [ 中文, 英文 ]
+    reset: 0
+  - name: full_shape
+    states: [ 半角, 全角 ]
+    reset: 0
+  - name: ascii_punct
+    states: [ 中文标点, 英文标点 ]
+    reset: 0
+  - name: traditionalization
+    states: [ 简体, 繁體 ]
+    reset: 0
+  - name: emoji
+    states: [ 💀, 😄 ]
+    reset: 1
+
+
+# 输入引擎
+engine:
+  processors:
+    - lua_processor@select_character                               # 以词定字
+    - lua_processor@code_length_limit_processor@code_length_limit  # 限制码长
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+    - lua_translator@v_single_char_first_filter  # v 模式 symbols 优先（否则是英文优先）
+    - lua_translator@date_translator             # 时间、日期、星期
+    - table_translator@custom_phrase             # 自定义短语（固顶字） custom_phrase.txt
+    - table_translator@melt_eng                  # 英文输入
+    - reverse_lookup_translator@liangfen         # 反查，两分拼字
+  filters:
+    - lua_filter@long_word_filter  # 长词优先
+    - simplifier@emoji             # Emoji
+    - simplifier@traditionalize    # 简繁切换
+    - uniquifier                   # 去重
+
+
+# 限制码长，默认 100。（最多能输入 code_length_limit 个字符）
+# code_length_limit: 100
+
+
+# 从 default 继承快捷键
+key_binder:
+  import_preset: default
+  # bindings: # 也可以增加方案专属的快捷键
+
+
+# Emoji
+emoji:
+  opencc_config: emoji.json
+  option_name: emoji
+
+
+# 简繁切换
+traditionalize:
+  opencc_config: s2t.json  # s2t.json | s2hk.json | s2tw.json | s2twp.json  参考 https://github.com/BYVoid/OpenCC
+  option_name: traditionalization
+  tips: all  # 转换提示（即是否显示繁体对应的简体）: all 都显示 | char 仅单字显示 | none 不显示。
+
+
+# 自定义短语（固顶字）：custom_phrase.txt
+custom_phrase:
+  dictionary: ""
+  user_dict: custom_phrase
+  db_class: stabledb
+  enable_completion: false # 补全提示
+  enable_sentence: false   # 禁止造句
+  initial_quality: 99  # custom_phrase 的权重应该比 pinyin 和 melt_eng 大。
+
+
+# 挂载拼音主词库
+translator:
+  dictionary: rime_ice
+  preedit_format: # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
+    - xform/([jqxy])v/$1u/    # 显示为 ju qu xu yu
+    # - xform/([nl])v/$1ü/    # 显示为 nü lü
+    # - xform/([nl])ue/$1üe/  # 显示为 nüe lüe
+    - xform/([nl])v/$1v/      # 显示为 nv lv
+    - xform/([nl])ue/$1ve/    # 显示为 nve lve
+  initial_quality: 1.2  # 拼音的权重应该比英文大
+
+
+# 英文输入方案
+melt_eng:
+  dictionary: melt_eng
+  spelling_hints: 9
+  enable_completion: true # 补全提示
+  enable_sentence: false  # 禁止造句
+  enable_user_dict: false # 禁用用户词典
+  initial_quality: 1.1
+
+
+# 八股文
+grammar:
+  language: zh-hans-t-essay-bgw
+translator/contextual_suggestions: true
+translator/max_homophones: 7
+translator/max_homographs: 7
+
+
+# 引入自己的修改过的 symbols
+punctuator:
+  # import_preset: symbols
+  import_preset: symbols_custom  # 标点符号和 v 模式在里面
+
+
+# 处理符合特定规则的输入码，如网址、反查
+recognizer:
+  patterns:
+    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
+    uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
+    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
+    url_2: "^[a-z]+[.].*"     # 支持 google.com（不以 www 开头）的网址，会导致句号不会让句子上屏，或使用句号翻页时需要注释掉
+    win_path: "^[A-Za-z]:.*"  # 支持 c:\file\path 之类的路径输入
+    colon: "^[A-Za-z]+:.*"    # 上面的超集，冒号在句子中不直接上屏
+    # punct: "^/([0-9]+[a-z]*|[a-z]+)$"
+    punct: "^v([0-9]|10|[A-Za-z]+)$"  # 用「v」替换「/」并支持大写
+    reverse_lookup: "^u[A-Za-z]+$"    # 响应两分的反查
+
+
+# 反查：两分（拼字）
+liangfen:
+  dictionary: liangfen
+  prefix: "u"  # 以 u 开头来反查
+  spelling_hints: 9
+  enable_completion: true # 补全提示
+  # tips: 〔两分〕
+
+
+# 拼写设定
+speller:
+  # 如果不想让什么标点直接上屏，可以加在 alphabet，或者编辑标点符号为两个及以上的映射
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+  delimiter: " '"
+  algebra:
+    ### 模糊音
+    # 声母
+    # - derive/^([zcs])h/$1/          # z c s → zh ch sh
+    # - derive/^([zcs])([^h])/$1h$2/  # zh ch sh → z c s
+    # - derive/^l/n/  # n → l
+    # - derive/^n/l/  # l → n
+    # - derive/^f/h/  # …………
+    # - derive/^h/f/  # …………
+    # - derive/^l/r/
+    # - derive/^r/l/
+    # - derive/^g/k/
+    # - derive/^k/g/
+    # 韵母
+    # - derive/ang/an/
+    # - derive/an/ang/
+    # - derive/eng/en/
+    # - derive/en/eng/
+    # - derive/in/ing/
+    # - derive/ing/in/
+    # - derive/ian/iang/
+    # - derive/iang/ian/
+    # - derive/uan/uang/
+    # - derive/uang/uan/
+    # - derive/ai/an/
+    # - derive/an/ai/
+    # - derive/ong/un/
+    # - derive/un/ong/
+    # - derive/ong/on/
+    # - derive/iong/un/
+    # - derive/un/iong/
+    # - derive/ong/eng/
+    # - derive/eng/ong/
+    # 拼音音节
+    # - derive/^fei$/hui/
+    # - derive/^hui$/fei/
+    # - derive/^hu$/fu/
+    # - derive/^fu$/hu/
+    # - derive/^wang$/huang/
+    # - derive/^huang$/wang/
+
+    ### 旧时的拼写规则
+    # - derive/un$/uen/
+    # - derive/ui$/uei/
+    # - derive/iu$/iou/
+
+    ### 超级简拼
+    - erase/^hm$/ # 响应超级简拼，取消「噷 hm」的独占
+    - erase/^m$/  # 响应超级简拼，取消「呣 m」的独占
+    - erase/^n$/  # 响应超级简拼，取消「嗯 n」的独占
+    - erase/^ng$/ # 响应超级简拼，取消「嗯 ng」的独占
+    - abbrev/^([a-z]).+$/$1/   # 超级简拼
+    - abbrev/^([zcs]h).+$/$1/  # 超级简拼中，zh ch sh 视为整体（ch'sh → 城市），而不是像这样分开（c'h's'h → 吃好睡好）。
+
+    ### v u 转换，增加对词库中「nue/nve」「qu/qv」等不同注音的支持
+    - derive/^([nl])ue$/$1ve/
+    - derive/^([nl])ve$/$1ue/
+    - derive/^([jqxy])u/$1v/
+    - derive/^([jqxy])v/$1u/
+
+    ### 自动纠错
+    # 有些规则对全拼简拼混输有副作用：如「x'ai 喜爱」被纠错为「xia 下」
+    # zh、ch、sh
+    - derive/([zcs])h(a|e|i|u|ai|ei|an|en|ou|uo|ua|un|ui|uan|uai|uang|ang|eng|ong)$/h$1$2/  # hzi → zhi
+    - derive/([zcs])h([aeiu])$/$1$2h/  # zih → zhi
+    # ai
+    - derive/^([wghkzc])ai$/$1ia/  # wia → wai
+    # ia
+    - derive/([qjx])ia$/$1ai/  # qai → qia
+    # ei
+    - derive/([wtfghkz])ei$/$1ie/
+    # ie
+    - derive/([jqx])ie$/$1ei/
+    # ao
+    - derive/([rtypsdghklzcbnm])ao$/$1oa/
+    # ou
+    - derive/([ypfm])ou$/$1uo/
+    # uo（无）
+    # an
+    - derive/([wrtypsfghklzcbnm])an$/$1na/  # 去掉了 n，不转换常用单词 DNA
+    # en
+    - derive/([wrpsdfghklzcbnm])en$/$1ne/
+    # ang
+    - derive/([wrtypsdfghklzcbnm])ang$/$1nag/
+    - derive/([wrtypsdfghklzcbnm])ang$/$1agn/
+    # eng
+    - derive/([wrtpsdfghklzcbnm])eng$/$1neg/
+    - derive/([wrtpsdfghklzcbnm])eng$/$1egn/
+    # ing
+    - derive/([qtypdjlxbnm])ing$/$1nig/
+    - derive/([qtypdjlxbnm])ing$/$1ign/
+    # ong
+    - derive/([rtysdghklzcn])ong$/$1nog/
+    - derive/([rtysdghklzcn])ong$/$1ogn/
+    # iao
+    - derive/([qtpdjlxbnm])iao$/$1ioa/
+    - derive/([qtpdjlxbnm])iao$/$1oia/
+    # ui
+    - derive/([rtsghkzc])ui$/$1iu/
+    # iu
+    - derive/([qjlxnm])iu$/$1ui/
+    # ian
+    - derive/([qtpdjlxbnm])ian$/$1ain/
+    # - derive/([qtpdjlxbnm])ian$/$1ina/ # 和「李娜、蒂娜、缉拿」等常用词有冲突
+    # in
+    - derive/([qypjlxbnm])in$/$1ni/
+    # iang
+    - derive/([qjlxn])iang$/$1aing/
+    - derive/([qjlxn])iang$/$1inag/
+    # ua
+    - derive/([g|k|h|zh|sh])ua$/$1au/
+    # uai
+    - derive/([g|h|k|zh|ch|sh])uai$/$1aui/
+    - derive/([g|h|k|zh|ch|sh])uai$/$1uia/
+    # uan
+    - derive/([qrtysdghjklzxcn])uan$/$1aun/
+    # - derive/([qrtysdghjklzxcn])uan$/$1una/ # 和「去哪、露娜」等常用词有冲突
+    # un
+    - derive/([qrtysdghjklzxc])un$/$1nu/
+    # ue
+    - derive/([nlyjqx])ue$/$1eu/
+    # uang
+    - derive/([g|h|k|zh|ch|sh])uang$/$1aung/
+    - derive/([g|h|k|zh|ch|sh])uang$/$1uagn/
+    - derive/([g|h|k|zh|ch|sh])uang$/$1unag/
+    - derive/([g|h|k|zh|ch|sh])uang$/$1augn/
+    # iong
+    - derive/([jqx])iong$/$1inog/
+    - derive/([jqx])iong$/$1oing/
+    - derive/([jqx])iong$/$1iogn/
+    - derive/([jqx])iong$/$1oign/
+    # 其他
+    - derive/([rtsdghkzc])o(u|ng)$/$1o/ # do → dou|dong
+    - derive/ong$/on/ # lon → long
+    - derive/([tl])eng$/$1en/ # ten → teng
+    - derive/([qwrtypsdfghjklzxcbnm])([aeio])ng$/$1ng/ # lng → lang、leng、ling、long

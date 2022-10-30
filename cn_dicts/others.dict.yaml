@@ -1,0 +1,280 @@
+# Rime dictionary
+# encoding: utf-8
+#
+#
+# https://github.com/iDvel/rime-ice
+# ------- 一些杂项，按需选择 -------
+#
+#
+---
+name: others
+version: "2022-10-03"
+sort: by_weight
+...
+##### 容错词
+# 「血xue、xie」「谁shui、shei」「露lu、lou」「熟shu、shou」「密钥yao、yue」已在 main 中实现
+# ---
+# 「馄饨」，正确是 tun，北方口语是 dun
+馄饨	hun tun
+馄饨	hun dun
+# 「主角」，正确是 jue，港台是 jiao
+主角	zhu jue
+主角	zhu jiao
+角色	jue se
+角色	jiao se
+# 「比萨」，正确是 bi，Pizza 发音为 pi
+比萨	bi sa
+比萨	pi sa
+比萨饼	bi sa bing
+比萨饼	pi sa bing
+吃比萨	chi bi sa
+吃比萨	chi pi sa
+超级至尊比萨	chao ji zhi zun bi sa
+超级至尊比萨	chao ji zhi zun pi sa
+至尊比萨	zhi zun bi sa
+至尊比萨	zhi zun pi sa
+大西洋珍鲑比萨	da xi yang zhen gui bi sa
+大西洋珍鲑比萨	da xi yang zhen gui pi sa
+海鲜比萨	hai xian bi sa
+海鲜比萨	hai xian pi sa
+蔬菜比萨	shu cai bi sa
+蔬菜比萨	shu cai pi sa
+做比萨	zuo bi sa
+做比萨	zuo pi sa
+可口的比萨	ke kou de bi sa
+可口的比萨	ke kou de pi sa
+烤比萨	kao bi sa
+烤比萨	kao pi sa
+美味的比萨	mei wei de bi sa
+美味的比萨	mei wei de pi sa
+# 「扑街」，正确是 jie，口语是 gai
+扑街	pu jie
+扑街	pu gai
+街溜子	jie liu zi
+街溜子	gai liu zi
+扑街仔	pu jie zai
+扑街仔	pu gai zai
+# 「说服」，正确是 shuo，但「游说」「说客」仍然保留着 shui 的读音
+说服	shuo fu
+说服	shui fu
+# 「坐骑」，正确是 qi，《现汉7》只保留了 qi，《现汉6》一些词组中是念 ji
+坐骑	zuo qi
+坐骑	zuo ji
+一骑绝尘	yi qi jue chen
+一骑绝尘	yi ji jue chen
+一骑红尘妃子笑	yi qi hong chen fei zi xiao
+一骑红尘妃子笑	yi ji hong chen fei zi xiao
+千里走单骑	qian li zou dan qi
+千里走单骑	qian li zou dan ji
+# 「道行」，正确是 heng，但「道行hang」比较流行
+道行	dao heng
+道行	dao hang
+# 「模样」，正确是 mu，口语常念 mo
+模样	mu yang
+模样	mo yang
+有模有样	you mu you yang
+有模有样	you mo you yang
+一模一样	yi mu yi yang
+一模一样	yi mo yi yang
+装模作样	zhuang mu zuo yang
+装模作样	zhuang mo zuo yang
+# 「阿房宫」的注音争议比较大
+阿房宫	e pang gong
+阿房宫	a pang gong
+阿房宫	e fang gong
+阿房宫	a fang gong
+阿房宫赋	e pang gong fu
+阿房宫赋	a pang gong fu
+阿房宫赋	e fang gong fu
+阿房宫赋	a fang gong fu
+# 「伯伯」方言
+伯伯	bo bo
+伯伯	bai bai
+
+
+##### 叠字
+# 数据来源：https://zh.wikipedia.org/wiki/%E4%B8%89%E5%8F%A0%E5%AD%97 https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%8F%A0%E5%AD%97
+# 三叠字
+三个生
+三个秦
+三个若
+三个雲	san ge yun
+三个人
+三个刀
+三个十
+三个力
+三个原
+三个厶	san ge si
+三个厶	san ge mou
+三个又
+三个口
+三个七
+三个吉
+三个土
+三个士
+三个女
+三个子
+三个小
+三个心
+三个手
+三个日
+三个木
+三个止
+三个毛
+三个水
+三个泉
+三个火
+三个牛
+三个犬
+三个田
+三个白
+三个目
+三个直
+三个石
+三个羊
+三个耳
+三个舌
+三个屮	san ge che
+三个屮	san ge cao
+三个虫
+三个言
+三个贝
+三个車	san ge che
+三个金
+三个隹	san ge zhui
+三个雷
+三个風	san ge feng
+三个飛	san ge fei
+三个香
+三个马
+三个魚	san ge yu
+三个鹿
+三个龍	san ge long
+三个个
+三个丶	san ge zhu
+三个丶	san ge dian
+三个了
+三个介
+三个企
+三个舍
+三个圥	san ge lu
+三个光
+三个兔
+三个全
+三个𠙽	san ge kuai
+三个𠧪	san ge tiao
+三个𠧪	san ge you
+三个㔾	san ge jie
+三个厡	san ge yuan
+三个可
+三个因
+三个夏
+三个大
+三个天
+三个太
+三个𦉼	san ge ku
+三个宝
+三个宜
+三个客
+三个寒
+三个少
+三个山
+三个市
+三个文
+三个斗
+三个朿	san ge ci
+三个束
+三个林
+三个果
+三个欠
+三个𣥚	san ge zou
+三个爪
+三个妥
+三个用
+三个甲
+三个百
+三个盖
+三个県	san ge xian
+三个空
+三个亇	san ge ge
+三个竹
+三个罒	san ge mu
+三个羗	san ge qiang
+三个老
+三个月
+三个至
+三个興	san ge xing
+三个足
+三个㖖	san ge nie
+三个門	san ge men
+三个面
+三个頁	san ge ye
+三个鳥	san ge niao
+三个男
+三个立
+三个九
+三个也
+三个加
+三个動	san ge dong
+三个千
+三个方
+三个朔
+三个玉
+三个申
+三个𡿨	san ge quan
+三个去
+三个弓
+三个䖝	san ge chong
+三个丿	san ge pie
+三个户
+三个日
+三个瓜
+三个鸟
+三个米
+# 四叠字
+四个乂	si ge yi
+四个人
+四个厶	si ge si
+四个厶	si ge mou
+四个又
+四个匕
+四个工
+四个口
+四个天
+四个小
+四个屮	si ge che
+四个屮	si ge cao
+四个火
+四个牛
+四个魚	si ge yu
+四个月
+四个日
+四个曰
+四个林
+四个水
+四个石
+四个田
+四个甲
+四个且
+四个囚
+四个困
+四个竹
+四个老
+四个朿	si ge ci
+四个先
+四个金
+四个泉
+四个言
+四个門	si ge men
+四个果
+四个春
+四个車	si ge che
+四个風	si ge feng
+四个雷
+四个雲	si ge yun
+四个興	si ge xing
+四个龍	si ge long
+四个土
+# 其他。。。
+男女男
+女男女

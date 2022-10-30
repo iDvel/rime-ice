@@ -1,0 +1,17 @@
+.DS_Store
+**/.idea/
+.vscode/
+
+build/
+*.userdb/
+installation.yaml
+user.yaml
+
+Tool/scel2txt/out/*
+Tool/scel2txt/scel/*
+
+*private*
+
+rime_console
+rime_deployer
+rime_patch

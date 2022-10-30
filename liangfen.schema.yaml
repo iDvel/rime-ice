@@ -1,0 +1,84 @@
+﻿# Rime schema
+# vim: set sw=2 sts=2 et:
+# encoding: utf-8
+
+schema:
+  schema_id: liangfen
+  name: LiangFen
+  version: "5.0"
+  author:
+    - TianHeng <2417647441@qq.com>
+  description: |
+    Use《http://yedict.com/》
+    http://yedict.com/
+    Dict is from http://yedict.com/
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ Chi, Eng ]
+  - name: full_shape
+    states: [ Half, Full ]
+  - name: simplification
+    states: [ Trad, Simp ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - r10n_translator
+    - reverse_lookup_translator
+  filters:
+    - simplifier
+    - uniquifier
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:
+    - abbrev/^([a-z]).+$/$1/
+
+translator:
+  dictionary: liangfen
+  spelling_hints: 4
+  preedit_format:
+    - "xlit|v|ü|"
+    - xform/iü/iv/
+  comment_format:
+    - "xlit|v|ü|"
+    - xform/iü/iv/
+
+reverse_lookup:
+  dictionary: luna_pinyin
+  prefix: "`"
+  tips: 〔PinYin〕
+  preedit_format:
+    - xform/([nljqxy])v/$1ü/
+
+punctuator:
+  import_preset: default
+
+menu:
+  page_size: 6
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+  patterns:
+    reverse_lookup: "`[a-z]*$"
