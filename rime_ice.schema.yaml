@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "1.0.0"
+  version: "1.0.1"
   author:
     - Dvel
   description: |
@@ -142,13 +142,13 @@ punctuator:
 recognizer:
   patterns:
     email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
-    uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
+    uppercase: "[A-Z][_+.'0-9A-Za-z]*$"
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
     url_2: "^[a-z]+[.].*"     # 支持 google.com（不以 www 开头）的网址，会导致句号不会让句子上屏，或使用句号翻页时需要注释掉
     win_path: "^[A-Za-z]:.*"  # 支持 c:\file\path 之类的路径输入
     colon: "^[A-Za-z]+:.*"    # 上面的超集，冒号在句子中不直接上屏
     # punct: "^/([0-9]+[a-z]*|[a-z]+)$"
-    punct: "^v([0-9]|10|[A-Za-z]+)$"  # 用「v」替换「/」并支持大写
+    punct: "^v([0-9]|10|[A-Za-z]+)$"  # 响应 punctuator/symbols(symbols_custom.yaml) 用「v」替换「/」并支持大写
     reverse_lookup: "^u[A-Za-z]+$"    # 响应两分的反查
 
 
