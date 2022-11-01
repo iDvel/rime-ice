@@ -25,7 +25,7 @@
 # 比如 Amazon 被纠错为「a ma zong 阿妈粽」，
 # 期望的 Amazon 跑到第二个候选项了，所以这里给它固定死喽。
 #
-# version: "2022-10-31"
+# version: "2022-11-01"
 #
 # 此行之后不能写注释
 
@@ -220,7 +220,8 @@
 什么是	sms
 
 
-Go	go
+Go	go	2
+go	go	1
 Golang	golang
 Hugo	hugo
 goto	goto

@@ -11,5 +11,7 @@ import_tables:
   - cn_dicts/ext     # 扩展词库，与 main sogou 没有重复
   - cn_dicts/tencent # 腾讯词向量，与 main sogou ext 没有重复，大词库，部署时间较长。
   - cn_dicts/others  # 一些杂项
+
+
   - cn_dicts/private # *******私人词库（联系人之类的），请删除此行再部署，否则鼠须管会报错，小狼毫会只能输入英文******* #
 ...
