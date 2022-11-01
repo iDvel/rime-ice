@@ -2,7 +2,7 @@
 # encoding: utf-8
 #
 #
-# https://github.com/tumuyan/rime-pinyin-simp
+# https://github.com/tumuyan/rime-melt
 #
 # 「融合拼音」方案原装的词库，注释掉了几个。
 # 将原本都是 100 的词频删除，防止重码时权重超过拼音
@@ -11,6 +11,7 @@ name: en
 version: "2022-05-20"
 sort: by_weight
 ...
+# +_+
 AA	AA
 Trojan	Trojan
 AVAST!	AVAST
