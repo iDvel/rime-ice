@@ -41,7 +41,6 @@ var (
 )
 
 func init() {
-	fmt.Println("rime.go init...")
 	MainSet = readAndSet(MainPath)
 	SogouSet = readAndSet(SogouPath)
 	ExtSet = readAndSet(ExtPath)

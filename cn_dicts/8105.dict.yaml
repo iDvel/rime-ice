@@ -21,7 +21,8 @@
 # 删除「芥gai」
 # 删除「著zhuo」
 # 删除「虾ha」
-#
+# 艴bo → fu
+# 嬛xuan → huan，放弃其他音，给「甄嬛」用。
 #
 # 多音字权重问题：
 # 在 Rime 的自动注音程序中，权重比小于等于 5% 的多音字不会参与自动注音。
@@ -30,7 +31,7 @@
 # 降低一些几乎只在一个固定词汇中使用的读音的权重，不让其参与注音，在 main 中手动注音。
 ---
 name: 8105
-version: "2022-10-31"
+version: "2022-11-03"
 sort: by_weight
 ...
 ### 按需启用
@@ -291,6 +292,7 @@ sort: by_weight
 孛	bei	3274
 焙	bei	1206
 邶	bei	1064
+陂	bei	947
 钡	bei	386
 褙	bei	243
 碚	bei	151
@@ -508,7 +510,6 @@ sort: by_weight
 剥	bo	42275
 泊	bo	41521
 簸	bo	9837
-蕃	bo	9570
 帛	bo	8139
 钵	bo	7494
 跛	bo	5214
@@ -529,7 +530,6 @@ sort: by_weight
 鹁	bo	100
 僰	bo	88
 踣	bo	83
-艴	bo	81
 镈	bo	54
 砵	bo	18
 鲌	bo	14
@@ -537,6 +537,7 @@ sort: by_weight
 嶓	bo	11
 浡	bo	6
 馞	bo	4
+蕃	bo	1
 欂	bo	0
 袯	bo	0
 𬭛	bo	0
@@ -719,6 +720,7 @@ sort: by_weight
 徜	chang	2131
 氅	chang	1698
 伥	chang	1014
+裳	chang	1000
 菖	chang	870
 苌	chang	866
 阊	chang	332
@@ -1579,6 +1581,7 @@ sort: by_weight
 樊	fan	28633
 藩	fan	26539
 梵	fan	17305
+蕃	fan	9570
 幡	fan	7256
 蘩	fan	1942
 璠	fan	1232
@@ -1788,6 +1791,7 @@ sort: by_weight
 玞	fu	5
 砆	fu	3
 垺	fu	2
+艴	fu	1
 㕮	fu	0
 㳇	fu	0
 琈	fu	0
@@ -2142,6 +2146,7 @@ sort: by_weight
 蝈	guo	4761
 聒	guo	2542
 帼	guo	2484
+掴	guo	1944
 椁	guo	1368
 虢	guo	885
 埚	guo	372
@@ -2444,6 +2449,7 @@ sort: by_weight
 豢	huan	1562
 獾	huan	974
 洹	huan	584
+嬛	huan	405
 缳	huan	311
 萑	huan	287
 鲩	huan	239
@@ -3579,6 +3585,7 @@ sort: by_weight
 鳓	le	22
 仂	le	15
 簕	le	8
+嘞	le	1
 雷	lei	560379
 类	lei	542775
 泪	lei	439483
@@ -5458,14 +5465,14 @@ sort: by_weight
 璱	se	38
 森	sen	243708
 僧	seng	83065
-杀	sha	1095880
-沙	sha	427658
+啥	sha	976190
 傻	sha	248211
+杀	sha	109588
 刹	sha	109543
 莎	sha	107897
-啥	sha	97619
 煞	sha	70229
 纱	sha	63048
+沙	sha	42765
 厦	sha	35375
 霎	sha	21405
 砂	sha	17805
@@ -5600,6 +5607,7 @@ sort: by_weight
 珅	shen	5345
 蜃	shen	4184
 哂	shen	2972
+谌	shen	1820
 娠	shen	1417
 燊	shen	733
 瘆	shen	478
@@ -6145,6 +6153,7 @@ sort: by_weight
 荑	ti	1744
 醍	ti	1453
 悌	ti	1330
+媞	ti	1080
 鹈	ti	579
 绨	ti	222
 锑	ti	173
@@ -7064,7 +7073,6 @@ sort: by_weight
 瑄	xuan	2337
 烜	xuan	1568
 癣	xuan	885
-嬛	xuan	405
 禤	xuan	323
 谖	xuan	320
 儇	xuan	278

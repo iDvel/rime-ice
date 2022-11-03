@@ -11,6 +11,10 @@ import (
 func main() {
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
 
+	// 临时用的
+	// rime.Temp()
+	// return
+
 	// Emoji 检查和更新
 	rime.CheckEmoji()
 	rime.UpdateEmojiTXT()

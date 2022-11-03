@@ -18,11 +18,12 @@ var specialWords = mapset.NewSet[string]()   // 特殊词汇列表，不进行�
 var polyphoneWords = mapset.NewSet[string]() // 需要注音的多音字列表
 var wrongWords = mapset.NewSet[string]()     // 异形词、错别字列表
 var filterWords = mapset.NewSet[string]()    // 与异形词列表同时使用，过滤掉，一般是包含异形词但不是异形词的，比如「作爱」是错的，但「叫作爱」是正确的。
+var hanPinyinMap = make(map[string][]string) // 汉字拼音映射map，用于检查注音是否正确
+var filterPinyins = mapset.NewSet[string]()  // 与汉字拼音映射map同时使用，过滤掉，比如「深厉浅揭qi」只在这个词中念qi，并不是错误。
 
-// 初始化特殊词汇列表、多音字列表、异形词列表
+// 初始化特殊词汇列表、多音字列表、异形词列表、汉字拼音映射
 func init() {
-	fmt.Println("check.go init...")
-	// 特殊词汇列表
+	// 特殊词汇列表 specialWords
 	specialWords.Add("狄尔斯–阿尔德反应")
 	specialWords.Add("特里斯坦–达库尼亚")
 	specialWords.Add("特里斯坦–达库尼亚群岛")
@@ -34,13 +35,13 @@ func init() {
 	specialWords.Add("赛博朋克：边缘跑手")
 	specialWords.Add("赛博朋克：命运之轮")
 
-	// 需要注音的多音字列表
-	polyphoneFile, err := os.Open("rime/多音字.txt")
+	// 需要注音的多音字列表 polyphoneWords
+	file, err := os.Open("rime/多音字.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
-	defer polyphoneFile.Close()
-	sc := bufio.NewScanner(polyphoneFile)
+	defer file.Close()
+	sc := bufio.NewScanner(file)
 	for sc.Scan() {
 		line := sc.Text()
 		if strings.HasPrefix(line, "#") {
@@ -49,8 +50,8 @@ func init() {
 		polyphoneWords.Add(line)
 	}
 
-	// 异形词的两个列表
-	file, err := os.Open("rime/异形词.txt")
+	// 异形词的两个列表 wrongWords filterWords
+	file, err = os.Open("rime/异形词.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -69,6 +70,54 @@ func init() {
 			wrongWords.Add(line)
 		} else {
 			filterWords.Add(line)
+		}
+	}
+
+	// 汉字拼音映射的 map
+	// 字表的所有读音： hanPinyinMap
+	file, err = os.Open(HanziPath)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
+	isMark = false
+	sc = bufio.NewScanner(file)
+	for sc.Scan() {
+		line := sc.Text()
+		if !isMark {
+			if strings.Contains(line, mark) {
+				isMark = true
+			}
+			continue
+		}
+		parts := strings.Split(line, "\t")
+		text, code := parts[0], parts[1]
+		hanPinyinMap[text] = append(hanPinyinMap[text], code)
+	}
+	// 给 hanPinyinMap 补充不在字表的读音，和过滤列表 filterPinyins
+	file, err = os.Open("rime/汉字拼音映射.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
+	sc = bufio.NewScanner(file)
+	isMark = false
+	for sc.Scan() {
+		line := sc.Text()
+		if strings.HasPrefix(line, "#") && !strings.Contains(line, "# -_-") || line == "" {
+			continue
+		}
+		if strings.HasPrefix(line, "# -_-") {
+			isMark = true
+			continue
+		}
+		if !isMark {
+			parts := strings.Split(line, " ")
+			key := parts[0]
+			values := parts[1:]
+			hanPinyinMap[key] = append(hanPinyinMap[key], values...)
+		} else {
+			filterPinyins.Add(line)
 		}
 	}
 }
@@ -169,10 +218,7 @@ func Check(dictPath string, flag int) {
 
 		// 检查：text 是否含有非汉字内容
 		for _, c := range text {
-			if strings.Contains(text, "·") {
-				break
-			}
-			if !unicode.Is(unicode.Han, c) {
+			if string(c) != "·" && !unicode.Is(unicode.Han, c) {
 				fmt.Println("含有非汉字内容：", line, c)
 				break
 			}
@@ -206,6 +252,22 @@ func Check(dictPath string, flag int) {
 		// +---------------------------------------------------------------
 		// | 比较耗时的检查
 		// +---------------------------------------------------------------
+		// 检查拼写错误，如「赞zan」写成了zna
+		go func() {
+			if dictPath != HanziPath && (flag == 2 || flag == 3) && !filterPinyins.Contains(text) {
+				// 把汉字和拼音弄成一一对应关系，「拼音:pin yin」→「拼:pin」「音:yin」
+				textWithoutDian := strings.ReplaceAll(text, "·", "") // 去掉间隔号
+				pinyins := strings.Split(code, " ")
+				i := 0
+				for _, zi := range textWithoutDian {
+					if !contains(hanPinyinMap[string(zi)], pinyins[i]) {
+						fmt.Printf("注音错误: %s - %s.+%s\n", line, string(zi), pinyins[i])
+					}
+					i++
+				}
+			}
+		}()
+
 		// 多音字注音问题检查
 		go func() {
 			if dictPath == ExtPath || dictPath == TencentPath {
