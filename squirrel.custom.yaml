@@ -18,22 +18,46 @@ patch:
 
   # 皮肤列表
   preset_color_schemes:
-    # 自定义的
-    purity_of_form_custom: # 对 purity_of_form 略微调整，让色彩更柔和点
-      name: 純粹的形式／Purity of Form
+    # 对 purity_of_form 略微调整颜色，让色彩更柔和点，补全其他选项和注释
+    purity_of_form_custom:
+      name: "純粹的形式／Purity of Form Custom"
       author: 雨過之後、佛振
-      text_color: 0x333333 #0xc2c2c2
-      back_color: 0x545554 #0x444444
-      candidate_text_color: 0xeeeeee
-      hilited_text_color: 0xeeeeee
-      hilited_back_color: 0x444444
-      hilited_candidate_text_color: 0x000000
-      hilited_candidate_back_color: 0xe3e3e3 #0xfafafa
-      comment_text_color: 0x808080
-      font_face: "PingFangSC"
+      font_face: ""                   # 字体及大小
       font_point: 18
+      label_font_face: "Helvetica"    # 序号字体及大小
       label_font_point: 12
-
+      comment_font_face: "Helvetica"  # 注字体及大小
+      comment_font_point: 16
+      candidate_list_layout: stacked  # 候选排布：层叠 stacked | 行 linear
+      text_orientation: horizontal    # 行文向： 横 horizontal | 纵 vertical
+      inline_preedit: true            # 拼音位于： 候选框 false | 行内 true
+      translucency: false             # 磨砂： false | true
+      mutual_exclusive: false         # 色不叠加： false | true
+      border_height: 0               # 外边框 高
+      border_width: 0                # 外边框 宽
+      corner_radius: 10              # 外边框 圆角半径
+      hilited_corner_radius: 0       # 选中框 圆角半径
+      surrounding_extra_expansion: 0 # 候选项背景相对大小？
+      shadow_size: 0                 # 阴影大小
+      line_spacing: 5                # 行间距
+      base_offset: 0                 # 字基高
+      alpha: 1                       # 透明度，0~1
+      spacing: 10                    # 拼音与候选项之间的距离 （inline_preedit: false）
+      color_space: srgb                       # 色彩空间： srgb | display_p3
+      back_color: 0x545554                    # 底色
+      hilited_candidate_back_color: 0xE3E3E3  # 选中底色
+      label_color: 0xBBBBBB                   # 序号颜色
+      hilited_candidate_label_color: 0x4C4C4C # 选中序号颜色
+      candidate_text_color: 0xEEEEEE          # 文字颜色
+      hilited_candidate_text_color: 0x000000  # 选中文字颜色
+      comment_text_color: 0x808080            # 注颜色
+      hilited_comment_text_color: 0x808080    # 选中注颜色
+      text_color: 0x808080                    # 拼音颜色 （inline_preedit: false）
+      hilited_text_color: 0xEEEEEE            # 选中拼音颜色 （inline_preedit: false）
+      # candidate_back_color:                 # 候选项底色
+      # preedit_back_color:                   # 拼音底色 （inline_preedit: false）
+      # hilited_back_color:                   # 选中拼音底色 （inline_preedit: false）
+      # border_color:                         # 外边框颜色
 
     # 下面是内置的皮肤 /Library/Input Methods/Squirrel.app/Contents/SharedSupport/squirrel.yaml
 
