@@ -2,7 +2,7 @@
 #
 # https://github.com/iDvel/rime-ice
 #
-# version: "2022-11-01"
+# version: "2022-11-04"
 #
 #
 # 数据分类来源：https://www.emojiall.com/zh-hans/all-emojis
@@ -1073,7 +1073,7 @@ S$ 新加坡元 新加坡币
 ☂️ 雨伞 遮阳伞 打伞 撑伞 伞状
 ⛱️ 遮阳伞
 #☃ 雪 雪与雪人 雪人 冬天 雪娃娃 圣诞节
-☄️ 彗星
+☄️ 彗星 哈雷 哈雷彗星
 ☔ 雨伞 打伞 撑伞
 ⚡ 闪电 高压电
 ⛄️ 雪人

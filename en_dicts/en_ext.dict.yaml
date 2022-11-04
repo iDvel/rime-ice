@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-11-01"
+version: "2022-11-04"
 sort: by_weight
 ...
 # 一些杂项
@@ -1655,3 +1655,6 @@ tum	tum
 Sir	Sir
 rapper	rapper
 fucked	fucked
+Fedora	Fedora
+downbeat	downbeat
+hading	hading

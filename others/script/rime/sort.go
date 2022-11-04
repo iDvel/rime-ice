@@ -150,7 +150,7 @@ func Sort(dictPath string, flag int) {
 	if dictPath == SogouPath || dictPath == ExtPath || dictPath == TencentPath {
 		var intersect mapset.Set[string] // 交集，有交集的就是重复的，去掉
 		switch dictPath {
-		case SogouPath: // sogou 有和 main 有重复
+		case SogouPath: // sogou 不和 main 有重复
 			intersect = SogouSet.Intersect(MainSet)
 		case ExtPath: // ext 不和 main+sogou 有重复
 			intersect = ExtSet.Intersect(MainSet.Union(SogouSet))
