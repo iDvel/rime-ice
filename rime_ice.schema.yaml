@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "1.0.1"
+  version: "1.0.2"
   author:
     - Dvel
   description: |
@@ -59,7 +59,7 @@ engine:
     - script_translator
     - lua_translator@v_single_char_first_filter  # v 模式 symbols 优先（否则是英文优先）
     - lua_translator@date_translator             # 时间、日期、星期
-    - table_translator@custom_phrase             # 自定义短语（固顶字） custom_phrase.txt
+    - table_translator@custom_phrase             # 自定义短语 custom_phrase.txt
     - table_translator@melt_eng                  # 英文输入
     - reverse_lookup_translator@liangfen         # 反查，两分拼字
   filters:
@@ -70,7 +70,7 @@ engine:
 
 
 # 限制码长，默认 100。（最多能输入 code_length_limit 个字符）
-# code_length_limit: 100
+code_length_limit: 100
 
 
 # 从 default 继承快捷键
@@ -87,12 +87,12 @@ emoji:
 
 # 简繁切换
 traditionalize:
-  opencc_config: s2t.json  # s2t.json | s2hk.json | s2tw.json | s2twp.json  参考 https://github.com/BYVoid/OpenCC
+  opencc_config: s2t.json  # s2t.json | s2hk.json | s2tw.json | s2twp.json 等等，参考 /Library/Input Methods/Squirrel.app/Contents/SharedSupport/opencc
   option_name: traditionalization
   tips: all  # 转换提示（即是否显示繁体对应的简体）: all 都显示 | char 仅单字显示 | none 不显示。
 
 
-# 自定义短语（固顶字）：custom_phrase.txt
+# 自定义短语：custom_phrase.txt
 custom_phrase:
   dictionary: ""
   user_dict: custom_phrase
@@ -102,10 +102,16 @@ custom_phrase:
   initial_quality: 99  # custom_phrase 的权重应该比 pinyin 和 melt_eng 大。
 
 
-# 挂载拼音主词库
+# 引入八股文
+grammar:
+  language: zh-hans-t-essay-bgw
+
+
+# 拼音
 translator:
   dictionary: rime_ice
-  preedit_format: # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
+  contextual_suggestions: true  # 开启八股文
+  preedit_format:             # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
     - xform/([jqxy])v/$1u/    # 显示为 ju qu xu yu
     # - xform/([nl])v/$1ü/    # 显示为 nü lü
     # - xform/([nl])ue/$1üe/  # 显示为 nüe lüe
@@ -114,7 +120,7 @@ translator:
   initial_quality: 1.2  # 拼音的权重应该比英文大
 
 
-# 英文输入方案
+# 英文
 melt_eng:
   dictionary: melt_eng
   spelling_hints: 9
@@ -122,14 +128,6 @@ melt_eng:
   enable_sentence: false  # 禁止造句
   enable_user_dict: false # 禁用用户词典
   initial_quality: 1.1
-
-
-# 八股文
-grammar:
-  language: zh-hans-t-essay-bgw
-translator/contextual_suggestions: true
-translator/max_homophones: 7
-translator/max_homographs: 7
 
 
 # 引入自己的修改过的 symbols
@@ -156,7 +154,6 @@ recognizer:
 liangfen:
   dictionary: liangfen
   prefix: "u"  # 以 u 开头来反查
-  spelling_hints: 9
   enable_completion: true # 补全提示
   # tips: 〔两分〕
 
