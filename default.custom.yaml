@@ -6,8 +6,6 @@ patch:
   # 方案列表
   schema_list:
     - schema: rime_ice
-    # - schema: double_pinyin
-    # - schema: double_pinyin_flypy
 
 
   # 候选词个数
