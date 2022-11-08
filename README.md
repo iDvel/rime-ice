@@ -27,6 +27,7 @@
     -   [《现代汉语词典》](https://forum.freemdict.com/t/topic/12102)
     -   [《同义词词林》](https://forum.freemdict.com/t/topic/1211)
     -   [《新华成语大词典》](https://forum.freemdict.com/t/topic/11407)
+    -   [搜狗网络流行新词](https://pinyin.sogou.com/dict/detail/index/4)
     -   [腾讯词向量](https://ai.tencent.com/ailab/nlp/zh/download.html)
 - 词库更新
     - 校对了大量异形词、错别字、错误注音
@@ -38,7 +39,7 @@
 
 备份后删除配置目录下原有的配置文件，再将仓库所有文件复制粘贴进去就好了。
 
-请先将 `pinyin_simp.dict.yaml` 中的  `- cn_dicts/private` 这行删除，这是我自己的私人词库（联系人之类的），否则鼠须管无法部署，小狼毫只能输入英文。
+方案选单呼出快捷键是：Ctrl + Shift + `` ` ``，可在 `default.custom.yaml` 中设置。
 
 <br>
 
