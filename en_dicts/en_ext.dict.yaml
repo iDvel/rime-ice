@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-11-04"
+version: "2022-11-08"
 sort: by_weight
 ...
 # 一些杂项
@@ -1440,6 +1440,7 @@ North Atlantic Treaty Organization	NorthAtlanticTreatyOrganization
 MissWarmJ	MissWarmJ
 Miss	Miss
 NASA	NASA
+National Aeronautics and Space Administration	NASA
 Meta	Meta
 PictureView	PictureView
 RAM	RAM
@@ -1658,3 +1659,10 @@ fucked	fucked
 Fedora	Fedora
 downbeat	downbeat
 hading	hading
+LeetCode	LeetCode
+danced	danced
+swept	swept
+spun	spun
+ghosts	ghosts
+admiral	admiral
+moonlit	moonlit

@@ -10,7 +10,7 @@
 #
 ---
 name: cn_en
-version: "2022-10-27"
+version: "2022-11-08"
 sort: by_weight
 ...
 # 没有空格的（为了Emoji映射。Emoji 里空格是分割符，没法映射，不知道怎么解决）
@@ -101,6 +101,8 @@ Go 语言	goyuyan
 傻 B	shabi
 傻 X	shax
 智能 ABC	zhinengabc
+智能 ABC 双拼	zhinengabcshuangpin
+智能 ABC 双拼方案	zhinengabcshuangpinfangan
 智能 ABC 输入法	zhinengabcshurufa
 装 B	zhuangb
 装 B	zhuangbi

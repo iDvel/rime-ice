@@ -230,3 +230,5 @@ TODO	todo
 Dota	dota
 main	main
 Amazon	amazon
+NASA	nasa
+gone	gone

@@ -13,7 +13,7 @@
 # 转换了一些应该大写的
 ---
 name: en_most_common
-version: "2022-11-01"
+version: "2022-11-08"
 sort: by_weight
 ...
 # 转为大写字母或大写字母开头：
@@ -63,6 +63,7 @@ Saturday	Saturday
 Sat.	Sat
 Sunday	Sunday
 Sun.	Sun
+NASA	NASA
 # +_+
 abandoned	abandoned
 abc	abc
@@ -4814,7 +4815,6 @@ nano	nano
 naples	naples
 narrative	narrative
 narrow	narrow
-nasa	nasa
 nasty	nasty
 nathan	nathan
 nation	nation
