@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "1.0.2"
+  version: "1.0.3"
   author:
     - Dvel
   description: |
@@ -38,8 +38,8 @@ switches:
 # 输入引擎
 engine:
   processors:
-    - lua_processor@select_character                               # 以词定字
-    - lua_processor@code_length_limit_processor@code_length_limit  # 限制码长
+    - lua_processor@select_character             # 以词定字
+    - lua_processor@code_length_limit_processor  # 限制码长
     - ascii_composer
     - recognizer
     - key_binder
@@ -69,8 +69,15 @@ engine:
     - uniquifier                   # 去重
 
 
-# 限制码长，默认 100。（最多能输入 code_length_limit 个字符）
-code_length_limit: 100
+# 限制码长，默认 100。（最多能输入的字符个数）
+code_length_limit_processor: 100
+
+
+# 长词优先，提升 count 个词语，插入到第 idx 个位置，默认 2、4。
+# 示例：将 2 个词插入到第 4、5 个候选项，输入 jie 得到「1接 2解 3姐 4饥饿 5极恶」
+long_word_filter:
+  count: 2
+  idx: 4
 
 
 # 从 default 继承快捷键
@@ -99,7 +106,7 @@ custom_phrase:
   db_class: stabledb
   enable_completion: false # 补全提示
   enable_sentence: false   # 禁止造句
-  initial_quality: 99  # custom_phrase 的权重应该比 pinyin 和 melt_eng 大。
+  initial_quality: 99  # custom_phrase 的权重应该比 pinyin 和 melt_eng 大
 
 
 # 引入八股文
@@ -123,17 +130,20 @@ translator:
 # 英文
 melt_eng:
   dictionary: melt_eng
-  spelling_hints: 9
   enable_completion: true # 补全提示
   enable_sentence: false  # 禁止造句
   enable_user_dict: false # 禁用用户词典
   initial_quality: 1.1
 
 
-# 引入自己的修改过的 symbols
+# 标点符号
+# 预设的 punctuation.yaml 包含了 full_shape half_shape （全角和半角的符号映射）
+# 预设的 symbols.yaml     包含了 full_shape half_shape symbols
+# symbols 的功能是支持以「/」前缀开头输出一系列字符，自定义的 symbols_custom.yaml 修改成了「v」开头。
 punctuator:
-  # import_preset: symbols
-  import_preset: symbols_custom  # 标点符号和 v 模式在里面
+  # import_preset: punctuation | symbols  # 从应用目录引入自带的默认配置
+  import_preset: symbols_custom           # 从 symbols_custom.yaml 引入自己自定义的
+  # half_shape:                           # 也可以直接在这里配置
 
 
 # 处理符合特定规则的输入码，如网址、反查
@@ -146,15 +156,15 @@ recognizer:
     win_path: "^[A-Za-z]:.*"  # 支持 c:\file\path 之类的路径输入
     colon: "^[A-Za-z]+:.*"    # 上面的超集，冒号在句子中不直接上屏
     # punct: "^/([0-9]+[a-z]*|[a-z]+)$"
-    punct: "^v([0-9]|10|[A-Za-z]+)$"  # 响应 punctuator/symbols(symbols_custom.yaml) 用「v」替换「/」并支持大写
-    reverse_lookup: "^u[A-Za-z]+$"    # 响应两分的反查
+    punct: "^v([0-9]|10|[A-Za-z]+)$"  # 响应 symbols_custom.yaml 下的 punctuator/symbols，用「v」替换「/」并支持大写
+    reverse_lookup: "^u[a-z]+$"    # 响应两分的反查
 
 
 # 反查：两分（拼字）
 liangfen:
   dictionary: liangfen
-  prefix: "u"  # 以 u 开头来反查
-  enable_completion: true # 补全提示
+  prefix: "u"              # 以 u 开头来反查
+  enable_completion: true  # 补全提示
   # tips: 〔两分〕
 
 
@@ -242,7 +252,7 @@ speller:
     - derive/([ypfm])ou$/$1uo/
     # uo（无）
     # an
-    - derive/([wrtypsfghklzcbnm])an$/$1na/  # 去掉了 n，不转换常用单词 DNA
+    - derive/([wrtypsdfghklzcbnm])an$/$1na/
     # en
     - derive/([wrpsdfghklzcbnm])en$/$1ne/
     # ang
