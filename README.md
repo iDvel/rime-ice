@@ -61,6 +61,19 @@
 
 <br>
 
+## 感谢
+
+上述用到的词库，及 [@Huandeep](https://github.com/Huandeep) 整理的多个词库。
+
+上述提到的方案及功能参考。
+
+搜狗转 Rime 词库：[lewangdev/scel2txt](https://github.com/lewangdev/scel2txt)
+
+Thanks to JetBrains for the OSS development license.
+
+[![JetBrains](https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg)](https://jb.gg/OpenSourceSupport)
+<br>
+
 ---
 
 详细介绍：[雾凇拼音，我的 Rime 配置及新手指引](https://dvel.me/posts/my-rime/)
