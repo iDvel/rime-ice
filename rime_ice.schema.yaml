@@ -157,7 +157,7 @@ recognizer:
     colon: "^[A-Za-z]+:.*"    # 上面的超集，冒号在句子中不直接上屏
     # punct: "^/([0-9]+[a-z]*|[a-z]+)$"
     punct: "^v([0-9]|10|[A-Za-z]+)$"  # 响应 symbols_custom.yaml 下的 punctuator/symbols，用「v」替换「/」并支持大写
-    reverse_lookup: "^u[a-z]+$"    # 响应两分的反查
+    reverse_lookup: "^u[a-z]+$"       # 响应两分的反查
 
 
 # 反查：两分（拼字）

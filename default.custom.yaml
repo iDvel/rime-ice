@@ -40,8 +40,8 @@ patch:
   ascii_composer/good_old_caps_lock: true # true | false
   ascii_composer/switch_key:
     Caps_Lock: commit_text  # commit_code | commit_text | clear
-    Shift_L: noop  # commit_code | commit_text | clear | noop
-    Shift_R: noop  # macOS 不会区分左右 Shift，只需要设置 Shift_L
+    Shift_L: noop           # commit_code | commit_text | clear | noop
+    Shift_R: noop           # macOS 不会区分左右 Shift，只需要设置 Shift_L
     Control_L: noop
     Control_R: noop
     Eisu_toggle: clear

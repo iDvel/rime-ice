@@ -16,7 +16,7 @@ name: en_most_common
 version: "2022-11-08"
 sort: by_weight
 ...
-# 转为大写字母或大写字母开头：
+# 含有大写字母的：
 CD	CD
 CN	CN
 DNA	DNA
