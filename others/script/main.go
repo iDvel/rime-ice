@@ -33,7 +33,7 @@ func main() {
 	// 通用检查
 	// flag: 1 只有汉字，2 汉字+注音，3 汉字+注音+权重，4 汉字+权重。
 	go rime.Check(rime.HanziPath, 3)
-	go rime.Check(rime.MainPath, 3)
+	go rime.Check(rime.BasePath, 3)
 	go rime.Check(rime.SogouPath, 3)
 	go rime.Check(rime.ExtPath, 4)
 	go rime.Check(rime.TencentPath, 4)
@@ -42,10 +42,10 @@ func main() {
 
 	// 排序
 	rime.Sort(rime.HanziPath, 3)
-	rime.Sort(rime.MainPath, 3)
-	rime.Sort(rime.SogouPath, 3)   // 对 main 中已经有的，去重
-	rime.Sort(rime.ExtPath, 4)     // 对 main、sogou 中已经有的，去重
-	rime.Sort(rime.TencentPath, 4) // 对 main、sogou、ext 中已经有的，去重
+	rime.Sort(rime.BasePath, 3)
+	rime.Sort(rime.SogouPath, 3)   // 对 base 中已经有的，去重
+	rime.Sort(rime.ExtPath, 4)     // 对 base、sogou 中已经有的，去重
+	rime.Sort(rime.TencentPath, 4) // 对 base、sogou、ext 中已经有的，去重
 }
 
 func wait() {

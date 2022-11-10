@@ -22,9 +22,9 @@ type lemma struct {
 
 const (
 	mark        = "# +_+" // 词库中的标记符号，表示从开始检查或排序
-	HanziPath   = "/Users/dvel/Library/Rime/cn_dicts/8105.dict.yaml"
-	MainPath    = "/Users/dvel/Library/Rime/cn_dicts/base.dict.yaml"
-	SogouPath   = "/Users/dvel/Library/Rime/cn_dicts/sogou.dict.yaml"
+	HanziPath = "/Users/dvel/Library/Rime/cn_dicts/8105.dict.yaml"
+	BasePath  = "/Users/dvel/Library/Rime/cn_dicts/base.dict.yaml"
+	SogouPath = "/Users/dvel/Library/Rime/cn_dicts/sogou.dict.yaml"
 	ExtPath     = "/Users/dvel/Library/Rime/cn_dicts/ext.dict.yaml"
 	TencentPath = "/Users/dvel/Library/Rime/cn_dicts/tencent.dict.yaml"
 	EmojiPath   = "/Users/dvel/Library/Rime/opencc/emoji-map.txt"
@@ -33,15 +33,15 @@ const (
 )
 
 var (
-	MainSet          mapset.Set[string]
-	SogouSet         mapset.Set[string]
+	BaseSet  mapset.Set[string]
+	SogouSet mapset.Set[string]
 	ExtSet           mapset.Set[string]
 	TencentSet       mapset.Set[string]
 	SogouSetWithCode mapset.Set[string]
 )
 
 func init() {
-	MainSet = readAndSet(MainPath)
+	BaseSet = readAndSet(BasePath)
 	SogouSet = readAndSet(SogouPath)
 	ExtSet = readAndSet(ExtPath)
 	TencentSet = readAndSet(TencentPath)

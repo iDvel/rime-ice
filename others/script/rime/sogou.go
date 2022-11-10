@@ -182,8 +182,8 @@ func checkAndWrite() {
 			continue
 		}
 		set.Add(text)
-		// 过滤：main 中已经有的就不要了
-		if MainSet.Contains(text) {
+		// 过滤：base 中已经有的就不要了
+		if BaseSet.Contains(text) {
 			continue
 		}
 		// nue → nve，lue → lve

@@ -57,8 +57,8 @@ func Sort(dictPath string, flag int) {
 			fmt.Println("分割错误4:", line)
 		}
 
-		// 将 main 中注释了但没删除的词汇权重调为 0
-		if dictPath == MainPath && strings.HasPrefix(line, "# ") {
+		// 将 base 中注释了但没删除的词汇权重调为 0
+		if dictPath == BasePath && strings.HasPrefix(line, "# ") {
 			parts[2] = "0"
 		}
 
@@ -136,8 +136,8 @@ func Sort(dictPath string, flag int) {
 		}
 	}
 
-	// 字表、main 直接写入，不需要从其他词库去重
-	if dictPath == HanziPath || dictPath == MainPath {
+	// 字表、base 直接写入，不需要从其他词库去重
+	if dictPath == HanziPath || dictPath == BasePath {
 		for _, line := range contents {
 			_, err := file.WriteString(line.text + "\t" + line.code + "\t" + strconv.Itoa(line.weight) + "\n")
 			if err != nil {
@@ -150,12 +150,12 @@ func Sort(dictPath string, flag int) {
 	if dictPath == SogouPath || dictPath == ExtPath || dictPath == TencentPath {
 		var intersect mapset.Set[string] // 交集，有交集的就是重复的，去掉
 		switch dictPath {
-		case SogouPath: // sogou 不和 main 有重复
-			intersect = SogouSet.Intersect(MainSet)
-		case ExtPath: // ext 不和 main+sogou 有重复
-			intersect = ExtSet.Intersect(MainSet.Union(SogouSet))
+		case SogouPath: // sogou 不和 base 有重复
+			intersect = SogouSet.Intersect(BaseSet)
+		case ExtPath: // ext 不和 base+sogou 有重复
+			intersect = ExtSet.Intersect(BaseSet.Union(SogouSet))
 		case TencentPath:
-			intersect = TencentSet.Intersect(MainSet.Union(SogouSet).Union(ExtSet))
+			intersect = TencentSet.Intersect(BaseSet.Union(SogouSet).Union(ExtSet))
 		}
 
 		for _, line := range contents {
@@ -177,7 +177,7 @@ func Sort(dictPath string, flag int) {
 	}
 
 	// 外部词库或临时文件，只排序，不去重
-	if !contains([]string{HanziPath, MainPath, SogouPath, ExtPath, TencentPath}, dictPath) {
+	if !contains([]string{HanziPath, BasePath, SogouPath, ExtPath, TencentPath}, dictPath) {
 		switch flag {
 		case 1:
 			for _, line := range contents {

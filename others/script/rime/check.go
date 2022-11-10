@@ -148,7 +148,7 @@ func Check(dictPath string, flag int) {
 			continue
 		}
 
-		// 忽略注释，main 里有很多被注释了的词汇，暂时没有删除
+		// 忽略注释，base 里有很多被注释了的词汇，暂时没有删除
 		if strings.HasPrefix(line, "#") {
 			continue
 		}
@@ -177,7 +177,7 @@ func Check(dictPath string, flag int) {
 			text = parts[0]
 		} else if flag == 2 && len(parts) == 2 { // 两列，【汉字+注音】：外部词库
 			text, code = parts[0], parts[1]
-		} else if flag == 3 && len(parts) == 3 { // 三列，【汉字+注音+权重】：字表 main av sogou
+		} else if flag == 3 && len(parts) == 3 { // 三列，【汉字+注音+权重】：字表 base av sogou
 			text, code, weight = parts[0], parts[1], parts[2]
 		} else if flag == 4 && len(parts) == 2 { // 两列，【汉字+权重】：ext tencent
 			text, weight = parts[0], parts[1]
@@ -229,8 +229,8 @@ func Check(dictPath string, flag int) {
 			fmt.Println("意外的单个汉字：", line)
 		}
 
-		// 除了 main ，其他词库不应该含有两个字的词汇
-		if dictPath != MainPath && utf8.RuneCountInString(text) == 2 {
+		// 除了 base ，其他词库不应该含有两个字的词汇
+		if dictPath != BasePath && utf8.RuneCountInString(text) == 2 {
 			fmt.Println("意外的两字词：", line)
 		}
 
