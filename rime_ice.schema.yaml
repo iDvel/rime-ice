@@ -141,9 +141,10 @@ melt_eng:
 # 预设的 symbols.yaml     包含了 full_shape half_shape symbols
 # symbols 的功能是支持以「/」前缀开头输出一系列字符，自定义的 symbols_custom.yaml 修改成了「v」开头。
 punctuator:
-  # import_preset: punctuation | symbols  # 从应用目录引入自带的默认配置
-  import_preset: symbols_custom           # 从 symbols_custom.yaml 引入自己自定义的
-  # half_shape:                           # 也可以直接在这里配置
+  # __include: punctuation:/     # 从应用目录引入预设的 punctuation.yaml
+  # import_preset: symbols       # 从应用目录引入预设的 symbols.yaml
+  import_preset: symbols_custom  # 从 symbols_custom.yaml 引入自己自定义的
+  # half_shape:                  # 也可以直接在这里配置
 
 
 # 处理符合特定规则的输入码，如网址、反查
