@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "1.0.3"
+  version: "1.0.4"
   author:
     - Dvel
   description: |
@@ -94,9 +94,10 @@ emoji:
 
 # 简繁切换
 traditionalize:
-  opencc_config: s2t.json  # s2t.json | s2hk.json | s2tw.json | s2twp.json 等等，参考 /Library/Input Methods/Squirrel.app/Contents/SharedSupport/opencc
   option_name: traditionalization
-  tips: all  # 转换提示（即是否显示繁体对应的简体）: all 都显示 | char 仅单字显示 | none 不显示。
+  opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json  # 长句子正常，但1~2个字时无法正确转换台湾繁体，仍然显示香港繁体，不知道为啥。
+  tips: all                           # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
+  excluded_types: [ reverse_lookup ]  # 不转换反查的内容，比如目前使用的两分输入方案的拼字
 
 
 # 自定义短语：custom_phrase.txt
