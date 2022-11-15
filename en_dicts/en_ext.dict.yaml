@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-11-08"
+version: "2022-11-15"
 sort: by_weight
 ...
 # 一些杂项
@@ -517,7 +517,9 @@ CSS	CSS
 ID	ID
 OTC	OTC
 IEPL	IEPL
+International Ethernet Private Line	IEPL
 IPLC	IPLC
+International Private Leased Circuit	IPLC
 IntelliJ	IntelliJ
 IntelliJ IDEA	IntelliJIDEA
 IntelliJ IDEA Community	IntelliJIDEACommunity
@@ -1666,3 +1668,11 @@ spun	spun
 ghosts	ghosts
 admiral	admiral
 moonlit	moonlit
+Helvetica	Helvetica
+rewrite	rewrite
+limon	limon
+annotate	annotate
+annotated	annotated
+GFW	GFW
+Great Firewall	GFW
+Great Firewall	GreatFirewall
