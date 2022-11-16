@@ -15,17 +15,17 @@ patch:
   # 方案选单相关
   switcher:
     caption: 「方案选单」
-    hotkeys:  # 呼出方案选单的快捷键
+    hotkeys:
       # - Control+grave
       - Control+Shift+grave
       # - F4
       # - Alt+grave
-    save_options:  # 开关记忆，从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset。
+    save_options:  # 开关记忆，从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
       - full_shape
       - ascii_punct
       - traditionalization
       - emoji
-    fold_options: false           # 呼出时是否折叠，多方案时建议折叠，一个方案建议展开
+    fold_options: false           # 呼出时是否折叠，多方案时建议折叠（true），一个方案建议展开（false）
     abbreviate_options: true      # 折叠时是否缩写选项
     option_list_separator: ' / '  # 折叠时的选项分隔符
 
@@ -37,7 +37,7 @@ patch:
   # commit_text  上屏拼出的词句，然后切换到英文
   # clear        清除输入的内容，然后切换到英文
   # noop         屏蔽快捷键，啥也不干，但不要屏蔽 Caps
-  ascii_composer/good_old_caps_lock: true # true | false
+  ascii_composer/good_old_caps_lock: true  # true | false
   ascii_composer/switch_key:
     Caps_Lock: commit_text  # commit_code | commit_text | clear
     Shift_L: noop           # commit_code | commit_text | clear | noop
