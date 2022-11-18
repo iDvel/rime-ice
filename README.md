@@ -57,8 +57,6 @@
 
 备份后删除配置目录下原有的配置文件，再将仓库所有文件复制粘贴进去就好了。
 
-方案选单呼出快捷键是：Ctrl + Shift + `` ` ``，可在 `default.custom.yaml` 中设置。
-
 <br>
 
 ## 极简新手教程
@@ -77,7 +75,7 @@
 ### 主要的配置文件
 
 - `default.custom.yaml` 一些全局设置。
-- `rime_ice.schema.yaml` 方案配置，对各个功能的引用和设置。
+- `rime_ice.schema.yaml` 方案配置，大部分功能的引用和实现。
 
 部署成功后，建议查阅一遍，按照自己的偏好进行修改，基本都写了注释。
 
@@ -98,7 +96,7 @@
 
 ##### 引入其他词库
 
-在 `rime_ice.dict.yaml` 中添加，`- cn_dicts/xxx` 即表示援引配置目录下的 `cn_dicts/` 目录下的 `xxx.dict.yaml` 文件。
+在 `rime_ice.dict.yaml` 中添加，`- cn_dicts/xxx` 即表示援引 `cn_dicts/` 目录下的 `xxx.dict.yaml` 文件。
 
 ##### 自定义短语
 
