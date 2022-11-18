@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-11-15"
+version: "2022-11-18"
 sort: by_weight
 ...
 # 一些杂项
@@ -1676,3 +1676,5 @@ annotated	annotated
 GFW	GFW
 Great Firewall	GFW
 Great Firewall	GreatFirewall
+departed	departed
+GeoIP	GeoIP

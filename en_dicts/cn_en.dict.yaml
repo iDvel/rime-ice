@@ -10,7 +10,7 @@
 #
 ---
 name: cn_en
-version: "2022-11-08"
+version: "2022-11-18"
 sort: by_weight
 ...
 # 没有空格的（为了Emoji映射。Emoji 里空格是分割符，没法映射，不知道怎么解决）
@@ -320,3 +320,4 @@ U 型锁	uxingsuo
 Go 程	gocheng
 TG 群	tgqun
 Telegram 群	telegramqun
+Wi-Fi 密码	wifimima
