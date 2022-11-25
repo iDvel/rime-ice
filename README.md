@@ -57,13 +57,18 @@
 
 备份后删除配置目录下原有的配置文件，再将仓库所有文件复制粘贴进去就好了。
 
+配置目录：
+
+- 鼠须管： `~/Library/Rime`
+- 小狼毫： `%APPDATA%\Rime`
+
 <br>
 
 ## 极简新手教程
 
 ### 格式
 
-在修改配置或词库前，请注意 Rime 对格式的要求：严格遵循缩进，在配置文件中以空格缩进。
+在修改配置或词库前，请注意 Rime 对格式的要求：UTF-8 编码，严格遵循缩进，在配置文件中以空格缩进。
 
 但是词条之间是用 Tab 分割的：
 
@@ -110,6 +115,10 @@
 
 在 `rime_ice.schema.yaml` 中 `algebra` 下面解开相关注释，可单向或成对选择。
 
+##### 日期时间等关键字
+
+在 `rime.lua` 中，将 `if (input == "rq") then` 中的 `rq` 改成别的。
+
 ---
 
 详细介绍：[雾凇拼音，我的 Rime 配置及新手指引](https://dvel.me/posts/my-rime/)
@@ -123,6 +132,8 @@
 上述提到的方案及功能参考。
 
 搜狗转 Rime 词库：[lewangdev/scel2txt](https://github.com/lewangdev/scel2txt)
+
+大量参考[校对网](http://www.jiaodui.com/bbs/)。
 
 Thanks to JetBrains for the OSS development license.
 
