@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-11-18"
+version: "2022-11-25"
 sort: by_weight
 ...
 # 一些杂项
@@ -1678,3 +1678,16 @@ Great Firewall	GFW
 Great Firewall	GreatFirewall
 departed	departed
 GeoIP	GeoIP
+Vimium	Vimium
+Nvim	Nvim
+Neovim	Neovim
+nerd	nerd
+MacVim	MacVim
+VimR	VimR
+plugin	plugin
+plugins	plugins
+buffer	buffer
+LunarVim	LunarVim
+IdeaVim	IdeaVim
+unfo	unfo
+timestamp	timestamp

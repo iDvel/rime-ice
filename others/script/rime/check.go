@@ -252,7 +252,7 @@ func Check(dictPath string, flag int) {
 		// +---------------------------------------------------------------
 		// | 比较耗时的检查
 		// +---------------------------------------------------------------
-		// 检查拼写错误，如「赞zan」写成了zna
+		// 检查拼写错误，如「赞zan」写成了zna；或者存在字表中没有注音的字
 		go func() {
 			if dictPath != HanziPath && (flag == 2 || flag == 3) && !filterPinyins.Contains(text) {
 				// 把汉字和拼音弄成一一对应关系，「拼音:pin yin」→「拼:pin」「音:yin」
@@ -261,7 +261,7 @@ func Check(dictPath string, flag int) {
 				i := 0
 				for _, zi := range textWithoutDian {
 					if !contains(hanPinyinMap[string(zi)], pinyins[i]) {
-						fmt.Printf("注音错误: %s - %s.+%s\n", line, string(zi), pinyins[i])
+						fmt.Printf("注音错误 or 字表未包含的汉字及注音: %s - %s.+%s\n", line, string(zi), pinyins[i])
 					}
 					i++
 				}
