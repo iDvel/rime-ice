@@ -54,10 +54,8 @@ patch:
   key_binder/bindings:
     # 简繁切换
     - {when: always, accept: "Control+Shift+4", toggle: traditionalization}
-    - {when: always, accept: "Control+Shift+F", toggle: traditionalization}
-    - {when: always, accept: "Control+slash",   toggle: traditionalization}
     # 切换中英文标点
-    - {when: always, accept: "Control+Shift+A", toggle: ascii_punct}
+    - {when: always, accept: "Control+Shift+3", toggle: ascii_punct}
 
     # emacs_editing:
     # - { when: composing, accept: Control+p, send: Up }
