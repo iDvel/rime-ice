@@ -1,0 +1,265 @@
+# Rime schema
+# encoding: utf-8
+
+
+### 双拼方案的示例文件
+# 整个配置中有很多地方和双拼有些冲突；
+# 如果在用这份配置的大多数功能的话，给新手提供一个修改参考。
+
+
+### 此文件复制自 rime_ice.schema.yaml ，做了如下修改：
+# 1. 修改 schema ，必须使用不同的 schema_id
+# 2. 删除了长词优先功能，双拼不需要。
+# 3. 增加 translator/prism
+#    部署时 build/ 中会生成 xxx.prism.bin 拼写法文件。
+#    拼写法文件名默认是 translator/dictionary 的值。
+#    多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
+# 4. 注释了 recognizer/patterns/punct，关闭 v 模式。
+# 5. 键位映射：
+#    找到对应的双拼方案的键位映射，比如这个仓库 https://github.com/rime/rime-double-pinyin
+#    覆盖 speller/algebra 键位映射。
+#    覆盖 translator/preedit_format 上屏码显示方式。
+#             ├── 加上这段，双拼的上屏码仍然显示为完整拼音，如「航线hang xian」。
+#             └── 删除这部分，如自然码会显示「航线hh xm」。
+# 6. 自定义文本 custom_phrase.txt 有很多与双拼冲突的编码。
+#    可以直接清空，换成双拼的习惯。
+#    也可以在 custom_phrase/user_dict 设置为另一个文件，这样和全拼方案各自独立。
+#    我改成了 custom_phrase_double ，可自行创建 custom_phrase_double.txt 文件。
+
+
+### 其他需要修改或注意的地方
+# 在 default.custom.yaml 把自己的方案加入到 schema_list 。
+# 多方案建议把 default.custom.yaml 中的 switcher/fold_options 改为 true 。
+# 中英混输词库 en_dicts/cn_en.dict.yaml 也可以删除或修改，里面是写死了的全拼+英文编码。
+# 两分反查中只能使用全拼拼写。
+
+
+###############################################################################
+
+
+# 方案说明
+schema:
+  schema_id: double
+  name: 双拼示例
+  version: "1"
+  author:
+    - Dvel
+  description: |
+    雾凇拼音
+    https://github.com/iDvel/rime-ice
+  dependencies:
+    - melt_eng  # 作为次翻译器挂载到拼音方案
+    - liangfen  # 作为反查挂载到拼音方案
+
+
+# 功能开关
+switches:
+  - name: ascii_mode
+    states: [ 中文, 英文 ]
+    reset: 0
+  - name: full_shape
+    states: [ 半角, 全角 ]
+    reset: 0
+  - name: ascii_punct
+    states: [ 中文标点, 英文标点 ]
+    reset: 0
+  - name: traditionalization
+    states: [ 简体, 繁體 ]
+    reset: 0
+  - name: emoji
+    states: [ 💀, 😄 ]
+    reset: 1
+
+
+# 输入引擎
+engine:
+  processors:
+    - lua_processor@select_character             # 以词定字
+    - lua_processor@code_length_limit_processor  # 限制码长
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+    - lua_translator@v_single_char_first_filter  # v 模式 symbols 优先（否则是英文优先）
+    - lua_translator@date_translator             # 时间、日期、星期
+    - table_translator@custom_phrase             # 自定义短语
+    - table_translator@melt_eng                  # 英文输入
+    - reverse_lookup_translator@liangfen         # 反查，两分拼字
+  filters:
+    - simplifier@emoji             # Emoji
+    - simplifier@traditionalize    # 简繁切换
+    - uniquifier                   # 去重
+
+
+# 限制码长，默认 100。（最多能输入的字符个数）
+code_length_limit_processor: 100
+
+
+# 从 default 继承快捷键
+key_binder:
+  import_preset: default
+  # bindings: # 也可以增加方案专属的快捷键
+
+
+# Emoji
+emoji:
+  opencc_config: emoji.json
+  option_name: emoji
+
+
+# 简繁切换
+traditionalize:
+  option_name: traditionalization
+  opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json  # 如果选择台湾繁体，长句子正常，但1~2个字时无法正确转换台湾繁体，仍然显示香港繁体，不知道为啥。
+  tips: all                           # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
+  excluded_types: [ reverse_lookup ]  # 不转换反查的内容，比如目前使用的两分输入方案的拼字
+
+
+# 自定义短语
+custom_phrase:
+  dictionary: ""
+  user_dict: custom_phrase_double
+  db_class: stabledb
+  enable_completion: false # 补全提示
+  enable_sentence: false   # 禁止造句
+  initial_quality: 99  # custom_phrase 的权重应该比 pinyin 和 melt_eng 大
+
+
+# 引入八股文
+grammar:
+  language: zh-hans-t-essay-bgw
+
+
+# 拼音
+translator:
+  dictionary: rime_ice
+  prism: double
+  contextual_suggestions: true  # 开启八股文
+  preedit_format:             # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
+    - xform/([bpmnljqxy])n/$1in/
+    - xform/(\w)g/$1eng/
+    - xform/(\w)q/$1iu/
+    - xform/([gkhvuirzcs])w/$1ua/
+    - xform/(\w)w/$1ia/
+    - xform/([dtnlgkhjqxyvuirzcs])r/$1uan/
+    - xform/(\w)t/$1ve/
+    - xform/([gkhvuirzcs])y/$1uai/
+    - xform/(\w)y/$1ing/
+    - xform/([dtnlgkhvuirzcs])o/$1uo/
+    - xform/(\w)p/$1un/
+    - xform/([jqx])s/$1iong/
+    - xform/(\w)s/$1ong/
+    - xform/([jqxnl])d/$1iang/
+    - xform/(\w)d/$1uang/
+    - xform/(\w)f/$1en/
+    - xform/(\w)h/$1ang/
+    - xform/(\w)j/$1an/
+    - xform/(\w)k/$1ao/
+    - xform/(\w)l/$1ai/
+    - xform/(\w)z/$1ei/
+    - xform/(\w)x/$1ie/
+    - xform/(\w)c/$1iao/
+    - xform/([dtgkhvuirzcs])v/$1ui/
+    - xform/(\w)b/$1ou/
+    - xform/(\w)m/$1ian/
+    - xform/([aoe])\1(\w)/$1$2/
+    - "xform/(^|[ '])v/$1zh/"
+    - "xform/(^|[ '])i/$1ch/"
+    - "xform/(^|[ '])u/$1sh/"
+    - xform/([jqxy])v/$1u/
+    - xform/([nl])v/$1ü/
+  initial_quality: 1.2  # 拼音的权重应该比英文大
+
+
+# 英文
+melt_eng:
+  dictionary: melt_eng
+  enable_completion: true # 补全提示
+  enable_sentence: false  # 禁止造句
+  enable_user_dict: false # 禁用用户词典
+  initial_quality: 1.1
+
+
+# 标点符号
+# 预设的 punctuation.yaml 包含了 full_shape half_shape （全角和半角的符号映射）
+# 预设的 symbols.yaml     包含了 full_shape half_shape symbols
+# symbols 的功能是支持以「/」前缀开头输出一系列字符，自定义的 symbols_custom.yaml 修改成了「v」开头。
+punctuator:
+  # __include: punctuation:/     # 从应用目录引入预设的 punctuation.yaml
+  # import_preset: symbols       # 从应用目录引入预设的 symbols.yaml
+  import_preset: symbols_custom  # 从 symbols_custom.yaml 引入自己自定义的
+  # half_shape:                  # 也可以直接在这里配置
+
+
+# 处理符合特定规则的输入码，如网址、反查
+recognizer:
+  patterns:
+    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"                            # 自带的，e-mail 正则
+    # uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"                           # 自带的，大写字母开头后，可以输入[-_+.'0-9A-Za-z]这些字符
+    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"  # 自带的，URL 正则
+    url_2: "^[A-Za-z]+[.].*"             # 支持 google.com abc.txt 等网址或文件名，会导致句号不会让句子上屏，或使用句号翻页时需要注释掉
+    win_path: "^[A-Za-z]:.*"             # 支持 c:\file\path 之类的路径输入
+    colon: "^[A-Za-z]+:.*"               # 上面的超集，可以输入冒号，不会导致句子直接上屏
+    # punct: "^/([0-9]+[a-z]*|[a-z]+)$"  # 响应默认的 punctuation/symbols 的「/」开头的字符
+    # punct: "^v([0-9]|10|[A-Za-z]+)$"     # 响应 symbols_custom.yaml 下的 punctuator/symbols，用「v」替换「/」并支持大写
+    reverse_lookup: "^u[a-z]+$"          # 响应两分的反查
+
+
+# 反查：两分（拼字）
+liangfen:
+  dictionary: liangfen
+  prefix: "u"              # 以 u 开头来反查
+  enable_completion: true  # 补全提示
+  # tips: 〔两分〕
+
+
+# 拼写设定
+speller:
+  # 如果不想让什么标点直接上屏，可以加在 alphabet，或者编辑标点符号为两个及以上的映射
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+  delimiter: " '"
+  algebra:
+    - erase/^xx$/
+    - derive/^([jqxy])u$/$1v/
+    - derive/^([aoe])([ioun])$/$1$1$2/
+    - xform/^([aoe])(ng)?$/$1$1$2/
+    - xform/iu$/Q/
+    - xform/[iu]a$/W/
+    - xform/[uv]an$/R/
+    - xform/[uv]e$/T/
+    - xform/ing$|uai$/Y/
+    - xform/^sh/U/
+    - xform/^ch/I/
+    - xform/^zh/V/
+    - xform/uo$/O/
+    - xform/[uv]n$/P/
+    - xform/i?ong$/S/
+    - xform/[iu]ang$/D/
+    - xform/(.)en$/$1F/
+    - xform/(.)eng$/$1G/
+    - xform/(.)ang$/$1H/
+    - xform/ian$/M/
+    - xform/(.)an$/$1J/
+    - xform/iao$/C/
+    - xform/(.)ao$/$1K/
+    - xform/(.)ai$/$1L/
+    - xform/(.)ei$/$1Z/
+    - xform/ie$/X/
+    - xform/ui$/V/
+    - xform/(.)ou$/$1B/
+    - xform/in$/N/
+    - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/
+    #- abbrev/^(.).+$/$1/
