@@ -2,54 +2,27 @@
 # encoding: utf-8
 
 
-### 双拼方案的示例文件
-# 整个配置中有很多地方和双拼有些冲突；
-# 如果在用这份配置的大多数功能的话，给新手提供一个修改参考。
-
-
-### 此文件复制自 rime_ice.schema.yaml ，做了如下修改：
-# 1. 修改 schema ，必须使用不同的 schema_id
-# 2. 删除了长词优先功能，双拼不需要。
-# 3. 增加 translator/prism
-#    部署时 build/ 中会生成 xxx.prism.bin 拼写法文件。
-#    拼写法文件名默认是 translator/dictionary 的值。
-#    多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
-# 4. 注释了 recognizer/patterns/punct，关闭 v 模式。
-# 5. 键位映射：
-#    找到对应的双拼方案的键位映射，比如这个仓库 https://github.com/rime/rime-double-pinyin
-#    覆盖 speller/algebra 键位映射。
-#    覆盖 translator/preedit_format 上屏码显示方式。
-#             ├── 加上这段，双拼的上屏码仍然显示为完整拼音，如「航线hang xian」。
-#             └── 删除这部分，如自然码会显示「航线hh xm」。
-# 6. 自定义文本 custom_phrase.txt 有很多与双拼冲突的编码。
-#    可以直接清空，换成双拼的习惯。
-#    也可以在 custom_phrase/user_dict 设置为另一个文件，这样和全拼方案各自独立。
-#    我改成了 custom_phrase_double ，可自行创建 custom_phrase_double.txt 文件。
-
-
-### 其他需要修改或注意的地方
-# 在 default.custom.yaml 把自己的方案加入到 schema_list 。
-# 多方案建议把 default.custom.yaml 中的 switcher/fold_options 改为 true 。
-# 中英混输词库 en_dicts/cn_en.dict.yaml 也可以删除或修改，里面是写死了的全拼+英文编码。
+# 方案复制自 rime_ice.schema.yaml ，适配了双拼。
+# 双拼键位映射复制自 https://github.com/rime/rime-double-pinyin
+#     双拼和全拼主要就是 speller/algebra 这里有区别。
+# 目前的自定义编码和双拼有些冲突，改成了 custom_phrase_double ，需要创建 custom_phrase_double.txt 文件。
+# 中英混输词库 en_dicts/cn_en.dict.yaml 可以删除或修改，里面是写死了的全拼+英文编码。
 # 两分反查中只能使用全拼拼写。
-
-
-###############################################################################
 
 
 # 方案说明
 schema:
-  schema_id: double
-  name: 双拼示例
+  schema_id: double_pinyin_flypy
+  name: 小鹤双拼
   version: "1"
   author:
     - Dvel
   description: |
-    雾凇拼音
+    雾凇拼音 - 小鹤双拼
     https://github.com/iDvel/rime-ice
   dependencies:
-    - melt_eng  # 作为次翻译器挂载到拼音方案
-    - liangfen  # 作为反查挂载到拼音方案
+    - melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
+    - liangfen  # 两分拼字，作为反查挂载到拼音方案
 
 
 # 功能开关
@@ -93,11 +66,10 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    - lua_translator@v_single_char_first_filter  # v 模式 symbols 优先（否则是英文优先）
-    - lua_translator@date_translator             # 时间、日期、星期
-    - table_translator@custom_phrase             # 自定义短语
-    - table_translator@melt_eng                  # 英文输入
-    - reverse_lookup_translator@liangfen         # 反查，两分拼字
+    - lua_translator@date_translator      # 时间、日期、星期
+    - table_translator@custom_phrase      # 自定义短语
+    - table_translator@melt_eng           # 英文输入
+    - reverse_lookup_translator@liangfen  # 反查，两分拼字
   filters:
     - simplifier@emoji             # Emoji
     - simplifier@traditionalize    # 简繁切换
@@ -131,11 +103,11 @@ traditionalize:
 # 自定义短语
 custom_phrase:
   dictionary: ""
-  user_dict: custom_phrase_double
+  user_dict: custom_phrase_double  # 需要手动创建 custom_phrase_double.txt 文件
   db_class: stabledb
   enable_completion: false # 补全提示
   enable_sentence: false   # 禁止造句
-  initial_quality: 99  # custom_phrase 的权重应该比 pinyin 和 melt_eng 大
+  initial_quality: 99      # custom_phrase 的权重应该比 pinyin 和 melt_eng 大
 
 
 # 引入八股文
@@ -145,35 +117,36 @@ grammar:
 
 # 拼音
 translator:
-  dictionary: rime_ice
-  prism: double
+  dictionary: rime_ice          # 挂载词库 rime_ice.dict.yaml
+  prism: double_pinyin_flypy    # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
   contextual_suggestions: true  # 开启八股文
-  preedit_format:             # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
-    - xform/([bpmnljqxy])n/$1in/
+  initial_quality: 1.2          # 拼音的权重应该比英文大
+  preedit_format:               # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
+    - xform/([bpmfdtnljqx])n/$1iao/
     - xform/(\w)g/$1eng/
     - xform/(\w)q/$1iu/
-    - xform/([gkhvuirzcs])w/$1ua/
-    - xform/(\w)w/$1ia/
+    - xform/(\w)w/$1ei/
     - xform/([dtnlgkhjqxyvuirzcs])r/$1uan/
     - xform/(\w)t/$1ve/
-    - xform/([gkhvuirzcs])y/$1uai/
-    - xform/(\w)y/$1ing/
+    - xform/(\w)y/$1un/
     - xform/([dtnlgkhvuirzcs])o/$1uo/
-    - xform/(\w)p/$1un/
+    - xform/(\w)p/$1ie/
     - xform/([jqx])s/$1iong/
     - xform/(\w)s/$1ong/
-    - xform/([jqxnl])d/$1iang/
-    - xform/(\w)d/$1uang/
+    - xform/(\w)d/$1ai/
     - xform/(\w)f/$1en/
     - xform/(\w)h/$1ang/
     - xform/(\w)j/$1an/
-    - xform/(\w)k/$1ao/
-    - xform/(\w)l/$1ai/
-    - xform/(\w)z/$1ei/
-    - xform/(\w)x/$1ie/
-    - xform/(\w)c/$1iao/
+    - xform/([gkhvuirzcs])k/$1uai/
+    - xform/(\w)k/$1ing/
+    - xform/([jqxnl])l/$1iang/
+    - xform/(\w)l/$1uang/
+    - xform/(\w)z/$1ou/
+    - xform/([gkhvuirzcs])x/$1ua/
+    - xform/(\w)x/$1ia/
+    - xform/(\w)c/$1ao/
     - xform/([dtgkhvuirzcs])v/$1ui/
-    - xform/(\w)b/$1ou/
+    - xform/(\w)b/$1in/
     - xform/(\w)m/$1ian/
     - xform/([aoe])\1(\w)/$1$2/
     - "xform/(^|[ '])v/$1zh/"
@@ -181,7 +154,6 @@ translator:
     - "xform/(^|[ '])u/$1sh/"
     - xform/([jqxy])v/$1u/
     - xform/([nl])v/$1ü/
-  initial_quality: 1.2  # 拼音的权重应该比英文大
 
 
 # 英文
@@ -237,29 +209,29 @@ speller:
     - derive/^([aoe])([ioun])$/$1$1$2/
     - xform/^([aoe])(ng)?$/$1$1$2/
     - xform/iu$/Q/
-    - xform/[iu]a$/W/
-    - xform/[uv]an$/R/
+    - xform/(.)ei$/$1W/
+    - xform/uan$/R/
     - xform/[uv]e$/T/
-    - xform/ing$|uai$/Y/
+    - xform/un$/Y/
     - xform/^sh/U/
     - xform/^ch/I/
     - xform/^zh/V/
     - xform/uo$/O/
-    - xform/[uv]n$/P/
+    - xform/ie$/P/
     - xform/i?ong$/S/
-    - xform/[iu]ang$/D/
+    - xform/ing$|uai$/K/
+    - xform/(.)ai$/$1D/
     - xform/(.)en$/$1F/
     - xform/(.)eng$/$1G/
+    - xform/[iu]ang$/L/
     - xform/(.)ang$/$1H/
     - xform/ian$/M/
     - xform/(.)an$/$1J/
-    - xform/iao$/C/
-    - xform/(.)ao$/$1K/
-    - xform/(.)ai$/$1L/
-    - xform/(.)ei$/$1Z/
-    - xform/ie$/X/
+    - xform/(.)ou$/$1Z/
+    - xform/[iu]a$/X/
+    - xform/iao$/N/
+    - xform/(.)ao$/$1C/
     - xform/ui$/V/
-    - xform/(.)ou$/$1B/
-    - xform/in$/N/
-    - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/
+    - xform/in$/B/
+    - xlit/QWRTYUIOPSDFGHJKLZXCVBNM/qwrtyuiopsdfghjklzxcvbnm/
     #- abbrev/^(.).+$/$1/

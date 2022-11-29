@@ -6,6 +6,8 @@ patch:
   # 方案列表
   schema_list:
     - schema: rime_ice
+    - schema: double_pinyin
+    - schema: double_pinyin_flypy
 
 
   # 候选词个数
@@ -25,7 +27,7 @@ patch:
       - ascii_punct
       - traditionalization
       - emoji
-    fold_options: false           # 呼出时是否折叠，多方案时建议折叠（true），一个方案建议展开（false）
+    fold_options: true            # 呼出时是否折叠，多方案时建议折叠 true ，一个方案建议展开 false
     abbreviate_options: true      # 折叠时是否缩写选项
     option_list_separator: ' / '  # 折叠时的选项分隔符
 
