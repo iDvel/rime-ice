@@ -7,7 +7,7 @@
 #     双拼和全拼主要就是 speller/algebra 这里有区别。
 # 目前的自定义编码和双拼有些冲突，改成了 custom_phrase_double ，需要创建 custom_phrase_double.txt 文件。
 # 中英混输词库 en_dicts/cn_en.dict.yaml 可以删除或修改，里面是写死了的全拼+英文编码。
-# 两分反查中只能使用全拼拼写。
+# 两分反查中只能使用全拼拼写，全拼方案默认以 u 开头进行两分拼字，双拼默认关闭，可以自行设定一个前缀符号。
 
 
 # 方案说明
@@ -195,16 +195,19 @@ recognizer:
     win_path: "^[A-Za-z]:.*"             # 支持 c:\file\path 之类的路径输入
     colon: "^[A-Za-z]+:.*"               # 上面的超集，可以输入冒号，不会导致句子直接上屏
     # punct: "^/([0-9]+[a-z]*|[a-z]+)$"  # 响应默认的 punctuation/symbols 的「/」开头的字符
-    # punct: "^v([0-9]|10|[A-Za-z]+)$"     # 响应 symbols_custom.yaml 下的 punctuator/symbols，用「v」替换「/」并支持大写
-    reverse_lookup: "^u[a-z]+$"          # 响应两分的反查
+    # punct: "^v([0-9]|10|[A-Za-z]+)$"   # 响应 symbols_custom.yaml 下的 punctuator/symbols，用「v」替换「/」并支持大写
+    # reverse_lookup: '^\\[a-z]+$'       # 响应两分的反查
 
 
 # 反查：两分（拼字）
-liangfen:
-  dictionary: liangfen
-  prefix: "u"              # 以 u 开头来反查
-  enable_completion: true  # 补全提示
-  # tips: 〔两分〕
+# 全拼方案默认以 u 开头进行两分拼字，双拼可以自行设定一个前缀符号，比如 '\' ，然后：
+#     1. 在上面的 reverse_lookup 正则中将前缀改为 '\'
+#     2. 将 \ 加入到 alphabet 中，这样可以让 \（顿号） 不上屏，来响应后续输入。
+# liangfen:
+#   dictionary: liangfen
+#   prefix: '\'              # 以 \ 开头来反查
+#   enable_completion: true  # 补全提示
+#   tips: 〔两分〕
 
 
 # 拼写设定
