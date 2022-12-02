@@ -6,9 +6,13 @@
 
 ## 基本套路
 
-- 简体全拼
-    - 鼠须管 Squirrel 0.15.2
-    - 小狼毫 Weasel 0.14.3
+- 简体 | 全拼 | 双拼
+- [鼠须管 Squirrel](https://github.com/rime/squirrel)
+    - 另一个版本： [LEOYoon-Tsaw/squirrel](https://github.com/LEOYoon-Tsaw/squirrel)
+- [小狼毫 Weasel](https://github.com/rime/weasel)
+    - 另一个版本： [fxliang/weasel](https://github.com/fxliang/weasel)
+    
+
 - 主要功能
     -   [melt_eng](https://github.com/tumuyan/rime-melt) 英文输入
     -   [两分输入法](http://cheonhyeong.com/Simplified/download.html) 拼字
@@ -80,7 +84,7 @@
 ### 主要的配置文件
 
 - `default.custom.yaml` 一些全局设置。
-- `rime_ice.schema.yaml` 方案配置，大部分功能的引用和实现。
+- `xxx.schema.yaml` 方案配置，大部分功能的引用和实现。
 
 部署成功后，建议查阅一遍，按照自己的偏好进行修改，基本都写了注释。
 
@@ -117,7 +121,7 @@
 
 ##### 日期时间等关键字
 
-在 `rime.lua` 中，将 `if (input == "rq") then` 中的 `rq` 改成别的。
+在方案中修改 date_translator 下 `date`、`time` 等对应的关键字。
 
 ---
 
