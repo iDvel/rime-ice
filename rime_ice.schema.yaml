@@ -6,18 +6,20 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "1.0.5"
+  version: "1.0.6"
   author:
     - Dvel
   description: |
     雾凇拼音
     https://github.com/iDvel/rime-ice
   dependencies:
-    - melt_eng  # 作为次翻译器挂载到拼音方案
-    - liangfen  # 作为反查挂载到拼音方案
+    - melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
+    - liangfen  # 两分拼字，作为反查挂载到拼音方案
 
 
-# 功能开关
+# 开关
+# reset 会导致切换方案、输入法、程序后，回到设定的选项。
+# 可以注释掉 reset，和 default 中的 switcher/save_options 选项配合以记忆开关状态。
 switches:
   - name: ascii_mode
     states: [ 中文, 英文 ]
@@ -36,7 +38,7 @@ switches:
     reset: 1
 
 
-# 输入引擎
+# 输入引擎，没注释的是自带的必要的组件
 engine:
   processors:
     - lua_processor@select_character             # 以词定字
@@ -105,9 +107,9 @@ emoji:
 # 简繁切换
 traditionalize:
   option_name: traditionalization
-  opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json  # 如果选择台湾繁体，长句子正常，但1~2个字时无法正确转换台湾繁体，仍然显示香港繁体，不知道为啥。
+  opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json
   tips: all                           # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
-  excluded_types: [ reverse_lookup ]  # 不转换反查的内容，比如目前使用的两分输入方案的拼字
+  excluded_types: [ reverse_lookup ]  # 不转换反查的内容
 
 
 # 自定义短语：custom_phrase.txt
@@ -117,7 +119,7 @@ custom_phrase:
   db_class: stabledb
   enable_completion: false # 补全提示
   enable_sentence: false   # 禁止造句
-  initial_quality: 99  # custom_phrase 的权重应该比 pinyin 和 melt_eng 大
+  initial_quality: 99      # custom_phrase 的权重应该比 pinyin 和 melt_eng 大
 
 
 # 引入八股文
@@ -125,35 +127,35 @@ grammar:
   language: zh-hans-t-essay-bgw
 
 
-# 拼音
+# 主翻译器，拼音
 translator:
-  dictionary: rime_ice
+  dictionary: rime_ice          # 挂载词库 rime_ice.dict.yaml
   contextual_suggestions: true  # 开启八股文
-  preedit_format:             # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
-    - xform/([jqxy])v/$1u/    # 显示为 ju qu xu yu
-    # - xform/([nl])v/$1ü/    # 显示为 nü lü
-    # - xform/([nl])ue/$1üe/  # 显示为 nüe lüe
-    - xform/([nl])v/$1v/      # 显示为 nv lv
-    - xform/([nl])ue/$1ve/    # 显示为 nve lve
-  initial_quality: 1.2  # 拼音的权重应该比英文大
+  preedit_format:               # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
+    - xform/([jqxy])v/$1u/      # 显示为 ju qu xu yu
+    # - xform/([nl])v/$1ü/      # 显示为 nü lü
+    # - xform/([nl])ue/$1üe/    # 显示为 nüe lüe
+    - xform/([nl])v/$1v/        # 显示为 nv lv
+    - xform/([nl])ue/$1ve/      # 显示为 nve lve
+  initial_quality: 1.2          # 拼音的权重应该比英文大
 
 
-# 英文
+# 次翻译器，英文
 melt_eng:
-  dictionary: melt_eng
-  enable_completion: true # 补全提示
-  enable_sentence: false  # 禁止造句
-  enable_user_dict: false # 禁用用户词典
-  initial_quality: 1.1
+  dictionary: melt_eng     # 挂载词库 melt_eng.dict.yaml
+  enable_completion: true  # 补全提示
+  enable_sentence: false   # 禁止造句
+  enable_user_dict: false  # 禁用用户词典
+  initial_quality: 1.1     # 初始权重
 
 
 # 标点符号
-# 预设的 punctuation.yaml 包含了 full_shape half_shape （全角和半角的符号映射）
-# 预设的 symbols.yaml     包含了 full_shape half_shape symbols
+# 共享目录预设的 punctuation.yaml 包含了 full_shape half_shape （全角和半角的符号映射）
+# 共享目录预设的 symbols.yaml     包含了 full_shape half_shape symbols
 # symbols 的功能是支持以「/」前缀开头输出一系列字符，自定义的 symbols_custom.yaml 修改成了「v」开头。
 punctuator:
-  # __include: punctuation:/     # 从应用目录引入预设的 punctuation.yaml
-  # import_preset: symbols       # 从应用目录引入预设的 symbols.yaml
+  # __include: punctuation:/     # 从共享目录引入预设的 punctuation.yaml
+  # import_preset: symbols       # 从共享目录引入预设的 symbols.yaml
   import_preset: symbols_custom  # 从 symbols_custom.yaml 引入自己自定义的
   # half_shape:                  # 也可以直接在这里配置
 
@@ -174,17 +176,17 @@ recognizer:
 
 # 反查：两分（拼字）
 liangfen:
-  dictionary: liangfen
+  dictionary: liangfen     # 两分词典 liangfen.dict.yaml
   prefix: "u"              # 以 u 开头来反查
   enable_completion: true  # 补全提示
-  # tips: 〔两分〕
+  # tips: 〔两分〕          # 反查时显示的文字，建议注释掉，否则很多 u 开头的英文单词也会显示这个
 
 
 # 拼写设定
 speller:
   # 如果不想让什么标点直接上屏，可以加在 alphabet，或者编辑标点符号为两个及以上的映射
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
-  delimiter: " '"
+  delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
     ### 模糊音
     # 声母

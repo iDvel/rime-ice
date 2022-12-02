@@ -2,12 +2,11 @@
 # encoding: utf-8
 
 
-# 方案复制自 rime_ice.schema.yaml ，适配了双拼。
+# 复制自 rime_ice.schema.yaml ，适配了双拼。
 # 双拼键位映射复制自 https://github.com/rime/rime-double-pinyin
-#     双拼和全拼主要就是 speller/algebra 这里有区别。
-# 目前的自定义编码和双拼有些冲突，改成了 custom_phrase_double ，需要创建 custom_phrase_double.txt 文件。
+#     双拼和全拼主要就是 speller/algebra 和 translator/preedit_format 这里有区别。
+# 全拼的自定义文本和双拼有些冲突，改成了 custom_phrase_double ，需要创建 custom_phrase_double.txt 文件。
 # 中英混输词库 en_dicts/cn_en.dict.yaml 可以删除或修改，里面是写死了的全拼+英文编码。
-# 两分反查中只能使用全拼拼写，全拼方案默认以 u 开头进行两分拼字，双拼默认关闭，可以自行设定一个前缀符号。
 
 
 # 方案说明
@@ -22,10 +21,11 @@ schema:
     https://github.com/iDvel/rime-ice
   dependencies:
     - melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
-    - liangfen  # 两分拼字，作为反查挂载到拼音方案
 
 
-# 功能开关
+# 开关
+# reset 会导致切换方案、输入法、程序后，回到设定的选项。
+# 可以注释掉 reset，和 default 中的 switcher/save_options 选项配合以记忆开关状态。
 switches:
   - name: ascii_mode
     states: [ 中文, 英文 ]
@@ -44,7 +44,7 @@ switches:
     reset: 1
 
 
-# 输入引擎
+# 输入引擎，没注释的是自带的必要的组件
 engine:
   processors:
     - lua_processor@select_character             # 以词定字
@@ -104,9 +104,9 @@ emoji:
 # 简繁切换
 traditionalize:
   option_name: traditionalization
-  opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json  # 如果选择台湾繁体，长句子正常，但1~2个字时无法正确转换台湾繁体，仍然显示香港繁体，不知道为啥。
+  opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json
   tips: all                           # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
-  excluded_types: [ reverse_lookup ]  # 不转换反查的内容，比如目前使用的两分输入方案的拼字
+  excluded_types: [ reverse_lookup ]  # 不转换反查的内容
 
 
 # 自定义短语
@@ -171,16 +171,16 @@ melt_eng:
   enable_completion: true # 补全提示
   enable_sentence: false  # 禁止造句
   enable_user_dict: false # 禁用用户词典
-  initial_quality: 1.1
+  initial_quality: 1.1    # 初始权重
 
 
 # 标点符号
-# 预设的 punctuation.yaml 包含了 full_shape half_shape （全角和半角的符号映射）
-# 预设的 symbols.yaml     包含了 full_shape half_shape symbols
+# 共享目录预设的 punctuation.yaml 包含了 full_shape half_shape （全角和半角的符号映射）
+# 共享目录预设的 symbols.yaml     包含了 full_shape half_shape symbols
 # symbols 的功能是支持以「/」前缀开头输出一系列字符，自定义的 symbols_custom.yaml 修改成了「v」开头。
 punctuator:
-  # __include: punctuation:/     # 从应用目录引入预设的 punctuation.yaml
-  # import_preset: symbols       # 从应用目录引入预设的 symbols.yaml
+  # __include: punctuation:/     # 从共享目录引入预设的 punctuation.yaml
+  # import_preset: symbols       # 从共享目录引入预设的 symbols.yaml
   import_preset: symbols_custom  # 从 symbols_custom.yaml 引入自己自定义的
   # half_shape:                  # 也可以直接在这里配置
 
@@ -196,25 +196,13 @@ recognizer:
     colon: "^[A-Za-z]+:.*"               # 上面的超集，可以输入冒号，不会导致句子直接上屏
     # punct: "^/([0-9]+[a-z]*|[a-z]+)$"  # 响应默认的 punctuation/symbols 的「/」开头的字符
     # punct: "^v([0-9]|10|[A-Za-z]+)$"   # 响应 symbols_custom.yaml 下的 punctuator/symbols，用「v」替换「/」并支持大写
-    # reverse_lookup: '^\\[a-z]+$'       # 响应两分的反查
-
-
-# 反查：两分（拼字）
-# 全拼方案默认以 u 开头进行两分拼字，双拼可以自行设定一个前缀符号，比如 '\' ，然后：
-#     1. 在上面的 reverse_lookup 正则中将前缀改为 '\'
-#     2. 将 \ 加入到 alphabet 中，这样可以让 \（顿号） 不上屏，来响应后续输入。
-# liangfen:
-#   dictionary: liangfen
-#   prefix: '\'              # 以 \ 开头来反查
-#   enable_completion: true  # 补全提示
-#   tips: 〔两分〕
 
 
 # 拼写设定
 speller:
   # 如果不想让什么标点直接上屏，可以加在 alphabet，或者编辑标点符号为两个及以上的映射
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
-  delimiter: " '"
+  delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
     - erase/^xx$/
     - derive/^([jqxy])u$/$1v/
