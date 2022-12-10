@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-11-25"
+version: "2022-12-10"
 sort: by_weight
 ...
 # 一些杂项
@@ -1691,3 +1691,13 @@ LunarVim	LunarVim
 IdeaVim	IdeaVim
 unfo	unfo
 timestamp	timestamp
+ChatGPT	ChatGPT
+OpenAI	OpenAI
+VoIP	VoIP
+Voice over Internet Protocol	VoIP
+Greasy Fork	GreasyFork
+greasy	greasy
+GalGame	GalGame
+VoLTE	VoLTE
+Voice Over LTE	VoLTE
+capper	capper

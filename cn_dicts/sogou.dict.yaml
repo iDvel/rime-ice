@@ -15,10 +15,12 @@
 # 搜狗转 Rime 词库：https://github.com/lewangdev/scel2txt
 ---
 name: sogou
-version: "2022-12-03"
+version: "2022-12-10"
 sort: by_weight
 ...
 # *_* 过滤列表，每次更新时不再写入：
+# 三笘薫
+# 码上办事
 # 雪下的好大
 # 升降调
 # 压不对
@@ -166,6 +168,7 @@ sort: by_weight
 阿丘瓦	a qiu wa	100
 阿如村	a ru cun	100
 阿萨尔	a sa er	100
+阿萨塔	a sa ta	100
 阿萨谢尔	a sa xie er	100
 阿瑟拉猫	a se la mao	100
 阿什拉夫	a shen la fu	100
@@ -319,6 +322,7 @@ sort: by_weight
 爱情神话	ai qing shen hua	100
 爱情与灵药	ai qing yu ling yao	100
 矮人面具	ai ren mian ju	100
+矮人要塞	ai ren yao sai	100
 爱融荟城	ai rong hui cheng	100
 艾瑞丝	ai rui si	100
 爱啥样	ai sha yang	100
@@ -332,6 +336,7 @@ sort: by_weight
 艾诗普蕊	ai shi pu rui	100
 埃斯蒂尼安	ai si di ni an	100
 爱死机	ai si ji	100
+哀思绵绵	ai si mian mian	100
 艾斯提	ai si ti	100
 艾酸氏	ai suan shi	100
 爱维宝贝	ai wei bao bei	100
@@ -388,6 +393,7 @@ sort: by_weight
 安德利	an de li	100
 安德罗波夫	an de luo bo fu	100
 安菲尔德	an fei er de	100
+氨酚那敏	an fen na min	100
 安芬尼	an fen ni	100
 按分数	an fen shu	100
 安抚好	an fu hao	100
@@ -419,6 +425,7 @@ sort: by_weight
 安康站	an kang zhan	100
 安可儿	an ke er	100
 安可乐	an ke le	100
+安理大	an li da	100
 安粮城市	an liang cheng shi	100
 按两下	an liang xia	100
 黯灵龙	an ling long	100
@@ -574,6 +581,7 @@ sort: by_weight
 奥特兄弟	ao te xiong di	100
 奥特银河格斗	ao te yin he ge dou	100
 奥托波特	ao tuo bo te	100
+奥维尔	ao wei er	100
 奥维尔号	ao wei er hao	100
 奥维马斯	ao wei ma si	100
 奥韦斯	ao wei si	100
@@ -612,6 +620,7 @@ sort: by_weight
 八百人	ba bai ren	100
 八百天	ba bai tian	100
 八百亿	ba bai yi	100
+八百原石	ba bai yuan shi	100
 扒苞米	ba bao mi	100
 爸宝女	ba bao nv	100
 八比零	ba bi ling	100
@@ -703,6 +712,7 @@ sort: by_weight
 巴罗萨	ba luo sa	100
 八毛八	ba mao ba	100
 八毛钱	ba mao qian	100
+八门凯	ba men kai	100
 巴米扬	ba mi yang	100
 八面佛	ba mian fo	100
 八闽健康码	ba min jian kang ma	100
@@ -884,6 +894,7 @@ sort: by_weight
 白磷弹	bai lin dan	100
 百灵潭	bai ling tan	100
 白龙王	bai long wang	100
+白露大桥	bai lu da qiao	100
 白露节气	bai lu jie qi	100
 白马关	bai ma guan	100
 白马篇	bai ma pian	100
@@ -1028,10 +1039,12 @@ sort: by_weight
 板凳面	ban deng mian	100
 半点关系	ban dian guan xi	100
 半点心	ban dian xin	100
+半放开	ban fang kai	100
 半封城	ban feng cheng	100
 半佛仙人	ban fo xian ren	100
 班福德	ban fu de	100
 伴感染	ban gan ran	100
+半高球	ban gao qiu	100
 半个身位	ban ge shen wei	100
 半个主场	ban ge zhu chang	100
 办狗证	ban gou zheng	100
@@ -1169,6 +1182,7 @@ sort: by_weight
 爆地魔	bao di mo	100
 宝坻人	bao di ren	100
 包点饺子	bao dian jiao zi	100
+鲍店镇	bao dian zhen	100
 葆蝶家	bao die jia	100
 保定府	bao ding fu	100
 宝鼎科技	bao ding ke ji	100
@@ -1177,6 +1191,7 @@ sort: by_weight
 抱犊崮	bao du gu	100
 报二本	bao er ben	100
 包尔海	bao er hai	100
+鲍法尔	bao fa er	100
 报废日期	bao fei ri qi	100
 保分卡	bao fen ka	100
 报分数	bao fen shu	100
@@ -1231,6 +1246,7 @@ sort: by_weight
 包家屯	bao jia tun	100
 包家巷	bao jia xiang	100
 鲍家庄	bao jia zhuang	100
+包浆视频	bao jiang shi pin	100
 保教知识	bao jiao zhi shi	100
 包饺子吃	bao jiao zi chi	100
 保洁人员	bao jie ren yuan	100
@@ -1328,6 +1344,7 @@ sort: by_weight
 报专科	bao zhuan ke	100
 包子雷	bao zi lei	100
 暴走邻家	bao zou lin jia	100
+被爱的前提	bei ai de qian ti	100
 被爱者	bei ai zhe	100
 北岸花园	bei an hua yuan	100
 北岸雅墅	bei an ya shu	100
@@ -1426,6 +1443,7 @@ sort: by_weight
 贝洛蒂	bei luo di	100
 北罗镇	bei luo zhen	100
 倍率低	bei lv di	100
+北马道	bei ma dao	100
 北马里亚纳	bei ma li ya na	100
 北马其顿	bei ma qi dun	100
 北马镇	bei ma zhen	100
@@ -1477,6 +1495,7 @@ sort: by_weight
 北延段	bei yan duan	100
 北雁湖	bei yan hu	100
 备一点	bei yi dian	100
+背一点	bei yi dian	100
 北一门	bei yi men	100
 北一区	bei yi qu	100
 北营街道	bei ying jie dao	100
@@ -1667,6 +1686,7 @@ sort: by_weight
 边境牧羊犬	bian jing mu yang quan	100
 边考研	bian kao yan	100
 变绿码	bian lv ma	100
+变卖物	bian mai wu	100
 便秘日	bian mi ri	100
 鞭炮厂	bian pao chang	100
 鞭炮齐鸣	bian pao qi ming	100
@@ -1791,6 +1811,7 @@ sort: by_weight
 别想打扰	bie xiang da rao	100
 别想这个	bie xiang zhe ge	100
 别延迟	bie yan chi	100
+憋一天	bie yi tian	100
 别硬撑	bie ying cheng	100
 别再问我	bie zai wen wo	100
 别摘口罩	bie zhai kou zhao	100
@@ -1821,6 +1842,7 @@ sort: by_weight
 冰冻咒	bing dong zhou	100
 病毒变异	bing du bian yi	100
 冰粉籽	bing fen zi	100
+冰封的心	bing feng de xin	100
 冰封世界	bing feng shi jie	100
 冰封侠	bing feng xia	100
 冰冠公主	bing guan gong zhu	100
@@ -1915,6 +1937,7 @@ sort: by_weight
 伯莱塔	bo lai ta	100
 波兰蠢驴	bo lan chun lv	100
 波兰独赢	bo lan du ying	100
+波兰球迷	bo lan qiu mi	100
 波兰胜	bo lan sheng	100
 波浪宽	bo lang kuan	100
 勃朗圣泉	bo lang sheng quan	100
@@ -1968,6 +1991,7 @@ sort: by_weight
 不包容	bu bao rong	100
 不保真	bu bao zhen	100
 不被定义	bu bei ding yi	100
+不闭环	bu bi huan	100
 不避嫌	bu bi xian	100
 不闭眼	bu bi yan	100
 不变味	bu bian wei	100
@@ -1978,12 +2002,17 @@ sort: by_weight
 不补习	bu bu xi	100
 卜卜星	bu bu xing	100
 补财库	bu cai ku	100
+不采了	bu cai le	100
+不踩线	bu cai xian	100
 不参保	bu can bao	100
 不参战	bu can zhan	100
 不插队	bu cha dui	100
 不差分	bu cha fen	100
 不查岗	bu cha gang	100
 不查核酸	bu cha he suan	100
+不查核酸了	bu cha he suan le	100
+不查码	bu cha ma	100
+不插眼	bu cha yan	100
 不差这一天	bu cha zhe yi tian	100
 不插嘴	bu cha zui	100
 不拆封	bu chai feng	100
@@ -2117,6 +2146,7 @@ sort: by_weight
 不发点	bu fa dian	100
 不发个红包	bu fa ge hong bao	100
 不发快递	bu fa kuai di	100
+布法勒	bu fa le	100
 不发霉	bu fa mei	100
 不发声明	bu fa sheng ming	100
 不发誓	bu fa shi	100
@@ -2167,6 +2197,7 @@ sort: by_weight
 不负十四亿	bu fu shi si yi	100
 不负天下	bu fu tian xia	100
 不付尾款	bu fu wei kuan	100
+不复学	bu fu xue	100
 不负有心人	bu fu you xin ren	100
 不负自己	bu fu zi ji	100
 不改革	bu gai ge	100
@@ -2233,6 +2264,7 @@ sort: by_weight
 不吼不叫	bu hou bu jiao	100
 不互了	bu hu le	100
 不换班	bu huan ban	100
+补缓考	bu huan kao	100
 不换线	bu huan xian	100
 不会包	bu hui bao	100
 不回踩	bu hui cai	100
@@ -2240,6 +2272,7 @@ sort: by_weight
 不会堵	bu hui du	100
 不会很难	bu hui hen nan	100
 不会化	bu hui hua	100
+不灰了	bu hui le	100
 不会离开我	bu hui li kai wo	100
 不会恋爱	bu hui lian ai	100
 不会恋爱的我们	bu hui lian ai de wo men	100
@@ -2251,6 +2284,7 @@ sort: by_weight
 不会踢	bu hui ti	100
 不会跳舞	bu hui tiao wu	100
 不会下雪	bu hui xia xue	100
+不会阳	bu hui yang	100
 不婚不育	bu hun bu yu	100
 补货中	bu huo zhong	100
 不吉波普不笑	bu ji bo pu bu xiao	100
@@ -2279,6 +2313,7 @@ sort: by_weight
 不解恨	bu jie hen	100
 不接机	bu jie ji	100
 不戒酒	bu jie jiu	100
+不借考	bu jie kao	100
 不接送	bu jie song	100
 不接种	bu jie zhong	100
 不进不出	bu jin bu chu	100
@@ -2318,6 +2353,8 @@ sort: by_weight
 不看比赛	bu kan bi sai	100
 不看分	bu kan fen	100
 不看分数	bu kan fen shu	100
+不看核酸了	bu kan he suan le	100
+不看码	bu kan ma	100
 不看朋友圈	bu kan peng you quan	100
 不看球	bu kan qiu	100
 不堪言	bu kan yan	100
@@ -2326,6 +2363,7 @@ sort: by_weight
 不抗冻	bu kang dong	100
 不考教资	bu kao jiao zi	100
 不考数学	bu kao shu xue	100
+不考四级	bu kao si ji	100
 不可交易	bu ke jiao yi	100
 不可能不知道	bu ke neng bu zhi dao	100
 不可配送	bu ke pei song	100
@@ -2401,6 +2439,7 @@ sort: by_weight
 布伦森	bu lun sen	100
 布伦特福德	bu lun te fu de	100
 不落的太阳	bu luo de tai yang	100
+布洛芬缓释	bu luo fen huan shi	100
 布罗佐维奇	bu luo zuo wei qi	100
 布吕歇尔	bu lv xie er	100
 不买白不买	bu mai bai bu mai	100
@@ -2484,6 +2523,7 @@ sort: by_weight
 补齐短板	bu qi duan ban	100
 不气愤	bu qi fen	100
 不起浪	bu qi lang	100
+不迁怒	bu qian nu	100
 不牵绳	bu qian sheng	100
 不怯场	bu qie chang	100
 不亲密	bu qin mi	100
@@ -2587,6 +2627,7 @@ sort: by_weight
 不松懈	bu song xie	100
 不素之霸	bu su zhi ba	100
 不算堵	bu suan du	100
+不算加时	bu suan jia shi	100
 不算太冷	bu suan tai leng	100
 不算作文	bu suan zuo wen	100
 不锁定	bu suo ding	100
@@ -2616,6 +2657,7 @@ sort: by_weight
 不调剂	bu tiao ji	100
 不调休	bu tiao xiu	100
 不跳转	bu tiao zhuan	100
+不贴封条	bu tie feng tiao	100
 不贴条	bu tie tiao	100
 不停播	bu ting bo	100
 不停产	bu ting chan	100
@@ -2725,6 +2767,7 @@ sort: by_weight
 不压线	bu ya xian	100
 不严惩	bu yan cheng	100
 不延考	bu yan kao	100
+不严了	bu yan le	100
 不延期	bu yan qi	100
 不延时	bu yan shi	100
 不养儿	bu yang er	100
@@ -2790,6 +2833,7 @@ sort: by_weight
 不愿透露	bu yuan tou lu	100
 不咋高	bu za gao	100
 不咋难	bu za nan	100
+不再查	bu zai cha	100
 不再等候	bu zai deng hou	100
 不在京	bu zai jing	100
 不再年轻	bu zai nian qing	100
@@ -2818,9 +2862,11 @@ sort: by_weight
 不知全貌	bu zhi quan mao	100
 不制热	bu zhi re	100
 不止柔韧	bu zhi rou ren	100
+不致死	bu zhi si	100
 不种菜	bu zhong cai	100
 步骤分	bu zhou fen	100
 不助力	bu zhu li	100
+不转阴	bu zhuan yin	100
 卜庄镇	bu zhuang zhen	100
 不坠落	bu zhui luo	100
 不追问	bu zhui wen	100
@@ -2858,8 +2904,10 @@ sort: by_weight
 彩蛋超多	cai dan chao duo	100
 才到屋	cai dao wu	100
 踩凳子	cai deng zi	100
+蔡店乡	cai dian xiang	100
 菜都没了	cai dou mei le	100
 采访的时候	cai fang de shi hou	100
+采访粉	cai fang fen	100
 才放假	cai fang jia	100
 才放三天	cai fang san tian	100
 采访视频	cai fang shi pin	100
@@ -2982,6 +3030,7 @@ sort: by_weight
 参与进攻	can yu jin gong	100
 参与游戏	can yu you xi	100
 残肢断臂	can zhi duan bi	100
+藏宝岛	cang bao dao	100
 藏宝地	cang bao di	100
 藏宝屋	cang bao wu	100
 仓丰路	cang feng lu	100
@@ -3057,6 +3106,7 @@ sort: by_weight
 测微器	ce wei qi	100
 测温度	ce wen du	100
 侧卧式	ce wo shi	100
+测友谊	ce you yi	100
 测智商	ce zhi shang	100
 蹭别人	ceng bie ren	100
 蹭不掉	ceng bu diao	100
@@ -3088,6 +3138,7 @@ sort: by_weight
 查核酸	cha he suan	100
 插画集	cha hua ji	100
 茶话弄	cha hua nong	100
+查教资	cha jiao zi	100
 查看留言	cha kan liu yan	100
 查看装备	cha kan zhuang bei	100
 查考场	cha kao chang	100
@@ -3185,6 +3236,8 @@ sort: by_weight
 长方集团	chang fang ji tuan	100
 长风渡	chang feng du	100
 长丰桥	chang feng qiao	100
+长风桥	chang feng qiao	100
+长丰市场	chang feng shi chang	100
 长风万里	chang feng wan li	100
 长丰镇	chang feng zhen	100
 长堽村	chang gang cun	100
@@ -3252,6 +3305,7 @@ sort: by_weight
 常委见面会	chang wei jian mian hui	100
 常相见	chang xiang jian	100
 长相思兮长相忆	chang xiang si xi chang xiang yi	100
+长新冠	chang xin guan	100
 常修常炼	chang xiu chang lian	100
 常修课	chang xiu ke	100
 长袖子	chang xiu zi	100
@@ -3377,6 +3431,8 @@ sort: by_weight
 超越世代	chao yue shi dai	100
 炒芝麻	chao zhi ma	100
 超智游戏	chao zhi you xi	100
+超主宰	chao zhu zai	100
+车博会	che bo hui	100
 车不少	che bu shao	100
 车臣人	che chen ren	100
 车臣战争	che chen zhan zheng	100
@@ -3388,6 +3444,7 @@ sort: by_weight
 车恩尚	che en shang	100
 撤回消息	che hui xiao xi	100
 车家壁	che jia bi	100
+撤了没	che le mei	100
 车辆通行证	che liang tong xing zheng	100
 车牌摇号	che pai yao hao	100
 撤热搜	che re sou	100
@@ -3630,6 +3687,7 @@ sort: by_weight
 程亚楠	cheng ya nan	100
 澄阳湖	cheng yang hu	100
 城阳街道	cheng yang jie dao	100
+橙衣军团	cheng yi jun tuan	100
 程亦治	cheng yi zhi	100
 承影剑	cheng ying jian	100
 成渝地区	cheng yu di qu	100
@@ -3819,6 +3877,7 @@ sort: by_weight
 宠物鸭	chong wu ya	100
 宠物医生	chong wu yi sheng	100
 宠物装备	chong wu zhuang bei	100
+重新罚	chong xin fa	100
 重新分班	chong xin fen ban	100
 重新购买	chong xin gou mai	100
 重新认识一下	chong xin ren shi yi xia	100
@@ -3844,6 +3903,7 @@ sort: by_weight
 重组家庭	chong zu jia ting	100
 重组器	chong zu qi	100
 重做了	chong zuo le	100
+崇左南	chong zuo nan	100
 臭宝们	chou bao men	100
 抽草神	chou cao shen	100
 抽大奖	chou da jiang	100
@@ -3868,6 +3928,7 @@ sort: by_weight
 抽签码	chou qian ma	100
 抽签仪式	chou qian yi shi	100
 臭情侣	chou qing lv	100
+抽散兵	chou san bing	100
 仇杀队	chou sha dui	100
 抽水晶	chou shui jing	100
 愁死喽	chou si lou	100
@@ -4058,6 +4119,7 @@ sort: by_weight
 穿防护服	chuan fang hu fu	100
 川夫人	chuan fu ren	100
 穿个短袖	chuan ge duan xiu	100
+穿够衣服	chuan gou yi fu	100
 穿褂子	chuan gua zi	100
 穿过寒冬	chuan guo han dong	100
 穿过寒冬拥抱你	chuan guo han dong yong bao ni	100
@@ -4215,6 +4277,7 @@ sort: by_weight
 纯色队	chun se dui	100
 春逝百年抄	chun shi bai nian chao	100
 纯水精灵	chun shui jing ling	100
+纯替补	chun ti bu	100
 春天花会开	chun tian hua hui kai	100
 春庭雪	chun ting xue	100
 春晚节目	chun wan jie mu	100
@@ -4331,6 +4394,7 @@ sort: by_weight
 催快递	cui kuai di	100
 淬灵露	cui ling lu	100
 崔茂虎	cui mao hu	100
+催眠足球	cui mian zu qiu	100
 崔敏静	cui min jing	100
 崔然竣	cui ran jun	100
 崔叡娜	cui rui na	100
@@ -4341,6 +4405,7 @@ sort: by_weight
 翠色欲流	cui se yu liu	100
 崔胜澈	cui sheng che	100
 崔婉莺	cui wan ying	100
+脆皖鱼	cui wan yu	100
 翠微股份	cui wei gu fen	100
 淬星耀世	cui xing yao shi	100
 崔有真	cui you zhen	100
@@ -4390,6 +4455,7 @@ sort: by_weight
 大笔记	da bi ji	100
 打笔巨款	da bi ju kuan	100
 答辩记录	da bian ji lu	100
+大表姑	da biao gu	100
 打标枪	da biao qiang	100
 达泊西汀	da bo xi ting	100
 打不败	da bu bai	100
@@ -4570,6 +4636,7 @@ sort: by_weight
 打假球	da jia qiu	100
 打假日	da jia ri	100
 打加赛	da jia sai	100
+打加时赛	da jia shi sai	100
 大贾庄	da jia zhuang	100
 打架子鼓	da jia zi gu	100
 大剑鬼	da jian gui	100
@@ -4622,6 +4689,7 @@ sort: by_weight
 大里聚福城	da li ju fu cheng	100
 大立牌	da li pai	100
 大力培养	da li pei yang	100
+达利奇	da li qi	100
 大力鼠	da li shu	100
 大力推动	da li tui dong	100
 大力宣传	da li xuan chuan	100
@@ -4833,6 +4901,7 @@ sort: by_weight
 大谢集	da xie ji	100
 大谢集镇	da xie ji zhen	100
 大斜线	da xie xian	100
+答谢信	da xie xin	100
 大新鞋城	da xin xie cheng	100
 大行宫站	da xing gong zhan	100
 大兴国际机场	da xing guo ji ji chang	100
@@ -4848,9 +4917,11 @@ sort: by_weight
 大雪怪	da xue guai	100
 大学教材	da xue jiao cai	100
 大雪节气	da xue jie qi	100
+大雪快乐	da xue kuai le	100
 大雪了	da xue le	100
 大雪球	da xue qiu	100
 大雪人	da xue ren	100
+大雪至	da xue zhi	100
 大鸭鸭	da ya ya	100
 大雁南飞	da yan nan fei	100
 大洋城	da yang cheng	100
@@ -4863,10 +4934,12 @@ sort: by_weight
 打野人	da ye ren	100
 大叶性	da ye xing	100
 打野英雄	da ye ying xiong	100
+大疫不过三年	da yi bu guo san nian	100
 打一个字	da yi ge zi	100
 打疫苗的人	da yi miao de ren	100
 打疫苗的时候	da yi miao de shi hou	100
 打疫苗了没	da yi miao le mei	100
+大疫三年	da yi san nian	100
 大一上	da yi shang	100
 大一上学期	da yi shang xue qi	100
 大衣推荐	da yi tui jian	100
@@ -4892,6 +4965,7 @@ sort: by_weight
 大禹学院	da yu xue yuan	100
 大于一切	da yu yi qie	100
 大源街	da yuan jie	100
+大圆帽	da yuan mao	100
 大猿王	da yuan wang	100
 打月饼	da yue bing	100
 大约是爱	da yue shi ai	100
@@ -4944,6 +5018,7 @@ sort: by_weight
 带病毒	dai bing du	100
 带不进来	dai bu jin lai	100
 逮捕我	dai bu wo	100
+戴不住	dai bu zhu	100
 带惩戒	dai cheng jie	100
 戴大力	dai da li	100
 代代传	dai dai chuan	100
@@ -5064,8 +5139,11 @@ sort: by_weight
 单独考试	dan du kao shi	100
 单独拍	dan du pai	100
 单独算	dan du suan	100
+蛋贩子	dan fan zi	100
 单飞了	dan fei le	100
 丹枫迎秋	dan feng ying qiu	100
+单管的	dan guan de	100
+单管核酸	dan guan he suan	100
 单后腰	dan hou yao	100
 蛋黄肉	dan huang rou	100
 蛋黄馅	dan huang xian	100
@@ -5119,6 +5197,7 @@ sort: by_weight
 旦增尼玛	dan zeng ni ma	100
 丹镇北京	dan zhen bei jing	100
 弹珠人	dan zhu ren	100
+丹朱镇	dan zhu zhen	100
 弹子球	dan zi qiu	100
 胆子要放大	dan zi yao fang da	100
 档案所在地	dang an suo zai di	100
@@ -5228,6 +5307,7 @@ sort: by_weight
 导剪版	dao jian ban	100
 刀剑决	dao jian jue	100
 道剑仙	dao jian xian	100
+到九号	dao jiu hao	100
 到九江	dao jiu jiang	100
 道具区	dao ju qu	100
 道具之夜	dao ju zhi ye	100
@@ -5248,6 +5328,7 @@ sort: by_weight
 到目的地	dao mu di di	100
 到哪看	dao na kan	100
 导能原盘	dao neng yuan pan	100
+悼念词	dao nian ci	100
 倒牛奶	dao niu nai	100
 稻妻城	dao qi cheng	100
 到七号	dao qi hao	100
@@ -5305,6 +5386,7 @@ sort: by_weight
 德玛贝尔	de ma bei er	100
 德懋恭	de mao gong	100
 德美乐嘉	de mei le jia	100
+德米凯利斯	de mi kai li si	100
 德米特里	de mi te li	100
 得民心者	de min xin zhe	100
 德姆斯特朗	de mu si te lang	100
@@ -5325,9 +5407,12 @@ sort: by_weight
 德县路	de xian lu	100
 德械师	de xie shi	100
 得写作业	de xie zuo ye	100
+得新冠	de xin guan	100
+得新冠了	de xin guan le	100
 德馨花园	de xin hua yuan	100
 得延迟	de yan chi	100
 德耀中原	de yao zhong yuan	100
+得一次	de yi ci	100
 德育原则	de yu yuan ze	100
 德育作业	de yu zuo ye	100
 德云斗笑社	de yun dou xiao she	100
@@ -5358,6 +5443,7 @@ sort: by_weight
 登峰造极境	deng feng zao ji jing	100
 邓弗里斯	deng fu li si	100
 等复试	deng fu shi	100
+邓高静	deng gao jing	100
 等高考完	deng gao kao wan	100
 灯光球场	deng guang qiu chang	100
 邓光荣	deng guang rong	100
@@ -5444,6 +5530,7 @@ sort: by_weight
 地方卷	di fang juan	100
 地方专项计划	di fang zhuan xiang ji hua	100
 狄飞惊	di fei jing	100
+低费卡	di fei ka	100
 笛飞声	di fei sheng	100
 低分飘过	di fen piao guo	100
 低风险地区	di feng xian di qu	100
@@ -5479,6 +5566,7 @@ sort: by_weight
 抵抗之靴	di kang zhi xue	100
 迪可达斯	di ke da si	100
 帝科股份	di ke gu fen	100
+地喹氯铵	di kui lv an	100
 迪拉肖	di la xiao	100
 蒂勒曼斯	di le man si	100
 地雷系	di lei xi	100
@@ -5492,6 +5580,7 @@ sort: by_weight
 地灵龛	di ling kan	100
 第六道	di liu dao	100
 第六人民医院	di liu ren min yi yuan	100
+第六席	di liu xi	100
 迪卢克	di lu ke	100
 迪马利亚	di ma li ya	100
 蒂玛乌斯	di ma wu si	100
@@ -5506,7 +5595,9 @@ sort: by_weight
 迪娜泽黛	di na ze dai	100
 低难度	di nan du	100
 第聂伯	di nie bo	100
+地暖毯	di nuan tan	100
 迪佩特	di pei te	100
+低平球	di ping qiu	100
 地平说	di ping shuo	100
 第七波	di qi bo	100
 第七穿插连	di qi chuan cha lian	100
@@ -5591,6 +5682,7 @@ sort: by_weight
 第五局了	di wu ju le	100
 第五军团	di wu jun tuan	100
 第五赛季	di wu sai ji	100
+第五针	di wu zhen	100
 第五职业	di wu zhi ye	100
 迪希亚	di xi ya	100
 迪希雅	di xi ya	100
@@ -5611,6 +5703,7 @@ sort: by_weight
 第一杯酒	di yi bei jiu	100
 第一杯奶茶	di yi bei nai cha	100
 第一场雨	di yi chang yu	100
+第一程	di yi cheng	100
 第一初恋	di yi chu lian	100
 第一出线	di yi chu xian	100
 第一辞色	di yi ci se	100
@@ -5623,6 +5716,7 @@ sort: by_weight
 第一机位	di yi ji wei	100
 第一检	di yi jian	100
 第一经纪人	di yi jing ji ren	100
+第一棵	di yi ke	100
 第一颗原子弹	di yi ke yuan zi dan	100
 第一粒扣子	di yi li kou zi	100
 第一炉香	di yi lu xiang	100
@@ -5700,6 +5794,7 @@ sort: by_weight
 电光马子	dian guang ma zi	100
 电光人	dian guang ren	100
 电火盆	dian huo pen	100
+电火箱	dian huo xiang	100
 点火仪式	dian huo yi shi	100
 癫火之王	dian huo zhi wang	100
 点击关注	dian ji guan zhu	100
@@ -5736,6 +5831,7 @@ sort: by_weight
 踮起脚尖爱	dian qi jiao jian ai	100
 电气球	dian qi qiu	100
 电气鼠	dian qi shu	100
+点球质量	dian qiu zhi liang	100
 点燃激情	dian ran ji qing	100
 点上没	dian shang mei	100
 电商人	dian shang ren	100
@@ -6001,8 +6097,10 @@ sort: by_weight
 东京绿茵	dong jing lv yin	100
 东京猫猫	dong jing mao mao	100
 东京梦华录	dong jing meng hua lu	100
+东康线	dong kang xian	100
 东库街	dong ku jie	100
 东莱街道	dong lai jie dao	100
+冬来无恙	dong lai wu yang	100
 冬雷滚滚	dong lei gun gun	100
 东离剑游纪	dong li jian you ji	100
 动力院景	dong li yuan jing	100
@@ -6032,6 +6130,7 @@ sort: by_weight
 动如雷霆	dong ru lei ting	100
 东沙岛	dong sha dao	100
 东山校区	dong shan xiao qu	100
+冻伤膏	dong shang gao	100
 冻上了	dong shang le	100
 冻伤了	dong shang le	100
 冬上新	dong shang xin	100
@@ -6053,6 +6152,7 @@ sort: by_weight
 动态清零	dong tai qing ling	100
 动态视频	dong tai shi pin	100
 动态头像	dong tai tou xiang	100
+洞天宝钱	dong tian bao qian	100
 冬天打雷	dong tian da lei	100
 冬天的秘密	dong tian de mi mi	100
 冬天的衣服	dong tian de yi fu	100
@@ -6106,8 +6206,10 @@ sort: by_weight
 侗族自治县	dong zu zi zhi xian	100
 动作栏	dong zuo lan	100
 抖包袱	dou bao fu	100
+都备点	dou bei dian	100
 都不化	dou bu hua	100
 都不进球	dou bu jin qiu	100
+都出线	dou chu xian	100
 豆得儿	dou de er	100
 抖动窗口	dou dong chuang kou	100
 窦尔敦	dou er dun	100
@@ -6121,21 +6223,30 @@ sort: by_weight
 逗号立方	dou hao li fang	100
 都恢复	dou hui fu	100
 都灰色了	dou hui se le	100
+都会停	dou hui ting	100
+都会阳	dou hui yang	100
 都加油	dou jia you	100
 豆浆烩面	dou jiang hui mian	100
 都降了	dou jiang le	100
+都解除了	dou jie chu le	100
 都解了	dou jie le	100
 都考的	dou kao de	100
 都快乐	dou kuai le	100
 都立冬了	dou li dong le	100
 斗罗世界	dou luo shi jie	100
+都没药	dou mei yao	100
 斗米仇	dou mi chou	100
 都能进球	dou neng jin qiu	100
 斗牌传说	dou pai chuan shuo	100
+都遣返	dou qian fan	100
 都上冻了	dou shang dong le	100
 豆神教育	dou shen jiao yu	100
+都十二月了	dou shi er yue le	100
 都十一月了	dou shi yi yue le	100
 都踢不过	dou ti bu guo	100
+都挺堵	dou ting du	100
+都停服了	dou ting fu le	100
+都停一天	dou ting yi tian	100
 窦团山	dou tuan shan	100
 斗西游	dou xi you	100
 都下雪	dou xia xue	100
@@ -6143,6 +6254,7 @@ sort: by_weight
 豆芽子	dou ya zi	100
 都淹了	dou yan le	100
 都要封	dou yao feng	100
+都要停	dou yao ting	100
 抖音达人	dou yin da ren	100
 抖音的	dou yin de	100
 抖音粉丝	dou yin fen si	100
@@ -6260,6 +6372,7 @@ sort: by_weight
 读原著	du yuan zhu	100
 堵在路上	du zai lu shang	100
 堵在那里	du zai na li	100
+杜照宇	du zhao yu	100
 赌这么大	du zhe me da	100
 杜指导	du zhi dao	100
 读职高	du zhi gao	100
@@ -6450,6 +6563,7 @@ sort: by_weight
 多买点菜	duo mai dian cai	100
 夺命岛	duo ming dao	100
 夺命金	duo ming jin	100
+夺命邮差	duo ming you chai	100
 多娜多娜	duo na duo na	100
 多拍点照片	duo pai dian zhao pian	100
 多拍照	duo pai zhao	100
@@ -6542,6 +6656,7 @@ sort: by_weight
 鄂武商	e wu shang	100
 俄乌谈判	e wu tan pan	100
 恶性依赖	e xing yi lai	100
+鹅鸭杀	e ya sha	100
 恶意犯规	e yi fan gui	100
 恶意返乡	e yi fan xiang	100
 恶意剪辑	e yi jian ji	100
@@ -6583,6 +6698,7 @@ sort: by_weight
 二次入伍	er ci ru wu	100
 二代粉	er dai fen	100
 二道白河镇	er dao bai he zhen	100
+二道杠	er dao gang	100
 二点球	er dian qiu	100
 二段哭	er duan ku	100
 二段线	er duan xian	100
@@ -6643,6 +6759,7 @@ sort: by_weight
 二三班	er san ban	100
 二三本	er san ben	100
 二三成	er san cheng	100
+二圣头	er sheng tou	100
 二十八号	er shi ba hao	100
 二十八集	er shi ba ji	100
 二十不惑	er shi bu huo	100
@@ -6795,6 +6912,7 @@ sort: by_weight
 法医宋慈	fa yi song ci	100
 法语专四	fa yu zhuan si	100
 法元明菜	fa yuan ming cai	100
+发原石	fa yuan shi	100
 发展成果	fa zhan cheng guo	100
 发展创新	fa zhan chuang xin	100
 发展大局	fa zhan da ju	100
@@ -6829,6 +6947,7 @@ sort: by_weight
 返程高峰	fan cheng gao feng	100
 繁城镇	fan cheng zhen	100
 范厨师	fan chu shi	100
+范村乡	fan cun xiang	100
 范达尔	fan da er	100
 范大将军	fan da jiang jun	100
 饭搭子	fan da zi	100
@@ -6896,6 +7015,7 @@ sort: by_weight
 繁荣发展	fan rong fa zhan	100
 繁荣之花	fan rong zhi hua	100
 范锐平	fan rui ping	100
+范胜鹏	fan sheng peng	100
 范世錡	fan shi qi	100
 反式脂肪	fan shi zhi fang	100
 番薯丸	fan shu wan	100
@@ -6909,6 +7029,7 @@ sort: by_weight
 范沃森	fan wo sen	100
 犯我中华者虽远必诛	fan wo zhong hua zhe sui yuan bi zhu	100
 反向带货	fan xiang dai huo	100
+返乡的	fan xiang de	100
 反向定轨	fan xiang ding gui	100
 返乡人员	fan xiang ren yuan	100
 反向闪	fan xiang shan	100
@@ -7061,6 +7182,7 @@ sort: by_weight
 方显英雄本色	fang xian ying xiong ben se	100
 放新办	fang xin ban	100
 芳心荡漾	fang xin dang yang	100
+防新冠	fang xin guan	100
 放行李箱	fang xing li xiang	100
 放学了吗	fang xue le ma	100
 防汛工作	fang xun gong zuo	100
@@ -7244,6 +7366,7 @@ sort: by_weight
 分都低	fen dou di	100
 奋斗有我	fen dou you wo	100
 分段表	fen duan biao	100
+奋发崛起	fen fa jue qi	100
 奋发向前	fen fa xiang qian	100
 奋发作为	fen fa zuo wei	100
 纷纷效仿	fen fen xiao fang	100
@@ -7257,6 +7380,7 @@ sort: by_weight
 分很高	fen hen gao	100
 分红包	fen hong bao	100
 分红金	fen hong jin	100
+粉红理论	fen hong li lun	100
 粉红兔子	fen hong tu zi	100
 分几班	fen ji ban	100
 分家产	fen jia chan	100
@@ -7284,6 +7408,7 @@ sort: by_weight
 粉气垫	fen qi dian	100
 分寝室	fen qin shi	100
 粉裙子	fen qun zi	100
+分三批	fen san pi	100
 分三期	fen san qi	100
 分手节	fen shou jie	100
 分手日	fen shou ri	100
@@ -7352,6 +7477,7 @@ sort: by_weight
 风大雨大	feng da yu da	100
 丰达园	feng da yuan	100
 封单元	feng dan yuan	100
+冯德莱恩	feng de lai en	100
 风的颜色	feng de yan se	100
 风动石	feng dong shi	100
 逢赌必赢	feng du bi ying	100
@@ -7384,6 +7510,7 @@ sort: by_weight
 冯家台	feng jia tai	100
 冯佳怡	feng jia yi	100
 风渐渐	feng jian jian	100
+风间琉璃	feng jian liu li	100
 奉节脐橙	feng jie qi cheng	100
 风巨大	feng ju da	100
 逢君正当时	feng jun zheng dang shi	100
@@ -7510,7 +7637,9 @@ sort: by_weight
 风雨声	feng yu sheng	100
 风雨同行	feng yu tong xing	100
 风雨相随	feng yu xiang sui	100
+风雨兴焉	feng yu xing yan	100
 丰元股份	feng yuan gu fen	100
+丰原药业	feng yuan yao ye	100
 风云雄霸天下	feng yun xiong ba tian xia	100
 风早巽	feng zao xun	100
 丰泽新村	feng ze xin cun	100
@@ -7519,6 +7648,7 @@ sort: by_weight
 风真大	feng zhen da	100
 风之瞳	feng zhi tong	100
 风姿度	feng zi du	100
+冯子健	feng zi jian	100
 蜂姿水	feng zi shui	100
 佛怒火莲	fo nu huo lian	100
 佛怒唐莲	fo nu tang lian	100
@@ -7543,6 +7673,7 @@ sort: by_weight
 福成五期	fu cheng wu qi	100
 复仇计划	fu chou ji hua	100
 复仇之路	fu chou zhi lu	100
+复出了	fu chu le	100
 孵出小鸡	fu chu xiao ji	100
 付出真心	fu chu zhen xin	100
 福春市场	fu chun shi chang	100
@@ -7634,6 +7765,7 @@ sort: by_weight
 付款界面	fu kuan jie mian	100
 付款页面	fu kuan ye mian	100
 弗拉霍维奇	fu la huo wei qi	100
+弗拉希奇	fu la xi qi	100
 弗莱格	fu lai ge	100
 浮来青	fu lai qing	100
 芙兰达	fu lan da	100
@@ -7866,7 +7998,9 @@ sort: by_weight
 该怎么过	gai zen me guo	100
 该怎么去	gai zen me qu	100
 改战区	gai zhan qu	100
+改政策了	gai zheng ce le	100
 改志愿	gai zhi yuan	100
+干嘣鸡	gan beng ji	100
 干成事	gan cheng shi	100
 感触最深	gan chu zui shen	100
 敢闯敢干	gan chuang gan gan	100
@@ -7960,6 +8094,7 @@ sort: by_weight
 感知不强	gan zhi bu qiang	100
 干紫菜	gan zi cai	100
 甘祖昌	gan zu chang	100
+港澳城	gang ao cheng	100
 刚爆发	gang bao fa	100
 刚报上	gang bao shang	100
 刚包完	gang bao wan	100
@@ -7997,6 +8132,7 @@ sort: by_weight
 刚过完节	gang guo wan jie	100
 刚过完年	gang guo wan nian	100
 刚过线	gang guo xian	100
+刚恢复	gang hui fu	100
 刚回国	gang hui guo	100
 刚回学校	gang hui xue xiao	100
 钢架雪车	gang jia xue che	100
@@ -8251,12 +8387,14 @@ sort: by_weight
 高庄户	gao zhuang hu	100
 膏子哥	gao zi ge	100
 隔壁小区	ge bi xiao qu	100
+隔不隔离	ge bu ge li	100
 隔窗恋爱	ge chuang lian ai	100
 歌词适配	ge ci shi pei	100
 割稻谷	ge dao gu	100
 格德斯	ge de si	100
 葛德文	ge de wen	100
 各得一分	ge de yi fen	100
+葛店南	ge dian nan	100
 格斗场	ge dou chang	100
 隔多久	ge duo jiu	100
 歌风中学	ge feng zhong xue	100
@@ -8270,6 +8408,7 @@ sort: by_weight
 葛各庄	ge ge zhuang	100
 葛根庙	ge gen miao	100
 搁锅面	ge guo mian	100
+哥会出手	ge hui chu shou	100
 葛剑雄	ge jian xiong	100
 各进一个	ge jin yi ge	100
 歌剧少女	ge ju shao nv	100
@@ -8371,6 +8510,7 @@ sort: by_weight
 葛兆光	ge zhao guang	100
 割痔疮	ge zhi chuang	100
 各自精彩	ge zi jing cai	100
+格子军	ge zi jun	100
 格子军团	ge zi jun tuan	100
 各自为王	ge zi wei wang	100
 各族自治县	ge zu zi zhi xian	100
@@ -8554,6 +8694,7 @@ sort: by_weight
 共创共赢	gong chuang gong ying	100
 共创美好	gong chuang mei hao	100
 共创美好未来	gong chuang mei hao wei lai	100
+共闯难关	gong chuang nan guan	100
 共创未来	gong chuang wei lai	100
 共此时	gong ci shi	100
 共促发展	gong cu fa zhan	100
@@ -8609,6 +8750,7 @@ sort: by_weight
 公开道歉	gong kai dao qian	100
 公开恋情	gong kai lian qing	100
 公开招募	gong kai zhao mu	100
+共抗艾滋	gong kang ai zi	100
 共抗疫情	gong kang yi qing	100
 共抗灾情	gong kang zai qing	100
 公考雷达	gong kao lei da	100
@@ -8815,6 +8957,7 @@ sort: by_weight
 古绛镇	gu jiang zhen	100
 古镜记	gu jing ji	100
 顾九思	gu jiu si	100
+谷口彰悟	gu kou zhang wu	100
 顾老六	gu lao liu	100
 故勒顿	gu le dun	100
 估了一下	gu le yi xia	100
@@ -8824,6 +8967,7 @@ sort: by_weight
 古良吉吉	gu liang ji ji	100
 古林里	gu lin li	100
 古灵阁	gu ling ge	100
+古笼火	gu long huo	100
 鼓楼外	gu lou wai	100
 古楼子	gu lou zi	100
 顾虑太多	gu lv tai duo	100
@@ -8859,6 +9003,7 @@ sort: by_weight
 固态电池	gu tai dian chi	100
 固碳量	gu tan liang	100
 古特雷斯	gu te lei si	100
+骨头节	gu tou jie	100
 谷围南亭	gu wei nan ting	100
 古魏镇	gu wei zhen	100
 古溪村	gu xi cun	100
@@ -8968,7 +9113,9 @@ sort: by_weight
 官方直播	guan fang zhi bo	100
 关菲菲	guan fei fei	100
 关服了	guan fu le	100
+关服前	guan fu qian	100
 冠夫姓	guan fu xing	100
+关服一天	guan fu yi tian	100
 关公骑马	guan gong qi ma	100
 罐罐茶	guan guan cha	100
 关关难过	guan guan nan guo	100
@@ -9161,9 +9308,11 @@ sort: by_weight
 桂林话	gui lin hua	100
 鬼龙红郎	gui long hong lang	100
 规律作息	gui lv zuo xi	100
+闺门旦	gui men dan	100
 鬼门开	gui men kai	100
 归梦集	gui meng ji	100
 归溟幽灵鲨	gui ming you ling sha	100
+贵戚坊	gui qi fang	100
 鬼入侵	gui ru qin	100
 鬼三惊	gui san jing	100
 跪射俑	gui she yong	100
@@ -9197,6 +9346,7 @@ sort: by_weight
 贵州安顺	gui zhou an shun	100
 贵州教育	gui zhou jiao yu	100
 贵州人事	gui zhou ren shi	100
+贵州三力	gui zhou san li	100
 贵族积分	gui zu ji fen	100
 贵族机要	gui zu ji yao	100
 滚鸡蛋	gun ji dan	100
@@ -9331,7 +9481,9 @@ sort: by_weight
 过了不	guo le bu	100
 过了个节	guo le ge jie	100
 过了国庆	guo le guo qing	100
+过了几科	guo le ji ke	100
 过了今年	guo le jin nian	100
+过了两科	guo le liang ke	100
 过了两门	guo le liang men	100
 过了没	guo le mei	100
 过了期	guo le qi	100
@@ -9476,6 +9628,7 @@ sort: by_weight
 郭子瑜	guo zi yu	100
 国资云	guo zi yun	100
 哈巴儿	ha ba er	100
+哈白布	ha bai bu	100
 哈贝喵	ha bei miao	100
 哈比布	ha bi bu	100
 哈达村	ha da cun	100
@@ -9521,6 +9674,7 @@ sort: by_weight
 海岸基线	hai an ji xian	100
 海岸卫士	hai an wei shi	100
 海奥华	hai ao hua	100
+海霸糊	hai ba hu	100
 海豹短刀	hai bao duan dao	100
 还爆冷	hai bao leng	100
 海贝尔	hai bei er	100
@@ -9711,6 +9865,7 @@ sort: by_weight
 还没下完	hai mei xia wan	100
 还没下雪	hai mei xia xue	100
 还没修复	hai mei xiu fu	100
+还没阳	hai mei yang	100
 还没用上	hai mei yong shang	100
 还没有写完	hai mei you xie wan	100
 还没有找到	hai mei you zhao dao	100
@@ -9736,6 +9891,7 @@ sort: by_weight
 海清姐	hai qing jie	100
 海瑞斯	hai rui si	100
 海瑞温斯顿	hai rui wen si dun	100
+还扫码	hai sao ma	100
 海上繁花	hai shang fan hua	100
 海神九考	hai shen jiu kao	100
 还剩几个	hai sheng ji ge	100
@@ -9755,6 +9911,7 @@ sort: by_weight
 海丝景城	hai si jing cheng	100
 海丝腾	hai si teng	100
 海泰发展	hai tai fa zhan	100
+海泰居	hai tai ju	100
 海苔男	hai tai nan	100
 海滩派对	hai tan pai dui	100
 海棠名居	hai tang ming ju	100
@@ -9861,6 +10018,7 @@ sort: by_weight
 还在等人	hai zai deng ren	100
 还在调查	hai zai diao cha	100
 还在跌	hai zai die	100
+还在封控	hai zai feng kong	100
 还在过年	hai zai guo nian	100
 还在晃	hai zai huang	100
 还在开车	hai zai kai che	100
@@ -9936,6 +10094,7 @@ sort: by_weight
 汉口西路	han kou xi lu	100
 韩老魔	han lao mo	100
 翰林湖	han lin hu	100
+喊楼了	han lou le	100
 寒露节气	han lu jie qi	100
 韩美女	han mei nv	100
 寒门贵子	han men gui zi	100
@@ -9974,6 +10133,7 @@ sort: by_weight
 旱震理论	han zhen li lun	100
 韩知城	han zhi cheng	100
 韩子昂	han zi ang	100
+汉子茶	han zi cha	100
 韩子墨	han zi mo	100
 航昌路	hang chang lu	100
 航发动力	hang fa dong li	100
@@ -9985,6 +10145,7 @@ sort: by_weight
 航空梦	hang kong meng	100
 航空燃油	hang kong ran you	100
 航空展	hang kong zhan	100
+夯木节	hang mu jie	100
 航母下水	hang mu xia shui	100
 航母战斗群	hang mu zhan dou qun	100
 行情好	hang qing hao	100
@@ -10048,9 +10209,11 @@ sort: by_weight
 好多亲戚	hao duo qin qi	100
 好多券	hao duo quan	100
 好多声	hao duo sheng	100
+好多省	hao duo sheng	100
 好多树	hao duo shu	100
 好多细节	hao duo xi jie	100
 好多小朋友	hao duo xiao peng you	100
+好多药店	hao duo yao dian	100
 好恶劣	hao e lie	100
 好二本	hao er ben	100
 好儿媳	hao er xi	100
@@ -10141,6 +10304,7 @@ sort: by_weight
 好轮回	hao lun hui	100
 好律师	hao lv shi	100
 好麦多	hao mai duo	100
+好买了	hao mai le	100
 好美嘉园	hao mei jia yuan	100
 豪门盛宴	hao men sheng yan	100
 豪门夜宴	hao men ye yan	100
@@ -10269,6 +10433,7 @@ sort: by_weight
 河北中考	he bei zhong kao	100
 何碧玉	he bi yu	100
 河滨之城	he bin zhi cheng	100
+何冰娇	he bing jiao	100
 贺炳炎	he bing yan	100
 喝不饱	he bu bao	100
 喝不掉	he bu diao	100
@@ -10277,6 +10442,7 @@ sort: by_weight
 何曾惧	he ceng ju	100
 何超仪	he chao yi	100
 合成中	he cheng zhong	100
+何初逢	he chu feng	100
 喝大杯	he da bei	100
 河大附中	he da fu zhong	100
 河大新区	he da xin qu	100
@@ -10323,6 +10489,7 @@ sort: by_weight
 呵护生命	he hu sheng ming	100
 荷花奖	he hua jiang	100
 合欢宗	he huan zong	100
+何继文	he ji wen	100
 和济医院	he ji yi yuan	100
 何家弘	he jia hong	100
 何嘉莉	he jia li	100
@@ -10431,9 +10598,12 @@ sort: by_weight
 核司令	he si ling	100
 荷四路	he si lu	100
 核酸报告	he suan bao gao	100
+核酸不做了	he suan bu zuo le	100
 核酸采样	he suan cai yang	100
 核酸点	he suan dian	100
 核酸点儿	he suan dian er	100
+核酸点位	he suan dian wei	100
+核酸都不做了	he suan dou bu zuo le	100
 核酸队伍	he suan dui wu	100
 核酸公司	he suan gong si	100
 核酸后	he suan hou	100
@@ -10455,6 +10625,7 @@ sort: by_weight
 核酸条	he suan tiao	100
 核酸贴	he suan tie	100
 核酸亭	he suan ting	100
+核酸厅	he suan ting	100
 核酸系统	he suan xi tong	100
 核酸信息	he suan xin xi	100
 核酸也不做了	he suan ye bu zuo le	100
@@ -10606,6 +10777,7 @@ sort: by_weight
 黑田铺	hei tian pu	100
 黑条纹	hei tiao wen	100
 黑头铲	hei tou chan	100
+黑透肤	hei tou fu	100
 黑土坝	hei tu ba	100
 黑土豆	hei tu dou	100
 黑兔年	hei tu nian	100
@@ -10645,6 +10817,7 @@ sort: by_weight
 恒常机关	heng chang ji guan	100
 恒大睿城	heng da rui cheng	100
 亨德拉	heng de la	100
+亨迪药业	heng di yao ye	100
 横店东磁	heng dian dong ci	100
 恒动械画	heng dong xie hua	100
 横风横雨	heng feng heng yu	100
@@ -10657,6 +10830,7 @@ sort: by_weight
 恒山里	heng shan li	100
 衡山医院	heng shan yi yuan	100
 恒生科技	heng sheng ke ji	100
+恒实科技	heng shi ke ji	100
 衡水模式	heng shui mo shi	100
 衡水银行	heng shui yin hang	100
 恒太城	heng tai cheng	100
@@ -10839,6 +11013,7 @@ sort: by_weight
 吼姆拉	hou mu la	100
 侯牧人	hou mu ren	100
 侯南村	hou nan cun	100
+后桥村	hou qiao cun	100
 厚秋裤	hou qiu ku	100
 侯赛尼	hou sai ni	100
 后三天	hou san tian	100
@@ -10883,6 +11058,7 @@ sort: by_weight
 湖北专升本	hu bei zhuan sheng ben	100
 胡宾果	hu bin guo	100
 互不互心	hu bu hu xin	100
+胡昌升	hu chang sheng	100
 沪城环路	hu cheng huan lu	100
 胡春阳	hu chun yang	100
 胡大宝	hu da bao	100
@@ -11093,6 +11269,7 @@ sort: by_weight
 华东数控	hua dong shu kong	100
 华东重机	hua dong zhong ji	100
 花豆码	hua dou ma	100
+华都富林	hua du fu lin	100
 花都广场	hua du guang chang	100
 划范围	hua fan wei	100
 华峰铝业	hua feng lv ye	100
@@ -11101,6 +11278,7 @@ sort: by_weight
 华府丹郡	hua fu dan jun	100
 华富世家	hua fu shi jia	100
 华夫鞋	hua fu xie	100
+滑个雪	hua ge xue	100
 华贵路	hua gui lu	100
 花好月又圆	hua hao yue you yuan	100
 花盒子	hua he zi	100
@@ -11162,8 +11340,10 @@ sort: by_weight
 花山怡园	hua shan yi yuan	100
 华裳九州	hua shang jiu zhou	100
 华商学院	hua shang xue yuan	100
+画圣诞树	hua sheng dan shu	100
 花生瓜子	hua sheng gua zi	100
 花生馅	hua sheng xian	100
+化湿败毒	hua shi bai du	100
 花手绢	hua shou juan	100
 花束般	hua shu ban	100
 花束般的恋爱	hua shu ban de lian ai	100
@@ -11296,6 +11476,7 @@ sort: by_weight
 欢乐币	huan le bi	100
 欢乐跑	huan le pao	100
 欢乐田园	huan le tian yuan	100
+环联夜市	huan lian ye shi	100
 唤灵魅影	huan ling mei ying	100
 幻灵战队	huan ling zhan dui	100
 幻魔剑舞	huan mo jian wu	100
@@ -11446,6 +11627,7 @@ sort: by_weight
 黄牌数	huang pai shu	100
 黄浦滩	huang pu tan	100
 晃起来	huang qi lai	100
+黄芪线	huang qi xian	100
 黄仁勋	huang ren xun	100
 黄锐铨	huang rui quan	100
 黄润秋	huang run qiu	100
@@ -11507,6 +11689,7 @@ sort: by_weight
 回潮天	hui chao tian	100
 惠城科技	hui cheng ke ji	100
 汇成一句话	hui cheng yi ju hua	100
+会出售	hui chu shou	100
 回春丹	hui chun dan	100
 回春膏	hui chun gao	100
 回村三天	hui cun san tian	100
@@ -11534,6 +11717,7 @@ sort: by_weight
 恢复弹幕	hui fu dan mu	100
 恢复单身	hui fu dan shen	100
 恢复好友	hui fu hao you	100
+恢复了吗	hui fu le ma	100
 恢复能量	hui fu neng liang	100
 回复术士	hui fu shu shi	100
 恢复堂食	hui fu tang shi	100
@@ -11753,6 +11937,7 @@ sort: by_weight
 霍乐迪	huo le di	100
 活力板	huo li ban	100
 活力版	huo li ban	100
+火立本	huo li ben	100
 活力不足	huo li bu zu	100
 火力不足	huo li bu zu	100
 活力充沛	huo li chong pei	100
@@ -11810,6 +11995,7 @@ sort: by_weight
 活着就行	huo zhe jiu xing	100
 活着再见	huo zhe zai jian	100
 火稚鸡	huo zhi ji	100
+火之鸟	huo zhi niao	100
 寄哀思	ji ai si	100
 吉巴罗	ji ba luo	100
 几百单	ji bai dan	100
@@ -11817,6 +12003,7 @@ sort: by_weight
 几百万人	ji bai wan ren	100
 几百亿	ji bai yi	100
 几班的	ji ban de	100
+挤爆服务器	ji bao fu wu qi	100
 几胞胎	ji bao tai	100
 几倍工资	ji bei gong zi	100
 基本不吃	ji ben bu chi	100
@@ -12036,6 +12223,7 @@ sort: by_weight
 机灵正太	ji ling zheng tai	100
 记录美好	ji lu mei hao	100
 记录美好生活	ji lu mei hao sheng huo	100
+吉罗德	ji luo de	100
 吉旅行	ji lv xing	100
 吉马良斯	ji ma liang si	100
 集美大桥	ji mei da qiao	100
@@ -12049,6 +12237,7 @@ sort: by_weight
 急难愁	ji nan chou	100
 急难愁盼	ji nan chou pan	100
 济南地铁	ji nan di tie	100
+济南方舱	ji nan fang cang	100
 济南王	ji nan wang	100
 济南校区	ji nan xiao qu	100
 济南疫情	ji nan yi qing	100
@@ -12057,6 +12246,7 @@ sort: by_weight
 技能特效	ji neng te xiao	100
 姬霓太美	ji ni tai mei	100
 纪念屈原	ji nian qu yuan	100
+纪念伟人	ji nian wei ren	100
 济宁东	ji ning dong	100
 集宁师范	ji ning shi fan	100
 济宁疫情	ji ning yi qing	100
@@ -12117,12 +12307,14 @@ sort: by_weight
 集体出动	ji ti chu dong	100
 集体出发	ji ti chu fa	100
 集体教育	ji ti jiao yu	100
+集体码	ji ti ma	100
 集体做	ji ti zuo	100
 吉田宽文	ji tian kuan wen	100
 吉田麻也	ji tian ma ye	100
 几桶水	ji tong shui	100
 极兔快递	ji tu kuai di	100
 鸡腿姑娘	ji tui gu niang	100
+寄完了	ji wan le	100
 几万例	ji wan li	100
 吉维森特	ji wei sen te	100
 纪文君	ji wen jun	100
@@ -12514,6 +12706,7 @@ sort: by_weight
 坚决遏制	jian jue e zhi	100
 坚决维护	jian jue wei hu	100
 坚决制止	jian jue zhi zhi	100
+健康宝鸡	jian kang bao ji	100
 健康承诺书	jian kang cheng nuo shu	100
 健康登记表	jian kang deng ji biao	100
 健康第一	jian kang di yi	100
@@ -12556,11 +12749,13 @@ sort: by_weight
 建立常态化	jian li chang tai hua	100
 捡栗子	jian li zi	100
 捡漏群	jian lou qun	100
+渐美村	jian mei cun	100
 见面吧	jian mian ba	100
 建明路	jian ming lu	100
 建明镇	jian ming zhen	100
 建模脸	jian mo lian	100
 剑魔皮肤	jian mo pi fu	100
+捡木头	jian mu tou	100
 艰难抉择	jian nan jue ze	100
 见男友	jian nan you	100
 剪脐带	jian qi dai	100
@@ -12594,6 +12789,7 @@ sort: by_weight
 简隋林	jian sui lin	100
 简隋英	jian sui ying	100
 健太郎	jian tai lang	100
+煎汤圆	jian tang yuan	100
 碱体达人	jian ti da ren	100
 健体术	jian ti shu	100
 健听女孩	jian ting nv hai	100
@@ -12699,6 +12895,7 @@ sort: by_weight
 江梦南	jiang meng nan	100
 姜米茶	jiang mi cha	100
 江米糕	jiang mi gao	100
+江绵康	jiang mian kang	100
 姜敏熙	jiang min xi	100
 江南百景图	jiang nan bai jing tu	100
 江南春堤	jiang nan chun di	100
@@ -12723,6 +12920,7 @@ sort: by_weight
 江莎莎	jiang sha sha	100
 江山娇	jiang shan jiao	100
 江山为聘	jiang shan wei pin	100
+江上青	jiang shang qing	100
 江上晚风吟	jiang shang wan feng yin	100
 江师大	jiang shi da	100
 蒋诗萌	jiang shi meng	100
@@ -12813,6 +13011,7 @@ sort: by_weight
 教辅资料	jiao fu zi liao	100
 教官们	jiao guan men	100
 教官说	jiao guan shuo	100
+脚好冰	jiao hao bing	100
 脚好冷	jiao hao leng	100
 交河镇	jiao he zhen	100
 教画画	jiao hua hua	100
@@ -12878,6 +13077,7 @@ sort: by_weight
 骄阳似我	jiao yang si wo	100
 交易沦陷	jiao yi lun xian	100
 脚艺人	jiao yi ren	100
+交银理财	jiao yin li cai	100
 教育超市	jiao yu chao shi	100
 教育成果	jiao yu cheng guo	100
 教育惩戒	jiao yu cheng jie	100
@@ -12893,21 +13093,27 @@ sort: by_weight
 胶原霜	jiao yuan shuang	100
 脚著谢公屐	jiao zhu xie gong ji	100
 教资报名	jiao zi bao ming	100
+教资必过	jiao zi bi guo	100
 教资笔试	jiao zi bi shi	100
 教资成绩	jiao zi cheng ji	100
+教资出成绩了	jiao zi chu cheng ji le	100
 教资官网	jiao zi guan wang	100
+教资过了	jiao zi guo le	100
 教资考试	jiao zi kao shi	100
 教资面试	jiao zi mian shi	100
+教资没过	jiao zi mo guo	100
 教资人	jiao zi ren	100
 教资认定	jiao zi ren ding	100
 教资认证	jiao zi ren zheng	100
 教资书	jiao zi shu	100
 教资体检	jiao zi ti jian	100
 教资推迟了	jiao zi tui chi le	100
+教资退费	jiao zi tui fei	100
 教资延期了	jiao zi yan qi le	100
 娇子一号	jiao zi yi hao	100
 饺子园	jiao zi yuan	100
 洁白的婚纱	jie bai de hun sha	100
+接杯热水	jie bei re shui	100
 结冰了	jie bing le	100
 届不到	jie bu dao	100
 解不解封	jie bu jie feng	100
@@ -12956,6 +13162,7 @@ sort: by_weight
 街景地图	jie jing di tu	100
 结晶人	jie jing ren	100
 解决战斗	jie jue zhan dou	100
+借考了	jie kao le	100
 杰克奥特曼	jie ke ao te man	100
 捷克狼犬	jie ke lang quan	100
 杰克韦尔奇	jie ke wei er qi	100
@@ -13149,6 +13356,7 @@ sort: by_weight
 紧跟时代	jin gen shi dai	100
 紧跟时代步伐	jin gen shi dai bu fa	100
 紧跟时事	jin gen shi shi	100
+进公厕	jin gong ce	100
 进工厂	jin gong chang	100
 进攻犯规	jin gong fan gui	100
 仅供娱乐	jin gong yu le	100
@@ -13171,6 +13379,7 @@ sort: by_weight
 金胡杨	jin hu yang	100
 进化岛	jin hua dao	100
 进化皮	jin hua pi	100
+金花清感颗粒	jin hua qing gan ke li	100
 进化人	jin hua ren	100
 锦华万达	jin hua wan da	100
 金画轴	jin hua zhou	100
@@ -13200,11 +13409,13 @@ sort: by_weight
 进局子	jin ju zi	100
 禁军之墙	jin jun zhi qiang	100
 禁卡表	jin ka biao	100
+晋康保	jin kang bao	100
 进考场	jin kao chang	100
 晋快检	jin kuai jian	100
 进快手	jin kuai shou	100
 金匮公园	jin kui gong yuan	100
 晋来办	jin lai ban	100
+晋来登	jin lai deng	100
 津涞公路	jin lai gong lu	100
 津乐购	jin le gou	100
 锦鲤杯	jin li bei	100
@@ -13301,6 +13512,7 @@ sort: by_weight
 金山医院	jin shan yi yuan	100
 进商店	jin shang dian	100
 金尚小区	jin shang xiao qu	100
+津社保	jin she bao	100
 谨慎发言	jin shen fa yan	100
 谨慎观看	jin shen guan kan	100
 晋升堡垒	jin sheng bao lei	100
@@ -13377,6 +13589,7 @@ sort: by_weight
 金童奖	jin tong jiang	100
 劲拓股份	jin tuo gu fen	100
 今晚打老虎	jin wan da lao hu	100
+今晚没球	jin wan mei qiu	100
 今晚十二点	jin wan shi er dian	100
 锦卫门	jin wei men	100
 金玟庭	jin wen ting	100
@@ -13428,6 +13641,7 @@ sort: by_weight
 金域城	jin yu cheng	100
 禁娱乐	jin yu le	100
 金域名邸	jin yu ming di	100
+禁娱日	jin yu ri	100
 金玉婷	jin yu ting	100
 金域医疗	jin yu yi liao	100
 金圆股份	jin yuan gu fen	100
@@ -13678,6 +13892,7 @@ sort: by_weight
 九个灯	jiu ge deng	100
 九个点	jiu ge dian	100
 九个字	jiu ge zi	100
+酒馆里	jiu guan li	100
 久光百货	jiu guang bai huo	100
 救国大业	jiu guo da ye	100
 九号走	jiu hao zou	100
@@ -13688,6 +13903,7 @@ sort: by_weight
 究极龙	jiu ji long	100
 究极神兵	jiu ji shen bing	100
 九江职业	jiu jiang zhi ye	100
+纠结疯了	jiu jie feng le	100
 九节课	jiu jie ke	100
 就进一球	jiu jin yi qiu	100
 酒井宏树	jiu jing hong shu	100
@@ -13734,6 +13950,7 @@ sort: by_weight
 旧赛季	jiu sai ji	100
 鸠山由纪夫	jiu shan you ji fu	100
 鸠山镇	jiu shan zhen	100
+九少主	jiu shao zhu	100
 九神龙	jiu shen long	100
 救生包	jiu sheng bao	100
 救生哨	jiu sheng shao	100
@@ -13752,6 +13969,7 @@ sort: by_weight
 救下急	jiu xia ji	100
 救下来了	jiu xia lai le	100
 九仙阁	jiu xian ge	100
+九小区	jiu xiao qu	100
 九心海棠	jiu xin hai tang	100
 九星连珠	jiu xing lian zhu	100
 就业优先	jiu ye you xian	100
@@ -13759,6 +13977,7 @@ sort: by_weight
 九亿次	jiu yi ci	100
 就一关	jiu yi guan	100
 旧衣回收	jiu yi hui shou	100
+就一科	jiu yi ke	100
 九又四分之三	jiu you si fen zhi san	100
 旧雨重落	jiu yu chong luo	100
 九元航空	jiu yuan hang kong	100
@@ -13794,6 +14013,7 @@ sort: by_weight
 旧张屯	jiu zhang tun	100
 就这么买	jiu zhe me mai	100
 九折券	jiu zhe quan	100
+旧珍宝	jiu zhen bao	100
 救治能力	jiu zhi neng li	100
 九州池	jiu zhou chi	100
 九周岁	jiu zhou sui	100
@@ -13829,6 +14049,7 @@ sort: by_weight
 拒服兵役	ju fu bing yi	100
 聚福城	ju fu cheng	100
 聚福气	ju fu qi	100
+举高点	ju gao dian	100
 惧高症	ju gao zheng	100
 鞠躬道歉	ju gong dao qian	100
 莒国古城	ju guo gu cheng	100
@@ -13842,6 +14063,7 @@ sort: by_weight
 居家男人	ju jia nan ren	100
 居家上班	ju jia shang ban	100
 居家学习	ju jia xue xi	100
+居家治疗	ju jia zhi liao	100
 巨简单	ju jian dan	100
 举荐信	ju jian xin	100
 橘金气泡	ju jin qi pao	100
@@ -14292,6 +14514,7 @@ sort: by_weight
 看好了没	kan hao le mei	100
 看好时间	kan hao shi jian	100
 看荷花	kan he hua	100
+看核酸	kan he suan	100
 看红叶	kan hong ye	100
 看后续	kan hou xu	100
 看花灯	kan hua deng	100
@@ -14329,6 +14552,7 @@ sort: by_weight
 看排名	kan pai ming	100
 看评分	kan ping fen	100
 看评论区	kan ping lun qu	100
+看评论去	kan ping lun qu	100
 看乒乓球	kan ping pang qiu	100
 看球呀	kan qiu ya	100
 看全集	kan quan ji	100
@@ -14420,9 +14644,11 @@ sort: by_weight
 抗疫英雄	kang yi ying xiong	100
 抗疫志愿者	kang yi zhi yuan zhe	100
 抗原测试	kang yuan ce shi	100
+抗原盒	kang yuan he	100
 抗原检测	kang yuan jian ce	100
 抗原试剂	kang yuan shi ji	100
 抗原体	kang yuan ti	100
+抗原阳	kang yuan yang	100
 抗原异常	kang yuan yi chang	100
 抗战精神	kang zhan jing shen	100
 抗战英雄	kang zhan ying xiong	100
@@ -14670,6 +14896,7 @@ sort: by_weight
 科目六	ke mu liu	100
 柯暮卿	ke mu qing	100
 科目五	ke mu wu	100
+科纳特	ke na te	100
 科内柳斯	ke nei liu si	100
 可能回不去	ke neng hui bu qu	100
 科帕奖	ke pa jiang	100
@@ -14689,6 +14916,7 @@ sort: by_weight
 科塔娜	ke ta na	100
 可调剂	ke tiao ji	100
 克图格亚	ke tu ge ya	100
+科拓生物	ke tuo sheng wu	100
 科瓦契奇	ke wa qi qi	100
 课外古诗	ke wai gu shi	100
 课外古诗词	ke wai gu shi ci	100
@@ -14754,6 +14982,7 @@ sort: by_weight
 可以互换	ke yi hu huan	100
 可以换一下	ke yi huan yi xia	100
 科艺节	ke yi jie	100
+可以借考	ke yi jie kao	100
 可以接种	ke yi jie zhong	100
 可以进出	ke yi jin chu	100
 可以开空调	ke yi kai kong tiao	100
@@ -14761,6 +14990,7 @@ sort: by_weight
 可以看电影	ke yi kan dian ying	100
 可以考研	ke yi kao yan	100
 科一科二	ke yi ke er	100
+科一没过	ke yi mo guo	100
 可以评论	ke yi ping lun	100
 可以送我	ke yi song wo	100
 可以堂食	ke yi tang shi	100
@@ -14802,6 +15032,7 @@ sort: by_weight
 恐婚恐育	kong hun kong yu	100
 恐婚恐孕	kong hun kong yun	100
 空间互赞	kong jian hu zan	100
+空居力	kong ju li	100
 空军节	kong jun jie	100
 孔令奇	kong ling qi	100
 空灵兽	kong ling shou	100
@@ -14920,6 +15151,7 @@ sort: by_weight
 跨时空	kua shi kong	100
 跨系统	kua xi tong	100
 跨性别者	kua xing bie zhe	100
+跨月了	kua yue le	100
 跨越时空	kua yue shi kong	100
 快餐时代	kuai can shi dai	100
 快出道	kuai chu dao	100
@@ -14927,6 +15159,7 @@ sort: by_weight
 块村营	kuai cun ying	100
 快倒闭	kuai dao bi	100
 快到家	kuai dao jia	100
+快递不通	kuai di bu tong	100
 快递单号查询	kuai di dan hao cha xun	100
 快递盒子	kuai di he zi	100
 快递进不来	kuai di jin bu lai	100
@@ -15055,6 +15288,7 @@ sort: by_weight
 辣斗辣	la dou la	100
 拉杜丽	la du li	100
 拉尔萨	la er sa	100
+拉防空警报了	la fang kong jing bao le	100
 拉夫德鲁	la fu de lu	100
 拉弗曲线	la fu qu xian	100
 拉格斐	la ge fei	100
@@ -15065,6 +15299,8 @@ sort: by_weight
 辣椒种子	la jiao zhong zi	100
 拉筋板	la jin ban	100
 拉警报	la jing bao	100
+拉警报了	la jing bao le	100
+拉警笛	la jing di	100
 蜡炬成灰	la ju cheng hui	100
 拉卡德	la ka de	100
 拉开差距	la kai cha ju	100
@@ -15262,6 +15498,7 @@ sort: by_weight
 浪费流量	lang fei liu liang	100
 浪费食物	lang fei shi wu	100
 朗格莱	lang ge lai	100
+狼顾之相	lang gu zhi xiang	100
 郎鹤焱	lang he yan	100
 浪拉山情	lang la shan qing	100
 浪流连	lang liu lian	100
@@ -15341,6 +15578,7 @@ sort: by_weight
 捞捞我	lao lao wo	100
 牢牢掌握	lao lao zhang wo	100
 老连长	lao lian zhang	100
+老六图	lao liu tu	100
 老泸州	lao lu zhou	100
 劳伦斯先生	lao lun si xian sheng	100
 老埋汰	lao mai tai	100
@@ -15559,6 +15797,7 @@ sort: by_weight
 李发彬	li fa bin	100
 立法为民	li fa wei min	100
 李芳慧	li fang hui	100
+理肺丸	li fei wan	100
 立丰城	li feng cheng	100
 李凤萍	li feng ping	100
 李丰田	li feng tian	100
@@ -15778,6 +16017,7 @@ sort: by_weight
 李廷松	li ting song	100
 李图图	li tu tu	100
 利托里奥	li tuo li ao	100
+利瓦亚	li wa ya	100
 荔湾湖	li wan hu	100
 李婉华	li wan hua	100
 李万君	li wan jun	100
@@ -15806,6 +16046,7 @@ sort: by_weight
 离校返乡	li xiao fan xiang	100
 李小满	li xiao man	100
 李孝谦	li xiao qian	100
+离校前	li xiao qian	100
 李晓蓉	li xiao rong	100
 离校手续	li xiao shou xu	100
 离校证明	li xiao zheng ming	100
@@ -15969,6 +16210,7 @@ sort: by_weight
 恋语市	lian yu shi	100
 连云山	lian yun shan	100
 连着上	lian zhe shang	100
+廉政狙击	lian zheng ju ji	100
 联珠村	lian zhu cun	100
 脸撞脸	lian zhuang lian	100
 莲子壳	lian zi ke	100
@@ -15990,6 +16232,8 @@ sort: by_weight
 两不愁三保障	liang bu chou san bao zhang	100
 两部电影	liang bu dian ying	100
 两不疑	liang bu yi	100
+两层被子	liang ceng bei zi	100
+两传一射	liang chuan yi she	100
 两床被子	liang chuang bei zi	100
 两次核酸	liang ci he suan	100
 两大一小	liang da yi xiao	100
@@ -16018,6 +16262,7 @@ sort: by_weight
 两冠一亚	liang guan yi ya	100
 梁海源	liang hai yuan	100
 两行字	liang hang zi	100
+梁惠玲	liang hui ling	100
 梁慧星	liang hui xing	100
 两架飞机	liang jia fei ji	100
 梁嘉鸿	liang jia hong	100
@@ -16032,6 +16277,7 @@ sort: by_weight
 靓丽风景线	liang li feng jing xian	100
 梁丽英	liang li ying	100
 两连冠	liang lian guan	100
+两连扑	liang lian pu	100
 靓靓姐	liang liang jie	100
 两路精神	liang lu jing shen	100
 两轮核酸	liang lun he suan	100
@@ -16282,6 +16528,7 @@ sort: by_weight
 林昀儒	lin yun ru	100
 林珍娜	lin zhen na	100
 林智妍	lin zhi yan	100
+临终病房	lin zhong bing fang	100
 林中奇遇	lin zhong qi yu	100
 林子烨	lin zi ye	100
 零八年	ling ba nian	100
@@ -16304,6 +16551,7 @@ sort: by_weight
 灵动岛	ling dong dao	100
 零度时评	ling du shi ping	100
 领访客	ling fang ke	100
+零封奖金	ling feng jiang jin	100
 领风者	ling feng zhe	100
 领福袋	ling fu dai	100
 领福利	ling fu li	100
@@ -16400,6 +16648,7 @@ sort: by_weight
 灵异故事	ling yi gu shi	100
 灵异咒	ling yi zhou	100
 灵异组	ling yi zu	100
+领原石	ling yuan shi	100
 领月饼	ling yue bing	100
 凌云彻	ling yun che	100
 凌云峰	ling yun feng	100
@@ -16471,6 +16720,7 @@ sort: by_weight
 刘朵朵	liu duo duo	100
 柳二龙	liu er long	100
 流放地	liu fang di	100
+流芳校区	liu fang xiao qu	100
 刘凤瑶	liu feng yao	100
 柳扶风	liu fu feng	100
 刘福星	liu fu xing	100
@@ -16574,6 +16824,7 @@ sort: by_weight
 六七十分	liu qi shi fen	100
 六千多例	liu qian duo li	100
 柳青瑶	liu qing yao	100
+刘渠子	liu qu zi	100
 六日一	liu ri yi	100
 刘睿哲	liu rui zhe	100
 留三分	liu san fen	100
@@ -16751,6 +17002,7 @@ sort: by_weight
 龙神联盟	long shen lian meng	100
 龙神丸	long shen wan	100
 龙狮城	long shi cheng	100
+龙狮桥	long shi qiao	100
 龙属性	long shu xing	100
 龙水河	long shui he	100
 龙顺园	long shun yuan	100
@@ -17012,6 +17264,7 @@ sort: by_weight
 洛里昂	luo li ang	100
 萝莉队	luo li dui	100
 萝莉节	luo li jie	100
+洛里斯	luo li si	100
 落落莓	luo luo mei	100
 罗马尼	luo ma ni	100
 罗马诺	luo ma nuo	100
@@ -17122,6 +17375,7 @@ sort: by_weight
 掠宝清单	lve bao qing dan	100
 略伦特	lve lun te	100
 掠食城市	lve shi cheng shi	100
+略微出手	lve wei chu shou	100
 略无阙处	lve wu que chu	100
 骂不得	ma bu de	100
 麻步镇	ma bu zhen	100
@@ -17151,6 +17405,7 @@ sort: by_weight
 玛格丽	ma ge li	100
 马格利特	ma ge li te	100
 马格纳斯	ma ge na si	100
+玛格瑞	ma ge rui	100
 麻姑节	ma gu jie	100
 马谷田	ma gu tian	100
 马圭尔	ma gui er	100
@@ -17224,7 +17479,6 @@ sort: by_weight
 玛瑟里顿	ma se li dun	100
 玛莎已死	ma sha yi si	100
 马山街道	ma shan jie dao	100
-码上办事	ma shang ban shi	100
 马上就出	ma shang jiu chu	100
 马上下单	ma shang xia dan	100
 码上优惠	ma shang you hui	100
@@ -17272,7 +17526,9 @@ sort: by_weight
 蚂蚁牙黑	ma yi ya hei	100
 蚂蚁腰	ma yi yao	100
 马依依	ma yi yi	100
+蚂蚁在爬	ma yi zai pa	100
 马吟吟	ma yin yin	100
+马蝇幼虫	ma ying you chong	100
 马有铁	ma you tie	100
 马宇骏	ma yu jun	100
 马玉灵	ma yu ling	100
@@ -17725,6 +17981,7 @@ sort: by_weight
 没观众	mei guan zhong	100
 玫瑰到了花期	mei gui dao le hua qi	100
 玫瑰豆沙	mei gui dou sha	100
+玫瑰花丛	mei gui hua cong	100
 玫瑰窃贼	mei gui qie zei	100
 玫瑰少女	mei gui shao nv	100
 玫瑰挞	mei gui ta	100
@@ -17800,6 +18057,7 @@ sort: by_weight
 没开水	mei kai shui	100
 没开庭	mei kai ting	100
 没看直播	mei kan zhi bo	100
+没抗原	mei kang yuan	100
 没考成	mei kao cheng	100
 没考点	mei kao dian	100
 没哭出来	mei ku chu lai	100
@@ -17864,6 +18122,7 @@ sort: by_weight
 没抢到票	mei qiang dao piao	100
 没敲门	mei qiao men	100
 没情人	mei qing ren	100
+没球看	mei qiu kan	100
 没群发	mei qun fa	100
 没染过	mei ran guo	100
 没让看	mei rang kan	100
@@ -17899,6 +18158,7 @@ sort: by_weight
 没上热搜	mei shang re sou	100
 没上王者	mei shang wang zhe	100
 没上映	mei shang ying	100
+没上主力	mei shang zhu li	100
 没少买	mei shao mai	100
 没摄像头	mei she xiang tou	100
 没什么不同	mei shen me bu tong	100
@@ -17970,6 +18230,7 @@ sort: by_weight
 没线权	mei xian quan	100
 没校车	mei xiao che	100
 没校服	mei xiao fu	100
+梅晓歌	mei xiao ge	100
 没写对	mei xie dui	100
 没写上	mei xie shang	100
 没卸妆	mei xie zhuang	100
@@ -18089,6 +18350,7 @@ sort: by_weight
 门都没出	men dou mei chu	100
 门将出击	men jiang chu ji	100
 门将受伤	men jiang shou shang	100
+门客榜	men ke bang	100
 门铃码	men ling ma	100
 门票多少	men piao duo shao	100
 门票钱	men piao qian	100
@@ -18253,6 +18515,7 @@ sort: by_weight
 面对镜头	mian dui jing tou	100
 面对冥龙	mian dui ming long	100
 面对疫情	mian dui yi qing	100
+免费点	mian fei dian	100
 免费改名	mian fei gai ming	100
 免费开放	mian fei kai fang	100
 免费师范生	mian fei shi fan sheng	100
@@ -18260,8 +18523,10 @@ sort: by_weight
 免费退票	mian fei tui piao	100
 免费游	mian fei you	100
 免过路费	mian guo lu fei	100
+棉花雪	mian hua xue	100
 缅怀革命	mian huai ge ming	100
 缅怀革命先烈	mian huai ge ming xian lie	100
+缅怀功绩	mian huai gong ji	100
 缅怀先辈	mian huai xian bei	100
 缅怀英烈	mian huai ying lie	100
 面会菜	mian hui cai	100
@@ -18269,9 +18534,11 @@ sort: by_weight
 棉密码	mian mi ma	100
 缅邈岁月	mian miao sui yue	100
 免配送费	mian pei song fei	100
+绵山风景区	mian shan feng jing qu	100
 绵山镇	mian shan zhen	100
 免申报	mian shen bao	100
 面试报名	mian shi bao ming	100
+面试的苦	mian shi de ku	100
 面试分	mian shi fen	100
 面试加油	mian shi jia you	100
 面试名单	mian shi ming dan	100
@@ -18362,6 +18629,7 @@ sort: by_weight
 鸣翠柳	ming cui liu	100
 明大德	ming da de	100
 名刀月隐	ming dao yue yin	100
+鸣笛三分钟	ming di san fen zhong	100
 鸣皋镇	ming gao zhen	100
 明个见	ming ge jian	100
 明光铠	ming guang kai	100
@@ -18371,6 +18639,7 @@ sort: by_weight
 铭记历史	ming ji li shi	100
 名剑杯	ming jian bei	100
 鸣剑曳影	ming jian ye ying	100
+鸣警报	ming jing bao	100
 名景花园	ming jing hua yuan	100
 名句默写	ming ju mo xie	100
 明克街	ming ke jie	100
@@ -18473,6 +18742,7 @@ sort: by_weight
 洺悦城	ming yue cheng	100
 明月镜片	ming yue jing pian	100
 命运航班	ming yun hang ban	100
+命运连结	ming yun lian jie	100
 命运与共	ming yun yu gong	100
 明蕴镇	ming yun zhen	100
 明早八点	ming zao ba dian	100
@@ -18565,6 +18835,7 @@ sort: by_weight
 魔晶矿	mo jing kuang	100
 摩可纳	mo ke na	100
 摩拉克斯	mo la ke si	100
+莫兰德	mo lan de	100
 莫雷高德	mo lei gao de	100
 莫雷加德	mo lei jia de	100
 茉莉公主	mo li gong zhu	100
@@ -18575,6 +18846,7 @@ sort: by_weight
 秣陵镇	mo ling zhen	100
 魔龙院	mo long yuan	100
 末路天堂	mo lu tian tang	100
+摩洛克	mo luo ke	100
 莫马达	mo ma da	100
 默默奉献	mo mo feng xian	100
 默默祈祷	mo mo qi dao	100
@@ -18725,6 +18997,7 @@ sort: by_weight
 穆祉丞	mu zhi cheng	100
 母子平安	mu zi ping an	100
 慕子期	mu zi qi	100
+姆总监	mu zong jian	100
 哪边赢	na bian ying	100
 拿不过去	na bu guo qu	100
 那不是爱情	na bu shi ai qing	100
@@ -18905,6 +19178,7 @@ sort: by_weight
 男乘客	nan cheng ke	100
 难吃死	nan chi si	100
 南翠屏	nan cui ping	100
+南存辉	nan cun hui	100
 南村万博	nan cun wan bo	100
 南大附中	nan da fu zhong	100
 南达汗	nan da han	100
@@ -19148,6 +19422,7 @@ sort: by_weight
 能使鬼推磨	neng shi gui tui mo	100
 能收到不	neng shou dao bu	100
 能堂食	neng tang shi	100
+能堂食了	neng tang shi le	100
 能体验	neng ti yan	100
 能调剂	neng tiao ji	100
 能听到不	neng ting dao bu	100
@@ -19425,6 +19700,7 @@ sort: by_weight
 怒翼龙	nu yi long	100
 怒之铁拳	nu zhi tie quan	100
 暖和一点	nuan huo yi dian	100
+暖脚脚	nuan jiao jiao	100
 暖暖身子	nuan nuan shen zi	100
 暖气不热	nuan qi bu re	100
 暖气来了	nuan qi lai le	100
@@ -19564,6 +19840,7 @@ sort: by_weight
 帕奇特侬	pa qi te nong	100
 帕恰狗	pa qia gou	100
 帕丘卡	pa qiu ka	100
+帕萨利奇	pa sa li qi	100
 怕塞车	pa sai che	100
 怕晒黑	pa shai hei	100
 帕斯卡尔	pa si ka er	100
@@ -19650,6 +19927,7 @@ sort: by_weight
 潘家华	pan jia hua	100
 潘杰希尔	pan jie xi er	100
 潘俊文	pan jun wen	100
+潘懋元	pan mao yuan	100
 潘神的迷宫	pan shen de mi gong	100
 潘甜甜	pan tian tian	100
 磐田喜悦	pan tian xi yue	100
@@ -19887,6 +20165,7 @@ sort: by_weight
 拼卡吗	pin ka ma	100
 贫困认定	pin kun ren ding	100
 贫困申请	pin kun shen qing	100
+拼免疫力	pin mian yi li	100
 品牌场	pin pai chang	100
 品牌大使	pin pai da shi	100
 品牌代言人	pin pai dai yan ren	100
@@ -20007,6 +20286,7 @@ sort: by_weight
 浦坝港镇	pu ba gang zhen	100
 普遍低	pu bian di	100
 普遍高	pu bian gao	100
+扑出去了	pu chu qu le	100
 铺床单	pu chuang dan	100
 浦大喜奔	pu da xi ben	100
 扑的好	pu de hao	100
@@ -20048,6 +20328,7 @@ sort: by_weight
 噗噗叽叽	pu pu ji ji	100
 普奇神父	pu qi shen fu	100
 普瑞赛斯	pu rui sai si	100
+葡萄测糖师	pu tao ce tang shi	100
 葡萄成熟时	pu tao cheng shu shi	100
 葡萄冻	pu tao dong	100
 葡萄芋圆	pu tao yu yuan	100
@@ -20092,6 +20373,7 @@ sort: by_weight
 七比一	qi bi yi	100
 岐伯山	qi bo shan	100
 七彩假期	qi cai jia qi	100
+七彩水汇	qi cai shui hui	100
 七彩云端	qi cai yun duan	100
 弃车逃跑	qi che tao pao	100
 启程苑	qi cheng yuan	100
@@ -20320,6 +20602,7 @@ sort: by_weight
 戚砚笛	qi yan di	100
 企业代码	qi ye dai ma	100
 齐耶赫	qi ye he	100
+七页纸	qi ye zhi	100
 七一活动	qi yi huo dong	100
 七一建党	qi yi jian dang	100
 七一建党节	qi yi jian dang jie	100
@@ -20407,6 +20690,7 @@ sort: by_weight
 浅发一下	qian fa yi xia	100
 遣返回家	qian fan hui jia	100
 前方道路	qian fang dao lu	100
+千防万防	qian fang wan fang	100
 前方拥堵	qian fang yong du	100
 前俸伯	qian feng bo	100
 乾丰园	qian feng yuan	100
@@ -20624,6 +20908,7 @@ sort: by_weight
 枪之恶魔	qiang zhi e mo	100
 枪支议定书	qiang zhi yi ding shu	100
 强殖装甲	qiang zhi zhuang jia	100
+羌族小煞	qiang zu xiao sha	100
 强作风	qiang zuo feng	100
 桥本大辉	qiao ben da hui	100
 敲不动	qiao bu dong	100
@@ -20711,6 +20996,7 @@ sort: by_weight
 亲生父亲	qin sheng fu qin	100
 亲生母亲	qin sheng mu qin	100
 侵蚀度	qin shi du	100
+亲手画的	qin shou hua de	100
 亲属码	qin shu ma	100
 覃思阳	qin si yang	100
 琴亭湖	qin ting hu	100
@@ -20793,9 +21079,11 @@ sort: by_weight
 青枫公园	qing feng gong yuan	100
 清风街	qing feng jie	100
 情感纠纷	qing gan jiu fen	100
+清感颗粒	qing gan ke li	100
 情感陶冶	qing gan tao ye	100
 情感主播	qing gan zhu bo	100
 青岗集	qing gang ji	100
+轻工城	qing gong cheng	100
 情公主	qing gong zhu	100
 清购物车	qing gou wu che	100
 青谷子	qing gu zi	100
@@ -20899,6 +21187,7 @@ sort: by_weight
 清平花园	qing ping hua yuan	100
 情起而深	qing qi er shen	100
 擎旗手	qing qi shou	100
+倾奇者	qing qi zhe	100
 青洽会	qing qia hui	100
 请签收	qing qian shou	100
 倾情回馈	qing qing hui kui	100
@@ -20988,6 +21277,7 @@ sort: by_weight
 庆云顶	qing yun ding	100
 青云台	qing yun tai	100
 青沼英二	qing zhao ying er	100
+轻症状	qing zheng zhuang	100
 青之芦苇	qing zhi lu wei	100
 青州兵	qing zhou bing	100
 青州古城	qing zhou gu cheng	100
@@ -21145,8 +21435,10 @@ sort: by_weight
 去污笔	qu wu bi	100
 去峡谷	qu xia gu	100
 取消读秒	qu xiao du miao	100
+取消核酸了	qu xiao he suan le	100
 取消双休	qu xiao shuang xiu	100
 取消退款	qu xiao tui kuan	100
+曲兴镇	qu xing zhen	100
 去学校了	qu xue xiao le	100
 去学校没	qu xue xiao mei	100
 去学校写	qu xue xiao xie	100
@@ -21217,6 +21509,7 @@ sort: by_weight
 全国计算机	quan guo ji suan ji	100
 全国交通	quan guo jiao tong	100
 全国经济	quan guo jing ji	100
+全过啦	quan guo la	100
 全国联赛	quan guo lian sai	100
 全国人口	quan guo ren kou	100
 全国少工委	quan guo shao gong wei	100
@@ -21234,6 +21527,7 @@ sort: by_weight
 全家出动	quan jia chu dong	100
 全锦赛	quan jin sai	100
 全金属狂潮	quan jin shu kuang chao	100
+全剧终了	quan ju zhong liao	100
 全军突击	quan jun tu ji	100
 全开者	quan kai zhe	100
 全靠抖	quan kao dou	100
@@ -21258,6 +21552,7 @@ sort: by_weight
 全面加强	quan mian jia qiang	100
 全面建成	quan mian jian cheng	100
 全面解封	quan mian jie feng	100
+全面解封了	quan mian jie feng le	100
 全面开放	quan mian kai fang	100
 全面开花	quan mian kai hua	100
 全面抗战	quan mian kang zhan	100
@@ -21283,6 +21578,7 @@ sort: by_weight
 全民守法	quan min shou fa	100
 全民消防	quan min xiao fang	100
 犬鸣村	quan ming cun	100
+全没过	quan mo guo	100
 权娜拉	quan na la	100
 全南京	quan nan jing	100
 全能乳液	quan neng ru ye	100
@@ -21327,6 +21623,7 @@ sort: by_weight
 全体老师	quan ti lao shi	100
 权田修一	quan tian xiu yi	100
 全贴合	quan tie he	100
+全停服了	quan ting fu le	100
 拳头硬	quan tou ying	100
 全图视野	quan tu shi ye	100
 圈外女友	quan wai nv you	100
@@ -21606,6 +21903,7 @@ sort: by_weight
 人也很多	ren ye hen duo	100
 任意换	ren yi huan	100
 任意卡	ren yi ka	100
+忍一天	ren yi tian	100
 任意消费	ren yi xiao fei	100
 壬寅虎年	ren yin hu nian	100
 壬寅年	ren yin nian	100
@@ -21658,6 +21956,7 @@ sort: by_weight
 日本街	ri ben jie	100
 日本军旗	ri ben jun qi	100
 日本神社	ri ben shen she	100
+日本胜	ri ben sheng	100
 日本网友	ri ben wang you	100
 日本右翼	ri ben you yi	100
 日本战败	ri ben zhan bai	100
@@ -21791,6 +22090,7 @@ sort: by_weight
 如诗如歌	ru shi ru ge	100
 入室行凶	ru shi xing xiong	100
 如他所愿	ru ta suo yuan	100
+入泰返泰	ru tai fan tai	100
 入围作品	ru wei zuo pin	100
 如我所见	ru wo suo jian	100
 如我所料	ru wo suo liao	100
@@ -21843,6 +22143,7 @@ sort: by_weight
 瑞旺园	rui wang yuan	100
 润禾材料	run he cai liao	100
 润园里	run yuan li	100
+润泽苑	run ze yuan	100
 润泽悦溪	run ze yue xi	100
 箬横镇	ruo heng zhen	100
 若林源三	ruo lin yuan san	100
@@ -21850,6 +22151,7 @@ sort: by_weight
 弱鸟先飞	ruo niao xian fei	100
 若日尼奥	ruo ri ni ao	100
 弱势者	ruo shi zhe	100
+弱阳了	ruo yang le	100
 若有战	ruo you zhan	100
 弱转强	ruo zhuan qiang	100
 萨比策	sa bi ce	100
@@ -21865,6 +22167,7 @@ sort: by_weight
 撒娇鬼	sa jiao gui	100
 撒娇女人	sa jiao nv ren	100
 萨科塔	sa ke ta	100
+萨拉维亚	sa la wei ya	100
 萨利巴	sa li ba	100
 萨里奇	sa li qi	100
 萨利苏	sa li su	100
@@ -21901,7 +22204,9 @@ sort: by_weight
 赛拉斯	sai la si	100
 赛利卡	sai li ka	100
 赛力斯	sai li si	100
+赛林威	sai lin wei	100
 塞伦盖蒂	sai lun gai di	100
+赛洛唑啉	sai luo zuo lin	100
 赛马节	sai ma jie	100
 赛马娘	sai ma niang	100
 赛弥尔	sai mi er	100
@@ -21954,6 +22259,7 @@ sort: by_weight
 三长一短	san chang yi duan	100
 三车道	san che dao	100
 三串四	san chuan si	100
+三床被子	san chuang bei zi	100
 三春里	san chun li	100
 三次分配	san ci fen pei	100
 三大赛	san da sai	100
@@ -22021,18 +22327,22 @@ sort: by_weight
 散居片	san ju pian	100
 三军仪仗队	san jun yi zhang dui	100
 三康庙	san kang miao	100
+三科全过	san ke quan guo	100
 三颗心	san ke xin	100
 三块八	san kuai ba	100
 三块广告牌	san kuai guang gao pai	100
+三宽教育	san kuan jiao yu	100
 三荔高速	san li gao su	100
 三里花城	san li hua cheng	100
 三礼六聘	san li liu pin	100
 三立新闻	san li xin wen	100
 三连复刻	san lian fu ke	100
 三连扑	san lian pu	100
+三连射	san lian she	100
 三连输	san lian shu	100
 三连休	san lian xiu	100
 三联学院	san lian xue yuan	100
+三零一	san ling yi	100
 三毛多	san mao duo	100
 三毛缟斑	san mao gao ban	100
 三毛五	san mao wu	100
@@ -22072,6 +22382,7 @@ sort: by_weight
 三少爷的剑	san shao ye de jian	100
 三生三幸	san sheng san xing	100
 三圣一帝	san sheng yi di	100
+三十八度多	san shi ba du duo	100
 三十多张	san shi duo zhang	100
 三十而已	san shi er yi	100
 三狮军团	san shi jun tuan	100
@@ -22125,6 +22436,8 @@ sort: by_weight
 三新一高	san xin yi gao	100
 三星十子	san xing shi zi	100
 三形态	san xing tai	100
+三星五费	san xing wu fei	100
+三型五化	san xing wu hua	100
 三星霞	san xing xia	100
 三星亚索	san xing ya suo	100
 三兄妹	san xiong mei	100
@@ -22218,6 +22531,8 @@ sort: by_weight
 鲨齿龙	sha chi long	100
 沙德尔	sha de er	100
 杀敌一千	sha di yi qian	100
+啥都不差	sha dou bu cha	100
+啥都不查	sha dou bu cha	100
 鲨疯了	sha feng le	100
 杀父仇人	sha fu chou ren	100
 沙钢股份	sha gang gu fen	100
@@ -22278,6 +22593,7 @@ sort: by_weight
 沙之守护	sha zhi shou hu	100
 砂珠巷	sha zhu xiang	100
 啥专业	sha zhuan ye	100
+沙子雪	sha zi xue	100
 沙嘴村	sha zui cun	100
 晒晒被子	shai shai bei zi	100
 汕北大道	shan bei da dao	100
@@ -22395,6 +22711,7 @@ sort: by_weight
 闪耀走秀	shan yao zou xiu	100
 山叶口	shan ye kou	100
 山一大	shan yi da	100
+山医专	shan yi zhuan	100
 山尹村	shan yin cun	100
 善于创造	shan yu chuang zao	100
 善于斗争	shan yu dou zheng	100
@@ -22589,6 +22906,7 @@ sort: by_weight
 少开车	shao kai che	100
 烧烤棍	shao kao gun	100
 烧垃圾	shao la ji	100
+烧两天	shao liang tian	100
 少年汉尼拔	shao nian han ni ba	100
 少年美	shao nian mei	100
 少年派二	shao nian pai er	100
@@ -22610,6 +22928,7 @@ sort: by_weight
 少一本	shao yi ben	100
 绍伊古	shao yi gu	100
 少一颗	shao yi ke	100
+烧一天	shao yi tian	100
 邵雨轩	shao yu xuan	100
 邵园乡	shao yuan xiang	100
 少煮点	shao zhu dian	100
@@ -22687,6 +23006,7 @@ sort: by_weight
 身材火辣	shen cai huo la	100
 蜃彩流	shen cai liu	100
 申城佳苑	shen cheng jia yuan	100
+深城交	shen cheng jiao	100
 神驰机电	shen chi ji dian	100
 沈大人	shen da ren	100
 沈大伟	shen da wei	100
@@ -22878,6 +23198,7 @@ sort: by_weight
 神预判	shen yu pan	100
 深渊法师	shen yuan fa shi	100
 深渊季	shen yuan ji	100
+神月谷	shen yue gu	100
 沈载伦	shen zai lun	100
 神张辽	shen zhang liao	100
 深圳场	shen zhen chang	100
@@ -22936,6 +23257,7 @@ sort: by_weight
 生豆芽	sheng dou ya	100
 圣盾龙	sheng dun long	100
 生而不养	sheng er bu yang	100
+省二钢	sheng er gang	100
 生而高贵	sheng er gao gui	100
 生而平凡	sheng er ping fan	100
 生而为赢	sheng er wei ying	100
@@ -23036,6 +23358,7 @@ sort: by_weight
 盛世福	sheng shi fu	100
 盛事通	sheng shi tong	100
 盛世中华	sheng shi zhong hua	100
+省属高校	sheng shu gao xiao	100
 圣水寺	sheng shui si	100
 圣水苑	sheng shui yuan	100
 生死不明	sheng si bu ming	100
@@ -23047,6 +23370,7 @@ sort: by_weight
 生态家园	sheng tai jia yuan	100
 生态问题	sheng tai wen ti	100
 省泰中	sheng tai zhong	100
+圣体菇	sheng ti gu	100
 省统测	sheng tong ce	100
 省统考	sheng tong kao	100
 盛屯矿业	sheng tun kuang ye	100
@@ -23172,6 +23496,7 @@ sort: by_weight
 示范卷	shi fan juan	100
 师范专业	shi fan zhuan ye	100
 仕方国际	shi fang guo ji	100
+是放开了	shi fang kai le	100
 释放自我	shi fang zi wo	100
 石缝瓜	shi feng gua	100
 始丰街道	shi feng jie dao	100
@@ -23180,6 +23505,7 @@ sort: by_weight
 实付价格	shi fu jia ge	100
 石富宽	shi fu kuan	100
 石夫人	shi fu ren	100
+是福是祸	shi fu shi huo	100
 食腐者	shi fu zhe	100
 实干担当	shi gan dan dang	100
 实干为要	shi gan wei yao	100
@@ -23241,6 +23567,7 @@ sort: by_weight
 拾惠节	shi hui jie	100
 噬魂斩	shi hun zhan	100
 世纪大劫案	shi ji da jie an	100
+十几盒	shi ji he	100
 世纪酒店	shi ji jiu dian	100
 十几厘米	shi ji li mi	100
 实际年龄	shi ji nian ling	100
@@ -23263,6 +23590,7 @@ sort: by_weight
 时间回溯	shi jian hui su	100
 实践教程	shi jian jiao cheng	100
 时间尽头	shi jian jin tou	100
+事件牌	shi jian pai	100
 时间神殿	shi jian shen dian	100
 实践特色	shi jian te se	100
 时间未到	shi jian wei dao	100
@@ -23565,6 +23893,7 @@ sort: by_weight
 事业旺	shi ye wang	100
 事业蒸蒸日上	shi ye zheng zheng ri shang	100
 世业洲	shi ye zhou	100
+十一倍	shi yi bei	100
 十一仓	shi yi cang	100
 拾忆长安	shi yi chang an	100
 十一长假	shi yi chang jia	100
@@ -23749,6 +24078,7 @@ sort: by_weight
 手快有	shou kuai you	100
 收蜡烛	shou la zhu	100
 手拉着手	shou la zhuo shou	100
+手冷死了	shou leng si le	100
 受力面积	shou li mian ji	100
 手里有粮	shou li you liang	100
 收粮食	shou liang shi	100
@@ -23810,6 +24140,7 @@ sort: by_weight
 手真巧	shou zhen qiao	100
 守正出新	shou zheng chu xin	100
 守正创新	shou zheng chuang xin	100
+守钟人	shou zhong ren	100
 手中线	shou zhong xian	100
 守住底线	shou zhu di xian	100
 受注闪	shou zhu shan	100
@@ -23848,6 +24179,7 @@ sort: by_weight
 树立目标	shu li mu biao	100
 数量题	shu liang ti	100
 书没读好	shu mei du hao	100
+树莓红	shu mei hong	100
 书面作业	shu mian zuo ye	100
 庶女攻略	shu nv gong lve	100
 淑女剑	shu nv jian	100
@@ -23862,6 +24194,7 @@ sort: by_weight
 术师手册	shu shi shou ce	100
 舒思瑶	shu si yao	100
 输太多了	shu tai duo le	100
+树王菇	shu wang gu	100
 树王圣体菇	shu wang sheng ti gu	100
 熟悉的陌生人	shu xi de mo sheng ren	100
 熟悉的味道	shu xi de wei dao	100
@@ -23902,6 +24235,7 @@ sort: by_weight
 刷个脸	shua ge lian	100
 刷亲密度	shua qin mi du	100
 刷人机	shua ren ji	100
+刷视频去	shua shi pin qu	100
 刷刷乐	shua shua le	100
 刷题本	shua ti ben	100
 刷图点	shua tu dian	100
@@ -24019,6 +24353,7 @@ sort: by_weight
 水冰儿	shui bing er	100
 水波蛋	shui bo dan	100
 睡不热	shui bu re	100
+睡不热乎	shui bu re hu	100
 水稻产量	shui dao chan liang	100
 水稻之父	shui dao zhi fu	100
 睡得太死	shui de tai si	100
@@ -24089,6 +24424,7 @@ sort: by_weight
 水武藏	shui wu zang	100
 睡下铺	shui xia pu	100
 水下之秘	shui xia zhi mi	100
+水乡湾	shui xiang wan	100
 水夜叉	shui ye cha	100
 睡衣卡	shui yi ka	100
 睡衣守护者	shui yi shou hu zhe	100
@@ -24163,6 +24499,7 @@ sort: by_weight
 四杯奶茶	si bei nai cha	100
 四比二	si bi er	100
 四比零	si bi ling	100
+四比零了	si bi ling le	100
 四比三	si bi san	100
 四比一	si bi yi	100
 四比一了	si bi yi le	100
@@ -24241,6 +24578,7 @@ sort: by_weight
 四级过啦	si ji guo la	100
 四季荟	si ji hui	100
 四级加油	si ji jia you	100
+四级考完	si ji kao wan	100
 四级口语	si ji kou yu	100
 四级六级	si ji liu ji	100
 四季轮回	si ji lun hui	100
@@ -24315,6 +24653,7 @@ sort: by_weight
 撕破伤口	si po shang kou	100
 四千多万	si qian duo wan	100
 司庆日	si qing ri	100
+四区三县	si qu san xian	100
 私人电影院	si ren dian ying yuan	100
 四人门	si ren men	100
 四人牵手	si ren qian shou	100
@@ -24352,6 +24691,7 @@ sort: by_weight
 四天课	si tian ke	100
 四天三夜	si tian san ye	100
 四天四检	si tian si jian	100
+斯通斯	si tong si	100
 司徒颜	si tu yan	100
 斯托伊科维奇	si tuo yi ke wei qi	100
 死亡缠绕	si wang chan rao	100
@@ -24548,6 +24888,7 @@ sort: by_weight
 宋宇宁	song yu ning	100
 宋雨绮	song yu qi	100
 宋育仁	song yu ren	100
+送原石	song yuan shi	100
 松园子	song yuan zi	100
 送月饼	song yue bing	100
 送运费险	song yun fei xian	100
@@ -24568,6 +24909,7 @@ sort: by_weight
 搜好友	sou hao you	100
 搜救队	sou jiu dui	100
 搜救人员	sou jiu ren yuan	100
+搜题酱	sou ti jiang	100
 搜同款	sou tong kuan	100
 搜一篇	sou yi pian	100
 苏奥传感	su ao chuan gan	100
@@ -24597,6 +24939,7 @@ sort: by_weight
 苏纶场	su lun chang	100
 素履以往	su lv yi wang	100
 苏玛丽	su ma li	100
+宿命回响	su ming hui xiang	100
 苏明娟	su ming juan	100
 苏木达尔基	su mu da er ji	100
 宿那鬼	su na gui	100
@@ -24785,17 +25128,20 @@ sort: by_weight
 所思所盼	suo si suo pan	100
 所信非神	suo xin fei shen	100
 所以爱会消失	suo yi ai hui xiao shi	100
+所有卡口	suo you ka kou	100
 所有考生	suo you kao sheng	100
 所有美好	suo you mei hao	100
 所有作品	suo you zuo pin	100
 所遇皆温柔	suo yu jie wen rou	100
 所愿皆所得	suo yuan jie suo de	100
+踏鞴砂	ta bei sha	100
 踏鞴物语	ta bei wu yu	100
 它博会	ta bo hui	100
 他不对劲	ta bu dui jin	100
 他不放假	ta bu fang jia	100
 他不冷	ta bu leng	100
 塔猜亚	ta cai ya	100
+她的神话	ta de shen hua	100
 他都没给我	ta dou mei gei wo	100
 他多少分	ta duo shao fen	100
 塔尔德	ta er de	100
@@ -25002,6 +25348,7 @@ sort: by_weight
 太阳圣火	tai yang sheng huo	100
 太阳雪	tai yang xue	100
 太乙城	tai yi cheng	100
+太乙救苦天尊	tai yi jiu ku tian zun	100
 抬一手	tai yi shou	100
 太乙仙魔录	tai yi xian mo lu	100
 太原地铁	tai yuan di tie	100
@@ -25098,6 +25445,7 @@ sort: by_weight
 糖酒巷	tang jiu xiang	100
 唐可可	tang ke ke	100
 唐可心	tang ke xin	100
+汤乐宫	tang le gong	100
 唐莉佳	tang li jia	100
 汤莉莉	tang li li	100
 汤姆布利柏	tang mu bu li bai	100
@@ -25114,6 +25462,7 @@ sort: by_weight
 唐仁健	tang ren jian	100
 唐仁杰	tang ren jie	100
 躺三天	tang san tian	100
+唐僧帽	tang seng mao	100
 唐山打人	tang shan da ren	100
 唐山打人案	tang shan da ren an	100
 唐山打人事件	tang shan da ren shi jian	100
@@ -25131,6 +25480,7 @@ sort: by_weight
 棠下街	tang xia jie	100
 唐晓天	tang xiao tian	100
 唐小樱	tang xiao ying	100
+唐亚阳	tang ya yang	100
 塘晏村	tang yan cun	100
 烫一个	tang yi ge	100
 唐一军	tang yi jun	100
@@ -25283,6 +25633,7 @@ sort: by_weight
 特战行动	te zhan xing dong	100
 特招线	te zhao xian	100
 特征分	te zheng fen	100
+特种蛋	te zhong dan	100
 忒冷啊	tei leng a	100
 忒吓人	tei xia ren	100
 藤本树	teng ben shu	100
@@ -25344,6 +25695,7 @@ sort: by_weight
 提级管理	ti ji guan li	100
 踢假球	ti jia qiu	100
 踢假赛	ti jia sai	100
+踢加时	ti jia shi	100
 替嫁医女	ti jia yi nv	100
 题简单	ti jian dan	100
 提交保存	ti jiao bao cun	100
@@ -25889,6 +26241,7 @@ sort: by_weight
 铜钹山	tong bo shan	100
 同步课堂	tong bu ke tang	100
 同步学	tong bu xue	100
+同步值	tong bu zhi	100
 同步作业	tong bu zuo ye	100
 通常来说	tong chang lai shuo	100
 筒车河	tong che he	100
@@ -25957,6 +26310,7 @@ sort: by_weight
 捅嗓子眼	tong sang zi yan	100
 同上一堂	tong shang yi tang	100
 桐生可可	tong sheng ke ke	100
+通圣丸	tong sheng wan	100
 桐生一马	tong sheng yi ma	100
 同世界	tong shi jie	100
 同时开赛	tong shi kai sai	100
@@ -26009,6 +26363,7 @@ sort: by_weight
 统一意志	tong yi yi zhi	100
 通用规范	tong yong gui fan	100
 童禹坤	tong yu kun	100
+同站换乘	tong zhan huan cheng	100
 统招线	tong zhao xian	100
 同阵容	tong zhen rong	100
 同阵营	tong zhen ying	100
@@ -26128,6 +26483,7 @@ sort: by_weight
 团圆美满	tuan yuan mei man	100
 团圆年	tuan yuan nian	100
 团组织关系	tuan zu zhi guan xi	100
+退不下	tui bu xia	100
 推迟开学	tui chi kai xue	100
 推迟一周	tui chi yi zhou	100
 退出娱乐圈	tui chu yu le quan	100
@@ -26177,6 +26533,7 @@ sort: by_weight
 退一下款	tui yi xia kuan	100
 吞不下	tun bu xia	100
 囤点粮	tun dian liang	100
+囤点药	tun dian yao	100
 囤东西	tun dong xi	100
 囤口罩	tun kou zhao	100
 屯老二	tun lao er	100
@@ -26288,6 +26645,7 @@ sort: by_weight
 外三层	wai san ceng	100
 外省籍	wai sheng ji	100
 外事外语	wai shi wai yu	100
+外松内紧	wai song nei jin	100
 外滩十八号	wai tan shi ba hao	100
 外头冷	wai tou leng	100
 外校城	wai xiao cheng	100
@@ -26310,6 +26668,7 @@ sort: by_weight
 万次郎	wan ci lang	100
 玩大乔	wan da qiao	100
 万弹齐发	wan dan qi fa	100
+玩蛋仔	wan dan zai	100
 弯道快	wan dao kuai	100
 玩得开心不	wan de kai xin bu	100
 万蒂奇	wan di qi	100
@@ -26347,6 +26706,7 @@ sort: by_weight
 万家灯火故事长	wan jia deng huo gu shi chang	100
 万家湖	wan jia hu	100
 万家团圆	wan jia tuan yuan	100
+玩家之声	wan jia zhi sheng	100
 万剑诀	wan jian jue	100
 皖江工	wan jiang gong	100
 皖江工学院	wan jiang gong xue yuan	100
@@ -26415,6 +26775,7 @@ sort: by_weight
 玩三天	wan san tian	100
 丸山彩	wan shan cai	100
 完善体系	wan shan ti xi	100
+玩扇子教程	wan shan zi jiao cheng	100
 晚上吃火锅	wan shang chi huo guo	100
 晚上吃饺子	wan shang chi jiao zi	100
 晚上吃完饭	wan shang chi wan fan	100
@@ -26604,6 +26965,7 @@ sort: by_weight
 王权霸业	wang quan ba ye	100
 王泉泽	wang quan ze	100
 往日时光	wang ri shi guang	100
+王戎不取道旁李	wang rong bu qu dao pang li	100
 王瑞昌	wang rui chang	100
 王睿琦	wang rui qi	100
 望山国际	wang shan guo ji	100
@@ -26632,6 +26994,7 @@ sort: by_weight
 王铁梅	wang tie mei	100
 王婉霏	wang wan fei	100
 汪汪汪汪汪	wang wang wang wang wang	100
+王唯楚	wang wei chu	100
 王维峰	wang wei feng	100
 王伟中	wang wei zhong	100
 汪文斌	wang wen bin	100
@@ -26662,6 +27025,7 @@ sort: by_weight
 王延姬	wang yan ji	100
 王药师	wang yao shi	100
 王爷府	wang ye fu	100
+王冶坪	wang ye ping	100
 王一淳	wang yi chun	100
 王艺迪	wang yi di	100
 王一菲	wang yi fei	100
@@ -26738,6 +27102,7 @@ sort: by_weight
 未曾改变	wei ceng gai bian	100
 未查询到	wei cha xun dao	100
 未查验	wei cha yan	100
+微场景	wei chang jing	100
 微尘里	wei chen li	100
 魏承泽	wei cheng ze	100
 维持生计	wei chi sheng ji	100
@@ -26809,6 +27174,7 @@ sort: by_weight
 卫国戍边	wei guo shu bian	100
 威海疫情	wei hai yi qing	100
 威海职业	wei hai zhi ye	100
+维寒迪	wei han di	100
 维和防暴队	wei he fang bao dui	100
 魏宏宇	wei hong yu	100
 维护党中央	wei hu dang zhong yang	100
@@ -26858,11 +27224,14 @@ sort: by_weight
 未来守护者	wei lai shou hu zhe	100
 纬来体育	wei lai ti yu	100
 未来站	wei lai zhan	100
+未来之役	wei lai zhi yi	100
+未来之翼	wei lai zhi yi	100
 蔚蓝锂芯	wei lan li xin	100
 蔚蓝水岸	wei lan shui an	100
 蔚蓝之美	wei lan zhi mei	100
 威朗普	wei lang pu	100
 为了凑单	wei le cou dan	100
+韦勒图	wei le tu	100
 为了吾王	wei le wu wang	100
 为了这个家	wei le zhe ge jia	100
 未离津	wei li jin	100
@@ -26874,6 +27243,8 @@ sort: by_weight
 伟隆股份	wei long gu fen	100
 未录取	wei lu qu	100
 维伦纽瓦	wei lun niu wa	100
+微旅行	wei lv xing	100
+微旅游	wei lv you	100
 未麻的部屋	wei ma de bu wu	100
 微麻微辣	wei ma wei la	100
 为梦想	wei meng xiang	100
@@ -26937,6 +27308,7 @@ sort: by_weight
 威望皮	wei wang pi	100
 薇薇安娜	wei wei an na	100
 威武之师	wei wu zhi shi	100
+维系者	wei xi zhe	100
 危险地区	wei xian di qu	100
 危险动作	wei xian dong zuo	100
 危险派对	wei xian pai dui	100
@@ -27061,6 +27433,7 @@ sort: by_weight
 温其如玉	wen qi ru yu	100
 温切斯特	wen qie si te	100
 温泉村	wen quan cun	100
+温泉瓜	wen quan gua	100
 温如玉	wen ru yu	100
 文山电力	wen shan dian li	100
 闻韶街道	wen shao jie dao	100
@@ -27422,6 +27795,7 @@ sort: by_weight
 我将无我	wo jiang wu wo	100
 我叫长安	wo jiao chang an	100
 我叫赵甲第	wo jiao zhao jia di	100
+我教资过了	wo jiao zi guo le	100
 我戒不掉	wo jie bu diao	100
 我接单	wo jie dan	100
 我节后	wo jie hou	100
@@ -27450,6 +27824,8 @@ sort: by_weight
 我考的	wo kao de	100
 我可慌	wo ke huang	100
 沃克兰	wo ke lan	100
+我科三没过	wo ke san mo guo	100
+我科一没过	wo ke yi mo guo	100
 我可以拥有	wo ke yi yong you	100
 我空手	wo kong shou	100
 我快到了	wo kuai dao le	100
@@ -27488,6 +27864,7 @@ sort: by_weight
 我没感觉到	wo mei gan jue dao	100
 我没敢问	wo mei gan wen	100
 我没给你发	wo mei gei ni fa	100
+我没核酸	wo mei he suan	100
 我没假	wo mei jia	100
 我没假期	wo mei jia qi	100
 我没剪	wo mei jian	100
@@ -27937,6 +28314,7 @@ sort: by_weight
 五岔路口	wu cha lu kou	100
 无常鬼	wu chang gui	100
 五常米	wu chang mi	100
+乌昌通了	wu chang tong le	100
 武昌医院	wu chang yi yuan	100
 午朝门	wu chao men	100
 武成侯	wu cheng hou	100
@@ -27971,6 +28349,7 @@ sort: by_weight
 物地技	wu di ji	100
 无敌流浪汉	wu di liu lang han	100
 五帝龙	wu di long	100
+无敌武将	wu di wu jiang	100
 庑殿路	wu dian lu	100
 污点证人	wu dian zheng ren	100
 五洞桥	wu dong qiao	100
@@ -28087,6 +28466,7 @@ sort: by_weight
 武家洼	wu jia wa	100
 无价之姐	wu jia zhi jie	100
 无间幻境	wu jian huan jing	100
+伍建设	wu jian she	100
 无间行者	wu jian xing zhe	100
 乌江寨	wu jiang zhai	100
 无交集	wu jiao ji	100
@@ -28172,6 +28552,7 @@ sort: by_weight
 五六星	wu liu xing	100
 物流异常	wu liu yi chang	100
 五六桌	wu liu zhuo	100
+舞龙棒	wu long bang	100
 五龙路	wu long lu	100
 仵龙堂	wu long tang	100
 无论什么时候	wu lun shen me shi hou	100
@@ -28183,6 +28564,7 @@ sort: by_weight
 无眉大侠	wu mei da xia	100
 吴美蓉	wu mei rong	100
 吴梦知	wu meng zhi	100
+无眠长夜	wu mian chang ye	100
 武庙街	wu miao jie	100
 无名岛	wu ming dao	100
 无名的人	wu ming de ren	100
@@ -28385,6 +28767,7 @@ sort: by_weight
 无相之水	wu xiang zhi shui	100
 无相之岩	wu xiang zhi yan	100
 五小场所	wu xiao chang suo	100
+无效传控	wu xiao chuan kong	100
 无效订单	wu xiao ding dan	100
 无消耗	wu xiao hao	100
 无效进球	wu xiao jin qiu	100
@@ -28713,6 +29096,7 @@ sort: by_weight
 悉心教导	xi xin jiao dao	100
 细心一点	xi xin yi dian	100
 悉心指导	xi xin zhi dao	100
+西行客栈	xi xing ke zhan	100
 吸血泵	xi xue beng	100
 吸血魔	xi xue mo	100
 吸血瞎	xi xue xia	100
@@ -28932,6 +29316,7 @@ sort: by_weight
 夏之日	xia zhi ri	100
 夏至已至	xia zhi yi zhi	100
 夏之禹	xia zhi yu	100
+下周复课	xia zhou fu ke	100
 显白神器	xian bai shen qi	100
 现包的	xian bao de	100
 先辈们	xian bei men	100
@@ -29079,6 +29464,7 @@ sort: by_weight
 先玩几天	xian wan ji tian	100
 献王墓	xian wang mu	100
 县委大院	xian wei da yuan	100
+掀我被子	xian wo bei zi	100
 先洗手	xian xi shou	100
 线下观赛	xian xia guan sai	100
 线下活动	xian xia huo dong	100
@@ -29278,6 +29664,7 @@ sort: by_weight
 想学什么	xiang xue shen me	100
 想学医	xiang xue yi	100
 香雪制药	xiang xue zhi yao	100
+香薰蜡片	xiang xun la pian	100
 乡野村妇	xiang ye cun fu	100
 香邑国际	xiang yi guo ji	100
 响应国家	xiang ying guo jia	100
@@ -29619,6 +30006,7 @@ sort: by_weight
 小暑大暑	xiao shu da shu	100
 小蜀山	xiao shu shan	100
 小书生	xiao shu sheng	100
+小摔炮	xiao shuai pao	100
 小栓子	xiao shuan zi	100
 小水晶	xiao shui jing	100
 小水母	xiao shui mu	100
@@ -29664,6 +30052,7 @@ sort: by_weight
 小吸血鬼	xiao xi xue gui	100
 小夏彦	xiao xia yan	100
 小仙灵	xiao xian ling	100
+小鲜木鱼	xiao xian mu yu	100
 潇湘高考	xiao xiang gao kao	100
 小象互娱	xiao xiang hu yu	100
 肖像权人	xiao xiang quan ren	100
@@ -29686,6 +30075,7 @@ sort: by_weight
 小羞涩	xiao xiu se	100
 小徐岗	xiao xu gang	100
 小漩涡	xiao xuan wo	100
+小学教资	xiao xue jiao zi	100
 小雪节气	xiao xue jie qi	100
 小学课本	xiao xue ke ben	100
 小雪珠	xiao xue zhu	100
@@ -29754,6 +30144,7 @@ sort: by_weight
 校组织	xiao zu zhi	100
 谢宝庆	xie bao qing	100
 携笔从戎	xie bi cong rong	100
+邪不可干	xie bu ke gan	100
 蟹不肉	xie bu rou	100
 写不完作业	xie bu wan zuo ye	100
 谢长安	xie chang an	100
@@ -29764,6 +30155,7 @@ sort: by_weight
 写到几点	xie dao ji dian	100
 写到哪里	xie dao na li	100
 写得完	xie de wan	100
+谢迪拉	xie di la	100
 斜店乡	xie dian xiang	100
 鞋掉了	xie diao le	100
 鞋都掉了	xie dou diao le	100
@@ -29875,6 +30267,7 @@ sort: by_weight
 新奥洋房	xin ao yang fang	100
 辛巴巴	xin ba ba	100
 辛巴德	xin ba de	100
+新百客	xin bai ke	100
 新保护地	xin bao hu di	100
 新蝙蝠侠	xin bian fu xia	100
 新变异	xin bian yi	100
@@ -30089,6 +30482,7 @@ sort: by_weight
 新平旺	xin ping wang	100
 新骑士	xin qi shi	100
 辛其物	xin qi wu	100
+新奇物种	xin qi wu zhong	100
 新奇穴	xin qi xue	100
 信其有	xin qi you	100
 新强联	xin qiang lian	100
@@ -30119,6 +30513,8 @@ sort: by_weight
 新使命	xin shi ming	100
 信使鸟	xin shi niao	100
 辛十四娘	xin shi si niang	100
+新十条	xin shi tiao	100
+新手补给	xin shou bu gei	100
 新手册	xin shou ce	100
 新手池	xin shou chi	100
 新手驾到	xin shou jia dao	100
@@ -30269,6 +30665,7 @@ sort: by_weight
 忻州人	xin zhou ren	100
 忻州师范	xin zhou shi fan	100
 忻州师范学院	xin zhou shi fan xue yuan	100
+忻州西	xin zhou xi	100
 新周愉快	xin zhou yu kuai	100
 新主机	xin zhu ji	100
 新主题	xin zhu ti	100
@@ -30560,6 +30957,7 @@ sort: by_weight
 徐徐入月来	xu xu ru yue lai	100
 徐玄振	xu xuan zhen	100
 许学强	xu xue qiang	100
+许雅钧	xu ya jun	100
 许亚萍	xu ya ping	100
 许雅婷	xu ya ting	100
 徐堰兵	xu yan bing	100
@@ -30570,6 +30968,7 @@ sort: by_weight
 蓄意谋杀	xu yi mou sha	100
 徐一宁	xu yi ning	100
 徐尹路	xu yin lu	100
+徐瑛彬	xu ying bin	100
 虚影步	xu ying bu	100
 徐英子	xu ying zi	100
 徐永恩	xu yong en	100
@@ -30603,6 +31002,7 @@ sort: by_weight
 宣德街	xuan de jie	100
 宣德能源	xuan de neng yuan	100
 选方向	xuan fang xiang	100
+宣肺败毒颗粒	xuan fei bai du ke li	100
 旋风加速器	xuan feng jia su qi	100
 玄凤鹦鹉	xuan feng ying wu	100
 悬浮床	xuan fu chuang	100
@@ -30733,6 +31133,7 @@ sort: by_weight
 学生通道	xue sheng tong dao	100
 学生姓名	xue sheng xing ming	100
 学生优先	xue sheng you xian	100
+学生资质	xue sheng zi zhi	100
 学师范	xue shi fan	100
 血十字	xue shi zi	100
 学术不端	xue shu bu duan	100
@@ -30743,6 +31144,7 @@ sort: by_weight
 雪太大	xue tai da	100
 雪天路滑	xue tian lu hua	100
 雪停了	xue ting le	100
+学途巴士	xue tu ba shi	100
 学为人师	xue wei ren shi	100
 学位授予	xue wei shou yu	100
 学位信息	xue wei xin xi	100
@@ -30869,6 +31271,7 @@ sort: by_weight
 压死骆驼	ya si luo tuo	100
 亚速钢铁厂	ya su gang tie chang	100
 亚速营	ya su ying	100
+压岁金	ya sui jin	100
 压缩干粮	ya suo gan liang	100
 亚托莉	ya tuo li	100
 雅万高铁	ya wan gao tie	100
@@ -30909,6 +31312,7 @@ sort: by_weight
 砚冰坚	yan bing jian	100
 颜丙涛	yan bing tao	100
 严伯钧	yan bo jun	100
+延不延	yan bu yan	100
 盐菜肉	yan cai rou	100
 延长假期	yan chang jia qi	100
 延迟发货	yan chi fa huo	100
@@ -30920,6 +31324,7 @@ sort: by_weight
 眼唇卸妆液	yan chun xie zhuang ye	100
 燕大附中	yan da fu zhong	100
 严大人	yan da ren	100
+烟大学子	yan da xue zi	100
 延到啥时候	yan dao sha shi hou	100
 严的基调	yan de ji diao	100
 盐店庄	yan dian zhuang	100
@@ -30930,6 +31335,7 @@ sort: by_weight
 焰分噬浪尺	yan fen shi lang chi	100
 盐风溶洞	yan feng rong dong	100
 延福园	yan fu yuan	100
+咽干咽痛	yan gan yan tong	100
 严格管控	yan ge guan kong	100
 闫各庄	yan ge zhuang	100
 验瓜师	yan gua shi	100
@@ -30945,6 +31351,7 @@ sort: by_weight
 烟花流	yan hua liu	100
 烟花筒	yan hua tong	100
 烟花易逝	yan hua yi shi	100
+宴会节	yan hui jie	100
 烟火人间	yan huo ren jian	100
 烟火味	yan huo wei	100
 烟火星辰	yan huo xing chen	100
@@ -30990,6 +31397,7 @@ sort: by_weight
 烟山雾阁	yan shan wu ge	100
 燕山学院	yan shan xue yuan	100
 验伤报告	yan shang bao gao	100
+延伸课	yan shen ke	100
 岩神瞳	yan shen tong	100
 眼神戏	yan shen xi	100
 衍生节目	yan sheng jie mu	100
@@ -31025,6 +31433,7 @@ sort: by_weight
 演习券	yan xi quan	100
 研习赛	yan xi sai	100
 研习周	yan xi zhou	100
+腌咸蒜	yan xian suan	100
 雁翔苑	yan xiang yuan	100
 闫晓楠	yan xiao nan	100
 阎学通	yan xue tong	100
@@ -31069,6 +31478,7 @@ sort: by_weight
 杨超文	yang chao wen	100
 杨成瑞	yang cheng rui	100
 羊村守护者	yang cun shou hu zhe	100
+阳的人	yang de ren	100
 养敌为患	yang di wei huan	100
 阳店镇	yang dian zhen	100
 杨鼎新	yang ding xin	100
@@ -31085,6 +31495,7 @@ sort: by_weight
 阳光乳业	yang guang ru ye	100
 阳光沙滩	yang guang sha tan	100
 阳光先生	yang guang xian sheng	100
+阳光校区	yang guang xiao qu	100
 阳光信用	yang guang xin yong	100
 阳光怡园	yang guang yi yuan	100
 阳光正好	yang guang zheng hao	100
@@ -31117,7 +31528,9 @@ sort: by_weight
 养老服务	yang lao fu wu	100
 养老事业	yang lao shi ye	100
 羊了个羊	yang le ge yang	100
+阳了个阳	yang le ge yang	100
 阳了吗	yang le ma	100
+阳了没	yang le mei	100
 阳了一个	yang le yi ge	100
 羊力大仙	yang li da xian	100
 杨立瑜	yang li yu	100
@@ -31180,10 +31593,13 @@ sort: by_weight
 羊小雪	yang xiao xue	100
 杨小羊	yang xiao yang	100
 杨新海	yang xin hai	100
+阳性病人	yang xing bing ren	100
 阳性患者	yang xing huan zhe	100
 杨雅淇	yang ya qi	100
 羊羊运动会	yang yang yun dong hui	100
 杨耀威	yang yao wei	100
+阳一遍	yang yi bian	100
+阳一次	yang yi ci	100
 杨懿文	yang yi wen	100
 杨永财	yang yong cai	100
 洋芋擦擦	yang yu ca ca	100
@@ -31205,6 +31621,7 @@ sort: by_weight
 要报道	yao bao dao	100
 要包饺子	yao bao jiao zi	100
 要报考	yao bao kao	100
+要备点	yao bei dian	100
 窑埠古镇	yao bu gu zhen	100
 要不要隔离	yao bu yao ge li	100
 要不要回去	yao bu yao hui qu	100
@@ -31241,6 +31658,7 @@ sort: by_weight
 要戴头盔	yao dai tou kui	100
 要到场	yao dao chang	100
 尧典桥路	yao dian qiao lu	100
+要点球	yao dian qiu	100
 咬定目标	yao ding mu biao	100
 要订正	yao ding zheng	100
 要多穿	yao duo chuan	100
@@ -31302,6 +31720,7 @@ sort: by_weight
 要换人	yao huan ren	100
 摇晃的红酒杯	yao huang de hong jiu bei	100
 要回来不	yao hui lai bu	100
+要几盒	yao ji he	100
 要激活	yao ji huo	100
 姚基金	yao ji jin	100
 遥寄相思	yao ji xiang si	100
@@ -31342,6 +31761,7 @@ sort: by_weight
 要平局了	yao ping ju le	100
 耀骑士	yao qi shi	100
 姚期智	yao qi zhi	100
+要遣返	yao qian fan	100
 邀请别人	yao qing bie ren	100
 邀请新人	yao qing xin ren	100
 邀请新用户	yao qing xin yong hu	100
@@ -31375,6 +31795,7 @@ sort: by_weight
 要体测了	yao ti ce le	100
 尧天坪	yao tian ping	100
 要调剂	yao tiao ji	100
+要停服了	yao ting fu le	100
 要停课	yao ting ke	100
 要停水	yao ting shui	100
 要投票	yao tou piao	100
@@ -31689,8 +32110,10 @@ sort: by_weight
 移动泉水	yi dong quan shui	100
 一动弹	yi dong tan	100
 移动校园	yi dong xiao yuan	100
+一兜零食	yi dou ling shi	100
 益都街道	yi du jie dao	100
 一度君华	yi du jun hua	100
+忆读书	yi du shu	100
 一段时光	yi duan shi guang	100
 已兑换	yi dui huan	100
 已兑奖	yi dui jiang	100
@@ -31724,6 +32147,7 @@ sort: by_weight
 一分部署	yi fen bu shu	100
 一份礼物	yi fen li wu	100
 一分没花	yi fen mei hua	100
+漪汾桥	yi fen qiao	100
 一分一档	yi fen yi dang	100
 一分一段表	yi fen yi duan biao	100
 意风区	yi feng qu	100
@@ -31737,11 +32161,13 @@ sort: by_weight
 一杆进洞	yi gan jin dong	100
 一杆清台	yi gan qing tai	100
 以高标准	yi gao biao zhun	100
+一高一快	yi gao yi kuai	100
 一个币	yi ge bi	100
 一个船	yi ge chuan	100
 一个单身狗	yi ge dan shen gou	100
 一个都不能	yi ge dou bu neng	100
 一个都不要	yi ge dou bu yao	100
+一个都没过	yi ge dou mei guo	100
 一个都没买	yi ge dou mei mai	100
 一个多亿	yi ge duo yi	100
 一个福袋	yi ge fu dai	100
@@ -31829,6 +32255,7 @@ sort: by_weight
 以火攻火	yi huo gong huo	100
 以火灭火	yi huo mie huo	100
 一级调研员	yi ji diao yan yuan	100
+一级动作	yi ji dong zuo	100
 一级嘉奖	yi ji jia jiang	100
 一级警司	yi ji jing si	100
 遗迹巨蛇	yi ji ju she	100
@@ -31885,6 +32312,7 @@ sort: by_weight
 异界事务所	yi jie shi wu suo	100
 已接种	yi jie zhong	100
 已进校	yi jin xiao	100
+已经出线了	yi jing chu xian le	100
 已经到家	yi jing dao jia	100
 已经封了	yi jing feng le	100
 逸景公馆	yi jing gong guan	100
@@ -31906,6 +32334,7 @@ sort: by_weight
 易开得	yi kai de	100
 艺考第一	yi kao di yi	100
 艺考圈	yi kao quan	100
+一科都没过	yi ke dou mei guo	100
 一颗红心	yi ke hong xin	100
 医科类	yi ke lei	100
 一科没过	yi ke mo guo	100
@@ -31914,6 +32343,7 @@ sort: by_weight
 一颗童心	yi ke tong xin	100
 意可味	yi ke wei	100
 以客为先	yi ke wei xian	100
+伊克西翁	yi ke xi weng	100
 一刻也不能	yi ke ye bu neng	100
 一科一辅	yi ke yi fu	100
 一口吃掉	yi kou chi diao	100
@@ -32186,6 +32616,7 @@ sort: by_weight
 以水定地	yi shui ding di	100
 艺水芳园	yi shui fang yuan	100
 伊斯坎德尔	yi si kan de er	100
+伊斯塔露	yi si ta lu	100
 疑似阳性	yi si yang xing	100
 一艘航母	yi sou hang mu	100
 伊苏尔德	yi su er de	100
@@ -32199,6 +32630,7 @@ sort: by_weight
 一套又一套	yi tao you yi tao	100
 伊藤美来	yi teng mei lai	100
 一体化发展	yi ti hua fa zhan	100
+遗体火化	yi ti huo hua	100
 遗体捐赠	yi ti juan zeng	100
 艺体类	yi ti lei	100
 艺体通	yi ti tong	100
@@ -32481,6 +32913,7 @@ sort: by_weight
 音效师	yin xiao shi	100
 银杏谷	yin xing gu	100
 银杏花	yin xing hua	100
+阴性了	yin xing le	100
 银杏树叶	yin xing shu ye	100
 音序查字法	yin xu cha zi fa	100
 因言获罪	yin yan huo zui	100
@@ -32524,6 +32957,7 @@ sort: by_weight
 迎冬奥	ying dong ao	100
 迎端午	ying duan wu	100
 应对挑战	ying dui tiao zhan	100
+英法大战	ying fa da zhan	100
 应返尽返	ying fan jin fan	100
 樱粉金	ying fen jin	100
 迎富贵	ying fu gui	100
@@ -32653,11 +33087,13 @@ sort: by_weight
 樱之刻	ying zhi ke	100
 迎中秋	ying zhong qiu	100
 颍州府	ying zhou fu	100
+营转非	ying zhuan fei	100
 应转尽转	ying zhuan jin zhuan	100
 英专生	ying zhuan sheng	100
 影子灰	ying zi hui	100
 影子说	ying zi shuo	100
 营子镇	ying zi zhen	100
+应走尽走	ying zou jin zou	100
 英租界	ying zu jie	100
 英足总	ying zu zong	100
 用爱发电	yong ai fa dian	100
@@ -32721,6 +33157,7 @@ sort: by_weight
 永久禁言	yong jiu jin yan	100
 永久消失	yong jiu xiao shi	100
 拥军拥属	yong jun yong shu	100
+用抗原	yong kang yuan	100
 用快手	yong kuai shou	100
 勇立时代潮头	yong li shi dai chao tou	100
 用码记录	yong ma ji lu	100
@@ -32790,6 +33227,7 @@ sort: by_weight
 右边卫	you bian wei	100
 有表情	you biao qing	100
 有冰雹	you bing bao	100
+又不查	you bu cha	100
 又不封	you bu feng	100
 有彩虹	you cai hong	100
 油菜花开	you cai hua kai	100
@@ -32934,6 +33372,7 @@ sort: by_weight
 尤伦卡	you lun ka	100
 有落差	you luo cha	100
 有逻辑	you luo ji	100
+有绿码	you lv ma	100
 有满减	you man jian	100
 优漫卡通	you man ka tong	100
 优美的中国话	you mei de zhong guo hua	100
@@ -33000,6 +33439,7 @@ sort: by_weight
 游上岸	you shang an	100
 有商店	you shang dian	100
 又上网课了	you shang wang ke le	100
+又烧了	you shao le	100
 有什么安排	you shen me an pai	100
 有什么颜色	you shen me yan se	100
 有什么优惠	you shen me you hui	100
@@ -33105,6 +33545,7 @@ sort: by_weight
 有一点动心	you yi dian dong xin	100
 有一段路	you yi duan lu	100
 有一个孩子	you yi ge hai zi	100
+友谊会堂	you yi hui tang	100
 有一就有二	you yi jiu you er	100
 有依靠	you yi kao	100
 有衣暖身	you yi nuan shen	100
@@ -33202,6 +33643,8 @@ sort: by_weight
 余多多	yu duo duo	100
 预防艾滋	yu fang ai zi	100
 预防艾滋病	yu fang ai zi bing	100
+预防吧	yu fang ba	100
+预防方	yu fang fang	100
 预防工作	yu fang gong zuo	100
 预防近视	yu fang jin shi	100
 预防控制	yu fang kong zhi	100
@@ -33228,6 +33671,7 @@ sort: by_weight
 御河九号	yu he jiu hao	100
 愈合如初	yu he ru chu	100
 雨和雪	yu he xue	100
+于何一	yu he yi	100
 玉衡星	yu heng xing	100
 育红楼	yu hong lou	100
 御湖宸院	yu hu chen yuan	100
@@ -33384,6 +33828,7 @@ sort: by_weight
 御溪苑	yu xi yuan	100
 雨下得好大	yu xia de hao da	100
 鱼虾满仓	yu xia man cang	100
+预下载了	yu xia zai le	100
 余小二	yu xiao er	100
 鱼小铺	yu xiao pu	100
 雨小一点	yu xiao yi dian	100
@@ -33446,6 +33891,7 @@ sort: by_weight
 禹洲天玺	yu zhou tian xi	100
 宇宙中心	yu zhou zhong xin	100
 玉竹膏	yu zhu gao	100
+玉琢银装	yu zhuo yin zhuang	100
 于梓贝	yu zi bei	100
 余子明	yu zi ming	100
 于子淇	yu zi qi	100
@@ -33500,6 +33946,8 @@ sort: by_weight
 圆肚皮	yuan du pi	100
 圆墩墩	yuan dun dun	100
 援鄂医疗队	yuan e yi liao dui	100
+愿返尽返	yuan fan jin fan	100
+袁坊乡	yuan fang xiang	100
 远方信息	yuan fang xin xi	100
 源飞宠物	yuan fei chong wu	100
 猿飞未来	yuan fei wei lai	100
@@ -33528,6 +33976,7 @@ sort: by_weight
 圆肩驼背	yuan jian tuo bei	100
 远鉴字幕组	yuan jian zi mu zu	100
 原教室	yuan jiao shi	100
+原考点	yuan kao dian	100
 原来是美男	yuan lai shi mei nan	100
 袁励岑	yuan li cen	100
 远离赌球	yuan li du qiu	100
@@ -33537,6 +33986,7 @@ sort: by_weight
 源龙星	yuan long xing	100
 圆满闭幕	yuan man bi mu	100
 圆梦巨人	yuan meng ju ren	100
+源梦皮肤	yuan meng pi fu	100
 渊默行动	yuan mo xing dong	100
 原木刀	yuan mu dao	100
 原能塔	yuan neng ta	100
@@ -33581,6 +34031,7 @@ sort: by_weight
 远藤航	yuan teng hang	100
 圆头圆脑	yuan tou yuan nao	100
 愿望成真	yuan wang cheng zhen	100
+愿望季	yuan wang ji	100
 袁伟豪	yuan wei hao	100
 鸢尾兰	yuan wei lan	100
 袁屋边	yuan wu bian	100
@@ -33708,6 +34159,7 @@ sort: by_weight
 月蚀的假面	yue shi de jia mian	100
 越石丸	yue shi wan	100
 越刷越低	yue shua yue di	100
+粤税通	yue shui tong	100
 月坛街道	yue tan jie dao	100
 越淘越开心	yue tao yue kai xin	100
 月啼暇	yue ti xia	100
@@ -33912,10 +34364,12 @@ sort: by_weight
 咱不喝	zan bu he	100
 赞达亚	zan da ya	100
 咱当兵的人	zan dang bing de ren	100
+暂缓了	zan huan le	100
 咱就是说	zan jiu shi shuo	100
 咱妈家	zan ma jia	100
 赞美老师	zan mei lao shi	100
 咱们就是说	zan men jiu shi shuo	100
+暂停返乡	zan ting fan xiang	100
 暂停堂食	zan ting tang shi	100
 暂未公布	zan wei gong bu	100
 暂未就业	zan wei jiu ye	100
@@ -33992,11 +34446,13 @@ sort: by_weight
 贼热闹	zei re nao	100
 贼严重	zei yan zhong	100
 怎敌他	zen di ta	100
+怎么报备	zen me bao bei	100
 怎么不出去	zen me bu chu qu	100
 怎么不回家	zen me bu hui jia	100
 怎么不回来	zen me bu hui lai	100
 怎么抽奖	zen me chou jiang	100
 怎么返	zen me fan	100
+怎么画的	zen me hua de	100
 怎么还不上课	zen me huan bu shang ke	100
 怎么加好友	zen me jia hao you	100
 怎么看待	zen me kan dai	100
@@ -34043,6 +34499,7 @@ sort: by_weight
 炸灌肠	zha guan chang	100
 炸果子	zha guo zi	100
 炸红薯	zha hong shu	100
+扎基拉姆	zha ji la mu	100
 扎金花	zha jin hua	100
 扎卡里亚	zha ka li ya	100
 扎克施耐德	zha ke shi nai de	100
@@ -34364,6 +34821,7 @@ sort: by_weight
 张子荣	zhang zi rong	100
 张子薇	zhang zi wei	100
 张子旭	zhang zi xu	100
+张自轩	zhang zi xuan	100
 赵堡镇	zhao bao zhen	100
 赵北口	zhao bei kou	100
 招财虎	zhao cai hu	100
@@ -34502,6 +34960,7 @@ sort: by_weight
 赵泽慧	zhao ze hui	100
 昭昭前事	zhao zhao qian shi	100
 朝朝夕夕	zhao zhao xi xi	100
+赵钊彦	zhao zhao yan	100
 赵政豪	zhao zheng hao	100
 赵志铭	zhao zhi ming	100
 赵州镇	zhao zhou zhen	100
@@ -34543,6 +35002,7 @@ sort: by_weight
 遮山镇	zhe shan zhen	100
 浙数文化	zhe shu wen hua	100
 者行孙	zhe xing sun	100
+这一解封	zhe yi jie feng	100
 折跃门	zhe yue men	100
 浙政钉	zhe zheng ding	100
 柘中股份	zhe zhong gu fen	100
@@ -34575,6 +35035,7 @@ sort: by_weight
 真的很冷	zhen de hen leng	100
 真的很热	zhen de hen re	100
 真的会谢	zhen de hui xie	100
+真得了	zhen de le	100
 真的冷	zhen de leng	100
 真的没想到	zhen de mei xiang dao	100
 真的强	zhen de qiang	100
@@ -34660,6 +35121,7 @@ sort: by_weight
 振兴乡村	zhen xing xiang cun	100
 真凶标签	zhen xiong biao qian	100
 珍馐记	zhen xiu ji	100
+真阳了	zhen yang le	100
 真要走	zhen yao zou	100
 真有感觉	zhen you gan jue	100
 甄远道	zhen yuan dao	100
@@ -34689,6 +35151,7 @@ sort: by_weight
 郑德荣	zheng de rong	100
 争第一	zheng di yi	100
 郑东旭	zheng dong xu	100
+蒸豆包	zheng dou bao	100
 政法工作	zheng fa gong zuo	100
 正发生	zheng fa sheng	100
 正反派	zheng fan pai	100
@@ -34764,6 +35227,7 @@ sort: by_weight
 政务处分	zheng wu chu fen	100
 政务平台	zheng wu ping tai	100
 郑喜旺	zheng xi wang	100
+政校企	zheng xiao qi	100
 郑晓雯	zheng xiao wen	100
 征信业	zheng xin ye	100
 正兴里	zheng xing li	100
@@ -35113,6 +35577,7 @@ sort: by_weight
 支援队	zhi yuan dui	100
 支援河南	zhi yuan he nan	100
 支援舰	zhi yuan jian	100
+支援牌	zhi yuan pai	100
 支援上海	zhi yuan shang hai	100
 志愿时长	zhi yuan shi chang	100
 支援速度	zhi yuan su du	100
@@ -35179,6 +35644,7 @@ sort: by_weight
 种点菜	zhong dian cai	100
 重点人群	zhong dian ren qun	100
 中鼎花园	zhong ding hua yuan	100
+钟东波	zhong dong bo	100
 重度依赖	zhong du yi lai	100
 中俄贸易	zhong e mao yi	100
 中非合作	zhong fei he zuo	100
@@ -35633,6 +36099,7 @@ sort: by_weight
 助个力	zhu ge li	100
 诸葛神弩	zhu ge shen nu	100
 诸葛宇杰	zhu ge yu jie	100
+诸葛渊	zhu ge yuan	100
 朱阁镇	zhu ge zhen	100
 竹根滩	zhu gen tan	100
 竹公溪	zhu gong xi	100
@@ -35656,6 +36123,7 @@ sort: by_weight
 逐火之蛾	zhu huo zhi e	100
 主基调	zhu ji diao	100
 朱继东	zhu ji dong	100
+驻济高校	zhu ji gao xiao	100
 主机游戏	zhu ji you xi	100
 朱嘉琦	zhu jia qi	100
 祝家人	zhu jia ren	100
@@ -36083,6 +36551,7 @@ sort: by_weight
 自选卡	zi xuan ka	100
 自选礼包	zi xuan li bao	100
 自选五星	zi xuan wu xing	100
+自选箱	zi xuan xiang	100
 自训队	zi xun dui	100
 子牙镇	zi ya zhen	100
 子夜十	zi ye shi	100
@@ -36103,6 +36572,7 @@ sort: by_weight
 自由通行	zi you tong xing	100
 自有颜如玉	zi you yan ru yu	100
 自由之路	zi you zhi lu	100
+自愈了	zi yu le	100
 自愿返乡	zi yuan fan xiang	100
 自愿放弃	zi yuan fang qi	100
 资源更新	zi yuan geng xin	100
@@ -36495,6 +36965,7 @@ sort: by_weight
 昨晚地震	zuo wan di zhen	100
 做完核酸	zuo wan he suan	100
 做完没有	zuo wan mei you	100
+做完委托	zuo wan wei tuo	100
 做完指甲	zuo wan zhi jia	100
 作为怪物	zuo wei guai wu	100
 作文没写	zuo wen mei xie	100
