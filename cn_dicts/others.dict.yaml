@@ -12,7 +12,7 @@ version: "2022-10-03"
 sort: by_weight
 ...
 ##### 容错词
-# 「血xue、xie」「谁shui、shei」「露lu、lou」「熟shu、shou」「密钥yao、yue」已在 main 中实现
+# 「血xue、xie」「谁shui、shei」「露lu、lou」「熟shu、shou」「密钥yao、yue」已在 base 中实现
 # ---
 # 「馄饨」，正确是 tun，北方口语是 dun
 馄饨	hun tun

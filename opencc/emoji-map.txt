@@ -2,7 +2,7 @@
 #
 # https://github.com/iDvel/rime-ice
 #
-# version: "2022-12-10"
+# version: "2022-12-17"
 #
 #
 # 数据分类来源：https://www.emojiall.com/zh-hans/all-emojis
@@ -1441,7 +1441,7 @@ S$ 新加坡元 新加坡币
 🔭 望远镜
 🧪 试管
 🧫 培养皿
-🧬 DNA 脱氧核糖核酸
+🧬 DNA 脱氧核糖核酸 基因
 ### 医疗 7
 💉 注射器 打针
 💊 药丸 胶囊
