@@ -18,10 +18,10 @@ patch:
   switcher:
     caption: 「方案选单」
     hotkeys:
-      # - Control+grave
-      - Control+Shift+grave
       # - F4
+      # - Control+grave
       # - Alt+grave
+      - Control+Shift+grave
     save_options:  # 开关记忆，从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
       - full_shape
       - ascii_punct
@@ -85,6 +85,7 @@ patch:
     - { when: has_menu, accept: equal, send: Page_Down }
 
     # paging_with_comma_period: 翻页：, .
+    # 需要额外注释掉方案中 recognizer/patterns 下的 url_2 选项（这个会覆盖掉句号的行为）
     # - { when: paging, accept: comma, send: Page_Up }
     # - { when: has_menu, accept: period, send: Page_Down }
 
