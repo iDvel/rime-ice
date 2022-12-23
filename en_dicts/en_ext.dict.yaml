@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-12-10"
+version: "2022-12-23"
 sort: by_weight
 ...
 # 一些杂项
@@ -1701,3 +1701,10 @@ GalGame	GalGame
 VoLTE	VoLTE
 Voice Over LTE	VoLTE
 capper	capper
+shank	shank
+shanks	shanks
+CEF	CEF
+Chromium Embedded Framework	CEF
+Chromium Embedded Framework	ChromiumEmbeddedFramework
+RustDesk	RustDesk
+Capcom	Capcom
