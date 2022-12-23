@@ -12,7 +12,6 @@
 - [小狼毫 Weasel](https://github.com/rime/weasel)
     - 另一个版本： [fxliang/weasel](https://github.com/fxliang/weasel)
     
-
 - 主要功能
     -   [melt_eng](https://github.com/tumuyan/rime-melt) 英文输入
     -   [两分输入法](http://cheonhyeong.com/Simplified/download.html) 拼字
@@ -68,7 +67,7 @@
 
 <br>
 
-## 极简新手教程
+## 简单指引
 
 ### 格式
 
@@ -111,6 +110,8 @@
 
 在 `custom_phrase.txt` 中添加，建议清空，换成你自己的习惯。
 
+双拼需要额外手动创建 `custom_phrase_double.txt`。
+
 ##### 标点符号映射
 
 在 `symbols_custom.yaml` 中修改，单个映射即直接上屏，多个映射可以进行复选。
@@ -121,7 +122,7 @@
 
 ##### 日期时间等关键字
 
-在方案中修改 date_translator 下 `date`、`time` 等对应的关键字。
+在方案中修改 `date_translator` 下 `date`、`time` 等对应的关键字。
 
 ---
 
