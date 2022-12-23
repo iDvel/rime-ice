@@ -7,8 +7,8 @@ build/
 installation.yaml
 user.yaml
 
-Tool/scel2txt/out/*
-Tool/scel2txt/scel/*
+others/script/scel2txt/out/*
+others/script/scel2txt/scel/*
 
 *private*
 
