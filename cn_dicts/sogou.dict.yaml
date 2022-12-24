@@ -15,7 +15,7 @@
 # 搜狗转 Rime 词库：https://github.com/lewangdev/scel2txt
 ---
 name: sogou
-version: "2022-12-23"
+version: "2022-12-24"
 sort: by_weight
 ...
 # *_* 过滤列表，每次更新时不再写入：
@@ -1864,6 +1864,7 @@ sort: by_weight
 冰冻文	bing dong wen	100
 冰冻咒	bing dong zhou	100
 病毒变异	bing du bian yi	100
+病毒肺	bing du fei	100
 冰粉籽	bing fen zi	100
 冰封的心	bing feng de xin	100
 冰封世界	bing feng shi jie	100
@@ -3992,6 +3993,7 @@ sort: by_weight
 抽雷神	chou lei shen	100
 臭灵丹	chou ling dan	100
 抽绫华	chou ling hua	100
+臭卤虾	chou lu xia	100
 抽盲盒	chou mang he	100
 抽免单	chou mian dan	100
 抽签码	chou qian ma	100
@@ -5371,6 +5373,7 @@ sort: by_weight
 到店付	dao dian fu	100
 到店付款	dao dian fu kuan	100
 到店红包	dao dian hong bao	100
+倒点酱油	dao dian jiang you	100
 到店取餐	dao dian qu can	100
 到店支付	dao dian zhi fu	100
 到东站	dao dong zhan	100
@@ -5646,6 +5649,7 @@ sort: by_weight
 第九道	di jiu dao	100
 第九赛季	di jiu sai ji	100
 滴酒未沾	di jiu wei zhan	100
+帝君号	di jun hao	100
 抵抗能力	di kang neng li	100
 抵抗疫情	di kang yi qing	100
 抵抗之靴	di kang zhi xue	100
@@ -9366,6 +9370,7 @@ sort: by_weight
 光合计划	guang he ji hua	100
 光合积木	guang he ji mu	100
 洸河新苑	guang he xin yuan	100
+广弘控股	guang hong kong gu	100
 逛花市	guang hua shi	100
 光华逸家	guang hua yi jia	100
 光环无限	guang huan wu xian	100
@@ -10052,11 +10057,13 @@ sort: by_weight
 还烧着呢	hai shao zhe ne	100
 海神九考	hai shen jiu kao	100
 还剩几个	hai sheng ji ge	100
+还生着病	hai sheng zhe bing	100
 海师大	hai shi da	100
 还是打野	hai shi da ye	100
 还是单身	hai shi dan shen	100
 还是个孩子	hai shi ge hai zi	100
 还是进不去	hai shi jin bu qu	100
+还是咳	hai shi ke	100
 还是忍不住	hai shi ren bu zhu	100
 还是听不到	hai shi ting bu dao	100
 还是听不见	hai shi ting bu jian	100
@@ -10136,6 +10143,7 @@ sort: by_weight
 还用带	hai yong dai	100
 还有八天	hai you ba tian	100
 还有半天	hai you ban tian	100
+还有点虚	hai you dian xu	100
 还有多少人	hai you duo shao ren	100
 还有二十天	hai you er shi tian	100
 还有好多事	hai you hao duo shi	100
@@ -12239,6 +12247,7 @@ sort: by_weight
 记得写作业	ji de xie zuo ye	100
 几等奖	ji deng jiang	100
 极地反击	ji di fan ji	100
+极地交锋	ji di jiao feng	100
 肌底衣	ji di yi	100
 几点场	ji dian chang	100
 几点发车	ji dian fa che	100
@@ -12629,6 +12638,7 @@ sort: by_weight
 家境好	jia jing hao	100
 家具券	jia ju quan	100
 加具土命	jia ju tu ming	100
+加康加年味	jia kang jia nian wei	100
 驾考中心	jia kao zhong xin	100
 加克波	jia ke bo	100
 加快构建	jia kuai gou jian	100
@@ -13075,6 +13085,7 @@ sort: by_weight
 蒋俊豪	jiang jun hao	100
 将军家的小娘子	jiang jun jia de xiao niang zi	100
 将军俑	jiang jun yong	100
+江阔云低	jiang kuo yun di	100
 蒋兰州	jiang lan zhou	100
 讲礼村	jiang li cun	100
 奖励姐	jiang li jie	100
@@ -15958,6 +15969,7 @@ sort: by_weight
 李安澜	li an lan	100
 立昂技术	li ang ji shu	100
 立昂微	li ang wei	100
+里奥阿维	li ao a wei	100
 里奥的回忆	li ao de hui yi	100
 李奥瑞克	li ao rui ke	100
 李百万	li bai wan	100
@@ -18779,6 +18791,7 @@ sort: by_weight
 蜜植素	mi zhi su	100
 密州街道	mi zhou jie dao	100
 密州路	mi zhou lu	100
+迷踪币	mi zong bi	100
 迷踪步	mi zong bu	100
 棉袄棉裤	mian ao mian ku	100
 免笔试	mian bi shi	100
@@ -19061,6 +19074,7 @@ sort: by_weight
 摩尔体积	mo er ti ji	100
 墨尔文	mo er wen	100
 摩尔勇士	mo er yong shi	100
+魔法幻游	mo fa huan you	100
 魔法季	mo fa ji	100
 魔法纪录	mo fa ji lu	100
 魔法集市	mo fa ji shi	100
@@ -19188,6 +19202,7 @@ sort: by_weight
 魔沼蛙	mo zhao wa	100
 魔怔人	mo zheng ren	100
 魔咒课	mo zhou ke	100
+魔咒试炼	mo zhou shi lian	100
 摸桌子	mo zhuo zi	100
 莫兹戈夫	mo zi ge fu	100
 墨子湖	mo zi hu	100
@@ -22181,6 +22196,7 @@ sort: by_weight
 人生有梦	ren sheng you meng	100
 人事调动	ren shi diao dong	100
 任时完	ren shi wan	100
+人手一单	ren shou yi dan	100
 人手一份	ren shou yi fen	100
 人手一只	ren shou yi zhi	100
 人数限制	ren shu xian zhi	100
@@ -23978,6 +23994,7 @@ sort: by_weight
 十九代	shi jiu dai	100
 石臼湖	shi jiu hu	100
 十九届六中	shi jiu jie liu zhong	100
+侍酒令	shi jiu ling	100
 十九期	shi jiu qi	100
 十九周	shi jiu zhou	100
 试卷答案	shi juan da an	100
@@ -27042,6 +27059,7 @@ sort: by_weight
 丸霸无双	wan ba wu shuang	100
 万般不舍	wan ban bu she	100
 万般好	wan ban hao	100
+万般星辰	wan ban xing chen	100
 万比萨卡	wan bi sa ka	100
 完璧之身	wan bi zhi shen	100
 玩不惯	wan bu guan	100
@@ -27595,6 +27613,7 @@ sort: by_weight
 未开放	wei kai fang	100
 未开奖	wei kai jiang	100
 未开启	wei kai qi	100
+未康复	wei kang fu	100
 卫康院	wei kang yuan	100
 为考生	wei kao sheng	100
 维克洛尔	wei ke luo er	100
@@ -31811,6 +31830,7 @@ sort: by_weight
 眼距宽	yan ju kuan	100
 严峻复杂	yan jun fu za	100
 颜骏凌	yan jun ling	100
+验考场	yan kao chang	100
 岩盔王	yan kui wang	100
 岩兰草	yan lan cao	100
 滟澜星座	yan lan xing zuo	100
@@ -33092,6 +33112,7 @@ sort: by_weight
 驿收发	yi shou fa	100
 一受封疆	yi shou feng jiang	100
 易收付	yi shou fu	100
+颐寿药店	yi shou yao dian	100
 艺术表现力	yi shu biao xian li	100
 医术精湛	yi shu jing zhan	100
 一树桃花开	yi shu tao hua kai	100
@@ -33749,6 +33770,7 @@ sort: by_weight
 有大雨	you da yu	100
 有带星	you dai xing	100
 有道翻译官	you dao fan yi guan	100
+又倒了	you dao le	100
 有低保	you di bao	100
 有地震	you di zhen	100
 有点不甘心	you dian bu gan xin	100
@@ -34487,6 +34509,7 @@ sort: by_weight
 圆肩驼背	yuan jian tuo bei	100
 远鉴字幕组	yuan jian zi mu zu	100
 原教室	yuan jiao shi	100
+原考场	yuan kao chang	100
 原考点	yuan kao dian	100
 原来是美男	yuan lai shi mei nan	100
 袁励岑	yuan li cen	100
@@ -35706,6 +35729,7 @@ sort: by_weight
 争冠组	zheng guan zu	100
 正规一	zheng gui yi	100
 郑好办	zheng hao ban	100
+正弘汇	zheng hong hui	100
 郑济高铁	zheng ji gao tie	100
 郑建鹏	zheng jian peng	100
 郑金兰	zheng jin lan	100
@@ -36007,6 +36031,7 @@ sort: by_weight
 芝麻购	zhi ma gou	100
 芝麻花生	zhi ma hua sheng	100
 只买得起	zhi mai de qi	100
+指脉氧仪	zhi mai yang yi	100
 只买一个	zhi mai yi ge	100
 直面会	zhi mian hui	100
 纸面实力	zhi mian shi li	100
@@ -37042,6 +37067,7 @@ sort: by_weight
 自恋者	zi lian zhe	100
 自留签	zi liu qian	100
 自律的人	zi lv de ren	100
+紫毛衣	zi mao yi	100
 字母弟	zi mu di	100
 字母钢	zi mu gang	100
 自拟题目	zi ni ti mu	100
