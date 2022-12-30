@@ -10,7 +10,7 @@
 #
 ---
 name: cn_en
-version: "2022-11-18"
+version: "2022-12-30"
 sort: by_weight
 ...
 # 没有空格的（为了Emoji映射。Emoji 里空格是分割符，没法映射，不知道怎么解决）
@@ -321,3 +321,10 @@ Go 程	gocheng
 TG 群	tgqun
 Telegram 群	telegramqun
 Wi-Fi 密码	wifimima
+DNA 检测	dnajiance
+A 级	aji
+B 级	bji
+C 级	cji
+D 级	dji
+拍 CT	paict
+CT 检查	ctjiancha

@@ -13,7 +13,7 @@
 # 转换了一些应该大写的
 ---
 name: en_most_common
-version: "2022-11-08"
+version: "2022-12-30"
 sort: by_weight
 ...
 # 含有大写字母的：
@@ -64,6 +64,7 @@ Sat.	Sat
 Sunday	Sunday
 Sun.	Sun
 NASA	NASA
+Java	Java
 # +_+
 abandoned	abandoned
 abc	abc
@@ -3938,7 +3939,6 @@ jane	jane
 janet	janet
 jar	jar
 jason	jason
-java	java
 jay	jay
 jazz	jazz
 jean	jean
