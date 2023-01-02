@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2022-12-23"
+version: "2023-01-03"
 sort: by_weight
 ...
 # 一些杂项
@@ -1708,3 +1708,4 @@ Chromium Embedded Framework	CEF
 Chromium Embedded Framework	ChromiumEmbeddedFramework
 RustDesk	RustDesk
 Capcom	Capcom
+watermark	watermark
