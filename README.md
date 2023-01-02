@@ -2,16 +2,9 @@
 
 ![demo](./others/demo.webp)
 
-功能齐全，词库体验良好，长期更新修订。
-
 ## 基本套路
 
 - 简体 | 全拼 | 双拼
-- [鼠须管 Squirrel](https://github.com/rime/squirrel)
-    - 另一个版本： [LEOYoon-Tsaw/squirrel](https://github.com/LEOYoon-Tsaw/squirrel)
-- [小狼毫 Weasel](https://github.com/rime/weasel)
-    - 另一个版本： [fxliang/weasel](https://github.com/fxliang/weasel)
-    
 - 主要功能
     -   [melt_eng](https://github.com/tumuyan/rime-melt) 英文输入
     -   [两分输入法](http://cheonhyeong.com/Simplified/download.html) 拼字
@@ -20,6 +13,7 @@
     -   自整理的 Emoji
     -   [以词定字](https://github.com/BlindingDark/rime-lua-select-character)
     -   [长词优先](https://github.com/tumuyan/rime-melt/blob/master/lua/melt.lua)
+    -   [Unicode](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)
     -   所有标点符号直接上屏，「/」模式改为「v」模式，「/」直接上屏
     -   增加了许多拼音纠错
 - 简体字表、词库
@@ -32,17 +26,16 @@
     -   [《新华成语大词典》](https://forum.freemdict.com/t/topic/11407)
     -   [搜狗网络流行新词](https://pinyin.sogou.com/dict/detail/index/4)
     -   [腾讯词向量](https://ai.tencent.com/ailab/nlp/en/download.html)
-- 词库更新
-    - 校对了大量异形词、错别字、错误注音
-    - 长期对词库进行更新修订
+- 词库修订
+    - 校对大量异形词、错别字、错误注音
+
+详细介绍：[雾凇拼音，我的 Rime 配置及新手指引](https://dvel.me/posts/my-rime/)
 
 <br>
 
-## 长期维护词库
+## 词库
 
-精心调教了很多。既然找不到一份比较满意的简体词库，主流输入法又不公开自己的系统词库，干脆自己搞一个。
-
-主要维护的词库：
+词库长期维护：
 
 - `8105` 字表。
 - `base` 基础词库。
@@ -64,6 +57,14 @@
 
 - 鼠须管： `~/Library/Rime`
 - 小狼毫： `%APPDATA%\Rime`
+
+更新词库：
+
+词库每个月都会更新几次，更新时只需要将下面 3 个文件夹覆盖过去并重新部署即可。
+
+- `cn_dicts` 拼音相关词库
+- `en_dicts` 英文相关词库
+- `opencc` Emoji
 
 <br>
 
@@ -124,10 +125,6 @@
 
 在方案中修改 `date_translator` 下 `date`、`time` 等对应的关键字。
 
----
-
-详细介绍：[雾凇拼音，我的 Rime 配置及新手指引](https://dvel.me/posts/my-rime/)
-
 <br>
 
 ## 感谢
@@ -136,10 +133,18 @@
 
 上述提到的方案及功能参考。
 
-搜狗转 Rime 词库：[lewangdev/scel2txt](https://github.com/lewangdev/scel2txt)
+搜狗转 Rime：[lewangdev/scel2txt](https://github.com/lewangdev/scel2txt)
 
 大量参考[校对网](http://www.jiaodui.com/bbs/)。
 
 Thanks to JetBrains for the OSS development license.
 
 [![JetBrains](https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg)](https://jb.gg/OpenSourceSupport)
+
+<br>
+
+## ❤️ 赞助 ☕
+
+如果觉得项目不错，可以请 Dvel 吃个煎饼馃子。
+
+<img src="./others/sponsor.webp" alt="请 Dvel 吃个煎饼馃子" width=600 />
