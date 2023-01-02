@@ -154,7 +154,6 @@ function long_word_filter(input, env)
 	local count = config:get_string(env.name_space .."/count") or 2
     local idx = config:get_string(env.name_space .."/idx") or 4
 
-
     local l = {}
     local firstWordLength = 0 -- 记录第一个候选词的长度，提前的候选词至少要比第一个候选词长
     -- local s1 = 0 -- 记录筛选了多少个英语词条(只提升 count 个词的权重，并且对comment长度过长的候选进行过滤)
@@ -245,5 +244,22 @@ function code_length_limit_processor(key, env)
     end
     -- 放行
     return 2
+end
+-------------------------------------------------------------
+-- Unicode 输入
+-- 复制自： https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua
+function unicode(input, seg, env)
+    local ucodestr = seg:has_tag("unicode") and input:match("U(%x+)")
+    if ucodestr and #ucodestr > 1 then
+        local code = tonumber(ucodestr, 16)
+        local text = utf8.char(code)
+        yield(Candidate("unicode", seg.start, seg._end, text, string.format("U%x", code)))
+        if #ucodestr < 5 then
+            for i = 0, 15 do
+                local text = utf8.char(code * 16 + i)
+                yield(Candidate("unicode", seg.start, seg._end, text, string.format("U%x~%x", code, i)))
+            end
+        end
+    end
 end
 -------------------------------------------------------------
