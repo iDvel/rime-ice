@@ -8,7 +8,7 @@
 # 将原本都是 100 的词频删除，防止重码时权重超过拼音
 ---
 name: en
-version: "2022-05-20"
+version: "2023-01-03"
 sort: by_weight
 ...
 # +_+
@@ -122,7 +122,7 @@ Easter	Easter
 Egyptian	Egyptian
 February	February
 Friday	Friday
-I	I
+# I	I
 Islam	Islam
 January	January
 Jesus	Jesus
@@ -232,7 +232,7 @@ United Kingdom	UnitedKingdom
 United States	UnitedStates
 Wales	Wales
 Welsh	Welsh
-a	a
+# a	a
 abandon	abandon
 abbreviation	abbreviation
 abdomen	abdomen
