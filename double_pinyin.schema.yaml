@@ -7,6 +7,9 @@
 #     双拼和全拼主要就是 speller/algebra 和 translator/preedit_format 这里有区别。
 # 全拼的自定义文本和双拼有些冲突，改成了 custom_phrase_double ，需要创建 custom_phrase_double.txt 文件。
 # 中英混输词库 en_dicts/cn_en.dict.yaml 可以删除或修改，里面是写死了的全拼+英文编码。
+#
+# v+字母在双拼是正常拼写，有冲突。默认关闭 v 模式，修改可参考 https://github.com/iDvel/rime-ice/issues/58
+# u+字母在双拼是正常拼写，有冲突。默认关闭两分拼字，可修改为其他前缀。
 
 
 # 方案说明
@@ -21,6 +24,7 @@ schema:
     https://github.com/iDvel/rime-ice
   dependencies:
     - melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
+    - liangfen  # 两分拼字，作为反查挂载到拼音方案
 
 
 # 开关
@@ -70,6 +74,7 @@ engine:
     - table_translator@custom_phrase      # 自定义短语
     - table_translator@melt_eng           # 英文输入
     - reverse_lookup_translator@liangfen  # 反查，两分拼字
+    - lua_translator@unicode              # Unicode
   filters:
     - simplifier@emoji             # Emoji
     - simplifier@traditionalize    # 简繁切换
@@ -196,6 +201,18 @@ recognizer:
     colon: "^[A-Za-z]+:.*"               # 上面的超集，可以输入冒号，不会导致句子直接上屏
     # punct: "^/([0-9]+[a-z]*|[a-z]+)$"  # 响应默认的 punctuation/symbols 的「/」开头的字符
     # punct: "^v([0-9]|10|[A-Za-z]+)$"   # 响应 symbols_custom.yaml 下的 punctuator/symbols，用「v」替换「/」并支持大写
+    # reverse_lookup: '^u[a-z]+$'        # 响应两分的反查
+    unicode: "^U[a-f0-9]+"               # 响应 Unicode
+
+
+# 反查：两分（拼字）
+# 全拼方案默认以 u 开头进行两分拼字，双拼可以修改为其他前缀，比如某个大写字母；
+# 然后在上面的 reverse_lookup 正则中的 u 改为相应的大写字母。
+# liangfen:
+#   dictionary: liangfen
+#   prefix: 'u'              # 以 u 开头来反查
+#   enable_completion: true  # 补全提示
+#   tips: 〔两分〕
 
 
 # 拼写设定
