@@ -9,7 +9,6 @@
 # 中英混输词库 en_dicts/cn_en.dict.yaml 可以删除或修改，里面是写死了的全拼+英文编码。
 #
 # v+字母在双拼是正常拼写，有冲突。默认关闭 v 模式，修改可参考 https://github.com/iDvel/rime-ice/issues/58
-# u+字母在双拼是正常拼写，有冲突。默认关闭两分拼字，可修改为其他前缀。
 
 
 # 方案说明
@@ -201,18 +200,16 @@ recognizer:
     colon: "^[A-Za-z]+:.*"               # 上面的超集，可以输入冒号，不会导致句子直接上屏
     # punct: "^/([0-9]+[a-z]*|[a-z]+)$"  # 响应默认的 punctuation/symbols 的「/」开头的字符
     # punct: "^v([0-9]|10|[A-Za-z]+)$"   # 响应 symbols_custom.yaml 下的 punctuator/symbols，用「v」替换「/」并支持大写
-    # reverse_lookup: '^u[a-z]+$'        # 响应两分的反查
+    reverse_lookup: '^L[a-z]+$'          # 响应两分的反查
     unicode: "^U[a-f0-9]+"               # 响应 Unicode
 
 
 # 反查：两分（拼字）
-# 全拼方案默认以 u 开头进行两分拼字，双拼可以修改为其他前缀，比如某个大写字母；
-# 然后在上面的 reverse_lookup 正则中的 u 改为相应的大写字母。
-# liangfen:
-#   dictionary: liangfen
-#   prefix: 'u'              # 以 u 开头来反查
-#   enable_completion: true  # 补全提示
-#   tips: 〔两分〕
+liangfen:
+  dictionary: liangfen
+  prefix: 'L'              # 以 L 开头来反查
+  enable_completion: true  # 补全提示
+  # tips: 〔两分〕          # 反查时显示的文字，建议注释掉，否则很多 L 开头的英文单词也会显示这个
 
 
 # 拼写设定
