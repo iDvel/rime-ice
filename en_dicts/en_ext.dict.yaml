@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-01-03"
+version: "2023-01-06"
 sort: by_weight
 ...
 # 一些杂项
@@ -1709,3 +1709,8 @@ Chromium Embedded Framework	ChromiumEmbeddedFramework
 RustDesk	RustDesk
 Capcom	Capcom
 watermark	watermark
+Poxlovid	Poxlovid
+datetime	datetime
+millisecond	millisecond
+microsecond	microsecond
+nanosecond	nanosecond
