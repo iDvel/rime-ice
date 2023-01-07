@@ -6,9 +6,9 @@ patch:
   
   # 中文键盘空格键上会显示方案名称
   # （英文键盘的空格在主题的 `theme.yaml` 文件下的 `space: {label:` 处修改）
-  schema/name: Rime ice
+  schema/name: rime-ice
 
-  # 智能纠错
+  # 智能纠错（适用于全键盘全拼）
   translator/enable_correction: true
 
   key_binder:

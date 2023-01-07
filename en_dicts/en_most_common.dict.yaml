@@ -13,7 +13,7 @@
 # 转换了一些应该大写的
 ---
 name: en_most_common
-version: "2022-12-30"
+version: "2023-01-07"
 sort: by_weight
 ...
 # 含有大写字母的：
@@ -1954,7 +1954,6 @@ danger	danger
 dangerous	dangerous
 daniel	daniel
 danish	danish
-dans	dans
 dare	dare
 dark	dark
 darkness	darkness
