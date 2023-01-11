@@ -10,7 +10,7 @@
 #
 ---
 name: cn_en
-version: "2022-12-30"
+version: "2023-01-11"
 sort: by_weight
 ...
 # 没有空格的（为了Emoji映射。Emoji 里空格是分割符，没法映射，不知道怎么解决）
@@ -276,12 +276,16 @@ Switch 版	switchban
 Switch 版本	switchbanben
 A 型	axing
 A 型血	axingxue
+A 血型	axuexing
 B 型	bxing
 B 型血	bxingxue
+B 血型	bxuexing
 AB 型	abxing
 AB 型血	abxingxue
+AB 血型	abxuexing
 O 型	oxing
 O 型血	oxingxue
+O 血型	oxuexing
 IT 界	itjie
 Fn 键	fnjian
 Cmd 键	cmdjian
