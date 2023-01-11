@@ -13,7 +13,7 @@
 # 转换了一些应该大写的
 ---
 name: en_most_common
-version: "2023-01-07"
+version: "2023-01-11"
 sort: by_weight
 ...
 # 含有大写字母的：
@@ -65,6 +65,11 @@ Sunday	Sunday
 Sun.	Sun
 NASA	NASA
 Java	Java
+Wayne	Wayne
+CEO	CEO
+ATM	ATM
+BBC	BBC
+GPS	GPS
 # +_+
 abandoned	abandoned
 abc	abc
@@ -568,7 +573,6 @@ athletic	athletic
 athletics	athletics
 atlantic	atlantic
 atlas	atlas
-atm	atm
 atmosphere	atmosphere
 atmospheric	atmospheric
 atom	atom
@@ -607,7 +611,6 @@ audio	audio
 audit	audit
 auditor	auditor
 august	august
-aus	aus
 australia	australia
 australian	australian
 austria	austria
@@ -729,7 +732,6 @@ battery	battery
 battle	battle
 battlefield	battlefield
 bay	bay
-bbc	bbc
 be	be
 beach	beach
 beaches	beaches
@@ -1242,7 +1244,6 @@ centre	centre
 cents	cents
 centuries	centuries
 century	century
-ceo	ceo
 ceramic	ceramic
 ceremony	ceremony
 certain	certain
@@ -1251,7 +1252,6 @@ certificate	certificate
 certificates	certificates
 certification	certification
 certified	certified
-cet	cet
 chad	chad
 chain	chain
 chains	chains
@@ -3275,7 +3275,6 @@ government	government
 governmental	governmental
 governments	governments
 governor	governor
-gps	gps
 grab	grab
 grace	grace
 grad	grad
@@ -7877,7 +7876,6 @@ wave	wave
 waves	waves
 wax	wax
 way	way
-wayne	wayne
 ways	ways
 weak	weak
 wealth	wealth
