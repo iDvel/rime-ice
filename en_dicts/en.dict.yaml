@@ -170,6 +170,7 @@ admission	admission
 admissions	admissions
 admit	admit
 admitted	admitted
+Adobe	Adobe
 adobe	adobe
 adolescent	adolescent
 adopt	adopt
@@ -354,10 +355,10 @@ amended	amended
 amendment	amendment
 amendments	amendments
 amenities	amenities
-america	america
-american	american
-americans	americans
-americas	americas
+America	America
+American	American
+Americans	Americans
+Americas	Americas
 amino	amino
 among	among
 amongst	amongst
@@ -452,7 +453,7 @@ anyway	anyway
 anywhere	anywhere
 # aol	aol
 # ap	ap
-apache	apache
+Apache	Apache
 apart	apart
 apartment	apartment
 apartments	apartments
@@ -509,9 +510,9 @@ aqua	aqua
 aquarium	aquarium
 aquatic	aquatic
 # ar	ar
-arab	arab
-arabia	arabia
-arabic	arabic
+Arab	Arab
+Arabia	Arabia
+Arabic	Arabic
 arbitrary	arbitrary
 arbitration	arbitration
 arbor	arbor
@@ -577,18 +578,18 @@ artwork	artwork
 aruba	aruba
 as	as
 asbestos	asbestos
-ascii	ascii
+ASCII	ASCII
 ash	ash
 ashley	ashley
 asia	asia
 asian	asian
 aside	aside
-asin	asin
+Asin	Asin
 ask	ask
 asked	asked
 asking	asking
 asks	asks
-asn	asn
+ASN	ASN
 asp	asp
 aspect	aspect
 aspects	aspects
@@ -638,11 +639,11 @@ athens	athens
 athletes	athletes
 athletic	athletic
 athletics	athletics
-ati	ati
+ATI	ATI
 atlanta	atlanta
 atlantic	atlantic
 atlas	atlas
-atm	atm
+ATM	ATM
 atmosphere	atmosphere
 atmospheric	atmospheric
 atom	atom
@@ -691,8 +692,8 @@ august	august
 aurora	aurora
 aus	aus
 austin	austin
-australia	australia
-australian	australian
+Australia	Australia
+Australian	Australian
 austria	austria
 authentic	authentic
 authentication	authentication
@@ -837,12 +838,12 @@ battle	battle
 battlefield	battlefield
 bay	bay
 # bb	bb
-bbc	bbc
-bbs	bbs
-bbw	bbw
+BBC	BBC
+BBS	BBS
+# bbw	bbw
 # bc	bc
 # bd	bd
-bdsm	bdsm
+BDSM	BDSM
 # be	be
 beach	beach
 beaches	beaches
@@ -1041,13 +1042,14 @@ blues	blues
 bluetooth	bluetooth
 blvd	blvd
 # bm	bm
-bmw	bmw
+BMW	BMW
 # bo	bo
 board	board
 boards	boards
 boat	boat
 boating	boating
 boats	boats
+Bob	Bob
 bob	bob
 bobby	bobby
 boc	boc
@@ -1133,8 +1135,8 @@ brands	brands
 bras	bras
 brass	brass
 brave	brave
-brazil	brazil
-brazilian	brazilian
+Brazil	Brazil
+Brazilian	Brazilian
 breach	breach
 bread	bread
 break	break
@@ -1167,7 +1169,7 @@ bringing	bringing
 brings	brings
 brisbane	brisbane
 bristol	bristol
-britain	britain
+Britain	Britain
 britannica	britannica
 british	british
 britney	britney
@@ -1329,7 +1331,7 @@ camps	camps
 campus	campus
 cams	cams
 can	can
-canada	canada
+Canada	Canada
 canadian	canadian
 canal	canal
 canberra	canberra
@@ -1425,7 +1427,7 @@ category	category
 catering	catering
 cathedral	cathedral
 catherine	catherine
-catholic	catholic
+Catholic	Catholic
 cats	cats
 cattle	cattle
 caught	caught
@@ -1439,11 +1441,11 @@ cayman	cayman
 # cb	cb
 cbs	cbs
 # cc	cc
-ccd	ccd
-# cd	cd
-cdna	cdna
-cds	cds
-cdt	cdt
+CCD	CCD
+CD	CD
+cDNA	cDNA
+CdS	CdS
+CDT	CDT
 # ce	ce
 cedar	cedar
 ceiling	ceiling
@@ -1531,7 +1533,7 @@ charges	charges
 charging	charging
 charitable	charitable
 charity	charity
-charles	charles
+Charles	Charles
 charleston	charleston
 charlie	charlie
 charlotte	charlotte
@@ -1582,8 +1584,9 @@ childhood	childhood
 children	children
 childrens	childrens
 chile	chile
+China	China
 china	china
-chinese	chinese
+Chinese	Chinese
 chip	chip
 chips	chips
 cho	cho
@@ -1599,12 +1602,12 @@ chose	chose
 chosen	chosen
 chris	chris
 christ	christ
-christian	christian
+Christian	Christian
 christianity	christianity
 christians	christians
 christina	christina
 christine	christine
-christmas	christmas
+Christmas	Christmas
 christopher	christopher
 chrome	chrome
 chronic	chronic
@@ -2179,7 +2182,7 @@ cow	cow
 cowboy	cowboy
 cox	cox
 # cp	cp
-cpu	cpu
+CPU	CPU
 # cr	cr
 crack	crack
 cradle	cradle
@@ -2312,7 +2315,7 @@ dancing	dancing
 danger	danger
 dangerous	dangerous
 daniel	daniel
-danish	danish
+Danish	Danish
 danny	danny
 dans	dans
 dare	dare
@@ -2331,10 +2334,10 @@ dates	dates
 dating	dating
 daughter	daughter
 daughters	daughters
-dave	dave
-david	david
+Dave	Dave
+David	David
 davidson	davidson
-davis	davis
+Davis	Davis
 dawn	dawn
 day	day
 days	days
@@ -2449,7 +2452,7 @@ demonstration	demonstration
 den	den
 denial	denial
 denied	denied
-denmark	denmark
+Denmark	Denmark
 dennis	dennis
 dense	dense
 density	density
@@ -2696,13 +2699,13 @@ division	division
 divisions	divisions
 divorce	divorce
 divx	divx
-diy	diy
+DIY	DIY
 DJ	DJ
 # dk	dk
 # dl	dl
 # dm	dm
-dna	dna
-dns	dns
+DNA	DNA
+DNS	DNS
 # do	do
 doc	doc
 dock	dock
@@ -2836,12 +2839,12 @@ duration	duration
 durham	durham
 during	during
 dust	dust
-dutch	dutch
+Dutch	Dutch
 duties	duties
 duty	duty
 # dv	dv
-dvd	dvd
-dvds	dvds
+DVD	DVD
+DVDs	DVDs
 # dx	dx
 dying	dying
 dylan	dylan
@@ -2869,7 +2872,7 @@ ease	ease
 easier	easier
 easily	easily
 east	east
-easter	easter
+Easter	Easter
 eastern	eastern
 easy	easy
 eat	eat
@@ -2931,8 +2934,8 @@ efforts	efforts
 # eg	eg
 egg	egg
 eggs	eggs
-egypt	egypt
-egyptian	egyptian
+Egypt	Egypt
+Egyptian	Egyptian
 # eh	eh
 eight	eight
 either	either
@@ -2985,7 +2988,7 @@ eminem	eminem
 emirates	emirates
 emission	emission
 emissions	emissions
-emma	emma
+Emma	Emma
 emotional	emotional
 emotions	emotions
 emperor	emperor
@@ -3040,8 +3043,8 @@ engineer	engineer
 engineering	engineering
 engineers	engineers
 engines	engines
-england	england
-english	english
+England	England
+English	English
 enhance	enhance
 enhanced	enhanced
 enhancement	enhancement
@@ -3358,8 +3361,8 @@ fancy	fancy
 fans	fans
 fantastic	fantastic
 fantasy	fantasy
-faq	faq
-faqs	faqs
+FAQ	FAQ
+FAQs	FAQs
 far	far
 fare	fare
 fares	fares
@@ -3388,11 +3391,11 @@ favour	favour
 favourite	favourite
 favourites	favourites
 fax	fax
-fbi	fbi
+FBI	FBI
 # fc	fc
-fcc	fcc
+FCC	FCC
 # fd	fd
-fda	fda
+FDA	FDA
 # fe	fe
 fear	fear
 fears	fears
@@ -3491,7 +3494,7 @@ finish	finish
 finished	finished
 finishing	finishing
 finite	finite
-finland	finland
+Finland	Finland
 finnish	finnish
 fioricet	fioricet
 fire	fire
@@ -3659,7 +3662,7 @@ framed	framed
 frames	frames
 framework	framework
 framing	framing
-france	france
+France	France
 franchise	franchise
 francis	francis
 francisco	francisco
@@ -3678,7 +3681,7 @@ freely	freely
 freeware	freeware
 freeze	freeze
 freight	freight
-french	french
+French	French
 frequencies	frequencies
 frequency	frequency
 frequent	frequent
@@ -3702,7 +3705,7 @@ fruit	fruit
 fruits	fruits
 # fs	fs
 # ft	ft
-ftp	ftp
+FTP	FTP
 # fu	fu
 fuck	fuck
 fucked	fucked
@@ -3789,12 +3792,12 @@ gay	gay
 gays	gays
 gazette	gazette
 # gb	gb
-gba	gba
-gbp	gbp
+GBA	GBA
+GBP	GBP
 # gc	gc
-gcc	gcc
+GCC	GCC
 # gd	gd
-gdp	gdp
+GDP	GDP
 # ge	ge
 gear	gear
 geek	geek
@@ -3839,8 +3842,8 @@ geometry	geometry
 george	george
 georgia	georgia
 gerald	gerald
-german	german
-germany	germany
+German	German
+Germany	Germany
 get	get
 gets	gets
 getting	getting
@@ -3853,7 +3856,7 @@ giant	giant
 giants	giants
 gibraltar	gibraltar
 gibson	gibson
-gif	gif
+GIF	GIF
 gift	gift
 gifts	gifts
 gig	gig
@@ -3882,10 +3885,11 @@ gloves	gloves
 glow	glow
 glucose	glucose
 # gm	gm
-gmbh	gmbh
-gmc	gmc
-gmt	gmt
+GmbH	GmbH
+GMC	GMC
+GMT	GMT
 gnome	gnome
+GNU	GNU
 gnu	gnu
 # go	go
 goal	goal
@@ -3902,7 +3906,7 @@ gone	gone
 gonna	gonna
 good	good
 goods	goods
-google	google
+Google	Google
 gordon	gordon
 gore	gore
 gorgeous	gorgeous
@@ -3921,8 +3925,9 @@ governmental	governmental
 governments	governments
 governor	governor
 # gp	gp
+GPL	GPL
 gpl	gpl
-gps	gps
+GPS	GPS
 # gr	gr
 grab	grab
 grace	grace
@@ -3961,8 +3966,8 @@ great	great
 greater	greater
 greatest	greatest
 greatly	greatly
-greece	greece
-greek	greek
+Greece	Greece
+Greek	Greek
 green	green
 greene	greene
 greenhouse	greenhouse
@@ -4150,7 +4155,7 @@ heating	heating
 heaven	heaven
 heavily	heavily
 heavy	heavy
-hebrew	hebrew
+Hebrew	Hebrew
 heel	heel
 height	height
 heights	heights
@@ -4363,17 +4368,18 @@ hyundai	hyundai
 # hz	hz
 # i	i
 # ia	ia
-ian	ian
-ibm	ibm
+Ian	Ian
+IBM	IBM
 # ic	ic
 ice	ice
-iceland	iceland
+Iceland	Iceland
 icon	icon
 icons	icons
-icq	icq
-ict	ict
+ICQ	ICQ
+ICT	ICT
 # id	id
 idaho	idaho
+IDE	IDE
 ide	ide
 idea	idea
 ideal	ideal
@@ -4390,7 +4396,7 @@ idle	idle
 idol	idol
 ids	ids
 # ie	ie
-ieee	ieee
+IEEE	IEEE
 # if	if
 ignore	ignore
 ignored	ignored
@@ -4485,11 +4491,11 @@ independently	independently
 index	index
 indexed	indexed
 indexes	indexes
-india	india
-indian	indian
-indiana	indiana
-indianapolis	indianapolis
-indians	indians
+India	India
+Indian	Indian
+Indiana	Indiana
+Indianapolis	Indianapolis
+Indians	Indians
 indicate	indicate
 indicated	indicated
 indicates	indicates
@@ -4613,7 +4619,7 @@ integrated	integrated
 integrating	integrating
 integration	integration
 integrity	integrity
-intel	intel
+Intel	Intel
 intellectual	intellectual
 intelligence	intelligence
 intelligent	intelligent
@@ -4703,12 +4709,12 @@ ipod	ipod
 ips	ips
 # ir	ir
 ira	ira
-iran	iran
+Iran	Iran
 iraq	iraq
 iraqi	iraqi
 irc	irc
 ireland	ireland
-irish	irish
+Irish	Irish
 iron	iron
 irrigation	irrigation
 irs	irs
@@ -4725,8 +4731,8 @@ iso	iso
 isolated	isolated
 isolation	isolation
 isp	isp
-israel	israel
-israeli	israeli
+Israel	Israel
+Israeli	israeli
 issn	issn
 issue	issue
 issued	issued
@@ -4735,10 +4741,10 @@ ist	ist
 istanbul	istanbul
 # it	it
 italia	italia
-italian	italian
-italiano	italiano
+Italian	Italian
+Italiano	italiano
 italic	italic
-italy	italy
+Italy	Italy
 item	item
 items	items
 its	its
@@ -4749,25 +4755,26 @@ ivory	ivory
 # ix	ix
 # j	j
 # ja	ja
-jack	jack
+Jack	Jack
 jacket	jacket
 jackets	jackets
-jackie	jackie
-jackson	jackson
-jacksonville	jacksonville
-jacob	jacob
+Jackie	Jackie
+Jackson	Jackson
+Jacksonville	Jacksonville
+Jacob	Jacob
 jade	jade
 jaguar	jaguar
 jail	jail
 jake	jake
 jam	jam
-jamaica	jamaica
-james	james
-jamie	jamie
+Jamaica	Jamaica
+James	James
+Jamie	Jamie
 Jan.	Jan
-jane	jane
-janet	janet
+Jane	Jane
+JANET	JANET
 January	January
+Japan	Japan
 japan	japan
 Japanese	Japanese
 jar	jar
@@ -4782,42 +4789,43 @@ jazz	jazz
 jean	jean
 jeans	jeans
 jeep	jeep
-jeff	jeff
-jefferson	jefferson
-jeffrey	jeffrey
+Jeff	Jeff
+Jefferson	Jefferson
+Jeffrey	Jeffrey
 jelsoft	jelsoft
-jennifer	jennifer
-jenny	jenny
-jeremy	jeremy
+Jennifer	Jennifer
+Jenny	Jenny
+Jeremy	Jeremy
 jerry	jerry
 jersey	jersey
-jerusalem	jerusalem
-jesse	jesse
-jessica	jessica
-jesus	jesus
+Jerusalem	Jerusalem
+Jesse	Jesse
+Jessica	Jessica
+Jesus	Jesus
 jet	jet
 jets	jets
 jewel	jewel
 jewellery	jewellery
 jewelry	jewelry
 jewish	jewish
-jews	jews
+Jews	Jews
 jill	jill
-jim	jim
+Jim	Jim
+Jimmy	Jimmy
 jimmy	jimmy
 # jj	jj
 # jm	jm
 # jo	jo
-joan	joan
+Joan	Joan
 job	job
 jobs	jobs
-joe	joe
-joel	joel
-john	john
-johnny	johnny
-johns	johns
-johnson	johnson
-johnston	johnston
+Joe	Joe
+Joel	Joel
+John	John
+Johnny	Johnny
+Johns	Johns
+Johnson	Johnson
+Johnston	Johnston
 join	join
 joined	joined
 joining	joining
@@ -4825,14 +4833,15 @@ joins	joins
 joint	joint
 joke	joke
 jokes	jokes
-jon	jon
-jonathan	jonathan
+Jon	Jon
+Jonathan	Jonathan
 jones	jones
+Jordan	Jordan
 jordan	jordan
-jose	jose
+Jose	Jose
 joseph	joseph
 josh	josh
-joshua	joshua
+Joshua	Joshua
 journal	journal
 journalism	journalism
 journalist	journalist
@@ -4842,11 +4851,11 @@ journey	journey
 joy	joy
 joyce	joyce
 # jp	jp
-jpeg	jpeg
-jpg	jpg
+JPEG	JPEG
+JPG	JPG
 # jr	jr
 # js	js
-juan	juan
+Juan	Juan
 judge	judge
 judges	judges
 judgment	judgment
@@ -4963,8 +4972,8 @@ knows	knows
 # ko	ko
 kodak	kodak
 kong	kong
-korea	korea
-korean	korean
+Korea	Korea
+Korean	Korean
 kruger	kruger
 # ks	ks
 kurt	kurt
@@ -5029,8 +5038,9 @@ late	late
 lately	lately
 later	later
 latest	latest
+LaTeX	LaTeX
 latex	latex
-latin	latin
+Latin	Latin
 latina	latina
 latinas	latinas
 latino	latino
@@ -5061,7 +5071,7 @@ lazy	lazy
 # lb	lb
 lbs	lbs
 # lc	lc
-lcd	lcd
+LCD	LCD
 # ld	ld
 # le	le
 lead	lead
@@ -5200,7 +5210,7 @@ link	link
 linked	linked
 linking	linking
 links	links
-linux	linux
+Linux	Linux
 lion	lion
 lions	lions
 lip	lip
@@ -5264,7 +5274,7 @@ locks	locks
 lodge	lodge
 lodging	lodging
 log	log
-logan	logan
+Logan	Logan
 logged	logged
 logging	logging
 logic	logic
@@ -5332,7 +5342,7 @@ lucas	lucas
 lucia	lucia
 luck	luck
 lucky	lucky
-lucy	lucy
+Lucy	Lucy
 luggage	luggage
 luis	luis
 luke	luke
@@ -5382,7 +5392,7 @@ mailman	mailman
 mails	mails
 mailto	mailto
 main	main
-maine	maine
+Maine	Maine
 mainland	mainland
 mainly	mainly
 mainstream	mainstream
@@ -5472,7 +5482,7 @@ marks	marks
 marriage	marriage
 married	married
 marriott	marriott
-mars	mars
+Mars	Mars
 marsh	marsh
 marshall	marshall
 mart	mart
@@ -5484,9 +5494,10 @@ mary	mary
 maryland	maryland
 mas	mas
 mask	mask
+Mason	Mason
 mason	mason
 mass	mass
-massachusetts	massachusetts
+Massachusetts	Massachusetts
 massage	massage
 massive	massive
 master	master
@@ -5640,8 +5651,8 @@ meyer	meyer
 # mh	mh
 mhz	mhz
 # mi	mi
-mia	mia
-miami	miami
+MIA	MIA
+Miami	Miami
 mic	mic
 mice	mice
 michael	michael
@@ -5650,7 +5661,7 @@ michelle	michelle
 michigan	michigan
 micro	micro
 microphone	microphone
-microsoft	microsoft
+Microsoft	Microsoft
 microwave	microwave
 mid	mid
 middle	middle
@@ -5714,6 +5725,7 @@ mirror	mirror
 mirrors	mirrors
 misc	misc
 miscellaneous	miscellaneous
+Miss	Miss
 miss	miss
 missed	missed
 missile	missile
@@ -5725,7 +5737,7 @@ missouri	missouri
 mistake	mistake
 mistakes	mistakes
 mistress	mistress
-mit	mit
+MIT	MIT
 mitchell	mitchell
 mitsubishi	mitsubishi
 mix	mix
@@ -5847,23 +5859,23 @@ movie	movie
 movies	movies
 moving	moving
 mozambique	mozambique
-mozilla	mozilla
+Mozilla	Mozilla
 # mp	mp
-mpeg	mpeg
-mpegs	mpegs
+MPEG	MPEG
+MPEGs	MPEGs
 mpg	mpg
 mph	mph
 # mr	mr
-mrna	mrna
-mrs	mrs
+mRNA	mRNA
+Mrs.	Mrs
 # ms	ms
 msg	msg
 msgid	msgid
 msgstr	msgstr
 msie	msie
-msn	msn
+MSN	MSN
 # mt	mt
-mtv	mtv
+MTV	MTV
 # mu	mu
 much	much
 mud	mud
@@ -5923,7 +5935,7 @@ nano	nano
 naples	naples
 narrative	narrative
 narrow	narrow
-nasa	nasa
+NASA	NASA
 nascar	nascar
 nasdaq	nasdaq
 nashville	nashville
@@ -5936,7 +5948,7 @@ nationally	nationally
 nations	nations
 nationwide	nationwide
 native	native
-nato	nato
+NATO	NATO
 natural	natural
 naturally	naturally
 naturals	naturals
@@ -5949,10 +5961,10 @@ navigation	navigation
 navigator	navigator
 navy	navy
 # nb	nb
-nba	nba
-nbc	nbc
+NBA	NBA
+NBC	NBC
 # nc	nc
-ncaa	ncaa
+NCAA	NCAA
 # nd	nd
 # ne	ne
 near	near
@@ -5987,7 +5999,7 @@ nervous	nervous
 nest	nest
 nested	nested
 net	net
-netherlands	netherlands
+Netherlands	Netherlands
 netscape	netscape
 network	network
 networking	networking
@@ -6039,7 +6051,7 @@ nike	nike
 nikon	nikon
 nil	nil
 nine	nine
-nintendo	nintendo
+Nintendo	Nintendo
 nipple	nipple
 nipples	nipples
 nirvana	nirvana
@@ -6209,7 +6221,8 @@ often	often
 ohio	ohio
 oil	oil
 oils	oils
-# ok	ok
+OK	OK
+ok	ok
 okay	okay
 oklahoma	oklahoma
 # ol	ol
@@ -6217,10 +6230,10 @@ old	old
 older	older
 oldest	oldest
 olive	olive
-oliver	oliver
-olympic	olympic
-olympics	olympics
-olympus	olympus
+Oliver	Oliver
+Olympic	Olympic
+Olympics	Olympics
+Olympus	Olympus
 # om	om
 omaha	omaha
 oman	oman
@@ -6313,7 +6326,7 @@ originally	originally
 origins	origins
 orlando	orlando
 orleans	orleans
-# os	os
+OS	OS
 oscar	oscar
 # ot	ot
 other	other
@@ -6509,14 +6522,14 @@ payroll	payroll
 pays	pays
 # pb	pb
 PC	PC
-pci	pci
-pcs	pcs
+PCI	PCI
+PCs	PCs
 pct	pct
 # pd	pd
-pda	pda
-pdas	pdas
-pdf	pdf
-pdt	pdt
+PDA	PDA
+PDAS	PDAS
+PDF	PDF
+PDT	PDT
 # pe	pe
 peace	peace
 peaceful	peaceful
@@ -6638,7 +6651,7 @@ photographs	photographs
 photography	photography
 photos	photos
 photoshop	photoshop
-php	php
+PHP	PHP
 phpbb	phpbb
 phrase	phrase
 phrases	phrases
@@ -6771,12 +6784,13 @@ points	points
 poison	poison
 pokemon	pokemon
 poker	poker
-poland	poland
+Poland	Poland
 polar	polar
 pole	pole
 police	police
 policies	policies
 policy	policy
+Polish	Polish
 polish	polish
 polished	polished
 political	political
@@ -6819,8 +6833,8 @@ portrait	portrait
 portraits	portraits
 ports	ports
 portsmouth	portsmouth
-portugal	portugal
-portuguese	portuguese
+Portugal	Portugal
+Portuguese	Portuguese
 pos	pos
 pose	pose
 posing	posing
@@ -7097,7 +7111,7 @@ provision	provision
 provisions	provisions
 proxy	proxy
 prozac	prozac
-# ps	ps
+PS	PS
 psi	psi
 psp	psp
 pst	pst
@@ -7306,7 +7320,7 @@ reasoning	reasoning
 reasons	reasons
 rebate	rebate
 rebates	rebates
-rebecca	rebecca
+Rebecca	Rebecca
 rebel	rebel
 rebound	rebound
 rec	rec
@@ -7677,7 +7691,7 @@ riverside	riverside
 # rl	rl
 # rm	rm
 # rn	rn
-rna	rna
+RNA	RNA
 # ro	ro
 road	road
 roads	roads
@@ -7708,7 +7722,7 @@ roller	roller
 rolling	rolling
 rolls	rolls
 rom	rom
-roman	roman
+Roman	Roman
 romance	romance
 romania	romania
 romantic	romantic
@@ -7750,12 +7764,12 @@ roy	roy
 royal	royal
 royalty	royalty
 # rp	rp
-rpg	rpg
-rpm	rpm
+RPG	RPG
+RPM	RPM
 # rr	rr
-rrp	rrp
+RRP	RRP
 # rs	rs
-rss	rss
+RSS	RSS
 # rt	rt
 # ru	ru
 rubber	rubber
@@ -7775,8 +7789,8 @@ runtime	runtime
 rural	rural
 rush	rush
 russell	russell
-russia	russia
-russian	russian
+Russia	Russia
+Russian	Russian
 ruth	ruth
 # rv	rv
 # rw	rw
@@ -7848,7 +7862,7 @@ satisfactory	satisfactory
 satisfied	satisfied
 satisfy	satisfy
 Saturday	Saturday
-saturn	saturn
+Saturn	Saturn
 sauce	sauce
 saudi	saudi
 savage	savage
@@ -7906,9 +7920,9 @@ scored	scored
 scores	scores
 scoring	scoring
 scotia	scotia
-scotland	scotland
-scott	scott
-scottish	scottish
+Scotland	Scotland
+Scott	Scott
+Scottish	Scottish
 scout	scout
 scratch	scratch
 screen	screen
@@ -8181,7 +8195,7 @@ silicon	silicon
 silk	silk
 silly	silly
 silver	silver
-sim	sim
+SIM	SIM
 similar	similar
 similarly	similarly
 simon	simon
@@ -8197,7 +8211,7 @@ simultaneously	simultaneously
 sin	sin
 since	since
 sing	sing
-singapore	singapore
+Singapore	Singapore
 singer	singer
 singh	singh
 singing	singing
@@ -8205,6 +8219,7 @@ single	single
 singles	singles
 sink	sink
 sip	sip
+Sir	Sir
 sir	sir
 sister	sister
 sisters	sisters
@@ -8272,8 +8287,8 @@ smithsonian	smithsonian
 smoke	smoke
 smoking	smoking
 smooth	smooth
-sms	sms
-smtp	smtp
+SMS	SMS
+SMTP	SMTP
 # sn	sn
 snake	snake
 snap	snap
@@ -8281,7 +8296,7 @@ snapshot	snapshot
 snow	snow
 snowboard	snowboard
 # so	so
-soa	soa
+SOA	SOA
 soap	soap
 soc	soc
 soccer	soccer
@@ -8357,10 +8372,10 @@ sox	sox
 spa	spa
 space	space
 spaces	spaces
-spain	spain
+Spain	Spain
 spam	spam
 span	span
-spanish	spanish
+Spanish	Spanish
 spank	spank
 spanking	spanking
 sparc	sparc
@@ -8442,7 +8457,7 @@ sprint	sprint
 spy	spy
 spyware	spyware
 # sq	sq
-sql	sql
+SQL	SQL
 squad	squad
 square	square
 squirt	squirt
@@ -8756,15 +8771,15 @@ suzuki	suzuki
 # sw	sw
 swap	swap
 swaziland	swaziland
-sweden	sweden
-swedish	swedish
+Sweden	Sweden
+Swedish	Swedish
 sweet	sweet
 swift	swift
 swim	swim
 swimming	swimming
 swing	swing
 swingers	swingers
-swiss	swiss
+Swiss	Swiss
 switch	switch
 switched	switched
 switches	switches
@@ -8944,8 +8959,8 @@ texture	texture
 tft	tft
 tgp	tgp
 # th	th
-thai	thai
-thailand	thailand
+Thai	Thai
+Thailand	Thailand
 than	than
 thank	thank
 thanks	thanks
@@ -9095,7 +9110,7 @@ toe	toe
 together	together
 toilet	toilet
 token	token
-tokyo	tokyo
+Tokyo	Tokyo
 told	told
 tolerance	tolerance
 toll	toll
@@ -9347,8 +9362,8 @@ typing	typing
 uganda	uganda
 ugly	ugly
 # uh	uh
-# ui	ui
-# uk	uk
+UI	UI
+UK	UK
 ukraine	ukraine
 # ul	ul
 ultimate	ultimate
@@ -9439,12 +9454,12 @@ urls	urls
 uruguay	uruguay
 urw	urw
 # us	us
-usa	usa
+USA	USA
 usage	usage
-usb	usb
-usc	usc
-usd	usd
-usda	usda
+USB	USB
+USC	USC
+USD	USD
+USDA	USDA
 use	use
 used	used
 useful	useful
@@ -9459,8 +9474,8 @@ usr	usr
 usual	usual
 usually	usually
 # ut	ut
-utah	utah
-utc	utc
+Utah	Utah
+UTC	UTC
 utilities	utilities
 utility	utility
 utilization	utilization
@@ -9610,6 +9625,7 @@ virtually	virtually
 virtue	virtue
 virus	virus
 viruses	viruses
+Visa	Visa
 visa	visa
 visibility	visibility
 visible	visible
@@ -9671,7 +9687,7 @@ waiting	waiting
 waiver	waiver
 wake	wake
 wal	wal
-wales	wales
+Wales	Wales
 walk	walk
 walked	walked
 walker	walker
@@ -9823,7 +9839,7 @@ widescreen	widescreen
 widespread	widespread
 width	width
 wife	wife
-wifi	wifi
+WiFi	WiFi
 wiki	wiki
 wikipedia	wikipedia
 wild	wild
@@ -9831,7 +9847,7 @@ wilderness	wilderness
 wildlife	wildlife
 wiley	wiley
 will	will
-william	william
+William	William
 williams	williams
 willing	willing
 willow	willow
@@ -9952,16 +9968,16 @@ www	www
 wyoming	wyoming
 # x	x
 xanax	xanax
-xbox	xbox
+Xbox	Xbox
 xerox	xerox
-xhtml	xhtml
+XHTML	XHTML
 # xi	xi
 # xl	xl
-xml	xml
-xnxx	xnxx
+XML	XML
+# xnxx	xnxx
 # xp	xp
 # xx	xx
-xxx	xxx
+# XXX	XXX
 # y	y
 # ya	ya
 yacht	yacht
