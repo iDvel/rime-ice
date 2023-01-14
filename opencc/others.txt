@@ -1,3 +1,48 @@
+一月	一月 Jan. January
+二月	二月 Feb. February
+三月	三月 Mar. March
+四月	四月 Apr. April
+五月	五月 May
+六月	六月 June
+七月	七月 July
+八月	八月 Aug. August
+九月	九月 Sep. Sept. September
+十月	十月 Oct. October
+十一月	十一月 Nov. November
+十二月	十二月 Dec. December
+一月份	一月份 Jan. January
+二月份	二月份 Feb. February
+三月份	三月份 Mar. March
+四月份	四月份 Apr. April
+五月份	五月份 May
+六月份	六月份 June
+七月份	七月份 July
+八月份	八月份 Aug. August
+九月份	九月份 Sep. Sept. September
+十月份	十月份 Oct. October
+十一月份	十一月份 Nov. November
+十二月份	十二月份 Dec. December
+周一	周一 Mon. Monday
+周二	周二 Tue. Tuesday
+周三	周三 Wed. Wednesday
+周四	周四 Thu. Thurs. Thursday
+周五	周五 Fri. Friday
+周六	周六 Sat. Saturday
+周日	周日 Sun. Sunday
+礼拜一	礼拜一 Mon. Monday
+礼拜二	礼拜二 Tue. Tuesday
+礼拜三	礼拜三 Wed. Wednesday
+礼拜四	礼拜四 Thu. Thurs. Thursday
+礼拜五	礼拜五 Fri. Friday
+礼拜六	礼拜六 Sat. Saturday
+礼拜日	礼拜日 Sun. Sunday
+星期一	星期一 Mon. Monday
+星期二	星期二 Tue. Tuesday
+星期三	星期三 Wed. Wednesday
+星期四	星期四 Thu. Thurs. Thursday
+星期五	星期五 Fri. Friday
+星期六	星期六 Sat. Saturday
+星期日	星期日 Sun. Sunday
 厂部	厂部 厂 ⺁
 偏厂	偏厂 厂
 偏厂儿	偏厂儿 厂
