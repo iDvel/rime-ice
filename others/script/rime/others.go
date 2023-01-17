@@ -11,23 +11,45 @@ import (
 // 临时用的或一次性的方法集
 
 func Temp() {
-
 }
 
 func dictsDifference(dict1, dict2 string) {
-	file1Set := readAndSet(dict1)
-	file2Set := readAndSet(dict2)
+	file1Set := readToSet(dict1)
+	file2Set := readToSet(dict2)
 	set := file1Set.Difference(file2Set)
 	fmt.Println(set.ToSlice())
 	fmt.Println(set.Cardinality())
 }
 
 func dictsIntersect(dict1, dict2 string) {
-	file1Set := readAndSet(dict1)
-	file2Set := readAndSet(dict2)
+	file1Set := readToSet(dict1)
+	file2Set := readToSet(dict2)
 	set := file1Set.Intersect(file2Set)
 	fmt.Println(set.ToSlice())
 	fmt.Println(set.Cardinality())
+}
+
+func enDictsIntersect(dict1, dict2 string) {
+	file1Set := readEnToSet(dict1)
+	file2Set := readEnToSet(dict2)
+	set := file1Set.Difference(file2Set)
+	// fmt.Println(set.ToSlice())
+	fmt.Println(set.Cardinality())
+	file, err := os.OpenFile("rime/1.txt", os.O_CREATE|os.O_TRUNC|os.O_WRONLY, 0644)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
+	for _, word := range set.ToSlice() {
+		_, err := file.WriteString(word + "\t" + word + "\n")
+		if err != nil {
+			log.Fatal(err)
+		}
+	}
+	err = file.Sync()
+	if err != nil {
+		log.Fatal(err)
+	}
 }
 
 func get字表汉字拼音映射() {

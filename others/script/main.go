@@ -46,6 +46,7 @@ func main() {
 	rime.Sort(rime.SogouPath, 3)   // 对 base 中已经有的，去重
 	rime.Sort(rime.ExtPath, 4)     // 对 base、sogou 中已经有的，去重
 	rime.Sort(rime.TencentPath, 4) // 对 base、sogou、ext 中已经有的，去重
+	// rime.SortEnDict(rime.EnPath)
 }
 
 func wait() {

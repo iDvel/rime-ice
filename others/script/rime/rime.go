@@ -9,6 +9,8 @@ import (
 	"io"
 	"log"
 	"os"
+	"path"
+	"strconv"
 	"strings"
 	"time"
 )
@@ -28,6 +30,7 @@ const (
 	ExtPath     = "/Users/dvel/Library/Rime/cn_dicts/ext.dict.yaml"
 	TencentPath = "/Users/dvel/Library/Rime/cn_dicts/tencent.dict.yaml"
 	EmojiPath   = "/Users/dvel/Library/Rime/opencc/emoji-map.txt"
+	EnPath = "/Users/dvel/Library/Rime/en_dicts/en.dict.yaml"
 
 	DefaultWeight = 100 // sogou、ext、tencet 词库中默认的权重数值
 )
@@ -41,14 +44,14 @@ var (
 )
 
 func init() {
-	BaseSet = readAndSet(BasePath)
-	SogouSet = readAndSet(SogouPath)
-	ExtSet = readAndSet(ExtPath)
-	TencentSet = readAndSet(TencentPath)
+	BaseSet = readToSet(BasePath)
+	SogouSet = readToSet(SogouPath)
+	ExtSet = readToSet(ExtPath)
+	TencentSet = readToSet(TencentPath)
 }
 
-// readAndSet 读取词库文件为 set
-func readAndSet(dictPath string) mapset.Set[string] {
+// readToSet 读取词库文件为 set
+func readToSet(dictPath string) mapset.Set[string] {
 	set := mapset.NewSet[string]()
 
 	file, err := os.Open(dictPath)
@@ -157,6 +160,48 @@ func updateVersion(dictPath string, oldSha1 string) {
 	}
 
 	err = file.Sync()
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
+func AddWeight(dictPath string, weight int) {
+	// 控制台输出
+	printlnTimeCost("加权重\t"+path.Base(dictPath), time.Now())
+
+	// 读取文件到 lines 数组
+	file, err := os.ReadFile(dictPath)
+	if err != nil {
+		log.Fatal(err)
+	}
+	lines := strings.Split(string(file), "\n")
+
+	// 逐行遍历，加上 weight
+	isMark := false
+	for i, line := range lines {
+		if !isMark {
+			if strings.Contains(line, mark) {
+				isMark = true
+			}
+			continue
+		}
+		// 过滤空行
+		if line == "" {
+			continue
+		}
+		// 修改权重为传入的 weight，没有就加上
+		parts := strings.Split(line, "\t")
+		_, err := strconv.Atoi(parts[len(parts)-1])
+		if err != nil {
+			lines[i] = line + "\t" + strconv.Itoa(weight)
+		} else {
+			lines[i] = strings.Join(parts[:len(parts)-1], "\t") + "\t" + strconv.Itoa(weight)
+		}
+	}
+
+	// 重新写入
+	resultString := strings.Join(lines, "\n")
+	err = os.WriteFile(dictPath, []byte(resultString), 0644)
 	if err != nil {
 		log.Fatal(err)
 	}

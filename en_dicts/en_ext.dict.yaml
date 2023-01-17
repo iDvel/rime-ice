@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-01-15"
+version: "2023-01-18"
 sort: by_weight
 ...
 # 一些杂项
@@ -39,7 +39,7 @@ Esc	Esc
 Eject	Eject
 
 
-# 月份（据说好像 5-7 月不要缩写 https://www.zhihu.com/question/29896678）
+# 月份（据说好像 5、6、7 月不要缩写 https://www.zhihu.com/question/29896678）
 January	January
 Jan.	Jan
 January	Jan
@@ -104,6 +104,71 @@ Saturday	Sat
 Sunday	Sunday
 Sun.	Sun
 Sunday	Sun
+
+
+# 生活大爆炸 & 老友记
+Sheldon	Sheldon
+Leonard	Leonard
+Penny	Penny
+Howard	Howard
+Rajesh	Rajesh
+Rachel	Rachel
+Monica	Monica
+Joey	Joey
+Ross	Ross
+Chandler	Chandler
+Phoebe	Phoebe
+
+
+# 补充的人名
+Griffiths	Griffiths
+Chapman	Chapman
+Walsh	Walsh
+Matthews	Matthews
+Patel	Patel
+Willie	Willie
+ChillSeph	ChillSeph
+Ernest	Ernest
+Phillip	Phillip
+Teresa	Teresa
+Doris	Doris
+Evelyn	Evelyn
+Cheryl	Cheryl
+Mildred	Mildred
+Katherine	Katherine
+Judith	Judith
+Janice	Janice
+Theresa	Theresa
+Kimberly	Kimberly
+Denise	Denise
+Irene	Irene
+Shirley	Shirley
+Cynthia	Cynthia
+Brenda	Brenda
+Kathleen	Kathleen
+Jacqueline	Jacqueline
+Wanda	Wanda
+Debra	Debra
+Lois	Lois
+Carolyn	Carolyn
+Tina	Tina
+Phyllis	Phyllis
+Norma	Norma
+Paula	Paula
+Frances	Frances
+Lillian	Lillian
+Kiwi	Kiwi
+Olivia	Olivia
+Ava	Ava
+Isabella	Isabella
+Sherlock	Sherlock
+Amelia	Amelia
+Sophia	Sophia
+Abigail	Abigail
+Liam	Liam
+Noah	Noah
+Jay	Jay
+Enya	Enya
 
 
 # 带权重的系列
@@ -269,7 +334,6 @@ CentOS	CentOS
 Debian	Debian
 BBC	BBC
 DataGrip	DataGrip
-Benjamin	Benjamin
 Alpha	Alpha
 AlphaGo	AlphaGo
 AlphaFold	AlphaFold
@@ -417,7 +481,6 @@ Gitea	Gitea
 GitBook	GitBook
 Gboard	Gboard
 Access	Access
-Ajax	Ajax
 Bug	Bug
 BMW	BMW
 Bayerische Motoren Werke AG	BMW
@@ -1091,8 +1154,6 @@ Frequently Asked Question	FrequentlyAskedQuestion
 Panamera	Panamera
 FaceTime	FaceTime
 FaceTime Audio	FaceTimeAudio
-Jordan	Jordan
-Thompson	Thompson
 LMAO	LMAO
 Laugh My Ass Off	LMAO
 Laugh My Ass Off	LaughMyAssOff
@@ -1764,3 +1825,29 @@ DNS over HTTPS	DNSoverHTTPS
 HK	HK
 Hong Kong	HK
 Hong Kong	HongKong
+Party Animals	PartyAnimals
+clipboard	clipboard
+ABS	ABS
+Anti-lock Braking System	ABS
+Anti-lock Braking System	AntilockBrakingSystem
+ADHD	ADHD
+attention deficit hyperactivity disorder	ADHD
+attention deficit hyperactivity disorder	attentiondeficithyperactivitydisorder
+BBQ	BBQ
+barbecue	BBQ
+BBS	BBS
+Bulletin Board System	BBS
+Bulletin Board System	BulletinBoardSystem
+Chrono	Chrono
+Widevine	Widevine
+Google Ads	GoogleAds
+Valhalla	Valhalla
+flies	flies
+KFC	KFC
+AWP	AWP
+Arctic Warfare Police	AWP
+Arctic Warfare Police	ArcticWarfarePolice
+CLI	CLI
+Command-Line Interface	CLI
+Command-Line Interface	CommandLineInterface
+Dnsmasq	Dnsmasq

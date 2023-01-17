@@ -251,7 +251,7 @@ func checkAndWrite() {
 // PrintNewWords 打印新增词汇
 func PrintNewWords() {
 	// 对比 sogou 的新旧 set，找出新词汇
-	newSet := readAndSet(SogouPath)
+	newSet := readToSet(SogouPath)
 	newWords := newSet.Difference(SogouSet)
 	if newWords.Cardinality() == 0 {
 		return
