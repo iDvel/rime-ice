@@ -3,12 +3,12 @@
 -- 日期时间
 -- 提高权重的原因：因为在方案中设置了大于 1 的 initial_quality，导致 rq sj xq dt ts 产出的候选项在所有词语的最后。
 function date_translator(input, seg, env)
-	local config = env.engine.schema.config
-	local date = config:get_string(env.name_space .."/date") or "rq"
-	local time = config:get_string(env.name_space .."/time") or "sj"
-	local week = config:get_string(env.name_space .."/week") or "xq"
-	local datetime = config:get_string(env.name_space .."/datetime") or "dt"
-	local timestamp = config:get_string(env.name_space .."/timestamp") or "ts"
+    local config = env.engine.schema.config
+    local date = config:get_string(env.name_space .. "/date") or "rq"
+    local time = config:get_string(env.name_space .. "/time") or "sj"
+    local week = config:get_string(env.name_space .. "/week") or "xq"
+    local datetime = config:get_string(env.name_space .. "/datetime") or "dt"
+    local timestamp = config:get_string(env.name_space .. "/timestamp") or "ts"
     -- 日期
     if (input == date) then
         local cand = Candidate("date", seg.start, seg._end, os.date("%Y-%m-%d"), "")
@@ -39,7 +39,7 @@ function date_translator(input, seg, env)
         local cand = Candidate("week", seg.start, seg._end, "星期" .. weakTab[tonumber(os.date("%w") + 1)], "")
         cand.quality = 100
         yield(cand)
-		local cand = Candidate("week", seg.start, seg._end, "礼拜" .. weakTab[tonumber(os.date("%w") + 1)], "")
+        local cand = Candidate("week", seg.start, seg._end, "礼拜" .. weakTab[tonumber(os.date("%w") + 1)], "")
         cand.quality = 100
         yield(cand)
         local cand = Candidate("week", seg.start, seg._end, "周" .. weakTab[tonumber(os.date("%w") + 1)], "")
@@ -150,9 +150,9 @@ end
 -- 修改：不提升英文和中英混输的
 function long_word_filter(input, env)
     -- 提升 count 个词语，插入到第 idx 个位置，默认 2、4。
-	local config = env.engine.schema.config
-	local count = config:get_string(env.name_space .."/count") or 2
-    local idx = config:get_string(env.name_space .."/idx") or 4
+    local config = env.engine.schema.config
+    local count = config:get_string(env.name_space .. "/count") or 2
+    local idx = config:get_string(env.name_space .. "/idx") or 4
 
     local l = {}
     local firstWordLength = 0 -- 记录第一个候选词的长度，提前的候选词至少要比第一个候选词长
@@ -189,30 +189,25 @@ function long_word_filter(input, env)
     end
 end
 -------------------------------------------------------------
--- 因为英文方案的 initial_quality 大于 1，导致输入「va」时，候选项是「van vain。。。」
--- 单字优先，候选项应改为「ā á ǎ à」
---
--- 不知道这个方法为什么不行啊？？？
--- function v_single_char_first_filter(input)
---     if (string.find(input, "v") == 1 and string.len(input) == 2) then
---         local l = {}
---         for cand in input:iter() do
---             if (utf8.len(cand.text) == 1) then
---                 yield(cand)
---             else
---                 table.insert(l, cand)
---             end
---         end
---         for cand in ipairs(l) do
---             yield(cand)
---         end
---     end
--- end
---
--- 反正是解决了，不知道怎么就解决了，就是最后多一个候选项，没多大影响。
-function v_single_char_first_filter(input, seg)
-    if (string.find(input, "v") == 1 and string.len(input) == 2) then
-        yield(Candidate("", seg.start, seg._end, "", ""))
+-- v 模式，单个字符优先
+-- 因为设置了英文翻译器的 initial_quality 大于 1，导致输入「va」时，候选项是「van vain …… ā á ǎ à」
+-- 把候选项应改为「ā á ǎ à …… van vain」，让单个字符的排在前面
+function v_filter(input, env)
+    local code = env.engine.context.input -- 当前编码
+    local l = {}
+    for cand in input:iter() do
+        if (cand.text == "Vs.") then -- 特殊情况处理
+            yield(cand)
+        end
+        -- 以 v 开头、2 个长度的编码、候选项为单个字符的，提到前面来。
+        if (string.len(code) == 2 and string.find(code, "v") == 1 and utf8.len(cand.text) == 1) then
+            yield(cand)
+        else
+            table.insert(l, cand)
+        end
+    end
+    for i, cand in ipairs(l) do
+        yield(cand)
     end
 end
 -------------------------------------------------------------
