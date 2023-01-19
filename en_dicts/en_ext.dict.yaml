@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-01-18"
+version: "2023-01-19"
 sort: by_weight
 ...
 # 一些杂项
@@ -274,6 +274,8 @@ Gross Domestic Product	GrossDomesticProduct
 LOL	LOL
 League of Legends	LOL
 League of Legends	LeagueofLegends
+Laugh Out Loudly	LOL
+Laugh Out Loudly	LaughOutLoudly
 Pro Max	ProMax
 Aeron	Aeron
 Aeron Chair	AeronChair
@@ -408,6 +410,8 @@ IntelliJ IDEA	IntelliJIDEA
 IntelliJ IDEA Community	IntelliJIDEACommunity
 IntelliJ IDEA Ultimate	IntelliJIDEAUltimate
 IDEA	IDEA
+IDEA Community	IDEACommunity
+IDEA Ultimate	IDEAUltimate
 IDE	IDE
 NTR	NTR
 Notion	Notion
@@ -495,7 +499,6 @@ Chief Technology Officer	CTO
 Chief Technology Officer	ChiefTechnologyOfficer
 Coding	Coding
 Django	Django
-Edge	Edge
 Excel	Excel
 Flask	Flask
 Facebook	Facebook
@@ -831,7 +834,8 @@ Speedtest	Speedtest
 Spotify	Spotify
 Spotlight	Spotlight
 Squirrel	Squirrel
-SSLEdge	SSLEdge
+SSL	SSL
+Edge	Edge
 StackSocial	StackSocial
 Sublime Text	SublimeText
 Surge	Surge
@@ -1480,6 +1484,7 @@ Peace & Love	PeaceLove
 Peace & Love	PeaceandLove
 Peace and Love	PeaceandLove
 Liquid	Liquid
+LCD	LCD
 Liquid Crystal Display	LCD
 Liquid Crystal Display	LiquidCrystalDisplay
 Emotional Damage	EmotionalDamage
@@ -1781,6 +1786,7 @@ Scotland	Scotland
 Scots	Scots
 Scottish	Scottish
 Simplified Chinese	SimplifiedChinese
+Traditional Chinese	TraditionalChinese
 Singapore	Singapore
 Spain	Spain
 Spanish	Spanish
@@ -1790,7 +1796,6 @@ Swedish	Swedish
 Swiss	Swiss
 Thai	Thai
 Thailand	Thailand
-Traditional Chinese	TraditionalChinese
 United Kingdom	UnitedKingdom
 USA	USA
 The United States of America	USA
@@ -1851,3 +1856,13 @@ CLI	CLI
 Command-Line Interface	CLI
 Command-Line Interface	CommandLineInterface
 Dnsmasq	Dnsmasq
+clique	clique
+candid	candid
+DOS	DOS
+Disk Operating System	DOS
+Disk Operating System	DiskOperatingSystem
+diss	diss
+USDT	USDT
+Tether	Tether
+Lua	Lua
+MacType	MacType
