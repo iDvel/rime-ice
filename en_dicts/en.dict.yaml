@@ -16,7 +16,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-01-19"
+version: "2023-01-26"
 sort: by_weight
 ...
 # +_+
@@ -10939,7 +10939,7 @@ teenage	teenage
 teenager	teenager
 teens	teens
 teeth	teeth
-tel	tel
+Tel	Tel
 telecharger	telecharger
 telecom	telecom
 telecommunications	telecommunications

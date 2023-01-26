@@ -10,7 +10,7 @@
 #
 ---
 name: cn_en
-version: "2023-01-19"
+version: "2023-01-26"
 sort: by_weight
 ...
 # 没有空格的（为了Emoji映射。Emoji 里空格是分割符，没法映射，不知道怎么解决）
@@ -333,3 +333,5 @@ D 级	dji
 拍 CT	paict
 CT 检查	ctjiancha
 PVC 管	pvcguan
+DoS 攻击	dosgongji
+DDoS 攻击	ddosgongji

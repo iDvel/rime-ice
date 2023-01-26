@@ -23,7 +23,7 @@ var filterPinyins = mapset.NewSet[string]()  // 与汉字拼音映射map同时�
 
 // 初始化特殊词汇列表、多音字列表、异形词列表、汉字拼音映射
 func init() {
-	// 特殊词汇列表 specialWords
+	// 特殊词汇列表 specialWords，不进行任何检查
 	specialWords.Add("狄尔斯–阿尔德反应")
 	specialWords.Add("特里斯坦–达库尼亚")
 	specialWords.Add("特里斯坦–达库尼亚群岛")
@@ -34,6 +34,7 @@ func init() {
 	specialWords.Add("赛博朋克：边缘行者")
 	specialWords.Add("赛博朋克：边缘跑手")
 	specialWords.Add("赛博朋克：命运之轮")
+	specialWords.Add("哈勃–勒梅特定律")
 
 	// 需要注音的多音字列表 polyphoneWords
 	file, err := os.Open("rime/多音字.txt")

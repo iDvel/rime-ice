@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-01-19"
+version: "2023-01-26"
 sort: by_weight
 ...
 # 一些杂项
@@ -910,8 +910,9 @@ HTTPS	HTTPS
 Hypertext Transfer Protocol Secure	HTTPS
 Hypertext Transfer Protocol Secure	HypertextTransferProtocolSecure
 WSGI	WSGI
-Bitcoin	Bitcoin
 BTC	BTC
+Bitcoin	BTC
+Bitcoin	Bitcoin
 template	template
 IMDb	IMDb
 gank	gank
@@ -1261,6 +1262,8 @@ Globally Unique Identifier	GloballyUniqueIdentifier
 APFS	APFS
 Apple File System	APFS
 NTFS	NTFS
+New Technology File System	NTFS
+New Technology File System	NewTechnologyFileSystem
 Microsoft NTFS	NTFS
 Microsoft NTFS	MicrosoftNTFS
 txt	txt
@@ -1866,3 +1869,21 @@ USDT	USDT
 Tether	Tether
 Lua	Lua
 MacType	MacType
+Alipay	Alipay
+WeChat Pay	WeChatPay
+Google Maps	GoogleMaps
+Google Keep	GoogleKeep
+Google Docs	GoogleDocs
+UPnP	UPnP
+Universal Plug and Play	UPnP
+Universal Plug and Play	UniversalPlugandPlay
+DoS	DoS
+denial-of-service attack	DoS
+denial-of-service attack	denialofserviceattack
+DDoS	DDoS
+distributed denial-of-service attack	DDoS
+distributed denial-of-service attack	distributeddenialofserviceattack
+lullaby	lullaby
+LibreWolf	LibreWolf
+miscarry	miscarry
+WebRTC	WebRTC
