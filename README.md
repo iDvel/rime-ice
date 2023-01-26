@@ -31,7 +31,7 @@
 - 词库修订
     - 校对大量异形词、错别字、错误注音
 
-详细介绍：[雾凇拼音，我的 Rime 配置及新手指引](https://dvel.me/posts/my-rime/)
+详细介绍：[Rime 配置：雾凇拼音](https://dvel.me/posts/rime-ice/)
 
 <br>
 
@@ -58,14 +58,7 @@
 
 备份后删除配置目录下原有的配置文件，再将仓库所有文件复制粘贴进去就好了。
 
-配置目录：
-
-- 鼠须管： `~/Library/Rime`
-- 小狼毫： `%APPDATA%\Rime`
-
-更新词库：
-
-词库每个月都会更新几次，更新时只需要将下面 3 个文件夹覆盖过去并重新部署即可。
+更新词库：词库每个月都会更新几次，更新时只需要将下面 3 个文件夹覆盖过去并重新部署即可。
 
 - `cn_dicts` 拼音相关词库
 - `en_dicts` 英文相关词库
@@ -73,66 +66,44 @@
 
 <br>
 
-## 简单指引
+## 常见问题
 
-### 格式
+##### 配置出错
 
-在修改配置或词库前，请注意 Rime 对格式的要求：UTF-8 编码，严格遵循缩进，在配置文件中以空格缩进。
+有时候 Rime 不会报错，而是自动加载默认配置。
 
-但是词条之间是用 Tab 分割的：
+如果发现方案选单里是「朙月拼音、仓颉」之类的，那可能是配置有问题，Rime 自动加载了默认配置。
 
-```
-拼音	pin yin 1234
-拼音<Tab>pin<Space>yin<Tab>1234
-```
-
-### 主要的配置文件
-
-- `default.custom.yaml` 一些全局设置。
-- `xxx.schema.yaml` 方案配置，大部分功能的引用和实现。
-
-部署成功后，建议查阅一遍，按照自己的偏好进行修改，基本都写了注释。
-
-### 常用修改示例
+检查一下修改过的地方，比如拼写、缩进是否正确，是否用了 Tab 缩进，或被编辑器自动转为了 Tab ……
 
 ##### 呼出方案选单
 
 `default.custom.yaml` 中修改，默认为 Control+Shift+grave（grave 是 `` ` `` 反引号，Tab 上面那个）。
 
+##### Lua 脚本
+
+Lua 中可配置的选项都提取出来了，不需要修改 Lua 文件。
+
+以词定字的快捷键在 `default.custom.yaml` 中设定，限制码长、长词优先、日期时间这些选项在方案文件中设定。
+
 ##### Shift 切换中英
 
-`default.custom.yaml` 中修改 `Shift_L` 对应的选项，将 `noop` 修改为 `commit_code` 、`commit_text` 或 `clear`。
+`default.custom.yaml` 中修改 Shift 对应的选项，将 `noop` 修改为 `commit_code` 、`commit_text` 或 `clear`。
 
 ##### 逗号句号翻页
 
 1. 在 `default.custom.yaml` 中解开句号逗号翻页的注释。
 2. 在 `rime_ice.schema.yaml` 中注释掉 `url_2`。（因为这个选项会覆盖掉句号的行为）
 
-##### 引入其他词库
-
-在 `rime_ice.dict.yaml` 中添加，`- cn_dicts/xxx` 即表示援引 `cn_dicts/` 目录下的 `xxx.dict.yaml` 文件。
-
 ##### 自定义短语
 
-在 `custom_phrase.txt` 中添加，建议清空，换成你自己的习惯。
+在 `custom_phrase.txt` 中添加，建议清空，换成自己的习惯。
 
 双拼需要额外手动创建 `custom_phrase_double.txt`。
 
-##### 标点符号映射
-
-在 `symbols_custom.yaml` 中修改，单个映射即直接上屏，多个映射可以进行复选。
-
-##### 模糊音
-
-在 `rime_ice.schema.yaml` 中 `algebra` 下面解开相关注释，可单向或成对选择。
-
-##### 日期时间等关键字
-
-在方案中修改 `date_translator` 下 `date`、`time` 等对应的关键字。
-
 <br>
 
-## 感谢
+## 感谢 ❤️
 
 上述用到的词库，及 [@Huandeep](https://github.com/Huandeep) 整理的多个词库。
 
@@ -148,7 +119,7 @@ Thanks to JetBrains for the OSS development license.
 
 <br>
 
-## ❤️ 赞助 ☕
+## 赞助 ☕
 
 如果觉得项目不错，可以请 Dvel 吃个煎饼馃子。
 
