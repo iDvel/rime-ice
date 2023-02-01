@@ -16,7 +16,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-01-26"
+version: "2023-02-01"
 sort: by_weight
 ...
 # +_+
@@ -1562,8 +1562,8 @@ came	came
 camel	camel
 camera	camera
 cameras	cameras
-cameron	cameron
-cameroon	cameroon
+Cameron	Cameron
+Cameroon	Cameroon
 camp	camp
 campaign	campaign
 campaigns	campaigns
@@ -1605,7 +1605,7 @@ cape	cape
 capital	capital
 capitalism	capitalism
 capitol	capitol
-caps	caps
+Caps	Caps
 capsule	capsule
 captain	captain
 captive	captive
@@ -1627,9 +1627,9 @@ careers	careers
 careful	careful
 carefully	carefully
 caress	caress
-carey	carey
+Carey	Carey
 cargo	cargo
-caribbean	caribbean
+Caribbean	Caribbean
 caring	caring
 carl	carl
 Carlo	Carlo
@@ -1663,7 +1663,7 @@ cas	cas
 casa	casa
 case	case
 cases	cases
-casey	casey
+Casey	Casey
 cash	cash
 cashier	cashier
 cashiers	cashiers
@@ -1841,12 +1841,12 @@ cheers	cheers
 cheese	cheese
 chef	chef
 chelsea	chelsea
-chem	chem
+# chem	chem
 chemical	chemical
 chemicals	chemicals
 chemist	chemist
 chemistry	chemistry
-chen	chen
+Chen	Chen
 cheque	cheque
 cherish	cherish
 cherry	cherry

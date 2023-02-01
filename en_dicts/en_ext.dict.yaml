@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-01-26"
+version: "2023-02-01"
 sort: by_weight
 ...
 # 一些杂项
@@ -1887,3 +1887,4 @@ lullaby	lullaby
 LibreWolf	LibreWolf
 miscarry	miscarry
 WebRTC	WebRTC
+WebDAV	WebDAV
