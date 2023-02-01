@@ -76,9 +76,11 @@
 
 检查一下修改过的地方，比如拼写、缩进是否正确，是否用了 Tab 缩进，或被编辑器自动转为了 Tab ……
 
-##### 呼出方案选单
+##### 快捷键
 
-`default.custom.yaml` 中修改，默认为 Control+Shift+grave（grave 是 `` ` `` 反引号，Tab 上面那个）。
+呼出方案选单默认为 Control+Shift+grave（grave 是 `` ` `` 反引号，Tab 上面那个）。
+
+小狼毫似乎不支持 Control+Shift 开头的快捷键，可在 `default.custom.yaml` 中修改。
 
 ##### Lua 脚本
 
