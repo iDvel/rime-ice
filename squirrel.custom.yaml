@@ -22,7 +22,7 @@ patch:
     purity_of_form_custom:
       name: "純粹的形式／Purity of Form Custom"
       author: 雨過之後、佛振
-      font_face: ""                   # 字体及大小
+      font_face: "PingFang SC"                   # 字体及大小
       font_point: 18
       label_font_face: "Helvetica"    # 序号字体及大小
       label_font_point: 12
