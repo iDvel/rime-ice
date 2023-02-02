@@ -61,11 +61,11 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    - lua_translator@date_translator             # 时间、日期、星期
-    - table_translator@custom_phrase             # 自定义短语 custom_phrase.txt
-    - table_translator@melt_eng                  # 英文输入
-    - reverse_lookup_translator@liangfen         # 反查，两分拼字
-    - lua_translator@unicode                     # Unicode
+    - lua_translator@date_translator      # 时间、日期、星期
+    - table_translator@custom_phrase      # 自定义短语 custom_phrase.txt
+    - table_translator@melt_eng           # 英文输入
+    - reverse_lookup_translator@liangfen  # 反查，两分拼字
+    - lua_translator@unicode              # Unicode
   filters:
     - lua_filter@long_word_filter  # 长词优先
     - simplifier@emoji             # Emoji

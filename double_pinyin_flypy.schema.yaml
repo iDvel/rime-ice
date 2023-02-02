@@ -26,10 +26,13 @@ schema:
     - liangfen  # 两分拼字，作为反查挂载到拼音方案
 
 
-# 功能开关
+# 开关
+# reset 会导致切换方案、输入法、程序后，回到设定的选项。
+# 可以注释掉 reset，和 default 中的 switcher/save_options 选项配合以记忆开关状态。
+# 鼠须管 0.16 后，切换提示通过 states 自定义，不需要提示的可留空，如 states: [ , ]
 switches:
   - name: ascii_mode
-    states: [ 中文, 英文 ]
+    states: [ 中, A ]
     reset: 0
   - name: full_shape
     states: [ 半角, 全角 ]
@@ -38,14 +41,14 @@ switches:
     states: [ 中文标点, 英文标点 ]
     reset: 0
   - name: traditionalization
-    states: [ 简体, 繁體 ]
+    states: [ 简, 繁 ]
     reset: 0
   - name: emoji
     states: [ 💀, 😄 ]
     reset: 1
 
 
-# 输入引擎
+# 输入引擎，没注释的是自带的必要的组件
 engine:
   processors:
     - lua_processor@select_character             # 以词定字
