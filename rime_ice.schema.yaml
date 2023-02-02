@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "1.2.0"
+  version: "1.2.1"
   author:
     - Dvel
   description: |
@@ -22,7 +22,7 @@ schema:
 # 可以注释掉 reset，和 default 中的 switcher/save_options 选项配合以记忆开关状态。
 switches:
   - name: ascii_mode
-    states: [ 中文, 英文 ]
+    states: [ 中, En ]
     reset: 0
   - name: full_shape
     states: [ 半角, 全角 ]
@@ -31,7 +31,7 @@ switches:
     states: [ 中文标点, 英文标点 ]
     reset: 0
   - name: traditionalization
-    states: [ 简体, 繁體 ]
+    states: [ 简, 繁 ]
     reset: 0
   - name: emoji
     states: [ 💀, 😄 ]
