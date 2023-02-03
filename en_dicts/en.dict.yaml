@@ -16,7 +16,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-02-01"
+version: "2023-02-03"
 sort: by_weight
 ...
 # +_+
@@ -6174,7 +6174,7 @@ largely	largely
 larger	larger
 largest	largest
 larry	larry
-las	las
+# las	las
 laser	laser
 lash	lash
 last	last
@@ -6327,7 +6327,7 @@ liberty	liberty
 librarian	librarian
 libraries	libraries
 library	library
-libs	libs
+# libs	libs
 licence	licence
 license	license
 licensed	licensed
@@ -6477,7 +6477,7 @@ logos	logos
 logs	logs
 LOL	LOL
 lolita	lolita
-london	london
+London	London
 lone	lone
 lonely	lonely
 long	long
@@ -6642,15 +6642,15 @@ management	management
 manager	manager
 managers	managers
 managing	managing
-manchester	manchester
+Manchester	Manchester
 mandate	mandate
 mandatory	mandatory
 maneuver	maneuver
 manga	manga
-manhattan	manhattan
+Manhattan	Manhattan
 manifest	manifest
 manipulate	manipulate
-manitoba	manitoba
+Manitoba	Manitoba
 mankind	mankind
 manner	manner
 manor	manor
