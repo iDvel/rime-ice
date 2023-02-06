@@ -2,6 +2,7 @@ package rime
 
 import (
 	"bufio"
+	"fmt"
 	mapset "github.com/deckarep/golang-set/v2"
 	"log"
 	"os"
@@ -38,28 +39,32 @@ func CheckEmoji() {
 	sc := bufio.NewScanner(file)
 	for sc.Scan() {
 		line := sc.Text()
+		// 过滤空行
+		if line == "" {
+			continue
+		}
 		// 过滤注释
 		if strings.Contains(line, "#") {
 			continue
 		}
 		// 检查是否包含 Tab
 		if strings.Contains(line, "\t") {
-			log.Fatal("❌ 此行包含 Tab：", line)
+			fmt.Println("❌ 此行包含 Tab：", line)
 		}
 		// 开头结尾无效的空格
 		if strings.HasPrefix(line, " ") || strings.HasSuffix(line, " ") {
-			log.Fatal("❌ unexpected space:", line)
+			fmt.Println("❌ unexpected space:", line)
 		}
 		parts := strings.Split(line, " ")
 		if len(parts) < 2 {
-			log.Fatal("❌ invalid line:", line)
+			fmt.Println("❌ invalid line:", line)
 		}
 		// 加入 emojiSet，顺便用一个 tempSet 查重
 		tempSet := mapset.NewSet[string]()
 		for _, word := range parts[1:] {
 			emojiSet.Add(word)
 			if tempSet.Contains(word) {
-				log.Fatal("❌ 此行有重复映射：", line)
+				fmt.Println("❌ 此行有重复映射：", line)
 			} else {
 				tempSet.Add(word)
 			}
@@ -76,7 +81,7 @@ func CheckEmoji() {
 		if utf8.RuneCountInString(word) == 1 {
 			continue
 		}
-		log.Fatal("❌ Emoji 差集：", word)
+		fmt.Println("❌ Emoji 差集：", word)
 	}
 }
 

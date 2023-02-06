@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-02-06"
+version: "2023-02-07"
 sort: by_weight
 ...
 # 一些杂项
@@ -1890,3 +1890,4 @@ WebRTC	WebRTC
 WebDAV	WebDAV
 SwiftUI	SwiftUI
 watermarking	watermarking
+jellyfish	jellyfish
