@@ -45,19 +45,22 @@ patch:
   # commit_text  上屏拼出的词句，然后切换到英文
   # clear        清除未上屏内容，然后切换到英文
   # noop         屏蔽快捷键，不切换中英，但不要屏蔽 CapsLock
-  ascii_composer/good_old_caps_lock: true  # true | false
-  ascii_composer/switch_key:
-    Caps_Lock: clear  # commit_code | commit_text | clear
-    Shift_L: noop     # commit_code | commit_text | clear | noop
-    Shift_R: noop     # commit_code | commit_text | clear | noop
-    Control_L: noop
-    Control_R: noop
-    Eisu_toggle: clear
+  ascii_composer:
+    good_old_caps_lock: true  # true | false
+    switch_key:
+      Caps_Lock: clear  # commit_code | commit_text | clear
+      Shift_L: noop     # commit_code | commit_text | clear | noop
+      Shift_R: noop     # commit_code | commit_text | clear | noop
+      Control_L: noop   # commit_code | commit_text | clear | noop
+      Control_R: noop   # commit_code | commit_text | clear | noop
+      Eisu_toggle: clear
 
 
   # 以词定字（上屏当前词组的第一个或最后一个字）
   key_binder/select_first_character: 
   key_binder/select_last_character: "grave"
+
+
   # 快捷键
   key_binder/bindings:
     # Tab/Shift+Tab 切换光标至下/上一个拼音
@@ -82,17 +85,18 @@ patch:
 
     # numbered_mode_switch:
     # - { when: always, accept: Control+Shift+1, select: .next }             # 在最近的两个方案之间切换
-    - { when: always, accept: Control+Shift+2, toggle: ascii_mode }          # 切换中英标点
-    # - { when: always, accept: Control+Shift+3, toggle: full_shape }        # 切换全半角
+    # - { when: always, accept: Control+Shift+2, toggle: ascii_mode }        # 切换中英
+    - { when: always, accept: Control+Shift+3, toggle: ascii_punct }         # 切换中英标点
     - {when: always, accept: "Control+Shift+4", toggle: traditionalization}  # 切换简繁
+    # - { when: always, accept: Control+Shift+5, toggle: full_shape }        # 切换全半角
 
     # emacs_editing:
     # - { when: composing, accept: Control+p, send: Up }
     # - { when: composing, accept: Control+n, send: Down }
     # - { when: composing, accept: Control+b, send: Left }
     # - { when: composing, accept: Control+f, send: Right }
-    - { when: composing, accept: Control+a, send: Home } # 光标跳转至行首
-    - { when: composing, accept: Control+e, send: End }  # 光标跳转至行尾
+    # - { when: composing, accept: Control+a, send: Home }
+    # - { when: composing, accept: Control+e, send: End }
     # - { when: composing, accept: Control+d, send: Delete }
     # - { when: composing, accept: Control+k, send: Shift+Delete }
     # - { when: composing, accept: Control+h, send: BackSpace }
@@ -108,7 +112,6 @@ patch:
     # - { when: always, accept: Control+comma, toggle: full_shape }
     # - { when: always, accept: Control+period, toggle: ascii_punct }
     # - { when: always, accept: Control+slash, toggle: traditionalization }
-    # - { when: always, accept: Control+backslash, toggle: extended_charset }
 
 
 # key_binder 按键速查 https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md

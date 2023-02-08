@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "1.2.3"
+  version: "1.2.4"
   author:
     - Dvel
   description: |
@@ -18,9 +18,7 @@ schema:
 
 
 # 开关
-# reset 会导致切换方案、输入法、程序后，回到设定的选项。
-# 可以注释掉 reset，和 default 中的 switcher/save_options 选项配合以记忆开关状态。
-# 鼠须管 0.16 后，切换提示通过 states 自定义，不需要提示的可留空，如 states: [ , ]
+# 鼠须管 0.16 后，快捷键切换时的提示由 states 自定义，不需要提示的可注释掉 states 那一行。
 switches:
   - name: ascii_mode
     states: [ 中, A ]
@@ -29,7 +27,7 @@ switches:
     states: [ 半角, 全角 ]
     reset: 0
   - name: ascii_punct
-    states: [ 中文标点, 英文标点 ]
+    states: [ 。，, ．， ]  # 中英标点
     reset: 0
   - name: traditionalization
     states: [ 简, 繁 ]
@@ -39,7 +37,7 @@ switches:
     reset: 1
 
 
-# 输入引擎，没注释的是自带的必要的组件
+# 输入引擎
 engine:
   processors:
     - lua_processor@select_character             # 以词定字
@@ -87,7 +85,7 @@ date_translator:
   timestamp: ts  # 时间戳： 1669716794
 
 
-# 长词优先，提升 count 个词语，插入到第 idx 个位置，默认 2、4。
+# 长词优先，提升 count 个词语，插入到第 idx 个位置。
 # 示例：将 2 个词插入到第 4、5 个候选项，输入 jie 得到「1接 2解 3姐 4饥饿 5极恶」
 long_word_filter:
   count: 2

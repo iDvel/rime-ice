@@ -27,9 +27,7 @@ schema:
 
 
 # 开关
-# reset 会导致切换方案、输入法、程序后，回到设定的选项。
-# 可以注释掉 reset，和 default 中的 switcher/save_options 选项配合以记忆开关状态。
-# 鼠须管 0.16 后，切换提示通过 states 自定义，不需要提示的可留空，如 states: [ , ]
+# 鼠须管 0.16 后，快捷键切换时的提示由 states 自定义，不需要提示的可注释掉 states 那一行。
 switches:
   - name: ascii_mode
     states: [ 中, A ]
@@ -38,7 +36,7 @@ switches:
     states: [ 半角, 全角 ]
     reset: 0
   - name: ascii_punct
-    states: [ 中文标点, 英文标点 ]
+    states: [ 。，, ．， ]  # 中英标点
     reset: 0
   - name: traditionalization
     states: [ 简, 繁 ]
@@ -48,7 +46,7 @@ switches:
     reset: 1
 
 
-# 输入引擎，没注释的是自带的必要的组件
+# 输入引擎
 engine:
   processors:
     - lua_processor@select_character             # 以词定字
