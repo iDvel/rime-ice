@@ -199,6 +199,7 @@ recognizer:
     url_2: "^[A-Za-z]+[.].*"             # 支持 google.com abc.txt 等网址或文件名，会导致句号不会让句子上屏，或使用句号翻页时需要注释掉
     win_path: "^[A-Za-z]:.*"             # 支持 c:\file\path 之类的路径输入
     colon: "^[A-Za-z]+:.*"               # 上面的超集，可以输入冒号，不会导致句子直接上屏
+    underscore: "^[A-Za-z]+_.*"          # 可以输入下划线 _ ，不会导致句子直接上屏
     # punct: "^/([0-9]+[a-z]*|[a-z]+)$"  # 响应默认的 punctuation/symbols 的「/」开头的字符
     # punct: "^v([0-9]|10|[A-Za-z]+)$"   # 响应 symbols_custom.yaml 下的 punctuator/symbols，用「v」替换「/」并支持大写
     reverse_lookup: '^L[a-z]+$'          # 响应两分的反查
