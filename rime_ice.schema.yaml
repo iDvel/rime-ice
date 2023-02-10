@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "1.2.4"
+  version: "1.3.0"
   author:
     - Dvel
   description: |
@@ -65,18 +65,19 @@ engine:
     - reverse_lookup_translator@liangfen  # 反查，两分拼字
     - lua_translator@unicode              # Unicode
   filters:
-    - lua_filter@long_word_filter  # 长词优先
-    - simplifier@emoji             # Emoji
-    - simplifier@traditionalize    # 简繁切换
-    - lua_filter@v_filter          # v 模式 symbols 优先（否则是英文优先）
-    - uniquifier                   # 去重
+    - lua_filter@long_word_filter       # 长词优先
+    - simplifier@emoji                  # Emoji
+    - simplifier@traditionalize         # 简繁切换
+    - lua_filter@v_filter               # v 模式 symbols 优先（否则是英文优先）
+    - lua_filter@reduce_english_filter  # 降低部分英语单词在候选项的位置
+    - uniquifier                        # 去重
 
 
-# 限制码长，默认 100。（最多能输入的字符个数）
+# Lua 配置: 限制码长，默认 100。（最多能输入的字符个数）
 code_length_limit_processor: 100
 
 
-# 日期、时间、星期、ISO 8601、时间戳的触发关键字
+# Lua 配置: 日期、时间、星期、ISO 8601、时间戳的触发关键字
 date_translator:
   date: rq       # 日期： 2022-11-29
   time: sj       # 时间： 18:13
@@ -85,11 +86,24 @@ date_translator:
   timestamp: ts  # 时间戳： 1669716794
 
 
-# 长词优先，提升 count 个词语，插入到第 idx 个位置。
+# Lua 配置: 长词优先，提升 count 个词语，插入到第 idx 个位置。
 # 示例：将 2 个词插入到第 4、5 个候选项，输入 jie 得到「1接 2解 3姐 4饥饿 5极恶」
 long_word_filter:
   count: 2
   idx: 4
+
+
+# Lua 配置: 降低部分英语单词在候选项的位置
+# 详细介绍 https://dvel.me/posts/make-rime-en-better/#短单词置顶的问题
+# 正常情况： 输入 rug 得到 「1.rug 2.如果 …… 」
+# 降低之后： 输入 rug 得到 「1.如果 2.rug …… 」
+reduce_english_filter:
+  idx: 2  # 降低到第 idx 个位置
+  words:  # 要降低的单词，匹配的是输入码，即全小写。
+    - rug
+    - bus
+    - ship
+  # words: [rug, bus, ship]  # 这么写也行
 
 
 # 从 default 继承快捷键

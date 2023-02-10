@@ -9,6 +9,7 @@
 - 简体 | 全拼 | 双拼
 - 主要功能
     -   [melt_eng](https://github.com/tumuyan/rime-melt) 英文输入
+    -   [优化英文输入体验](https://dvel.me/posts/make-rime-en-better/)
     -   [两分输入法](http://cheonhyeong.com/Simplified/download.html) 拼字
     -   简繁切换
     -   日期、时间、星期

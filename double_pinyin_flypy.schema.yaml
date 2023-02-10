@@ -79,11 +79,11 @@ engine:
     - uniquifier                   # 去重
 
 
-# 限制码长，默认 100。（最多能输入的字符个数）
+# Lua 配置: 限制码长，默认 100。（最多能输入的字符个数）
 code_length_limit_processor: 100
 
 
-# 日期、时间、星期、ISO 8601、时间戳的触发关键字
+# Lua 配置: 日期、时间、星期、ISO 8601、时间戳的触发关键字
 date_translator:
   date: date            # 日期： 2022-11-29
   time: time            # 时间： 18:13
