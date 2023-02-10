@@ -196,8 +196,16 @@ function v_filter(input, env)
     local code = env.engine.context.input -- 当前编码
     local l = {}
     for cand in input:iter() do
-        if (cand.text == "Vs.") then -- 特殊情况处理
+		-- 特殊情况处理
+        if (cand.text == "Vs.") then
             yield(cand)
+        end
+        -- 特殊情况处理
+        local arr = {"1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣"}
+        for _, v in ipairs(arr) do
+            if (v == cand.text and string.len(code) == 2 and string.find(code, "v") == 1) then
+                yield(cand)
+            end
         end
         -- 以 v 开头、2 个长度的编码、候选项为单个字符的，提到前面来。
         if (string.len(code) == 2 and string.find(code, "v") == 1 and utf8.len(cand.text) == 1) then
