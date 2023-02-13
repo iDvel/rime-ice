@@ -196,33 +196,37 @@ function reduce_english_filter(input, env)
     local config = env.engine.schema.config
     -- load data
     if not env.idx then
-      env.idx = config:get_int(env.name_space .. "/idx") -- 要插入的位置
+        env.idx = config:get_int(env.name_space .. "/idx") -- 要插入的位置
     end
     if not env.words then
-      env.words = {} -- 要过滤的词 ,使用hash table
-      -- for old version
-      local list_size = config:get_list_size(env.name_space .. "/words")
-      for i = 0, list.size - 1 do
-	local word = config:get_string(env.name_space .. "/words/@" .. i)
-        env.words[word]=true
-      end
+        env.words = {} -- 要过滤的词
+        local list = config:get_list(env.name_space .. "/words")
+        for i = 0, list.size - 1 do
+            local word = list:get_value_at(i).value
+            env.words[word] = true
+        end
     end
+
     -- filter start
     local code = env.engine.context.input
     if env.words[code] then
-      -- 交換  1 2 順序
-      local l ={}
-      for cand in input:iter() do
-        table.insert(l, cand)
-        if #l >=2 then break end
-      end
-      for i=#l,1,-1 do
-        yield(l[i])
-      end
+        local l = {}
+        for cand in input:iter() do
+            table.insert(l, cand)
+            if #l >= env.idx then
+                break
+            end
+        end
+        -- 先 yield 汉字，再把英文放到后面
+        for i = 2, #l do
+            yield(l[i])
+        end
+        yield(l[1])
     end
+
     -- yield other
     for cand in input:iter() do
-      yield(cand)
+        yield(cand)
     end
 end
 -------------------------------------------------------------
