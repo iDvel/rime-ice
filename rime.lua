@@ -210,18 +210,20 @@ function reduce_english_filter(input, env)
     -- filter start
     local code = env.engine.context.input
     if env.words[code] then
-        local l = {}
+        local first_cand
+        local index = 0
         for cand in input:iter() do
-            table.insert(l, cand)
-            if #l >= env.idx then
+            index = index + 1
+            if first_cand then
+                yield(cand)
+            else
+                first_cand = cand
+            end
+            if index >= env.idx then
+                yield(first_cand)
                 break
             end
         end
-        -- 先 yield 汉字，再把英文放到后面
-        for i = 2, #l do
-            yield(l[i])
-        end
-        yield(l[1])
     end
 
     -- yield other
