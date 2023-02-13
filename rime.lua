@@ -194,27 +194,35 @@ end
 -- 感谢大佬 @[Shewer Lu](https://github.com/shewer) 指点
 function reduce_english_filter(input, env)
     local config = env.engine.schema.config
-    local idx = config:get_int(env.name_space .. "/idx") -- 要插入的位置
-    local words = {} -- 要过滤的词
-    local list = config:get_list(env.name_space .. "/words")
-    for i = 0, list.size - 1 do
-        table.insert(words, list:get_value_at(i).value)
+    -- load data
+    if not env.idx then
+      env.idx = config:get_int(env.name_space .. "/idx") -- 要插入的位置
     end
-
-    local l = {}
-    local code = env.engine.context.input -- 当前编码
-    for cand in input:iter() do
+    if not env.words then
+      env.words = {} -- 要过滤的词 ,使用hash table
+      -- for old version
+      local list_size = config:get_list_size(env.name_space .. "/words")
+      for i = 0, list.size - 1 do
+	local word = config:get_string(env.name_space .. "/words/@" .. i)
+        env.words[word]=true
+      end
+    end
+    -- filter start
+    local code = env.engine.context.input
+    if env.words[code] then
+      -- 交換  1 2 順序
+      local l ={}
+      for cand in input:iter() do
         table.insert(l, cand)
+        if #l >=2 then break end
+      end
+      for i=#l,1,-1 do
+        yield(l[i])
+      end
     end
-    for _, word in ipairs(words) do
-        if (code == word) then
-            first_element = table.remove(l, 1)
-            table.insert(l, 2, first_element)
-            break
-        end
-    end
-    for _, cand in ipairs(l) do
-        yield(cand)
+    -- yield other
+    for cand in input:iter() do
+      yield(cand)
     end
 end
 -------------------------------------------------------------
