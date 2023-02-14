@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "1.3.0"
+  version: "1.3.1"
   author:
     - Dvel
   description: |
@@ -18,23 +18,25 @@ schema:
 
 
 # 开关
-# 鼠须管 0.16 后，快捷键切换时的提示由 states 自定义，不需要提示的可注释掉 states 那一行。
+# 鼠须管 0.16 后，快捷键切换时的提示由 states 自定义
+# 注释掉 states 后，仍可以通过自定义的快捷键切换，但没有切换提示，也不会出现在方案选单中
+# 注释掉 reset 后，配合 default.custom.yaml 中的 save_options，可以永久记住开关状态，切换程序后也不会还原。
 switches:
   - name: ascii_mode
     states: [ 中, A ]
     reset: 0
   - name: full_shape
-    states: [ 半角, 全角 ]
+    # states: [ 半角, 全角 ]
     reset: 0
   - name: ascii_punct
-    states: [ 。，, ．， ]  # 中英标点
-    reset: 0
+    states: [ 。，, ．， ]
+    # reset: 0
   - name: traditionalization
     states: [ 简, 繁 ]
     reset: 0
   - name: emoji
     states: [ 💀, 😄 ]
-    reset: 1
+    # reset: 1
 
 
 # 输入引擎
