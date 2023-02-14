@@ -1,0 +1,14 @@
+# encoding: utf-8
+---
+recipe:
+  Rx: others/recipes/cn_dicts
+  args:
+  description: >-
+    拼音词库安装、更新
+install_files: >-
+  cn_dicts/8105.dict.yaml
+  cn_dicts/base.dict.yaml
+  cn_dicts/ext.dict.yaml
+  cn_dicts/others.dict.yaml
+  cn_dicts/sogou.dict.yaml
+  cn_dicts/tencent.dict.yaml
