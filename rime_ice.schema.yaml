@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "1.3.1"
+  version: "1.3.2"
   author:
     - Dvel
   description: |
@@ -271,7 +271,7 @@ speller:
     - derive/([zcs])h(a|e|i|u|ai|ei|an|en|ou|uo|ua|un|ui|uan|uai|uang|ang|eng|ong)$/h$1$2/  # hzi → zhi
     - derive/([zcs])h([aeiu])$/$1$2h/  # zih → zhi
     # ai
-    - derive/^([wghkzc])ai$/$1ia/  # wia → wai
+    - derive/^([wghk])ai$/$1ia/  # wia → wai
     # ia
     - derive/([qjx])ia$/$1ai/  # qai → qia
     # ei
