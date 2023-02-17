@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-02-14"
+version: "2023-02-18"
 sort: by_weight
 ...
 # 一些杂项
@@ -169,6 +169,7 @@ Liam	Liam
 Noah	Noah
 Jay	Jay
 Enya	Enya
+Juno	Juno
 
 
 # 带权重的系列
@@ -1898,3 +1899,10 @@ fuckity	fuckity
 fo	fo
 NIh	NIh
 layouts	layouts
+redirect	redirect
+redirects	redirects
+bash	bash
+Unix shell	Unixshell
+shells	shells
+Zaraz	Zaraz
+waitlist	waitlist
