@@ -15,7 +15,7 @@
 # 搜狗转 Rime 词库：https://github.com/lewangdev/scel2txt
 ---
 name: sogou
-version: "2023-02-18"
+version: "2023-02-20"
 sort: by_weight
 ...
 # *_* 过滤列表，每次更新时不再写入：
@@ -4995,6 +4995,7 @@ sort: by_weight
 大棉衣	da mian yi	100
 大明二明	da ming er ming	100
 达摩洞	da mo dong	100
+达摩鲨	da mo sha	100
 大魔术师	da mo shu shi	100
 大默写	da mo xie	100
 大木博士	da mu bo shi	100
@@ -12767,6 +12768,7 @@ sort: by_weight
 积功德	ji gong de	100
 记公式	ji gong shi	100
 姬宫桃李	ji gong tao li	100
+冀工之家	ji gong zhi jia	100
 机怪虫	ji guai chong	100
 机关棋谭	ji guan qi tan	100
 极光季	ji guang ji	100
@@ -15104,6 +15106,7 @@ sort: by_weight
 卡西乌斯	ka xi wu si	100
 卡夜阁	ka ye ge	100
 卡伊洛斯	ka yi luo si	100
+卡友地带	ka you di dai	100
 卡在中间	ka zai zhong jian	100
 咔滋脆	ka zi cui	100
 开安镇	kai an zhen	100
@@ -15891,6 +15894,7 @@ sort: by_weight
 孔一凡	kong yi fan	100
 空印案	kong yin an	100
 空余恨	kong yu hen	100
+空域用户	kong yu yong hu	100
 空月祝福	kong yue zhu fu	100
 孔云龙	kong yun long	100
 控制狂	kong zhi kuang	100
@@ -18051,6 +18055,7 @@ sort: by_weight
 陆林深	lu lin shen	100
 鹿灵舞	lu ling wu	100
 露露卡	lu lu ka	100
+碌碌有为	lu lu you wei	100
 噜噜猪	lu lu zhu	100
 鹿鹿子	lu lu zi	100
 撸猫猫	lu mao mao	100
@@ -21492,6 +21497,7 @@ sort: by_weight
 濮阳东	pu yang dong	100
 普译奖	pu yi jiang	100
 普翼新城	pu yi xin cheng	100
+蒲峪新城	pu yu xin cheng	100
 普职分流	pu zhi fen liu	100
 普职融通	pu zhi rong tong	100
 祁安路	qi an lu	100
@@ -23097,6 +23103,7 @@ sort: by_weight
 仁兔成鸣	ren tu cheng ming	100
 人团圆	ren tuan yuan	100
 人往未来看	ren wang wei lai kan	100
+人为崩落	ren wei beng luo	100
 人为情叹	ren wei qing tan	100
 人文交流	ren wen jiao liu	100
 人文科技	ren wen ke ji	100
@@ -23363,6 +23370,7 @@ sort: by_weight
 锐科激光	rui ke ji guang	100
 锐利的眼	rui li de yan	100
 瑞隆城	rui long cheng	100
+锐明技术	rui ming ji shu	100
 瑞皮娜	rui pi na	100
 瑞琪奥兰	rui qi ao lan	100
 瑞奇与叮当	rui qi yu ding dang	100
@@ -26028,6 +26036,7 @@ sort: by_weight
 四六级成绩	si liu ji cheng ji	100
 四六级考试	si liu ji kao shi	100
 四龙图	si long tu	100
+斯露德	si lu de	100
 丝路电商	si lu dian shang	100
 丝路古道	si lu gu dao	100
 丝路精神	si lu jing shen	100
@@ -28186,6 +28195,7 @@ sort: by_weight
 外语外贸大学	wai yu wai mao da xue	100
 外语外事	wai yu wai shi	100
 歪嘴龙王	wai zui long wang	100
+歪嘴猫	wai zui mao	100
 歪嘴战神	wai zui zhan shen	100
 晚安呐	wan an na	100
 丸霸无双	wan ba wu shuang	100
@@ -31409,6 +31419,7 @@ sort: by_weight
 想找工作	xiang zhao gong zuo	100
 向着光	xiang zhe guang	100
 享折扣	xiang zhe kou	100
+向着明天	xiang zhe ming tian	100
 想中奖	xiang zhong jiang	100
 相州镇	xiang zhou zhen	100
 想住校	xiang zhu xiao	100
@@ -33087,6 +33098,7 @@ sort: by_weight
 亚速营	ya su ying	100
 压岁金	ya sui jin	100
 压缩干粮	ya suo gan liang	100
+压缩馍	ya suo mo	100
 亚托莉	ya tuo li	100
 雅万高铁	ya wan gao tie	100
 压线过	ya xian guo	100
@@ -35895,6 +35907,7 @@ sort: by_weight
 预言山谷	yu yan shan gu	100
 预言石	yu yan shi	100
 语言特色	yu yan te se	100
+鱼眼特效	yu yan te xiao	100
 玉杨路	yu yang lu	100
 淯阳桥	yu yang qiao	100
 榆阳秋	yu yang qiu	100
@@ -37279,6 +37292,7 @@ sort: by_weight
 针织连衣裙	zhen zhi lian yi qun	100
 真中招了	zhen zhong zhao le	100
 珍珠蚌	zhen zhu bang	100
+珍珠湖路	zhen zhu hu lu	100
 珍珠球	zhen zhu qiu	100
 珍珠雅苑	zhen zhu ya yuan	100
 珍珠妆	zhen zhu zhuang	100
@@ -38604,6 +38618,7 @@ sort: by_weight
 追查到底	zhui cha dao di	100
 追悼大会	zhui dao da hui	100
 追风杯	zhui feng bei	100
+追风赶月	zhui feng gan yue	100
 追光季	zhui guang ji	100
 坠机了	zhui ji le	100
 坠机前	zhui ji qian	100
