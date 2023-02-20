@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-02-18"
+version: "2023-02-20"
 sort: by_weight
 ...
 # 一些杂项
@@ -817,7 +817,7 @@ SaneDesk	SaneDesk
 Scrapbook	Scrapbook
 ScreenFloat	ScreenFloat
 ScreenFlow	ScreenFlow
-Scribble	Scribble
+scribble	scribble
 Scrivener	Scrivener
 SDK	SDK
 Software Development Kit	SDK
@@ -1906,3 +1906,6 @@ Unix shell	Unixshell
 shells	shells
 Zaraz	Zaraz
 waitlist	waitlist
+diffusion	diffusion
+Scribble Diffusion	ScribbleDiffusion
+Lenovo	Lenovo

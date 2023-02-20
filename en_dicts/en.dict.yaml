@@ -16,7 +16,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-02-03"
+version: "2023-02-20"
 sort: by_weight
 ...
 # +_+
@@ -11074,7 +11074,7 @@ thing	thing
 things	things
 think	think
 thinking	thinking
-thinkpad	thinkpad
+ThinkPad	ThinkPad
 thinks	thinks
 third	third
 thirst	thirst
