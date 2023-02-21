@@ -3,12 +3,14 @@
 
 ---
 name: rime_ice
-version: "1"
+version: "2023-02-21"
 import_tables:
   - cn_dicts/8105    # 字表
   - cn_dicts/base    # 基础词库
-  - cn_dicts/sogou   # 搜狗流行词，与 main 没有重复
-  - cn_dicts/ext     # 扩展词库，与 main sogou 没有重复
-  - cn_dicts/tencent # 腾讯词向量，与 main sogou ext 没有重复，大词库，部署时间较长。
+  - cn_dicts/sogou   # 搜狗流行词
+  - cn_dicts/ext     # 扩展词库
+  - cn_dicts/tencent # 腾讯词向量，大词库，部署时间较长。
   - cn_dicts/others  # 一些杂项
+
+  - cn_dicts/cn_en   # 中英混输词库
 ...
