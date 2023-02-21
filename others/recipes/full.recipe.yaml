@@ -12,11 +12,11 @@ install_files: >-
   cn_dicts/others.dict.yaml
   cn_dicts/sogou.dict.yaml
   cn_dicts/tencent.dict.yaml
+  cn_dicts/cn_en.dict.yaml
   custom_phrase.txt
   default.custom.yaml
   double_pinyin.schema.yaml
   double_pinyin_flypy.schema.yaml
-  en_dicts/cn_en.dict.yaml
   en_dicts/en.dict.yaml
   en_dicts/en_ext.dict.yaml
   liangfen.dict.yaml
