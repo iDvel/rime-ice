@@ -7,13 +7,15 @@
 #
 # 中英混输的拼写规则参考于 https://github.com/tumuyan/rime-melt
 #
-# 示例：
-# x guang pian → X光片
-# xgp → X光片
+# 示例
+# X光片: 
+# x guang pian
+# xgp
 #
-# mac ban ben → Mac版本
-# macbb → Mac版本
-# mbb → Mac版本
+# AD钙奶:
+# ad gai nai
+# adgn
+# agn
 ---
 name: cn_en
 version: "2023-02-21"
@@ -41,9 +43,18 @@ B站	_B zhan
 V站	_V zhan
 P站	_P zhan
 大V	da _V
+Q币	_Q bi
+QQ	_QQ
+QQ号	_QQ hao
+QQ号码	_QQ hao ma
+QQ空间	_QQ kong jian
+QQ群	_QQ qun
+QQ邮箱	_QQ you xiang
 QQ音乐	_QQ yin yue
 QQ拼音	_QQ pin yin
 QQ会员	_QQ hui yuan
+QQ音速	_QQ yin su
+QQ好友	_QQ hao you
 QQ输入法	_QQ shu ru fa
 Dock栏	_Dock lan
 阿Q精神	a _Q jing shen
@@ -82,6 +93,12 @@ Go语言	_Go yu yan
 维生素D	wei sheng su _D
 维生素E	wei sheng su _E
 维生素K	wei sheng su _K
+维A	wei _A
+维B	wei _B
+维C	wei _C
+维D	wei _D
+维E	wei _E
+维K	wei _K
 维E乳	wei _E ru
 维生素E乳	wei sheng su _E ru
 阿Q	a _Q
@@ -103,6 +120,8 @@ Go语言	_Go yu yan
 A股	_A gu
 B股	_B gu
 H股	_H gu
+N股	_N gu
+S股	_S gu
 A盘	_A pan
 A片	_A pian
 AA制	_AA zhi
@@ -126,19 +145,15 @@ J盘	_J pan
 K宝	_K bao
 K粉	_K fen
 K歌	_K ge
+K歌王	_K ge wang
 POS机	_POS ji
-Q币	_Q bi
-QQ	_QQ
-QQ号	_QQ hao
-QQ号码	_QQ hao ma
-QQ空间	_QQ kong jian
-QQ群	_QQ qun
-QQ邮箱	_QQ you xiang
 SIM卡	_SIM ka
 T淋巴细胞	_T lin ba xi bao
 T细胞	_T xi bao
 T型台	_T xing tai
 U盾	_U dun
+S形	_S xing
+U形	_U xing
 U形管	_U xing guan
 UIM卡	_UIM ka
 USIM卡	_USIM ka
@@ -159,6 +174,7 @@ Beta版	_Beta ban
 Beta版本	_Beta ban ben
 AV女优	_AV nv you
 X战警	_X zhan jing
+YY语音	_YY yu yin
 A4	_A si
 A4纸	_A si zhi
 A4腰	_A si yao
@@ -230,6 +246,14 @@ E罩	_E zhao
 F罩	_F zhao
 G罩	_G zhao
 H罩	_H zhao
+A杯	_A bei
+B杯	_B bei
+C杯	_C bei
+D杯	_D bei
+E杯	_E bei
+F杯	_F bei
+G杯	_G bei
+H杯	_H bei
 TV版	_TV ban
 TV版本	_TV ban ben
 芒果TV	mang guo _TV
@@ -250,6 +274,9 @@ MAC地址	_MAC di zhi
 DNS劫持	_DNS jie chi
 DNS污染	_DNS wu ran
 OK了	_OK le
+OK啦	_OK la
+OK啊	_OK a
+我OK啊	wo _OK a
 OK了吗	_OK le ma
 腾讯QQ	teng xun _QQ
 公网IP	gong wang _IP
@@ -289,7 +316,7 @@ Del键	_Del jian
 Delete键	_Delete jian
 Esc键	_Esc jian
 Eject键	_Eject jian
-J·K·罗琳	_J _K luo lin
+J·K·罗琳	_JK luo lin
 周刊少年Jump	zhou kan shao nian _Jump
 ICP备案	_ICP bei an
 啥Bug	sha _Bug
@@ -297,7 +324,10 @@ ICP备案	_ICP bei an
 没Bug	mei _Bug
 没有Bug	mei you _Bug
 卡Bug	ka _Bug
-J·R·R·托尔金	_J _R _R tuo er jin
+提Bug	ti _Bug
+写Bug	xie _Bug
+改Bug	gai _Bug
+J·R·R·托尔金	_JRR tuo er jin
 异维A酸	wei yi _A suan
 互fo	hu _fo
 减CD	jian _CD
@@ -313,8 +343,134 @@ A级	_A ji
 B级	_B ji
 C级	_C ji
 D级	_D ji
+S级	_S ji
 拍CT	pai _CT
 CT检查	_CT jian cha
 PVC管	_PVC guan
 DoS攻击	_DoS gong ji
 DDoS攻击	_DDoS gong ji
+N卡	_N ka
+A卡	_A ka
+M码	_M ma
+S码	_S ma
+L码	_L ma
+Q我	_Q wo
+R级	_R ji
+A区	_A qv
+B区	_B qv
+C区	_C qv
+D区	_D qv
+E区	_E qv
+F区	_F qv
+A组	_A zu
+B组	_B zu
+C组	_C zu
+D组	_D zu
+E组	_E zu
+F组	_F zu
+B哥	_B ge
+Q版	_Q ban
+A班	_A ban
+B班	_B ban
+C班	_C ban
+D班	_D ban
+老K	lao _K
+加Q	jia _Q
+加QQ	jia _QQ
+A座	_A zuo
+B座	_B zuo
+C座	_C zuo
+D座	_D zuo
+E座	_E zuo
+F座	_F zuo
+H版	_H ban
+A口	_A kou
+B口	_B kou
+C口	_C kou
+D口	_D kou
+E口	_E kou
+F口	_F kou
+A出口	_A chu kou
+B出口	_B chu kou
+C出口	_C chu kou
+D出口	_D chu kou
+E出口	_E chu kou
+F出口	_F chu kou
+A楼	_A lou
+B楼	_B lou
+C楼	_C lou
+D楼	_D lou
+E楼	_E lou
+F楼	_F lou
+A型号	_A xing hao
+B型号	_B xing hao
+C型号	_C xing hao
+D型号	_D xing hao
+E型号	_E xing hao
+F型号	_F xing hao
+A型	_A xing
+B型	_B xing
+C型	_C xing
+D型	_D xing
+E型	_E xing
+F型	_F xing
+A款	_A kuan
+B款	_B kuan
+C款	_C kuan
+D款	_D kuan
+E款	_E kuan
+F款	_F kuan
+A栋	_A dong
+B栋	_B dong
+C栋	_C dong
+D栋	_D dong
+E栋	_E dong
+F栋	_F dong
+X轴	_X zhou
+Y轴	_Y zhou
+Z轴	_Z zhou
+V领	_V ling
+V字领	_V zi ling
+V字形	_V zi xing
+IT业	_IT ye
+IT行业	_IT hang ye
+K线	_K xian
+K线图	_K xian tu
+日K线	ri _K xian
+周K线	zhou _K xian
+月K线	yue _K xian
+T台	_T tai
+TF卡	_TF ka
+N年	_N nian
+A点	_A dian
+B点	_B dian
+A屏	A_ ping
+OK吗	_OK ma
+OK嘛	_OK ma
+OK么	_OK me
+OK呀	_OK ya
+BB机	_BB ji
+做B超	zuo _B chao
+DJ版	_DJ ban
+唱K	chang _K
+PK赛	_PK sai
+A和B	_A he _B
+X和Y	_X he _Y
+查IP	cha _IP
+封IP	feng _IP
+换IP	huan _IP
+VIP卡	_VIP ka
+AAA级	_AAA ji
+第N次	di _N ci
+PIN码	_PIN ma
+发EMS	fa _EMS
+DVD版	_DVD ban
+USB线	_USB xian
+USB口	_USB kou
+USB接口	_USB jie kou
+X档案	_X dang an
+n次方	_n ci fang
+N多人	_N duo ren
+S曲线	_S qu xian
+DJ舞曲	_DJ wu qu
+充Q币	chong _Q bi
