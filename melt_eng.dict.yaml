@@ -6,10 +6,8 @@
 
 ---
 name: melt_eng
-version: "1"
+version: "2023-02-21"
 import_tables:
   - en_dicts/en_ext  # 补充
   - en_dicts/en      # 英文主词库
-
-  - en_dicts/cn_en   # 中英混输词库。 双拼应该注释掉这一行，里面是写死了的全拼编码。
 ...
