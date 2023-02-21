@@ -104,7 +104,7 @@ func UpdateEmojiTXT() {
 	sc := bufio.NewScanner(mappingFile)
 	for sc.Scan() {
 		line := sc.Text()
-		if strings.HasPrefix(line, "#") {
+		if strings.HasPrefix(line, "#") && !strings.Contains(line, "井号") { // #️⃣被判断为以 # 开头了。。。
 			continue
 		}
 		arr := strings.Split(line, " ")
