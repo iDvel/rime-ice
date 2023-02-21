@@ -12,7 +12,7 @@ install_files: >-
   cn_dicts/others.dict.yaml
   cn_dicts/sogou.dict.yaml
   cn_dicts/tencent.dict.yaml
-  en_dicts/cn_en.dict.yaml
+  cn_dicts/cn_en.dict.yaml
   en_dicts/en.dict.yaml
   en_dicts/en_ext.dict.yaml
   opencc/emoji-map.txt
