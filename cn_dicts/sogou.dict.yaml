@@ -15,7 +15,7 @@
 # 搜狗转 Rime 词库：https://github.com/lewangdev/scel2txt
 ---
 name: sogou
-version: "2023-02-21"
+version: "2023-02-22"
 sort: by_weight
 ...
 # *_* 过滤列表，每次更新时不再写入：
@@ -144,6 +144,7 @@ sort: by_weight
 阿哈利姆	a ha li mu	100
 阿基蕾拉	a ji lei la	100
 阿吉野马	a ji ye ma	100
+阿贾青年	a jia qing nian	100
 阿金斯	a jin si	100
 阿卡多	a ka duo	100
 阿坎吉	a kan ji	100
@@ -1048,6 +1049,7 @@ sort: by_weight
 百姓心	bai xing xin	100
 白秀秀	bai xiu xiu	100
 百亚股份	bai ya gu fen	100
+百眼巨人	bai yan ju ren	100
 白彦镇	bai yan zhen	100
 百洋股份	bai yang gu fen	100
 柏阳景园	bai yang jing yuan	100
@@ -3395,6 +3397,7 @@ sort: by_weight
 长安诺	chang an nuo	100
 长安少年	chang an shao nian	100
 长安夜	chang an ye	100
+长安逸达	chang an yi da	100
 长袄子	chang ao zi	100
 昌北机场	chang bei ji chang	100
 长辫子	chang bian zi	100
@@ -4548,6 +4551,7 @@ sort: by_weight
 呲个大牙	ci ge da ya	100
 茨菇塘	ci gu tang	100
 此花亭	ci hua ting	100
+刺激版	ci ji ban	100
 次级联赛	ci ji lian sai	100
 辞旧迎新之际	ci jiu ying xin zhi ji	100
 刺客狼	ci ke lang	100
@@ -5306,6 +5310,7 @@ sort: by_weight
 带都没带	dai dou mei dai	100
 待兑换	dai dui huan	100
 带队老师	dai dui lao shi	100
+黛朵级	dai duo ji	100
 代高政	dai gao zheng	100
 带给你吃	dai gei ni chi	100
 岱崮镇	dai gu zhen	100
@@ -5863,6 +5868,7 @@ sort: by_weight
 第九道	di jiu dao	100
 第九赛季	di jiu sai ji	100
 滴酒未沾	di jiu wei zhan	100
+地绝阵	di jue zhen	100
 帝君号	di jun hao	100
 抵抗能力	di kang neng li	100
 抵抗疫情	di kang yi qing	100
@@ -10804,6 +10810,7 @@ sort: by_weight
 好好放松	hao hao fang song	100
 好好放松放松	hao hao fang song fang song	100
 好好放松一下	hao hao fang song yi xia	100
+好好复盘	hao hao fu pan	100
 好好改造	hao hao gai zao	100
 好好隔离	hao hao ge li	100
 好好规划	hao hao gui hua	100
@@ -10937,6 +10944,7 @@ sort: by_weight
 好小的雪	hao xiao de xue	100
 好孝顺	hao xiao shun	100
 好心蛋	hao xin dan	100
+好言难劝	hao yan nan quan	100
 皓阳园	hao yang yuan	100
 蚝业雅苑	hao ye ya yuan	100
 好一本	hao yi ben	100
@@ -12710,6 +12718,7 @@ sort: by_weight
 几大战区	ji da zhan qu	100
 吉大正元	ji da zheng yuan	100
 鸡蛋歌	ji dan ge	100
+鸡蛋姬	ji dan ji	100
 鸡蛋碰石头	ji dan peng shi tou	100
 鸡蛋蒜	ji dan suan	100
 极道鲜师	ji dao xian shi	100
@@ -12868,6 +12877,7 @@ sort: by_weight
 集卡活动	ji ka huo dong	100
 寄卡片	ji ka pian	100
 集卡片	ji ka pian	100
+吉康保	ji kang bao	100
 几颗糖	ji ke tang	100
 即刻为止	ji ke wei zhi	100
 极客鞋谈	ji ke xie tan	100
@@ -12950,6 +12960,7 @@ sort: by_weight
 击杀榜	ji sha bang	100
 矶沙蚕	ji sha can	100
 击杀特效	ji sha te xiao	100
+几上禾夏	ji shang he xia	100
 寄生都市	ji sheng du shi	100
 级升里	ji sheng li	100
 寄生胎	ji sheng tai	100
@@ -13963,6 +13974,7 @@ sort: by_weight
 戒手机	jie shou ji	100
 接受邀请	jie shou yao qing	100
 接收值	jie shou zhi	100
+解暑汤	jie shu tang	100
 解说杯	jie shuo bei	100
 解说席	jie shuo xi	100
 杰斯顿	jie si dun	100
@@ -17669,6 +17681,7 @@ sort: by_weight
 柳扶风	liu fu feng	100
 刘福星	liu fu xing	100
 刘夫阳	liu fu yang	100
+六高一强	liu gao yi qiang	100
 六个班	liu ge ban	100
 六个坚持	liu ge jian chi	100
 六个圈	liu ge quan	100
@@ -19739,6 +19752,7 @@ sort: by_weight
 明天补课	ming tian bu ke	100
 明天不上学	ming tian bu shang xue	100
 明天出发	ming tian chu fa	100
+明天出分	ming tian chu fen	100
 明天出来玩	ming tian chu lai wan	100
 明天出门	ming tian chu men	100
 明天出去玩	ming tian chu qu wan	100
@@ -24676,6 +24690,7 @@ sort: by_weight
 省排名	sheng pai ming	100
 声破天	sheng po tian	100
 生气啵啵	sheng qi bo bo	100
+升旗了	sheng qi le	100
 省钱了	sheng qian le	100
 生前葬	sheng qian zang	100
 盛秦国际	sheng qin guo ji	100
@@ -26772,6 +26787,7 @@ sort: by_weight
 太塞车	tai sai che	100
 太涩了	tai se le	100
 泰瑟枪	tai se qiang	100
+太山府	tai shan fu	100
 泰山科技	tai shan ke ji	100
 泰山石膏	tai shan shi gao	100
 泰山王	tai shan wang	100
@@ -27677,6 +27693,7 @@ sort: by_weight
 听不到我说话	ting bu dao wo shuo hua	100
 听不见我说话	ting bu jian wo shuo hua	100
 停不停课	ting bu ting ke	100
+听潮阁	ting chao ge	100
 挺吃香	ting chi xiang	100
 挺大雨	ting da yu	100
 听党话	ting dang hua	100
@@ -28409,6 +28426,7 @@ sort: by_weight
 网吧模拟器	wang ba mo ni qi	100
 网吧特权	wang ba te quan	100
 王霸天	wang ba tian	100
+网暴者	wang bao zhe	100
 望变电气	wang bian dian qi	100
 王炳林	wang bing lin	100
 王炳忠	wang bing zhong	100
@@ -38341,6 +38359,7 @@ sort: by_weight
 珠峰大本营	zhu feng da ben ying	100
 朱凤莲	zhu feng lian	100
 朱凤伟	zhu feng wei	100
+珠峰云	zhu feng yun	100
 祝福词	zhu fu ci	100
 诸福屯	zhu fu tun	100
 朱岗子	zhu gang zi	100
@@ -38765,6 +38784,7 @@ sort: by_weight
 字母钢	zi mu gang	100
 自拟题目	zi ni ti mu	100
 自拍视频	zi pai shi pin	100
+自抛自扣	zi pao zi kou	100
 紫皮大蒜	zi pi da suan	100
 紫皮蒜	zi pi suan	100
 紫鹊界	zi que jie	100

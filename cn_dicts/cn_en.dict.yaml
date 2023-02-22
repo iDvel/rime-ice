@@ -18,7 +18,7 @@
 # agn
 ---
 name: cn_en
-version: "2023-02-21"
+version: "2023-02-22"
 sort: by_weight
 ...
 X光	_X guang
@@ -124,7 +124,7 @@ N股	_N gu
 S股	_S gu
 A盘	_A pan
 A片	_A pian
-AA制	_AA zhi
+AA制	_A _A zhi
 ATM机	_ATM ji
 B超	_B chao
 B淋巴细胞	_B lin ba xi bao
