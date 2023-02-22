@@ -83,7 +83,7 @@ func readEnToSet(dictPath string) mapset.Set[string] {
 
 	file, err := os.Open(dictPath)
 	if err != nil {
-		log.Fatal(set)
+		log.Fatal(err)
 	}
 	defer file.Close()
 
