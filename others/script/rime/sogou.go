@@ -25,10 +25,10 @@ func UpdateSogou() {
 	defer updateVersion(SogouPath, getSha1(SogouPath))
 	defer printfTimeCost("更新搜狗流行词", time.Now())
 
-	makeFilterList() // 0. 准备好过滤词列表
-	downloadSogou()  // 1. 下载搜狗流行词加入到文件末尾
-	checkAndWrite()  // 2. 过滤、去重、排序
-	PrintNewWords()  // 3. 打印新增词汇
+	makeSogouFilterList() // 0. 准备好过滤词列表
+	downloadSogou()       // 1. 下载搜狗流行词加入到文件末尾
+	checkAndWrite()       // 2. 过滤、去重、排序
+	PrintNewWords()       // 3. 打印新增词汇
 
 	// 弄完了删除临时用的文件，否则 VSCode 全局搜索词汇时会搜索到，影响体验
 	err := os.Remove("./scel2txt/scel/sogou.scel")
@@ -45,8 +45,8 @@ func UpdateSogou() {
 	}
 }
 
-// makeFilterList 准备好过滤词列表 filterList
-func makeFilterList() {
+// 准备好过滤词列表 filterList
+func makeSogouFilterList() {
 	file, err := os.Open(SogouPath)
 	if err != nil {
 		log.Fatal(err)

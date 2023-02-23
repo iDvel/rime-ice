@@ -147,15 +147,17 @@ func Sort(dictPath string, flag int) {
 	}
 
 	// 其他词库需要从一个或多个词库中去重后再写入
-	if dictPath == SogouPath || dictPath == ExtPath || dictPath == TencentPath {
+	if contains([]string{SogouPath, MoegirlPath, ExtPath, TencentPath}, dictPath) {
 		var intersect mapset.Set[string] // 交集，有交集的就是重复的，去掉
 		switch dictPath {
 		case SogouPath: // sogou 不和 base 有重复
 			intersect = SogouSet.Intersect(BaseSet)
-		case ExtPath: // ext 不和 base+sogou 有重复
-			intersect = ExtSet.Intersect(BaseSet.Union(SogouSet))
-		case TencentPath:
-			intersect = TencentSet.Intersect(BaseSet.Union(SogouSet).Union(ExtSet))
+		case MoegirlPath: // moegirl 不和 base+sogou 有重复
+			intersect = MoegirlSet.Intersect(BaseSet.Union(SogouSet))
+		case ExtPath: // ext 不和 base+sogou+moegirl 有重复
+			intersect = ExtSet.Intersect(BaseSet.Union(SogouSet).Union(MoegirlSet))
+		case TencentPath: // tencent 不和 base+sogou+moegirl+ext 有重复
+			intersect = TencentSet.Intersect(BaseSet.Union(SogouSet).Union(MoegirlSet).Union(ExtSet))
 		}
 
 		for _, line := range contents {
@@ -177,7 +179,7 @@ func Sort(dictPath string, flag int) {
 	}
 
 	// 外部词库或临时文件，只排序，不去重
-	if !contains([]string{HanziPath, BasePath, SogouPath, ExtPath, TencentPath}, dictPath) {
+	if !contains([]string{HanziPath, BasePath, SogouPath, MoegirlPath, ExtPath, TencentPath}, dictPath) {
 		switch flag {
 		case 1:
 			for _, line := range contents {
