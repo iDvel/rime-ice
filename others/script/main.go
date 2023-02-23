@@ -26,6 +26,7 @@ func main() {
 
 	// 为 sogou、ext、tencent 没权重的词条加上权重，有权重的改为下面设置的权重
 	rime.AddWeight(rime.SogouPath, rime.DefaultWeight)
+	rime.AddWeight(rime.MoegirlPath, rime.DefaultWeight)
 	rime.AddWeight(rime.ExtPath, rime.DefaultWeight)
 	rime.AddWeight(rime.TencentPath, rime.DefaultWeight)
 	fmt.Println("--------------------------------------------------")
@@ -35,6 +36,7 @@ func main() {
 	go rime.Check(rime.HanziPath, 3)
 	go rime.Check(rime.BasePath, 3)
 	go rime.Check(rime.SogouPath, 3)
+	go rime.Check(rime.MoegirlPath, 3)
 	go rime.Check(rime.ExtPath, 4)
 	go rime.Check(rime.TencentPath, 4)
 
@@ -44,8 +46,9 @@ func main() {
 	rime.Sort(rime.HanziPath, 3)
 	rime.Sort(rime.BasePath, 3)
 	rime.Sort(rime.SogouPath, 3)   // 对 base 中已经有的，去重
-	rime.Sort(rime.ExtPath, 4)     // 对 base、sogou 中已经有的，去重
-	rime.Sort(rime.TencentPath, 4) // 对 base、sogou、ext 中已经有的，去重
+	rime.Sort(rime.MoegirlPath, 3) // 对 base、sogou 中已经有的，去重
+	rime.Sort(rime.ExtPath, 4)     // 对 base、sogou、moegirl 中已经有的，去重
+	rime.Sort(rime.TencentPath, 4) // 对 base、sogou、moegirl、ext 中已经有的，去重
 	// rime.SortEnDict(rime.EnPath)
 }
 

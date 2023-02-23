@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 	"strings"
+	"unicode/utf8"
 )
 
 // 临时用的或一次性的方法集
@@ -50,6 +51,34 @@ func enDictsIntersect(dict1, dict2 string) {
 	if err != nil {
 		log.Fatal(err)
 	}
+}
+
+// 处理一个 Rime 词库，去除掉它两个字及以下的词汇
+func processNewDict(dictPath string) {
+	file, _ := os.Open(dictPath)
+	defer file.Close()
+
+	outFile, _ := os.OpenFile("/Users/dvel/Downloads/1.dict.yaml", os.O_CREATE|os.O_TRUNC|os.O_WRONLY, 0644)
+	defer outFile.Close()
+
+	sc := bufio.NewScanner(file)
+	isMark := false
+	for sc.Scan() {
+		line := sc.Text()
+		if !isMark {
+			if line == "..." {
+				isMark = true
+			}
+			continue
+		}
+
+		text := strings.Split(line, "\t")[0]
+		if utf8.RuneCountInString(text) <= 2 {
+			continue
+		}
+		outFile.WriteString(line+"\n")
+	}
+	outFile.Sync()
 }
 
 func get字表汉字拼音映射() {
