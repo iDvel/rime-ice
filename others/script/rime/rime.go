@@ -118,14 +118,12 @@ func getSha1(dictPath string) string {
 // updateVersion 排序后，如果文件有改动，则修改 version 日期
 func updateVersion(dictPath string, oldSha1 string) {
 	// 判断文件是否有改变
-	if dictPath != MoegirlPath {
-		newSha1 := getSha1(dictPath)
-		if newSha1 == oldSha1 {
-			fmt.Println()
-			return
-		}
-		fmt.Println(" ...sorted")
+	newSha1 := getSha1(dictPath)
+	if newSha1 == oldSha1 {
+		fmt.Println()
+		return
 	}
+	fmt.Println(" ...sorted")
 
 	// 打开文件
 	file, err := os.OpenFile(dictPath, os.O_RDWR, 0644)

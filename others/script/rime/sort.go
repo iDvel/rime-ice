@@ -166,7 +166,7 @@ func Sort(dictPath string, flag int) {
 				continue
 			}
 			str := ""
-			if flag == 3 { // sogou
+			if flag == 3 { // sogou moegirl
 				str = line.text + "\t" + line.code + "\t" + strconv.Itoa(line.weight) + "\n"
 			} else if flag == 4 { // ext tencent
 				str = line.text + "\t" + strconv.Itoa(line.weight) + "\n"

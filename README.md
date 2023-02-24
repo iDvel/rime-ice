@@ -28,6 +28,7 @@
     -   [《同义词词林》](https://forum.freemdict.com/t/topic/1211)
     -   [《新华成语大词典》](https://forum.freemdict.com/t/topic/11407)
     -   [搜狗网络流行新词](https://pinyin.sogou.com/dict/detail/index/4)
+    -   [萌娘百科词库](https://github.com/outloudvi/mw2fcitx)
     -   [腾讯词向量](https://ai.tencent.com/ailab/nlp/en/download.html)
 - 词库修订
     - 校对大量异形词、错别字、错误注音
@@ -45,6 +46,7 @@
 - `8105` 字表。
 - `base` 基础词库。
 - `sogou` 搜狗流行词。
+- `moegirl` 萌娘百科。
 - `ext` 扩展词库，小词库。
 - `tencent` 扩展词库，大词库。
 - Emoji

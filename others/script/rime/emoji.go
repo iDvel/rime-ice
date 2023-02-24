@@ -22,7 +22,7 @@ type OrderedMap struct {
 
 // CheckEmoji 检查 Emoji
 // 检查 emoji-map.txt 格式书写问题
-// 检查所有词条是否与 base+sogou+ext 词库存在差集
+// 检查所有词条是否与 base 词库存在差集
 func CheckEmoji() {
 	// 控制台输出
 	defer printlnTimeCost("检查 Emoji 差集", time.Now())
@@ -72,7 +72,7 @@ func CheckEmoji() {
 	}
 
 	// 检查 emoji 中的词条是否与 base+sogou+ext 词库存在差集
-	for _, word := range emojiSet.Difference(BaseSet.Union(SogouSet).Union(ExtSet)).ToSlice() {
+	for _, word := range emojiSet.Difference(BaseSet).ToSlice() {
 		// 去除英文字母
 		if match, _ := regexp.MatchString(`[A-Za-z]+`, word); match {
 			continue

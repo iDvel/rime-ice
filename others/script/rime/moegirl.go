@@ -16,19 +16,19 @@ func UpdateMoegirl() {
 	filterList = mapset.NewSet[string]() // 重置过滤列表
 
 	// 控制台输出
-	defer updateVersion(MoegirlPath, getSha1(MoegirlPath))
-	defer printfTimeCost("更新萌娘百科", time.Now())
+	defer printlnTimeCost("更新萌娘百科", time.Now())
 
-	// 0. 准备好过滤列表
-	makeFilterList(MoegirlPath)
-	// 1. 下载新的萌娘词库（暂时手动操作）
+	// 0. 下载新的萌娘词库（暂时手动操作）
 	newMoegirlFile := "/Users/dvel/Downloads/moegirl.dict.yaml"
-	// 2. 将新的词汇加入到末尾，并且打印新词
+	// 1. 准备好过滤列表
+	makeFilterList(MoegirlPath, newMoegirlFile)
+	// 2. 将新的词汇加入到末尾，并打印新词
 	appendNewDict(MoegirlPath, newMoegirlFile)
 }
 
-func makeFilterList(dictPath string) {
-	file, err := os.Open(MoegirlPath)
+func makeFilterList(dictPath string, newPath string) {
+	// 读取目前词库 +_+ 和 *_* 之间的内容，加入过滤列表
+	file, err := os.Open(dictPath)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -38,7 +38,6 @@ func makeFilterList(dictPath string) {
 	isFilterMark := false
 	for sc.Scan() {
 		line := sc.Text()
-		// 只读取 +_+ 和 *_* 之间的内容作为过滤列表
 		if line == mark {
 			break
 		}
@@ -52,11 +51,52 @@ func makeFilterList(dictPath string) {
 		// 【# 测试一】取【测试一】
 		// 【测试二	ce shi er	100】取【测试二】
 		if strings.HasPrefix(line, "# ") {
-			text := strings.TrimLeft(line, "# ")
-			filterList.Add(text)
+			filterList.Add(strings.TrimLeft(line, "# "))
 		} else {
-			text := strings.Split(line, "\t")[0]
-			filterList.Add(text)
+			filterList.Add(strings.Split(line, "\t")[0])
+		}
+	}
+
+	// 读取新词库，有问题的直接特么不要了
+	newFile, err := os.Open(newPath)
+	if err != nil {
+		if os.IsNotExist(err) {
+			return
+		}
+		log.Fatal(err)
+	}
+	defer newFile.Close()
+
+	sc = bufio.NewScanner(newFile)
+	isMark := false
+	for sc.Scan() {
+		line := sc.Text()
+		if !isMark {
+			if line == "..." {
+				isMark = true
+			}
+			continue
+		}
+
+		parts := strings.Split(line, "\t")
+		text, code := parts[0], parts[1]
+
+		// 过滤掉有注音问题的：
+		// 把汉字和拼音弄成一一对应关系，「拼音:pin yin」→「拼:pin」「音:yin」
+		pinyins := strings.Split(code, " ")
+		i := 0
+		for _, zi := range text {
+			if !contains(hanPinyinMap[string(zi)], pinyins[i]) {
+				filterList.Add(text)
+			}
+			i++
+		}
+
+		// 过滤掉有异形词问题的
+		for _, wrongWord := range wrongWords.ToSlice() {
+			if strings.Contains(text, wrongWord) {
+				filterList.Add(text)
+			}
 		}
 	}
 }
@@ -68,8 +108,12 @@ func appendNewDict(dictPath string, newPath string) {
 		log.Fatal(err)
 	}
 	defer moegirlFile.Close()
+
 	newFile, err := os.Open(newPath)
 	if err != nil {
+		if os.IsNotExist(err) {
+			return
+		}
 		log.Fatal(err)
 	}
 	defer newFile.Close()
