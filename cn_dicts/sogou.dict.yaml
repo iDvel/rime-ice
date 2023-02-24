@@ -15,7 +15,7 @@
 # 搜狗转 Rime 词库：https://github.com/lewangdev/scel2txt
 ---
 name: sogou
-version: "2023-02-24"
+version: "2023-02-25"
 sort: by_weight
 ...
 # *_* 过滤列表，每次更新时不再写入：
@@ -14977,7 +14977,6 @@ sort: by_weight
 矩阵重启	ju zhen chong qi	100
 举重比赛	ju zhong bi sai	100
 剧中剧	ju zhong ju	100
-举重运动员	ju zhong yun dong yuan	100
 居住地址	ju zhu di zhi	100
 居住证明	ju zhu zheng ming	100
 橘子焦糖	ju zi jiao tang	100
