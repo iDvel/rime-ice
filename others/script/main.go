@@ -24,6 +24,10 @@ func main() {
 	rime.UpdateSogou()
 	fmt.Println("--------------------------------------------------")
 
+	// 更新萌娘百科
+	rime.UpdateMoegirl()
+	fmt.Println("--------------------------------------------------")
+
 	// 为 sogou、ext、tencent 没权重的词条加上权重，有权重的改为下面设置的权重
 	rime.AddWeight(rime.SogouPath, rime.DefaultWeight)
 	rime.AddWeight(rime.MoegirlPath, rime.DefaultWeight)
