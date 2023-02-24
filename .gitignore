@@ -3,9 +3,11 @@
 .vscode/
 
 build/
-*.userdb/
 installation.yaml
 user.yaml
+
+*.userdb/
+rime_ice.txt
 
 others/script/scel2txt/out/*
 others/script/scel2txt/scel/*
