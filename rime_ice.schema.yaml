@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "1.4.1"
+  version: "1.4.0"
   author:
     - Dvel
   description: |
@@ -146,7 +146,6 @@ grammar:
 # 主翻译器，拼音
 translator:
   dictionary: rime_ice          # 挂载词库 rime_ice.dict.yaml
-  db_class: tabledb             # tabledb | userdb ，前者会生成人类可读的 *.txt，后者生成二进制的 *.userdb/
   contextual_suggestions: true  # 开启八股文
   preedit_format:               # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
     - xform/([jqxy])v/$1u/      # 显示为 ju qu xu yu
