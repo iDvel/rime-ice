@@ -13,7 +13,7 @@
 # 来源：https://github.com/outloudvi/mw2fcitx
 ---
 name: moegirl
-version: "2023-02-24"
+version: "2023-02-26"
 sort: by_weight
 ...
 # *_* 过滤列表，每次更新时不再写入：
@@ -51484,7 +51484,6 @@ sort: by_weight
 司空鸩九	si kong zhen jiu	100
 司口霜	si kou shuang	100
 斯库尔德	si ku er de	100
-斯库拉	si ku la	100
 斯库拉奇曼阿普	si ku la qi man a pu	100
 斯库路吉	si ku lu ji	100
 死库水	si ku shui	100
