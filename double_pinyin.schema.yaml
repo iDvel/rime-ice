@@ -172,11 +172,12 @@ translator:
 
 # 英文
 melt_eng:
-  dictionary: melt_eng
-  enable_completion: true # 补全提示
-  enable_sentence: false  # 禁止造句
-  enable_user_dict: false # 禁用用户词典
-  initial_quality: 1.1    # 初始权重
+  dictionary: melt_eng     # 挂载词库 melt_eng.dict.yaml
+  enable_sentence: false   # 禁止造句
+  enable_user_dict: false  # 禁用用户词典
+  initial_quality: 1.1     # 初始权重
+  comment_format:  # 是否显示补全提示？
+    - xform/.*//   # 注释掉这两行则显示。
 
 
 # 标点符号
