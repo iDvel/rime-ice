@@ -5,7 +5,10 @@
 # 复制自 rime_ice.schema.yaml ，适配了双拼。
 # 双拼键位映射复制自 https://github.com/rime/rime-double-pinyin
 #     双拼和全拼主要就是 speller/algebra 和 translator/preedit_format 这里有区别。
+#
 # 全拼的自定义文本和双拼有些冲突，改成了 custom_phrase_double ，需要创建 custom_phrase_double.txt 文件。
+#
+# 中英混输词库 en_dicts/cn_en.dict.yaml 可以删除或修改，里面是写死了的全拼+英文编码。
 #
 # v+字母在双拼是正常拼写，有冲突。默认关闭 v 模式，修改可参考 https://github.com/iDvel/rime-ice/issues/58
 
@@ -248,7 +251,3 @@ speller:
     - xform/in$/N/
     - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/
     - abbrev/^(.).+$/$1/
-    # 中英混输词库的拼写规则：
-    - derive/^(.+)$/\L$1/
-    - abbrev/^_?([a-zA-Z]).*$/$1/
-    - abbrev/^_(.+)$/$1/
