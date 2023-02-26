@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "1.4.0"
+  version: "1.4.1"
   author:
     - Dvel
   description: |
@@ -264,12 +264,6 @@ speller:
     - derive/^([nl])ve$/$1ue/
     - derive/^([jqxy])u/$1v/
     - derive/^([jqxy])v/$1u/
-
-    ### 中英混输词库的拼写规则，参考于 https://github.com/tumuyan/rime-melt
-    - derive/^(.+)$/\L$1/          # 大写转为小写
-    - abbrev/^_?([a-zA-Z]).*$/$1/  # 简拼，「Mac版本」可以用 mbb 打出来，注释掉则只能用 macbb 打出来。
-    - abbrev/^_(.+)$/$1/           # 去掉 _
-    - derive/^_([aeo])$/$1/        # 解决「你a好、你e好、你o好」这种词汇只响应简拼，不响应完整拼写的问题
 
     ### 自动纠错
     # 有些规则对全拼简拼混输有副作用：如「x'ai 喜爱」被纠错为「xia 下」
