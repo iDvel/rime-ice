@@ -16,7 +16,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-02-20"
+version: "2023-02-27"
 sort: by_weight
 ...
 # +_+
@@ -7980,7 +7980,7 @@ payday	payday
 paying	paying
 payment	payment
 payments	payments
-paypal	paypal
+PayPal	PayPal
 payroll	payroll
 pays	pays
 # pb	pb
@@ -8155,9 +8155,9 @@ photographic	photographic
 photographs	photographs
 photography	photography
 photos	photos
-photoshop	photoshop
+Photoshop	Photoshop
 PHP	PHP
-phpbb	phpbb
+phpBB	phpBB
 phrase	phrase
 phrases	phrases
 # phys	phys
