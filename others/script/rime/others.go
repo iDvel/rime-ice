@@ -13,36 +13,6 @@ import (
 
 func Temp() {
 	defer os.Exit(1)
-
-	enFile, err := os.Open(EnPath)
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer enFile.Close()
-
-	file, err := os.Create("1.txt")
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer file.Close()
-
-	sc := bufio.NewScanner(enFile)
-	isMark := false
-	for sc.Scan() {
-		line := sc.Text()
-
-		if !isMark {
-			if strings.HasPrefix(line, "# +_+") {
-				isMark = true
-			}
-			continue
-		}
-
-		parts := strings.Split(line, "\t")
-		s := fmt.Sprintf("%s\t_%s_\t-1\n", parts[0], parts[1])
-		file.WriteString(s)
-	}
-	file.Sync()
 }
 
 func dictsDifference(dict1, dict2 string) {
