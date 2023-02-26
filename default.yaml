@@ -1,0 +1,237 @@
+# Rime default settings
+# encoding: utf-8
+#
+# 小狼毫似乎不支持 Control+Shift 开头的快捷键，可自行修改成别的。
+# 鼠须管在 Sublime Text、Telegram 等个别软件中也无法使用 Control+Shift+数字 的快捷键，可暂时用方案选单切换。
+
+
+config_version: '2023-02-27'
+
+
+# 方案列表
+schema_list:
+  - schema: rime_ice
+  - schema: double_pinyin
+  - schema: double_pinyin_flypy
+
+
+# 候选词个数
+menu:
+  page_size: 6
+
+
+# 方案选单相关
+switcher:
+  caption: 「方案选单」
+  hotkeys:
+    # - F4
+    # - Control+grave
+    # - Alt+grave
+    - Control+Shift+grave
+  save_options:  # 开关记忆，从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
+    - ascii_punct
+    - traditionalization
+    - emoji
+  fold_options: true            # 呼出时是否折叠，多方案时建议折叠 true ，一个方案建议展开 false
+  abbreviate_options: true      # 折叠时是否缩写选项
+  option_list_separator: ' / '  # 折叠时的选项分隔符
+
+
+# 按键行为
+# 【good_old_caps_lock】 CapsLock 切换到大写或切换中英。
+# （macOS 偏好设置的优先级更高，如果勾选【使用大写锁定键切换“ABC”输入法】则始终会切换输入法）
+#
+# 切换中英：
+# 不同的选项表示：打字打到一半时按下了 CapsLock、Shift、Control 后： 
+# commit_code  上屏原始的编码，然后切换到英文
+# commit_text  上屏拼出的词句，然后切换到英文
+# clear        清除未上屏内容，然后切换到英文
+# noop         屏蔽快捷键，不切换中英，但不要屏蔽 CapsLock
+ascii_composer:
+  good_old_caps_lock: true  # true | false
+  switch_key:
+    Caps_Lock: clear  # commit_code | commit_text | clear
+    Shift_L: noop     # commit_code | commit_text | clear | noop
+    Shift_R: noop     # commit_code | commit_text | clear | noop
+    Control_L: noop   # commit_code | commit_text | clear | noop
+    Control_R: noop   # commit_code | commit_text | clear | noop
+    Eisu_toggle: clear
+
+
+# punctuator 和 recognizer 由具体方案指定
+punctuator:
+  full_shape:
+  half_shape:
+recognizer:
+  patterns:
+
+
+# 快捷键
+key_binder:
+  # 以词定字（上屏当前词句的第一个或最后一个字）
+  select_first_character:
+  select_last_character: "grave"
+  
+  bindings:
+  # Tab/Shift+Tab 切换光标至下/上一个拼音
+  - { when: composing, accept: Shift+Tab, send: Shift+Left }
+  - { when: composing, accept: Tab, send: Shift+Right }
+  # Tab/Shift+Tab 翻页
+  # - { when: has_menu, accept: Shift+Tab, send: Page_Up }
+  # - { when: has_menu, accept: Tab, send: Page_Down }
+
+  # 翻页 - =
+  - { when: has_menu, accept: minus, send: Page_Up }
+  - { when: has_menu, accept: equal, send: Page_Down }
+
+  # 翻页 , .
+  # 需要额外注释掉方案中 recognizer/patterns 下的 url_2 选项（这个会覆盖掉句号的行为）
+  # - { when: paging, accept: comma, send: Page_Up }
+  # - { when: has_menu, accept: period, send: Page_Down }
+
+  # 翻页 [ ]
+  # - { when: paging, accept: bracketleft, send: Page_Up }
+  # - { when: has_menu, accept: bracketright, send: Page_Down }
+
+  # numbered_mode_switch:
+  # - { when: always, accept: Control+Shift+1, select: .next }             # 在最近的两个方案之间切换
+  # - { when: always, accept: Control+Shift+2, toggle: ascii_mode }        # 切换中英
+  - { when: always, accept: Control+Shift+3, toggle: ascii_punct }         # 切换中英标点
+  - {when: always, accept: "Control+Shift+4", toggle: traditionalization}  # 切换简繁
+  # - { when: always, accept: Control+Shift+5, toggle: full_shape }        # 切换全半角
+
+  # emacs_editing:
+  # - { when: composing, accept: Control+p, send: Up }
+  # - { when: composing, accept: Control+n, send: Down }
+  # - { when: composing, accept: Control+b, send: Left }
+  # - { when: composing, accept: Control+f, send: Right }
+  # - { when: composing, accept: Control+a, send: Home }
+  # - { when: composing, accept: Control+e, send: End }
+  # - { when: composing, accept: Control+d, send: Delete }
+  # - { when: composing, accept: Control+k, send: Shift+Delete }
+  # - { when: composing, accept: Control+h, send: BackSpace }
+  # - { when: composing, accept: Control+g, send: Escape }
+  # - { when: composing, accept: Control+bracketleft, send: Escape }
+  # - { when: composing, accept: Control+y, send: Page_Up }
+  # - { when: composing, accept: Alt+v, send: Page_Up }
+  # - { when: composing, accept: Control+v, send: Page_Down }
+
+  # optimized_mode_switch:
+  # - { when: always, accept: Control+Shift+space, select: .next }
+  # - { when: always, accept: Shift+space, toggle: ascii_mode }
+  # - { when: always, accept: Control+comma, toggle: full_shape }
+  # - { when: always, accept: Control+period, toggle: ascii_punct }
+  # - { when: always, accept: Control+slash, toggle: traditionalization }
+
+
+# key_binder 按键速查 https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md
+# （没有 Command 键，不支持）
+# accept 和 send 可用字段除 A-Za-z0-9 外，还包含以下键盘上实际有的键：
+# BackSpace	退格
+# Tab	水平定位符
+# Linefeed	换行
+# Clear	清除
+# Return	回车
+# Pause	暂停
+# Sys_Req	印屏
+# Escape	退出
+# Delete	删除
+# Home	原位
+# Left	左箭头
+# Up	上箭头
+# Right	右箭头
+# Down	下箭头
+# Prior、Page_Up	上翻
+# Next、Page_Down	下翻
+# End	末位
+# Begin	始位
+# Shift_L	左Shift
+# Shift_R	右Shift
+# Control_L	左Ctrl
+# Control_R	右Ctrl
+# Meta_L	左Meta
+# Meta_R	右Meta
+# Alt_L	左Alt
+# Alt_R	右Alt
+# Super_L	左Super
+# Super_R	右Super
+# Hyper_L	左Hyper
+# Hyper_R	右Hyper
+# Caps_Lock	大写锁
+# Shift_Lock	上档锁
+# Scroll_Lock	滚动锁
+# Num_Lock	小键板锁
+# Select	选定
+# Print	打印
+# Execute	运行
+# Insert	插入
+# Undo	还原
+# Redo	重做
+# Menu	菜单
+# Find	搜寻
+# Cancel	取消
+# Help	帮助
+# Break	中断
+# space
+# exclam	!
+# quotedbl	"
+# numbersign	#
+# dollar	$
+# percent	%
+# ampersand	&
+# apostrophe	'
+# parenleft	(
+# parenright	)
+# asterisk	*
+# plus	+
+# comma	,
+# minus	-
+# period	.
+# slash	/
+# colon	:
+# semicolon	;
+# less	<
+# equal	=
+# greater	>
+# question	?
+# at	@
+# bracketleft	[
+# backslash	
+# bracketright	]
+# asciicircum	^
+# underscore	_
+# grave	`
+# braceleft	{
+# bar	|
+# braceright	}
+# asciitilde	~
+# KP_Space	小键板空格
+# KP_Tab	小键板水平定位符
+# KP_Enter	小键板回车
+# KP_Delete	小键板删除
+# KP_Home	小键板原位
+# KP_Left	小键板左箭头
+# KP_Up	小键板上箭头
+# KP_Right	小键板右箭头
+# KP_Down	小键板下箭头
+# KP_Prior、KP_Page_Up	小键板上翻
+# KP_Next、KP_Page_Down	小键板下翻
+# KP_End	小键板末位
+# KP_Begin	小键板始位
+# KP_Insert	小键板插入
+# KP_Equal	小键板等于
+# KP_Multiply	小键板乘号
+# KP_Add	小键板加号
+# KP_Subtract	小键板减号
+# KP_Divide	小键板除号
+# KP_Decimal	小键板小数点
+# KP_0	小键板0
+# KP_1	小键板1
+# KP_2	小键板2
+# KP_3	小键板3
+# KP_4	小键板4
+# KP_5	小键板5
+# KP_6	小键板6
+# KP_7	小键板7
+# KP_8	小键板8
+# KP_9	小键板9
