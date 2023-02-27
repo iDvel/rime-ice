@@ -17,7 +17,7 @@ schema_list:
 
 # 候选词个数
 menu:
-  page_size: 6
+  page_size: 5
 
 
 # 方案选单相关
@@ -58,7 +58,7 @@ ascii_composer:
     Eisu_toggle: clear
 
 
-# punctuator 和 recognizer 由具体方案指定
+# punctuator 和 recognizer 由具体方案指定了
 punctuator:
   full_shape:
   half_shape:
