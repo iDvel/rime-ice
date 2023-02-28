@@ -13,13 +13,19 @@
 # 来源：https://github.com/outloudvi/mw2fcitx
 ---
 name: moegirl
-version: "2023-02-26"
+version: "2023-02-28"
 sort: by_weight
 ...
 # *_* 过滤列表，每次更新时不再写入：
 测试测试测试	ce shi ce shi ce shi	100
 # 伏地磨
 # 佛地魔
+# 人工知能
+# 人攻智能
+# 玉川砂己子
+# 玉川纱己子
+# 玉川纱记子
+# 阿莱克斯塔萨
 # +_+
 啊啊啊啊啊啊啊啊啊啊啊啊	a a a a a a a a a a a a	100
 啊啊啊啊啊啊啊啊啊啊啊啊啊啊	a a a a a a a a a a a a a a	100
@@ -333,7 +339,6 @@ sort: by_weight
 阿拉斯托	a la si tuo	100
 阿拉斯托耳	a la si tuo er	100
 阿莱克丝塔萨	a lai ke si ta sa	100
-阿莱克斯塔萨	a lai ke si ta sa	100
 阿莱克托卡罗	a lai ke tuo ka luo	100
 阿莱克西亚	a lai ke xi ya	100
 阿莱桑	a lai sang	100
@@ -379,7 +384,6 @@ sort: by_weight
 阿里亚德妮佛克斯罗特	a li ya de ni fu ke si luo te	100
 阿丽雅朵亚	a li ya duo ya	100
 阿黎约客	a li yue ke	100
-阿里云	a li yun	100
 阿良句宁子	a liang ju ning zi	100
 阿良良木火怜	a liang liang mu huo lian	100
 阿良良木健	a liang liang mu jian	100
@@ -44442,8 +44446,6 @@ sort: by_weight
 人格性别崩坏中	ren ge xing bie beng huai zhong	100
 人工岛屿	ren gong dao yu	100
 人工精灵	ren gong jing ling	100
-人工知能	ren gong zhi neng	100
-人攻智能	ren gong zhi neng	100
 人骨娘	ren gu niang	100
 人和人体质不同不能一概而论	ren he ren ti zhi bu tong bu neng yi gai er lun	100
 仁后真耶子	ren hou zhen ye zi	100
@@ -69415,10 +69417,7 @@ sort: by_weight
 御船流子	yu chuan liu zi	100
 御船千早	yu chuan qian zao	100
 羽川琴雪	yu chuan qin xue	100
-玉川砂己子	yu chuan sha ji zi	100
 玉川砂记子	yu chuan sha ji zi	100
-玉川纱己子	yu chuan sha ji zi	100
-玉川纱记子	yu chuan sha ji zi	100
 羽川翼	yu chuan yi	100
 羽川原伊吕波	yu chuan yuan yi lv bo	100
 羽吹梨里	yu chui li li	100
