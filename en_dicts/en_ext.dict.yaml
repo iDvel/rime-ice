@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-02-20"
+version: "2023-02-28"
 sort: by_weight
 ...
 # 一些杂项
@@ -352,6 +352,7 @@ AfterShokz	AfterShokz
 Aeropex	Aeropex
 Xnip	Xnip
 Workspace	Workspace
+Google Chrome	GoogleChrome
 Google Workspace	GoogleWorkspace
 WYSIWYG	WYSIWYG
 What You See Is What You Get	WYSIWYG
