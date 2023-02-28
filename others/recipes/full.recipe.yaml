@@ -31,7 +31,6 @@ install_files: >-
   rime.lua
   rime_ice.dict.yaml
   rime_ice.schema.yaml
-  squirrel.custom.yaml
+  squirrel.yaml
   symbols_custom.yaml
-  weasel.custom.yaml
   zh-hans-t-essay-bgw.gram
