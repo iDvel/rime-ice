@@ -9,7 +9,22 @@
 config_version: '2023-02-27'
 
 
-# 默认中、英、inline、no_inline 等等设定，参考 https://github.com/rime/squirrel/blob/master/data/squirrel.yaml
+# options: last | default | _custom_
+# last: the last used latin keyboard layout
+# default: US (ABC) keyboard layout
+# _custom_: keyboard layout of your choice, e.g. 'com.apple.keylayout.USExtended' or simply 'USExtended'
+keyboard_layout: default
+
+
+# for veteran chord-typist
+chord_duration: 0.1  # seconds
+
+
+# options: always | never | appropriate
+show_notifications_when: appropriate
+
+
+# ascii_mode、inline、no_inline、vim_mode 等等设定，可参考 /Library/Input Methods/Squirrel.app/Contents/SharedSupport/squirrel.yaml
 app_options:
   # com.apple.Spotlight:
   #   ascii_mode: true    # 开启默认英文
@@ -22,8 +37,7 @@ style:
   color_scheme: purity_of_form_custom
   color_scheme_dark: purity_of_form_custom
 
-  # 预设选项：
-  # 可被皮肤覆盖；如果皮肤没写，则默认使用这些属性。
+  # 预设选项：（可被皮肤覆盖；如果皮肤没写，则默认使用这些属性。）
   text_orientation: horizontal  # horizontal | vertical
   inline_preedit: true
   corner_radius: 10
