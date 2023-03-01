@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "1.4.2"
+  version: "1.4.3"
   author:
     - Dvel
   description: |
@@ -30,13 +30,13 @@ switches:
     reset: 0
   - name: ascii_punct
     states: [ 。，, ．， ]
-    # reset: 0
+    reset: 0
   - name: traditionalization
     states: [ 简, 繁 ]
     reset: 0
   - name: emoji
     states: [ 💀, 😄 ]
-    # reset: 1
+    reset: 1
 
 
 # 输入引擎
