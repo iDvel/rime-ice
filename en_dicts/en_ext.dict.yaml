@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-02-28"
+version: "2023-03-01"
 sort: by_weight
 ...
 # 一些杂项
@@ -1918,3 +1918,13 @@ InterPlanetary File System	IPFS
 InterPlanetary File System	InterPlanetaryFileSystem
 interplanetary	interplanetary
 Noria	Noria
+DHCP	DHCP
+Dynamic Host Configuration Protocol	DHCP
+PPPoE	PPPoE
+Point-to-Point Protocol over Ethernet	PPPoE
+IPoE	IPoE
+Internet Protocol over Ethernet	IPoE
+VLAN	VLAN
+Virtual Local Area Network	VLAN
+WLAN	WLAN
+Wireless LAN	WLAN

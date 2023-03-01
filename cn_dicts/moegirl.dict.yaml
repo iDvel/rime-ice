@@ -13,11 +13,13 @@
 # 来源：https://github.com/outloudvi/mw2fcitx
 ---
 name: moegirl
-version: "2023-02-28"
+version: "2023-03-01"
 sort: by_weight
 ...
 # *_* 过滤列表，每次更新时不再写入：
-测试测试测试	ce shi ce shi ce shi	100
+奥斯卡最佳动画长片	ao si ka zui jia dong hua chang pian	100
+奥斯卡最佳动画长片奖	ao si ka zui jia dong hua chang pian jiang	100
+魏长歌	wei chang ge	100
 # 伏地磨
 # 佛地魔
 # 人工知能
@@ -26,6 +28,11 @@ sort: by_weight
 # 玉川纱己子
 # 玉川纱记子
 # 阿莱克斯塔萨
+# 艾萨克阿西莫夫
+# 艾萨克克拉克
+# 艾萨克麦克道格
+# 艾萨克牛顿
+# 爱赛尔魏玛
 # +_+
 啊啊啊啊啊啊啊啊啊啊啊啊	a a a a a a a a a a a a	100
 啊啊啊啊啊啊啊啊啊啊啊啊啊啊	a a a a a a a a a a a a a a	100
@@ -1436,12 +1443,7 @@ sort: by_weight
 艾瑞思	ai rui si	100
 艾瑞斯	ai rui si	100
 艾萨克	ai sa ke	100
-艾萨克阿西莫夫	ai sa ke a xi mo fu	100
-艾萨克克拉克	ai sa ke ke la ke	100
-艾萨克麦克道格	ai sa ke mai ke dao ge	100
 艾萨克娘	ai sa ke niang	100
-艾萨克牛顿	ai sa ke niu dun	100
-爱赛尔魏玛	ai sai er wei ma	100
 埃塞克斯	ai sai ke si	100
 艾塞克斯	ai sai ke si	100
 艾塞莉娅	ai sai li ya	100
@@ -2417,8 +2419,6 @@ sort: by_weight
 奥斯卡博德雷特	ao si ka bo de lei te	100
 奥斯卡多赫	ao si ka duo he	100
 奥斯卡最佳动画短片奖	ao si ka zui jia dong hua duan pian jiang	100
-奥斯卡最佳动画长片	ao si ka zui jia dong hua zhang pian	100
-奥斯卡最佳动画长片奖	ao si ka zui jia dong hua zhang pian jiang	100
 奥斯曼人	ao si man ren	100
 奥寺美纪	ao si mei ji	100
 奥斯蒙	ao si meng	100
@@ -49369,7 +49369,6 @@ sort: by_weight
 食戟之灵	shi ji zhi ling	100
 式姬之庭	shi ji zhi ting	100
 世纪之战	shi ji zhi zhan	100
-释迦牟尼佛	shi jia mou ni fu	100
 氏家睦	shi jia mu	100
 湿嫁女	shi jia nv	100
 氏家塞西尔	shi jia sai xi er	100
@@ -56996,7 +56995,6 @@ sort: by_weight
 维泽布兰切蒙特	wei ze bu lan qie meng te	100
 尾扎长发	wei zha chang fa	100
 为战而生	wei zhan er sheng	100
-魏长歌	wei zhang ge	100
 尾长仁濑	wei zhang ren lai	100
 威震天	wei zhen tian	100
 威震天姬	wei zhen tian ji	100
