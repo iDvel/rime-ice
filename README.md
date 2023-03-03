@@ -119,13 +119,13 @@ bash rime-install iDvel/rime-ice:others/recipes/opencc
 
 呼出方案选单默认为 Control+Shift+grave（grave 是 `` ` `` 反引号，Tab 上面那个）。
 
-小狼毫似乎不支持 Control+Shift 开头的快捷键，可在 `default.custom.yaml` 中修改。
+小狼毫似乎不支持 Control+Shift 开头的快捷键，可在 `default.yaml` 中修改。
 
 ##### Lua 脚本
 
 Lua 中可配置的选项都提取出来了，不需要修改 Lua 文件。
 
-以词定字的快捷键在 `default.custom.yaml` 中设定，限制码长、长词优先、日期时间这些选项在方案文件中设定。
+以词定字的快捷键在 `default.yaml` 中设定，限制码长、长词优先、日期时间这些选项在方案文件中设定。
 
 ##### Shift 切换中英
 
@@ -133,7 +133,7 @@ Lua 中可配置的选项都提取出来了，不需要修改 Lua 文件。
 
 ##### 逗号句号翻页
 
-1. 在 `default.custom.yaml` 中解开句号逗号翻页的注释。
+1. 在 `default.yaml` 中解开句号逗号翻页的注释。
 2. 在 `rime_ice.schema.yaml` 中注释掉 `url_2`。（因为这个选项会覆盖掉句号的行为）
 
 ##### 自定义短语
