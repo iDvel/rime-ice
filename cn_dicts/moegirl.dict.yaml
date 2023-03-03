@@ -13,13 +13,304 @@
 # 来源：https://github.com/outloudvi/mw2fcitx
 ---
 name: moegirl
-version: "2023-03-01"
+version: "2023-03-03"
 sort: by_weight
 ...
 # *_* 过滤列表，每次更新时不再写入：
 奥斯卡最佳动画长片	ao si ka zui jia dong hua chang pian	100
 奥斯卡最佳动画长片奖	ao si ka zui jia dong hua chang pian jiang	100
 魏长歌	wei chang ge	100
+洛圣都	luo sheng du	100
+洛圣都警察局	luo sheng du jing cha ju	100
+安洁莉娜库都希尔兹	an jie li na ku du xi er zi	100
+安里朝都	an li chao du	100
+安藤都子	an teng du zi	100
+安永沙都子	an yong sha du zi	100
+安斋都	an zhai du	100
+奥古斯都布莱克	ao gu si du bu lai ke	100
+奥古斯都恺撒	ao gu si du kai sa	100
+奥古斯都米寇拉	ao gu si du mi kou la	100
+白桦都	bai hua du	100
+北都美月	bei du mei yue	100
+北都南	bei du nan	100
+北条沙都子	bei tiao sha du zi	100
+布都御魂	bu du yu hun	100
+彩都麒麟	cai du qi lin	100
+彩都神社	cai du shen she	100
+城户灰都	cheng hu hui du	100
+触祭之都	chu ji zhi du	100
+传说之都	chuan shuo zhi du	100
+大宅都光	da zhai du guang	100
+东方花都	dong fang hua du	100
+东京隔都	dong jing ge du	100
+东京幻都	dong jing huan du	100
+东云伊都	dong yun yi du	100
+都雏乃	du chu nai	100
+都俊赫	du jun he	100
+都立阵代高校	du li zhen dai gao xiao	100
+都立阵代高中	du li zhen dai gao zhong	100
+都瓦克因	du wa ke yin	100
+都丸千代	du wan qian dai	100
+都月彩枫	du yue cai feng	100
+都筑圭	du zhu gui	100
+都筑巧	du zhu qiao	100
+都筑诗船	du zhu shi chuan	100
+恩奇都	en qi du	100
+儿玉都	er yu du	100
+废都物语	fei du wu yu	100
+酆都地府篇	feng du di fu pian	100
+酆都冥司记	feng du ming si ji	100
+风都侦探	feng du zhen tan	100
+丰见亚都梨	feng jian ya du li	100
+疯狂约会美丽都	feng kuang yue hui mei li du	100
+封缄之都古拉塞斯塔	feng jian zhi du gu la sai si ta	100
+副都的顾问布尔瓦利	fu du de gu wen bu er wa li	100
+副都的顾问布鲁瓦莉	fu du de gu wen bu lu wa li	100
+关都地区	guan du di qu	100
+河野都	he ye du	100
+湖都的人气舞者	hu du de ren qi wu zhe	100
+欢都落兰	huan du luo lan	100
+九条都	jiu tiao du	100
+驹都英二	ju du ying er	100
+克蕾尔凡布贝尔纳鲁都斯	ke lei er fan bu bei er na lu du si	100
+堀江美都子	ku jiang mei du zi	100
+岚千砂都	lan qian sha du	100
+劳埃德加满都	lao ai de jia man du	100
+劳拉史都华	lao la shi du hua	100
+临海副都心	lin hai fu du xin	100
+美都场菜绪	mei du chang cai xu	100
+名木城都	ming mu cheng du	100
+魔都地铁萌化项目组	mo du di tie meng hua xiang mu zu	100
+魔都地下铁少女	mo du di xia tie shao nv	100
+魔都精兵的奴隶	mo du jing bing de nu li	100
+南都夜夜	nan du ye ye	100
+丘鲁克奥古斯都菲列特利加封安哈尔特泽鲁普斯特	qiu lu ke ao gu si du fei lie te li jia feng an ha er te ze lu pu si te	100
+清都亚里沙	qing du ya li sha	100
+区鸟多都	qu niao duo du	100
+日都岛	ri du dao	100
+森千早都	sen qian zao du	100
+沙漠湖都	sha mo hu du	100
+山田奈都美	shan tian nai du mei	100
+上原都	shang yuan du	100
+神都夜行录	shen du ye xing lu	100
+圣都的良心阿黛儿	sheng du de liang xin a dai er	100
+史都华德	shi du hua de	100
+式守都	shi shou du	100
+枢都夏莲	shu du xia lian	100
+水之都篇登场角色	shui zhi du pian deng chang jue se	100
+藤森水都	teng sen shui du	100
+天都彼方	tian du bi fang	100
+王都的勇士琪莉	wang du de yong shi qi li	100
+王都楼真悟	wang du lou zhen wu	100
+忘却之都	wang que zhi du	100
+物部布都	wu bu bu du	100
+雾都孤姬	wu du gu ji	100
+雾都吸血鬼	wu du xi xue gui	100
+乌丸都	wu wan du	100
+系都新干线	xi du xin gan xian	100
+仙都木阿夜	xian du mu a ye	100
+仙都木优麻	xian du mu you ma	100
+相川奈都姬	xiang chuan nai du ji	100
+相野未都	xiang ye wei du	100
+小乃立都	xiao nai li du	100
+小雀都都	xiao que du du	100
+消逝之都	xiao shi zhi du	100
+星都琪艾米	xing du qi ai mi	100
+雪都沙绪梨	xue du sha xu li	100
+阳坂美都子	yang ban mei du zi	100
+妖行神都	yao xing shen du	100
+伊甸之都	yi dian zhi du	100
+伊都娜	yi du na	100
+异兽魔都	yi shou mo du	100
+樱都子	ying du zi	100
+幽都战	you du zhan	100
+有间都古	you jian du gu	100
+宇都宫城	yu du gong cheng	100
+宇都宫陆	yu du gong lu	100
+宇都宫心春	yu du gong xin chun	100
+御都合主义	yu du he zhu yi	100
+永远的七日之都	yong yuan de qi ri zhi du	100
+雨宫美都	yu gong mei du	100
+御琴羽寿沙都	yu qin yu shou sha du	100
+猿渡真都	yuan du zhen du	100
+月之都	yue zhi du	100
+长濑都子	zhang lai du zi	100
+蒸汽之都的少女侦探	zheng qi zhi du de shao nv zhen tan	100
+蒸汽之都的侦探少女	zheng qi zhi du de zhen tan shao nv	100
+钟表之都瑞士	zhong biao zhi du rui shi	100
+足须沙穗都	zu xu sha sui du	100
+过膝长筒袜	guo xi chang tong wa	100
+黑长直	hei chang zhi	100
+加长臂拆楼机	jia chang bi chai lou ji	100
+家长麦	jia chang mai	100
+简氏长弓阿帕奇	jian shi chang gong a pa qi	100
+长鬓角	chang bin jiao	100
+金长直	jin chang zhi	100
+裸体长筒袜	luo ti chang tong wa	100
+洛克人信长之野望帝国传	luo ke ren xin chang zhi ye wang di guo chuan	100
+忙牙长	mang ya chang	100
+绵长的诀别	mian chang de jue bie	100
+魔法兵团队长尤妮	mo fa bing tuan dui chang you ni	100
+木花石长姬	mu hua shi chang ji	100
+清田信长	qing tian xin chang	100
+庆长佑香	qing chang you xiang	100
+森长可	sen chang ke	100
+神长香子	shen chang xiang zi	100
+松本清长	song ben qing chang	100
+太长不看	tai chang bu kan	100
+尾长仁濑	wei chang ren lai	100
+文禄庆长之役	wen lu qing chang zhi yi	100
+夕阳长歌	xi yang chang ge	100
+西洲梦长	xi zhou meng chang	100
+小豆长光	xiao dou chang guang	100
+信长的忍者	xin chang de ren zhe	100
+信长的野望	xin chang de ye wang	100
+信长老师的嫩妻	xin chang lao shi de nen qi	100
+信长老师的年幼妻子	xin chang lao shi de nian you qi zi	100
+信长老师的幼妻	xin chang lao shi de you qi	100
+信长协奏曲	xin chang xie zou qu	100
+信长之枪	xin chang zhi qiang	100
+信长之野望	xin chang zhi ye wang	100
+行长柚叶	xing chang you ye	100
+压切长谷部	ya qie chang gu bu	100
+燕长风	yan chang feng	100
+扬番长	yang fan chang	100
+伊丽莎白长光麦克史密斯	yi li sha bai chang guang mai ke shi mi si	100
+伊势长岛城	yi shi chang dao cheng	100
+永久的女神磐长姬	yong jiu de nv shen pan chang ji	100
+御舆长正	yu yu chang zheng	100
+月赋情长	yue fu qing chang	100
+长壁国	chang bi guo	100
+长壁与看守	chang bi yu kan shou	100
+长壁与守门人	chang bi yu shou men ren	100
+长臂抓斗	chang bi zhua dou	100
+长标题	chang biao ti	100
+长滨城	chang bin cheng	100
+长柄大锤	chang bing da chui	100
+长柄刀	chang bing dao	100
+长柄镰刀	chang bing lian dao	100
+长材拖车	chang cai tuo che	100
+长曾祢虎彻	chang ceng mi hu che	100
+长鬓虎	chang bin hu	100
+长岛光那	chang dao guang na	100
+长岛茂	chang dao mao	100
+长岛茂雄	chang dao mao xiong	100
+长岛小姐提不起劲	chang dao xiao jie ti bu qi jin	100
+长岛雄一	chang dao xiong yi	100
+长刀研	chang dao yan	100
+长岛阳香	chang dao yang xiang	100
+长岛遥	chang dao yao	100
+长嶝高士	chang deng gao shi	100
+长耳垂	chang er chui	100
+长点上机学园	chang dian shang ji xue yuan	100
+长富莲实	chang fu lian shi	100
+长干行	chang gan xing	100
+长冈龙步	chang gang long bu	100
+长歌门	chang ge men	100
+长歌煞	chang ge sha	100
+长弓阿帕奇	chang gong a pa qi	100
+长谷部和美	chang gu bu he mei	100
+长谷川达	chang gu chuan da	100
+长谷川敦央	chang gu chuan dun yang	100
+长谷川芳明	chang gu chuan fang ming	100
+长谷川圭一	chang gu chuan gui yi	100
+长谷川静香	chang gu chuan jing xiang	100
+长谷川里桃	chang gu chuan li tao	100
+长谷川亮太	chang gu chuan liang tai	100
+长谷川玲奈	chang gu chuan ling nai	100
+长谷川龙	chang gu chuan long	100
+长谷川昴	chang gu chuan mao	100
+长谷川美衣	chang gu chuan mei yi	100
+长谷川梦	chang gu chuan meng	100
+长谷川明子	chang gu chuan ming zi	100
+长谷川暖	chang gu chuan nuan	100
+长谷川平乃	chang gu chuan ping nai	100
+长谷川茜	chang gu chuan qian	100
+长谷川日向子	chang gu chuan ri xiang zi	100
+长谷川纱织	chang gu chuan sha zhi	100
+长谷川善吉	chang gu chuan shan ji	100
+长谷川泰三	chang gu chuan tai san	100
+长谷川文	chang gu chuan wen	100
+长谷川香织	chang gu chuan xiang zhi	100
+长谷川一志	chang gu chuan yi zhi	100
+长谷川悠太	chang gu chuan you tai	100
+长谷川育美	chang gu chuan yu mei	100
+长谷川志穗	chang gu chuan zhi sui	100
+长谷德人	chang gu de ren	100
+长谷美希	chang gu mei xi	100
+长谷堂城	chang gu tang cheng	100
+长谷优里奈	chang gu you li nai	100
+长光麻夜	chang guang ma ye	100
+长鸿出版社	chang hong chu ban she	100
+长系带胖次	chang ji dai pang ci	100
+长间晋三	chang jian jin san	100
+长脚兔	chang jiao tu	100
+长井龙雪	chang jing long xue	100
+长井新	chang jing xin	100
+长崛桥贞夫君	chang jue qiao zhen fu jun	100
+长克巳	chang ke si	100
+长堀芳夫	chang ku fang fu	100
+长堀桥贞夫君	chang ku qiao zhen fu jun	100
+长濑爱梨	chang lai ai li	100
+长濑纯	chang lai chun	100
+长濑凑	chang lai cou	100
+长濑梨子	chang lai li zi	100
+长濑麻奈	chang lai ma nai	100
+长濑琴乃	chang lai qin nai	100
+长濑有花	chang lai you hua	100
+长濑裕树	chang lai yu shu	100
+长岭谦信	chang ling qian xin	100
+长刘海	chang liu hai	100
+长眠不醒的噩梦	chang mian bu xing de e meng	100
+长明火计划	chang ming huo ji hua	100
+长名娜吉美	chang ming na ji mei	100
+长名奈津美	chang ming nai jin mei	100
+长名驯染	chang ming xun ran	100
+长南翔太	chang nan xiang tai	100
+长南阳佳	chang nan yang jia	100
+长平传	chang ping chuan	100
+长骑美眉	chang qi mei mei	100
+长妻树里	chang qi shu li	100
+长森牛乳	chang sen niu ru	100
+长森瑞佳	chang sen rui jia	100
+长山延好	chang shan yan hao	100
+长胜国王恶魔	chang sheng guo wang e mo	100
+长绳麻理亚	chang sheng ma li ya	100
+长世国王恶魔	chang shi guo wang e mo	100
+长十郎	chang shi lang	100
+长田结花	chang tian jie hua	100
+长筒花	chang tong hua	100
+长筒手套	chang tong shou tao	100
+长尾步	chang wei bu	100
+长尾大蚕蛾娘	chang wei da can e niang	100
+长尾虎猫	chang wei hu mao	100
+长尾火狐	chang wei huo hu	100
+长尾火狐娘	chang wei huo hu niang	100
+长尾景	chang wei jing	100
+长尾景虎	chang wei jing hu	100
+长尾毛丝鼠	chang wei mao si shu	100
+长尾明希	chang wei ming xi	100
+长信秋词	chang xin qiu ci	100
+长洋平	chang yang ping	100
+长野伸二	chang ye shen er	100
+长野县	chang ye xian	100
+长野佑纪	chang ye you ji	100
+长野原佳乃	chang ye yuan jia nai	100
+长野原美绪	chang ye yuan mei xu	100
+长月达平	chang yue da ping	100
+长月夜	chang yue ye	100
+长月早苗	chang yue zao miao	100
+长泽美树	chang ze mei shu	100
+长泽直美	chang ze zhi mei	100
+长爪魔王	chang zhao mo wang	100
+长直发	chang zhi fa	100
+长直双马尾	chang zhi shuang ma yi	100
+长嘴绿	chang zui lv	100
+长嘴钳	chang zui qian	100
+长宗我部韦恩	chang zong wo bu wei en	100
+这黑夜还长	zhe hei ye hai chang	100
+织田肉桂信长	zhi tian rou gui xin chang	100
+最长一役	zui chang yi yi	100
 # 伏地磨
 # 佛地魔
 # 人工知能
@@ -32,7 +323,16 @@ sort: by_weight
 # 艾萨克克拉克
 # 艾萨克麦克道格
 # 艾萨克牛顿
-# 爱赛尔魏玛
+# 爱赛尔魏玛计画都市
+# 小林都
+# 一年有十几个情人节和大量东西方传统节日都无法满足女友结果她把魔爪伸向了二十四节气
+# 统帅恺撒神之子奥古斯都
+# 志那都
+# 作为舔狗的我无权迟到哪怕一秒钟但是心甘情愿等你三个钟毫无怨言
+# 雷长喜
+# 雷长憙
+# 皮皮露达维多利亚鲁尔加迪娅克鲁斯蒙达埃弗拉伊姆长袜子
+# 婆婆纳甸长河长
 # +_+
 啊啊啊啊啊啊啊啊啊啊啊啊	a a a a a a a a a a a a	100
 啊啊啊啊啊啊啊啊啊啊啊啊啊啊	a a a a a a a a a a a a a a	100
@@ -1857,7 +2157,6 @@ sort: by_weight
 安洁莉娜	an jie li na	100
 安洁莉娜菜夏史威尔	an jie li na cai xia shi wei er	100
 安洁莉娜九岛希尔兹	an jie li na jiu dao xi er zi	100
-安洁莉娜库都希尔兹	an jie li na ku dou xi er zi	100
 安洁莉亚	an jie li ya	100
 安洁莉娅	an jie li ya	100
 安洁莉娅艾柏蓉	an jie li ya ai bai rong	100
@@ -1886,7 +2185,6 @@ sort: by_weight
 安丽埃塔	an li ai ta	100
 安丽埃塔德托里斯汀	an li ai ta de tuo li si ting	100
 安利艾特米思堤	an li ai te mi si di	100
-安里朝都	an li chao dou	100
 安莉洁	an li jie	100
 安里琉花	an li liu hua	100
 安立美美	an li mei mei	100
@@ -2050,7 +2348,6 @@ sort: by_weight
 安特伊苏拉语	an te yi su la yu	100
 安藤创世	an teng chuang shi	100
 安藤椿	an teng chun	100
-安藤都子	an teng dou zi	100
 安藤鹤纱	an teng he sha	100
 安藤丽奈	an teng li nai	100
 安藤良	an teng liang	100
@@ -2153,7 +2450,6 @@ sort: by_weight
 暗影之女	an ying zhi nv	100
 暗影之拳	an ying zhi quan	100
 安永酱	an yong jiang	100
-安永沙都子	an yong sha dou zi	100
 暗与辉缠绕的囚笼	an yu hui chan rao de qiu long	100
 安原绘麻	an yuan hui ma	100
 安元洋贵	an yuan yang gui	100
@@ -2163,7 +2459,6 @@ sort: by_weight
 安芸真铃	an yun zhen ling	100
 安芸真琴	an yun zhen qin	100
 按在地上摩擦	an zai di shang mo ca	100
-安斋都	an zhai dou	100
 安斋龙太	an zhai long tai	100
 安斋千代美	an zhai qian dai mei	100
 安斋纱彩	an zhai sha cai	100
@@ -2281,9 +2576,6 @@ sort: by_weight
 奥格丽梅露	ao ge li mei lu	100
 奥谷枫	ao gu feng	100
 奥古斯	ao gu si	100
-奥古斯都布莱克	ao gu si dou bu lai ke	100
-奥古斯都恺撒	ao gu si dou kai sa	100
-奥古斯都米寇拉	ao gu si dou mi kou la	100
 奥古斯塔芙蕾德利嘉艾戴尔阿德勒	ao gu si ta fu lei de li jia ai dai er a de lei	100
 奥古斯特冯帕塞瓦尔	ao gu si te feng pa sai wa er	100
 奥古斯特鲁思文	ao gu si te lu si wen	100
@@ -3108,7 +3400,6 @@ sort: by_weight
 白胡子星璇	bai hu zi xing xuan	100
 百花茶	bai hua cha	100
 白花传伯爵	bai hua chuan bo jue	100
-白桦都	bai hua dou	100
 白桦康隆	bai hua kang long	100
 白桦丽莎	bai hua li sha	100
 白桦莉莎	bai hua li sha	100
@@ -4325,8 +4616,6 @@ sort: by_weight
 被动飞行	bei dong fei xing	100
 被动技能	bei dong ji neng	100
 被动升空	bei dong sheng kong	100
-北都美月	bei dou mei yue	100
-北都南	bei dou nan	100
 北斗企鹅工作室	bei dou qi e gong zuo shi	100
 北斗七星娘	bei dou qi xing niang	100
 北斗神拳	bei dou shen quan	100
@@ -4625,7 +4914,6 @@ sort: by_weight
 北条绫音	bei tiao ling yin	100
 北条美代子	bei tiao mei dai zi	100
 北条茜	bei tiao qian	100
-北条沙都子	bei tiao sha dou zi	100
 北条胜	bei tiao sheng	100
 北条氏政	bei tiao shi zheng	100
 北条苏菲	bei tiao su fei	100
@@ -5875,7 +6163,6 @@ sort: by_weight
 不动行光	bu dong xing guang	100
 不动游星	bu dong you xing	100
 不动珍	bu dong zhen	100
-布都御魂	bu dou yu hun	100
 布嘟嘟	bu du du	100
 不渡繁华	bu du fan hua	100
 不断被替换的渺小存在	bu duan bei ti huan de miao xiao cun zai	100
@@ -6431,8 +6718,6 @@ sort: by_weight
 蔡春泽	cai chun ze	100
 彩弹枪	cai dan qiang	100
 踩地雷	cai di lei	100
-彩都麒麟	cai dou qi lin	100
-彩都神社	cai dou shen she	100
 裁断分离的罪恶剪刀	cai duan fen li de zui e jian dao	100
 裁断分离之罪恶剪刀	cai duan fen li zhi zui e jian dao	100
 裁断魔人	cai duan mo ren	100
@@ -7808,7 +8093,6 @@ sort: by_weight
 成海遥香	cheng hai yao xiang	100
 成海悠介	cheng hai you jie	100
 成海真莉音	cheng hai zhen li yin	100
-城户灰都	cheng hu hui dou	100
 城户沙织	cheng hu sha zhi	100
 城户武	cheng hu wu	100
 城户研二	cheng hu yan er	100
@@ -8399,7 +8683,6 @@ sort: by_weight
 出灰加贺里	chu hui jia he li	100
 初回特典	chu hui te dian	100
 出击一览	chu ji yi lan	100
-触祭之都	chu ji zhi dou	100
 初见泉	chu jian quan	100
 雏见泽	chu jian ze	100
 雏见泽村	chu jian ze cun	100
@@ -8708,7 +8991,6 @@ sort: by_weight
 传说前缀	chuan shuo qian zhui	100
 传说史册	chuan shuo shi ce	100
 传说之白龙	chuan shuo zhi bai long	100
-传说之都	chuan shuo zhi dou	100
 传说之黑带	chuan shuo zhi hei dai	100
 传说之黑魔术师	chuan shuo zhi hei mo shu shi	100
 传说之剑	chuan shuo zhi jian	100
@@ -10354,7 +10636,6 @@ sort: by_weight
 大泽悠	da ze you	100
 大泽梓	da ze zi	100
 大扎姆	da zha mu	100
-大宅都光	da zhai dou guang	100
 大宅学家	da zhai xue jia	100
 大宅一子	da zhai yi zi	100
 大战外星人	da zhan wai xing ren	100
@@ -12277,7 +12558,6 @@ sort: by_weight
 东方红魔乡	dong fang hong mo xiang	100
 东方华	dong fang hua	100
 东方华灯宴	dong fang hua deng yan	100
-东方花都	dong fang hua dou	100
 东方花蝴蝶	dong fang hua hu die	100
 东方花映冢	dong fang hua ying zhong	100
 东方幻灵录	dong fang huan ling lu	100
@@ -12520,11 +12800,9 @@ sort: by_weight
 东京放学后召唤师	dong jing fang xue hou zhao huan shi	100
 东京复仇者	dong jing fu chou zhe	100
 东京拂晓	dong jing fu xiao	100
-东京隔都	dong jing ge dou	100
 东京孤独少女	dong jing gu du shao nv	100
 东京国际展览中心	dong jing guo ji zhan lan zhong xin	100
 东京国际展示场	dong jing guo ji zhan shi chang	100
-东京幻都	dong jing huan dou	100
 东京幻想乡	dong jing huan xiang xiang	100
 东京假人	dong jing jia ren	100
 东京巨蛋	dong jing ju dan	100
@@ -12761,7 +13039,6 @@ sort: by_weight
 东云夏阳	dong yun xia yang	100
 东云校长	dong yun xiao zhang	100
 东云心菜	dong yun xin cai	100
-东云伊都	dong yun yi dou	100
 东云幽纪	dong yun you ji	100
 冬云幽纪	dong yun you ji	100
 东云侑子	dong yun you zi	100
@@ -12784,7 +13061,6 @@ sort: by_weight
 动作女主	dong zuo nv zhu	100
 抖艾斯斯基	dou ai si si ji	100
 豆瓣娘	dou ban niang	100
-都雏乃	dou chu nai	100
 兜大吾	dou da wu	100
 兜裆布	dou dang bu	100
 豆丁兔	dou ding tu	100
@@ -12805,11 +13081,8 @@ sort: by_weight
 兜甲儿	dou jia er	100
 斗将改	dou jiang gai	100
 斗将云龙改	dou jiang yun long gai	100
-都俊赫	dou jun he	100
 斗狼子	dou lang zi	100
 豆乐儿歌	dou le er ge	100
-都立阵代高校	dou li zhen dai gao xiao	100
-都立阵代高中	dou li zhen dai gao zhong	100
 斗链挖掘机	dou lian wa jue ji	100
 斗龙战士	dou long zhan shi	100
 斗轮式连续卸载机	dou lun shi lian xu xie zai ji	100
@@ -12826,14 +13099,11 @@ sort: by_weight
 都是想忘记的事情	dou shi xiang wang ji de shi qing	100
 斗兽棋	dou shou qi	100
 豆团子	dou tuan zi	100
-都瓦克因	dou wa ke yin	100
-都丸千代	dou wan qian dai	100
 都忘掉吧	dou wang diao ba	100
 豆铣礼	dou xi li	100
 抖音娘	dou yin niang	100
 都于郡城	dou yu jun cheng	100
 斗鱼娘	dou yu niang	100
-都月彩枫	dou yue cai feng	100
 斗阵特工	dou zhen te gong	100
 斗阵特攻	dou zhen te gong	100
 斗争本能	dou zheng ben neng	100
@@ -12841,9 +13111,6 @@ sort: by_weight
 豆知识	dou zhi shi	100
 豆之素	dou zhi su	100
 兜冢守桔梗	dou zhong shou jie geng	100
-都筑圭	dou zhu gui	100
-都筑巧	dou zhu qiao	100
-都筑诗船	dou zhu shi chuan	100
 毒霸姬	du ba ji	100
 杜巴莉	du ba li	100
 杜芭莉	du ba li	100
@@ -13620,7 +13887,6 @@ sort: by_weight
 鹅掌藤	e zhang teng	100
 恶爪鬼	e zhao gui	100
 恶之华	e zhi hua	100
-恶之花	e zhi hua	100
 颚之巨人	e zhi ju ren	100
 恶之军团	e zhi jun tuan	100
 恶之卡组破坏病毒	e zhi ka zu po huai bing du	100
@@ -13643,7 +13909,6 @@ sort: by_weight
 恩里克塞德尼奥	en li ke sai de ni ao	100
 恩尼格玛	en ni ge ma	100
 恩普莎	en pu sha	100
-恩奇都	en qi dou	100
 摁铅笔	en qian bi	100
 恩希尔恩瑞斯	en xi er en rui si	100
 恩希欧迪斯希瓦艾什	en xi ou di si xi wa ai shen	100
@@ -13848,7 +14113,6 @@ sort: by_weight
 二叶土笔	er ye tu bi	100
 二叶筑紫	er ye zhu zi	100
 二又一成	er you yi cheng	100
-儿玉都	er yu dou	100
 二羽鹤	er yu he	100
 儿玉健二	er yu jian er	100
 儿玉兼嗣	er yu jian si	100
@@ -14529,7 +14793,6 @@ sort: by_weight
 飞碟瓜	fei die gua	100
 飞碟机人战士	fei die ji ren zhan shi	100
 飞碟桌	fei die zhuo	100
-废都物语	fei dou wu yu	100
 非对称玄化	fei dui chen xuan hua	100
 菲恩图斯	fei en tu si	100
 菲尔卡西迪	fei er ka xi di	100
@@ -15074,9 +15337,6 @@ sort: by_weight
 风的魔法	feng de mo fa	100
 风的去向	feng de qu xiang	100
 风的讯息	feng de xun xi	100
-酆都地府篇	feng dou di fu pian	100
-酆都冥司记	feng dou ming si ji	100
-风都侦探	feng dou zhen tan	100
 丰多诺亚	feng duo nuo ya	100
 风儿吹来恋爱	feng er chui lai lian ai	100
 风帆战舰	feng fan zhan jian	100
@@ -15170,7 +15430,6 @@ sort: by_weight
 风见唯花	feng jian wei hua	100
 风间汐	feng jian xi	100
 风间新太郎	feng jian xin tai lang	100
-丰见亚都梨	feng jian ya dou li	100
 风见芽衣久	feng jian ya yi jiu	100
 风间叶月	feng jian ye yue	100
 峰健一	feng jian yi	100
@@ -15179,7 +15438,6 @@ sort: by_weight
 风见悠梨	feng jian you li	100
 风见幽香	feng jian you xiang	100
 风见裕也	feng jian yu ye	100
-封缄之都古拉塞斯塔	feng jian zhi dou gu la sai si ta	100
 风间之江	feng jian zhi jiang	100
 风见志郎	feng jian zhi lang	100
 峰津院大和	feng jin yuan da he	100
@@ -15216,7 +15474,6 @@ sort: by_weight
 疯狂游戏	feng kuang you xi	100
 疯狂宇宙	feng kuang yu zhou	100
 疯狂原始人	feng kuang yuan shi ren	100
-疯狂约会美丽都	feng kuang yue hui mei li dou	100
 疯狂运转的永动机	feng kuang yun zhuan de yong dong ji	100
 疯狂砸汽车	feng kuang za qi che	100
 疯狂绽放的樱花	feng kuang zhan fang de ying hua	100
@@ -15561,8 +15818,6 @@ sort: by_weight
 福迪尼	fu di ni	100
 福地樱痴	fu di ying chi	100
 佛雕师	fu diao shi	100
-副都的顾问布尔瓦利	fu dou de gu wen bu er wa li	100
-副都的顾问布鲁瓦莉	fu dou de gu wen bu lu wa li	100
 复读能力	fu du neng li	100
 斧笃志	fu du zhi	100
 斧敦志	fu dun zhi	100
@@ -18303,7 +18558,6 @@ sort: by_weight
 关得飞	guan de fei	100
 关掉姐	guan diao jie	100
 关东狱炼	guan dong yu lian	100
-关都地区	guan dou di qu	100
 管耳猫	guan er mao	100
 莞儿睡不醒	guan er shui bu xing	100
 官方逼死同人	guan fang bi si tong ren	100
@@ -19129,7 +19383,6 @@ sort: by_weight
 过膝袜	guo xi wa	100
 过膝袜之歌	guo xi wa zhi ge	100
 过膝靴	guo xi xue	100
-过膝长筒袜	guo xi zhang tong wa	100
 过心花	guo xin hua	100
 裹胸布	guo xiong bu	100
 过学习	guo xue xi	100
@@ -20246,7 +20499,6 @@ sort: by_weight
 赫耀的王之烙印	he yao de wang zhi lao yin	100
 和摇滚的你说拜拜	he yao gun de ni shuo bai bai	100
 和遥树奈	he yao shu nai	100
-河野都	he ye dou	100
 河野惠美	he ye hui mei	100
 河野靖	he ye jing	100
 和夜空	he ye kong	100
@@ -20590,7 +20842,6 @@ sort: by_weight
 黑崎一心	hei qi yi xin	100
 黑崎一勇	hei qi yi yong	100
 黑崎真咲	hei qi zhen xiao	100
-黑崎真音	hei qi zhen yin	100
 黑铅之刃	hei qian zhi ren	100
 黑蔷薇	hei qiang wei	100
 黑蔷薇龙	hei qiang wei long	100
@@ -20812,7 +21063,6 @@ sort: by_weight
 黑泽圆	hei ze yuan	100
 黑泽阵	hei ze zhen	100
 黑泽知叶	hei ze zhi ye	100
-黑长直	hei zhang zhi	100
 黑爪会重建你的帝国	hei zhao hui chong jian ni de di guo	100
 黑爪会重建你父亲的帝国	hei zhao hui chong jian ni fu qin de di guo	100
 黑沼青叶	hei zhao qing ye	100
@@ -21377,7 +21627,6 @@ sort: by_weight
 互动视频	hu dong shi pin	100
 互动式小说	hu dong shi xiao shuo	100
 互动小说	hu dong xiao shuo	100
-湖都的人气舞者	hu dou de ren qi wu zhe	100
 护盾处理器	hu dun chu li qi	100
 胡尔德拉	hu er de la	100
 狐耳的义贼塔塔萝	hu er de yi zei ta ta luo	100
@@ -22069,7 +22318,6 @@ sort: by_weight
 欢唱索尼大法好	huan chang suo ni da fa hao	100
 缓冲池代码	huan chong chi dai ma	100
 幻蝶的守护	huan die de shou hu	100
-欢都落兰	huan dou luo lan	100
 换发型	huan fa xing	100
 环古达	huan gu da	100
 幻古云界之山海奇缘	huan gu yun jie zhi shan hai qi yuan	100
@@ -23531,7 +23779,6 @@ sort: by_weight
 极黑的布伦希尔德	ji hei de bu lun xi er de	100
 极黑的布伦希尔特	ji hei de bu lun xi er te	100
 计划都市	ji hua du shi	100
-计画都市	ji hua du shi	100
 计划通	ji hua tong	100
 计画通	ji hua tong	100
 集换式卡牌游戏	ji huan shi ka pai you xi	100
@@ -24738,8 +24985,6 @@ sort: by_weight
 夹在百合中间的女人有罪吗	jia zai bai he zhong jian de nv ren you zui ma	100
 夹在我女友和青梅竹马间的各种修罗场	jia zai wo nv you he qing mei zhu ma jian de ge zhong xiu luo chang	100
 加泽尔	jia ze er	100
-加长臂拆楼机	jia zhang bi chai lou ji	100
-家长麦	jia zhang mai	100
 驾着太阳驾着月亮	jia zhe tai yang jia zhe yue liang	100
 贾志超	jia zhi chao	100
 加治木由美	jia zhi mu you mei	100
@@ -24977,7 +25222,6 @@ sort: by_weight
 剪式千斤顶	jian shi qian jin ding	100
 简氏先进战术战斗机	jian shi xian jin zhan shu zhan dou ji	100
 简氏以色列空军	jian shi yi se lie kong jun	100
-简氏长弓阿帕奇	jian shi zhang gong a pa qi	100
 监守者	jian shou zhe	100
 坚书直实	jian shu zhi shi	100
 剑说侠喻	jian shuo xia yu	100
@@ -26328,7 +26572,6 @@ sort: by_weight
 金彰东	jin zhang dong	100
 金帐汗国	jin zhang han guo	100
 金仗花	jin zhang hua	100
-金长直	jin zhang zhi	100
 金哲秀	jin zhe xiu	100
 近贞月乃	jin zhen yue nai	100
 金正恩痛经	jin zheng en tong jing	100
@@ -27054,7 +27297,6 @@ sort: by_weight
 鸠田亚子	jiu tian ya zi	100
 久田伊树菜	jiu tian yi shu cai	100
 臼田樱	jiu tian ying	100
-九条都	jiu tiao dou	100
 九条笃	jiu tiao du	100
 久条翡翠	jiu tiao fei cui	100
 九条光	jiu tiao guang	100
@@ -27287,7 +27529,6 @@ sort: by_weight
 局地战斗机	ju di zhan dou ji	100
 菊地真	ju di zhen	100
 据点围攻	ju dian wei gong	100
-驹都英二	ju dou ying er	100
 剧毒链	ju du lian	100
 剧毒术士莉瑟尔	ju du shu shi li se er	100
 巨锻匠	ju duan jiang	100
@@ -28635,7 +28876,6 @@ sort: by_weight
 克雷多斯	ke lei duo si	100
 克蕾儿	ke lei er	100
 克蕾尔	ke lei er	100
-克蕾尔凡布贝尔纳鲁都斯	ke lei er fan bu bei er na lu dou si	100
 克蕾儿露裘	ke lei er lu qiu	100
 克蕾尔露裘	ke lei er lu qiu	100
 克蕾赫葛莱列特	ke lei he ge lai lie te	100
@@ -29211,7 +29451,6 @@ sort: by_weight
 堀绘梨子	ku hui li zi	100
 堀江博	ku jiang bo	100
 堀江晶太	ku jiang jing tai	100
-堀江美都子	ku jiang mei dou zi	100
 堀江青	ku jiang qing	100
 堀江秀尚	ku jiang xiu shang	100
 堀江真美	ku jiang zhen mei	100
@@ -30110,7 +30349,6 @@ sort: by_weight
 烂苹果	lan ping guo	100
 烂苹果舞	lan ping guo wu	100
 兰千璃	lan qian li	100
-岚千砂都	lan qian sha dou	100
 篮球部	lan qiu bu	100
 篮球少年王	lan qiu shao nian wang	100
 篮球社	lan qiu she	100
@@ -30236,7 +30474,6 @@ sort: by_weight
 朗基努斯枪	lang ji nu si qiang	100
 朗基努斯之枪	lang ji nu si zhi qiang	100
 狼将军	lang jiang jun	100
-浪客剑心	lang ke jian xin	100
 浪客剑心追忆篇	lang ke jian xin zhui yi pian	100
 朗库朗库拉	lang ku lang ku la	100
 朗朗晴天	lang lang qing tian	100
@@ -30283,7 +30520,6 @@ sort: by_weight
 狼族新世界	lang zu xin shi jie	100
 老阿訇	lao a hong	100
 劳埃德福杰	lao ai de fu jie	100
-劳埃德加满都	lao ai de jia man dou	100
 老板亲卫队	lao ban qin wei dui	100
 老北京学粤语	lao bei jing xue yue yu	100
 老冰棍	lao bing gun	100
@@ -30327,7 +30563,6 @@ sort: by_weight
 劳拉范德布姆	lao la fan de bu mu	100
 劳拉弗莉克希尔	lao la fu li ke xi er	100
 劳拉克劳馥	lao la ke lao fu	100
-劳拉史都华	lao la shi dou hua	100
 劳拉维多利亚诺	lao la wei duo li ya nuo	100
 劳力士伽德拉斯	lao li shi ga de la si	100
 老凉头就是涯芝	lao liang tou jiu shi ya zhi	100
@@ -30682,8 +30917,6 @@ sort: by_weight
 雷泽顿	lei ze dun	100
 蕾泽尔	lei ze er	100
 雷扎巴雷尔	lei zha ba lei er	100
-雷长喜	lei zhang xi	100
-雷长憙	lei zhang xi	100
 雷之裁决	lei zhi cai jue	100
 泪之乘车券	lei zhi cheng che quan	100
 泪之川	lei zhi chuan	100
@@ -31385,7 +31618,6 @@ sort: by_weight
 李小娘	li xiao niang	100
 李潇潇	li xiao xiao	100
 粒咲杏子	li xiao xing zi	100
-李逍遥	li xiao yao	100
 里谢尔队长姬	li xie er dui zhang ji	100
 里谢尔姬	li xie er ji	100
 离心分离力场	li xin fen li li chang	100
@@ -32201,7 +32433,6 @@ sort: by_weight
 林鼓子	lin gu zi	100
 林鬼教	lin gui jiao	100
 林果罗德艾根	lin guo luo de ai gen	100
-临海副都心	lin hai fu dou xin	100
 临海学校	lin hai xue xiao	100
 临海忆夏	lin hai yi xia	100
 林和良	lin he liang	100
@@ -33922,7 +34153,6 @@ sort: by_weight
 洛克李	luo ke li	100
 罗可莲	luo ke lian	100
 洛克娘	luo ke niang	100
-洛克人信长之野望帝国传	luo ke ren xin zhang zhi ye wang di guo chuan	100
 洛克人与佛鲁迪	luo ke ren yu fu lu di	100
 洛克萨斯	luo ke sa si	100
 罗克萨特主义合众国联盟	luo ke sa te zhu yi he zhong guo lian meng	100
@@ -34084,8 +34314,6 @@ sort: by_weight
 洛杉矶角斗士队	luo shan ji jue dou shi dui	100
 洛杉矶英勇队	luo shan ji ying yong dui	100
 洛少爷	luo shao ye	100
-洛圣都	luo sheng dou	100
-洛圣都警察局	luo sheng dou jing cha ju	100
 洛氏功夫娘	luo shi gong fu niang	100
 落水不死定律	luo shui bu si ding lv	100
 洛水花原	luo shui hua yuan	100
@@ -34110,7 +34338,6 @@ sort: by_weight
 裸体衬衫	luo ti chen shan	100
 裸体围裙	luo ti wei qun	100
 裸体艺术	luo ti yi shu	100
-裸体长筒袜	luo ti zhang tong wa	100
 洛天二	luo tian er	100
 洛天依	luo tian yi	100
 洛天依的爱情故事	luo tian yi de ai qing gu shi	100
@@ -35059,7 +35286,6 @@ sort: by_weight
 盲人少女与天使	mang ren shao nv yu tian shi	100
 蟒蛇六介	mang she liu jie	100
 芒斯特公爵	mang si te gong jue	100
-忙牙长	mang ya zhang	100
 猫背女子	mao bei nv zi	100
 毛笔与圆珠笔	mao bi yu yuan zhu bi	100
 毛辫羊	mao bian yang	100
@@ -35344,7 +35570,6 @@ sort: by_weight
 梅蒂欣梅兰可莉	mei di xin mei lan ke li	100
 梅蒂娅	mei di ya	100
 美东美织	mei dong mei zhi	100
-美都场菜绪	mei dou chang cai xu	100
 妹抖酱	mei dou jiang	100
 妹抖之贿赂	mei dou zhi hui lu	100
 梅杜莱茵	mei du lai yin	100
@@ -36814,7 +37039,6 @@ sort: by_weight
 绵枣儿	mian zao er	100
 绵摘灵妃	mian zhai ling fei	100
 绵摘鱼李	mian zhai yu li	100
-绵长的诀别	mian zhang de jue bie	100
 缅栀花	mian zhi hua	100
 面纸姬	mian zhi ji	100
 缅栀子	mian zhi zi	100
@@ -37044,7 +37268,6 @@ sort: by_weight
 明明想要投稿	ming ming xiang yao tou gao	100
 明明已经有男朋友了	ming ming yi jing you nan peng you le	100
 明明只是你	ming ming zhi shi ni	100
-名木城都	ming mu cheng dou	100
 名木城弥生	ming mu cheng mi sheng	100
 明娜迪特林德威尔克	ming na di te lin de wei er ke	100
 明内幽	ming nei you	100
@@ -37343,9 +37566,6 @@ sort: by_weight
 墨狄斯	mo di si	100
 魔动王	mo dong wang	100
 魔豆传奇	mo dou chuan qi	100
-魔都地铁萌化项目组	mo dou di tie meng hua xiang mu zu	100
-魔都地下铁少女	mo dou di xia tie shao nv	100
-魔都精兵的奴隶	mo dou jing bing de nu li	100
 默读者	mo du zhe	100
 墨多多谜境冒险	mo duo duo mi jing mao xian	100
 摩多罗	mo duo luo	100
@@ -37369,7 +37589,6 @@ sort: by_weight
 魔法爆破	mo fa bao po	100
 魔法臂盾	mo fa bi dun	100
 魔法笔刷	mo fa bi shua	100
-魔法兵团队长尤妮	mo fa bing tuan dui zhang you ni	100
 魔法兵团师团长卡蒂亚	mo fa bing tuan shi tuan zhang ka di ya	100
 魔法捕获	mo fa bu huo	100
 魔法彩灵堡	mo fa cai ling bao	100
@@ -38243,7 +38462,6 @@ sort: by_weight
 木户衣吹	mu hu yi chui	100
 木户重人	mu hu zhong ren	100
 木花开耶姬	mu hua kai ye ji	100
-木花石长姬	mu hua shi zhang ji	100
 木花咲弥	mu hua xiao mi	100
 木花咲耶	mu hua xiao ye	100
 木花咲耶姬	mu hua xiao ye ji	100
@@ -38856,7 +39074,6 @@ sort: by_weight
 南冬马	nan dong ma	100
 南斗列车炮	nan dou lie che pao	100
 南斗圣拳	nan dou sheng quan	100
-南都夜夜	nan dou ye ye	100
 男儿当入樽	nan er dang ru zun	100
 男二光环	nan er guang huan	100
 南方彩虹的露西	nan fang cai hong de lu xi	100
@@ -40994,7 +41211,6 @@ sort: by_weight
 琵琶怨	pi pa yuan	100
 匹配答案	pi pei da an	100
 皮皮鲁安全特工队	pi pi lu an quan te gong dui	100
-皮皮露达维多利亚鲁尔加迪娅克鲁斯蒙达埃弗拉伊姆长袜子	pi pi lu da wei duo li ya lu er jia di ya ke lu si meng da ai fu la yi mu chang wa zi	100
 皮皮鲁和巴拉娜	pi pi lu he ba la na	100
 皮皮鲁和鲁西西之地球之钟奇遇记	pi pi lu he lu xi xi zhi di qiu zhi zhong qi yu ji	100
 皮皮鲁与鲁西西之罐头小人	pi pi lu yu lu xi xi zhi guan tou xiao ren	100
@@ -41408,7 +41624,6 @@ sort: by_weight
 破魔阴阳师的复仇术法	po mo yin yang shi de fu chou shu fa	100
 破片手雷	po pian shou lei	100
 婆婆纳	po po na	100
-婆婆纳甸长河长	po po na dian chang he zhang	100
 破事水	po shi shui	100
 迫水遥	po shui yao	100
 迫水真吾	po shui zhen wu	100
@@ -43293,7 +43508,6 @@ sort: by_weight
 庆典爆破类魂器	qing dian bao po lei hun qi	100
 庆典庆祝类魂器	qing dian qing zhu lei hun qi	100
 情窦初开的舞池	qing dou chu kai de wu chi	100
-清都亚里沙	qing dou ya li sha	100
 请毒死我	qing du si wo	100
 请笃信一个梦	qing du xin yi ge meng	100
 请多关照九九组	qing duo guan zhao jiu jiu zu	100
@@ -43588,7 +43802,6 @@ sort: by_weight
 晴天娃娃	qing tian wa wa	100
 擎天王国	qing tian wang guo	100
 青田新名	qing tian xin ming	100
-清田信长	qing tian xin zhang	100
 晴天掩饰雨	qing tian yan shi yu	100
 晴天中的偶然落雨	qing tian zhong de ou ran luo yu	100
 擎天柱姬	qing tian zhu ji	100
@@ -43692,7 +43905,6 @@ sort: by_weight
 青云天空	qing yun tian kong	100
 请允许我做一个悲伤的表情	qing yun xu wo zuo yi ge bei shang de biao qing	100
 请在伸展台上微笑	qing zai shen zhan tai shang wei xiao	100
-庆长佑香	qing zhang you xiang	100
 青沼瞬	qing zhao shun	100
 青之此方	qing zhi ci fang	100
 轻之国度	qing zhi guo du	100
@@ -43782,7 +43994,6 @@ sort: by_weight
 秋凛子	qiu lin zi	100
 丘陵之巅区域	qiu ling zhi dian qu yu	100
 丘鲁克	qiu lu ke	100
-丘鲁克奥古斯都菲列特利加封安哈尔特泽鲁普斯特	qiu lu ke ao gu si dou fei lie te li jia feng an ha er te ze lu pu si te	100
 球磨川禊	qiu mo chuan xi	100
 秋木苏	qiu mu su	100
 萩乃森高校狩猎专门课程	qiu nai sen gao xiao shou lie zhuan men ke cheng	100
@@ -43931,7 +44142,6 @@ sort: by_weight
 驱魔学园的叛教者	qu mo xue yuan de pan jiao zhe	100
 曲目删除记录	qu mu shan chu ji lu	100
 去年买了个表	qu nian mai le ge biao	100
-区鸟多都	qu niao duo dou	100
 屈曲花	qu qu hua	100
 区区人类太狂妄了	qu qu ren lei tai kuang wang le	100
 取舍苏生	qu she su sheng	100
@@ -44842,7 +45052,6 @@ sort: by_weight
 日常装饰	ri chang zhuang shi	100
 日次舞白	ri ci wu bai	100
 日代千鹤	ri dai qian he	100
-日都岛	ri dou dao	100
 日渡荠	ri du ji	100
 日番谷冬狮郎	ri fan gu dong shi lang	100
 日服数据	ri fu shu ju	100
@@ -46501,7 +46710,6 @@ sort: by_weight
 森崎阿蕾西亚优	sen qi a lei xi ya you	100
 森七菜	sen qi cai	100
 森千晃	sen qian huang	100
-森千早都	sen qian zao dou	100
 森丘深处	sen qiu shen chu	100
 森森铃兰	sen sen ling lan	100
 森山大辅短篇集	sen shan da fu duan pian ji	100
@@ -46551,7 +46759,6 @@ sort: by_weight
 森月黎	sen yue li	100
 森岳志	sen yue zhi	100
 森泽芙美	sen ze fu mei	100
-森长可	sen zhang ke	100
 森之大统领	sen zhi da tong ling	100
 森之低语	sen zhi di yu	100
 森之宫神疗所	sen zhi gong shen liao suo	100
@@ -46699,7 +46906,6 @@ sort: by_weight
 沙漠的青鸟	sha mo de qing niao	100
 沙漠的雪花	sha mo de xue hua	100
 沙漠腹地	sha mo fu di	100
-沙漠湖都	sha mo hu dou	100
 沙漠皇帝	sha mo huang di	100
 沙漠姬改	sha mo ji gai	100
 沙漠猫	sha mo mao	100
@@ -47205,7 +47411,6 @@ sort: by_weight
 山田美妙	shan tian mei miao	100
 山田妙	shan tian miao	100
 山田妙子	shan tian miao zi	100
-山田奈都美	shan tian nai dou mei	100
 山田千鹤子	shan tian qian he zi	100
 山田亲之条	shan tian qin zhi tiao	100
 山田仁菜	shan tian ren cai	100
@@ -47545,7 +47750,6 @@ sort: by_weight
 上原步梦	shang yuan bu meng	100
 上原彩也香	shang yuan cai ye xiang	100
 上原春香	shang yuan chun xiang	100
-上原都	shang yuan dou	100
 上原绯玛丽	shang yuan fei ma li	100
 上原葵	shang yuan kui	100
 上原玲奈	shang yuan ling nai	100
@@ -47937,7 +48141,6 @@ sort: by_weight
 神灯魔精	shen deng mo jing	100
 神灯魔人	shen deng mo ren	100
 神定伸一郎	shen ding shen yi lang	100
-神都夜行录	shen dou ye xing lu	100
 神斗衣	shen dou yi	100
 深度共鸣	shen du gong ming	100
 深度回音	shen du hui yin	100
@@ -48584,7 +48787,6 @@ sort: by_weight
 神渣爱豆	shen zha ai dou	100
 神展开	shen zhan kai	100
 神杖先驱	shen zhang xian qu	100
-神长香子	shen zhang xiang zi	100
 神照功	shen zhao gong	100
 神召魔法	shen zhao mo fa	100
 深圳外国语学校娘	shen zhen wai guo yu xue xiao niang	100
@@ -48726,7 +48928,6 @@ sort: by_weight
 圣殿级崩坏兽	sheng dian ji beng huai shou	100
 圣典型拉斐尔	sheng dian xing la fei er	100
 圣殿之盾	sheng dian zhi dun	100
-圣都的良心阿黛儿	sheng dou de liang xin a dai er	100
 圣斗少女翔	sheng dou shao nv xiang	100
 圣斗士	sheng dou shi	100
 圣斗士星矢	sheng dou shi xing shi	100
@@ -49205,7 +49406,6 @@ sort: by_weight
 十动然拒	shi dong ran ju	100
 石动双叶	shi dong shuang ye	100
 石动雪	shi dong xue	100
-史都华德	shi dou hua de	100
 石渡万辉子	shi du wan hui zi	100
 十二盎司摇滚鼠	shi er ang si yao gun shu	100
 时而充斥着暴力	shi er chong chi zhe bao li	100
@@ -49911,7 +50111,6 @@ sort: by_weight
 史诗幻想战争	shi shi huan xiang zhan zheng	100
 试试就逝世	shi shi jiu shi shi	100
 事实有时是谎言	shi shi you shi shi huang yan	100
-式守都	shi shou dou	100
 式守同学不只可爱而已	shi shou tong xue bu zhi ke ai er yi	100
 时守星沙	shi shou xing sha	100
 石狩勇气	shi shou yong qi	100
@@ -50542,7 +50741,6 @@ sort: by_weight
 竖笛小魔王	shu di xiao mo wang	100
 竖笛与双肩书包	shu di yu shuang jian shu bao	100
 书店里的骷髅店员本田	shu dian li de ku lou dian yuan ben tian	100
-枢都夏莲	shu dou xia lian	100
 舒芙蕾	shu fu lei	100
 舒格萨特拉	shu ge sa te la	100
 曙光竞速者	shu guang jing su zhe	100
@@ -51189,7 +51387,6 @@ sort: by_weight
 水照明	shui zhao ming	100
 水侦型	shui zhen xing	100
 水正果	shui zheng guo	100
-水之都篇登场角色	shui zhi dou pian deng chang jue se	100
 水之法师	shui zhi fa shi	100
 水之合唱	shui zhi he chang	100
 水之剑士	shui zhi jian shi	100
@@ -51908,7 +52105,6 @@ sort: by_weight
 松本美	song ben mei	100
 松本美冬	song ben mei dong	100
 松本美知惠	song ben mei zhi hui	100
-松本清长	song ben qing zhang	100
 松本泉	song ben quan	100
 松本忍	song ben ren	100
 松本沙理奈	song ben sha li nai	100
@@ -52890,7 +53086,6 @@ sort: by_weight
 太宰治	tai zai zhi	100
 太斋宽子	tai zhai kuan zi	100
 太斋明子	tai zhai ming zi	100
-太长不看	tai zhang bu kan	100
 太字节	tai zi jie	100
 太字节娘	tai zi jie niang	100
 泰兹卡特里波卡	tai zi ka te li bo ka	100
@@ -53488,7 +53683,6 @@ sort: by_weight
 藤崎真子	teng qi zhen zi	100
 藤切七生	teng qie qi sheng	100
 藤森步	teng sen bu	100
-藤森水都	teng sen shui dou	100
 藤森文子	teng sen wen zi	100
 藤森雪奈	teng sen xue nai	100
 藤寺美德	teng si mei de	100
@@ -53839,7 +54033,6 @@ sort: by_weight
 天顶剑	tian ding jian	100
 天顶星科技	tian ding xing ke ji	100
 天动说	tian dong shuo	100
-天都彼方	tian dou bi fang	100
 天斗辉巧极	tian dou hui qiao ji	100
 甜度百分之七十一点一	tian du bai fen zhi qi shi yi dian yi	100
 田端美保	tian duan mei bao	100
@@ -54984,7 +55177,6 @@ sort: by_weight
 桐生战兔	tong sheng zhan tu	100
 桐生紫乃	tong sheng zi nai	100
 筒式粉碎机	tong shi fen sui ji	100
-统帅恺撒神之子奥古斯都	tong shuai kai sa shen zhi zi ao gu si dou	100
 统堂克洛伊	tong tang ke luo yi	100
 统堂英玲奈	tong tang ying ling nai	100
 同田贯正国	tong tian guan zheng guo	100
@@ -56000,8 +56192,6 @@ sort: by_weight
 亡蝶葬仪	wang die zang yi	100
 王冬儿	wang dong er	100
 望洞庭	wang dong ting	100
-王都的勇士琪莉	wang dou de yong shi qi li	100
-王都楼真悟	wang dou lou zhen wu	100
 王多多	wang duo duo	100
 王哆啦	wang duo la	100
 王二喜	wang er xi	100
@@ -56171,7 +56361,6 @@ sort: by_weight
 忘却心中	wang que xin zhong	100
 忘却与挂锁	wang que yu gua suo	100
 忘却侦探	wang que zhen tan	100
-忘却之都	wang que zhi dou	100
 忘却之森	wang que zhi sen	100
 忘却中	wang que zhong	100
 汪三水	wang san shui	100
@@ -56995,7 +57184,6 @@ sort: by_weight
 维泽布兰切蒙特	wei ze bu lan qie meng te	100
 尾扎长发	wei zha chang fa	100
 为战而生	wei zhan er sheng	100
-尾长仁濑	wei zhang ren lai	100
 威震天	wei zhen tian	100
 威震天姬	wei zhen tian ji	100
 位置标定器	wei zhi biao ding qi	100
@@ -57062,7 +57250,6 @@ sort: by_weight
 文具少女	wen ju shao nv	100
 温卡沃兹	wen ka wo zi	100
 温莉洛克贝尔	wen li luo ke bei er	100
-文禄庆长之役	wen lu qing zhang zhi yi	100
 温伦富勒	wen lun fu lei	100
 文明倒退	wen ming dao tui	100
 文明等级	wen ming deng ji	100
@@ -58026,7 +58213,6 @@ sort: by_weight
 武本康弘	wu ben kang hong	100
 舞滨步	wu bin bu	100
 舞冰的祈愿	wu bing de qi yuan	100
-物部布都	wu bu bu dou	100
 巫部风铃	wu bu feng ling	100
 物部千翼	wu bu qian yi	100
 武部沙织	wu bu sha zhi	100
@@ -58142,8 +58328,6 @@ sort: by_weight
 舞动月夜	wu dong yue ye	100
 雾动阵输力	wu dong zhen shu li	100
 无冬之夜	wu dong zhi ye	100
-雾都孤姬	wu dou gu ji	100
-雾都吸血鬼	wu dou xi xue gui	100
 武斗圆舞	wu dou yuan wu	100
 五毒教	wu du jiao	100
 巫毒娃娃	wu du wa wa	100
@@ -58776,7 +58960,6 @@ sort: by_weight
 无头骑士异闻录	wu tou qi shi yi wen lu	100
 无头学姐	wu tou xue jie	100
 无图无真相	wu tu wu zhen xiang	100
-乌丸都	wu wan dou	100
 乌丸府兰	wu wan fu lan	100
 乌丸黑衣	wu wan hei yi	100
 乌丸集团	wu wan ji tuan	100
@@ -59158,7 +59341,6 @@ sort: by_weight
 希顶语	xi ding yu	100
 西东天	xi dong tian	100
 西洞院多纪	xi dong yuan duo ji	100
-系都新干线	xi dou xin gan xian	100
 西杜丽	xi du li	100
 锡短剑	xi duan jian	100
 西顿学园	xi dun xue yuan	100
@@ -59739,7 +59921,6 @@ sort: by_weight
 喜羊羊与灰太狼之运动英雄传筐出胜利	xi yang yang yu hui tai lang zhi yun dong ying xiong chuan kuang chu sheng li	100
 喜羊羊与灰太狼之智趣羊学堂	xi yang yang yu hui tai lang zhi zhi qu yang xue tang	100
 夕阳樱	xi yang ying	100
-夕阳长歌	xi yang zhang ge	100
 夕妖晚谣	xi yao wan yao	100
 西野艾露	xi ye ai lu	100
 细野步海	xi ye bu hai	100
@@ -59842,7 +60023,6 @@ sort: by_weight
 汐之宫璃贝	xi zhi gong li bei	100
 西之黄昏	xi zhi huang hun	100
 西之绝境	xi zhi jue jing	100
-西洲梦长	xi zhou meng zhang	100
 西住美穗	xi zhu mei sui	100
 西住真穗	xi zhu zhen sui	100
 西住志穗	xi zhu zhi sui	100
@@ -60300,8 +60480,6 @@ sort: by_weight
 限定解除	xian ding jie chu	100
 限定角色	xian ding jue se	100
 限定卖萌对象	xian ding mai meng dui xiang	100
-仙都木阿夜	xian dou mu a ye	100
-仙都木优麻	xian dou mu you ma	100
 先斗宁	xian dou ning	100
 仙杜瑞拉	xian du rui la	100
 宪法号	xian fa hao	100
@@ -60564,7 +60742,6 @@ sort: by_weight
 相川凉	xiang chuan liang	100
 香川凛	xiang chuan lin	100
 相川留美	xiang chuan liu mei	100
-相川奈都姬	xiang chuan nai dou ji	100
 相川奈央	xiang chuan nai yang	100
 相川千穗	xiang chuan qian sui	100
 相川千夏	xiang chuan qian xia	100
@@ -60924,7 +61101,6 @@ sort: by_weight
 向夜晚奔去	xiang ye wan ben qu	100
 向夜晚飞奔	xiang ye wan fei ben	100
 向夜晚飞奔而去	xiang ye wan fei ben er qu	100
-相野未都	xiang ye wei dou	100
 相叶夕美	xiang ye xi mei	100
 向银莲花道再见	xiang yin lian hua dao zai jian	100
 想影真心	xiang ying zhen xin	100
@@ -61157,7 +61333,6 @@ sort: by_weight
 小豆年代记	xiao dou nian dai ji	100
 小豆芽安雪璃	xiao dou ya an xue li	100
 小豆泽心羽	xiao dou ze xin yu	100
-小豆长光	xiao dou zhang guang	100
 小豆梓	xiao dou zi	100
 小锻治健夜	xiao duan zhi jian ye	100
 小碓千秋	xiao dui qian qiu	100
@@ -61382,7 +61557,6 @@ sort: by_weight
 小林操	xiao lin cao	100
 小林澄子	xiao lin cheng zi	100
 小林大纪	xiao lin da ji	100
-小林都	xiao lin dou	100
 小林多喜二	xiao lin duo xi er	100
 小林歌剧	xiao lin ge ju	100
 小林弘利	xiao lin hong li	100
@@ -61519,7 +61693,6 @@ sort: by_weight
 小牧未侑	xiao mu wei you	100
 筱目夜鹤	xiao mu ye he	100
 肖娜薇恩	xiao na wei en	100
-小乃立都	xiao nai li dou	100
 小南极	xiao nan ji	100
 小南莓	xiao nan mei	100
 小南桐绘	xiao nan tong hui	100
@@ -61617,7 +61790,6 @@ sort: by_weight
 小泉夏美	xiao quan xia mei	100
 小泉一郎太	xiao quan yi lang tai	100
 小泉真昼	xiao quan zhen zhou	100
-小雀都都	xiao que dou dou	100
 小确丧	xiao que sang	100
 小雀香奈	xiao que xiang nai	100
 小人村千野	xiao ren cun qian ye	100
@@ -61708,7 +61880,6 @@ sort: by_weight
 小市真琴	xiao shi zhen qin	100
 小室真子	xiao shi zhen zi	100
 小室正幸	xiao shi zheng xing	100
-消逝之都	xiao shi zhi dou	100
 消逝之歌	xiao shi zhi ge	100
 消失之前	xiao shi zhi qian	100
 小手冰凉	xiao shou bing liang	100
@@ -62790,14 +62961,6 @@ sort: by_weight
 新战场	xin zhan chang	100
 新战神	xin zhan shen	100
 新战神金刚	xin zhan shen jin gang	100
-信长的忍者	xin zhang de ren zhe	100
-信长的野望	xin zhang de ye wang	100
-信长老师的嫩妻	xin zhang lao shi de nen qi	100
-信长老师的年幼妻子	xin zhang lao shi de nian you qi zi	100
-信长老师的幼妻	xin zhang lao shi de you qi	100
-信长协奏曲	xin zhang xie zou qu	100
-信长之枪	xin zhang zhi qiang	100
-信长之野望	xin zhang zhi ye wang	100
 新这个美妙的世界	xin zhe ge mei miao de shi jie	100
 信者无法被拯救	xin zhe wu fa bei zheng jiu	100
 心镇壶	xin zhen hu	100
@@ -62941,7 +63104,6 @@ sort: by_weight
 星蝶公主	xing die gong zhu	100
 行动系统	xing dong xi tong	100
 行动与战斗	xing dong yu zhan dou	100
-星都琪艾米	xing dou qi ai mi	100
 兴奋的魔法力量	xing fen de mo fa li liang	100
 星风的星象	xing feng de xing xiang	100
 星风高等学校	xing feng gao deng xue xiao	100
@@ -63500,7 +63662,6 @@ sort: by_weight
 星云柱	xing yun zhu	100
 星仔走天涯	xing zai zou tian ya	100
 星杖型仙女座	xing zhang xing xian nv zuo	100
-行长柚叶	xing zhang you ye	100
 醒着的童话	xing zhe de tong hua	100
 行政长官系统	xing zheng zhang guan xi tong	100
 星之白金	xing zhi bai jin	100
@@ -64149,7 +64310,6 @@ sort: by_weight
 薛丁格之裙	xue ding ge zhi qun	100
 薛丁格准尉	xue ding ge zhun wei	100
 学动画三年	xue dong hua san nian	100
-雪都沙绪梨	xue dou sha xu li	100
 薛多尼亚骑士	xue duo ni ya qi shi	100
 薛恶虎	xue e hu	100
 雪尔森	xue er sen	100
@@ -64706,7 +64866,6 @@ sort: by_weight
 牙崎涟	ya qi lian	100
 亚绮罗森塔尔	ya qi luo sen ta er	100
 押切拳也	ya qie quan ye	100
-压切长谷部	ya qie zhang gu bu	100
 亚人酱有话说	ya ren jiang you hua shuo	100
 亚人酱有话要说	ya ren jiang you hua yao shuo	100
 亚撒西	ya sa xi	100
@@ -65105,7 +65264,6 @@ sort: by_weight
 岩泽麻美	yan ze ma mei	100
 盐泽敏一	yan ze min yi	100
 岩泽雅美	yan ze ya mei	100
-燕长风	yan zhang feng	100
 岩沼铃	yan zhao ling	100
 宴之从者	yan zhi cong zhe	100
 炎之腐界	yan zhi fu jie	100
@@ -65136,7 +65294,6 @@ sort: by_weight
 彦左卫门	yan zuo wei men	100
 岩佐夏芽	yan zuo xia ya	100
 阳哀花	yang ai hua	100
-阳坂美都子	yang ban mei dou zi	100
 杨秉音	yang bing yin	100
 杨不悔	yang bu hui	100
 洋彩雀	yang cai que	100
@@ -65152,7 +65309,6 @@ sort: by_weight
 杨冬会	yang dong hui	100
 杨东旭	yang dong xu	100
 佯动作战	yang dong zuo zhan	100
-扬番长	yang fan zhang	100
 杨菲菲	yang fei fei	100
 养蜂人	yang feng ren	100
 杨富禄	yang fu lu	100
@@ -65465,7 +65621,6 @@ sort: by_weight
 妖仙乡的眩晕风	yao xian xiang de xuan yun feng	100
 遥相逢	yao xiang feng	100
 妖邪异怪	yao xie yi guai	100
-妖行神都	yao xing shen dou	100
 耀眼的爱	yao yan de ai	100
 耀眼的纯白之乡	yao yan de chun bai zhi xiang	100
 耀眼的少年	yao yan de shao nian	100
@@ -66172,7 +66327,6 @@ sort: by_weight
 伊甸园工具箱	yi dian yuan gong ju xiang	100
 伊甸园生成器	yi dian yuan sheng cheng qi	100
 伊甸之东户冢	yi dian zhi dong hu zhong	100
-伊甸之都	yi dian zhi dou	100
 伊甸之路	yi dian zhi lu	100
 伊甸之子	yi dian zhi zi	100
 伊甸组	yi dian zu	100
@@ -66199,7 +66353,6 @@ sort: by_weight
 伊东杂音	yi dong za yin	100
 伊豆的舞女	yi dou de wu nv	100
 伊豆的舞者	yi dou de wu zhe	100
-伊都娜	yi dou na	100
 伊豆能卖	yi dou neng mai	100
 伊豆野山葵	yi dou ye shan kui	100
 异度黑核侵蚀	yi du hei he qin shi	100
@@ -66508,7 +66661,6 @@ sort: by_weight
 伊莉莎白女王	yi li sha bai nv wang	100
 伊丽莎白乔斯达	yi li sha bai qiao si da	100
 伊丽莎白鼠	yi li sha bai shu	100
-伊丽莎白长光麦克史密斯	yi li sha bai zhang guang mai ke shi mi si	100
 伊莉莎卡桑	yi li sha ka sang	100
 伊莉莎克拉克	yi li sha ke la ke	100
 伊莉莎娜翠花	yi li sha na cui hua	100
@@ -66668,7 +66820,6 @@ sort: by_weight
 一念情缘	yi nian qing yuan	100
 一年一棍	yi nian yi gun	100
 一念永恒	yi nian yong heng	100
-一年有十几个情人节和大量东西方传统节日都无法满足女友结果她把魔爪伸向了二十四节气	yi nian you shi ji ge qing ren jie he da liang dong xi fang chuan tong jie ri dou wu fa man zu nv you jie guo ta ba mo zhao shen xiang le er shi si jie qi	100
 一年战争	yi nian zhan zheng	100
 一念之秋	yi nian zhi qiu	100
 伊诺莱巴鲁叶雷塔阿托洛霍姆	yi nuo lai ba lu ye lei ta a tuo luo huo mu	100
@@ -66937,12 +67088,10 @@ sort: by_weight
 遗式幽女	yi shi you nv	100
 伊势原空	yi shi yuan kong	100
 一式战	yi shi zhan	100
-伊势长岛城	yi shi zhang dao cheng	100
 仪式之槛	yi shi zhi kan	100
 乙狩阿多尼斯	yi shou a duo ni si	100
 一首给你	yi shou gei ni	100
 一首关于梦想的歌	yi shou guan yu meng xiang de ge	100
-异兽魔都	yi shou mo dou	100
 已收容异常消失现象	yi shou rong yi chang xiao shi xian xiang	100
 一首星歌	yi shou xing ge	100
 一手指天	yi shou zhi tian	100
@@ -67841,7 +67990,6 @@ sort: by_weight
 应答姬	ying da ji	100
 樱岛麻衣	ying dao ma yi	100
 赢到最后	ying dao zui hou	100
-樱都子	ying dou zi	100
 应对怪兽特殊空降机甲部队	ying dui guai shou te shu kong jiang ji jia bu dui	100
 婴儿爬行	ying er pa xing	100
 婴儿之舞	ying er zhi wu	100
@@ -68462,7 +68610,6 @@ sort: by_weight
 永井真里子	yong jing zhen li zi	100
 永井真衣	yong jing zhen yi	100
 永久的后日谈	yong jiu de hou ri tan	100
-永久的女神磐长姬	yong jiu de nv shen pan zhang ji	100
 永久花	yong jiu hua	100
 永久列车	yong jiu lie che	100
 永久少年	yong jiu shao nian	100
@@ -68565,7 +68712,6 @@ sort: by_weight
 永远的朋友	yong yuan de peng you	100
 永远的朋友们	yong yuan de peng you men	100
 永远的朋友与复仇者们	yong yuan de peng you yu fu chou zhe men	100
-永远的七日之都	yong yuan de qi ri zhi dou	100
 永远的牵绊	yong yuan de qian ban	100
 永远的圣诞节	yong yuan de sheng dan jie	100
 永远的十七岁	yong yuan de shi qi sui	100
@@ -68725,7 +68871,6 @@ sort: by_weight
 有点糟糕	you dian zao gao	100
 有顶天	you ding tian	100
 有顶天家族	you ding tian jia zu	100
-幽都战	you dou zhan	100
 油断大敌	you duan da di	100
 由对爱之爱而生的为爱而爱	you dui ai zhi ai er sheng de wei ai er ai	100
 由多次人	you duo ci ren	100
@@ -68817,7 +68962,6 @@ sort: by_weight
 尤加莉	you jia li	100
 尤加奈	you jia nai	100
 由加奈	you jia nai	100
-有间都古	you jian dou gu	100
 又见梁祝	you jian liang zhu	100
 有件事说出来你可能不信	you jian shi shuo chu lai ni ke neng bu xin	100
 右肩之蝶	you jian zhi die	100
@@ -69447,10 +69591,6 @@ sort: by_weight
 予定调和任务	yu ding diao he ren wu	100
 预定调和任务	yu ding diao he ren wu	100
 预定灭绝	yu ding mie jue	100
-宇都宫城	yu dou gong cheng	100
-宇都宫陆	yu dou gong lu	100
-宇都宫心春	yu dou gong xin chun	100
-御都合主义	yu dou he zhu yi	100
 愚钝之斧	yu dun zhi fu	100
 宇多川梓	yu duo chuan zi	100
 宇多良金丝雀	yu duo liang jin si que	100
@@ -69488,7 +69628,6 @@ sort: by_weight
 雨宫环	yu gong huan	100
 雨宫莲	yu gong lian	100
 雨宫露	yu gong lu	100
-雨宫美都	yu gong mei dou	100
 雨宫明里	yu gong ming li	100
 雨宫明良	yu gong ming liang	100
 雨宫秋	yu gong qiu	100
@@ -69764,7 +69903,6 @@ sort: by_weight
 御前试合	yu qian shi he	100
 御遣者	yu qian zhe	100
 雨切丽	yu qie li	100
-御琴羽寿沙都	yu qin yu shou sha dou	100
 雨晴皆往	yu qing jie wang	100
 余情可待	yu qing ke dai	100
 于青岚之后	yu qing lan zhi hou	100
@@ -70026,7 +70164,6 @@ sort: by_weight
 雨鱼渔	yu yu yu	100
 雨鱼渔爱吃鱼	yu yu yu ai chi yu	100
 浴于雨中	yu yu yu zhong	100
-御舆长正	yu yu zhang zheng	100
 御园花凛	yu yuan hua lin	100
 御原玖音	yu yuan jiu yin	100
 狱原昆太	yu yuan kun tai	100
@@ -70273,7 +70410,6 @@ sort: by_weight
 猿渡银兵卫春臣	yuan du yin bing wei chun chen	100
 猿渡宇希	yuan du yu xi	100
 猿渡月美	yuan du yue mei	100
-猿渡真都	yuan du zhen dou	100
 远方的街道	yuan fang de jie dao	100
 远方的摇篮曲	yuan fang de yao lan qu	100
 元芳你怎么看	yuan fang ni zen me kan	100
@@ -70737,7 +70873,6 @@ sort: by_weight
 约尔福杰	yue er fu jie	100
 约尔曼冈德	yue er man gang de	100
 月儿谣	yue er yao	100
-月赋情长	yue fu qing zhang	100
 月冈恋钟	yue gang lian zhong	100
 月冈唯	yue gang wei	100
 月冈样	yue gang yang	100
@@ -71054,7 +71189,6 @@ sort: by_weight
 月圆之夜变身	yue yuan zhi ye bian shen	100
 跃跃节奏	yue yue jie zou	100
 约战狂三外传	yue zhan kuang san wai zhuan	100
-月之都	yue zhi dou	100
 月之法师	yue zhi fa shi	100
 月之公主	yue zhi gong zhu	100
 月之光	yue zhi guang	100
@@ -72140,23 +72274,10 @@ sort: by_weight
 张安琪	zhang an qi	100
 张百惠	zhang bai hui	100
 章北海	zhang bei hai	100
-长壁国	zhang bi guo	100
 张碧玉	zhang bi yu	100
-长壁与看守	zhang bi yu kan shou	100
-长壁与守门人	zhang bi yu shou men ren	100
 张鼻猪	zhang bi zhu	100
-长臂抓斗	zhang bi zhua dou	100
-长标题	zhang biao ti	100
-长滨城	zhang bin cheng	100
-长鬓虎	zhang bin hu	100
-长鬓角	zhang bin jiao	100
 张冰冰	zhang bing bing	100
-长柄大锤	zhang bing da chui	100
-长柄刀	zhang bing dao	100
 张秉君	zhang bing jun	100
-长柄镰刀	zhang bing lian dao	100
-长材拖车	zhang cai tuo che	100
-长曾祢虎彻	zhang ceng mi hu che	100
 张昌蒲	zhang chang pu	100
 章楚楚	zhang chu chu	100
 张楚岚	zhang chu lan	100
@@ -72164,106 +72285,38 @@ sort: by_weight
 张春华	zhang chun hua	100
 长大了的恐龙	zhang da le de kong long	100
 张大仙	zhang da xian	100
-长岛光那	zhang dao guang na	100
-长岛茂	zhang dao mao	100
-长岛茂雄	zhang dao mao xiong	100
 杖刀偶磨弓	zhang dao ou mo gong	100
-长岛小姐提不起劲	zhang dao xiao jie ti bu qi jin	100
-长岛雄一	zhang dao xiong yi	100
-长刀研	zhang dao yan	100
-长岛阳香	zhang dao yang xiang	100
-长岛遥	zhang dao yao	100
-长嶝高士	zhang deng gao shi	100
 涨点啊	zhang dian a	100
-长点上机学园	zhang dian shang ji xue yuan	100
 张恶霸霸	zhang e ba ba	100
 张恩泽	zhang en ze	100
-长耳垂	zhang er chui	100
 张飞娘	zhang fei niang	100
-长富莲实	zhang fu lian shi	100
-长干行	zhang gan xing	100
-长冈龙步	zhang gang long bu	100
-长歌门	zhang ge men	100
-长歌煞	zhang ge sha	100
-长弓阿帕奇	zhang gong a pa qi	100
-长谷部和美	zhang gu bu he mei	100
-长谷川达	zhang gu chuan da	100
-长谷川敦央	zhang gu chuan dun yang	100
-长谷川芳明	zhang gu chuan fang ming	100
-长谷川圭一	zhang gu chuan gui yi	100
-长谷川静香	zhang gu chuan jing xiang	100
-长谷川里桃	zhang gu chuan li tao	100
-长谷川亮太	zhang gu chuan liang tai	100
-长谷川玲奈	zhang gu chuan ling nai	100
-长谷川龙	zhang gu chuan long	100
-长谷川昴	zhang gu chuan mao	100
-长谷川美衣	zhang gu chuan mei yi	100
-长谷川梦	zhang gu chuan meng	100
-长谷川明子	zhang gu chuan ming zi	100
-长谷川暖	zhang gu chuan nuan	100
-长谷川平乃	zhang gu chuan ping nai	100
-长谷川茜	zhang gu chuan qian	100
-长谷川日向子	zhang gu chuan ri xiang zi	100
-长谷川纱织	zhang gu chuan sha zhi	100
-长谷川善吉	zhang gu chuan shan ji	100
-长谷川泰三	zhang gu chuan tai san	100
-长谷川文	zhang gu chuan wen	100
-长谷川香织	zhang gu chuan xiang zhi	100
-长谷川一志	zhang gu chuan yi zhi	100
-长谷川悠太	zhang gu chuan you tai	100
-长谷川育美	zhang gu chuan yu mei	100
-长谷川志穗	zhang gu chuan zhi sui	100
-长谷德人	zhang gu de ren	100
-长谷美希	zhang gu mei xi	100
-长谷堂城	zhang gu tang cheng	100
-长谷优里奈	zhang gu you li nai	100
-长光麻夜	zhang guang ma ye	100
 张果子	zhang guo zi	100
 张涵予	zhang han yu	100
 张昊天	zhang hao tian	100
 账号已注销	zhang hao yi zhu xiao	100
-长鸿出版社	zhang hong chu ban she	100
 张宏发	zhang hong fa	100
 张胡子	zhang hu zi	100
 张怀武	zhang huai wu	100
 张惠霖	zhang hui lin	100
 张惠媛	zhang hui yuan	100
-长系带胖次	zhang ji dai pang ci	100
 掌机游戏	zhang ji you xi	100
 张佳乐	zhang jia le	100
 张加麒	zhang jia qi	100
 张嘉祺	zhang jia qi	100
 张家屯儿的故事	zhang jia tun er de gu shi	100
 仗剑歌	zhang jian ge	100
-长间晋三	zhang jian jin san	100
 张间美香	zhang jian mei xiang	100
-长脚兔	zhang jiao tu	100
 张京华	zhang jing hua	100
-长井龙雪	zhang jing long xue	100
 张京民	zhang jing min	100
-长井新	zhang jing xin	100
 张敬宇	zhang jing yu	100
 张巨汉	zhang ju han	100
-长崛桥贞夫君	zhang jue qiao zhen fu jun	100
 张君雅	zhang jun ya	100
 张君雅小妹妹	zhang jun ya xiao mei mei	100
 张开翅膀	zhang kai chi bang	100
 张开你的双手	zhang kai ni de shuang shou	100
 张开小小的翅膀	zhang kai xiao xiao de chi bang	100
-长克巳	zhang ke si	100
 张口闭眼	zhang kou bi yan	100
 张口闭眼男	zhang kou bi yan nan	100
-长堀芳夫	zhang ku fang fu	100
-长堀桥贞夫君	zhang ku qiao zhen fu jun	100
-长濑爱梨	zhang lai ai li	100
-长濑纯	zhang lai chun	100
-长濑凑	zhang lai cou	100
-长濑都子	zhang lai dou zi	100
-长濑梨子	zhang lai li zi	100
-长濑麻奈	zhang lai ma nai	100
-长濑琴乃	zhang lai qin nai	100
-长濑有花	zhang lai you hua	100
-长濑裕树	zhang lai yu shu	100
 蟑螂的味道	zhang lang de wei dao	100
 蟑螂队	zhang lang dui	100
 蟑螂毛	zhang lang mao	100
@@ -72273,32 +72326,20 @@ sort: by_weight
 张力萌	zhang li meng	100
 张丽敏	zhang li min	100
 章烈山	zhang lie shan	100
-长岭谦信	zhang ling qian xin	100
 掌铃拳铃铃	zhang ling quan ling ling	100
 张凌薇	zhang ling wei	100
 张灵玉	zhang ling yu	100
-长刘海	zhang liu hai	100
 张曼成	zhang man cheng	100
 掌门太忙	zhang men tai mang	100
 掌门在上	zhang men zai shang	100
-长眠不醒的噩梦	zhang mian bu xing de e meng	100
-长明火计划	zhang ming huo ji hua	100
-长名娜吉美	zhang ming na ji mei	100
-长名奈津美	zhang ming nai jin mei	100
-长名驯染	zhang ming xun ran	100
 张乃文	zhang nai wen	100
-长南翔太	zhang nan xiang tai	100
-长南阳佳	zhang nan yang jia	100
 张念枝	zhang nian zhi	100
 掌派科技	zhang pai ke ji	100
 张佩怡	zhang pei yi	100
 张鹏飞	zhang peng fei	100
-长平传	zhang ping chuan	100
 张绮灵	zhang qi ling	100
 张起灵	zhang qi ling	100
-长骑美眉	zhang qi mei mei	100
 张启山	zhang qi shan	100
-长妻树里	zhang qi shu li	100
 瘴气之谷	zhang qi zhi gu	100
 丈枪由纪	zhang qiang you ji	100
 张庆欢	zhang qing huan	100
@@ -72308,37 +72349,18 @@ sort: by_weight
 章闰水	zhang run shui	100
 张若冰	zhang ruo bing	100
 张若瑜	zhang ruo yu	100
-长森牛乳	zhang sen niu ru	100
-长森瑞佳	zhang sen rui jia	100
 张山萱	zhang shan xuan	100
-长山延好	zhang shan yan hao	100
 掌上娘	zhang shang niang	100
 掌上行动	zhang shang xing dong	100
 掌上游戏机	zhang shang you xi ji	100
-长胜国王恶魔	zhang sheng guo wang e mo	100
-长绳麻理亚	zhang sheng ma li ya	100
-长世国王恶魔	zhang shi guo wang e mo	100
-长十郎	zhang shi lang	100
 张诗铃	zhang shi ling	100
 仗世文乔斯达	zhang shi wen qiao si da	100
 张顺忠	zhang shun zhong	100
 张思王之	zhang si wang zhi	100
 张颂欣	zhang song xin	100
 张太炎	zhang tai yan	100
-长田结花	zhang tian jie hua	100
 仗桐安	zhang tong an	100
-长筒花	zhang tong hua	100
 张桐铭	zhang tong ming	100
-长筒手套	zhang tong shou tao	100
-长尾步	zhang wei bu	100
-长尾大蚕蛾娘	zhang wei da can e niang	100
-长尾虎猫	zhang wei hu mao	100
-长尾火狐	zhang wei huo hu	100
-长尾火狐娘	zhang wei huo hu niang	100
-长尾景	zhang wei jing	100
-长尾景虎	zhang wei jing hu	100
-长尾毛丝鼠	zhang wei mao si shu	100
-长尾明希	zhang wei ming xi	100
 张蔚晴	zhang wei qing	100
 张维新	zhang wei xin	100
 张五飞	zhang wu fei	100
@@ -72355,7 +72377,6 @@ sort: by_weight
 张筱雅	zhang xiao ya	100
 张馨方	zhang xin fang	100
 张新杰	zhang xin jie	100
-长信秋词	zhang xin qiu ci	100
 张馨予	zhang xin yu	100
 掌心之中的第二世界	zhang xin zhi zhong de di er shi jie	100
 掌心中的命运	zhang xin zhong de ming yun	100
@@ -72367,14 +72388,8 @@ sort: by_weight
 张雪娘	zhang xue niang	100
 张亚珠	zhang ya zhu	100
 张晏端	zhang yan duan	100
-长洋平	zhang yang ping	100
 张遥函	zhang yao han	100
 张页川	zhang ye chuan	100
-长野伸二	zhang ye shen er	100
-长野县	zhang ye xian	100
-长野佑纪	zhang ye you ji	100
-长野原佳乃	zhang ye yuan jia nai	100
-长野原美绪	zhang ye yuan mei xu	100
 章艺纯	zhang yi chun	100
 张艺雯	zhang yi wen	100
 张友仁	zhang you ren	100
@@ -72396,25 +72411,17 @@ sort: by_weight
 章鱼丸子	zhang yu wan zi	100
 张宇微	zhang yu wei	100
 张远韬	zhang yuan tao	100
-长月达平	zhang yue da ping	100
 张月开	zhang yue kai	100
-长月夜	zhang yue ye	100
-长月早苗	zhang yue zao miao	100
 张云明	zhang yun ming	100
 张运气	zhang yun qi	100
-长泽美树	zhang ze mei shu	100
 张泽仁	zhang ze ren	100
 张泽湘	zhang ze xiang	100
-长泽直美	zhang ze zhi mei	100
 张占坤	zhang zhan kun	100
-长爪魔王	zhang zhao mo wang	100
 张昭张纮	zhang zhao zhang hong	100
 张召忠	zhang zhao zhong	100
 长者史莱姆	zhang zhe shi lai mu	100
 长者战争	zhang zhe zhan zheng	100
 张甄妮	zhang zhen ni	100
-长直发	zhang zhi fa	100
-长直双马尾	zhang zhi shuang ma yi	100
 掌中乐园	zhang zhong le yuan	100
 掌中萌虎	zhang zhong meng hu	100
 张子凡	zhang zi fan	100
@@ -72422,9 +72429,6 @@ sort: by_weight
 障子圣奈	zhang zi sheng nai	100
 涨姿势	zhang zi shi	100
 张宗菖	zhang zong chang	100
-长宗我部韦恩	zhang zong wo bu wei en	100
-长嘴绿	zhang zui lv	100
-长嘴钳	zhang zui qian	100
 张作铃	zhang zuo ling	100
 照安鞠亚	zhao an ju ya	100
 招财猫人偶	zhao cai mao ren ou	100
@@ -72605,7 +72609,6 @@ sort: by_weight
 这瓜保熟吗	zhe gua bao shu ma	100
 这锅我不背	zhe guo wo bu bei	100
 这喝汤多是一件美事啊	zhe he tang duo shi yi jian mei shi a	100
-这黑夜还长	zhe hei ye hai zhang	100
 这很不对劲	zhe hen bu dui jin	100
 这很清真	zhe hen qing zhen	100
 折户科美	zhe hu ke mei	100
@@ -73170,8 +73173,6 @@ sort: by_weight
 正气侠	zheng qi xia	100
 蒸汽旋翼机人	zheng qi xuan yi ji ren	100
 蒸汽医治者	zheng qi yi zhi zhe	100
-蒸汽之都的少女侦探	zheng qi zhi dou de shao nv zhen tan	100
-蒸汽之都的侦探少女	zheng qi zhi dou de zhen tan shao nv	100
 争强好胜大姐姐的秘密实验室	zheng qiang hao sheng da jie jie de mi mi shi yan shi	100
 正确的卡多	zheng que de ka duo	100
 正确饲养你的方法	zheng que si yang ni de fang fa	100
@@ -73514,7 +73515,6 @@ sort: by_weight
 纸木铗	zhi mu jia	100
 纸木绢	zhi mu juan	100
 植木慎英	zhi mu shen ying	100
-志那都	zhi na dou	100
 致那个夏天的我们	zhi na ge xia tian de wo men	100
 枝那森千里	zhi na sen qian li	100
 智乃的父亲	zhi nai de fu qin	100
@@ -73623,7 +73623,6 @@ sort: by_weight
 织田律	zhi tian lv	100
 织田七海	zhi tian qi hai	100
 植田千寻	zhi tian qian xun	100
-织田肉桂信长	zhi tian rou gui xin zhang	100
 织田市	zhi tian shi	100
 智天使兽	zhi tian shi shou	100
 栉田泰道	zhi tian tai dao	100
@@ -73879,7 +73878,6 @@ sort: by_weight
 冢本志雄	zhong ben zhi xiong	100
 冢本志织	zhong ben zhi zhi	100
 重编码存活	zhong bian ma cun huo	100
-钟表之都瑞士	zhong biao zhi dou rui shi	100
 中钵博士	zhong bo bo shi	100
 中博史	zhong bo shi	100
 重步兵	zhong bu bing	100
@@ -75652,7 +75650,6 @@ sort: by_weight
 祖上阔过	zu shang kuo guo	100
 足洗邸	zu xi di	100
 祖先大人万万岁	zu xian da ren wan wan sui	100
-足须沙穗都	zu xu sha sui dou	100
 祖娅纳惜	zu ya na xi	100
 卒业旅行	zu ye lv xing	100
 卒业式	zu ye shi	100
@@ -75898,7 +75895,6 @@ sort: by_weight
 罪与罚与暗域	zui yu fa yu an yu	100
 最远的最近	zui yuan de zui jin	100
 最原终一	zui yuan zhong yi	100
-最长一役	zui zhang yi yi	100
 罪爪波	zui zhao bo	100
 罪爪流	zui zhao liu	100
 最珍贵的宝物	zui zhen gui de bao wu	100
@@ -76154,7 +76150,6 @@ sort: by_weight
 左王子兰子	zuo wang zi lan zi	100
 作为恶役大小姐就该养魔王	zuo wei e yi da xiao jie jiu gai yang mo wang	100
 作为人我正在偏离常轨	zuo wei ren wo zheng zai pian li chang gui	100
-作为舔狗的我无权迟到哪怕一秒钟但是心甘情愿等你三个钟毫无怨言	zuo wei tian gou de wo wu quan chi dao na pa yi miao zhong dan shi xin gan qing yuan deng ni san ge zhong hao wu yuan yan	100
 左文字派	zuo wen zi pai	100
 左文字小夜	zuo wen zi xiao ye	100
 佐乌岛篇登场角色	zuo wu dao pian deng chang jue se	100
