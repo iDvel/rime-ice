@@ -8,29 +8,29 @@ recipe:
 install_files: >-
   cn_dicts/8105.dict.yaml
   cn_dicts/base.dict.yaml
-  cn_dicts/ext.dict.yaml
-  cn_dicts/others.dict.yaml
   cn_dicts/sogou.dict.yaml
   cn_dicts/moegirl.dict.yaml
+  cn_dicts/ext.dict.yaml
   cn_dicts/tencent.dict.yaml
-  custom_phrase.txt
-  default.custom.yaml
-  double_pinyin.schema.yaml
-  double_pinyin_flypy.schema.yaml
+  cn_dicts/others.dict.yaml
   en_dicts/en.dict.yaml
   en_dicts/en_ext.dict.yaml
   en_dicts/cn_en.dict.yaml
-  liangfen.dict.yaml
-  liangfen.schema.yaml
-  melt_eng.dict.yaml
-  melt_eng.schema.yaml
   opencc/emoji-map.txt
   opencc/emoji.json
   opencc/emoji.txt
   opencc/others.txt
-  rime.lua
+  custom_phrase.txt
+  default.yaml
   rime_ice.dict.yaml
   rime_ice.schema.yaml
-  squirrel.yaml
   symbols_custom.yaml
+  double_pinyin.schema.yaml
+  double_pinyin_flypy.schema.yaml
+  liangfen.dict.yaml
+  liangfen.schema.yaml
+  melt_eng.dict.yaml
+  melt_eng.schema.yaml
+  rime.lua
+  squirrel.yaml
   zh-hans-t-essay-bgw.gram
