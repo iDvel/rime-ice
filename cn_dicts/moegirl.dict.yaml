@@ -311,6 +311,22 @@ sort: by_weight
 这黑夜还长	zhe hei ye hai chang	100
 织田肉桂信长	zhi tian rou gui xin chang	100
 最长一役	zui chang yi yi	100
+一个能打的都没有	yi ge neng da de dou mei you	100
+被遗忘的士兵	bei yi wang de shi bing	100
+五番目的小丑	wu fan mu de xiao chou	100
+爱情是盲目的	ai qing shi mang mu de	100
+反目的从者	fan mu de cong zhe	100
+盲目的精神错乱	mang mu de jing shen cuo luan	100
+盲目的利己主义者	mang mu de li ji zhu yi zhe	100
+盲目的神官诺艾尔	mang mu de shen guan nuo ai er	100
+盲目的心教育	mang mu de xin jiao yu	100
+引人注目的女孩	yin ren zhu mu de nv hai	100
+飞飞的哥哥	fei fei de ge ge	100
+厉害了我的哥	li hai le wo de ge	100
+这样的哥哥不要紧吗	zhe yang de ge ge bu yao jin ma	100
+和青梅竹马未婚妻以恋人为目标的故事	he qing mei zhu ma wei hun qi yi lian ren wei mu biao de gu shi	100
+梦追商标的追梦豆芽	meng zhui shang biao de zhui meng dou ya	100
+她立起旗标的理由	ta li qi qi biao de li you	100
 # 伏地磨
 # 佛地魔
 # 人工知能
@@ -1713,7 +1729,6 @@ sort: by_weight
 爱情劣等生	ai qing lie deng sheng	100
 爱情灵药调配中	ai qing ling yao diao pei zhong	100
 爱情是烤肉的滋味	ai qing shi kao rou de zi wei	100
-爱情是盲目的	ai qing shi mang mu di	100
 爱情突袭	ai qing tu xi	100
 爱情异食症	ai qing yi shi zheng	100
 爱情之刃	ai qing zhi ren	100
@@ -4970,7 +4985,6 @@ sort: by_weight
 被遗忘的国度	bei yi wang de guo du	100
 被遗忘的天使	bei yi wang de tian shi	100
 被遗忘的作业	bei yi wang de zuo ye	100
-被遗忘的士兵	bei yi wang di shi bing	100
 被遗忘权	bei yi wang quan	100
 被遗忘者	bei yi wang zhe	100
 被隐藏的魔导书	bei yin cang de mo dao shu	100
@@ -14362,7 +14376,6 @@ sort: by_weight
 反帽子酱	fan mao zi jiang	100
 反梦幽会	fan meng you hui	100
 反魔镜	fan mo jing	100
-反目的从者	fan mu di cong zhe	100
 凡妮克	fan ni ke	100
 凡妮莎	fan ni sha	100
 凡妮莎范克里夫	fan ni sha fan ke li fu	100
@@ -14809,7 +14822,6 @@ sort: by_weight
 非凡的公主希瑞	fei fan de gong zhu xi rui	100
 非凡途径	fei fan tu jing	100
 非凡物品	fei fan wu pin	100
-飞飞的哥哥	fei fei di ge ge	100
 菲菲妮拉	fei fei ni la	100
 绯绯色金	fei fei se jin	100
 菲芙德古莉丝	fei fu de gu li si	100
@@ -20352,7 +20364,6 @@ sort: by_weight
 和气杏未	he qi xing wei	100
 和前女友令人着急的伪装结婚	he qian nv you ling ren zhao ji de wei zhuang jie hun	100
 和青梅竹马过上甜蜜的新婚生活	he qing mei zhu ma guo shang tian mi de xin hun sheng huo	100
-和青梅竹马未婚妻以恋人为目标的故事	he qing mei zhu ma wei hun qi yi lian ren wei mu biao di gu shi	100
 赫丘勒巴顿	he qiu lei ba dun	100
 和泉爱依	he quan ai yi	100
 和泉妃爱	he quan fei ai	100
@@ -31110,7 +31121,6 @@ sort: by_weight
 里鬼剑术	li gui jian shu	100
 梨果凛	li guo lin	100
 李国权	li guo quan	100
-厉害了我的哥	li hai le wo di ge	100
 李翰林	li han lin	100
 李昊甲	li hao jia	100
 李豪凌	li hao ling	100
@@ -31832,7 +31842,6 @@ sort: by_weight
 恋爱是场战争	lian ai shi chang zhan zheng	100
 恋爱是德比	lian ai shi de bi	100
 恋爱世界	lian ai shi jie	100
-恋爱是盲目的	lian ai shi mang mu di	100
 恋爱食谱五星级	lian ai shi pu wu xing ji	100
 恋爱是奇迹	lian ai shi qi ji	100
 恋爱是融二人为一体	lian ai shi rong er ren wei yi ti	100
@@ -35275,10 +35284,6 @@ sort: by_weight
 莽荒纪	mang huang ji	100
 芒狂云	mang kuang yun	100
 盲龙默虎	mang long mo hu	100
-盲目的精神错乱	mang mu di jing shen cuo luan	100
-盲目的利己主义者	mang mu di li ji zhu yi zhe	100
-盲目的神官诺艾尔	mang mu di shen guan nuo ai er	100
-盲目的心教育	mang mu di xin jiao yu	100
 盲目利己主义者	mang mu li ji zhu yi zhe	100
 盲目苹果	mang mu ping guo	100
 盲目之恋	mang mu zhi lian	100
@@ -36520,7 +36525,6 @@ sort: by_weight
 梦中世界	meng zhong shi jie	100
 梦中所描绘的	meng zhong suo miao hui de	100
 梦中雨	meng zhong yu	100
-梦追商标的追梦豆芽	meng zhui shang biao di zhui meng dou ya	100
 梦追翔	meng zhui xiang	100
 萌组海选赛	meng zu hai xuan sai	100
 弥艾八字胡	mi ai ba zi hu	100
@@ -52780,7 +52784,6 @@ sort: by_weight
 塔兰达尔	ta lan da er	100
 塔狼蛛	ta lang zhu	100
 塔利欧	ta li ou	100
-她立起旗标的理由	ta li qi qi biao di li you	100
 塔利娅	ta li ya	100
 塔绫丝	ta ling si	100
 塔楼骑士之书	ta lou qi shi zhi shu	100
@@ -58382,7 +58385,6 @@ sort: by_weight
 无法拯救的自我	wu fa zheng jiu de zi wo	100
 无法直视	wu fa zhi shi	100
 无番和	wu fan he	100
-五番目的小丑	wu fan mu di xiao chou	100
 五分钟内自杀	wu fen zhong nei zi sha	100
 五分钟自杀	wu fen zhong zi sha	100
 五分钟诅咒	wu fen zhong zu zhou	100
@@ -66417,7 +66419,6 @@ sort: by_weight
 伊戈尔杜科夫	yi ge er du ke fu	100
 伊戈尔卡卡洛夫	yi ge er ka ka luo fu	100
 一格漫画	yi ge man hua	100
-一个能打的都没有	yi ge neng da di dou mei you	100
 一个你	yi ge ni	100
 伊格尼	yi ge ni	100
 伊格尼建赛尼亚	yi ge ni jian sai ni ya	100
@@ -67731,7 +67732,6 @@ sort: by_weight
 引擎天将	yin qing tian jiang	100
 隐忍榴莲	yin ren liu lian	100
 尹仁完	yin ren wan	100
-引人注目的女孩	yin ren zhu mu di nv hai	100
 银色档案	yin se dang an	100
 银色飞行船	yin se fei xing chuan	100
 银色獠牙	yin se liao ya	100
@@ -72707,7 +72707,6 @@ sort: by_weight
 这样的世界若是终结的话	zhe yang de shi jie ruo shi zhong jie de hua	100
 这样的未来	zhe yang de wei lai	100
 这样的装备没问题吗	zhe yang de zhuang bei mei wen ti ma	100
-这样的哥哥不要紧吗	zhe yang di ge ge bu yao jin ma	100
 这样还是第一次	zhe yang hai shi di yi ci	100
 遮阳伞僵尸	zhe yang san jiang shi	100
 遮阳伞汽水	zhe yang san qi shui	100

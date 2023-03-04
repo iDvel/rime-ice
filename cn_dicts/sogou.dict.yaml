@@ -15,7 +15,7 @@
 # 搜狗转 Rime 词库：https://github.com/lewangdev/scel2txt
 ---
 name: sogou
-version: "2023-03-03"
+version: "2023-03-04"
 sort: by_weight
 ...
 # *_* 过滤列表，每次更新时不再写入：
@@ -1701,6 +1701,7 @@ sort: by_weight
 比利亚雷	bi li ya lei	100
 比利亚雷亚尔	bi li ya lei ya er	100
 碧流河	bi liu he	100
+必买榜	bi mai bang	100
 避免浪费	bi mian lang fei	100
 必拿下	bi na xia	100
 比你多点	bi ni duo dian	100
@@ -3740,6 +3741,7 @@ sort: by_weight
 陈墨瞳	chen mo tong	100
 沉默性	chen mo xing	100
 陈某志	chen mou zhi	100
+陈牧驰	chen mu chi	100
 陈暮光	chen mu guang	100
 陈妮妮	chen ni ni	100
 陈年老瓜	chen nian lao gua	100
@@ -5559,6 +5561,7 @@ sort: by_weight
 当翻译	dang fan yi	100
 当风起时	dang feng qi shi	100
 当个老师	dang ge lao shi	100
+当虹科技	dang hong ke ji	100
 当红小生	dang hong xiao sheng	100
 党徽党旗	dang hui dang qi	100
 党家坝	dang jia ba	100
@@ -6182,6 +6185,7 @@ sort: by_weight
 电竞装甲	dian jing zhuang jia	100
 点开抢	dian kai qiang	100
 点开视频	dian kai shi pin	100
+电科网安	dian ke wang an	100
 点了没有	dian le mei you	100
 点了一杯	dian le yi bei	100
 点了一份	dian le yi fen	100
@@ -6209,6 +6213,7 @@ sort: by_weight
 点头像	dian tou xiang	100
 电玩节	dian wan jie	100
 电信路	dian xin lu	100
+电信五区	dian xin wu qu	100
 电学实验	dian xue shi yan	100
 电压不稳	dian ya bu wen	100
 颠呀颠	dian ya dian	100
@@ -7956,6 +7961,7 @@ sort: by_weight
 封城了	feng cheng le	100
 凤城世家	feng cheng shi jia	100
 凤城医院	feng cheng yi yuan	100
+风初染	feng chu ran	100
 凤穿牡丹	feng chuan mu dan	100
 风吹雨淋	feng chui yu lin	100
 冯春生	feng chun sheng	100
@@ -12927,6 +12933,7 @@ sort: by_weight
 集换社	ji huan she	100
 冀惠保	ji hui bao	100
 济惠保	ji hui bao	100
+机会姐	ji hui jie	100
 激活成功	ji huo cheng gong	100
 激活机关	ji huo ji guan	100
 激活石	ji huo shi	100
@@ -13083,6 +13090,7 @@ sort: by_weight
 吉世光	ji shi guang	100
 几十级	ji shi ji	100
 吉时吉日	ji shi ji ri	100
+几时了	ji shi le	100
 几十例	ji shi li	100
 急事慢做	ji shi man zuo	100
 计时球	ji shi qiu	100
@@ -14911,6 +14919,7 @@ sort: by_weight
 旧衣回收	jiu yi hui shou	100
 就一科	jiu yi ke	100
 九又四分之三	jiu you si fen zhi san	100
+九幽玄天	jiu you xuan tian	100
 旧雨重落	jiu yu chong luo	100
 九元航空	jiu yuan hang kong	100
 救援群	jiu yuan qun	100
@@ -15901,6 +15910,7 @@ sort: by_weight
 恪守妇道	ke shou fu dao	100
 瞌睡兔	ke shui tu	100
 可水洗	ke shui xi	100
+咳死了	ke si le	100
 科斯魔	ke si mo	100
 可颂猫	ke song mao	100
 科塔娜	ke ta na	100
@@ -16815,6 +16825,7 @@ sort: by_weight
 李崇文	li chong wen	100
 李崇霄	li chong xiao	100
 立春立夏	li chun li xia	100
+李存礼	li cun li	100
 李大奔	li da ben	100
 丽达茂	li da mao	100
 力大砖飞	li da zhuan fei	100
@@ -26585,6 +26596,7 @@ sort: by_weight
 宋宇宁	song yu ning	100
 宋雨绮	song yu qi	100
 宋育仁	song yu ren	100
+宋玉章	song yu zhang	100
 送原石	song yuan shi	100
 松园子	song yuan zi	100
 送月饼	song yue bing	100
@@ -27520,6 +27532,7 @@ sort: by_weight
 提着心	ti zhe xin	100
 体质不好的	ti zhi bu hao de	100
 天碍震星	tian ai zhen xing	100
+天暗星	tian an xing	100
 天宝伏妖录	tian bao fu yao lu	100
 天保基建	tian bao ji jian	100
 填报码	tian bao ma	100
@@ -27575,6 +27588,7 @@ sort: by_weight
 天府绿道	tian fu lv dao	100
 天府世家	tian fu shi jia	100
 天府通办	tian fu tong ban	100
+天罡诀	tian gang jue	100
 天更蓝	tian geng lan	100
 天宫道	tian gong dao	100
 天宫课堂	tian gong ke tang	100
@@ -31030,6 +31044,7 @@ sort: by_weight
 西里斯	xi li si	100
 洗脸猫	xi lian mao	100
 西凉王	xi liang wang	100
+熙菱信息	xi ling xin xi	100
 洗刘海	xi liu hai	100
 西龙虎峪	xi long hu yu	100
 西龙家	xi long jia	100
@@ -31855,6 +31870,7 @@ sort: by_weight
 小根蒜	xiao gen suan	100
 宵宫池	xiao gong chi	100
 小功能	xiao gong neng	100
+笑功震武林	xiao gong zhen wu lin	100
 潇公子	xiao gong zi	100
 小狗包弟	xiao gou bao di	100
 小骨架	xiao gu jia	100
@@ -35704,6 +35720,7 @@ sort: by_weight
 游回去	you hui qu	100
 幽魂法师	you hun fa shi	100
 有活动不	you huo dong bu	100
+又活一天	you huo yi tian	100
 邮寄点	you ji dian	100
 有几个班	you ji ge ban	100
 有几关	you ji guan	100
@@ -37070,6 +37087,7 @@ sort: by_weight
 战队星元	zhan dui xing yuan	100
 战高温	zhan gao wen	100
 占格子	zhan ge zi	100
+占好了	zhan hao le	100
 斩华雄	zhan hua xiong	100
 战魂铭人	zhan hun ming ren	100
 战火连天	zhan huo lian tian	100
@@ -37525,6 +37543,7 @@ sort: by_weight
 折柳送别	zhe liu song bie	100
 这么大的雾	zhe me da de wu	100
 这么好的天气	zhe me hao de tian qi	100
+折磨者	zhe mo zhe	100
 浙农股份	zhe nong gu fen	100
 浙农林	zhe nong lin	100
 遮山镇	zhe shan zhen	100
