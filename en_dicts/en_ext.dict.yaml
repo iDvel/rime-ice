@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-03-03"
+version: "2023-03-04"
 sort: by_weight
 ...
 # 一些杂项
@@ -1679,6 +1679,7 @@ LGPL	LGPL
 GNU Lesser General Public License	LGPL
 GNU Lesser General Public License	GNULesserGeneralPublicLicense
 Mozilla	Mozilla
+Mozilla	Firefox	MozillaFirefox
 Apache	Apache
 Steam	Steam
 App	App
@@ -1934,3 +1935,7 @@ Bard	Bard
 bard	bard
 LaMDA	LaMDA
 tokens	tokens
+roadmap	roadmap
+Coinbase Wallet	CoinbaseWallet
+MetaMask	MetaMask
+favicon	favicon

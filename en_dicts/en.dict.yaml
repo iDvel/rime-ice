@@ -16,7 +16,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-03-01"
+version: "2023-03-04"
 sort: by_weight
 ...
 # +_+
@@ -4232,7 +4232,7 @@ Finnish	Finnish
 fioricet	fioricet
 fire	fire
 fired	fired
-firefox	firefox
+Firefox	Firefox
 fireman	fireman
 fireplace	fireplace
 fires	fires
