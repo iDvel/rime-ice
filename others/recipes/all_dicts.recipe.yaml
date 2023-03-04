@@ -11,7 +11,6 @@ install_files: >-
   cn_dicts/ext.dict.yaml
   cn_dicts/others.dict.yaml
   cn_dicts/sogou.dict.yaml
-  cn_dicts/moegirl.dict.yaml
   cn_dicts/tencent.dict.yaml
   en_dicts/cn_en.dict.yaml
   en_dicts/en.dict.yaml
