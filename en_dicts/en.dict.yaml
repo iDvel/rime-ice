@@ -16,7 +16,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-03-04"
+version: "2023-03-09"
 sort: by_weight
 ...
 # +_+
@@ -2803,7 +2803,7 @@ dear	dear
 death	death
 deaths	deaths
 debate	debate
-debian	debian
+Debian	Debian
 Deborah	Deborah
 debt	debt
 debug	debug
@@ -4462,7 +4462,7 @@ fraud	fraud
 Fred	Fred
 Frederick	Frederick
 free	free
-freebsd	freebsd
+FreeBSD	FreeBSD
 freedom	freedom
 freelance	freelance
 freely	freely
