@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-03-04"
+version: "2023-03-09"
 sort: by_weight
 ...
 # 一些杂项
@@ -1078,6 +1078,7 @@ SWAT	SWAT
 footer	footer
 header	header
 GitHub Copilot	GitHubCopilot
+GitHub Copilot CLI	GitHubCopilotCLI
 Blog	Blog
 iPadOS	iPadOS
 Apple Pencil	ApplePencil
@@ -1939,3 +1940,25 @@ roadmap	roadmap
 Coinbase Wallet	CoinbaseWallet
 MetaMask	MetaMask
 favicon	favicon
+Discord	Discord
+New Bing	NewBing
+Notion AI	NotionAI
+memos	memos
+flomo	flomo
+arabica	Arabica
+robusta	robusta
+HanLP	HanLP
+Arch Linux	ArchLinux
+AlmaLinux	AlmaLinux
+Fedora CoreOS	FedoraCoreOS
+CoreOS	CoreOS
+OpenBSD	OpenBSD
+Rocky Linux	RockyLinux
+Vultr	Vultr
+GoFrame	GoFrame
+ORM	ORM
+Object Relational Mapping	ORM
+Gin	Gin
+Echo	Echo
+Iris	Iris
+iris	iris
