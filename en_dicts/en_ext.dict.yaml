@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-03-09"
+version: "2023-03-13"
 sort: by_weight
 ...
 # 一些杂项
@@ -174,6 +174,8 @@ Juno	Juno
 Trump	Trump
 Biden	Biden
 Joseph	Joseph
+Braun	Braun
+Bayes	Bayes
 
 
 # 带权重的系列
@@ -1962,3 +1964,8 @@ Gin	Gin
 Echo	Echo
 Iris	Iris
 iris	iris
+burnt	burnt
+KPI	KPI
+Key Performance Indicators	KPI
+mutex	mutex
+TIOBE	TIOBE
