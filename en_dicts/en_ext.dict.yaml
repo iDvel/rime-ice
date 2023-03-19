@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-03-13"
+version: "2023-03-19"
 sort: by_weight
 ...
 # 一些杂项
@@ -176,6 +176,7 @@ Biden	Biden
 Joseph	Joseph
 Braun	Braun
 Bayes	Bayes
+Saul	Saul
 
 
 # 带权重的系列
@@ -1836,7 +1837,12 @@ Quality of Service	QoS
 Quality of Service	QualityofService
 DoH	DoH
 DNS over HTTPS	DoH
+DNS over HTTPS/3	DoH
 DNS over HTTPS	DNSoverHTTPS
+DNS over HTTPS/3	DNSoverHTTPS
+DoQ	DoQ
+DNS over QUIC	DoQ
+DNS over QUIC	DNSoverQUIC
 HK	HK
 Hong Kong	HK
 Hong Kong	HongKong
@@ -1969,3 +1975,9 @@ KPI	KPI
 Key Performance Indicators	KPI
 mutex	mutex
 TIOBE	TIOBE
+DigitalOcean	DigitalOcean
+Google Authenticator	GoogleAuthenticator
+Authenticator	Authenticator
+authenticator	authenticator
+Depay	Depay
+codeium	codeium

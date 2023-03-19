@@ -16,7 +16,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-03-09"
+version: "2023-03-19"
 sort: by_weight
 ...
 # +_+
@@ -7142,7 +7142,7 @@ motive	motive
 motor	motor
 motorcycle	motorcycle
 motorcycles	motorcycles
-motorola	motorola
+Motorola	Motorola
 motors	motors
 motorway	motorway
 mould	mould
