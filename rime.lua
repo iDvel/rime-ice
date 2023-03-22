@@ -275,24 +275,6 @@ function irime_t9_preedit(input, env)
     end
 end
 -------------------------------------------------------------
--- 限制码长（最多能输入 length_limit 个字符，超过后不再上屏，不设置时默认 100）
--- 参考于：https://github.com/rime/weasel/issues/733
-function code_length_limit_processor(key, env)
-    local ctx = env.engine.context
-    local config = env.engine.schema.config
-    -- 限制
-    local length_limit = config:get_int(env.name_space) or 100
-    if (length_limit ~= nil) then
-        if (string.len(ctx.input) > length_limit) then
-            -- ctx:clear()
-            ctx:pop_input(1) -- 删除输入框中最后个编码字符
-            return 1
-        end
-    end
-    -- 放行
-    return 2
-end
--------------------------------------------------------------
 -- Unicode 输入
 -- 复制自： https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua
 function unicode(input, seg, env)
