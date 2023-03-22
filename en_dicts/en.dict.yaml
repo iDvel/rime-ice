@@ -16,7 +16,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-03-19"
+version: "2023-03-22"
 sort: by_weight
 ...
 # +_+
@@ -7361,7 +7361,7 @@ next	next
 nextel	nextel
 # nfl	nfl
 # ng	ng
-nginx	nginx
+Nginx	Nginx
 # nh	nh
 # nhl	nhl
 # nhs	nhs

@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-03-19"
+version: "2023-03-22"
 sort: by_weight
 ...
 # 一些杂项
@@ -534,6 +534,7 @@ Node	Node
 Node.js	Nodejs
 Pornhub	Pornhub
 PostgreSQL	PostgreSQL
+Postgres	Postgres
 PowerPoint	PowerPoint
 PPT	PPT
 PowerPoint	ppt
@@ -683,7 +684,6 @@ Forecast	Forecast
 ForkLift	ForkLift
 Frank DeLoupe	FrankDeLoupe
 Geekbench	Geekbench
-gemini	gemini
 Gestimer	Gestimer
 GhostNote	GhostNote
 GhostTile	GhostTile
@@ -1209,7 +1209,6 @@ Niconico	Niconico
 TickTick	TickTick
 CHDBits	CHDBits
 M-team	Mteam
-Microsoft Azure	MicrosoftAzure
 Emacs	Emacs
 Vim	Vim
 Wikipedia	Wikipedia
@@ -1246,8 +1245,6 @@ Internet Explorer	InternetExplorer
 Windows Media Player	WindowsMediaPlayer
 Media Player	MediaPlayer
 Windows Media Player	MediaPlayer
-Microsoft Azure 	MicrosoftAzure
-Microsoft Azure 	Azure
 Microsoft Edge	MicrosoftEdge
 Visual Studio Code	VisualStudioCode
 Visual Studio Code	VSCode
@@ -1674,7 +1671,6 @@ C++	cpp
 Python	Python
 Perl	Perl
 Swift	Swift
-nginx	nginx
 MIT	MIT
 Massachusetts Institute of Technology	MIT
 Massachusetts Institute of Technology	MassachusettsInstituteofTechnology
@@ -1716,6 +1712,8 @@ DirectX	DirectX
 Kinect	Kinect
 Azure	Azure
 azure	azure
+Microsoft Azure 	Azure
+Microsoft Azure	MicrosoftAzure
 Cloudflare	Cloudflare
 Buddhism	Buddhism
 Catholic	Catholic
@@ -1981,3 +1979,20 @@ Authenticator	Authenticator
 authenticator	authenticator
 Depay	Depay
 codeium	codeium
+OpenCat	OpenCat
+AWS	AWS
+Amazon Web Services	AWS
+Amazon Web Services	AmazonWebServices
+Gemini	Gemini
+gemini	gemini
+Orion	Orion
+Virgo	Virgo
+Aries	Aries
+Taurus	Taurus
+Cancer	Cancer
+Libra	Libra
+Scorpio	Scorpio
+Sagittarius	Sagittarius
+Capricorn	Capricorn
+Aquarius	Aquarius
+Pisces	Pisces
