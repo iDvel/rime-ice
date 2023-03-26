@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-03-22"
+version: "2023-03-26"
 sort: by_weight
 ...
 # 一些杂项
@@ -177,7 +177,8 @@ Joseph	Joseph
 Braun	Braun
 Bayes	Bayes
 Saul	Saul
-
+Wick	Wick
+#///
 
 # 带权重的系列
 iPhone	iPhone	999
@@ -1081,6 +1082,7 @@ SWAT	SWAT
 footer	footer
 header	header
 GitHub Copilot	GitHubCopilot
+GitHub Copilot X	GitHubCopilotX
 GitHub Copilot CLI	GitHubCopilotCLI
 Blog	Blog
 iPadOS	iPadOS
@@ -1996,3 +1998,11 @@ Sagittarius	Sagittarius
 Capricorn	Capricorn
 Aquarius	Aquarius
 Pisces	Pisces
+tailwind	tailwind
+Fcitx	Fcitx
+openSUSE	openSUSE
+defer	defer
+FOMO	FOMO
+Fear of Missing Out	FOMO
+rune	rune
+wick	wick
