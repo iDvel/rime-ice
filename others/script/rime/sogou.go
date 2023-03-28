@@ -9,6 +9,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"path/filepath"
 	"sort"
 	"strconv"
 	"strings"
@@ -84,6 +85,22 @@ func downloadSogou() {
 	// 下载
 	url := "https://pinyin.sogou.com/d/dict/download_cell.php?id=4&name=%E7%BD%91%E7%BB%9C%E6%B5%81%E8%A1%8C%E6%96%B0%E8%AF%8D%E3%80%90%E5%AE%98%E6%96%B9%E6%8E%A8%E8%8D%90%E3%80%91&f=detail"
 
+	// 创建 scel/ 和 out/ 文件夹
+	scelDir := "./scel2txt/scel/"
+	if _, err := os.Stat(scelDir); os.IsNotExist(err) {
+		err := os.MkdirAll(scelDir, 0755)
+		if err != nil {
+			panic(err)
+		}
+	}
+	outDir := "./scel2txt/out/"
+	if _, err := os.Stat(outDir); os.IsNotExist(err) {
+		err := os.MkdirAll(outDir, 0755)
+		if err != nil {
+			panic(err)
+		}
+	}
+
 	// Get the data
 	resp, err := http.Get(url)
 	if err != nil {
@@ -92,7 +109,7 @@ func downloadSogou() {
 	defer resp.Body.Close()
 
 	// 创建一个文件用于保存
-	out, err := os.Create("./scel2txt/scel/sogou.scel")
+	out, err := os.Create(filepath.Join(scelDir, "sogou.scel"))
 	if err != nil {
 		panic(err)
 	}
@@ -119,7 +136,7 @@ func downloadSogou() {
 		panic(err)
 	}
 	defer sogouFile.Close()
-	download, err := os.ReadFile("./scel2txt/out/sogou.txt")
+	download, err := os.ReadFile(filepath.Join(outDir, "sogou.txt"))
 	if err != nil {
 		panic(err)
 	}
