@@ -15,10 +15,11 @@
 # 搜狗转 Rime 词库：https://github.com/lewangdev/scel2txt
 ---
 name: sogou
-version: "2023-03-26"
+version: "2023-03-29"
 sort: by_weight
 ...
 # *_* 过滤列表，每次更新时不再写入：
+# 鲨疯了
 # 噔噔蹬蹬
 # 忆光年
 # 盖里奇
@@ -24257,7 +24258,6 @@ sort: by_weight
 啥都不查	sha dou bu cha	100
 啥都闻不到	sha dou wen bu dao	100
 沙发吻	sha fa wen	100
-鲨疯了	sha feng le	100
 杀父仇人	sha fu chou ren	100
 沙夫卡特	sha fu ka te	100
 沙钢股份	sha gang gu fen	100
