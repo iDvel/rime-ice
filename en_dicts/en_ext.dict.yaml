@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-03-26"
+version: "2023-03-30"
 sort: by_weight
 ...
 # 一些杂项
@@ -2010,3 +2010,6 @@ meow	meow
 woof	woof
 Bromite	Bromite
 bromite	bromite
+Zelda	Zelda
+hutch	hutch
+Laotian	Laotian

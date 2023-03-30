@@ -15,7 +15,7 @@
 # 搜狗转 Rime 词库：https://github.com/lewangdev/scel2txt
 ---
 name: sogou
-version: "2023-03-29"
+version: "2023-03-30"
 sort: by_weight
 ...
 # *_* 过滤列表，每次更新时不再写入：
@@ -2318,6 +2318,7 @@ sort: by_weight
 不防冻	bu fang dong	100
 不放炮	bu fang pao	100
 不妨再等一等	bu fang zai deng yi deng	100
+不费妈	bu fei ma	100
 部分海域	bu fen hai yu	100
 部分好友	bu fen hao you	100
 不分居	bu fen ju	100
@@ -2944,6 +2945,8 @@ sort: by_weight
 不校考	bu xiao kao	100
 布小林	bu xiao lin	100
 不懈怠	bu xie dai	100
+不携带	bu xie dai	100
+不携带手机	bu xie dai shou ji	100
 不写信	bu xie xin	100
 不懈追求	bu xie zhui qiu	100
 不心动挑战	bu xin dong tiao zhan	100
@@ -3118,6 +3121,7 @@ sort: by_weight
 才出成绩	cai chu cheng ji	100
 才出分	cai chu fen	100
 彩蛋超多	cai dan chao duo	100
+彩蛋鱼	cai dan yu	100
 才到屋	cai dao wu	100
 踩凳子	cai deng zi	100
 蔡店乡	cai dian xiang	100
@@ -4096,6 +4100,7 @@ sort: by_weight
 赤焰妖	chi yan yao	100
 吃杨梅	chi yang mei	100
 炽阳神光	chi yang shen guang	100
+吃一份饭	chi yi fen fan	100
 吃一两个	chi yi liang ge	100
 迟亦骁	chi yi xiao	100
 蚩尤旗	chi you qi	100
@@ -5816,6 +5821,7 @@ sort: by_weight
 得新冠	de xin guan	100
 得新冠了	de xin guan le	100
 德馨花园	de xin hua yuan	100
+德亚牛奶	de ya niu nai	100
 得延迟	de yan chi	100
 德耀中原	de yao zhong yuan	100
 得一次	de yi ci	100
@@ -8260,6 +8266,7 @@ sort: by_weight
 福袋不断	fu dai bu duan	100
 福岛核电站	fu dao he dian zhan	100
 服道化	fu dao hua	100
+福到万家	fu dao wan jia	100
 复地金融岛	fu di jin rong dao	100
 缚地灵	fu di ling	100
 府店镇	fu dian zhen	100
@@ -10641,6 +10648,7 @@ sort: by_weight
 海泰居	hai tai ju	100
 海苔男	hai tai nan	100
 海滩派对	hai tan pai dui	100
+海棠节	hai tang jie	100
 海棠名居	hai tang ming ju	100
 海棠微雨	hai tang wei yu	100
 海天瑞声	hai tian rui sheng	100
@@ -13415,6 +13423,7 @@ sort: by_weight
 加美拉	jia mei la	100
 假面饭店	jia mian fan dian	100
 佳明佳	jia ming jia	100
+假命天子	jia ming tian zi	100
 嘉铭桐城	jia ming tong cheng	100
 贾明星	jia ming xing	100
 加姆罗特	jia mu luo te	100
@@ -13841,6 +13850,7 @@ sort: by_weight
 降谷零	jiang gu ling	100
 讲股票	jiang gu piao	100
 将故事写成我们	jiang gu shi xie cheng wo men	100
+蒋广善	jiang guang shan	100
 蒋光太	jiang guang tai	100
 姜广涛	jiang guang tao	100
 讲规矩	jiang gui ju	100
@@ -25195,6 +25205,7 @@ sort: by_weight
 圣湘生物	sheng xiang sheng wu	100
 生肖纪念币	sheng xiao ji nian bi	100
 生肖起源	sheng xiao qi yuan	100
+省心不费妈	sheng xin bu fei ma	100
 盛新锂能	sheng xin li neng	100
 省心省钱	sheng xin sheng qian	100
 圣心医院	sheng xin yi yuan	100
@@ -25984,6 +25995,7 @@ sort: by_weight
 手术成功	shou shu cheng gong	100
 寿司船	shou si chuan	100
 手撕面	shou si mian	100
+手撕小日本	shou si xiao ri ben	100
 手速节	shou su jie	100
 手速可以	shou su ke yi	100
 手速太快	shou su tai kuai	100
@@ -26673,6 +26685,7 @@ sort: by_weight
 四月开始	si yue kai shi	100
 四月刊	si yue kan	100
 四月里	si yue li	100
+四月六	si yue liu	100
 四月六号	si yue liu hao	100
 四月七号	si yue qi hao	100
 四月三	si yue san	100
@@ -26899,6 +26912,7 @@ sort: by_weight
 宿那鬼	su na gui	100
 苏纳克	su na ke	100
 苏妮莎	su ni sha	100
+素牛肚	su niu du	100
 苏暖暖	su nuan nuan	100
 俗女养成记	su nv yang cheng ji	100
 苏坡爱豆	su po ai dou	100
@@ -27063,6 +27077,7 @@ sort: by_weight
 孙艺祯	sun yi zhen	100
 孙颖颖	sun ying ying	100
 孙玉楼	sun yu lou	100
+孙毓敏	sun yu min	100
 孙元良	sun yuan liang	100
 孙芸芸	sun yun yun	100
 孙哲平	sun zhe ping	100
@@ -30718,6 +30733,7 @@ sort: by_weight
 五级五控	wu ji wu kong	100
 无脊椎	wu ji zhui	100
 伍嘉成	wu jia cheng	100
+误嫁豪门	wu jia hao men	100
 伍家朗	wu jia lang	100
 武家坡	wu jia po	100
 无甲醛	wu jia quan	100
@@ -36092,6 +36108,7 @@ sort: by_weight
 有雷阵雨	you lei zhen yu	100
 尤里安	you li an	100
 有力保障	you li bao zhang	100
+有粮不慌	you liang bu huang	100
 幽灵船长	you ling chuan chang	100
 幽灵线	you ling xian	100
 幽灵行者	you ling xing zhe	100
@@ -36504,6 +36521,7 @@ sort: by_weight
 羽毛球社	yu mao qiu she	100
 玉门关外	yu men guan wai	100
 驭梦为舟	yu meng wei zhou	100
+驭梦逐浪	yu meng zhu lang	100
 玉米加农炮	yu mi jia nong pao	100
 玉米须茶	yu mi xu cha	100
 玉米叶	yu mi ye	100
