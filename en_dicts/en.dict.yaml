@@ -16,7 +16,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-03-22"
+version: "2023-03-30"
 sort: by_weight
 ...
 # +_+
@@ -5805,7 +5805,7 @@ involvement	involvement
 involves	involves
 involving	involving
 inward	inward
-# io	io
+IO	IO
 ion	ion
 Iowa	Iowa
 IP	IP
@@ -6164,7 +6164,7 @@ language	language
 languages	languages
 lanka	lanka
 lantern	lantern
-laos	laos
+Laos	Laos
 lap	lap
 lapse	lapse
 laptop	laptop

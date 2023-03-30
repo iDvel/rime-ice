@@ -100,6 +100,7 @@ reduce_english_filter:
     - rug
     - bus
     - ship
+    - laos
   # words: [rug, bus, ship]  # 这么写也行
 
 
