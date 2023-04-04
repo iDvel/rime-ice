@@ -3,13 +3,14 @@ package rime
 import (
 	"bufio"
 	"fmt"
-	mapset "github.com/deckarep/golang-set/v2"
 	"log"
 	"os"
 	"regexp"
 	"strings"
 	"time"
 	"unicode/utf8"
+
+	mapset "github.com/deckarep/golang-set/v2"
 )
 
 var emojiTXT = "/Users/dvel/Library/Rime/opencc/emoji.txt"

@@ -3,8 +3,6 @@ package rime
 import (
 	"bufio"
 	"fmt"
-	"github.com/commander-cli/cmd"
-	mapset "github.com/deckarep/golang-set/v2"
 	"io"
 	"log"
 	"net/http"
@@ -15,9 +13,12 @@ import (
 	"strings"
 	"time"
 	"unicode/utf8"
+
+	"github.com/commander-cli/cmd"
+	mapset "github.com/deckarep/golang-set/v2"
 )
 
-var fileterMark = "# *_*"                // "# *_*" 和 mark 之间是过滤词列表
+var filterMark = "# *_*"                 // "# *_*" 和 mark 之间是过滤词列表
 var filterList = mapset.NewSet[string]() // 过滤词列表，在这个列表里的词汇，不再写入
 
 // UpdateSogou 更新搜狗流行词
@@ -62,7 +63,7 @@ func makeSogouFilterList() {
 			break
 		}
 		if !isFilterMark {
-			if strings.Contains(line, fileterMark) {
+			if strings.Contains(line, filterMark) {
 				isFilterMark = true
 			}
 			continue

@@ -77,7 +77,7 @@ func processNewDict(dictPath string) {
 		if utf8.RuneCountInString(text) <= 2 {
 			continue
 		}
-		outFile.WriteString(line+"\n")
+		outFile.WriteString(line + "\n")
 	}
 	outFile.Sync()
 }
