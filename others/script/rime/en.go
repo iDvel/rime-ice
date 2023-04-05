@@ -2,11 +2,12 @@ package rime
 
 import (
 	"bufio"
-	mapset "github.com/deckarep/golang-set/v2"
 	"log"
 	"os"
 	"sort"
 	"strings"
+
+	mapset "github.com/deckarep/golang-set/v2"
 )
 
 // SortEnDict 排序 en.dict.yaml 词库
