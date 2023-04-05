@@ -5,7 +5,6 @@ import (
 	"crypto/sha1"
 	"encoding/hex"
 	"fmt"
-	mapset "github.com/deckarep/golang-set/v2"
 	"io"
 	"log"
 	"os"
@@ -13,6 +12,8 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	mapset "github.com/deckarep/golang-set/v2"
 )
 
 // 一个词条的组成部分

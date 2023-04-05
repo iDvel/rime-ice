@@ -3,7 +3,6 @@ package rime
 import (
 	"bufio"
 	"fmt"
-	mapset "github.com/deckarep/golang-set/v2"
 	"log"
 	"os"
 	"path"
@@ -12,6 +11,8 @@ import (
 	"time"
 	"unicode"
 	"unicode/utf8"
+
+	mapset "github.com/deckarep/golang-set/v2"
 )
 
 var specialWords = mapset.NewSet[string]()   // 特殊词汇列表，不进行任何检查
