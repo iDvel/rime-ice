@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "1.4.3"
+  version: "1.4.4"
   author:
     - Dvel
   description: |
@@ -95,13 +95,10 @@ long_word_filter:
 # 正常情况： 输入 rug 得到 「1.rug 2.如果 …… 」
 # 降低之后： 输入 rug 得到 「1.如果 2.rug …… 」
 reduce_english_filter:
-  idx: 2  # 降低到第 idx 个位置
-  words:  # 要降低的单词，匹配的是输入码，即全小写。
-    - rug
-    - bus
-    - ship
-    - laos
-  # words: [rug, bus, ship]  # 这么写也行
+  # 降低到第 idx 个位置
+  idx: 2
+  # 要降低的单词，匹配的是输入码，即全小写。
+  words: [rug, bus, ship, laos, bail, bam, bans, bib, bos, chic, chit, dab, dag, dal, dit, dub, dug, fab, gam, ger, gus, hem, hep, hud, kat, lam, lax, lex, lug, lux, moc, mos, mot, mum, nad, nay, nib, nip, pak, pap, pax, rig, rum, sac, sal, sax, sec, shin, sis, ska, slang, sus, tad, taj, tac, tic, yep, yum]
 
 
 # 从 default 继承快捷键

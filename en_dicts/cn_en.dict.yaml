@@ -7,7 +7,7 @@
 #
 ---
 name: cn_en
-version: "2023-02-26"
+version: "2023-04-05"
 sort: by_weight
 ...
 X光	Xguang
@@ -33,7 +33,6 @@ V站	Vzhan
 P站	Pzhan
 大V	daV
 Q币	Qbi
-QQ	QQ
 QQ号	QQhao
 QQ号码	QQhaoma
 QQ空间	QQkongjian
@@ -460,3 +459,4 @@ DJ舞曲	DJwuqu
 就OK	jiuOK
 不OK	buOK
 很OK	henOK
+特拉法尔加·D·瓦铁尔·罗	telafaerjiadwatieerluo
