@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-03-30"
+version: "2023-04-05"
 sort: by_weight
 ...
 # 一些杂项
@@ -158,7 +158,6 @@ Norma	Norma
 Paula	Paula
 Frances	Frances
 Lillian	Lillian
-Kiwi	Kiwi
 Olivia	Olivia
 Ava	Ava
 Isabella	Isabella
@@ -292,7 +291,6 @@ Database	Database
 Macintosh	Macintosh
 Superlist	Superlist
 DJ	DJ
-IGN	IGN
 DLC	DLC
 Downloadable content	DLC
 Downloadable content	Downloadablecontent
@@ -321,7 +319,6 @@ Advanced RISC Machine	ARM
 Advanced RISC Machine	AdvancedRISCMachine
 eGPU	eGPU
 One Piece	OnePiece
-Bose	Bose
 CCTV	CCTV
 Closed-Circuit Television	CCTV
 Closed-Circuit Television	ClosedCircuitTelevision
@@ -469,7 +466,6 @@ qBittorrent Enhanced Edition	qBEE
 qBittorrent Enhanced Edition	qBitEE
 qBittorrent Enhanced Edition	qBittorrentEE
 qBittorrent Enhanced Edition	qBittorrentEnhancedEdition
-Bittorrent	Bittorrent
 YAML	YAML
 YAML Ain't Markup Language	YAML
 TOML	TOML
@@ -485,7 +481,7 @@ Evernote	Evernote
 PDF	PDF
 Portable Document Format	PDF
 Portable Document Format	PortableDocumentFormat
-QuickTime	QuickTime
+QuickTime Player	QuickTimePlayer
 CSDN	CSDN
 Gitee	Gitee
 Gitea	Gitea
@@ -514,7 +510,6 @@ Git	Git
 Go	Go
 GoLand	GoLand
 Golang	Golang
-HBO	HBO
 IQOS	IQOS
 Intel	Intel
 JSON	JSON
@@ -691,7 +686,6 @@ GhostTile	GhostTile
 Gif Brewery	GifBrewery
 Gists	Gists
 GitHub	GitHub
-Gmail	Gmail
 GoagentX	GoagentX
 Google Play	GooglePlay
 Google Play Music	GooglePlayMusic
@@ -939,7 +933,6 @@ Disco	Disco
 Termius	Termius
 Jinja	Jinja
 capitalize	capitalize
-Bootstrap	Bootstrap
 NetSetMan	NetSetMan
 Cinity	Cinity
 UTC	UTC
@@ -1272,7 +1265,6 @@ New Technology File System	NTFS
 New Technology File System	NewTechnologyFileSystem
 Microsoft NTFS	NTFS
 Microsoft NTFS	MicrosoftNTFS
-txt	txt
 chromeOS	chromeOS
 GCD	GCD
 Grand Central Dispatch	GCD
@@ -1305,7 +1297,7 @@ Serverless	Serverless
 Air	Air
 Identifier	Identifier
 NameCheap	NameCheap
-Rime ice	Rimeice
+rime-ice	rimeice
 Handover	Handover
 Language Reactor	LanguageReactor
 Tencent	Tencent
@@ -1377,7 +1369,6 @@ FBI	FBI
 Federal Bureau of Investigation	FBI
 Federal Bureau of Investigation	FederalBureauofInvestigation
 FBI WARNING	FBIWARNING
-Hostname	Hostname
 CDPR	CDPR
 CD Projekt	CDPR
 CD Projekt	CDProjekt
@@ -1411,7 +1402,6 @@ ICMP	ICMP
 Internet Control Message Protocol	ICMP
 Internet Control Message Protocol	InternetControlMessageProtocol
 Electron	Electron
-backup	backup
 FTP	FTP
 File Transfer Protocol	FTP
 File Transfer Protocol	FileTransferProtocol
@@ -1442,7 +1432,6 @@ SSID	SSID
 Service Set Identifier	SSID
 Service Set Identifier	ServiceSetIdentifier
 Time Machine	TimeMachine
-goodbye	goodbye
 regexp	regexp
 FOSS	FOSS
 Free and open source software	FOSS
@@ -1912,7 +1901,6 @@ fo	fo
 layouts	layouts
 redirect	redirect
 redirects	redirects
-bash	bash
 Unix shell	Unixshell
 shells	shells
 Zaraz	Zaraz
@@ -2013,3 +2001,14 @@ bromite	bromite
 Zelda	Zelda
 hutch	hutch
 Laotian	Laotian
+mitigation	mitigation
+transformer	transformer
+mayonnaise	mayonnaise
+orz	orz
+parametric	parametric
+Scooby-Doo	ScoobyDoo
+SpongeBob	SpongeBob
+SquarePants	SquarePants
+SpongeBob SquarePants	SpongeBobSquarePants
+Universal Actions	UniversalActions
+Louis Vuitton	LouisVuitton
