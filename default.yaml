@@ -5,6 +5,7 @@
 # 鼠须管在 Sublime Text、Telegram 等个别软件中也无法使用 Control+Shift+数字 的快捷键，可暂时用方案选单切换。
 
 
+# 要比共享目录的同名文件的 config_version 大才可以生效
 config_version: '2023-03-03'
 
 

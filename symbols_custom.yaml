@@ -1,9 +1,7 @@
 # Rime's punctuation and symbols
 # encoding: utf-8
 #
-# ---
-#
-# copy from `/Library/Input Methods/Squirrel.app/Contents/SharedSupport/symbols.yaml`
+# copy from /Library/Input Methods/Squirrel.app/Contents/SharedSupport/symbols.yaml
 #
 # punctuator 下面包含三个子项：
 #   full_shape: 默认没改

@@ -49,7 +49,7 @@ switches:
 # 输入引擎
 engine:
   processors:
-    - lua_processor@select_character             # 以词定字
+    - lua_processor@select_character  # 以词定字
     - ascii_composer
     - recognizer
     - key_binder
@@ -116,7 +116,7 @@ traditionalize:
   option_name: traditionalization
   opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json
   tips: all                           # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
-  excluded_types: [ reverse_lookup ]  # 不转换反查的内容
+  excluded_types: [ reverse_lookup ]  # 不转换反查（两分拼字）的内容
 
 
 # 自定义短语
@@ -134,7 +134,7 @@ grammar:
   language: zh-hans-t-essay-bgw
 
 
-# 拼音
+# 主翻译器，拼音
 translator:
   dictionary: rime_ice          # 挂载词库 rime_ice.dict.yaml
   prism: double_pinyin          # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
@@ -175,7 +175,7 @@ translator:
     - xform/([nl])v/$1ü/
 
 
-# 英文
+# 次翻译器，英文
 melt_eng:
   dictionary: melt_eng     # 挂载词库 melt_eng.dict.yaml
   enable_sentence: false   # 禁止造句
@@ -188,12 +188,19 @@ melt_eng:
 # 标点符号
 # 共享目录预设的 punctuation.yaml 包含了 full_shape half_shape （全角和半角的符号映射）
 # 共享目录预设的 symbols.yaml     包含了 full_shape half_shape symbols
-# symbols 的功能是支持以「/」前缀开头输出一系列字符，自定义的 symbols_custom_double.yaml 修改成了「v」开头。
+# symbols 的功能是支持以「/」前缀开头输出一系列字符，自定义的 symbols_custom_double.yaml 修改成了「V」开头。
 punctuator:
   # __include: punctuation:/          # 从共享目录引入预设的 punctuation.yaml
   # import_preset: symbols            # 从共享目录引入预设的 symbols.yaml
   import_preset: symbols_custom       # 从 symbols_custom.yaml 引入自己自定义的
   __include: symbols_custom_double:/  # 从 symbols_custom_double.yaml 替换为适用于双拼的 symbols
+  # 也可以直接在这里配置：
+  # full_shape:
+    # ...
+  # half_shape:
+    # ...
+  # symbols:
+    # ...
 
 
 # 处理符合特定规则的输入码，如网址、反查
@@ -213,7 +220,7 @@ recognizer:
 
 # 反查：两分（拼字）
 liangfen:
-  dictionary: liangfen
+  dictionary: liangfen     # 两分词典 liangfen.dict.yaml
   prefix: 'L'              # 以 L 开头来反查
   enable_completion: true  # 补全提示
   # tips: 〔两分〕          # 反查时显示的文字，建议注释掉，否则很多 L 开头的英文单词也会显示这个
