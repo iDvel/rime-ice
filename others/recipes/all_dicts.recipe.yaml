@@ -16,7 +16,6 @@ install_files: >-
   en_dicts/cn_en.dict.yaml
   en_dicts/en.dict.yaml
   en_dicts/en_ext.dict.yaml
-  opencc/emoji-map.txt
   opencc/emoji.json
   opencc/emoji.txt
   opencc/others.txt
