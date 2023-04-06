@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-04-05"
+version: "2023-04-06"
 sort: by_weight
 ...
 # 一些杂项
@@ -770,7 +770,6 @@ Netflix	Netflix
 Noizio	Noizio
 Numbers	Numbers
 nvALT	nvALT
-Nvidia	Nvidia
 Office	Office
 OmmWriter	OmmWriter
 OmniFocus	OmniFocus
@@ -1471,8 +1470,6 @@ LIFO	LIFO
 Last In, First out	LIFO
 Neat Download Manager	NeatDownloadManager
 furry	furry
-quantum	quantum
-Hi-Fi	HiFi
 Maine	Maine
 Elijah	Elijah
 Love & Peace	LoveandPeace
@@ -2012,3 +2009,66 @@ SquarePants	SquarePants
 SpongeBob SquarePants	SpongeBobSquarePants
 Universal Actions	UniversalActions
 Louis Vuitton	LouisVuitton
+FIFA	FIFA
+Fédération Internationale de Football Association	FIFA
+FYI	FYI
+for your information	FYI
+IPO	IPO
+Initial Public Offerings	IPO
+MVC	MVC
+Model-View-Controller	MVC
+MVVM	MVVM
+Model-View-ViewModel	MVVM
+NGO	NGO
+Non-Governmental Organization	NGO
+OMG	OMG
+Oh My God	OMG
+RFT	RFT
+Rich Text Format	RFT
+SVG	SVG
+Scalable Vector Graphics	SVG
+SVN	SVN
+Apache Subversion	SVN
+TLS	TLS
+Transport Layer Security	TLS
+SSL	SSL
+Secure Sockets Layer	SSL
+UDP	UDP
+User Datagram Protocol	UDP
+TCP	TCP
+Transmission Control Protocol	TCP
+UID	UID
+User ID	UID
+USSR	USSR
+Union of Soviet Socialist Republics	USSR
+WMV	WMV
+Windows Media Video	WMV
+WWI	WWI
+World War I	WWI
+WWII	WWII
+World War II	WWII
+WWIII	WWIII
+World War III	WWIII
+PL/pgSQL	PLpgSQL
+Procedural Language / PostGres Structured Query Language	PLpgSQL
+IQ	IQ
+Intelligence quotient	IQ
+quotient	quotient
+BTW	BTW
+by the way	BTW
+QUIC	QUIC
+Quick UDP Internet Connections	QUIC
+SRWare Iron	SRWareIron
+trending	trending
+Nexitally	Nexitally
+AGI	AGI
+Artificial general intelligence	AGI
+Strong AI	StrongAI
+Weak AI	WeakAI
+Narrow AI	NarrowAI
+Applied AI	AppliedAI
+BREAKING CHANGE	BREAKINGCHANGE
+GitHub Actions	GitHubActions
+UUID	UUID
+Universally Unique Identifier	UUID
+stargazers	stargazers

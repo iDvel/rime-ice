@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-04-05"
+version: "2023-04-06"
 sort: by_weight
 ...
 # +_+
@@ -2504,7 +2504,7 @@ BSD	BSD
 # bse	bse
 # bst	bst
 # bt	bt
-# btw	btw
+BTW	BTW
 # bu	bu
 bubble	bubble
 bubbles	bubbles
@@ -2998,8 +2998,8 @@ CDN	CDN
 cDNA	cDNA
 # cdp	cdp
 # cdr	cdr
-cdrom	cdrom
-cdrw	cdrw
+CD-ROM	CDROM
+CD-RW	CDRW
 # CdS	CdS
 # CDT	CDT
 # ce	ce
@@ -5316,7 +5316,7 @@ dictator	dictator
 dictionaries	dictionaries
 dictionary	dictionary
 did	did
-didnt	didnt
+didn't	didnt
 didrex	didrex
 die	die
 diecast	diecast
@@ -5498,7 +5498,7 @@ disguise	disguise
 disgust	disgust
 dish	dish
 dishes	dishes
-dishnetwork	dishnetwork
+Dish Network	DishNetwork
 dishwasher	dishwasher
 disillusion	disillusion
 disk	disk
@@ -5646,7 +5646,7 @@ dodge	dodge
 dodgers	dodgers
 doe	doe
 does	does
-doesnt	doesnt
+doesn't	doesnt
 dog	dog
 dogg	dogg
 dogs	dogs
@@ -5756,7 +5756,7 @@ drag	drag
 dragged	dragged
 dragging	dragging
 dragon	dragon
-dragonball	dragonball
+Dragon Ball	DragonBall
 dragonfly	dragonfly
 dragons	dragons
 drain	drain
@@ -5987,7 +5987,7 @@ ebb	ebb
 ebony	ebony
 ebook	ebook
 ebooks	ebooks
-ebusiness	ebusiness
+E-Business	EBusiness
 # ec	ec
 ecard	ecard
 eCards	eCards
@@ -6325,7 +6325,7 @@ enforce	enforce
 enforced	enforced
 enforcement	enforcement
 enforcing	enforcing
-eng	eng
+# eng	eng
 Engadget	Engadget
 engage	engage
 engaged	engaged
@@ -7419,7 +7419,7 @@ follower	follower
 followers	followers
 following	following
 follows	follows
-followup	followup
+follow-up	followup
 # fomit	fomit
 fond	fond
 font	font
@@ -8775,7 +8775,7 @@ hiding	hiding
 # hier	hier
 hierarchical	hierarchical
 hierarchy	hierarchy
-hifi	hifi
+Hi-Fi	HiFi
 Higgins	Higgins
 high	high
 # highbeam	highbeam
@@ -12868,7 +12868,7 @@ nutritional	nutritional
 nuts	nuts
 nutten	nutten
 # nv	nv
-nvidia	nvidia
+NVIDIA	NVIDIA
 # nw	nw
 # nws	nws
 # nwt	nwt
@@ -19029,7 +19029,7 @@ tobago	tobago
 toby	toby
 # toc	toc
 today	today
-todays	todays
+today's	todays
 Todd	Todd
 toddler	toddler
 toddlers	toddlers
@@ -19097,6 +19097,7 @@ topology	topology
 topped	topped
 # topps	topps
 tops	tops
+Tor	Tor
 tor	tor
 torah	torah
 torch	torch
