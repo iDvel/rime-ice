@@ -2,10 +2,10 @@
 # encoding: utf-8
 #
 # 内置皮肤展示： https://github.com/NavisLab/rime-pifu
-# 鼠须管配置指南： https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/鼠鬚管介面配置指南.md
+# 鼠须管界面配置指南： https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/鼠鬚管介面配置指南.md
 # 鼠须管作者写的图形化的皮肤设计器： https://github.com/LEOYoon-Tsaw/Squirrel-Designer
 
-
+# 要比共享目录的同名文件的 config_version 大才可以生效
 config_version: '2023-02-27'
 
 

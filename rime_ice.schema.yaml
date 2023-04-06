@@ -42,7 +42,7 @@ switches:
 # 输入引擎
 engine:
   processors:
-    - lua_processor@select_character             # 以词定字
+    - lua_processor@select_character  # 以词定字
     - ascii_composer
     - recognizer
     - key_binder
@@ -167,7 +167,13 @@ punctuator:
   # __include: punctuation:/     # 从共享目录引入预设的 punctuation.yaml
   # import_preset: symbols       # 从共享目录引入预设的 symbols.yaml
   import_preset: symbols_custom  # 从 symbols_custom.yaml 引入自己自定义的
-  # half_shape:                  # 也可以直接在这里配置
+  # 也可以直接在这里配置：
+  # full_shape:
+    # ...
+  # half_shape:
+    # ...
+  # symbols:
+    # ...
 
 
 # 处理符合特定规则的输入码，如网址、反查

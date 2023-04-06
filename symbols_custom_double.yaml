@@ -1,7 +1,6 @@
 # Rime's symbols
 # encoding: utf-8
 #
-# ---
 # 因为全拼中没有 v 开头的拼写，双拼中 v+部分字母 是正常拼写，有冲突，这里改成了大写的 V 开头
 # 全半角的符号映射仍然由 `symbols_custom.yaml` 控制，这里只处理 punctuator/symbols 的部分。
 
