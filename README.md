@@ -4,6 +4,10 @@
 
 功能齐全，词库体验良好，长期更新修订。
 
+详细介绍：[Rime 配置：雾凇拼音](https://dvel.me/posts/rime-ice/)
+
+常见问题：[常见问题 #133](https://github.com/iDvel/rime-ice/issues/133)
+
 ## 基本套路
 
 - 简体 | 全拼 | 双拼
@@ -17,10 +21,10 @@
     -   [以词定字](https://github.com/BlindingDark/rime-lua-select-character)
     -   [长词优先](https://github.com/tumuyan/rime-melt/blob/master/lua/melt.lua)
     -   [Unicode](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)
-    -   所有标点符号直接上屏，「/」模式改为「v」模式，「/」直接上屏
+    -   所有标点符号直接上屏，/ 模式改为 v 模式，/ 直接上屏
     -   增加了许多拼音纠错
 - 简体字表、词库
-    -   [《通用规范汉字表》的 8105 字字表](https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters)
+    -   [《通用规范汉字表》](https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters)
     -   [华宇野风系统词库](http://bbs.pinyin.thunisoft.com/forum.php?mod=viewthread&tid=30049)
     -   [清华大学开源词库](https://github.com/thunlp/THUOCL)
     -   [《现代汉语常用词表》](https://gist.github.com/indiejoseph/eae09c673460aa0b56db)
@@ -31,8 +35,6 @@
     -   [腾讯词向量](https://ai.tencent.com/ailab/nlp/en/download.html)
 - 词库修订
     - 校对大量异形词、错别字、错误注音
-
-详细介绍：[Rime 配置：雾凇拼音](https://dvel.me/posts/rime-ice/)
 
 <br>
 
@@ -100,45 +102,6 @@ bash rime-install iDvel/rime-ice:others/recipes/en_dicts
 ```
 bash rime-install iDvel/rime-ice:others/recipes/opencc
 ```
-
-<br>
-
-## 常见问题
-
-##### 配置出错
-
-有时候 Rime 不会报错，而是自动加载默认配置。
-
-如果发现方案选单里是「朙月拼音、仓颉」之类的，那可能是配置有问题，Rime 自动加载了默认配置。
-
-检查一下修改过的地方，比如拼写、缩进是否正确，是否用了 Tab 缩进，或被编辑器自动转为了 Tab ……
-
-##### 快捷键
-
-呼出方案选单默认为 Control+Shift+grave（grave 是 `` ` `` 反引号，Tab 上面那个）。
-
-小狼毫似乎不支持 Control+Shift 开头的快捷键，可在 `default.yaml` 中修改。
-
-##### Lua 脚本
-
-Lua 中可配置的选项都提取出来了，不需要修改 Lua 文件。
-
-以词定字的快捷键在 `default.yaml` 中设定，限制码长、长词优先、日期时间这些选项在方案文件中设定。
-
-##### Shift 切换中英
-
-`default.custom.yaml` 中修改 Shift 对应的选项，将 `noop` 修改为 `commit_code` 、`commit_text` 或 `clear`。
-
-##### 逗号句号翻页
-
-1. 在 `default.yaml` 中解开句号逗号翻页的注释。
-2. 在 `rime_ice.schema.yaml` 中注释掉 `url_2`。（因为这个选项会覆盖掉句号的行为）
-
-##### 自定义短语
-
-在 `custom_phrase.txt` 中添加，建议清空，换成自己的习惯。
-
-双拼需要额外手动创建 `custom_phrase_double.txt`。
 
 <br>
 
