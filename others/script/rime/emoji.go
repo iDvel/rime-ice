@@ -14,7 +14,7 @@ import (
 )
 
 var emojiTXT = "/Users/dvel/Library/Rime/opencc/emoji.txt"
-var mappingTXT = "/Users/dvel/Library/Rime/opencc/emoji-map.txt"
+var mappingTXT = "/Users/dvel/Library/Rime/others/emoji-map.txt"
 
 type OrderedMap struct {
 	keys []string

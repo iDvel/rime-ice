@@ -30,7 +30,7 @@ const (
 	SogouPath   = "/Users/dvel/Library/Rime/cn_dicts/sogou.dict.yaml"
 	ExtPath     = "/Users/dvel/Library/Rime/cn_dicts/ext.dict.yaml"
 	TencentPath = "/Users/dvel/Library/Rime/cn_dicts/tencent.dict.yaml"
-	EmojiPath   = "/Users/dvel/Library/Rime/opencc/emoji-map.txt"
+	EmojiPath   = "/Users/dvel/Library/Rime/others/emoji-map.txt"
 	EnPath      = "/Users/dvel/Library/Rime/en_dicts/en.dict.yaml"
 
 	DefaultWeight = 100 // sogou、ext、tencet 词库中默认的权重数值
