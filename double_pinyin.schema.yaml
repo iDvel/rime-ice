@@ -225,6 +225,7 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
+    - abbrev/^(.).+$/$1/
     - erase/^xx$/
     - derive/^([jqxy])u$/$1v/
     - derive/^([aoe])([ioun])$/$1$1$2/
@@ -255,7 +256,5 @@ speller:
     - xform/(.)ou$/$1B/
     - xform/in$/N/
     - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/
-    # 超级简拼，有个问题没解决：https://github.com/iDvel/rime-ice/issues/123
-    - abbrev/^(.).+$/$1/
     # 可输入大写字母。因为上面的双拼拼写规则用掉了大写字母。做了 xlit 转写，同时适配全拼和双拼。
     - xlit/āḃçďēḟḡĥīĵḱĺḿńōṕɋŕśťūṽẃẋȳź/ABCDEFGHIJKLMNOPQRSTUVWXYZ/
