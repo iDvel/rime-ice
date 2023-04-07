@@ -4,9 +4,17 @@
 
 功能齐全，词库体验良好，长期更新修订。
 
+<br>
+
+[RIME | 中州韵输入法引擎](https://rime.im/) 是一个跨平台的输入法算法框架，这里是 Rime 的一个配置仓库。
+
+用户需要[下载各平台对应的 Rime 发行版](https://rime.im/download/)，并将此配置应用到配置目录。
+
 详细介绍：[Rime 配置：雾凇拼音](https://dvel.me/posts/rime-ice/)
 
-常见问题：[常见问题 #133](https://github.com/iDvel/rime-ice/issues/133)
+[常见问题](https://github.com/iDvel/rime-ice/issues/133)
+
+<br>
 
 ## 基本套路
 
