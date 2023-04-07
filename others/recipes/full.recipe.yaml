@@ -19,18 +19,18 @@ install_files: >-
   opencc/emoji.json
   opencc/emoji.txt
   opencc/others.txt
-  custom_phrase.txt
   default.yaml
-  rime_ice.dict.yaml
+  squirrel.yaml
   rime_ice.schema.yaml
-  symbols_custom.yaml
-  symbols_custom_double.yaml
+  rime_ice.dict.yaml
   double_pinyin.schema.yaml
   double_pinyin_flypy.schema.yaml
-  liangfen.dict.yaml
+  symbols_custom.yaml
+  symbols_custom_double.yaml
   liangfen.schema.yaml
-  melt_eng.dict.yaml
+  liangfen.dict.yaml
   melt_eng.schema.yaml
+  melt_eng.dict.yaml
   rime.lua
-  squirrel.yaml
+  custom_phrase.txt
   zh-hans-t-essay-bgw.gram
