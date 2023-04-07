@@ -65,7 +65,7 @@ end
 -------------------------------------------------------------
 -- 以词定字
 -- https://github.com/BlindingDark/rime-lua-select-character
--- 删除了默认按键，需要在 key_binder（default.custom.yaml）下设置
+-- 删除了默认按键，需要在 key_binder 下设置
 local function utf8_sub(s, i, j)
     i = i or 1
     j = j or -1
@@ -154,37 +154,32 @@ function long_word_filter(input, env)
     local count = config:get_int(env.name_space .. "/count") or 2
     local idx = config:get_int(env.name_space .. "/idx") or 4
 
+    local code = env.engine.context.input -- 当前编码
+    env.target_codes = env.target_codes or Set({"xian", "tian", "tuan", "jie"})
+
     local l = {}
     local firstWordLength = 0 -- 记录第一个候选词的长度，提前的候选词至少要比第一个候选词长
-    -- local s1 = 0 -- 记录筛选了多少个英语词条(只提升 count 个词的权重，并且对comment长度过长的候选进行过滤)
-    local s2 = 0 -- 记录筛选了多少个汉语词条(只提升 count 个词的权重)
+    local s = 0 -- 记录筛选了多少个词条(只提升 count 个词的权重)
 
     local i = 1
     for cand in input:iter() do
-        leng = utf8.len(cand.text)
-        if (firstWordLength < 1 or i < idx) then
-            i = i + 1
-            firstWordLength = leng
+        if not env.target_codes[code] then
             yield(cand)
-		-- 不知道这两行是干嘛用的，似乎注释掉也没有影响。
-		-- elseif #table > 30 then
-		--     table.insert(l, cand)
-		-- 注释掉了英文的
-		-- elseif ((leng > firstWordLength) and (s1 < 2)) and (string.find(cand.text, "^[%w%p%s]+$")) then
-		--     s1 = s1 + 1
-		--     if (string.len(cand.text) / string.len(cand.comment) > 1.5) then
-		--         yield(cand)
-		--     end
-		-- 换了个正则，否则中英混输的也会被提升
-		-- elseif ((leng > firstWordLength) and (s2 < count)) and (string.find(cand.text, "^[%w%p%s]+$")==nil) then
-        elseif ((leng > firstWordLength) and (s2 < count)) and (string.find(cand.text, "[%w%p%s]+") == nil) then
-            yield(cand)
-            s2 = s2 + 1
         else
-            table.insert(l, cand)
+            local leng = utf8.len(cand.text)
+            if (firstWordLength < 1 or i < idx) then
+                i = i + 1
+                firstWordLength = leng
+                yield(cand)
+            elseif ((leng > firstWordLength) and (s < count)) and (string.find(cand.text, "[%w%p%s]+") == nil) then
+                yield(cand)
+                s = s + 1
+            else
+                table.insert(l, cand)
+            end
         end
     end
-    for i, cand in ipairs(l) do
+    for _, cand in ipairs(l) do
         yield(cand)
     end
 end
@@ -237,24 +232,17 @@ end
 -- 把候选项应改为「ā á ǎ à …… van vain」，让单个字符的排在前面
 function v_filter(input, env)
     local code = env.engine.context.input -- 当前编码
+    env.v_spec_arr = env.v_spec_arr or Set(
+        {"0️⃣", "1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣", "Vs."})
     -- 仅当当前输入以 v 开头，并且编码长度为 2，才进行处理
-    if (string.len(code) == 2 and string.find(code, "v") == 1) then
+    if (string.len(code) == 2 and string.find(code, "^v")) then
         local l = {}
         for cand in input:iter() do
             -- 特殊情况处理
-            if (cand.text == "Vs.") then
+            if (env.v_spec_arr[cand.text]) then
                 yield(cand)
-            end
-            -- 特殊情况处理
-            local arr = { "1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣" }
-            for _, v in ipairs(arr) do
-                if (v == cand.text) then
-                    yield(cand)
-                    break
-                end
-            end
-            -- 候选项为单个字符的，提到前面来。
-            if (utf8.len(cand.text) == 1) then
+                -- 候选项为单个字符的，提到前面来。
+            elseif (utf8.len(cand.text) == 1) then
                 yield(cand)
             else
                 table.insert(l, cand)
