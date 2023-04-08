@@ -7,7 +7,7 @@
 #
 ---
 name: cn_en
-version: "2023-04-05"
+version: "2023-04-08"
 sort: by_weight
 ...
 X光	Xguang
@@ -460,3 +460,4 @@ DJ舞曲	DJwuqu
 不OK	buOK
 很OK	henOK
 特拉法尔加·D·瓦铁尔·罗	telafaerjiadwatieerluo
+开party	kaiparty

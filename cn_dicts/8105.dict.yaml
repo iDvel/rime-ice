@@ -30,7 +30,7 @@
 # 降低一些几乎只在一个固定词汇中使用的读音的权重，不让其参与注音，在 base 中手动注音。
 ---
 name: 8105
-version: "2023-04-06"
+version: "2023-04-08"
 sort: by_weight
 ...
 ### 按需启用
@@ -41,8 +41,12 @@ sort: by_weight
 # 贲	fei	1
 
 
-### 扩展，不在《通用规范汉字表》的字，注释掉的这几行已经加入到下面并调整到合适的权重了
+### 扩展，不在《通用规范汉字表》的字:
 𰻝	biang	1
+嬢	niang	1
+薙	ti	1
+菈	la	1
+# 注释掉的这几行已经加入到下面并调整到合适的权重了
 # 〇	ling
 # 囧	jiong
 # 屌	diao
@@ -58,17 +62,16 @@ sort: by_weight
 # 觍	tian
 # 𪨊	song
 # 磺	huang
-# 嬢	niang
 
 
 ### 小时候没学过的拼音。。。
-# 嗯	n	在固顶字改为「那、哪」了
-# 嗯	ng	在固顶字改为「那个、哪个」了
+# 嗯	n	在 custom_phrase.txt 改为「那、哪」了
+# 嗯	ng	在 custom_phrase.txt 改为「那个、哪个」了
 # 唔	ng
-# 噷	hm	在固顶字里置顶了
-# 呣	m	在固顶字里放到第三位了
-# 欻	chua	放到固顶字里了，不参与造词，这个字和 chu a 冲突太多，并总占据第一个候选项
-# 哼	hng	放到固顶字里置顶了
+# 噷	hm	在 custom_phrase.txt 里置顶了
+# 呣	m	在 custom_phrase.txt 里放到第三位了
+# 欻	chua	放到 custom_phrase.txt 里了，不参与造词，这个字和 chu a 冲突太多，并总占据第一个候选项
+# 哼	hng	    放到 custom_phrase.txt 里置顶了
 嗯	eng	9179528
 欸	ei	534
 哟	yo	59051

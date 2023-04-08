@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-04-06"
+version: "2023-04-08"
 sort: by_weight
 ...
 # +_+
@@ -20780,7 +20780,7 @@ workspace	workspace
 workstation	workstation
 workstations	workstations
 world	world
-worldcat	worldcat
+WorldCat	WorldCat
 worlds	worlds
 worldsex	worldsex
 worldwide	worldwide
