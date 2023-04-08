@@ -199,17 +199,19 @@ function reduce_english_filter(input, env)
     -- filter start
     local code = env.engine.context.input
     if env.words[code] then
-        local first_cand
+        local pending_cands = {}
         local index = 0
         for cand in input:iter() do
             index = index + 1
-            if first_cand then
-                yield(cand)
+            if string.lower(cand.text) == code then
+                table.insert(pending_cands, cand)
             else
-                first_cand = cand
+                yield(cand)
             end
-            if index >= env.idx then
-                yield(first_cand)
+            if index >= env.idx + #pending_cands - 1 then
+                for _, cand in ipairs(pending_cands) do
+                    yield(cand)
+                end
                 break
             end
         end
