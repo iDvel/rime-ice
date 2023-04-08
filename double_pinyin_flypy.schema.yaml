@@ -27,7 +27,9 @@ schema:
 
 
 # 开关
-# 鼠须管 0.16 后，快捷键切换时的提示由 states 自定义。
+# 鼠须管 0.16 后，快捷键切换时的提示由 states 自定义
+# 注释掉 states 后，仍可以通过自定义的快捷键切换，但没有切换提示，也不会出现在方案选单中
+# 注释掉 reset 后，配合 default.custom.yaml 中的 save_options，可以永久记住开关状态，切换程序后也不会还原。
 switches:
   - name: ascii_mode
     states: [ 中, A ]

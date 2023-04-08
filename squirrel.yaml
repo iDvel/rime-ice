@@ -1,7 +1,10 @@
 # Squirrel settings
 # encoding: utf-8
 #
-# 内置皮肤展示： https://github.com/NavisLab/rime-pifu
+# squirrel[.custom].yaml 是鼠须管的前端配置文件，小狼毫是 weasel[.custom].yaml
+# 各平台皮肤配置并不一致。
+#
+# 鼠须管内置皮肤展示： https://github.com/NavisLab/rime-pifu
 # 鼠须管界面配置指南： https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/鼠鬚管介面配置指南.md
 # 鼠须管作者写的图形化的皮肤设计器： https://github.com/LEOYoon-Tsaw/Squirrel-Designer
 
@@ -14,17 +17,14 @@ config_version: '2023-02-27'
 # default: US (ABC) keyboard layout
 # _custom_: keyboard layout of your choice, e.g. 'com.apple.keylayout.USExtended' or simply 'USExtended'
 keyboard_layout: default
-
-
 # for veteran chord-typist
 chord_duration: 0.1  # seconds
-
-
 # options: always | never | appropriate
 show_notifications_when: appropriate
 
 
-# ascii_mode、inline、no_inline、vim_mode 等等设定，可参考 /Library/Input Methods/Squirrel.app/Contents/SharedSupport/squirrel.yaml
+# ascii_mode、inline、no_inline、vim_mode 等等设定
+# 可参考 /Library/Input Methods/Squirrel.app/Contents/SharedSupport/squirrel.yaml
 app_options:
   # com.apple.Spotlight:
   #   ascii_mode: true    # 开启默认英文
@@ -62,14 +62,16 @@ preset_color_schemes:
   purity_of_form_custom:
     name: "純粹的形式／Purity of Form Custom"
     author: 雨過之後、佛振
+    # 如果将字体设置为 PingFangSC-Regular
+    # 会让 🈶🈚️🉑🈲🉐 这几个 Emoji 失去彩色效果，留空反而可以显示。。。
     font_face: ""                   # 字体及大小
     font_point: 18
     label_font_face: "Helvetica"    # 序号字体及大小
     label_font_point: 12
     comment_font_face: "Helvetica"  # 注字体及大小
     comment_font_point: 16
-    candidate_list_layout: stacked  # 候选排布：层叠 stacked | 行 linear
-    text_orientation: horizontal    # 行文向： 横 horizontal | 纵 vertical
+    candidate_list_layout: stacked  # 候选项排列方向 stacked | linear
+    text_orientation: horizontal    # 文字排列方向 horizontal | vertical
     inline_preedit: true            # 拼音位于： 候选框 false | 行内 true
     translucency: false             # 磨砂： false | true
     mutual_exclusive: false         # 色不叠加： false | true
@@ -99,6 +101,7 @@ preset_color_schemes:
     # hilited_back_color:                   # 选中拼音底色 （inline_preedit: false）
     # border_color:                         # 外边框颜色
 
+  # 支持磨砂与透明度
   frosy_teal:
     name: "霜青／Frosty Teal"  # 配色取自 Alfred 自带主题 Frosty Teal
     author: Dvel
@@ -109,10 +112,10 @@ preset_color_schemes:
     comment_font_face: "Helvetica"  # 注字体及大小
     comment_font_point: 16.0
     inline_preedit: true            # 拼音位于： 候选框 false | 行内 true
-    candidate_list_layout: stacked  # 候选排布：层叠 stacked | 行 linear
-    text_orientation: horizontal    # 行文向： 横 horizontal | 纵 vertical
+    candidate_list_layout: stacked  # 候选项排列方向 stacked | linear
+    text_orientation: horizontal    # 文字排列方向 horizontal | vertical
     translucency: true              # 磨砂： false | true
-    alpha: 0.95                     # 透明度，0~1
+    alpha: 0.85                     # 透明度，0~1
     back_color: 0xB5806410                   # 底色
     hilited_candidate_back_color: 0x1E000000 # 选中项底色
     candidate_text_color: 0xADFFFFFF         # 文字颜色

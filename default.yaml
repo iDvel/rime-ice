@@ -42,8 +42,10 @@ switcher:
 
 # 中西文切换
 #
-# 【good_old_caps_lock】 CapsLock 切换到大写或切换中英。
-# （macOS 偏好设置的优先级更高，如果勾选【使用大写锁定键切换“ABC”输入法】则始终会切换输入法）
+# good_old_caps_lock:
+# true   切换大写
+# false  切换中英
+# macOS 偏好设置的优先级更高，如果勾选【使用大写锁定键切换“ABC”输入法】则始终会切换输入法。
 #
 # 切换中英：
 # 不同的选项表示：打字打到一半时按下了 CapsLock、Shift、Control 后： 
