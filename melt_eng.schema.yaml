@@ -1,6 +1,8 @@
 ﻿# Rime schema
 # vim: set sw=2 sts=2 et:
 # encoding: utf-8
+#
+# 复制自 https://github.com/tumuyan/rime-melt
 
 schema:
   schema_id: melt_eng
