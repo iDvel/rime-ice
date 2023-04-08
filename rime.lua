@@ -154,29 +154,22 @@ function long_word_filter(input, env)
     local count = config:get_int(env.name_space .. "/count") or 2
     local idx = config:get_int(env.name_space .. "/idx") or 4
 
-    local code = env.engine.context.input -- 当前编码
-    env.target_codes = env.target_codes or Set({"xian", "tian", "tuan", "jie"})
-
     local l = {}
     local firstWordLength = 0 -- 记录第一个候选词的长度，提前的候选词至少要比第一个候选词长
     local s = 0 -- 记录筛选了多少个词条(只提升 count 个词的权重)
 
     local i = 1
     for cand in input:iter() do
-        if not env.target_codes[code] then
+        local leng = utf8.len(cand.text)
+        if (firstWordLength < 1 or i < idx) then
+            i = i + 1
+            firstWordLength = leng
             yield(cand)
+        elseif ((leng > firstWordLength) and (s < count)) and (string.find(cand.text, "[%w%p%s]+") == nil) then
+            yield(cand)
+            s = s + 1
         else
-            local leng = utf8.len(cand.text)
-            if (firstWordLength < 1 or i < idx) then
-                i = i + 1
-                firstWordLength = leng
-                yield(cand)
-            elseif ((leng > firstWordLength) and (s < count)) and (string.find(cand.text, "[%w%p%s]+") == nil) then
-                yield(cand)
-                s = s + 1
-            else
-                table.insert(l, cand)
-            end
+            table.insert(l, cand)
         end
     end
     for _, cand in ipairs(l) do
