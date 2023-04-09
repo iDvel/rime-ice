@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-04-08"
+version: "2023-04-11"
 sort: by_weight
 ...
 # +_+
@@ -1132,6 +1132,7 @@ article	article
 articles	articles
 articulate	articulate
 articulated	articulated
+artifact	artifact
 artifacts	artifacts
 artificial	artificial
 artillery	artillery
@@ -4754,9 +4755,9 @@ damn	damn
 damned	damned
 damon	damon
 damp	damp
-dams	dams
-dan	dan
-dana	dana
+# dams	dams
+# dan	dan
+# dana	dana
 dance	dance
 dancer	dancer
 dancers	dancers

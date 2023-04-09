@@ -15,7 +15,7 @@
 # 搜狗转 Rime 词库：https://github.com/lewangdev/scel2txt
 ---
 name: sogou
-version: "2023-04-08"
+version: "2023-04-11"
 sort: by_weight
 ...
 # *_* 过滤列表，每次更新时不再写入：
@@ -1514,6 +1514,7 @@ sort: by_weight
 北华航天	bei hua hang tian	100
 北淮淀	bei huai dian	100
 备货中	bei huo zhong	100
+备急千金要方	bei ji qian jin yao fang	100
 北极星的眼泪	bei ji xing de yan lei	100
 贝加庞克	bei jia pang ke	100
 北滘门	bei jiao men	100
@@ -3627,6 +3628,7 @@ sort: by_weight
 朝丰家园	chao feng jia yuan	100
 超纲题	chao gang ti	100
 抄古诗	chao gu shi	100
+炒锅饼	chao guo bing	100
 抄过头了	chao guo tou le	100
 超红瓶	chao hong ping	100
 超乎你想象	chao hu ni xiang xiang	100
@@ -5005,7 +5007,6 @@ sort: by_weight
 大伙们	da huo men	100
 大火收汁	da huo shou zhi	100
 大货司机	da huo si ji	100
-打几场	da ji chang	100
 大吉鲁	da ji lu	100
 大几率	da ji lv	100
 大济南	da ji nan	100
@@ -5114,6 +5115,7 @@ sort: by_weight
 大罗塘	da luo tang	100
 达洛特	da luo te	100
 大洛阳	da luo yang	100
+大满亚	da man ya	100
 大茂城	da mao cheng	100
 大冒险家	da mao xian jia	100
 大美新疆	da mei xin jiang	100
@@ -6873,6 +6875,7 @@ sort: by_weight
 杜曲镇	du qu zhen	100
 度人经	du ren jing	100
 杜润旺	du run wang	100
+杜塞多夫	du sai duo fu	100
 读三年	du san nian	100
 赌上职业生涯	du shang zhi ye sheng ya	100
 杜少平	du shao ping	100
@@ -7140,6 +7143,7 @@ sort: by_weight
 剁手达人	duo shou da ren	100
 多刷新	duo shua xin	100
 多说几遍	duo shuo ji bian	100
+多思多想	duo si duo xiang	100
 多索雷斯	duo suo lei si	100
 躲台风	duo tai feng	100
 堕天神	duo tian shen	100
@@ -10161,6 +10165,7 @@ sort: by_weight
 国际赛事	guo ji sai shi	100
 国际设计	guo ji she ji	100
 国际声誉	guo ji sheng yu	100
+国际事件	guo ji shi jian	100
 国际手势	guo ji shou shi	100
 过几天来	guo ji tian lai	100
 过几天再去	guo ji tian zai qu	100
@@ -12669,6 +12674,7 @@ sort: by_weight
 惠及百姓	hui ji bai xing	100
 惠及民生	hui ji min sheng	100
 惠及全民	hui ji quan min	100
+惠及人民	hui ji ren min	100
 惠及世界	hui ji shi jie	100
 回家办公	hui jia ban gong	100
 回家反省	hui jia fan xing	100
@@ -13090,6 +13096,7 @@ sort: by_weight
 激化队	ji hua dui	100
 极化码	ji hua ma	100
 季华西路	ji hua xi lu	100
+纪焕博	ji huan bo	100
 集换社	ji huan she	100
 冀惠保	ji hui bao	100
 济惠保	ji hui bao	100
@@ -15421,6 +15428,7 @@ sort: by_weight
 卡池里	ka chi li	100
 卡达尔	ka da er	100
 卡大佐	ka da zuo	100
+卡尔伯格	ka er bo ge	100
 卡尔德克	ka er de ke	100
 喀尔克	ka er ke	100
 卡尔马	ka er ma	100
@@ -17146,6 +17154,7 @@ sort: by_weight
 李佳琦直播间	li jia qi zhi bo jian	100
 李佳帅	li jia shuai	100
 李尖尖	li jian jian	100
+利剑玫瑰	li jian mei gui	100
 李健仁	li jian ren	100
 李健熙	li jian xi	100
 李健演唱会	li jian yan chang hui	100
@@ -18899,6 +18908,7 @@ sort: by_weight
 马桥子街道	ma qiao zi jie dao	100
 麻丘镇	ma qiu zhen	100
 玛瑞亚	ma rui ya	100
+马若松	ma ruo song	100
 玛塞城	ma sai cheng	100
 马三娘	ma san niang	100
 玛瑟里顿	ma se li dun	100
@@ -20421,6 +20431,7 @@ sort: by_weight
 莫斯阿甲	mo si a jia	100
 莫斯科号	mo si ke hao	100
 魔斯拉	mo si la	100
+莫思雨	mo si yu	100
 默滕斯	mo teng si	100
 莫提斯	mo ti si	100
 摩天大厦	mo tian da sha	100
@@ -24589,6 +24600,7 @@ sort: by_weight
 上城华府	shang cheng hua fu	100
 尚城华府	shang cheng hua fu	100
 上出重霄	shang chu chong xiao	100
+商船队	shang chuan dui	100
 上传失败	shang chuan shi bai	100
 上大分	shang da fen	100
 上大街	shang da jie	100
@@ -25599,6 +25611,7 @@ sort: by_weight
 十来秒	shi lai miao	100
 史莱姆枪	shi lai mu qiang	100
 石莱镇	shi lai zhen	100
+石兰花	shi lan hua	100
 石岚三村	shi lan san cun	100
 石雷鹏	shi lei peng	100
 实力北岸	shi li bei an	100
@@ -26655,6 +26668,7 @@ sort: by_weight
 私联粉丝	si lian fen si	100
 四连扑	si lian pu	100
 四连歪	si lian wai	100
+四连亚	si lian ya	100
 私联站姐	si lian zhan jie	100
 私聊我下	si liao wo xia	100
 四零四	si ling si	100
@@ -29420,6 +29434,7 @@ sort: by_weight
 威尔金斯	wei er jin si	100
 维尔薇	wei er wei	100
 未发送	wei fa song	100
+违反誓言	wei fan shi yan	100
 未返校	wei fan xiao	100
 未返郑	wei fan zheng	100
 潍坊护理	wei fang hu li	100
@@ -32477,7 +32492,6 @@ sort: by_weight
 校排名	xiao pai ming	100
 小盘菜	xiao pan cai	100
 小胖虎	xiao pang hu	100
-小盆友们	xiao pen you men	100
 小屁精	xiao pi jing	100
 小泼猴	xiao po hou	100
 小铺乡	xiao pu xiang	100
@@ -33223,6 +33237,7 @@ sort: by_weight
 新症状	xin zheng zhuang	100
 心之钢	xin zhi gang	100
 心智技能	xin zhi ji neng	100
+心纸君	xin zhi jun	100
 心之雷达	xin zhi lei da	100
 心之恋语	xin zhi lian yu	100
 新智认知	xin zhi ren zhi	100
@@ -34766,6 +34781,7 @@ sort: by_weight
 一城龙洲	yi cheng long zhou	100
 已成年	yi cheng nian	100
 义城篇	yi cheng pian	100
+一重山	yi chong shan	100
 一触即燃	yi chu ji ran	100
 已出手	yi chu shou	100
 一出校门	yi chu xiao men	100
