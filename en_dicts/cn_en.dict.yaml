@@ -7,7 +7,7 @@
 #
 ---
 name: cn_en
-version: "2023-04-08"
+version: "2023-04-11"
 sort: by_weight
 ...
 X光	Xguang
@@ -461,3 +461,5 @@ DJ舞曲	DJwuqu
 很OK	henOK
 特拉法尔加·D·瓦铁尔·罗	telafaerjiadwatieerluo
 开party	kaiparty
+Chromium系	Chromiumxi
+Chrome系	Chromexi

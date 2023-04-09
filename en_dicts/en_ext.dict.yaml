@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-04-06"
+version: "2023-04-11"
 sort: by_weight
 ...
 # 一些杂项
@@ -2072,3 +2072,5 @@ GitHub Actions	GitHubActions
 UUID	UUID
 Universally Unique Identifier	UUID
 stargazers	stargazers
+fallback	fallback
+Fyne	Fyne
