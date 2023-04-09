@@ -98,7 +98,11 @@ reduce_english_filter:
   # 降低到第 idx 个位置
   idx: 2
   # 要降低的单词，匹配的是输入码，即全小写。
-  words: [rug, bus, ship, laos, bail, bam, bans, bib, bos, chic, chit, dab, dag, dal, dit, dub, dug, fab, gam, ger, gus, hem, hep, hud, kat, lam, lax, lex, lug, lux, moc, mos, mot, mum, nad, nay, nib, nip, pak, pap, pax, rig, rum, sac, sal, sax, sec, shin, sis, ska, slang, sus, tad, taj, tac, tic, yep, yum]
+  words: [rug, bus, ship, laos, bail, bam, bans, bib, bos, chic, chit, dab, dag,
+  dal, dit, dub, dug, fab, gam, ger, gus, hem, hep, hud, kat, lam, lax, lex, lug,
+  lux, moc, mos, mot, mum, nad, nay, nib, nip, pak, pap, pax, rig, rum, sac, sal,
+  sax, sec, shin, sis, ska, slang, sus, tad, taj, tac, tic, yep, yum, fax, cain,
+  key, mob, buy]
 
 
 # 从 default 继承快捷键
@@ -211,13 +215,13 @@ recognizer:
     email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"                            # 自带的，e-mail 正则
     # uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"                           # 自带的，大写字母开头后，可以输入[-_+.'0-9A-Za-z]这些字符
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"  # 自带的，URL 正则
-    url_2: "^[A-Za-z]+[.].*"            # 支持 google.com abc.txt 等网址或文件名，会导致句号不会让句子上屏，或使用句号翻页时需要注释掉
-    win_path: "^[A-Za-z]:.*"            # 支持 c:\file\path 之类的路径输入
-    colon: "^[A-Za-z]+:.*"              # 上面的超集，可以输入冒号，不会导致句子直接上屏
-    underscore: "^[A-Za-z]+_.*"         # 可以输入下划线 _ ，不会导致句子直接上屏
-    punct: "^V([0-9]|10|[A-Za-z]+)$"    # 响应 symbols_custom_double.yaml 下的 symbols，用「V」替换「/」并支持大写
-    reverse_lookup: '^L[a-z]+$'         # 响应两分的反查
-    unicode: "^U[a-f0-9]+"              # 响应 Unicode
+    punct: "^v([0-9]|10|[A-Za-z]+)$"  # 响应 symbols_custom.yaml 下的 punctuator/symbols，用「v」替换「/」并支持大写
+    reverse_lookup: "^u[a-z]+$"       # 响应两分的反查
+    unicode: "^U[a-f0-9]+"            # 响应 Unicode
+    # 一些不直接上屏的配置示例：
+    # url_2: "^[A-Za-z]+[.].*"     # 句号不上屏，支持 google.com abc.txt 等网址或文件名，使用句号翻页时需要注释掉
+    # colon: "^[A-Za-z]+:.*"       # 冒号不上屏
+    # underscore: "^[A-Za-z]+_.*"  # 下划线不上屏
 
 
 # 反查：两分（拼字）
