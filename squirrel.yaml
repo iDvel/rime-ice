@@ -37,7 +37,7 @@ style:
   color_scheme: purity_of_form_custom
   color_scheme_dark: purity_of_form_custom
 
-  # 预设选项：（可被皮肤覆盖；如果皮肤没写，则默认使用这些属性。）
+  # 预设选项。如果皮肤没写，则使用这些属性；如果皮肤写了，使用皮肤的。
   text_orientation: horizontal  # horizontal | vertical
   inline_preedit: true
   corner_radius: 10
