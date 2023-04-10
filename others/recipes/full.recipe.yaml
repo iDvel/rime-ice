@@ -24,6 +24,7 @@ install_files: >-
   rime_ice.schema.yaml
   rime_ice.dict.yaml
   double_pinyin.schema.yaml
+  double_pinyin_mspy.schema.yaml
   double_pinyin_flypy.schema.yaml
   symbols_custom.yaml
   symbols_custom_double.yaml
