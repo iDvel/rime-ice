@@ -20,7 +20,7 @@ schema:
     - Dvel
   description: |
     雾凇拼音 - 微软双拼
-    https://github.com/rime/rime-double-pinyin/blob/master/double_pinyin_mspy.schema.yaml
+    https://github.com/iDvel/rime-ice
   dependencies:
     - melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
     - liangfen  # 两分拼字，作为反查挂载到拼音方案
@@ -143,7 +143,7 @@ grammar:
 # 主翻译器，拼音
 translator:
   dictionary: rime_ice          # 挂载词库 rime_ice.dict.yaml
-  prism: double_pinyin          # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
+  prism: double_pinyin_mspy     # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
   contextual_suggestions: true  # 开启八股文
   initial_quality: 1.2          # 拼音的权重应该比英文大
   preedit_format:               # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
@@ -183,6 +183,7 @@ translator:
     - "xform/(^|[ '])u/$1sh/"
     - xform/([jqxy])v/$1u/
     - xform/([nl])v/$1ü/ 
+
 
 # 次翻译器，英文
 melt_eng:
@@ -241,6 +242,7 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA;
   delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
+    - abbrev/^(.).+$/$1/ 
     - erase/^xx$/
     - derive/^([jqxy])u$/$1v/
     - derive/^([aoe].*)$/o$1/
@@ -273,4 +275,5 @@ speller:
     - xform/in$/N/
     - xform/ing$/;/
     - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/
-    #- abbrev/^(.).+$/$1/ 
+    # 可输入大写字母。因为上面的双拼拼写规则用掉了大写字母。做了 xlit 转写，同时适配全拼和双拼。
+    - xlit/āḃçďēḟḡĥīĵḱĺḿńōṕɋŕśťūṽẃẋȳź/ABCDEFGHIJKLMNOPQRSTUVWXYZ/
