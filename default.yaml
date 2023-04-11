@@ -6,7 +6,7 @@
 
 
 # 要比共享目录的同名文件的 config_version 大才可以生效
-config_version: '2023-03-03'
+config_version: '2023-04-11'
 
 
 # 方案列表
@@ -65,18 +65,75 @@ ascii_composer:
     Control_R: noop       # commit_code | commit_text | inline_ascii | clear | noop
 
 
-# punctuator 和 recognizer 由具体方案指定了
+###################################################################################
+
+
+# 下面的 punctuator recognizer key_binder 写了一些所有方案通用的配置项。
+# 写在 default.yaml 里，方便多个方案引用，就是不用每个方案都写一遍了。
+
+
+# 标点符号
+# 设置为一个映射，就自动上屏；设置为多个映射，如 '/' : [ '/', ÷ ] 则进行复选。
+#   full_shape: 全角没改，使用预设值
+#   half_shape: 标点符号全部直接上屏，和 macOS 自带输入法的区别是
+#              '|' 是半角的，
+#              '~' 是半角的，
+#              '`'（反引号）没有改成 '·'（间隔号）。
 punctuator:
   full_shape:
+    __include: punctuation:/full_shape # 加载 Rime 自带的共享目录的 punctuation.yaml 下的 full_shape
   half_shape:
-  symbols:
+    ',' : '，'
+    '.' : '。'
+    '<' : '《'
+    '>' : '》'
+    '/' : '/'
+    '?' : '？'
+    ';' : '；'
+    ':' : '：'
+    '''' : { pair: [ '‘', '’' ] }
+    '"' : { pair: [ '“', '”' ] }
+    '\' : '、'
+    '|' : '|'
+    '`' : '`'
+    '~' : '~'
+    '!' : '！'
+    '@' : '@'
+    '#' : '#'
+    '%' : '%'
+    '$' : '¥'
+    '^' : '……'
+    '&' : '&'
+    '*' : '*'
+    '(' : '（'
+    ')' : '）'
+    '-' : '-'
+    '_' : ——
+    '+' : '+'
+    '=' : '='
+    '[' : '【'
+    ']' : '】'
+    '{' : '「'
+    '}' : '」'
+
+
+# 处理符合特定规则的输入码，如网址、反查
+# 此处配置所有方案通用的；各方案中另设专有的，比如全拼的拼字用 u，双拼的拼字用 L
 recognizer:
   patterns:
+    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"                            # 自带的，email 正则
+    # uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"                           # 自带的，大写字母开头后，可以输入[-_+.'0-9A-Za-z]这些字符
+    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"  # 自带的，URL 正则
+    punct: "^v([0-9]|10|[A-Za-z]+)$"  # 响应 symbols_custom.yaml 下的 punctuator/symbols，用「v」替换「/」并支持大写
+    # 一些不直接上屏的配置示例：
+    # url_2: "^[A-Za-z]+[.].*"     # 句号不上屏，支持 google.com abc.txt 等网址或文件名，使用句号翻页时需要注释掉
+    # colon: "^[A-Za-z]+:.*"       # 冒号不上屏
+    # underscore: "^[A-Za-z]+_.*"  # 下划线不上屏
 
 
 # 快捷键
 key_binder:
-  # 以词定字（上屏当前词句的第一个或最后一个字）
+  # Lua 配置: 以词定字（上屏当前词句的第一个或最后一个字）
   select_first_character:
   select_last_character: "grave"
 
@@ -131,7 +188,8 @@ key_binder:
     # - { when: always, accept: Control+slash, toggle: traditionalization }
 
 
-# key_binder 按键速查 https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md
+# 按键速查
+# https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md
 # （没有 Command 键，不支持）
 # accept 和 send 可用字段除 A-Za-z0-9 外，还包含以下键盘上实际有的键：
 # BackSpace	退格
