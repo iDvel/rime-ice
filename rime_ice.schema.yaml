@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "1.4.4"
+  version: "2023-04-11"
   author:
     - Dvel
   description: |
@@ -18,18 +18,15 @@ schema:
 
 
 # 开关
-# 鼠须管 0.16 后，快捷键切换时的提示由 states 自定义
-# 注释掉 states 后，仍可以通过自定义的快捷键切换，但没有切换提示，也不会出现在方案选单中
-# 注释掉 reset 后，配合 default.custom.yaml 中的 save_options，可以永久记住开关状态，切换程序后也不会还原。
+# 鼠须管 0.16 后，用快捷键切换时的提示文字由 states 定义
+# states: 方案选单显示的名称。可以注释掉，仍可以通过快捷键切换。
+# reset: 默认状态。 注释掉后，切换窗口时不会重置到默认状态。
 switches:
   - name: ascii_mode
     states: [ 中, A ]
     reset: 0
-  - name: full_shape
-    # states: [ 半角, 全角 ]
-    reset: 0
-  - name: ascii_punct
-    states: [ 。，, ．， ]
+  - name: ascii_punct # 中英标点
+    states: [ ¥, $ ]
     reset: 0
   - name: traditionalization
     states: [ 简, 繁 ]
@@ -37,6 +34,9 @@ switches:
   - name: emoji
     states: [ 💀, 😄 ]
     reset: 1
+  - name: full_shape
+    states: [ 半角, 全角 ]
+    reset: 0
 
 
 # 输入引擎
@@ -105,36 +105,6 @@ reduce_english_filter:
   key, mob, buy, dam]
 
 
-# 从 default 继承快捷键
-key_binder:
-  import_preset: default
-  # bindings: # 也可以增加方案专属的快捷键
-
-
-# Emoji
-emoji:
-  opencc_config: emoji.json
-  option_name: emoji
-
-
-# 简繁切换
-traditionalize:
-  option_name: traditionalization
-  opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json
-  tips: all                           # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
-  excluded_types: [ reverse_lookup ]  # 不转换反查（两分拼字）的内容
-
-
-# 自定义短语：custom_phrase.txt
-custom_phrase:
-  dictionary: ""
-  user_dict: custom_phrase
-  db_class: stabledb
-  enable_completion: false # 补全提示
-  enable_sentence: false   # 禁止造句
-  initial_quality: 99      # custom_phrase 的权重应该比 pinyin 和 melt_eng 大
-
-
 # 引入八股文
 grammar:
   language: zh-hans-t-essay-bgw
@@ -144,13 +114,13 @@ grammar:
 translator:
   dictionary: rime_ice          # 挂载词库 rime_ice.dict.yaml
   contextual_suggestions: true  # 开启八股文
+  initial_quality: 1.2          # 拼音的权重应该比英文大
   preedit_format:               # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
     - xform/([jqxy])v/$1u/      # 显示为 ju qu xu yu
     # - xform/([nl])v/$1ü/      # 显示为 nü lü
     # - xform/([nl])ue/$1üe/    # 显示为 nüe lüe
     - xform/([nl])v/$1v/        # 显示为 nv lv
     - xform/([nl])ue/$1ve/      # 显示为 nve lve
-  initial_quality: 1.2          # 拼音的权重应该比英文大
 
 
 # 次翻译器，英文
@@ -163,44 +133,65 @@ melt_eng:
     - xform/.*//           # 清空提示码
 
 
+# 反查：两分（拼字）
+liangfen:
+  dictionary: liangfen     # 挂载两分词典 liangfen.dict.yaml
+  prefix: "u"              # 以 u 开头来反查
+  enable_completion: true  # 补全提示
+  # tips: 〔两分〕          # 反查时显示的文字，建议注释掉，否则很多 u 开头的英文单词也会显示这个
+
+
+# 自定义短语：custom_phrase.txt
+custom_phrase:
+  dictionary: ""
+  user_dict: custom_phrase
+  db_class: stabledb
+  enable_completion: false # 补全提示
+  enable_sentence: false   # 禁止造句
+  initial_quality: 99      # custom_phrase 的权重应该比 pinyin 和 melt_eng 大
+
+
+# Emoji
+emoji:
+  opencc_config: emoji.json
+  option_name: emoji
+
+
+# 简繁切换
+traditionalize:
+  option_name: traditionalization
+  opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json
+  tips: none                          # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
+  excluded_types: [ reverse_lookup ]  # 不转换反查（两分拼字）的内容
+
+
 # 标点符号
-# 共享目录预设的 punctuation.yaml 包含了 full_shape half_shape （全角和半角的符号映射）
-# 共享目录预设的 symbols.yaml     包含了 full_shape half_shape symbols
-# symbols 的功能是支持以「/」前缀开头输出一系列字符，自定义的 symbols_custom.yaml 修改成了「v」开头。
+# punctuator 下面有三个子项：
+#   full_shape 全角标点映射
+#   half_shape 半角标点映射
+#   symbols    Rime 的预设配置是以 '/' 前缀开头输出一系列字符，自定义的 symbols_v.yaml 修改成了 'v' 开头。
 punctuator:
-  # __include: punctuation:/     # 从共享目录引入预设的 punctuation.yaml
-  # import_preset: symbols       # 从共享目录引入预设的 symbols.yaml
-  import_preset: symbols_custom  # 从 symbols_custom.yaml 引入自己自定义的
-  # 也可以直接在这里配置：
-  # full_shape:
-    # ...
-  # half_shape:
-    # ...
-  # symbols:
-    # ...
+  full_shape:
+    __include: default:/punctuator/full_shape  # 从 default.yaml 导入配置
+  half_shape:
+    __include: default:/punctuator/half_shape  # 从 default.yaml 导入配置
+  symbols:
+    __include: symbols_v:/symbols              # 从 symbols_v.yaml 导入配置
 
 
 # 处理符合特定规则的输入码，如网址、反查
 recognizer:
-  patterns:
-    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"                            # 自带的，e-mail 正则
-    # uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"                           # 自带的，大写字母开头后，可以输入[-_+.'0-9A-Za-z]这些字符
-    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"  # 自带的，URL 正则
-    punct: "^v([0-9]|10|[A-Za-z]+)$"  # 响应 symbols_custom.yaml 下的 punctuator/symbols，用「v」替换「/」并支持大写
-    reverse_lookup: "^u[a-z]+$"       # 响应两分的反查
+  import_preset: default  # 从 default.yaml 继承通用的
+  patterns:  # 再增加方案专有的：
+    punct: "^v([0-9]|10|[A-Za-z]+)$"  # 响应 symbols_v.yaml 的 symbols，用 'v' 替换 '/'
+    reverse_lookup: "^u[a-z]+$"       # 响应两分拼字的反查
     unicode: "^U[a-f0-9]+"            # 响应 Unicode
-    # 一些不直接上屏的配置示例：
-    # url_2: "^[A-Za-z]+[.].*"     # 句号不上屏，支持 google.com abc.txt 等网址或文件名，使用句号翻页时需要注释掉
-    # colon: "^[A-Za-z]+:.*"       # 冒号不上屏
-    # underscore: "^[A-Za-z]+_.*"  # 下划线不上屏
 
 
-# 反查：两分（拼字）
-liangfen:
-  dictionary: liangfen     # 两分词典 liangfen.dict.yaml
-  prefix: "u"              # 以 u 开头来反查
-  enable_completion: true  # 补全提示
-  # tips: 〔两分〕          # 反查时显示的文字，建议注释掉，否则很多 u 开头的英文单词也会显示这个
+# 从 default 继承快捷键
+key_binder:
+  import_preset: default # 从 default.yaml 继承通用的
+  # bindings:            # 也可以再增加方案专有的
 
 
 # 拼写设定
