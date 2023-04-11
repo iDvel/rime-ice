@@ -111,6 +111,48 @@ bash rime-install iDvel/rime-ice:others/recipes/en_dicts
 bash rime-install iDvel/rime-ice:others/recipes/opencc
 ```
 
+### Arch Linux
+
+#### 安装
+
+使用 AUR helper 安装 [rime-ice-git](https://aur.archlinux.org/packages/rime-ice-git) 包即可。
+
+```bash
+# paru 默认会每次重新评估 pkgver，所以有新的提交时 paru 会自动更新，
+# yay 默认未开启此功能，可以通过此命令开启
+# yay -Y --devel --save
+
+paru -S rime-ice-git
+# yay -S rime-ice-git
+```
+
+#### 配置
+
+推荐使用[补丁](https://github.com/rime/home/wiki/Configuration#補靪])的方式启用。
+
+参考下面的配置示例，修改对应输入法框架用户目录（见下）中的 `default.custom.yaml` 文件
+
+- iBus 为 `$HOME/.config/ibus/rime/`
+- Fcitx5 为 `$HOME/.local/share/fcitx5/rime/`
+
+<details>
+
+<summary>default.custom.yaml</summary>
+
+```yaml
+patch:
+  # 仅使用「雾凇拼音」的默认配置，配置此行即可
+  __include: rime_ice_suggestion:/
+  # 以下根据自己所需自行定义，仅做参考。
+  # 针对对应处方的定制条目，请使用 <recipe>.custom.yaml 中配置，例如 rime_ice.custom.yaml
+  __patch:
+    key_binder/+:
+      select_first_character: "bracketleft" # 即 [
+      select_last_character: "bracketright" # 即 ]
+```
+
+</details>
+
 <br>
 
 ## 感谢 ❤️
