@@ -9,7 +9,6 @@ install_files: >-
   cn_dicts/8105.dict.yaml
   cn_dicts/41448.dict.yaml
   cn_dicts/base.dict.yaml
-  cn_dicts/sogou.dict.yaml
   cn_dicts/ext.dict.yaml
   cn_dicts/tencent.dict.yaml
   cn_dicts/others.dict.yaml
