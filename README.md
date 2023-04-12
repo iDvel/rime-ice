@@ -113,7 +113,7 @@ bash rime-install iDvel/rime-ice:others/recipes/opencc
 </details>
 
 <details>
-<summary>Arch Linux <a href="https://github.com/rime/ibus-rime">中州韵</a></summary>
+<summary>Arch Linux</summary>
 
 ### 安装
 
