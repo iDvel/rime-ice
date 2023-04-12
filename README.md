@@ -139,7 +139,7 @@ yay -Y --devel --save
 
 推荐使用[补丁](https://github.com/rime/home/wiki/CustomizationGuide#%定製指南)的方式启用。
 
-参考下面的配置示例，修改对应输入法框架用户目录（见下）中的 `rime-ice.custom.yaml` 文件
+参考下面的配置示例，修改对应输入法框架用户目录（见下）中的 `default.custom.yaml`与`rime-ice.custom.yaml` 文件
 
 - iBus 为 `$HOME/.config/ibus/rime/`
 - Fcitx5 为 `$HOME/.local/share/fcitx5/rime/`
@@ -149,7 +149,7 @@ yay -Y --devel --save
 
 ```yaml
 patch:
-  "menu/page_size": 8
+  "menu/page_size": 8 #候选词数量
   schema_list:
     - schema: rime_ice
 ```
