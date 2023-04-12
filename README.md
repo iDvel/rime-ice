@@ -123,12 +123,6 @@ bash rime-install iDvel/rime-ice:others/recipes/opencc
 yay -S rime-ice
 ```
 
-或者
-
-```bash
-paru -S rime-ice
-```
-
 yay用户建议开启[开发包更新](https://github.com/Jguer/yay#development-packages-upgrade)
 
 ```bash
