@@ -171,6 +171,8 @@ patch:
 
 </details>
 
+fcitx5用户请在fcitx配置中更改界面皮肤/候选列表垂直
+
 </details>
 <br>
 
