@@ -20,28 +20,28 @@
 
 - 简体 | 全拼 | 双拼
 - 主要功能
-    -   [melt_eng](https://github.com/tumuyan/rime-melt) 英文输入
-    -   [优化英文输入体验](https://dvel.me/posts/make-rime-en-better/)
-    -   [两分输入法](http://cheonhyeong.com/Simplified/download.html) 拼字
-    -   简繁切换
-    -   日期、时间、星期
-    -   自整理的 Emoji
-    -   [以词定字](https://github.com/BlindingDark/rime-lua-select-character)
-    -   [长词优先](https://github.com/tumuyan/rime-melt/blob/master/lua/melt.lua)
-    -   [Unicode](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)
-    -   所有标点符号直接上屏，/ 模式改为 v 模式，/ 直接上屏
-    -   增加了许多拼音纠错
+  - [melt_eng](https://github.com/tumuyan/rime-melt) 英文输入
+  - [优化英文输入体验](https://dvel.me/posts/make-rime-en-better/)
+  - [两分输入法](http://cheonhyeong.com/Simplified/download.html) 拼字
+  - 简繁切换
+  - 日期、时间、星期
+  - 自整理的 Emoji
+  - [以词定字](https://github.com/BlindingDark/rime-lua-select-character)
+  - [长词优先](https://github.com/tumuyan/rime-melt/blob/master/lua/melt.lua)
+  - [Unicode](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)
+  - 所有标点符号直接上屏，/ 模式改为 v 模式，/ 直接上屏
+  - 增加了许多拼音纠错
 - 简体字表、词库
-    -   [《通用规范汉字表》](https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters)
-    -   [华宇野风系统词库](http://bbs.pinyin.thunisoft.com/forum.php?mod=viewthread&tid=30049)
-    -   [清华大学开源词库](https://github.com/thunlp/THUOCL)
-    -   [《现代汉语常用词表》](https://gist.github.com/indiejoseph/eae09c673460aa0b56db)
-    -   [《现代汉语词典》](https://forum.freemdict.com/t/topic/12102)
-    -   [《同义词词林》](https://forum.freemdict.com/t/topic/1211)
-    -   [《新华成语大词典》](https://forum.freemdict.com/t/topic/11407)
-    -   [腾讯词向量](https://ai.tencent.com/ailab/nlp/en/download.html)
+  - [《通用规范汉字表》](https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters)
+  - [华宇野风系统词库](http://bbs.pinyin.thunisoft.com/forum.php?mod=viewthread&tid=30049)
+  - [清华大学开源词库](https://github.com/thunlp/THUOCL)
+  - [《现代汉语常用词表》](https://gist.github.com/indiejoseph/eae09c673460aa0b56db)
+  - [《现代汉语词典》](https://forum.freemdict.com/t/topic/12102)
+  - [《同义词词林》](https://forum.freemdict.com/t/topic/1211)
+  - [《新华成语大词典》](https://forum.freemdict.com/t/topic/11407)
+  - [腾讯词向量](https://ai.tencent.com/ailab/nlp/en/download.html)
 - 词库修订
-    - 校对大量异形词、错别字、错误注音
+  - 校对大量异形词、错别字、错误注音
 
 <br>
 
@@ -79,31 +79,31 @@
 
 安装或更新：全部文件
 
-```
+```bash
 bash rime-install iDvel/rime-ice:others/recipes/full
 ```
 
 安装或更新：所有词库文件（包含下面三个）
 
-```
+```bash
 bash rime-install iDvel/rime-ice:others/recipes/all_dicts
 ```
 
 安装或更新：拼音词库文件
 
-```
+```bash
 bash rime-install iDvel/rime-ice:others/recipes/cn_dicts
 ```
 
 安装或更新：英文词库文件
 
-```
+```bash
 bash rime-install iDvel/rime-ice:others/recipes/en_dicts
 ```
 
 安装或更新：opencc(emoji)
 
-```
+```bash
 bash rime-install iDvel/rime-ice:others/recipes/opencc
 ```
 
@@ -173,4 +173,4 @@ Thanks to JetBrains for the OSS development license.
 
 如果觉得项目不错，可以请 Dvel 吃个煎饼馃子。
 
-<img src="./others/sponsor.webp" alt="请 Dvel 吃个煎饼馃子" width=600 />
+![请 Dvel 吃个煎饼馃子](./others/sponsor.webp)
