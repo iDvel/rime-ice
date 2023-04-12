@@ -67,13 +67,16 @@
 
 建议备份原先配置，清空配置目录。
 
-### 手动安装
+<details>
+<summary>手动安装</summary>
 
 将仓库所有文件复制粘贴进去就好了。
 
 更新词库，手动覆盖 `cn_dicts` `en_dcits` `opencc` 三个文件夹。
 
-### 东风破 [plum](https://github.com/rime/plum)
+</details>
+<details>
+<summary>东风破 <a href="https://github.com/rime/plum">plum</a></summary>
 
 所有配方（`others/recipes/*.recipe.yaml`）只是简单地更新覆盖文件，适合更新词库时使用。后四个配方只是更新词库文件，并不更新 `rime_ice.dict.yaml` 和 `melt_eng.dict.yaml`，因为用户可能会挂载其他词库。如果更新后部署时报错，可能是增、删、改了文件，需要检查上面两个文件和词库的对应关系。
 
@@ -107,48 +110,74 @@ bash rime-install iDvel/rime-ice:others/recipes/en_dicts
 bash rime-install iDvel/rime-ice:others/recipes/opencc
 ```
 
-### Arch Linux
+</details>
 
-#### 安装
+<details>
+<summary>Arch Linux <a herf="https://github.com/rime/ibus-rime">中州韵</a></summary>
 
-使用 AUR helper 安装 [rime-ice-git](https://aur.archlinux.org/packages/rime-ice-git) 包即可。
+### 安装
+
+使用 AUR helper 安装 [rime-ice](https://aur.archlinux.org/packages/rime-ice) 包即可。
 
 ```bash
-# paru 默认会每次重新评估 pkgver，所以有新的提交时 paru 会自动更新，
-# yay 默认未开启此功能，可以通过此命令开启
-# yay -Y --devel --save
-
-paru -S rime-ice-git
-# yay -S rime-ice-git
+yay -S rime-ice
 ```
 
-#### 配置
+或者
 
-推荐使用[补丁](https://github.com/rime/home/wiki/Configuration#補靪])的方式启用。
+```bash
+paru -S rime-ice
+```
 
-参考下面的配置示例，修改对应输入法框架用户目录（见下）中的 `default.custom.yaml` 文件
+yay用户建议开启[开发包更新](https://github.com/Jguer/yay#development-packages-upgrade)
+
+```bash
+yay -Y --devel --save
+```
+
+### 配置
+
+推荐使用[补丁](https://github.com/rime/home/wiki/CustomizationGuide#%定製指南)的方式启用。
+
+参考下面的配置示例，修改对应输入法框架用户目录（见下）中的 `rime-ice.custom.yaml` 文件
 
 - iBus 为 `$HOME/.config/ibus/rime/`
 - Fcitx5 为 `$HOME/.local/share/fcitx5/rime/`
 
 <details>
-
 <summary>default.custom.yaml</summary>
 
 ```yaml
 patch:
-  # 仅使用「雾凇拼音」的默认配置，配置此行即可
-  __include: rime_ice_suggestion:/
-  # 以下根据自己所需自行定义，仅做参考。
-  # 针对对应处方的定制条目，请使用 <recipe>.custom.yaml 中配置，例如 rime_ice.custom.yaml
-  __patch:
-    key_binder/+:
-      select_first_character: "bracketleft" # 即 [
-      select_last_character: "bracketright" # 即 ]
+  "menu/page_size": 8
+  schema_list:
+    - schema: rime_ice
+```
+
+</details>
+<details>
+<summary>rime-ice.custom.yaml</summary>
+
+```yaml
+patch:
+  key_binder:
+    select_first_character: "bracketleft" #[
+    select_last_character: "bracketright" #]
+  speller/algebra:
+    ### 模糊音
+    # 声母
+    - derive/^([zcs])h/$1/          # z c s → zh ch sh
+    - derive/^([zcs])([^h])/$1h$2/  # zh ch sh → z c s
+    - derive/^l/n/  # n → l
+    - derive/^n/l/  # l → n
+    - derive/^f/h/  # …………
+    - derive/^h/f/  # …………
+    ...(复制[rime_ice.schema.yaml].speller.algebra到这里,注释/取消注释以更改模糊音)
 ```
 
 </details>
 
+</details>
 <br>
 
 ## 感谢 ❤️
@@ -173,4 +202,4 @@ Thanks to JetBrains for the OSS development license.
 
 如果觉得项目不错，可以请 Dvel 吃个煎饼馃子。
 
-![请 Dvel 吃个煎饼馃子](./others/sponsor.webp)
+<img src="./others/sponsor.webp" alt="请 Dvel 吃个煎饼馃子" width=600 />
