@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-04-11"
+version: "2023-04-13"
 sort: by_weight
 ...
 # 一些杂项
@@ -121,64 +121,6 @@ Chandler	Chandler
 Phoebe	Phoebe
 
 
-# 补充的人名
-Griffiths	Griffiths
-Chapman	Chapman
-Walsh	Walsh
-Matthews	Matthews
-Patel	Patel
-Willie	Willie
-ChillSeph	ChillSeph
-Ernest	Ernest
-Phillip	Phillip
-Teresa	Teresa
-Doris	Doris
-Evelyn	Evelyn
-Cheryl	Cheryl
-Mildred	Mildred
-Katherine	Katherine
-Judith	Judith
-Janice	Janice
-Theresa	Theresa
-Kimberly	Kimberly
-Denise	Denise
-Irene	Irene
-Shirley	Shirley
-Cynthia	Cynthia
-Brenda	Brenda
-Kathleen	Kathleen
-Jacqueline	Jacqueline
-Wanda	Wanda
-Debra	Debra
-Lois	Lois
-Carolyn	Carolyn
-Tina	Tina
-Phyllis	Phyllis
-Norma	Norma
-Paula	Paula
-Frances	Frances
-Lillian	Lillian
-Olivia	Olivia
-Ava	Ava
-Isabella	Isabella
-Sherlock	Sherlock
-Amelia	Amelia
-Sophia	Sophia
-Abigail	Abigail
-Liam	Liam
-Noah	Noah
-Jay	Jay
-Enya	Enya
-Juno	Juno
-Trump	Trump
-Biden	Biden
-Joseph	Joseph
-Braun	Braun
-Bayes	Bayes
-Saul	Saul
-Wick	Wick
-#///
-
 # 带权重的系列
 iPhone	iPhone	999
 iPhone 14	iPhone	4
@@ -254,6 +196,61 @@ Windows 11	Windows	11
 
 # 往下开始都是扩展单词
 # +_+
+Griffiths	Griffiths
+Chapman	Chapman
+Walsh	Walsh
+Matthews	Matthews
+Patel	Patel
+Willie	Willie
+ChillSeph	ChillSeph
+Ernest	Ernest
+Phillip	Phillip
+Teresa	Teresa
+Doris	Doris
+Evelyn	Evelyn
+Cheryl	Cheryl
+Mildred	Mildred
+Katherine	Katherine
+Judith	Judith
+Janice	Janice
+Theresa	Theresa
+Kimberly	Kimberly
+Denise	Denise
+Irene	Irene
+Shirley	Shirley
+Cynthia	Cynthia
+Brenda	Brenda
+Kathleen	Kathleen
+Jacqueline	Jacqueline
+Wanda	Wanda
+Debra	Debra
+Lois	Lois
+Carolyn	Carolyn
+Tina	Tina
+Phyllis	Phyllis
+Norma	Norma
+Paula	Paula
+Frances	Frances
+Lillian	Lillian
+Olivia	Olivia
+Ava	Ava
+Isabella	Isabella
+Sherlock	Sherlock
+Amelia	Amelia
+Sophia	Sophia
+Abigail	Abigail
+Liam	Liam
+Noah	Noah
+Jay	Jay
+Enya	Enya
+Juno	Juno
+Trump	Trump
+Biden	Biden
+Joseph	Joseph
+Braun	Braun
+Bayes	Bayes
+Saul	Saul
+Wick	Wick
 RPG	RPG
 Role-Playing Game	RPG
 Role-Playing Game	RolePlayingGame
@@ -892,6 +889,7 @@ Windows Phone	WindowsPhone
 Workflow	Workflow
 WorkFlowy	WorkFlowy
 WWDC	WWDC
+Apple Worldwide Developers Conference	WWDC
 Xee	Xee
 Xeon	Xeon
 Xmind	Xmind
@@ -2074,3 +2072,5 @@ Universally Unique Identifier	UUID
 stargazers	stargazers
 fallback	fallback
 Fyne	Fyne
+Claude	Claude
+overdue	overdue

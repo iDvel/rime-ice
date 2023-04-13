@@ -13,5 +13,5 @@ import_tables:
   - cn_dicts/others   # 一些杂项
 
   # 建议把扩展词库放到下面，有重复词条时，最上面的权重生效
-  # - cn_dicts/my_dict
+  # - cn_dicts/mydict
 ...

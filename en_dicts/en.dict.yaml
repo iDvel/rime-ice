@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-04-11"
+version: "2023-04-13"
 sort: by_weight
 ...
 # +_+
@@ -735,7 +735,7 @@ amuse	amuse
 amusement	amusement
 amusing	amusing
 Amy	Amy
-an	an
+# an	an
 ana	ana
 anabolic	anabolic
 anaheim	anaheim
@@ -20955,7 +20955,7 @@ York	York
 yorker	yorker
 Yorkshire	Yorkshire
 Yosemite	Yosemite
-you	you
+# you	you
 young	young
 younger	younger
 youngest	youngest
