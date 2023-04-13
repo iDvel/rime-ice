@@ -169,12 +169,16 @@ key_binder:
   select_last_character: "grave"
 
   bindings:
-    # Tab/Shift+Tab 切换光标至下/上一个拼音
+    # Tab / Shift+Tab 切换光标至下/上一个拼音
     - { when: composing, accept: Shift+Tab, send: Shift+Left }
     - { when: composing, accept: Tab, send: Shift+Right }
-    # Tab/Shift+Tab 翻页
+    # Tab / Shift+Tab 翻页
     # - { when: has_menu, accept: Shift+Tab, send: Page_Up }
     # - { when: has_menu, accept: Tab, send: Page_Down }
+
+    # Option/Alt + ←/→ 切换光标至下/上一个拼音
+    - { when: composing, accept: Alt+Left, send: Shift+Left }
+    - { when: composing, accept: Alt+Right, send: Shift+Right }
 
     # 翻页 - =
     - { when: has_menu, accept: minus, send: Page_Up }
@@ -192,7 +196,7 @@ key_binder:
     # - { when: always, accept: Control+Shift+1, select: .next }               # 在最近的两个方案之间切换
     # - { when: always, accept: Control+Shift+2, toggle: ascii_mode }          # 切换中英
     - { when: always, accept: Control+Shift+3, toggle: ascii_punct }           # 切换中英标点
-    - { when: always, accept: "Control+Shift+4", toggle: traditionalization }  # 切换简繁
+    - { when: always, accept: Control+Shift+4, toggle: traditionalization }    # 切换简繁
     # - { when: always, accept: Control+Shift+5, toggle: full_shape }          # 切换全半角
 
     # emacs_editing:
