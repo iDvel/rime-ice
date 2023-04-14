@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-04-13"
+version: "2023-04-14"
 sort: by_weight
 ...
 # 一些杂项
@@ -2074,3 +2074,5 @@ fallback	fallback
 Fyne	Fyne
 Claude	Claude
 overdue	overdue
+Cinderella	Cinderella
+WebGPU	WebGPU

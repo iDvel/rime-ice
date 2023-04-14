@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-04-13"
+version: "2023-04-14"
 sort: by_weight
 ...
 # +_+
@@ -20903,10 +20903,10 @@ XXL	XXL
 # ya	ya
 yacht	yacht
 yachts	yachts
-yahoo	yahoo
+Yahoo	Yahoo
 Yakima	Yakima
-yale	yale
-yamaha	yamaha
+Yale	Yale
+Yamaha	Yamaha
 yan	yan
 yang	yang
 Yankee	Yankee
