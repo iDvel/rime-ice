@@ -30,7 +30,7 @@
 # 降低一些几乎只在一个固定词汇中使用的读音的权重，不让其参与注音，在 base 中手动注音。
 ---
 name: 8105
-version: "2023-04-13"
+version: "2023-04-14"
 sort: by_weight
 ...
 ### 按需启用
@@ -2768,6 +2768,7 @@ sort: by_weight
 剑	jian	1151704
 件	jian	935235
 建	jian	598616
+键	jian	510933
 渐	jian	503123
 简	jian	501969
 坚	jian	385150
@@ -2779,7 +2780,6 @@ sort: by_weight
 健	jian	168908
 检	jian	140353
 减	jian	131292
-键	jian	110933
 奸	jian	97555
 艰	jian	82206
 兼	jian	68324
