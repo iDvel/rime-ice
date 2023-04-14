@@ -222,8 +222,8 @@ recognizer:
 
 # 从 default 继承快捷键
 key_binder:
-  import_preset: default # 从 default.yaml 继承通用的
-  # bindings:            # 也可以再增加方案专有的
+  import_preset: default  # 从 default.yaml 继承通用的
+  # bindings:             # 也可以再增加方案专有的
 
 
 # 拼写设定
@@ -232,7 +232,7 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA;
   delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
-    - abbrev/^(.).+$/$1/ # 首字母简拼
+    - abbrev/^(.).+$/$1/  # 首字母简拼
     - erase/^xx$/
     - derive/^([jqxy])u$/$1v/
     - derive/^([aoe].*)$/o$1/

@@ -4,7 +4,7 @@
 
 # 复制自 rime_ice.schema.yaml ，适配了双拼。
 # 双拼键位映射复制自 https://github.com/rime/rime-double-pinyin
-#     双拼和全拼主要就是 speller/algebra 和 translator/preedit_format 这里有区别。
+# 双拼之间主要就是 speller/algebra 和 translator/preedit_format 这里有区别。
 #
 # 全拼的自定义文本和双拼有些冲突，改成了 custom_phrase_double ，需要创建 custom_phrase_double.txt 文件。
 #
@@ -218,8 +218,8 @@ recognizer:
 
 # 从 default 继承快捷键
 key_binder:
-  import_preset: default
-  # bindings: # 也可以再增加方案专属的快捷键
+  import_preset: default  # 从 default.yaml 继承通用的
+  # bindings:             # 也可以再增加方案专有的
 
 
 # 拼写设定
