@@ -1,7 +1,7 @@
 # Emoji 映射表
 # 根据此文件生成 emoji.txt
 #
-# version: "2023-04-14"
+# version: "2023-04-15"
 #
 # 中文映射由 Dvel 纯手工打造 https://github.com/iDvel/rime-ice
 #
@@ -950,7 +950,7 @@ S$ 新加坡元 新加坡币
 🗽 自由女神像 自由女神
 # place-religious
 ⛪ 教堂 圣堂
-🕌 清真寺
+🕌 清真寺 清真
 🛕 印度庙 印度寺庙 佛寺 庙宇
 🕍 犹太教会堂 犹太教堂
 ⛩ 神社 日本神社
