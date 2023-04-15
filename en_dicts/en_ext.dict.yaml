@@ -1576,6 +1576,8 @@ unfo	unfo
 timestamp	timestamp
 ChatGPT	ChatGPT
 OpenAI	OpenAI
+OpenAI Codex	OpenAICodex
+OpenAI ChatGPT	OpenAIChatGPT
 VoIP	VoIP
 Voice over Internet Protocol	VoIP
 Greasy Fork	GreasyFork
@@ -2078,3 +2080,6 @@ Cinderella	Cinderella
 WebGPU	WebGPU
 Mailfence	Mailfence
 gimme	gimme
+CodeWhisperer	CodeWhisperer
+Heisenberg	Heisenberg
+Codex	Codex
