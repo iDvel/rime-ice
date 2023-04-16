@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-04-15"
+version: "2023-04-16"
 sort: by_weight
 ...
 # 一些杂项
@@ -2083,3 +2083,7 @@ gimme	gimme
 CodeWhisperer	CodeWhisperer
 Heisenberg	Heisenberg
 Codex	Codex
+storyteller	storyteller
+troublemaker	troublemaker
+troublemaking	troublemaking
+espanso	espanso
