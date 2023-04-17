@@ -203,7 +203,7 @@ func checkLine(dictPath string, _type int, line string, lineNumber int, wg *sync
 	case _type == 4 && len(parts) == 2: // 两列，【汉字+权重】
 		text, weight = parts[0], parts[1]
 	default:
-		log.Fatalln("❌ 分割错误：", line)
+		log.Fatalln("❌ 分割错误：", lineNumber, line)
 	}
 
 	// weight 应该是纯数字
