@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-04-16"
+version: "2023-04-17"
 sort: by_weight
 ...
 # 一些杂项
@@ -1670,7 +1670,7 @@ LGPL	LGPL
 GNU Lesser General Public License	LGPL
 GNU Lesser General Public License	GNULesserGeneralPublicLicense
 Mozilla	Mozilla
-Mozilla	Firefox	MozillaFirefox
+Mozilla Firefox	MozillaFirefox
 Apache	Apache
 Steam	Steam
 App	App
@@ -2142,5 +2142,8 @@ Braavos Wallet	Braavos
 OneKey	OneKey
 Hamster	Hamster
 hamster	hamster
+hamsters	hamsters
 DYOR	DYOR
 Do Your Own Research	DYOR
+Noita	Noita
+Screen Studio	ScreenStudio

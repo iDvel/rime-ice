@@ -539,6 +539,7 @@ Rime	Rime 㞢
 中州韵	中州韵 Rime
 鼠须管	鼠须管 Squirrel
 小狼毫	小狼毫 Weasel
+仓输入法	仓输入法 Hamster
 平方	平方 ²
 平方厘米	平方厘米 cm²
 平方分米	平方分米 dm²
