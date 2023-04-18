@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-04-17"
+version: "2023-04-18"
 sort: by_weight
 ...
 # 一些杂项
@@ -2147,3 +2147,4 @@ DYOR	DYOR
 Do Your Own Research	DYOR
 Noita	Noita
 Screen Studio	ScreenStudio
+Norah	Norah
