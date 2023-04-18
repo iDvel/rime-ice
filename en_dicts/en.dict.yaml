@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-04-14"
+version: "2023-04-19"
 sort: by_weight
 ...
 # +_+
@@ -9201,7 +9201,7 @@ IE	IE
 # iec	iec
 IEEE	IEEE
 # ies	ies
-# ietf	ietf
+IETF	IETF
 if	if
 # ifdef	ifdef
 # ifs	ifs
@@ -11454,9 +11454,9 @@ marine	marine
 mariner	mariner
 mariners	mariners
 Marines	Marines
-marino	marino
-mario	mario
-marion	marion
+Marino	Marino
+Mario	Mario
+Marion	Marion
 marital	marital
 maritime	maritime
 mark	mark
@@ -11710,7 +11710,7 @@ melt	melt
 melted	melted
 melting	melting
 Melvin	Melvin
-mem	mem
+# mem	mem
 member	member
 # memberlistmemberlist	memberlistmemberlist
 members	members
