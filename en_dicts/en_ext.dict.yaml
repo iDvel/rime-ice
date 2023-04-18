@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-04-18"
+version: "2023-04-19"
 sort: by_weight
 ...
 # 一些杂项
@@ -278,9 +278,14 @@ SSH	SSH
 Secure Shell	SSH
 Secure Shell	SecureShell
 ISO	ISO
+International Organization for Standardization	ISO
 ISO 8601	ISO
 RFC	RFC
+Request for Comments	RFC
 RFC 3339	RFC
+RFCs	RFCs
+IETF	IETF
+Internet Engineering Task Force	IETF
 Pro Max	ProMax
 Aeron	Aeron
 Aeron Chair	AeronChair
@@ -2150,3 +2155,5 @@ Do Your Own Research	DYOR
 Noita	Noita
 Screen Studio	ScreenStudio
 Norah	Norah
+floccus	floccus
+Wappalyzer	Wappalyzer
