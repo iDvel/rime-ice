@@ -1,7 +1,7 @@
 # Emoji 映射表
 # 根据此文件生成 emoji.txt
 #
-# version: "2023-04-18"
+# version: "2023-04-19"
 #
 # 中文映射由 Dvel 纯手工打造 https://github.com/iDvel/rime-ice
 #
@@ -853,7 +853,7 @@ S$ 新加坡元 新加坡币
 🥠 幸运饼干
 🥡 外卖盒 外卖 外卖包装 外卖桶
 # food-marine
-🦀 螃蟹
+🦀 螃蟹 蟹 蟹老板
 🦞 龙虾 小龙虾
 🦐 虾 大虾
 🦑 鱿鱼 乌贼 墨鱼
