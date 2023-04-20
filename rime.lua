@@ -10,6 +10,17 @@ function date_translator(input, seg, env)
     local week = config:get_string(env.name_space .. "/week") or "xq"
     local datetime = config:get_string(env.name_space .. "/datetime") or "dt"
     local timestamp = config:get_string(env.name_space .. "/timestamp") or "ts"
+    -- if input == "s" then
+    --     local cand = Candidate("date", seg.start, seg._end, ("%.f"):format(collectgarbage('count')), "")
+    --     cand.quality = 100
+    --     yield(cand)
+    -- end
+    -- if input == "xxx" then
+    --     collectgarbage()
+    --     local cand = Candidate("date", seg.start, seg._end, "collectgarbage()", "")
+    --     cand.quality = 100
+    --     yield(cand)
+    -- end
     -- 日期
     if (input == date) then
         local cand = Candidate("date", seg.start, seg._end, os.date("%Y-%m-%d"), "")
@@ -161,6 +172,10 @@ function long_word_filter(input, env)
 
     local i = 1
     for cand in input:iter() do
+		-- 找齐了或者 l 太大了，就不找了
+		if (s == count) or (#l > 100) then
+			break
+		end
         local leng = utf8.len(cand.text)
         if (firstWordLength < 1 or i < idx) then
             i = i + 1
@@ -176,6 +191,9 @@ function long_word_filter(input, env)
     for _, cand in ipairs(l) do
         yield(cand)
     end
+	for cand in input:iter() do
+		yield(cand)
+	end
 end
 -------------------------------------------------------------
 -- 降低部分英语单词在候选项的位置
