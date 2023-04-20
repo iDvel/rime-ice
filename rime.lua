@@ -62,7 +62,7 @@ function date_translator(input, seg, env)
         cand.quality = 100
         yield(cand)
     end
-	-- 输出内存
+    -- -- 输出内存
     -- local cand = Candidate("date", seg.start, seg._end, ("%.f"):format(collectgarbage('count')), "")
     -- cand.quality = 100
     -- yield(cand)
@@ -166,10 +166,10 @@ function long_word_filter(input, env)
     local idx = config:get_int(env.name_space .. "/idx") or 4
 
     local code = env.engine.context.input -- 当前编码
-    if string.find(code, "[aeo]") then -- 要提升的词汇拼音一定是包含 a o e 的
+    if string.find(code, "[aeo]") then    -- 要提升的词汇的拼音一定是包含 a o e 的
         local l = {}
         local firstWordLength = 0 -- 记录第一个候选词的长度，提前的候选词至少要比第一个候选词长
-        local s = 0 -- 记录筛选了多少个词条(只提升 count 个词的权重)
+        local done = 0 -- 记录筛选了多少个词条(只提升 count 个词的权重)
         local i = 1
         for cand in input:iter() do
             -- 找到要提升的词
@@ -178,28 +178,29 @@ function long_word_filter(input, env)
                 i = i + 1
                 firstWordLength = leng
                 yield(cand)
-            elseif ((leng > firstWordLength) and (s < count)) and (string.find(cand.text, "[%w%p%s]+") == nil) then
+            elseif ((leng > firstWordLength) and (done < count)) and (string.find(cand.text, "[%w%p%s]+") == nil) then
                 yield(cand)
-                s = s + 1
+                done = done + 1
             else
                 table.insert(l, cand)
             end
             -- 找齐了或者 l 太大了，就不找了
-            if s == count then
-                break
-            elseif #l > 50 then
-                local memory = collectgarbage('count')
-                if memory > 10000 then
-                    collectgarbage('collect')
-                elseif memory > 5000 then
-                    collectgarbage("step")
-                end
+            if (done == count) or (#l > 50) then
                 break
             end
         end
+		-- yield l
         for _, cand in ipairs(l) do
             yield(cand)
         end
+		-- l 弄完了立马给丫回收了
+		l = nil
+        if collectgarbage('count') < 3000 then
+            collectgarbage("step")
+        else
+            collectgarbage('collect')
+        end
+		-- yield 其他
         for cand in input:iter() do
             yield(cand)
         end
