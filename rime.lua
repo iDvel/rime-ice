@@ -62,6 +62,16 @@ function date_translator(input, seg, env)
         cand.quality = 100
         yield(cand)
     end
+	-- 输出内存
+    -- local cand = Candidate("date", seg.start, seg._end, ("%.f"):format(collectgarbage('count')), "")
+    -- cand.quality = 100
+    -- yield(cand)
+    -- if input == "xxx" then
+    --     collectgarbage()
+    --     local cand = Candidate("date", seg.start, seg._end, "collectgarbage()", "")
+    --     cand.quality = 100
+    --     yield(cand)
+    -- end
 end
 -------------------------------------------------------------
 -- 以词定字
@@ -155,40 +165,49 @@ function long_word_filter(input, env)
     local count = config:get_int(env.name_space .. "/count") or 2
     local idx = config:get_int(env.name_space .. "/idx") or 4
 
-    local l = {}
-    local firstWordLength = 0 -- 记录第一个候选词的长度，提前的候选词至少要比第一个候选词长
-    local s = 0 -- 记录筛选了多少个词条(只提升 count 个词的权重)
-
-    local i = 1
-    for cand in input:iter() do
-        -- 找齐了或者 l 太大了，就不找了
-        if (s == count) or (#l > 50) then
-            break
+    local code = env.engine.context.input -- 当前编码
+    if string.find(code, "[aeo]") then -- 要提升的词汇拼音一定是包含 a o e 的
+        local l = {}
+        local firstWordLength = 0 -- 记录第一个候选词的长度，提前的候选词至少要比第一个候选词长
+        local s = 0 -- 记录筛选了多少个词条(只提升 count 个词的权重)
+        local i = 1
+        for cand in input:iter() do
+            -- 找到要提升的词
+            local leng = utf8.len(cand.text)
+            if (firstWordLength < 1 or i < idx) then
+                i = i + 1
+                firstWordLength = leng
+                yield(cand)
+            elseif ((leng > firstWordLength) and (s < count)) and (string.find(cand.text, "[%w%p%s]+") == nil) then
+                yield(cand)
+                s = s + 1
+            else
+                table.insert(l, cand)
+            end
+            -- 找齐了或者 l 太大了，就不找了
+            if s == count then
+                break
+            elseif #l > 50 then
+                local memory = collectgarbage('count')
+                if memory > 10000 then
+                    collectgarbage('collect')
+                elseif memory > 5000 then
+                    collectgarbage("step")
+                end
+                break
+            end
         end
-        local leng = utf8.len(cand.text)
-        if (firstWordLength < 1 or i < idx) then
-            i = i + 1
-            firstWordLength = leng
+        for _, cand in ipairs(l) do
             yield(cand)
-        elseif ((leng > firstWordLength) and (s < count)) and (string.find(cand.text, "[%w%p%s]+") == nil) then
+        end
+        for cand in input:iter() do
             yield(cand)
-            s = s + 1
-        else
-            table.insert(l, cand)
         end
     end
-    for _, cand in ipairs(l) do
+
+    for cand in input:iter() do
         yield(cand)
     end
-    for cand in input:iter() do
-        yield(cand)
-    end
-
-    -- 如果内存大于 5000 的话，GC 一次，最小间隔 60s
-    -- if collectgarbage('count') > 5000 and (os.time() - last_gc_time) > 60 then
-    --     collectgarbage("collect")
-    --     last_gc_time = os.time()
-    -- end
 end
 -------------------------------------------------------------
 -- 降低部分英语单词在候选项的位置
