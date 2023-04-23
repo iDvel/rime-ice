@@ -1,6 +1,6 @@
 # Rime table
 # coding: utf-8
-#@/db_name  custom_phrase.txt
+#@/db_name	custom_phrase.txt
 #@/db_type	tabledb
 #
 # 自定义文本
