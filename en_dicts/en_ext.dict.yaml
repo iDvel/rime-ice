@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-04-19"
+version: "2023-04-23"
 sort: by_weight
 ...
 # 一些杂项
@@ -707,6 +707,7 @@ IBM	IBM
 International Business Machines	IBM
 International Business Machines	InternationalBusinessMachines
 iCloud	iCloud
+iCloud Mail	iCloudMail
 iCloud Drive	iCloudDrive
 iExplorer	iExplorer
 iFFmpeg	iFFmpeg
@@ -2157,3 +2158,10 @@ Screen Studio	ScreenStudio
 Norah	Norah
 floccus	floccus
 Wappalyzer	Wappalyzer
+phony	phony
+noop	noop
+Kung Fu	KungFu
+prefixes	prefixes
+suffixes	suffixes
+DeepMind	DeepMind
+Google DeepMind	GoogleDeepMind

@@ -21,7 +21,7 @@ function date_translator(input, seg, env)
         local cand = Candidate("date", seg.start, seg._end, os.date("%Y.%m.%d"), "")
         cand.quality = 100
         yield(cand)
-        local cand = Candidate("date", seg.start, seg._end, os.date("%Y 年 %m 月 %d 日"), "")
+        local cand = Candidate("date", seg.start, seg._end, os.date("%Y 年 ")..tostring(tonumber(os.date("%m")))..os.date(" 月 %d 日"), "")
         cand.quality = 100
         yield(cand)
     end
@@ -62,10 +62,13 @@ function date_translator(input, seg, env)
         cand.quality = 100
         yield(cand)
     end
-    -- -- 输出内存
-    -- local cand = Candidate("date", seg.start, seg._end, ("%.f"):format(collectgarbage('count')), "")
-    -- cand.quality = 100
-    -- yield(cand)
+
+    -- 输出内存
+	if input == "gccount" then
+		local cand = Candidate("date", seg.start, seg._end, ("%.f"):format(collectgarbage('count')), "")
+		cand.quality = 100
+		yield(cand)
+	end
     -- if input == "xxx" then
     --     collectgarbage()
     --     local cand = Candidate("date", seg.start, seg._end, "collectgarbage()", "")
