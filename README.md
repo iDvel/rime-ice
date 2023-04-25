@@ -67,6 +67,8 @@
 
 建议备份原先配置，清空配置目录。
 
+[Releases](https://github.com/iDvel/rime-ice/releases) 里只记录一些重要和破坏性变更，方便很久没更新后查阅，第一次下载直接下最新提交即可。
+
 ### 手动安装
 
 将仓库所有文件复制粘贴进去就好了。
@@ -107,9 +109,11 @@ bash rime-install iDvel/rime-ice:others/recipes/en_dicts
 bash rime-install iDvel/rime-ice:others/recipes/opencc
 ```
 
-### Arch Linux
+### [rime-auto-deploy](https://github.com/Mark24Code/rime-auto-deploy)
 
-#### 安装
+一个自动部署脚本，集成了雾凇拼音，帮助无痛快速安装、部署 Rime 输入法（中州韵、小狼毫，鼠须管）以及部署配置。
+
+### Arch Linux
 
 使用 AUR helper 安装 [rime-ice-git](https://aur.archlinux.org/packages/rime-ice-git) 包即可。
 
@@ -122,8 +126,6 @@ paru -S rime-ice-git
 # yay -S rime-ice-git
 ```
 
-#### 配置
-
 推荐使用[补丁](https://github.com/rime/home/wiki/Configuration#補靪])的方式启用。
 
 参考下面的配置示例，修改对应输入法框架用户目录（见下）中的 `default.custom.yaml` 文件
@@ -132,7 +134,6 @@ paru -S rime-ice-git
 - Fcitx5 为 `$HOME/.local/share/fcitx5/rime/`
 
 <details>
-
 <summary>default.custom.yaml</summary>
 
 ```yaml
