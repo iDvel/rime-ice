@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-04-25"
+version: "2023-04-27"
 sort: by_weight
 ...
 # 一些杂项
@@ -1620,8 +1620,6 @@ Comodo	Comodo
 McAfee	McAfee
 OK	OK
 NG	NG
-TRUE	TRUE
-FALSE	FALSE
 TV	TV
 VTuber	VTuber
 NVMe	NVMe
@@ -2171,3 +2169,9 @@ Ant-Man	AntMan
 ungoogled	ungoogled
 ungoogled-chromium	ungoogledchromium
 taxman	taxman
+RouterOS	RouterOS
+Sumatra	Sumatra
+Sumatra PDF	SumatraPDF
+sideload	sideload
+sideloading	sideloading
+misdirection	misdirection
