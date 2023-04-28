@@ -71,6 +71,9 @@ func init() {
 			isMark = true
 			continue
 		}
+		if strings.HasPrefix(line, "#") || line == "" {
+			continue
+		}
 		if !isMark {
 			wrongWords.Add(line)
 		} else {

@@ -12,7 +12,7 @@ func main() {
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
 
 	// 临时
-	// rime.Temp()
+	rime.Temp()
 
 	// Emoji 检查和更新
 	rime.CheckAndGenerateEmoji()
