@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-04-27"
+version: "2023-04-28"
 sort: by_weight
 ...
 # 一些杂项
@@ -2175,3 +2175,6 @@ Sumatra PDF	SumatraPDF
 sideload	sideload
 sideloading	sideloading
 misdirection	misdirection
+librime	librime
+JRPG	JRPG
+Japanese Role-Playing Game	JRPG
