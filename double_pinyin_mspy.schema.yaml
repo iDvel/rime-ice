@@ -242,7 +242,7 @@ speller:
   delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
     - derive/^([jqxy])u(?='|$)/"$1v"/
-    - derive/^([aoe].*)(?='|$)/"o$1"/
+    - derive/^([aoe].*)(?='|$)/o$1/
     - xform/^([ae])(.*)(?='|$)/"$1$1$2"/
     - xform/^sh/"u"/
     - xform/^ch/"i"/
