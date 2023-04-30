@@ -2,11 +2,11 @@ speller:
  __patch:
   - algebra/@before 0: "xform/[A-Z]/\\L$0/"
   - algebra/@before 0: "xlit/ZCSBH/vuiee/"
-  - algebra/@after last: "derive/^./\\U$0/"
   - algebra/@after last: "xform/'//"
-  - algebra/@after last: "derive/(?<=^.)./\\U$0/"
-  - algebra/@after last: "derive/(?<=^..)./\\U$0/"
-  - algebra/@after last: "derive/(?<=^...)./\\U$0/"
+  - algebra/@after last: "derive/^./\\U$0/"
+  - algebra/@after last: "derive/.(?=..$)/\\U$0/"
+  - algebra/@after last: "derive/.(?=.$)/\\U$0/"
+  - algebra/@after last: "derive/.(?=$)/\\U$0/"
 schema:
  schema_id: tsm_dmma
  name: 「垫码辅助码插件」
