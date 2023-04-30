@@ -160,6 +160,8 @@ recognizer:
     # url_2: "^[A-Za-z]+[.].*"     # 句号不上屏，支持 google.com abc.txt 等网址或文件名，使用句号翻页时需要注释掉
     # colon: "^[A-Za-z]+:.*"       # 冒号不上屏
     # underscore: "^[A-Za-z]+_.*"  # 下划线不上屏
+    Bzjfzm: "^[a-z]{3,4}$" #　３－４位小写英文字母时，直接辅助码生效
+    Bfzm: "^[A-Z][A-Za-z]?[A-Za-z]?[A-Za-z]?$|^[A-Za-z]？[A-Z][A-Za-z]?[A-Za-z]?$|^[A-Za-z]?[A-Za-z]?[A-Z][A-Za-z]?$|^[A-Za-z]?[A-Za-z]?[A-Za-z]?[A-Z]$" #　四位英文字母且倒数第一二位为大写时，间接辅助码生效
 
 
 # 快捷键

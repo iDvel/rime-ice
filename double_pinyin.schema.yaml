@@ -1,3 +1,11 @@
+__patch:
+ - schema/dependencies/@after last: "tsm_dmma_dp"
+ - engine/segmentors/@after 1: "affix_segmentor@tsm_dmma"
+ - engine/segmentors/@after 2: "affix_segmentor@tsm_dmma_direct"
+ - engine/translators/@after 0: "script_translator@tsm_dmma"
+ - engine/translators/@after 2: "script_translator@tsm_dmma_direct"
+tsm_dmma: {dictionary: tsm_dmma, prism: tsm_dmma_dp, enable_user_dict: false, tag: Bfzm, initial_quality: 9, spelling_hints: 1, comment_format: [xlit/ZCSBH/VIUEE/, "xform/[a-z]+[;']//", xform/.+/-\U$0/]}
+tsm_dmma_direct: {__include: /tsm_dmma, tag: Bzjfzm, initial_quality: 0.9}
 # Rime schema
 # encoding: utf-8
 
@@ -79,7 +87,6 @@ engine:
     - simplifier@traditionalize         # 简繁切换
     - lua_filter@reduce_english_filter  # 降低部分英语单词在候选项的位置
     - uniquifier                        # 去重
-
 
 # Lua 配置: 日期、时间、星期、ISO 8601、时间戳的触发关键字
 date_translator:
@@ -180,6 +187,14 @@ custom_phrase:
   initial_quality: 99      # custom_phrase 的权重应该比 pinyin 和 melt_eng 大
 
 
+recognizer:
+  import_preset: default  # 从 default.yaml 继承通用的
+  patterns:  # 再增加方案专有的：
+    punct: "^V([0-9]|10|[A-Za-z]+)$"  # 响应 symbols_caps_v.yaml 的 symbols
+    reverse_lookup: "^L[a-z]+$"       # 响应两分拼字的反查
+    unicode: "^U[a-f0-9]+"            # 响应 Unicode
+
+
 # Emoji
 emoji:
   opencc_config: emoji.json
@@ -208,15 +223,6 @@ punctuator:
     __include: symbols_caps_v:/symbols         # 从 symbols_caps_v.yaml 导入配置
 
 
-# 处理符合特定规则的输入码，如网址、反查
-recognizer:
-  import_preset: default  # 从 default.yaml 继承通用的
-  patterns:  # 再增加方案专有的：
-    punct: "^V([0-9]|10|[A-Za-z]+)$"  # 响应 symbols_caps_v.yaml 的 symbols
-    reverse_lookup: "^L[a-z]+$"       # 响应两分拼字的反查
-    unicode: "^U[a-f0-9]+"            # 响应 Unicode
-
-
 # 从 default 继承快捷键
 key_binder:
   import_preset: default  # 从 default.yaml 继承通用的
@@ -229,36 +235,34 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
-    - erase/^xx$/
-    - derive/^([jqxy])u$/$1v/
-    - derive/^([aoe])([ioun])$/$1$1$2/
-    - xform/^([aoe])(ng)?$/$1$1$2/
-    - xform/iu$/Q/
-    - xform/[iu]a$/W/
-    - xform/[uv]an$/R/
-    - xform/[uv]e$/T/
-    - xform/ing$|uai$/Y/
-    - xform/^sh/U/
-    - xform/^ch/I/
-    - xform/^zh/V/
-    - xform/uo$/O/
-    - xform/[uv]n$/P/
-    - xform/i?ong$/S/
-    - xform/[iu]ang$/D/
-    - xform/(.)en$/$1F/
-    - xform/(.)eng$/$1G/
-    - xform/(.)ang$/$1H/
-    - xform/ian$/M/
-    - xform/(.)an$/$1J/
-    - xform/iao$/C/
-    - xform/(.)ao$/$1K/
-    - xform/(.)ai$/$1L/
-    - xform/(.)ei$/$1Z/
-    - xform/ie$/X/
-    - xform/ui$/V/
-    - xform/(.)ou$/$1B/
-    - xform/in$/N/
-    - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/
-    - abbrev/^(.).+$/$1/ # 首字母简拼
-    # 可输入大写字母。因为上面的双拼拼写规则用掉了大写字母。做了 xlit 转写，同时适配全拼和双拼。
+    - derive/^([jqxy])u(?='|$)/"$1v"/
+    - derive/^([aoe])([ioun])(?='|$)/"$1$1$2"/
+    - xform/^([aoe])(ng)?(?='|$)/"$1$1$2"/
+    - xform/^sh/u/
+    - xform/^ch/i/
+    - xform/^zh/v/
+    - xform/(?<=^[a-z])iu(?='|$)/"q"/
+    - xform/(?<=^[a-z])[iu]a(?='|$)/"w"/
+    - xform/(?<=^[a-z])[uv]an(?='|$)/"r"/
+    - xform/(?<=^[a-z])[uv]e(?='|$)/"t"/
+    - xform/(?<=^[a-z])(?:ing|uai)(?='|$)/"y"/
+    - xform/(?<=^[a-z])uo(?='|$)/"o"/
+    - xform/(?<=^[a-z])[uv]n(?='|$)/"p"/
+    - xform/(?<=^[a-z])i?ong(?='|$)/"s"/
+    - xform/(?<=^[a-z])[iu]ang(?='|$)/"d"/
+    - xform/(?<=^[a-z])en(?='|$)/"f"/
+    - xform/(?<=^[a-z])eng(?='|$)/"g"/
+    - xform/(?<=^[a-z])ang(?='|$)/"h"/
+    - xform/(?<=^[a-z])ian(?='|$)/"m"/
+    - xform/(?<=^[a-z])an(?='|$)/"j"/
+    - xform/(?<=^[a-z])iao(?='|$)/"c"/
+    - xform/(?<=^[a-z])ao(?='|$)/"k"/
+    - xform/(?<=^[a-z])ai(?='|$)/"l"/
+    - xform/(?<=^[a-z])ei(?='|$)/"z"/
+    - xform/(?<=^[a-z])ie(?='|$)/"x"/
+    - xform/(?<=^[a-z])ui(?='|$)/"v"/
+    - xform/(?<=^[a-z])ou(?='|$)/"b"/
+    - xform/(?<=^[a-z])in(?='|$)/"n"/
+    - xform/"//
     - xlit/āḃçďēḟḡĥīĵḱĺḿńōṕɋŕśťūṽẃẋȳź/ABCDEFGHIJKLMNOPQRSTUVWXYZ/
+    - abbrev/(?<=^.).+$// # 首字母简拼

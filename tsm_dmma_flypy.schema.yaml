@@ -1,0 +1,17 @@
+speller:
+ __include: double_pinyin_flypy.schema.yaml:/speller
+ __patch: 
+  - algebra/@last:
+  - algebra/@before 0: "xform/[A-Z]/\\L$0/"
+  - algebra/@before 0: "xlit/ZCSBH/viuee/"
+  - algebra/@after last: "xform/'//"
+  - algebra/@after last: "derive/^./\\U$0/"
+  - algebra/@after last: "derive/(?<=^.)./\\U$0/"
+  - algebra/@after last: "derive/(?<=^..)./\\U$0/"
+  - algebra/@after last: "derive/(?<=^...)./\\U$0/"
+schema:
+ schema_id: tsm_dmma_flypy
+ name: 「垫码辅助码插件_flypy」
+translator:
+ dictionary: tsm_dmma
+ prism: tsm_dmma_flypy

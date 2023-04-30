@@ -1,3 +1,11 @@
+__patch:
+ - schema/dependencies/@after last: "tsm_dmma"
+ - engine/segmentors/@after 1: "affix_segmentor@tsm_dmma"
+ - engine/segmentors/@after 2: "affix_segmentor@tsm_dmma_direct"
+ - engine/translators/@after 0: "script_translator@tsm_dmma"
+ - engine/translators/@after 2: "script_translator@tsm_dmma_direct"
+tsm_dmma: {dictionary: tsm_dmma, enable_user_dict: false, tag: Bfzm, initial_quality: 9, spelling_hints: 1, comment_format: [xlit/ZCSBH/VUIEE/, "xform/[a-z]+[;']//", xform/.+/-\U$0/]}
+tsm_dmma_direct: {__include: /tsm_dmma, tag: Bzjfzm, initial_quality: 0.9}
 # Rime schema
 # encoding: utf-8
 
