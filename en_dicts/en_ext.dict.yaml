@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-04-23"
+version: "2023-04-28"
 sort: by_weight
 ...
 # 一些杂项
@@ -1620,8 +1620,6 @@ Comodo	Comodo
 McAfee	McAfee
 OK	OK
 NG	NG
-TRUE	TRUE
-FALSE	FALSE
 TV	TV
 VTuber	VTuber
 NVMe	NVMe
@@ -1679,6 +1677,7 @@ Mozilla	Mozilla
 Mozilla Firefox	MozillaFirefox
 Apache	Apache
 Steam	Steam
+Steam Deck	SteamDeck
 App	App
 Android	Android
 android	android
@@ -2165,3 +2164,17 @@ prefixes	prefixes
 suffixes	suffixes
 DeepMind	DeepMind
 Google DeepMind	GoogleDeepMind
+TL;DR	TLDR
+Ant-Man	AntMan
+ungoogled	ungoogled
+ungoogled-chromium	ungoogledchromium
+taxman	taxman
+RouterOS	RouterOS
+Sumatra	Sumatra
+Sumatra PDF	SumatraPDF
+sideload	sideload
+sideloading	sideloading
+misdirection	misdirection
+librime	librime
+JRPG	JRPG
+Japanese Role-Playing Game	JRPG
