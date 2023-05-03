@@ -294,7 +294,7 @@ func checkLine(dictPath string, _type int, line string, lineNumber int, wg *sync
 		i := 0
 		for _, zi := range textWithoutDian {
 			if !contains(hanPinyin[string(zi)], pinyins[i]) {
-				fmt.Printf("注音错误 or 字表未包含的汉字及注音: %s - %s.+%s\n", line, string(zi), pinyins[i])
+				fmt.Printf("❌ 注音错误 or 字表未包含的汉字及注音: %s - %s.+%s\n", line, string(zi), pinyins[i])
 			}
 			i++
 		}
@@ -303,7 +303,13 @@ func checkLine(dictPath string, _type int, line string, lineNumber int, wg *sync
 	// 错别字检查，最耗时的检查
 	if dictPath != HanziPath && !wrongWordsFilter.Contains(text) {
 		wrongWords.Each(func(wrongWord string) bool {
-			if strings.Contains(text, wrongWord) {
+			if strings.HasPrefix(wrongWord, "=") {
+				wrongWord = strings.TrimLeft(wrongWord, "= ")
+				if text == wrongWord {
+					fmt.Printf("❌ 错别字: %s = %s\n", text, wrongWord)
+					return true
+				}
+			} else if strings.Contains(text, wrongWord) {
 				fmt.Printf("❌ 错别字: %s - %s\n", text, wrongWord)
 				return true
 			}
