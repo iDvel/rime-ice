@@ -50,7 +50,7 @@ switcher:
 # macOS 偏好设置的优先级更高，如果勾选【使用大写锁定键切换“ABC”输入法】则始终会切换输入法。
 #
 # 切换中英：
-# 不同的选项表示：打字打到一半时按下了 CapsLock、Shift、Control 后： 
+# 不同的选项表示：打字打到一半时按下了 CapsLock、Shift、Control 后：
 # commit_code  上屏原始的编码，然后切换到英文
 # commit_text  上屏拼出的词句，然后切换到英文
 # clear        清除未上屏内容，然后切换到英文
