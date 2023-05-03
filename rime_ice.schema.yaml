@@ -1,7 +1,7 @@
 # Rime schema
 # encoding: utf-8
-
-
+__patch:
+ - engine/filters/@after 4: "lua_filter@is_that_a_user_dict"
 # 方案说明
 schema:
   schema_id: rime_ice
