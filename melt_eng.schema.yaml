@@ -3,7 +3,8 @@
 # encoding: utf-8
 #
 # 复制自 https://github.com/tumuyan/rime-melt
-
+__patch:
+ - engine/filters/@after last: "lua_filter@is_that_a_user_dict"
 schema:
   schema_id: melt_eng
   name: Easy English Nano

@@ -1,7 +1,7 @@
 # Rime schema
 # encoding: utf-8
 __patch:
- - engine/filters/@after 4: "lua_filter@is_that_a_user_dict"
+ - engine/filters/@after last: "lua_filter@is_that_a_user_dict"
 # 复制自 rime_ice.schema.yaml ，适配了双拼。
 # 双拼键位映射复制自 https://github.com/rime/rime-double-pinyin
 # 双拼之间主要就是 speller/algebra 和 translator/preedit_format 这里有区别。
