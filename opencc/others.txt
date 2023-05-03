@@ -350,7 +350,7 @@ Control	Control ⌃
 Opt	Opt Option ⌥
 Option	Option ⌥
 Shift	Shift ⇧
-Tab	Tab ⇥
+Tab	Tab ⇥ 	
 Caps	Caps CapsLock ⇪
 CapsLock	CapsLock ⇪
 Return	Return ⏎
