@@ -57,7 +57,7 @@ preset_keyboards:
     vertical_gap: *jpgd9
     round_corner: *jpgd4
 #现在只支持配置click,swipe_up,swipe_down键盘
-    keys: 
+    keys:
       - {click: q, label: Q, swipe_up: commit1,  swipe_down: "一"}
       - {click: w, label: W, swipe_up: commit2,  swipe_down: "二"}
       - {click: e, label: E, swipe_up: commit3,  swipe_down: "三"}
@@ -105,7 +105,7 @@ preset_keyboards:
     horizontal_gap: *jpgd10
     vertical_gap: *jpgd9
     round_corner: *jpgd4
-    keys: 
+    keys:
       - {click: q, swipe_up: "1",  swipe_down: "一"}
       - {click: w, swipe_up: "2",  swipe_down: "二"}
       - {click: e, swipe_up: "3",  swipe_down: "三"}
@@ -155,7 +155,7 @@ preset_keyboards:
     horizontal_gap: *jpgd10
     vertical_gap: *jpgd9
     round_corner: *jpgd4
-    keys: 
+    keys:
       - {click: 1}
       - {click: 2}
       - {click: 3}
@@ -237,13 +237,13 @@ preset_keys:
   bracket3: {label: "（", text: "（）{Left}"} #先上屏()光标往左移动一格
   bracket2: {label: "(", text: "(){Left}"} #先上屏()光标往左移动一格
   bracket1: {label: ")", text: "){DefaultKeyboard}"} #先上屏)再跳转到default键盘
-  quotationMarkFull: {label: "〝", text: "〝〞{Left}{DefaultKeyboard}"} 
+  quotationMarkFull: {label: "〝", text: "〝〞{Left}{DefaultKeyboard}"}
   quotationMarkFull1: {label: "〞", text: "〞＂{Left}{DefaultKeyboard}"}
-  quotationMarkFull2: {label: "〝", text: "〝〞{Left}"} 
-  quotationMar「」: {label: "「", text: "「」{Left}"} 
-  quotationMarkHalf1: {label: "\"", text: "\""} 
-  quotationMarkHalf2: {label: "\"", text: "\"\"{Left}"} 
-  quotationMarkFull１: {label: "\"", text: "＂{DefaultKeyboard}"} 
+  quotationMarkFull2: {label: "〝", text: "〝〞{Left}"}
+  quotationMar「」: {label: "「", text: "「」{Left}"}
+  quotationMarkHalf1: {label: "\"", text: "\""}
+  quotationMarkHalf2: {label: "\"", text: "\"\"{Left}"}
+  quotationMarkFull１: {label: "\"", text: "＂{DefaultKeyboard}"}
   commit1: {label: "1", commit: "1"}
   commit2: {label: "2", commit: "2"}
   commit3: {label: "3", commit: "3"}
