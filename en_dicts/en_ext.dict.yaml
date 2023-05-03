@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-04-28"
+version: "2023-05-04"
 sort: by_weight
 ...
 # 一些杂项
@@ -2178,3 +2178,4 @@ misdirection	misdirection
 librime	librime
 JRPG	JRPG
 Japanese Role-Playing Game	JRPG
+Kuromis	Kuromis

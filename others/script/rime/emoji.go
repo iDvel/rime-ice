@@ -6,6 +6,7 @@ import (
 	mapset "github.com/deckarep/golang-set/v2"
 	"log"
 	"os"
+	"path/filepath"
 	"regexp"
 	"strings"
 	"time"
@@ -15,12 +16,14 @@ import (
 // CheckAndGenerateEmoji
 // 检查 emoji-map.txt 是否合法，检查中文映射是否存在于 base 词库中
 // 生成 Rime 格式的 emoji.txt
+// 检查 other.txt 中文映射是否存在于 base 词库中
 func CheckAndGenerateEmoji() {
 	// 控制台输出
 	defer printlnTimeCost("检查、更新 Emoji", time.Now())
 
 	checkEmoji()
 	generateEmoji()
+	checkOthersTXT()
 }
 
 // 检查 emoji-map.txt 是否合法，检查中文映射是否存在于 base 词库中
@@ -141,5 +144,70 @@ func generateEmoji() {
 
 	if err := file.Sync(); err != nil {
 		log.Fatalln(err)
+	}
+}
+
+// 检查 others.txt 里的中文映射是否存在于 base 词库中
+func checkOthersTXT() {
+	// 打开文件
+	file, err := os.Open(filepath.Join(RimeDir, "opencc/others.txt"))
+	if err != nil {
+		log.Fatalln(err)
+	}
+	defer file.Close()
+
+	//  将 Emoji 加入一个 set，为检测差集做准备
+	set := mapset.NewSet[string]()
+	sc := bufio.NewScanner(file)
+	for sc.Scan() {
+		line := sc.Text()
+		// 不能有空行
+		if line == "" {
+			fmt.Println("❌ empty line")
+		}
+		// 过滤注释
+		if strings.HasPrefix(line, "----------") {
+			continue
+		}
+		text := strings.Split(line, "\t")[0]
+		set.Add(text)
+	}
+
+	// base+cn_dicts/others.dict.yaml
+	othersDictYamlSet := mapset.NewSet[string]()
+	othersDictYaml, err := os.Open(filepath.Join(RimeDir, "cn_dicts/others.dict.yaml"))
+	if err != nil {
+		log.Fatalln(err)
+	}
+	defer othersDictYaml.Close()
+	sc = bufio.NewScanner(othersDictYaml)
+	isMark := false
+	for sc.Scan() {
+		line := sc.Text()
+		if !isMark {
+			if strings.HasPrefix(line, "##### 叠字") {
+				isMark = true
+			}
+			continue
+		}
+		if strings.HasPrefix(line, "#") {
+			continue
+		}
+		text := strings.Split(line, "\t")[0]
+		othersDictYamlSet.Add(text)
+	}
+
+	// 检查： emoji-map.txt 中的映射是否存在于 base+cn_dicts/others.dict.yaml 词库中，有差集即不存在
+	dictSet := BaseSet.Union(othersDictYamlSet)
+	for _, text := range set.Difference(dictSet).ToSlice() {
+		// 不检查英文
+		if match, _ := regexp.MatchString(`[a-zA-Z]`, text); match {
+			continue
+		}
+		// 不检查 1 个字的
+		if utf8.RuneCountInString(text) == 1 {
+			continue
+		}
+		fmt.Println("❌ others.txt 与 base 的差集：", text)
 	}
 }
