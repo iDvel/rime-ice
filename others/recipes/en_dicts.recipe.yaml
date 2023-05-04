@@ -6,6 +6,4 @@ recipe:
   description: >-
     英文词库安装、更新
 install_files: >-
-  en_dicts/en.dict.yaml
-  en_dicts/en_ext.dict.yaml
-  en_dicts/cn_en.dict.yaml
+  en_dicts/*.*
