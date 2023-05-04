@@ -1,12 +1,3 @@
--------------------------------------------------------------
--- 这是用户词吗？
--- 非常简单的lua滤镜，为所有用户词都加上*作为提示
-function is_that_a_user_dict(input,env)
- for cand in input:iter() do
-  if(string.find(cand.type,"user"))then cand.comment=cand.comment..'*'end
-  yield(cand)
-end end
--------------------------------------------------------------
 -- Rime Lua 扩展 https://github.com/hchunhui/librime-lua
 -- 文档 https://github.com/hchunhui/librime-lua/wiki/Scripting
 -------------------------------------------------------------
@@ -311,3 +302,12 @@ function unicode(input, seg, env)
     end
 end
 -------------------------------------------------------------
+-- 为用户词典中（输入过）的内容结尾加上一个星号 *
+function is_in_user_dict(input, env)
+    for cand in input:iter() do
+        if (string.find(cand.type, "user")) then
+            cand.comment = cand.comment .. '*'
+        end
+        yield(cand)
+    end
+end
