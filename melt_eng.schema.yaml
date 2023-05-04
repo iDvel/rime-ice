@@ -4,6 +4,7 @@
 #
 # 复制自 https://github.com/tumuyan/rime-melt
 
+
 schema:
   schema_id: melt_eng
   name: Easy English Nano
