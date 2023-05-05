@@ -1,7 +1,7 @@
 # Emoji 映射表
 # 根据此文件生成 emoji.txt
 #
-# version: "2023-04-28"
+# version: "2023-05-05"
 #
 # 中文映射由 Dvel 纯手工打造 https://github.com/iDvel/rime-ice
 #
@@ -727,8 +727,8 @@ S$ 新加坡元 新加坡币
 🕷 蜘蛛
 🕸 蛛网 蜘蛛网
 🦂 蝎子
-🦟 蚊子
-🪰 苍蝇
+🦟 蚊蝇 蚊子 蚊虻
+🪰 蚊蝇 苍蝇
 🪱 蠕虫 寄生虫 蚯蚓
 🦠 微生物 变形虫 病毒 细菌
 # plant-flower

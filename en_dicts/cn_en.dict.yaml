@@ -7,7 +7,7 @@
 #
 ---
 name: cn_en
-version: "2023-04-11"
+version: "2023-05-05"
 sort: by_weight
 ...
 X光	Xguang
@@ -23,7 +23,7 @@ A杖	Azhang
 红Buff	hongBuff
 蓝Buff	lanBuff
 老Baby	laoBaby
-小 Baby	xiaoBaby
+小Baby	xiaoBaby
 艾AA	aiAA
 炒CP	chaoCP
 嗑CP	keCP
