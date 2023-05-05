@@ -16,7 +16,7 @@
 #          这样小字表里存在的字按权重靠前排列，大字表殿后，生僻字自动就排在末尾。
 ---
 name: 41448
-version: "2023-03-30"
+version: "2023-05-05"
 sort: by_weight
 ...
 # 㕶	n
@@ -7094,6 +7094,7 @@ sort: by_weight
 𪘐	e
 𪙯	e
 𫫇	e
+欸	ei
 誒	ei
 诶	ei
 䅰	en

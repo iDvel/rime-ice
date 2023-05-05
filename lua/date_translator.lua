@@ -22,8 +22,7 @@ local function date_translator(input, seg, env)
         local cand = Candidate("date", seg.start, seg._end, os.date("%Y.%m.%d"), "")
         cand.quality = 100
         yield(cand)
-        local cand = Candidate("date", seg.start, seg._end,
-            os.date("%Y 年 ") .. tostring(tonumber(os.date("%m"))) .. os.date(" 月 %d 日"), "")
+        local cand = Candidate("date", seg.start, seg._end, os.date("%Y 年 " .. tostring(tonumber(os.date("%m"))) .. " 月 " .. tostring(tonumber(os.date("%m"))) .. " 日"), "")
         cand.quality = 100
         yield(cand)
     end

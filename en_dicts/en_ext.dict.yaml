@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-05-04"
+version: "2023-05-05"
 sort: by_weight
 ...
 # 一些杂项
@@ -2179,3 +2179,10 @@ librime	librime
 JRPG	JRPG
 Japanese Role-Playing Game	JRPG
 Kuromis	Kuromis
+sorcerer	sorcerer
+sorcerers	sorcerers
+werewolf	werewolf
+disjunction	disjunction
+heil	heil
+maintainers	maintainers
+AmyTelecom	AmyTelecom
