@@ -1,15 +1,16 @@
-require('tools/string')
-require("tools/metatable")
+
+require('cold_word_drop.string')
+require("cold_word_drop.metatable")
 -- local puts = require("tools/debugtool")
-local drop_list = require("others/drop_words")
-local hide_list = require("others/hide_words")
-local turndown_freq_list = require("others/turndown_freq_words")
+local drop_list = require("cold_word_drop.drop_words")
+local hide_list = require("cold_word_drop.hide_words")
+local turndown_freq_list = require("cold_word_drop.turndown_freq_words")
 local tbls = {
     ['drop_list'] = drop_list,
     ['hide_list'] = hide_list,
     ['turndown_freq_list'] = turndown_freq_list
 }
-local cold_word_drop = {}
+-- local cold_word_drop = {}
 
 
 local function get_record_filername(record_type)
@@ -17,17 +18,17 @@ local function get_record_filername(record_type)
     local filename = nil
     -- body
     if system == "Darwin" then
-        filename = string.format("%s/Library/Rime/lua/others/%s_words.lua", os.getenv('HOME'), record_type)
+        filename = string.format("%s/Library/Rime/lua/cold_word_drop/%s_words.lua", os.getenv('HOME'), record_type)
     elseif system == "Linux" then
-        filename = string.format("%s/.config/ibus/rime/lua/others/%s_words.lua", os.getenv('HOME'), record_type)
+        filename = string.format("%s/.config/ibus/rime/lua/cold_word_drop/%s_words.lua", os.getenv('HOME'), record_type)
     else
-        filename = string.format("%%APPDATA%%\\Rime\\lua\\others\\%s_words.lua", record_type)
+        filename = string.format("%%APPDATA%%\\Rime\\lua\\cold_word_drop\\%s_words.lua", record_type)
     end
     return filename
 end
 
 local function write_word_to_file(record_type)
-    -- local filename = string.format("%s/Library/Rime/lua/others/%s_words.lua", os.getenv('HOME'), record_type)
+    -- local filename = string.format("%s/Library/Rime/lua/cold_word_drop/%s_words.lua", os.getenv('HOME'), record_type)
     local filename = get_record_filername(record_type)
     local record_header = string.format("local %s_words =\n", record_type)
     local record_tailer = string.format("\nreturn %s_words", record_type)
@@ -101,7 +102,7 @@ local function append_word_to_droplist(ctx, action_type, reversedb)
     end
 end
 
-function cold_word_drop.processor(key, env)
+local function processor(key, env)
     local engine            = env.engine
     local config            = engine.schema.config
     local context           = engine.context
@@ -117,6 +118,7 @@ function cold_word_drop.processor(key, env)
 
     -- local schema_id         = config:get_string("schema/schema_id")
     local schema_id         = config:get_string("translator/dictionary") -- 多方案共用字典取主方案名称
+    ---@diagnostic disable-next-line: undefined-global
     local reversedb         = ReverseLookup(schema_id)
     if key:repr() == turndown_cand_key or key:repr() == drop_cand_key then
         local cand = context:get_selected_candidate()
@@ -141,57 +143,4 @@ function cold_word_drop.processor(key, env)
     return 2     -- kNoop, 不做任何操作, 交给下个组件处理
 end
 
-function cold_word_drop.filter(input, env)
-    local idx = 3 -- 降频的词条放到第三个后面, 即第四位, 可在 yaml 里配置
-    local i = 1
-    local cands = {}
-    local context = env.engine.context
-    local preedit_code = context.input
-
-    for cand in input:iter() do
-        local cpreedit_code = string.gsub(cand.preedit, ' ', '')
-        if (i <= idx) then
-            local tfl = turndown_freq_list[cand.text] or nil
-            -- 前三个 候选项排除 要调整词频的词条, 要删的(实际假性删词, 彻底隐藏罢了) 和要隐藏的词条
-            if not
-                ((tfl and table.find_index(tfl, cpreedit_code)) or
-                    table.find_index(drop_list, cand.text) or
-                    (hide_list[cand.text] and table.find_index(hide_list[cand.text], cpreedit_code))
-                )
-            then
-                i = i + 1
-                yield(cand)
-            end
-            table.insert(cands, cand)
-        else
-            table.insert(cands, cand)
-        end
-        if (#cands > 50) then
-            break
-        end
-    end
-    for _, cand in ipairs(cands) do
-        local cpreedit_code = string.gsub(cand.preedit, ' ', '')
-        if not
-            -- 要删的 和要隐藏的词条不显示
-            (
-                table.find_index(drop_list, cand.text) or
-                (hide_list[cand.text] and table.find_index(hide_list[cand.text], cpreedit_code))
-            )
-        then
-            yield(cand)
-        end
-    end
-
-    if string.find(preedit_code, '[,.;\'"(){}/?:!@#$%%^&*|~[%]]') then
-        context:confirm_current_selection()
-        -- context:confirm_previous_selection()
-        context:clear()
-        return 1
-    end
-end
-
-return {
-    processor = cold_word_drop.processor,
-    filter = cold_word_drop.filter,
-}
+return processor
