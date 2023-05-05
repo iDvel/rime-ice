@@ -21,7 +21,7 @@ local function get_record_filername(record_type)
     elseif system == "Linux" then
         filename = string.format("%s/.config/ibus/rime/lua/others/%s_words.lua", os.getenv('HOME'), record_type)
     else
-        filename = string.format("%APPDATA%\\Rime\\lua\\others\\%s_words.lua", record_type)
+        filename = string.format("%%APPDATA%%\\Rime\\lua\\others\\%s_words.lua", record_type)
     end
     return filename
 end
@@ -137,26 +137,26 @@ function cold_word_drop.processor(key, env)
         end
         return 1 -- kAccept
     end
+
     return 2     -- kNoop, 不做任何操作, 交给下个组件处理
 end
 
 function cold_word_drop.filter(input, env)
-    -- local preedit_code = env.engine.context:get_commit_text()
-    -- local preedit_code = context:get_script_text()
-    -- local context = env.engine.context
-    -- local preedit_code = context.input
     local idx = 3 -- 降频的词条放到第三个后面, 即第四位, 可在 yaml 里配置
     local i = 1
     local cands = {}
+    local context = env.engine.context
+    local preedit_code = context.input
+
     for cand in input:iter() do
-        local preedit_code = string.gsub(cand.preedit, ' ', '')
+        local cpreedit_code = string.gsub(cand.preedit, ' ', '')
         if (i <= idx) then
             local tfl = turndown_freq_list[cand.text] or nil
             -- 前三个 候选项排除 要调整词频的词条, 要删的(实际假性删词, 彻底隐藏罢了) 和要隐藏的词条
             if not
-                ((tfl and table.find_index(tfl, preedit_code)) or
+                ((tfl and table.find_index(tfl, cpreedit_code)) or
                     table.find_index(drop_list, cand.text) or
-                    (hide_list[cand.text] and table.find_index(hide_list[cand.text], preedit_code))
+                    (hide_list[cand.text] and table.find_index(hide_list[cand.text], cpreedit_code))
                 )
             then
                 i = i + 1
@@ -171,16 +171,23 @@ function cold_word_drop.filter(input, env)
         end
     end
     for _, cand in ipairs(cands) do
-        local preedit_code = string.gsub(cand.preedit, ' ', '')
+        local cpreedit_code = string.gsub(cand.preedit, ' ', '')
         if not
             -- 要删的 和要隐藏的词条不显示
             (
                 table.find_index(drop_list, cand.text) or
-                (hide_list[cand.text] and table.find_index(hide_list[cand.text], preedit_code))
+                (hide_list[cand.text] and table.find_index(hide_list[cand.text], cpreedit_code))
             )
         then
             yield(cand)
         end
+    end
+
+    if string.find(preedit_code, '[,.;\'"(){}/?:!@#$%%^&*|~[%]]') then
+        context:confirm_current_selection()
+        -- context:confirm_previous_selection()
+        context:clear()
+        return 1
     end
 end
 
