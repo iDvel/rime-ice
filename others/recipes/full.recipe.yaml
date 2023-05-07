@@ -10,6 +10,7 @@ install_files: >-
   en_dicts/*.*
   opencc/*.*
   lua/*.*
+  lua/cold_word_drop/*.*
   default.yaml
   squirrel.yaml
   rime_ice.schema.yaml
