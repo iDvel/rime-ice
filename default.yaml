@@ -168,6 +168,9 @@ key_binder:
   # Lua 配置: 以词定字（上屏当前词句的第一个或最后一个字）
   select_first_character:
   select_last_character: "grave"
+  # Lua 配置： 词条隐藏、降频
+  # turn_down_cand: "Control+j"  # 匹配当前输入码后隐藏指定的候选字词 或候选词条放到第四候选位置
+  # drop_cand: "Control+d"       # 强制删词, 无视输入的编码
 
   bindings:
     # Tab / Shift+Tab 切换光标至下/上一个拼音
