@@ -24,8 +24,9 @@ local function filter(input, env)
                 i = i + 1
                 ---@diagnostic disable-next-line: undefined-global
                 yield(cand)
+			else
+				table.insert(cands, cand)
             end
-            table.insert(cands, cand)
         else
             table.insert(cands, cand)
         end
@@ -46,13 +47,9 @@ local function filter(input, env)
             yield(cand)
         end
     end
-
-    if string.find(preedit_code, '[,.;`\'"(){}?:!@#$%%^&*|~]') then
-        context:confirm_current_selection()
-        -- context:confirm_previous_selection()
-        context:clear()
-        return 1
-    end
+	for cand in input:iter() do
+		yield(cand)
+	end
 end
 
 return filter
