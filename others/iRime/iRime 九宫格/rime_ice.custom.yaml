@@ -20,7 +20,7 @@ patch:
 
   # 让输入框从数字变成字母
   engine/filters/+:
-    - lua_filter@irime_t9_preedit
+    - lua_filter@t9_preedit
   translator/+:
     spelling_hints: 16
 
