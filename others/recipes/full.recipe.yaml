@@ -9,6 +9,7 @@ install_files: >-
   cn_dicts/*.*
   en_dicts/*.*
   opencc/*.*
+  rime.lua
   lua/*.*
   lua/cold_word_drop/*.*
   default.yaml
