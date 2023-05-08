@@ -30,7 +30,7 @@
 # 降低一些几乎只在一个固定词汇中使用的读音的权重，不让其参与注音，在 base 中手动注音。
 ---
 name: 8105
-version: "2023-05-05"
+version: "2023-05-09"
 sort: by_weight
 ...
 ### 按需启用
@@ -3248,6 +3248,7 @@ sort: by_weight
 莙	jun	15
 晙	jun	6
 筠	jun	1
+隽	jun	1
 鲪	jun	1
 龟	jun	1
 䐃	jun	0
