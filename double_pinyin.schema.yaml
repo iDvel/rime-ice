@@ -79,7 +79,7 @@ engine:
     - simplifier@emoji                    # Emoji
     - simplifier@traditionalize           # 简繁切换
     # - lua_filter@*is_in_user_dict       # 为用户词典中（输入过）的内容结尾加上一个星号 *
-    - lua_filter@*cold_word_drop.filter   # 强制删词, 词条降频(选中高亮的词条放到第四位)
+    # - lua_filter@*cold_word_drop.filter # 强制删词, 词条降频(选中高亮的词条放到第四位)
     - lua_filter@*reduce_english_filter   # 词条隐藏、降频
     - uniquifier                          # 去重
 
