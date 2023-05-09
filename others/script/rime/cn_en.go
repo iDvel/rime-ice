@@ -294,6 +294,54 @@ var doublePinyinZiGuangMap = map[string]string{
 	"un":   "m",
 }
 
+var doublePinyinABCMap = map[string]string{
+	// 零声母
+	"-a-":   "oa",
+	"-e-":   "oe",
+	"-o-":   "oo",
+	"-ai-":  "ol",
+	"-ei-":  "oq",
+	"-ou-":  "ob",
+	"-an-":  "oj",
+	"-en-":  "of",
+	"-ang-": "oh",
+	"-eng-": "og",
+	"-ao-":  "ok",
+	"-er-":  "or",
+	// zh ch sh
+	"zh": "a",
+	"ch": "e",
+	"sh": "v",
+	// 韵母
+	"ao":   "k",
+	"en":   "f",
+	"an":   "j",
+	"eng":  "g",
+	"in":   "c",
+	"uai":  "c",
+	"uo":   "o",
+	"ai":   "l",
+	"ang":  "h",
+	"ie":   "x",
+	"ian":  "w",
+	"iang": "t",
+	"uang": "t",
+	"iong": "s",
+	"ong":  "s",
+	"er":   "r",
+	"iu":   "r",
+	"ei":   "q",
+	"uan":  "p",
+	"ing":  "y",
+	"ou":   "b",
+	"ia":   "d",
+	"ua":   "d",
+	"iao":  "z",
+	"ue":   "m",
+	"ui":   "m",
+	"un":   "n",
+}
+
 // CnEn 从 others/cn_en.txt 生成全拼和各个双拼的中英混输词库
 func CnEn() {
 	// 读取
@@ -339,6 +387,13 @@ func CnEn() {
 	defer doublePinyinZiGuangFile.Close()
 	writePrefix(doublePinyinZiGuangFile)
 
+	doublePinyinABCFile, err := os.OpenFile(filepath.Join(RimeDir, "en_dicts/cn_en_double_pinyin_abc.dict.yaml"), os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0644)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	defer doublePinyinABCFile.Close()
+	writePrefix(doublePinyinABCFile)
+
 	// 遍历、注音、转换、写入
 	sc := bufio.NewScanner(file)
 	for sc.Scan() {
@@ -356,6 +411,7 @@ func CnEn() {
 		doublePinyinFlypyFile.WriteString(line + "\t" + codes[2] + "\n")
 		doublePinyinMSPYFile.WriteString(line + "\t" + codes[3] + "\n")
 		doublePinyinZiGuangFile.WriteString(line + "\t" + codes[4] + "\n")
+		doublePinyinABCFile.WriteString(line + "\t" + codes[5] + "\n")
 	}
 	if err := sc.Err(); err != nil {
 		log.Fatalln(err)
@@ -375,6 +431,9 @@ func CnEn() {
 	if err := doublePinyinZiGuangFile.Sync(); err != nil {
 		log.Fatalln(err)
 	}
+	if err := doublePinyinABCFile.Sync(); err != nil {
+		log.Fatalln(err)
+	}
 }
 
 // 写入前缀内容
@@ -389,6 +448,7 @@ func writePrefix(file *os.File) {
 		"cn_en_double_pinyin_flypy":   "小鹤双拼",
 		"cn_en_double_pinyin_mspy":    "微软双拼",
 		"cn_en_double_pinyin_ziguang": "紫光双拼",
+		"cn_en_double_pinyin_abc":     "智能ABC双拼",
 	}
 
 	content := fmt.Sprintf(`# Rime dictionary
@@ -412,13 +472,14 @@ sort: by_weight
 	}
 }
 
-// 转换编码，汉字转为拼音，英文不变。拼音分别转为全拼、自然码、小鹤、微软、紫光
+// 转换编码，汉字转为拼音，英文不变。拼音分别转为全拼、自然码、小鹤、微软、紫光、智能ABC
 func textToPinyin(text string) []string {
 	pinyin := ""
 	doublePinyin := ""
 	doublePinyinFlypy := ""
 	doublePinyinMSPY := ""
 	doublePinyinZiGuang := ""
+	doublePinyinABC := ""
 
 	parts := splitMixedWords(text)
 	for _, part := range parts {
@@ -432,6 +493,7 @@ func textToPinyin(text string) []string {
 			doublePinyinFlypy += part
 			doublePinyinMSPY += part
 			doublePinyinZiGuang += part
+			doublePinyinABC += part
 		} else if len(hanPinyin[part]) > 1 { // 多音字，按字典指定的读音
 			if value, ok := polyphones[text+" > "+part]; ok {
 				pinyin += value
@@ -439,6 +501,7 @@ func textToPinyin(text string) []string {
 				doublePinyinFlypy += convertToDoublePinyin(value, doublePinyinFlypyMap)
 				doublePinyinMSPY += convertToDoublePinyin(value, doublePinyinMSPYMap)
 				doublePinyinZiGuang += convertToDoublePinyin(value, doublePinyinZiGuangMap)
+				doublePinyinABC += convertToDoublePinyin(value, doublePinyinABCMap)
 			} else {
 				log.Fatalln("❌ 未处理的多音字", text, part)
 			}
@@ -448,6 +511,7 @@ func textToPinyin(text string) []string {
 			doublePinyinFlypy += convertToDoublePinyin(hanPinyin[part][0], doublePinyinFlypyMap)
 			doublePinyinMSPY += convertToDoublePinyin(hanPinyin[part][0], doublePinyinMSPYMap)
 			doublePinyinZiGuang += convertToDoublePinyin(hanPinyin[part][0], doublePinyinZiGuangMap)
+			doublePinyinABC += convertToDoublePinyin(hanPinyin[part][0], doublePinyinABCMap)
 		}
 	}
 
@@ -457,6 +521,7 @@ func textToPinyin(text string) []string {
 		doublePinyinFlypy,
 		doublePinyinMSPY,
 		doublePinyinZiGuang,
+		doublePinyinABC,
 	}
 }
 
