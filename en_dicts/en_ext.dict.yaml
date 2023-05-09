@@ -450,6 +450,7 @@ CallKit	CallKit
 OSS	OSS
 Object Storage Service	OSS
 Object Storage Service	ObjectStorageService
+OceanBase	OceanBase
 YouTube Music	YouTubeMusic
 Apple Music	AppleMusic
 TED	TED
@@ -508,6 +509,7 @@ Chief Technology Officer	CTO
 Chief Technology Officer	ChiefTechnologyOfficer
 Coding	Coding
 Django	Django
+DBMesh	DBMesh
 Excel	Excel
 Flask	Flask
 Facebook	Facebook
