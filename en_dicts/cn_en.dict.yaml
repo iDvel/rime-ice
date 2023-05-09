@@ -3,11 +3,12 @@
 #
 #
 # https://github.com/iDvel/rime-ice
-# ------- 中英混输词库 -------
+# ------- 中英混输词库 for 全拼 -------
+# 由 others/cn_en.txt 生成
 #
 ---
 name: cn_en
-version: "2023-05-05"
+version: "1"
 sort: by_weight
 ...
 X光	Xguang
@@ -128,7 +129,6 @@ G盘	Gpan
 IP地址	IPdizhi
 IP电话	IPdianhua
 IP卡	IPka
-IP地址	IPweizhi
 J盘	Jpan
 K宝	Kbao
 K粉	Kfen
@@ -171,7 +171,7 @@ N遍	Nbian
 马歇尔·D·蒂奇	maxieerDdiqi
 X·德雷克	Xdeleike
 蒙奇·D·卡普	mengqiDkapu
-波特卡斯·D·艾斯	potekasiDaisi
+波特卡斯·D·艾斯	botekasiDaisi
 VIP中P	VIPzhongP
 QQ秀	QQxiu
 Big胆	Bigdan
@@ -200,7 +200,7 @@ P个图	Pgetu
 P一下	Pyixia
 芭比Q	babiQ
 芭比Q了	babiQle
-S级	sji
+S级	Sji
 QQ堂	QQtang
 PIN码	PINma
 PUK码	PUKma
@@ -310,12 +310,11 @@ ICP备案	ICPbeian
 写Bug	xieBug
 改Bug	gaiBug
 J·R·R·托尔金	JRRtuoerjin
-异维A酸	weiyiAsuan
+异维A酸	yiweiAsuan
 互fo	hufo
 减CD	jianCD
 随身Wi-Fi	suishenWiFi
 U型锁	Uxingsuo
-查IP	chaIP
 Go程	Gocheng
 TG群	TGqun
 Telegram群	Telegramqun
@@ -338,12 +337,12 @@ S码	Sma
 L码	Lma
 Q我	Qwo
 R级	Rji
-A区	Aqv
-B区	Bqv
-C区	Cqv
-D区	Dqv
-E区	Eqv
-F区	Fqv
+A区	Aqu
+B区	Bqu
+C区	Cqu
+D区	Dqu
+E区	Equ
+F区	Fqu
 A组	Azu
 B组	Bzu
 C组	Czu
@@ -459,7 +458,7 @@ DJ舞曲	DJwuqu
 就OK	jiuOK
 不OK	buOK
 很OK	henOK
-特拉法尔加·D·瓦铁尔·罗	telafaerjiadwatieerluo
+特拉法尔加·D·瓦铁尔·罗	telafaerjiaDwatieerluo
 开party	kaiparty
 Chromium系	Chromiumxi
 Chrome系	Chromexi
