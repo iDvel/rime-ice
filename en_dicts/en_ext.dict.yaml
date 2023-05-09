@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-04-18"
+version: "2023-05-09"
 sort: by_weight
 ...
 # 一些杂项
@@ -16,6 +16,7 @@ sort: by_weight
 .DS_Store	DSStore
 唵嘛呢叭咪吽	ongmanibeimeihong
 唵嘛呢嘛呢叭咪吽	ongmanimanibeimeihong
+README.md	READMEmd
 
 
 # 按键
@@ -278,9 +279,14 @@ SSH	SSH
 Secure Shell	SSH
 Secure Shell	SecureShell
 ISO	ISO
+International Organization for Standardization	ISO
 ISO 8601	ISO
 RFC	RFC
+Request for Comments	RFC
 RFC 3339	RFC
+RFCs	RFCs
+IETF	IETF
+Internet Engineering Task Force	IETF
 Pro Max	ProMax
 Aeron	Aeron
 Aeron Chair	AeronChair
@@ -702,6 +708,7 @@ IBM	IBM
 International Business Machines	IBM
 International Business Machines	InternationalBusinessMachines
 iCloud	iCloud
+iCloud Mail	iCloudMail
 iCloud Drive	iCloudDrive
 iExplorer	iExplorer
 iFFmpeg	iFFmpeg
@@ -1339,7 +1346,6 @@ McCafe	McCafe
 BSD	BSD
 Berkeley Software Distribution	BSD
 Berkeley Software Distribution	BerkeleySoftwareDistribution
-Berkeley	Berkeley
 DNSPod	DNSPod
 Bandizip	Bandizip
 NATO	NATO
@@ -1614,8 +1620,6 @@ Comodo	Comodo
 McAfee	McAfee
 OK	OK
 NG	NG
-TRUE	TRUE
-FALSE	FALSE
 TV	TV
 VTuber	VTuber
 NVMe	NVMe
@@ -1673,6 +1677,7 @@ Mozilla	Mozilla
 Mozilla Firefox	MozillaFirefox
 Apache	Apache
 Steam	Steam
+Steam Deck	SteamDeck
 App	App
 Android	Android
 android	android
@@ -2150,3 +2155,36 @@ Do Your Own Research	DYOR
 Noita	Noita
 Screen Studio	ScreenStudio
 Norah	Norah
+floccus	floccus
+Wappalyzer	Wappalyzer
+phony	phony
+noop	noop
+Kung Fu	KungFu
+prefixes	prefixes
+suffixes	suffixes
+DeepMind	DeepMind
+Google DeepMind	GoogleDeepMind
+TL;DR	TLDR
+Ant-Man	AntMan
+ungoogled	ungoogled
+ungoogled-chromium	ungoogledchromium
+taxman	taxman
+RouterOS	RouterOS
+Sumatra	Sumatra
+Sumatra PDF	SumatraPDF
+sideload	sideload
+sideloading	sideloading
+misdirection	misdirection
+librime	librime
+JRPG	JRPG
+Japanese Role-Playing Game	JRPG
+Kuromis	Kuromis
+sorcerer	sorcerer
+sorcerers	sorcerers
+werewolf	werewolf
+disjunction	disjunction
+heil	heil
+maintainers	maintainers
+AmyTelecom	AmyTelecom
+Patreon	Patreon
+Anaconda	Anaconda

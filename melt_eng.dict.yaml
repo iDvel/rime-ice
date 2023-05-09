@@ -6,10 +6,16 @@
 
 ---
 name: melt_eng
-version: "2023-02-26"
+version: "2023-05-09"
 import_tables:
   - en_dicts/en_ext  # 补充
   - en_dicts/en      # 英文主词库
 
-  - en_dicts/cn_en   # 中英混输词库，里面是写死了的全拼编码，双拼应该注释掉这一行。
+  # 中英混输词库
+  - en_dicts/cn_en                          # 全拼
+  # - en_dicts/cn_en_double_pinyin          # 自然码双拼 
+  # - en_dicts/cn_en_double_pinyin_flypy    # 小鹤双拼
+  # - en_dicts/cn_en_double_pinyin_mspy     # 微软双拼
+  # - en_dicts/cn_en_double_pinyin_ziguang  # 紫光双拼
+  # - en_dicts/cn_en_double_pinyin_abc      # 智能 ABC 双拼
 ...

@@ -3,7 +3,7 @@
 
 
 patch:
-  
+
   # 中文键盘空格键上会显示方案名称
   # （英文键盘的空格在主题的 `theme.yaml` 文件下的 `space: {label:` 处修改）
   schema/name: rime-ice

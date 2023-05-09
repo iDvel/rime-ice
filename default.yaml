@@ -6,7 +6,7 @@
 
 
 # 要比共享目录的同名文件的 config_version 大才可以生效
-config_version: '2023-04-11'
+config_version: '2023-05-09'
 
 
 # 方案列表
@@ -15,6 +15,7 @@ schema_list:
   - schema: double_pinyin
   - schema: double_pinyin_flypy
   - schema: double_pinyin_mspy
+  - schema: double_pinyin_ziguang
 
 
 # 菜单
@@ -49,7 +50,7 @@ switcher:
 # macOS 偏好设置的优先级更高，如果勾选【使用大写锁定键切换“ABC”输入法】则始终会切换输入法。
 #
 # 切换中英：
-# 不同的选项表示：打字打到一半时按下了 CapsLock、Shift、Control 后： 
+# 不同的选项表示：打字打到一半时按下了 CapsLock、Shift、Control 后：
 # commit_code  上屏原始的编码，然后切换到英文
 # commit_text  上屏拼出的词句，然后切换到英文
 # clear        清除未上屏内容，然后切换到英文
@@ -164,9 +165,12 @@ recognizer:
 
 # 快捷键
 key_binder:
-  # Lua 配置: 以词定字（上屏当前词句的第一个或最后一个字）
-  select_first_character:
-  select_last_character: "grave"
+  # Lua 配置: 以词定字（上屏当前词句的第一个或最后一个字），和中括号翻页有冲突
+  select_first_character: "bracketleft"  # 左中括号 [
+  select_last_character: "bracketright"  # 右中括号 ]
+  # Lua 配置： 词条隐藏、降频
+  # turn_down_cand: "Control+j"  # 匹配当前输入码后隐藏指定的候选字词 或候选词条放到第四候选位置
+  # drop_cand: "Control+d"       # 强制删词, 无视输入的编码
 
   bindings:
     # Tab / Shift+Tab 切换光标至下/上一个拼音

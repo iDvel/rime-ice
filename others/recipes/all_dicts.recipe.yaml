@@ -6,15 +6,6 @@ recipe:
   description: >-
     所有词库安装、更新
 install_files: >-
-  cn_dicts/8105.dict.yaml
-  cn_dicts/41448.dict.yaml
-  cn_dicts/base.dict.yaml
-  cn_dicts/ext.dict.yaml
-  cn_dicts/tencent.dict.yaml
-  cn_dicts/others.dict.yaml
-  en_dicts/en.dict.yaml
-  en_dicts/en_ext.dict.yaml
-  en_dicts/cn_en.dict.yaml
-  opencc/emoji.json
-  opencc/emoji.txt
-  opencc/others.txt
+  cn_dicts/*.*
+  en_dicts/*.*
+  opencc/*.*
