@@ -18,3 +18,7 @@ long_word_filter = require("long_word_filter")
 -- 词条隐藏、降频
 cold_word_drop_processor = require("cold_word_drop.processor")
 cold_word_drop_filter = require("cold_word_drop.filter")
+-- 九宫格
+t9_preedit = require("t9_preedit")
+-- 人民币大写
+number_translator = require("number_translator")
