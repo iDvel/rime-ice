@@ -75,6 +75,7 @@ engine:
     - table_translator@melt_eng           # 英文输入
     - reverse_lookup_translator@liangfen  # 反查，两分拼字
     - lua_translator@unicode              # Unicode
+    - lua_translator@number_translator    # 数字、金额大写
   filters:
     - simplifier@emoji                    # Emoji
     - simplifier@traditionalize           # 简繁切换
@@ -222,6 +223,7 @@ recognizer:
     punct: "^V([0-9]|10|[A-Za-z]+)$"  # 响应 symbols_caps_v.yaml 的 symbols
     reverse_lookup: "^L[a-z]+$"       # 响应两分拼字的反查
     unicode: "^U[a-f0-9]+"            # 响应 Unicode
+    number: "^R[0-9]+[.]?[0-9]*"      # 响应 number_translator
 
 
 # 从 default 继承快捷键
