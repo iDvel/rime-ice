@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-05-09"
+version: "2023-05-13"
 sort: by_weight
 ...
 # 一些杂项
@@ -2086,6 +2086,9 @@ stargazers	stargazers
 fallback	fallback
 Fyne	Fyne
 Claude	Claude
+Claude+	Claude
+Anthropic	Anthropic
+Poe	Poe
 overdue	overdue
 Cinderella	Cinderella
 WebGPU	WebGPU
@@ -2169,6 +2172,7 @@ DeepMind	DeepMind
 Google DeepMind	GoogleDeepMind
 TL;DR	TLDR
 Ant-Man	AntMan
+Spider-Man	SpiderMan
 ungoogled	ungoogled
 ungoogled-chromium	ungoogledchromium
 taxman	taxman
@@ -2191,3 +2195,6 @@ maintainers	maintainers
 AmyTelecom	AmyTelecom
 Patreon	Patreon
 Anaconda	Anaconda
+LLaMA	LLaMA
+Large Language Model Meta AI	LLaMA
+fellatio	fellatio

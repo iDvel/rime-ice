@@ -101,301 +101,308 @@ var digitMap = map[string]string{
 	"9": "jiu",
 }
 
-var doublePinyinMap = map[string]string{
-	// 零声母
-	"-a-":   "aa",
-	"-e-":   "ee",
-	"-o-":   "oo",
-	"-ai-":  "ai",
-	"-ei-":  "ei",
-	"-ou-":  "ou",
-	"-an-":  "an",
-	"-en-":  "en",
-	"-ang-": "ah",
-	"-eng-": "eg",
-	"-ao-":  "ao",
-	"-er-":  "er",
-	// zh ch sh
-	"zh": "v",
-	"ch": "i",
-	"sh": "u",
-	// 韵母
-	"iu":   "q",
-	"ia":   "w",
-	"ua":   "w",
-	"uan":  "r",
-	"ue":   "t",
-	"ve":   "t",
-	"ing":  "y",
-	"uai":  "y",
-	"uo":   "o",
-	"un":   "p",
-	"iong": "s",
-	"ong":  "s",
-	"iang": "d",
-	"uang": "d",
-	"en":   "f",
-	"eng":  "g",
-	"ang":  "h",
-	"an":   "j",
-	"ao":   "k",
-	"ai":   "l",
-	"ei":   "z",
-	"ie":   "x",
-	"iao":  "c",
-	"ui":   "v",
-	"ou":   "b",
-	"in":   "n",
-	"ian":  "m",
+type schema struct {
+	name    string
+	desc    string
+	path    string
+	mapping map[string]string
+	file    *os.File
 }
 
-var doublePinyinFlypyMap = map[string]string{
-	// 零声母
-	"-a-":   "aa",
-	"-e-":   "ee",
-	"-o-":   "oo",
-	"-ai-":  "ai",
-	"-ei-":  "ei",
-	"-ou-":  "ou",
-	"-an-":  "an",
-	"-en-":  "en",
-	"-ang-": "ah",
-	"-eng-": "eg",
-	"-ao-":  "ao",
-	"-er-":  "er",
-	// zh ch sh
-	"zh": "v",
-	"ch": "i",
-	"sh": "u",
-	// 韵母
-	"iu":   "q",
-	"ei":   "w",
-	"uan":  "r",
-	"ue":   "t",
-	"ve":   "t",
-	"un":   "y",
-	"uo":   "o",
-	"ie":   "p",
-	"iong": "s",
-	"ong":  "s",
-	"ai":   "d",
-	"en":   "f",
-	"eng":  "g",
-	"ang":  "h",
-	"an":   "j",
-	"ing":  "k",
-	"uai":  "k",
-	"iang": "l",
-	"uang": "l",
-	"ou":   "z",
-	"ia":   "x",
-	"ua":   "x",
-	"ao":   "c",
-	"ui":   "v",
-	"in":   "b",
-	"iao":  "n",
-	"ian":  "m",
+var doublePinyin = schema{
+	name: "cn_en_double_pinyin",
+	desc: "自然码双拼",
+	path: filepath.Join(RimeDir, "en_dicts/cn_en_double_pinyin.dict.yaml"),
+	mapping: map[string]string{
+		// 零声母
+		"-a-":   "aa",
+		"-e-":   "ee",
+		"-o-":   "oo",
+		"-ai-":  "ai",
+		"-ei-":  "ei",
+		"-ou-":  "ou",
+		"-an-":  "an",
+		"-en-":  "en",
+		"-ang-": "ah",
+		"-eng-": "eg",
+		"-ao-":  "ao",
+		"-er-":  "er",
+		// zh ch sh
+		"zh": "v",
+		"ch": "i",
+		"sh": "u",
+		// 韵母
+		"iu":   "q",
+		"ia":   "w",
+		"ua":   "w",
+		"uan":  "r",
+		"ue":   "t",
+		"ve":   "t",
+		"ing":  "y",
+		"uai":  "y",
+		"uo":   "o",
+		"un":   "p",
+		"iong": "s",
+		"ong":  "s",
+		"iang": "d",
+		"uang": "d",
+		"en":   "f",
+		"eng":  "g",
+		"ang":  "h",
+		"an":   "j",
+		"ao":   "k",
+		"ai":   "l",
+		"ei":   "z",
+		"ie":   "x",
+		"iao":  "c",
+		"ui":   "v",
+		"ou":   "b",
+		"in":   "n",
+		"ian":  "m",
+	},
 }
 
-var doublePinyinMSPYMap = map[string]string{
-	// 零声母
-	"-a-":   "oa",
-	"-e-":   "oe",
-	"-o-":   "oo",
-	"-ai-":  "ol",
-	"-ei-":  "oz",
-	"-ou-":  "ob",
-	"-an-":  "oj",
-	"-en-":  "of",
-	"-ang-": "oh",
-	"-eng-": "og",
-	"-ao-":  "ok",
-	"-er-":  "or",
-	// zh ch sh
-	"zh": "v",
-	"ch": "i",
-	"sh": "u",
-	// 韵母
-	"iu":   "q",
-	"ia":   "w",
-	"ua":   "w",
-	"er":   "r",
-	"uan":  "r",
-	"ue":   "t",
-	"uai":  "y",
-	"uo":   "o",
-	"un":   "p",
-	"iong": "s",
-	"ong":  "s",
-	"iang": "d",
-	"uang": "d",
-	"en":   "f",
-	"eng":  "g",
-	"ang":  "h",
-	"an":   "j",
-	"ao":   "k",
-	"ai":   "l",
-	"ing":  ";",
-	"ei":   "z",
-	"ie":   "x",
-	"iao":  "c",
-	"ui":   "v",
-	"ve":   "v",
-	"ou":   "b",
-	"in":   "n",
-	"ian":  "m",
+var doublePinyinFlypy = schema{
+	name: "cn_en_double_pinyin_flypy",
+	desc: "小鹤双拼",
+	path: filepath.Join(RimeDir, "en_dicts/cn_en_double_pinyin_flypy.dict.yaml"),
+	mapping: map[string]string{
+		// 零声母
+		"-a-":   "aa",
+		"-e-":   "ee",
+		"-o-":   "oo",
+		"-ai-":  "ai",
+		"-ei-":  "ei",
+		"-ou-":  "ou",
+		"-an-":  "an",
+		"-en-":  "en",
+		"-ang-": "ah",
+		"-eng-": "eg",
+		"-ao-":  "ao",
+		"-er-":  "er",
+		// zh ch sh
+		"zh": "v",
+		"ch": "i",
+		"sh": "u",
+		// 韵母
+		"iu":   "q",
+		"ei":   "w",
+		"uan":  "r",
+		"ue":   "t",
+		"ve":   "t",
+		"un":   "y",
+		"uo":   "o",
+		"ie":   "p",
+		"iong": "s",
+		"ong":  "s",
+		"ai":   "d",
+		"en":   "f",
+		"eng":  "g",
+		"ang":  "h",
+		"an":   "j",
+		"ing":  "k",
+		"uai":  "k",
+		"iang": "l",
+		"uang": "l",
+		"ou":   "z",
+		"ia":   "x",
+		"ua":   "x",
+		"ao":   "c",
+		"ui":   "v",
+		"in":   "b",
+		"iao":  "n",
+		"ian":  "m",
+	},
 }
 
-var doublePinyinZiGuangMap = map[string]string{
-	// 零声母
-	"-a-":   "oa",
-	"-e-":   "oe",
-	"-o-":   "oo",
-	"-ai-":  "op",
-	"-ei-":  "ok",
-	"-ou-":  "oz",
-	"-an-":  "or",
-	"-en-":  "ow",
-	"-ang-": "os",
-	"-eng-": "ot",
-	"-ao-":  "oq",
-	"-er-":  "oj",
-	// zh ch sh
-	"zh": "u",
-	"ch": "a",
-	"sh": "i",
-	// 韵母
-	"ao":   "q",
-	"en":   "w",
-	"an":   "r",
-	"eng":  "t",
-	"in":   "y",
-	"uai":  "y",
-	"uo":   "o",
-	"ai":   "p",
-	"ang":  "s",
-	"ie":   "d",
-	"ian":  "f",
-	"iang": "g",
-	"uang": "g",
-	"iong": "h",
-	"ong":  "h",
-	"er":   "j",
-	"iu":   "j",
-	"ei":   "k",
-	"uan":  "l",
-	"ing":  ";",
-	"ou":   "z",
-	"ia":   "x",
-	"ua":   "x",
-	"iao":  "b",
-	"ue":   "n",
-	"ui":   "n",
-	"un":   "m",
+var doublePinyinMSPY = schema{
+	name: "cn_en_double_pinyin_mspy",
+	desc: "微软双拼",
+	path: filepath.Join(RimeDir, "en_dicts/cn_en_double_pinyin_mspy.dict.yaml"),
+	mapping: map[string]string{
+		// 零声母
+		"-a-":   "oa",
+		"-e-":   "oe",
+		"-o-":   "oo",
+		"-ai-":  "ol",
+		"-ei-":  "oz",
+		"-ou-":  "ob",
+		"-an-":  "oj",
+		"-en-":  "of",
+		"-ang-": "oh",
+		"-eng-": "og",
+		"-ao-":  "ok",
+		"-er-":  "or",
+		// zh ch sh
+		"zh": "v",
+		"ch": "i",
+		"sh": "u",
+		// 韵母
+		"iu":   "q",
+		"ia":   "w",
+		"ua":   "w",
+		"er":   "r",
+		"uan":  "r",
+		"ue":   "t",
+		"uai":  "y",
+		"uo":   "o",
+		"un":   "p",
+		"iong": "s",
+		"ong":  "s",
+		"iang": "d",
+		"uang": "d",
+		"en":   "f",
+		"eng":  "g",
+		"ang":  "h",
+		"an":   "j",
+		"ao":   "k",
+		"ai":   "l",
+		"ing":  ";",
+		"ei":   "z",
+		"ie":   "x",
+		"iao":  "c",
+		"ui":   "v",
+		"ve":   "v",
+		"ou":   "b",
+		"in":   "n",
+		"ian":  "m",
+	},
 }
 
-var doublePinyinABCMap = map[string]string{
-	// 零声母
-	"-a-":   "oa",
-	"-e-":   "oe",
-	"-o-":   "oo",
-	"-ai-":  "ol",
-	"-ei-":  "oq",
-	"-ou-":  "ob",
-	"-an-":  "oj",
-	"-en-":  "of",
-	"-ang-": "oh",
-	"-eng-": "og",
-	"-ao-":  "ok",
-	"-er-":  "or",
-	// zh ch sh
-	"zh": "a",
-	"ch": "e",
-	"sh": "v",
-	// 韵母
-	"ao":   "k",
-	"en":   "f",
-	"an":   "j",
-	"eng":  "g",
-	"in":   "c",
-	"uai":  "c",
-	"uo":   "o",
-	"ai":   "l",
-	"ang":  "h",
-	"ie":   "x",
-	"ian":  "w",
-	"iang": "t",
-	"uang": "t",
-	"iong": "s",
-	"ong":  "s",
-	"er":   "r",
-	"iu":   "r",
-	"ei":   "q",
-	"uan":  "p",
-	"ing":  "y",
-	"ou":   "b",
-	"ia":   "d",
-	"ua":   "d",
-	"iao":  "z",
-	"ue":   "m",
-	"ui":   "m",
-	"un":   "n",
+var doublePinyinZiGuang = schema{
+	name: "cn_en_double_pinyin_ziguang",
+	desc: "紫光双拼",
+	path: filepath.Join(RimeDir, "en_dicts/cn_en_double_pinyin_ziguang.dict.yaml"),
+	mapping: map[string]string{
+		// 零声母
+		"-a-":   "oa",
+		"-e-":   "oe",
+		"-o-":   "oo",
+		"-ai-":  "op",
+		"-ei-":  "ok",
+		"-ou-":  "oz",
+		"-an-":  "or",
+		"-en-":  "ow",
+		"-ang-": "os",
+		"-eng-": "ot",
+		"-ao-":  "oq",
+		"-er-":  "oj",
+		// zh ch sh
+		"zh": "u",
+		"ch": "a",
+		"sh": "i",
+		// 韵母
+		"ao":   "q",
+		"en":   "w",
+		"an":   "r",
+		"eng":  "t",
+		"in":   "y",
+		"uai":  "y",
+		"uo":   "o",
+		"ai":   "p",
+		"ang":  "s",
+		"ie":   "d",
+		"ian":  "f",
+		"iang": "g",
+		"uang": "g",
+		"iong": "h",
+		"ong":  "h",
+		"er":   "j",
+		"iu":   "j",
+		"ei":   "k",
+		"uan":  "l",
+		"ing":  ";",
+		"ou":   "z",
+		"ia":   "x",
+		"ua":   "x",
+		"iao":  "b",
+		"ue":   "n",
+		"ui":   "n",
+		"un":   "m",
+	},
+}
+
+var doublePinyinABC = schema{
+	name: "cn_en_double_pinyin_abc",
+	desc: "智能 ABC 双拼",
+	path: filepath.Join(RimeDir, "en_dicts/cn_en_double_pinyin_abc.dict.yaml"),
+	mapping: map[string]string{
+		// 零声母
+		"-a-":   "oa",
+		"-e-":   "oe",
+		"-o-":   "oo",
+		"-ai-":  "ol",
+		"-ei-":  "oq",
+		"-ou-":  "ob",
+		"-an-":  "oj",
+		"-en-":  "of",
+		"-ang-": "oh",
+		"-eng-": "og",
+		"-ao-":  "ok",
+		"-er-":  "or",
+		// zh ch sh
+		"zh": "a",
+		"ch": "e",
+		"sh": "v",
+		// 韵母
+		"ao":   "k",
+		"en":   "f",
+		"an":   "j",
+		"eng":  "g",
+		"in":   "c",
+		"uai":  "c",
+		"uo":   "o",
+		"ai":   "l",
+		"ang":  "h",
+		"ie":   "x",
+		"ian":  "w",
+		"iang": "t",
+		"uang": "t",
+		"iong": "s",
+		"ong":  "s",
+		"er":   "r",
+		"iu":   "r",
+		"ei":   "q",
+		"uan":  "p",
+		"ing":  "y",
+		"ou":   "b",
+		"ia":   "d",
+		"ua":   "d",
+		"iao":  "z",
+		"ue":   "m",
+		"ui":   "m",
+		"un":   "n",
+	},
 }
 
 // CnEn 从 others/cn_en.txt 生成全拼和各个双拼的中英混输词库
 func CnEn() {
-	// 读取
-	file, err := os.Open(filepath.Join(RimeDir, "others/cn_en.txt"))
+	cnEnTXT, err := os.Open(filepath.Join(RimeDir, "others/cn_en.txt"))
 	if err != nil {
 		log.Fatalln(err)
 	}
-	defer file.Close()
+	defer cnEnTXT.Close()
 
-	// 准备要写入的文件，先先入前缀内容
-	pinyinFile, err := os.OpenFile(filepath.Join(RimeDir, "en_dicts/cn_en.dict.yaml"), os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0644)
-	if err != nil {
-		log.Fatalln(err)
+	schemas := []schema{
+		{name: "cn_en", desc: "全拼", path: filepath.Join(RimeDir, "en_dicts/cn_en.dict.yaml")},
+		doublePinyin,
+		doublePinyinFlypy,
+		doublePinyinMSPY,
+		doublePinyinZiGuang,
+		doublePinyinABC,
 	}
-	defer pinyinFile.Close()
-	writePrefix(pinyinFile)
 
-	doublePinyinFile, err := os.OpenFile(filepath.Join(RimeDir, "en_dicts/cn_en_double_pinyin.dict.yaml"), os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0644)
-	if err != nil {
-		log.Fatalln(err)
+	// 写入前缀内容
+	for i := range schemas {
+		schemas[i].file, err = os.OpenFile(schemas[i].path, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0644)
+		if err != nil {
+			log.Fatalln(err)
+		}
+		writePrefix(schemas[i])
 	}
-	defer doublePinyinFile.Close()
-	writePrefix(doublePinyinFile)
 
-	doublePinyinFlypyFile, err := os.OpenFile(filepath.Join(RimeDir, "en_dicts/cn_en_double_pinyin_flypy.dict.yaml"), os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0644)
-	if err != nil {
-		log.Fatalln(err)
-	}
-	defer doublePinyinFlypyFile.Close()
-	writePrefix(doublePinyinFlypyFile)
-
-	doublePinyinMSPYFile, err := os.OpenFile(filepath.Join(RimeDir, "en_dicts/cn_en_double_pinyin_mspy.dict.yaml"), os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0644)
-	if err != nil {
-		log.Fatalln(err)
-	}
-	defer doublePinyinMSPYFile.Close()
-	writePrefix(doublePinyinMSPYFile)
-
-	doublePinyinZiGuangFile, err := os.OpenFile(filepath.Join(RimeDir, "en_dicts/cn_en_double_pinyin_ziguang.dict.yaml"), os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0644)
-	if err != nil {
-		log.Fatalln(err)
-	}
-	defer doublePinyinZiGuangFile.Close()
-	writePrefix(doublePinyinZiGuangFile)
-
-	doublePinyinABCFile, err := os.OpenFile(filepath.Join(RimeDir, "en_dicts/cn_en_double_pinyin_abc.dict.yaml"), os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0644)
-	if err != nil {
-		log.Fatalln(err)
-	}
-	defer doublePinyinABCFile.Close()
-	writePrefix(doublePinyinABCFile)
-
-	// 遍历、注音、转换、写入
-	sc := bufio.NewScanner(file)
+	// 转换注音并写入
+	sc := bufio.NewScanner(cnEnTXT)
 	for sc.Scan() {
 		line := sc.Text()
 		if line == "" || strings.HasPrefix(line, "#") {
@@ -404,53 +411,22 @@ func CnEn() {
 		if strings.TrimSpace(line) != line {
 			fmt.Println("❌ 前后有空格", line)
 		}
-		// 按顺序转换为全拼、自然码、小鹤、微软、紫光
-		codes := textToPinyin(line)
-		pinyinFile.WriteString(line + "\t" + codes[0] + "\n")
-		doublePinyinFile.WriteString(line + "\t" + codes[1] + "\n")
-		doublePinyinFlypyFile.WriteString(line + "\t" + codes[2] + "\n")
-		doublePinyinMSPYFile.WriteString(line + "\t" + codes[3] + "\n")
-		doublePinyinZiGuangFile.WriteString(line + "\t" + codes[4] + "\n")
-		doublePinyinABCFile.WriteString(line + "\t" + codes[5] + "\n")
+		for _, schema := range schemas {
+			code := textToPinyin(line, schema)
+			_, err := schema.file.WriteString(line + "\t" + code + "\n")
+			if err != nil {
+				log.Fatalln(err)
+			}
+		}
 	}
-	if err := sc.Err(); err != nil {
-		log.Fatalln(err)
-	}
-	if err := pinyinFile.Sync(); err != nil {
-		log.Fatalln(err)
-	}
-	if err := doublePinyinFile.Sync(); err != nil {
-		log.Fatalln(err)
-	}
-	if err := doublePinyinFlypyFile.Sync(); err != nil {
-		log.Fatalln(err)
-	}
-	if err := doublePinyinMSPYFile.Sync(); err != nil {
-		log.Fatalln(err)
-	}
-	if err := doublePinyinZiGuangFile.Sync(); err != nil {
-		log.Fatalln(err)
-	}
-	if err := doublePinyinABCFile.Sync(); err != nil {
-		log.Fatalln(err)
+
+	for i := range schemas {
+		schemas[i].file.Close()
 	}
 }
 
 // 写入前缀内容
-func writePrefix(file *os.File) {
-	filename := filepath.Base(file.Name())
-	name := strings.TrimSuffix(filename, ".dict.yaml")
-	// name = strings.TrimPrefix(name, "cn_en_")
-	fmt.Println(name)
-	m := map[string]string{
-		"cn_en":                       "全拼",
-		"cn_en_double_pinyin":         "自然码双拼",
-		"cn_en_double_pinyin_flypy":   "小鹤双拼",
-		"cn_en_double_pinyin_mspy":    "微软双拼",
-		"cn_en_double_pinyin_ziguang": "紫光双拼",
-		"cn_en_double_pinyin_abc":     "智能ABC双拼",
-	}
-
+func writePrefix(s schema) {
 	content := fmt.Sprintf(`# Rime dictionary
 # encoding: utf-8
 #
@@ -464,22 +440,17 @@ name: %s
 version: "1"
 sort: by_weight
 ...
-`, m[name], name)
+`, s.desc, s.name)
 
-	_, err := file.WriteString(content)
+	_, err := s.file.WriteString(content)
 	if err != nil {
 		log.Fatalln(err)
 	}
 }
 
-// 转换编码，汉字转为拼音，英文不变。拼音分别转为全拼、自然码、小鹤、微软、紫光、智能ABC
-func textToPinyin(text string) []string {
-	pinyin := ""
-	doublePinyin := ""
-	doublePinyinFlypy := ""
-	doublePinyinMSPY := ""
-	doublePinyinZiGuang := ""
-	doublePinyinABC := ""
+// 生成编码
+func textToPinyin(text string, s schema) string {
+	var code string
 
 	parts := splitMixedWords(text)
 	for _, part := range parts {
@@ -487,42 +458,29 @@ func textToPinyin(text string) []string {
 		if _, err := strconv.Atoi(part); err == nil {
 			part = digitMap[part]
 		}
+
 		if len(hanPinyin[part]) == 0 { // 英文数字，不做转换
-			pinyin += part
-			doublePinyin += part
-			doublePinyinFlypy += part
-			doublePinyinMSPY += part
-			doublePinyinZiGuang += part
-			doublePinyinABC += part
+			code += part
 		} else if len(hanPinyin[part]) > 1 { // 多音字，按字典指定的读音
 			if value, ok := polyphones[text+" > "+part]; ok {
-				pinyin += value
-				doublePinyin += convertToDoublePinyin(value, doublePinyinMap)
-				doublePinyinFlypy += convertToDoublePinyin(value, doublePinyinFlypyMap)
-				doublePinyinMSPY += convertToDoublePinyin(value, doublePinyinMSPYMap)
-				doublePinyinZiGuang += convertToDoublePinyin(value, doublePinyinZiGuangMap)
-				doublePinyinABC += convertToDoublePinyin(value, doublePinyinABCMap)
+				if s.desc == "全拼" {
+					code += value
+				} else {
+					code += convertToDoublePinyin(value, s)
+				}
 			} else {
-				log.Fatalln("❌ 未处理的多音字", text, part)
+				log.Fatalln("❌ 多音字未指定读音", text, part)
 			}
 		} else { // 其他，按唯一的读音
-			pinyin += hanPinyin[part][0]
-			doublePinyin += convertToDoublePinyin(hanPinyin[part][0], doublePinyinMap)
-			doublePinyinFlypy += convertToDoublePinyin(hanPinyin[part][0], doublePinyinFlypyMap)
-			doublePinyinMSPY += convertToDoublePinyin(hanPinyin[part][0], doublePinyinMSPYMap)
-			doublePinyinZiGuang += convertToDoublePinyin(hanPinyin[part][0], doublePinyinZiGuangMap)
-			doublePinyinABC += convertToDoublePinyin(hanPinyin[part][0], doublePinyinABCMap)
+			if s.desc == "全拼" {
+				code += hanPinyin[part][0]
+			} else {
+				code += convertToDoublePinyin(hanPinyin[part][0], s)
+			}
 		}
 	}
 
-	return []string{
-		pinyin,
-		doublePinyin,
-		doublePinyinFlypy,
-		doublePinyinMSPY,
-		doublePinyinZiGuang,
-		doublePinyinABC,
-	}
+	return code
 }
 
 // 中英文分割，去掉间隔号和横杠
@@ -552,22 +510,24 @@ func splitMixedWords(input string) []string {
 	return result
 }
 
-func convertToDoublePinyin(code string, m map[string]string) string {
+// 将全拼 code 转为双拼 code
+func convertToDoublePinyin(code string, s schema) string {
 	// 零声母
 	if contains([]string{"a", "e", "o", "ai", "ei", "ou", "an", "en", "ang", "eng", "ao", "er"}, code) {
-		return m["-"+code+"-"]
+		return s.mapping["-"+code+"-"]
 	}
+
 	// 分割为声母和韵母
 	consonantRegexp := regexp.MustCompile(`^(b|p|m|f|d|t|n|l|g|k|h|j|q|x|zh|ch|sh|r|z|c|s|y|w)`)
 	initial := consonantRegexp.FindString(code)
 	final := consonantRegexp.ReplaceAllString(code, "")
 	// 声母转换
 	if initial == "zh" || initial == "ch" || initial == "sh" {
-		initial = m[initial]
+		initial = s.mapping[initial]
 	}
 	// 韵母转换
 	if len(final) > 1 {
-		final = m[final]
+		final = s.mapping[final]
 	}
 	// 其余单个的声母和韵母不转换
 
