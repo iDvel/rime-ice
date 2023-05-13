@@ -7,7 +7,7 @@ local function unicode(input, seg, env)
         local code = tonumber(ucodestr, 16)
         local text = utf8.char(code)
         yield(Candidate("unicode", seg.start, seg._end, text, string.format("U%x", code)))
-        if #ucodestr < 5 then
+        if code < 0x10000 then
             for i = 0, 15 do
                 local text = utf8.char(code * 16 + i)
                 yield(Candidate("unicode", seg.start, seg._end, text, string.format("U%x~%x", code, i)))
