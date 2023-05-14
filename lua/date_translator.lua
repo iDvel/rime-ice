@@ -6,7 +6,7 @@ local formats = {
         '%Y/%m/%d',
         '%Y.%m.%d',
         '%Y%m%d',
-        '%Y 年 %m 月 %d 日'
+        '%Y 年 ' .. tostring(tonumber(os.date('%m'))) .. ' 月 ' .. tostring(tonumber(os.date('%d'))) .. ' 日'
     },
     time = {
         '%H:%M',
