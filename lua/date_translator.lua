@@ -6,7 +6,6 @@ local formats = {
         '%Y/%m/%d',
         '%Y.%m.%d',
         '%Y%m%d',
-        '%Y 年 ' .. tostring(tonumber(os.date('%m'))) .. ' 月 ' .. tostring(tonumber(os.date('%d'))) .. ' 日'
     },
     time = {
         '%H:%M',
@@ -50,6 +49,7 @@ local function date_translator(input, seg, env)
         for _, fmt in ipairs(formats.date) do
             yield_cand('date', os.date(fmt, current_time))
         end
+		yield_cand('date', os.date('%Y 年 %m 月 %d 日', current_time):gsub(' 0', ' '))
     end
     -- 时间
     if (input == env.time) then
