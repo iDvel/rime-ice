@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-05-13"
+version: "2023-05-16"
 sort: by_weight
 ...
 # 一些杂项
@@ -2198,3 +2198,6 @@ Anaconda	Anaconda
 LLaMA	LLaMA
 Large Language Model Meta AI	LLaMA
 fellatio	fellatio
+silo	silo
+AIGC	AIGC
+AI Generated Content	AIGC
