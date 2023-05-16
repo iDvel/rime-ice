@@ -12,7 +12,7 @@
 
 详细介绍：[Rime 配置：雾凇拼音](https://dvel.me/posts/rime-ice/)
 
-[常见问题](https://github.com/iDvel/rime-ice/issues/133)
+[常见问题](https://github.com/iDvel/rime-ice/issues/133)（小狼毫需要参考里面更新一下 librime）
 
 <br>
 
@@ -29,6 +29,7 @@
     -   [以词定字](https://github.com/BlindingDark/rime-lua-select-character)
     -   [长词优先](https://github.com/tumuyan/rime-melt/blob/master/lua/melt.lua)
     -   [Unicode](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)
+    -   [数字、人民币大写](https://wb98.gitee.io/)
     -   所有标点符号直接上屏，/ 模式改为 v 模式，/ 直接上屏
     -   增加了许多拼音纠错
 - 简体字表、词库
@@ -107,9 +108,13 @@ bash rime-install iDvel/rime-ice:others/recipes/en_dicts
 bash rime-install iDvel/rime-ice:others/recipes/opencc
 ```
 
-### [rime-auto-deploy](https://github.com/Mark24Code/rime-auto-deploy)
+### 仓输入法 [Hamster](https://github.com/imfuxiao/Hamster)
 
-一个自动部署脚本，集成了雾凇拼音，帮助无痛快速安装、部署 Rime 输入法（中州韵、小狼毫，鼠须管）以及部署配置。
+参考 [如何导入"雾淞拼音输入方案"](https://github.com/imfuxiao/Hamster/wiki/%E5%A6%82%E4%BD%95%E5%AF%BC%E5%85%A5%22%E9%9B%BE%E6%B7%9E%E6%8B%BC%E9%9F%B3%E8%BE%93%E5%85%A5%E6%96%B9%E6%A1%88%22)
+
+### 自动部署脚本
+
+[Mark24Code/rime-auto-deploy](https://github.com/Mark24Code/rime-auto-deploy) 一个自动部署脚本，集成了雾凇拼音，帮助无痛快速安装、部署 Rime 输入法（中州韵、小狼毫，鼠须管）以及部署配置。
 
 ### Arch Linux
 
