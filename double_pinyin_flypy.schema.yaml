@@ -79,10 +79,10 @@ engine:
   filters:
     - simplifier@emoji                    # Emoji
     - simplifier@traditionalize           # 简繁切换
+    - uniquifier                          # 去重
+    - lua_filter@reduce_english_filter    # 降低部分英语单词在候选项的位置
     # - lua_filter@is_in_user_dict        # 为用户词典中（输入过）的内容结尾加上一个星号
     # - lua_filter@cold_word_drop_filter  # 词条隐藏、降频
-    - lua_filter@reduce_english_filter    # 降低部分英语单词在候选项的位置
-    - uniquifier                          # 去重
 
 
 # Lua 配置: 日期、时间、星期、ISO 8601、时间戳的触发关键字
