@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-05-16"
+version: "2023-05-18"
 sort: by_weight
 ...
 # 一些杂项
@@ -2203,3 +2203,5 @@ R.I.P	RIP
 requiescat	requiescat
 AIGC	AIGC
 AI Generated Content	AIGC
+Presto	Presto
+presto	presto
