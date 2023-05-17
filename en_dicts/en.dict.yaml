@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-04-19"
+version: "2023-05-18"
 sort: by_weight
 ...
 # +_+
@@ -14525,7 +14525,7 @@ pressure	pressure
 pressures	pressures
 prestige	prestige
 prestigious	prestigious
-preston	preston
+Preston	Preston
 presumably	presumably
 presume	presume
 presumed	presumed
