@@ -25,12 +25,28 @@ unicode = require("unicode")
 -- 数字、人民币大写，R 开头
 number_translator = require("number_translator")
 
--- 九宫格，手机用，未写入。
+
+
+
+
+-- 默认未启用：
+
+-- 九宫格，手机用。
+-- 在 engine/filters 增加 - lua_filter@t9_preedit
 t9_preedit = require("t9_preedit")
 
--- 为用户词典中（输入过）的内容结尾加上一个星号，默认未启用。
+-- 根据是否在用户词典，在结尾加上一个星号 *
+-- 在 engine/filters 增加 - lua_filter@is_in_user_dict
+-- 在方案里写配置项：
+-- is_in_user_dict: true     为输入过的内容加星号
+-- is_in_user_dict: flase    为未输入过的内容加星号
 is_in_user_dict = require("is_in_user_dict")
 
--- 词条隐藏、降频，默认未启用。
+-- 词条隐藏、降频
+-- 在 engine/processors 增加 - lua_processor@cold_word_drop_processor
+-- 在 engine/filters 增加 - lua_filter@cold_word_drop_filter
+-- 在 key_binder 增加快捷键：
+-- turn_down_cand: "Control+j"  # 匹配当前输入码后隐藏指定的候选字词 或候选词条放到第四候选位置
+-- drop_cand: "Control+d"       # 强制删词, 无视输入的编码
 cold_word_drop_processor = require("cold_word_drop.processor")
 cold_word_drop_filter = require("cold_word_drop.filter")
