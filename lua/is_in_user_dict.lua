@@ -9,11 +9,11 @@ local function is_in_user_dict(input, env)
 	end
     for cand in input:iter() do
         if env.is_in_user_dict then
-            if (string.find(cand.type, "user")) then
+            if cand.type == "user_phrase" then
                 cand.comment = cand.comment .. '*'
             end
         else
-            if not (string.find(cand.type, "user")) then
+            if cand.type ~= "user_phrase" then
                 cand.comment = cand.comment .. '*'
             end
         end
