@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-05-18"
+version: "2023-05-24"
 sort: by_weight
 ...
 # 一些杂项
@@ -1292,7 +1292,7 @@ Google Drive	GoogleDrive
 Google One	GoogleOne
 Tor	Tor
 Airbnb	Airbnb
-opencc	opencc
+OpenCC	OpenCC
 HarmonyOS	HarmonyOS
 Incase	Incase
 NPC	NPC
@@ -2205,3 +2205,5 @@ AIGC	AIGC
 AI Generated Content	AIGC
 Presto	Presto
 presto	presto
+Upscayl	Upscayl
+Cocos Creator	CocosCreator

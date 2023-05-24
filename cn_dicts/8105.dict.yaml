@@ -31,7 +31,7 @@
 # 降低一些几乎只在一个固定词汇中使用的读音的权重，不让其参与注音，在 base 中手动注音。
 ---
 name: 8105
-version: "2023-05-21"
+version: "2023-05-24"
 sort: by_weight
 ...
 ### 按需启用
@@ -8422,6 +8422,7 @@ sort: by_weight
 肫	zhun	178
 窀	zhun	41
 衠	zhun	10
+屯	zhun	1
 𬘯	zhun	0
 桌	zhuo	346095
 卓	zhuo	118671
