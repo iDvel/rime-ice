@@ -216,25 +216,25 @@ speller:
     # - derive/^g/k/
     # - derive/^k/g/
     # 韵母
-    # - derive/ang/an/
-    # - derive/an/ang/
-    # - derive/eng/en/
-    # - derive/en/eng/
-    # - derive/in/ing/
-    # - derive/ing/in/
-    # - derive/ian/iang/
-    # - derive/iang/ian/
-    # - derive/uan/uang/
-    # - derive/uang/uan/
-    # - derive/ai/an/
-    # - derive/an/ai/
-    # - derive/ong/un/
-    # - derive/un/ong/
-    # - derive/ong/on/
-    # - derive/iong/un/
-    # - derive/un/iong/
-    # - derive/ong/eng/
-    # - derive/eng/ong/
+    # - derive/ang$/an/
+    # - derive/an$/ang/
+    # - derive/eng$/en/
+    # - derive/en$/eng/
+    # - derive/in$/ing/
+    # - derive/ing$/in/
+    # - derive/ian$/iang/
+    # - derive/iang$/ian/
+    # - derive/uan$/uang/
+    # - derive/uang$/uan/
+    # - derive/ai$/an/
+    # - derive/an$/ai/
+    # - derive/ong$/un/
+    # - derive/un$/ong/
+    # - derive/ong$/on/
+    # - derive/iong$/un/
+    # - derive/un$/iong/
+    # - derive/ong$/eng/
+    # - derive/eng$/ong/
     # 拼音音节
     # - derive/^fei$/hui/
     # - derive/^hui$/fei/
