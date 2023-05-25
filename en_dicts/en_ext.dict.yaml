@@ -330,6 +330,7 @@ CCTV	CCTV
 Closed-Circuit Television	CCTV
 Closed-Circuit Television	ClosedCircuitTelevision
 China Central Television	CCTV
+ColorOS	ColorOS
 China Central Television	ChinaCentralTelevision
 GTA	GTA
 Grand Theft Auto	GTA
@@ -376,6 +377,7 @@ International Data Corporation	InternationalDataCorporation
 Wunderlist	Wunderlist
 VMware	VMware
 Fusion	Fusion
+Flyme	Flyme
 VMware Fusion	VMwareFusion
 VMware Fusion Player	VMwareFusionPlayer
 VMware Fusion Pro	VMwareFusionPro
@@ -933,6 +935,7 @@ gank	gank
 buff	buff
 debuff	debuff
 MagSafe	MagSafe
+Magic UI	MagicUI
 HDMI	HDMI
 High Definition Multimedia Interface	HDMI
 High Definition Multimedia Interface	HighDefinitionMultimediaInterface
@@ -1024,6 +1027,7 @@ CommonMark	CommonMark
 Goldmark	Goldmark
 blackFriday	blackFriday
 Online	Online
+One UI	OneUI
 Raycast	Raycast
 CloudFront	CloudFront
 RSS	RSS
@@ -1701,6 +1705,7 @@ Pixel	Pixel
 Wii U	WiiU
 Wii	Wii
 Oracle	Oracle
+OriginOS	OriginOS
 Chrome	Chrome
 Chromium	Chromium
 iPhone	iPhone
@@ -1908,6 +1913,7 @@ Astro	Astro
 SigmaOS	SigmaOS
 switcher	switcher
 fuckity	fuckity
+Funtouch OS	FuntouchOS
 fo	fo
 layouts	layouts
 redirect	redirect
