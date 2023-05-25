@@ -1542,8 +1542,8 @@ VCS	VCS
 version control system	VCS
 version control system	versioncontrolsystem
 cnBeta	cnBeta
-Pull Request	PullRequest
-Merge Request	MergeRequest
+pull request	pullrequest
+merge request	mergerequest
 squash	squash
 Ant Design	AntDesign
 Disney	Disney
