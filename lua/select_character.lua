@@ -1,7 +1,7 @@
 -- 以词定字
 -- 来源 https://github.com/BlindingDark/rime-lua-select-character
 -- 删除了默认按键 [ ]，和方括号翻页冲突，需要在 key_binder 下指定才能生效
--- 20230526184754 不再错误地获取commit_text，而是直接获取get_selected_candidate().text。
+-- 20230526195910 不再错误地获取commit_text，而是直接获取get_selected_candidate().text。
 local function utf8_sub(s, i, j)
     i = i or 1
     j = j or -1
@@ -46,26 +46,29 @@ local function utf8_sub(s, i, j)
 end
 
 local function select_character(key, env)
-    -- local first_key = engine.schema.config:get_string('key_binder/select_first_character') or 'bracketleft'
-    -- local last_key = engine.schema.config:get_string('key_binder/select_last_character') or 'bracketright'
-    local first_key = engine.schema.config:get_string('key_binder/select_first_character')
-    local last_key = engine.schema.config:get_string('key_binder/select_last_character')
+    local engine = env.engine
+    local context = engine.context
+    local commit_text = context:get_commit_text()
+    local config = engine.schema.config
 
-    if(key:repr() == first_key)then
-        local slct_text = env.engine.context:get_selected_candidate().text
-        if(slct_text)then
-            env.engine:commit_text(utf8_sub(slct_text, 1, 1))
-            env.engine.context:clear()
+    -- local first_key = config:get_string('key_binder/select_first_character') or 'bracketleft'
+    -- local last_key = config:get_string('key_binder/select_last_character') or 'bracketright'
+    local first_key = config:get_string('key_binder/select_first_character')
+    local last_key = config:get_string('key_binder/select_last_character')
 
+    if (key:repr() == first_key) then
+        if(context:get_selected_candidate().text)then
+            engine:commit_text(utf8_sub(context:get_selected_candidate().text, 1, 1))
+            context:clear()
+        end
         return 1 -- kAccepted
     end
 
-    if(key:repr() == last_key)then
-        local slct_text = env.engine.context:get_selected_candidate().text
-        if(slct_text)then
-            env.engine:commit_text(utf8_sub(slct_text, 1, 1))
-            env.engine.context:clear()
-
+    if (key:repr() == last_key) then
+        if(context:get_selected_candidate().text)then
+            engine:commit_text(utf8_sub(context:get_selected_candidate().text,-1,-1))
+            context:clear()
+        end
         return 1 -- kAccepted
     end
 
