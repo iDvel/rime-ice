@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-05-24"
+version: "2023-05-27"
 sort: by_weight
 ...
 # 一些杂项
@@ -750,8 +750,6 @@ Little Snitch	LittleSnitch
 Live Photos	LivePhotos
 LiveReload	LiveReload
 LockScreen	LockScreen
-MAS	MAS
-Mac App Store	MAS
 Mac App Store	MacAppStore
 Mac Rumors	MacRumors
 MacAppDeals	MacAppDeals
@@ -944,7 +942,6 @@ Not Safe For Work	NSFW
 Not Suitable For Work	NSFW
 Not Safe For Work	NotSafeForWork
 Not Suitable For Work	NotSuitableForWork
-Disco	Disco
 Termius	Termius
 Jinja	Jinja
 capitalize	capitalize
@@ -1093,6 +1090,7 @@ header	header
 GitHub Copilot	GitHubCopilot
 GitHub Copilot X	GitHubCopilotX
 GitHub Copilot CLI	GitHubCopilotCLI
+GitHub Copilot chat	GitHubCopilotchat
 Blog	Blog
 iPadOS	iPadOS
 Apple Pencil	ApplePencil
@@ -1688,7 +1686,6 @@ Mozilla Firefox	MozillaFirefox
 Apache	Apache
 Steam	Steam
 Steam Deck	SteamDeck
-app	app
 Android	Android
 android	android
 Arch	Arch
@@ -2216,3 +2213,4 @@ Presto	Presto
 presto	presto
 Upscayl	Upscayl
 Cocos Creator	CocosCreator
+John Wick	JohnWick
