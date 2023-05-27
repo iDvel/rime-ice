@@ -54,8 +54,10 @@ speller:
     - derive/^([a-z].+)$/\U$1/
 # 把单词转写为首字母大写
     - derive/^([a-zA-Z])/\U$1/
-# 把小写的单词转写为前2字母大写
+# 把小写的单词转写为前2 - 4 字母大写
     - derive/^([a-z][a-z])/\U$1/
+    - derive/^([a-z][a-z][a-z])/\U$1/
+    - derive/^([a-z][a-z][a-z][a-z])/\U$1/
 translator:
   dictionary: melt_eng
   spelling_hints: 9

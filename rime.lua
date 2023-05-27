@@ -25,9 +25,8 @@ unicode = require("unicode")
 -- 数字、人民币大写，R 开头
 number_translator = require("number_translator")
 
-
-
-
+-- 英文自动大写
+autocap_filter = require("autocap_filter")
 
 -- 默认未启用：
 
