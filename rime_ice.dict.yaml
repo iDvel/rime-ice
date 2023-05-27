@@ -4,6 +4,7 @@
 ---
 name: rime_ice
 version: "2023-03-04"
+vocabulary: essay-zh-hans
 import_tables:
   - cn_dicts/8105     # 字表
   # - cn_dicts/41448  # 大字表（按需启用）
