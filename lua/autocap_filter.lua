@@ -7,9 +7,8 @@ for cand in input:iter() do
  local    text = cand.text
  local cxinput = env.engine.context.input
 --　首位大写|符合词条|符合编码
- if(cxinput:find("^[A-Z]")                          and
-       text:find("^[A-za-z0-9%.%-+/éà'’&!:;,<>]+$") and
-    cxinput:find("^[A-Za-z%.%-']+$"                    ))
+ if(cxinput:find("^[A-Z][A-Za-z%.%-']+$")      and
+       text:find("^[A-za-z0-9%.%-+/éà'’&!:;,<>]+$"))
  then
 --　末位大写
   if(cand.type~="completion" and cxinput:find("[A-Z]$") and #cxinput>2)
