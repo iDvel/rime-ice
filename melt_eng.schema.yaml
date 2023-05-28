@@ -67,8 +67,6 @@ speller:
     - derive/^([a-z]{8})/\U$1/
     - derive/^([a-z]{9})/\U$1/
     - derive/^([a-z]{10})/\U$1/
-    # 末尾大写
-    - derive/([a-z]$)/\U$1/
 translator:
   dictionary: melt_eng
   spelling_hints: 9
