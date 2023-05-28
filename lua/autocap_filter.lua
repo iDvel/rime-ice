@@ -1,23 +1,29 @@
 return function(input, env)
-	local code = env.engine.context.input -- 输入码
-	
-    for cand in input:iter() do
-		local text = cand.text            -- 候选词
+---开始---
 
-		-- 如果原词条包含大写字母，不做任何处理
-        if text:find("%u") then
-            yield(cand)
-        -- 输入码前两位大写，候选词转换为全大写
-        elseif code:find("^%u%u+.*") then
-            text = text:upper()
-            yield(Candidate(cand.type, 0, #code, text, cand.comment))
-        -- 输入码首位大写，候选词转换为首位大写
-        elseif code:find("^%u.*") then
-            text = text:sub(1, 1):upper() .. text:sub(2)
-            yield(Candidate(cand.type, 0, #code, text, cand.comment))
-        -- 其他
-        else
-            yield(cand)
-        end
-    end
+--　遍历候选
+for cand in input:iter() do
+--　收集材料
+ local    text = cand.text
+ local cxinput = env.engine.context.input
+--　首位大写|符合词条|符合编码
+ if(cxinput:find("^[A-Z]")                           and
+       text:find("^[A-za-z0-9%.%- +/éà'’&!:;,<>]+$") and
+    cxinput:find("^[A-Za-z%.%-']+$"                     ))
+ then
+--　末位大写
+  if(cand.type~="completion" and cxinput:find("[A-Z]$"))
+--　制作词条
+   then text = cand.text:upper()
+  else  text = cand.text:sub(1,1):upper()..cand.text:sub(2)
+  end
+--　挂起处理后的候选
+  yield(Candidate(cand.type,0,#cxinput,text,cand.comment))
+ else
+--　否则挂起原候选
+  yield(cand)
+ end
+end
+
+---结束---
 end
