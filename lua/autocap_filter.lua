@@ -1,11 +1,11 @@
 return function(input, env)
 ---开始---
 
+--　收集材料
+local cxinput = env.engine.context.input
 --　遍历候选
 for cand in input:iter() do
---　收集材料
- local    text = cand.text
- local cxinput = env.engine.context.input
+local text = cand.text
 --　首位大写|符合词条|符合编码
  if(cxinput:find("^[A-Z][A-Za-z%.%-']+$")      and
        text:find("^[A-za-z0-9%.%-+/éà'’&!:;,<>]+$"))
