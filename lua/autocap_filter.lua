@@ -4,7 +4,7 @@ return function(input, env)
         local text = cand.text                -- 候选词
 
         -- 输入码结尾大写，候选词转换为大写
-        if code:find("%u$") then
+        if #code > 2 and code:find("%u$") then
             text = text:upper()
             yield(Candidate(cand.type, 0, #code, text, cand.comment))
         -- 除了输入码结尾大写做转换外，如果原词条包含大写字母，后面的方式将不做任何处理
