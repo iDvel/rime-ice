@@ -2,7 +2,7 @@
 # vim: set sw=2 sts=2 et:
 # encoding: utf-8
 #
-# 复制自 https://github.com/tumuyan/rime-melt
+# 复制自 https://github.com/tumuyan/rime-melt，修改了一点拼写派生
 
 schema:
   schema_id: melt_eng
@@ -44,25 +44,25 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA-_
   delimiter: " '"
   algebra:
-    # 删除其中的特殊字符
+    # 为编码派生新的拼写：
+    # 删除特殊字符
     - derive/['\-_+,.]+//
-    # 把大小写混写的单词转写为全小写
-    - derive/^(.+)$/\L$1/
-    # 把小写的单词转写为全大写
-    - derive/^([a-z].+)$/\U$1/
+    # 全小写
+    - derive/^.+$/\L$0/
+    # 全大写
+    - derive/^.+$/\U$0/
     # 首字母大写
-    - derive/^([a-z])/\U$1/
-    # 把小写的单词转写为前几个字母大写
+    - derive/^./\U$0/
+    # 前 2~10 个字母大写
     - derive/^([a-z]{2})/\U$1/
     - derive/^([a-z]{3})/\U$1/
     - derive/^([a-z]{4})/\U$1/
     - derive/^([a-z]{5})/\U$1/
-    # - derive/^([a-z]{6})/\U$1/
-    # - derive/^([a-z]{7})/\U$1/
-    # - derive/^([a-z]{8})/\U$1/
-    # - derive/^([a-z]{9})/\U$1/
-    # - derive/^([a-z]{10})/\U$1/
-
+    - derive/^([a-z]{6})/\U$1/
+    - derive/^([a-z]{7})/\U$1/
+    - derive/^([a-z]{8})/\U$1/
+    - derive/^([a-z]{9})/\U$1/
+    - derive/^([a-z]{10})/\U$1/
 translator:
   dictionary: melt_eng
   spelling_hints: 9

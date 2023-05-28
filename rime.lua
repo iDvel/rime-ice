@@ -26,7 +26,7 @@ unicode = require("unicode")
 number_translator = require("number_translator")
 
 -- 自动大写英文词汇
-cap_filter = require("cap_filter")
+autocap_filter = require("autocap_filter")
 
 
 -- 默认未启用：
