@@ -1,21 +1,25 @@
 return function(input, env)
-    -- 遍历候选
     for cand in input:iter() do
-        -- 收集材料
-        local text = cand.text
-        local cxinput = env.engine.context.input
-        -- 判断首位大写
-        if (cxinput:find("^%u.*")) then
-            -- 制作词条
-            if (cxinput:find("^%u.-%u$")) then
-                text = cand.text:upper()
-            else
-                text = cand.text:sub(1, 1):upper() .. cand.text:sub(2)
-            end
-            -- 挂起处理后的候选
-            yield(Candidate(cand.type, 0, #cxinput, text, cand.comment))
+        local code = env.engine.context.input -- 输入码
+        local text = cand.text                -- 候选词
+
+        -- 输入码结尾大写，候选词转换为大写
+        if code:find("%u$") then
+            text = text:upper()
+            yield(Candidate(cand.type, 0, #code, text, cand.comment))
+        -- 除了输入码结尾大写做转换外，如果原词条包含大写字母，后面的方式将不做任何处理
+        elseif text:find("%u") then
+            yield(cand)
+        -- 输入码前两位大写，候选词转换为全大写
+        elseif code:find("^%u%u+.*") then
+            text = text:upper()
+            yield(Candidate(cand.type, 0, #code, text, cand.comment))
+        -- 输入码首位大写，候选词转换为首位大写
+        elseif code:find("^%u.*") then
+            text = text:sub(1, 1):upper() .. text:sub(2)
+            yield(Candidate(cand.type, 0, #code, text, cand.comment))
+        -- 其他
         else
-            -- 否则挂起普通候选
             yield(cand)
         end
     end
