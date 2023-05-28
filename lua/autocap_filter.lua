@@ -9,7 +9,8 @@ for cand in input:iter() do
 --　首位大写|符合词条|符合编码
  if(cxinput:find("^[A-Z]")                           and
        text:find("^[A-za-z0-9%.%- +/éà'’&!:;,<>]+$") and
-    cxinput:find("^[A-Za-z%.%-']+$"                     ))
+    cxinput:find("^[A-Za-z%.%-']+$"                  and
+   #cxinput>2                                           ))
  then
 --　末位大写
   if(cand.type~="completion" and cxinput:find("[A-Z]$"))
