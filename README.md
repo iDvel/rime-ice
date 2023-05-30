@@ -129,7 +129,7 @@ paru -S rime-ice-git
 # yay -S rime-ice-git
 ```
 
-推荐使用[补丁](https://github.com/rime/home/wiki/Configuration#補靪])的方式启用。
+推荐使用[补丁](https://github.com/rime/home/wiki/Configuration#補靪)的方式启用。
 
 参考下面的配置示例，修改对应输入法框架用户目录（见下）中的 `default.custom.yaml` 文件
 
