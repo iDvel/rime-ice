@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-05-27"
+version: "2023-05-30"
 sort: by_weight
 ...
 # 一些杂项
@@ -319,7 +319,7 @@ Central Processing Unit	CPU
 Central Processing Unit	CentralProcessingUnit
 GPU	GPU
 Graphics Processing Unit	GPU
-Graphics Processing Unit	Graphics Processing Unit
+Graphics Processing Unit	GraphicsProcessingUnit
 MCU	MCU
 ARM	ARM
 Advanced RISC Machine	ARM
@@ -334,7 +334,7 @@ ColorOS	ColorOS
 China Central Television	ChinaCentralTelevision
 GTA	GTA
 Grand Theft Auto	GTA
-Grand Theft Auto	Grand Theft Auto
+Grand Theft Auto	GrandTheftAuto
 GTAV	GTAV
 Grand Theft Auto V	GTAV
 Grand Theft Auto V	GrandTheftAutoV
@@ -1821,7 +1821,7 @@ Welsh	Welsh
 CN	CN
 MTV	MTV
 Music Television	MTV
-Music Television	Music Television
+Music Television	MusicTelevision
 Mrs.	Mrs
 MitM	MitM
 man-in-the-middle	MitM

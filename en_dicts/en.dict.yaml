@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-05-27"
+version: "2023-05-30"
 sort: by_weight
 ...
 # +_+
@@ -20956,7 +20956,7 @@ York	York
 yorker	yorker
 Yorkshire	Yorkshire
 Yosemite	Yosemite
-# you	you
+you	you
 young	young
 younger	younger
 youngest	youngest
