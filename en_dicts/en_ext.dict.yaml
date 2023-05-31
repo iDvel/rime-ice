@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-05-30"
+version: "2023-05-31"
 sort: by_weight
 ...
 # 一些杂项
@@ -1258,8 +1258,8 @@ Microsoft Edge	MicrosoftEdge
 Visual Studio Code	VisualStudioCode
 Visual Studio Code	VSCode
 PowerShell	PowerShell
-.Net	Net
-.Net	dotNet
+.NET	NET
+.NET	dotNet
 Surface	Surface
 MSN	MSN
 Skype	Skype
@@ -2214,3 +2214,4 @@ presto	presto
 Upscayl	Upscayl
 Cocos Creator	CocosCreator
 John Wick	JohnWick
+firetruck	firetruck
