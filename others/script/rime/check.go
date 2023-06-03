@@ -173,7 +173,7 @@ func Check(dictPath string, _type int) {
 func checkLine(dictPath string, _type int, line string, lineNumber int, wg *sync.WaitGroup) {
 	defer wg.Done()
 
-	// 忽略注释，base 中有很多被注视了词汇，暂时没有删除
+	// 忽略注释，base 中有很多被注释了的词汇，暂时没有删除
 	if strings.HasPrefix(line, "#") {
 		// 注释以 '#' 开头，但不是以 '# '开头（强迫症晚期）
 		if !strings.HasPrefix(line, "# ") {
@@ -187,10 +187,6 @@ func checkLine(dictPath string, _type int, line string, lineNumber int, wg *sync
 		fmt.Println("empty line", line)
 	}
 
-	// 开头结尾有空格
-	if strings.HasPrefix(line, " ") || strings.HasSuffix(line, " ") {
-		fmt.Println()
-	}
 	// +---------------------------------------------------------------
 	// | 开始检查分割后的内容，分割为： 词汇text 编码code 权重weight
 	// +---------------------------------------------------------------
@@ -201,7 +197,7 @@ func checkLine(dictPath string, _type int, line string, lineNumber int, wg *sync
 		text = parts[0]
 	case _type == 2 && len(parts) == 2: // 两列，【汉字+注音】
 		text, code = parts[0], parts[1]
-	case _type == 3 && len(parts) == 3: // 散列，【汉字+注音+权重】
+	case _type == 3 && len(parts) == 3: // 三列，【汉字+注音+权重】
 		text, code, weight = parts[0], parts[1], parts[2]
 	case _type == 4 && len(parts) == 2: // 两列，【汉字+权重】
 		text, weight = parts[0], parts[1]

@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-05-31"
+version: "2023-06-03"
 sort: by_weight
 ...
 # 一些杂项
@@ -2215,3 +2215,8 @@ Upscayl	Upscayl
 Cocos Creator	CocosCreator
 John Wick	JohnWick
 firetruck	firetruck
+prankster	prankster
+pranksters	pranksters
+npm	npm
+Node Package Manager	npm
+Node Package Manager	NodePackageManager
