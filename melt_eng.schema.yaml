@@ -75,6 +75,7 @@ speller:
       - derive/\./dot/
       - derive/@/at/
       - derive/-/hyphen/
+      - derive / slash
       # 派生无单个特殊字符的拼写
       - derive/[.]//
       - derive/[+]//
