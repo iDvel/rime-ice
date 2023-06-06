@@ -42,7 +42,7 @@
 -- puts(INFO,__FILE__(),__LINE__(),__FUNC__() , ...)
 --
 -- global variable
-function __FILE__(n) n=n or 2 return debug.getinfo(n,'S').soruce end
+function __FILE__(n) n=n or 2 return debug.getinfo(n,'S').source end
 function __LINE__(n) n=n or 2 return debug.getinfo(n, 'l').currentline end
 function __FUNC__(n) n=n or 2 return debug.getinfo(n, 'n').name end
 INFO="log"
