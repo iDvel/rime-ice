@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-06-03"
+version: "2023-06-06"
 sort: by_weight
 ...
 # 一些杂项
@@ -166,6 +166,7 @@ macOS Catalina	macOS	4
 macOS Big Sur	macOS	5
 macOS Monterey	macOS	6
 macOS Ventura	macOS	7
+macOS Sonoma	macOS	8
 macOS Sierra	macOSSierra
 macOS High Sierra	macOSHighSierra
 macOS Mojave	macOSMojave
@@ -173,6 +174,7 @@ macOS Catalina	macOSCatalina
 macOS Big Sur	macOSBigSur
 macOS Monterey	macOSMonterey
 macOS Ventura	macOSVentura
+macOS Sonoma	macOSSonoma
 Sierra	Sierra
 High Sierra	HighSierra
 Mojave	Mojave
@@ -180,6 +182,7 @@ Catalina	Catalina
 Big Sur	BigSur
 Monterey	Monterey
 Ventura	Ventura
+Sonoma	Sonoma
 
 Windows	Windows	999
 Windows 95	Windows	1
@@ -347,7 +350,6 @@ CentOS	CentOS
 Debian	Debian
 BBC	BBC
 DataGrip	DataGrip
-Alpha	Alpha
 AlphaGo	AlphaGo
 AlphaFold	AlphaFold
 Valve	Valve
@@ -412,6 +414,9 @@ Xbox Series	XboxSeries
 Xbox Series S	XboxSeriesS
 Switch	Switch
 CSS	CSS
+Cascading Style Sheets	CSS
+Cascading Style Sheets	CascadingStyleSheets
+cascading	cascading
 ID	ID
 OTC	OTC
 IEPL	IEPL
@@ -485,7 +490,6 @@ Hugo	Hugo
 Epic	Epic
 Epic Games	EpicGames
 Instagram	Instagram
-Beta	Beta
 archive	archive
 Evernote	Evernote
 PDF	PDF
@@ -498,7 +502,6 @@ Gitea	Gitea
 GitBook	GitBook
 Gboard	Gboard
 Access	Access
-Bug	Bug
 BMW	BMW
 Bayerische Motoren Werke AG	BMW
 BGM	BGM
@@ -518,7 +521,6 @@ Flask	Flask
 Facebook	Facebook
 Firefox	Firefox
 Git	Git
-Go	Go
 GoLand	GoLand
 Golang	Golang
 IQOS	IQOS
@@ -551,7 +553,6 @@ Roguelike	Roguelike
 Redis	Redis
 Rime	Rime
 RION	RION
-Rust	Rust
 segmentfault	segmentfault
 SPA	SPA
 SQL	SQL
@@ -573,7 +574,7 @@ Web	Web
 WebStorm	WebStorm
 Word	Word
 Xcode	Xcode
-Emoji	Emoji
+emoji	emoji
 exe	exe
 gakki	gakki
 hey	hey
@@ -590,9 +591,6 @@ Graphics Interchange Format	GIF
 DNS	DNS
 Domain Name System	DNS
 Domain Name System	DomainNameSystem
-Mod	Mod
-Yes	Yes
-No	No
 RimWorld	RimWorld
 Factorio	Factorio
 Game Boy	GameBoy
@@ -671,7 +669,6 @@ Developer Preview	DeveloperPreview
 DEVONthink	DEVONthink
 Disk Utility	DiskUtility
 Diumoo	Diumoo
-Dock	Dock
 Dropbox	Dropbox
 Dropzone	Dropzone
 Endnote	Endnote
@@ -685,7 +682,6 @@ Fantastical	Fantastical
 FileVault	FileVault
 Final Cut Pro	FinalCutPro
 Flickr	Flickr
-Flux	Flux
 Force Touch	ForceTouch
 Forecast	Forecast
 ForkLift	ForkLift
@@ -851,7 +847,6 @@ StackSocial	StackSocial
 Sublime Text	SublimeText
 Surge	Surge
 Symbol	Symbol
-Tag	Tag
 TechWeb	TechWeb
 Telegram	Telegram
 Terminal	Terminal
@@ -861,14 +856,11 @@ Textastic	Textastic
 TextExpander	TextExpander
 TextWrangler	TextWrangler
 The Unarchiver	TheUnarchiver
-Things	Things
-Thunder	Thunder
 Thunderbird	Thunderbird
 Time Capsule	TimeCapsule
 Timing	Timing
 TinkerTool	TinkerTool
 Touch ID	TouchID
-Tower	Tower
 Trello	Trello
 Tumblr	Tumblr
 tvOS	tvOS
@@ -885,7 +877,6 @@ Universal Serial Bus	UniversalSerialBus
 Versions	Versions
 VPN	VPN
 virtual private network	VPN
-Watch	Watch
 watchOS	watchOS
 Wi-Fi	waifai
 Wi-Fi	WiFi
@@ -985,13 +976,9 @@ Stack Overflow	StackOverflow
 PyWebIO	PyWebIO
 Launchpad	Launchpad
 Squoosh	Squoosh
-Win	Win
 cosplay	cosplay
 Gravatar	Gravatar
-Max	Max
-Copilot	Copilot
 copilot	copilot
-Fleet	Fleet
 Xshell	Xshell
 Nokia	Nokia
 OCR	OCR
@@ -1019,11 +1006,9 @@ Darwin	Darwin
 NAS	NAS
 Network Attached Storage	NAS
 Network Attached Storage	NetworkAttachedStorage
-Fork	Fork
 CommonMark	CommonMark
 Goldmark	Goldmark
 blackFriday	blackFriday
-Online	Online
 One UI	OneUI
 Raycast	Raycast
 CloudFront	CloudFront
@@ -1046,7 +1031,6 @@ PaperMod	PaperMod
 Vercel	Vercel
 chore	chore
 chores	chores
-SWAG	SWAG
 swag	swag
 CS	CS
 Counter-Strike	CS
@@ -1071,8 +1055,6 @@ Gecko	Gecko
 Omicron	Omicron
 TinyPNG	TinyPNG
 Thanos	Thanos
-Byte	Byte
-bytes	bytes
 XML	XML
 Extensible Markup Language	XML
 Extensible Markup Language	ExtensibleMarkupLanguage
@@ -1084,14 +1066,13 @@ Baiduspider	Baiduspider
 Bingbot	Bingbot
 SogouSpider	SogouSpider
 YoudaoBot	YoudaoBot
-SWAT	SWAT
+swat	swat
 footer	footer
 header	header
 GitHub Copilot	GitHubCopilot
 GitHub Copilot X	GitHubCopilotX
 GitHub Copilot CLI	GitHubCopilotCLI
 GitHub Copilot chat	GitHubCopilotchat
-Blog	Blog
 iPadOS	iPadOS
 Apple Pencil	ApplePencil
 Reddit	Reddit
@@ -1152,7 +1133,6 @@ GNU General Public License	GNU
 GNU General Public License	GNUGeneralPublicLicense
 GPL	GPL
 GNU General Public License	GPL
-Brave	Brave
 iPhone X	iPhoneX
 iPhone XS	iPhoneXS
 iPhone XS Max	iPhoneXSMax
@@ -1211,9 +1191,9 @@ NULL	NULL
 Slice	Slice
 Map	Map
 Mojito	Mojito
-Bob	Bob
 Toolbox	Toolbox
 Weasel	Weasel
+weasel	weasel
 Niconico	Niconico
 TickTick	TickTick
 CHDBits	CHDBits
@@ -1403,7 +1383,7 @@ PHP	PHP
 Hypertext Preprocessor	PHP
 Hypertext Preprocessor	HypertextPreprocessor
 cannot	cannot
-Duang	Duang
+duang	duang
 placeholder	placeholder
 Pythonic	Pythonic
 redefine	redefine
@@ -1644,7 +1624,6 @@ Mac	Mac
 LCD	LCD
 DVD	DVD
 CD	CD
-Bluetooth	Bluetooth
 eSIM	eSIM
 UTF	UTF
 UTF-8	UTF
@@ -1654,8 +1633,6 @@ IEEE	IEEE
 Institute of Electrical and Electronics Engineers	IEEE
 DjVu	DjVu
 LaTeX	LaTeX
-Wire	Wire
-Guard	Guard
 API	API
 Application Programming Interface	API
 Ethernet	Ethernet
@@ -1670,7 +1647,7 @@ RNA	RNA
 ribonucleic acid	RNA
 mRNA	mRNA
 messenger RNA	mRNA
-C++	cpp
+C++	Cpp
 Python	Python
 Perl	Perl
 Swift	Swift
@@ -1969,8 +1946,6 @@ GoFrame	GoFrame
 ORM	ORM
 Object Relational Mapping	ORM
 Gin	Gin
-Echo	Echo
-Iris	Iris
 iris	iris
 burnt	burnt
 KPI	KPI
@@ -2010,7 +1985,6 @@ rune	rune
 wick	wick
 meow	meow
 woof	woof
-Bromite	Bromite
 bromite	bromite
 Zelda	Zelda
 hutch	hutch
@@ -2220,3 +2194,7 @@ pranksters	pranksters
 npm	npm
 Node Package Manager	npm
 Node Package Manager	NodePackageManager
+Apple Vision	AppleVision
+Apple Vision Pro	AppleVisionPro
+Vision Pro	VisionPro
+shithead	shithead
