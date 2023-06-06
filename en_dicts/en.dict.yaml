@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-05-30"
+version: "2023-06-06"
 sort: by_weight
 ...
 # +_+
@@ -998,7 +998,7 @@ approx	approx
 approximate	approximate
 approximately	approximately
 approximation	approximation
-Apps	Apps
+apps	apps
 Apr.	Apr
 April	April
 apron	apron
@@ -2138,7 +2138,7 @@ blue	blue
 bluegrass	bluegrass
 blueprint	blueprint
 blues	blues
-bluetooth	bluetooth
+Bluetooth	Bluetooth
 bluff	bluff
 blunder	blunder
 blunt	blunt
@@ -2164,7 +2164,6 @@ boasts	boasts
 boat	boat
 boating	boating
 boats	boats
-bob	bob
 Bob	Bob
 bobby	bobby
 BOC	BOC
