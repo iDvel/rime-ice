@@ -44,9 +44,19 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA-_
   delimiter: " '"
   algebra:
-    # 为编码派生新的拼写：
-    # 删除特殊字符
-    - derive/['\-_+,.]+//
+    # 为编码派生新的拼写
+    # 派生无单个特殊字符的拼写
+    - derive/[.]//
+    - derive/[+]//
+    - derive/[@]//
+    - derive/[-]//
+    - derive/[_]//
+    # 派生无任何非字母数字字符的拼写
+    - derive/[^a-zA-Z0-9]//
+    # 禁用非英文、数字开头的编码
+    - erase/^[\W|_].+$/
+    # 当开启自动调频时，保证大写+小写开头的词排在全大写的前面
+    - derive/^([A-Z][A-Z]+)[a-z]+/$1/
     # 全小写
     - derive/^.+$/\L$0/
     # 全大写
