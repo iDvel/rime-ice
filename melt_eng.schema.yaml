@@ -41,28 +41,70 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA-_
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " '"
   algebra:
-    # 为编码派生新的拼写：
-    # 删除特殊字符
-    - derive/['\-_+,.]+//
-    # 全小写
-    - derive/^.+$/\L$0/
-    # 全大写
-    - derive/^.+$/\U$0/
-    # 首字母大写
-    - derive/^./\U$0/
-    # 前 2~10 个字母大写
-    - derive/^([a-z]{2})/\U$1/
-    - derive/^([a-z]{3})/\U$1/
-    - derive/^([a-z]{4})/\U$1/
-    - derive/^([a-z]{5})/\U$1/
-    - derive/^([a-z]{6})/\U$1/
-    - derive/^([a-z]{7})/\U$1/
-    - derive/^([a-z]{8})/\U$1/
-    - derive/^([a-z]{9})/\U$1/
-    - derive/^([a-z]{10})/\U$1/
+    # 根据当前所用中文方案修改 __include 的值
+    # algebra_rime_ice ; algebra_flypy ; algebra_mspy ; algebra_ziguang ; algebra_double_pinyin
+    __include: algebra_rime_ice
+    __append:
+      # 数字派生
+      - derive/1([4-7|9])/$1teen/
+      - derive/11/eleven/
+      - derive/12/twelve/
+      - derive/13/thirteen/
+      - derive/15/fifteen/
+      - derive/18/eighteen/
+      - derive/0/o/ # 如 1000 -> oneOOO
+      - derive/0/O/
+      - derive/0/zero/
+      - derive/1/one/
+      - derive/10/ten/
+      - derive/2/to/ #
+      - derive/2/two/
+      - derive/3/three/
+      - derive/4/for/
+      - derive/4/four/
+      - derive/5/five/
+      - derive/6/six/
+      - derive/7/seven/
+      - derive/8/eight/
+      - derive/9/nine/
+      # 符号派生
+      - derive/\+/plus/
+      - derive/\./dot/
+      - derive/@/at/
+      - derive/-/hyphen/
+      - derive / slash
+      # 派生无单个特殊字符的拼写
+      - derive/[.]//
+      - derive/[+]//
+      - derive/[@]//
+      - derive/[-]//
+      - derive/[_]//
+      # 派生无任何非字母数字字符的拼写
+      - derive/[^a-zA-Z0-9]//
+      # 禁用非英文、数字开头的编码
+      - erase/^[\W|_].+$/
+      # 当开启自动调频时，保证大写+小写开头的词排在全大写的前面
+      - derive/^([A-Z][A-Z]+)[a-z]+/$1/
+      # 全小写
+      - derive/^.+$/\L$0/
+      # 全大写
+      - derive/^.+$/\U$0/
+      # 首字母大写
+      - derive/^./\U$0/
+      # 前 2~10 个字母大写
+      - derive/^([a-z]{2})/\U$1/
+      - derive/^([a-z]{3})/\U$1/
+      - derive/^([a-z]{4})/\U$1/
+      - derive/^([a-z]{5})/\U$1/
+      - derive/^([a-z]{6})/\U$1/
+      - derive/^([a-z]{7})/\U$1/
+      - derive/^([a-z]{8})/\U$1/
+      - derive/^([a-z]{9})/\U$1/
+      - derive/^([a-z]{10})/\U$1/
+
 translator:
   dictionary: melt_eng
   spelling_hints: 9
@@ -75,3 +117,108 @@ punctuator:
 
 recognizer:
   import_preset: default
+
+algebra_rime_ice:
+  - derive/(?<!\d)1([1-9])(?!\d)/shi$1/
+  - derive/([1-9])0000(?!0)/$1wan/
+  - derive/([1-9])000(?!0)/$1qian/
+  - derive/([1-9])00(?!0)/$1bai/
+  - derive/([2-9])0(?!0)/$1shi/
+  - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1shi$2/
+  - derive/\./dian/
+  - derive/10/shi/
+  - derive/0/ling/
+  - derive/1/yi/
+  - derive/2/er/
+  - derive/2/liang/
+  - derive/3/san/
+  - derive/4/si/
+  - derive/5/wu/
+  - derive/6/liu/
+  - derive/7/qi/
+  - derive/8/ba/
+  - derive/9/jiu/
+
+algebra_flypy:
+  - derive/(?<!\d)1([1-9])(?!\d)/ui$1/
+  - derive/([1-9])0000(?!0)/$1wj/
+  - derive/([1-9])000(?!0)/$1qm/
+  - derive/([1-9])00(?!0)/$1bd/
+  - derive/([2-9])0(?!0)/$1ui/
+  - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1ui$2/
+  - derive/\./dm/
+  - derive/10/ui/
+  - derive/0/lk/
+  - derive/1/yi/
+  - derive/2/er/
+  - derive/2/ll/
+  - derive/3/sj/
+  - derive/4/si/
+  - derive/5/wu/
+  - derive/6/lq/
+  - derive/7/qi/
+  - derive/8/ba/
+  - derive/9/jq/
+
+algebra_mspy:
+  - derive/(?<!\d)1([1-9])(?!\d)/ui$1/
+  - derive/([1-9])0000(?!0)/$1wj/
+  - derive/([1-9])000(?!0)/$1qm/
+  - derive/([1-9])00(?!0)/$1bl/
+  - derive/([2-9])0(?!0)/$1ui/
+  - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1ui$2/
+  - derive/\./dm/
+  - derive/10/ui/
+  - derive/0/l;/
+  - derive/1/yi/
+  - derive/2/er/
+  - derive/2/ld/
+  - derive/3/sj/
+  - derive/4/si/
+  - derive/5/wu/
+  - derive/6/lq/
+  - derive/7/qi/
+  - derive/8/ba/
+  - derive/9/jq/
+
+algebra_ziguang:
+  - derive/(?<!\d)1([1-9])(?!\d)/ii$1/
+  - derive/([1-9])0000(?!0)/$1wr/
+  - derive/([1-9])000(?!0)/$1qf/
+  - derive/([1-9])00(?!0)/$1bp/
+  - derive/([2-9])0(?!0)/$1ii/
+  - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1ii$2/
+  - derive/\./df/
+  - derive/10/ii/
+  - derive/0/l;/
+  - derive/1/yi/
+  - derive/2/er/
+  - derive/2/lg/
+  - derive/3/sr/
+  - derive/4/si/
+  - derive/5/wu/
+  - derive/6/lj/
+  - derive/7/qi/
+  - derive/8/ba/
+  - derive/9/jj/
+
+algebra_double_pinyin:
+  - derive/(?<!\d)1([1-9])(?!\d)/ui$1/
+  - derive/([1-9])0000(?!0)/$1wj/
+  - derive/([1-9])000(?!0)/$1qm/
+  - derive/([1-9])00(?!0)/$1bl/
+  - derive/([2-9])0(?!0)/$1ui/
+  - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1ui$2/
+  - derive/\./dm/
+  - derive/10/ui/
+  - derive/0/ly/
+  - derive/1/yi/
+  - derive/2/er/
+  - derive/2/ld/
+  - derive/3/sj/
+  - derive/4/si/
+  - derive/5/wu/
+  - derive/6/lq/
+  - derive/7/qi/
+  - derive/8/ba/
+  - derive/9/jq/

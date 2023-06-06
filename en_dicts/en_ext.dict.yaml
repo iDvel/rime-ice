@@ -124,10 +124,10 @@ Phoebe	Phoebe
 
 # 带权重的系列
 iPhone	iPhone	999
-iPhone 14	iPhone	4
-iPhone 14 Plus	iPhone	3
-iPhone 14 Pro	iPhone	2
-iPhone 14 Pro Max	iPhone	1
+iPhone 14	iPhone14	4
+iPhone 14 Plus	iPhone14Plus	3
+iPhone 14 Pro	iPhone14Pro	2
+iPhone 14 Pro Max	iPhone14ProMax	1
 iPhone SE	iPhoneSE
 
 Mac OS X	MacOSX	999
@@ -185,21 +185,21 @@ Ventura	Ventura
 Sonoma	Sonoma
 
 Windows	Windows	999
-Windows 95	Windows	1
-Windows 98	Windows	2
+Windows 95	Windows95	1
+Windows 98	Windows98	2
 Windows Me	Windows	3
-Windows 2000	Windows	4
+Windows 2000	Windows2000	4
 Windows XP	Windows	5
 Windows XP	WindowsXP
-Windows Vista	Windows	6
-Windows 7	Windows	7
-Windows 8	Windows	8
-Windows 10	Windows	10
-Windows 11	Windows	11
+Windows Vista	WindowsVista	6
+Windows 7	Windows7	7
+Windows 8	Windows8	8
+Windows 10	Windows10	10
+Windows 11	Windows11	11
 
-ERC-20	ERC
-ERC-721	ERC
-ERC-1155	ERC
+ERC-20	ERC-20
+ERC-721	ERC-721
+ERC-1155	ERC-1155
 
 
 # +_+
@@ -284,10 +284,10 @@ Secure Shell	SSH
 Secure Shell	SecureShell
 ISO	ISO
 International Organization for Standardization	ISO
-ISO 8601	ISO
+ISO 8601	ISO8601
 RFC	RFC
 Request for Comments	RFC
-RFC 3339	RFC
+RFC 3339	RFC3339
 RFCs	RFCs
 IETF	IETF
 Internet Engineering Task Force	IETF
@@ -439,12 +439,8 @@ VIP	VIP
 D.VA	DVA
 Logo	Logo
 Telnet	Telnet
-IPv4	IPv
-IPv6	IPv
-IPv4	IPvs
-IPv6	IPvl
-IPv4	IPvsi
-IPv6	IPvliu
+IPv4	IPv4
+IPv6	IPv6
 Unix	Unix
 Rick and Morty	RickandMorty
 Tokyo	Tokyo
@@ -561,11 +557,9 @@ Structured Query Language	StructuredQueryLanguage
 SQLite	SQLite
 Sourcetree	Sourcetree
 Spiritfarer	Spiritfarer
-TCP/IP	tcpip
+TCP/IP	TCP/IP
 Twitter	Twitter
-V2EX	Ver
-V2EX	VerEX
-V2EX	VtoEX
+V2EX	V2EX
 VSCode	VSCode
 Vue	Vue
 Vue.js	Vuejs
@@ -767,10 +761,8 @@ MIPS	MIPS
 Moke	Moke
 Moneywiz	Moneywiz
 Moom	Moom
-MP3	MPs
-MP3	MPsan
-MP4	MPs
-MP4	MPsi
+MP3	MP3
+MP4	MP4
 MplayerX	MplayerX
 Netflix	Netflix
 Noizio	Noizio
@@ -1106,7 +1098,7 @@ Shottr	Shottr
 turbo	turbo
 Turbo Boost	TurboBoost
 Turbo Boost Switcher	TurboBoostSwitcher
-P2P	ptop
+P2P	P2P
 OPPO	OPPO
 vivo	vivo
 Uno	Uno
@@ -1143,11 +1135,11 @@ Minions	Minions
 Rush B	RushB
 Rush A	RushA
 AK	AK
-AK47	AK
-AK74	AK
+AK47	AK47
+AK74	AK74
 Mastercard	Mastercard
 COVID	COVID
-COVID-19	COVID
+COVID-19	COVID-19
 Wallpaper Engine	WallpaperEngine
 Erlang	Erlang
 FAQ	FAQ
@@ -1626,7 +1618,8 @@ DVD	DVD
 CD	CD
 eSIM	eSIM
 UTF	UTF
-UTF-8	UTF
+UTF-8	UTF-8
+UTF-16	UTF-16
 ASCII	ASCII
 ANSI	ANSI
 IEEE	IEEE
@@ -1648,6 +1641,7 @@ ribonucleic acid	RNA
 mRNA	mRNA
 messenger RNA	mRNA
 C++	Cpp
+C++	C++
 Python	Python
 Perl	Perl
 Swift	Swift
@@ -2040,8 +2034,8 @@ WWII	WWII
 World War II	WWII
 WWIII	WWIII
 World War III	WWIII
-PL/pgSQL	PLpgSQL
-Procedural Language / PostGres Structured Query Language	PLpgSQL
+PL/pgSQL	PL/pgSQL
+Procedural Language / PostGres Structured Query Language	PL/pgSQL
 IQ	IQ
 Intelligence quotient	IQ
 quotient	quotient
@@ -2198,3 +2192,8 @@ Apple Vision	AppleVision
 Apple Vision Pro	AppleVisionPro
 Vision Pro	VisionPro
 shithead	shithead
+i18n	i18n
+internationalization	i18n
+GPT-4	GPT-4
+a11y	a11y
+accessibility	a11y
