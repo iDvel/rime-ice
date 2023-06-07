@@ -1,0 +1,27 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.15.0.0
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Wed Jun  7 12:20:48 2023"
+  rime_version: 1.8.5
+patch:
+  preset_color_schemes:
+    myStyle:
+      {
+        author: Cierra_Runis,
+        back_color: 0xD0222222,
+        border_color: 0x222222,
+        candidate_text_color: 0xF0F0F0,
+        comment_text_color: 0x606CFF,
+        hilited_back_color: 0x00222222,
+        hilited_candidate_back_color: 0x333333,
+        hilited_candidate_text_color: 0x0080FF,
+        name: "我的样式／MyStyle",
+        text_color: 0xF0F0F0,
+      }
+  style:
+    color_scheme: myStyle
+    font_face: "苹方:bold"
+    font_point: 12
+    horizontal: true
+    layout: { corner_radius: 12 }
