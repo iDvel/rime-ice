@@ -10,7 +10,6 @@
 #
 # 默认启用的中英混输词库是全拼的，需要在 melt_eng.dict.yaml 中修改为对应的双拼的。
 
-
 # 方案说明
 schema:
   schema_id: double_pinyin_flypy
@@ -237,32 +236,31 @@ speller:
     - derive/^([jqxy])u$/$1v/
     - derive/^([aoe])([ioun])$/$1$1$2/
     - xform/^([aoe])(ng)?$/$1$1$2/
-    - xform/iu$/Q/
-    - xform/(.)ei$/$1W/
-    - xform/uan$/R/
-    - xform/[uv]e$/T/
-    - xform/un$/Y/
-    - xform/^sh/U/
-    - xform/^ch/I/
-    - xform/^zh/V/
-    - xform/uo$/O/
-    - xform/ie$/P/
-    - xform/i?ong$/S/
-    - xform/ing$|uai$/K/
-    - xform/(.)ai$/$1D/
-    - xform/(.)en$/$1F/
-    - xform/(.)eng$/$1G/
-    - xform/[iu]ang$/L/
-    - xform/(.)ang$/$1H/
-    - xform/ian$/M/
-    - xform/(.)an$/$1J/
-    - xform/(.)ou$/$1Z/
-    - xform/[iu]a$/X/
-    - xform/iao$/N/
-    - xform/(.)ao$/$1C/
-    - xform/ui$/V/
-    - xform/in$/B/
-    - xlit/QWRTYUIOPSDFGHJKLZXCVBNM/qwrtyuiopsdfghjklzxcvbnm/
+    - xform/iu$/ǫ/
+    - xform/(.)ei$/$1ᴡ/
+    - xform/uan$/ʀ/
+    - xform/[uv]e$/ᴛ/
+    - xform/un$/ʏ/
+    - xform/^sh/ᴜ/
+    - xform/^ch/ɪ/
+    - xform/^zh/ᴠ/
+    - xform/uo$/ᴏ/
+    - xform/ie$/ᴘ/
+    - xform/i?ong$/s/
+    - xform/ing$|uai$/ᴋ/
+    - xform/(.)ai$/$1ᴅ/
+    - xform/(.)en$/$1ғ/
+    - xform/(.)eng$/$1ɢ/
+    - xform/[iu]ang$/ʟ/
+    - xform/(.)ang$/$1ʜ/
+    - xform/ian$/ᴍ/
+    - xform/(.)an$/$1ᴊ/
+    - xform/(.)ou$/$1ᴢ/
+    - xform/[iu]a$/x/
+    - xform/iao$/ɴ/
+    - xform/(.)ao$/$1ᴄ/
+    - xform/ui$/ᴠ/
+    - xform/in$/ʙ/
+    - xlit/ǫᴡʀᴛʏᴜɪᴏᴘsᴅғɢʜᴊᴋʟᴢxᴄᴠʙɴᴍ/qwrtyuiopsdfghjklzxcvbnm/
     - abbrev/^(.).+$/$1/  # 首字母简拼
-    # 可输入大写字母。因为上面的双拼拼写规则用掉了大写字母。做了 xlit 转写，同时适配全拼和双拼。
-    - xlit/āḃçďēḟḡĥīĵḱĺḿńōṕɋŕśťūṽẃẋȳź/ABCDEFGHIJKLMNOPQRSTUVWXYZ/
+  
