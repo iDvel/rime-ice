@@ -237,32 +237,30 @@ speller:
     - derive/^([jqxy])u$/$1v/
     - derive/^([aoe])([ioun])$/$1$1$2/
     - xform/^([aoe])(ng)?$/$1$1$2/
-    - xform/iu$/Q/
-    - xform/[iu]a$/W/
-    - xform/[uv]an$/R/
-    - xform/[uv]e$/T/
-    - xform/ing$|uai$/Y/
-    - xform/^sh/U/
-    - xform/^ch/I/
-    - xform/^zh/V/
-    - xform/uo$/O/
-    - xform/[uv]n$/P/
-    - xform/i?ong$/S/
-    - xform/[iu]ang$/D/
-    - xform/(.)en$/$1F/
-    - xform/(.)eng$/$1G/
-    - xform/(.)ang$/$1H/
-    - xform/ian$/M/
-    - xform/(.)an$/$1J/
-    - xform/iao$/C/
-    - xform/(.)ao$/$1K/
-    - xform/(.)ai$/$1L/
-    - xform/(.)ei$/$1Z/
-    - xform/ie$/X/
-    - xform/ui$/V/
-    - xform/(.)ou$/$1B/
-    - xform/in$/N/
-    - xlit/QWRTYUIOPSDFGHMJCKLZXVBN/qwrtyuiopsdfghmjcklzxvbn/
+    - xform/iu$/ǫ/
+    - xform/[iu]a$/ᴡ/
+    - xform/[uv]an$/ʀ/
+    - xform/[uv]e$/ᴛ/
+    - xform/ing$|uai$/ʏ/
+    - xform/^sh/ᴜ/
+    - xform/^ch/ɪ/
+    - xform/^zh/ᴠ/
+    - xform/uo$/ᴏ/
+    - xform/[uv]n$/ᴘ/
+    - xform/i?ong$/s/
+    - xform/[iu]ang$/ᴅ/
+    - xform/(.)en$/$1ғ/
+    - xform/(.)eng$/$1ɢ/
+    - xform/(.)ang$/$1ʜ/
+    - xform/ian$/ᴍ/
+    - xform/(.)an$/$1ᴊ/
+    - xform/iao$/ᴄ/
+    - xform/(.)ao$/$1ᴋ/
+    - xform/(.)ai$/$1ʟ/
+    - xform/(.)ei$/$1ᴢ/
+    - xform/ie$/x/
+    - xform/ui$/ᴠ/
+    - xform/(.)ou$/$1ʙ/
+    - xform/in$/ɴ/
+    - xlit/ǫᴡʀᴛʏᴜɪᴏᴘsᴅғɢʜᴍᴊᴄᴋʟᴢxᴠʙɴ/qwrtyuiopsdfghmjcklzxvbn/
     - abbrev/^(.).+$/$1/ # 首字母简拼
-    # 可输入大写字母。因为上面的双拼拼写规则用掉了大写字母。做了 xlit 转写，同时适配全拼和双拼。
-    - xlit/āḃçďēḟḡĥīĵḱĺḿńōṕɋŕśťūṽẃẋȳź/ABCDEFGHIJKLMNOPQRSTUVWXYZ/

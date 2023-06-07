@@ -237,32 +237,30 @@ speller:
   algebra:
     - erase/^xx$/
     - derive/^([jqxy])u$/$1v/
-    - xform/^([aoe].*)$/O$1/  # 添上固定的零聲母o，先標記爲大寫O
-    - xform/en$/W/
-    - xform/eng$/T/
-    - xform/in$|uai$/Y/
-    - xform/^zh/U/
-    - xform/^sh/I/
-    - xform/uo$/O/
-    - xform/ai$/P/
-    - xform/^ch/A/
-    - xform/[iu]ang$/G/
-    - xform/ang$/S/  # ang should be placed after iang/uang
-    - xform/ie$/D/
-    - xform/ian$/F/
-    - xform/i?ong$/H/
-    - xform/er$|iu$/J/
-    - xform/ei$/K/
-    - xform/uan$/L/
+    - xform/^([aoe].*)$/ᴏ$1/  # 添上固定的零聲母o，先標記爲大寫O
+    - xform/en$/ᴡ/
+    - xform/eng$/ᴛ/
+    - xform/in$|uai$/ʏ/
+    - xform/^zh/ᴜ/
+    - xform/^sh/ɪ/
+    - xform/uo$/ᴏ/
+    - xform/ai$/ᴘ/
+    - xform/^ch/ᴀ/
+    - xform/[iu]ang$/ɢ/
+    - xform/ang$/s/  # ang should be placed after iang/uang
+    - xform/ie$/ᴅ/
+    - xform/ian$/ғ/
+    - xform/i?ong$/ʜ/
+    - xform/er$|iu$/ᴊ/
+    - xform/ei$/ᴋ/
+    - xform/uan$/ʟ/
     - xform/ing$/;/
-    - xform/ou$/Z/
-    - xform/[iu]a$/X/
-    - xform/iao$/B/
-    - xform/ue$|ui$|ve$/N/
-    - xform/un$/M/
-    - xform/ao$/Q/ # ao should be placed after iao
-    - xform/an$/R/ # an should be placed after uan/ian
-    - xlit/WTYUIOPAGSDFHJKLZXBNMQR/wtyuiopagsdfhjklzxbnmqr/
+    - xform/ou$/ᴢ/
+    - xform/[iu]a$/x/
+    - xform/iao$/ʙ/
+    - xform/ue$|ui$|ve$/ɴ/
+    - xform/un$/ᴍ/
+    - xform/ao$/ǫ/ # ao should be placed after iao
+    - xform/an$/ʀ/ # an should be placed after uan/ian
+    - xlit/ᴡᴛʏᴜɪᴏᴘᴀɢsᴅғʜᴊᴋʟᴢxʙɴᴍǫʀ/wtyuiopagsdfhjklzxbnmqr/
     - abbrev/^(.).+$/$1/ # 首字母简拼
-    # 可输入大写字母。因为上面的双拼拼写规则用掉了大写字母。做了 xlit 转写，同时适配全拼和双拼。
-    - xlit/āḃçďēḟḡĥīĵḱĺḿńōṕɋŕśťūṽẃẋȳź/ABCDEFGHIJKLMNOPQRSTUVWXYZ/

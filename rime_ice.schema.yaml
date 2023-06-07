@@ -263,9 +263,6 @@ speller:
     - derive/^([jqxy])u/$1v/
     - derive/^([jqxy])v/$1u/
 
-    ### 可输入大写字母，做了 xlit 转写是为了适配双拼
-    - xlit/āḃçďēḟḡĥīĵḱĺḿńōṕɋŕśťūṽẃẋȳź/ABCDEFGHIJKLMNOPQRSTUVWXYZ/
-
     ### 自动纠错
     # 有些规则对全拼简拼混输有副作用：如「x'ai 喜爱」被纠错为「xia 下」
     # zh、ch、sh
