@@ -12,7 +12,7 @@
 
 详细介绍：[Rime 配置：雾凇拼音](https://dvel.me/posts/rime-ice/)
 
-[常见问题](https://github.com/iDvel/rime-ice/issues/133)（小狼毫需要参考里面更新一下 librime）
+[常见问题](https://github.com/iDvel/rime-ice/issues/133)
 
 <br>
 
