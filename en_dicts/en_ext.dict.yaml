@@ -14,7 +14,7 @@ sort: by_weight
 &nbsp;	nbsp
 <br>	br
 .DS_Store	DSStore
-README.md	READMEmd
+README.md	README.md
 唵嘛呢叭咪吽	ongmanibeimeihong
 唵嘛呢嘛呢叭咪吽	ongmanimanibeimeihong
 
@@ -577,8 +577,7 @@ Markdown	Markdown
 Microsoft Access	Access
 MongoDB	MongoDB
 MySQL	MySQL
-Node	Node
-Node.js	Nodejs
+Node.js	Node.js
 Pornhub	Pornhub
 PostgreSQL	PostgreSQL
 Postgres	Postgres
@@ -604,7 +603,7 @@ Twitter	Twitter
 V2EX	V2EX
 VSCode	VSCode
 Vue	Vue
-Vue.js	Vuejs
+Vue.js	Vue.js
 WC	WC
 Web	Web
 WebStorm	WebStorm
@@ -1270,8 +1269,7 @@ Microsoft Edge	MicrosoftEdge
 Visual Studio Code	VisualStudioCode
 Visual Studio Code	VSCode
 PowerShell	PowerShell
-.NET	NET
-.NET	dotNet
+.NET	.NET
 Surface	Surface
 MSN	MSN
 Skype	Skype
@@ -1291,7 +1289,7 @@ New Technology File System	NTFS
 New Technology File System	NewTechnologyFileSystem
 Microsoft NTFS	NTFS
 Microsoft NTFS	MicrosoftNTFS
-chromeOS	chromeOS
+ChromeOS	ChromeOS
 GCD	GCD
 Grand Central Dispatch	GCD
 Grand Central Dispatch	GrandCentralDispatch
@@ -1539,7 +1537,7 @@ USB-B	USBB
 USB-C	USBC
 vex	vex
 tempest	tempest
-J.R.R. Tolkien	JRRTolkien
+J.R.R. Tolkien	J.R.R.Tolkien
 Impostor Factory	ImpostorFactory
 impostor	impostor
 Vampire Survivors	VampireSurvivors
@@ -1652,7 +1650,6 @@ eSATA	eSATA
 mSATA	mSATA
 GPIB	GPIB
 GPIO	GPIO
-Mac	Mac
 LCD	LCD
 DVD	DVD
 CD	CD
@@ -1833,7 +1830,7 @@ CN	CN
 MTV	MTV
 Music Television	MTV
 Music Television	MusicTelevision
-Mrs.	Mrs
+Mrs.	Mrs.
 MitM	MitM
 man-in-the-middle	MitM
 ToDesk	ToDesk
@@ -2214,7 +2211,7 @@ LLaMA	LLaMA
 Large Language Model Meta AI	LLaMA
 fellatio	fellatio
 silo	silo
-R.I.P	RIP
+R.I.P	R.I.P
 requiescat	requiescat
 AIGC	AIGC
 AI Generated Content	AIGC
@@ -2254,3 +2251,7 @@ K8s	K8s
 Kubernetes	K8s
 Kubernetes	Kubernetes
 containerized	containerized
+shitty	shitty
+shitwork	shitwork
+A4	A4
+3D	3D
