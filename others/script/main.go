@@ -18,6 +18,10 @@ func main() {
 	rime.CheckAndGenerateEmoji()
 	fmt.Println("--------------------------------------------------")
 
+	// 从 others/cn_en.txt 更新中英混输词库
+	rime.CnEn()
+	fmt.Println("--------------------------------------------------")
+
 	// 为 ext、tencent 没权重的词条加上权重，有权重的改为下面设置的权重
 	rime.AddWeight(rime.ExtPath, rime.DefaultWeight)
 	rime.AddWeight(rime.TencentPath, rime.DefaultWeight)
