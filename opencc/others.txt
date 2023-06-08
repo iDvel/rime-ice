@@ -333,6 +333,10 @@ Sheldon	Sheldon 谢尔顿 谢耳朵
 Leonard	Leonard 莱纳德
 佩妮	佩妮 Penny
 Penny	Penny 佩妮
+伯纳黛特	伯纳黛特 Bernadette
+Bernadette	Bernadette 伯纳黛特
+艾米	艾米 Amy
+Amy	Amy 艾米
 霍华德	霍华德 Howard
 Howard	Howard 霍华德
 拉杰什	拉杰什 Rajesh

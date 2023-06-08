@@ -42,7 +42,6 @@ QQ邮箱	QQyouxiang
 QQ音乐	QQyinyue
 QQ拼音	QQpinyin
 QQ会员	QQhuiyuan
-QQ音速	QQyinsu
 QQ好友	QQhaoyou
 QQ输入法	QQshurufa
 Dock栏	Docklan
@@ -157,8 +156,8 @@ Beta版本	Betabanben
 AV女优	AVnvyou
 X战警	Xzhanjing
 YY语音	YYyuyin
-A4纸	Asizhi
-A4腰	Asiyao
+A4纸	A4zhi
+A4腰	A4yao
 N多	Nduo
 N多个	Nduoge
 N次	Nci
@@ -199,7 +198,6 @@ P个图	Pgetu
 P一下	Pyixia
 芭比Q	babiQ
 芭比Q了	babiQle
-S级	Sji
 QQ堂	QQtang
 PIN码	PINma
 PUK码	PUKma
@@ -265,10 +263,8 @@ Web开发	Webkaifa
 圈X	quanX
 Switch版	Switchban
 Switch版本	Switchbanben
-A型	Axing
 A型血	Axingxue
 A血型	Axuexing
-B型	Bxing
 B型血	Bxingxue
 B血型	Bxuexing
 AB型	ABxing
@@ -442,7 +438,6 @@ X和Y	XheY
 VIP卡	VIPka
 AAA级	AAAji
 第N次	diNci
-PIN码	PINma
 发EMS	faEMS
 DVD版	DVDban
 USB线	USBxian
@@ -461,3 +456,8 @@ DJ舞曲	DJwuqu
 开party	kaiparty
 Chromium系	Chromiumxi
 Chrome系	Chromexi
+QQ游戏	QQyouxi
+QQ游戏大厅	QQyouxidating
+QQ音速	QQyinsu
+QQ飞车	QQfeiche
+QQ三国	QQsanguo

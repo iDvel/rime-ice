@@ -3,12 +3,14 @@ package rime
 import (
 	"bufio"
 	"fmt"
+	mapset "github.com/deckarep/golang-set/v2"
 	"log"
 	"os"
 	"path/filepath"
 	"regexp"
 	"strconv"
 	"strings"
+	"time"
 	"unicode"
 )
 
@@ -86,19 +88,32 @@ var polyphones = map[string]string{
 	"VIP卡 > 卡":      "ka",
 	"Chromium系 > 系": "xi",
 	"Chrome系 > 系":   "xi",
+	"QQ游戏大厅 > 大":    "da",
+	"QQ飞车 > 车":      "che",
 }
 
 var digitMap = map[string]string{
-	"0": "ling",
-	"1": "yi",
-	"2": "er",
-	"3": "san",
-	"4": "si",
-	"5": "wu",
-	"6": "liu",
-	"7": "qi",
-	"8": "ba",
-	"9": "jiu",
+	// "0": "ling",
+	// "1": "yi",
+	// "2": "er",
+	// "3": "san",
+	// "4": "si",
+	// "5": "wu",
+	// "6": "liu",
+	// "7": "qi",
+	// "8": "ba",
+	// "9": "jiu",
+	// 数字的问题由英文方案的拼写派生解决了，暂时不用转换了
+	"0": "0",
+	"1": "1",
+	"2": "2",
+	"3": "3",
+	"4": "4",
+	"5": "5",
+	"6": "6",
+	"7": "7",
+	"8": "8",
+	"9": "9",
 }
 
 type schema struct {
@@ -377,6 +392,9 @@ var doublePinyinABC = schema{
 
 // CnEn 从 others/cn_en.txt 生成全拼和各个双拼的中英混输词库
 func CnEn() {
+	// 控制台输出
+	defer printlnTimeCost("更新中英混输 ", time.Now())
+
 	cnEnTXT, err := os.Open(filepath.Join(RimeDir, "others/cn_en.txt"))
 	if err != nil {
 		log.Fatalln(err)
@@ -401,7 +419,8 @@ func CnEn() {
 		writePrefix(schemas[i])
 	}
 
-	// 转换注音并写入
+	// 转换注音并写入，顺便查重
+	uniq := mapset.NewSet[string]()
 	sc := bufio.NewScanner(cnEnTXT)
 	for sc.Scan() {
 		line := sc.Text()
@@ -411,6 +430,11 @@ func CnEn() {
 		if strings.TrimSpace(line) != line {
 			fmt.Println("❌ 前后有空格", line)
 		}
+		if uniq.Contains(line) {
+			fmt.Println("❌ 重复", line)
+			continue
+		}
+		uniq.Add(line)
 		for _, schema := range schemas {
 			code := textToPinyin(line, schema)
 			_, err := schema.file.WriteString(line + "\t" + code + "\n")
