@@ -11,9 +11,9 @@ version: "2023-06-06"
 sort: by_weight
 ...
 # 一些杂项
-&nbsp;	nbsp
-<br>	br
-.DS_Store	DSStore
+&nbsp;	&nbsp;
+<br>	<br>
+.DS_Store	.DS_Store
 README.md	README.md
 唵嘛呢叭咪吽	ongmanibeimeihong
 唵嘛呢嘛呢叭咪吽	ongmanimanibeimeihong
@@ -43,16 +43,16 @@ Eject	Eject
 
 # 月份（据说好像 5、6、7 月不要缩写 https://www.zhihu.com/question/29896678）
 January	January
-Jan.	Jan
+Jan.	Jan.
 January	Jan
 February	February
-Feb.	Feb
+Feb.	Feb.
 February	Feb
 March	March
-Mar.	Mar
+Mar.	Mar.
 March	Mar
 April	April
-Apr.	Apr
+Apr.	Apr.
 April	Apr
 May	May
 June	June
@@ -62,49 +62,49 @@ July	July
 # Jul.	Jul
 # July	Jul
 August	August
-Aug.	Aug
+Aug.	Aug.
 August	Aug
 September	September
-Sep.	Sep
-Sept.	Sep
-Sept.	Sept
+Sep.	Sep.
+Sept.	Sep.
+Sept.	Sept.
 September	Sep
 September	Sept
 October	October
-Oct.	Oct
+Oct.	Oct.
 October	Oct
 November	November
-Nov.	Nov
+Nov.	Nov.
 November	Nov
 December	December
-Dec.	Dec
+Dec.	Dec.
 December	Dec
 
 
 # 星期
 Monday	Monday
-Mon.	Mon
+Mon.	Mon.
 Monday	Mon
 Tuesday	Tuesday
-Tue.	Tue
-Tuesday	Tue
+Tue.	Tue.
+Tuesday	Tue.
 Wednesday	Wednesday
-Wed.	Wed
+Wed.	Wed.
 Wednesday	Wed
 Thursday	Thursday
-Thu.	Thu
-Thurs.	Thu
-Thurs.	Thurs
+Thu.	Thu.
+Thurs.	Thu.
+Thurs.	Thurs.
 Thursday	Thu
 Thursday	Thurs
 Friday	Friday
-Fri.	Fri
+Fri.	Fri.
 Friday	Fri
 Saturday	Saturday
-Sat.	Sat
+Sat.	Sat.
 Saturday	Sat
 Sunday	Sunday
-Sun.	Sun
+Sun.	Sun.
 Sunday	Sun
 
 
@@ -113,6 +113,7 @@ Sheldon	Sheldon
 Leonard	Leonard
 Penny	Penny
 Howard	Howard
+Bernadette	Bernadette
 Rajesh	Rajesh
 Rachel	Rachel
 Monica	Monica
@@ -212,7 +213,7 @@ iPhone 6	iPhone6
 iPhone 6 Plus	iPhone6Plus
 iPhone 6S	iPhone6S
 iPhone 6S Plus	iPhone6SPlus
-iPhone SE
+iPhone SE	iPhoneSE
 iPhone 7	iPhone7
 iPhone 7 Plus	iPhone7Plus
 iPhone 8	iPhone8
@@ -396,9 +397,9 @@ DataGrip	DataGrip
 AlphaGo	AlphaGo
 AlphaFold	AlphaFold
 Valve	Valve
-CS:GO	CSGO
-Counter-Strike: Global Offensive	CSGO
-Counter-Strike	CounterStrike
+CS:GO	CS:GO
+Counter-Strike: Global Offensive	CS:GO
+Counter-Strike	Counter-Strike
 Tesla	Tesla
 Polo	Polo
 Code Runner	CodeRunner
@@ -459,7 +460,6 @@ CSS	CSS
 Cascading Style Sheets	CSS
 Cascading Style Sheets	CascadingStyleSheets
 cascading	cascading
-ID	ID
 OTC	OTC
 IEPL	IEPL
 International Ethernet Private Line	IEPL
@@ -478,7 +478,7 @@ Notion	Notion
 Touch Bar	TouchBar
 DOM	DOM
 VIP	VIP
-D.VA	DVA
+D.VA	D.VA
 Logo	Logo
 Telnet	Telnet
 IPv4	IPv4
@@ -583,14 +583,14 @@ PostgreSQL	PostgreSQL
 Postgres	Postgres
 PowerPoint	PowerPoint
 PPT	PPT
-PowerPoint	ppt
-Microsoft PowerPoint	ppt
+PowerPoint	PPT
+Microsoft PowerPoint	PPT
 PyCharm	PyCharm
 Roguelike	Roguelike
 Redis	Redis
 Rime	Rime
 RION	RION
-segmentfault	segmentfault
+SegmentFault	SegmentFault
 SPA	SPA
 SQL	SQL
 Structured Query Language	SQL
@@ -680,6 +680,8 @@ CDN	CDN
 Content Delivery Network	CDN
 Content Delivery Network	ContentDeliveryNetwork
 CheatSheet	CheatSheet
+Chocolatey	Chocolatey
+choco	choco
 ChemBioDraw	ChemBioDraw
 Clean My Mac	CleanMyMac
 Clean My Mac X	CleanMyMacX
@@ -911,8 +913,7 @@ Versions	Versions
 VPN	VPN
 virtual private network	VPN
 watchOS	watchOS
-Wi-Fi	waifai
-Wi-Fi	WiFi
+Wi-Fi	Wi-Fi
 WiFi	WiFi
 Widget	Widget
 WiFi Explorer	WiFiExplorer
@@ -993,7 +994,7 @@ autonomous	autonomous
 sensory	sensory
 meridian	meridian
 iKlear	iKlear
-Legal High	ligouhai
+# Legal High	ligouhai
 Legal High	LegalHigh
 Werkzeug	Werkzeug
 itsdangerours	itsdangerours
@@ -1003,7 +1004,7 @@ CRUD	CRUD
 Create Read Update Delete	CRUD
 RESTful	RESTful
 CLion	CLion
-Unix-like	Unixlike
+Unix-like	Unix-like
 Metal	Metal
 Alembic	Alembic
 imgur	imgur
@@ -1153,7 +1154,7 @@ Mac Studio	MacStudio
 Studio Display	StudioDisplay
 OC	OC
 Objective-C	OC
-Objective-C	ObjectiveC
+Objective-C	Objective-C
 Mac mini	Macmini
 Garena	Garena
 WonderCV	WonderCV
@@ -1228,7 +1229,7 @@ weasel	weasel
 Niconico	Niconico
 TickTick	TickTick
 CHDBits	CHDBits
-M-team	Mteam
+M-team	M-team
 Emacs	Emacs
 Vim	Vim
 Wikipedia	Wikipedia
@@ -1244,7 +1245,7 @@ AV1 Image File Format	AVIF
 Apple Arcade	AppleArcade
 Microsoft Corporation	MicrosoftCorporation
 Microsoft Windows	MicrosoftWindows
-MS-DOS	MSDOS
+MS-DOS	MS-DOS
 Microsoft Office	MicrosoftOffice
 Microsoft Office	Office
 Microsoft Word	MicrosoftWord
@@ -1321,7 +1322,7 @@ Serverless	Serverless
 Air	Air
 Identifier	Identifier
 NameCheap	NameCheap
-rime-ice	rimeice
+rime-ice	rime-ice
 Handover	Handover
 Language Reactor	LanguageReactor
 Tencent	Tencent
@@ -1448,8 +1449,8 @@ Simple Mail Transfer Protocol	SMTP
 Simple Mail Transfer Protocol	SimpleMailTransferProtocol
 unacceptable	unacceptable
 Waterfox	Waterfox
-Let's Go	LetsGo
-one-liner	oneliner
+Let's Go	Let'sGo
+one-liner	one-liner
 Callback	Callback
 SSID	SSID
 Service Set Identifier	SSID
@@ -1771,7 +1772,7 @@ Greece	Greece
 Greek	Greek
 Hebrew	Hebrew
 Hindi	Hindi
-Hip-Hop	HipHop
+Hip-Hop	Hip-Hop
 Iceland	Iceland
 Icelander	Icelander
 Icelandic	Icelandic
@@ -2026,7 +2027,7 @@ transformer	transformer
 mayonnaise	mayonnaise
 orz	orz
 parametric	parametric
-Scooby-Doo	ScoobyDoo
+Scooby-Doo	Scooby-Doo
 SpongeBob	SpongeBob
 SquarePants	SquarePants
 SpongeBob SquarePants	SpongeBobSquarePants
@@ -2182,11 +2183,11 @@ prefixes	prefixes
 suffixes	suffixes
 DeepMind	DeepMind
 Google DeepMind	GoogleDeepMind
-TL;DR	TLDR
-Ant-Man	AntMan
-Spider-Man	SpiderMan
+TL;DR	TL;DR
+Ant-Man	Ant-Man
+Spider-Man	Spider-Man
 ungoogled	ungoogled
-ungoogled-chromium	ungoogledchromium
+ungoogled-chromium	ungoogled-chromium
 taxman	taxman
 RouterOS	RouterOS
 Sumatra	Sumatra
