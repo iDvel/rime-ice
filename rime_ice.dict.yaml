@@ -3,7 +3,7 @@
 
 ---
 name: rime_ice
-version: "2023-03-04"
+version: "2023-06-09"
 import_tables:
   - cn_dicts/8105     # 字表
   # - cn_dicts/41448  # 大字表（按需启用）
@@ -15,3 +15,34 @@ import_tables:
   # 建议把扩展词库放到下面，有重复词条时，最上面的权重生效
   # - cn_dicts/mydict
 ...
+# 大写字母，按需启用。
+# 可在拼音方案下直接输入大写字母（Shift + 字母），大写字母参与造句。
+# 例如输入 `nihaoASDFzaijian` 得到 `你好ASDF再见`
+#
+# 非雾凇方案的双拼如果要启用，需要参考双拼方案下的 speller/algebra 将大写字母搭桥改成其他任意字母
+A	A
+B	B
+C	C
+D	D
+E	E
+F	F
+G	G
+H	H
+I	I
+J	J
+K	K
+L	L
+M	M
+N	N
+O	O
+P	P
+Q	Q
+R	R
+S	S
+T	T
+U	U
+V	V
+W	W
+X	X
+Y	Y
+Z	Z
