@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-06-06"
+version: "2023-06-13"
 sort: by_weight
 ...
 # 一些杂项
@@ -605,7 +605,6 @@ V2EX	V2EX
 VSCode	VSCode
 Vue	Vue
 Vue.js	Vue.js
-WC	WC
 Web	Web
 WebStorm	WebStorm
 Word	Word
@@ -2015,7 +2014,6 @@ wick	wick
 meow	meow
 woof	woof
 bromite	bromite
-Zelda	Zelda
 hutch	hutch
 Laotian	Laotian
 mitigation	mitigation
@@ -2252,3 +2250,11 @@ shitty	shitty
 shitwork	shitwork
 A4	A4
 3D	3D
+polyphone	polyphone
+traditionalization	traditionalization
+traditionalize	traditionalize
+traditionalist	traditionalist
+traditionalistic	traditionalistic
+simplification	simplification
+simplifier	simplifier
+Loki	Loki

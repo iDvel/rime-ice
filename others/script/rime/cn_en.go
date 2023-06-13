@@ -8,7 +8,6 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
-	"strconv"
 	"strings"
 	"time"
 	"unicode"
@@ -90,30 +89,6 @@ var polyphones = map[string]string{
 	"Chrome系 > 系":   "xi",
 	"QQ游戏大厅 > 大":    "da",
 	"QQ飞车 > 车":      "che",
-}
-
-var digitMap = map[string]string{
-	// "0": "ling",
-	// "1": "yi",
-	// "2": "er",
-	// "3": "san",
-	// "4": "si",
-	// "5": "wu",
-	// "6": "liu",
-	// "7": "qi",
-	// "8": "ba",
-	// "9": "jiu",
-	// 数字的问题由英文方案的拼写派生解决了，暂时不用转换了
-	"0": "0",
-	"1": "1",
-	"2": "2",
-	"3": "3",
-	"4": "4",
-	"5": "5",
-	"6": "6",
-	"7": "7",
-	"8": "8",
-	"9": "9",
 }
 
 type schema struct {
@@ -478,11 +453,6 @@ func textToPinyin(text string, s schema) string {
 
 	parts := splitMixedWords(text)
 	for _, part := range parts {
-		// 特殊情况，数字转为拼音
-		if _, err := strconv.Atoi(part); err == nil {
-			part = digitMap[part]
-		}
-
 		if len(hanPinyin[part]) == 0 { // 英文数字，不做转换
 			code += part
 		} else if len(hanPinyin[part]) > 1 { // 多音字，按字典指定的读音
