@@ -1126,7 +1126,6 @@ Online Certificate Status Protocol	OnlineCertificateStatusProtocol
 Arthas	Arthas
 Wordle	Wordle
 Silicon Valley	SiliconValley
-Silicon	Silicon
 Pied Piper	PiedPiper
 Pikachu	Pikachu
 Fastmail	Fastmail
@@ -1498,12 +1497,8 @@ Neat Download Manager	NeatDownloadManager
 furry	furry
 Maine	Maine
 Elijah	Elijah
-Love & Peace	LoveandPeace
-Love & Peace	LovePeace
-Love and Peace	LoveandPeace
-Peace & Love	PeaceLove
-Peace & Love	PeaceandLove
-Peace and Love	PeaceandLove
+Love & Peace	Love&Peace
+Peace & Love	Peace&Love
 Liquid	Liquid
 LCD	LCD
 Liquid Crystal Display	LCD
@@ -1511,7 +1506,7 @@ Liquid Crystal Display	LiquidCrystalDisplay
 Emotional Damage	EmotionalDamage
 revert	revert
 GitLab	GitLab
-Apple Silicon	AppleSilicon
+Apple silicon	Applesilicon
 ADSL	ADSL
 Asymmetric Digital Subscriber Line	ADSL
 Asymmetric Digital Subscriber Line	AsymmetricDigitalSubscriberLine

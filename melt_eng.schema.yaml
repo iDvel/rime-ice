@@ -75,7 +75,11 @@ speller:
       - derive/\./dot/
       - derive/@/at/
       - derive/-/hyphen/
+      - derive/#/hash/
+      - derive/#/number/
       - derive / slash
+      - derive/&/and/
+      - derive/%/percent/
       # 派生无单个特殊字符的拼写
       - derive/[.]//
       - derive/[+]//
