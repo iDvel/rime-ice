@@ -26,5 +26,7 @@ install_files: >-
   liangfen.dict.yaml
   melt_eng.schema.yaml
   melt_eng.dict.yaml
+  cn_en.schema.yaml
+  cn_en.dict.yaml
   custom_phrase.txt
   zh-hans-t-essay-bgw.gram
