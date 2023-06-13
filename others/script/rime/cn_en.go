@@ -65,10 +65,11 @@ var polyphones = map[string]string{
 	"AB血型 > 血":      "xue",
 	"O型血 > 血":       "xue",
 	"O血型 > 血":       "xue",
-	"没Bug > 没":      "mei",
-	"没有Bug > 没":     "mei",
-	"卡Bug > 卡":      "ka",
-	"提Bug > 提":      "ti",
+	"没bug > 没":      "mei",
+	"没有bug > 没":     "mei",
+	"卡bug > 卡":      "ka",
+	"查bug > 查":      "cha",
+	"提bug > 提":      "ti",
 	"CT检查 > 查":      "cha",
 	"N卡 > 卡":        "ka",
 	"A卡 > 卡":        "ka",
@@ -412,7 +413,7 @@ func CnEn() {
 		uniq.Add(line)
 		for _, schema := range schemas {
 			code := textToPinyin(line, schema)
-			_, err := schema.file.WriteString(line + "\t" + code + "\n")
+			_, err := schema.file.WriteString(line + "\t" + "ⓘ" + code + "\n")
 			if err != nil {
 				log.Fatalln(err)
 			}
@@ -432,8 +433,9 @@ func writePrefix(s schema) {
 #
 # https://github.com/iDvel/rime-ice
 # ------- 中英混输词库 for %s -------
-# 由 others/cn_en.txt 生成
-#
+# 由 others/cn_en.txt 自动生成
+# 编码前的 ⓘ 符号是为了防止英文方案拼写派生时派生出全大写字母
+# 示例：输入 txu 得到 T恤；输入 Txu 得到 T恤； 输入 TXU 则只会得到 TXU
 ---
 name: %s
 version: "1"
