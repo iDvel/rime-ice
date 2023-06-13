@@ -46,3 +46,16 @@ W	W
 X	X
 Y	Y
 Z	Z
+
+# 数字参与中文造词，方便输入一些特殊的 ID。配合大写字母造词可以自动为 `5G网络`，`3D打印` 等词汇注音
+0	ling
+1	yi
+1	yao
+2	er
+3	san
+4	si
+5	wu
+6	liu
+7	qi
+8	ba
+9	jiu
