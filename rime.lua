@@ -11,7 +11,7 @@ long_word_filter = require("long_word_filter")
 select_character = require("select_character")
 
 -- 日期时间，可在方案中配置触发关键字。
-date_translator = require("date_translator")
+table_date_translator = require("table_date_translator")
 
 -- Unicode，U 开头
 unicode = require("unicode")
