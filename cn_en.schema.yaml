@@ -1,0 +1,51 @@
+﻿# Rime schema
+# vim: set sw=2 sts=2 et:
+# encoding: utf-8
+
+schema:
+  schema_id: cn_en
+  name: 中英混合词
+  version: "1.0"
+  description: 用于挂载在主方案下，输入中英混合词
+
+engine:
+  processors:
+    - ascii_composer
+    - key_binder
+    - speller
+    - recognizer
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - matcher
+    - ascii_segmentor
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - table_translator
+    - punct_translator
+  filters:
+    - uniquifier
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+  delimiter: " '"
+  algebra:
+    # 删除所有非字母的字符
+    - derive/[^a-zA-Z]//
+    # 全小写
+    - derive/^.*[A-Z].*$/\L$0/
+
+translator:
+  dictionary: cn_en
+  comment_format:
+    - xform/^.+$//
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default

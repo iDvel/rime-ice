@@ -1,0 +1,19 @@
+# Rime dictionary
+# encoding: utf-8
+
+---
+name: cn_en
+version: "1"
+sort: by_weight
+import_tables:
+  # 中英混合词词库
+  - en_dicts/cn_en                          # 全拼
+  # - en_dicts/cn_en_double_pinyin          # 自然码双拼 
+  # - en_dicts/cn_en_double_pinyin_flypy    # 小鹤双拼
+  # - en_dicts/cn_en_double_pinyin_mspy     # 微软双拼
+  # - en_dicts/cn_en_double_pinyin_ziguang  # 紫光双拼
+  # - en_dicts/cn_en_double_pinyin_abc      # 智能 ABC 双拼
+  
+  # 在下面引入其他词库
+  # -
+...

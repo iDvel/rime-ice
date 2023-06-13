@@ -23,6 +23,7 @@ schema:
     https://github.com/iDvel/rime-ice
   dependencies:
     - melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
+    - cn_en     # 中英混合词输入
     - liangfen  # 两分拼字，作为反查挂载到拼音方案
 
 
@@ -72,6 +73,7 @@ engine:
     - lua_translator@date_translator      # 时间、日期、星期
     - table_translator@custom_phrase      # 自定义短语 custom_phrase_double.txt
     - table_translator@melt_eng           # 英文输入
+    - table_translator@cn_en              # 中英文混合词输入
     - reverse_lookup_translator@liangfen  # 反查，两分拼字
     - lua_translator@unicode              # Unicode
     - lua_translator@number_translator    # 数字、金额大写
@@ -165,6 +167,16 @@ melt_eng:
   initial_quality: 1.1     # 初始权重
   comment_format:          # 自定义提示码
     - xform/.*//           # 清空提示码
+
+
+# 次翻译器，中英混合词
+cn_en:
+  dictionary: cn_en        # 挂载词库 cn_en
+  enable_sentence: false   # 禁止造句
+  enable_user_dict: false  # 禁用用户词典
+  initial_quality: 1.1     # 初始权重和英文保持一致
+  comment_format:
+    - xform/^.+$//
 
 
 # 反查：两分（拼字）
