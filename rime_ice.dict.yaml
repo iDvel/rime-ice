@@ -15,11 +15,12 @@ import_tables:
   # 建议把扩展词库放到下面，有重复词条时，最上面的权重生效
   # - cn_dicts/mydict
 ...
-# 大写字母，按需启用。
+# 按需启用：
+
+# 大写字母
 # 可在拼音方案下直接输入大写字母（Shift + 字母），大写字母参与造句。
-# 例如输入 `nihaoASDFzaijian` 得到 `你好ASDF再见`
-#
-# 非雾凇方案的双拼如果要启用，需要参考双拼方案下的 speller/algebra 将大写字母搭桥改成其他任意字母
+# 示例：输入 `nihaoASDFzaijian` 得到 `你好ASDF再见`
+# （非雾凇方案的双拼如果要启用，需要参考双拼方案下的 speller/algebra 将大写字母搭桥改成其他任意字母）
 A	A
 B	B
 C	C
@@ -59,3 +60,20 @@ Z	Z
 7	qi
 8	ba
 9	jiu
+# 示例：输入 siGliuliang 得到 4G流量
+3G
+4G
+5G
+3G网络
+4G网络
+5G网络
+3G流量
+4G流量
+5G流量
+2D
+3D
+4D
+3D打印
+2D电影
+3D电影
+4S店

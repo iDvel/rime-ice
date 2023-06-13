@@ -23,6 +23,8 @@
 # 删除「虾ha」（虾蟆ha ma），《现汉》推荐「蛤蟆」，保留地名「虾蟆陵」。
 # 「嬛」xuan → huan
 # 删除「夹ga」，使用「胳肢窝ga zhi wo」。
+# 删除「屯zhun」，「屯邅zhun zhan」已被校对为「迍邅zhun zhan」。
+# 删除「隽jun」，同「俊」。
 #
 # 多音字权重问题：
 # 在 Rime 的自动注音程序中，权重比小于等于 5% 的多音字不会参与自动注音。
@@ -31,7 +33,7 @@
 # 降低一些几乎只在一个固定词汇中使用的读音的权重，不让其参与注音，在 base 中手动注音。
 ---
 name: 8105
-version: "2023-05-30"
+version: "2023-06-13"
 sort: by_weight
 ...
 ### 按需启用
@@ -433,7 +435,6 @@ sort: by_weight
 苄	bian	51
 抃	bian	26
 碥	bian	16
-邲	bian	9
 萹	bian	5
 𨚕	bian	0
 表	biao	1303318
@@ -906,7 +907,7 @@ sort: by_weight
 雠	chou	737
 瘳	chou	173
 犨	chou	169
-帱	chou	35
+帱	chou	1
 杻	chou	1
 侴	chou	0
 椆	chou	0
@@ -1472,13 +1473,13 @@ sort: by_weight
 墩	dun	8359
 炖	dun	7982
 盹	dun	4945
-囤	dun	3613
 惇	dun	3466
 趸	dun	623
 礅	dun	270
 蹾	dun	224
 砘	dun	53
 镦	dun	25
+囤	dun	1
 多	duo	4617194
 躲	duo	249450
 朵	duo	202374
@@ -1867,11 +1868,11 @@ sort: by_weight
 罡	gang	18553
 杠	gang	11743
 肛	gang	2191
-戆	gang	284
 筻	gang	9
 冮	gang	6
 矼	gang	4
 堽	gang	2
+戆	gang	1
 扛	gang	1
 㭎	gang	0
 鿍	gang	0
@@ -2807,7 +2808,6 @@ sort: by_weight
 睑	jian	3438
 翦	jian	3195
 饯	jian	2660
-犍	jian	2084
 蹇	jian	1785
 僭	jian	1472
 菅	jian	1222
@@ -2833,6 +2833,7 @@ sort: by_weight
 暕	jian	17
 牮	jian	11
 篯	jian	4
+犍	jian	1
 鳒	jian	0
 𬣡	jian	0
 将	jiang	2629219
@@ -3040,12 +3041,12 @@ sort: by_weight
 阱	jing	26888
 兢	jing	21643
 劲	jing	19659
-靓	jing	17479
 憬	jing	13093
 婧	jing	11970
 鲸	jing	10246
 茎	jing	9007
 丼	jing	9000
+靓	jing	7747
 旌	jing	6251
 痉	jing	5743
 泾	jing	3020
@@ -3248,7 +3249,6 @@ sort: by_weight
 莙	jun	15
 晙	jun	6
 筠	jun	1
-隽	jun	1
 鲪	jun	1
 龟	jun	1
 䐃	jun	0
@@ -4870,6 +4870,7 @@ sort: by_weight
 桲	po	10
 朴	po	1
 繁	po	1
+陂	po	1
 䥽	po	0
 酦	po	0
 剖	pou	15232
@@ -5446,9 +5447,9 @@ sort: by_weight
 散	san	468009
 伞	san	33523
 叁	san	5883
-糁	san	308
 馓	san	151
 毵	san	64
+糁	san	1
 丧	sang	128277
 桑	sang	118729
 嗓	sang	66941
@@ -8423,7 +8424,6 @@ sort: by_weight
 肫	zhun	178
 窀	zhun	41
 衠	zhun	10
-屯	zhun	1
 𬘯	zhun	0
 桌	zhuo	346095
 卓	zhuo	118671
