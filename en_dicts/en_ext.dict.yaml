@@ -642,13 +642,13 @@ uBlacklist	uBlacklist
 Apple	Apple
 Apple Watch	AppleWatch
 AppleCare	AppleCare
-AppleCare+	AppleCare
+AppleCare+	AppleCare+
 Apple Card	AppleCard
 Apple Books	AppleBooks
 ATI	ATI
 Apple Store	AppleStore
 Apple TV	AppleTV
-Apple TV+	AppleTV
+Apple TV+	AppleTV+
 Apple Developer	AppleDeveloper
 Apple File System	AppleFileSystem
 Apple ID	AppleID
@@ -728,7 +728,7 @@ Gestimer	Gestimer
 GhostNote	GhostNote
 GhostTile	GhostTile
 Gif Brewery	GifBrewery
-Gists	Gists
+gists	gists
 GitHub	GitHub
 GoagentX	GoagentX
 Google Play	GooglePlay
@@ -1437,8 +1437,8 @@ Fig	Fig
 refactoring	refactoring
 refactor	refactor
 Notepad	Notepad
-Notepad++	Notepad
-O’Reilly	OReilly
+Notepad++	Notepad++
+O'Reilly	O'Reilly
 Octocat	Octocat
 IMAP	IMAP
 Internet Message Access Protocol	IMAP
@@ -1541,7 +1541,7 @@ AppCleaner	AppCleaner
 IQIYI	IQIYI
 BuhoCleaner	BuhoCleaner
 Midjourney	Midjourney
-Champion's inequality	Championsinequality
+Champion's inequality	Champion'sinequality
 NovelAI	NovelAI
 swab	swab
 angular	angular
@@ -1627,7 +1627,7 @@ Hammerspoon	Hammerspoon
 CrossOver	CrossOver
 hallelujahIM	hallelujahIM
 Trojan	Trojan
-AVAST!	AVAST
+AVAST!	AVAST!
 Bitdefender	Bitdefender
 ClamAV	ClamAV
 Comodo	Comodo
@@ -2093,7 +2093,7 @@ stargazers	stargazers
 fallback	fallback
 Fyne	Fyne
 Claude	Claude
-Claude+	Claude
+Claude+	Claude+
 Anthropic	Anthropic
 Poe	Poe
 overdue	overdue
