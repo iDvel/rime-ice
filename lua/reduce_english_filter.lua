@@ -22,7 +22,8 @@ local function reduce_english_filter(input, env)
         local index = 0
         for cand in input:iter() do
             index = index + 1
-            if string.lower(cand.text) == code then
+            -- 定位匹配的英文词
+            if not string.find(cand.preedit, " ") then
                 table.insert(pending_cands, cand)
             else
                 yield(cand)
