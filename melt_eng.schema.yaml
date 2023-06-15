@@ -45,7 +45,7 @@ speller:
   delimiter: " '"
   algebra:
     # 根据当前所用中文方案修改 __include 的值
-    # algebra_rime_ice ; algebra_flypy ; algebra_mspy ; algebra_ziguang ; algebra_double_pinyin
+    # algebra_rime_ice ; algebra_flypy ; algebra_mspy ; algebra_ziguang ; algebra_double_pinyin ; algebra_double_pinyin_abc
     __include: algebra_rime_ice
     __append:
       # 数字派生
@@ -230,3 +230,25 @@ algebra_double_pinyin:
   - derive/7/qi/
   - derive/8/ba/
   - derive/9/jq/
+
+algebra_double_pinyin_abc:
+  - derive/(?<!\d)1([1-9])(?!\d)/vi$1/
+  - derive/([1-9])0000(?!0)/$1wj/
+  - derive/([1-9])000(?!0)/$1qw/
+  - derive/([1-9])00(?!0)/$1bl/
+  - derive/([2-9])0(?!0)/$1vi/
+  - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1vi$2/
+  - derive/\./dw/
+  - derive/10/vi/
+  - derive/0/ly/
+  - derive/1/yi/
+  - derive/2/or/
+  - derive/2/lt/
+  - derive/3/sj/
+  - derive/4/si/
+  - derive/5/wu/
+  - derive/6/lr/
+  - derive/7/qi/
+  - derive/8/ba/
+  - derive/9/jr/
+  
