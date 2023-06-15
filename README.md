@@ -14,6 +14,8 @@
 
 [常见问题](https://github.com/iDvel/rime-ice/issues/133)
 
+[更新日志](./others/CHANGELOG.md)
+
 <br>
 
 ## 基本套路
@@ -68,6 +70,8 @@
 
 建议备份原先配置，清空配置目录。
 
+⚠️ 单独使用词库注意事项，`rime_ice.dict.yaml` 下面包含了大写字母，这和配置有些许绑定，可以直接删除，详细说明：[#356](https://github.com/iDvel/rime-ice/issues/356)
+
 ### 手动安装
 
 将仓库所有文件复制粘贴进去就好了。
@@ -76,7 +80,7 @@
 
 ### 东风破 [plum](https://github.com/rime/plum)
 
-所有配方（`others/recipes/*.recipe.yaml`）只是简单地更新覆盖文件，适合更新词库时使用。后四个配方只是更新词库文件，并不更新 `rime_ice.dict.yaml` 和 `melt_eng.dict.yaml`，因为用户可能会挂载其他词库。如果更新后部署时报错，可能是增、删、改了文件，需要检查上面两个文件和词库的对应关系。
+所有配方（`others/recipes/*.recipe.yaml`）只是简单地更新覆盖文件，适合更新词库时使用。后四个配方只是更新词库文件，并不更新 `rime_ice.dict.yaml` 和 `melt_eng.dict.yaml`，因为用户可能会挂载其他词库。如果更新后部署时报错，可能是增、删、改了文件名，需要检查上面两个文件和词库的对应关系。
 
 安装或更新：全部文件
 
@@ -161,11 +165,13 @@ patch:
 
 感谢 [@Huandeep](https://github.com/Huandeep) 整理的多个词库。
 
+感谢 [@Mirtle](https://github.com/mirtlecn) 完善的多个功能。
+
 感谢所有贡献者。
 
 搜狗转 Rime：[lewangdev/scel2txt](https://github.com/lewangdev/scel2txt)
 
-大量参考[校对网](http://www.jiaodui.com/bbs/)。
+大量参考[校对标准论坛](http://www.jiaodui.com/bbs/)。
 
 Thanks to JetBrains for the OSS development license.
 
