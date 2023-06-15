@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "2023-05-16"
+  version: "2023-06-13"
   author:
     - Dvel
   description: |
@@ -72,8 +72,8 @@ engine:
     - lua_filter@v_filter                 # v 模式 symbols 优先（否则是英文优先）
     - lua_filter@autocap_filter           # 英文自动大写
     - lua_filter@reduce_english_filter    # 降低部分英语单词在候选项的位置
-    - lua_filter@long_word_filter         # 长词优先
     - uniquifier                          # 去重
+    - lua_filter@long_word_filter         # 长词优先（这个一定要放到最后，不然内存起飞后不降下来）
 
 
 # Lua 配置: 日期、时间、星期、ISO 8601、时间戳的触发关键字

@@ -3,12 +3,13 @@ package rime
 import (
 	"bufio"
 	"fmt"
+	mapset "github.com/deckarep/golang-set/v2"
 	"log"
 	"os"
 	"path/filepath"
 	"regexp"
-	"strconv"
 	"strings"
+	"time"
 	"unicode"
 )
 
@@ -64,10 +65,11 @@ var polyphones = map[string]string{
 	"AB血型 > 血":      "xue",
 	"O型血 > 血":       "xue",
 	"O血型 > 血":       "xue",
-	"没Bug > 没":      "mei",
-	"没有Bug > 没":     "mei",
-	"卡Bug > 卡":      "ka",
-	"提Bug > 提":      "ti",
+	"没bug > 没":      "mei",
+	"没有bug > 没":     "mei",
+	"卡bug > 卡":      "ka",
+	"查bug > 查":      "cha",
+	"提bug > 提":      "ti",
 	"CT检查 > 查":      "cha",
 	"N卡 > 卡":        "ka",
 	"A卡 > 卡":        "ka",
@@ -86,19 +88,8 @@ var polyphones = map[string]string{
 	"VIP卡 > 卡":      "ka",
 	"Chromium系 > 系": "xi",
 	"Chrome系 > 系":   "xi",
-}
-
-var digitMap = map[string]string{
-	"0": "ling",
-	"1": "yi",
-	"2": "er",
-	"3": "san",
-	"4": "si",
-	"5": "wu",
-	"6": "liu",
-	"7": "qi",
-	"8": "ba",
-	"9": "jiu",
+	"QQ游戏大厅 > 大":    "da",
+	"QQ飞车 > 车":      "che",
 }
 
 type schema struct {
@@ -377,6 +368,9 @@ var doublePinyinABC = schema{
 
 // CnEn 从 others/cn_en.txt 生成全拼和各个双拼的中英混输词库
 func CnEn() {
+	// 控制台输出
+	defer printlnTimeCost("更新中英混输 ", time.Now())
+
 	cnEnTXT, err := os.Open(filepath.Join(RimeDir, "others/cn_en.txt"))
 	if err != nil {
 		log.Fatalln(err)
@@ -401,7 +395,8 @@ func CnEn() {
 		writePrefix(schemas[i])
 	}
 
-	// 转换注音并写入
+	// 转换注音并写入，顺便查重
+	uniq := mapset.NewSet[string]()
 	sc := bufio.NewScanner(cnEnTXT)
 	for sc.Scan() {
 		line := sc.Text()
@@ -411,9 +406,14 @@ func CnEn() {
 		if strings.TrimSpace(line) != line {
 			fmt.Println("❌ 前后有空格", line)
 		}
+		if uniq.Contains(line) {
+			fmt.Println("❌ 重复", line)
+			continue
+		}
+		uniq.Add(line)
 		for _, schema := range schemas {
 			code := textToPinyin(line, schema)
-			_, err := schema.file.WriteString(line + "\t" + code + "\n")
+			_, err := schema.file.WriteString(line + "\t" + "ⓘ" + code + "\n")
 			if err != nil {
 				log.Fatalln(err)
 			}
@@ -433,8 +433,9 @@ func writePrefix(s schema) {
 #
 # https://github.com/iDvel/rime-ice
 # ------- 中英混输词库 for %s -------
-# 由 others/cn_en.txt 生成
-#
+# 由 others/cn_en.txt 自动生成
+# 编码前的 ⓘ 符号是为了防止英文方案拼写派生时派生出全大写字母
+# 示例：输入 txu 得到 T恤；输入 Txu 得到 T恤； 输入 TXU 则只会得到 TXU
 ---
 name: %s
 version: "1"
@@ -454,11 +455,6 @@ func textToPinyin(text string, s schema) string {
 
 	parts := splitMixedWords(text)
 	for _, part := range parts {
-		// 特殊情况，数字转为拼音
-		if _, err := strconv.Atoi(part); err == nil {
-			part = digitMap[part]
-		}
-
 		if len(hanPinyin[part]) == 0 { // 英文数字，不做转换
 			code += part
 		} else if len(hanPinyin[part]) > 1 { // 多音字，按字典指定的读音

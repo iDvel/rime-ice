@@ -4,7 +4,6 @@
 #
 ### ----------不在字表的注音：----------
 䇲 jia
-鲶 nian
 鯙 chun
 魾 pi
 礤 ca
@@ -17,7 +16,6 @@
 螉 weng
 樋 tong
 鳆 fu
-螋 sou
 𫁡 li
 鯮 zong
 蚖 yuan
@@ -35,7 +33,6 @@
 鱎 jiao
 蟱 wu
 鵖 bi
-躄 bi
 閦 chu
 鮀 tuo
 鮸 mian
@@ -759,3 +756,5 @@
 僧是愚氓犹可训
 王濛
 钱松喦
+石碁站
+石碁镇

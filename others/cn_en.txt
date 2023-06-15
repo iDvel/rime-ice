@@ -1,6 +1,6 @@
 # 中英混输词库
 # 根据此文件生成对应的 en_dicts/ 下的全拼及双拼词库
-# version: 2023-05-09
+# version: 2023-06-08
 X光
 X光片
 X射线
@@ -32,7 +32,6 @@ QQ邮箱
 QQ音乐
 QQ拼音
 QQ会员
-QQ音速
 QQ好友
 QQ输入法
 Dock栏
@@ -147,7 +146,6 @@ Beta版本
 AV女优
 X战警
 YY语音
-A4
 A4纸
 A4腰
 N多
@@ -190,7 +188,6 @@ P个图
 P一下
 芭比Q
 芭比Q了
-S级
 QQ堂
 PIN码
 PUK码
@@ -256,10 +253,8 @@ Web开发
 圈X
 Switch版
 Switch版本
-A型
 A型血
 A血型
-B型
 B型血
 B血型
 AB型
@@ -291,14 +286,16 @@ Eject键
 J·K·罗琳
 周刊少年Jump
 ICP备案
-啥Bug
-有Bug
-没Bug
-没有Bug
-卡Bug
-提Bug
-写Bug
-改Bug
+啥bug
+有bug
+没bug
+没有bug
+卡bug
+提bug
+写bug
+改bug
+查bug
+找bug
 J·R·R·托尔金
 异维A酸
 互fo
@@ -433,7 +430,6 @@ X和Y
 VIP卡
 AAA级
 第N次
-PIN码
 发EMS
 DVD版
 USB线
@@ -452,3 +448,9 @@ DJ舞曲
 开party
 Chromium系
 Chrome系
+QQ游戏
+QQ游戏大厅
+QQ音速
+QQ飞车
+QQ三国
+4S店
