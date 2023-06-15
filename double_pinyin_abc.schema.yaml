@@ -33,7 +33,7 @@ schema:
 switches:
   - name: ascii_mode
     states: [ 中, A ]
-    reset: 1
+    reset: 0
   - name: ascii_punct # 中英标点
     states: [ ¥, $ ]
     reset: 0
@@ -42,7 +42,7 @@ switches:
     reset: 0
   - name: emoji
     states: [ 💀, 😄 ]
-    reset: 0
+    reset: 1
   - name: full_shape
     states: [ 半角, 全角 ]
     reset: 0
@@ -77,7 +77,6 @@ engine:
   filters:
     - simplifier@emoji                    # Emoji
     - simplifier@traditionalize           # 简繁切换
-    - lua_filter@v_filter                 # v 模式 symbols 优先（否则是英文优先）
     - lua_filter@autocap_filter           # 英文自动大写
     - lua_filter@reduce_english_filter    # 降低部分英语单词在候选项的位置
     - uniquifier                          # 去重
@@ -85,11 +84,11 @@ engine:
 
 # Lua 配置: 日期、时间、星期、ISO 8601、时间戳的触发关键字
 date_translator:
-  date: rq            # 日期： 2022-11-29
-  time: sj            # 时间： 18:13
-  week: xq            # 星期： 星期二
-  datetime: dt    # ISO 8601： 2022-11-29T18:13:11+08:00
-  timestamp: sj  # 时间戳： 1669716794
+  date: date            # 日期： 2022-11-29
+  time: time            # 时间： 18:13
+  week: week            # 星期： 星期二
+  datetime: datetime    # ISO 8601： 2022-11-29T18:13:11+08:00
+  timestamp: timestamp  # 时间戳： 1669716794
 
 
 # Lua 配置: 降低部分英语单词在候选项的位置
@@ -117,45 +116,45 @@ grammar:
 # 主翻译器，拼音
 translator:
   dictionary: rime_ice          # 挂载词库 rime_ice.dict.yaml
-  prism: rime_ice_abc          # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
+  prism: double_pinyin_abc      # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
   contextual_suggestions: true  # 开启八股文
   initial_quality: 1.2          # 拼音的权重应该比英文大
   preedit_format:               # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
-    - "xform/o(\\w)/0$1/"
-    - "xform/(\\w)q/$1ei/"
-    - "xform/(\\w)n/$1un/"
-    - "xform/(\\w)g/$1eng/"
-    - "xform/(\\w)w/$1ian/"
-    - "xform/([dtnljqx])r/$1iu/"
-    - "xform/0r/0er/"
-    - "xform/([nljqx])t/$1iang/"
-    - "xform/(\\w)t/$1uang/"
-    - "xform/(\\w)y/$1ing/"
-    - "xform/([dtnlgkhaevrzcs])o/$1uo/"
-    - "xform/(\\w)p/$1uan/"
-    - "xform/([jqx])s/$1iong/"
-    - "xform/(\\w)s/$1ong/"
-    - "xform/([gkhaevrzcs])d/$1ua/"
-    - "xform/(\\w)d/$1ia/"
-    - "xform/(\\w)f/$1en/"
-    - "xform/(\\w)h/$1ang/"
-    - "xform/(\\w)j/$1an/"
-    - "xform/(\\w)k/$1ao/"
-    - "xform/(\\w)l/$1ai/"
-    - "xform/(\\w)z/$1iao/"
-    - "xform/(\\w)x/$1ie/"
-    - "xform/([gkhaev])c/$1uai/"
-    - "xform/(\\w)c/$1in/"
-    - "xform/(\\w)b/$1ou/"
-    - "xform/([nl])m/$1ve/"
-    - "xform/([jqxy])m/$1ue/"
-    - "xform/(\\w)m/$1ui/"
+    - xform/o(\w)/0$1/
+    - xform/(\w)q/$1ei/
+    - xform/(\w)n/$1un/
+    - xform/(\w)g/$1eng/
+    - xform/(\w)w/$1ian/
+    - xform/([dtnljqx])r/$1iu/
+    - xform/0r/0er/
+    - xform/([nljqx])t/$1iang/
+    - xform/(\w)t/$1uang/
+    - xform/(\w)y/$1ing/
+    - xform/([dtnlgkhaevrzcs])o/$1uo/
+    - xform/(\w)p/$1uan/
+    - xform/([jqx])s/$1iong/
+    - xform/(\w)s/$1ong/
+    - xform/([gkhaevrzcs])d/$1ua/
+    - xform/(\w)d/$1ia/
+    - xform/(\w)f/$1en/
+    - xform/(\w)h/$1ang/
+    - xform/(\w)j/$1an/
+    - xform/(\w)k/$1ao/
+    - xform/(\w)l/$1ai/
+    - xform/(\w)z/$1iao/
+    - xform/(\w)x/$1ie/
+    - xform/([gkhaev])c/$1uai/
+    - xform/(\w)c/$1in/
+    - xform/(\w)b/$1ou/
+    - xform/([nl])m/$1ve/
+    - xform/([jqxy])m/$1ue/
+    - xform/(\w)m/$1ui/
     - "xform/(^|[ '])a/$1zh/"
     - "xform/(^|[ '])e/$1ch/"
     - "xform/(^|[ '])v/$1sh/"
-    - "xform/0(\\w)/$1/"
-    - "xform/([nl])v/$1ü/"
-    - "xform/([jqxy])v/$1u/" 
+    - xform/0(\w)/$1/
+    - xform/([nl])v/$1ü/
+    - xform/([jqxy])v/$1u/
 
 
 # 次翻译器，英文
@@ -179,7 +178,7 @@ liangfen:
 # 自定义短语
 custom_phrase:
   dictionary: ""
-  user_dict: custom_phrase_abc  # 需要手动创建 custom_phrase_double.txt 文件
+  user_dict: custom_phrase_double  # 需要手动创建 custom_phrase_double.txt 文件
   db_class: stabledb
   enable_completion: false # 补全提示
   enable_sentence: false   # 禁止造句
@@ -218,7 +217,7 @@ punctuator:
 recognizer:
   import_preset: default  # 从 default.yaml 继承通用的
   patterns:  # 再增加方案专有的：
-    punct: "^vv([0-9]|10|[A-Za-z]+)$"  # 响应 symbols_caps_v.yaml 的 symbols
+    punct: "^V([0-9]|10|[A-Za-z]+)$"  # 响应 symbols_caps_v.yaml 的 symbols
     reverse_lookup: "^L[a-z]+$"       # 响应两分拼字的反查
     unicode: "^U[a-f0-9]+"            # 响应 Unicode
     number: "^R[0-9]+[.]?[0-9]*"      # 响应 number_translator
@@ -236,31 +235,31 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA;
   delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
-    - "erase/^xx$/"
-    - "xform/^zh/ᴀ/"
-    - "xform/^ch/ᴇ/"
-    - "xform/^sh/ᴠ/"
-    - "xform/^([aoe].*)$/ᴏ$1/"
-    - "xform/ei$/ǫ/"
-    - "xform/ian$/ᴡ/"
-    - "xform/er$|iu$/ʀ/"
-    - "xform/[iu]ang$/ᴛ/"
-    - "xform/ing$/ʏ/"
-    - "xform/uo$/ᴏ/"
-    - "xform/uan$/ᴘ/"
-    - "xform/i?ong$/s/"
-    - "xform/[iu]a$/ᴅ/"
-    - "xform/en$/ғ/"
-    - "xform/eng$/ɢ/"
-    - "xform/ang$/ʜ/"
-    - "xform/an$/ᴊ/"
-    - "xform/iao$/ᴢ/"
-    - "xform/ao$/ᴋ/"
-    - "xform/in$|uai$/ᴄ/"
-    - "xform/ai$/ʟ/"
-    - "xform/ie$/x/"
-    - "xform/ou$/ʙ/"
-    - "xform/un$/ɴ/"
-    - "xform/[uv]e$|ui$/ᴍ/"
-    - "xlit/ᴡᴇᴛʏᴜɪᴏᴘᴀɢsᴅғʜᴊᴋʟᴢxᴄᴠʙɴᴍǫʀ/wetyuiopagsdfhjklzxcvbnmqr/"
-    - "abbrev/^(.).+$/$1/"
+    - erase/^xx$/
+    - xform/^zh/ᴀ/
+    - xform/^ch/ᴇ/
+    - xform/^sh/ᴠ/
+    - xform/^([aoe].*)$/ᴏ$1/
+    - xform/ei$/ǫ/
+    - xform/ian$/ᴡ/
+    - xform/er$|iu$/ʀ/
+    - xform/[iu]ang$/ᴛ/
+    - xform/ing$/ʏ/
+    - xform/uo$/ᴏ/
+    - xform/uan$/ᴘ/
+    - xform/i?ong$/s/
+    - xform/[iu]a$/ᴅ/
+    - xform/en$/ғ/
+    - xform/eng$/ɢ/
+    - xform/ang$/ʜ/
+    - xform/an$/ᴊ/
+    - xform/iao$/ᴢ/
+    - xform/ao$/ᴋ/
+    - xform/in$|uai$/ᴄ/
+    - xform/ai$/ʟ/
+    - xform/ie$/x/
+    - xform/ou$/ʙ/
+    - xform/un$/ɴ/
+    - xform/[uv]e$|ui$/ᴍ/
+    - xlit/ǫᴡʀᴛʏᴜɪᴏᴘsᴅғɢʜᴊᴋʟᴢxᴄᴠʙɴᴍ/qwrtyuiopsdfghjklzxcvbnm/
+    - abbrev/^(.).+$/$1/  # 首字母简拼
