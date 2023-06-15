@@ -9,6 +9,7 @@
 # 全拼的自定义文本和双拼有些冲突，改成了 custom_phrase_double ，需要创建 custom_phrase_double.txt 文件。
 #
 # 默认启用的中英混输词库是全拼的，需要在 melt_eng.dict.yaml 中修改为对应的双拼的。
+# 还需要在英文方案 melt_eng.schema.yaml 将数字的拼写规则 __include: algebra_rime_ice 改为对应的双拼。
 
 
 # 方案说明
