@@ -31,10 +31,10 @@ style:
   # 布局设定，同样可以在 layout 的 type 下指定
   fullscreen: false # 全屏排列：true；false
   horizontal: false # 横向排列：true；false
-  vertical_text: false # 竖直排列：true；false
-  vertical_text_left_to_right: false # 竖直排列下从左到右：true；false
-  vertical_text_with_wrap: false # 竖直排列下，自动换行：true；false
-  vertical_auto_reverse: false # 竖直布局下，输入窗口在上方时倒序排列：true；false
+  vertical_text: false # 竖排：true；false
+  vertical_text_left_to_right: false # 竖排下从左到右：true；false
+  vertical_text_with_wrap: false # 竖排下，自动换行：true；false
+  vertical_auto_reverse: false # 竖排下，输入窗口在上方时倒序排列：true；false
 
   label_format: "%s." # 标签字符：%s. 效果为 1. 2. 3. ....
   mark_text: "" # 高亮字符，显示在选中的候选标签前
@@ -49,7 +49,7 @@ style:
     max_width: 0 # 候选框最大宽度，超过会折叠
     min_height: 0 # 最小高度
     min_width: 160
-    type: horizontal # horizontal（横向）；vertical（竖向） ; vertical_text（文本竖直） ; vertical+fullscreen（竖向全屏） ; horizontal+fullscreen（横向全拼）
+    type: horizontal # horizontal（横向）；vertical（竖向） ; vertical_text（竖排文本） ; vertical+fullscreen（全屏） ; horizontal+fullscreen（横向全屏）
     border_width: 3 # 边框宽度，又名 border
     margin_x: 12 # 元素偏离候选边框 X 轴距离；为负值时，不显示候选框
     margin_y: 12 # 元素偏离候选边框 Y 轴距离；为负值时，不显示候选框
@@ -69,8 +69,7 @@ style:
 # 在小狼毫用户目录新建 preview 文件夹，将自定义皮肤的截图重命名为 color_scheme_<name>.png 放入此文件夹，可以在「输入法设定」中看到自定义皮肤效果
 
 # 小狼毫配色在线设计：
-# [RIME 西米](https://bennyyip.github.io/Rime-See-Me/)
-# [润笔](https://pdog18.github.io/rime-soak/#/theme)
+# [RIME 西米](https://fxliang.github.io/RimeSeeMe/)
 
 preset_color_schemes:
   scheme_name: # 需要在 `style/color_schema` 指定的值
