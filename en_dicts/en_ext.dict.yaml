@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-06-13"
+version: "2023-06-16"
 sort: by_weight
 ...
 # 一些杂项
@@ -552,14 +552,11 @@ Chief Executive Officer	ChiefExecutiveOfficer
 CTO	CTO
 Chief Technology Officer	CTO
 Chief Technology Officer	ChiefTechnologyOfficer
-Coding	Coding
 Django	Django
 DBMesh	DBMesh
-Excel	Excel
-Flask	Flask
 Facebook	Facebook
 Firefox	Firefox
-Git	Git
+git	git
 GoLand	GoLand
 Golang	Golang
 IQOS	IQOS
@@ -589,7 +586,7 @@ Microsoft PowerPoint	PPT
 PyCharm	PyCharm
 Roguelike	Roguelike
 Redis	Redis
-Rime	Rime
+rime	rime
 RION	RION
 SegmentFault	SegmentFault
 SPA	SPA
@@ -607,7 +604,6 @@ Vue	Vue
 Vue.js	Vue.js
 Web	Web
 WebStorm	WebStorm
-Word	Word
 Xcode	Xcode
 emoji	emoji
 exe	exe
@@ -802,16 +798,14 @@ MarsEdit	MarsEdit
 Mathtype	Mathtype
 MIPS	MIPS
 Moke	Moke
-Moneywiz	Moneywiz
+MoneyWiz	MoneyWiz
 Moom	Moom
 MP3	MP3
 MP4	MP4
 MplayerX	MplayerX
 Netflix	Netflix
 Noizio	Noizio
-Numbers	Numbers
 nvALT	nvALT
-Office	Office
 OmmWriter	OmmWriter
 OmniFocus	OmniFocus
 OmniGraffle	OmniGraffle
@@ -823,7 +817,6 @@ Operating System	OS
 Operating System	OperatingSystem
 Overcast	Overcast
 Overflow	Overflow
-Pages	Pages
 PaintCode	PaintCode
 Parallels Desktop	ParallelsDesktop
 Password	Password
@@ -875,13 +868,9 @@ Sparrow	Sparrow
 Speedtest	Speedtest
 Spotify	Spotify
 Spotlight	Spotlight
-Squirrel	Squirrel
 SSL	SSL
-Edge	Edge
 StackSocial	StackSocial
 Sublime Text	SublimeText
-Surge	Surge
-Symbol	Symbol
 TechWeb	TechWeb
 Telegram	Telegram
 Terminal	Terminal
@@ -1218,18 +1207,12 @@ goroutine	goroutine
 Celsius	Celsius
 Fahrenheit	Fahrenheit
 nil	nil
-NULL	NULL
-Slice	Slice
-Map	Map
 Mojito	Mojito
-Toolbox	Toolbox
-Weasel	Weasel
 weasel	weasel
 Niconico	Niconico
 TickTick	TickTick
 CHDBits	CHDBits
 M-team	M-team
-Emacs	Emacs
 Vim	Vim
 Wikipedia	Wikipedia
 Google Voice	GoogleVoice
@@ -1237,35 +1220,30 @@ Workers	Workers
 Cloudflare Workers	CloudflareWorkers
 PlayStation	PlayStation
 Visual Studio	VisualStudio
-Microsoft Visual Studio	MicrosoftVisualStudio
-Microsoft Visual Studio	VisualStudio
 AVIF	AVIF
 AV1 Image File Format	AVIF
 Apple Arcade	AppleArcade
+MS-DOS	MS-DOS
+Microsoft Visual Studio	MicrosoftVisualStudio
+Microsoft Visual Studio	VisualStudio
 Microsoft Corporation	MicrosoftCorporation
 Microsoft Windows	MicrosoftWindows
-MS-DOS	MS-DOS
 Microsoft Office	MicrosoftOffice
-Microsoft Office	Office
 Microsoft Word	MicrosoftWord
-Microsoft Word	Word
 Microsoft Excel	MicrosoftExcel
-Microsoft Excel	Excel
 Microsoft Access	MicrosoftAccess
 Microsoft PowerPoint	MicrosoftPowerPoint
 Microsoft PowerPoint	PowerPoint
 Microsoft Outlook	MicrosoftOutlook
-Outlook	Outlook
-Microsoft Outlook	Outlook
 Microsoft OneNote	MicrosoftOneNote
-Microsoft OneNote	OneNote
+Microsoft Azure	MicrosoftAzure
+Microsoft Edge	MicrosoftEdge
 IE	IE
 Internet Explorer	IE
 Internet Explorer	InternetExplorer
 Windows Media Player	WindowsMediaPlayer
 Media Player	MediaPlayer
 Windows Media Player	MediaPlayer
-Microsoft Edge	MicrosoftEdge
 Visual Studio Code	VisualStudioCode
 Visual Studio Code	VSCode
 PowerShell	PowerShell
@@ -1304,11 +1282,10 @@ goroutines	goroutines
 Universal Actions	UniversalActions
 Google Drive	GoogleDrive
 Google One	GoogleOne
-Tor	Tor
 Airbnb	Airbnb
 OpenCC	OpenCC
 HarmonyOS	HarmonyOS
-Incase	Incase
+incase	incase
 NPC	NPC
 Non-Player Character	NPC
 Non-Player Character	NonPlayerCharacter
@@ -1317,7 +1294,7 @@ Quantumult X	QuantumultX
 Confluence	Confluence
 followers	followers
 Skynet	Skynet
-Serverless	Serverless
+serverless	serverless
 Air	Air
 Identifier	Identifier
 NameCheap	NameCheap
@@ -1344,7 +1321,6 @@ Unidentified Flying Object	UnidentifiedFlyingObject
 Copyright	Copyright
 Registered	Registered
 TM	TM
-Joker	Joker
 SOS	SOS
 abcd	abcd
 ABCD	ABCD
@@ -1369,7 +1345,6 @@ NATO	NATO
 North Atlantic Treaty Organization	NATO
 North Atlantic Treaty Organization	NorthAtlanticTreatyOrganization
 MissWarmJ	MissWarmJ
-Miss	Miss
 NASA	NASA
 National Aeronautics and Space Administration	NASA
 Meta	Meta
@@ -1433,7 +1408,6 @@ SSH File Transfer Protocol	SFTP
 SSH File Transfer Protocol	SSHFileTransferProtocol
 uPic	uPic
 homemade	homemade
-Fig	Fig
 refactoring	refactoring
 refactor	refactor
 Notepad	Notepad
@@ -1718,10 +1692,7 @@ United Kingdom	UK
 United Kingdom	UnitedKingdom
 DirectX	DirectX
 Kinect	Kinect
-Azure	Azure
 azure	azure
-Microsoft Azure 	Azure
-Microsoft Azure	MicrosoftAzure
 Cloudflare	Cloudflare
 Buddhism	Buddhism
 Catholic	Catholic
@@ -2160,7 +2131,6 @@ Argent X	ArgentX
 Braavos	Braavos
 Braavos Wallet	Braavos
 OneKey	OneKey
-Hamster	Hamster
 hamster	hamster
 hamsters	hamsters
 DYOR	DYOR
@@ -2258,3 +2228,4 @@ traditionalistic	traditionalistic
 simplification	simplification
 simplifier	simplifier
 Loki	Loki
+panzer	panzer

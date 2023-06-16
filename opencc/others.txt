@@ -667,7 +667,7 @@ Eject	Eject ⏏
 碳酸氢铵	碳酸氢铵 NH₄HCO₃
 磷酸二氢钾	磷酸二氢钾 KH₂PO₄
 ----------其他	----------
-Rime	Rime 㞢
+rime	rime 㞢
 中州韵	中州韵 Rime
 鼠须管	鼠须管 Squirrel
 小狼毫	小狼毫 Weasel
