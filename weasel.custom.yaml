@@ -14,10 +14,13 @@ patch:
     hilited_back_color: 0x0000
     hilited_candidate_back_color: 0x0000
     hilited_candidate_text_color: 0x08F
-    name: "Cierra_Runis／Cierra_Runis"
+    name: "Cierra_Runis"
     text_color: 0xF0F0F0
-  "style/color_scheme": Cierra_Runis
-  "style/font_face": "苹方:bold"
-  "style/font_point": 12
-  "style/horizontal": true
-  "style/layout/corner_radius": 12
+
+  style:
+    color_scheme: Cierra_Runis
+    font_face: "苹方:bold"
+    font_point: 12
+    horizontal: true
+    layout:
+      corner_radius: 12
