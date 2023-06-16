@@ -2,7 +2,8 @@
 # vim: set sw=2 sts=2 et:
 # encoding: utf-8
 #
-# 复制自 https://github.com/tumuyan/rime-melt，修改了一点拼写派生
+# 复制自 https://github.com/tumuyan/rime-melt，修改了拼写派生
+# 全拼和各个双拼有部分拼写规则不通用，需要修改第 50 行 __include: algebra_rime_ice 为你所使用的方案
 
 schema:
   schema_id: melt_eng
@@ -45,7 +46,7 @@ speller:
   delimiter: " '"
   algebra:
     # 根据当前所用中文方案修改 __include 的值
-    # algebra_rime_ice ; algebra_flypy ; algebra_mspy ; algebra_ziguang ; algebra_double_pinyin
+    # algebra_rime_ice | algebra_double | algebra_flypy | algebra_mspy | algebra_abc | algebra_ziguang
     __include: algebra_rime_ice
     __append:
       # 数字派生
@@ -60,7 +61,7 @@ speller:
       - derive/0/zero/
       - derive/1/one/
       - derive/10/ten/
-      - derive/2/to/ #
+      - derive/2/to/
       - derive/2/two/
       - derive/3/three/
       - derive/4/for/
@@ -126,6 +127,8 @@ punctuator:
 recognizer:
   import_preset: default
 
+# 不通用的规则：
+# 全拼
 algebra_rime_ice:
   - derive/(?<!\d)1([1-9])(?!\d)/shi$1/
   - derive/([1-9])0000(?!0)/$1wan/
@@ -146,70 +149,7 @@ algebra_rime_ice:
   - derive/7/qi/
   - derive/8/ba/
   - derive/9/jiu/
-
-algebra_flypy:
-  - derive/(?<!\d)1([1-9])(?!\d)/ui$1/
-  - derive/([1-9])0000(?!0)/$1wj/
-  - derive/([1-9])000(?!0)/$1qm/
-  - derive/([1-9])00(?!0)/$1bd/
-  - derive/([2-9])0(?!0)/$1ui/
-  - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1ui$2/
-  - derive/\./dm/
-  - derive/10/ui/
-  - derive/0/lk/
-  - derive/1/yi/
-  - derive/2/er/
-  - derive/2/ll/
-  - derive/3/sj/
-  - derive/4/si/
-  - derive/5/wu/
-  - derive/6/lq/
-  - derive/7/qi/
-  - derive/8/ba/
-  - derive/9/jq/
-
-algebra_mspy:
-  - derive/(?<!\d)1([1-9])(?!\d)/ui$1/
-  - derive/([1-9])0000(?!0)/$1wj/
-  - derive/([1-9])000(?!0)/$1qm/
-  - derive/([1-9])00(?!0)/$1bl/
-  - derive/([2-9])0(?!0)/$1ui/
-  - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1ui$2/
-  - derive/\./dm/
-  - derive/10/ui/
-  - derive/0/l;/
-  - derive/1/yi/
-  - derive/2/er/
-  - derive/2/ld/
-  - derive/3/sj/
-  - derive/4/si/
-  - derive/5/wu/
-  - derive/6/lq/
-  - derive/7/qi/
-  - derive/8/ba/
-  - derive/9/jq/
-
-algebra_ziguang:
-  - derive/(?<!\d)1([1-9])(?!\d)/ii$1/
-  - derive/([1-9])0000(?!0)/$1wr/
-  - derive/([1-9])000(?!0)/$1qf/
-  - derive/([1-9])00(?!0)/$1bp/
-  - derive/([2-9])0(?!0)/$1ii/
-  - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1ii$2/
-  - derive/\./df/
-  - derive/10/ii/
-  - derive/0/l;/
-  - derive/1/yi/
-  - derive/2/er/
-  - derive/2/lg/
-  - derive/3/sr/
-  - derive/4/si/
-  - derive/5/wu/
-  - derive/6/lj/
-  - derive/7/qi/
-  - derive/8/ba/
-  - derive/9/jj/
-
+# 自然码双拼
 algebra_double_pinyin:
   - derive/(?<!\d)1([1-9])(?!\d)/ui$1/
   - derive/([1-9])0000(?!0)/$1wj/
@@ -230,3 +170,87 @@ algebra_double_pinyin:
   - derive/7/qi/
   - derive/8/ba/
   - derive/9/jq/
+# 小鹤双拼
+algebra_flypy:
+  - derive/(?<!\d)1([1-9])(?!\d)/ui$1/
+  - derive/([1-9])0000(?!0)/$1wj/
+  - derive/([1-9])000(?!0)/$1qm/
+  - derive/([1-9])00(?!0)/$1bd/
+  - derive/([2-9])0(?!0)/$1ui/
+  - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1ui$2/
+  - derive/\./dm/
+  - derive/10/ui/
+  - derive/0/lk/
+  - derive/1/yi/
+  - derive/2/er/
+  - derive/2/ll/
+  - derive/3/sj/
+  - derive/4/si/
+  - derive/5/wu/
+  - derive/6/lq/
+  - derive/7/qi/
+  - derive/8/ba/
+  - derive/9/jq/
+# 微软双拼
+algebra_mspy:
+  - derive/(?<!\d)1([1-9])(?!\d)/ui$1/
+  - derive/([1-9])0000(?!0)/$1wj/
+  - derive/([1-9])000(?!0)/$1qm/
+  - derive/([1-9])00(?!0)/$1bl/
+  - derive/([2-9])0(?!0)/$1ui/
+  - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1ui$2/
+  - derive/\./dm/
+  - derive/10/ui/
+  - derive/0/l;/
+  - derive/1/yi/
+  - derive/2/er/
+  - derive/2/ld/
+  - derive/3/sj/
+  - derive/4/si/
+  - derive/5/wu/
+  - derive/6/lq/
+  - derive/7/qi/
+  - derive/8/ba/
+  - derive/9/jq/
+# 智能ABC双拼
+algebra_abc:
+  - derive/(?<!\d)1([1-9])(?!\d)/vi$1/
+  - derive/([1-9])0000(?!0)/$1wj/
+  - derive/([1-9])000(?!0)/$1qw/
+  - derive/([1-9])00(?!0)/$1bl/
+  - derive/([2-9])0(?!0)/$1vi/
+  - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1vi$2/
+  - derive/\./dw/
+  - derive/10/vi/
+  - derive/0/ly/
+  - derive/1/yi/
+  - derive/2/or/
+  - derive/2/lt/
+  - derive/3/sj/
+  - derive/4/si/
+  - derive/5/wu/
+  - derive/6/lr/
+  - derive/7/qi/
+  - derive/8/ba/
+  - derive/9/jr/
+# 紫光双拼
+algebra_ziguang:
+  - derive/(?<!\d)1([1-9])(?!\d)/ii$1/
+  - derive/([1-9])0000(?!0)/$1wr/
+  - derive/([1-9])000(?!0)/$1qf/
+  - derive/([1-9])00(?!0)/$1bp/
+  - derive/([2-9])0(?!0)/$1ii/
+  - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1ii$2/
+  - derive/\./df/
+  - derive/10/ii/
+  - derive/0/l;/
+  - derive/1/yi/
+  - derive/2/er/
+  - derive/2/lg/
+  - derive/3/sr/
+  - derive/4/si/
+  - derive/5/wu/
+  - derive/6/lj/
+  - derive/7/qi/
+  - derive/8/ba/
+  - derive/9/jj/

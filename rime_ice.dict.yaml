@@ -20,7 +20,7 @@ import_tables:
 # 大写字母
 # 可在拼音方案下直接输入大写字母（Shift + 字母），大写字母参与造句。
 # 示例：输入 `nihaoASDFzaijian` 得到 `你好ASDF再见`
-# （非雾凇方案的双拼如果要启用，需要参考双拼方案下的 speller/algebra 将大写字母搭桥改成其他任意字母）
+# （非雾凇方案的双拼如果要启用，需要参考双拼方案下的 speller/algebra 将大写字母搭桥改成一些特殊字符）
 A	A
 B	B
 C	C
@@ -60,7 +60,7 @@ Z	Z
 7	qi
 8	ba
 9	jiu
-# 示例：输入 siGliuliang 得到 4G流量
+# 示例：输入 siSdian 得到 4S店
 3G
 4G
 5G
