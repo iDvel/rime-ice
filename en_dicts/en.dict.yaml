@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-06-13"
+version: "2023-06-16"
 sort: by_weight
 ...
 # +_+
@@ -6180,7 +6180,7 @@ elsewhere	elsewhere
 Elton	Elton
 elvis	elvis
 # em	em
-emacs	emacs
+Emacs	Emacs
 email	email
 emailed	emailed
 emails	emails
@@ -19098,7 +19098,6 @@ topology	topology
 topped	topped
 # topps	topps
 tops	tops
-Tor	Tor
 tor	tor
 torah	torah
 torch	torch
@@ -20863,7 +20862,7 @@ Xbox	Xbox
 # xd	xd
 # xda	xda
 # xe	xe
-# xemacs	xemacs
+XEmacs	XEmacs
 Xenical	Xenical
 Xeon	Xeon
 xerox	xerox
