@@ -20,10 +20,9 @@
 # 删除「呷ga」（呷呷），《现汉》推荐「嘎嘎」。
 # 删除「芥gai」，《现汉》未收录。
 # 删除「著zhuo」（执著zhuo），《现汉》推荐「执着zhuo」。
-# 删除「虾ha」（虾蟆ha ma），《现汉》推荐「蛤蟆」，保留地名「虾蟆陵」。
+# 删除「虾ha」（虾蟆ha ma），《现汉》推荐「蛤蟆」，保留地名「虾蟆陵ha ma ling」。
 # 「嬛」xuan → huan
 # 删除「夹ga」，使用「胳肢窝ga zhi wo」。
-# 删除「屯zhun」，「屯邅zhun zhan」已被校对为「迍邅zhun zhan」。
 # 删除「隽jun」，同「俊」。
 #
 # 多音字权重问题：
@@ -77,6 +76,7 @@ sort: by_weight
 # 哼	hng	    放到 custom_phrase.txt 里置顶了
 嗯	eng	9179528
 欸	ei	534
+诶	ei
 哟	yo	59051
 唷	yo	1
 育	yo	0
@@ -4613,11 +4613,11 @@ sort: by_weight
 喔	o	1
 欧	ou	253543
 偶	ou	150991
-区	ou	29104
 呕	ou	27879
 殴	ou	12875
 鸥	ou	9276
 藕	ou	5784
+区	ou	2425
 怄	ou	1573
 瓯	ou	1414
 讴	ou	753
@@ -8424,6 +8424,7 @@ sort: by_weight
 肫	zhun	178
 窀	zhun	41
 衠	zhun	10
+屯	zhun	1
 𬘯	zhun	0
 桌	zhuo	346095
 卓	zhuo	118671
