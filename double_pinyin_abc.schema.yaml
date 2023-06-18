@@ -233,7 +233,7 @@ key_binder:
 # 拼写设定
 speller:
   # 如果不想让什么标点直接上屏，可以加在 alphabet，或者编辑标点符号为两个及以上的映射
-  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA;
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
     - erase/^xx$/
@@ -262,5 +262,5 @@ speller:
     - xform/ou$/ʙ/
     - xform/un$/ɴ/
     - xform/[uv]e$|ui$/ᴍ/
-    - xlit/ǫᴡʀᴛʏᴜɪᴏᴘsᴅғɢʜᴊᴋʟᴢxᴄᴠʙɴᴍ/qwrtyuiopsdfghjklzxcvbnm/
+    - xlit/ǫᴡᴇʀᴛʏᴏᴘᴀsᴅғɢʜᴊᴋʟᴢxᴄᴠʙɴᴍ/qwertyopasdfghjklzxcvbnm/
     - abbrev/^(.).+$/$1/  # 首字母简拼
