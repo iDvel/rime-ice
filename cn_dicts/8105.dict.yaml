@@ -48,6 +48,7 @@ sort: by_weight
 菈	la	1
 卻	que	1
 濛	meng	1
+诶	ei
 # 注释掉的这几行已经加入到下面并调整到合适的权重了
 # 〇	ling
 # 囧	jiong
@@ -76,7 +77,6 @@ sort: by_weight
 # 哼	hng	    放到 custom_phrase.txt 里置顶了
 嗯	eng	9179528
 欸	ei	534
-诶	ei
 哟	yo	59051
 唷	yo	1
 育	yo	0
@@ -2011,7 +2011,6 @@ sort: by_weight
 鼓	gu	208688
 固	gu	157594
 估	gu	154328
-贾	gu	117313
 咕	gu	80611
 辜	gu	48645
 雇	gu	39820
@@ -2021,6 +2020,7 @@ sort: by_weight
 箍	gu	8001
 锢	gu	6805
 沽	gu	4913
+贾	gu	3333
 鹄	gu	2662
 鹘	gu	2636
 臌	gu	2082
@@ -5193,8 +5193,8 @@ sort: by_weight
 丘	qiu	63759
 邱	qiu	37273
 囚	qiu	29642
-仇	qiu	12537
 裘	qiu	9991
+仇	qiu	9200
 酋	qiu	9128
 虬	qiu	7518
 糗	qiu	5197
