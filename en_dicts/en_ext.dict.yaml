@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-06-16"
+version: "2023-06-25"
 sort: by_weight
 ...
 # 一些杂项
@@ -2232,4 +2232,7 @@ panzer	panzer
 hardened	hardened
 motherfucker	motherfucker
 motherfucking	motherfucking
+dict	dict
 latte	latte
+Hughie	Hughie
+Maeve	Maeve
