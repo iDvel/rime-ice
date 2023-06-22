@@ -17,7 +17,9 @@ patch:
     name: "Cierra_Runis"
     text_color: 0xF0F0F0
   "style/color_scheme": Cierra_Runis
-  "style/font_face": "Source Han Sans SC VF:bold"
+  "style/font_face": "Segoe UI Emoji:20:39:bold, Noto Color Emoji SVG:80, Source Han Sans SC VF:bold"
+  "style/label_font_face": "Source Han Sans SC VF:bold"
+  "style/comment_font_face": "Source Han Sans SC VF:bold"
   "style/font_point": 12
   "style/horizontal": true
   "style/layout/corner_radius": 12
