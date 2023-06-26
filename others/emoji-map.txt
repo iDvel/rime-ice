@@ -1,7 +1,7 @@
 # Emoji 映射表
 # 根据此文件生成 emoji.txt
 #
-# version: "2023-06-16"
+# version: "2023-06-27"
 #
 # 中文映射由 Dvel 纯手工打造 https://github.com/iDvel/rime-ice
 #
@@ -1555,7 +1555,7 @@ S$ 新加坡元 新加坡币
 🔝 top
 # religion
 🛐 祷告
-⚛️ 原子符号 原子 Atom atom
+⚛️ 原子符号 原子 atom
 🕉 奥姆 奥姆符号
 ✡️ 大卫之星
 ☸️ 法轮

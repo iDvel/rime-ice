@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-06-25"
+version: "2023-06-27"
 sort: by_weight
 ...
 # 一些杂项
@@ -478,15 +478,12 @@ NTR	NTR
 Notion	Notion
 Touch Bar	TouchBar
 DOM	DOM
-VIP	VIP
 D.VA	D.VA
 Logo	Logo
 Telnet	Telnet
 IPv4	IPv4
 IPv6	IPv6
-Unix	Unix
 Rick and Morty	RickandMorty
-Tokyo	Tokyo
 uTools	uTool
 uTools	uTools
 AirPods	AirPods
@@ -562,8 +559,6 @@ Golang	Golang
 IQOS	IQOS
 Intel	Intel
 JSON	JSON
-Java	Java
-JavaScript	JavaScript
 JetBrains	JetBrains
 KTV	KTV
 MBP	MBP
@@ -658,7 +653,6 @@ AirDrop	AirDrop
 Alfred	Alfred
 Amazon	Amazon
 Adobe	Adobe
-Atom	Atom
 Axure	Axure
 Bartender	Bartender
 Better Snap Tool	BetterSnapTool
@@ -732,7 +726,6 @@ Google Play Music	GooglePlayMusic
 Graffle	Graffle
 Handoff	Handoff
 Hazel	Hazel
-Home	Home
 HomeKit	HomeKit
 HTML	HTML
 HyperText Markup Language	HTML
@@ -1295,7 +1288,6 @@ Confluence	Confluence
 followers	followers
 Skynet	Skynet
 serverless	serverless
-Air	Air
 Identifier	Identifier
 NameCheap	NameCheap
 rime-ice	rime-ice
@@ -2148,6 +2140,7 @@ suffixes	suffixes
 DeepMind	DeepMind
 Google DeepMind	GoogleDeepMind
 TL;DR	TL;DR
+too long; didn't read	TL;DR
 Ant-Man	Ant-Man
 Spider-Man	Spider-Man
 ungoogled	ungoogled
@@ -2236,3 +2229,5 @@ dict	dict
 latte	latte
 Hughie	Hughie
 Maeve	Maeve
+hyphen	hyphen
+Oppenheimer	Oppenheimer
