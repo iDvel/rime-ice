@@ -8,6 +8,12 @@ import (
 
 func Temp() {
 	// defer os.Exit(11)
+	//
+	// Pinyin(ExtPath)
+	// GeneratePinyinTest("识别信号")
+	// GeneratePinyinTest("漫无目的地走")
+	// GeneratePinyinTest("吃不了了啊")
+	// GeneratePinyinTest("成都城市音乐厅")
 }
 
 // 列出 ext 和 tencent 词库中有多少行包含多音字的词汇

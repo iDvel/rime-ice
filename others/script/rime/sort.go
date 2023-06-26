@@ -163,7 +163,12 @@ func Sort(dictPath string, _type int) {
 				fmt.Printf("%s 重复于其他词库：%s\n", strings.Split(path.Base(dictPath), ".")[0], line.text)
 				continue
 			}
-			s := line.text + "\t" + strconv.Itoa(line.weight) + "\n"
+			var s string
+			if line.code != "" {
+				s = line.text + "\t" + line.code + "\t" + strconv.Itoa(line.weight) + "\n"
+			} else {
+				s = line.text + "\t" + strconv.Itoa(line.weight) + "\n"
+			}
 			_, err := file.WriteString(s)
 			if err != nil {
 				log.Fatalln(err)
