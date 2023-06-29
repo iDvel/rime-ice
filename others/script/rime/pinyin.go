@@ -9,6 +9,7 @@ import (
 	"strconv"
 	"strings"
 	"time"
+	"unicode"
 	"unicode/utf8"
 
 	"github.com/yanyiwu/gojieba"
@@ -215,36 +216,40 @@ var onlyOne = map[string]string{
 }
 
 func init() {
-	// 从 base 准备结巴的词典和词组拼音映射
-	baseFile, err := os.Open(BasePath)
-	if err != nil {
-		log.Fatalln(err)
-	}
-	defer baseFile.Close()
-	sc := bufio.NewScanner(baseFile)
-	isMark := false
-	for sc.Scan() {
-		line := sc.Text()
-		if !isMark {
-			if strings.HasPrefix(line, mark) {
-				isMark = true
-			}
-			continue
-		}
-		if strings.HasPrefix(line, "#") || line == "" {
-			continue
-		}
-		parts := strings.Split(line, "\t")
-		if len(parts) != 3 {
-			log.Fatalln("len(parts) != 3", line)
-		}
-		text, code := parts[0], parts[1]
-		weight, err := strconv.Atoi(parts[2])
+	// 从 base、ext 准备结巴的词典和词组拼音映射
+	for _, dictPath := range []string{BasePath, ExtPath} {
+		file, err := os.Open(dictPath)
 		if err != nil {
-			log.Fatalln(err, line)
+			log.Fatalln(err)
 		}
-		jieba.AddWordEx(text, weight, "")
-		wordPinyin[text] = append(wordPinyin[text], code)
+
+		sc := bufio.NewScanner(file)
+		isMark := false
+		for sc.Scan() {
+			line := sc.Text()
+			if !isMark {
+				if strings.HasPrefix(line, mark) {
+					isMark = true
+				}
+				continue
+			}
+			if strings.HasPrefix(line, "#") || line == "" {
+				continue
+			}
+			parts := strings.Split(line, "\t")
+			if len(parts) < 2 || !isAllLower(parts[1]) {
+				continue
+			}
+			text, code := parts[0], parts[1]
+			weight, err := strconv.Atoi(parts[2])
+			if err != nil {
+				log.Fatalln(err, line)
+			}
+			jieba.AddWordEx(text, weight, "")
+			wordPinyin[text] = append(wordPinyin[text], code)
+		}
+
+		file.Close()
 	}
 
 	// 拷贝 hanPinyin 到 hanziPinyin，再从 onlyOne 替换掉映射中的注音
@@ -287,16 +292,21 @@ func Pinyin(dictPath string) {
 		}
 
 		parts := strings.Split(line, "\t")
-		if len(parts) <= 1 {
-			fmt.Println("parts <= 1:", line)
-		}
 		text := parts[0]
-		// parts[1] 不是权重或已经注音（包含空格），不再注音
-		// if _, err := strconv.Atoi(parts[1]); err != nil || strings.Contains(parts[1], " ") {
-		// 	continue
-		// }
-		// 注音
-		code := generatePinyin(text)
+		var code string
+		// parts[1] 可能是：空、已经注音完成、注音到一半（含有未能自动注音的多音字汉字）
+		// 注音完成的，不再注音，其余的进行注音
+		if len(parts) == 1 { // 只有汉字
+			code = generatePinyin(text)
+		} else if len(parts) == 2 || len(parts) == 3 {
+			if isAllLower(parts[1]) { // 全小写，不包含汉字，代表已经注音完成
+				code = parts[1]
+			} else { // 注音到一半（含有汉字），重新注音
+				code = generatePinyin(text)
+			}
+		} else {
+			log.Fatalln("分割错误：", line)
+		}
 		lines[i] = text + "\t" + code
 	}
 
@@ -357,4 +367,17 @@ func GeneratePinyinTest(s string) {
 	words := jieba.Cut(s, true)
 	r := generatePinyin(s)
 	fmt.Printf("%s %q\n", words, r)
+}
+
+// 判断 code 是否全小写，不判断空格
+func isAllLower(s string) bool {
+	for _, ch := range s {
+		if ch == ' ' {
+			continue
+		}
+		if !unicode.IsLower(ch) {
+			return false
+		}
+	}
+	return true
 }
