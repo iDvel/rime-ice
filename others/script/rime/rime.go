@@ -23,7 +23,6 @@ type lemma struct {
 
 var (
 	mark          = "# +_+"      // 词库中的标记符号，表示从这行开始进行检查或排序
-	DefaultWeight = 100          // ext、tencent 词库中默认的权重
 	RimeDir       = getRimeDir() // Rime 配置目录
 
 	EmojiMapPath = filepath.Join(RimeDir, "others/emoji-map.txt")

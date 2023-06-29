@@ -22,9 +22,13 @@ func main() {
 	rime.CnEn()
 	fmt.Println("--------------------------------------------------")
 
+	// 为没注音的词汇半自动注音
+	rime.Pinyin(rime.ExtPath)
+	fmt.Println("--------------------------------------------------")
+
 	// 为 ext、tencent 没权重的词条加上权重，有权重的改为下面设置的权重
-	rime.AddWeight(rime.ExtPath, rime.DefaultWeight)
-	rime.AddWeight(rime.TencentPath, rime.DefaultWeight)
+	rime.AddWeight(rime.ExtPath, 100)
+	rime.AddWeight(rime.TencentPath, 100)
 	fmt.Println("--------------------------------------------------")
 
 	// 检查

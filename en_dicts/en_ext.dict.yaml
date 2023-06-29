@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-06-27"
+version: "2023-06-29"
 sort: by_weight
 ...
 # 一些杂项
@@ -479,8 +479,6 @@ Notion	Notion
 Touch Bar	TouchBar
 DOM	DOM
 D.VA	D.VA
-Logo	Logo
-Telnet	Telnet
 IPv4	IPv4
 IPv6	IPv6
 Rick and Morty	RickandMorty
@@ -597,13 +595,11 @@ V2EX	V2EX
 VSCode	VSCode
 Vue	Vue
 Vue.js	Vue.js
-Web	Web
 WebStorm	WebStorm
 Xcode	Xcode
 emoji	emoji
 exe	exe
 gakki	gakki
-hey	hey
 iMazing	iMazing
 jQuery	jQuery
 JPG	JPG
@@ -865,7 +861,6 @@ SSL	SSL
 StackSocial	StackSocial
 Sublime Text	SublimeText
 TechWeb	TechWeb
-Telegram	Telegram
 Terminal	Terminal
 TestFlight	TestFlight
 Texshop	Texshop
@@ -875,7 +870,6 @@ TextWrangler	TextWrangler
 The Unarchiver	TheUnarchiver
 Thunderbird	Thunderbird
 Time Capsule	TimeCapsule
-Timing	Timing
 TinkerTool	TinkerTool
 Touch ID	TouchID
 Trello	Trello
@@ -939,7 +933,6 @@ Bitcoin	Bitcoin
 template	template
 IMDb	IMDb
 gank	gank
-buff	buff
 debuff	debuff
 MagSafe	MagSafe
 Magic UI	MagicUI
@@ -963,7 +956,6 @@ GMT	GMT
 Greenwich Mean Time	GMT
 Greenwich Mean Time	GreenwichMeanTime
 GoDaddy	GoDaddy
-Portal	Portal
 Eason	Eason
 alchemy	alchemy
 SQLAlchemy	SQLAlchemy
@@ -993,7 +985,7 @@ imgur	imgur
 Stack Overflow	StackOverflow
 PyWebIO	PyWebIO
 Launchpad	Launchpad
-Squoosh	Squoosh
+squoosh	squoosh
 cosplay	cosplay
 Gravatar	Gravatar
 copilot	copilot
@@ -1139,10 +1131,7 @@ Objective-C	Objective-C
 Mac mini	Macmini
 Garena	Garena
 WonderCV	WonderCV
-Spark	Spark
 WebKit	WebKit
-Blink	Blink
-Opera	Opera
 Igalia	Igalia
 WebCore	WebCore
 GNU	GNU
@@ -2072,7 +2061,7 @@ troublemaker	troublemaker
 troublemaking	troublemaking
 espanso	espanso
 okey	okey
-okey dokey	okeydokey
+okey-dokey	okey-dokey
 CAPTCHA	CAPTCHA
 Coinbase	Coinbase
 Kraken	Kraken
