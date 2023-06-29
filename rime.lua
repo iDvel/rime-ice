@@ -4,9 +4,6 @@
 -- v 模式 symbols 优先（全拼）
 v_filter = require("v_filter")
 
--- 长词优先（全拼）
-long_word_filter = require("long_word_filter")
-
 -- 以词定字，可在 default.yaml key_binder 下配置快捷键，默认为左右中括号 [ ]
 select_character = require("select_character")
 
@@ -27,6 +24,16 @@ reduce_english_filter = require("reduce_english_filter")
 
 
 -- 默认未启用：
+
+-- 长词优先（全拼）
+-- 在 engine/filters 增加 - lua_filter@long_word_filter
+-- 在方案里写配置项: 
+-- 提升 count 个词语，插入到第 idx 个位置。
+-- 示例：将 2 个词插入到第 4、5 个候选项，输入 jie 得到「1接 2解 3姐 4饥饿 5极恶」
+-- long_word_filter:
+--   count: 2
+--   idx: 4
+long_word_filter = require("long_word_filter")
 
 -- 中英混输词条自动空格
 -- 在 engine/filters 增加 - lua_filter@cn_en_spacer
