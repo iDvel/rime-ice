@@ -48,6 +48,7 @@ var onlyOne = map[string]string{
 	"褪下": "tui xia",
 	"褪":  "tui",
 	"便便": "bian bian",
+	"便宜": "pian yi",
 	"便":  "bian",
 	"尿尿": "niao niao",
 	"尿":  "niao",
