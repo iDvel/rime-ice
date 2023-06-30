@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-06-29"
+version: "2023-07-01"
 sort: by_weight
 ...
 # 一些杂项
@@ -2220,3 +2220,4 @@ Hughie	Hughie
 Maeve	Maeve
 hyphen	hyphen
 Oppenheimer	Oppenheimer
+UltraEdit	UltraEdit

@@ -51,7 +51,7 @@ func init() {
 	sc := bufio.NewScanner(file1)
 	for sc.Scan() {
 		line := sc.Text()
-		if strings.HasPrefix(line, "#") {
+		if strings.HasPrefix(line, "#") || line == "" {
 			continue
 		}
 		polyphoneWords.Add(line)

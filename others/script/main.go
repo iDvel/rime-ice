@@ -11,6 +11,10 @@ import (
 func main() {
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
 
+	if len(os.Args) > 1 && os.Args[1] == "sort" {
+		goto SORT
+	}
+
 	// 临时
 	rime.Temp()
 
@@ -41,6 +45,7 @@ func main() {
 
 	areYouOK()
 
+SORT:
 	// 排序，顺便去重
 	rime.Sort(rime.HanziPath, 3)
 	rime.Sort(rime.BasePath, 3)
