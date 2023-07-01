@@ -171,7 +171,11 @@ patch:
 
 搜狗转 Rime：[lewangdev/scel2txt](https://github.com/lewangdev/scel2txt)
 
-大量参考[校对标准论坛](http://www.jiaodui.com/bbs/)。
+大量参考：
+
+- [校对标准论坛](http://www.jiaodui.com/bbs/)
+- [汉典](https://www.zdic.net/)
+- [成语典](https://dict.idioms.moe.edu.tw/)
 
 Thanks to JetBrains for the OSS development license.
 
