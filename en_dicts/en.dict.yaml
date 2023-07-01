@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-06-16"
+version: "2023-06-29"
 sort: by_weight
 ...
 # +_+
@@ -18647,7 +18647,7 @@ tell	tell
 teller	teller
 telling	telling
 tells	tells
-telnet	telnet
+Telnet	Telnet
 Telstra	Telstra
 # tem	tem
 temp	temp

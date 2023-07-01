@@ -51,7 +51,7 @@ func init() {
 	sc := bufio.NewScanner(file1)
 	for sc.Scan() {
 		line := sc.Text()
-		if strings.HasPrefix(line, "#") {
+		if strings.HasPrefix(line, "#") || line == "" {
 			continue
 		}
 		polyphoneWords.Add(line)
@@ -274,7 +274,7 @@ func checkLine(dictPath string, _type int, line string, lineNumber int, wg *sync
 	// +---------------------------------------------------------------
 
 	// 需要注音但没有注音的字
-	if dictPath == ExtPath || dictPath == TencentPath {
+	if dictPath == TencentPath {
 		for _, word := range polyphoneWords.ToSlice() {
 			if strings.Contains(text, word) {
 				fmt.Println("❌ 需要注音：", line)
