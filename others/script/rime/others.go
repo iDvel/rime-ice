@@ -13,6 +13,8 @@ import (
 
 func Temp() {
 	// defer os.Exit(11)
+	//
+	// GeneratePinyinTest("你的行动力")
 }
 
 // 列出字表中多音字的状况：是否参与自动注音
