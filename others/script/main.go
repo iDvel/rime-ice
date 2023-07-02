@@ -4,15 +4,21 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"path/filepath"
 	"script/rime"
 	"strings"
 )
 
 func main() {
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
-
-	if len(os.Args) > 1 && os.Args[1] == "sort" {
-		goto SORT
+	if len(os.Args) > 1 {
+		if os.Args[1] == "sort" {
+			goto SORT
+		}
+		if os.Args[1] == "temp" {
+			rime.Pinyin(filepath.Join(rime.RimeDir, "cn_dicts/temp"))
+			return
+		}
 	}
 
 	// 临时

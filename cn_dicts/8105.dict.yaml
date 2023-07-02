@@ -35,7 +35,7 @@
 # 「地 de di」，这种不好用固定词组区分的，全部注音。
 ---
 name: 8105
-version: "2023-06-13"
+version: "2023-07-02"
 sort: by_weight
 ...
 ### 按需启用
@@ -1487,7 +1487,7 @@ sort: by_weight
 躲	duo	249450
 朵	duo	202374
 夺	duo	175135
-度	duo	49671
+度	duo	50671
 堕	duo	30285
 哆	duo	30257
 跺	duo	20222
@@ -2371,13 +2371,13 @@ sort: by_weight
 护	hu	551817
 胡	hu	468131
 虎	hu	391382
-和	hu	375122
 湖	hu	327739
 糊	hu	235912
 户	hu	227191
 互	hu	215472
 狐	hu	139523
 壶	hu	45112
+和	hu	41260
 蝴	hu	33327
 惚	hu	28986
 弧	hu	25808
@@ -2577,13 +2577,13 @@ sort: by_weight
 活	huo	1317244
 火	huo	1180390
 伙	huo	518273
-和	huo	375122
 获	huo	245741
 惑	huo	217812
 货	huo	161159
 祸	huo	100219
 霍	huo	91016
 豁	huo	26107
+和	huo	4126
 夥	huo	3748
 嚯	huo	2371
 藿	huo	435
@@ -5500,7 +5500,7 @@ sort: by_weight
 杉	sha	1
 晒	shai	3043700
 筛	shai	788300
-色	shai	119311
+色	shai	1193
 山	shan	1526952
 删	shan	1112335
 闪	shan	551016
