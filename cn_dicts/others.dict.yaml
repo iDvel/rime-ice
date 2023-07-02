@@ -14,8 +14,6 @@ sort: by_weight
 ##### 容错词
 # 「血xue、xie」「谁shui、shei」「露lu、lou」「熟shu、shou」「密钥yao、yue」已在 base 中实现
 # ---
-雪佛兰	xue fo lan
-雪佛兰	xue fu lan
 # 「馄饨」，正确是 tun，北方口语是 dun
 馄饨	hun tun
 馄饨	hun dun

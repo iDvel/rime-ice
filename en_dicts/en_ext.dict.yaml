@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-07-01"
+version: "2023-07-02"
 sort: by_weight
 ...
 # 一些杂项
@@ -15,8 +15,6 @@ sort: by_weight
 <br>	<br>
 .DS_Store	.DS_Store
 README.md	README.md
-唵嘛呢叭咪吽	ongmanibeimeihong
-唵嘛呢嘛呢叭咪吽	ongmanimanibeimeihong
 
 
 # 按键
@@ -2221,3 +2219,4 @@ Maeve	Maeve
 hyphen	hyphen
 Oppenheimer	Oppenheimer
 UltraEdit	UltraEdit
+GoldenDict	GoldenDict
