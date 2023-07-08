@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-07-02"
+version: "2023-07-08"
 sort: by_weight
 ...
 # 一些杂项
@@ -1192,7 +1192,7 @@ weasel	weasel
 Niconico	Niconico
 TickTick	TickTick
 CHDBits	CHDBits
-M-team	M-team
+M-Team	M-Team
 Vim	Vim
 Wikipedia	Wikipedia
 Google Voice	GoogleVoice
@@ -1923,7 +1923,6 @@ Vultr	Vultr
 GoFrame	GoFrame
 ORM	ORM
 Object Relational Mapping	ORM
-Gin	Gin
 iris	iris
 burnt	burnt
 KPI	KPI
@@ -1941,8 +1940,6 @@ OpenWrt	OpenWrt
 AWS	AWS
 Amazon Web Services	AWS
 Amazon Web Services	AmazonWebServices
-Gemini	Gemini
-gemini	gemini
 Orion	Orion
 Virgo	Virgo
 Aries	Aries
@@ -2054,7 +2051,7 @@ Mailfence	Mailfence
 gimme	gimme
 CodeWhisperer	CodeWhisperer
 Heisenberg	Heisenberg
-Codex	Codex
+codex	codex
 storyteller	storyteller
 troublemaker	troublemaker
 troublemaking	troublemaking
@@ -2221,3 +2218,10 @@ hyphen	hyphen
 Oppenheimer	Oppenheimer
 UltraEdit	UltraEdit
 GoldenDict	GoldenDict
+tokenizer	tokenizer
+Stable Diffusion	StableDiffusion
+x86	x86
+x86-64	x86-64
+x64	x64
+amd64	amd64
+arm64	arm64
