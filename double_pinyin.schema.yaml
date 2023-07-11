@@ -101,13 +101,13 @@ reduce_english_filter:
   # 降低到第 idx 个位置
   idx: 2
   # 要降低的单词，匹配的是输入码，即全小写。
-  words: [nav,
+  words: [nav, uid,
   rug, bus, ship, laos, bail, bam, bans, bib, bos, chic, chit, dab, dag,
   dal, dit, dub, dug, fab, gam, ger, gus, hem, hep, hud, kat, lam, lax, lex, lug,
   lux, moc, mos, mot, mum, nad, nay, nib, nip, pak, pap, pax, rig, rum, sac, sal,
   sax, sec, shin, sis, ska, slang, sus, tad, taj, tac, tic, yep, yum, fax, cain,
   key, mob, buy, dam, wap, yes, but, put, lag, buf, lip, aid, aim, dig, dim, din,
-  dip, pail, cad, chap, bend, lid]
+  dip, pail, cad, chap, bend, lid, gem, tin]
 
 
 # 引入八股文
