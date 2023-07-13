@@ -34,7 +34,7 @@
 # 「地 de di」，这种不好用固定词组区分的，全部注音。
 ---
 name: 8105
-version: "2023-07-08"
+version: "2023-07-13"
 sort: by_weight
 ...
 ### 按需启用
@@ -663,8 +663,8 @@ sort: by_weight
 𥻗	cha	0
 拆	chai	99444
 柴	chai	61680
-差	chai	34417
 钗	chai	18040
+差	chai	10000
 豺	chai	3825
 侪	chai	647
 茝	chai	389
@@ -2608,7 +2608,6 @@ sort: by_weight
 季	ji	1028550
 击	ji	1010628
 急	ji	1009907
-奇	ji	982596
 系	ji	942245
 即	ji	900101
 既	ji	853256
@@ -2642,6 +2641,7 @@ sort: by_weight
 嫉	ji	38200
 饥	ji	36390
 剂	ji	31371
+奇	ji	30000
 给	ji	29393
 脊	ji	28041
 稽	ji	25200
@@ -2872,15 +2872,14 @@ sort: by_weight
 角	jiao	557634
 较	jiao	411372
 娇	jiao	199460
-觉	jiao	142356
 焦	jiao	137278
 骄	jiao	60597
 轿	jiao	46864
 搅	jiao	42862
 狡	jiao	41377
-校	jiao	37410
 郊	jiao	36462
 胶	jiao	28063
+觉	jiao	28000
 嚼	jiao	27876
 绞	jiao	24554
 剿	jiao	23891
@@ -2892,6 +2891,7 @@ sort: by_weight
 矫	jiao	14800
 饺	jiao	11790
 蕉	jiao	9223
+校	jiao	9100
 礁	jiao	9082
 皎	jiao	8869
 窖	jiao	8831
@@ -3200,9 +3200,9 @@ sort: by_weight
 决	jue	856467
 爵	jue	99014
 诀	jue	56532
-角	jue	33459
 嚼	jue	27876
 掘	jue	26017
+角	jue	24000
 厥	jue	23082
 倔	jue	18984
 撅	jue	12167
@@ -3490,11 +3490,11 @@ sort: by_weight
 啦	la	3655999
 拉	la	109679
 辣	la	82598
-落	la	63259
 垃	la	46134
 腊	la	36785
 喇	la	31719
 蜡	la	26302
+落	la	10000
 剌	la	9911
 邋	la	4653
 旯	la	2979
@@ -3568,12 +3568,12 @@ sort: by_weight
 老	lao	3762961
 劳	lao	236325
 牢	lao	122871
-落	lao	63259
 姥	lao	45943
 捞	lao	29577
 唠	lao	19757
 佬	lao	15514
 烙	lao	14608
+落	lao	10000
 酪	lao	5022
 涝	lao	1423
 崂	lao	1382
@@ -4354,7 +4354,6 @@ sort: by_weight
 魔	mo	1160330
 莫	mo	485268
 默	mo	454458
-没	mo	453624
 模	mo	378985
 摸	mo	342354
 摩	mo	168189
@@ -4363,6 +4362,7 @@ sort: by_weight
 漠	mo	119153
 抹	mo	113249
 墨	mo	107669
+没	mo	99019
 麽	mo	98350
 陌	mo	97194
 寞	mo	67695
@@ -4792,8 +4792,8 @@ sort: by_weight
 偏	pian	236193
 骗	pian	178600
 篇	pian	140190
-便	pian	104116
 翩	pian	35855
+便	pian	2676
 骈	pian	1356
 蹁	pian	503
 谝	pian	408
@@ -5003,8 +5003,8 @@ sort: by_weight
 𬨂	qi	0
 掐	qia	437391
 恰	qia	110670
-卡	qia	40225
 洽	qia	13409
+卡	qia	2011
 袷	qia	130
 髂	qia	109
 拤	qia	49
@@ -5613,9 +5613,9 @@ sort: by_weight
 呻	shen	35841
 渗	shen	35558
 婶	shen	34226
-参	shen	23223
 绅	shen	21513
 肾	shen	10212
+参	shen	10000
 莘	shen	6743
 珅	shen	5345
 蜃	shen	4184
@@ -7324,9 +7324,9 @@ sort: by_weight
 尧	yao	17147
 吆	yao	14326
 肴	yao	12069
+约	yao	10000
 曜	yao	8963
 窈	yao	5693
-约	yao	5262
 杳	yao	4833
 舀	yao	4517
 爻	yao	3448
@@ -8026,8 +8026,8 @@ sort: by_weight
 债	zhai	43823
 窄	zhai	34397
 斋	zhai	25200
-择	zhai	15256
 翟	zhai	11050
+择	zhai	100
 瘵	zhai	34
 祭	zhai	1
 豸	zhai	1

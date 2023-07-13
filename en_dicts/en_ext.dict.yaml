@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-07-08"
+version: "2023-07-13"
 sort: by_weight
 ...
 # 一些杂项
@@ -137,13 +137,6 @@ Mac OS X Panther	MacOSX	4
 Mac OS X Tiger	MacOSX	5
 Mac OS X Leopard	MacOSX	6
 Mac OS X Snow Leopard	MacOSX	7
-Cheetah	Cheetah
-Puma	Puma
-Jaguar	Jaguar
-Panther	Panther
-Tiger	Tiger
-Leopard	Leopard
-Snow Leopard	SnowLeopard
 
 OS X	OSX	999
 OS X Lion	OSX	1
@@ -151,11 +144,6 @@ OS X Mountain Lion	OSX	2
 OS X Mavericks	OSX	3
 OS X Yosemite	OSX	4
 OS X El Capitan	OSX	5
-Lion	Lion
-Mountain Lion	MountainLion
-Mavericks	Mavericks
-Yosemite	Yosemite
-El Capitan	ElCapitan
 
 macOS	macOS	999
 macOS Sierra	macOS	1
@@ -166,22 +154,6 @@ macOS Big Sur	macOS	5
 macOS Monterey	macOS	6
 macOS Ventura	macOS	7
 macOS Sonoma	macOS	8
-macOS Sierra	macOSSierra
-macOS High Sierra	macOSHighSierra
-macOS Mojave	macOSMojave
-macOS Catalina	macOSCatalina
-macOS Big Sur	macOSBigSur
-macOS Monterey	macOSMonterey
-macOS Ventura	macOSVentura
-macOS Sonoma	macOSSonoma
-Sierra	Sierra
-High Sierra	HighSierra
-Mojave	Mojave
-Catalina	Catalina
-Big Sur	BigSur
-Monterey	Monterey
-Ventura	Ventura
-Sonoma	Sonoma
 
 Windows	Windows	999
 Windows 95	Windows	1
@@ -236,6 +208,26 @@ iPhone 14	iPhone14
 iPhone 14 Plus	iPhone14Plus
 iPhone 14 Pro	iPhone14Pro
 iPhone 14 Pro Max	iPhone14ProMax
+Mac OS X Cheetah	MacOSXCheetah
+Mac OS X Puma	MacOSXPuma
+Mac OS X Jaguar	MacOSXJaguar
+Mac OS X Panther	MacOSXPanther
+Mac OS X Tiger	MacOSXTiger
+Mac OS X Leopard	MacOSXLeopard
+Mac OS X Snow Leopard	MacOSXSnowLeopard
+OS X Lion	OSXLion
+OS X Mountain Lion	OSXMountainLion
+OS X Mavericks	OSXMavericks
+OS X Yosemite	OSXYosemite
+OS X El Capitan	OSXElCapitan
+macOS Sierra	macOSSierra
+macOS High Sierra	macOSHighSierra
+macOS Mojave	macOSMojave
+macOS Catalina	macOSCatalina
+macOS Big Sur	macOSBigSur
+macOS Monterey	macOSMonterey
+macOS Ventura	macOSVentura
+macOS Sonoma	macOSSonoma
 Windows 95	Windows95
 Windows 98	Windows98
 Windows Me	WindowsMe
@@ -246,6 +238,11 @@ Windows 7	Windows7
 Windows 8	Windows8
 Windows 10	Windows10
 Windows 11	Windows11
+cheetah	cheetah
+mavericks	mavericks
+High Sierra	HighSierra
+Mojave	Mojave
+Big Sur	BigSur
 TypeORM	TypeORM
 Griffiths	Griffiths
 Chapman	Chapman
@@ -2225,3 +2222,7 @@ x86-64	x86-64
 x64	x64
 amd64	amd64
 arm64	arm64
+keysym	keysym
+keysyms	keysyms
+PotPlayer	PotPlayer
+Code::Blocks	Code::Blocks

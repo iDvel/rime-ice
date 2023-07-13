@@ -5,7 +5,7 @@
 # https://github.com/iDvel/rime-ice
 # ------- 中英混输词库 for 全拼 -------
 # 由 others/cn_en.txt 自动生成
-# 编码前的 ⓘ 符号是为了防止英文方案拼写派生时派生出全大写字母
+# 编码前的 ⓘ 符号是为了防止英文方案拼写派生时派生出全大写字母（在 melt_eng.schema.yaml 中实现）
 # 示例：输入 txu 得到 T恤；输入 Txu 得到 T恤； 输入 TXU 则只会得到 TXU
 ---
 name: cn_en
