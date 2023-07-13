@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-06-29"
+version: "2023-07-13"
 sort: by_weight
 ...
 # +_+
@@ -12155,8 +12155,8 @@ monstrous	monstrous
 montana	montana
 monte	monte
 Montenegro	Montenegro
-monterey	monterey
-montgomery	montgomery
+Monterey	Monterey
+Montgomery	Montgomery
 month	month
 monthly	monthly
 months	months

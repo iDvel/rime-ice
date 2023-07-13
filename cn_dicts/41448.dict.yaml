@@ -16,7 +16,7 @@
 #          这样小字表里存在的字按权重靠前排列，大字表殿后，生僻字自动就排在末尾。
 ---
 name: 41448
-version: "2023-05-19"
+version: "2023-07-13"
 sort: by_weight
 ...
 # 㕶	n
@@ -39243,6 +39243,7 @@ sort: by_weight
 嫃	zhen
 寊	zhen
 屒	zhen
+帧	zhen
 帪	zhen
 弫	zhen
 抮	zhen
@@ -39413,7 +39414,6 @@ sort: by_weight
 峥	zheng
 崝	zheng
 崢	zheng
-帧	zheng
 幀	zheng
 征	zheng
 徰	zheng
