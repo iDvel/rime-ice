@@ -68,13 +68,15 @@
 
 ## 使用说明
 
+⚠️ 单独使用词库注意事项：`rime_ice.dict.yaml` 下面包含了大写字母，这和配置有些许绑定，可以直接删除，详细说明：[#356](https://github.com/iDvel/rime-ice/issues/356)
+
 建议备份原先配置，清空配置目录。
 
-⚠️ 单独使用词库注意事项，`rime_ice.dict.yaml` 下面包含了大写字母，这和配置有些许绑定，可以直接删除，详细说明：[#356](https://github.com/iDvel/rime-ice/issues/356)
+配置目录为小狼毫的 `%APPDATA%\Rime`，鼠须管的 `~/Library/Rime`，可通过右键菜单栏图标打开。
 
 ### 手动安装
 
-将仓库所有文件复制粘贴进去就好了。
+将仓库所有文件复制粘贴到配置目录，重新部署。
 
 更新词库，手动覆盖 `cn_dicts` `en_dcits` `opencc` 三个文件夹。
 
