@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-07-13"
+version: "2023-07-16"
 sort: by_weight
 ...
 # 一些杂项
@@ -2226,3 +2226,4 @@ keysym	keysym
 keysyms	keysyms
 PotPlayer	PotPlayer
 Code::Blocks	Code::Blocks
+passkey	passkey

@@ -54,6 +54,7 @@ func main() {
 SORT:
 	// 排序，顺便去重
 	rime.Sort(rime.HanziPath, 3)
+	rime.Sort("/Users/dvel/Library/Rime/cn_dicts/41448.dict.yaml", 2)
 	rime.Sort(rime.BasePath, 3)
 	rime.Sort(rime.ExtPath, 3)
 	rime.Sort(rime.TencentPath, 4)

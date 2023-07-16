@@ -34,7 +34,7 @@
 # 「地 de di」，这种不好用固定词组区分的，全部注音。
 ---
 name: 8105
-version: "2023-07-13"
+version: "2023-07-16"
 sort: by_weight
 ...
 ### 按需启用
@@ -489,7 +489,6 @@ sort: by_weight
 兵	bing	1226804
 冰	bing	534562
 病	bing	505956
-屏	bing	89750
 柄	bing	76845
 饼	bing	40371
 禀	bing	34572
@@ -498,6 +497,7 @@ sort: by_weight
 炳	bing	9133
 槟	bing	4489
 摒	bing	4066
+屏	bing	1000
 邴	bing	522
 昺	bing	146
 栟	bing	2
@@ -773,8 +773,8 @@ sort: by_weight
 辰	chen	112021
 衬	chen	50272
 嗔	chen	31168
-称	chen	26527
 琛	chen	15726
+称	chen	7000
 宸	chen	6716
 忱	chen	5425
 抻	chen	2394
@@ -3185,8 +3185,8 @@ sort: by_weight
 眷	juan	22751
 绢	juan	16444
 鹃	juan	14136
-圈	juan	13935
 涓	juan	6331
+圈	juan	6000
 隽	juan	5109
 镌	juan	2064
 蠲	juan	408
@@ -7929,7 +7929,7 @@ sort: by_weight
 寁	zan	0
 脏	zang	124291
 葬	zang	56577
-藏	zang	20379
+藏	zang	10000
 赃	zang	9126
 臧	zang	6025
 奘	zang	2967
