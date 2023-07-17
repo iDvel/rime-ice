@@ -16,7 +16,7 @@
 #          这样小字表里存在的字按权重靠前排列，大字表殿后，生僻字自动就排在末尾。
 ---
 name: 41448
-version: "2023-05-19"
+version: "2023-07-16"
 sort: by_weight
 ...
 # 㕶	n
@@ -26,7 +26,6 @@ sort: by_weight
 # 呣	m
 # 扩充
 咁	gan
-轧	ga
 # +_+
 啊	a
 嗄	a
@@ -8349,6 +8348,7 @@ sort: by_weight
 尬	ga
 旮	ga
 玍	ga
+轧	ga
 錷	ga
 钆	ga
 魀	ga
@@ -27301,6 +27301,7 @@ sort: by_weight
 授	shou
 收	shou
 涭	shou
+熟	shou
 狩	shou
 獣	shou
 獸	shou
@@ -39243,6 +39244,7 @@ sort: by_weight
 嫃	zhen
 寊	zhen
 屒	zhen
+帧	zhen
 帪	zhen
 弫	zhen
 抮	zhen
@@ -39413,7 +39415,6 @@ sort: by_weight
 峥	zheng
 崝	zheng
 崢	zheng
-帧	zheng
 幀	zheng
 征	zheng
 徰	zheng
@@ -40709,6 +40710,7 @@ sort: by_weight
 凖	zhun
 埻	zhun
 宒	zhun
+屯	zhun
 準	zhun
 稕	zhun
 窀	zhun
