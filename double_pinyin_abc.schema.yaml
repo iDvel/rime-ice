@@ -116,11 +116,11 @@ grammar:
 
 # 主翻译器，拼音
 translator:
-  dictionary: rime_ice          # 挂载词库 rime_ice.dict.yaml
-  prism: double_pinyin_abc      # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
-  contextual_suggestions: true  # 开启八股文
-  initial_quality: 1.2          # 拼音的权重应该比英文大
-  preedit_format:               # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
+  dictionary: rime_ice           # 挂载词库 rime_ice.dict.yaml
+  prism: double_pinyin_abc       # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
+  contextual_suggestions: false  # 是否开启八股文
+  initial_quality: 1.2           # 拼音的权重应该比英文大
+  preedit_format:                # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
     - xform/o(\w)/0$1/
     - xform/(\w)q/$1ei/
     - xform/(\w)n/$1un/
