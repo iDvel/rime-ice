@@ -43,6 +43,7 @@ switches:
 engine:
   processors:
     - lua_processor@select_character      # 以词定字
+    - lua_processor@command               # Tab补全命令
     - ascii_composer
     - recognizer
     - key_binder
@@ -59,6 +60,7 @@ engine:
     - fallback_segmentor
   translators:
     - punct_translator
+    - lua_translator@commandhint          # 响应指令并打印结果
     - script_translator
     - lua_translator@date_translator      # 时间、日期、星期
     - table_translator@custom_phrase      # 自定义短语 custom_phrase.txt
@@ -193,7 +195,8 @@ key_binder:
 # 拼写设定
 speller:
   # 如果不想让什么标点直接上屏，可以加在 alphabet，或者编辑标点符号为两个及以上的映射
-  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA/
+  initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA/
   delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
     ### 模糊音
