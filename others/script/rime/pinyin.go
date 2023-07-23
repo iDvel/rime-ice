@@ -195,7 +195,7 @@ var onlyOne = map[string]string{
 	"臭":     "chou",
 	"禅":     "chan",
 	"埋":     "mai",
-	"仇":     "qiu",
+	"仇":     "chou",
 	"和":     "he",
 	"折":     "zhe",
 	"单":     "dan",
