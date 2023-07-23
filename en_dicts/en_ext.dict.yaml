@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-07-16"
+version: "2023-07-23"
 sort: by_weight
 ...
 # 一些杂项
@@ -863,7 +863,6 @@ Textastic	Textastic
 TextExpander	TextExpander
 TextWrangler	TextWrangler
 The Unarchiver	TheUnarchiver
-Thunderbird	Thunderbird
 Time Capsule	TimeCapsule
 TinkerTool	TinkerTool
 Touch ID	TouchID
@@ -1366,7 +1365,7 @@ Hypertext Preprocessor	HypertextPreprocessor
 cannot	cannot
 duang	duang
 placeholder	placeholder
-Pythonic	Pythonic
+pythonic	pythonic
 redefine	redefine
 QSpace	QSpace
 Path Finder	PathFinder
@@ -1547,6 +1546,7 @@ IdeaVim	IdeaVim
 unfo	unfo
 timestamp	timestamp
 ChatGPT	ChatGPT
+ChatGPT Plus	ChatGPTPlus
 OpenAI	OpenAI
 OpenAI Codex	OpenAICodex
 OpenAI ChatGPT	OpenAIChatGPT
@@ -1627,7 +1627,6 @@ C++	Cpp
 C++	C++
 Python	Python
 Perl	Perl
-Swift	Swift
 MIT	MIT
 Massachusetts Institute of Technology	MIT
 Massachusetts Institute of Technology	MassachusettsInstituteofTechnology
@@ -1897,6 +1896,7 @@ GPT-4	GPT-4
 Bard	Bard
 bard	bard
 LaMDA	LaMDA
+Language Model for Dialogue Applications	LaMDA
 tokens	tokens
 roadmap	roadmap
 Coinbase Wallet	CoinbaseWallet
@@ -2040,7 +2040,6 @@ Fyne	Fyne
 Claude	Claude
 Claude+	Claude+
 Anthropic	Anthropic
-Poe	Poe
 overdue	overdue
 Cinderella	Cinderella
 WebGPU	WebGPU
@@ -2227,3 +2226,11 @@ keysyms	keysyms
 PotPlayer	PotPlayer
 Code::Blocks	Code::Blocks
 passkey	passkey
+Protocol Buffers	ProtocolBuffers
+protobuf	protobuf
+interstellar	interstellar
+weirdo	weirdo
+beyatch	beyatch
+perplexity	perplexity
+masturbate	masturbate
+thorium	thorium
