@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-07-23"
+version: "2023-07-28"
 sort: by_weight
 ...
 # +_+
@@ -17162,7 +17162,7 @@ sixty	sixty
 # siyabona	siyabona
 size	size
 sized	sized
-sizeof	sizeof
+# sizeof	sizeof
 sizes	sizes
 sizing	sizing
 # sj	sj
