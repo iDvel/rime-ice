@@ -4,6 +4,12 @@
 
 
 
+## 2023-07-28 📖
+
+删除了八股文，因为 [#407](https://github.com/iDvel/rime-ice/issues/407)
+
+全词库完成注音 🎉 [#317](https://github.com/iDvel/rime-ice/issues/317)
+
 ## 2023-06-13 ⚠️
 
 中英混输词库不再派生纯大写形式 [6f51bdd](https://github.com/iDvel/rime-ice/commit/6f51bddd1467494c759181a237341f89a1ed3dd1)

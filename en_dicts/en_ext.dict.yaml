@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-07-23"
+version: "2023-07-28"
 sort: by_weight
 ...
 # 一些杂项
@@ -2234,3 +2234,9 @@ beyatch	beyatch
 perplexity	perplexity
 masturbate	masturbate
 thorium	thorium
+iBus	iBus
+BT	BT
+corrector	corrector
+hashtag	hashtag
+ProtonMail	ProtonMail
+Elasticsearch	Elasticsearch
