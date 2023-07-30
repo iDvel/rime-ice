@@ -1134,7 +1134,7 @@ rime	rime 㞢
 连字符	连字符 －
 破折号	破折号 ——
 反引号	反引号 `
-Apple	Apple 
+apple	apple 
 反问号	反问号 ¿
 约等于	约等于 ≈
 约等	约等 ≈

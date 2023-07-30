@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-07-28"
+version: "2023-07-30"
 sort: by_weight
 ...
 # +_+
@@ -3325,7 +3325,7 @@ Christopher	Christopher
 Christy	Christy
 chromatography	chromatography
 chrome	chrome
-Chromium	Chromium
+chromium	chromium
 chromosome	chromosome
 chronic	chronic
 chronicle	chronicle
@@ -9936,7 +9936,7 @@ istanbul	istanbul
 # isuzu	isuzu
 it	it
 # ita	ita
-italia	italia
+Italia	Italia
 Italian	Italian
 Italiano	Italiano
 italic	italic
