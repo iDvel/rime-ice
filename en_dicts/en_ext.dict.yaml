@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-07-30"
+version: "2023-07-31"
 sort: by_weight
 ...
 # 一些杂项
@@ -2239,3 +2239,4 @@ Elasticsearch	Elasticsearch
 Next.js	Next.js
 mantis	mantis
 strongbox	strongbox
+tabby	tabby
