@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-07-13"
+version: "2023-07-30"
 sort: by_weight
 ...
 # +_+
@@ -3325,7 +3325,7 @@ Christopher	Christopher
 Christy	Christy
 chromatography	chromatography
 chrome	chrome
-Chromium	Chromium
+chromium	chromium
 chromosome	chromosome
 chronic	chronic
 chronicle	chronicle
@@ -6501,7 +6501,7 @@ errors	errors
 erupt	erupt
 # es	es
 # esa	esa
-ESC	ESC
+Esc	Esc
 escalate	escalate
 escape	escape
 escaped	escaped
@@ -7790,8 +7790,8 @@ galactic	galactic
 galaxies	galaxies
 galaxy	galaxy
 gale	gale
-galerie	galerie
-galileo	galileo
+# galerie	galerie
+Galileo	Galileo
 Gallagher	Gallagher
 galleries	galleries
 gallery	gallery
@@ -9936,7 +9936,7 @@ istanbul	istanbul
 # isuzu	isuzu
 it	it
 # ita	ita
-italia	italia
+Italia	Italia
 Italian	Italian
 Italiano	Italiano
 italic	italic
@@ -14170,13 +14170,13 @@ pneumonia	pneumonia
 PNG	PNG
 # po	po
 pocket	pocket
-# PocketPC	PocketPC
+Pocket PC	PocketPC
 pockets	pockets
 pod	pod
 podcast	podcast
 podcasting	podcasting
 podcasts	podcasts
-# poe	poe
+poe	poe
 poem	poem
 poems	poems
 poet	poet
@@ -17162,7 +17162,7 @@ sixty	sixty
 # siyabona	siyabona
 size	size
 sized	sized
-sizeof	sizeof
+# sizeof	sizeof
 sizes	sizes
 sizing	sizing
 # sj	sj

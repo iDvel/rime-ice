@@ -29,4 +29,3 @@ install_files: >-
   melt_eng.schema.yaml
   melt_eng.dict.yaml
   custom_phrase.txt
-  zh-hans-t-essay-bgw.gram

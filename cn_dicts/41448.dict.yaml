@@ -16,7 +16,7 @@
 #          这样小字表里存在的字按权重靠前排列，大字表殿后，生僻字自动就排在末尾。
 ---
 name: 41448
-version: "2023-07-16"
+version: "2023-07-24"
 sort: by_weight
 ...
 # 㕶	n
@@ -14805,6 +14805,7 @@ sort: by_weight
 慻	juan
 捐	juan
 捲	juan
+朘	juan
 桊	juan
 涓	juan
 淃	juan
@@ -32744,6 +32745,7 @@ sort: by_weight
 侾	xiao
 俲	xiao
 傚	xiao
+削	xiao
 効	xiao
 呺	xiao
 咲	xiao
@@ -33092,6 +33094,7 @@ sort: by_weight
 蟹	xie
 蠍	xie
 蠏	xie
+血	xie
 衺	xie
 褉	xie
 褻	xie
@@ -35304,6 +35307,7 @@ sort: by_weight
 冶	ye
 叶	ye
 吔	ye
+咽	ye
 啘	ye
 嘢	ye
 噎	ye
@@ -40548,6 +40552,7 @@ sort: by_weight
 専	zhuan
 專	zhuan
 撰	zhuan
+沌	zhuan
 灷	zhuan
 瑑	zhuan
 瑼	zhuan

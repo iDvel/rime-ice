@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-07-16"
+version: "2023-07-30"
 sort: by_weight
 ...
 # 一些杂项
@@ -559,7 +559,7 @@ MacBook Pro	MBP
 MBA	MBA
 MacBook Air	MBA
 MariaDB	MariaDB
-Markdown	Markdown
+markdown	markdown
 Microsoft Access	Access
 MongoDB	MongoDB
 MySQL	MySQL
@@ -621,7 +621,6 @@ GCC	GCC
 GNU Compiler Collection	GCC
 GNU Compiler Collection	GNUCompilerCollection
 uBlacklist	uBlacklist
-Apple	Apple
 Apple Watch	AppleWatch
 AppleCare	AppleCare
 AppleCare+	AppleCare+
@@ -863,7 +862,6 @@ Textastic	Textastic
 TextExpander	TextExpander
 TextWrangler	TextWrangler
 The Unarchiver	TheUnarchiver
-Thunderbird	Thunderbird
 Time Capsule	TimeCapsule
 TinkerTool	TinkerTool
 Touch ID	TouchID
@@ -1102,7 +1100,6 @@ WordPress	WordPress
 AOSP	AOSP
 Android Open Source Project	AOSP
 Android Open Source Project	AndroidOpenSourceProject
-React	React
 TypeScript	TypeScript
 Unity	Unity
 MIUI	MIUI
@@ -1366,7 +1363,7 @@ Hypertext Preprocessor	HypertextPreprocessor
 cannot	cannot
 duang	duang
 placeholder	placeholder
-Pythonic	Pythonic
+pythonic	pythonic
 redefine	redefine
 QSpace	QSpace
 Path Finder	PathFinder
@@ -1547,6 +1544,7 @@ IdeaVim	IdeaVim
 unfo	unfo
 timestamp	timestamp
 ChatGPT	ChatGPT
+ChatGPT Plus	ChatGPTPlus
 OpenAI	OpenAI
 OpenAI Codex	OpenAICodex
 OpenAI ChatGPT	OpenAIChatGPT
@@ -1627,7 +1625,6 @@ C++	Cpp
 C++	C++
 Python	Python
 Perl	Perl
-Swift	Swift
 MIT	MIT
 Massachusetts Institute of Technology	MIT
 Massachusetts Institute of Technology	MassachusettsInstituteofTechnology
@@ -1642,7 +1639,7 @@ Steam	Steam
 Steam Deck	SteamDeck
 Android	Android
 android	android
-Arch	Arch
+arch	arch
 iOS	iOS
 Linux	Linux
 Ubuntu	Ubuntu
@@ -1657,8 +1654,6 @@ Wii U	WiiU
 Wii	Wii
 Oracle	Oracle
 OriginOS	OriginOS
-Chrome	Chrome
-Chromium	Chromium
 iPhone	iPhone
 iPad	iPad
 iPod	iPod
@@ -1812,7 +1807,7 @@ barbecue	BBQ
 BBS	BBS
 Bulletin Board System	BBS
 Bulletin Board System	BulletinBoardSystem
-Chrono	Chrono
+chrono	chrono
 Widevine	Widevine
 Google Ads	GoogleAds
 Valhalla	Valhalla
@@ -1897,6 +1892,7 @@ GPT-4	GPT-4
 Bard	Bard
 bard	bard
 LaMDA	LaMDA
+Language Model for Dialogue Applications	LaMDA
 tokens	tokens
 roadmap	roadmap
 Coinbase Wallet	CoinbaseWallet
@@ -2040,7 +2036,6 @@ Fyne	Fyne
 Claude	Claude
 Claude+	Claude+
 Anthropic	Anthropic
-Poe	Poe
 overdue	overdue
 Cinderella	Cinderella
 WebGPU	WebGPU
@@ -2227,3 +2222,20 @@ keysyms	keysyms
 PotPlayer	PotPlayer
 Code::Blocks	Code::Blocks
 passkey	passkey
+Protocol Buffers	ProtocolBuffers
+protobuf	protobuf
+interstellar	interstellar
+weirdo	weirdo
+beyatch	beyatch
+perplexity	perplexity
+masturbate	masturbate
+thorium	thorium
+iBus	iBus
+BT	BT
+corrector	corrector
+hashtag	hashtag
+ProtonMail	ProtonMail
+Elasticsearch	Elasticsearch
+Next.js	Next.js
+mantis	mantis
+strongbox	strongbox

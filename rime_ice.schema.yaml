@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "2023-06-13"
+  version: "2023-07-28"
   author:
     - Dvel
   description: |
@@ -97,25 +97,19 @@ reduce_english_filter:
   lux, moc, mos, mot, mum, nad, nay, nib, nip, pak, pap, pax, rig, rum, sac, sal,
   sax, sec, shin, sis, ska, slang, sus, tad, taj, tac, tic, yep, yum, fax, cain,
   key, mob, buy, dam, wap, yes, but, put, lag, buf, lip, aid, aim, dig, dim, din,
-  dip, pail, cad, chap, bend, lid, gem, tin]
-
-
-# 引入八股文
-grammar:
-  language: zh-hans-t-essay-bgw
+  dip, pail, cad, chap, bend, lid, gem, tin, tum]
 
 
 # 主翻译器，拼音
 translator:
-  dictionary: rime_ice          # 挂载词库 rime_ice.dict.yaml
-  contextual_suggestions: true  # 开启八股文
-  initial_quality: 1.2          # 拼音的权重应该比英文大
-  preedit_format:               # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
-    - xform/([jqxy])v/$1u/      # 显示为 ju qu xu yu
-    # - xform/([nl])v/$1ü/      # 显示为 nü lü
-    # - xform/([nl])ue/$1üe/    # 显示为 nüe lüe
-    - xform/([nl])v/$1v/        # 显示为 nv lv
-    - xform/([nl])ue/$1ve/      # 显示为 nve lve
+  dictionary: rime_ice           # 挂载词库 rime_ice.dict.yaml
+  initial_quality: 1.2           # 拼音的权重应该比英文大
+  preedit_format:                # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
+    - xform/([jqxy])v/$1u/       # 显示为 ju qu xu yu
+    # - xform/([nl])v/$1ü/       # 显示为 nü lü
+    # - xform/([nl])ue/$1üe/     # 显示为 nüe lüe
+    - xform/([nl])v/$1v/         # 显示为 nv lv
+    - xform/([nl])ue/$1ve/       # 显示为 nve lve
 
 
 # 次翻译器，英文
