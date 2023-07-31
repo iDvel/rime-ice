@@ -152,7 +152,7 @@ translator:
 
 # 次翻译器，英文
 melt_eng:
-  dictionary: my_eng     # 挂载词库 melt_eng.dict.yaml
+  dictionary: melt_eng     # 挂载词库 melt_eng.dict.yaml
   enable_sentence: false   # 禁止造句
   enable_user_dict: false  # 禁用用户词典
   initial_quality: 1.1     # 初始权重
