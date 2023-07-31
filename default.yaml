@@ -17,6 +17,7 @@ schema_list:
   - schema: double_pinyin_mspy
   - schema: double_pinyin_flypy
   - schema: double_pinyin_ziguang
+  - schema: double_pinyin_sogou
 
 
 # 菜单
