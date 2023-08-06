@@ -77,6 +77,7 @@ engine:
     - lua_translator@unicode              # Unicode
     - lua_translator@number_translator    # 数字、金额大写
   filters:
+    - lua_filter@corrector                # 错音错字提示
     - simplifier@emoji                    # Emoji
     - simplifier@traditionalize           # 简繁切换
     - lua_filter@autocap_filter           # 英文自动大写
@@ -114,6 +115,8 @@ reduce_english_filter:
 translator:
   dictionary: rime_ice           # 挂载词库 rime_ice.dict.yaml
   prism: double_pinyin_flypy     # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
+  spelling_hints: 8              # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
+  always_show_comments: true     # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。
   initial_quality: 1.2           # 拼音的权重应该比英文大
   preedit_format:                # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
     - xform/([bpmfdtnljqx])n/$1iao/

@@ -8,12 +8,11 @@
 #
 ---
 name: others
-version: "2023-06-13"
+version: "2023-08-06"
 sort: by_weight
 ...
 ##### 容错词
-# 「血xue、xie」「谁shui、shei」「露lu、lou」「熟shu、shou」「密钥yao、yue」已在 base 中实现
-# ---
+# 与 corrector.lua 配合，上面的是正确的，下面是错误的
 # 「馄饨」，正确是 tun，北方口语是 dun
 馄饨	hun tun
 馄饨	hun dun
@@ -29,31 +28,13 @@ sort: by_weight
 比萨饼	pi sa bing
 吃比萨	chi bi sa
 吃比萨	chi pi sa
-超级至尊比萨	chao ji zhi zun bi sa
-超级至尊比萨	chao ji zhi zun pi sa
-至尊比萨	zhi zun bi sa
-至尊比萨	zhi zun pi sa
-大西洋珍鲑比萨	da xi yang zhen gui bi sa
-大西洋珍鲑比萨	da xi yang zhen gui pi sa
-海鲜比萨	hai xian bi sa
-海鲜比萨	hai xian pi sa
-蔬菜比萨	shu cai bi sa
-蔬菜比萨	shu cai pi sa
-做比萨	zuo bi sa
-做比萨	zuo pi sa
-可口的比萨	ke kou de bi sa
-可口的比萨	ke kou de pi sa
-烤比萨	kao bi sa
-烤比萨	kao pi sa
-美味的比萨	mei wei de bi sa
-美味的比萨	mei wei de pi sa
 # 「扑街」，正确是 jie，口语是 gai
 扑街	pu jie
 扑街	pu gai
-街溜子	jie liu zi
-街溜子	gai liu zi
 扑街仔	pu jie zai
 扑街仔	pu gai zai
+街溜子	jie liu zi
+街溜子	gai liu zi
 # 「说服」，正确是 shuo，但「游说」「说客」仍然保留着 shui 的读音
 说服	shuo fu
 说服	shui fu
@@ -80,6 +61,8 @@ sort: by_weight
 一模一样	yi mo yi yang
 装模作样	zhuang mu zuo yang
 装模作样	zhuang mo zuo yang
+人模狗样	ren mu gou yang
+人模狗样	ren mo gou yang
 # 「阿房宫」的注音争议比较大
 阿房宫	e pang gong
 阿房宫	a pang gong
@@ -99,6 +82,32 @@ sort: by_weight
 南无阿弥陀佛	na mo a mi tuo fo
 南无阿弥陀佛	nan wu e mi tuo fo
 南无阿弥陀佛	nan wu a mi tuo fo
+# 其他
+给予	ji yu
+给予	gei yu
+槟榔	bing lang
+槟榔	bin lang
+张柏芝	zhang bo zhi
+张柏芝	zhang bai zhi
+藤蔓	teng wan
+藤蔓	teng man
+弄堂	long tang
+弄堂	nong tang
+心宽体胖	xin kuan ti pan
+心宽体胖	xin kuan ti pang
+埋怨	man yuan
+埋怨	mai yuan
+虚与委蛇	xu yu wei yi
+虚与委蛇	xu yu wei she
+木讷	mu ne
+木讷	mu na
+# 错字
+曾经	ceng jing
+曾今	ceng jin
+按捺	an na
+按耐	an nai
+按捺不住	an na bu zhu
+按耐不住	an nai bu zhu
 
 
 ##### 叠字
