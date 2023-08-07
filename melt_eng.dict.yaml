@@ -16,6 +16,7 @@ import_tables:
   # - en_dicts/cn_en_double_pinyin          # 自然码双拼 
   # - en_dicts/cn_en_double_pinyin_flypy    # 小鹤双拼
   # - en_dicts/cn_en_double_pinyin_mspy     # 微软双拼
+  # - en_dicts/cn_en_double_pinyin_sogou    # 搜狗双拼
   # - en_dicts/cn_en_double_pinyin_ziguang  # 紫光双拼
   # - en_dicts/cn_en_double_pinyin_abc      # 智能 ABC 双拼
 ...
