@@ -262,7 +262,7 @@ speller:
     - xform/(.)ei$/$1Ⓩ/
     - xform/ie$/Ⓧ/
     - xform/ui$/Ⓥ/
-    - derive/T$/Ⓥ/
+    - derive/Ⓣ$/Ⓥ/
     - xform/(.)ou$/$1Ⓑ/
     - xform/in$/Ⓝ/
     - xform/ing$/;/
