@@ -11,7 +11,7 @@ local M = {}
 
 function M.init(env)
     local config = env.engine.schema.config
-    M.name_space = env.name_space:gsub('^*', '')
+    env.name_space = env.name_space:gsub('^*', '')
     M.date = config:get_string(env.name_space .. '/date') or 'rq'
     M.time = config:get_string(env.name_space .. '/time') or 'sj'
     M.week = config:get_string(env.name_space .. '/week') or 'xq'
