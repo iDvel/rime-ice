@@ -65,8 +65,8 @@ local function corrector(input)
 		local c = corrections[cand.comment]
 		if c and cand.text == c.text then
 			cand:get_genuine().comment = c.comment
-		elseif cand.type == "reverse_lookup" then
-			-- 不处理反查的 comment
+		elseif cand.type == "reverse_lookup" or cand.type == "unicode" then
+			-- 不处理反查和 Unicode 的 comment
 		else
 			cand:get_genuine().comment = ""
 		end
