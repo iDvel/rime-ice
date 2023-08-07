@@ -239,32 +239,32 @@ speller:
     - derive/^([jqxy])u$/$1v/
     - derive/^([aoe].*)$/o$1/
     - xform/^([ae])(.*)$/$1$1$2/
-    - xform/iu$/ǫ/
-    - xform/[iu]a$/ᴡ/
-    - xform/er$|[uv]an$/ʀ/
-    - xform/[uv]e$/ᴛ/
-    - xform/v$|uai$/ʏ/
-    - xform/^sh/ᴜ/
-    - xform/^ch/ɪ/
-    - xform/^zh/ᴠ/
-    - xform/uo$/ᴏ/
-    - xform/[uv]n$/ᴘ/
-    - xform/i?ong$/s/
-    - xform/[iu]ang$/ᴅ/
-    - xform/(.)en$/$1ғ/
-    - xform/(.)eng$/$1ɢ/
-    - xform/(.)ang$/$1ʜ/
-    - xform/ian$/ᴍ/
-    - xform/(.)an$/$1ᴊ/
-    - xform/iao$/ᴄ/
-    - xform/(.)ao$/$1ᴋ/
-    - xform/(.)ai$/$1ʟ/
-    - xform/(.)ei$/$1ᴢ/
-    - xform/ie$/x/
-    - xform/ui$/ᴠ/
-    - derive/T$/ᴠ/
-    - xform/(.)ou$/$1ʙ/
-    - xform/in$/ɴ/
+    - xform/iu$/Ⓠ/
+    - xform/[iu]a$/Ⓦ/
+    - xform/er$|[uv]an$/Ⓡ/
+    - xform/[uv]e$/Ⓣ/
+    - xform/v$|uai$/Ⓨ/
+    - xform/^sh/Ⓤ/
+    - xform/^ch/Ⓘ/
+    - xform/^zh/Ⓥ/
+    - xform/uo$/Ⓞ/
+    - xform/[uv]n$/Ⓟ/
+    - xform/i?ong$/Ⓢ/
+    - xform/[iu]ang$/Ⓓ/
+    - xform/(.)en$/$1Ⓕ/
+    - xform/(.)eng$/$1Ⓖ/
+    - xform/(.)ang$/$1Ⓗ/
+    - xform/ian$/Ⓜ/
+    - xform/(.)an$/$1Ⓙ/
+    - xform/iao$/Ⓒ/
+    - xform/(.)ao$/$1Ⓚ/
+    - xform/(.)ai$/$1Ⓛ/
+    - xform/(.)ei$/$1Ⓩ/
+    - xform/ie$/Ⓧ/
+    - xform/ui$/Ⓥ/
+    - derive/T$/Ⓥ/
+    - xform/(.)ou$/$1Ⓑ/
+    - xform/in$/Ⓝ/
     - xform/ing$/;/
-    - xlit/ǫᴡʀᴛʏᴜɪᴏᴘsᴅғɢʜᴍᴊᴄᴋʟᴢxᴠʙɴ/qwrtyuiopsdfghmjcklzxvbn/
+    - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⓂⒿⒸⓀⓁⓏⓍⓋⒷⓃ/qwrtyuiopsdfghmjcklzxvbn/
     - abbrev/^(.).+$/$1/  # 首字母简拼

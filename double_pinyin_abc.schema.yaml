@@ -234,30 +234,30 @@ speller:
   delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
     - erase/^xx$/
-    - xform/^zh/ᴀ/
-    - xform/^ch/ᴇ/
-    - xform/^sh/ᴠ/
-    - xform/^([aoe].*)$/ᴏ$1/
-    - xform/ei$/ǫ/
-    - xform/ian$/ᴡ/
-    - xform/er$|iu$/ʀ/
-    - xform/[iu]ang$/ᴛ/
-    - xform/ing$/ʏ/
-    - xform/uo$/ᴏ/
-    - xform/uan$/ᴘ/
-    - xform/i?ong$/s/
-    - xform/[iu]a$/ᴅ/
-    - xform/en$/ғ/
-    - xform/eng$/ɢ/
-    - xform/ang$/ʜ/
-    - xform/an$/ᴊ/
-    - xform/iao$/ᴢ/
-    - xform/ao$/ᴋ/
-    - xform/in$|uai$/ᴄ/
-    - xform/ai$/ʟ/
-    - xform/ie$/x/
-    - xform/ou$/ʙ/
-    - xform/un$/ɴ/
-    - xform/[uv]e$|ui$/ᴍ/
-    - xlit/ǫᴡᴇʀᴛʏᴏᴘᴀsᴅғɢʜᴊᴋʟᴢxᴄᴠʙɴᴍ/qwertyopasdfghjklzxcvbnm/
+    - xform/^zh/Ⓐ/
+    - xform/^ch/Ⓔ/
+    - xform/^sh/Ⓥ/
+    - xform/^([aoe].*)$/Ⓞ$1/
+    - xform/ei$/Ⓠ/
+    - xform/ian$/Ⓦ/
+    - xform/er$|iu$/Ⓡ/
+    - xform/[iu]ang$/Ⓣ/
+    - xform/ing$/Ⓨ/
+    - xform/uo$/Ⓞ/
+    - xform/uan$/Ⓟ/
+    - xform/i?ong$/Ⓢ/
+    - xform/[iu]a$/Ⓓ/
+    - xform/en$/Ⓕ/
+    - xform/eng$/Ⓖ/
+    - xform/ang$/Ⓗ/
+    - xform/an$/Ⓙ/
+    - xform/iao$/Ⓩ/
+    - xform/ao$/Ⓚ/
+    - xform/in$|uai$/Ⓒ/
+    - xform/ai$/Ⓛ/
+    - xform/ie$/Ⓧ/
+    - xform/ou$/Ⓑ/
+    - xform/un$/Ⓝ/
+    - xform/[uv]e$|ui$/Ⓜ/
+    - xlit/ⓆⓌⒺⓇⓉⓎⓄⓅⒶⓈⒹⒻⒼⒽⒿⓀⓁⓏⓍⒸⓋⒷⓃⓂ/qwertyopasdfghjklzxcvbnm/
     - abbrev/^(.).+$/$1/  # 首字母简拼
