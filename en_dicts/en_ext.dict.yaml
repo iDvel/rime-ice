@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-07-31"
+version: "2023-08-07"
 sort: by_weight
 ...
 # 一些杂项
@@ -1889,7 +1889,6 @@ Wireless LAN	WLAN
 GPT	GPT
 Generative Pre-trained Transformer	GPT
 GPT-4	GPT-4
-Bard	Bard
 bard	bard
 LaMDA	LaMDA
 Language Model for Dialogue Applications	LaMDA
@@ -2240,3 +2239,4 @@ Next.js	Next.js
 mantis	mantis
 strongbox	strongbox
 tabby	tabby
+subtext	subtext
