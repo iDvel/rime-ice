@@ -4,9 +4,12 @@
 	示例：「按耐」的正确写法是「按捺」，当用户输入「按耐」时，在候选项的 comment 显示正确写法
 
 	为了让这个 Lua 同时适配全拼与双拼，使用 `spelling_hints` 生成的 comment（全拼拼音）作为通用的判断条件。
+
+	感谢大佬@[Shewer Lu](https://github.com/shewer)提供的思路。
+	
+	容错词在 cn_dicts/others.dict.yaml 中，有新增建议可以提个 issue
 --]]
 
--- 容错词在 cn_dicts/others.dict.yaml
 local corrections = {
 	-- 错音
 	["hun dun"] = { text = "馄饨", comment = "hun tun" },
@@ -43,6 +46,10 @@ local corrections = {
 	["mai yuan"] = { text = "埋怨", comment = "man yuan" },
 	["xu yu wei she"] = { text = "虚与委蛇", comment = "xu yu wei yi" },
 	["mu na"] = { text = "木讷", comment = "mu ne" },
+	["du le le"] = { text = "独乐乐", comment = "du yue le" },
+	["zhong le le"] = { text = "众乐乐", comment = "zhong yue le" },
+	["xun ma"] = { text = "荨麻", comment = "qian ma" },
+	["qian ma zhen"] = { text = "荨麻疹", comment = "xun ma zhen" },
 	-- 错字
 	["ceng jin"] = { text = "曾今", comment = "曾经" },
 	["an nai"] = { text = "按耐", comment = "按捺(na)" },

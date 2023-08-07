@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2023-08-06"
+version: "2023-08-07"
 sort: by_weight
 ...
 ##### 容错词
@@ -101,6 +101,14 @@ sort: by_weight
 虚与委蛇	xu yu wei she
 木讷	mu ne
 木讷	mu na
+独乐乐	du yue le
+独乐乐	du le le
+众乐乐	zhong yue le
+众乐乐	zhong le le
+荨麻	qian ma
+荨麻	xun ma
+荨麻疹	xun ma zhen
+荨麻疹	qian ma zhen
 # 错字
 曾经	ceng jing
 曾今	ceng jin
