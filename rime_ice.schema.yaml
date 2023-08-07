@@ -305,7 +305,7 @@ speller:
     - derive/([g|k|h|zh|sh])ua$/$1au/
     # uai
     - derive/([g|h|k|zh|ch|sh])uai$/$1aui/
-    - derive/([g|h|k|zh|ch|sh])uai$/$1uia/
+    # - derive/([g|h|k|zh|ch|sh])uai$/$1uia/ # 和「会啊、追啊」等常用词有冲突
     # uan
     - derive/([qrtysdghjklzxcn])uan$/$1aun/
     # - derive/([qrtysdghjklzxcn])uan$/$1una/ # 和「去哪、露娜」等常用词有冲突
