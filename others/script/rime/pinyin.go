@@ -235,6 +235,7 @@ var onlyOne = map[string]string{
 	"绰":   "chuo",
 	"葚":   "shen",
 	"嘞":   "lei",
+	"凹":   "ao",
 }
 
 func init() {
