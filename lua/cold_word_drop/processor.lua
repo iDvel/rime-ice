@@ -16,7 +16,7 @@ local tbls = {
 local function get_record_filername(record_type)
     local user_distribute_name = rime_api:get_distribution_name()
     if user_distribute_name == '小狼毫' then
-        return string.format("%%APPDATA%%\\Rime\\lua\\cold_word_record\\%s_words.lua", record_type)
+        return string.format("%s\\Rime\\lua\\cold_word_drop\\%s_words.lua", os.getenv("APPDATA"), record_type)
     end
 
     local system = io.popen("uname -s"):read("*l")
