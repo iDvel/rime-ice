@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-08-07"
+version: "2023-08-10"
 sort: by_weight
 ...
 # 一些杂项
@@ -677,7 +677,6 @@ Cortana	Cortana
 Curio	Curio
 Current Mac Bundles	CurrentMacBundles
 Daisy Disk	DaisyDisk
-Dash	Dash
 Datagraph	Datagraph
 Day One	DayOne
 Default Folder X	DefaultFolderX
@@ -1574,7 +1573,6 @@ offload	offload
 Hammerspoon	Hammerspoon
 CrossOver	CrossOver
 hallelujahIM	hallelujahIM
-Trojan	Trojan
 AVAST!	AVAST!
 Bitdefender	Bitdefender
 ClamAV	ClamAV
@@ -1639,6 +1637,7 @@ Steam	Steam
 Steam Deck	SteamDeck
 Android	Android
 android	android
+Chrome	Chrome
 arch	arch
 iOS	iOS
 Linux	Linux
@@ -2118,7 +2117,6 @@ Google DeepMind	GoogleDeepMind
 TL;DR	TL;DR
 too long; didn't read	TL;DR
 Ant-Man	Ant-Man
-Spider-Man	Spider-Man
 ungoogled	ungoogled
 ungoogled-chromium	ungoogled-chromium
 taxman	taxman
@@ -2240,3 +2238,5 @@ mantis	mantis
 strongbox	strongbox
 tabby	tabby
 subtext	subtext
+homophone	homophone
+homophones	homophones
