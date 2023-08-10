@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-07-30"
+version: "2023-08-10"
 sort: by_weight
 ...
 # +_+
@@ -17597,7 +17597,7 @@ spice	spice
 spices	spices
 spicy	spicy
 spider	spider
-spiderman	spiderman
+Spider-Man	Spider-Man
 spiders	spiders
 spies	spies
 spike	spike

@@ -50,6 +50,10 @@ local corrections = {
 	["zhong le le"] = { text = "众乐乐", comment = "zhong yue le" },
 	["xun ma"] = { text = "荨麻", comment = "qian ma" },
 	["qian ma zhen"] = { text = "荨麻疹", comment = "xun ma zhen" },
+	["mo ju"] = { text = "模具", comment = "mu ju" },
+	["cao zhi"] = { text = "草薙", comment = "cao ti" },
+	["cao zhi jing"] = { text = "草薙京", comment = "cao ti jing" },
+	["cao zhi jian"] = { text = "草薙剑", comment = "cao ti jian" },
 	-- 错字
 	["ceng jin"] = { text = "曾今", comment = "曾经" },
 	["an nai"] = { text = "按耐", comment = "按捺(na)" },
