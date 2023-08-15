@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-08-10"
+version: "2023-08-15"
 sort: by_weight
 ...
 # +_+
@@ -3249,7 +3249,7 @@ chevy	chevy
 chew	chew
 Cheyenne	Cheyenne
 # chf	chf
-# chi	chi
+chi	chi
 Chiang	Chiang
 chic	chic
 chicago	chicago
@@ -12828,7 +12828,7 @@ nozzle	nozzle
 # nt	nt
 # ntp	ntp
 # ntsc	ntsc
-# nu	nu
+nu	nu
 nuclear	nuclear
 nuclei	nuclei
 nucleic	nucleic
@@ -13948,7 +13948,7 @@ physiol	physiol
 physiological	physiological
 physiology	physiology
 physiopathology	physiopathology
-# pi	pi
+pi	pi
 pianist	pianist
 piano	piano
 piazza	piazza
@@ -14837,7 +14837,7 @@ psalm	psalm
 psalms	psalms
 # psc	psc
 pseudo	pseudo
-# psi	psi
+psi	psi
 PSP	PSP
 # pst	pst
 # psu	psu
@@ -19667,7 +19667,7 @@ unfortunately	unfortunately
 unhappy	unhappy
 # uni	uni
 UNICEF	UNICEF
-unicode	unicode
+Unicode	Unicode
 unidentified	unidentified
 unified	unified
 uniform	uniform
@@ -20868,7 +20868,7 @@ Xeon	Xeon
 xerox	xerox
 # xf	xf
 XHTML	XHTML
-# xi	xi
+xi	xi
 # xii	xii
 # xiii	xiii
 # xiv	xiv

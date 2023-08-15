@@ -1100,6 +1100,60 @@ V面包	V面包 🍞 🥐 🥖 🥨 🥯 🍩 🥮
 V黄种人	V黄种人 🧓🏻 🧑🏻 🧒🏻 👶🏻
 V黑人	V黑人 🧓🏿 🧑🏿 🧒🏿 👶🏿
 V点心	V点心 🍮 🍩 🍪 🍧 🍨 🍦 🍰 🧁 🧇 🧆
+----------希腊字母	----------
+阿尔法	阿尔法 alpha α Α
+贝塔	贝塔 beta β Β
+伽马	伽马 gamma γ Γ
+德尔塔	德尔塔 delta δ Δ
+艾普西隆	艾普西隆 epsilon ε Ε
+泽塔	泽塔 zeta ζ Ζ
+伊塔	伊塔 eta η Η
+西塔	西塔 theta θ Θ
+约塔	约塔 iota ι Ι
+卡帕	卡帕 kappa κ Κ
+拉姆达	拉姆达 lambda λ Λ
+----------（太短了不启用了）谬	谬 mu μ Μ
+----------（太短了不启用了）纽	纽 nu ν Ν
+克西	克西 ξ Ξ
+奥密克戎	奥密克戎 omicron ο Ο
+----------（太短了不启用了）派	派 pi π Π
+----------（太短了不启用了）柔	柔 rho ρ Ρ
+西格马	西格马 sigma σ/ς Σ
+----------（太短了不启用了）陶	陶 tau τ Τ
+宇普西隆	宇普西隆 upsilon υ Υ
+----------（太短了不启用了）斐	斐 phi φ Φ
+----------（太短了不启用了）希	希 chi χ Χ
+普西	普西 psi ψ Ψ
+奥米伽	奥米伽 omega ω Ω
+希腊字母	希腊字母 αΑ βΒ γΓ δΔ εΕ ζΖ ηΗ θΘ ιΙ κΚ λΛ μΜ νΝ ξΞ οΟ πΠ ρΡ σςΣ τΤ υΥ φΦ χΧ ψΨ ωΩ
+希腊字母小写	希腊字母小写 α β γ δ ε ζ η θ ι κ λ μ ν ξ ο π ρ σς τ υ φ χ ψ ω
+希腊字母大写	希腊字母大写 Α Β Γ Δ Ε Ζ Η Θ Ι Κ Λ Μ Ν Ξ Ο Π Ρ Σ Τ Υ Φ Χ Ψ Ω
+小写希腊字母	小写希腊字母 α β γ δ ε ζ η θ ι κ λ μ ν ξ ο π ρ σς τ υ φ χ ψ ω
+大写希腊字母	大写希腊字母 Α Β Γ Δ Ε Ζ Η Θ Ι Κ Λ Μ Ν Ξ Ο Π Ρ Σ Τ Υ Φ Χ Ψ Ω
+alpha	alpha α Α
+beta	beta β Β
+gamma	gamma γ Γ
+delta	delta δ Δ
+epsilon	epsilon ε Ε
+zeta	zeta ζ Ζ
+eta	eta η Η
+theta	theta θ Θ
+iota	iota ι Ι
+kappa	kappa κ Κ
+lambda	lambda λ Λ
+mu	mu μ Μ
+nu	nu ν Ν
+xi	xi ξ Ξ
+omicron	omicron ο Ο
+pi	pi π Π
+rho	rho ρ Ρ
+sigma	sigma σ ς Σ
+tau	tau τ Τ
+upsilon	upsilon υ Υ
+phi	phi φ Φ
+chi	chi χ Χ
+psi	psi ψ Ψ
+omega	omega ω Ω
 ----------其他	----------
 牛皮	牛皮 🐮🍺
 鲁迅	鲁迅 👨🏻
@@ -1177,10 +1231,6 @@ Thanos	Thanos 灭霸
 皮卡丘	皮卡丘 Pikachu
 Pikachu	Pikachu 皮卡丘
 Pokemon	Pokemon Pokémon
-德尔塔	德尔塔 Delta
-Delta	Delta 德尔塔
-奥密克戎	奥密克戎 Omicron
-Omicron	Omicron 奥密克戎
 恭喜发财	恭喜发财 恭喜發財
 人上人	人上人 仌
 二百	二百 皕
