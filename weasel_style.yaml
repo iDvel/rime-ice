@@ -18,7 +18,7 @@ style:
   # 字体1[:起始码位:结束码位:字重:字形][,字体2 ...]，例如：
   # "Segoe UI Emoji:20:39:bold:italic, Noto Color Emoji SVG:80, Arial:600:6ff, Segoe UI Emoji:80, LXGW Wenkai Narrow"
   # 字体会依次 fallback
-  font_face: "Segoe UI Emoji:80, Microsoft YaHei" # 默认字体。为了保证部分 emoji 能正常显示，建议将 emoji 字体放在首位，并指定起始码位防止影响其他字符。refer <https://github.com/rime/weasel/issues/932>
+  font_face: "Segoe UI Emoji, Microsoft YaHei" # 默认字体。为了保证部分 emoji 能正常显示，建议将 emoji 字体放在首位，并指定起始码位防止影响其他字符。refer <https://github.com/rime/weasel/issues/932>
   label_font_face: "Microsoft YaHei" # 标签字体
   comment_font_face: "Microsoft YaHei" # 注释字体
   font_point: 14 # 默认字体大小
