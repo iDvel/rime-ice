@@ -195,12 +195,12 @@ speller:
   algebra:
     ### 模糊音
     # 声母
-    # - derive/^([zcs])h/$1/          # z c s → zh ch sh
-    # - derive/^([zcs])([^h])/$1h$2/  # zh ch sh → z c s
-    # - derive/^l/n/  # n → l
-    # - derive/^n/l/  # l → n
-    # - derive/^f/h/  # …………
-    # - derive/^h/f/  # …………
+    # - derive/^([zcs])h/$1/
+    # - derive/^([zcs])([^h])/$1h$2/
+    # - derive/^l/n/  # 解释：为 l 开头的拼写派生出 n 开头，即 nai 也可以输出「来、莱、赖……」
+    # - derive/^n/l/  # 可以单向或双向启用模糊音
+    # - derive/^f/h/
+    # - derive/^h/f/
     # - derive/^l/r/
     # - derive/^r/l/
     # - derive/^g/k/

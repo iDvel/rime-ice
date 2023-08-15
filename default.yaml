@@ -11,13 +11,14 @@ config_version: '2023-08-07'
 
 # 方案列表
 schema_list:
-  - schema: rime_ice
-  - schema: double_pinyin
-  - schema: double_pinyin_abc
-  - schema: double_pinyin_mspy
-  - schema: double_pinyin_sogou
-  - schema: double_pinyin_flypy
-  - schema: double_pinyin_ziguang
+  # 可以直接删除或注释不需要的方案，对应的 *.schema.yaml 方案文件也可以直接删除。
+  - schema: rime_ice               # 雾凇拼音（全拼）
+  - schema: double_pinyin          # 自然码双拼
+  - schema: double_pinyin_abc      # 智能 ABC 双拼
+  - schema: double_pinyin_mspy     # 微软双拼
+  - schema: double_pinyin_sogou    # 搜狗双拼
+  - schema: double_pinyin_flypy    # 小鹤双拼
+  - schema: double_pinyin_ziguang  # 紫光双拼
 
 
 # 菜单
@@ -35,8 +36,9 @@ switcher:
     - Control+grave
     # - Alt+grave
     - Control+Shift+grave
-  save_options:  # 开关记忆，从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
+  save_options:  # 开关记忆（方案中的 switches），从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
     - ascii_punct
+    - full_shape
     - traditionalization
     - emoji
   fold_options: true            # 呼出时是否折叠，多方案时建议折叠 true ，一个方案建议展开 false
@@ -156,8 +158,8 @@ punctuator:
 # 此处配置所有方案通用的；各方案中另设专有的，比如全拼的拼字用 u，双拼的拼字用 L
 recognizer:
   patterns:
-    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"                            # 自带的，email 正则
-    # uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"                           # 自带的，大写字母开头后，可以输入[-_+.'0-9A-Za-z]这些字符
+    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"   # 自带的，email 正则
+    # uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"  # 自带的，大写字母开头后，可以输入[-_+.'0-9A-Za-z]这些字符（和雾凇有些冲突，关闭了）
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"  # 自带的，URL 正则
     # 一些不直接上屏的配置示例：
     # url_2: "^[A-Za-z]+[.].*"     # 句号不上屏，支持 google.com abc.txt 等网址或文件名，使用句号翻页时需要注释掉
@@ -230,6 +232,7 @@ key_binder:
 # https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md
 # （没有 Command 键，不支持）
 # accept 和 send 可用字段除 A-Za-z0-9 外，还包含以下键盘上实际有的键：
+# （区分大小写）
 # BackSpace	退格
 # Tab	水平定位符
 # Linefeed	换行
