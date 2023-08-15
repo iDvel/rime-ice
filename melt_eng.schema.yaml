@@ -51,6 +51,7 @@ speller:
     # __include: algebra_double    # 自然码双拼
     # __include: algebra_flypy     # 小鹤双拼
     # __include: algebra_mspy      # 微软双拼
+    # __include: algebra_sogou     # 搜狗双拼
     # __include: algebra_abc       # 智能ABC双拼
     # __include: algebra_ziguang   # 紫光双拼
 
@@ -217,6 +218,31 @@ algebra_mspy:
     - derive/0/l;/
     - derive/1/yi/
     - derive/2/er/
+    - derive/2/or/
+    - derive/2/ld/
+    - derive/3/sj/
+    - derive/4/si/
+    - derive/5/wu/
+    - derive/6/lq/
+    - derive/7/qi/
+    - derive/8/ba/
+    - derive/9/jq/
+# 搜狗双拼
+algebra_sogou:
+  __include: algebra_common
+  __append:
+    - derive/(?<!\d)1([1-9])(?!\d)/ui$1/
+    - derive/([1-9])0000(?!0)/$1wj/
+    - derive/([1-9])000(?!0)/$1qm/
+    - derive/([1-9])00(?!0)/$1bl/
+    - derive/([2-9])0(?!0)/$1ui/
+    - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1ui$2/
+    - derive/\./dm/
+    - derive/10/ui/
+    - derive/0/l;/
+    - derive/1/yi/
+    - derive/2/er/
+    - derive/2/or/
     - derive/2/ld/
     - derive/3/sj/
     - derive/4/si/
@@ -239,6 +265,7 @@ algebra_abc:
     - derive/10/vi/
     - derive/0/ly/
     - derive/1/yi/
+    - derive/2/er/
     - derive/2/or/
     - derive/2/lt/
     - derive/3/sj/
@@ -263,6 +290,7 @@ algebra_ziguang:
     - derive/0/l;/
     - derive/1/yi/
     - derive/2/er/
+    - derive/2/oj/
     - derive/2/lg/
     - derive/3/sr/
     - derive/4/si/

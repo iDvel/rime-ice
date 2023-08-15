@@ -4,6 +4,14 @@
 
 
 
+## 2023-08-07 🆕
+
+支持搜狗双拼 [34ab972](https://github.com/iDvel/rime-ice/commit/34ab9725ea9cdf918cbf9f6a4c27d61db7736b07)
+
+## 2023-08-06 🆕
+
+`corrector.lua` 错音错字提示 [3c3582e](https://github.com/iDvel/rime-ice/commit/3ce582e1951acb6dc381332d8e61381767d35a36)
+
 ## 2023-07-28 📖
 
 删除了八股文，因为 [#407](https://github.com/iDvel/rime-ice/issues/407)

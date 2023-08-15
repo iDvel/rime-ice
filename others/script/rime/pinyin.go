@@ -51,6 +51,7 @@ var onlyOne = map[string]string{
 	"那么着": "na me zhe",
 	// 其他多音字，指定唯一读音
 	"的":   "de",
+	"了":   "le",
 	"核儿":  "he er",
 	"核":   "he",
 	"褪下":  "tui xia",
@@ -234,6 +235,7 @@ var onlyOne = map[string]string{
 	"绰":   "chuo",
 	"葚":   "shen",
 	"嘞":   "lei",
+	"凹":   "ao",
 }
 
 func init() {
