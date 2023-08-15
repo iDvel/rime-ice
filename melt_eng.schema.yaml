@@ -3,7 +3,8 @@
 # encoding: utf-8
 #
 # 复制自 https://github.com/tumuyan/rime-melt，修改了拼写派生
-# 全拼和各个双拼有部分拼写规则不通用，需要修改第 50 行 __include: algebra_rime_ice 为你所使用的方案
+# 感谢 @[Mirtle](https://github.com/mirtlecn) 贡献的极其好用的拼写派生
+# 全拼和各个双拼有部分拼写规则不通用，需要修改 speller/algebra 下的 __include: algebra_rime_ice 为你所使用的方案
 
 schema:
   schema_id: melt_eng
@@ -130,7 +131,7 @@ algebra_common:
   - derive/^([a-z]{8})/\U$1/
   - derive/^([a-z]{9})/\U$1/
   - derive/^([a-z]{10})/\U$1/
-  # 派生中英混输词库（词库编码以ⓘ开头）
+  # 派生中英混输词库（词库编码以ⓘ开头），只派生出原始拼写与全小写
   - derive/^ⓘ(.+)$/$1/
   - derive/^ⓘ(.+)$/\L$1/
 
