@@ -18,6 +18,10 @@
 					},
 					{
 						"type": "text",
+						"file": "emoji_extension.txt"
+					},
+					{
+						"type": "text",
 						"file": "others.txt"
 					}
 				]

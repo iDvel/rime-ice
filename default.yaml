@@ -4,10 +4,8 @@
 # 小狼毫似乎不支持 Control+Shift 开头的快捷键，可自行修改成别的。
 # 鼠须管在 Sublime Text、Telegram 等个别软件中也无法使用 Control+Shift+数字 的快捷键，可暂时用方案选单切换。
 
-
 # 要比共享目录的同名文件的 config_version 大才可以生效
-config_version: '2023-08-07'
-
+config_version: "2023-08-07"
 
 # 方案列表
 schema_list:
@@ -19,61 +17,53 @@ schema_list:
   - schema: double_pinyin_flypy
   - schema: double_pinyin_ziguang
 
-
 # 菜单
 menu:
-  page_size: 5  # 候选词个数
+  page_size: 9 # 候选词个数
   # alternative_select_labels: [ ①, ②, ③, ④, ⑤, ⑥, ⑦, ⑧, ⑨, ⑩ ]  # 修改候选项标签
   # alternative_select_keys: ASDFGHJKL  # 如编码字符占用数字键，则需另设选字键
-
 
 # 方案选单相关
 switcher:
   caption: 「方案选单」
   hotkeys:
     - F4
-    - Control+grave
+    # - Control+grave
     # - Alt+grave
-    - Control+Shift+grave
-  save_options:  # 开关记忆，从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
+    # - Control+Shift+grave
+  save_options: # 开关记忆，从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
     - ascii_punct
     - traditionalization
     - emoji
-  fold_options: true            # 呼出时是否折叠，多方案时建议折叠 true ，一个方案建议展开 false
-  abbreviate_options: true      # 折叠时是否缩写选项
-  option_list_separator: ' / '  # 折叠时的选项分隔符
-
+  fold_options: true # 呼出时是否折叠，多方案时建议折叠 true ，一个方案建议展开 false
+  abbreviate_options: true # 折叠时是否缩写选项
+  option_list_separator: " / " # 折叠时的选项分隔符
 
 # 中西文切换
 #
-# good_old_caps_lock:
-# true   切换大写
-# false  切换中英
-# macOS 偏好设置的优先级更高，如果勾选【使用大写锁定键切换“ABC”输入法】则始终会切换输入法。
+# 【good_old_caps_lock】 CapsLock 切换到大写或切换中英。
+# （macOS 偏好设置的优先级更高，如果勾选【使用大写锁定键切换“ABC”输入法】则始终会切换输入法）
 #
 # 切换中英：
 # 不同的选项表示：打字打到一半时按下了 CapsLock、Shift、Control 后：
 # commit_code  上屏原始的编码，然后切换到英文
 # commit_text  上屏拼出的词句，然后切换到英文
 # clear        清除未上屏内容，然后切换到英文
-# inline_ascii 切换到临时英文模式，按回车上屏后回到中文状态
+# inline_ascii 无输入时，切换中英；有输入时，切换到临时英文模式，按回车上屏后回到中文状态
 # noop         屏蔽快捷键，不切换中英，但不要屏蔽 CapsLock
 ascii_composer:
-  good_old_caps_lock: true  # true | false
+  good_old_caps_lock: true # true | false
   switch_key:
-    Caps_Lock: clear      # commit_code | commit_text | clear
-    Shift_L: commit_code  # commit_code | commit_text | inline_ascii | clear | noop
-    Shift_R: noop         # commit_code | commit_text | inline_ascii | clear | noop
-    Control_L: noop       # commit_code | commit_text | inline_ascii | clear | noop
-    Control_R: noop       # commit_code | commit_text | inline_ascii | clear | noop
-
+    Caps_Lock: clear # commit_code | commit_text | clear
+    Shift_L: commit_code # commit_code | commit_text | inline_ascii | clear | noop
+    Shift_R: commit_code # commit_code | commit_text | inline_ascii | clear | noop
+    Control_L: noop # commit_code | commit_text | inline_ascii | clear | noop
+    Control_R: noop # commit_code | commit_text | inline_ascii | clear | noop
 
 ###################################################################################
 
-
 # 下面的 punctuator recognizer key_binder 写了一些所有方案通用的配置项。
 # 写在 default.yaml 里，方便多个方案引用，就是不用每个方案都写一遍了。
-
 
 # 标点符号
 # 设置为一个映射，就自动上屏；设置为多个映射，如 '/' : [ '/', ÷ ] 则进行复选。
@@ -84,92 +74,90 @@ ascii_composer:
 #              '`'（反引号）没有改成 '·'（间隔号）。
 punctuator:
   full_shape:
-    ' ' : { commit: '　' }
-    ',' : { commit: ， }
-    '.' : { commit: 。 }
-    '<' : [ 《, 〈, «, ‹ ]
-    '>' : [ 》, 〉, », › ]
-    '/' : [ ／, ÷ ]
-    '?' : { commit: ？ }
-    ';' : { commit: ； }
-    ':' : { commit: ： }
-    '''' : { pair: [ '‘', '’' ] }
-    '"' : { pair: [ '“', '”' ] }
-    '\' : [ 、, ＼ ]
-    '|' : [ ·, ｜, '§', '¦' ]
-    '`' : ｀
-    '~' : ～
-    '!' : { commit: ！ }
-    '@' : [ ＠, ☯ ]
-    '#' : [ ＃, ⌘ ]
-    '%' : [ ％, '°', '℃' ]
-    '$' : [ ￥, '$', '€', '£', '¥', '¢', '¤' ]
-    '^' : { commit: …… }
-    '&' : ＆
-    '*' : [ ＊, ·, ・, ×, ※, ❂ ]
-    '(' : （
-    ')' : ）
-    '-' : －
-    '_' : ——
-    '+' : ＋
-    '=' : ＝
-    '[' : [ 「, 【, 〔, ［ ]
-    ']' : [ 」, 】, 〕, ］ ]
-    '{' : [ 『, 〖, ｛ ]
-    '}' : [ 』, 〗, ｝ ]
+    " ": { commit: "　" }
+    ",": { commit: ， }
+    ".": { commit: 。 }
+    "<": [《, 〈, «, ‹]
+    ">": [》, 〉, », ›]
+    "/": [／, ÷]
+    "?": { commit: ？ }
+    ";": { commit: ； }
+    ":": { commit: ： }
+    "'": { pair: ["‘", "’"] }
+    '"': { pair: ["“", "”"] }
+    '\': [、, ＼]
+    "|": [·, ｜, "§", "¦"]
+    "`": ｀
+    "~": ～
+    "!": { commit: ！ }
+    "@": [＠, ☯]
+    "#": [＃, ⌘]
+    "%": [％, "°", "℃"]
+    "$": [￥, "$", "€", "£", "¥", "¢", "¤"]
+    "^": { commit: …… }
+    "&": ＆
+    "*": [＊, ·, ・, ×, ※, ❂]
+    "(": （
+    ")": ）
+    "-": －
+    "_": ——
+    "+": ＋
+    "=": ＝
+    "[": [「, 【, 〔, ［]
+    "]": [」, 】, 〕, ］]
+    "{": [『, 〖, ｛]
+    "}": [』, 〗, ｝]
   half_shape:
-    ',' : '，'
-    '.' : '。'
-    '<' : '《'
-    '>' : '》'
-    '/' : '/'
-    '?' : '？'
-    ';' : '；'
-    ':' : '：'
-    '''' : { pair: [ '‘', '’' ] }
-    '"' : { pair: [ '“', '”' ] }
-    '\' : '、'
-    '|' : '|'
-    '`' : '`'
-    '~' : '~'
-    '!' : '！'
-    '@' : '@'
-    '#' : '#'
-    '%' : '%'
-    '$' : '¥'
-    '^' : '……'
-    '&' : '&'
-    '*' : '*'
-    '(' : '（'
-    ')' : '）'
-    '-' : '-'
-    '_' : ——
-    '+' : '+'
-    '=' : '='
-    '[' : '【'
-    ']' : '】'
-    '{' : '「'
-    '}' : '」'
-
+    ",": "，"
+    ".": "。"
+    "<": "《"
+    ">": "》"
+    "/": "、"
+    "?": "？"
+    ";": "；"
+    ":": "："
+    "'": { pair: ["‘", "’"] }
+    '"': { pair: ["“", "”"] }
+    '\': "、"
+    "|": "｜"
+    "`": "`"
+    "~": "～"
+    "!": "！"
+    "@": "@"
+    "#": "#"
+    "%": "%"
+    "$": "¥"
+    "^": "……"
+    "&": "&"
+    "*": "*"
+    "(": "（"
+    ")": "）"
+    "-": "-"
+    "_": ——
+    "+": "+"
+    "=": "="
+    "[": "【"
+    "]": "】"
+    "{": "「"
+    "}": "」"
 
 # 处理符合特定规则的输入码，如网址、反查
 # 此处配置所有方案通用的；各方案中另设专有的，比如全拼的拼字用 u，双拼的拼字用 L
 recognizer:
   patterns:
-    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"                            # 自带的，email 正则
+    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$" # 自带的，email 正则
     # uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"                           # 自带的，大写字母开头后，可以输入[-_+.'0-9A-Za-z]这些字符
-    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"  # 自带的，URL 正则
+    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$" # 自带的，URL 正则
     # 一些不直接上屏的配置示例：
     # url_2: "^[A-Za-z]+[.].*"     # 句号不上屏，支持 google.com abc.txt 等网址或文件名，使用句号翻页时需要注释掉
     # colon: "^[A-Za-z]+:.*"       # 冒号不上屏
     # underscore: "^[A-Za-z]+_.*"  # 下划线不上屏
 
-
 # 快捷键
 key_binder:
   # Lua 配置: 以词定字（上屏当前词句的第一个或最后一个字），和中括号翻页有冲突
-  select_first_character: "bracketleft"  # 左中括号 [
-  select_last_character: "bracketright"  # 右中括号 ]
+  select_first_character: "bracketleft" # 左中括号 [
+  select_last_character: "bracketright" # 右中括号 ]
 
   bindings:
     # Tab / Shift+Tab 切换光标至下/上一个拼音
@@ -179,17 +167,14 @@ key_binder:
     # - { when: has_menu, accept: Shift+Tab, send: Page_Up }
     # - { when: has_menu, accept: Tab, send: Page_Down }
 
-    # Option/Alt + ←/→ 切换光标至下/上一个拼音
-    - { when: composing, accept: Alt+Left, send: Shift+Left }
-    - { when: composing, accept: Alt+Right, send: Shift+Right }
-
     # 翻页 - =
-    - { when: has_menu, accept: minus, send: Page_Up }
-    - { when: has_menu, accept: equal, send: Page_Down }
+    # - { when: has_menu, accept: minus, send: Page_Up }
+    # - { when: has_menu, accept: equal, send: Page_Down }
 
     # 翻页 , .
-    # - { when: paging, accept: comma, send: Page_Up }
-    # - { when: has_menu, accept: period, send: Page_Down }
+    # 需要额外注释掉方案中 recognizer/patterns 下的 url_2 选项（这个会覆盖掉句号的行为）
+    - { when: paging, accept: comma, send: Page_Up }
+    - { when: has_menu, accept: period, send: Page_Down }
 
     # 翻页 [ ]
     # - { when: paging, accept: bracketleft, send: Page_Up }
@@ -198,8 +183,8 @@ key_binder:
     # numbered_mode_switch:
     # - { when: always, accept: Control+Shift+1, select: .next }               # 在最近的两个方案之间切换
     # - { when: always, accept: Control+Shift+2, toggle: ascii_mode }          # 切换中英
-    - { when: always, accept: Control+Shift+3, toggle: ascii_punct }           # 切换中英标点
-    - { when: always, accept: Control+Shift+4, toggle: traditionalization }    # 切换简繁
+    - { when: always, accept: Control+Shift+3, toggle: ascii_punct } # 切换中英标点
+    - { when: always, accept: "Control+Shift+4", toggle: traditionalization } # 切换简繁
     # - { when: always, accept: Control+Shift+5, toggle: full_shape }          # 切换全半角
 
     # emacs_editing:
@@ -224,8 +209,6 @@ key_binder:
     # - { when: always, accept: Control+comma, toggle: full_shape }
     # - { when: always, accept: Control+period, toggle: ascii_punct }
     # - { when: always, accept: Control+slash, toggle: traditionalization }
-
-
 # 按键速查
 # https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md
 # （没有 Command 键，不支持）
