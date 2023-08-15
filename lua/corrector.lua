@@ -4,7 +4,6 @@
 	示例：「按耐」的正确写法是「按捺」，当用户输入「按耐」时，在候选项的 comment 显示正确写法
 
 	为了让这个 Lua 同时适配全拼与双拼，使用 `spelling_hints` 生成的 comment（全拼拼音）作为通用的判断条件。
-
 	感谢大佬@[Shewer Lu](https://github.com/shewer)提供的思路。
 	
 	容错词在 cn_dicts/others.dict.yaml 中，有新增建议可以提个 issue
@@ -33,6 +32,7 @@ local corrections = {
 	["yi mo yi yang"] = { text = "一模一样", comment = "yi mu yi yang" },
 	["zhuang mo zuo yang"] = { text = "装模作样", comment = "zhuang mu zuo yang" },
 	["ren mo gou yang"] = { text = "人模狗样", comment = "ren mu gou yang" },
+	["mo ban"] = { text = "模板", comment = "mu ban" },
 	["a mi tuo fo"] = { text = "阿弥陀佛", comment = "e mi tuo fo" },
 	["na mo a mi tuo fo"] = { text = "南无阿弥陀佛", comment = "na mo e mi tuo fo" },
 	["nan wu a mi tuo fo"] = { text = "南无阿弥陀佛", comment = "na mo e mi tuo fo" },
@@ -55,13 +55,28 @@ local corrections = {
 	["cao zhi jing"] = { text = "草薙京", comment = "cao ti jing" },
 	["cao zhi jian"] = { text = "草薙剑", comment = "cao ti jian" },
 	["jia ping ao"] = { text = "贾平凹", comment = "jia ping wa" },
+	["xue fo lan"] = { text = "雪佛兰", comment = "xue fu lan" },
+	["qiang jin"] = { text = "强劲", comment = "qiang jing" },
+	["tong ti"] = { text = "胴体", comment = "dong ti" },
+	["li neng kang ding"] = { text = "力能扛鼎", comment = "li neng gang ding" },
+	["ya lv jiang"] = { text = "鸭绿江", comment = "ya lu jiang" },
+	["da fu bian bian"] = { text = "大腹便便", comment = "da fu pian pian" },
+	["ka bo zi"] = { text = "卡脖子", comment = "qia bo zi" },
+	["zhi sheng"] = { text = "吱声", comment = "zi sheng" },
+	["chan he"] = { text = "掺和", comment = "chan huo" },
+	["chan huo"] = { text = "掺和", comment = "chan huo" },
+	["can he"] = { text = "掺和", comment = "chan huo" },
+	["cheng zhi"] = { text = "称职", comment = "chen zhi" },
+	["luo shi fen"] = { text = "螺蛳粉", comment = "luo si fen" },
+	["tiao huan"] = { text = "调换", comment = "diao huan" },
 	-- 错字
 	["ceng jin"] = { text = "曾今", comment = "曾经" },
 	["an nai"] = { text = "按耐", comment = "按捺(na)" },
 	["an nai bu zhu"] = { text = "按耐不住", comment = "按捺(na)不住" },
-	["sheng di ya ge"] = { text = "圣地亚哥", comment = "圣迭戈" },
 	["bie jie"] = { text = "别介", comment = "别价" },
 	["beng jie"] = { text = "甭介", comment = "甭价" },
+	["xue mai pen zhang"] = { text = "血脉喷张", comment = "血脉贲(ben)张 | 血脉偾(fen)张" },
+	["qi ke fu"] = { text = "契科夫", comment = "契诃(he)夫" },
 }
 
 local function corrector(input)
