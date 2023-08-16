@@ -262,7 +262,7 @@ speller:
     # ia
     - derive/([qjx])ia$/$1ai/  # qai → qia
     # ei
-    - derive/([wtfghkz])ei$/$1ie/
+    - derive/([wfghkz])ei$/$1ie/
     # ie
     - derive/([jqx])ie$/$1ei/
     # ao
