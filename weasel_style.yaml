@@ -1,11 +1,9 @@
 # weasel.yaml 支持的所有选项及注释，用于配置参考
 # 感谢 @[Mirtle](https://github.com/mirtlecn) 整理
 # 定制化文档 https://github.com/rime/weasel/wiki/Weasel-定製化
-# 字体设定文档 https://github.com/rime/weasel/wiki/字體設定
 
-
-# 小狼毫会在更换配色时将 weasel.custom.yaml 内容格式化，删除所有注释并调整格式。
-# 建议的自定义方法是：复制此本文件并修改，之后在 weasel.custom.yaml 用 `__include` 引入。示例 weasel.custom.yaml 如下：
+# 在用户使用「输入法设定」调整设置时，小狼毫会格式化 weasel.custom.yaml，删除所有注释。
+# 目前建议的自定义方法：复制此本文件并修改，之后在 weasel.custom.yaml 用 `__include` 引入。示例 weasel.custom.yaml 如下：
 # patch:
 #   "preset_color_schemes/+"
 #     __include: "weasel_style_copy:/preset_color_schemes"
@@ -15,18 +13,19 @@
 
 # 全部 style 选项
 # refer：<https://github.com/rime/weasel/blob/master/RimeWithWeasel/RimeWithWeasel.cpp>
-# Update at：2023.06.15
-# Weasel 版本：15.0 
-# Commit: 15f94f76967
+# Update at：2023.08.20
+# Weasel 版本：15.0, CI #137 <https://github.com/rime/weasel/actions/runs/5912109600>
+# Commit: db79168
+
 style:
   # 字体设定
-  # 字体1[:起始码位:结束码位:字重:字形][,字体2 ...]，例如：
-  # "Segoe UI Emoji:20:39:bold:italic, Noto Color Emoji SVG:80, Arial:600:6ff, Segoe UI Emoji:80, LXGW Wenkai Narrow"
+  # 字体1[:起始码位:结束码位:字重:字形][,字体2 ...]，详情请参考 <https://github.com/rime/weasel/wiki/字體設定>
   # 字体会依次 fallback
-  font_face: "Segoe UI Emoji, Microsoft YaHei" # 默认字体。为了保证部分 emoji 能正常显示，建议将 emoji 字体放在首位，并指定起始码位防止影响其他字符。refer <https://github.com/rime/weasel/issues/932>
+  font_face: "Microsoft YaHei" # 全局字体。为了让部分复合型 emoji 正常显示，可以将 emoji 字体放在首位，并指定起始码位防止影响其他字符。refer <https://github.com/rime/weasel/issues/932> 例如：
+  # "Segoe UI Emoji:20:39:bold:italic, Noto Color Emoji SVG:80, Arial:600:6ff, Segoe UI Emoji:80, LXGW Wenkai Narrow"
   label_font_face: "Microsoft YaHei" # 标签字体
   comment_font_face: "Microsoft YaHei" # 注释字体
-  font_point: 14 # 默认字体大小
+  font_point: 14 # 全局字体大小
   label_font_point: 14 # 标签字体大小，不设定 fallback 到 font_point
   comment_font_point: 14 # 注释字体大小，不设定 fallback 到 font_point
 
@@ -43,10 +42,15 @@ style:
 
   label_format: "%s." # 标签字符：%s. 效果为 1. 2. 3. ....
   mark_text: "" # 高亮字符，显示在选中的候选标签前
-  ascii_tip_follow_cursor: false # 切换 ASCII 模式时，图标跟随光标
+  ascii_tip_follow_cursor: false # 切换 ASCII 模式时，提示图标跟随鼠标（而非输入光标）
   enhanced_position: false # 无法定位候选框时，在窗口窗口左上角显示候选框：true；false
   display_tray_icon: false # 托盘显示独立于语言栏的额外图标：true；false
   antialias_mode: default # 次像素反锯齿设定：default；force_dword；cleartype；grayscale；aliased
+
+  mouse_hover_ms: 0 # 鼠标悬停响应间隔，设置为 0 时禁用该功能。默认禁用
+  paging_on_scroll: false # 在候选窗口上滚轮操作时，对应的响应动作。如设定为 true，则进行翻页操作；如设定为 false（默认)，则进行候选 index 切换（类似上下方向键）
+
+  color_scheme: aqua # 配色方案
 
   layout:
     align_type: center # 对齐：top ; center ; bottom
@@ -62,6 +66,8 @@ style:
     candidate_spacing: 5 # 候选项之间的间隔
     hilite_spacing: 4 # 候选和标签的间隔
     hilite_padding: 2 # 高亮区域和边框的间隔。当值 ≥ margin 的值时，高亮颜色会覆盖整个选中的候选区域，实现「天圆地方」的效果。参考文件末的配置
+    hilite_padding_x: 2 # 高亮区域和边框的 X 轴间隔
+    hilite_padding_y: 2 # 高亮区域和边框的 y 轴间隔
     shadow_offset_x: 4 # 阴影偏离和圆角大小
     shadow_offset_y: 4
     shadow_radius: 0
@@ -70,7 +76,6 @@ style:
 
 
 # 全部 color_schemes 选项，点击小狼毫「输入法设定」可以预览皮肤效果
-
 # 在小狼毫用户目录新建 preview 文件夹，将自定义皮肤的截图重命名为 color_scheme_<name>.png 放入此文件夹，可以在「输入法设定」中看到自定义皮肤效果
 
 # 小狼毫配色在线设计：
@@ -79,8 +84,8 @@ style:
 preset_color_schemes:
   scheme_name: # 需要在 `style/color_schema` 指定的值
     name: # 方案设置中显示的配色名称
-    author:
-    color_format: # 颜色格式：argb；rgba
+    author: # 配色作者名称
+    color_format: # 颜色格式：argb；rgba；abgr
     # 默认
     back_color: # 背景
     border_color: # 边框
@@ -114,6 +119,7 @@ preset_color_schemes:
 app_options:
   appname.exe: # 带 .exe 的进程名，全小写
     ascii_mode: true # 英文模式
+    inline_preedit: true # 行内显示预编辑区。当前版本小狼毫将 inline_preedit 设定为 false 时，会在输入时预插入一个空格，这在 Firefox 等应用中会引发问题，需要在此处为这些应用单独指定 inline_preedit。refer <https://github.com/rime/weasel/issues/946>
   appname2.exe:
     ascii_mode: false # 非英文模式
 
