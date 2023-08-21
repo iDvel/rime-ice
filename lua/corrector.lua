@@ -69,6 +69,8 @@ local corrections = {
 	["cheng zhi"] = { text = "称职", comment = "chen zhi" },
 	["luo shi fen"] = { text = "螺蛳粉", comment = "luo si fen" },
 	["tiao huan"] = { text = "调换", comment = "diao huan" },
+	["tai xing shan"] = { text = "太行山", comment = "tai hang shan" },
+	["jie si di li"] = { text = "歇斯底里", comment = "xie si di li" },
 	-- 错字
 	["ceng jin"] = { text = "曾今", comment = "曾经" },
 	["an nai"] = { text = "按耐", comment = "按捺(na)" },
