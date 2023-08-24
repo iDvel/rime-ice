@@ -20,6 +20,7 @@ install_files: >-
   double_pinyin.schema.yaml
   double_pinyin_abc.schema.yaml
   double_pinyin_mspy.schema.yaml
+  double_pinyin_sogou.schema.yaml
   double_pinyin_flypy.schema.yaml
   double_pinyin_ziguang.schema.yaml
   symbols_v.yaml
