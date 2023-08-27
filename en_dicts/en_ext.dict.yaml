@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-08-15"
+version: "2023-08-27"
 sort: by_weight
 ...
 # 一些杂项
@@ -2258,3 +2258,7 @@ Google Pixel	GooglePixel
 medallion	medallion
 add-on	add-on
 add-ons	add-ons
+C#	C#
+C#	Csharp
+C#	Cjing
+decode	decode
