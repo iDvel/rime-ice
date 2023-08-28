@@ -43,7 +43,7 @@ switches:
     reset: 0
   - name: emoji
     states: [ 💀, 😄 ]
-    reset: 1
+    reset: 0
   - name: full_shape
     states: [ 半角, 全角 ]
     reset: 0
