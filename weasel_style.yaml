@@ -5,7 +5,7 @@
 # 在用户使用「输入法设定」调整设置时，小狼毫会格式化 weasel.custom.yaml，删除所有注释。
 # 目前建议的自定义方法：复制此本文件并修改，之后在 weasel.custom.yaml 用 `__include` 引入。示例 weasel.custom.yaml 如下：
 # patch:
-#   "preset_color_schemes/+"
+#   "preset_color_schemes/+":
 #     __include: "weasel_style_copy:/preset_color_schemes"
 #   "style/+":
 #     __include: "weasel_style_copy:/style"
