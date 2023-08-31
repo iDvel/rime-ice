@@ -15,6 +15,7 @@ schema:
   dependencies:
     - melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
     - liangfen  # 两分拼字，作为反查挂载到拼音方案
+    - meow_emoji  # 两分拼字，作为反查挂载到拼音方案
 
 
 # 开关
@@ -54,22 +55,27 @@ engine:
   segmentors:
     - ascii_segmentor
     - matcher
+    # - affix_segmentor@liangfen
+    # - affix_segmentor@meow_emoji
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
   translators:
     - punct_translator
+    - r10n_translator
     - script_translator
     - lua_translator@date_translator      # 时间、日期、星期
     - table_translator@custom_phrase      # 自定义短语 custom_phrase.txt
     - table_translator@melt_eng           # 英文输入
     - reverse_lookup_translator@liangfen  # 反查，两分拼字
+    - reverse_lookup_translator@meow_emoji  # 反查，两分拼字
     - lua_translator@unicode              # Unicode
     - lua_translator@number_translator    # 数字、金额大写
   filters:
     - lua_filter@corrector                # 错音错字提示
     - simplifier@emoji                    # Emoji
     - simplifier@traditionalize           # 简繁切换
+    - reverse_lookup_filter@meow_emoji_reverse_lookup
     - lua_filter@v_filter                 # v 模式 symbols 优先（否则是英文优先）
     - lua_filter@autocap_filter           # 英文自动大写
     - lua_filter@reduce_english_filter    # 降低部分英语单词在候选项的位置
@@ -124,13 +130,37 @@ melt_eng:
   comment_format:          # 自定义提示码
     - xform/.*//           # 清空提示码
 
+# # 颜文字反查过滤器
+# meow_emoji_reverse_lookup: #該反查濾鏡名
+#   tags: [ abc ] #掛在這個tag所對應的翻譯器上
+#   overwrite_comment: true
+#   dictionary: meow_emoji #反查所得爲蒼頡碼
+#   comment_format:
+#     - "xform/$/〕/"
+#     - "xform/^/〔/"
+#     - "xform/(.*)/demo/"
 
 # 反查：两分（拼字）
 liangfen:
+  tag: liangfen
   dictionary: liangfen     # 挂载两分词典 liangfen.dict.yaml
   prefix: "u"              # 以 u 开头来反查
   enable_completion: true  # 补全提示
   # tips: 〔两分〕          # 反查时显示的文字，建议注释掉，否则很多 u 开头的英文单词也会显示这个
+
+# 给默认编码加上颜文字tag
+abc_segmentor:
+  extra_tags:
+    - meow_emoji
+
+# 颜文字
+meow_emoji:
+  tag: meow_emoji
+  dictionary: meow_emoji     # 挂载两分词典 liangfen.dict.yaml
+  prefix: "i"              # 以 u 开头来反查
+  enable_completion: true  # 补全提示
+  initial_quality: 99     # 初始权重
+  # tips: 〔颜文字〕          # 反查时显示的文字，建议注释掉，否则很多 u 开头的英文单词也会显示这个
 
 
 # 自定义短语：custom_phrase.txt
@@ -176,7 +206,8 @@ recognizer:
   import_preset: default  # 从 default.yaml 继承通用的
   patterns:  # 再增加方案专有的：
     punct: "^v([0-9]|10|[A-Za-z]+)$"  # 响应 symbols_v.yaml 的 symbols，用 'v' 替换 '/'
-    reverse_lookup: "^u[a-z]+$"       # 响应两分拼字的反查
+    liangfen: "^u[a-z]+$"       # 响应两分拼字的反查
+    meow_emoji: "^i[a-z]+$"       # 响应两分拼字的反查
     unicode: "^U[a-f0-9]+"            # 响应 Unicode
     number: "^R[0-9]+[.]?[0-9]*"      # 响应 number_translator
 
