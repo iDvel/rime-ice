@@ -1,0 +1,15 @@
+# patch:
+#   engine/translators:
+#     – punct_translator
+#     – r10n_translator
+#     – reverse_lookup_translator
+#   recognizer/patterns/reverse_lookup: "`[a-z]*$"
+#   schema/dependencies:
+#     – meow_emoji
+#   abc_segmentor/extra_tags:
+#     – reverse_lookup
+#   reverse_lookup:
+#     dictionary: meow_emoji
+#     enable_completion: false
+#     prefix: "`"
+#     tips: 〔表情〕

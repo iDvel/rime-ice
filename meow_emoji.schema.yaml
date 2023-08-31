@@ -1,0 +1,34 @@
+schema:
+schema_id: meow_emoji
+name: 貓顏文字
+version: "0.1"
+author:
+  – hitigon &lt;hitigon@gmail.com&gt;
+description: |
+  Meow! 基於貓老師@_ym的貓顏文字詞庫
+
+engine:
+processors:
+  – key_binder
+  – speller
+  – punctuator
+  – selector
+  – navigator
+  – express_editor
+segmentors:
+  – abc_segmentor
+  – punct_segmentor
+  – fallback_segmentor
+translators:
+  – echo_translator
+  – punct_translator
+  – table_translator
+
+translator:
+  dictionary: meow_emoji
+
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
