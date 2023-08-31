@@ -1,5 +1,5 @@
 schema:
-  schema_id: meow_emoji
+  schema_id: kaomoji
   name: 貓顏文字
   version: "0.1"
   author:
@@ -25,7 +25,7 @@ engine:
     - table_translator
 
 translator:
-  dictionary: meow_emoji
+  dictionary: kaomoji
 
 punctuator:
   import_preset: default

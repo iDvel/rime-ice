@@ -13,4 +13,4 @@ patch:
     - {schema: double_pinyin_sogou}
     - {schema: double_pinyin_flypy}
     - {schema: double_pinyin_ziguang}
-    - {schema: meow_emoji}
+    - {schema: kaomoji}

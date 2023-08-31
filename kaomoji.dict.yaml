@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 ---
-name: meow_emoji
+name: kaomoji
 version: "0.1"
 sort: original
 ...

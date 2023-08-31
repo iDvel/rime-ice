@@ -5,11 +5,11 @@
 #     – reverse_lookup_translator
 #   recognizer/patterns/reverse_lookup: "`[a-z]*$"
 #   schema/dependencies:
-#     – meow_emoji
+#     – kaomoji
 #   abc_segmentor/extra_tags:
 #     – reverse_lookup
 #   reverse_lookup:
-#     dictionary: meow_emoji
+#     dictionary: kaomoji
 #     enable_completion: false
 #     prefix: "`"
 #     tips: 〔表情〕
