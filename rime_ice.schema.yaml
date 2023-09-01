@@ -75,7 +75,6 @@ engine:
     - lua_filter@corrector                # 错音错字提示
     - simplifier@emoji                    # Emoji
     - simplifier@traditionalize           # 简繁切换
-    - reverse_lookup_filter@kaomoji_reverse_lookup
     - lua_filter@v_filter                 # v 模式 symbols 优先（否则是英文优先）
     - lua_filter@autocap_filter           # 英文自动大写
     - lua_filter@reduce_english_filter    # 降低部分英语单词在候选项的位置
@@ -130,15 +129,6 @@ melt_eng:
   comment_format:          # 自定义提示码
     - xform/.*//           # 清空提示码
 
-# # 颜文字反查过滤器
-# kaomoji_reverse_lookup: #該反查濾鏡名
-#   tags: [ abc ] #掛在這個tag所對應的翻譯器上
-#   overwrite_comment: true
-#   dictionary: kaomoji #反查所得爲蒼頡碼
-#   comment_format:
-#     - "xform/$/〕/"
-#     - "xform/^/〔/"
-#     - "xform/(.*)/demo/"
 
 # 反查：两分（拼字）
 liangfen:
@@ -148,7 +138,7 @@ liangfen:
   enable_completion: true  # 补全提示
   # tips: 〔两分〕          # 反查时显示的文字，建议注释掉，否则很多 u 开头的英文单词也会显示这个
 
-# 给默认编码加上颜文字tag
+# 启用候选项颜文字
 abc_segmentor:
   extra_tags:
     - kaomoji

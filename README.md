@@ -27,7 +27,7 @@
     -   [两分输入法](http://cheonhyeong.com/Simplified/download.html) 拼字
     -   简繁切换
     -   日期、时间、星期
-    -   自整理的 Emoji
+    -   自整理的 Emoji、颜文字
     -   [以词定字](https://github.com/BlindingDark/rime-lua-select-character)
     -   [长词优先](https://github.com/tumuyan/rime-melt/blob/master/lua/melt.lua)
     -   [Unicode](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)
