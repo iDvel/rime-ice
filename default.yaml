@@ -5,8 +5,7 @@
 # 鼠须管在 Sublime Text、Telegram 等个别软件中也无法使用 Control+Shift+数字 的快捷键，可暂时用方案选单切换。
 
 # 要比共享目录的同名文件的 config_version 大才可以生效
-config_version: '2023-08-07'
-
+config_version: "2023-08-07"
 
 # 方案列表
 schema_list:
@@ -31,9 +30,10 @@ switcher:
     - F4
     # - Control+grave
     # - Alt+grave
-    # - Control+Shift+grave
+    - Control+Shift+grave
   save_options: # 开关记忆，从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
     - ascii_punct
+    - full_shape
     - traditionalization
     - emoji
   fold_options: true # 呼出时是否折叠，多方案时建议折叠 true ，一个方案建议展开 false
@@ -214,6 +214,7 @@ key_binder:
 # https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md
 # （没有 Command 键，不支持）
 # accept 和 send 可用字段除 A-Za-z0-9 外，还包含以下键盘上实际有的键：
+# （区分大小写）
 # BackSpace	退格
 # Tab	水平定位符
 # Linefeed	换行

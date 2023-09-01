@@ -26,14 +26,14 @@
 #
 #
 # 多音字的注音问题：
-# 对于没有注音的词汇，Rime 按照方案中字表中多音字的权重比值，大于 5:100 的就会参与注音。
-# 所以一个解决方案就是：例如「的 de di」，手动注音 di，然后确保字表权重 `de * 0.05 > di`；
+# 对于其他词库没有注音的词汇，Rime 按照方案中字表中多音字的权重比值，大于 5:100 的就会参与注音。
+# 所以一个解决方案就是：例如「的 de di」，手动注音 di，然后确保字表权重 de * 0.05 > di
 #                   即手动注音 di，只让 de 参与自动注音。
 #                   对于「长 chang zhang」这样不易区分的，全部注音并用勤劳的双手完成校对。
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2023-08-10"
+version: "2023-08-27"
 sort: by_weight
 ...
 ### 按需启用
@@ -74,7 +74,6 @@ sort: by_weight
 # 唔	ng
 # 噷	hm	在 custom_phrase.txt 里置顶了
 # 呣	m	在 custom_phrase.txt 里放到第三位了
-# 欻	chua	放到 custom_phrase.txt 里了，不参与造词，这个字和 chu a 冲突太多，并总占据第一个候选项
 # 哼	hng	    放到 custom_phrase.txt 里置顶了
 嗯	eng	9179528
 欸	ei	534
@@ -949,6 +948,7 @@ sort: by_weight
 濋	chu	0
 琡	chu	0
 𬺓	chu	0
+欻	chua	0
 揣	chuai	27568
 踹	chuai	22631
 搋	chuai	35
@@ -1299,7 +1299,7 @@ sort: by_weight
 茋	di	0
 𤧛	di	0
 𬱖	di	0
-嗲	dia	7063
+嗲	dia	0
 点	dian	3978856
 电	dian	1308303
 店	dian	356601
@@ -3634,6 +3634,7 @@ sort: by_weight
 立	li	1293824
 离	li	1222359
 利	li	1091519
+梨	li	767900
 丽	li	653445
 历	li	492045
 礼	li	456545
@@ -3649,7 +3650,6 @@ sort: by_weight
 隶	li	43103
 吏	li	29539
 栗	li	29059
-梨	li	25679
 漓	li	22606
 雳	li	18289
 厘	li	17464
@@ -3713,7 +3713,7 @@ sort: by_weight
 珕	li	0
 𫵷	li	0
 𬍛	li	0
-俩	lia	231043
+俩	lia	0
 连	lian	2453048
 脸	lian	1845354
 联	lian	514908
@@ -5000,14 +5000,14 @@ sort: by_weight
 䓫	qi	0
 𨙸	qi	0
 𬨂	qi	0
-掐	qia	437391
-恰	qia	110670
-洽	qia	13409
-卡	qia	2011
-袷	qia	130
-髂	qia	109
-拤	qia	49
-葜	qia	25
+卡	qia	0
+恰	qia	0
+拤	qia	0
+掐	qia	0
+洽	qia	0
+葜	qia	0
+袷	qia	0
+髂	qia	0
 前	qian	3967855
 钱	qian	1034329
 千	qian	794964
@@ -5669,6 +5669,7 @@ sort: by_weight
 始	shi	1239671
 失	shi	1182384
 士	shi	1175727
+湿	shi	1106830
 石	shi	885579
 识	shi	826907
 视	shi	787375
@@ -5690,7 +5691,6 @@ sort: by_weight
 侍	shi	136559
 拾	shi	136402
 饰	shi	119944
-湿	shi	110683
 誓	shi	85826
 驶	shi	80574
 逝	shi	68598
@@ -6378,8 +6378,8 @@ sort: by_weight
 窊	wa	29
 腽	wa	22
 坬	wa	8
-畖	wa	1
 凹	wa	1
+畖	wa	1
 外	wai	2234449
 歪	wai	78305
 崴	wai	4790
