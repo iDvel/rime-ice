@@ -7,14 +7,17 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"unicode/utf8"
 )
 
 // 一些临时用的函数
 
 func Temp() {
-	// defer os.Exit(11)
-	//
 	// GeneratePinyinTest("你的行动力")
+	// GeneratePinyinTest("都挺长的")
+	// GeneratePinyinTest("血条长")
+
+	findP(BasePath, "谁")
 }
 
 // 列出字表中多音字的状况：是否参与自动注音
@@ -81,5 +84,57 @@ func polyphone() {
 		for _, py := range pys {
 			fmt.Println(py.pinyin, py.weight, py.isAuto)
 		}
+	}
+}
+
+// 在字典中找到此行是否包含同义多音字，如果包含切长度大于等于3，从文件中删除这行，并将所有删除的行写入到 1.txt 中
+func findP(dictPath string, ch string) {
+	// open file
+	file, err := os.OpenFile(dictPath, os.O_RDWR, 0666)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	defer file.Close()
+
+	outFile, err := os.Create("1.txt")
+	if err != nil {
+		log.Fatalln(err)
+	}
+	defer outFile.Close()
+
+	lines := make([]string, 0)
+
+	isMark := false
+	sc := bufio.NewScanner(file)
+	for sc.Scan() {
+		line := sc.Text()
+		if !isMark {
+			lines = append(lines, line)
+			if line == mark {
+				isMark = true
+			}
+			continue
+		}
+		if line == "" || strings.HasPrefix(line, "#") {
+			lines = append(lines, line)
+			continue
+		}
+		parts := strings.Split(line, "\t")
+		if len(parts) != 3 {
+			log.Fatalln("len(parts) != 3", line)
+		}
+		text := parts[0]
+		if strings.Contains(text, ch) && utf8.RuneCountInString(text) >= 3 {
+			outFile.WriteString(line + "\n")
+		} else {
+			lines = append(lines, line)
+		}
+	}
+
+	// 从 lines 重新写入 file
+	file.Truncate(0)
+	file.Seek(0, 0)
+	for _, line := range lines {
+		file.WriteString(line + "\n")
 	}
 }

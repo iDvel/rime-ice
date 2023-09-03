@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2023-08-15"
+version: "2023-09-03"
 sort: by_weight
 ...
 ##### 容错词
@@ -142,6 +142,8 @@ sort: by_weight
 太行山	tai xing shan
 歇斯底里	xie si di li
 歇斯底里	jie si di li
+暖和	nuan huo
+暖和	nuan he
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
