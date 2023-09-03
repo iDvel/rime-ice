@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-08-27"
+version: "2023-09-03"
 sort: by_weight
 ...
 # 一些杂项
@@ -1644,9 +1644,7 @@ Windows	Windows
 Microsoft	Microsoft
 Nintendo	Nintendo
 Google	Google
-Nexus	Nexus
 nexus	nexus
-Pixel	Pixel
 Wii U	WiiU
 Wii	Wii
 Oracle	Oracle
@@ -2262,3 +2260,6 @@ C#	C#
 C#	Csharp
 C#	Cjing
 decode	decode
+KeyCastr	KeyCastr
+Laugh Tale	LaughTale
+Joy Boy	JoyBoy
