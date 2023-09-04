@@ -17,7 +17,8 @@ func Temp() {
 	// GeneratePinyinTest("都挺长的")
 	// GeneratePinyinTest("血条长")
 
-	findP(BasePath, "谁")
+	// findP(ExtPath, "谁")
+	Pinyin(ExtPath)
 }
 
 // 列出字表中多音字的状况：是否参与自动注音
@@ -137,4 +138,6 @@ func findP(dictPath string, ch string) {
 	for _, line := range lines {
 		file.WriteString(line + "\n")
 	}
+
+	fmt.Println("done")
 }
