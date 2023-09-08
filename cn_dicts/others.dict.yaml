@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2023-09-03"
+version: "2023-09-08"
 sort: by_weight
 ...
 ##### 容错词
@@ -144,6 +144,8 @@ sort: by_weight
 歇斯底里	jie si di li
 暖和	nuan huo
 暖和	nuan he
+模棱两可	mo leng liang ke
+模棱两可	mo ling liang ke
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
