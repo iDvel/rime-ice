@@ -33,7 +33,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2023-09-03"
+version: "2023-09-08"
 sort: by_weight
 ...
 ### 按需启用
@@ -66,6 +66,8 @@ sort: by_weight
 # 觍	tian
 # 𪨊	song
 # 磺	huang
+# 屮	cao
+# 芔	cao
 
 
 ### 小时候没学过的拼音。。。
@@ -613,6 +615,8 @@ sort: by_weight
 糙	cao	12840
 槽	cao	12412
 漕	cao	2663
+屮	cao	2222
+芔	cao	1111
 艚	cao	50
 螬	cao	26
 𥕢	cao	0
@@ -3586,15 +3590,15 @@ sort: by_weight
 铹	lao	2
 络	lao	1
 𫭼	lao	0
-了	le	3481243
-乐	le	777260
-勒	le	149722
-叻	le	525
-饹	le	55
-泐	le	34
-鳓	le	22
-仂	le	15
-簕	le	8
+了	le	9
+乐	le	8
+勒	le	7
+叻	le	6
+饹	le	5
+泐	le	4
+鳓	le	4
+仂	le	3
+簕	le	2
 嘞	le	1
 雷	lei	560379
 类	lei	542775
@@ -3773,7 +3777,6 @@ sort: by_weight
 廖	liao	31067
 撩	liao	21011
 寥	liao	20857
-了	liao	20000
 僚	liao	19624
 缭	liao	16457
 燎	liao	9587
@@ -3795,6 +3798,7 @@ sort: by_weight
 憭	liao	6
 簝	liao	4
 橑	liao	1
+了	liao	0
 𪤗	liao	0
 列	lie	244324
 裂	lie	174922

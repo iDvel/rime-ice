@@ -72,6 +72,7 @@ local corrections = {
 	["tai xing shan"] = { text = "太行山", comment = "tai hang shan" },
 	["jie si di li"] = { text = "歇斯底里", comment = "xie si di li" },
 	["nuan he"] = { text = "暖和", comment = "nuan huo" },
+	["mo ling liang ke"] = { text = "模棱两可", comment = "mo leng liang ke" },
 	-- 错字
 	["ceng jin"] = { text = "曾今", comment = "曾经" },
 	["an nai"] = { text = "按耐", comment = "按捺(na)" },

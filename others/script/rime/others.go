@@ -3,6 +3,7 @@ package rime
 import (
 	"bufio"
 	"fmt"
+	mapset "github.com/deckarep/golang-set/v2"
 	"log"
 	"os"
 	"strconv"
@@ -17,8 +18,9 @@ func Temp() {
 	// GeneratePinyinTest("都挺长的")
 	// GeneratePinyinTest("血条长")
 
-	// findP(ExtPath, "谁")
+	// findP(BasePath, "血")
 	Pinyin(ExtPath)
+	AddWeight(ExtPath, 100)
 }
 
 // 列出字表中多音字的状况：是否参与自动注音
@@ -107,6 +109,7 @@ func findP(dictPath string, ch string) {
 
 	isMark := false
 	sc := bufio.NewScanner(file)
+	set := mapset.NewSet[string]() // 去重用的
 	for sc.Scan() {
 		line := sc.Text()
 		if !isMark {
@@ -125,9 +128,10 @@ func findP(dictPath string, ch string) {
 			log.Fatalln("len(parts) != 3", line)
 		}
 		text := parts[0]
-		if strings.Contains(text, ch) && utf8.RuneCountInString(text) >= 3 {
+		if strings.Contains(text, ch) && utf8.RuneCountInString(text) >= 3 && !set.Contains(text) {
 			outFile.WriteString(line + "\n")
 		} else {
+			set.Add(text)
 			lines = append(lines, line)
 		}
 	}
