@@ -11,18 +11,22 @@ import (
 
 func main() {
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
+
 	if len(os.Args) > 1 {
-		if os.Args[1] == "sort" {
+		switch os.Args[1] {
+		case "s":
 			goto SORT
-		}
-		if os.Args[1] == "temp" {
+		case "t":
+			rime.Temp()
+			return
+		case "p":
+			rime.CheckPolyphone(rime.BasePath)
+			return
+		case "tp":
 			rime.Pinyin(filepath.Join(rime.RimeDir, "cn_dicts/temp"))
 			return
 		}
 	}
-
-	// 临时
-	rime.Temp()
 
 	// Emoji 检查和更新
 	rime.CheckAndGenerateEmoji()

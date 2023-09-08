@@ -44,8 +44,6 @@ var onlyOne = map[string]string{
 	"私钥":  "si yao",
 	"甲壳":  "jia ke",
 	"掉色":  "diao se",
-	"变色":  "bian se",
-	"上色":  "shang se",
 	"怎么着": "zen me zhe",
 	"这么着": "zhe me zhe",
 	"那么着": "na me zhe",
