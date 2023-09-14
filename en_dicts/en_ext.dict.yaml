@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-09-03"
+version: "2023-09-08"
 sort: by_weight
 ...
 # 一些杂项
@@ -2263,3 +2263,5 @@ decode	decode
 KeyCastr	KeyCastr
 Laugh Tale	LaughTale
 Joy Boy	JoyBoy
+gotcha	gotcha
+wombat	wombat
