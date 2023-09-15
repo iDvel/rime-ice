@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-09-08"
+version: "2023-09-15"
 sort: by_weight
 ...
 # 一些杂项
@@ -124,10 +124,10 @@ Phoebe	Phoebe
 
 # 带权重的系列
 iPhone	iPhone	999
-iPhone 14	iPhone	4
-iPhone 14 Plus	iPhone	3
-iPhone 14 Pro	iPhone	2
-iPhone 14 Pro Max	iPhone	1
+iPhone 15	iPhone	4
+iPhone 15 Plus	iPhone	3
+iPhone 15 Pro	iPhone	2
+iPhone 15 Pro Max	iPhone	1
 
 Mac OS X	MacOSX	999
 Mac OS X Cheetah	MacOSX	1
@@ -208,6 +208,10 @@ iPhone 14	iPhone14
 iPhone 14 Plus	iPhone14Plus
 iPhone 14 Pro	iPhone14Pro
 iPhone 14 Pro Max	iPhone14ProMax
+iPhone 15	iPhone15
+iPhone 15 Plus	iPhone15Plus
+iPhone 15 Pro	iPhone15Pro
+iPhone 15 Pro Max	iPhone15ProMax
 Mac OS X Cheetah	MacOSXCheetah
 Mac OS X Puma	MacOSXPuma
 Mac OS X Jaguar	MacOSXJaguar
@@ -2265,3 +2269,6 @@ Laugh Tale	LaughTale
 Joy Boy	JoyBoy
 gotcha	gotcha
 wombat	wombat
+prank	prank
+RustRover	RustRover
+bilibili	bilibili

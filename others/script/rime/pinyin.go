@@ -83,6 +83,7 @@ var onlyOne = map[string]string{
 	"绿":   "lv",
 	"圈里":  "quan li",
 	"圈外":  "quan wai",
+	"咱家":  "zan jia",
 	"圈":   "quan",
 	"伯":   "bo",
 	"胖":   "pang",
