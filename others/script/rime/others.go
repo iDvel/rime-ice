@@ -18,7 +18,7 @@ func Temp() {
 	// GeneratePinyinTest("都挺长的")
 	// GeneratePinyinTest("血条长")
 
-	// findP(BasePath, "血")
+	// findP(ExtPath, "熟")
 	Pinyin(ExtPath)
 	AddWeight(ExtPath, 100)
 }
