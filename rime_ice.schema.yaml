@@ -23,7 +23,7 @@ schema:
 # reset: 默认状态。 注释掉后，切换窗口时不会重置到默认状态。
 switches:
   - name: ascii_mode
-    states: [ 中, A ]
+    states: [ 中, Ａ ]
     reset: 0
   - name: ascii_punct # 中英标点
     states: [ ¥, $ ]

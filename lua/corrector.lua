@@ -73,14 +73,19 @@ local corrections = {
 	["jie si di li"] = { text = "歇斯底里", comment = "xie si di li" },
 	["nuan he"] = { text = "暖和", comment = "nuan huo" },
 	["mo ling liang ke"] = { text = "模棱两可", comment = "mo leng liang ke" },
+	["pan yang hu"] = { text = "鄱阳湖", comment = "po yang hu" },
 	-- 错字
 	["ceng jin"] = { text = "曾今", comment = "曾经" },
 	["an nai"] = { text = "按耐", comment = "按捺(na)" },
 	["an nai bu zhu"] = { text = "按耐不住", comment = "按捺(na)不住" },
-	["bie jie"] = { text = "别介", comment = "别价" },
-	["beng jie"] = { text = "甭介", comment = "甭价" },
+	["bie jie"] = { text = "别介", comment = "别价(jie)" },
+	["beng jie"] = { text = "甭介", comment = "甭价(jie)" },
 	["xue mai pen zhang"] = { text = "血脉喷张", comment = "血脉贲(ben)张 | 血脉偾(fen)张" },
 	["qi ke fu"] = { text = "契科夫", comment = "契诃(he)夫" },
+	["zhao cha"] = { text = "找茬", comment = "找碴" },
+	["zhao cha er"] = { text = "找茬儿", comment = "找碴儿" },
+	["da jia lai zhao cha"] = { text = "大家来找茬", comment = "大家来找碴" },
+	["da jia lai zhao cha er"] = { text = "大家来找茬儿", comment = "大家来找碴儿" },
 }
 
 local function corrector(input)

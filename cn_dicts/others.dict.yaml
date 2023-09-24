@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2023-09-08"
+version: "2023-09-24"
 sort: by_weight
 ...
 ##### 容错词
@@ -146,6 +146,8 @@ sort: by_weight
 暖和	nuan he
 模棱两可	mo leng liang ke
 模棱两可	mo ling liang ke
+鄱阳湖	po yang hu
+鄱阳湖	pan yang hu
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
