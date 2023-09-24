@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-09-15"
+version: "2023-09-24"
 sort: by_weight
 ...
 # 一些杂项
@@ -2028,6 +2028,7 @@ BREAKING CHANGE	BREAKINGCHANGE
 GitHub Actions	GitHubActions
 UUID	UUID
 Universally Unique Identifier	UUID
+stargazer	stargazer
 stargazers	stargazers
 fallback	fallback
 Fyne	Fyne
@@ -2272,3 +2273,5 @@ wombat	wombat
 prank	prank
 RustRover	RustRover
 bilibili	bilibili
+Terraria	Terraria
+Unihan	Unihan
