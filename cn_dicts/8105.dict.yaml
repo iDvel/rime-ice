@@ -33,7 +33,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2023-09-24"
+version: "2023-09-25"
 sort: by_weight
 ...
 ### 按需启用
@@ -4485,15 +4485,15 @@ sort: by_weight
 硇	nao	51
 臑	nao	10
 峱	nao	1
-呢	ne	1793494
+呢	ne	179349
 讷	ne	10324
 哪	ne	1
 内	nei	1509530
 馁	nei	5700
 嫩	nen	58594
 恁	nen	3956
-能	neng	5933639
-你	ni	14221925
+能	neng	59336
+你	ni	1422192
 尼	ni	272244
 妮	ni	155375
 泥	ni	120657
@@ -4615,8 +4615,8 @@ sort: by_weight
 衄	nv	42
 虐	nve	30741
 疟	nve	1012
-哦	o	356333
-噢	o	49608
+哦	o	3563330
+噢	o	496080
 喔	o	1
 欧	ou	253543
 偶	ou	150991
