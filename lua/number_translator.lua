@@ -1,4 +1,4 @@
-﻿-- 来源 https://github.com/yanhuacuo/98wubi-tables > http://98wb.ysepan.com/
+-- 来源 https://github.com/yanhuacuo/98wubi-tables > http://98wb.ysepan.com/
 -- 数字、金额大写 (任意大写字母引导+数字)
 
 local function splitNumPart(str)

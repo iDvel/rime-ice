@@ -4,6 +4,10 @@
 ---
 name: rime_ice
 version: "2023-07-27"
+
+# 使用的字频：[25亿字语料汉字字频表](https://faculty.blcu.edu.cn/xinghb/zh_CN/article/167473/content/1437.htm)
+vocabulary: rime_ice_char_weight
+
 import_tables:
   - cn_dicts/8105     # 字表
   # - cn_dicts/41448  # 大字表（按需启用）

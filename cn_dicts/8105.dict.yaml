@@ -7,7 +7,6 @@
 #
 #
 # 使用的数据：https://zh.wiktionary.org/wiki/Appendix:%E6%B1%89%E8%AF%AD%E6%8B%BC%E9%9F%B3%E7%B4%A2%E5%BC%95/%E9%80%9A%E7%94%A8%E8%A7%84%E8%8C%83%E6%B1%89%E5%AD%97%E8%A1%A8
-# 使用的字频：[25亿字语料汉字字频表](https://faculty.blcu.edu.cn/xinghb/zh_CN/article/167473/content/1437.htm)
 #
 #
 # 这个数据、《现代汉语词典》、《现代汉语规范词典》之间的注音并不都相同，使用前请注意，参照《现汉》增加了一些原数据中没有的读音。
@@ -43,14 +42,14 @@ sort: by_weight
 
 
 ### 扩展，不在《通用规范汉字表》的字:
-𰻝	biang	1
-嬢	niang	1
-薙	ti	1
-菈	la	1
-卻	que	1
-濛	meng	1
-诶	ei	1
-凃	tu	1
+# 𰻝	biang
+# 嬢	niang
+# 薙	ti
+# 菈	la
+# 卻	que
+# 濛	meng
+# 诶	ei
+# 凃	tu
 # 注释掉的这几行已经加入到下面并调整到合适的权重了
 # 〇	ling
 # 囧	jiong
@@ -78,8508 +77,8517 @@ sort: by_weight
 # 噷	hm	在 custom_phrase.txt 里置顶了
 # 呣	m	在 custom_phrase.txt 里放到第三位了
 # 哼	hng	    放到 custom_phrase.txt 里置顶了
-嗯	eng	9179528
-欸	ei	534
-哟	yo	59051
-唷	yo	1
-育	yo	0
+# 育	yo	0.0004668382%
 
 
 ### 字表
 # +_+
-啊	a	2366043
-阿	a	867275
-吖	a	854
-锕	a	144
-腌	a	1
-爱	ai	1516399
-艾	ai	212019
-哎	ai	166400
-唉	ai	139034
-哀	ai	125269
-挨	ai	83876
-埃	ai	83548
-矮	ai	81728
-碍	ai	79505
-暧	ai	21715
-癌	ai	15319
-蔼	ai	14033
-隘	ai	8588
-皑	ai	6424
-霭	ai	6123
-嗳	ai	3273
-嫒	ai	1829
-毐	ai	1013
-欸	ai	534
-叆	ai	376
-瑷	ai	232
-砹	ai	53
-锿	ai	39
-嗌	ai	1
-按	an	3826950
-安	an	980103
-暗	an	891081
-案	an	361285
-岸	an	129872
-俺	an	64855
-黯	an	42786
-庵	an	13087
-鞍	an	11579
-谙	an	6174
-氨	an	2112
-胺	an	1174
-鹌	an	1153
-桉	an	1066
-犴	an	802
-唵	an	377
-铵	an	129
-埯	an	52
-盦	an	23
-垵	an	5
-𩽾	an	0
-昂	ang	80972
-肮	ang	14717
-盎	ang	8678
-卬	ang	265
-傲	ao	190525
-奥	ao	180716
-熬	ao	45832
-敖	ao	27108
-澳	ao	23261
-凹	ao	20644
-懊	ao	20550
-嗷	ao	17032
-拗	ao	9593
-袄	ao	9096
-鳌	ao	6289
-翱	ao	5945
-獒	ao	5756
-骜	ao	5585
-坳	ao	3440
-鏖	ao	2590
-遨	ao	2435
-媪	ao	921
-螯	ao	533
-岙	ao	528
-璈	ao	438
-鏊	ao	393
-聱	ao	100
-廒	ao	31
-奡	ao	19
-隩	ao	6
-薁	ao	5
-嶅	ao	0
-把	ba	3798288
-吧	ba	2403165
-八	ba	740031
-爸	ba	541485
-巴	ba	523594
-罢	ba	242362
-拔	ba	177503
-霸	ba	133104
-疤	ba	31337
-跋	ba	26559
-扒	ba	25334
-叭	ba	23566
-芭	ba	14409
-靶	ba	11461
-坝	ba	10236
-耙	ba	3977
-笆	ba	3384
-魃	ba	2205
-粑	ba	1704
-钯	ba	872
-灞	ba	868
-捌	ba	415
-鲅	ba	390
-岜	ba	273
-鲃	ba	40
-菝	ba	15
-蚆	ba	8
-胈	ba	5
-羓	ba	3
-朳	ba	1
-妭	ba	0
-白	bai	2322211
-百	bai	962451
-败	bai	364055
-摆	bai	349256
-拜	bai	242993
-柏	bai	56086
-掰	bai	10932
-伯	bai	1734
-佰	bai	1600
-稗	bai	965
-捭	bai	617
-半	ban	1095098
-办	ban	956075
-般	ban	940949
-板	ban	466756
-班	ban	459772
-伴	ban	189544
-版	ban	138140
-搬	ban	106566
-扮	ban	102939
-斑	ban	53974
-扳	ban	22636
-瓣	ban	22056
-绊	ban	16942
-颁	ban	15165
-拌	ban	12927
-阪	ban	3695
-坂	ban	2872
-瘢	ban	390
-钣	ban	127
-癍	ban	95
-攽	ban	21
-柈	ban	20
-昄	ban	6
-湴	ban	2
-靽	ban	2
-𨭉	ban	0
-帮	bang	901633
-膀	bang	163712
-邦	bang	114842
-棒	bang	77284
-绑	bang	58012
-榜	bang	41985
-傍	bang	34850
-磅	bang	10605
-梆	bang	5442
-镑	bang	4747
-谤	bang	4578
-蚌	bang	3936
-浜	bang	1079
-蒡	bang	70
-玤	bang	3
-搒	bang	1
-塝	bang	0
-𠳐	bang	0
-保	bao	859752
-报	bao	856017
-包	bao	667583
-宝	bao	564720
-抱	bao	519992
-暴	bao	286045
-爆	bao	199957
-薄	bao	143289
-堡	bao	100994
-饱	bao	82039
-豹	bao	58129
-胞	bao	46906
-剥	bao	42275
-鲍	bao	23115
-褒	bao	9130
-刨	bao	8691
-苞	bao	7827
-鸨	bao	7173
-曝	bao	6457
-煲	bao	3617
-葆	bao	3519
-雹	bao	2984
-褓	bao	2108
-炮	bao	1000
-龅	bao	789
-孢	bao	455
-趵	bao	341
-枹	bao	113
-瀑	bao	1
-被	bei	2998064
-备	bei	823555
-北	bei	718033
-背	bei	642470
-呗	bei	317817
-杯	bei	301690
-辈	bei	281934
-悲	bei	238519
-贝	bei	211741
-倍	bei	124204
-卑	bei	82925
-惫	bei	40277
-碑	bei	34260
-狈	bei	33949
-蓓	bei	12618
-悖	bei	5666
-孛	bei	3274
-焙	bei	1206
-邶	bei	1064
-陂	bei	947
-钡	bei	386
-褙	bei	243
-碚	bei	151
-鞴	bei	71
-鐾	bei	47
-鹎	bei	22
-棓	bei	6
-糒	bei	6
-琲	bei	4
-椑	bei	2
-臂	bei	1
-鞁	bei	1
-𬇙	bei	0
-本	ben	2579524
-奔	ben	264800
-笨	ben	100829
-贲	ben	4601
-苯	ben	3045
-锛	ben	483
-畚	ben	155
-犇	ben	89
-坌	ben	44
-倴	ben	3
-栟	ben	2
-崩	beng	61288
-蹦	beng	49581
-绷	beng	29020
-迸	beng	17662
-甭	beng	10111
-嘣	beng	4487
-泵	beng	1553
-镚	beng	111
-甏	beng	65
-琫	beng	5
-祊	beng	2
-蚌	beng	1
-比	bi	1844194
-必	bi	940785
-毕	bi	433506
-笔	bi	273860
-避	bi	268046
-闭	bi	241527
-鼻	bi	197996
-逼	bi	192855
-屄	bi	191391
-臂	bi	190591
-壁	bi	182739
-彼	bi	141382
-碧	bi	113618
-币	bi	104705
-陛	bi	76314
-鄙	bi	56240
-蔽	bi	36096
-匕	bi	35573
-毙	bi	32880
-辟	bi	29251
-婢	bi	24051
-弊	bi	20759
-璧	bi	14608
-庇	bi	12566
-敝	bi	10151
-痹	bi	9748
-弼	bi	8249
-贲	bi	4601
-俾	bi	3864
-裨	bi	2321
-薜	bi	2167
-哔	bi	1931
-愎	bi	1389
-吡	bi	694
-跸	bi	627
-妣	bi	609
-篦	bi	550
-荜	bi	550
-狴	bi	536
-毖	bi	423
-蓖	bi	317
-嬖	bi	299
-筚	bi	290
-髀	bi	253
-荸	bi	223
-濞	bi	191
-畀	bi	189
-赑	bi	144
-秕	bi	123
-箅	bi	101
-芘	bi	101
-佛	bi	100
-襞	bi	82
-苾	bi	68
-滗	bi	47
-铋	bi	43
-庳	bi	36
-萆	bi	36
-皕	bi	27
-咇	bi	26
-舭	bi	20
-沘	bi	19
-珌	bi	18
-觱	bi	16
-诐	bi	14
-邲	bi	9
-佖	bi	7
-馝	bi	3
-坒	bi	2
-泌	bi	1
-秘	bi	1
-鲾	bi	0
-边	bian	2448615
-便	bian	1735257
-变	bian	1428820
-遍	bian	247865
-编	bian	167598
-辩	bian	83564
-鞭	bian	64899
-辨	bian	51442
-扁	bian	37657
-辫	bian	17059
-贬	bian	16755
-蝙	bian	16004
-匾	bian	7782
-卞	bian	6201
-汴	bian	5636
-弁	bian	1461
-砭	bian	771
-煸	bian	641
-褊	bian	272
-笾	bian	102
-鳊	bian	98
-昪	bian	96
-忭	bian	74
-苄	bian	51
-抃	bian	26
-碥	bian	16
-萹	bian	5
-𨚕	bian	0
-表	biao	1303318
-标	biao	352517
-镖	biao	64000
-彪	biao	42248
-飙	biao	12231
-婊	biao	9991
-骠	biao	3168
-镳	biao	3137
-膘	biao	2359
-裱	biao	1746
-杓	biao	404
-飑	biao	158
-俵	biao	157
-鳔	biao	114
-摽	biao	90
-瘭	biao	35
-熛	biao	13
-藨	biao	8
-儦	biao	5
-骉	biao	2
-瀌	biao	1
-幖	biao	0
-脿	biao	0
-别	bie	2000757
-憋	bie	41712
-瘪	bie	11246
-鳖	bie	6999
-蹩	bie	3620
-癿	bie	4
-宾	bin	117598
-彬	bin	60398
-斌	bin	48027
-滨	bin	26667
-鬓	bin	11728
-缤	bin	7365
-镔	bin	6859
-濒	bin	6797
-槟	bin	4489
-殡	bin	4016
-膑	bin	1802
-摈	bin	914
-玢	bin	592
-傧	bin	331
-豳	bin	226
-邠	bin	159
-髌	bin	106
-并	bing	1624589
-兵	bing	1226804
-冰	bing	534562
-病	bing	505956
-柄	bing	76845
-饼	bing	40371
-禀	bing	34572
-秉	bing	19831
-丙	bing	11170
-炳	bing	9133
-槟	bing	4489
-摒	bing	4066
-屏	bing	1000
-邴	bing	522
-昺	bing	146
-栟	bing	2
-蛃	bing	0
-波	bo	377782
-伯	bo	289144
-博	bo	186289
-薄	bo	143289
-脖	bo	119048
-拨	bo	105755
-播	bo	84353
-勃	bo	81808
-玻	bo	74100
-膊	bo	73983
-柏	bo	56086
-搏	bo	49712
-驳	bo	46073
-剥	bo	42275
-泊	bo	41521
-簸	bo	9837
-帛	bo	8139
-钵	bo	7494
-跛	bo	5214
-渤	bo	4217
-菠	bo	4056
-礴	bo	4039
-孛	bo	3274
-啵	bo	2483
-舶	bo	2433
-卜	bo	2000
-饽	bo	1827
-铂	bo	1444
-钹	bo	1376
-箔	bo	1233
-亳	bo	842
-擘	bo	803
-趵	bo	341
-檗	bo	246
-鹁	bo	100
-僰	bo	88
-踣	bo	83
-镈	bo	54
-砵	bo	18
-鲌	bo	14
-哱	bo	11
-嶓	bo	11
-浡	bo	6
-馞	bo	4
-艴	bo	1
-蕃	bo	1
-欂	bo	0
-袯	bo	0
-𬭛	bo	0
-不	bu	29858097
-部	bu	1972176
-步	bu	1077549
-布	bu	591571
-补	bu	212484
-怖	bu	103474
-捕	bu	87090
-卜	bu	57367
-簿	bu	9481
-埔	bu	6340
-哺	bu	5193
-埠	bu	3319
-卟	bu	2250
-堡	bu	1000
-逋	bu	438
-钚	bu	376
-晡	bu	112
-瓿	bu	75
-醭	bu	23
-蔀	bu	18
-埗	bu	6
-𬷕	bu	0
-擦	ca	172541
-嚓	ca	16791
-才	cai	2774963
-菜	cai	288767
-彩	cai	274800
-采	cai	264104
-财	cai	235676
-材	cai	212793
-猜	cai	185595
-蔡	cai	86233
-裁	cai	79360
-踩	cai	66021
-睬	cai	18741
-偲	cai	33
-参	can	387049
-残	can	232905
-惨	can	222830
-餐	can	201053
-灿	can	71504
-惭	can	27081
-蚕	can	15234
-璨	can	8551
-粲	can	2974
-骖	can	155
-黪	can	80
-䅟	can	0
-藏	cang	339641
-苍	cang	194304
-仓	cang	68847
-舱	cang	43880
-沧	cang	37794
-伧	cang	660
-鸧	cang	18
-草	cao	411706
-操	cao	235165
-肏	cao	180000
-艹	cao	146000
-曹	cao	18328
-嘈	cao	15262
-糙	cao	12840
-槽	cao	12412
-漕	cao	2663
-屮	cao	2222
-芔	cao	1111
-艚	cao	50
-螬	cao	26
-𥕢	cao	0
-策	ce	213136
-侧	ce	199092
-测	ce	188406
-册	ce	53084
-厕	ce	45544
-恻	ce	7439
-岑	cen	10316
-涔	cen	5665
-参	cen	1
-曾	ceng	621971
-层	ceng	390823
-蹭	ceng	26351
-噌	ceng	4924
-嶒	ceng	35
-差	cha	573616
-查	cha	417554
-察	cha	413974
-茶	cha	248811
-插	cha	167435
-诧	cha	61708
-叉	cha	54152
-岔	cha	23623
-嚓	cha	16791
-茬	cha	13642
-衩	cha	3768
-碴	cha	3602
-姹	cha	3350
-杈	cha	2758
-搽	cha	2390
-刹	cha	1000
-檫	cha	683
-槎	cha	419
-汊	cha	389
-镲	cha	187
-锸	cha	103
-馇	cha	99
-垞	cha	42
-侘	cha	30
-猹	cha	29
-蹅	cha	27
-嵖	cha	15
-喳	cha	1
-𥻗	cha	0
-拆	chai	99444
-柴	chai	61680
-钗	chai	18040
-差	chai	10000
-豺	chai	3825
-侪	chai	647
-茝	chai	389
-虿	chai	124
-瘥	chai	45
-产	chan	617667
-颤	chan	194953
-缠	chan	145147
-禅	chan	46691
-蝉	chan	26987
-搀	chan	21047
-铲	chan	20146
-婵	chan	16719
-掺	chan	12439
-阐	chan	11957
-忏	chan	8687
-馋	chan	8379
-潺	chan	7363
-蟾	chan	5236
-谄	chan	5048
-谗	chan	3541
-孱	chan	2698
-冁	chan	1196
-澶	chan	453
-觇	chan	167
-镡	chan	141
-羼	chan	134
-廛	chan	131
-巉	chan	114
-蒇	chan	81
-韂	chan	77
-躔	chan	47
-刬	chan	35
-浐	chan	34
-襜	chan	31
-瀍	chan	25
-骣	chan	23
-镵	chan	10
-旵	chan	8
-啴	chan	6
-梴	chan	3
-儳	chan	1
-单	chan	1
-辿	chan	0
-𬊤	chan	0
-长	chang	3100060
-常	chang	1623697
-场	chang	1443226
-唱	chang	214664
-厂	chang	140040
-尝	chang	127841
-昌	chang	87938
-畅	chang	66298
-肠	chang	64217
-偿	chang	58352
-敞	chang	32687
-怅	chang	19456
-倡	chang	15456
-娼	chang	10278
-嫦	chang	8971
-猖	chang	8948
-昶	chang	2483
-徜	chang	2131
-氅	chang	1698
-伥	chang	1014
-裳	chang	1000
-菖	chang	870
-苌	chang	866
-阊	chang	332
-鬯	chang	129
-惝	chang	119
-鲳	chang	98
-鲿	chang	0
-𬬮	chang	0
-朝	chao	709793
-超	chao	383924
-潮	chao	139090
-吵	chao	117058
-嘲	chao	67228
-抄	chao	47668
-炒	chao	38581
-巢	chao	28649
-钞	chao	22089
-晁	chao	6804
-焯	chao	547
-耖	chao	32
-怊	chao	15
-弨	chao	7
-绰	chao	1
-车	che	1338066
-彻	che	168415
-扯	che	131478
-撤	che	111118
-澈	che	32041
-掣	che	7797
-砗	che	232
-坼	che	196
-尺	che	1
-㬚	che	0
-沉	chen	718489
-陈	chen	714404
-臣	chen	247343
-晨	chen	213173
-尘	chen	204457
-趁	chen	124805
-辰	chen	112021
-衬	chen	50272
-嗔	chen	31168
-琛	chen	15726
-称	chen	7000
-宸	chen	6716
-忱	chen	5425
-抻	chen	2394
-碜	chen	2094
-谌	chen	1820
-谶	chen	1734
-郴	chen	454
-棽	chen	300
-瞋	chen	263
-榇	chen	155
-龀	chen	111
-疢	chen	12
-梣	chen	3
-煁	chen	0
-𬘭	chen	0
-成	cheng	3478315
-城	cheng	1258895
-程	cheng	590619
-称	cheng	442107
-承	cheng	361606
-诚	cheng	214660
-盛	cheng	202048
-乘	cheng	131984
-撑	cheng	105150
-呈	cheng	66909
-惩	cheng	46147
-丞	cheng	31714
-澄	cheng	22349
-逞	cheng	20757
-橙	cheng	18984
-骋	cheng	8977
-瞠	cheng	6874
-秤	cheng	5682
-铖	cheng	1123
-塍	cheng	327
-琤	cheng	283
-裎	cheng	280
-澂	cheng	266
-埕	cheng	196
-柽	cheng	128
-蛏	cheng	105
-酲	cheng	63
-枨	cheng	41
-珵	cheng	41
-赪	cheng	30
-偁	cheng	20
-宬	cheng	13
-牚	cheng	10
-珹	cheng	9
-憕	cheng	5
-庱	cheng	4
-噌	cheng	1
-晟	cheng	1
-铛	cheng	1
-吃	chi	1445563
-持	chi	641315
-迟	chi	203433
-赤	chi	174098
-痴	chi	140246
-池	chi	132332
-尺	chi	102253
-齿	chi	90782
-斥	chi	82160
-驰	chi	69666
-耻	chi	69286
-翅	chi	64425
-哧	chi	31474
-炽	chi	27194
-嗤	chi	26283
-蚩	chi	22424
-叱	chi	18954
-弛	chi	12591
-侈	chi	11948
-啻	chi	4090
-敕	chi	4087
-螭	chi	2805
-魑	chi	2543
-饬	chi	2326
-笞	chi	1152
-匙	chi	1000
-踟	chi	702
-墀	chi	556
-豉	chi	498
-媸	chi	490
-褫	chi	484
-鸱	chi	353
-彳	chi	148
-茌	chi	125
-篪	chi	110
-瘛	chi	74
-摛	chi	58
-眵	chi	56
-傺	chi	42
-漦	chi	7
-胣	chi	3
-瓻	chi	0
-痓	chi	0
-𫄨	chi	0
-冲	chong	862983
-充	chong	409223
-重	chong	114049
-虫	chong	110359
-崇	chong	107803
-宠	chong	86062
-忡	chong	15459
-憧	chong	12337
-铳	chong	3095
-舂	chong	1111
-艟	chong	555
-翀	chong	252
-茺	chong	116
-珫	chong	11
-漴	chong	3
-涌	chong	1
-种	chong	1
-㳘	chong	0
-摏	chong	0
-抽	chou	270738
-仇	chou	208949
-臭	chou	122493
-丑	chou	95998
-愁	chou	93376
-筹	chou	54932
-瞅	chou	40255
-酬	chou	31980
-绸	chou	23778
-畴	chou	11750
-踌	chou	11238
-惆	chou	9648
-稠	chou	9216
-俦	chou	1334
-雠	chou	737
-瘳	chou	173
-犨	chou	169
-帱	chou	1
-杻	chou	1
-侴	chou	0
-椆	chou	0
-出	chu	8294943
-处	chu	1626691
-楚	chu	728204
-除	chu	599918
-初	chu	455646
-触	chu	213212
-厨	chu	89003
-础	chu	74017
-储	chu	41834
-畜	chu	28647
-褚	chu	16900
-搐	chu	14053
-橱	chu	13139
-躇	chu	11200
-雏	chu	9648
-锄	chu	9338
-矗	chu	7808
-杵	chu	5556
-楮	chu	4690
-怵	chu	3616
-黜	chu	2320
-绌	chu	1543
-蜍	chu	1503
-刍	chu	1403
-滁	chu	949
-樗	chu	823
-蹰	chu	622
-憷	chu	432
-亍	chu	268
-俶	chu	162
-斶	chu	9
-摴	chu	6
-䝙	chu	0
-䢺	chu	0
-濋	chu	0
-琡	chu	0
-𬺓	chu	0
-欻	chua	0
-揣	chuai	27568
-踹	chuai	22631
-搋	chuai	35
-啜	chuai	1
-传	chuan	1034638
-穿	chuan	634742
-船	chuan	345686
-川	chuan	193133
-喘	chuan	117078
-串	chuan	80922
-钏	chuan	2743
-椽	chuan	1139
-舛	chuan	934
-遄	chuan	284
-氚	chuan	130
-床	chuang	465801
-窗	chuang	298137
-创	chuang	270394
-疮	chuang	9968
-闯	chuang	8144
-怆	chuang	6862
-幢	chuang	100
-噇	chuang	21
-吹	chui	209806
-垂	chui	119904
-锤	chui	36163
-捶	chui	18237
-炊	chui	9154
-槌	chui	4044
-陲	chui	2456
-棰	chui	405
-倕	chui	17
-圌	chui	1
-春	chun	414544
-纯	chun	212265
-唇	chun	161329
-蠢	chun	63523
-淳	chun	18919
-醇	chun	12444
-椿	chun	2532
-鹑	chun	1695
-莼	chun	493
-蝽	chun	15
-瑃	chun	1
-䲠	chun	0
-堾	chun	0
-𬭚	chun	0
-绰	chuo	27937
-戳	chuo	20671
-啜	chuo	9057
-龊	chuo	7295
-辍	chuo	3649
-踔	chuo	162
-惙	chuo	15
-逴	chuo	4
-此	ci	2725965
-次	ci	2307457
-刺	ci	394555
-词	ci	196564
-辞	ci	130150
-慈	ci	93047
-赐	ci	81549
-磁	ci	28220
-伺	ci	27405
-瓷	ci	24855
-茨	ci	23761
-雌	ci	10979
-祠	ci	10484
-呲	ci	6309
-疵	ci	4857
-泚	ci	435
-糍	ci	401
-鹚	ci	268
-茈	ci	92
-跐	ci	53
-玼	ci	16
-佽	ci	11
-兹	ci	1
-差	ci	1
-莿	ci	0
-𫚖	ci	0
-从	cong	3173776
-匆	cong	170609
-聪	cong	138731
-丛	cong	84509
-葱	cong	24137
-琮	cong	3330
-淙	cong	3304
-囱	cong	3098
-骢	cong	1056
-苁	cong	659
-枞	cong	609
-璁	cong	500
-熜	cong	295
-悰	cong	85
-凑	cou	97611
-辏	cou	246
-腠	cou	72
-粗	cu	159898
-促	cu	114240
-醋	cu	33580
-簇	cu	19096
-猝	cu	12077
-蹙	cu	10904
-蹴	cu	1919
-卒	cu	600
-徂	cu	560
-殂	cu	248
-蔟	cu	192
-窜	cuan	65974
-蹿	cuan	12631
-篡	cuan	6922
-撺	cuan	1661
-攒	cuan	300
-汆	cuan	182
-爨	cuan	137
-镩	cuan	16
-脆	cui	145125
-催	cui	86151
-翠	cui	82046
-崔	cui	71661
-摧	cui	40766
-粹	cui	36862
-悴	cui	19029
-璀	cui	8045
-啐	cui	7044
-萃	cui	6318
-瘁	cui	3936
-淬	cui	3322
-榱	cui	81
-毳	cui	60
-漼	cui	23
-缞	cui	12
-存	cun	485467
-村	cun	343959
-寸	cun	85513
-忖	cun	25374
-皴	cun	307
-邨	cun	108
-错	cuo	839927
-措	cuo	104929
-挫	cuo	32364
-搓	cuo	28103
-撮	cuo	10534
-磋	cuo	10397
-蹉	cuo	1454
-锉	cuo	1419
-厝	cuo	794
-矬	cuo	654
-嵯	cuo	555
-痤	cuo	358
-鹾	cuo	214
-脞	cuo	55
-瑳	cuo	14
-棤	cuo	0
-莝	cuo	0
-大	da	10828984
-打	da	2882337
-答	da	796906
-达	da	741782
-搭	da	135458
-哒	da	21140
-瘩	da	17347
-嗒	da	16686
-沓	da	8322
-耷	da	8256
-鞑	da	6703
-靼	da	4059
-妲	da	1246
-褡	da	950
-跶	da	550
-怛	da	530
-笪	da	107
-垯	da	33
-溚	da	32
-炟	da	12
-荙	da	4
-鿎	da	0
-𨱏	da	0
-𫟼	da	0
-带	dai	1491966
-代	dai	932729
-待	dai	658854
-呆	dai	427048
-袋	dai	303806
-戴	dai	189960
-黛	dai	51658
-歹	dai	42757
-贷	dai	29412
-逮	dai	28151
-怠	dai	21247
-殆	dai	12048
-岱	dai	6015
-玳	dai	2810
-呔	dai	1546
-傣	dai	1082
-大	dai	649
-迨	dai	552
-绐	dai	373
-叇	dai	327
-埭	dai	95
-骀	dai	79
-轪	dai	39
-垈	dai	0
-但	dan	7505257
-单	dan	738919
-淡	dan	518865
-担	dan	442662
-弹	dan	355948
-丹	dan	255714
-蛋	dan	255478
-胆	dan	204655
-旦	dan	154394
-诞	dan	44248
-耽	dan	39196
-惮	dan	16732
-石	dan	14278
-眈	dan	12773
-澹	dan	6736
-掸	dan	4870
-郸	dan	4714
-殚	dan	1412
-啖	dan	1197
-氮	dan	963
-儋	dan	911
-聃	dan	561
-箪	dan	440
-亶	dan	342
-疸	dan	324
-萏	dan	237
-瘅	dan	36
-疍	dan	26
-赕	dan	6
-憺	dan	2
-膻	dan	1
-𫢸	dan	0
-𬘘	dan	0
-当	dang	3437226
-党	dang	242508
-荡	dang	226789
-挡	dang	211337
-档	dang	65508
-铛	dang	13183
-裆	dang	6838
-宕	dang	2794
-砀	dang	640
-珰	dang	527
-凼	dang	385
-谠	dang	166
-垱	dang	108
-菪	dang	48
-筜	dang	8
-𣗋	dang	0
-𬍡	dang	0
-到	dao	11505436
-倒	dao	1085421
-道	dao	1062553
-刀	dao	723425
-导	dao	486193
-岛	dao	186833
-盗	dao	136597
-叨	dao	42609
-蹈	dao	34345
-祷	dao	33213
-捣	dao	32179
-稻	dao	21277
-悼	dao	9880
-纛	dao	894
-忉	dao	104
-氘	dao	93
-捯	dao	70
-鱽	dao	23
-舠	dao	2
-帱	dao	1
-的	de	76938354
-地	de	8804040
-得	de	7186260
-德	de	733775
-嘚	de	357
-锝	de	187
-得	dei	7186260
-嘚	dei	1
-扽	den	81
-等	deng	2002114
-灯	deng	290150
-登	deng	215944
-瞪	deng	186802
-邓	deng	78843
-凳	deng	36123
-蹬	deng	23651
-噔	deng	11503
-镫	deng	1333
-磴	deng	262
-澄	deng	200
-戥	deng	143
-嶝	deng	55
-璒	deng	3
-地	di	8804040
-第	di	2558818
-弟	di	931804
-底	di	806359
-低	di	646263
-帝	di	643284
-敌	di	534220
-抵	di	168424
-递	di	161919
-迪	di	150391
-滴	di	147754
-的	di	106917
-蒂	di	105801
-狄	di	58778
-笛	di	43923
-嘀	di	42614
-堤	di	19816
-邸	di	15950
-嫡	di	9082
-棣	di	8329
-缔	di	8273
-谛	di	7639
-涤	di	7510
-荻	di	6563
-娣	di	4964
-诋	di	3468
-氐	di	2156
-砥	di	2013
-镝	di	1122
-睇	di	889
-坻	di	419
-柢	di	308
-鞮	di	247
-羝	di	236
-觌	di	148
-籴	di	140
-骶	di	114
-碲	di	54
-禘	di	33
-翟	di	20
-踶	di	10
-菂	di	9
-髢	di	9
-玓	di	4
-杕	di	2
-蹢	di	2
-媂	di	1
-提	di	1
-䃅	di	0
-䗖	di	0
-茋	di	0
-𤧛	di	0
-𬱖	di	0
-嗲	dia	0
-点	dian	3978856
-电	dian	1308303
-店	dian	356601
-殿	dian	225035
-典	dian	171037
-颠	dian	57525
-垫	dian	30164
-甸	dian	23242
-惦	dian	13189
-奠	dian	12902
-掂	dian	12450
-癫	dian	11357
-巅	dian	9967
-淀	dian	8590
-滇	dian	5347
-玷	dian	4894
-踮	dian	4259
-佃	dian	1870
-靛	dian	1237
-碘	dian	1109
-钿	dian	1044
-簟	dian	301
-癜	dian	155
-坫	dian	60
-阽	dian	35
-扂	dian	0
-琔	dian	0
-掉	diao	586059
-调	diao	542792
-屌	diao	93026
-雕	diao	82838
-吊	diao	67131
-钓	diao	24913
-刁	diao	23103
-叼	diao	13048
-貂	diao	12832
-凋	diao	8718
-碉	diao	4403
-鲷	diao	162
-铫	diao	102
-铞	diao	36
-窎	diao	12
-汈	diao	5
-爹	die	147569
-蝶	die	89194
-跌	die	85274
-叠	die	51212
-碟	die	29736
-迭	die	21389
-谍	die	18611
-喋	die	12871
-牒	die	3502
-堞	die	560
-耋	die	524
-鲽	die	426
-昳	die	301
-蹀	die	192
-瓞	die	54
-垤	die	34
-绖	die	16
-楪	die	1
-𫶇	die	0
-定	ding	2738825
-顶	ding	372322
-丁	ding	278627
-盯	ding	215010
-订	ding	65104
-叮	ding	62022
-鼎	ding	59165
-钉	ding	43726
-锭	ding	7341
-町	ding	3824
-仃	ding	2331
-酊	ding	2082
-腚	ding	1878
-玎	ding	802
-碇	ding	387
-疔	ding	125
-啶	ding	95
-耵	ding	19
-萣	ding	6
-丢	diu	190646
-铥	diu	2
-动	dong	3073269
-东	dong	1783570
-洞	dong	295409
-懂	dong	281376
-冬	dong	156922
-董	dong	139885
-冻	dong	55112
-栋	dong	47210
-咚	dong	43570
-峒	dong	4991
-胴	dong	4599
-侗	dong	2800
-恫	dong	1710
-鸫	dong	215
-垌	dong	74
-硐	dong	69
-氡	dong	65
-胨	dong	49
-岽	dong	43
-𬟽	dong	0
-都	dou	634293
-斗	dou	562155
-抖	dou	197122
-豆	dou	107185
-逗	dou	66171
-兜	dou	44209
-陡	dou	39114
-窦	dou	17985
-痘	dou	5797
-蚪	dou	1267
-蔸	dou	358
-篼	dou	149
-钭	dou	109
-读	dou	1
-度	du	827850
-独	du	456526
-毒	du	331576
-读	du	313506
-杜	du	205040
-肚	du	167538
-赌	du	120539
-督	du	103779
-渡	du	83062
-嘟	du	61299
-堵	du	60165
-妒	du	47550
-都	du	38058
-睹	du	36521
-笃	du	10832
-渎	du	8378
-镀	du	4821
-犊	du	4679
-牍	du	1877
-蠹	du	852
-黩	du	788
-阇	du	412
-芏	du	334
-椟	du	326
-髑	du	109
-厾	du	43
-𬭊	du	0
-断	duan	759788
-段	duan	559051
-短	duan	345480
-端	duan	296020
-锻	duan	36524
-缎	duan	13277
-煅	duan	1250
-椴	duan	414
-耑	duan	22
-簖	duan	8
-塅	duan	1
-瑖	duan	0
-对	dui	6195038
-队	dui	1255383
-堆	dui	174996
-兑	dui	17197
-怼	dui	765
-碓	dui	382
-祋	dui	3
-顿	dun	557768
-盾	dun	113909
-蹲	dun	66158
-敦	dun	35424
-沌	dun	22474
-遁	dun	21435
-吨	dun	18670
-钝	dun	15645
-墩	dun	8359
-炖	dun	7982
-盹	dun	4945
-惇	dun	3466
-趸	dun	623
-礅	dun	270
-蹾	dun	224
-砘	dun	53
-镦	dun	25
-囤	dun	1
-多	duo	4617194
-躲	duo	249450
-朵	duo	202374
-夺	duo	175135
-度	duo	50671
-堕	duo	30285
-哆	duo	30257
-跺	duo	20222
-踱	duo	19897
-舵	duo	17755
-咄	duo	14825
-剁	duo	8222
-铎	duo	7819
-惰	duo	7669
-垛	duo	6052
-掇	duo	3820
-哚	duo	419
-裰	duo	397
-埵	duo	90
-饳	duo	37
-亸	duo	31
-剟	duo	8
-驮	duo	1
-㙍	duo	0
-饿	e	606677
-呃	e	535105
-恶	e	450813
-额	e	164812
-俄	e	84261
-愕	e	51262
-鹅	e	29947
-噩	e	27969
-娥	e	21944
-厄	e	18380
-峨	e	18374
-鄂	e	14061
-遏	e	13099
-扼	e	12762
-鳄	e	9891
-蛾	e	9694
-婀	e	5532
-讹	e	4383
-阿	e	4336
-锷	e	3471
-颚	e	2867
-鹗	e	1868
-萼	e	1513
-屙	e	1267
-谔	e	958
-垩	e	676
-腭	e	586
-欸	e	534
-莪	e	362
-轭	e	222
-苊	e	156
-锇	e	78
-崿	e	14
-姶	e	10
-涐	e	2
-哦	e	1
-堨	e	0
-𥔲	e	0
-𫫇	e	0
-嗯	en	9179528
-恩	en	433653
-摁	en	8517
-蒽	en	130
-而	er	5075337
-儿	er	2850098
-二	er	2073729
-尔	er	936690
-耳	er	448849
-饵	er	8125
-迩	er	4064
-贰	er	3444
-洱	er	2977
-珥	er	1225
-铒	er	61
-鸸	er	53
-陑	er	4
-鲕	er	4
-咡	er	3
-耏	er	3
-发	fa	3946829
-法	fa	2798486
-罚	fa	94402
-乏	fa	78100
-伐	fa	56861
-阀	fa	13821
-筏	fa	7349
-砝	fa	1734
-珐	fa	878
-垡	fa	79
-反	fan	1250683
-饭	fan	592046
-翻	fan	391454
-烦	fan	350929
-凡	fan	320342
-犯	fan	254131
-范	fan	224772
-番	fan	223306
-繁	fan	111669
-返	fan	97646
-泛	fan	93454
-帆	fan	49724
-贩	fan	35971
-樊	fan	28633
-藩	fan	26539
-梵	fan	17305
-蕃	fan	9570
-幡	fan	7256
-蘩	fan	1942
-璠	fan	1232
-矾	fan	718
-畈	fan	334
-燔	fan	158
-钒	fan	103
-氾	fan	71
-蹯	fan	44
-墦	fan	13
-𫔍	fan	0
-𬸪	fan	0
-放	fang	7730745
-房	fang	980289
-防	fang	406226
-方	fang	347176
-仿	fang	313234
-芳	fang	175343
-访	fang	133498
-妨	fang	46595
-坊	fang	28892
-纺	fang	8718
-肪	fang	8036
-舫	fang	5324
-枋	fang	446
-昉	fang	351
-鲂	fang	282
-邡	fang	186
-钫	fang	44
-牥	fang	0
-蚄	fang	0
-飞	fei	1593771
-非	fei	1219442
-费	fei	449492
-菲	fei	252624
-废	fei	148745
-妃	fei	94415
-肥	fei	93039
-啡	fei	74499
-匪	fei	72837
-沸	fei	42184
-肺	fei	38759
-绯	fei	23150
-斐	fei	15019
-霏	fei	11940
-翡	fei	10243
-扉	fei	9977
-吠	fei	6242
-诽	fei	3969
-蜚	fei	2915
-狒	fei	2002
-腓	fei	1737
-悱	fei	1249
-淝	fei	843
-芾	fei	624
-痱	fei	434
-榧	fei	224
-鲱	fei	213
-篚	fei	29
-朏	fei	26
-棐	fei	15
-镄	fei	15
-剕	fei	9
-𬴂	fei	0
-分	fen	2568782
-份	fen	493685
-纷	fen	308101
-奋	fen	269740
-愤	fen	195304
-粉	fen	151878
-氛	fen	95504
-吩	fen	72921
-芬	fen	63866
-焚	fen	39561
-坟	fen	37471
-忿	fen	19358
-粪	fen	16072
-汾	fen	2940
-玢	fen	592
-酚	fen	329
-棼	fen	238
-偾	fen	212
-鲼	fen	107
-棻	fen	97
-鼢	fen	13
-翂	fen	7
-瀵	fen	5
-坋	fen	0
-豮	fen	0
-𣸣	fen	0
-风	feng	2175031
-封	feng	341037
-凤	feng	288364
-峰	feng	245132
-疯	feng	244767
-锋	feng	232525
-枫	feng	177695
-丰	feng	169048
-奉	feng	131631
-冯	feng	115225
-缝	feng	94012
-逢	feng	65867
-讽	feng	48150
-蜂	feng	43028
-烽	feng	6755
-俸	feng	5469
-沣	feng	3396
-沨	feng	1244
-酆	feng	878
-葑	feng	123
-唪	feng	99
-砜	feng	49
-赗	feng	7
-浲	feng	1
-崶	feng	0
-佛	fo	475734
-否	fou	450892
-缶	fou	269
-服	fu	1011511
-夫	fu	890506
-父	fu	875667
-复	fu	656644
-福	fu	455530
-府	fu	442709
-副	fu	396897
-负	fu	391986
-付	fu	342108
-富	fu	312299
-妇	fu	254489
-附	fu	207682
-伏	fu	183556
-傅	fu	176201
-浮	fu	173250
-扶	fu	165206
-抚	fu	147135
-符	fu	119925
-肤	fu	118772
-腹	fu	102733
-幅	fu	96800
-咐	fu	93482
-覆	fu	76596
-腐	fu	72243
-弗	fu	71101
-赴	fu	52184
-斧	fu	52064
-俯	fu	49115
-赋	fu	48946
-辅	fu	48161
-芙	fu	47397
-拂	fu	46508
-甫	fu	46012
-俘	fu	44283
-缚	fu	31819
-蝠	fu	22099
-敷	fu	21263
-脯	fu	20878
-佛	fu	20000
-袱	fu	16411
-腑	fu	13129
-辐	fu	5668
-孚	fu	5574
-驸	fu	5442
-釜	fu	5081
-苻	fu	4648
-匐	fu	4587
-宓	fu	4473
-阜	fu	4437
-孵	fu	4384
-馥	fu	4049
-茀	fu	1569
-涪	fu	1092
-茯	fu	1049
-凫	fu	904
-蚨	fu	898
-拊	fu	751
-蝮	fu	744
-讣	fu	689
-黼	fu	684
-芾	fu	624
-趺	fu	546
-怫	fu	489
-氟	fu	461
-蜉	fu	444
-黻	fu	444
-麸	fu	405
-绂	fu	254
-跗	fu	252
-鲋	fu	216
-罘	fu	215
-滏	fu	207
-郛	fu	203
-菔	fu	170
-桴	fu	159
-幞	fu	157
-祓	fu	145
-呋	fu	123
-绋	fu	101
-莩	fu	97
-赙	fu	93
-鄜	fu	54
-芣	fu	36
-洑	fu	34
-簠	fu	16
-榑	fu	9
-稃	fu	9
-韨	fu	6
-玞	fu	5
-砆	fu	3
-垺	fu	2
-艴	fu	1
-㕮	fu	0
-㳇	fu	0
-琈	fu	0
-𫓧	fu	0
-𫖯	fu	0
-尬	ga	88603
-嘎	ga	33414
-伽	ga	18295
-噶	ga	5511
-旮	ga	3168
-咖	ga	2000
-尕	ga	1817
-尜	ga	195
-轧	ga	100
-钆	ga	20
-戛	ga	1
-该	gai	1351318
-改	gai	495567
-盖	gai	229688
-概	gai	227790
-丐	gai	45707
-钙	gai	3218
-溉	gai	2289
-赅	gai	969
-垓	gai	723
-陔	gai	183
-戤	gai	13
-荄	gai	2
-晐	gai	0
-𬮿	gai	0
-感	gan	2529138
-干	gan	1197831
-敢	gan	782369
-赶	gan	585731
-甘	gan	153739
-尴	gan	88570
-杆	gan	61570
-肝	gan	31440
-竿	gan	15347
-橄	gan	6085
-赣	gan	5305
-秆	gan	1730
-柑	gan	1661
-擀	gan	1549
-玕	gan	930
-淦	gan	585
-泔	gan	563
-矸	gan	447
-坩	gan	300
-绀	gan	276
-苷	gan	238
-旰	gan	213
-疳	gan	85
-酐	gan	60
-澉	gan	42
-虷	gan	4
-鳡	gan	3
-㽏	gan	0
-刚	gang	1561764
-港	gang	132167
-钢	gang	114590
-岗	gang	52253
-冈	gang	28197
-缸	gang	26248
-纲	gang	25530
-罡	gang	18553
-杠	gang	11743
-肛	gang	2191
-筻	gang	9
-冮	gang	6
-矼	gang	4
-堽	gang	2
-戆	gang	1
-扛	gang	1
-㭎	gang	0
-鿍	gang	0
-高	gao	2565932
-告	gao	1054831
-搞	gao	297225
-糕	gao	60411
-稿	gao	59162
-膏	gao	20747
-羔	gao	8622
-皋	gao	6131
-镐	gao	5696
-睾	gao	2807
-篙	gao	1804
-诰	gao	1786
-槁	gao	1758
-杲	gao	1425
-缟	gao	726
-锆	gao	674
-郜	gao	389
-藁	gao	142
-槔	gao	74
-筶	gao	4
-个	ge	14789406
-哥	ge	1176477
-各	ge	856128
-格	ge	715810
-歌	ge	332504
-革	ge	180934
-隔	ge	169019
-阁	ge	115474
-葛	ge	109554
-割	ge	77561
-胳	ge	75288
-戈	ge	68258
-搁	ge	37572
-鸽	ge	18712
-疙	ge	17365
-骼	ge	7894
-嗝	ge	5321
-硌	ge	1300
-咯	ge	1111
-铬	ge	753
-盖	ge	555
-鬲	ge	406
-圪	ge	405
-蛤	ge	400
-舸	ge	341
-膈	ge	335
-虼	ge	307
-袼	ge	162
-哿	ge	153
-镉	ge	128
-仡	ge	77
-饹	ge	55
-塥	ge	6
-滆	ge	2
-合	ge	1
-给	gei	2939384
-跟	gen	1547565
-根	gen	886057
-亘	gen	6726
-艮	gen	3524
-哏	gen	529
-茛	gen	494
-更	geng	1703552
-耿	geng	54708
-哽	geng	21976
-耕	geng	21786
-羹	geng	9720
-庚	geng	8607
-梗	geng	7980
-赓	geng	3053
-埂	geng	2301
-鲠	geng	582
-绠	geng	45
-浭	geng	8
-暅	geng	2
-颈	geng	1
-鹒	geng	1
-𬒔	geng	0
-公	gong	2055138
-工	gong	1242237
-功	gong	945623
-攻	gong	665395
-宫	gong	431590
-共	gong	393083
-供	gong	188899
-恭	gong	127784
-弓	gong	120521
-贡	gong	48905
-躬	gong	43678
-拱	gong	43077
-龚	gong	21246
-巩	gong	14361
-蚣	gong	5167
-觥	gong	1596
-汞	gong	1292
-肱	gong	1208
-珙	gong	990
-䢼	gong	0
-硔	gong	0
-够	gou	768470
-狗	gou	273402
-构	gou	152528
-勾	gou	105524
-购	gou	95339
-沟	gou	80789
-钩	gou	33452
-苟	gou	25037
-垢	gou	9175
-篝	gou	8896
-佝	gou	2829
-媾	gou	1833
-枸	gou	1043
-诟	gou	987
-彀	gou	738
-缑	gou	225
-遘	gou	128
-鞲	gou	95
-笱	gou	91
-觏	gou	64
-岣	gou	63
-姤	gou	52
-雊	gou	7
-耇	gou	3
-句	gou	1
-古	gu	621960
-故	gu	560446
-顾	gu	523266
-股	gu	461541
-姑	gu	374941
-骨	gu	310699
-孤	gu	241832
-谷	gu	211522
-鼓	gu	208688
-固	gu	157594
-估	gu	154328
-咕	gu	80611
-辜	gu	48645
-雇	gu	39820
-蛊	gu	18584
-菇	gu	11316
-汩	gu	9441
-箍	gu	8001
-锢	gu	6805
-沽	gu	4913
-贾	gu	3000
-鹘	gu	2636
-臌	gu	2082
-牯	gu	1571
-轱	gu	1556
-鸪	gu	1492
-梏	gu	1443
-痼	gu	690
-钴	gu	536
-毂	gu	516
-崮	gu	471
-诂	gu	463
-瞽	gu	401
-菰	gu	325
-蛄	gu	255
-羖	gu	252
-觚	gu	238
-嘏	gu	208
-罟	gu	102
-榖	gu	50
-酤	gu	39
-馉	gu	36
-牿	gu	29
-堌	gu	14
-蓇	gu	8
-鲴	gu	3
-呱	gu	1
-鹄	gu	1
-瀔	gu	0
-𦙶	gu	0
-挂	gua	273923
-瓜	gua	106525
-刮	gua	52316
-寡	gua	49558
-卦	gua	30403
-呱	gua	12127
-褂	gua	9095
-剐	gua	5067
-鸹	gua	544
-诖	gua	128
-栝	gua	99
-胍	gua	70
-怪	guai	1036985
-乖	guai	139563
-拐	guai	69575
-掴	guai	1944
-夬	guai	59
-关	guan	1675433
-管	guan	979206
-官	guan	760400
-观	guan	588781
-馆	guan	235908
-惯	guan	216834
-冠	guan	79415
-贯	guan	76864
-灌	guan	66346
-罐	guan	32951
-棺	guan	31464
-倌	guan	4168
-盥	guan	1987
-掼	guan	1475
-涫	guan	811
-鳏	guan	694
-鹳	guan	661
-瓘	guan	415
-祼	guan	294
-琯	guan	51
-毌	guan	46
-筦	guan	18
-蒄	guan	8
-爟	guan	3
-纶	guan	1
-莞	guan	1
-鳤	guan	0
-光	guang	2185701
-广	guang	374959
-逛	guang	68458
-咣	guang	9351
-犷	guang	4249
-胱	guang	1405
-桄	guang	85
-洸	guang	25
-珖	guang	8
-垙	guang	0
-𨐈	guang	0
-鬼	gui	604413
-贵	gui	399328
-规	gui	341239
-归	gui	270263
-跪	gui	121795
-柜	gui	91808
-诡	gui	72548
-瑰	gui	58092
-桂	gui	57604
-龟	gui	54063
-轨	gui	41123
-闺	gui	25255
-圭	gui	8052
-桧	gui	3676
-刽	gui	3494
-癸	gui	3405
-硅	gui	2811
-妫	gui	2566
-珪	gui	2546
-皈	gui	2501
-晷	gui	917
-鲑	gui	586
-刿	gui	381
-鳜	gui	287
-姽	gui	284
-簋	gui	271
-庋	gui	221
-宄	gui	195
-匦	gui	123
-邽	gui	102
-鬶	gui	2
-炅	gui	1
-筀	gui	0
-滚	gun	203922
-棍	gun	70829
-衮	gun	12074
-鲧	gun	701
-磙	gun	223
-辊	gun	148
-绲	gun	128
-过	guo	7307184
-国	guo	3063867
-果	guo	2105431
-郭	guo	142211
-锅	guo	76325
-裹	guo	70440
-蝈	guo	4761
-聒	guo	2542
-帼	guo	2484
-掴	guo	1944
-椁	guo	1368
-虢	guo	885
-埚	guo	372
-呙	guo	142
-崞	guo	119
-腘	guo	50
-馘	guo	46
-粿	guo	40
-蜾	guo	39
-馃	guo	26
-涡	guo	1
-𬇹	guo	0
-哈	ha	879528
-蛤	ha	9735
-铪	ha	59
-还	hai	6776145
-海	hai	1335124
-孩	hai	1251885
-害	hai	740250
-骇	hai	57380
-嗨	hai	21687
-骸	hai	13516
-亥	hai	11845
-咳	hai	1111
-嗐	hai	449
-氦	hai	325
-醢	hai	147
-胲	hai	69
-咍	hai	1
-汉	han	484364
-寒	han	448294
-喊	han	390618
-韩	han	272550
-汗	han	235293
-含	han	222331
-涵	han	61454
-翰	han	60202
-憾	han	58412
-罕	han	43875
-撼	han	43501
-悍	han	41628
-瀚	han	31450
-函	han	21187
-憨	han	19728
-旱	han	15826
-酣	han	12314
-颔	han	9307
-邯	han	7487
-捍	han	7135
-鼾	han	7130
-晗	han	6491
-菡	han	5512
-焊	han	3324
-犴	han	802
-顸	han	276
-邗	han	218
-焓	han	169
-蚶	han	143
-扞	han	62
-撖	han	25
-虷	han	4
-暵	han	3
-浛	han	1
-琀	han	1
-㘎	han	0
-垾	han	0
-崡	han	0
-嵅	han	0
-蔊	han	0
-行	hang	2756706
-航	hang	116067
-杭	hang	34033
-夯	hang	1961
-沆	hang	744
-颃	hang	118
-绗	hang	38
-吭	hang	1
-巷	hang	1
-好	hao	7259684
-号	hao	513737
-毫	hao	414933
-豪	hao	206593
-浩	hao	178517
-耗	hao	96793
-昊	hao	49733
-郝	hao	36991
-嚎	hao	34929
-皓	hao	30879
-壕	hao	10556
-嗥	hao	3548
-颢	hao	2580
-濠	hao	2508
-蒿	hao	2230
-灏	hao	1933
-貉	hao	1133
-蚝	hao	581
-薅	hao	556
-皞	hao	179
-淏	hao	138
-嚆	hao	22
-鄗	hao	10
-和	he	6252031
-何	he	1822108
-合	he	1085786
-喝	he	707608
-呵	he	570893
-河	he	425953
-赫	he	122145
-核	he	96965
-贺	he	87683
-盒	he	85795
-荷	he	79485
-鹤	he	44828
-禾	he	16993
-褐	he	14390
-嗬	he	7948
-壑	he	5914
-阖	he	5863
-吓	he	5000
-涸	he	4944
-劾	he	4941
-颌	he	4941
-阂	he	4558
-诃	he	4484
-郃	he	2164
-纥	he	1538
-貉	he	1133
-龢	he	688
-鞨	he	564
-翮	he	429
-曷	he	424
-龁	he	380
-盍	he	351
-菏	he	348
-盉	he	276
-饸	he	49
-熇	he	38
-鹖	he	33
-翯	he	13
-垎	he	0
-隺	he	0
-𬌗	he	0
-黑	hei	1292192
-嘿	hei	319099
-𬭶	hei	0
-很	hen	3994436
-狠	hen	382360
-恨	hen	326212
-痕	hen	144963
-𬣳	hen	0
-哼	heng	255327
-横	heng	224880
-衡	heng	95483
-恒	heng	74155
-亨	heng	26827
-蘅	heng	3849
-珩	heng	3734
-姮	heng	1368
-桁	heng	859
-行	heng	1
-鸻	heng	1
-堼	heng	0
-红	hong	1282649
-轰	hong	168120
-洪	hong	158368
-虹	hong	86362
-宏	hong	84747
-鸿	hong	79055
-哄	hong	72071
-弘	hong	38264
-烘	hong	13793
-泓	hong	6716
-闳	hong	3673
-讧	hong	2114
-薨	hong	839
-訇	hong	837
-荭	hong	689
-纮	hong	468
-吽	hong	361
-竑	hong	283
-蕻	hong	116
-翃	hong	107
-黉	hong	71
-唝	hong	15
-玒	hong	0
-谼	hong	0
-𫟹	hong	0
-𬭎	hong	0
-后	hou	6544446
-候	hou	2064968
-厚	hou	239064
-吼	hou	152621
-侯	hou	142640
-猴	hou	73614
-喉	hou	68460
-逅	hou	5938
-篌	hou	320
-瘊	hou	195
-鲎	hou	190
-堠	hou	154
-垕	hou	148
-齁	hou	96
-骺	hou	64
-糇	hou	45
-郈	hou	11
-鲘	hou	0
-𬭤	hou	0
-乎	hu	1157322
-呼	hu	649070
-忽	hu	585369
-护	hu	551817
-胡	hu	468131
-虎	hu	391382
-湖	hu	327739
-糊	hu	235912
-户	hu	227191
-互	hu	215472
-狐	hu	139523
-壶	hu	45112
-和	hu	41260
-蝴	hu	33327
-惚	hu	28986
-弧	hu	25808
-唬	hu	22716
-葫	hu	21733
-沪	hu	10326
-扈	hu	10073
-瑚	hu	9681
-琥	hu	5562
-浒	hu	4561
-核	hu	4000
-鹄	hu	2662
-鹘	hu	2636
-斛	hu	1720
-囫	hu	1691
-祜	hu	1442
-醐	hu	1401
-唿	hu	1366
-猢	hu	1334
-笏	hu	918
-瓠	hu	406
-槲	hu	376
-怙	hu	367
-煳	hu	243
-鹕	hu	236
-滹	hu	219
-觳	hu	205
-岵	hu	128
-烀	hu	69
-鄠	hu	69
-戽	hu	66
-縠	hu	46
-冱	hu	37
-鹱	hu	35
-淴	hu	8
-昒	hu	7
-鳠	hu	4
-嫭	hu	2
-轷	hu	2
-昈	hu	0
-话	hua	3744917
-花	hua	1277183
-化	hua	951401
-华	hua	800451
-划	hua	385366
-画	hua	359784
-滑	hua	156890
-哗	hua	68257
-猾	hua	22221
-桦	hua	13149
-骅	hua	2520
-婳	hua	1640
-铧	hua	952
-砉	hua	111
-觟	hua	3
-怀	huai	607039
-坏	huai	365836
-淮	huai	36109
-槐	huai	25776
-徊	huai	17842
-踝	huai	6039
-换	huan	996459
-缓	huan	450418
-还	huan	406569
-环	huan	300871
-幻	huan	248831
-唤	huan	138357
-欢	huan	90885
-患	huan	76682
-焕	huan	31989
-桓	huan	28953
-鬟	huan	13671
-宦	huan	12302
-寰	huan	9242
-浣	huan	6534
-痪	huan	6519
-涣	huan	6445
-奂	huan	2292
-圜	huan	1661
-豢	huan	1562
-獾	huan	974
-洹	huan	584
-嬛	huan	405
-缳	huan	311
-萑	huan	287
-鲩	huan	239
-郇	huan	199
-漶	huan	133
-逭	huan	127
-擐	huan	87
-锾	huan	55
-镮	huan	25
-澴	huan	21
-鹮	huan	10
-貆	huan	3
-峘	huan	1
-㬊	huan	0
-荁	huan	0
-𤩽	huan	0
-𬘫	huan	0
-黄	huang	678776
-皇	huang	640305
-晃	huang	210916
-慌	huang	196225
-荒	huang	136353
-恍	huang	76884
-谎	huang	59414
-惶	huang	54202
-凰	huang	49489
-煌	huang	40547
-簧	huang	7430
-徨	huang	7081
-蝗	huang	6770
-幌	huang	6566
-潢	huang	3727
-璜	huang	2543
-遑	huang	2242
-磺	huang	2222
-隍	huang	1797
-肓	huang	1770
-湟	huang	1167
-蟥	huang	559
-篁	huang	410
-鳇	huang	78
-滉	huang	59
-喤	huang	21
-癀	huang	14
-锽	huang	10
-艎	huang	4
-瑝	huang	3
-媓	huang	2
-㿠	huang	0
-𨱑	huang	0
-会	hui	6824927
-回	hui	3608341
-挥	hui	468277
-灰	hui	202762
-慧	hui	171937
-辉	hui	165245
-恢	hui	164984
-毁	hui	150469
-悔	hui	146037
-惠	hui	105489
-汇	hui	101717
-绘	hui	39443
-徽	hui	33080
-讳	hui	21199
-晖	hui	19478
-晦	hui	16662
-贿	hui	14729
-秽	hui	12887
-卉	hui	10030
-麾	hui	8918
-诲	hui	8309
-蕙	hui	8173
-彗	hui	2839
-诙	hui	2611
-喙	hui	2114
-荟	hui	2001
-烩	hui	1966
-虺	hui	1438
-蛔	hui	1423
-珲	hui	1336
-咴	hui	965
-茴	hui	732
-恚	hui	658
-洄	hui	457
-袆	hui	417
-隳	hui	150
-翚	hui	145
-翙	hui	106
-浍	hui	92
-蟪	hui	56
-硊	hui	5
-橞	hui	4
-哕	hui	1
-桧	hui	1
-溃	hui	1
-㧑	hui	0
-烠	hui	0
-𬤝	hui	0
-𬭬	hui	0
-婚	hun	386955
-混	hun	338565
-魂	hun	291928
-昏	hun	197245
-浑	hun	175322
-荤	hun	6658
-馄	hun	2975
-诨	hun	1476
-珲	hun	1336
-阍	hun	371
-溷	hun	156
-惛	hun	13
-碈	hun	0
-或	huo	8967870
-活	huo	1317244
-火	huo	1180390
-伙	huo	518273
-获	huo	245741
-惑	huo	217812
-货	huo	161159
-祸	huo	100219
-霍	huo	91016
-豁	huo	26107
-和	huo	4126
-夥	huo	3748
-嚯	huo	2371
-藿	huo	435
-镬	huo	308
-蠖	huo	190
-攉	huo	80
-钬	huo	65
-嚄	huo	64
-锪	huo	38
-劐	huo	22
-濩	huo	22
-耠	huo	22
-漷	huo	20
-㸌	huo	0
-佸	huo	0
-𬴃	huo	0
-级	ji	5992040
-集	ji	5157620
-几	ji	2760667
-及	ji	1839825
-机	ji	1672100
-记	ji	1094800
-季	ji	1028550
-击	ji	1010628
-急	ji	1009907
-系	ji	942245
-即	ji	900101
-既	ji	853256
-极	ji	832554
-计	ji	747431
-激	ji	535171
-继	ji	503302
-基	ji	499224
-己	ji	456925
-际	ji	352008
-纪	ji	335852
-技	ji	326479
-济	ji	255044
-迹	ji	234061
-吉	ji	210857
-积	ji	188812
-鸡	ji	184249
-寂	ji	144616
-挤	ji	136500
-疾	ji	120121
-忌	ji	113527
-姬	ji	101929
-绩	ji	99008
-祭	ji	89101
-肌	ji	85083
-寄	ji	72560
-辑	ji	71050
-籍	ji	66610
-圾	ji	45932
-妓	ji	45162
-嫉	ji	38200
-饥	ji	36390
-剂	ji	31371
-奇	ji	30000
-给	ji	29393
-脊	ji	28041
-稽	ji	25200
-叽	ji	24178
-唧	ji	22052
-讥	ji	21392
-藉	ji	20781
-冀	ji	18988
-戟	ji	18632
-棘	ji	18152
-缉	ji	17853
-悸	ji	16672
-羁	ji	11396
-玑	ji	10523
-伎	ji	10269
-霁	ji	8842
-矶	ji	7901
-髻	ji	7307
-稷	ji	6957
-岌	ji	6018
-汲	ji	5849
-畸	ji	5545
-笈	ji	5428
-觊	ji	4987
-骥	ji	4627
-嵇	ji	4533
-蓟	ji	4056
-箕	ji	3366
-佶	ji	3270
-瘠	ji	3156
-畿	ji	3056
-犄	ji	2549
-亟	ji	2441
-跻	ji	2241
-殛	ji	1926
-暨	ji	1716
-鲫	ji	1604
-偈	ji	1413
-齑	ji	1382
-蒺	ji	1258
-芨	ji	1164
-屐	ji	1002
-荠	ji	931
-楫	ji	840
-赍	ji	790
-乩	ji	672
-麂	ji	630
-笄	ji	506
-芰	ji	389
-墼	ji	289
-鹡	ji	266
-剞	ji	210
-戢	ji	204
-虮	ji	147
-伋	ji	137
-垍	ji	128
-掎	ji	98
-洎	ji	93
-跽	ji	90
-嵴	ji	58
-鲚	ji	49
-蕺	ji	46
-罽	ji	38
-蹐	ji	27
-姞	ji	26
-漈	ji	26
-穄	ji	8
-耤	ji	4
-觭	ji	3
-惎	ji	2
-期	ji	1
-鱾	ji	1
-㴔	ji	0
-堲	ji	0
-徛	ji	0
-枅	ji	0
-瀱	ji	0
-𪟝	ji	0
-𫌀	ji	0
-𫓯	ji	0
-𫓹	ji	0
-𬯀	ji	0
-𬶨	ji	0
-𬶭	ji	0
-家	jia	4546765
-加	jia	1329722
-价	jia	384863
-假	jia	377294
-架	jia	304618
-甲	jia	253580
-佳	jia	179512
-夹	jia	130443
-贾	jia	117313
-嘉	jia	112633
-嫁	jia	111212
-驾	jia	107183
-颊	jia	52050
-迦	jia	30382
-伽	jia	18295
-茄	jia	16373
-稼	jia	10734
-枷	jia	8877
-珈	jia	4077
-袈	jia	3831
-戛	jia	3808
-葭	jia	3436
-浃	jia	2883
-胛	jia	2253
-痂	jia	1405
-笳	jia	1383
-岬	jia	1210
-槚	jia	1176
-钾	jia	1159
-荚	jia	923
-郏	jia	455
-铗	jia	375
-跏	jia	218
-蛱	jia	103
-恝	jia	39
-斝	jia	29
-镓	jia	28
-瘕	jia	20
-泇	jia	1
-𬂩	jia	0
-见	jian	3460998
-间	jian	3067939
-剑	jian	1151704
-件	jian	935235
-建	jian	598616
-键	jian	510933
-渐	jian	503123
-简	jian	501969
-坚	jian	385150
-肩	jian	292627
-箭	jian	254320
-舰	jian	235654
-尖	jian	232729
-监	jian	184301
-健	jian	168908
-检	jian	140353
-减	jian	131292
-奸	jian	97555
-艰	jian	82206
-兼	jian	68324
-鉴	jian	58039
-贱	jian	51519
-捡	jian	50151
-剪	jian	44250
-溅	jian	44042
-践	jian	43098
-荐	jian	34960
-歼	jian	27594
-拣	jian	24189
-煎	jian	22180
-俭	jian	11871
-涧	jian	10131
-茧	jian	9861
-谏	jian	9725
-柬	jian	8238
-笺	jian	6662
-缄	jian	6013
-戬	jian	5852
-锏	jian	4191
-碱	jian	3521
-睑	jian	3438
-翦	jian	3195
-饯	jian	2660
-蹇	jian	1785
-僭	jian	1472
-菅	jian	1222
-毽	jian	777
-腱	jian	771
-謇	jian	614
-蒹	jian	604
-戋	jian	428
-槛	jian	300
-鞯	jian	254
-笕	jian	243
-鹣	jian	181
-搛	jian	178
-缣	jian	167
-鞬	jian	163
-湔	jian	112
-裥	jian	108
-枧	jian	64
-鲣	jian	61
-趼	jian	58
-谫	jian	33
-踺	jian	32
-楗	jian	24
-暕	jian	17
-牮	jian	11
-篯	jian	4
-犍	jian	1
-鳒	jian	0
-𬣡	jian	0
-将	jiang	2629219
-江	jiang	705253
-讲	jiang	510842
-降	jiang	236721
-蒋	jiang	139409
-奖	jiang	124266
-僵	jiang	94955
-姜	jiang	79591
-疆	jiang	51900
-匠	jiang	41638
-浆	jiang	28279
-酱	jiang	19063
-缰	jiang	12118
-绛	jiang	8578
-桨	jiang	6608
-犟	jiang	3756
-糨	jiang	1124
-豇	jiang	123
-茳	jiang	54
-礓	jiang	44
-洚	jiang	25
-耩	jiang	25
-膙	jiang	11
-鳉	jiang	5
-弶	jiang	2
-强	jiang	1
-虹	jiang	1
-叫	jiao	1780163
-教	jiao	1071585
-交	jiao	898418
-脚	jiao	735170
-角	jiao	557634
-较	jiao	411372
-娇	jiao	199460
-焦	jiao	137278
-骄	jiao	60597
-轿	jiao	46864
-搅	jiao	42862
-狡	jiao	41377
-郊	jiao	36462
-胶	jiao	28063
-觉	jiao	28000
-嚼	jiao	27876
-绞	jiao	24554
-剿	jiao	23891
-浇	jiao	21700
-缴	jiao	20827
-蛟	jiao	20489
-椒	jiao	17541
-侥	jiao	17262
-矫	jiao	14800
-饺	jiao	11790
-蕉	jiao	9223
-校	jiao	9100
-礁	jiao	9082
-皎	jiao	8869
-窖	jiao	8831
-跤	jiao	8546
-佼	jiao	7460
-姣	jiao	4585
-酵	jiao	3290
-鲛	jiao	2154
-艽	jiao	1168
-湫	jiao	943
-醮	jiao	886
-铰	jiao	717
-峤	jiao	508
-茭	jiao	351
-徼	jiao	319
-鹪	jiao	196
-敫	jiao	103
-噍	jiao	87
-僬	jiao	75
-峧	jiao	66
-滘	jiao	44
-燋	jiao	28
-藠	jiao	16
-皦	jiao	13
-斠	jiao	8
-璬	jiao	7
-皭	jiao	3
-恔	jiao	1
-䴔	jiao	0
-漖	jiao	0
-接	jie	1671342
-解	jie	1312068
-姐	jie	1158924
-结	jie	1132776
-界	jie	913395
-节	jie	511250
-杰	jie	324690
-街	jie	313485
-借	jie	289749
-介	jie	261749
-阶	jie	194358
-洁	jie	173303
-戒	jie	150905
-皆	jie	127084
-劫	jie	120969
-截	jie	105111
-捷	jie	71379
-揭	jie	57148
-竭	jie	48555
-届	jie	38051
-价	jie	23092
-藉	jie	20781
-婕	jie	19606
-睫	jie	18742
-诫	jie	14892
-桀	jie	10702
-芥	jie	7468
-桔	jie	7128
-诘	jie	3733
-颉	jie	3359
-嗟	jie	3220
-孑	jie	2490
-羯	jie	2049
-拮	jie	1954
-秸	jie	1750
-玠	jie	1131
-碣	jie	958
-讦	jie	719
-疥	jie	607
-喈	jie	512
-蚧	jie	286
-疖	jie	260
-絜	jie	101
-檞	jie	100
-劼	jie	89
-骱	jie	70
-鲒	jie	35
-褯	jie	13
-湝	jie	10
-岊	jie	1
-楷	jie	1
-㛃	jie	0
-悈	jie	0
-蜐	jie	0
-进	jin	2706350
-今	jin	1337566
-金	jin	1291889
-紧	jin	1099517
-近	jin	925463
-尽	jin	805564
-仅	jin	466676
-禁	jin	393943
-劲	jin	327635
-锦	jin	88660
-巾	jin	87648
-筋	jin	71688
-津	jin	69527
-晋	jin	67736
-斤	jin	64823
-谨	jin	62778
-浸	jin	52615
-襟	jin	25730
-矜	jin	18885
-瑾	jin	14682
-烬	jin	11199
-靳	jin	10010
-噤	jin	6575
-觐	jin	2749
-妗	jin	2231
-缙	jin	1688
-堇	jin	1169
-槿	jin	1097
-衿	jin	1059
-荩	jin	737
-馑	jin	480
-卺	jin	307
-瑨	jin	170
-廑	jin	52
-琎	jin	46
-赆	jin	41
-溍	jin	29
-祲	jin	7
-浕	jin	3
-墐	jin	2
-殣	jin	1
-珒	jin	0
-𬬱	jin	0
-经	jing	3923454
-惊	jing	1161953
-竟	jing	1160070
-静	jing	968467
-精	jing	932565
-睛	jing	724850
-警	jing	433397
-京	jing	399657
-境	jing	394043
-景	jing	369788
-敬	jing	255846
-镜	jing	239736
-晶	jing	201335
-净	jing	185047
-径	jing	106709
-竞	jing	100299
-井	jing	98246
-颈	jing	49665
-靖	jing	46359
-荆	jing	45203
-菁	jing	36920
-阱	jing	26888
-兢	jing	21643
-憬	jing	13093
-婧	jing	11970
-鲸	jing	10246
-劲	jing	10000
-茎	jing	9007
-丼	jing	9000
-旌	jing	6251
-痉	jing	5743
-泾	jing	3020
-迳	jing	2733
-璟	jing	2603
-胫	jing	2025
-儆	jing	1659
-靓	jing	500
-粳	jing	344
-獍	jing	215
-刭	jing	81
-腈	jing	47
-肼	jing	42
-倞	jing	33
-璥	jing	6
-麖	jing	3
-鼱	jing	3
-猄	jing	1
-䴖	jing	0
-汫	jing	0
-竫	jing	0
-囧	jiong	66666
-炯	jiong	21405
-窘	jiong	19223
-迥	jiong	5833
-炅	jiong	2096
-颎	jiong	877
-扃	jiong	214
-冏	jiong	176
-坰	jiong	78
-泂	jiong	22
-䌹	jiong	0
-𬳶	jiong	0
-就	jiu	11305679
-酒	jiu	862253
-久	jiu	737479
-九	jiu	506014
-究	jiu	429844
-救	jiu	427315
-旧	jiu	275220
-舅	jiu	73540
-纠	jiu	69730
-疚	jiu	37765
-揪	jiu	31819
-咎	jiu	11012
-鹫	jiu	10470
-鸠	jiu	5066
-啾	jiu	4063
-臼	jiu	3624
-灸	jiu	3571
-赳	jiu	3339
-厩	jiu	2777
-柩	jiu	2679
-玖	jiu	2503
-韭	jiu	2364
-阄	jiu	926
-僦	jiu	153
-鬏	jiu	139
-桕	jiu	120
-氿	jiu	3
-㠇	jiu	0
-句	ju	754300
-居	ju	627014
-举	ju	493503
-局	ju	461034
-巨	ju	453729
-具	ju	433976
-据	ju	405279
-聚	ju	222383
-剧	ju	220880
-距	ju	193245
-惧	ju	165581
-拒	ju	150199
-俱	ju	92404
-车	ju	60000
-矩	ju	56720
-菊	ju	43031
-拘	ju	35775
-沮	ju	31095
-鞠	ju	23015
-狙	ju	17116
-橘	ju	14755
-驹	ju	11020
-飓	ju	9487
-锯	ju	8953
-咀	ju	8667
-桔	ju	7128
-踞	ju	6612
-炬	ju	6448
-掬	ju	6329
-遽	ju	3222
-倨	ju	2628
-雎	ju	2014
-钜	ju	1496
-踽	ju	1379
-裾	ju	1369
-琚	ju	1045
-疽	ju	992
-莒	ju	817
-車	ju	651
-龃	ju	624
-苣	ju	620
-榉	ju	581
-讵	ju	447
-苴	ju	345
-鞫	ju	301
-焗	ju	263
-椐	ju	234
-锔	ju	218
-筥	ju	194
-屦	ju	98
-窭	ju	83
-醵	ju	51
-蒟	ju	39
-犋	ju	22
-澽	ju	11
-娵	ju	9
-秬	ju	9
-崌	ju	7
-岠	ju	6
-砠	ju	4
-腒	ju	4
-弆	ju	2
-泃	ju	2
-岨	ju	1
-枸	ju	1
-柜	ju	1
-趄	ju	1
-䴗	ju	0
-𬶋	ju	0
-卷	juan	419864
-娟	juan	73343
-倦	juan	46376
-捐	juan	26418
-眷	juan	22751
-绢	juan	16444
-鹃	juan	14136
-涓	juan	6331
-圈	juan	6000
-隽	juan	5109
-镌	juan	2064
-蠲	juan	408
-狷	juan	372
-鄄	juan	299
-锩	juan	145
-桊	juan	40
-焆	juan	2
-觉	jue	2372600
-绝	jue	943340
-决	jue	856467
-爵	jue	99014
-诀	jue	56532
-嚼	jue	27876
-掘	jue	26017
-角	jue	24000
-厥	jue	23082
-倔	jue	18984
-撅	jue	12167
-珏	jue	11522
-崛	jue	10826
-抉	jue	7091
-噘	jue	6333
-攫	jue	3728
-谲	jue	3025
-獗	jue	3017
-蹶	jue	3000
-傕	jue	2207
-蕨	jue	1796
-矍	jue	1634
-橛	jue	550
-镢	jue	463
-玦	jue	462
-孓	jue	380
-桷	jue	204
-觖	jue	126
-爝	jue	103
-劂	jue	56
-玃	jue	9
-砄	jue	3
-㵐	jue	0
-𫔎	jue	0
-𫘝	jue	0
-军	jun	2275004
-君	jun	385417
-俊	jun	244925
-均	jun	116506
-郡	jun	57742
-峻	jun	35003
-钧	jun	32200
-骏	jun	22698
-菌	jun	16008
-竣	jun	4635
-浚	jun	3635
-珺	jun	861
-麇	jun	284
-皲	jun	220
-焌	jun	130
-葰	jun	41
-捃	jun	40
-畯	jun	25
-莙	jun	15
-晙	jun	6
-筠	jun	1
-隽	jun	1
-鲪	jun	1
-龟	jun	1
-䐃	jun	0
-卡	ka	402256
-咖	ka	75455
-喀	ka	24238
-咔	ka	14414
-咯	ka	1111
-胩	ka	33
-开	kai	4346834
-凯	kai	175931
-慨	kai	69723
-铠	kai	25757
-楷	kai	9165
-恺	kai	7748
-揩	kai	5243
-锴	kai	3179
-忾	kai	1914
-闿	kai	729
-剀	kai	403
-垲	kai	45
-锎	kai	28
-炌	kai	0
-蒈	kai	0
-看	kan	8030267
-堪	kan	118698
-砍	kan	105218
-刊	kan	44631
-侃	kan	36358
-坎	kan	34469
-勘	kan	10761
-槛	kan	8970
-阚	kan	5558
-瞰	kan	4717
-龛	kan	2662
-戡	kan	1331
-崁	kan	275
-莰	kan	126
-衎	kan	34
-磡	kan	29
-嵁	kan	11
-墈	kan	5
-抗	kang	272796
-康	kang	217905
-扛	kang	25430
-亢	kang	20459
-炕	kang	18018
-慷	kang	16623
-糠	kang	3185
-伉	kang	1579
-钪	kang	120
-闶	kang	116
-𡐓	kang	0
-𩾌	kang	0
-靠	kao	486494
-考	kao	59906
-烤	kao	51737
-铐	kao	10235
-拷	kao	8224
-犒	kao	3262
-尻	kao	399
-栲	kao	164
-㸆	kao	0
-洘	kao	0
-可	ke	7069176
-刻	ke	977816
-克	ke	777926
-客	ke	692916
-科	ke	383049
-课	ke	253331
-颗	ke	179813
-咳	ke	86470
-渴	ke	81029
-柯	ke	71973
-棵	ke	58780
-壳	ke	41877
-氪	ke	35000
-磕	ke	34654
-嗑	ke	31720
-珂	ke	16769
-苛	ke	13000
-轲	ke	8080
-瞌	ke	7311
-坷	ke	6828
-恪	ke	5751
-蝌	ke	1549
-颏	ke	1082
-窠	ke	1020
-稞	ke	928
-溘	ke	413
-疴	ke	403
-岢	ke	384
-锞	ke	304
-髁	ke	232
-骒	ke	91
-缂	ke	79
-牁	ke	14
-匼	ke	3
-炣	ke	0
-剋	kei	192
-肯	ken	522835
-恳	ken	36239
-啃	ken	19567
-垦	ken	5358
-裉	ken	202
-坑	keng	56879
-吭	keng	29375
-铿	keng	6349
-硁	keng	25
-空	kong	1496062
-恐	kong	489578
-控	kong	271743
-孔	kong	218377
-崆	kong	10115
-箜	kong	740
-倥	kong	545
-硿	kong	14
-埪	kong	0
-口	kou	2375024
-扣	kou	96155
-寇	kou	45004
-叩	kou	20625
-抠	kou	8375
-蔻	kou	3925
-芤	kou	68
-筘	kou	47
-眍	kou	36
-𫸩	kou	0
-苦	ku	810172
-哭	ku	447753
-酷	ku	203579
-库	ku	116418
-裤	ku	116368
-枯	ku	61044
-骷	ku	39696
-窟	ku	24923
-绔	ku	2987
-喾	ku	235
-刳	ku	124
-矻	ku	49
-圐	ku	0
-夸	kua	102041
-跨	kua	67967
-垮	kua	23378
-胯	kua	9397
-挎	kua	8629
-侉	kua	801
-姱	kua	11
-快	kuai	1840001
-块	kuai	472478
-筷	kuai	31937
-会	kuai	6824
-蒯	kuai	2827
-哙	kuai	2126
-侩	kuai	1375
-脍	kuai	1296
-狯	kuai	590
-郐	kuai	108
-鲙	kuai	16
-㧟	kuai	0
-宽	kuan	175076
-款	kuan	136499
-髋	kuan	423
-况	kuang	655809
-狂	kuang	454886
-矿	kuang	75241
-旷	kuang	37033
-眶	kuang	32097
-框	kuang	27076
-匡	kuang	18999
-筐	kuang	12286
-哐	kuang	7050
-邝	kuang	1723
-诳	kuang	1699
-诓	kuang	1236
-圹	kuang	114
-纩	kuang	99
-贶	kuang	59
-夼	kuang	50
-洭	kuang	3
-𫛭	kuang	0
-亏	kui	126054
-愧	kui	101918
-溃	kui	56002
-盔	kui	44274
-魁	kui	39294
-窥	kui	30314
-奎	kui	23789
-葵	kui	12818
-傀	kui	11508
-睽	kui	10448
-馈	kui	7839
-逵	kui	5273
-馗	kui	4134
-匮	kui	4129
-喟	kui	3119
-夔	kui	2715
-篑	kui	2458
-岿	kui	1390
-揆	kui	1377
-聩	kui	1284
-跬	kui	289
-愦	kui	225
-悝	kui	209
-蝰	kui	178
-暌	kui	172
-蒉	kui	159
-櫆	kui	41
-骙	kui	29
-喹	kui	9
-煃	kui	4
-戣	kui	1
-𫠆	kui	0
-困	kun	225133
-昆	kun	66326
-坤	kun	49143
-捆	kun	27010
-鲲	kun	3210
-琨	kun	2422
-锟	kun	1706
-髡	kun	320
-阃	kun	231
-悃	kun	190
-堃	kun	123
-焜	kun	114
-壸	kun	74
-鹍	kun	37
-裈	kun	27
-醌	kun	9
-婫	kun	0
-括	kuo	139127
-扩	kuo	89799
-阔	kuo	77181
-廓	kuo	15567
-蛞	kuo	118
-啦	la	3655999
-拉	la	109679
-辣	la	82598
-垃	la	46134
-腊	la	36785
-喇	la	31719
-蜡	la	26302
-落	la	10000
-剌	la	9911
-邋	la	4653
-旯	la	2979
-瘌	la	1496
-砬	la	262
-镴	la	22
-蝲	la	10
-鞡	la	10
-𬶟	la	0
-来	lai	14837007
-莱	lai	152961
-赖	lai	118093
-籁	lai	9564
-睐	lai	6282
-癞	lai	5773
-濑	lai	3872
-徕	lai	1681
-崃	lai	543
-涞	lai	475
-赉	lai	349
-俫	lai	64
-铼	lai	15
-梾	lai	9
-蓝	lan	431855
-烂	lan	148472
-懒	lan	118774
-拦	lan	112670
-篮	lan	92437
-岚	lan	69463
-兰	lan	56530
-栏	lan	52541
-览	lan	35433
-澜	lan	32436
-揽	lan	29599
-滥	lan	23420
-婪	lan	19194
-阑	lan	10423
-榄	lan	6522
-斓	lan	5911
-缆	lan	4706
-褴	lan	3959
-谰	lan	379
-罱	lan	150
-襕	lan	71
-镧	lan	46
-漤	lan	17
-𬒗	lan	0
-狼	lang	360398
-浪	lang	312811
-郎	lang	182457
-朗	lang	149504
-廊	lang	70608
-螂	lang	12502
-琅	lang	12283
-啷	lang	7603
-榔	lang	2354
-锒	lang	873
-阆	lang	820
-烺	lang	780
-蒗	lang	115
-莨	lang	98
-稂	lang	20
-崀	lang	3
-㫰	lang	0
-㮾	lang	0
-埌	lang	0
-塱	lang	0
-桹	lang	0
-筤	lang	0
-蓢	lang	0
-老	lao	3762961
-劳	lao	236325
-牢	lao	122871
-姥	lao	45943
-捞	lao	29577
-唠	lao	19757
-佬	lao	15514
-烙	lao	14608
-落	lao	10000
-酪	lao	5022
-涝	lao	1423
-崂	lao	1382
-嫪	lao	1309
-痨	lao	1271
-醪	lao	498
-栳	lao	92
-铑	lao	25
-耢	lao	17
-荖	lao	12
-铹	lao	2
-络	lao	1
-𫭼	lao	0
-了	le	3481243
-乐	le	777260
-勒	le	149722
-叻	le	525
-饹	le	55
-泐	le	34
-鳓	le	22
-仂	le	15
-簕	le	8
-嘞	le	1
-雷	lei	560379
-类	lei	542775
-泪	lei	439483
-累	lei	238891
-勒	lei	149722
-嘞	lei	128190
-蕾	lei	83954
-磊	lei	40900
-垒	lei	26075
-擂	lei	22548
-肋	lei	19237
-儡	lei	11246
-镭	lei	1854
-羸	lei	1348
-檑	lei	602
-耒	lei	532
-诔	lei	426
-嫘	lei	417
-酹	lei	176
-缧	lei	139
-礌	lei	40
-罍	lei	33
-藟	lei	17
-癗	lei	2
-冷	leng	1063226
-愣	leng	198676
-楞	leng	40000
-棱	leng	15662
-塄	leng	476
-崚	leng	36
-堎	leng	0
-里	li	7329328
-力	li	3298612
-理	li	1903915
-李	li	1462547
-立	li	1293824
-离	li	1222359
-利	li	1091519
-梨	li	767900
-丽	li	653445
-历	li	492045
-礼	li	456545
-厉	li	352288
-例	li	187039
-莉	li	180099
-黎	li	98444
-璃	li	88749
-励	li	76447
-哩	li	58164
-狸	li	51416
-粒	li	50991
-隶	li	43103
-吏	li	29539
-栗	li	29059
-漓	li	22606
-雳	li	18289
-厘	li	17464
-俐	li	11827
-笠	li	10084
-沥	li	9716
-篱	li	8716
-戾	li	8677
-鲤	li	7849
-犁	li	7823
-砾	li	5747
-荔	li	4246
-砺	li	3223
-郦	li	2826
-藜	li	2576
-骊	li	2501
-俪	li	2379
-鹂	li	2319
-蠡	li	2200
-栎	li	1981
-唳	li	1892
-喱	li	1783
-罹	li	1763
-痢	li	1662
-莅	li	1326
-俚	li	1300
-逦	li	1198
-呖	li	1053
-蛎	li	1037
-猁	li	998
-澧	li	768
-醴	li	763
-娌	li	641
-蓠	li	511
-詈	li	453
-黧	li	428
-蜊	li	418
-鬲	li	406
-缡	li	399
-傈	li	369
-枥	li	339
-溧	li	309
-坜	li	223
-疠	li	201
-粝	li	199
-嫠	li	195
-锂	li	193
-篥	li	148
-轹	li	72
-鲡	li	67
-疬	li	57
-苈	li	56
-浬	li	46
-跞	li	39
-浰	li	37
-鳢	li	26
-醨	li	12
-凓	li	3
-朸	li	1
-㰀	li	0
-珕	li	0
-𫵷	li	0
-𬍛	li	0
-俩	lia	0
-连	lian	2453048
-脸	lian	1845354
-联	lian	514908
-练	lian	501341
-恋	lian	243571
-怜	lian	195035
-炼	lian	184752
-莲	lian	169828
-链	lian	66506
-帘	lian	60741
-廉	lian	48551
-敛	lian	31390
-涟	lian	17410
-镰	lian	12380
-琏	lian	7307
-濂	lian	2917
-潋	lian	2453
-殓	lian	1933
-奁	lian	722
-裢	lian	618
-楝	lian	581
-裣	lian	318
-鲢	lian	228
-梿	lian	95
-蠊	lian	47
-蔹	lian	22
-瑓	lian	3
-浰	lian	1
-𬶠	lian	0
-两	liang	3302466
-量	liang	1142437
-亮	liang	693524
-良	liang	352124
-凉	liang	219565
-梁	liang	201687
-辆	liang	156125
-粮	liang	101018
-谅	liang	80996
-踉	liang	20003
-靓	liang	17479
-晾	liang	9012
-粱	liang	5673
-魉	liang	1659
-椋	liang	544
-莨	liang	98
-辌	liang	92
-墚	liang	65
-悢	liang	15
-俍	liang	9
-俩	liang	1
-𫟅	liang	0
-𬜯	liang	0
-聊	liao	265573
-料	liao	263518
-疗	liao	94630
-辽	liao	47836
-廖	liao	31067
-撩	liao	21011
-寥	liao	20857
-僚	liao	19624
-缭	liao	16457
-燎	liao	9587
-撂	liao	8107
-獠	liao	7356
-潦	liao	5483
-镣	liao	3760
-嘹	liao	3699
-瞭	liao	2590
-寮	liao	1698
-蓼	liao	1444
-尥	liao	242
-鹩	liao	197
-嫽	liao	123
-髎	liao	64
-钌	liao	55
-蹽	liao	43
-漻	liao	11
-憭	liao	6
-簝	liao	4
-橑	liao	1
-了	liao	0
-𪤗	liao	0
-列	lie	244324
-裂	lie	174922
-猎	lie	107720
-咧	lie	58774
-烈	lie	52123
-劣	lie	49371
-冽	lie	11108
-趔	lie	4928
-洌	lie	1061
-鬣	lie	981
-捩	lie	399
-埒	lie	194
-躐	lie	54
-峛	lie	1
-脟	lie	1
-䴕	lie	0
-𫚭	lie	0
-林	lin	1435296
-临	lin	332190
-琳	lin	156208
-淋	lin	71208
-邻	lin	57417
-麟	lin	51074
-凛	lin	44092
-拎	lin	31698
-霖	lin	27387
-鳞	lin	24864
-吝	lin	11418
-躏	lin	7166
-粼	lin	7049
-磷	lin	5058
-嶙	lin	4142
-蔺	lin	3498
-赁	lin	2805
-懔	lin	1326
-辚	lin	1017
-遴	lin	936
-廪	lin	725
-潾	lin	483
-檩	lin	360
-璘	lin	328
-啉	lin	258
-瞵	lin	25
-膦	lin	19
-翷	lin	1
-箖	lin	0
-𬭸	lin	0
-𬴊	lin	0
-令	ling	942791
-灵	ling	878814
-领	ling	808920
-另	ling	608814
-凌	ling	335556
-玲	ling	160182
-零	ling	159040
-龄	ling	115480
-铃	ling	106214
-陵	ling	86608
-岭	ling	44076
-菱	ling	18846
-伶	ling	18546
-聆	ling	14208
-翎	ling	13767
-绫	ling	10425
-〇	ling	10000
-羚	ling	6686
-呤	ling	4508
-苓	ling	4355
-泠	ling	3233
-棂	ling	2399
-瓴	ling	2088
-酃	ling	1218
-囹	ling	1017
-鲮	ling	461
-蛉	ling	441
-鸰	ling	239
-柃	ling	71
-舲	ling	15
-澪	ling	7
-昤	ling	3
-祾	ling	3
-姈	ling	1
-棱	ling	1
-㥄	ling	0
-坽	ling	0
-流	liu	1114438
-刘	liu	835052
-留	liu	778671
-六	liu	635084
-柳	liu	297897
-溜	liu	122662
-琉	liu	24975
-榴	liu	15726
-浏	liu	8234
-瘤	liu	6892
-硫	liu	5471
-遛	liu	4181
-陆	liu	4000
-绺	liu	3112
-鎏	liu	919
-馏	liu	876
-骝	liu	809
-镏	liu	592
-旒	liu	542
-镠	liu	360
-锍	liu	242
-熘	liu	237
-鹨	liu	64
-飗	liu	14
-瑬	liu	7
-珋	liu	6
-罶	liu	5
-鹠	liu	4
-疁	liu	2
-碌	liu	1
-咯	lo	1111
-龙	long	1509393
-隆	long	139138
-笼	long	92617
-拢	long	48821
-胧	long	40688
-珑	long	34559
-咙	long	31569
-聋	long	19397
-垄	long	11782
-窿	long	9002
-陇	long	6141
-泷	long	1444
-茏	long	1018
-眬	long	850
-栊	long	456
-砻	long	298
-哢	long	159
-昽	long	118
-癃	long	18
-漋	long	5
-弄	long	1
-𬕂	long	0
-楼	lou	654626
-搂	lou	85409
-漏	lou	62997
-髅	lou	38797
-露	lou	36419
-陋	lou	32986
-喽	lou	29096
-娄	lou	10553
-篓	lou	6723
-镂	lou	3408
-偻	lou	3115
-蝼	lou	1805
-耧	lou	539
-蒌	lou	169
-瘘	lou	108
-嵝	lou	54
-溇	lou	3
-䁖	lou	0
-剅	lou	0
-𦝼	lou	0
-𪣻	lou	0
-路	lu	1338441
-露	lu	606979
-陆	lu	431372
-鲁	lu	232665
-录	lu	164397
-撸	lu	162484
-卢	lu	96170
-鹿	lu	56206
-炉	lu	51848
-碌	lu	48886
-芦	lu	33912
-禄	lu	33704
-虏	lu	30976
-璐	lu	28683
-噜	lu	24633
-戮	lu	22742
-颅	lu	21616
-庐	lu	17027
-漉	lu	15539
-掳	lu	8970
-辘	lu	6743
-赂	lu	6380
-麓	lu	6365
-卤	lu	5943
-鹭	lu	5180
-泸	lu	3499
-潞	lu	2185
-橹	lu	1792
-辂	lu	1030
-箓	lu	962
-胪	lu	786
-鲈	lu	727
-轳	lu	483
-垆	lu	385
-渌	lu	367
-逯	lu	360
-鸬	lu	331
-甪	lu	268
-蕗	lu	219
-舻	lu	204
-栌	lu	196
-簏	lu	175
-菉	lu	89
-氇	lu	87
-僇	lu	19
-琭	lu	9
-镥	lu	9
-勠	lu	4
-稑	lu	3
-绿	lu	1
-澛	lu	0
-𫘧	lu	0
-𬬻	lu	0
-乱	luan	692152
-卵	luan	18272
-鸾	luan	11088
-峦	luan	6336
-挛	luan	5894
-銮	luan	3286
-孪	luan	3236
-栾	luan	3068
-滦	luan	2148
-脔	luan	635
-娈	luan	526
-论	lun	744148
-伦	lun	199623
-轮	lun	197302
-仑	lun	40840
-沦	lun	25113
-抡	lun	12347
-纶	lun	6061
-囵	lun	1793
-𫭢	lun	0
-𬬭	lun	0
-落	luo	1054311
-罗	luo	783224
-洛	luo	247888
-络	luo	111535
-裸	luo	66535
-逻	luo	41947
-骆	luo	39888
-萝	luo	33284
-螺	luo	19077
-锣	luo	12995
-啰	luo	11175
-珞	luo	7779
-骡	luo	7509
-摞	luo	6250
-雒	luo	4753
-荦	luo	4636
-箩	luo	3538
-椤	luo	1297
-咯	luo	1111
-烙	luo	700
-猡	luo	693
-蠃	luo	675
-脶	luo	642
-漯	luo	416
-倮	luo	275
-捋	luo	100
-瘰	luo	77
-泺	luo	58
-蓏	luo	10
-虑	lv	257747
-绿	lv	245485
-律	lv	223633
-率	lv	217561
-旅	lv	179263
-吕	lv	124280
-缕	lv	43622
-侣	lv	33933
-驴	lv	30458
-屡	lv	30025
-履	lv	28690
-捋	lv	9568
-滤	lv	5489
-褛	lv	4042
-铝	lv	3934
-闾	lv	3205
-榈	lv	1768
-氯	lv	1087
-膂	lv	565
-稆	lv	72
-葎	lv	31
-垏	lv	2
-偻	lv	1
-梠	lv	1
-𦝼	lv	0
-略	lve	301716
-掠	lve	81961
-锊	lve	58
-䂮	lve	0
-圙	lve	0
-吗	ma	9028487
-马	ma	1729443
-妈	ma	956493
-麻	ma	374419
-嘛	ma	334431
-骂	ma	302419
-码	ma	160836
-玛	ma	131821
-抹	ma	113249
-蚂	ma	26697
-蟆	ma	9205
-犸	ma	1633
-杩	ma	70
-祃	ma	4
-摩	ma	1
-买	mai	477539
-卖	mai	303880
-埋	mai	139624
-脉	mai	134301
-麦	mai	121753
-迈	mai	83798
-霾	mai	5226
-劢	mai	242
-唛	mai	81
-荬	mai	34
-鿏	mai	0
-满	man	1238021
-慢	man	820995
-漫	man	213126
-曼	man	148287
-蛮	man	105867
-瞒	man	70085
-蔓	man	33854
-馒	man	14818
-幔	man	4776
-谩	man	2531
-鳗	man	2505
-缦	man	1117
-嫚	man	376
-墁	man	194
-颟	man	192
-螨	man	185
-鞔	man	110
-镘	man	71
-鬘	man	30
-埋	man	1
-𬜬	man	0
-忙	mang	899024
-芒	mang	189889
-茫	mang	126870
-氓	mang	42109
-莽	mang	33238
-盲	mang	29895
-蟒	mang	15665
-邙	mang	2036
-漭	mang	209
-牤	mang	118
-硭	mang	100
-尨	mang	97
-牻	mang	53
-厖	mang	20
-杧	mang	0
-毛	mao	469562
-冒	mao	258486
-貌	mao	164902
-猫	mao	137136
-矛	mao	95725
-帽	mao	66271
-贸	mao	48254
-茂	mao	38926
-茅	mao	37567
-冇	mao	17800
-髦	mao	9531
-卯	mao	5587
-锚	mao	3900
-袤	mao	3094
-瑁	mao	2802
-懋	mao	1870
-牦	mao	1744
-铆	mao	951
-昴	mao	726
-耄	mao	713
-蟊	mao	667
-峁	mao	394
-旄	mao	389
-楙	mao	166
-泖	mao	154
-瞀	mao	112
-茆	mao	100
-蝥	mao	72
-芼	mao	35
-眊	mao	34
-鄚	mao	15
-么	me	9727134
-没	mei	7560391
-美	mei	1692264
-每	mei	1015025
-妹	mei	542424
-眉	mei	363007
-梅	mei	333631
-媚	mei	110163
-魅	mei	79400
-玫	mei	79367
-枚	mei	67198
-媒	mei	65752
-霉	mei	55470
-昧	mei	41576
-煤	mei	34203
-寐	mei	10214
-嵋	mei	7261
-莓	mei	6323
-湄	mei	5774
-袂	mei	4693
-楣	mei	4189
-酶	mei	1616
-镁	mei	1409
-郿	mei	497
-浼	mei	154
-鹛	mei	41
-镅	mei	19
-渼	mei	15
-糜	mei	1
-媄	mei	0
-瑂	mei	0
-们	men	10741873
-门	men	2233462
-闷	men	203501
-懑	men	2697
-扪	men	2344
-焖	men	1422
-钔	men	33
-呇	men	2
-𫞩	men	0
-梦	meng	650909
-猛	meng	403183
-蒙	meng	290989
-孟	meng	162475
-盟	meng	158636
-朦	meng	42683
-萌	meng	34408
-懵	meng	15002
-檬	meng	8818
-蜢	meng	1188
-勐	meng	960
-虻	meng	868
-艨	meng	580
-锰	meng	563
-幪	meng	322
-艋	meng	201
-蠓	meng	195
-瞢	meng	140
-甍	meng	130
-獴	meng	73
-礞	meng	12
-㠓	meng	0
-鹲	meng	0
-𫑡	meng	0
-密	mi	506110
-米	mi	503964
-迷	mi	424854
-秘	mi	380904
-弥	mi	97735
-蜜	mi	76559
-眯	mi	73287
-咪	mi	32218
-谜	mi	26947
-觅	mi	21336
-靡	mi	16931
-泌	mi	8695
-糜	mi	8423
-谧	mi	7781
-宓	mi	4473
-祢	mi	3851
-芈	mi	1723
-麋	mi	1708
-弭	mi	1669
-汨	mi	1454
-猕	mi	1070
-幂	mi	671
-縻	mi	588
-蘼	mi	337
-醚	mi	288
-祕	mi	190
-敉	mi	114
-嘧	mi	73
-蓂	mi	72
-脒	mi	10
-洣	mi	2
-醾	mi	0
-面	mian	4532962
-免	mian	289084
-勉	mian	95918
-绵	mian	86358
-眠	mian	74642
-棉	mian	44297
-缅	mian	13481
-冕	mian	10994
-腼	mian	7396
-娩	mian	2352
-湎	mian	1455
-沔	mian	623
-渑	mian	500
-眄	mian	178
-丏	mian	131
-勔	mian	58
-愐	mian	5
-偭	mian	1
-𩾃	mian	0
-妙	miao	280421
-秒	miao	90580
-描	miao	87436
-苗	miao	70433
-庙	miao	63493
-渺	miao	44689
-瞄	miao	40747
-淼	miao	8593
-喵	miao	8410
-缈	miao	8275
-藐	miao	5308
-邈	miao	2409
-眇	miao	479
-杪	miao	140
-鹋	miao	41
-缪	miao	1
-灭	mie	280837
-蔑	mie	29247
-乜	mie	1936
-咩	mie	1318
-篾	mie	1074
-民	min	902697
-敏	min	196615
-抿	min	21329
-悯	min	19771
-闵	min	17114
-珉	min	9079
-泯	min	8435
-闽	min	7169
-皿	min	3662
-岷	min	2214
-旻	min	1174
-缗	min	503
-愍	min	412
-湣	min	282
-黾	min	130
-忞	min	92
-鳘	min	13
-苠	min	5
-明	ming	2864492
-名	ming	1804559
-命	ming	1368062
-鸣	ming	142206
-冥	ming	116978
-铭	ming	68150
-茗	ming	22789
-瞑	ming	6405
-溟	ming	5020
-酩	ming	2357
-暝	ming	1136
-螟	ming	810
-洺	ming	405
-谬	miu	15676
-缪	miu	1490
-魔	mo	1160330
-莫	mo	485268
-默	mo	454458
-模	mo	378985
-摸	mo	342354
-摩	mo	168189
-磨	mo	167370
-末	mo	137858
-漠	mo	119153
-抹	mo	113249
-墨	mo	107669
-没	mo	99019
-麽	mo	98350
-陌	mo	97194
-寞	mo	67695
-蓦	mo	36965
-沫	mo	36929
-膜	mo	26833
-茉	mo	16199
-嬷	mo	9757
-蘑	mo	7944
-摹	mo	4677
-馍	mo	4217
-谟	mo	3201
-嫫	mo	2089
-秣	mo	1868
-殁	mo	1535
-貊	mo	990
-靺	mo	566
-貘	mo	508
-镆	mo	117
-瘼	mo	64
-耱	mo	8
-万	mo	1
-无	mo	1
-脉	mo	1
-藦	mo	1
-𬙊	mo	0
-某	mou	342978
-谋	mou	204688
-眸	mou	59961
-缪	mou	14901
-牟	mou	13962
-哞	mou	1583
-鍪	mou	305
-侔	mou	143
-蛑	mou	61
-目	mu	1365310
-母	mu	701521
-木	mu	547209
-模	mu	378985
-慕	mu	186450
-幕	mu	186169
-姆	mu	140194
-穆	mu	74572
-牧	mu	72623
-墓	mu	71994
-沐	mu	43038
-暮	mu	32619
-拇	mu	19655
-牡	mu	15032
-亩	mu	13986
-募	mu	13095
-睦	mu	8412
-苜	mu	1022
-呒	mu	180
-钼	mu	180
-毪	mu	94
-仫	mu	27
-牟	mu	1
-𧿹	mu	0
-𬭁	mu	0
-那	na	9929703
-哪	na	998544
-拿	na	958908
-娜	na	286464
-纳	na	242616
-呐	na	48065
-捺	na	9881
-衲	na	7778
-钠	na	2078
-肭	na	57
-镎	na	24
-乸	na	1
-南	na	1
-𦰡	na	0
-奶	nai	265359
-奈	nai	235258
-耐	nai	165628
-乃	nai	155797
-鼐	nai	981
-氖	nai	717
-萘	nai	385
-艿	nai	330
-柰	nai	284
-佴	nai	140
-迺	nai	52
-耏	nai	3
-难	nan	1727440
-男	nan	1354324
-南	nan	856521
-喃	nan	132068
-楠	nan	66793
-囡	nan	3654
-赧	nan	2834
-腩	nan	859
-蝻	nan	34
-萳	nan	23
-婻	nan	1
-囊	nang	52069
-囔	nang	18778
-馕	nang	685
-攮	nang	330
-曩	nang	233
-齉	nang	45
-脑	nao	728559
-闹	nao	291121
-恼	nao	128907
-挠	nao	40573
-瑙	nao	4424
-孬	nao	3769
-呶	nao	2337
-淖	nao	1292
-猱	nao	628
-铙	nao	418
-垴	nao	148
-蛲	nao	74
-硇	nao	51
-臑	nao	10
-峱	nao	1
-呢	ne	179349
-讷	ne	10324
-哪	ne	1
-内	nei	1509530
-馁	nei	5700
-嫩	nen	58594
-恁	nen	3956
-能	neng	59336
-你	ni	1422192
-尼	ni	272244
-妮	ni	155375
-泥	ni	120657
-逆	ni	73790
-拟	ni	50704
-腻	ni	42294
-倪	ni	32398
-霓	ni	25232
-匿	ni	17242
-溺	ni	14495
-昵	ni	11208
-睨	ni	7131
-旎	ni	3505
-怩	ni	2372
-猊	ni	2254
-鲵	ni	482
-伲	ni	211
-坭	ni	55
-铌	ni	17
-麑	ni	16
-薿	ni	11
-呢	ni	1
-𨺙	ni	0
-𫐐	ni	0
-𫠜	ni	0
-年	nian	3465446
-念	nian	559620
-黏	nian	10465
-拈	nian	9106
-捻	nian	8152
-碾	nian	7058
-撵	nian	6857
-蔫	nian	5224
-廿	nian	3123
-辇	nian	2547
-鲇	nian	681
-鲶	nian	680
-埝	nian	101
-粘	nian	1
-娘	niang	603856
-酿	niang	22424
-鸟	niao	178842
-尿	niao	42861
-袅	niao	16381
-茑	niao	395
-脲	niao	14
-捏	nie	81503
-聂	nie	36076
-孽	nie	25919
-涅	nie	16639
-蹑	nie	12942
-嗫	nie	6049
-啮	nie	1810
-臬	nie	1210
-镊	nie	836
-镍	nie	485
-蘖	nie	235
-颞	nie	167
-糵	nie	92
-陧	nie	54
-乜	nie	1
-嵲	nie	1
-菍	nie	1
-𫔶	nie	0
-您	nin	523541
-宁	ning	316587
-凝	ning	208926
-狞	ning	29726
-拧	ning	27504
-柠	ning	8126
-咛	ning	5821
-泞	ning	5314
-佞	ning	2329
-甯	ning	106
-苧	ning	33
-聍	ning	30
-牛	niu	313393
-扭	niu	173801
-纽	niu	42599
-妞	niu	39626
-钮	niu	11556
-拗	niu	9593
-忸	niu	2351
-狃	niu	137
-杻	niu	1
-弄	nong	391479
-农	nong	208656
-浓	nong	150479
-哝	nong	10044
-侬	nong	4715
-脓	nong	4472
-秾	nong	210
-𬪩	nong	0
-耨	nou	228
-怒	nu	466019
-努	nu	204860
-奴	nu	142209
-弩	nu	33228
-驽	nu	1694
-孥	nu	310
-傉	nu	95
-胬	nu	42
-砮	nu	40
-笯	nu	4
-暖	nuan	155407
-诺	nuo	203149
-挪	nuo	46163
-懦	nuo	18464
-喏	nuo	8320
-糯	nuo	4552
-娜	nuo	1000
-傩	nuo	994
-搦	nuo	695
-锘	nuo	109
-𦰡	nuo	0
-女	nv	3362646
-钕	nv	80
-恧	nv	70
-衄	nv	42
-虐	nve	30741
-疟	nve	1012
-哦	o	3563330
-噢	o	496080
-喔	o	1
-欧	ou	253543
-偶	ou	150991
-呕	ou	27879
-殴	ou	12875
-鸥	ou	9276
-藕	ou	5784
-区	ou	2425
-怄	ou	1573
-瓯	ou	1414
-讴	ou	753
-沤	ou	528
-耦	ou	443
-𠙶	ou	0
-𬉼	ou	0
-怕	pa	1114820
-爬	pa	183266
-帕	pa	75768
-啪	pa	75251
-趴	pa	65882
-扒	pa	25334
-琶	pa	8308
-耙	pa	3977
-葩	pa	2209
-杷	pa	759
-筢	pa	568
-舥	pa	1
-潖	pa	0
-派	pai	537090
-排	pai	449584
-拍	pai	449481
-牌	pai	237160
-徘	pai	17122
-湃	pai	12221
-俳	pai	515
-哌	pai	77
-簰	pai	10
-蒎	pai	5
-迫	pai	1
-盘	pan	279546
-判	pan	204750
-叛	pan	97192
-盼	pan	70327
-潘	pan	63492
-攀	pan	45399
-畔	pan	23833
-蹒	pan	6305
-磐	pan	5916
-蟠	pan	5464
-槃	pan	1340
-爿	pan	1035
-泮	pan	301
-袢	pan	208
-磻	pan	160
-襻	pan	129
-番	pan	1
-胖	pan	1
-旁	pang	610425
-胖	pang	178105
-庞	pang	122515
-彷	pang	21360
-乓	pang	8098
-螃	pang	6823
-滂	pang	2319
-逄	pang	529
-雱	pang	486
-磅	pang	200
-耪	pang	139
-鳑	pang	4
-膀	pang	1
-跑	pao	767297
-炮	pao	176432
-泡	pao	114183
-抛	pao	111366
-袍	pao	89409
-咆	pao	23494
-刨	pao	8691
-庖	pao	1610
-狍	pao	1153
-疱	pao	1049
-匏	pao	229
-脬	pao	135
-陪	pei	269126
-配	pei	262063
-佩	pei	153498
-培	pei	98414
-赔	pei	61380
-裴	pei	29595
-沛	pei	24758
-呸	pei	20447
-胚	pei	4101
-帔	pei	2772
-辔	pei	1509
-霈	pei	378
-旆	pei	169
-醅	pei	96
-锫	pei	42
-衃	pei	0
-喷	pen	112711
-盆	pen	64086
-湓	pen	93
-朋	peng	588716
-碰	peng	240438
-彭	peng	86069
-鹏	peng	79602
-捧	peng	68202
-砰	peng	54753
-蓬	peng	46160
-篷	peng	41474
-棚	peng	28567
-膨	peng	17894
-澎	peng	16976
-怦	peng	14012
-嘭	peng	11327
-烹	peng	9367
-抨	peng	3371
-芃	peng	1230
-硼	peng	215
-蟛	peng	73
-堋	peng	72
-椪	peng	8
-弸	peng	3
-淜	peng	2
-搒	peng	1
-皮	pi	487744
-批	pi	218230
-屁	pi	159868
-疲	pi	106623
-匹	pi	97644
-劈	pi	88694
-披	pi	85497
-脾	pi	74235
-啤	pi	41686
-辟	pi	29251
-僻	pi	28410
-霹	pi	19613
-痞	pi	14766
-譬	pi	11807
-噼	pi	11014
-琵	pi	8200
-癖	pi	7798
-媲	pi	5774
-丕	pi	5020
-毗	pi	3984
-坯	pi	3815
-纰	pi	2598
-裨	pi	2321
-睥	pi	2153
-邳	pi	1407
-砒	pi	1066
-陂	pi	947
-貔	pi	764
-枇	pi	674
-罴	pi	531
-圮	pi	323
-鼙	pi	246
-蚍	pi	232
-铍	pi	219
-郫	pi	187
-仳	pi	110
-伾	pi	107
-蜱	pi	104
-埤	pi	97
-嚭	pi	84
-陴	pi	73
-淠	pi	49
-甓	pi	35
-狉	pi	8
-澼	pi	6
-椑	pi	2
-否	pi	1
-鲏	pi	1
-䴙	pi	0
-苉	pi	0
-𬳵	pi	0
-片	pian	859001
-偏	pian	236193
-骗	pian	178600
-篇	pian	140190
-翩	pian	35855
-便	pian	2676
-骈	pian	1356
-蹁	pian	503
-谝	pian	408
-胼	pian	175
-犏	pian	46
-楩	pian	13
-扁	pian	1
-㛹	pian	0
-𡎚	pian	0
-飘	piao	319989
-漂	piao	245966
-票	piao	164603
-瞟	piao	25058
-嫖	piao	13042
-瓢	piao	8967
-缥	piao	8410
-剽	piao	3778
-骠	piao	3168
-朴	piao	1000
-殍	piao	388
-嘌	piao	136
-螵	piao	25
-蔈	piao	0
-薸	piao	0
-撇	pie	47004
-瞥	pie	38910
-苤	pie	81
-氕	pie	5
-𬭯	pie	0
-品	pin	566800
-拼	pin	181290
-贫	pin	80408
-频	pin	70697
-聘	pin	42542
-嫔	pin	8467
-颦	pin	4297
-姘	pin	1291
-牝	pin	864
-玭	pin	280
-𬞟	pin	0
-平	ping	1439957
-凭	ping	221418
-评	ping	170396
-瓶	ping	151362
-屏	ping	89750
-萍	ping	84637
-苹	ping	37052
-坪	ping	20132
-乒	ping	8803
-娉	ping	8067
-枰	ping	685
-鲆	ping	156
-俜	ping	73
-泙	ping	22
-洴	ping	10
-帡	ping	4
-荓	ping	3
-蚲	ping	1
-涄	ping	0
-玶	ping	0
-破	po	677496
-婆	po	325914
-迫	po	181073
-颇	po	127012
-坡	po	79228
-魄	po	76856
-泼	po	49867
-泊	po	41521
-珀	po	10455
-叵	po	3366
-鄱	po	2106
-粕	po	898
-笸	po	325
-皤	po	214
-钋	po	81
-钷	po	38
-桲	po	10
-朴	po	1
-繁	po	1
-陂	po	1
-䥽	po	0
-酦	po	0
-剖	pou	15232
-抔	pou	221
-裒	pou	189
-掊	pou	156
-普	pu	317637
-扑	pu	252812
-铺	pu	124784
-朴	pu	65002
-仆	pu	62312
-谱	pu	39455
-葡	pu	30236
-菩	pu	28652
-噗	pu	24442
-浦	pu	19174
-瀑	pu	17047
-蒲	pu	16804
-埔	pu	6340
-濮	pu	6228
-璞	pu	6014
-圃	pu	5339
-溥	pu	4858
-匍	pu	4791
-莆	pu	2433
-堡	pu	1000
-脯	pu	500
-蹼	pu	399
-曝	pu	200
-氆	pu	104
-潽	pu	96
-酺	pu	18
-镨	pu	11
-镤	pu	6
-蒱	pu	3
-墣	pu	1
-穙	pu	0
-起	qi	5819918
-气	qi	3227369
-其	qi	2417047
-奇	qi	982596
-期	qi	647443
-七	qi	638221
-器	qi	489638
-骑	qi	402931
-齐	qi	376615
-弃	qi	247281
-妻	qi	243636
-企	qi	222834
-启	qi	143593
-旗	qi	137444
-欺	qi	133789
-岂	qi	129475
-汽	qi	102025
-棋	qi	94079
-琪	qi	83147
-泣	qi	77103
-凄	qi	75047
-漆	qi	67629
-戚	qi	57840
-契	qi	57408
-乞	qi	51739
-祈	qi	47360
-麒	qi	29156
-歧	qi	26398
-琦	qi	26016
-祁	qi	25566
-绮	qi	23912
-栖	qi	20169
-炁	qi	18920
-淇	qi	16379
-崎	qi	11863
-砌	qi	11088
-蹊	qi	10230
-祺	qi	7841
-迄	qi	6616
-杞	qi	5807
-岐	qi	5207
-脐	qi	5200
-颀	qi	4370
-沏	qi	4304
-跂	qi	4067
-憩	qi	3905
-萋	qi	2776
-嘁	qi	2705
-耆	qi	2666
-芑	qi	2497
-蜞	qi	1940
-讫	qi	1527
-祇	qi	1477
-鳍	qi	1377
-亓	qi	1309
-葺	qi	1253
-柒	qi	1055
-綦	qi	1029
-蕲	qi	937
-畦	qi	861
-芪	qi	778
-圻	qi	725
-萁	qi	661
-骐	qi	573
-欹	qi	370
-碛	qi	311
-汔	qi	257
-锜	qi	200
-槭	qi	160
-蛴	qi	136
-屺	qi	108
-亟	qi	100
-玘	qi	79
-桤	qi	64
-埼	qi	47
-棨	qi	35
-郪	qi	9
-磜	qi	5
-鲯	qi	3
-愭	qi	2
-碶	qi	2
-俟	qi	1
-婍	qi	1
-洓	qi	1
-稽	qi	1
-缉	qi	1
-荠	qi	1
-䓫	qi	0
-𨙸	qi	0
-𬨂	qi	0
-卡	qia	0
-恰	qia	0
-拤	qia	0
-掐	qia	0
-洽	qia	0
-葜	qia	0
-袷	qia	0
-髂	qia	0
-前	qian	3967855
-钱	qian	1034329
-千	qian	794964
-潜	qian	151581
-牵	qian	132558
-倩	qian	112856
-浅	qian	106957
-签	qian	102159
-歉	qian	100666
-欠	qian	85134
-乾	qian	67122
-谦	qian	65522
-迁	qian	64084
-遣	qian	51164
-茜	qian	45676
-芊	qian	20334
-嵌	qian	19221
-虔	qian	15826
-铅	qian	14443
-谴	qian	12039
-钳	qian	9039
-黔	qian	3727
-堑	qian	3544
-骞	qian	2002
-佥	qian	1821
-仟	qian	1354
-缱	qian	1080
-纤	qian	1000
-阡	qian	899
-钎	qian	863
-钤	qian	656
-掮	qian	625
-芡	qian	542
-荨	qian	527
-扦	qian	438
-愆	qian	437
-悭	qian	408
-搴	qian	224
-慊	qian	178
-褰	qian	99
-汧	qian	87
-肷	qian	63
-蒨	qian	48
-靬	qian	33
-椠	qian	32
-杄	qian	20
-鹐	qian	10
-岍	qian	8
-圲	qian	1
-犍	qian	1
-伣	qian	0
-墘	qian	0
-磏	qian	0
-𬘬	qian	0
-强	qiang	1361353
-枪	qiang	424121
-墙	qiang	301301
-抢	qiang	218937
-腔	qiang	58166
-呛	qiang	20665
-跄	qiang	20209
-蔷	qiang	14896
-锵	qiang	8532
-羌	qiang	7900
-戕	qiang	2303
-戗	qiang	2092
-襁	qiang	2036
-嫱	qiang	1037
-樯	qiang	631
-镪	qiang	324
-炝	qiang	259
-羟	qiang	106
-蜣	qiang	77
-玱	qiang	58
-锖	qiang	35
-蔃	qiang	1
-巧	qiao	241945
-悄	qiao	233784
-瞧	qiao	180832
-敲	qiao	148518
-桥	qiao	133377
-乔	qiao	124865
-俏	qiao	50651
-翘	qiao	37030
-窍	qiao	26141
-鞘	qiao	24815
-憔	qiao	18746
-峭	qiao	13505
-跷	qiao	12194
-侨	qiao	9375
-樵	qiao	8689
-撬	qiao	6740
-锹	qiao	4077
-壳	qiao	2000
-谯	qiao	1914
-橇	qiao	1666
-诮	qiao	1506
-荞	qiao	1425
-峤	qiao	508
-愀	qiao	289
-劁	qiao	178
-硗	qiao	154
-鞒	qiao	83
-硚	qiao	17
-缲	qiao	14
-雀	qiao	1
-且	qie	1092816
-切	qie	900592
-窃	qie	47730
-怯	qie	42612
-妾	qie	33441
-茄	qie	16373
-惬	qie	12404
-趄	qie	4866
-锲	qie	2139
-伽	qie	1098
-挈	qie	768
-箧	qie	452
-慊	qie	178
-郄	qie	95
-亲	qin	1388321
-秦	qin	381190
-琴	qin	161113
-侵	qin	103019
-勤	qin	89958
-寝	qin	70179
-擒	qin	39189
-钦	qin	36673
-芹	qin	28424
-沁	qin	26604
-禽	qin	20600
-覃	qin	5474
-噙	qin	4495
-衾	qin	1359
-揿	qin	737
-芩	qin	542
-溱	qin	301
-吣	qin	121
-嗪	qin	81
-锓	qin	74
-檎	qin	67
-骎	qin	47
-慬	qin	12
-嵚	qin	8
-梣	qin	3
-请	qing	8563750
-轻	qing	1720467
-清	qing	1568814
-青	qing	914968
-情	qing	387900
-庆	qing	189750
-晴	qing	147525
-倾	qing	141937
-卿	qing	66819
-擎	qing	20931
-顷	qing	20103
-蜻	qing	7088
-箐	qing	6828
-氢	qing	2589
-罄	qing	1796
-磬	qing	1448
-亲	qing	1388
-綮	qing	938
-氰	qing	605
-黥	qing	351
-檠	qing	159
-鲭	qing	106
-苘	qing	65
-圊	qing	49
-碃	qing	32
-庼	qing	15
-勍	qing	13
-穷	qiong	138792
-琼	qiong	49778
-穹	qiong	16599
-茕	qiong	1249
-邛	qiong	971
-筇	qiong	776
-蛩	qiong	340
-銎	qiong	252
-䓖	qiong	0
-求	qiu	749849
-球	qiu	673782
-秋	qiu	352446
-丘	qiu	63759
-邱	qiu	37273
-囚	qiu	29642
-裘	qiu	9991
-酋	qiu	9128
-仇	qiu	8000
-虬	qiu	7518
-糗	qiu	5197
-鳅	qiu	4246
-蚯	qiu	3554
-俅	qiu	2801
-泅	qiu	1283
-遒	qiu	1272
-逑	qiu	952
-湫	qiu	943
-楸	qiu	580
-犰	qiu	551
-萩	qiu	137
-蝤	qiu	124
-璆	qiu	40
-巯	qiu	38
-赇	qiu	30
-鹙	qiu	30
-鞧	qiu	11
-鼽	qiu	9
-訄	qiu	5
-龟	qiu	1
-𨱇	qiu	0
-去	qu	7182400
-取	qu	602170
-区	qu	485061
-趣	qu	278572
-曲	qu	250151
-屈	qu	129274
-躯	qu	93458
-驱	qu	73684
-娶	qu	63133
-趋	qu	40579
-渠	qu	25514
-觑	qu	22005
-瞿	qu	7952
-岖	qu	4782
-蛐	qu	4560
-蛆	qu	4296
-衢	qu	2011
-祛	qu	1909
-黢	qu	1907
-癯	qu	732
-苣	qu	620
-阒	qu	490
-龋	qu	412
-蕖	qu	379
-蘧	qu	304
-朐	qu	290
-璩	qu	245
-劬	qu	192
-磲	qu	180
-诎	qu	147
-蠼	qu	145
-焌	qu	130
-袪	qu	73
-氍	qu	69
-鸲	qu	43
-麹	qu	25
-胠	qu	23
-灈	qu	5
-鼩	qu	5
-竘	qu	2
-岨	qu	1
-戌	qu	1
-㭕	qu	0
-䓛	qu	0
-坥	qu	0
-𪨰	qu	0
-𫭟	qu	0
-全	quan	2085206
-权	quan	422461
-拳	quan	264501
-圈	quan	232242
-劝	quan	142540
-泉	quan	121061
-犬	quan	40178
-券	quan	21437
-蜷	quan	15341
-痊	quan	8478
-诠	quan	4687
-荃	quan	4385
-颧	quan	2608
-绻	quan	1547
-铨	quan	1177
-筌	quan	1011
-鬈	quan	784
-醛	quan	322
-悛	quan	245
-佺	quan	237
-畎	quan	136
-棬	quan	19
-鳈	quan	8
-辁	quan	6
-婘	quan	3
-瑔	quan	1
-𨟠	quan	0
-却	que	2377929
-确	que	722242
-缺	que	207517
-雀	que	64212
-瘸	que	11577
-鹊	que	7905
-阙	que	7335
-阕	que	2173
-榷	que	1857
-炔	que	385
-悫	que	105
-碏	que	12
-埆	que	1
-𬒈	que	0
-群	qun	516077
-裙	qun	82091
-逡	qun	1804
-麇	qun	284
-囷	qun	24
-然	ran	7339938
-染	ran	126552
-燃	ran	118687
-冉	ran	35293
-髯	ran	8077
-苒	ran	3850
-蚺	ran	940
-䎃	ran	0
-让	rang	2999423
-嚷	rang	69716
-壤	rang	15483
-攘	rang	14580
-瓤	rang	846
-禳	rang	600
-穰	rang	534
-瀼	rang	22
-蘘	rang	11
-儴	rang	2
-绕	rao	150071
-扰	rao	122869
-饶	rao	85409
-娆	rao	7099
-桡	rao	229
-荛	rao	132
-热	re	625680
-惹	re	125358
-人	ren	18435295
-任	ren	1353727
-认	ren	1184729
-忍	ren	492901
-仁	ren	179004
-刃	ren	84243
-韧	ren	19327
-壬	ren	3379
-饪	ren	3245
-仞	ren	2506
-纫	ren	2294
-稔	ren	2145
-荏	ren	1725
-妊	ren	1657
-衽	ren	728
-轫	ren	241
-纴	ren	4
-讱	ren	3
-葚	ren	1
-仍	reng	434011
-扔	reng	141002
-日	ri	1944999
-驲	ri	5
-容	rong	1038318
-荣	rong	190645
-融	rong	133868
-蓉	rong	74083
-绒	rong	21218
-溶	rong	17932
-戎	rong	14391
-榕	rong	11223
-茸	rong	10963
-熔	rong	9661
-冗	rong	3678
-嵘	rong	3539
-镕	rong	535
-蝾	rong	225
-狨	rong	158
-瑢	rong	116
-肉	rou	377486
-柔	rou	84782
-揉	rou	67835
-蹂	rou	7440
-糅	rou	1397
-鞣	rou	445
-𫐓	rou	0
-如	ru	4308194
-入	ru	1472056
-辱	ru	85827
-乳	ru	68901
-儒	ru	53866
-茹	ru	49430
-汝	ru	32816
-蠕	ru	11004
-孺	ru	9093
-褥	ru	8394
-嚅	ru	6865
-濡	ru	4432
-缛	ru	1142
-襦	ru	336
-溽	ru	212
-蓐	ru	202
-洳	ru	195
-薷	ru	117
-颥	ru	86
-嬬	ru	13
-铷	ru	7
-软	ruan	239536
-阮	ruan	34363
-堧	ruan	4
-瓀	ruan	3
-媆	ruan	0
-瑞	rui	161507
-锐	rui	112841
-蕊	rui	43461
-睿	rui	24474
-芮	rui	10037
-蚋	rui	636
-蕤	rui	503
-枘	rui	95
-汭	rui	35
-润	run	106301
-闰	run	3632
-若	ruo	809209
-弱	ruo	305241
-偌	ruo	12710
-箬	ruo	633
-婼	ruo	88
-爇	ruo	35
-蒻	ruo	20
-鄀	ruo	8
-萨	sa	151844
-撒	sa	140910
-洒	sa	96761
-飒	sa	12008
-仨	sa	5719
-卅	sa	1019
-靸	sa	168
-挲	sa	100
-潵	sa	60
-脎	sa	20
-赛	sai	301766
-塞	sai	206867
-腮	sai	20075
-噻	sai	2629
-鳃	sai	449
-三	san	2747794
-散	san	468009
-伞	san	33523
-叁	san	5883
-馓	san	151
-毵	san	64
-糁	san	1
-丧	sang	128277
-桑	sang	118729
-嗓	sang	66941
-搡	sang	4714
-颡	sang	180
-磉	sang	12
-扫	sao	192957
-骚	sao	72015
-嫂	sao	69851
-搔	sao	13130
-臊	sao	5795
-瘙	sao	722
-缫	sao	253
-埽	sao	166
-溞	sao	3
-色	se	1988512
-瑟	se	81347
-涩	se	61921
-塞	se	1000
-啬	se	781
-穑	se	643
-铯	se	123
-璱	se	38
-森	sen	243708
-僧	seng	83065
-啥	sha	976190
-傻	sha	248211
-杀	sha	109588
-刹	sha	109543
-莎	sha	107897
-煞	sha	70229
-纱	sha	63048
-沙	sha	42765
-厦	sha	35375
-霎	sha	21405
-砂	sha	17805
-鲨	sha	9416
-裟	sha	3853
-铩	sha	1309
-嗄	sha	1019
-歃	sha	749
-痧	sha	379
-唼	sha	70
-挲	sha	1
-杉	sha	1
-晒	shai	3043700
-筛	shai	788300
-色	shai	1193
-山	shan	1526952
-删	shan	1112335
-闪	shan	551016
-善	shan	305341
-扇	shan	86396
-衫	shan	77529
-珊	shan	62734
-擅	shan	40475
-姗	shan	32428
-讪	shan	21892
-杉	shan	21508
-陕	shan	18975
-煽	shan	12159
-膳	shan	9913
-跚	shan	6556
-潸	shan	3155
-缮	shan	2715
-汕	shan	2204
-禅	shan	2000
-膻	shan	1908
-赡	shan	1869
-鳝	shan	1316
-舢	shan	1209
-苫	shan	821
-嬗	shan	764
-鄯	shan	683
-骟	shan	416
-蟮	shan	385
-墡	shan	269
-剡	shan	235
-疝	shan	215
-芟	shan	162
-埏	shan	29
-钐	shan	24
-嶦	shan	4
-晱	shan	4
-单	shan	1
-栅	shan	1
-烻	shan	1
-𫮃	shan	0
-上	shang	11918291
-伤	shang	968363
-商	shang	514550
-尚	shang	311735
-赏	shang	170954
-晌	shang	51129
-裳	shang	39939
-殇	shang	4925
-觞	shang	1255
-熵	shang	481
-墒	shang	413
-绱	shang	147
-垧	shang	122
-少	shao	1940099
-烧	shao	235818
-稍	shao	214761
-绍	shao	183310
-哨	shao	49486
-邵	shao	34414
-勺	shao	21195
-梢	shao	19244
-韶	shao	13303
-劭	shao	9369
-捎	shao	7956
-芍	shao	2961
-苕	shao	1135
-艄	shao	1018
-筲	shao	276
-潲	shao	214
-蛸	shao	37
-睄	shao	16
-召	shao	1
-鞘	shao	1
-柖	shao	0
-玿	shao	0
-社	she	476704
-射	she	386983
-设	she	369436
-舍	she	276743
-蛇	she	160445
-舌	she	115405
-涉	she	80705
-摄	she	80547
-奢	she	32985
-慑	she	20266
-赦	she	16333
-折	she	10000
-佘	she	7584
-麝	she	2895
-赊	she	2108
-畲	she	890
-猞	she	775
-歙	she	679
-阇	she	412
-滠	she	74
-厍	she	54
-拾	she	1
-𪨶	she	0
-谁	shei	1064240
-神	shen	5509843
-深	shen	5460800
-身	shen	581990
-甚	shen	576087
-什	shen	482836
-伸	shen	378380
-沈	shen	218519
-审	shen	110344
-申	shen	78049
-慎	shen	64154
-呻	shen	35841
-渗	shen	35558
-婶	shen	34226
-绅	shen	21513
-肾	shen	10212
-参	shen	10000
-莘	shen	6743
-珅	shen	5345
-蜃	shen	4184
-哂	shen	2972
-谌	shen	1820
-娠	shen	1417
-燊	shen	733
-瘆	shen	478
-椹	shen	459
-葚	shen	431
-砷	shen	404
-糁	shen	308
-棽	shen	300
-诜	shen	171
-甡	shen	110
-谂	shen	100
-矧	shen	82
-胂	shen	59
-侁	shen	18
-瞫	shen	12
-鲹	shen	2
-屾	shen	0
-𬬹	shen	0
-𬳽	shen	0
-生	sheng	4966773
-声	sheng	3671271
-圣	sheng	413460
-胜	sheng	411127
-升	sheng	307512
-省	sheng	235937
-剩	sheng	214523
-盛	sheng	202048
-绳	sheng	70768
-牲	sheng	68954
-笙	sheng	18633
-晟	sheng	15923
-甥	sheng	7427
-昇	sheng	577
-乘	sheng	300
-嵊	sheng	242
-眚	sheng	119
-陞	sheng	42
-是	shi	31422712
-时	shi	8207119
-事	shi	4729336
-实	shi	2616492
-十	shi	2567177
-师	shi	1581750
-使	shi	1415240
-屎	shi	1359880
-世	shi	1305454
-始	shi	1239671
-失	shi	1182384
-士	shi	1175727
-湿	shi	1106830
-石	shi	885579
-识	shi	826907
-视	shi	787375
-势	shi	756507
-市	shi	712352
-室	shi	614287
-式	shi	600521
-示	shi	492951
-试	shi	489076
-什	shi	482836
-史	shi	409099
-食	shi	353226
-施	shi	301591
-适	shi	295023
-释	shi	294626
-诗	shi	277494
-尸	shi	233817
-氏	shi	165389
-侍	shi	136559
-拾	shi	136402
-饰	shi	119944
-誓	shi	85826
-驶	shi	80574
-逝	shi	68598
-狮	shi	57466
-匙	shi	48847
-噬	shi	43821
-仕	shi	28553
-矢	shi	25495
-拭	shi	24060
-嗜	shi	21476
-似	shi	21000
-蚀	shi	20185
-恃	shi	11258
-柿	shi	8210
-弑	shi	4591
-轼	shi	3719
-虱	shi	3191
-谥	shi	2561
-舐	shi	1734
-媞	shi	1080
-豕	shi	812
-莳	shi	778
-筮	shi	492
-蓍	shi	385
-螫	shi	370
-炻	shi	266
-鲥	shi	243
-奭	shi	186
-湜	shi	180
-埘	shi	146
-酾	shi	70
-祏	shi	38
-栻	shi	27
-贳	shi	24
-铈	shi	6
-鲺	shi	3
-鼫	shi	3
-邿	shi	2
-鸤	shi	2
-嘘	shi	1
-峙	shi	1
-殖	shi	1
-浉	shi	1
-襫	shi	1
-䏡	shi	0
-䴓	shi	0
-𫚕	shi	0
-𬤊	shi	0
-手	shou	5076179
-受	shou	1388441
-收	shou	807363
-首	shou	588887
-守	shou	470593
-熟	shou	379833
-兽	shou	315293
-授	shou	134240
-瘦	shou	127216
-售	shou	85067
-寿	shou	73701
-狩	shou	9422
-绶	shou	1764
-艏	shou	514
-书	shu	1083351
-数	shu	994719
-术	shu	579874
-树	shu	474612
-属	shu	394530
-熟	shu	379833
-叔	shu	306516
-束	shu	277980
-舒	shu	255489
-输	shu	180207
-述	shu	164756
-殊	shu	112194
-鼠	shu	82778
-疏	shu	60274
-淑	shu	54159
-竖	shu	54125
-署	shu	46050
-墅	shu	39604
-梳	shu	39377
-蜀	shu	33368
-恕	shu	30848
-倏	shu	28537
-暑	shu	24941
-庶	shu	15986
-漱	shu	15713
-赎	shu	15491
-姝	shu	15426
-枢	shu	13115
-蔬	shu	12038
-薯	shu	10341
-曙	shu	9845
-抒	shu	9105
-孰	shu	9098
-戍	shu	5272
-塾	shu	3783
-纾	shu	1708
-澍	shu	1364
-黍	shu	1106
-沭	shu	665
-秫	shu	500
-殳	shu	432
-菽	shu	355
-腧	shu	106
-毹	shu	80
-摅	shu	52
-婌	shu	6
-鄃	shu	6
-隃	shu	1
-陎	shu	0
-𬬸	shu	0
-刷	shua	82427
-耍	shua	70234
-唰	shua	16179
-帅	shuai	207990
-摔	shuai	109217
-甩	shuai	100637
-衰	shuai	46360
-率	shuai	13054
-蟀	shuai	4666
-栓	shuan	10429
-拴	shuan	9790
-涮	shuan	6454
-闩	shuan	2512
-腨	shuan	2
-双	shuang	1011629
-爽	shuang	126265
-霜	shuang	89624
-孀	shuang	1881
-鹴	shuang	54
-骦	shuang	45
-礵	shuang	6
-泷	shuang	1
-漴	shuang	1
-水	shui	1817943
-谁	shui	1064240
-睡	shui	616243
-税	shui	61205
-帨	shui	25
-说	shui	1
-顺	shun	454929
-瞬	shun	230645
-吮	shun	8032
-舜	shun	7460
-楯	shun	136
-说	shuo	12000460
-烁	shuo	56718
-硕	shuo	38779
-朔	shuo	18750
-铄	shuo	1850
-槊	shuo	1763
-搠	shuo	760
-妁	shuo	677
-蒴	shuo	39
-数	shuo	1
-死	si	1979349
-四	si	1598102
-思	si	1438567
-似	si	1203009
-斯	si	1105720
-司	si	911784
-丝	si	661300
-私	si	212479
-寺	si	88284
-撕	si	86284
-肆	si	58585
-嘶	si	48914
-厮	si	36225
-伺	si	27405
-祀	si	18571
-嗣	si	18110
-饲	si	7519
-俟	si	6435
-巳	si	5048
-泗	si	4611
-咝	si	4343
-姒	si	3601
-汜	si	2617
-驷	si	1950
-鸶	si	843
-兕	si	791
-涘	si	623
-缌	si	597
-蛳	si	554
-澌	si	445
-锶	si	262
-笥	si	214
-耜	si	197
-飔	si	14
-凘	si	13
-虒	si	5
-㟃	si	0
-楒	si	0
-送	song	668592
-松	song	452901
-宋	song	255294
-耸	song	74009
-诵	song	21654
-怂	song	21653
-𪨊	song	21652
-颂	song	21103
-嵩	song	16210
-悚	song	15579
-讼	song	11726
-忪	song	4465
-淞	song	2959
-崧	song	1363
-竦	song	698
-凇	song	252
-菘	song	145
-娀	song	13
-㧐	song	0
-搜	sou	93119
-艘	sou	83282
-嗽	sou	28817
-嗖	sou	19887
-叟	sou	9797
-飕	sou	8930
-擞	sou	6388
-馊	sou	3198
-薮	sou	509
-廋	sou	295
-溲	sou	230
-嗾	sou	129
-锼	sou	56
-瞍	sou	21
-蒐	sou	20
-螋	sou	6
-诉	su	667093
-速	su	614540
-苏	su	465272
-素	su	320732
-宿	su	181931
-俗	su	134099
-肃	su	126387
-塑	su	49903
-酥	su	18511
-簌	su	12731
-粟	su	10358
-稣	su	9756
-溯	su	8725
-愫	su	4908
-夙	su	4086
-谡	su	2037
-窣	su	1343
-蔌	su	460
-涑	su	387
-嗉	su	248
-僳	su	162
-觫	su	158
-骕	su	55
-甦	su	53
-鹔	su	22
-傃	su	4
-蹜	su	3
-缩	su	1
-𫗧	su	0
-算	suan	1263186
-酸	suan	115604
-蒜	suan	14174
-狻	suan	1715
-虽	sui	1211358
-随	sui	1016322
-岁	sui	456625
-碎	sui	220325
-遂	sui	54528
-隋	sui	26353
-髓	sui	18935
-祟	sui	16287
-穗	sui	13995
-邃	sui	13142
-隧	sui	9003
-绥	sui	6678
-燧	sui	2712
-尿	sui	2000
-睢	sui	1785
-眭	sui	301
-荽	sui	263
-谇	sui	132
-濉	sui	101
-穟	sui	9
-璲	sui	3
-襚	sui	2
-旞	sui	0
-𫟦	sui	0
-𬭼	sui	0
-孙	sun	421364
-损	sun	160063
-笋	sun	7472
-隼	sun	5018
-荪	sun	1922
-狲	sun	1343
-榫	sun	395
-飧	sun	384
-所	suo	3534172
-索	suo	329201
-缩	suo	146921
-锁	suo	133243
-嗦	suo	47528
-梭	suo	31489
-琐	suo	22361
-唆	suo	7269
-娑	suo	5056
-蓑	suo	1539
-桫	suo	1280
-唢	suo	1028
-睃	suo	579
-嗍	suo	186
-挲	suo	100
-葰	suo	41
-羧	suo	36
-溹	suo	1
-莎	suo	1
-他	ta	17596473
-她	ta	7870163
-它	ta	1298568
-塔	ta	178293
-踏	ta	139340
-拓	ta	63143
-塌	ta	51754
-榻	ta	16283
-蹋	ta	8940
-沓	ta	8322
-遢	ta	4429
-挞	ta	2751
-趿	ta	1496
-獭	ta	975
-祂	ta	837
-闼	ta	752
-鳎	ta	208
-铊	ta	194
-溻	ta	105
-阘	ta	48
-褟	ta	44
-鞳	ta	6
-鿎	ta	0
-太	tai	1962845
-台	tai	676961
-态	tai	478661
-抬	tai	352793
-泰	tai	138290
-胎	tai	54438
-汰	tai	14511
-苔	tai	8045
-跆	tai	3161
-钛	tai	2229
-邰	tai	792
-薹	tai	759
-肽	tai	277
-炱	tai	100
-骀	tai	79
-酞	tai	42
-鲐	tai	14
-谈	tan	536829
-叹	tan	421997
-弹	tan	355948
-探	tan	272677
-坦	tan	154240
-贪	tan	85988
-坛	tan	74267
-摊	tan	67974
-滩	tan	49853
-谭	tan	48779
-潭	tan	35887
-瘫	tan	28249
-毯	tan	25831
-炭	tan	19147
-忐	tan	15677
-檀	tan	12516
-痰	tan	7445
-碳	tan	7195
-袒	tan	6547
-昙	tan	5506
-坍	tan	5505
-覃	tan	5474
-郯	tan	297
-镡	tan	141
-倓	tan	74
-锬	tan	39
-钽	tan	36
-璮	tan	35
-惔	tan	30
-菼	tan	22
-澹	tan	1
-榃	tan	0
-磹	tan	0
-堂	tang	408194
-唐	tang	339749
-躺	tang	220026
-汤	tang	124040
-趟	tang	65492
-糖	tang	60725
-烫	tang	41461
-膛	tang	37836
-倘	tang	34043
-淌	tang	33568
-棠	tang	31633
-塘	tang	26894
-搪	tang	6143
-螳	tang	5195
-傥	tang	3834
-瑭	tang	1166
-镗	tang	831
-帑	tang	653
-樘	tang	443
-蹚	tang	413
-嘡	tang	289
-溏	tang	213
-螗	tang	53
-羰	tang	43
-镋	tang	23
-耥	tang	15
-埫	tang	5
-铴	tang	5
-䣘	tang	0
-鄌	tang	0
-逃	tao	388318
-讨	tao	282187
-套	tao	278641
-桃	tao	107204
-涛	tao	105605
-掏	tao	102071
-陶	tao	95450
-滔	tao	37516
-萄	tao	29505
-淘	tao	29357
-韬	tao	11434
-焘	tao	8565
-啕	tao	6152
-饕	tao	3154
-绦	tao	1281
-叨	tao	1000
-洮	tao	974
-梼	tao	371
-绹	tao	181
-弢	tao	108
-鼗	tao	50
-慆	tao	14
-𫘦	tao	0
-特	te	1314148
-忑	te	15706
-慝	te	83
-铽	te	53
-忒	te	1
-忒	tei	9833
-疼	teng	213129
-腾	teng	95410
-藤	teng	61231
-滕	teng	9254
-誊	teng	1318
-螣	teng	57
-縢	teng	19
-熥	teng	9
-䲢	teng	0
-提	ti	1026285
-题	ti	976178
-体	ti	799811
-替	ti	218469
-踢	ti	115921
-梯	ti	107297
-蹄	ti	38922
-惕	ti	27307
-涕	ti	24195
-啼	ti	21533
-剔	ti	21278
-屉	ti	16514
-剃	ti	10941
-嚏	ti	7017
-倜	ti	6979
-缇	ti	6721
-逖	ti	2022
-荑	ti	1744
-醍	ti	1453
-悌	ti	1330
-媞	ti	1080
-鹈	ti	579
-绨	ti	222
-锑	ti	173
-裼	ti	61
-趯	ti	35
-遆	ti	29
-鳀	ti	13
-擿	ti	11
-䏲	ti	0
-䴘	ti	0
-瑅	ti	0
-𫘨	ti	0
-天	tian	6797499
-田	tian	339958
-甜	tian	156743
-添	tian	69960
-填	tian	47816
-舔	tian	26424
-恬	tian	16632
-腆	tian	9132
-阗	tian	2749
-殄	tian	1518
-忝	tian	1235
-湉	tian	612
-畋	tian	178
-觍	tian	81
-瑱	tian	65
-掭	tian	37
-盷	tian	29
-淟	tian	1
-晪	tian	0
-沺	tian	0
-黇	tian	0
-条	tiao	925439
-调	tiao	542792
-跳	tiao	532527
-挑	tiao	245886
-眺	tiao	12749
-迢	tiao	9447
-窕	tiao	5351
-佻	tiao	3042
-笤	tiao	1028
-祧	tiao	804
-髫	tiao	317
-粜	tiao	223
-龆	tiao	106
-蜩	tiao	96
-鲦	tiao	86
-朓	tiao	20
-嬥	tiao	0
-铁	tie	520031
-贴	tie	169181
-帖	tie	30180
-餮	tie	2648
-萜	tie	21
-听	ting	2449553
-停	ting	715545
-厅	ting	297396
-挺	ting	269816
-庭	ting	211391
-廷	ting	132059
-婷	ting	123852
-亭	ting	72135
-艇	ting	52284
-霆	ting	29470
-汀	ting	15090
-蜓	ting	7149
-铤	ting	2171
-葶	ting	910
-莛	ting	876
-珽	ting	349
-梃	ting	271
-烃	ting	130
-渟	ting	19
-颋	ting	9
-桯	ting	8
-侹	ting	2
-䗴	ting	0
-圢	ting	0
-烶	ting	0
-𬘩	ting	0
-同	tong	2614683
-通	tong	1186869
-痛	tong	653298
-统	tong	503061
-童	tong	192039
-铜	tong	73454
-筒	tong	54584
-桶	tong	49900
-捅	tong	45436
-瞳	tong	38812
-桐	tong	37139
-佟	tong	19785
-彤	tong	15357
-恸	tong	5121
-潼	tong	4597
-嗵	tong	4379
-僮	tong	2826
-酮	tong	1135
-仝	tong	796
-茼	tong	390
-曈	tong	191
-砼	tong	143
-烔	tong	83
-垌	tong	74
-橦	tong	67
-哃	tong	11
-穜	tong	6
-鲖	tong	3
-峒	tong	1
-洞	tong	1
-㛚	tong	0
-峂	tong	0
-𦒍	tong	0
-𫍣	tong	0
-头	tou	4813712
-投	tou	373978
-偷	tou	359993
-透	tou	336303
-骰	tou	6460
-突	tu	1106693
-图	tu	457307
-土	tu	402279
-徒	tu	228560
-吐	tu	212473
-途	tu	158599
-涂	tu	108136
-屠	tu	74112
-兔	tu	65122
-秃	tu	34762
-凸	tu	22455
-荼	tu	6513
-菟	tu	702
-钍	tu	100
-堍	tu	51
-酴	tu	51
-稌	tu	19
-腯	tu	2
-葖	tu	2
-梌	tu	1
-㻬	tu	0
-𬳿	tu	0
-团	tuan	701923
-湍	tuan	4026
-抟	tuan	785
-彖	tuan	203
-疃	tuan	158
-猯	tuan	5
-煓	tuan	0
-推	tui	497295
-退	tui	494368
-腿	tui	280952
-颓	tui	24497
-褪	tui	13537
-忒	tui	9833
-蜕	tui	5742
-煺	tui	74
-魋	tui	20
-𬯎	tui	0
-吞	tun	125696
-屯	tun	19049
-臀	tun	18687
-豚	tun	4039
-囤	tun	3613
-饨	tun	2968
-暾	tun	316
-鲀	tun	112
-坉	tun	18
-忳	tun	8
-焞	tun	5
-褪	tun	1
-脱	tuo	375299
-托	tuo	267516
-拖	tuo	163823
-妥	tuo	67901
-拓	tuo	63143
-陀	tuo	30349
-驼	tuo	27386
-唾	tuo	22408
-驮	tuo	7367
-佗	tuo	5875
-椭	tuo	4309
-坨	tuo	3361
-沱	tuo	3100
-砣	tuo	1967
-鸵	tuo	1914
-跎	tuo	1419
-柁	tuo	1345
-酡	tuo	1084
-橐	tuo	1045
-柝	tuo	567
-侂	tuo	536
-鼍	tuo	262
-庹	tuo	95
-箨	tuo	34
-萚	tuo	1
-铊	tuo	1
-圫	tuo	0
-𬶍	tuo	0
-哇	wa	961080
-瓦	wa	108370
-娃	wa	107391
-挖	wa	75265
-袜	wa	18039
-蛙	wa	16283
-娲	wa	10470
-洼	wa	10233
-佤	wa	679
-窊	wa	29
-腽	wa	22
-坬	wa	8
-凹	wa	1
-畖	wa	1
-外	wai	2234449
-歪	wai	78305
-崴	wai	4790
-完	wan	1623350
-万	wan	1201402
-晚	wan	904532
-玩	wan	658958
-弯	wan	130605
-碗	wan	116150
-湾	wan	107989
-婉	wan	80016
-挽	wan	69193
-腕	wan	60083
-宛	wan	58603
-顽	wan	45970
-丸	wan	40281
-卍	wan	18100
-惋	wan	13737
-莞	wan	8969
-蜿	wan	8376
-琬	wan	6185
-纨	wan	6138
-婠	wan	4956
-皖	wan	4854
-绾	wan	4521
-剜	wan	2941
-菀	wan	2107
-豌	wan	1436
-畹	wan	1123
-烷	wan	741
-脘	wan	202
-芄	wan	110
-塆	wan	12
-椀	wan	11
-蔓	wan	1
-𬇕	wan	0
-王	wang	1891711
-望	wang	1623939
-往	wang	1143435
-忘	wang	433906
-网	wang	303788
-亡	wang	286000
-汪	wang	95118
-妄	wang	56997
-旺	wang	51739
-枉	wang	35783
-惘	wang	15566
-罔	wang	3613
-魍	wang	1420
-尢	wang	171
-辋	wang	73
-尪	wang	25
-为	wei	7309300
-位	wei	1682896
-微	wei	1082510
-未	wei	758953
-围	wei	659219
-卫	wei	504141
-威	wei	503918
-味	wei	493741
-维	wei	369458
-危	wei	279881
-委	wei	274305
-伟	wei	242973
-谓	wei	235703
-唯	wei	217658
-慰	wei	160488
-尾	wei	148960
-喂	wei	148044
-魏	wei	120376
-薇	wei	104428
-惟	wei	92036
-违	wei	83636
-韦	wei	77085
-畏	wei	70481
-伪	wei	66990
-尉	wei	62071
-胃	wei	53113
-巍	wei	20904
-蔚	wei	20152
-偎	wei	18007
-萎	wei	17426
-苇	wei	16237
-炜	wei	10301
-玮	wei	10284
-猥	wei	8898
-娓	wei	8105
-帷	wei	8007
-纬	wei	7715
-渭	wei	5648
-桅	wei	5611
-嵬	wei	5144
-猬	wei	5025
-隗	wei	4223
-葳	wei	2548
-痿	wei	2501
-闱	wei	1805
-煨	wei	1424
-诿	wei	1417
-韪	wei	1315
-逶	wei	1163
-帏	wei	1123
-圩	wei	1050
-潍	wei	792
-溦	wei	647
-鲔	wei	488
-艉	wei	333
-隈	wei	152
-洧	wei	122
-沩	wei	106
-廆	wei	80
-霨	wei	78
-涠	wei	57
-亹	wei	30
-碨	wei	22
-煟	wei	5
-琟	wei	2
-硙	wei	2
-薳	wei	2
-峗	wei	1
-洈	wei	1
-螱	wei	0
-鳂	wei	0
-鳚	wei	0
-𣲗	wei	0
-𫇭	wei	0
-𬀩	wei	0
-𬱟	wei	0
-𬶏	wei	0
-问	wen	2899681
-文	wen	1637873
-温	wen	447521
-闻	wen	394529
-稳	wen	203430
-吻	wen	151655
-纹	wen	84809
-雯	wen	57561
-蚊	wen	23018
-芠	wen	17349
-瘟	wen	11924
-紊	wen	9236
-汶	wen	8380
-玟	wen	7088
-刎	wen	2349
-炆	wen	623
-璺	wen	446
-阌	wen	91
-辒	wen	62
-榅	wen	9
-蕰	wen	9
-鳁	wen	0
-𫘜	wen	0
-翁	weng	48774
-嗡	weng	38010
-瓮	weng	6733
-蓊	weng	394
-蕹	weng	40
-滃	weng	19
-鹟	weng	0
-𬭩	weng	0
-我	wo	29569261
-握	wo	340839
-窝	wo	98104
-卧	wo	96870
-沃	wo	49337
-喔	wo	29429
-倭	wo	24818
-涡	wo	22478
-龌	wo	7451
-蜗	wo	4726
-渥	wo	4566
-斡	wo	3740
-幄	wo	2644
-挝	wo	2048
-莴	wo	601
-硪	wo	109
-肟	wo	78
-偓	wo	37
-踒	wo	2
-无	wu	4177289
-物	wu	1225245
-五	wu	1170398
-武	wu	1003136
-务	wu	587619
-屋	wu	398799
-舞	wu	376446
-吴	wu	358239
-午	wu	350826
-误	wu	243473
-雾	wu	169826
-乌	wu	169572
-悟	wu	158203
-伍	wu	144670
-呜	wu	98630
-巫	wu	77547
-吾	wu	74366
-污	wu	67424
-捂	wu	61932
-勿	wu	29378
-兀	wu	28642
-恶	wu	27049
-侮	wu	25279
-唔	wu	24276
-梧	wu	23401
-妩	wu	18020
-芜	wu	11922
-诬	wu	9995
-坞	wu	9944
-毋	wu	9854
-晤	wu	6919
-蜈	wu	5696
-邬	wu	5345
-鹉	wu	4795
-戊	wu	3757
-忤	wu	2866
-骛	wu	2799
-鹜	wu	2519
-仵	wu	1144
-婺	wu	1133
-钨	wu	939
-杌	wu	756
-焐	wu	589
-庑	wu	497
-寤	wu	402
-鋈	wu	306
-痦	wu	209
-怃	wu	150
-牾	wu	141
-圬	wu	125
-浯	wu	120
-芴	wu	52
-迕	wu	49
-鼯	wu	42
-旿	wu	16
-靰	wu	10
-洿	wu	7
-鹀	wu	5
-郚	wu	3
-屼	wu	2
-珷	wu	2
-铻	wu	1
-峿	wu	0
-珸	wu	0
-𣲘	wu	0
-西	xi	1778761
-喜	xi	1069981
-系	xi	942245
-息	xi	864425
-细	xi	618534
-希	xi	614576
-习	xi	487160
-吸	xi	431549
-戏	xi	347524
-洗	xi	290306
-惜	xi	271651
-席	xi	208395
-袭	xi	189129
-悉	xi	173018
-嘻	xi	149024
-析	xi	105460
-稀	xi	102120
-熙	xi	88330
-夕	xi	81778
-晰	xi	72136
-溪	xi	59612
-兮	xi	57566
-牺	xi	54587
-膝	xi	52944
-媳	xi	49077
-茜	xi	45676
-隙	xi	40876
-昔	xi	39983
-锡	xi	28576
-嬉	xi	26210
-熄	xi	26172
-犀	xi	22356
-曦	xi	19125
-禧	xi	15854
-皙	xi	14920
-玺	xi	12725
-汐	xi	10645
-蹊	xi	10230
-蜥	xi	9410
-奚	xi	8800
-唏	xi	7925
-羲	xi	7847
-淅	xi	6023
-徙	xi	5331
-熹	xi	5242
-蟋	xi	4573
-翕	xi	2511
-檄	xi	2484
-僖	xi	2300
-窸	xi	1262
-铣	xi	1116
-郗	xi	917
-晞	xi	743
-烯	xi	717
-屃	xi	588
-浠	xi	435
-阋	xi	413
-樨	xi	388
-傒	xi	364
-醯	xi	319
-隰	xi	297
-螅	xi	281
-爔	xi	280
-屣	xi	270
-硒	xi	258
-釐	xi	223
-葸	xi	214
-咥	xi	189
-豨	xi	127
-禊	xi	125
-饩	xi	99
-郤	xi	95
-觋	xi	87
-穸	xi	65
-嶲	xi	63
-裼	xi	61
-舄	xi	51
-舾	xi	51
-谿	xi	47
-恓	xi	39
-蓰	xi	33
-鼷	xi	27
-粞	xi	19
-巇	xi	12
-憙	xi	11
-绤	xi	11
-菥	xi	11
-枲	xi	10
-潟	xi	10
-肸	xi	6
-酅	xi	6
-睎	xi	5
-觿	xi	3
-嶍	xi	2
-暿	xi	1
-俙	xi	0
-熻	xi	0
-饻	xi	0
-鳛	xi	0
-𠅤	xi	0
-𫘬	xi	0
-𬭳	xi	0
-𬶮	xi	0
-下	xia	8550882
-吓	xia	316375
-夏	xia	314864
-侠	xia	121181
-霞	xia	114414
-瞎	xia	64955
-狭	xia	40342
-暇	xia	33980
-峡	xia	33938
-虾	xia	22165
-辖	xia	19178
-匣	xia	15699
-瑕	xia	10419
-遐	xia	8944
-黠	xia	7541
-呷	xia	3954
-狎	xia	1380
-厦	xia	1000
-罅	xia	815
-硖	xia	310
-柙	xia	216
-叚	xia	7
-翈	xia	0
-先	xian	1662684
-现	xian	1161139
-显	xian	763327
-线	xian	539444
-险	xian	386142
-仙	xian	379429
-鲜	xian	273041
-限	xian	222821
-闲	xian	202953
-陷	xian	196684
-县	xian	192413
-献	xian	110306
-贤	xian	109707
-嫌	xian	75438
-纤	xian	72315
-羡	xian	60457
-弦	xian	52599
-掀	xian	47524
-宪	xian	36534
-见	xian	34609
-咸	xian	33066
-衔	xian	27315
-娴	xian	21333
-涎	xian	11149
-馅	xian	9845
-舷	xian	7809
-腺	xian	6833
-暹	xian	2835
-苋	xian	2198
-冼	xian	2126
-洗	xian	2000
-藓	xian	1602
-锨	xian	1566
-霰	xian	1490
-跹	xian	1158
-忺	xian	775
-痫	xian	721
-祆	xian	499
-岘	xian	470
-酰	xian	351
-跣	xian	261
-燹	xian	254
-狝	xian	234
-蚬	xian	187
-猃	xian	110
-籼	xian	101
-鹇	xian	57
-筅	xian	50
-莶	xian	45
-氙	xian	30
-挦	xian	17
-崄	xian	15
-缐	xian	14
-孅	xian	6
-伭	xian	2
-禒	xian	1
-㬎	xian	0
-𪾢	xian	0
-𫍯	xian	0
-𬀪	xian	0
-𬸣	xian	0
-想	xiang	6140550
-向	xiang	2570964
-相	xiang	2037658
-像	xiang	1883479
-象	xiang	1041105
-响	xiang	724098
-香	xiang	563262
-降	xiang	236721
-项	xiang	230765
-乡	xiang	228067
-享	xiang	152710
-翔	xiang	143540
-箱	xiang	115256
-祥	xiang	103572
-详	xiang	96353
-湘	xiang	58673
-巷	xiang	50218
-厢	xiang	49241
-襄	xiang	27380
-镶	xiang	20858
-橡	xiang	10887
-饷	xiang	9645
-骧	xiang	2552
-飨	xiang	694
-庠	xiang	538
-缃	xiang	530
-芗	xiang	171
-鲞	xiang	160
-瓖	xiang	69
-葙	xiang	40
-珦	xiang	29
-𬙋	xiang	0
-小	xiao	6383822
-笑	xiao	3577465
-消	xiao	792838
-校	xiao	623489
-晓	xiao	388267
-萧	xiao	341190
-效	xiao	279884
-销	xiao	150456
-肖	xiao	145163
-啸	xiao	115578
-孝	xiao	95871
-逍	xiao	66286
-潇	xiao	57966
-削	xiao	54894
-嚣	xiao	44058
-霄	xiao	32916
-宵	xiao	31872
-哮	xiao	26173
-箫	xiao	21626
-筱	xiao	18974
-枭	xiao	12512
-硝	xiao	9321
-骁	xiao	6831
-淆	xiao	4293
-魈	xiao	3032
-绡	xiao	2597
-哓	xiao	1623
-鸮	xiao	523
-崤	xiao	508
-枵	xiao	107
-猇	xiao	72
-洨	xiao	65
-翛	xiao	65
-虓	xiao	37
-蛸	xiao	37
-涍	xiao	2
-蟏	xiao	2
-敩	xiao	0
-滧	xiao	0
-皛	xiao	0
-𫍲	xiao	0
-些	xie	3752167
-血	xie	933230
-谢	xie	623220
-写	xie	605147
-邪	xie	175398
-协	xie	146638
-鞋	xie	116843
-斜	xie	108597
-泄	xie	90918
-胁	xie	88886
-歇	xie	70470
-屑	xie	62044
-械	xie	48533
-携	xie	41009
-谐	xie	27747
-卸	xie	27285
-挟	xie	25752
-泻	xie	21251
-懈	xie	20521
-蝎	xie	17947
-蟹	xie	15529
-解	xie	13120
-亵	xie	11009
-邂	xie	5821
-偕	xie	5650
-榭	xie	5270
-燮	xie	4044
-楔	xie	2580
-撷	xie	1015
-瀣	xie	576
-獬	xie	453
-勰	xie	215
-廨	xie	206
-缬	xie	134
-躞	xie	129
-绁	xie	106
-絜	xie	101
-渫	xie	89
-薤	xie	76
-榍	xie	41
-揳	xie	16
-澥	xie	15
-薢	xie	3
-叶	xie	1
-颉	xie	1
-㙦	xie	0
-偰	xie	0
-𤫉	xie	0
-𬹼	xie	0
-新	xin	2232035
-心	xin	1555833
-信	xin	1529741
-欣	xin	253814
-辛	xin	168855
-馨	xin	67101
-薪	xin	35145
-歆	xin	22876
-昕	xin	18598
-衅	xin	17813
-芯	xin	17023
-鑫	xin	13522
-忻	xin	9151
-锌	xin	2246
-炘	xin	1292
-囟	xin	159
-镡	xin	141
-伈	xin	5
-莘	xin	1
-䜣	xin	0
-𫷷	xin	0
-行	xing	2756706
-性	xing	1304637
-星	xing	955656
-形	xing	858843
-兴	xing	854813
-醒	xing	522582
-幸	xing	477019
-型	xing	286621
-姓	xing	248203
-刑	xing	107683
-腥	xing	51054
-杏	xing	28315
-猩	xing	26668
-惺	xing	18833
-邢	xing	16955
-悻	xing	16292
-省	xing	2000
-荥	xing	1800
-擤	xing	969
-陉	xing	714
-荇	xing	583
-饧	xing	241
-骍	xing	115
-硎	xing	95
-钘	xing	59
-瑆	xing	36
-婞	xing	21
-铏	xing	14
-煋	xing	6
-𫰛	xing	0
-兄	xiong	642800
-胸	xiong	313164
-雄	xiong	302005
-凶	xiong	182557
-熊	xiong	139726
-汹	xiong	41021
-匈	xiong	25364
-芎	xiong	401
-讻	xiong	8
-夐	xiong	7
-诇	xiong	3
-修	xiu	678749
-秀	xiu	364108
-休	xiu	334462
-宿	xiu	181931
-羞	xiu	148102
-袖	xiu	112531
-绣	xiu	38793
-嗅	xiu	25646
-朽	xiu	25425
-锈	xiu	10628
-咻	xiu	7148
-岫	xiu	2562
-貅	xiu	1043
-馐	xiu	793
-庥	xiu	574
-脩	xiu	174
-溴	xiu	157
-琇	xiu	157
-髹	xiu	95
-鸺	xiu	24
-珛	xiu	2
-滫	xiu	1
-臭	xiu	1
-䗛	xiu	0
-许	xu	1299512
-续	xu	591245
-需	xu	543409
-须	xu	397623
-虚	xu	337176
-徐	xu	287405
-绪	xu	178054
-序	xu	109198
-旭	xu	54482
-叙	xu	51398
-吁	xu	47540
-蓄	xu	42731
-嘘	xu	32604
-絮	xu	28392
-婿	xu	21914
-恤	xu	14830
-栩	xu	13693
-墟	xu	13672
-诩	xu	8833
-煦	xu	7265
-胥	xu	5376
-戌	xu	4145
-酗	xu	3709
-顼	xu	2931
-勖	xu	1351
-圩	xu	1050
-畜	xu	1000
-蓿	xu	806
-盱	xu	658
-魆	xu	587
-洫	xu	224
-溆	xu	110
-糈	xu	64
-谞	xu	64
-欻	xu	44
-媭	xu	39
-昫	xu	18
-醑	xu	18
-珝	xu	8
-旴	xu	3
-湑	xu	2
-垿	xu	1
-浒	xu	1
-㳚	xu	0
-冔	xu	0
-𦈡	xu	0
-𬣙	xu	0
-选	xuan	498189
-玄	xuan	249249
-宣	xuan	214690
-旋	xuan	174074
-轩	xuan	159922
-悬	xuan	91146
-喧	xuan	37906
-璇	xuan	31459
-眩	xuan	26994
-炫	xuan	26933
-萱	xuan	24846
-漩	xuan	14215
-绚	xuan	13848
-暄	xuan	13336
-渲	xuan	6400
-煊	xuan	2743
-泫	xuan	2739
-铉	xuan	2376
-瑄	xuan	2337
-烜	xuan	1568
-癣	xuan	885
-禤	xuan	323
-谖	xuan	320
-儇	xuan	278
-玹	xuan	123
-楦	xuan	101
-碹	xuan	57
-晅	xuan	34
-衒	xuan	32
-翾	xuan	23
-痃	xuan	9
-昡	xuan	8
-咺	xuan	4
-券	xuan	1
-暶	xuan	1
-愃	xuan	0
-琄	xuan	0
-𫍽	xuan	0
-𫓶	xuan	0
-𫠊	xuan	0
-学	xue	2566533
-血	xue	933230
-雪	xue	820388
-穴	xue	98539
-薛	xue	61265
-削	xue	54894
-靴	xue	17283
-谑	xue	7031
-噱	xue	1309
-踅	xue	1165
-鳕	xue	399
-茓	xue	16
-峃	xue	0
-寻	xun	328045
-训	xun	267251
-迅	xun	225006
-巡	xun	85023
-讯	xun	82709
-询	xun	81882
-逊	xun	51585
-循	xun	46243
-勋	xun	30855
-熏	xun	23690
-旬	xun	17475
-驯	xun	13729
-荀	xun	11378
-薰	xun	9574
-殉	xun	8878
-醺	xun	7468
-洵	xun	4681
-峋	xun	3167
-巽	xun	2320
-珣	xun	2240
-汛	xun	1994
-徇	xun	1922
-浔	xun	1503
-埙	xun	1145
-恂	xun	734
-荨	xun	527
-蕈	xun	337
-鲟	xun	272
-郇	xun	199
-曛	xun	101
-獯	xun	82
-噀	xun	37
-栒	xun	22
-浚	xun	1
-𫄸	xun	0
-𬊈	xun	0
-𬍤	xun	0
-𬘓	xun	0
-𬩽	xun	0
-呀	ya	673765
-亚	ya	502177
-压	ya	427672
-雅	ya	387226
-牙	ya	300629
-丫	ya	183167
-讶	ya	157124
-涯	ya	68222
-哑	ya	65950
-崖	ya	63804
-娅	ya	55108
-押	ya	53350
-鸭	ya	43846
-鸦	ya	39645
-衙	ya	33073
-芽	ya	17121
-轧	ya	4919
-伢	ya	2531
-琊	ya	2528
-桠	ya	2171
-睚	ya	1984
-垭	ya	662
-岈	ya	625
-迓	ya	260
-蚜	ya	224
-玡	ya	156
-揠	ya	139
-猰	ya	108
-氩	ya	80
-砑	ya	66
-堐	ya	6
-眼	yan	3495315
-言	yan	1026005
-严	yan	480979
-烟	yan	435202
-演	yan	341366
-验	yan	288664
-研	yan	263794
-燕	yan	251483
-颜	yan	236409
-掩	yan	159891
-延	yan	148658
-厌	yan	148169
-艳	yan	147563
-炎	yan	120855
-沿	yan	118963
-焰	yan	117059
-岩	yan	102961
-淹	yan	91580
-咽	yan	90794
-宴	yan	69541
-嫣	yan	53722
-妍	yan	45256
-彦	yan	44325
-雁	yan	43201
-阎	yan	39776
-盐	yan	37729
-焉	yan	35627
-衍	yan	33445
-檐	yan	18211
-奄	yan	13947
-砚	yan	13267
-焱	yan	12242
-俨	yan	12202
-晏	yan	11688
-胭	yan	9088
-蜒	yan	8877
-魇	yan	8387
-阉	yan	6489
-湮	yan	6374
-琰	yan	5886
-筵	yan	4970
-偃	yan	4730
-闫	yan	4234
-腌	yan	4020
-阏	yan	3812
-恹	yan	3306
-谚	yan	3210
-兖	yan	3094
-堰	yan	2783
-鄢	yan	2776
-滟	yan	1712
-赝	yan	1389
-唁	yan	1383
-鼹	yan	1331
-芫	yan	1105
-郾	yan	952
-酽	yan	681
-餍	yan	403
-厣	yan	332
-谳	yan	239
-崦	yan	177
-弇	yan	89
-黡	yan	61
-罨	yan	40
-渰	yan	39
-掞	yan	22
-嬿	yan	19
-棪	yan	13
-扊	yan	4
-沇	yan	2
-甗	yan	2
-殷	yan	1
-铅	yan	1
-䶮	yan	0
-墕	yan	0
-戭	yan	0
-漹	yan	0
-虤	yan	0
-蝘	yan	0
-觃	yan	0
-𪩘	yan	0
-𫄧	yan	0
-𬙂	yan	0
-𬸘	yan	0
-样	yang	4769842
-阳	yang	850226
-杨	yang	633480
-扬	yang	383219
-养	yang	319753
-洋	yang	293496
-仰	yang	159568
-央	yang	146296
-羊	yang	113627
-痒	yang	54133
-漾	yang	20836
-氧	yang	14746
-恙	yang	11433
-佯	yang	10873
-鸯	yang	10164
-殃	yang	8611
-怏	yang	6323
-秧	yang	5967
-炀	yang	5157
-泱	yang	3316
-鞅	yang	3011
-徉	yang	2314
-烊	yang	1882
-疡	yang	1426
-旸	yang	1023
-飏	yang	742
-羕	yang	559
-蛘	yang	81
-垟	yang	42
-玚	yang	28
-咉	yang	19
-钖	yang	9
-要	yao	7944606
-摇	yao	647544
-药	yao	361732
-妖	yao	278201
-腰	yao	241952
-咬	yao	214227
-遥	yao	188299
-耀	yao	140263
-瑶	yao	81683
-姚	yao	81369
-邀	yao	72128
-钥	yao	44779
-夭	yao	25128
-谣	yao	24186
-幺	yao	17926
-窑	yao	17450
-尧	yao	17147
-吆	yao	14326
-肴	yao	12069
-约	yao	10000
-曜	yao	8963
-窈	yao	5693
-杳	yao	4833
-舀	yao	4517
-爻	yao	3448
-鹞	yao	2889
-徭	yao	1157
-轺	yao	477
-鳐	yao	184
-崾	yao	106
-铫	yao	102
-窅	yao	79
-峣	yao	74
-垚	yao	70
-珧	yao	56
-靿	yao	56
-疟	yao	10
-猺	yao	3
-侥	yao	1
-媱	yao	1
-㙘	yao	0
-也	ye	9508702
-业	ye	938051
-夜	ye	877661
-爷	ye	641029
-叶	ye	625969
-野	ye	381317
-液	ye	101930
-耶	ye	100191
-页	ye	69130
-曳	ye	15503
-冶	ye	15455
-烨	ye	11080
-噎	ye	11030
-腋	ye	6487
-靥	ye	5938
-椰	ye	5739
-掖	ye	5553
-晔	ye	5540
-邺	ye	4850
-谒	ye	4524
-揶	ye	4117
-咽	ye	1000
-铘	ye	248
-倻	ye	22
-馌	ye	6
-一	yi	35278860
-以	yi	6523162
-已	yi	3720796
-意	yi	3668831
-衣	yi	974727
-亿	yi	843650
-易	yi	690500
-依	yi	679811
-义	yi	667264
-异	yi	605892
-疑	yi	556639
-议	yi	474942
-医	yi	448630
-伊	yi	248425
-移	yi	242884
-忆	yi	229878
-艺	yi	226121
-亦	yi	205335
-翼	yi	203347
-遗	yi	186827
-益	yi	185217
-宜	yi	148148
-椅	yi	140068
-仪	yi	137332
-逸	yi	116826
-姨	yi	115750
-怡	yi	96402
-抑	yi	84901
-毅	yi	73576
-役	yi	72621
-译	yi	60762
-夷	yi	50315
-溢	yi	47668
-咦	yi	45558
-倚	yi	43627
-矣	yi	40045
-谊	yi	36241
-乙	yi	32048
-蚁	yi	31812
-奕	yi	26802
-漪	yi	24948
-疫	yi	21652
-绎	yi	13969
-裔	yi	13332
-揖	yi	12821
-颐	yi	12797
-驿	yi	12436
-弈	yi	11679
-懿	yi	11429
-邑	yi	10420
-熠	yi	9579
-屹	yi	8644
-沂	yi	8174
-羿	yi	7834
-诣	yi	7648
-翌	yi	7243
-轶	yi	6150
-呓	yi	6086
-翊	yi	5899
-蜴	yi	5628
-弋	yi	5460
-咿	yi	5338
-尾	yi	5000
-旖	yi	4980
-祎	yi	4800
-臆	yi	4735
-彝	yi	4376
-贻	yi	4040
-噫	yi	3418
-佚	yi	3148
-迤	yi	2847
-壹	yi	2321
-荑	yi	1744
-缢	yi	1608
-翳	yi	1536
-胰	yi	1505
-痍	yi	1335
-薏	yi	1273
-嶷	yi	1221
-饴	yi	1052
-苡	yi	1018
-悒	yi	918
-猗	yi	898
-诒	yi	878
-黟	yi	721
-峄	yi	700
-镱	yi	700
-怿	yi	555
-眙	yi	532
-肄	yi	531
-铱	yi	515
-挹	yi	492
-乂	yi	418
-刈	yi	410
-癔	yi	364
-镒	yi	311
-埸	yi	280
-佾	yi	240
-圯	yi	145
-瘗	yi	96
-燚	yi	86
-劓	yi	74
-殪	yi	71
-浥	yi	50
-扆	yi	45
-廙	yi	42
-簃	yi	32
-嫕	yi	31
-舣	yi	28
-杙	yi	26
-钇	yi	25
-鹢	yi	22
-宧	yi	20
-洢	yi	18
-酏	yi	14
-繄	yi	12
-裛	yi	9
-椸	yi	7
-踦	yi	7
-扅	yi	6
-佁	yi	5
-勚	yi	5
-匜	yi	5
-鹝	yi	2
-嗌	yi	1
-艾	yi	1
-㑊	yi	0
-枍	yi	0
-潩	yi	0
-螠	yi	0
-𫄷	yi	0
-𫖮	yi	0
-𬟁	yi	0
-𬬩	yi	0
-𬺈	yi	0
-因	yin	2334623
-音	yin	1100301
-引	yin	489419
-隐	yin	466049
-银	yin	399570
-阴	yin	393419
-印	yin	328075
-吟	yin	147887
-饮	yin	118969
-淫	yin	73135
-姻	yin	72158
-尹	yin	65600
-殷	yin	59421
-茵	yin	37135
-瘾	yin	30459
-胤	yin	23866
-荫	yin	18542
-寅	yin	16337
-垠	yin	5840
-氤	yin	4163
-蚓	yin	3612
-喑	yin	1282
-洇	yin	888
-龈	yin	875
-鄞	yin	673
-夤	yin	596
-窨	yin	396
-霪	yin	349
-狺	yin	229
-愔	yin	194
-堙	yin	87
-訚	yin	58
-吲	yin	56
-铟	yin	18
-嚚	yin	13
-禋	yin	13
-骃	yin	11
-慭	yin	6
-硍	yin	6
-珢	yin	5
-茚	yin	4
-蟫	yin	3
-龂	yin	3
-崟	yin	2
-溵	yin	2
-歅	yin	1
-䲟	yin	0
-𬘡	yin	0
-𬤇	yin	0
-𬮱	yin	0
-应	ying	1777404
-影	ying	1067165
-英	ying	646331
-营	ying	369626
-迎	ying	276814
-硬	ying	268057
-鹰	ying	162593
-赢	ying	122118
-映	ying	119292
-莹	ying	106488
-盈	ying	102878
-婴	ying	76456
-樱	ying	68359
-颖	ying	63259
-莺	ying	25291
-蝇	ying	22560
-嬴	ying	16436
-萤	ying	13116
-荧	ying	11955
-萦	ying	11437
-瑛	ying	10948
-缨	ying	8574
-瀛	ying	7781
-嘤	ying	7662
-膺	ying	6134
-滢	ying	5356
-鹦	ying	5289
-罂	ying	3720
-璎	ying	3679
-郢	ying	2567
-颍	ying	2512
-荥	ying	1800
-茔	ying	1180
-楹	ying	872
-撄	ying	406
-潆	ying	361
-媵	ying	275
-瘿	ying	262
-锳	ying	101
-蓥	ying	35
-溁	ying	11
-媖	ying	3
-䓨	ying	0
-用	yong	3170468
-永	yong	399313
-拥	yong	294913
-勇	yong	266642
-涌	yong	182735
-佣	yong	73609
-庸	yong	55082
-泳	yong	32131
-雍	yong	25297
-咏	yong	16144
-甬	yong	7009
-慵	yong	6576
-俑	yong	5497
-恿	yong	5406
-臃	yong	3726
-蛹	yong	2810
-邕	yong	2691
-踊	yong	2502
-墉	yong	1605
-镛	yong	701
-颙	yong	632
-痈	yong	373
-壅	yong	367
-饔	yong	67
-鳙	yong	26
-澭	yong	24
-鄘	yong	22
-埇	yong	7
-栐	yong	4
-喁	yong	1
-㶲	yong	0
-鲬	yong	0
-有	you	17847013
-又	you	3710252
-由	you	1400586
-友	you	869919
-游	you	537555
-右	you	483406
-优	you	279594
-犹	you	246801
-幽	you	238716
-油	you	231197
-尤	you	229183
-忧	you	192308
-悠	you	159692
-诱	you	98758
-幼	you	84744
-哟	you	59051
-佑	you	43281
-邮	you	38473
-黝	you	16397
-呦	you	11228
-攸	you	9343
-鱿	you	3849
-酉	you	3752
-繇	you	3040
-柚	you	2471
-祐	you	2470
-铀	you	2053
-猷	you	1577
-釉	you	1538
-莠	you	1187
-囿	you	1124
-鼬	you	1023
-宥	you	916
-莜	you	587
-疣	you	486
-侑	you	454
-牖	you	413
-蝣	you	218
-蚴	you	160
-羑	you	145
-蝤	you	124
-蚰	you	115
-莸	you	96
-卣	you	93
-麀	you	25
-耰	you	17
-浟	you	10
-槱	you	8
-铕	you	5
-鲉	you	3
-𬨎	you	0
-于	yu	3614992
-与	yu	2104552
-语	yu	843913
-雨	yu	725801
-玉	yu	721753
-余	yu	441792
-遇	yu	409411
-欲	yu	353022
-羽	yu	322339
-宇	yu	311167
-鱼	yu	288142
-预	yu	218757
-育	yu	214206
-御	yu	166243
-郁	yu	156526
-豫	yu	140767
-域	yu	135460
-狱	yu	133801
-予	yu	105542
-愈	yu	103820
-浴	yu	69322
-誉	yu	69067
-愉	yu	60639
-愚	yu	60381
-吁	yu	47540
-於	yu	45065
-裕	yu	43025
-娱	yu	37970
-瑜	yu	37277
-喻	yu	36595
-寓	yu	34060
-渔	yu	31185
-虞	yu	30560
-俞	yu	26139
-禹	yu	19590
-煜	yu	18582
-舆	yu	17587
-谕	yu	15061
-逾	yu	13686
-榆	yu	12802
-屿	yu	11826
-钰	yu	11516
-驭	yu	11486
-渝	yu	10653
-迂	yu	10277
-淤	yu	8794
-毓	yu	7778
-瑀	yu	7470
-妤	yu	6923
-昱	yu	6273
-隅	yu	5608
-禺	yu	5565
-芋	yu	4991
-聿	yu	4831
-臾	yu	4333
-揄	yu	4290
-峪	yu	4061
-觎	yu	3643
-妪	yu	3418
-谀	yu	3139
-腴	yu	2956
-盂	yu	2805
-彧	yu	2681
-庾	yu	1850
-瘀	yu	1494
-燏	yu	1308
-棫	yu	1238
-蜮	yu	1057
-圄	yu	1046
-竽	yu	963
-喁	yu	945
-欤	yu	860
-萸	yu	618
-鹬	yu	596
-鬻	yu	575
-龉	yu	575
-窳	yu	555
-圉	yu	526
-纡	yu	431
-狳	yu	423
-俣	yu	383
-燠	yu	333
-瘐	yu	272
-伛	yu	255
-饫	yu	247
-淯	yu	187
-阈	yu	185
-蝓	yu	173
-舁	yu	172
-遹	yu	140
-雩	yu	136
-鹆	yu	136
-窬	yu	120
-熨	yu	100
-玙	yu	98
-嵛	yu	75
-堉	yu	44
-褕	yu	30
-矞	yu	24
-畬	yu	23
-嵎	yu	16
-蓣	yu	16
-髃	yu	16
-滪	yu	14
-潏	yu	10
-悆	yu	4
-敔	yu	3
-邘	yu	3
-鄅	yu	2
-尉	yu	1
-艅	yu	1
-蔚	yu	1
-㺄	yu	0
-原	yuan	1473346
-远	yuan	1319096
-员	yuan	887168
-元	yuan	732265
-院	yuan	672894
-愿	yuan	597660
-园	yuan	267608
-源	yuan	247962
-圆	yuan	240477
-缘	yuan	219837
-怨	yuan	181641
-援	yuan	113598
-袁	yuan	109370
-辕	yuan	80157
-渊	yuan	72136
-冤	yuan	59019
-媛	yuan	36310
-苑	yuan	19838
-猿	yuan	19821
-鸳	yuan	12321
-垣	yuan	9743
-鸢	yuan	4907
-沅	yuan	4051
-爰	yuan	2633
-瑗	yuan	1759
-芫	yuan	1105
-塬	yuan	1090
-鼋	yuan	657
-掾	yuan	500
-垸	yuan	281
-螈	yuan	223
-橼	yuan	138
-蜎	yuan	86
-嫄	yuan	78
-箢	yuan	68
-湲	yuan	61
-眢	yuan	38
-涴	yuan	23
-妧	yuan	16
-羱	yuan	4
-圜	yuan	1
-𫘪	yuan	0
-月	yue	1546594
-越	yue	1069176
-约	yue	526224
-跃	yue	169432
-岳	yue	131477
-悦	yue	122437
-乐	yue	77726
-曰	yue	74013
-阅	yue	66255
-粤	yue	7314
-玥	yue	5094
-钺	yue	2822
-钥	yue	2000
-樾	yue	535
-刖	yue	267
-彟	yue	244
-哕	yue	132
-瀹	yue	82
-龠	yue	73
-爚	yue	46
-籥	yue	16
-栎	yue	1
-𫐄	yue	0
-𬸚	yue	0
-云	yun	1205872
-运	yun	630729
-晕	yun	160115
-允	yun	100455
-韵	yun	65628
-芸	yun	59910
-孕	yun	44402
-蕴	yun	35330
-匀	yun	19505
-筠	yun	15378
-陨	yun	11006
-酝	yun	8265
-愠	yun	4548
-氲	yun	4028
-耘	yun	3869
-昀	yun	3423
-纭	yun	3322
-殒	yun	2907
-熨	yun	2753
-韫	yun	1912
-郓	yun	1795
-赟	yun	1478
-恽	yun	1280
-鋆	yun	1072
-郧	yun	618
-狁	yun	183
-沄	yun	100
-妘	yun	58
-缊	yun	37
-煴	yun	18
-筼	yun	7
-涢	yun	5
-员	yun	1
-馧	yun	0
-𫖳	yun	0
-咋	za	98411
-砸	za	49191
-杂	za	27765
-咂	za	6899
-匝	za	3734
-扎	za	1000
-臜	za	186
-拶	za	1
-在	zai	19195987
-再	zai	2681503
-载	zai	127412
-灾	zai	83099
-宰	zai	58463
-栽	zai	34930
-哉	zai	22334
-仔	zai	20916
-崽	zai	16768
-甾	zai	110
-咱	zan	321520
-赞	zan	177018
-暂	zan	161191
-攒	zan	15835
-簪	zan	7448
-瓒	zan	4653
-錾	zan	405
-糌	zan	343
-趱	zan	283
-昝	zan	208
-拶	zan	183
-酂	zan	12
-寁	zan	0
-脏	zang	124291
-葬	zang	56577
-藏	zang	10000
-赃	zang	9126
-臧	zang	6025
-奘	zang	2967
-牂	zang	76
-驵	zang	37
-早	zao	1138903
-造	zao	518334
-遭	zao	174294
-糟	zao	102902
-澡	zao	57698
-躁	zao	55588
-燥	zao	32172
-凿	zao	16089
-噪	zao	16010
-灶	zao	13458
-枣	zao	13173
-皂	zao	12776
-藻	zao	7612
-蚤	zao	2887
-唣	zao	190
-璪	zao	24
-慥	zao	13
-簉	zao	13
-𥖨	zao	0
-则	ze	740891
-责	ze	370704
-择	ze	254252
-泽	ze	184794
-啧	ze	28249
-仄	ze	1896
-笮	ze	405
-帻	ze	272
-赜	ze	185
-昃	ze	140
-舴	ze	58
-箦	ze	47
-迮	ze	33
-咋	ze	1
-贼	zei	158556
-鲗	zei	10
-怎	zen	2520317
-谮	zen	190
-增	zeng	226112
-赠	zeng	28101
-憎	zeng	16932
-曾	zeng	3000
-锃	zeng	2610
-缯	zeng	2111
-甑	zeng	627
-罾	zeng	105
-矰	zeng	13
-鄫	zeng	10
-综	zeng	1
-䎖	zeng	0
-扎	zha	204372
-炸	zha	183079
-眨	zha	96795
-诈	zha	36959
-乍	zha	25921
-喳	zha	21141
-渣	zha	16543
-栅	zha	12177
-札	zha	9993
-闸	zha	9438
-榨	zha	6994
-吒	zha	5743
-轧	zha	4919
-咤	zha	4443
-蚱	zha	4020
-铡	zha	1281
-楂	zha	964
-鲊	zha	158
-馇	zha	99
-揸	zha	90
-砟	zha	76
-哳	zha	68
-奓	zha	50
-拃	zha	49
-挓	zha	31
-痄	zha	27
-劄	zha	16
-霅	zha	14
-咋	zha	1
-喋	zha	1
-柞	zha	1
-查	zha	1
-䃎	zha	0
-溠	zha	0
-鲝	zha	0
-齇	zha	0
-寨	zhai	67653
-宅	zhai	53376
-摘	zhai	49225
-债	zhai	43823
-窄	zhai	34397
-斋	zhai	25200
-翟	zhai	11050
-择	zhai	100
-瘵	zhai	34
-祭	zhai	1
-豸	zhai	1
-战	zhan	1924225
-站	zhan	994038
-展	zhan	570379
-占	zhan	246282
-斩	zhan	102461
-沾	zhan	65300
-蘸	zhan	45760
-绽	zhan	44371
-粘	zhan	36321
-栈	zhan	34054
-盏	zhan	29500
-詹	zhan	18852
-湛	zhan	16846
-崭	zhan	12461
-瞻	zhan	12261
-辗	zhan	11050
-毡	zhan	7222
-旃	zhan	1581
-谵	zhan	273
-搌	zhan	91
-飐	zhan	45
-鹯	zhan	41
-偡	zhan	26
-栴	zhan	16
-鳣	zhan	5
-𫗴	zhan	0
-长	zhang	3100060
-张	zhang	1977218
-章	zhang	697369
-掌	zhang	510260
-丈	zhang	238063
-帐	zhang	148792
-仗	zhang	100976
-障	zhang	67983
-涨	zhang	61366
-杖	zhang	50648
-账	zhang	46126
-璋	zhang	38930
-胀	zhang	33681
-彰	zhang	14222
-蟑	zhang	7998
-瘴	zhang	5331
-樟	zhang	4468
-漳	zhang	2339
-獐	zhang	2123
-嶂	zhang	1163
-幛	zhang	395
-鄣	zhang	184
-嫜	zhang	116
-暲	zhang	94
-仉	zhang	46
-找	zhao	1476145
-照	zhao	692673
-招	zhao	593719
-赵	zhao	507405
-召	zhao	128448
-罩	zhao	120318
-着	zhao	96993
-爪	zhao	74674
-昭	zhao	65610
-兆	zhao	42927
-朝	zhao	42588
-诏	zhao	23643
-沼	zhao	18625
-肇	zhao	6900
-钊	zhao	6725
-棹	zhao	579
-笊	zhao	334
-曌	zhao	63
-啁	zhao	1
-旐	zhao	1
-𬬿	zhao	0
-𬶐	zhao	0
-这	zhe	17648808
-着	zhe	1616546
-者	zhe	1581047
-折	zhe	248570
-哲	zhe	128653
-遮	zhe	76029
-浙	zhe	23244
-辙	zhe	13190
-辄	zhe	5766
-褶	zhe	5141
-蛰	zhe	4463
-蔗	zhe	2970
-蜇	zhe	1521
-鹧	zhe	1477
-喆	zhe	1417
-谪	zhe	1348
-赭	zhe	1095
-柘	zhe	1071
-磔	zhe	565
-锗	zhe	210
-啫	zhe	145
-晢	zhe	105
-詟	zhe	72
-䗪	zhe	0
-真	zhen	3314815
-阵	zhen	857774
-震	zhen	338757
-镇	zhen	264517
-珍	zhen	183710
-针	zhen	140264
-振	zhen	124002
-朕	zhen	55860
-侦	zhen	55445
-贞	zhen	49540
-枕	zhen	45747
-诊	zhen	29637
-甄	zhen	26342
-帧	zhen	21370
-斟	zhen	17602
-祯	zhen	13395
-臻	zhen	8443
-桢	zhen	5681
-箴	zhen	3543
-缜	zhen	3455
-圳	zhen	3315
-榛	zhen	3295
-赈	zhen	3169
-蓁	zhen	2763
-禛	zhen	2519
-疹	zhen	1914
-砧	zhen	1520
-鸩	zhen	1439
-轸	zhen	1112
-稹	zhen	815
-浈	zhen	168
-瑧	zhen	117
-畛	zhen	113
-胗	zhen	108
-鬒	zhen	17
-袗	zhen	15
-葴	zhen	6
-揕	zhen	2
-昣	zhen	0
-纼	zhen	0
-正	zheng	2933903
-整	zheng	911668
-政	zheng	633183
-争	zheng	569448
-证	zheng	452885
-征	zheng	208067
-郑	zheng	193156
-睁	zheng	186982
-挣	zheng	155359
-怔	zheng	100634
-症	zheng	58943
-蒸	zheng	33714
-铮	zheng	29527
-筝	zheng	20129
-狰	zheng	19977
-拯	zheng	19388
-峥	zheng	4434
-钲	zheng	939
-诤	zheng	785
-烝	zheng	85
-只	zhi	5050153
-知	zhi	4397165
-直	zhi	1902380
-至	zhi	1199059
-之	zhi	1173763
-指	zhi	1099010
-值	zhi	920306
-制	zhi	870792
-支	zhi	532396
-志	zhi	485065
-止	zhi	472691
-治	zhi	450800
-质	zhi	398905
-置	zhi	379704
-致	zhi	370734
-职	zhi	326699
-智	zhi	310406
-纸	zhi	273013
-织	zhi	218959
-执	zhi	191171
-枝	zhi	121572
-植	zhi	65774
-旨	zhi	53094
-芝	zhi	50352
-吱	zhi	47132
-肢	zhi	44527
-侄	zhi	43424
-脂	zhi	37878
-址	zhi	35618
-汁	zhi	34923
-滞	zhi	34050
-稚	zhi	33182
-殖	zhi	27563
-掷	zhi	27287
-秩	zhi	23852
-窒	zhi	22175
-芷	zhi	18836
-峙	zhi	17869
-挚	zhi	17228
-蜘	zhi	16934
-帜	zhi	14102
-炙	zhi	13778
-趾	zhi	12471
-咫	zhi	8825
-痣	zhi	4604
-徵	zhi	4233
-雉	zhi	3195
-祗	zhi	2852
-栀	zhi	2564
-痔	zhi	1598
-栉	zhi	1454
-祉	zhi	1421
-桎	zhi	1418
-蛭	zhi	1336
-鸷	zhi	1189
-郅	zhi	1053
-豸	zhi	915
-踯	zhi	878
-贽	zhi	871
-陟	zhi	836
-骘	zhi	679
-彘	zhi	554
-跖	zhi	442
-轾	zhi	405
-摭	zhi	387
-枳	zhi	318
-酯	zhi	317
-帙	zhi	306
-禔	zhi	281
-卮	zhi	277
-沚	zhi	244
-胝	zhi	220
-觯	zhi	182
-絷	zhi	142
-埴	zhi	120
-轵	zhi	113
-黹	zhi	113
-踬	zhi	102
-忮	zhi	69
-晊	zhi	57
-畤	zhi	54
-滍	zhi	37
-稙	zhi	37
-扺	zhi	19
-铚	zhi	18
-锧	zhi	12
-疐	zhi	6
-跱	zhi	3
-庤	zhi	2
-泜	zhi	2
-氏	zhi	1
-识	zhi	1
-梽	zhi	0
-榰	zhi	0
-𦭜	zhi	0
-𬃊	zhi	0
-中	zhong	7680869
-种	zhong	2653924
-重	zhong	1900814
-终	zhong	928837
-众	zhong	796661
-钟	zhong	439739
-忠	zhong	180043
-仲	zhong	83817
-衷	zhong	52515
-肿	zhong	39306
-冢	zhong	6812
-踵	zhong	6451
-盅	zhong	6047
-锺	zhong	2435
-舯	zhong	103
-螽	zhong	97
-柊	zhong	36
-茽	zhong	0
-周	zhou	972776
-州	zhou	362849
-皱	zhou	186309
-洲	zhou	147589
-咒	zhou	111198
-宙	zhou	62098
-舟	zhou	55739
-骤	zhou	44774
-粥	zhou	23792
-肘	zhou	19724
-轴	zhou	18321
-昼	zhou	17728
-帚	zhou	6894
-胄	zhou	6703
-纣	zhou	5710
-绉	zhou	3377
-诌	zhou	3056
-妯	zhou	713
-啁	zhou	607
-碡	zhou	167
-籀	zhou	77
-酎	zhou	61
-辀	zhou	23
-赒	zhou	9
-鸼	zhou	3
-荮	zhou	2
-婤	zhou	1
-㑇	zhou	0
-㤘	zhou	0
-主	zhu	2156315
-住	zhu	2114870
-注	zhu	583182
-助	zhu	401900
-著	zhu	329248
-朱	zhu	302713
-珠	zhu	271642
-诸	zhu	214093
-逐	zhu	190582
-竹	zhu	168423
-猪	zhu	155635
-祝	zhu	118176
-筑	zhu	108668
-柱	zhu	101550
-驻	zhu	84625
-嘱	zhu	49354
-烛	zhu	44470
-煮	zhu	35755
-蛛	zhu	29896
-株	zhu	24834
-铸	zhu	24048
-诛	zhu	23141
-竺	zhu	11419
-瞩	zhu	8028
-伫	zhu	7835
-拄	zhu	6044
-侏	zhu	5485
-贮	zhu	3787
-茱	zhu	3252
-洙	zhu	2857
-蛀	zhu	2432
-渚	zhu	2031
-箸	zhu	2024
-炷	zhu	1690
-铢	zhu	1101
-躅	zhu	865
-苎	zhu	804
-杼	zhu	474
-翥	zhu	357
-槠	zhu	279
-麈	zhu	219
-潴	zhu	109
-舳	zhu	105
-邾	zhu	88
-纻	zhu	66
-橥	zhu	47
-砫	zhu	26
-柷	zhu	18
-疰	zhu	18
-蠋	zhu	13
-瘃	zhu	8
-术	zhu	1
-𬣞	zhu	0
-抓	zhua	82875
-爪	zhua	74674
-髽	zhua	9
-拽	zhuai	45251
-转	zhuan	1276312
-专	zhuan	360222
-赚	zhuan	88692
-传	zhuan	62079
-砖	zhuan	40050
-撰	zhuan	13976
-篆	zhuan	4333
-馔	zhuan	1102
-颛	zhuan	1059
-啭	zhuan	445
-僎	zhuan	23
-瑑	zhuan	18
-沌	zhuan	1
-䏝	zhuan	0
-装	zhuang	695241
-状	zhuang	351779
-庄	zhuang	264912
-撞	zhuang	230714
-壮	zhuang	169349
-妆	zhuang	55685
-桩	zhuang	28892
-幢	zhuang	24268
-奘	zhuang	1
-戆	zhuang	1
-追	zhui	502402
-坠	zhui	61401
-缀	zhui	15121
-锥	zhui	13235
-惴	zhui	9403
-赘	zhui	9084
-椎	zhui	7273
-骓	zhui	1012
-缒	zhui	268
-隹	zhui	154
-准	zhun	805527
-谆	zhun	3505
-肫	zhun	178
-窀	zhun	41
-衠	zhun	10
-屯	zhun	1
-𬘯	zhun	0
-桌	zhuo	346095
-卓	zhuo	118671
-着	zhuo	96993
-捉	zhuo	91410
-琢	zhuo	36857
-灼	zhuo	32550
-拙	zhuo	22860
-浊	zhuo	18800
-镯	zhuo	17202
-酌	zhuo	11174
-啄	zhuo	8026
-茁	zhuo	2369
-涿	zhuo	2170
-擢	zhuo	1931
-斫	zhuo	1880
-濯	zhuo	1327
-倬	zhuo	1086
-浞	zhuo	360
-诼	zhuo	137
-棁	zhuo	41
-禚	zhuo	8
-椓	zhuo	7
-晫	zhuo	6
-叕	zhuo	4
-汋	zhuo	2
-焯	zhuo	1
-䓬	zhuo	0
-䦃	zhuo	0
-𬸦	zhuo	0
-子	zi	8641973
-自	zi	7261699
-字	zi	906615
-资	zi	517472
-紫	zi	332619
-姿	zi	135544
-滋	zi	106362
-吱	zi	47132
-兹	zi	38585
-姊	zi	33464
-仔	zi	20916
-咨	zi	13954
-梓	zi	13927
-孜	zi	12741
-渍	zi	8918
-籽	zi	5088
-恣	zi	5030
-龇	zi	4897
-辎	zi	4265
-淄	zi	3142
-眦	zi	2845
-滓	zi	1741
-嗞	zi	975
-髭	zi	876
-孳	zi	637
-缁	zi	635
-笫	zi	611
-锱	zi	403
-秭	zi	392
-赀	zi	367
-訾	zi	316
-觜	zi	236
-嵫	zi	150
-趑	zi	99
-茈	zi	92
-孖	zi	58
-粢	zi	57
-鲻	zi	39
-镃	zi	22
-耔	zi	11
-鼒	zi	4
-虸	zi	0
-鄑	zi	0
-总	zong	1273655
-宗	zong	329551
-纵	zong	170090
-踪	zong	160848
-综	zong	30488
-棕	zong	14156
-鬃	zong	3860
-粽	zong	3503
-偬	zong	396
-倧	zong	144
-鬷	zong	78
-腙	zong	2
-枞	zong	1
-疭	zong	0
-走	zou	3020224
-奏	zou	100818
-揍	zou	25073
-邹	zou	19321
-诹	zou	346
-驺	zou	256
-陬	zou	146
-鄹	zou	54
-鲰	zou	9
-组	zu	707445
-足	zu	680607
-族	zu	423884
-祖	zu	225814
-阻	zu	187918
-租	zu	98428
-卒	zu	40372
-诅	zu	24236
-俎	zu	1606
-镞	zu	765
-菹	zu	99
-崒	zu	51
-珇	zu	7
-钻	zuan	132223
-攥	zuan	14543
-纂	zuan	2790
-缵	zuan	271
-躜	zuan	59
-最	zui	2582957
-嘴	zui	762052
-罪	zui	300821
-醉	zui	181356
-蕞	zui	136
-咀	zui	1
-槜	zui	1
-尊	zun	260962
-遵	zun	50067
-樽	zun	2441
-鳟	zun	436
-撙	zun	87
-噂	zun	3
-僔	zun	0
-嶟	zun	0
-𨱔	zun	0
-做	zuo	3254997
-作	zuo	2437693
-坐	zuo	1106273
-左	zuo	538289
-座	zuo	388236
-昨	zuo	238837
-佐	zuo	50271
-琢	zuo	36857
-撮	zuo	10534
-祚	zuo	1977
-嘬	zuo	1426
-柞	zuo	565
-笮	zuo	405
-酢	zuo	371
-怍	zuo	185
-胙	zuo	169
-唑	zuo	157
-捽	zuo	149
-阼	zuo	53
-岞	zuo	6
+吖	a
+啊	a
+腌	a	0.0497388709%
+锕	a
+阿	a
+叆	ai
+哀	ai
+哎	ai
+唉	ai
+嗌	ai
+嗳	ai
+埃	ai
+嫒	ai
+挨	ai
+暧	ai
+欸	ai
+毐	ai
+爱	ai
+瑷	ai
+癌	ai
+皑	ai
+矮	ai
+砹	ai
+碍	ai
+艾	ai
+蔼	ai
+锿	ai
+隘	ai
+霭	ai
+俺	an
+唵	an
+垵	an
+埯	an
+安	an
+岸	an
+庵	an
+按	an
+暗	an
+案	an
+桉	an
+氨	an
+犴	an
+盦	an
+胺	an
+谙	an
+铵	an
+鞍	an
+鹌	an
+黯	an
+𩽾	an
+卬	ang
+昂	ang
+盎	ang
+肮	ang
+傲	ao
+凹	ao
+嗷	ao
+坳	ao
+奡	ao
+奥	ao
+媪	ao
+岙	ao
+嶅	ao
+廒	ao
+懊	ao
+拗	ao
+敖	ao
+澳	ao
+熬	ao
+獒	ao
+璈	ao
+翱	ao
+聱	ao
+薁	ao
+螯	ao
+袄	ao
+遨	ao
+鏊	ao
+鏖	ao
+隩	ao
+骜	ao
+鳌	ao
+八	ba
+叭	ba
+吧	ba
+坝	ba
+妭	ba
+岜	ba
+巴	ba
+扒	ba
+把	ba
+拔	ba
+捌	ba
+朳	ba
+灞	ba
+爸	ba
+疤	ba
+笆	ba
+粑	ba
+罢	ba
+羓	ba
+耙	ba
+胈	ba
+芭	ba
+菝	ba
+蚆	ba
+跋	ba
+钯	ba
+霸	ba
+靶	ba
+魃	ba
+鲃	ba
+鲅	ba
+伯	bai	0.6000449601%
+佰	bai
+拜	bai
+捭	bai
+掰	bai
+摆	bai
+柏	bai
+白	bai
+百	bai
+稗	bai
+败	bai
+伴	ban
+办	ban
+半	ban
+坂	ban
+扮	ban
+扳	ban
+拌	ban
+搬	ban
+攽	ban
+斑	ban
+昄	ban
+板	ban
+柈	ban
+湴	ban
+版	ban
+班	ban
+瓣	ban
+瘢	ban
+癍	ban
+绊	ban
+般	ban
+钣	ban
+阪	ban
+靽	ban
+颁	ban
+𨭉	ban
+傍	bang
+塝	bang
+帮	bang
+搒	bang
+梆	bang
+棒	bang
+榜	bang
+浜	bang
+玤	bang
+磅	bang
+绑	bang
+膀	bang
+蒡	bang
+蚌	bang
+谤	bang
+邦	bang
+镑	bang
+𠳐	bang
+保	bao
+刨	bao
+剥	bao
+包	bao
+堡	bao
+孢	bao
+宝	bao
+报	bao
+抱	bao
+暴	bao
+曝	bao
+枹	bao
+瀑	bao	0.0117315814%
+炮	bao	0.5673541798%
+煲	bao
+爆	bao
+胞	bao
+苞	bao
+葆	bao
+薄	bao
+褒	bao
+褓	bao
+豹	bao
+趵	bao
+雹	bao
+饱	bao
+鲍	bao
+鸨	bao
+龅	bao
+倍	bei
+北	bei
+卑	bei
+呗	bei
+备	bei
+孛	bei
+悖	bei
+悲	bei
+惫	bei
+杯	bei
+棓	bei
+椑	bei
+焙	bei
+狈	bei
+琲	bei
+碑	bei
+碚	bei
+糒	bei
+背	bei
+臂	bei	0.001049362%
+蓓	bei
+被	bei
+褙	bei
+贝	bei
+辈	bei
+邶	bei
+鐾	bei
+钡	bei
+陂	bei
+鞁	bei
+鞴	bei
+鹎	bei
+𬇙	bei
+倴	ben
+坌	ben
+奔	ben
+本	ben
+栟	ben
+犇	ben
+畚	ben
+笨	ben
+苯	ben
+贲	ben
+锛	ben
+嘣	beng
+崩	beng
+泵	beng
+琫	beng
+甏	beng
+甭	beng
+祊	beng
+绷	beng
+蚌	beng	0.0508001016%
+蹦	beng
+迸	beng
+镚	beng
+佖	bi
+佛	bi	0.0212303068%
+俾	bi
+匕	bi
+吡	bi
+咇	bi
+哔	bi
+坒	bi
+壁	bi
+妣	bi
+婢	bi
+嬖	bi
+屄	bi
+币	bi
+庇	bi
+庳	bi
+弊	bi
+弼	bi
+彼	bi
+必	bi
+愎	bi
+敝	bi
+比	bi
+毕	bi
+毖	bi
+毙	bi
+沘	bi
+泌	bi	0.02299908%
+滗	bi
+濞	bi
+狴	bi
+珌	bi
+璧	bi
+畀	bi
+痹	bi
+皕	bi
+碧	bi
+秕	bi
+秘	bi	0.0005250653%
+笔	bi
+筚	bi
+箅	bi
+篦	bi
+臂	bi
+舭	bi
+芘	bi
+苾	bi
+荜	bi
+荸	bi
+萆	bi
+蓖	bi
+蔽	bi
+薜	bi
+裨	bi
+襞	bi
+觱	bi
+诐	bi
+贲	bi
+赑	bi
+跸	bi
+辟	bi
+逼	bi
+避	bi
+邲	bi
+鄙	bi
+铋	bi
+闭	bi
+陛	bi
+馝	bi
+髀	bi
+鲾	bi
+鼻	bi
+便	bian
+匾	bian
+卞	bian
+变	bian
+弁	bian
+忭	bian
+扁	bian
+抃	bian
+昪	bian
+汴	bian
+煸	bian
+砭	bian
+碥	bian
+笾	bian
+编	bian
+苄	bian
+萹	bian
+蝙	bian
+褊	bian
+贬	bian
+辨	bian
+辩	bian
+辫	bian
+边	bian
+遍	bian
+鞭	bian
+鳊	bian
+𨚕	bian
+𰻝	biang
+俵	biao
+儦	biao
+婊	biao
+幖	biao
+彪	biao
+摽	biao
+杓	biao
+标	biao
+瀌	biao
+熛	biao
+瘭	biao
+脿	biao
+膘	biao
+藨	biao
+表	biao
+裱	biao
+镖	biao
+镳	biao
+飑	biao
+飙	biao
+骉	biao
+骠	biao
+鳔	biao
+别	bie
+憋	bie
+瘪	bie
+癿	bie
+蹩	bie
+鳖	bie
+傧	bin
+宾	bin
+彬	bin
+摈	bin
+斌	bin
+槟	bin
+殡	bin
+滨	bin
+濒	bin
+玢	bin
+缤	bin
+膑	bin
+豳	bin
+邠	bin
+镔	bin
+髌	bin
+鬓	bin
+丙	bing
+兵	bing
+冰	bing
+屏	bing	1.1153079074%
+并	bing
+摒	bing
+昺	bing
+柄	bing
+栟	bing
+槟	bing
+炳	bing
+病	bing
+禀	bing
+秉	bing
+蛃	bing
+邴	bing
+饼	bing
+亳	bo
+伯	bo
+僰	bo
+剥	bo
+勃	bo
+博	bo
+卜	bo	3.4880072514%
+哱	bo
+啵	bo
+孛	bo
+嶓	bo
+帛	bo
+拨	bo
+搏	bo
+播	bo
+擘	bo
+柏	bo
+檗	bo
+欂	bo
+泊	bo
+波	bo
+浡	bo
+渤	bo
+玻	bo
+砵	bo
+礴	bo
+箔	bo
+簸	bo
+脖	bo
+膊	bo
+舶	bo
+艴	bo
+菠	bo
+蕃	bo	0.0208964581%
+薄	bo
+袯	bo
+趵	bo
+跛	bo
+踣	bo
+钵	bo
+钹	bo
+铂	bo
+镈	bo
+饽	bo
+馞	bo
+驳	bo
+鲌	bo
+鹁	bo
+𬭛	bo
+不	bu
+卜	bu
+卟	bu
+哺	bu
+埔	bu
+埗	bu
+埠	bu
+堡	bu	0.9911381752%
+布	bu
+怖	bu
+捕	bu
+晡	bu
+步	bu
+瓿	bu
+簿	bu
+蔀	bu
+补	bu
+逋	bu
+部	bu
+醭	bu
+钚	bu
+𬷕	bu
+嚓	ca
+擦	ca
+偲	cai
+彩	cai
+才	cai
+材	cai
+猜	cai
+睬	cai
+菜	cai
+蔡	cai
+裁	cai
+财	cai
+踩	cai
+采	cai
+䅟	can
+参	can
+惨	can
+惭	can
+残	can
+灿	can
+璨	can
+粲	can
+蚕	can
+餐	can
+骖	can
+黪	can
+仓	cang
+伧	cang
+沧	cang
+舱	cang
+苍	cang
+藏	cang
+鸧	cang
+嘈	cao
+屮	cao
+操	cao
+曹	cao
+槽	cao
+漕	cao
+糙	cao
+肏	cao
+艚	cao
+艹	cao
+芔	cao
+草	cao
+螬	cao
+𥕢	cao
+侧	ce
+册	ce
+厕	ce
+恻	ce
+测	ce
+策	ce
+参	cen	0.0005167291%
+岑	cen
+涔	cen
+噌	ceng
+层	ceng
+嶒	ceng
+曾	ceng
+蹭	ceng
+侘	cha
+刹	cha	0.9137880669%
+叉	cha
+喳	cha	0.009459843%
+嚓	cha
+垞	cha
+姹	cha
+察	cha
+岔	cha
+嵖	cha
+差	cha
+插	cha
+搽	cha
+杈	cha
+查	cha
+槎	cha
+檫	cha
+汊	cha
+猹	cha
+碴	cha
+茬	cha
+茶	cha
+衩	cha
+诧	cha
+蹅	cha
+锸	cha
+镲	cha
+馇	cha
+𥻗	cha
+侪	chai
+差	chai	1.7434978392%
+拆	chai
+柴	chai
+瘥	chai
+茝	chai
+虿	chai
+豺	chai
+钗	chai
+产	chan
+儳	chan
+冁	chan
+刬	chan
+单	chan	0.0002706653%
+啴	chan
+婵	chan
+孱	chan
+巉	chan
+廛	chan
+忏	chan
+掺	chan
+搀	chan
+旵	chan
+梴	chan
+浐	chan
+潺	chan
+澶	chan
+瀍	chan
+禅	chan
+缠	chan
+羼	chan
+蒇	chan
+蝉	chan
+蟾	chan
+襜	chan
+觇	chan
+谄	chan
+谗	chan
+躔	chan
+辿	chan
+铲	chan
+镡	chan
+镵	chan
+阐	chan
+韂	chan
+颤	chan
+馋	chan
+骣	chan
+𬊤	chan
+伥	chang
+倡	chang
+偿	chang
+厂	chang
+唱	chang
+场	chang
+娼	chang
+嫦	chang
+尝	chang
+常	chang
+徜	chang
+怅	chang
+惝	chang
+敞	chang
+昌	chang
+昶	chang
+氅	chang
+猖	chang
+畅	chang
+肠	chang
+苌	chang
+菖	chang
+裳	chang	2.5062593891%
+长	chang
+阊	chang
+鬯	chang
+鲳	chang
+鲿	chang
+𬬮	chang
+吵	chao
+嘲	chao
+巢	chao
+弨	chao
+怊	chao
+抄	chao
+晁	chao
+朝	chao
+潮	chao
+炒	chao
+焯	chao
+绰	chao	0.0071587086%
+耖	chao
+超	chao
+钞	chao
+㬚	che
+坼	che
+尺	che	0.0019559137%
+彻	che
+扯	che
+掣	che
+撤	che
+澈	che
+砗	che
+车	che
+嗔	chen
+宸	chen
+尘	chen
+忱	chen
+抻	chen
+晨	chen
+梣	chen
+棽	chen
+榇	chen
+沉	chen
+煁	chen
+琛	chen
+疢	chen
+瞋	chen
+碜	chen
+称	chen	1.5835497209%
+臣	chen
+衬	chen
+谌	chen
+谶	chen
+趁	chen
+辰	chen
+郴	chen
+陈	chen
+龀	chen
+𬘭	chen
+丞	cheng
+乘	cheng
+偁	cheng
+呈	cheng
+噌	cheng	0.0406091371%
+城	cheng
+埕	cheng
+塍	cheng
+宬	cheng
+庱	cheng
+惩	cheng
+憕	cheng
+成	cheng
+承	cheng
+撑	cheng
+晟	cheng	0.0125596584%
+枨	cheng
+柽	cheng
+橙	cheng
+澂	cheng
+澄	cheng
+牚	cheng
+珵	cheng
+珹	cheng
+琤	cheng
+盛	cheng
+瞠	cheng
+秤	cheng
+称	cheng
+程	cheng
+蛏	cheng
+裎	cheng
+诚	cheng
+赪	cheng
+逞	cheng
+酲	cheng
+铖	cheng
+铛	cheng	0.0151699029%
+骋	cheng
+侈	chi
+傺	chi
+匙	chi	2.049213888%
+叱	chi
+吃	chi
+哧	chi
+啻	chi
+嗤	chi
+墀	chi
+媸	chi
+尺	chi
+弛	chi
+彳	chi
+持	chi
+摛	chi
+敕	chi
+斥	chi
+池	chi
+漦	chi
+炽	chi
+瓻	chi
+痓	chi
+痴	chi
+瘛	chi
+眵	chi
+笞	chi
+篪	chi
+翅	chi
+耻	chi
+胣	chi
+茌	chi
+蚩	chi
+螭	chi
+褫	chi
+豉	chi
+赤	chi
+踟	chi
+迟	chi
+饬	chi
+驰	chi
+魑	chi
+鸱	chi
+齿	chi
+𫄨	chi
+㳘	chong
+充	chong
+冲	chong
+宠	chong
+崇	chong
+忡	chong
+憧	chong
+摏	chong
+涌	chong	0.0010944751%
+漴	chong
+珫	chong
+种	chong	0.0000753601%
+翀	chong
+舂	chong
+艟	chong
+茺	chong
+虫	chong
+重	chong	6.0000578699%
+铳	chong
+丑	chou
+仇	chou
+侴	chou
+俦	chou
+帱	chou
+惆	chou
+愁	chou
+抽	chou
+杻	chou
+椆	chou
+犨	chou
+畴	chou
+瘳	chou
+瞅	chou
+稠	chou
+筹	chou
+绸	chou
+臭	chou
+踌	chou
+酬	chou
+雠	chou
+䝙	chu
+䢺	chu
+亍	chu
+俶	chu
+储	chu
+出	chu
+刍	chu
+初	chu
+厨	chu
+处	chu
+怵	chu
+憷	chu
+搐	chu
+摴	chu
+斶	chu
+杵	chu
+楚	chu
+楮	chu
+樗	chu
+橱	chu
+滁	chu
+濋	chu
+琡	chu
+畜	chu
+矗	chu
+础	chu
+绌	chu
+蜍	chu
+褚	chu
+触	chu
+蹰	chu
+躇	chu
+锄	chu
+除	chu
+雏	chu
+黜	chu
+𬺓	chu
+欻	chua	2.2222222222%
+啜	chuai	0.0220799293%
+揣	chuai
+搋	chuai
+踹	chuai
+串	chuan
+传	chuan
+喘	chuan
+川	chuan
+椽	chuan
+氚	chuan
+穿	chuan
+舛	chuan
+船	chuan
+遄	chuan
+钏	chuan
+创	chuang
+噇	chuang
+幢	chuang	0.416168775%
+床	chuang
+怆	chuang
+疮	chuang
+窗	chuang
+闯	chuang
+倕	chui
+吹	chui
+圌	chui
+垂	chui
+捶	chui
+棰	chui
+槌	chui
+炊	chui
+锤	chui
+陲	chui
+䲠	chun
+唇	chun
+堾	chun
+春	chun
+椿	chun
+淳	chun
+瑃	chun
+纯	chun
+莼	chun
+蝽	chun
+蠢	chun
+醇	chun
+鹑	chun
+𬭚	chun
+啜	chuo
+惙	chuo
+戳	chuo
+绰	chuo
+踔	chuo
+辍	chuo
+逴	chuo
+龊	chuo
+伺	ci
+佽	ci
+兹	ci	0.0051832271%
+刺	ci
+呲	ci
+差	ci	0.0003486647%
+慈	ci
+次	ci
+此	ci
+泚	ci
+玼	ci
+瓷	ci
+疵	ci
+磁	ci
+祠	ci
+糍	ci
+茈	ci
+茨	ci
+莿	ci
+词	ci
+赐	ci
+跐	ci
+辞	ci
+雌	ci
+鹚	ci
+𫚖	ci
+丛	cong
+从	cong
+匆	cong
+囱	cong
+悰	cong
+枞	cong
+淙	cong
+熜	cong
+琮	cong
+璁	cong
+聪	cong
+苁	cong
+葱	cong
+骢	cong
+凑	cou
+腠	cou
+辏	cou
+促	cu
+卒	cu	1.4886186313%
+徂	cu
+殂	cu
+猝	cu
+簇	cu
+粗	cu
+蔟	cu
+蹙	cu
+蹴	cu
+醋	cu
+撺	cuan
+攒	cuan	1.9007325082%
+汆	cuan
+爨	cuan
+窜	cuan
+篡	cuan
+蹿	cuan
+镩	cuan
+催	cui
+啐	cui
+崔	cui
+悴	cui
+摧	cui
+榱	cui
+毳	cui
+淬	cui
+漼	cui
+璀	cui
+瘁	cui
+粹	cui
+缞	cui
+翠	cui
+脆	cui
+萃	cui
+存	cun
+寸	cun
+忖	cun
+村	cun
+皴	cun
+邨	cun
+厝	cuo
+嵯	cuo
+挫	cuo
+措	cuo
+搓	cuo
+撮	cuo
+棤	cuo
+瑳	cuo
+痤	cuo
+矬	cuo
+磋	cuo
+脞	cuo
+莝	cuo
+蹉	cuo
+锉	cuo
+错	cuo
+鹾	cuo
+哒	da
+嗒	da
+垯	da
+大	da
+妲	da
+怛	da
+打	da
+搭	da
+沓	da
+溚	da
+炟	da
+瘩	da
+笪	da
+答	da
+耷	da
+荙	da
+褡	da
+跶	da
+达	da
+靼	da
+鞑	da
+鿎	da
+𨱏	da
+𫟼	da
+代	dai
+傣	dai
+叇	dai
+呆	dai
+呔	dai
+垈	dai
+埭	dai
+大	dai	0.0060024093%
+岱	dai
+带	dai
+待	dai
+怠	dai
+戴	dai
+歹	dai
+殆	dai
+玳	dai
+绐	dai
+袋	dai
+贷	dai
+轪	dai
+迨	dai
+逮	dai
+骀	dai
+黛	dai
+丹	dan
+亶	dan
+但	dan
+儋	dan
+单	dan
+啖	dan
+弹	dan
+惮	dan
+憺	dan
+担	dan
+掸	dan
+旦	dan
+殚	dan
+氮	dan
+淡	dan
+澹	dan
+疍	dan
+疸	dan
+瘅	dan
+眈	dan
+石	dan	1.6123896204%
+箪	dan
+耽	dan
+聃	dan
+胆	dan
+膻	dan	0.1047668937%
+萏	dan
+蛋	dan
+诞	dan
+赕	dan
+郸	dan
+𫢸	dan
+𬘘	dan
+党	dang
+凼	dang
+垱	dang
+宕	dang
+当	dang
+挡	dang
+档	dang
+珰	dang
+砀	dang
+筜	dang
+荡	dang
+菪	dang
+裆	dang
+谠	dang
+铛	dang
+𣗋	dang
+𬍡	dang
+倒	dao
+刀	dao
+到	dao
+叨	dao
+导	dao
+岛	dao
+帱	dao
+忉	dao
+悼	dao
+捣	dao
+捯	dao
+氘	dao
+盗	dao
+祷	dao
+稻	dao
+纛	dao
+舠	dao
+蹈	dao
+道	dao
+鱽	dao
+嘚	de
+地	de
+得	de
+德	de
+的	de
+锝	de
+嘚	dei	0.5586592179%
+得	dei
+扽	den
+凳	deng
+噔	deng
+嶝	deng
+戥	deng
+澄	deng	0.8993288591%
+灯	deng
+璒	deng
+登	deng
+瞪	deng
+磴	deng
+等	deng
+蹬	deng
+邓	deng
+镫	deng
+䃅	di
+䗖	di
+低	di
+嘀	di
+地	di
+坻	di
+堤	di
+娣	di
+媂	di
+嫡	di
+帝	di
+底	di
+弟	di
+抵	di
+提	di	0.0001948775%
+敌	di
+杕	di
+柢	di
+棣	di
+氐	di
+涤	di
+滴	di
+狄	di
+玓	di
+的	di	0.1389657993%
+睇	di
+砥	di
+碲	di
+禘	di
+笛	di
+第	di
+籴	di
+缔	di
+羝	di
+翟	di	0.1900280518%
+茋	di
+荻	di
+菂	di
+蒂	di
+觌	di
+诋	di
+谛	di
+踶	di
+蹢	di
+迪	di
+递	di
+邸	di
+镝	di
+鞮	di
+骶	di
+髢	di
+𤧛	di
+𬱖	di
+嗲	dia
+佃	dian
+典	dian
+坫	dian
+垫	dian
+奠	dian
+巅	dian
+店	dian
+惦	dian
+扂	dian
+掂	dian
+殿	dian
+淀	dian
+滇	dian
+点	dian
+玷	dian
+琔	dian
+电	dian
+甸	dian
+癜	dian
+癫	dian
+碘	dian
+簟	dian
+踮	dian
+钿	dian
+阽	dian
+靛	dian
+颠	dian
+凋	diao
+刁	diao
+叼	diao
+吊	diao
+屌	diao
+掉	diao
+汈	diao
+碉	diao
+窎	diao
+调	diao
+貂	diao
+钓	diao
+铞	diao
+铫	diao
+雕	diao
+鲷	diao
+叠	die
+喋	die
+垤	die
+堞	die
+昳	die
+楪	die
+爹	die
+牒	die
+瓞	die
+碟	die
+绖	die
+耋	die
+蝶	die
+谍	die
+跌	die
+蹀	die
+迭	die
+鲽	die
+𫶇	die
+丁	ding
+仃	ding
+叮	ding
+啶	ding
+定	ding
+玎	ding
+町	ding
+疔	ding
+盯	ding
+碇	ding
+耵	ding
+腚	ding
+萣	ding
+订	ding
+酊	ding
+钉	ding
+锭	ding
+顶	ding
+鼎	ding
+丢	diu
+铥	diu
+东	dong
+侗	dong
+冬	dong
+冻	dong
+动	dong
+咚	dong
+垌	dong
+岽	dong
+峒	dong
+恫	dong
+懂	dong
+栋	dong
+氡	dong
+洞	dong
+硐	dong
+胨	dong
+胴	dong
+董	dong
+鸫	dong
+𬟽	dong
+兜	dou
+抖	dou
+斗	dou
+痘	dou
+窦	dou
+篼	dou
+蔸	dou
+蚪	dou
+读	dou	0.0006379443%
+豆	dou
+逗	dou
+都	dou
+钭	dou
+陡	dou
+厾	du
+嘟	du
+堵	du
+妒	du
+度	du
+杜	du
+椟	du
+毒	du
+渎	du
+渡	du
+牍	du
+犊	du
+独	du
+督	du
+睹	du
+笃	du
+肚	du
+芏	du
+蠹	du
+读	du
+赌	du
+都	du	6.0002144116%
+镀	du
+阇	du
+髑	du
+黩	du
+𬭊	du
+塅	duan
+断	duan
+椴	duan
+段	duan
+煅	duan
+瑖	duan
+短	duan
+端	duan
+簖	duan
+缎	duan
+耑	duan
+锻	duan
+兑	dui
+堆	dui
+对	dui
+怼	dui
+碓	dui
+祋	dui
+队	dui
+吨	dun
+囤	dun	0.0553403431%
+墩	dun
+惇	dun
+敦	dun
+沌	dun
+炖	dun
+盹	dun
+盾	dun
+砘	dun
+礅	dun
+趸	dun
+蹲	dun
+蹾	dun
+遁	dun
+钝	dun
+镦	dun
+顿	dun
+㙍	duo
+亸	duo
+剁	duo
+剟	duo
+咄	duo
+哆	duo
+哚	duo
+垛	duo
+埵	duo
+堕	duo
+多	duo
+夺	duo
+度	duo	6.1209082311%
+惰	duo
+掇	duo
+朵	duo
+舵	duo
+裰	duo
+跺	duo
+踱	duo
+躲	duo
+铎	duo
+饳	duo
+驮	duo	0.0271444083%
+俄	e
+厄	e
+呃	e
+哦	e	0.0000561273%
+噩	e
+垩	e
+堨	e
+姶	e
+娥	e
+婀	e
+屙	e
+峨	e
+崿	e
+恶	e
+愕	e
+扼	e
+欸	e
+涐	e
+腭	e
+苊	e
+莪	e
+萼	e
+蛾	e
+讹	e
+谔	e
+轭	e
+遏	e
+鄂	e
+锇	e
+锷	e
+阿	e	0.5000714882%
+颚	e
+额	e
+饿	e
+鳄	e
+鹅	e
+鹗	e
+𥔲	e
+𫫇	e
+欸	ei
+诶	ei
+嗯	en
+恩	en
+摁	en
+蒽	en
+嗯	eng
+二	er
+儿	er
+咡	er
+尔	er
+洱	er
+珥	er
+而	er
+耏	er
+耳	er
+贰	er
+迩	er
+铒	er
+陑	er
+饵	er
+鲕	er
+鸸	er
+乏	fa
+伐	fa
+发	fa
+垡	fa
+法	fa
+珐	fa
+砝	fa
+筏	fa
+罚	fa
+阀	fa
+凡	fan
+反	fan
+墦	fan
+帆	fan
+幡	fan
+梵	fan
+樊	fan
+氾	fan
+泛	fan
+烦	fan
+燔	fan
+犯	fan
+璠	fan
+畈	fan
+番	fan
+矾	fan
+繁	fan
+翻	fan
+范	fan
+蕃	fan
+藩	fan
+蘩	fan
+贩	fan
+蹯	fan
+返	fan
+钒	fan
+饭	fan
+𫔍	fan
+𬸪	fan
+仿	fang
+坊	fang
+妨	fang
+房	fang
+放	fang
+方	fang
+昉	fang
+枋	fang
+牥	fang
+纺	fang
+肪	fang
+舫	fang
+芳	fang
+蚄	fang
+访	fang
+邡	fang
+钫	fang
+防	fang
+鲂	fang
+剕	fei
+匪	fei
+吠	fei
+啡	fei
+妃	fei
+废	fei
+悱	fei
+扉	fei
+斐	fei
+朏	fei
+棐	fei
+榧	fei
+沸	fei
+淝	fei
+狒	fei
+痱	fei
+篚	fei
+绯	fei
+翡	fei
+肥	fei
+肺	fei
+腓	fei
+芾	fei
+菲	fei
+蜚	fei
+诽	fei
+费	fei
+镄	fei
+霏	fei
+非	fei
+飞	fei
+鲱	fei
+𬴂	fei
+份	fen
+偾	fen
+分	fen
+吩	fen
+坋	fen
+坟	fen
+奋	fen
+忿	fen
+愤	fen
+棻	fen
+棼	fen
+氛	fen
+汾	fen
+瀵	fen
+焚	fen
+玢	fen
+粉	fen
+粪	fen
+纷	fen
+翂	fen
+芬	fen
+豮	fen
+酚	fen
+鲼	fen
+鼢	fen
+𣸣	fen
+丰	feng
+俸	feng
+冯	feng
+凤	feng
+唪	feng
+奉	feng
+封	feng
+峰	feng
+崶	feng
+枫	feng
+沣	feng
+沨	feng
+浲	feng
+烽	feng
+疯	feng
+砜	feng
+缝	feng
+葑	feng
+蜂	feng
+讽	feng
+赗	feng
+逢	feng
+酆	feng
+锋	feng
+风	feng
+佛	fo
+否	fou
+缶	fou
+㕮	fu
+㳇	fu
+付	fu
+伏	fu
+佛	fu	4.2042313473%
+俘	fu
+俯	fu
+傅	fu
+凫	fu
+副	fu
+匐	fu
+呋	fu
+咐	fu
+垺	fu
+复	fu
+夫	fu
+妇	fu
+孚	fu
+孵	fu
+宓	fu
+富	fu
+幅	fu
+幞	fu
+府	fu
+弗	fu
+怫	fu
+扶	fu
+抚	fu
+拂	fu
+拊	fu
+敷	fu
+斧	fu
+服	fu
+桴	fu
+榑	fu
+氟	fu
+洑	fu
+浮	fu
+涪	fu
+滏	fu
+父	fu
+玞	fu
+琈	fu
+甫	fu
+砆	fu
+祓	fu
+福	fu
+稃	fu
+符	fu
+簠	fu
+绂	fu
+绋	fu
+缚	fu
+罘	fu
+肤	fu
+脯	fu
+腐	fu
+腑	fu
+腹	fu
+艴	fu
+芙	fu
+芣	fu
+芾	fu
+苻	fu
+茀	fu
+茯	fu
+莩	fu
+菔	fu
+蚨	fu
+蜉	fu
+蝠	fu
+蝮	fu
+袱	fu
+覆	fu
+讣	fu
+负	fu
+赋	fu
+赙	fu
+赴	fu
+趺	fu
+跗	fu
+辅	fu
+辐	fu
+郛	fu
+鄜	fu
+釜	fu
+阜	fu
+附	fu
+韨	fu
+馥	fu
+驸	fu
+鲋	fu
+麸	fu
+黻	fu
+黼	fu
+𫓧	fu
+𫖯	fu
+伽	ga
+咖	ga	2.6518765903%
+嘎	ga
+噶	ga
+尕	ga
+尜	ga
+尬	ga
+戛	ga	0.0525072197%
+旮	ga
+轧	ga	2.0528455285%
+钆	ga
+丐	gai
+垓	gai
+戤	gai
+改	gai
+晐	gai
+概	gai
+溉	gai
+盖	gai
+荄	gai
+该	gai
+赅	gai
+钙	gai
+陔	gai
+𬮿	gai
+㽏	gan
+坩	gan
+尴	gan
+干	gan
+感	gan
+擀	gan
+敢	gan
+旰	gan
+杆	gan
+柑	gan
+橄	gan
+泔	gan
+淦	gan
+澉	gan
+玕	gan
+甘	gan
+疳	gan
+矸	gan
+秆	gan
+竿	gan
+绀	gan
+肝	gan
+苷	gan
+虷	gan
+赣	gan
+赶	gan
+酐	gan
+鳡	gan
+㭎	gang
+冈	gang
+冮	gang
+刚	gang
+堽	gang
+岗	gang
+戆	gang
+扛	gang	0.0078644174%
+杠	gang
+港	gang
+矼	gang
+筻	gang
+纲	gang
+缸	gang
+罡	gang
+肛	gang
+钢	gang
+鿍	gang
+告	gao
+搞	gao
+杲	gao
+槁	gao
+槔	gao
+皋	gao
+睾	gao
+稿	gao
+筶	gao
+篙	gao
+糕	gao
+缟	gao
+羔	gao
+膏	gao
+藁	gao
+诰	gao
+郜	gao
+锆	gao
+镐	gao
+高	gao
+个	ge
+仡	ge
+割	ge
+各	ge
+合	ge	0.0001841982%
+咯	ge
+哥	ge
+哿	ge
+嗝	ge
+圪	ge
+塥	ge
+戈	ge
+搁	ge
+格	ge
+歌	ge
+滆	ge
+疙	ge
+盖	ge	0.2420664464%
+硌	ge
+胳	ge
+膈	ge
+舸	ge
+葛	ge
+虼	ge
+蛤	ge	4.1187345933%
+袼	ge
+铬	ge
+镉	ge
+阁	ge
+隔	ge
+革	ge
+饹	ge
+骼	ge
+鬲	ge
+鸽	ge
+给	gei
+亘	gen
+哏	gen
+根	gen
+艮	gen
+茛	gen
+跟	gen
+哽	geng
+埂	geng
+庚	geng
+暅	geng
+更	geng
+梗	geng
+浭	geng
+绠	geng
+羹	geng
+耕	geng
+耿	geng
+赓	geng
+颈	geng	0.0040268997%
+鲠	geng
+鹒	geng
+𬒔	geng
+䢼	gong
+供	gong
+公	gong
+共	gong
+功	gong
+宫	gong
+工	gong
+巩	gong
+弓	gong
+恭	gong
+拱	gong
+攻	gong
+汞	gong
+珙	gong
+硔	gong
+肱	gong
+蚣	gong
+觥	gong
+贡	gong
+躬	gong
+龚	gong
+佝	gou
+勾	gou
+句	gou	0.0002651461%
+垢	gou
+够	gou
+姤	gou
+媾	gou
+岣	gou
+彀	gou
+构	gou
+枸	gou
+沟	gou
+狗	gou
+笱	gou
+篝	gou
+缑	gou
+耇	gou
+苟	gou
+觏	gou
+诟	gou
+购	gou
+遘	gou
+钩	gou
+雊	gou
+鞲	gou
+估	gu
+古	gu
+呱	gu	0.0164907652%
+咕	gu
+嘏	gu
+固	gu
+堌	gu
+姑	gu
+孤	gu
+崮	gu
+故	gu
+梏	gu
+榖	gu
+毂	gu
+汩	gu
+沽	gu
+瀔	gu
+牯	gu
+牿	gu
+痼	gu
+瞽	gu
+箍	gu
+罟	gu
+羖	gu
+股	gu
+臌	gu
+菇	gu
+菰	gu
+蓇	gu
+蛄	gu
+蛊	gu
+觚	gu
+诂	gu
+谷	gu
+贾	gu	2.5580919583%
+轱	gu
+辜	gu
+酤	gu
+钴	gu
+锢	gu
+雇	gu
+顾	gu
+馉	gu
+骨	gu
+鲴	gu
+鸪	gu
+鹄	gu	0.075103267%
+鹘	gu
+鼓	gu
+𦙶	gu
+刮	gua
+剐	gua
+卦	gua
+呱	gua
+寡	gua
+挂	gua
+栝	gua
+瓜	gua
+胍	gua
+褂	gua
+诖	gua
+鸹	gua
+乖	guai
+夬	guai
+怪	guai
+拐	guai
+掴	guai
+倌	guan
+关	guan
+冠	guan
+官	guan
+惯	guan
+掼	guan
+棺	guan
+毌	guan
+涫	guan
+灌	guan
+爟	guan
+琯	guan
+瓘	guan
+盥	guan
+祼	guan
+筦	guan
+管	guan
+纶	guan	0.0329924117%
+罐	guan
+莞	guan	0.022296544%
+蒄	guan
+观	guan
+贯	guan
+馆	guan
+鳏	guan
+鳤	guan
+鹳	guan
+光	guang
+咣	guang
+垙	guang
+广	guang
+桄	guang
+洸	guang
+犷	guang
+珖	guang
+胱	guang
+逛	guang
+𨐈	guang
+刽	gui
+刿	gui
+匦	gui
+圭	gui
+妫	gui
+姽	gui
+宄	gui
+庋	gui
+归	gui
+晷	gui
+柜	gui
+桂	gui
+桧	gui
+炅	gui	0.0953743443%
+珪	gui
+瑰	gui
+癸	gui
+皈	gui
+硅	gui
+筀	gui
+簋	gui
+规	gui
+诡	gui
+贵	gui
+跪	gui
+轨	gui
+邽	gui
+闺	gui
+鬶	gui
+鬼	gui
+鲑	gui
+鳜	gui
+龟	gui
+棍	gun
+滚	gun
+磙	gun
+绲	gun
+衮	gun
+辊	gun
+鲧	gun
+呙	guo
+国	guo
+埚	guo
+崞	guo
+帼	guo
+掴	guo
+果	guo
+椁	guo
+涡	guo	0.0088971929%
+粿	guo
+聒	guo
+腘	guo
+虢	guo
+蜾	guo
+蝈	guo
+裹	guo
+过	guo
+郭	guo
+锅	guo
+馃	guo
+馘	guo
+𬇹	guo
+哈	ha
+蛤	ha
+铪	ha
+亥	hai
+咍	hai
+咳	hai	1.2859802708%
+嗐	hai
+嗨	hai
+孩	hai
+害	hai
+氦	hai
+海	hai
+胲	hai
+还	hai
+醢	hai
+骇	hai
+骸	hai
+㘎	han
+函	han
+含	han
+喊	han
+垾	han
+寒	han
+崡	han
+嵅	han
+悍	han
+憨	han
+憾	han
+扞	han
+捍	han
+撖	han
+撼	han
+旱	han
+晗	han
+暵	han
+汉	han
+汗	han
+浛	han
+涵	han
+瀚	han
+焊	han
+焓	han
+犴	han
+琀	han
+罕	han
+翰	han
+菡	han
+蔊	han
+虷	han
+蚶	han
+邗	han
+邯	han
+酣	han
+韩	han
+顸	han
+颔	han
+鼾	han
+吭	hang	0.0068082789%
+夯	hang
+巷	hang	0.0039825564%
+杭	hang
+沆	hang
+绗	hang
+航	hang
+行	hang
+颃	hang
+号	hao
+嗥	hao
+嚆	hao
+嚎	hao
+壕	hao
+好	hao
+昊	hao
+毫	hao
+浩	hao
+淏	hao
+濠	hao
+灏	hao
+皓	hao
+皞	hao
+耗	hao
+蒿	hao
+薅	hao
+蚝	hao
+豪	hao
+貉	hao
+郝	hao
+鄗	hao
+颢	hao
+何	he
+劾	he
+合	he
+吓	he	1.580714087%
+呵	he
+和	he
+喝	he
+嗬	he
+垎	he
+壑	he
+曷	he
+核	he
+河	he
+涸	he
+熇	he
+盉	he
+盍	he
+盒	he
+禾	he
+纥	he
+翮	he
+翯	he
+荷	he
+菏	he
+褐	he
+诃	he
+貉	he
+贺	he
+赫	he
+郃	he
+阂	he
+阖	he
+隺	he
+鞨	he
+颌	he
+饸	he
+鹖	he
+鹤	he
+龁	he
+龢	he
+𬌗	he
+嘿	hei
+黑	hei
+𬭶	hei
+很	hen
+恨	hen
+狠	hen
+痕	hen
+𬣳	hen
+亨	heng
+哼	heng
+堼	heng
+姮	heng
+恒	heng
+桁	heng
+横	heng
+珩	heng
+蘅	heng
+行	heng	0.0000725503%
+衡	heng
+鸻	heng
+吽	hong
+哄	hong
+唝	hong
+宏	hong
+弘	hong
+泓	hong
+洪	hong
+烘	hong
+玒	hong
+竑	hong
+红	hong
+纮	hong
+翃	hong
+荭	hong
+蕻	hong
+薨	hong
+虹	hong
+訇	hong
+讧	hong
+谼	hong
+轰	hong
+闳	hong
+鸿	hong
+黉	hong
+𫟹	hong
+𬭎	hong
+侯	hou
+候	hou
+厚	hou
+后	hou
+吼	hou
+喉	hou
+垕	hou
+堠	hou
+猴	hou
+瘊	hou
+篌	hou
+糇	hou
+逅	hou
+郈	hou
+骺	hou
+鲎	hou
+鲘	hou
+齁	hou
+𬭤	hou
+乎	hu
+互	hu
+冱	hu
+呼	hu
+和	hu	0.6599614333%
+唬	hu
+唿	hu
+囫	hu
+壶	hu
+嫭	hu
+岵	hu
+弧	hu
+忽	hu
+怙	hu
+惚	hu
+户	hu
+戽	hu
+扈	hu
+护	hu
+斛	hu
+昈	hu
+昒	hu
+核	hu	4.1261885609%
+槲	hu
+沪	hu
+浒	hu
+淴	hu
+湖	hu
+滹	hu
+烀	hu
+煳	hu
+狐	hu
+猢	hu
+琥	hu
+瑚	hu
+瓠	hu
+祜	hu
+笏	hu
+糊	hu
+縠	hu
+胡	hu
+葫	hu
+虎	hu
+蝴	hu
+觳	hu
+轷	hu
+鄠	hu
+醐	hu
+鳠	hu
+鹄	hu
+鹕	hu
+鹘	hu
+鹱	hu
+划	hua
+化	hua
+华	hua
+哗	hua
+婳	hua
+桦	hua
+滑	hua
+猾	hua
+画	hua
+砉	hua
+花	hua
+觟	hua
+话	hua
+铧	hua
+骅	hua
+坏	huai
+徊	huai
+怀	huai
+槐	huai
+淮	huai
+踝	huai
+㬊	huan
+唤	huan
+圜	huan
+奂	huan
+嬛	huan
+宦	huan
+寰	huan
+峘	huan
+幻	huan
+患	huan
+换	huan
+擐	huan
+桓	huan
+欢	huan
+洹	huan
+浣	huan
+涣	huan
+漶	huan
+澴	huan
+焕	huan
+獾	huan
+环	huan
+痪	huan
+缓	huan
+缳	huan
+荁	huan
+萑	huan
+豢	huan
+貆	huan
+还	huan	6.0000182995%
+逭	huan
+郇	huan
+锾	huan
+镮	huan
+鬟	huan
+鲩	huan
+鹮	huan
+𤩽	huan
+𬘫	huan
+㿠	huang
+凰	huang
+喤	huang
+媓	huang
+幌	huang
+徨	huang
+恍	huang
+惶	huang
+慌	huang
+晃	huang
+湟	huang
+滉	huang
+潢	huang
+煌	huang
+瑝	huang
+璜	huang
+癀	huang
+皇	huang
+磺	huang
+篁	huang
+簧	huang
+肓	huang
+艎	huang
+荒	huang
+蝗	huang
+蟥	huang
+谎	huang
+遑	huang
+锽	huang
+隍	huang
+鳇	huang
+黄	huang
+𨱑	huang
+㧑	hui
+会	hui
+卉	hui
+咴	hui
+哕	hui	1.5037593985%
+喙	hui
+回	hui
+彗	hui
+徽	hui
+恚	hui
+恢	hui
+悔	hui
+惠	hui
+慧	hui
+挥	hui
+晖	hui
+晦	hui
+桧	hui	0.0543921675%
+橞	hui
+毁	hui
+汇	hui
+洄	hui
+浍	hui
+溃	hui	0.0035712373%
+灰	hui
+烠	hui
+烩	hui
+珲	hui
+硊	hui
+秽	hui
+绘	hui
+翙	hui
+翚	hui
+茴	hui
+荟	hui
+蕙	hui
+虺	hui
+蛔	hui
+蟪	hui
+袆	hui
+讳	hui
+诙	hui
+诲	hui
+贿	hui
+辉	hui
+隳	hui
+麾	hui
+𬤝	hui
+𬭬	hui
+婚	hun
+惛	hun
+昏	hun
+浑	hun
+混	hun
+溷	hun
+珲	hun
+碈	hun
+荤	hun
+诨	hun
+阍	hun
+馄	hun
+魂	hun
+㸌	huo
+伙	huo
+佸	huo
+劐	huo
+和	huo	0.0660105387%
+嚄	huo
+嚯	huo
+夥	huo
+惑	huo
+或	huo
+攉	huo
+活	huo
+漷	huo
+濩	huo
+火	huo
+祸	huo
+耠	huo
+获	huo
+藿	huo
+蠖	huo
+豁	huo
+货	huo
+钬	huo
+锪	huo
+镬	huo
+霍	huo
+𬴃	huo
+㴔	ji
+乩	ji
+亟	ji
+伋	ji
+伎	ji
+佶	ji
+偈	ji
+冀	ji
+几	ji
+击	ji
+剂	ji
+剞	ji
+即	ji
+及	ji
+叽	ji
+吉	ji
+唧	ji
+圾	ji
+垍	ji
+基	ji
+堲	ji
+墼	ji
+奇	ji	3.0532354567%
+妓	ji
+姞	ji
+姬	ji
+嫉	ji
+季	ji
+寂	ji
+寄	ji
+屐	ji
+岌	ji
+嵇	ji
+嵴	ji
+己	ji
+徛	ji
+忌	ji
+急	ji
+悸	ji
+惎	ji
+戟	ji
+戢	ji
+技	ji
+挤	ji
+掎	ji
+既	ji
+暨	ji
+期	ji	0.000308907%
+机	ji
+极	ji
+枅	ji
+棘	ji
+楫	ji
+殛	ji
+汲	ji
+洎	ji
+济	ji
+漈	ji
+激	ji
+瀱	ji
+犄	ji
+玑	ji
+畸	ji
+畿	ji
+疾	ji
+瘠	ji
+矶	ji
+祭	ji
+积	ji
+稷	ji
+稽	ji
+穄	ji
+笄	ji
+笈	ji
+箕	ji
+籍	ji
+系	ji
+级	ji
+纪	ji
+给	ji	1.0000051031%
+继	ji
+绩	ji
+缉	ji
+罽	ji
+羁	ji
+耤	ji
+肌	ji
+脊	ji
+芨	ji
+芰	ji
+荠	ji
+蒺	ji
+蓟	ji
+蕺	ji
+藉	ji
+虮	ji
+觊	ji
+觭	ji
+计	ji
+讥	ji
+记	ji
+赍	ji
+跻	ji
+跽	ji
+蹐	ji
+辑	ji
+迹	ji
+际	ji
+集	ji
+霁	ji
+饥	ji
+骥	ji
+髻	ji
+鱾	ji
+鲚	ji
+鲫	ji
+鸡	ji
+鹡	ji
+麂	ji
+齑	ji
+𪟝	ji
+𫌀	ji
+𫓯	ji
+𫓹	ji
+𬯀	ji
+𬶨	ji
+𬶭	ji
+价	jia
+伽	jia
+佳	jia
+假	jia
+加	jia
+嘉	jia
+夹	jia
+嫁	jia
+家	jia
+岬	jia
+恝	jia
+戛	jia
+斝	jia
+架	jia
+枷	jia
+槚	jia
+泇	jia
+浃	jia
+珈	jia
+甲	jia
+痂	jia
+瘕	jia
+稼	jia
+笳	jia
+胛	jia
+茄	jia
+荚	jia
+葭	jia
+蛱	jia
+袈	jia
+贾	jia
+跏	jia
+迦	jia
+郏	jia
+钾	jia
+铗	jia
+镓	jia
+颊	jia
+驾	jia
+𬂩	jia
+件	jian
+俭	jian
+健	jian
+僭	jian
+兼	jian
+减	jian
+剑	jian
+剪	jian
+坚	jian
+奸	jian
+尖	jian
+建	jian
+戋	jian
+戬	jian
+拣	jian
+捡	jian
+搛	jian
+暕	jian
+枧	jian
+柬	jian
+检	jian
+楗	jian
+槛	jian	3.3552558243%
+歼	jian
+毽	jian
+涧	jian
+渐	jian
+湔	jian
+溅	jian
+煎	jian
+牮	jian
+犍	jian
+监	jian
+睑	jian
+碱	jian
+笕	jian
+笺	jian
+简	jian
+箭	jian
+篯	jian
+缄	jian
+缣	jian
+翦	jian
+肩	jian
+腱	jian
+舰	jian
+艰	jian
+茧	jian
+荐	jian
+菅	jian
+蒹	jian
+裥	jian
+见	jian
+謇	jian
+谏	jian
+谫	jian
+贱	jian
+趼	jian
+践	jian
+踺	jian
+蹇	jian
+鉴	jian
+锏	jian
+键	jian
+间	jian
+鞬	jian
+鞯	jian
+饯	jian
+鲣	jian
+鳒	jian
+鹣	jian
+𬣡	jian
+僵	jiang
+匠	jiang
+奖	jiang
+姜	jiang
+将	jiang
+弶	jiang
+强	jiang	0.0001469126%
+桨	jiang
+江	jiang
+洚	jiang
+浆	jiang
+犟	jiang
+疆	jiang
+礓	jiang
+糨	jiang
+绛	jiang
+缰	jiang
+耩	jiang
+膙	jiang
+茳	jiang
+蒋	jiang
+虹	jiang	0.0023158065%
+讲	jiang
+豇	jiang
+酱	jiang
+降	jiang
+鳉	jiang
+䴔	jiao
+交	jiao
+佼	jiao
+侥	jiao
+僬	jiao
+剿	jiao
+叫	jiao
+噍	jiao
+嚼	jiao
+姣	jiao
+娇	jiao
+峤	jiao
+峧	jiao
+徼	jiao
+恔	jiao
+搅	jiao
+教	jiao
+敫	jiao
+斠	jiao
+校	jiao	1.4596866028%
+椒	jiao
+浇	jiao
+湫	jiao
+滘	jiao
+漖	jiao
+焦	jiao
+燋	jiao
+狡	jiao
+璬	jiao
+皎	jiao
+皦	jiao
+皭	jiao
+矫	jiao
+礁	jiao
+窖	jiao
+绞	jiao
+缴	jiao
+胶	jiao
+脚	jiao
+艽	jiao
+茭	jiao
+蕉	jiao
+藠	jiao
+蛟	jiao
+觉	jiao	1.1801815813%
+角	jiao
+跤	jiao
+轿	jiao
+较	jiao
+郊	jiao
+酵	jiao
+醮	jiao
+铰	jiao
+饺	jiao
+骄	jiao
+鲛	jiao
+鹪	jiao
+㛃	jie
+介	jie
+价	jie	6.0003014052%
+借	jie
+劫	jie
+劼	jie
+喈	jie
+嗟	jie
+姐	jie
+婕	jie
+孑	jie
+届	jie
+岊	jie
+悈	jie
+戒	jie
+截	jie
+拮	jie
+捷	jie
+接	jie
+揭	jie
+杰	jie
+桀	jie
+桔	jie
+楷	jie	0.0218197687%
+檞	jie
+洁	jie
+湝	jie
+玠	jie
+界	jie
+疖	jie
+疥	jie
+皆	jie
+睫	jie
+碣	jie
+秸	jie
+竭	jie
+絜	jie
+结	jie
+羯	jie
+节	jie
+芥	jie
+藉	jie
+蚧	jie
+蜐	jie
+街	jie
+褯	jie
+解	jie
+讦	jie
+诘	jie
+诫	jie
+阶	jie
+颉	jie
+骱	jie
+鲒	jie
+仅	jin
+今	jin
+劲	jin
+卺	jin
+噤	jin
+堇	jin
+墐	jin
+妗	jin
+尽	jin
+巾	jin
+廑	jin
+斤	jin
+晋	jin
+槿	jin
+殣	jin
+津	jin
+浕	jin
+浸	jin
+溍	jin
+烬	jin
+珒	jin
+琎	jin
+瑨	jin
+瑾	jin
+矜	jin
+祲	jin
+禁	jin
+筋	jin
+紧	jin
+缙	jin
+荩	jin
+衿	jin
+襟	jin
+觐	jin
+谨	jin
+赆	jin
+近	jin
+进	jin
+金	jin
+锦	jin
+靳	jin
+馑	jin
+𬬱	jin
+䴖	jing
+丼	jing
+井	jing
+京	jing
+倞	jing
+儆	jing
+兢	jing
+净	jing
+刭	jing
+劲	jing	3.0524728662%
+境	jing
+婧	jing
+径	jing
+惊	jing
+憬	jing
+敬	jing
+旌	jing
+景	jing
+晶	jing
+汫	jing
+泾	jing
+猄	jing
+獍	jing
+璟	jing
+璥	jing
+痉	jing
+睛	jing
+竞	jing
+竟	jing
+竫	jing
+粳	jing
+精	jing
+经	jing
+肼	jing
+胫	jing
+腈	jing
+茎	jing
+荆	jing
+菁	jing
+警	jing
+迳	jing
+镜	jing
+阱	jing
+靓	jing	2.8661327231%
+靖	jing
+静	jing
+颈	jing
+鲸	jing
+麖	jing
+鼱	jing
+䌹	jiong
+冏	jiong
+囧	jiong
+坰	jiong
+扃	jiong
+泂	jiong
+炅	jiong
+炯	jiong
+窘	jiong
+迥	jiong
+颎	jiong
+𬳶	jiong
+㠇	jiu
+久	jiu
+九	jiu
+僦	jiu
+厩	jiu
+咎	jiu
+啾	jiu
+就	jiu
+揪	jiu
+救	jiu
+旧	jiu
+柩	jiu
+桕	jiu
+氿	jiu
+灸	jiu
+玖	jiu
+疚	jiu
+究	jiu
+纠	jiu
+臼	jiu
+舅	jiu
+赳	jiu
+酒	jiu
+阄	jiu
+韭	jiu
+鬏	jiu
+鸠	jiu
+鹫	jiu
+䴗	ju
+举	ju
+俱	ju
+倨	ju
+具	ju
+剧	ju
+句	ju
+咀	ju
+娵	ju
+局	ju
+居	ju
+屦	ju
+岠	ju
+岨	ju
+崌	ju
+巨	ju
+弆	ju
+惧	ju
+拒	ju
+拘	ju
+据	ju
+掬	ju
+枸	ju	0.1915708812%
+柜	ju	0.0021784357%
+桔	ju
+椐	ju
+榉	ju
+橘	ju
+沮	ju
+泃	ju
+澽	ju
+炬	ju
+焗	ju
+犋	ju
+狙	ju
+琚	ju
+疽	ju
+矩	ju
+砠	ju
+秬	ju
+窭	ju
+筥	ju
+聚	ju
+腒	ju
+苣	ju
+苴	ju
+莒	ju
+菊	ju
+蒟	ju
+裾	ju
+讵	ju
+趄	ju	0.0410930758%
+距	ju
+踞	ju
+踽	ju
+車	ju
+车	ju	4.4841551283%
+遽	ju
+醵	ju
+钜	ju
+锔	ju
+锯	ju
+雎	ju
+鞠	ju
+鞫	ju
+飓	ju
+驹	ju
+龃	ju
+𬶋	ju
+倦	juan
+卷	juan
+圈	juan	2.5839314856%
+娟	juan
+捐	juan
+桊	juan
+涓	juan
+焆	juan
+狷	juan
+眷	juan
+绢	juan
+蠲	juan
+鄄	juan
+锩	juan
+镌	juan
+隽	juan
+鹃	juan
+㵐	jue
+倔	jue
+傕	jue
+决	jue
+劂	jue
+厥	jue
+噘	jue
+嚼	jue
+孓	jue
+崛	jue
+抉	jue
+掘	jue
+撅	jue
+攫	jue
+桷	jue
+橛	jue
+爝	jue
+爵	jue
+獗	jue
+玃	jue
+玦	jue
+珏	jue
+矍	jue
+砄	jue
+绝	jue
+蕨	jue
+觉	jue
+角	jue	4.3040698665%
+觖	jue
+诀	jue
+谲	jue
+蹶	jue
+镢	jue
+𫔎	jue
+𫘝	jue
+䐃	jun
+俊	jun
+军	jun
+君	jun
+均	jun
+峻	jun
+捃	jun
+晙	jun
+浚	jun
+焌	jun
+珺	jun
+畯	jun
+皲	jun
+竣	jun
+筠	jun	0.0130047467%
+莙	jun
+菌	jun
+葰	jun
+郡	jun
+钧	jun
+隽	jun	0.0391389432%
+骏	jun
+鲪	jun
+麇	jun
+龟	jun	0.0036993193%
+卡	ka
+咔	ka
+咖	ka
+咯	ka
+喀	ka
+胩	ka
+凯	kai
+剀	kai
+垲	kai
+开	kai
+忾	kai
+恺	kai
+慨	kai
+揩	kai
+楷	kai
+炌	kai
+蒈	kai
+铠	kai
+锎	kai
+锴	kai
+闿	kai
+侃	kan
+刊	kan
+勘	kan
+坎	kan
+堪	kan
+墈	kan
+崁	kan
+嵁	kan
+戡	kan
+槛	kan
+看	kan
+瞰	kan
+砍	kan
+磡	kan
+莰	kan
+衎	kan
+阚	kan
+龛	kan
+亢	kang
+伉	kang
+康	kang
+慷	kang
+扛	kang
+抗	kang
+炕	kang
+糠	kang
+钪	kang
+闶	kang
+𡐓	kang
+𩾌	kang
+㸆	kao
+尻	kao
+拷	kao
+栲	kao
+洘	kao
+烤	kao
+犒	kao
+考	kao
+铐	kao
+靠	kao
+克	ke
+刻	ke
+匼	ke
+可	ke
+咳	ke
+嗑	ke
+坷	ke
+壳	ke
+客	ke
+岢	ke
+恪	ke
+柯	ke
+棵	ke
+氪	ke
+渴	ke
+溘	ke
+炣	ke
+牁	ke
+珂	ke
+疴	ke
+瞌	ke
+磕	ke
+科	ke
+稞	ke
+窠	ke
+缂	ke
+苛	ke
+蝌	ke
+课	ke
+轲	ke
+锞	ke
+颏	ke
+颗	ke
+骒	ke
+髁	ke
+剋	kei
+啃	ken
+垦	ken
+恳	ken
+肯	ken
+裉	ken
+吭	keng
+坑	keng
+硁	keng
+铿	keng
+倥	kong
+埪	kong
+孔	kong
+崆	kong
+恐	kong
+控	kong
+硿	kong
+空	kong
+箜	kong
+口	kou
+叩	kou
+寇	kou
+扣	kou
+抠	kou
+眍	kou
+筘	kou
+芤	kou
+蔻	kou
+𫸩	kou
+刳	ku
+哭	ku
+喾	ku
+圐	ku
+库	ku
+枯	ku
+矻	ku
+窟	ku
+绔	ku
+苦	ku
+裤	ku
+酷	ku
+骷	ku
+侉	kua
+垮	kua
+夸	kua
+姱	kua
+挎	kua
+胯	kua
+跨	kua
+㧟	kuai
+会	kuai	0.100001055%
+侩	kuai
+哙	kuai
+块	kuai
+快	kuai
+狯	kuai
+筷	kuai
+脍	kuai
+蒯	kuai
+郐	kuai
+鲙	kuai
+宽	kuan
+款	kuan
+髋	kuan
+况	kuang
+匡	kuang
+哐	kuang
+圹	kuang
+夼	kuang
+旷	kuang
+框	kuang
+洭	kuang
+狂	kuang
+眶	kuang
+矿	kuang
+筐	kuang
+纩	kuang
+诓	kuang
+诳	kuang
+贶	kuang
+邝	kuang
+𫛭	kuang
+亏	kui
+傀	kui
+匮	kui
+喟	kui
+喹	kui
+夔	kui
+奎	kui
+岿	kui
+悝	kui
+愦	kui
+愧	kui
+戣	kui
+揆	kui
+暌	kui
+櫆	kui
+溃	kui
+煃	kui
+盔	kui
+睽	kui
+窥	kui
+篑	kui
+聩	kui
+葵	kui
+蒉	kui
+蝰	kui
+跬	kui
+逵	kui
+馈	kui
+馗	kui
+骙	kui
+魁	kui
+𫠆	kui
+困	kun
+坤	kun
+堃	kun
+壸	kun
+婫	kun
+悃	kun
+捆	kun
+昆	kun
+焜	kun
+琨	kun
+裈	kun
+醌	kun
+锟	kun
+阃	kun
+髡	kun
+鲲	kun
+鹍	kun
+廓	kuo
+扩	kuo
+括	kuo
+蛞	kuo
+阔	kuo
+剌	la
+啦	la
+喇	la
+垃	la
+拉	la
+旯	la
+瘌	la
+砬	la
+腊	la
+菈	la
+落	la	0.9485806858%
+蜡	la
+蝲	la
+辣	la
+邋	la
+镴	la
+鞡	la
+𬶟	la
+俫	lai
+崃	lai
+徕	lai
+来	lai
+梾	lai
+涞	lai
+濑	lai
+癞	lai
+睐	lai
+籁	lai
+莱	lai
+赉	lai
+赖	lai
+铼	lai
+兰	lan
+婪	lan
+岚	lan
+懒	lan
+拦	lan
+揽	lan
+斓	lan
+栏	lan
+榄	lan
+滥	lan
+漤	lan
+澜	lan
+烂	lan
+篮	lan
+缆	lan
+罱	lan
+蓝	lan
+褴	lan
+襕	lan
+览	lan
+谰	lan
+镧	lan
+阑	lan
+𬒗	lan
+㫰	lang
+㮾	lang
+啷	lang
+埌	lang
+塱	lang
+崀	lang
+廊	lang
+朗	lang
+桹	lang
+榔	lang
+浪	lang
+烺	lang
+狼	lang
+琅	lang
+稂	lang
+筤	lang
+莨	lang
+蒗	lang
+蓢	lang
+螂	lang
+郎	lang
+锒	lang
+阆	lang
+佬	lao
+劳	lao
+唠	lao
+姥	lao
+嫪	lao
+崂	lao
+捞	lao
+栳	lao
+涝	lao
+烙	lao
+牢	lao
+痨	lao
+络	lao	0.001793143%
+老	lao
+耢	lao
+荖	lao
+落	lao	0.9485806858%
+酪	lao
+醪	lao
+铑	lao
+铹	lao
+𫭼	lao
+乐	le
+了	le
+仂	le
+勒	le
+叻	le
+嘞	le	0.0015601719%
+泐	le
+簕	le
+饹	le
+鳓	le
+儡	lei
+勒	lei
+嘞	lei
+垒	lei
+嫘	lei
+擂	lei
+檑	lei
+泪	lei
+癗	lei
+磊	lei
+礌	lei
+类	lei
+累	lei
+缧	lei
+罍	lei
+羸	lei
+耒	lei
+肋	lei
+蕾	lei
+藟	lei
+诔	lei
+酹	lei
+镭	lei
+雷	lei
+冷	leng
+堎	leng
+塄	leng
+崚	leng
+愣	leng
+棱	leng
+楞	leng
+㰀	li
+丽	li
+例	li
+俐	li
+俚	li
+俪	li
+傈	li
+凓	li
+利	li
+力	li
+励	li
+历	li
+厉	li
+厘	li
+吏	li
+呖	li
+哩	li
+唳	li
+喱	li
+坜	li
+娌	li
+嫠	li
+戾	li
+朸	li
+李	li
+枥	li
+栎	li
+栗	li
+梨	li
+沥	li
+浬	li
+浰	li
+溧	li
+漓	li
+澧	li
+犁	li
+狸	li
+猁	li
+珕	li
+理	li
+璃	li
+疠	li
+疬	li
+痢	li
+砺	li
+砾	li
+礼	li
+离	li
+立	li
+笠	li
+篥	li
+篱	li
+粒	li
+粝	li
+缡	li
+罹	li
+苈	li
+荔	li
+莅	li
+莉	li
+蓠	li
+藜	li
+蛎	li
+蜊	li
+蠡	li
+詈	li
+跞	li
+轹	li
+逦	li
+郦	li
+醨	li
+醴	li
+里	li
+锂	li
+隶	li
+雳	li
+骊	li
+鬲	li
+鲡	li
+鲤	li
+鳢	li
+鹂	li
+黎	li
+黧	li
+𫵷	li
+𬍛	li
+俩	lia
+奁	lian
+帘	lian
+廉	lian
+怜	lian
+恋	lian
+敛	lian
+梿	lian
+楝	lian
+殓	lian
+浰	lian	5.2631578947%
+涟	lian
+潋	lian
+濂	lian
+炼	lian
+琏	lian
+瑓	lian
+练	lian
+联	lian
+脸	lian
+莲	lian
+蔹	lian
+蠊	lian
+裢	lian
+裣	lian
+连	lian
+链	lian
+镰	lian
+鲢	lian
+𬶠	lian
+两	liang
+亮	liang
+俍	liang
+俩	liang
+凉	liang
+墚	liang
+悢	liang
+晾	liang
+梁	liang
+椋	liang
+粮	liang
+粱	liang
+良	liang
+莨	liang
+谅	liang
+踉	liang
+辆	liang
+辌	liang
+量	liang
+靓	liang
+魉	liang
+𫟅	liang
+𬜯	liang
+了	liao	0.0000287254%
+僚	liao
+嘹	liao
+嫽	liao
+寥	liao
+寮	liao
+尥	liao
+廖	liao
+憭	liao
+撂	liao
+撩	liao
+料	liao
+橑	liao
+漻	liao
+潦	liao
+燎	liao
+獠	liao
+疗	liao
+瞭	liao
+簝	liao
+缭	liao
+聊	liao
+蓼	liao
+蹽	liao
+辽	liao
+钌	liao
+镣	liao
+髎	liao
+鹩	liao
+𪤗	liao
+䴕	lie
+冽	lie
+列	lie
+劣	lie
+咧	lie
+埒	lie
+峛	lie
+捩	lie
+洌	lie
+烈	lie
+猎	lie
+脟	lie
+裂	lie
+趔	lie
+躐	lie
+鬣	lie
+𫚭	lie
+临	lin
+凛	lin
+吝	lin
+啉	lin
+嶙	lin
+廪	lin
+懔	lin
+拎	lin
+林	lin
+檩	lin
+淋	lin
+潾	lin
+琳	lin
+璘	lin
+瞵	lin
+磷	lin
+箖	lin
+粼	lin
+翷	lin
+膦	lin
+蔺	lin
+赁	lin
+躏	lin
+辚	lin
+遴	lin
+邻	lin
+霖	lin
+鳞	lin
+麟	lin
+𬭸	lin
+𬴊	lin
+〇	ling
+㥄	ling
+令	ling
+伶	ling
+凌	ling
+另	ling
+呤	ling
+囹	ling
+坽	ling
+姈	ling
+岭	ling
+昤	ling
+柃	ling
+棂	ling
+棱	ling	0.0127689459%
+泠	ling
+澪	ling
+灵	ling
+玲	ling
+瓴	ling
+祾	ling
+绫	ling
+羚	ling
+翎	ling
+聆	ling
+舲	ling
+苓	ling
+菱	ling
+蛉	ling
+酃	ling
+铃	ling
+陵	ling
+零	ling
+领	ling
+鲮	ling
+鸰	ling
+龄	ling
+六	liu
+刘	liu
+旒	liu
+柳	liu
+榴	liu
+流	liu
+浏	liu
+溜	liu
+熘	liu
+珋	liu
+琉	liu
+瑬	liu
+留	liu
+疁	liu
+瘤	liu
+硫	liu
+碌	liu	0.0040910672%
+绺	liu
+罶	liu
+遛	liu
+鎏	liu
+锍	liu
+镏	liu
+镠	liu
+陆	liu	0.9275035758%
+飗	liu
+馏	liu
+骝	liu
+鹠	liu
+鹨	liu
+咯	lo
+咙	long
+哢	long
+垄	long
+弄	long	0.0005108818%
+拢	long
+昽	long
+栊	long
+泷	long
+漋	long
+珑	long
+癃	long
+眬	long
+砻	long
+窿	long
+笼	long
+聋	long
+胧	long
+茏	long
+陇	long
+隆	long
+龙	long
+𬕂	long
+䁖	lou
+偻	lou
+剅	lou
+喽	lou
+娄	lou
+嵝	lou
+搂	lou
+楼	lou
+溇	lou
+漏	lou
+瘘	lou
+篓	lou
+耧	lou
+蒌	lou
+蝼	lou
+镂	lou
+陋	lou
+露	lou	6.0001977001%
+髅	lou
+𦝼	lou
+𪣻	lou
+僇	lu
+勠	lu
+卢	lu
+卤	lu
+噜	lu
+垆	lu
+庐	lu
+录	lu
+戮	lu
+掳	lu
+撸	lu
+栌	lu
+橹	lu
+氇	lu
+泸	lu
+渌	lu
+漉	lu
+潞	lu
+澛	lu
+炉	lu
+琭	lu
+璐	lu
+甪	lu
+碌	lu
+禄	lu
+稑	lu
+箓	lu
+簏	lu
+绿	lu	0.0008147104%
+胪	lu
+舻	lu
+芦	lu
+菉	lu
+蕗	lu
+虏	lu
+赂	lu
+路	lu
+轳	lu
+辂	lu
+辘	lu
+逯	lu
+镥	lu
+陆	lu
+露	lu
+颅	lu
+鲁	lu
+鲈	lu
+鸬	lu
+鹭	lu
+鹿	lu
+麓	lu
+𫘧	lu
+𬬻	lu
+乱	luan
+卵	luan
+娈	luan
+孪	luan
+峦	luan
+挛	luan
+栾	luan
+滦	luan
+脔	luan
+銮	luan
+鸾	luan
+仑	lun
+伦	lun
+囵	lun
+抡	lun
+沦	lun
+纶	lun
+论	lun
+轮	lun
+𫭢	lun
+𬬭	lun
+倮	luo
+咯	luo
+啰	luo
+捋	luo	1.0554916919%
+摞	luo
+椤	luo
+泺	luo
+洛	luo
+漯	luo
+烙	luo	4.7984119378%
+猡	luo
+珞	luo
+瘰	luo
+箩	luo
+络	luo
+罗	luo
+脶	luo
+荦	luo
+萝	luo
+落	luo
+蓏	luo
+螺	luo
+蠃	luo
+裸	luo
+逻	luo
+锣	luo
+雒	luo
+骆	luo
+骡	luo
+侣	lv
+偻	lv	0.0641848524%
+吕	lv
+垏	lv
+屡	lv
+履	lv
+律	lv
+捋	lv
+旅	lv
+梠	lv
+榈	lv
+氯	lv
+滤	lv
+率	lv
+稆	lv
+绿	lv
+缕	lv
+膂	lv
+葎	lv
+虑	lv
+褛	lv
+铝	lv
+闾	lv
+驴	lv
+𦝼	lv
+䂮	lve
+圙	lve
+掠	lve
+略	lve
+锊	lve
+吗	ma
+嘛	ma
+妈	ma
+抹	ma
+摩	ma	0.0011891313%
+杩	ma
+犸	ma
+玛	ma
+码	ma
+祃	ma
+蚂	ma
+蟆	ma
+马	ma
+骂	ma
+麻	ma
+买	mai
+劢	mai
+卖	mai
+唛	mai
+埋	mai
+脉	mai
+荬	mai
+迈	mai
+霾	mai
+麦	mai
+鿏	mai
+埋	man	0.0014324082%
+墁	man
+嫚	man
+幔	man
+慢	man
+曼	man
+满	man
+漫	man
+瞒	man
+缦	man
+蔓	man
+蛮	man
+螨	man
+谩	man
+镘	man
+鞔	man
+颟	man
+馒	man
+鬘	man
+鳗	man
+𬜬	man
+厖	mang
+尨	mang
+忙	mang
+杧	mang
+氓	mang
+漭	mang
+牤	mang
+牻	mang
+盲	mang
+硭	mang
+芒	mang
+茫	mang
+莽	mang
+蟒	mang
+邙	mang
+冇	mao
+冒	mao
+卯	mao
+峁	mao
+帽	mao
+懋	mao
+旄	mao
+昴	mao
+楙	mao
+毛	mao
+泖	mao
+牦	mao
+猫	mao
+瑁	mao
+眊	mao
+瞀	mao
+矛	mao
+耄	mao
+芼	mao
+茂	mao
+茅	mao
+茆	mao
+蝥	mao
+蟊	mao
+袤	mao
+貌	mao
+贸	mao
+鄚	mao
+铆	mao
+锚	mao
+髦	mao
+么	me
+妹	mei
+媄	mei
+媒	mei
+媚	mei
+寐	mei
+嵋	mei
+昧	mei
+枚	mei
+梅	mei
+楣	mei
+每	mei
+没	mei
+浼	mei
+渼	mei
+湄	mei
+煤	mei
+玫	mei
+瑂	mei
+眉	mei
+糜	mei	0.0237416904%
+美	mei
+莓	mei
+袂	mei
+郿	mei
+酶	mei
+镁	mei
+镅	mei
+霉	mei
+魅	mei
+鹛	mei
+们	men
+呇	men
+懑	men
+扪	men
+焖	men
+钔	men
+门	men
+闷	men
+𫞩	men
+㠓	meng
+勐	meng
+孟	meng
+幪	meng
+懵	meng
+朦	meng
+梦	meng
+檬	meng
+濛	meng
+猛	meng
+獴	meng
+甍	meng
+盟	meng
+瞢	meng
+礞	meng
+艋	meng
+艨	meng
+萌	meng
+蒙	meng
+虻	meng
+蜢	meng
+蠓	meng
+锰	meng
+鹲	meng
+𫑡	meng
+咪	mi
+嘧	mi
+宓	mi
+密	mi
+幂	mi
+弥	mi
+弭	mi
+敉	mi
+汨	mi
+泌	mi
+洣	mi
+猕	mi
+眯	mi
+祕	mi
+祢	mi
+秘	mi
+米	mi
+糜	mi
+縻	mi
+脒	mi
+芈	mi
+蓂	mi
+蘼	mi
+蜜	mi
+觅	mi
+谜	mi
+谧	mi
+迷	mi
+醚	mi
+醾	mi
+靡	mi
+麋	mi
+丏	mian
+偭	mian
+免	mian
+冕	mian
+勉	mian
+勔	mian
+娩	mian
+愐	mian
+棉	mian
+沔	mian
+渑	mian
+湎	mian
+眄	mian
+眠	mian
+绵	mian
+缅	mian
+腼	mian
+面	mian
+𩾃	mian
+喵	miao
+妙	miao
+庙	miao
+描	miao
+杪	miao
+淼	miao
+渺	miao
+眇	miao
+瞄	miao
+秒	miao
+缈	miao
+缪	miao	0.0134210173%
+苗	miao
+藐	miao
+邈	miao
+鹋	miao
+乜	mie
+咩	mie
+灭	mie
+篾	mie
+蔑	mie
+岷	min
+忞	min
+悯	min
+愍	min
+抿	min
+敏	min
+旻	min
+民	min
+泯	min
+湣	min
+珉	min
+皿	min
+缗	min
+苠	min
+闵	min
+闽	min
+鳘	min
+黾	min
+冥	ming
+名	ming
+命	ming
+明	ming
+暝	ming
+洺	ming
+溟	ming
+瞑	ming
+茗	ming
+螟	ming
+酩	ming
+铭	ming
+鸣	ming
+缪	miu	10.0053684069%
+谬	miu
+万	mo	0.000166472%
+墨	mo
+嫫	mo
+嬷	mo
+寞	mo
+抹	mo
+摩	mo
+摸	mo
+摹	mo
+无	mo	0.0000478779%
+末	mo
+模	mo
+殁	mo
+没	mo	1.3097204484%
+沫	mo
+漠	mo
+瘼	mo
+磨	mo
+秣	mo
+耱	mo
+脉	mo	0.0014891811%
+膜	mo
+茉	mo
+莫	mo
+蓦	mo
+藦	mo
+蘑	mo
+谟	mo
+貊	mo
+貘	mo
+镆	mo
+陌	mo
+靺	mo
+馍	mo
+魔	mo
+麽	mo
+默	mo
+𬙊	mo
+侔	mou
+哞	mou
+某	mou
+牟	mou
+眸	mou
+缪	mou
+蛑	mou
+谋	mou
+鍪	mou
+亩	mu
+仫	mu
+募	mu
+呒	mu
+墓	mu
+姆	mu
+幕	mu
+慕	mu
+拇	mu
+暮	mu
+木	mu
+模	mu
+母	mu
+毪	mu
+沐	mu
+牟	mu	0.0143235694%
+牡	mu
+牧	mu
+目	mu
+睦	mu
+穆	mu
+苜	mu
+钼	mu
+𧿹	mu
+𬭁	mu
+乸	na
+南	na	0.0002335025%
+呐	na
+哪	na
+娜	na
+拿	na
+捺	na
+纳	na
+肭	na
+衲	na
+那	na
+钠	na
+镎	na
+𦰡	na
+乃	nai
+佴	nai
+奈	nai
+奶	nai
+柰	nai
+氖	nai
+耏	nai
+耐	nai
+艿	nai
+萘	nai
+迺	nai
+鼐	nai
+南	nan
+喃	nan
+囡	nan
+婻	nan
+楠	nan
+男	nan
+腩	nan
+萳	nan
+蝻	nan
+赧	nan
+难	nan
+囊	nang
+囔	nang
+攮	nang
+曩	nang
+馕	nang
+齉	nang
+呶	nao
+垴	nao
+孬	nao
+峱	nao
+恼	nao
+挠	nao
+淖	nao
+猱	nao
+瑙	nao
+硇	nao
+脑	nao
+臑	nao
+蛲	nao
+铙	nao
+闹	nao
+呢	ne
+哪	ne	0.0002002914%
+讷	ne
+内	nei
+馁	nei
+嫩	nen
+恁	nen
+能	neng
+伲	ni
+你	ni
+倪	ni
+匿	ni
+呢	ni	0.001115138%
+坭	ni
+妮	ni
+尼	ni
+怩	ni
+拟	ni
+旎	ni
+昵	ni
+泥	ni
+溺	ni
+猊	ni
+睨	ni
+腻	ni
+薿	ni
+逆	ni
+铌	ni
+霓	ni
+鲵	ni
+麑	ni
+𨺙	ni
+𫐐	ni
+𫠜	ni
+埝	nian
+年	nian
+廿	nian
+念	nian
+拈	nian
+捻	nian
+撵	nian
+碾	nian
+粘	nian	0.0055063047%
+蔫	nian
+辇	nian
+鲇	nian
+鲶	nian
+黏	nian
+娘	niang
+嬢	niang
+酿	niang
+尿	niao
+脲	niao
+茑	niao
+袅	niao
+鸟	niao
+乜	nie	0.1032524522%
+啮	nie
+嗫	nie
+孽	nie
+嵲	nie
+捏	nie
+涅	nie
+糵	nie
+聂	nie
+臬	nie
+菍	nie
+蘖	nie
+蹑	nie
+镊	nie
+镍	nie
+陧	nie
+颞	nie
+𫔶	nie
+您	nin
+佞	ning
+凝	ning
+咛	ning
+宁	ning
+拧	ning
+柠	ning
+泞	ning
+狞	ning
+甯	ning
+聍	ning
+苧	ning
+妞	niu
+忸	niu
+扭	niu
+拗	niu
+杻	niu
+牛	niu
+狃	niu
+纽	niu
+钮	niu
+侬	nong
+农	nong
+哝	nong
+弄	nong
+浓	nong
+秾	nong
+脓	nong
+𬪩	nong
+耨	nou
+傉	nu
+努	nu
+奴	nu
+孥	nu
+弩	nu
+怒	nu
+砮	nu
+笯	nu
+胬	nu
+驽	nu
+暖	nuan
+傩	nuo
+喏	nuo
+娜	nuo	0.3494318678%
+懦	nuo
+挪	nuo
+搦	nuo
+糯	nuo
+诺	nuo
+锘	nuo
+𦰡	nuo
+女	nv
+恧	nv
+衄	nv
+钕	nv
+疟	nve
+虐	nve
+哦	o
+喔	o	0.0067957866%
+噢	o
+偶	ou
+区	ou	0.5001422499%
+呕	ou
+怄	ou
+欧	ou
+殴	ou
+沤	ou
+瓯	ou
+耦	ou
+藕	ou
+讴	ou
+鸥	ou
+𠙶	ou
+𬉼	ou
+啪	pa
+帕	pa
+怕	pa
+扒	pa
+杷	pa
+潖	pa
+爬	pa
+琶	pa
+筢	pa
+耙	pa
+舥	pa
+葩	pa
+趴	pa
+俳	pai
+哌	pai
+徘	pai
+拍	pai
+排	pai
+派	pai
+湃	pai
+牌	pai
+簰	pai
+蒎	pai
+迫	pai	0.0011045208%
+判	pan
+叛	pan
+攀	pan
+槃	pan
+泮	pan
+潘	pan
+爿	pan
+畔	pan
+番	pan	0.000895628%
+盘	pan
+盼	pan
+磐	pan
+磻	pan
+胖	pan	0.0011229268%
+蟠	pan
+袢	pan
+襻	pan
+蹒	pan
+乓	pang
+庞	pang
+彷	pang
+旁	pang
+滂	pang
+磅	pang	1.8951536866%
+耪	pang
+胖	pang
+膀	pang	0.0012216501%
+螃	pang
+逄	pang
+雱	pang
+鳑	pang
+刨	pao
+匏	pao
+咆	pao
+庖	pao
+抛	pao
+泡	pao
+炮	pao
+狍	pao
+疱	pao
+脬	pao
+袍	pao
+跑	pao
+佩	pei
+呸	pei
+培	pei
+帔	pei
+旆	pei
+沛	pei
+胚	pei
+衃	pei
+裴	pei
+赔	pei
+辔	pei
+配	pei
+醅	pei
+锫	pei
+陪	pei
+霈	pei
+喷	pen
+湓	pen
+盆	pen
+嘭	peng
+堋	peng
+弸	peng
+彭	peng
+怦	peng
+抨	peng
+捧	peng
+搒	peng
+朋	peng
+棚	peng
+椪	peng
+淜	peng
+澎	peng
+烹	peng
+砰	peng
+硼	peng
+碰	peng
+篷	peng
+膨	peng
+芃	peng
+蓬	peng
+蟛	peng
+鹏	peng
+䴙	pi
+丕	pi
+仳	pi
+伾	pi
+僻	pi
+劈	pi
+匹	pi
+否	pi	0.0004435642%
+啤	pi
+噼	pi
+嚭	pi
+圮	pi
+坯	pi
+埤	pi
+媲	pi
+屁	pi
+批	pi
+披	pi
+枇	pi
+椑	pi
+毗	pi
+淠	pi
+澼	pi
+狉	pi
+琵	pi
+甓	pi
+疲	pi
+痞	pi
+癖	pi
+皮	pi
+睥	pi
+砒	pi
+纰	pi
+罴	pi
+脾	pi
+苉	pi
+蚍	pi
+蜱	pi
+裨	pi
+譬	pi
+貔	pi
+辟	pi
+邳	pi
+郫	pi
+铍	pi
+陂	pi
+陴	pi
+霹	pi
+鲏	pi
+鼙	pi
+𬳵	pi
+㛹	pian
+便	pian	0.1542710075%
+偏	pian
+扁	pian	0.0053109565%
+楩	pian
+片	pian
+犏	pian
+篇	pian
+翩	pian
+胼	pian
+谝	pian
+蹁	pian
+骈	pian
+骗	pian
+𡎚	pian
+剽	piao
+嘌	piao
+嫖	piao
+朴	piao	1.5399289264%
+殍	piao
+漂	piao
+瓢	piao
+瞟	piao
+票	piao
+缥	piao
+蔈	piao
+薸	piao
+螵	piao
+飘	piao
+骠	piao
+撇	pie
+氕	pie
+瞥	pie
+苤	pie
+𬭯	pie
+品	pin
+姘	pin
+嫔	pin
+拼	pin
+牝	pin
+玭	pin
+聘	pin
+贫	pin
+频	pin
+颦	pin
+𬞟	pin
+乒	ping
+俜	ping
+凭	ping
+坪	ping
+娉	ping
+屏	ping
+帡	ping
+平	ping
+枰	ping
+泙	ping
+洴	ping
+涄	ping
+玶	ping
+瓶	ping
+苹	ping
+荓	ping
+萍	ping
+蚲	ping
+评	ping
+鲆	ping
+䥽	po
+叵	po
+坡	po
+婆	po
+朴	po	0.0030767811%
+桲	po
+泊	po
+泼	po
+珀	po
+皤	po
+破	po
+笸	po
+粕	po
+繁	po	0.0017909913%
+迫	po
+鄱	po
+酦	po
+钋	po
+钷	po
+陂	po	0.2109704641%
+颇	po
+魄	po
+剖	pou
+抔	pou
+掊	pou
+裒	pou
+仆	pu
+匍	pu
+噗	pu
+圃	pu
+埔	pu
+堡	pu	0.9911381752%
+墣	pu
+扑	pu
+普	pu
+曝	pu	3.1124187055%
+朴	pu
+氆	pu
+浦	pu
+溥	pu
+潽	pu
+濮	pu
+瀑	pu
+璞	pu
+穙	pu
+脯	pu	2.3995402079%
+莆	pu
+菩	pu
+葡	pu
+蒱	pu
+蒲	pu
+谱	pu
+蹼	pu
+酺	pu
+铺	pu
+镤	pu
+镨	pu
+䓫	qi
+七	qi
+乞	qi
+亓	qi
+亟	qi	4.135954136%
+企	qi
+俟	qi	0.031075202%
+其	qi
+凄	qi
+启	qi
+嘁	qi
+器	qi
+圻	qi
+埼	qi
+奇	qi
+契	qi
+妻	qi
+婍	qi
+屺	qi
+岂	qi
+岐	qi
+崎	qi
+弃	qi
+愭	qi
+憩	qi
+戚	qi
+旗	qi
+期	qi
+杞	qi
+柒	qi
+栖	qi
+桤	qi
+棋	qi
+棨	qi
+槭	qi
+欹	qi
+欺	qi
+歧	qi
+气	qi
+汔	qi
+汽	qi
+沏	qi
+泣	qi
+洓	qi
+淇	qi
+漆	qi
+炁	qi
+玘	qi
+琦	qi
+琪	qi
+畦	qi
+砌	qi
+碛	qi
+碶	qi
+磜	qi
+祁	qi
+祇	qi
+祈	qi
+祺	qi
+稽	qi	0.007936193%
+綦	qi
+绮	qi
+缉	qi	0.0112019715%
+耆	qi
+脐	qi
+芑	qi
+芪	qi
+荠	qi	0.2145922747%
+萁	qi
+萋	qi
+葺	qi
+蕲	qi
+蛴	qi
+蜞	qi
+讫	qi
+起	qi
+跂	qi
+蹊	qi
+迄	qi
+郪	qi
+锜	qi
+颀	qi
+骐	qi
+骑	qi
+鲯	qi
+鳍	qi
+麒	qi
+齐	qi
+𨙸	qi
+𬨂	qi
+卡	qia	0.0002485973%
+恰	qia
+拤	qia
+掐	qia
+洽	qia
+葜	qia
+袷	qia
+髂	qia
+乾	qian
+仟	qian
+伣	qian
+佥	qian
+倩	qian
+前	qian
+千	qian
+圲	qian
+堑	qian
+墘	qian
+岍	qian
+嵌	qian
+悭	qian
+愆	qian
+慊	qian
+扦	qian
+掮	qian
+搴	qian
+杄	qian
+椠	qian
+欠	qian
+歉	qian
+汧	qian
+浅	qian
+潜	qian
+牵	qian
+犍	qian
+磏	qian
+签	qian
+纤	qian	1.3842026661%
+缱	qian
+肷	qian
+芊	qian
+芡	qian
+茜	qian
+荨	qian
+蒨	qian
+虔	qian
+褰	qian
+谦	qian
+谴	qian
+迁	qian
+遣	qian
+钎	qian
+钤	qian
+钱	qian
+钳	qian
+铅	qian
+阡	qian
+靬	qian
+骞	qian
+鹐	qian
+黔	qian
+𬘬	qian
+呛	qiang
+墙	qiang
+嫱	qiang
+强	qiang
+戕	qiang
+戗	qiang
+抢	qiang
+枪	qiang
+樯	qiang
+炝	qiang
+玱	qiang
+羌	qiang
+羟	qiang
+腔	qiang
+蔃	qiang
+蔷	qiang
+蜣	qiang
+襁	qiang
+跄	qiang
+锖	qiang
+锵	qiang
+镪	qiang
+乔	qiao
+侨	qiao
+俏	qiao
+劁	qiao
+壳	qiao	4.7781651464%
+峤	qiao
+峭	qiao
+巧	qiao
+悄	qiao
+愀	qiao
+憔	qiao
+撬	qiao
+敲	qiao
+桥	qiao
+樵	qiao
+橇	qiao
+瞧	qiao
+硗	qiao
+硚	qiao
+窍	qiao
+缲	qiao
+翘	qiao
+荞	qiao
+诮	qiao
+谯	qiao
+跷	qiao
+锹	qiao
+雀	qiao	0.0031146341%
+鞒	qiao
+鞘	qiao
+且	qie
+伽	qie	6.0067774377%
+切	qie
+妾	qie
+怯	qie
+惬	qie
+慊	qie
+挈	qie
+窃	qie
+箧	qie
+茄	qie
+趄	qie
+郄	qie
+锲	qie
+亲	qin
+侵	qin
+勤	qin
+吣	qin
+嗪	qin
+噙	qin
+寝	qin
+嵚	qin
+慬	qin
+揿	qin
+擒	qin
+梣	qin
+檎	qin
+沁	qin
+溱	qin
+琴	qin
+禽	qin
+秦	qin
+芩	qin
+芹	qin
+衾	qin
+覃	qin
+钦	qin
+锓	qin
+骎	qin
+亲	qing	0.1000488359%
+倾	qing
+勍	qing
+卿	qing
+圊	qing
+庆	qing
+庼	qing
+情	qing
+擎	qing
+晴	qing
+檠	qing
+氢	qing
+氰	qing
+清	qing
+碃	qing
+磬	qing
+箐	qing
+綮	qing
+罄	qing
+苘	qing
+蜻	qing
+请	qing
+轻	qing
+青	qing
+顷	qing
+鲭	qing
+黥	qing
+䓖	qiong
+琼	qiong
+穷	qiong
+穹	qiong
+筇	qiong
+茕	qiong
+蛩	qiong
+邛	qiong
+銎	qiong
+丘	qiu
+仇	qiu	3.8291457286%
+俅	qiu
+囚	qiu
+巯	qiu
+楸	qiu
+求	qiu
+泅	qiu
+湫	qiu
+犰	qiu
+球	qiu
+璆	qiu
+秋	qiu
+糗	qiu
+萩	qiu
+虬	qiu
+蚯	qiu
+蝤	qiu
+裘	qiu
+訄	qiu
+赇	qiu
+逑	qiu
+遒	qiu
+邱	qiu
+酋	qiu
+鞧	qiu
+鳅	qiu
+鹙	qiu
+鼽	qiu
+龟	qiu	0.0036993193%
+𨱇	qiu
+㭕	qu
+䓛	qu
+劬	qu
+区	qu
+去	qu
+取	qu
+坥	qu
+娶	qu
+屈	qu
+岖	qu
+岨	qu
+戌	qu	0.0482392668%
+曲	qu
+朐	qu
+氍	qu
+渠	qu
+灈	qu
+焌	qu
+璩	qu
+癯	qu
+瞿	qu
+磲	qu
+祛	qu
+竘	qu
+胠	qu
+苣	qu
+蕖	qu
+蘧	qu
+蛆	qu
+蛐	qu
+蠼	qu
+衢	qu
+袪	qu
+觑	qu
+诎	qu
+趋	qu
+趣	qu
+躯	qu
+阒	qu
+驱	qu
+鸲	qu
+麹	qu
+黢	qu
+鼩	qu
+龋	qu
+𪨰	qu
+𫭟	qu
+佺	quan
+全	quan
+券	quan
+劝	quan
+圈	quan
+婘	quan
+悛	quan
+拳	quan
+权	quan
+棬	quan
+泉	quan
+犬	quan
+瑔	quan
+畎	quan
+痊	quan
+筌	quan
+绻	quan
+荃	quan
+蜷	quan
+诠	quan
+辁	quan
+醛	quan
+铨	quan
+颧	quan
+鬈	quan
+鳈	quan
+𨟠	quan
+却	que
+卻	que
+埆	que
+悫	que
+榷	que
+炔	que
+瘸	que
+确	que
+碏	que
+缺	que
+阕	que
+阙	que
+雀	que
+鹊	que
+𬒈	que
+囷	qun
+群	qun
+裙	qun
+逡	qun
+麇	qun
+䎃	ran
+冉	ran
+染	ran
+然	ran
+燃	ran
+苒	ran
+蚺	ran
+髯	ran
+儴	rang
+嚷	rang
+壤	rang
+攘	rang
+瀼	rang
+瓤	rang
+禳	rang
+穰	rang
+蘘	rang
+让	rang
+娆	rao
+扰	rao
+桡	rao
+绕	rao
+荛	rao
+饶	rao
+惹	re
+热	re
+人	ren
+仁	ren
+仞	ren
+任	ren
+刃	ren
+壬	ren
+妊	ren
+忍	ren
+稔	ren
+纫	ren
+纴	ren
+荏	ren
+葚	ren	0.462962963%
+衽	ren
+认	ren
+讱	ren
+轫	ren
+韧	ren
+饪	ren
+仍	reng
+扔	reng
+日	ri
+驲	ri
+冗	rong
+容	rong
+嵘	rong
+戎	rong
+榕	rong
+溶	rong
+熔	rong
+狨	rong
+瑢	rong
+绒	rong
+茸	rong
+荣	rong
+蓉	rong
+蝾	rong
+融	rong
+镕	rong
+揉	rou
+柔	rou
+糅	rou
+肉	rou
+蹂	rou
+鞣	rou
+𫐓	rou
+乳	ru
+儒	ru
+入	ru
+嚅	ru
+如	ru
+嬬	ru
+孺	ru
+汝	ru
+洳	ru
+溽	ru
+濡	ru
+缛	ru
+茹	ru
+蓐	ru
+薷	ru
+蠕	ru
+褥	ru
+襦	ru
+辱	ru
+铷	ru
+颥	ru
+堧	ruan
+媆	ruan
+瓀	ruan
+软	ruan
+阮	ruan
+枘	rui
+汭	rui
+瑞	rui
+睿	rui
+芮	rui
+蕊	rui
+蕤	rui
+蚋	rui
+锐	rui
+润	run
+闰	run
+偌	ruo
+婼	ruo
+弱	ruo
+爇	ruo
+箬	ruo
+若	ruo
+蒻	ruo
+鄀	ruo
+仨	sa
+卅	sa
+挲	sa
+撒	sa
+洒	sa
+潵	sa
+脎	sa
+萨	sa
+靸	sa
+飒	sa
+噻	sai
+塞	sai
+腮	sai
+赛	sai
+鳃	sai
+三	san
+伞	san
+叁	san
+散	san
+毵	san
+糁	san	0.6472491909%
+馓	san
+丧	sang
+嗓	sang
+搡	sang
+桑	sang
+磉	sang
+颡	sang
+埽	sao
+嫂	sao
+扫	sao
+搔	sao
+溞	sao
+瘙	sao
+缫	sao
+臊	sao
+骚	sao
+啬	se
+塞	se	0.4838834426%
+涩	se
+瑟	se
+璱	se
+穑	se
+色	se
+铯	se
+森	sen
+僧	seng
+傻	sha
+刹	sha
+厦	sha
+唼	sha
+啥	sha
+嗄	sha
+挲	sha	1.9801980198%
+杀	sha
+杉	sha	0.0092984332%
+歃	sha
+沙	sha
+煞	sha
+痧	sha
+砂	sha
+纱	sha
+莎	sha
+裟	sha
+铩	sha
+霎	sha
+鲨	sha
+晒	shai
+筛	shai
+色	shai	0.0600448677%
+删	shan
+剡	shan
+单	shan	0.0002706653%
+善	shan
+埏	shan
+墡	shan
+姗	shan
+嬗	shan
+山	shan
+嶦	shan
+扇	shan
+擅	shan
+晱	shan
+杉	shan
+栅	shan	0.016423058%
+汕	shan
+潸	shan
+烻	shan
+煽	shan
+珊	shan
+疝	shan
+禅	shan	4.2855307119%
+缮	shan
+膳	shan
+膻	shan
+舢	shan
+芟	shan
+苫	shan
+蟮	shan
+衫	shan
+讪	shan
+赡	shan
+跚	shan
+鄯	shan
+钐	shan
+闪	shan
+陕	shan
+骟	shan
+鳝	shan
+𫮃	shan
+上	shang
+伤	shang
+商	shang
+垧	shang
+墒	shang
+尚	shang
+晌	shang
+殇	shang
+熵	shang
+绱	shang
+裳	shang
+觞	shang
+赏	shang
+劭	shao
+勺	shao
+召	shao	0.0015570382%
+哨	shao
+少	shao
+捎	shao
+柖	shao
+梢	shao
+潲	shao
+烧	shao
+玿	shao
+睄	shao
+稍	shao
+筲	shao
+绍	shao
+艄	shao
+芍	shao
+苕	shao
+蛸	shao
+邵	shao
+鞘	shao	0.0080593166%
+韶	shao
+佘	she
+厍	she
+奢	she
+射	she
+慑	she
+折	she	4.0233977415%
+拾	she	0.0014662434%
+摄	she
+歙	she
+涉	she
+滠	she
+猞	she
+畲	she
+社	she
+舌	she
+舍	she
+蛇	she
+设	she
+赊	she
+赦	she
+阇	she
+麝	she
+𪨶	she
+谁	shei
+什	shen
+伸	shen
+侁	shen
+参	shen	2.5839038884%
+呻	shen
+哂	shen
+娠	shen
+婶	shen
+审	shen
+屾	shen
+慎	shen
+棽	shen
+椹	shen
+沈	shen
+深	shen
+渗	shen
+燊	shen
+珅	shen
+甚	shen
+甡	shen
+申	shen
+瘆	shen
+瞫	shen
+矧	shen
+砷	shen
+神	shen
+糁	shen
+绅	shen
+肾	shen
+胂	shen
+莘	shen
+葚	shen
+蜃	shen
+诜	shen
+谂	shen
+谌	shen
+身	shen
+鲹	shen
+𬬹	shen
+𬳽	shen
+乘	sheng	0.2280562185%
+剩	sheng
+升	sheng
+圣	sheng
+声	sheng
+嵊	sheng
+昇	sheng
+晟	sheng
+牲	sheng
+生	sheng
+甥	sheng
+盛	sheng
+省	sheng
+眚	sheng
+笙	sheng
+绳	sheng
+胜	sheng
+陞	sheng
+䏡	shi
+䴓	shi
+世	shi
+事	shi
+什	shi
+仕	shi
+似	shi	1.7457045245%
+使	shi
+侍	shi
+势	shi
+匙	shi
+十	shi
+史	shi
+嗜	shi
+嘘	shi	0.0061340285%
+噬	shi
+埘	shi
+士	shi
+失	shi
+奭	shi
+始	shi
+媞	shi
+实	shi
+室	shi
+尸	shi
+屎	shi
+峙	shi	0.0111919418%
+市	shi
+师	shi
+式	shi
+弑	shi
+恃	shi
+拭	shi
+拾	shi
+施	shi
+时	shi
+是	shi
+柿	shi
+栻	shi
+殖	shi	0.007255841%
+氏	shi
+浉	shi
+湜	shi
+湿	shi
+炻	shi
+狮	shi
+矢	shi
+石	shi
+示	shi
+祏	shi
+筮	shi
+舐	shi
+莳	shi
+蓍	shi
+虱	shi
+蚀	shi
+螫	shi
+襫	shi
+视	shi
+誓	shi
+识	shi
+试	shi
+诗	shi
+谥	shi
+豕	shi
+贳	shi
+轼	shi
+适	shi
+逝	shi
+邿	shi
+酾	shi
+释	shi
+铈	shi
+食	shi
+饰	shi
+驶	shi
+鲥	shi
+鲺	shi
+鸤	shi
+鼫	shi
+𫚕	shi
+𬤊	shi
+兽	shou
+受	shou
+售	shou
+守	shou
+寿	shou
+手	shou
+授	shou
+收	shou
+熟	shou
+狩	shou
+瘦	shou
+绶	shou
+艏	shou
+首	shou
+书	shu
+倏	shu
+叔	shu
+塾	shu
+墅	shu
+姝	shu
+婌	shu
+孰	shu
+属	shu
+庶	shu
+恕	shu
+戍	shu
+抒	shu
+摅	shu
+数	shu
+暑	shu
+曙	shu
+术	shu
+束	shu
+枢	shu
+树	shu
+梳	shu
+殊	shu
+殳	shu
+毹	shu
+沭	shu
+淑	shu
+漱	shu
+澍	shu
+熟	shu
+疏	shu
+秫	shu
+竖	shu
+纾	shu
+署	shu
+腧	shu
+舒	shu
+菽	shu
+蔬	shu
+薯	shu
+蜀	shu
+赎	shu
+输	shu
+述	shu
+鄃	shu
+陎	shu
+隃	shu
+黍	shu
+鼠	shu
+𬬸	shu
+刷	shua
+唰	shua
+耍	shua
+帅	shuai
+摔	shuai
+率	shuai	6.000588338%
+甩	shuai
+蟀	shuai
+衰	shuai
+拴	shuan
+栓	shuan
+涮	shuan
+腨	shuan
+闩	shuan
+双	shuang
+孀	shuang
+泷	shuang	0.1384083045%
+漴	shuang	5%
+爽	shuang
+礵	shuang
+霜	shuang
+骦	shuang
+鹴	shuang
+帨	shui
+水	shui
+睡	shui
+税	shui
+说	shui	0.000016666%
+谁	shui
+吮	shun
+楯	shun
+瞬	shun
+舜	shun
+顺	shun
+妁	shuo
+搠	shuo
+数	shuo	0.0002010616%
+朔	shuo
+槊	shuo
+烁	shuo
+硕	shuo
+蒴	shuo
+说	shuo
+铄	shuo
+㟃	si
+丝	si
+伺	si
+似	si
+俟	si
+兕	si
+凘	si
+厮	si
+司	si
+咝	si
+嗣	si
+嘶	si
+四	si
+姒	si
+寺	si
+巳	si
+思	si
+撕	si
+斯	si
+楒	si
+死	si
+汜	si
+泗	si
+涘	si
+澌	si
+祀	si
+私	si
+笥	si
+缌	si
+耜	si
+肆	si
+虒	si
+蛳	si
+锶	si
+飔	si
+饲	si
+驷	si
+鸶	si
+㧐	song
+凇	song
+娀	song
+宋	song
+崧	song
+嵩	song
+忪	song
+怂	song
+悚	song
+松	song
+淞	song
+竦	song
+耸	song
+菘	song
+讼	song
+诵	song
+送	song
+颂	song
+𪨊	song
+叟	sou
+嗖	sou
+嗽	sou
+嗾	sou
+廋	sou
+搜	sou
+擞	sou
+溲	sou
+瞍	sou
+艘	sou
+蒐	sou
+薮	sou
+螋	sou
+锼	sou
+飕	sou
+馊	sou
+俗	su
+傃	su
+僳	su
+嗉	su
+塑	su
+夙	su
+宿	su
+愫	su
+涑	su
+溯	su
+甦	su
+稣	su
+窣	su
+簌	su
+粟	su
+素	su
+缩	su	0.0013612665%
+肃	su
+苏	su
+蔌	su
+觫	su
+诉	su
+谡	su
+蹜	su
+速	su
+酥	su
+骕	su
+鹔	su
+𫗧	su
+狻	suan
+算	suan
+蒜	suan
+酸	suan
+尿	sui	4.6684709066%
+岁	sui
+旞	sui
+濉	sui
+燧	sui
+璲	sui
+眭	sui
+睢	sui
+碎	sui
+祟	sui
+穗	sui
+穟	sui
+绥	sui
+荽	sui
+虽	sui
+襚	sui
+谇	sui
+遂	sui
+邃	sui
+隋	sui
+随	sui
+隧	sui
+髓	sui
+𫟦	sui
+𬭼	sui
+孙	sun
+损	sun
+榫	sun
+狲	sun
+笋	sun
+荪	sun
+隼	sun
+飧	sun
+唆	suo
+唢	suo
+嗍	suo
+嗦	suo
+娑	suo
+所	suo
+挲	suo
+桫	suo
+梭	suo
+溹	suo
+琐	suo
+睃	suo
+索	suo
+缩	suo
+羧	suo
+莎	suo	0.0018536025%
+葰	suo
+蓑	suo
+锁	suo
+他	ta
+塌	ta
+塔	ta
+她	ta
+它	ta
+拓	ta
+挞	ta
+榻	ta
+沓	ta
+溻	ta
+獭	ta
+祂	ta
+褟	ta
+趿	ta
+踏	ta
+蹋	ta
+遢	ta
+铊	ta
+闼	ta
+阘	ta
+鞳	ta
+鳎	ta
+鿎	ta
+台	tai
+太	tai
+态	tai
+抬	tai
+汰	tai
+泰	tai
+炱	tai
+肽	tai
+胎	tai
+苔	tai
+薹	tai
+跆	tai
+邰	tai
+酞	tai
+钛	tai
+骀	tai
+鲐	tai
+倓	tan
+叹	tan
+坍	tan
+坛	tan
+坦	tan
+弹	tan
+忐	tan
+惔	tan
+探	tan
+摊	tan
+昙	tan
+榃	tan
+檀	tan
+毯	tan
+滩	tan
+潭	tan
+澹	tan	0.0296868042%
+炭	tan
+璮	tan
+痰	tan
+瘫	tan
+碳	tan
+磹	tan
+菼	tan
+袒	tan
+覃	tan
+谈	tan
+谭	tan
+贪	tan
+郯	tan
+钽	tan
+锬	tan
+镡	tan
+䣘	tang
+倘	tang
+傥	tang
+唐	tang
+嘡	tang
+埫	tang
+堂	tang
+塘	tang
+帑	tang
+搪	tang
+棠	tang
+樘	tang
+汤	tang
+淌	tang
+溏	tang
+烫	tang
+瑭	tang
+糖	tang
+羰	tang
+耥	tang
+膛	tang
+螗	tang
+螳	tang
+趟	tang
+蹚	tang
+躺	tang
+鄌	tang
+铴	tang
+镋	tang
+镗	tang
+叨	tao	2.3492137996%
+啕	tao
+套	tao
+弢	tao
+慆	tao
+掏	tao
+桃	tao
+梼	tao
+洮	tao
+涛	tao
+淘	tao
+滔	tao
+焘	tao
+绦	tao
+绹	tao
+萄	tao
+讨	tao
+逃	tao
+陶	tao
+韬	tao
+饕	tao
+鼗	tao
+𫘦	tao
+忑	te
+忒	te	0.0203376042%
+慝	te
+特	te
+铽	te
+忒	tei
+䲢	teng
+滕	teng
+熥	teng
+疼	teng
+縢	teng
+腾	teng
+藤	teng
+螣	teng
+誊	teng
+䏲	ti
+䴘	ti
+体	ti
+倜	ti
+剃	ti
+剔	ti
+啼	ti
+嚏	ti
+媞	ti
+屉	ti
+悌	ti
+惕	ti
+提	ti
+擿	ti
+替	ti
+梯	ti
+涕	ti
+瑅	ti
+绨	ti
+缇	ti
+荑	ti
+薙	ti
+裼	ti
+趯	ti
+踢	ti
+蹄	ti
+逖	ti
+遆	ti
+醍	ti
+锑	ti
+题	ti
+鳀	ti
+鹈	ti
+𫘨	ti
+填	tian
+天	tian
+忝	tian
+恬	tian
+掭	tian
+晪	tian
+殄	tian
+沺	tian
+淟	tian
+添	tian
+湉	tian
+瑱	tian
+甜	tian
+田	tian
+畋	tian
+盷	tian
+腆	tian
+舔	tian
+觍	tian
+阗	tian
+黇	tian
+佻	tiao
+嬥	tiao
+挑	tiao
+朓	tiao
+条	tiao
+眺	tiao
+祧	tiao
+窕	tiao
+笤	tiao
+粜	tiao
+蜩	tiao
+调	tiao
+跳	tiao
+迢	tiao
+髫	tiao
+鲦	tiao
+龆	tiao
+帖	tie
+萜	tie
+贴	tie
+铁	tie
+餮	tie
+䗴	ting
+亭	ting
+侹	ting
+停	ting
+厅	ting
+听	ting
+圢	ting
+婷	ting
+庭	ting
+廷	ting
+挺	ting
+桯	ting
+梃	ting
+汀	ting
+渟	ting
+烃	ting
+烶	ting
+珽	ting
+艇	ting
+莛	ting
+葶	ting
+蜓	ting
+铤	ting
+霆	ting
+颋	ting
+𬘩	ting
+㛚	tong
+仝	tong
+佟	tong
+僮	tong
+同	tong
+哃	tong
+嗵	tong
+垌	tong
+峂	tong
+峒	tong	0.0400641026%
+彤	tong
+恸	tong
+捅	tong
+曈	tong
+桐	tong
+桶	tong
+橦	tong
+洞	tong	0.0006770252%
+潼	tong
+烔	tong
+痛	tong
+瞳	tong
+砼	tong
+穜	tong
+童	tong
+筒	tong
+统	tong
+茼	tong
+通	tong
+酮	tong
+铜	tong
+鲖	tong
+𦒍	tong
+𫍣	tong
+偷	tou
+头	tou
+投	tou
+透	tou
+骰	tou
+㻬	tu
+兔	tu
+凃	tu
+凸	tu
+吐	tu
+图	tu
+土	tu
+堍	tu
+屠	tu
+徒	tu
+梌	tu
+涂	tu
+秃	tu
+稌	tu
+突	tu
+腯	tu
+荼	tu
+菟	tu
+葖	tu
+途	tu
+酴	tu
+钍	tu
+𬳿	tu
+团	tuan
+彖	tuan
+抟	tuan
+湍	tuan
+煓	tuan
+猯	tuan
+疃	tuan
+忒	tui
+推	tui
+煺	tui
+腿	tui
+蜕	tui
+褪	tui
+退	tui
+颓	tui
+魋	tui
+𬯎	tui
+吞	tun
+囤	tun
+坉	tun
+屯	tun
+忳	tun
+暾	tun
+焞	tun
+臀	tun
+褪	tun	0.0147732309%
+豚	tun
+饨	tun
+鲀	tun
+佗	tuo
+侂	tuo
+唾	tuo
+圫	tuo
+坨	tuo
+妥	tuo
+庹	tuo
+托	tuo
+拓	tuo
+拖	tuo
+柁	tuo
+柝	tuo
+椭	tuo
+橐	tuo
+沱	tuo
+砣	tuo
+箨	tuo
+脱	tuo
+萚	tuo
+跎	tuo
+酡	tuo
+铊	tuo	1.0256410256%
+陀	tuo
+驮	tuo
+驼	tuo
+鸵	tuo
+鼍	tuo
+𬶍	tuo
+佤	wa
+凹	wa	0.0096875757%
+哇	wa
+坬	wa
+娃	wa
+娲	wa
+挖	wa
+洼	wa
+瓦	wa
+畖	wa
+窊	wa
+腽	wa
+蛙	wa
+袜	wa
+外	wai
+崴	wai
+歪	wai
+万	wan
+丸	wan
+剜	wan
+卍	wan
+塆	wan
+婉	wan
+婠	wan
+完	wan
+宛	wan
+弯	wan
+惋	wan
+挽	wan
+晚	wan
+椀	wan
+湾	wan
+烷	wan
+玩	wan
+琬	wan
+畹	wan
+皖	wan
+碗	wan
+纨	wan
+绾	wan
+脘	wan
+腕	wan
+芄	wan
+莞	wan
+菀	wan
+蔓	wan	0.0059075469%
+蜿	wan
+豌	wan
+顽	wan
+𬇕	wan
+亡	wang
+妄	wang
+尢	wang
+尪	wang
+往	wang
+忘	wang
+惘	wang
+旺	wang
+望	wang
+枉	wang
+汪	wang
+王	wang
+网	wang
+罔	wang
+辋	wang
+魍	wang
+为	wei
+亹	wei
+伟	wei
+伪	wei
+位	wei
+偎	wei
+卫	wei
+危	wei
+味	wei
+唯	wei
+喂	wei
+围	wei
+圩	wei
+委	wei
+威	wei
+娓	wei
+尉	wei
+尾	wei
+峗	wei
+嵬	wei
+巍	wei
+帏	wei
+帷	wei
+廆	wei
+微	wei
+惟	wei
+慰	wei
+未	wei
+桅	wei
+沩	wei
+洈	wei
+洧	wei
+涠	wei
+渭	wei
+溦	wei
+潍	wei
+炜	wei
+煟	wei
+煨	wei
+猥	wei
+猬	wei
+玮	wei
+琟	wei
+畏	wei
+痿	wei
+硙	wei
+碨	wei
+纬	wei
+维	wei
+胃	wei
+艉	wei
+苇	wei
+萎	wei
+葳	wei
+蔚	wei
+薇	wei
+薳	wei
+螱	wei
+诿	wei
+谓	wei
+违	wei
+逶	wei
+闱	wei
+隈	wei
+隗	wei
+霨	wei
+韦	wei
+韪	wei
+魏	wei
+鲔	wei
+鳂	wei
+鳚	wei
+𣲗	wei
+𫇭	wei
+𬀩	wei
+𬱟	wei
+𬶏	wei
+刎	wen
+吻	wen
+文	wen
+榅	wen
+汶	wen
+温	wen
+炆	wen
+玟	wen
+璺	wen
+瘟	wen
+稳	wen
+紊	wen
+纹	wen
+芠	wen
+蕰	wen
+蚊	wen
+辒	wen
+问	wen
+闻	wen
+阌	wen
+雯	wen
+鳁	wen
+𫘜	wen
+嗡	weng
+滃	weng
+瓮	weng
+翁	weng
+蓊	weng
+蕹	weng
+鹟	weng
+𬭩	weng
+倭	wo
+偓	wo
+卧	wo
+喔	wo
+幄	wo
+我	wo
+挝	wo
+握	wo
+斡	wo
+沃	wo
+涡	wo
+渥	wo
+硪	wo
+窝	wo
+肟	wo
+莴	wo
+蜗	wo
+踒	wo
+龌	wo
+乌	wu
+五	wu
+仵	wu
+伍	wu
+侮	wu
+兀	wu
+务	wu
+勿	wu
+午	wu
+吴	wu
+吾	wu
+呜	wu
+唔	wu
+圬	wu
+坞	wu
+妩	wu
+婺	wu
+寤	wu
+屋	wu
+屼	wu
+峿	wu
+巫	wu
+庑	wu
+忤	wu
+怃	wu
+恶	wu	6.0002573123%
+悟	wu
+戊	wu
+捂	wu
+无	wu
+旿	wu
+晤	wu
+杌	wu
+梧	wu
+武	wu
+毋	wu
+污	wu
+洿	wu
+浯	wu
+焐	wu
+物	wu
+牾	wu
+珷	wu
+珸	wu
+痦	wu
+舞	wu
+芜	wu
+芴	wu
+蜈	wu
+诬	wu
+误	wu
+迕	wu
+邬	wu
+郚	wu
+鋈	wu
+钨	wu
+铻	wu
+雾	wu
+靰	wu
+骛	wu
+鹀	wu
+鹉	wu
+鹜	wu
+鼯	wu
+𣲘	wu
+习	xi
+俙	xi
+傒	xi
+僖	xi
+兮	xi
+吸	xi
+咥	xi
+唏	xi
+喜	xi
+嘻	xi
+夕	xi
+奚	xi
+媳	xi
+嬉	xi
+屃	xi
+屣	xi
+嶍	xi
+嶲	xi
+巇	xi
+希	xi
+席	xi
+徙	xi
+恓	xi
+息	xi
+悉	xi
+惜	xi
+憙	xi
+戏	xi
+昔	xi
+晞	xi
+晰	xi
+暿	xi
+曦	xi
+析	xi
+枲	xi
+樨	xi
+檄	xi
+汐	xi
+洗	xi
+浠	xi
+淅	xi
+溪	xi
+潟	xi
+烯	xi
+熄	xi
+熙	xi
+熹	xi
+熻	xi
+爔	xi
+牺	xi
+犀	xi
+玺	xi
+皙	xi
+睎	xi
+硒	xi
+禊	xi
+禧	xi
+稀	xi
+穸	xi
+窸	xi
+粞	xi
+系	xi
+细	xi
+绤	xi
+羲	xi
+翕	xi
+肸	xi
+膝	xi
+舄	xi
+舾	xi
+茜	xi
+菥	xi
+葸	xi
+蓰	xi
+蜥	xi
+螅	xi
+蟋	xi
+袭	xi
+裼	xi
+西	xi
+觋	xi
+觿	xi
+谿	xi
+豨	xi
+蹊	xi
+郗	xi
+郤	xi
+酅	xi
+醯	xi
+釐	xi
+铣	xi
+锡	xi
+阋	xi
+隙	xi
+隰	xi
+饩	xi
+饻	xi
+鳛	xi
+鼷	xi
+𠅤	xi
+𫘬	xi
+𬭳	xi
+𬶮	xi
+下	xia
+侠	xia
+匣	xia
+厦	xia	2.82960199%
+叚	xia
+吓	xia
+呷	xia
+夏	xia
+峡	xia
+暇	xia
+柙	xia
+狎	xia
+狭	xia
+瑕	xia
+瞎	xia
+硖	xia
+罅	xia
+翈	xia
+虾	xia
+辖	xia
+遐	xia
+霞	xia
+黠	xia
+㬎	xian
+仙	xian
+伭	xian
+先	xian
+冼	xian
+县	xian
+咸	xian
+娴	xian
+嫌	xian
+孅	xian
+宪	xian
+岘	xian
+崄	xian
+弦	xian
+忺	xian
+挦	xian
+掀	xian
+显	xian
+暹	xian
+氙	xian
+洗	xian	0.6892703242%
+涎	xian
+燹	xian
+狝	xian
+猃	xian
+献	xian
+现	xian
+痫	xian
+祆	xian
+禒	xian
+筅	xian
+籼	xian
+纤	xian
+线	xian
+缐	xian
+羡	xian
+腺	xian
+舷	xian
+苋	xian
+莶	xian
+藓	xian
+蚬	xian
+衔	xian
+见	xian	1.0000002889%
+贤	xian
+跣	xian
+跹	xian
+酰	xian
+锨	xian
+闲	xian
+限	xian
+险	xian
+陷	xian
+霰	xian
+馅	xian
+鲜	xian
+鹇	xian
+𪾢	xian
+𫍯	xian
+𬀪	xian
+𬸣	xian
+乡	xiang
+享	xiang
+像	xiang
+厢	xiang
+向	xiang
+响	xiang
+巷	xiang
+庠	xiang
+想	xiang
+橡	xiang
+湘	xiang
+珦	xiang
+瓖	xiang
+相	xiang
+祥	xiang
+箱	xiang
+缃	xiang
+翔	xiang
+芗	xiang
+葙	xiang
+襄	xiang
+详	xiang
+象	xiang
+镶	xiang
+降	xiang
+项	xiang
+飨	xiang
+饷	xiang
+香	xiang
+骧	xiang
+鲞	xiang
+𬙋	xiang
+削	xiao
+哓	xiao
+哮	xiao
+啸	xiao
+嚣	xiao
+孝	xiao
+宵	xiao
+小	xiao
+崤	xiao
+效	xiao
+敩	xiao
+晓	xiao
+枭	xiao
+枵	xiao
+校	xiao
+洨	xiao
+消	xiao
+涍	xiao
+淆	xiao
+滧	xiao
+潇	xiao
+猇	xiao
+皛	xiao
+硝	xiao
+笑	xiao
+筱	xiao
+箫	xiao
+绡	xiao
+翛	xiao
+肖	xiao
+萧	xiao
+虓	xiao
+蛸	xiao
+蟏	xiao
+逍	xiao
+销	xiao
+霄	xiao
+骁	xiao
+魈	xiao
+鸮	xiao
+𫍲	xiao
+㙦	xie
+些	xie
+亵	xie
+偕	xie
+偰	xie
+写	xie
+勰	xie
+协	xie
+卸	xie
+叶	xie	0.0003195041%
+屑	xie
+廨	xie
+懈	xie
+挟	xie
+揳	xie
+携	xie
+撷	xie
+斜	xie
+械	xie
+楔	xie
+榍	xie
+榭	xie
+歇	xie
+泄	xie
+泻	xie
+渫	xie
+澥	xie
+瀣	xie
+燮	xie
+獬	xie
+絜	xie
+绁	xie
+缬	xie
+胁	xie
+薢	xie
+薤	xie
+蝎	xie
+蟹	xie
+血	xie
+解	xie	1.0000236268%
+谐	xie
+谢	xie
+躞	xie
+邂	xie
+邪	xie
+鞋	xie
+颉	xie	0.0595238095%
+𤫉	xie
+𬹼	xie
+䜣	xin
+伈	xin
+信	xin
+囟	xin
+心	xin
+忻	xin
+新	xin
+昕	xin
+欣	xin
+歆	xin
+炘	xin
+芯	xin
+莘	xin	0.0296559905%
+薪	xin
+衅	xin
+辛	xin
+鑫	xin
+锌	xin
+镡	xin
+馨	xin
+𫷷	xin
+兴	xing
+刑	xing
+型	xing
+姓	xing
+婞	xing
+幸	xing
+形	xing
+性	xing
+悻	xing
+惺	xing
+擤	xing
+星	xing
+杏	xing
+煋	xing
+猩	xing
+瑆	xing
+省	xing	0.848104163%
+硎	xing
+腥	xing
+荇	xing
+荥	xing
+行	xing
+邢	xing
+醒	xing
+钘	xing
+铏	xing
+陉	xing
+饧	xing
+骍	xing
+𫰛	xing
+兄	xiong
+凶	xiong
+匈	xiong
+夐	xiong
+汹	xiong
+熊	xiong
+胸	xiong
+芎	xiong
+讻	xiong
+诇	xiong
+雄	xiong
+䗛	xiu
+休	xiu
+修	xiu
+咻	xiu
+嗅	xiu
+宿	xiu
+岫	xiu
+庥	xiu
+朽	xiu
+溴	xiu
+滫	xiu
+珛	xiu
+琇	xiu
+秀	xiu
+绣	xiu
+羞	xiu
+脩	xiu
+臭	xiu	0.001632733%
+袖	xiu
+貅	xiu
+锈	xiu
+馐	xiu
+髹	xiu
+鸺	xiu
+㳚	xu
+冔	xu
+勖	xu
+叙	xu
+吁	xu
+嘘	xu
+圩	xu
+垿	xu
+墟	xu
+婿	xu
+媭	xu
+序	xu
+徐	xu
+恤	xu
+戌	xu
+旭	xu
+旴	xu
+昫	xu
+栩	xu
+欻	xu
+洫	xu
+浒	xu	0.0438404209%
+湑	xu
+溆	xu
+煦	xu
+珝	xu
+畜	xu	3.4941357163%
+盱	xu
+糈	xu
+絮	xu
+绪	xu
+续	xu
+胥	xu
+蓄	xu
+蓿	xu
+虚	xu
+许	xu
+诩	xu
+谞	xu
+酗	xu
+醑	xu
+需	xu
+须	xu
+顼	xu
+魆	xu
+𦈡	xu
+𬣙	xu
+儇	xuan
+券	xuan	0.0093292285%
+咺	xuan
+喧	xuan
+宣	xuan
+悬	xuan
+愃	xuan
+旋	xuan
+昡	xuan
+晅	xuan
+暄	xuan
+暶	xuan
+楦	xuan
+泫	xuan
+渲	xuan
+漩	xuan
+炫	xuan
+烜	xuan
+煊	xuan
+玄	xuan
+玹	xuan
+琄	xuan
+瑄	xuan
+璇	xuan
+痃	xuan
+癣	xuan
+眩	xuan
+碹	xuan
+禤	xuan
+绚	xuan
+翾	xuan
+萱	xuan
+衒	xuan
+谖	xuan
+轩	xuan
+选	xuan
+铉	xuan
+𫍽	xuan
+𫓶	xuan
+𫠊	xuan
+削	xue
+噱	xue
+学	xue
+峃	xue
+穴	xue
+茓	xue
+薛	xue
+血	xue
+谑	xue
+踅	xue
+雪	xue
+靴	xue
+鳕	xue
+勋	xun
+噀	xun
+埙	xun
+寻	xun
+峋	xun
+巡	xun
+巽	xun
+徇	xun
+循	xun
+恂	xun
+旬	xun
+曛	xun
+栒	xun
+殉	xun
+汛	xun
+洵	xun
+浔	xun
+浚	xun	0.0550055006%
+熏	xun
+獯	xun
+珣	xun
+荀	xun
+荨	xun
+蕈	xun
+薰	xun
+训	xun
+讯	xun
+询	xun
+迅	xun
+逊	xun
+郇	xun
+醺	xun
+驯	xun
+鲟	xun
+𫄸	xun
+𬊈	xun
+𬍤	xun
+𬘓	xun
+𬩽	xun
+丫	ya
+亚	ya
+伢	ya
+压	ya
+呀	ya
+哑	ya
+垭	ya
+堐	ya
+娅	ya
+岈	ya
+崖	ya
+押	ya
+揠	ya
+桠	ya
+氩	ya
+涯	ya
+牙	ya
+猰	ya
+玡	ya
+琊	ya
+睚	ya
+砑	ya
+芽	ya
+蚜	ya
+衙	ya
+讶	ya
+轧	ya
+迓	ya
+雅	ya
+鸦	ya
+鸭	ya
+䶮	yan
+严	yan
+俨	yan
+偃	yan
+兖	yan
+厌	yan
+厣	yan
+咽	yan
+唁	yan
+堰	yan
+墕	yan
+奄	yan
+妍	yan
+嫣	yan
+嬿	yan
+宴	yan
+岩	yan
+崦	yan
+延	yan
+弇	yan
+彦	yan
+恹	yan
+戭	yan
+扊	yan
+掞	yan
+掩	yan
+晏	yan
+棪	yan
+檐	yan
+殷	yan	0.0033657568%
+沇	yan
+沿	yan
+淹	yan
+渰	yan
+湮	yan
+滟	yan
+演	yan
+漹	yan
+炎	yan
+烟	yan
+焉	yan
+焰	yan
+焱	yan
+燕	yan
+琰	yan
+甗	yan
+盐	yan
+眼	yan
+研	yan
+砚	yan
+筵	yan
+罨	yan
+胭	yan
+腌	yan
+艳	yan
+芫	yan
+虤	yan
+蜒	yan
+蝘	yan
+衍	yan
+觃	yan
+言	yan
+谚	yan
+谳	yan
+赝	yan
+郾	yan
+鄢	yan
+酽	yan
+铅	yan	0.0138465799%
+闫	yan
+阉	yan
+阎	yan
+阏	yan
+雁	yan
+颜	yan
+餍	yan
+验	yan
+魇	yan
+黡	yan
+鼹	yan
+𪩘	yan
+𫄧	yan
+𬙂	yan
+𬸘	yan
+仰	yang
+佯	yang
+养	yang
+咉	yang
+垟	yang
+央	yang
+徉	yang
+怏	yang
+恙	yang
+扬	yang
+旸	yang
+杨	yang
+样	yang
+殃	yang
+氧	yang
+泱	yang
+洋	yang
+漾	yang
+炀	yang
+烊	yang
+玚	yang
+疡	yang
+痒	yang
+秧	yang
+羊	yang
+羕	yang
+蛘	yang
+钖	yang
+阳	yang
+鞅	yang
+飏	yang
+鸯	yang
+㙘	yao
+侥	yao	0.0115854718%
+吆	yao
+咬	yao
+垚	yao
+夭	yao
+妖	yao
+姚	yao
+媱	yao
+尧	yao
+峣	yao
+崾	yao
+幺	yao
+徭	yao
+摇	yao
+曜	yao
+杳	yao
+爻	yao
+猺	yao
+珧	yao
+瑶	yao
+疟	yao	1.0858835143%
+窅	yao
+窈	yao
+窑	yao
+约	yao	1.9005178393%
+耀	yao
+肴	yao
+腰	yao
+舀	yao
+药	yao
+要	yao
+谣	yao
+轺	yao
+遥	yao
+邀	yao
+钥	yao
+铫	yao
+靿	yao
+鳐	yao
+鹞	yao
+业	ye
+也	ye
+倻	ye
+冶	ye
+叶	ye
+咽	ye	1.1024836169%
+噎	ye
+夜	ye
+掖	ye
+揶	ye
+晔	ye
+曳	ye
+椰	ye
+液	ye
+烨	ye
+爷	ye
+耶	ye
+腋	ye
+谒	ye
+邺	ye
+野	ye
+铘	ye
+靥	ye
+页	ye
+馌	ye
+㑊	yi
+一	yi
+乂	yi
+义	yi
+乙	yi
+亦	yi
+亿	yi
+以	yi
+仪	yi
+伊	yi
+佁	yi
+佚	yi
+佾	yi
+依	yi
+倚	yi
+刈	yi
+劓	yi
+勚	yi
+匜	yi
+医	yi
+呓	yi
+咦	yi
+咿	yi
+嗌	yi
+噫	yi
+圯	yi
+埸	yi
+壹	yi
+夷	yi
+奕	yi
+姨	yi
+嫕	yi
+宜	yi
+宧	yi
+尾	yi	3.3572545834%
+屹	yi
+峄	yi
+嶷	yi
+已	yi
+廙	yi
+异	yi
+弈	yi
+弋	yi
+彝	yi
+役	yi
+忆	yi
+怡	yi
+怿	yi
+悒	yi
+意	yi
+懿	yi
+扅	yi
+扆	yi
+抑	yi
+挹	yi
+揖	yi
+旖	yi
+易	yi
+杙	yi
+枍	yi
+椅	yi
+椸	yi
+殪	yi
+毅	yi
+沂	yi
+洢	yi
+浥	yi
+溢	yi
+漪	yi
+潩	yi
+熠	yi
+燚	yi
+猗	yi
+疑	yi
+疫	yi
+痍	yi
+瘗	yi
+癔	yi
+益	yi
+眙	yi
+矣	yi
+祎	yi
+移	yi
+簃	yi
+繄	yi
+绎	yi
+缢	yi
+羿	yi
+翊	yi
+翌	yi
+翳	yi
+翼	yi
+肄	yi
+胰	yi
+臆	yi
+舣	yi
+艺	yi
+艾	yi	0.0009433072%
+苡	yi
+荑	yi
+薏	yi
+蚁	yi
+蜴	yi
+螠	yi
+衣	yi
+裔	yi
+裛	yi
+议	yi
+译	yi
+诒	yi
+诣	yi
+谊	yi
+贻	yi
+踦	yi
+轶	yi
+迤	yi
+逸	yi
+遗	yi
+邑	yi
+酏	yi
+钇	yi
+铱	yi
+镒	yi
+镱	yi
+颐	yi
+饴	yi
+驿	yi
+鹝	yi
+鹢	yi
+黟	yi
+𫄷	yi
+𫖮	yi
+𬟁	yi
+𬬩	yi
+𬺈	yi
+䲟	yin
+印	yin
+吟	yin
+吲	yin
+喑	yin
+嚚	yin
+因	yin
+垠	yin
+堙	yin
+夤	yin
+姻	yin
+寅	yin
+尹	yin
+崟	yin
+引	yin
+愔	yin
+慭	yin
+歅	yin
+殷	yin
+氤	yin
+洇	yin
+淫	yin
+溵	yin
+狺	yin
+珢	yin
+瘾	yin
+硍	yin
+禋	yin
+窨	yin
+胤	yin
+茚	yin
+茵	yin
+荫	yin
+蚓	yin
+蟫	yin
+訚	yin
+鄞	yin
+铟	yin
+银	yin
+阴	yin
+隐	yin
+霪	yin
+音	yin
+饮	yin
+骃	yin
+龂	yin
+龈	yin
+𬘡	yin
+𬤇	yin
+𬮱	yin
+䓨	ying
+嘤	ying
+婴	ying
+媖	ying
+媵	ying
+嬴	ying
+应	ying
+影	ying
+撄	ying
+映	ying
+楹	ying
+樱	ying
+溁	ying
+滢	ying
+潆	ying
+瀛	ying
+瑛	ying
+璎	ying
+瘿	ying
+盈	ying
+硬	ying
+缨	ying
+罂	ying
+膺	ying
+英	ying
+茔	ying
+荥	ying
+荧	ying
+莹	ying
+莺	ying
+萤	ying
+营	ying
+萦	ying
+蓥	ying
+蝇	ying
+赢	ying
+迎	ying
+郢	ying
+锳	ying
+颍	ying
+颖	ying
+鹦	ying
+鹰	ying
+哟	yo
+唷	yo
+育	yo	0.0004668382%
+㶲	yong
+佣	yong
+俑	yong
+勇	yong
+咏	yong
+喁	yong	0.2114164905%
+埇	yong
+墉	yong
+壅	yong
+庸	yong
+恿	yong
+慵	yong
+拥	yong
+栐	yong
+永	yong
+泳	yong
+涌	yong
+澭	yong
+用	yong
+甬	yong
+痈	yong
+臃	yong
+蛹	yong
+踊	yong
+邕	yong
+鄘	yong
+镛	yong
+雍	yong
+颙	yong
+饔	yong
+鲬	yong
+鳙	yong
+优	you
+佑	you
+侑	you
+卣	you
+又	you
+友	you
+右	you
+呦	you
+哟	you
+囿	you
+宥	you
+尤	you
+幼	you
+幽	you
+忧	you
+悠	you
+攸	you
+有	you
+柚	you
+槱	you
+油	you
+浟	you
+游	you
+牖	you
+犹	you
+猷	you
+由	you
+疣	you
+祐	you
+繇	you
+羑	you
+耰	you
+莜	you
+莠	you
+莸	you
+蚰	you
+蚴	you
+蝣	you
+蝤	you
+诱	you
+邮	you
+酉	you
+釉	you
+铀	you
+铕	you
+鱿	you
+鲉	you
+麀	you
+黝	you
+鼬	you
+𬨎	you
+㺄	yu
+与	yu
+予	yu
+于	yu
+伛	yu
+余	yu
+俞	yu
+俣	yu
+吁	yu
+喁	yu
+喻	yu
+圄	yu
+圉	yu
+域	yu
+堉	yu
+妤	yu
+妪	yu
+娱	yu
+宇	yu
+寓	yu
+尉	yu	0.0032220647%
+屿	yu
+峪	yu
+嵎	yu
+嵛	yu
+庾	yu
+彧	yu
+御	yu
+悆	yu
+愈	yu
+愉	yu
+愚	yu
+揄	yu
+敔	yu
+於	yu
+昱	yu
+棫	yu
+榆	yu
+欤	yu
+欲	yu
+毓	yu
+浴	yu
+淤	yu
+淯	yu
+渔	yu
+渝	yu
+滪	yu
+潏	yu
+煜	yu
+熨	yu	3.6673928831%
+燏	yu
+燠	yu
+狱	yu
+狳	yu
+玉	yu
+玙	yu
+瑀	yu
+瑜	yu
+畬	yu
+瘀	yu
+瘐	yu
+盂	yu
+矞	yu
+禹	yu
+禺	yu
+窬	yu
+窳	yu
+竽	yu
+纡	yu
+羽	yu
+聿	yu
+育	yu
+腴	yu
+臾	yu
+舁	yu
+舆	yu
+艅	yu
+芋	yu
+萸	yu
+蓣	yu
+蔚	yu	0.0099240808%
+虞	yu
+蜮	yu
+蝓	yu
+裕	yu
+褕	yu
+觎	yu
+誉	yu
+语	yu
+谀	yu
+谕	yu
+豫	yu
+迂	yu
+逾	yu
+遇	yu
+遹	yu
+邘	yu
+郁	yu
+鄅	yu
+钰	yu
+阈	yu
+隅	yu
+雨	yu
+雩	yu
+预	yu
+饫	yu
+驭	yu
+髃	yu
+鬻	yu
+鱼	yu
+鹆	yu
+鹬	yu
+龉	yu
+元	yuan
+冤	yuan
+原	yuan
+员	yuan
+园	yuan
+圆	yuan
+圜	yuan	0.1203369434%
+垣	yuan
+垸	yuan
+塬	yuan
+妧	yuan
+媛	yuan
+嫄	yuan
+怨	yuan
+愿	yuan
+掾	yuan
+援	yuan
+橼	yuan
+沅	yuan
+涴	yuan
+渊	yuan
+湲	yuan
+源	yuan
+爰	yuan
+猿	yuan
+瑗	yuan
+眢	yuan
+箢	yuan
+缘	yuan
+羱	yuan
+芫	yuan
+苑	yuan
+蜎	yuan
+螈	yuan
+袁	yuan
+辕	yuan
+远	yuan
+院	yuan
+鸢	yuan
+鸳	yuan
+鼋	yuan
+𫘪	yuan
+乐	yue	10.0001157912%
+刖	yue
+哕	yue
+岳	yue
+彟	yue
+悦	yue
+曰	yue
+月	yue
+栎	yue	0.1009081736%
+樾	yue
+瀹	yue
+爚	yue
+玥	yue
+籥	yue
+粤	yue
+约	yue
+越	yue
+跃	yue
+钥	yue	4.4685127289%
+钺	yue
+阅	yue
+龠	yue
+𫐄	yue
+𬸚	yue
+云	yun
+允	yun
+匀	yun
+员	yun	0.0002254362%
+妘	yun
+孕	yun
+恽	yun
+愠	yun
+昀	yun
+晕	yun
+殒	yun
+氲	yun
+沄	yun
+涢	yun
+煴	yun
+熨	yun
+狁	yun
+筠	yun
+筼	yun
+纭	yun
+缊	yun
+耘	yun
+芸	yun
+蕴	yun
+赟	yun
+运	yun
+郓	yun
+郧	yun
+酝	yun
+鋆	yun
+陨	yun
+韫	yun
+韵	yun
+馧	yun
+𫖳	yun
+匝	za
+咂	za
+咋	za
+扎	za	0.4897907258%
+拶	za	1.0869565217%
+杂	za
+砸	za
+臜	za
+仔	zai
+再	zai
+哉	zai
+在	zai
+宰	zai
+崽	zai
+栽	zai
+灾	zai
+甾	zai
+载	zai
+咱	zan
+寁	zan
+拶	zan
+攒	zan
+昝	zan
+暂	zan
+瓒	zan
+簪	zan
+糌	zan
+赞	zan
+趱	zan
+酂	zan
+錾	zan
+奘	zang
+牂	zang
+脏	zang
+臧	zang
+葬	zang
+藏	zang	2.9445710483%
+赃	zang
+驵	zang
+凿	zao
+唣	zao
+噪	zao
+慥	zao
+早	zao
+枣	zao
+澡	zao
+灶	zao
+燥	zao
+璪	zao
+皂	zao
+簉	zao
+糟	zao
+藻	zao
+蚤	zao
+躁	zao
+造	zao
+遭	zao
+𥖨	zao
+仄	ze
+则	ze
+咋	ze	0.0020322725%
+啧	ze
+帻	ze
+择	ze
+昃	ze
+泽	ze
+笮	ze
+箦	ze
+舴	ze
+责	ze
+赜	ze
+迮	ze
+贼	zei
+鲗	zei
+怎	zen
+谮	zen
+䎖	zeng
+增	zeng
+憎	zeng
+曾	zeng	0.4824976044%
+甑	zeng
+矰	zeng
+综	zeng	0.0065597429%
+缯	zeng
+罾	zeng
+赠	zeng
+鄫	zeng
+锃	zeng
+䃎	zha
+乍	zha
+劄	zha
+吒	zha
+咋	zha	0.0020322725%
+咤	zha
+哳	zha
+喋	zha	0.015537601%
+喳	zha
+奓	zha
+扎	zha
+拃	zha
+挓	zha
+揸	zha
+札	zha
+柞	zha	0.3533568905%
+查	zha	0.0004789788%
+栅	zha
+楂	zha
+榨	zha
+渣	zha
+溠	zha
+炸	zha
+痄	zha
+眨	zha
+砟	zha
+蚱	zha
+诈	zha
+轧	zha
+铡	zha
+闸	zha
+霅	zha
+馇	zha
+鲊	zha
+鲝	zha
+齇	zha
+债	zhai
+宅	zhai
+寨	zhai
+择	zhai	0.0397242117%
+摘	zhai
+斋	zhai
+瘵	zhai
+祭	zhai	0.0022446185%
+窄	zhai
+翟	zhai
+豸	zhai	0.2183406114%
+偡	zhan
+占	zhan
+展	zhan
+崭	zhan
+战	zhan
+搌	zhan
+斩	zhan
+旃	zhan
+栈	zhan
+栴	zhan
+毡	zhan
+沾	zhan
+湛	zhan
+盏	zhan
+瞻	zhan
+站	zhan
+粘	zhan
+绽	zhan
+蘸	zhan
+詹	zhan
+谵	zhan
+辗	zhan
+飐	zhan
+鳣	zhan
+鹯	zhan
+𫗴	zhan
+丈	zhang
+仉	zhang
+仗	zhang
+嫜	zhang
+嶂	zhang
+帐	zhang
+幛	zhang
+张	zhang
+彰	zhang
+掌	zhang
+暲	zhang
+杖	zhang
+樟	zhang
+涨	zhang
+漳	zhang
+獐	zhang
+璋	zhang
+瘴	zhang
+章	zhang
+胀	zhang
+蟑	zhang
+账	zhang
+鄣	zhang
+长	zhang
+障	zhang
+兆	zhao
+召	zhao
+啁	zhao	0.3289473684%
+找	zhao
+招	zhao
+旐	zhao
+昭	zhao
+曌	zhao
+朝	zhao	6.0001916049%
+棹	zhao
+沼	zhao
+照	zhao
+爪	zhao
+着	zhao	6.0000729951%
+笊	zhao
+罩	zhao
+肇	zhao
+诏	zhao
+赵	zhao
+钊	zhao
+𬬿	zhao
+𬶐	zhao
+䗪	zhe
+哲	zhe
+啫	zhe
+喆	zhe
+折	zhe
+晢	zhe
+柘	zhe
+浙	zhe
+着	zhe
+磔	zhe
+者	zhe
+蔗	zhe
+蛰	zhe
+蜇	zhe
+褶	zhe
+詟	zhe
+谪	zhe
+赭	zhe
+辄	zhe
+辙	zhe
+这	zhe
+遮	zhe
+锗	zhe
+鹧	zhe
+侦	zhen
+圳	zhen
+帧	zhen
+振	zhen
+揕	zhen
+斟	zhen
+昣	zhen
+朕	zhen
+枕	zhen
+桢	zhen
+榛	zhen
+浈	zhen
+珍	zhen
+瑧	zhen
+甄	zhen
+畛	zhen
+疹	zhen
+真	zhen
+砧	zhen
+祯	zhen
+禛	zhen
+稹	zhen
+箴	zhen
+纼	zhen
+缜	zhen
+胗	zhen
+臻	zhen
+葴	zhen
+蓁	zhen
+袗	zhen
+诊	zhen
+贞	zhen
+赈	zhen
+轸	zhen
+针	zhen
+镇	zhen
+阵	zhen
+震	zhen
+鬒	zhen
+鸩	zhen
+争	zheng
+峥	zheng
+征	zheng
+怔	zheng
+拯	zheng
+挣	zheng
+政	zheng
+整	zheng
+正	zheng
+烝	zheng
+狰	zheng
+症	zheng
+睁	zheng
+筝	zheng
+蒸	zheng
+证	zheng
+诤	zheng
+郑	zheng
+钲	zheng
+铮	zheng
+之	zhi
+侄	zhi
+值	zhi
+制	zhi
+卮	zhi
+只	zhi
+吱	zhi
+咫	zhi
+址	zhi
+埴	zhi
+峙	zhi
+帙	zhi
+帜	zhi
+庤	zhi
+彘	zhi
+徵	zhi
+志	zhi
+忮	zhi
+执	zhi
+扺	zhi
+指	zhi
+挚	zhi
+掷	zhi
+摭	zhi
+支	zhi
+旨	zhi
+晊	zhi
+智	zhi
+枝	zhi
+枳	zhi
+栀	zhi
+栉	zhi
+桎	zhi
+梽	zhi
+植	zhi
+榰	zhi
+止	zhi
+殖	zhi
+氏	zhi	0.001209263%
+汁	zhi
+沚	zhi
+治	zhi
+泜	zhi
+滍	zhi
+滞	zhi
+炙	zhi
+畤	zhi
+疐	zhi
+痔	zhi
+痣	zhi
+直	zhi
+知	zhi
+祉	zhi
+祗	zhi
+禔	zhi
+秩	zhi
+稙	zhi
+稚	zhi
+窒	zhi
+絷	zhi
+纸	zhi
+织	zhi
+置	zhi
+职	zhi
+肢	zhi
+胝	zhi
+脂	zhi
+至	zhi
+致	zhi
+芝	zhi
+芷	zhi
+蛭	zhi
+蜘	zhi
+觯	zhi
+识	zhi	0.0002418649%
+豸	zhi
+质	zhi
+贽	zhi
+趾	zhi
+跖	zhi
+跱	zhi
+踬	zhi
+踯	zhi
+轵	zhi
+轾	zhi
+郅	zhi
+酯	zhi
+铚	zhi
+锧	zhi
+陟	zhi
+雉	zhi
+骘	zhi
+鸷	zhi
+黹	zhi
+𦭜	zhi
+𬃊	zhi
+中	zhong
+仲	zhong
+众	zhong
+冢	zhong
+忠	zhong
+柊	zhong
+盅	zhong
+种	zhong
+终	zhong
+肿	zhong
+舯	zhong
+茽	zhong
+螽	zhong
+衷	zhong
+踵	zhong
+重	zhong
+钟	zhong
+锺	zhong
+㑇	zhou
+㤘	zhou
+周	zhou
+咒	zhou
+啁	zhou
+妯	zhou
+婤	zhou
+宙	zhou
+州	zhou
+帚	zhou
+昼	zhou
+洲	zhou
+皱	zhou
+碡	zhou
+籀	zhou
+粥	zhou
+纣	zhou
+绉	zhou
+肘	zhou
+胄	zhou
+舟	zhou
+荮	zhou
+诌	zhou
+赒	zhou
+轴	zhou
+辀	zhou
+酎	zhou
+骤	zhou
+鸼	zhou
+主	zhu
+伫	zhu
+住	zhu
+侏	zhu
+助	zhu
+嘱	zhu
+拄	zhu
+术	zhu	0.0003449019%
+朱	zhu
+杼	zhu
+柱	zhu
+柷	zhu
+株	zhu
+槠	zhu
+橥	zhu
+注	zhu
+洙	zhu
+渚	zhu
+潴	zhu
+炷	zhu
+烛	zhu
+煮	zhu
+猪	zhu
+珠	zhu
+疰	zhu
+瘃	zhu
+瞩	zhu
+砫	zhu
+祝	zhu
+竹	zhu
+竺	zhu
+筑	zhu
+箸	zhu
+纻	zhu
+翥	zhu
+舳	zhu
+苎	zhu
+茱	zhu
+著	zhu
+蛀	zhu
+蛛	zhu
+蠋	zhu
+诛	zhu
+诸	zhu
+贮	zhu
+躅	zhu
+逐	zhu
+邾	zhu
+铢	zhu
+铸	zhu
+驻	zhu
+麈	zhu
+𬣞	zhu
+抓	zhua
+爪	zhua
+髽	zhua
+拽	zhuai
+䏝	zhuan
+专	zhuan
+传	zhuan	6.0001604424%
+僎	zhuan
+啭	zhuan
+撰	zhuan
+沌	zhuan	0.0088987764%
+瑑	zhuan
+砖	zhuan
+篆	zhuan
+赚	zhuan
+转	zhuan
+颛	zhuan
+馔	zhuan
+壮	zhuang
+奘	zhuang	0.0673854447%
+妆	zhuang
+幢	zhuang
+庄	zhuang
+戆	zhuang
+撞	zhuang
+桩	zhuang
+状	zhuang
+装	zhuang
+坠	zhui
+惴	zhui
+椎	zhui
+缀	zhui
+缒	zhui
+赘	zhui
+追	zhui
+锥	zhui
+隹	zhui
+骓	zhui
+准	zhun
+屯	zhun	0.0104986877%
+窀	zhun
+肫	zhun
+衠	zhun
+谆	zhun
+𬘯	zhun
+䓬	zhuo
+䦃	zhuo
+倬	zhuo
+卓	zhuo
+叕	zhuo
+啄	zhuo
+拙	zhuo
+捉	zhuo
+擢	zhuo
+斫	zhuo
+晫	zhuo
+桌	zhuo
+棁	zhuo
+椓	zhuo
+汋	zhuo
+浊	zhuo
+浞	zhuo
+涿	zhuo
+濯	zhuo
+灼	zhuo
+焯	zhuo	0.3649635036%
+琢	zhuo
+着	zhuo	6.0000729951%
+禚	zhuo
+茁	zhuo
+诼	zhuo
+酌	zhuo
+镯	zhuo
+𬸦	zhuo
+仔	zi
+兹	zi
+吱	zi
+咨	zi
+嗞	zi
+姊	zi
+姿	zi
+子	zi
+孖	zi
+字	zi
+孜	zi
+孳	zi
+嵫	zi
+恣	zi
+梓	zi
+淄	zi
+渍	zi
+滋	zi
+滓	zi
+眦	zi
+秭	zi
+笫	zi
+籽	zi
+粢	zi
+紫	zi
+缁	zi
+耔	zi
+自	zi
+茈	zi
+虸	zi
+觜	zi
+訾	zi
+赀	zi
+资	zi
+趑	zi
+辎	zi
+鄑	zi
+锱	zi
+镃	zi
+髭	zi
+鲻	zi
+鼒	zi
+龇	zi
+倧	zong
+偬	zong
+宗	zong
+总	zong
+枞	zong	0.3278688525%
+棕	zong
+疭	zong
+粽	zong
+纵	zong
+综	zong
+腙	zong
+踪	zong
+鬃	zong
+鬷	zong
+奏	zou
+揍	zou
+诹	zou
+走	zou
+邹	zou
+鄹	zou
+陬	zou
+驺	zou
+鲰	zou
+俎	zu
+卒	zu
+崒	zu
+族	zu
+珇	zu
+祖	zu
+租	zu
+组	zu
+菹	zu
+诅	zu
+足	zu
+镞	zu
+阻	zu
+攥	zuan
+纂	zuan
+缵	zuan
+躜	zuan
+钻	zuan
+咀	zui	0.0230733733%
+嘴	zui
+最	zui
+槜	zui
+罪	zui
+蕞	zui
+醉	zui
+僔	zun
+噂	zun
+尊	zun
+嶟	zun
+撙	zun
+樽	zun
+遵	zun
+鳟	zun
+𨱔	zun
+佐	zuo
+作	zuo
+做	zuo
+唑	zuo
+嘬	zuo
+坐	zuo
+岞	zuo
+左	zuo
+座	zuo
+怍	zuo
+捽	zuo
+撮	zuo
+昨	zuo
+柞	zuo
+琢	zuo
+祚	zuo
+笮	zuo
+胙	zuo
+酢	zuo
+阼	zuo
