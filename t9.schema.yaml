@@ -5,8 +5,9 @@
 # 适配了仓输入法 Hamster 九宫格布局。
 # 参考于仓作者 [morse.hsiao](https://github.com/imfuxiao) 的示例
 #
-# 如果需要输入英文，将 others/Hamster九宫格/melt_eng.custom.yaml 拷贝至配置目录，
-# 方便 367 输出'iOS'、746 输出'VIP'之类的常用短单词
+# 需要将 `others/Hamster九宫格/` 里的两个文件拷贝至配置目录：
+# - rime_ice.dict.yaml     覆盖掉原文件。删除了大写字母的编码，因为仓的九宫格拼写默认使用了大写字母
+# - melt_eng.custom.yaml   可选，转写英文的拼写规则到九宫格，以支持英文输入，方便打一些短单词
 
 
 __include: rime_ice.schema.yaml:/
@@ -47,7 +48,7 @@ engine:
     - punct_translator
     - script_translator
     - lua_translator@date_translator      # 时间、日期、星期
-    - table_translator@custom_phrase      # 自定义短语 custom_phrase.txt
+    # - table_translator@custom_phrase      # 自定义短语 custom_phrase.txt
     - table_translator@melt_eng           # 英文输入
     # - reverse_lookup_translator@liangfen  # 反查，两分拼字
     # - lua_translator@unicode              # Unicode
@@ -64,6 +65,7 @@ engine:
 
 translator:
   prism: t9
+  spelling_hints: 100
 
 
 # 九宫格 1 键上的符号序列
@@ -78,8 +80,8 @@ punctuator:
 speller:
   algebra:
     - abbrev/^([a-z]).+$/$1/   # 超级简拼
-    # - derive/.+/\U$0/
-    - derive/[abc]/A/
+    - derive/a/A/
+    - derive/[bc].+/A/
     - derive/[bc]a/AA/
     - derive/[bc]ai/AAG/
     - derive/[bc]an|[bc]ao/AAM/
@@ -116,7 +118,8 @@ speller:
     - derive/cuan/ATAM/
     - derive/cui/ATG/
     - derive/cu[no]/ATM/
-    - derive/[def]/D/
+    - derive/e/D/
+    - derive/[df].+/D/
     - derive/[df]a/DA/
     - derive/dai/DAG/
     - derive/[df]an|dao/DAM/
@@ -188,7 +191,8 @@ speller:
     - derive/jue|lve/JTD/
     - derive/kui/JTG/
     - derive/[jkl]un|[kl]uo/JTM/
-    - derive/[mno]/M/
+    - derive/o/M/
+    - derive/[mn].+/M/
     - derive/[mn]a/MA/
     - derive/[mn]ai/MAG/
     - derive/[mn]an|[mn]ao/MAM/
@@ -256,6 +260,7 @@ speller:
     - derive/ta[no]/TAM/
     - derive/tang/TAMG/
     - derive/te/TD/
+    - derive/tei/TDG/
     - derive/teng/TDMG/
     - derive/ti/TG/
     - derive/tia[no]/TGAM/
