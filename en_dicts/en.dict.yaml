@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-09-15"
+version: "2023-09-29"
 sort: by_weight
 ...
 # +_+
@@ -12377,7 +12377,7 @@ MVC	MVC
 # mvp	mvp
 # mw	mw
 # mx	mx
-# my	my
+my	my
 myanmar	myanmar
 myers	myers
 myocardial	myocardial

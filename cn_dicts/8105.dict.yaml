@@ -87,7 +87,7 @@ sort: by_weight
 
 ### 字表
 # +_+
-啊	a	2366043
+啊	a	5366043
 阿	a	867275
 吖	a	854
 锕	a	144
@@ -552,7 +552,7 @@ sort: by_weight
 欂	bo	0
 袯	bo	0
 𬭛	bo	0
-不	bu	29858097
+不	bu	2985809
 部	bu	1972176
 步	bu	1077549
 布	bu	591571
@@ -916,7 +916,7 @@ sort: by_weight
 杻	chou	1
 侴	chou	0
 椆	chou	0
-出	chu	8294943
+出	chu	2294943
 处	chu	1626691
 楚	chu	728204
 除	chu	599918
@@ -4217,8 +4217,8 @@ sort: by_weight
 糜	mei	1
 媄	mei	0
 瑂	mei	0
-们	men	10741873
 门	men	2233462
+们	men	1074187
 闷	men	203501
 懑	men	2697
 扪	men	2344
@@ -7842,8 +7842,8 @@ sort: by_weight
 羱	yuan	4
 圜	yuan	1
 𫘪	yuan	0
-月	yue	1546594
 越	yue	1069176
+月	yue	546594
 约	yue	526224
 跃	yue	169432
 岳	yue	131477
