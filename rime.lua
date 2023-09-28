@@ -56,6 +56,9 @@ long_word_filter = require("long_word_filter")
 -- 在 engine/filters 增加 - lua_filter@cn_en_spacer
 cn_en_spacer = require("cn_en_spacer")
 
+-- add space at the end if word are english
+en_spacer = require("en_spacer")
+
 -- 九宫格，手机用。
 -- 在 engine/filters 增加 - lua_filter@t9_preedit
 t9_preedit = require("t9_preedit")
