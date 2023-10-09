@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2023-09-24"
+version: "2023-10-09"
 sort: by_weight
 ...
 ##### 容错词
@@ -24,6 +24,8 @@ sort: by_weight
 # 「伯伯」方言
 伯伯	bo bo
 伯伯	bai bai
+
+
 ##### 错音错字提示。与 corrector.lua 配合，上面的是正确的，下面是错误的
 ### 错音
 馄饨	hun tun
@@ -148,6 +150,10 @@ sort: by_weight
 模棱两可	mo ling liang ke
 鄱阳湖	po yang hu
 鄱阳湖	pan yang hu
+脖颈	bo geng
+脖颈	bo jing
+脖颈儿	bo geng er
+脖颈儿	bo jing er
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
@@ -160,6 +166,7 @@ sort: by_weight
 血脉喷张	xue mai pen zhang
 契诃夫	qi he fu
 契科夫	qi ke fu
+
 
 ##### 叠字
 # 数据来源：https://zh.wikipedia.org/wiki/%E4%B8%89%E5%8F%A0%E5%AD%97 https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%8F%A0%E5%AD%97
