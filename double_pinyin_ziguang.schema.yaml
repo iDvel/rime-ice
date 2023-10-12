@@ -261,4 +261,4 @@ speller:
     - xform/ao$/Ⓠ/ # ao should be placed after iao
     - xform/an$/Ⓡ/ # an should be placed after uan/ian
     - xlit/ⓌⓉⓎⓊⒾⓄⓅⒶⒼⓈⒹⒻⒽⒿⓀⓁⓏⓍⒷⓃⓂⓆⓇ/wtyuiopagsdfhjklzxbnmqr/
-    - abbrev/^(.).+$/$1/ # 首字母简拼
+    # - abbrev/^(.).+$/$1/  # 首字母简拼，开启后会导致 3 个字母时 kj'x 变成 k'jx 的问题

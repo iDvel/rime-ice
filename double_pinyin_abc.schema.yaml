@@ -260,4 +260,4 @@ speller:
     - xform/un$/Ⓝ/
     - xform/[uv]e$|ui$/Ⓜ/
     - xlit/ⓆⓌⒺⓇⓉⓎⓄⓅⒶⓈⒹⒻⒼⒽⒿⓀⓁⓏⓍⒸⓋⒷⓃⓂ/qwertyopasdfghjklzxcvbnm/
-    - abbrev/^(.).+$/$1/  # 首字母简拼
+    # - abbrev/^(.).+$/$1/  # 首字母简拼，开启后会导致 3 个字母时 kj'x 变成 k'jx 的问题
