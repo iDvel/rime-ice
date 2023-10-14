@@ -1244,7 +1244,7 @@ Pokemon	Pokemon Pokémon
 毫秒	毫秒 ms millisecond
 微秒	微秒 μs microsecond
 纳秒	纳秒 ns nanosecond
-皮秒	皮妙 ps picosecond
+皮秒	皮秒 ps picosecond
 飞秒	飞秒 fs femtosecond
 阿秒	阿秒 as attosecond
 毫米	毫米 mm millimeter
