@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-10-09"
+version: "2023-10-14"
 sort: by_weight
 ...
 # 一些杂项
@@ -167,6 +167,21 @@ Windows 7	Windows	7
 Windows 8	Windows	8
 Windows 10	Windows	10
 Windows 11	Windows	11
+
+# 为了每组的排序，code 必须保持一致
+hell	hell	2
+he'll	hell	1
+shell	shell	2
+she'll	shell	1
+well	well	2
+we'll	well	1
+ill	ill	2
+I'll	ill	1
+ID	id	2
+I'd	id	1
+shed	shed	2
+she'd	she'd	1
+
 
 
 # +_+
@@ -2277,3 +2292,53 @@ Terraria	Terraria
 Unihan	Unihan
 adrift	adrift
 joker	joker
+cannibalistic	cannibalistic
+micrometer	micrometer
+nanometer	nanometer
+DLsite	DLsite
+picosecond	picosecond
+femtosecond	femtosecond
+attosecond	attosecond
+I'm	I'm
+You're	You're
+she's	she's
+we're	we're
+they're	they're
+aren't	aren't
+wasn't	wasn't
+weren't	weren't
+hasn't	hasn't
+haven't	haven't
+hadn't	hadn't
+wouldn't	wouldn't
+couldn't	couldn't
+shouldn't	shouldn't
+mightn't	mightn't
+mustn't	mustn't
+shan't	shan't
+ain't	ain't
+daren't	daren't
+needn't	needn't
+oughtn't	oughtn't
+who's	who's
+where's	where's
+when's	when's
+why's	why's
+how's	how's
+here's	here's
+you'll	you'll
+it'll	it'll
+they'll	they'll
+you'd	you'd
+we'd	we'd
+I've	I've
+he'd	he'd
+it'd	it'd
+they'd	they'd
+you've	you've
+we've	we've
+they've	they've
+sorta	sorta
+lemme	lemme
+outta	outta
+whatcha	whatcha

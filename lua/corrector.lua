@@ -88,6 +88,9 @@ local corrections = {
 	["zhao cha er"] = { text = "找茬儿", comment = "找碴儿" },
 	["da jia lai zhao cha"] = { text = "大家来找茬", comment = "大家来找碴" },
 	["da jia lai zhao cha er"] = { text = "大家来找茬儿", comment = "大家来找碴儿" },
+	["ci ya"] = { text = "龇牙", comment = "龇(zi)牙" },
+	["ci zhe ya"] = { text = "龇着牙", comment = "龇(zi)着牙" },
+	["ci ya lie zui"] = { text = "龇牙咧嘴", comment = "龇(zi)牙咧嘴" },
 }
 
 local function corrector(input)
