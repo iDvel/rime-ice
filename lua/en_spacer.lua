@@ -1,9 +1,8 @@
 -- 这个 Lua 给英文单词后面自动加一个空格 #496
 
 local function add_space_to_english_word(input)
-    -- 匹配纯英文单词并在单词后添加空格
-    input = input:gsub("(%a+)", "%1 ")
-
+    -- 匹配纯英文单词（don't 算纯英文单词）并在单词后添加空格
+    input = input:gsub("(%a+'?%a*)", "%1 ")
     return input
 end
 
