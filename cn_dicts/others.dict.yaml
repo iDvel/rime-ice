@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2023-10-09"
+version: "2023-10-14"
 sort: by_weight
 ...
 ##### 容错词
@@ -166,6 +166,12 @@ sort: by_weight
 血脉喷张	xue mai pen zhang
 契诃夫	qi he fu
 契科夫	qi ke fu
+龇牙	zi ya
+龇牙	ci ya
+龇着牙	zi zhe ya
+龇着牙	ci zhe ya
+龇牙咧嘴	zi ya lie zui
+龇牙咧嘴	ci ya lie zui
 
 
 ##### 叠字
