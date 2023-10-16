@@ -8,7 +8,7 @@ function M.init(env)
     local config = env.engine.schema.config
     env.name_space = env.name_space:gsub("^*", "")
     M.idx = config:get_int(env.name_space .. "/idx") -- 要插入的位置
-    M.words = {} -- 要过滤的词
+    M.words = {}                                     -- 要过滤的词
     local list = config:get_list(env.name_space .. "/words")
     for i = 0, list.size - 1 do
         local word = list:get_value_at(i).value
@@ -24,11 +24,11 @@ function M.func(input, env)
         local index = 0
         for cand in input:iter() do
             index = index + 1
-            -- 定位匹配的英文词
-            if not string.find(cand.preedit, " ") and not string.match(cand.text, "%A") then
-                table.insert(pending_cands, cand)
-            else
+            -- 找到要降低的英文词，加入 pending_cands
+            if cand.preedit:find(" ") or not cand.text:match("^[%a']+$") then
                 yield(cand)
+            else
+                table.insert(pending_cands, cand)
             end
             if index >= M.idx + #pending_cands - 1 then
                 for _, cand in ipairs(pending_cands) do
