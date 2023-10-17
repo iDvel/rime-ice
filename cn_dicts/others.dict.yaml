@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2023-10-14"
+version: "2023-10-17"
 sort: by_weight
 ...
 ##### 容错词
@@ -24,6 +24,25 @@ sort: by_weight
 # 「伯伯」方言
 伯伯	bo bo
 伯伯	bai bai
+# 「斜」的古音
+远上寒山石径斜	yuan shang han shan shi jing xie
+远上寒山石径斜	yuan shang han shan shi jing xia
+# 「骑」目前统读 qi
+坐骑	zuo qi
+坐骑	zuo ji
+铁骑	tie qi
+铁骑	tie ji
+一骑绝尘	yi qi jue chen
+一骑绝尘	yi ji jue chen
+一骑当千	yi qi dang qian
+一骑当千	yi ji dang qian
+一骑红尘妃子笑	yi qi hong chen fei zi xiao
+一骑红尘妃子笑	yi ji hong chen fei zi xiao
+走单骑	zou dan qi
+走单骑	zou dan ji
+千里走单骑	qian li zou dan qi
+千里走单骑	qian li zou dan ji
+
 
 
 ##### 错音错字提示。与 corrector.lua 配合，上面的是正确的，下面是错误的
@@ -48,16 +67,6 @@ sort: by_weight
 街溜子	gai liu zi
 说服	shuo fu
 说服	shui fu
-坐骑	zuo qi
-坐骑	zuo ji
-一骑绝尘	yi qi jue chen
-一骑绝尘	yi ji jue chen
-一骑红尘妃子笑	yi qi hong chen fei zi xiao
-一骑红尘妃子笑	yi ji hong chen fei zi xiao
-千里走单骑	qian li zou dan qi
-千里走单骑	qian li zou dan ji
-一骑当千	yi qi dang qian
-一骑当千	yi ji dang qian
 道行	dao heng
 道行	dao hang
 模样	mu yang

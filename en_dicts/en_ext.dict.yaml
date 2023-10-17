@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-10-14"
+version: "2023-10-17"
 sort: by_weight
 ...
 # 一些杂项
@@ -180,14 +180,10 @@ I'll	ill	1
 ID	id	2
 I'd	id	1
 shed	shed	2
-she'd	she'd	1
-
+she'd	shed	1
 
 
 # +_+
-ERC-20	ERC-20
-ERC-721	ERC-721
-ERC-1155	ERC-1155
 iPhone 3G	iPhone3G
 iPhone 3GS	iPhone3GS
 iPhone 4	iPhone4
@@ -257,6 +253,9 @@ Windows 7	Windows7
 Windows 8	Windows8
 Windows 10	Windows10
 Windows 11	Windows11
+ERC-20	ERC-20
+ERC-721	ERC-721
+ERC-1155	ERC-1155
 cheetah	cheetah
 mavericks	mavericks
 High Sierra	HighSierra
@@ -1411,7 +1410,7 @@ Simple Mail Transfer Protocol	SMTP
 Simple Mail Transfer Protocol	SimpleMailTransferProtocol
 unacceptable	unacceptable
 Waterfox	Waterfox
-Let's Go	Let'sGo
+Let's go	Let'sgo
 one-liner	one-liner
 Callback	Callback
 SSID	SSID
@@ -1636,8 +1635,9 @@ RNA	RNA
 ribonucleic acid	RNA
 mRNA	mRNA
 messenger RNA	mRNA
-C++	Cpp
 C++	C++
+C++	Cpp
+C++	Cjiajia
 Python	Python
 Perl	Perl
 MIT	MIT
@@ -2300,7 +2300,7 @@ picosecond	picosecond
 femtosecond	femtosecond
 attosecond	attosecond
 I'm	I'm
-You're	You're
+you're	you're
 she's	she's
 we're	we're
 they're	they're
