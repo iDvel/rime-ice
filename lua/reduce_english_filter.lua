@@ -25,7 +25,7 @@ function M.func(input, env)
         for cand in input:iter() do
             index = index + 1
             -- 找到要降低的英文词，加入 pending_cands
-            if cand.preedit:find(" ") or not cand.text:match("^[%a']+$") then
+            if cand.preedit:find(" ") or not cand.text:match("^[%a' ]+$") then
                 yield(cand)
             else
                 table.insert(pending_cands, cand)
