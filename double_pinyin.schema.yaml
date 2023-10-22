@@ -246,7 +246,7 @@ speller:
     - xform/^zh/Ⓥ/
     - xform/uo$/Ⓞ/
     - xform/[uv]n$/Ⓟ/
-    - xform/i?ong$/Ⓢ/
+    - xform/(.)i?ong$/$1Ⓢ/
     - xform/[iu]ang$/Ⓓ/
     - xform/(.)en$/$1Ⓕ/
     - xform/(.)eng$/$1Ⓖ/

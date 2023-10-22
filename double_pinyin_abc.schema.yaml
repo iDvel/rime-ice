@@ -246,7 +246,7 @@ speller:
     - xform/ing$/Ⓨ/
     - xform/uo$/Ⓞ/
     - xform/uan$/Ⓟ/
-    - xform/i?ong$/Ⓢ/
+    - xform/(.)i?ong$/$1Ⓢ/
     - xform/[iu]a$/Ⓓ/
     - xform/en$/Ⓕ/
     - xform/eng$/Ⓖ/
