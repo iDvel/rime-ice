@@ -71,6 +71,7 @@ local corrections = {
 	["pan yang hu"] = { text = "鄱阳湖", comment = "po yang hu" },
 	["bo jing"] = { text = "脖颈", comment = "bo geng" },
 	["bo jing er"] = { text = "脖颈儿", comment = "bo geng er" },
+	["jie zha"] = { text = "结扎", comment = "jie za" },
 	-- 错字
 	["ceng jin"] = { text = "曾今", comment = "曾经" },
 	["an nai"] = { text = "按耐", comment = "按捺(na)" },
