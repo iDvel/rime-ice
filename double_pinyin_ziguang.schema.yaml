@@ -249,7 +249,7 @@ speller:
     - xform/ang$/Ⓢ/  # ang should be placed after iang/uang
     - xform/ie$/Ⓓ/
     - xform/ian$/Ⓕ/
-    - xform/i?ong$/Ⓗ/
+    - xform/(.)i?ong$/$1Ⓗ/
     - xform/er$|iu$/Ⓙ/
     - xform/ei$/Ⓚ/
     - xform/uan$/Ⓛ/
