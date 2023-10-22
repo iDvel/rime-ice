@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-10-14"
+version: "2023-10-22"
 sort: by_weight
 ...
 # +_+
@@ -1980,7 +1980,7 @@ bindings	bindings
 binds	binds
 bingo	bingo
 binoculars	binoculars
-bins	bins
+# bins	bins
 bio	bio
 biochem	biochem
 biochemical	biochemical
@@ -5720,7 +5720,7 @@ doubles	doubles
 doubt	doubt
 doubtless	doubtless
 doubts	doubts
-doug	doug
+Doug	Doug
 dough	dough
 doughty	doughty
 Douglas	Douglas
@@ -7549,7 +7549,6 @@ fourth	fourth
 fowl	fowl
 fowler	fowler
 fox	fox
-Fox	Fox
 # fp	fp
 # fpo	fpo
 # fprintf	fprintf
@@ -8347,7 +8346,7 @@ GTA	GTA
 # gtk	gtk
 # gu	gu
 Guadeloupe	Guadeloupe
-guam	guam
+Guam	Guam
 guarantee	guarantee
 guaranteed	guaranteed
 guarantees	guarantees
@@ -8501,7 +8500,7 @@ Hannah	Hannah
 Hannover	Hannover
 Hanoi	Hanoi
 Hanover	Hanover
-hans	hans
+Hans	Hans
 Hansard	Hansard
 hansen	hansen
 Hanson	Hanson
@@ -12402,7 +12401,7 @@ myths	myths
 # nabble	nabble
 # nach	nach
 # nacional	nacional
-nad	nad
+# nad	nad
 # nadu	nadu
 nail	nail
 nails	nails

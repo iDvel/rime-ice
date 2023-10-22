@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-10-17"
+version: "2023-10-22"
 sort: by_weight
 ...
 # 一些杂项
@@ -122,6 +122,24 @@ Chandler	Chandler
 Phoebe	Phoebe
 
 
+# 特定的排序，为了每组的排序，code 必须保持一致
+hell	hell	2
+he'll	hell	1
+shell	shell	2
+she'll	shell	1
+well	well	2
+we'll	well	1
+ill	ill	2
+I'll	ill	1
+ID	id	2
+I'd	id	1
+shed	shed	2
+she'd	shed	1
+net	net	2
+.NET	net	1
+.NET	dotnet
+
+
 # 带权重的系列
 iPhone	iPhone	999
 iPhone 15	iPhone	4
@@ -167,20 +185,6 @@ Windows 7	Windows	7
 Windows 8	Windows	8
 Windows 10	Windows	10
 Windows 11	Windows	11
-
-# 为了每组的排序，code 必须保持一致
-hell	hell	2
-he'll	hell	1
-shell	shell	2
-she'll	shell	1
-well	well	2
-we'll	well	1
-ill	ill	2
-I'll	ill	1
-ID	id	2
-I'd	id	1
-shed	shed	2
-she'd	shed	1
 
 
 # +_+
@@ -821,7 +825,6 @@ PaintCode	PaintCode
 Parallels Desktop	ParallelsDesktop
 Password	Password
 Paste	Paste
-Paw	Paw
 PayPal	PayPal
 PhotoDesk	PhotoDesk
 Picatext	Picatext
@@ -1236,7 +1239,6 @@ Windows Media Player	MediaPlayer
 Visual Studio Code	VisualStudioCode
 Visual Studio Code	VSCode
 PowerShell	PowerShell
-.NET	.NET
 Surface	Surface
 MSN	MSN
 Skype	Skype
