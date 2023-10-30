@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-10-22"
+version: "2023-10-30"
 sort: by_weight
 ...
 # 一些杂项
@@ -432,7 +432,7 @@ WYSIWYG	WYSIWYG
 What You See Is What You Get	WYSIWYG
 Mark Text	MarkText
 Joplin	Joplin
-Obsidian	Obsidian
+obsidian	obsidian
 SteamOS	SteamOS
 TikTok	TikTok
 IDC	IDC
@@ -823,8 +823,6 @@ Overcast	Overcast
 Overflow	Overflow
 PaintCode	PaintCode
 Parallels Desktop	ParallelsDesktop
-Password	Password
-Paste	Paste
 PayPal	PayPal
 PhotoDesk	PhotoDesk
 Picatext	Picatext
@@ -943,8 +941,6 @@ WSGI	WSGI
 BTC	BTC
 Bitcoin	BTC
 Bitcoin	Bitcoin
-template	template
-IMDb	IMDb
 gank	gank
 debuff	debuff
 MagSafe	MagSafe
@@ -1008,7 +1004,6 @@ Optical Character Recognition	OCR
 Optical Character Recognition	OpticalCharacterRecognition
 Déjà vu	Dejavu
 FFmpeg	FFmpeg
-Pokemon	Pokemon
 DMCA	DMCA
 Digital Millennium Copyright Act	DMCA
 Digital Millennium Copyright Act	DigitalMillenniumCopyrightAct
@@ -1126,7 +1121,6 @@ Shottr	Shottr
 turbo	turbo
 Turbo Boost	TurboBoost
 Turbo Boost Switcher	TurboBoostSwitcher
-P2P	P2P
 OPPO	OPPO
 vivo	vivo
 Uno	Uno
@@ -1526,19 +1520,14 @@ deprecate	deprecate
 deprecated	deprecated
 tum	tum
 rapper	rapper
-fucked	fucked
 Fedora	Fedora
 downbeat	downbeat
 hading	hading
 LeetCode	LeetCode
 danced	danced
-swept	swept
-spun	spun
 ghosts	ghosts
-admiral	admiral
 moonlit	moonlit
 Helvetica	Helvetica
-rewrite	rewrite
 limon	limon
 annotate	annotate
 annotated	annotated
@@ -2347,3 +2336,28 @@ PVE	PVE
 player versus environment	PVE
 Elon	Elon
 Musk	Musk
+Logseq	Logseq
+WPS	WPS
+Morty	Morty
+destructible	destructible
+indestructible	indestructible
+Frundles	Frundles
+Brotato	Brotato
+homie	homie
+homey	homey
+cynical	cynical
+seduce	seduce
+pinky	pinky
+engineman	engineman
+unhuman	unhuman
+unhumified	unhumified
+unhumanize	unhumanize
+flares	flares
+P2P	P2P
+F2A	F2A
+B2B	B2B
+C2C	C2C
+B2C	B2C
+C2B	C2B
+O2O	O2O
+NBA 2K	NBA2K
