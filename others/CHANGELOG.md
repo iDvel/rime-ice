@@ -4,6 +4,10 @@
 
 
 
+## 2023-10-30 📖
+
+完成同义多音字的注音问题 [#353](https://github.com/iDvel/rime-ice/issues/353)
+
 ## 2023-08-07 🆕
 
 支持搜狗双拼 [34ab972](https://github.com/iDvel/rime-ice/commit/34ab9725ea9cdf918cbf9f6a4c27d61db7736b07)

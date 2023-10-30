@@ -18,9 +18,9 @@ func Temp() {
 	// GeneratePinyinTest("都挺长的")
 	// GeneratePinyinTest("血条长")
 
-	// findP(ExtPath, "熟")
-	Pinyin(ExtPath)
-	AddWeight(ExtPath, 100)
+	// findP(BasePath, "血")
+	// Pinyin(ExtPath)
+	// AddWeight(ExtPath, 100)
 }
 
 // 列出字表中多音字的状况：是否参与自动注音
@@ -90,7 +90,7 @@ func polyphone() {
 	}
 }
 
-// 在字典中找到此行是否包含同义多音字，如果包含切长度大于等于3，从文件中删除这行，并将所有删除的行写入到 1.txt 中
+// 在词库中找到此行是否包含同义多音字，如果包含且长度大于等于3，从文件中删除这行，并将所有删除的行写入到 1.txt 中
 func findP(dictPath string, ch string) {
 	// open file
 	file, err := os.OpenFile(dictPath, os.O_RDWR, 0666)
