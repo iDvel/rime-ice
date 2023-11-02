@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-09-15"
+version: "2023-10-30"
 sort: by_weight
 ...
 # +_+
@@ -1980,7 +1980,7 @@ bindings	bindings
 binds	binds
 bingo	bingo
 binoculars	binoculars
-bins	bins
+# bins	bins
 bio	bio
 biochem	biochem
 biochemical	biochemical
@@ -2785,6 +2785,7 @@ canon	canon
 canonical	canonical
 canopy	canopy
 cans	cans
+can't	can't
 cant	cant
 canteen	canteen
 canterbury	canterbury
@@ -5316,7 +5317,7 @@ dictator	dictator
 dictionaries	dictionaries
 dictionary	dictionary
 did	did
-didn't	didnt
+didn't	didn't
 didrex	didrex
 die	die
 diecast	diecast
@@ -5646,7 +5647,7 @@ dodge	dodge
 dodgers	dodgers
 doe	doe
 does	does
-doesn't	doesnt
+doesn't	doesn't
 dog	dog
 dogg	dogg
 dogs	dogs
@@ -5690,7 +5691,7 @@ Donna	Donna
 donor	donor
 donors	donors
 Donovan	Donovan
-don't	dont
+don't	don't
 # dont	dont
 # doo	doo
 doom	doom
@@ -5719,7 +5720,7 @@ doubles	doubles
 doubt	doubt
 doubtless	doubtless
 doubts	doubts
-doug	doug
+Doug	Doug
 dough	dough
 doughty	doughty
 Douglas	Douglas
@@ -7548,7 +7549,6 @@ fourth	fourth
 fowl	fowl
 fowler	fowler
 fox	fox
-Fox	Fox
 # fp	fp
 # fpo	fpo
 # fprintf	fprintf
@@ -8346,7 +8346,7 @@ GTA	GTA
 # gtk	gtk
 # gu	gu
 Guadeloupe	Guadeloupe
-guam	guam
+Guam	Guam
 guarantee	guarantee
 guaranteed	guaranteed
 guarantees	guarantees
@@ -8500,7 +8500,7 @@ Hannah	Hannah
 Hannover	Hannover
 Hanoi	Hanoi
 Hanover	Hanover
-hans	hans
+Hans	Hans
 Hansard	Hansard
 hansen	hansen
 Hanson	Hanson
@@ -8751,7 +8751,7 @@ Hershey	Hershey
 Hertfordshire	Hertfordshire
 hertz	hertz
 Herzegovina	Herzegovina
-# hes	hes
+he's	he's
 hesitate	hesitate
 Hess	Hess
 # het	het
@@ -9223,7 +9223,6 @@ ignoring	ignoring
 # ik	ik
 # il	il
 # ile	ile
-ill	ill
 illegal	illegal
 illegally	illegally
 illicit	illicit
@@ -9912,7 +9911,7 @@ islanders	islanders
 islands	islands
 isle	isle
 isles	isles
-# isnt	isnt
+isn't	isn't
 ISO	ISO
 isolate	isolate
 isolated	isolated
@@ -9949,7 +9948,7 @@ iteration	iteration
 Ithaca	Ithaca
 itinerary	itinerary
 # itk	itk
-its	its
+it's	it's
 itself	itself
 # itu	itu
 iTunes	iTunes
@@ -10764,7 +10763,7 @@ Lester	Lester
 let	let
 lethal	lethal
 # letras	letras
-lets	lets
+let's	let's
 # lett	lett
 letter	letter
 lettering	lettering
@@ -12377,7 +12376,7 @@ MVC	MVC
 # mvp	mvp
 # mw	mw
 # mx	mx
-# my	my
+my	my
 myanmar	myanmar
 myers	myers
 myocardial	myocardial
@@ -12402,7 +12401,7 @@ myths	myths
 # nabble	nabble
 # nach	nach
 # nacional	nacional
-nad	nad
+# nad	nad
 # nadu	nadu
 nail	nail
 nails	nails
@@ -12415,7 +12414,7 @@ named	named
 namely	namely
 names	names
 namespace	namespace
-namibia	namibia
+Namibia	Namibia
 naming	naming
 nan	nan
 Nancy	Nancy
@@ -12964,7 +12963,7 @@ oceanic	oceanic
 oceans	oceans
 # och	och
 # oclc	oclc
-o'clock	oclock
+o'clock	o'clock
 # ocr	ocr
 Oct.	Oct
 octave	octave
@@ -13791,7 +13790,7 @@ peripheral	peripheral
 peripherals	peripherals
 perish	perish
 Perkins	Perkins
-perl	perl
+Perl	Perl
 permalink	permalink
 permanent	permanent
 permanently	permanently
@@ -14197,7 +14196,7 @@ poison	poison
 poisoning	poisoning
 poisonous	poisonous
 poke	poke
-pokemon	pokemon
+Pokemon	Pokemon
 poker	poker
 # pol	pol
 Poland	Poland
@@ -16905,7 +16904,6 @@ sheila	sheila
 Shelby	Shelby
 Sheldon	Sheldon
 shelf	shelf
-shell	shell
 Shelley	Shelley
 shellfish	shellfish
 shells	shells
@@ -17120,7 +17118,7 @@ sing	sing
 Singapore	Singapore
 singer	singer
 singers	singers
-singh	singh
+Singh	Singh
 singing	singing
 single	single
 singled	singled
@@ -17167,7 +17165,7 @@ sizes	sizes
 sizing	sizing
 # sj	sj
 # sk	sk
-ska	ska
+# ska	ska
 skate	skate
 skateboard	skateboard
 skateboarding	skateboarding
@@ -18770,7 +18768,7 @@ thanks	thanks
 thanksgiving	thanksgiving
 thanx	thanx
 that	that
-thats	thats
+that's	that's
 # thb	thb
 the	the
 theater	theater
@@ -18812,7 +18810,7 @@ therefore	therefore
 therein	therein
 thereof	thereof
 thereon	thereon
-Theres	Theres
+there's	there's
 Theresa	Theresa
 thereto	thereto
 thermal	thermal
@@ -19030,7 +19028,7 @@ tobago	tobago
 toby	toby
 # toc	toc
 today	today
-today's	todays
+today's	today's
 Todd	Todd
 toddler	toddler
 toddlers	toddlers
@@ -20524,7 +20522,7 @@ whales	whales
 wharf	wharf
 what	what
 whatever	whatever
-whats	whats
+what's	what's
 whatsoever	whatsoever
 wheat	wheat
 Wheaton	Wheaton
@@ -20735,6 +20733,7 @@ wondering	wondering
 wonderland	wonderland
 wonders	wonders
 # wong	wong
+won't	won't
 wont	wont
 woo	woo
 Wood	Wood

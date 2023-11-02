@@ -56,7 +56,11 @@ long_word_filter = require("long_word_filter")
 -- 在 engine/filters 增加 - lua_filter@cn_en_spacer
 cn_en_spacer = require("cn_en_spacer")
 
--- 九宫格，手机用。
+-- 英文词条上屏自动空格
+-- 在 engine/filters 增加 - lua_filter@en_spacer
+en_spacer = require("en_spacer")
+
+-- 九宫格，将输入框的数字转为对应的拼音或英文，iRime 用，Hamster 不需要。
 -- 在 engine/filters 增加 - lua_filter@t9_preedit
 t9_preedit = require("t9_preedit")
 

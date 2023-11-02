@@ -17,6 +17,7 @@ install_files: >-
   weasel_style.yaml
   rime_ice.schema.yaml
   rime_ice.dict.yaml
+  t9.schema.yaml
   double_pinyin.schema.yaml
   double_pinyin_abc.schema.yaml
   double_pinyin_mspy.schema.yaml

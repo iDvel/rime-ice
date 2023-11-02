@@ -843,6 +843,7 @@ Eject	Eject ⏏
 女男女	女男女 嫐
 ----------化学式	----------
 水	水 💦 H₂O
+一氧化二氢	一氧化二氢 H₂O
 乙醇	乙醇 C₂H₆O
 高锰酸钾	高锰酸钾 K₂MnO₄
 石灰石	石灰石 CaCO₃
@@ -1188,7 +1189,7 @@ rime	rime 㞢
 度	度 °
 摄氏度	摄氏度 °C
 华氏度	华氏度 °F
-点	点 ·
+点	点 · 丶
 间隔号	间隔号 ·
 连接号	连接号 —
 连接符	连接符 —
@@ -1243,6 +1244,12 @@ Pokemon	Pokemon Pokémon
 毫秒	毫秒 ms millisecond
 微秒	微秒 μs microsecond
 纳秒	纳秒 ns nanosecond
+皮秒	皮秒 ps picosecond
+飞秒	飞秒 fs femtosecond
+阿秒	阿秒 as attosecond
+毫米	毫米 mm millimeter
+微米	微米 μm micrometer
+纳米	纳米 nm nanometer
 掀桌子	掀桌子 (╯'-')╯︵┻━┻ (╯°Д°)╯︵┻━┻
 摆桌子	摆桌子 ┬─┬ノ('-'ノ)
 车马炮	车马炮 車马炮
@@ -1255,7 +1262,14 @@ Pokemon	Pokemon Pokémon
 伽马刀	伽马刀 γ刀
 伽马射线	伽马射线 γ射线
 六字真言	六字真言 唵嘛呢叭咪吽 爱玩玩不玩滚
+六字大明咒	六字大明咒 唵嘛呢叭咪吽
+竖	竖 丨
 撇	撇 丿
+竖弯钩	竖弯钩 乚
+竖弯钩儿	竖弯钩儿 乚
+横折	横折 𠃍
+横折钩	横折钩 𠃌
+横折钩儿	横折钩儿 𠃌
 二分之一	二分之一 ½
 三分之一	三分之一 ⅓
 三分之二	三分之二 ⅔
@@ -1277,3 +1291,4 @@ Pokemon	Pokemon Pokémon
 Twitter	Twitter 𝕏
 推特	推特 𝕏
 又又又又	又又又又 又双叒叕
+橡胶果实	橡胶果实 幻兽种·人人果实·尼卡（太阳神）形态

@@ -33,7 +33,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2023-09-24"
+version: "2023-10-30"
 sort: by_weight
 ...
 ### 按需启用
@@ -51,6 +51,8 @@ sort: by_weight
 濛	meng	1
 诶	ei	1
 凃	tu	1
+𤭢	cei	1000
+𤭢了	cei le	1000
 # 注释掉的这几行已经加入到下面并调整到合适的权重了
 # 〇	ling
 # 囧	jiong
@@ -87,7 +89,7 @@ sort: by_weight
 
 ### 字表
 # +_+
-啊	a	2366043
+啊	a	5366043
 阿	a	867275
 吖	a	854
 锕	a	144
@@ -552,7 +554,7 @@ sort: by_weight
 欂	bo	0
 袯	bo	0
 𬭛	bo	0
-不	bu	29858097
+不	bu	2985809
 部	bu	1972176
 步	bu	1077549
 布	bu	591571
@@ -916,7 +918,7 @@ sort: by_weight
 杻	chou	1
 侴	chou	0
 椆	chou	0
-出	chu	8294943
+出	chu	2294943
 处	chu	1626691
 楚	chu	728204
 除	chu	599918
@@ -2946,7 +2948,6 @@ sort: by_weight
 揭	jie	57148
 竭	jie	48555
 届	jie	38051
-价	jie	23092
 藉	jie	20781
 婕	jie	19606
 睫	jie	18742
@@ -2955,6 +2956,7 @@ sort: by_weight
 芥	jie	7468
 桔	jie	7128
 诘	jie	3733
+价	jie	3500
 颉	jie	3359
 嗟	jie	3220
 孑	jie	2490
@@ -3320,7 +3322,7 @@ sort: by_weight
 栲	kao	164
 㸆	kao	0
 洘	kao	0
-可	ke	7069176
+可	ke	1069176
 刻	ke	977816
 克	ke	777926
 客	ke	692916
@@ -4186,7 +4188,7 @@ sort: by_weight
 芼	mao	35
 眊	mao	34
 鄚	mao	15
-么	me	9727134
+么	me	9727
 没	mei	7560391
 美	mei	1692264
 每	mei	1015025
@@ -4217,8 +4219,8 @@ sort: by_weight
 糜	mei	1
 媄	mei	0
 瑂	mei	0
-们	men	10741873
 门	men	2233462
+们	men	1074187
 闷	men	203501
 懑	men	2697
 扪	men	2344
@@ -4485,15 +4487,15 @@ sort: by_weight
 硇	nao	51
 臑	nao	10
 峱	nao	1
-呢	ne	1793494
+呢	ne	179349
 讷	ne	10324
 哪	ne	1
 内	nei	1509530
 馁	nei	5700
 嫩	nen	58594
 恁	nen	3956
-能	neng	5933639
-你	ni	14221925
+能	neng	59336
+你	ni	1422192
 尼	ni	272244
 妮	ni	155375
 泥	ni	120657
@@ -4615,8 +4617,8 @@ sort: by_weight
 衄	nv	42
 虐	nve	30741
 疟	nve	1012
-哦	o	356333
-噢	o	49608
+哦	o	3563330
+噢	o	496080
 喔	o	1
 欧	ou	253543
 偶	ou	150991
@@ -5106,7 +5108,7 @@ sort: by_weight
 樵	qiao	8689
 撬	qiao	6740
 锹	qiao	4077
-壳	qiao	2000
+壳	qiao	3000
 谯	qiao	1914
 橇	qiao	1666
 诮	qiao	1506
@@ -7842,8 +7844,8 @@ sort: by_weight
 羱	yuan	4
 圜	yuan	1
 𫘪	yuan	0
-月	yue	1546594
 越	yue	1069176
+月	yue	546594
 约	yue	526224
 跃	yue	169432
 岳	yue	131477

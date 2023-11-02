@@ -16,6 +16,9 @@ patch:
 
   # 九宫格拼写映射，直接覆盖，放弃 26 键的纠错，否则重码太多了
   speller/algebra:
+    - derive/^[abc].*$/2/
+    - derive/^[def].*$/3/
+    - derive/^[mno].*$/6/
     - xlit/abcdefghijklmnopqrstuvwxyz/22233344455566677778889999/
 
   # 让输入框从数字变成字母

@@ -1,0 +1,312 @@
+# Rime schema
+# encoding: utf-8
+
+
+# 适配了仓输入法 Hamster 九宫格布局。
+# 参考于仓作者 [morse.hsiao](https://github.com/imfuxiao) 的示例
+#
+# 需要将 `others/Hamster九宫格/` 里的两个文件拷贝至配置目录：
+# - rime_ice.dict.yaml     覆盖掉原文件。删除了大写字母的编码，因为仓的九宫格拼写默认使用了大写字母
+# - melt_eng.custom.yaml   可选，转写英文的拼写规则到九宫格，以支持英文输入，方便打一些短单词
+
+
+__include: rime_ice.schema.yaml:/
+
+
+schema:
+  schema_id: t9
+  name: 雾凇拼音·九宫格
+  version: "1"
+  author:
+    - Dvel
+    - '[morse.hsiao](https://github.com/imfuxiao)'
+  description: |
+    雾凇拼音·九宫格 for 仓输入法
+  dependencies:
+    - melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
+    # - liangfen  # 两分拼字，作为反查挂载到拼音方案
+
+
+engine:
+  processors:
+    # - lua_processor@select_character      # 以词定字
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+    - lua_translator@date_translator      # 时间、日期、星期
+    # - table_translator@custom_phrase      # 自定义短语 custom_phrase.txt
+    - table_translator@melt_eng           # 英文输入
+    # - reverse_lookup_translator@liangfen  # 反查，两分拼字
+    # - lua_translator@unicode              # Unicode
+    # - lua_translator@number_translator    # 数字、金额大写
+  filters:
+    # - lua_filter@corrector                # 错音错字提示
+    - simplifier@emoji                    # Emoji
+    - simplifier@traditionalize           # 简繁切换
+    # - lua_filter@v_filter                 # v 模式 symbols 优先（否则是英文优先）
+    # - lua_filter@autocap_filter           # 英文自动大写
+    # - lua_filter@reduce_english_filter    # 降低部分英语单词在候选项的位置
+    - uniquifier                          # 去重
+
+
+translator:
+  prism: t9
+  spelling_hints: 100
+
+
+# 九宫格 1 键上的符号序列
+punctuator:
+  half_shape:
+    "@": [1, "@", ".", "/", ":", "_", "-", "#"]
+
+
+# T9拼音
+# 大写字母为穷举后T9拼音的模糊匹配
+# 程序内部通过候选拼音的小写字母进行精确匹配
+speller:
+  algebra:
+    - abbrev/^([a-z]).+$/$1/   # 超级简拼
+    - derive/a/A/
+    - derive/[bc].+/A/
+    - derive/[bc]a/AA/
+    - derive/[bc]ai/AAG/
+    - derive/[bc]an|[bc]ao/AAM/
+    - derive/[bc]ang/AAMG/
+    - derive/ce/AD/
+    - derive/bei/ADG/
+    - derive/[bc]en/ADM/
+    - derive/[bc]eng/ADMG/
+    - derive/[abc]i/AG/
+    - derive/cha/AGA/
+    - derive/chai/AGAG/
+    - derive/bia[no]|cha[no]/AGAM/
+    - derive/chang/AGAMG/
+    - derive/bie|che/AGD/
+    - derive/chen/AGDM/
+    - derive/cheng/AGDMG/
+    - derive/chi/AGG/
+    - derive/bin/AGM/
+    - derive/bing/AGMG/
+    - derive/chong/AGMMG/
+    - derive/chou/AGMT/
+    - derive/chu/AGT/
+    - derive/chua/AGTA/
+    - derive/chuai/AGTAG/
+    - derive/chuan/AGTAM/
+    - derive/chuang/AGTAMG/
+    - derive/chui/AGTG/
+    - derive/chu[no]/AGTM/
+    - derive/a[no]|bo/AM/
+    - derive/ang/AMG/
+    - derive/cong/AMMG/
+    - derive/cou/AMT/
+    - derive/[bc]u/AT/
+    - derive/cuan/ATAM/
+    - derive/cui/ATG/
+    - derive/cu[no]/ATM/
+    - derive/e/D/
+    - derive/[df].+/D/
+    - derive/[df]a/DA/
+    - derive/dai/DAG/
+    - derive/[df]an|dao/DAM/
+    - derive/[df]ang/DAMG/
+    - derive/de/DD/
+    - derive/[df]ei/DDG/
+    - derive/[df]en/DDM/
+    - derive/[df]eng/DDMG/
+    - derive/[de]i/DG/
+    - derive/dia/DGA/
+    - derive/dia[no]/DGAM/
+    - derive/die/DGD/
+    - derive/ding/DGMG/
+    - derive/diu/DGT/
+    - derive/en|fo/DM/
+    - derive/eng/DMG/
+    - derive/dong/DMMG/
+    - derive/[df]ou/DMT/
+    - derive/er/DP/
+    - derive/[df]u/DT/
+    - derive/duan/DTAM/
+    - derive/dui/DTG/
+    - derive/du[no]/DTM/
+    - derive/[ghi]/G/
+    - derive/[gh]a/GA/
+    - derive/[gh]ai/GAG/
+    - derive/[gh]an|[gh]ao/GAM/
+    - derive/[gh]ang/GAMG/
+    - derive/[gh]e/GD/
+    - derive/[gh]ei/GDG/
+    - derive/[gh]en/GDM/
+    - derive/[gh]eng/GDMG/
+    - derive/hm/GM/
+    - derive/[gh]ong/GMMG/
+    - derive/[gh]ou/GMT/
+    - derive/[gh]u/GT/
+    - derive/[gh]ua/GTA/
+    - derive/[gh]uai/GTAG/
+    - derive/[gh]uan/GTAM/
+    - derive/[gh]uang/GTAMG/
+    - derive/[gh]ui/GTG/
+    - derive/[gh]un|[gh]uo/GTM/
+    - derive/[jkl]/J/
+    - derive/[kl]a/JA/
+    - derive/[kl]ai/JAG/
+    - derive/[kl]an|[kl]ao/JAM/
+    - derive/[kl]ang/JAMG/
+    - derive/[kl]e/JD/
+    - derive/[kl]ei/JDG/
+    - derive/ken/JDM/
+    - derive/[kl]eng/JDMG/
+    - derive/[jl]i/JG/
+    - derive/[jl]ia/JGA/
+    - derive/[jl]ian|[jl]iao/JGAM/
+    - derive/[jl]iang/JGAMG/
+    - derive/[jl]ie/JGD/
+    - derive/[jl]in/JGM/
+    - derive/[jl]ing/JGMG/
+    - derive/jiong/JGMMG/
+    - derive/[jl]iu/JGT/
+    - derive/lo/JM/
+    - derive/[kl]ong/JMMG/
+    - derive/[kl]ou/JMT/
+    - derive/[jkl]u|lv/JT/
+    - derive/kua/JTA/
+    - derive/kuai/JTAG/
+    - derive/[jkl]uan/JTAM/
+    - derive/kuang/JTAMG/
+    - derive/jue|lve/JTD/
+    - derive/kui/JTG/
+    - derive/[jkl]un|[kl]uo/JTM/
+    - derive/o/M/
+    - derive/[mn].+/M/
+    - derive/[mn]a/MA/
+    - derive/[mn]ai/MAG/
+    - derive/[mn]an|[mn]ao/MAM/
+    - derive/[mn]ang/MAMG/
+    - derive/[mn]e/MD/
+    - derive/[mn]ei/MDG/
+    - derive/[mn]en/MDM/
+    - derive/[mn]eng/MDMG/
+    - derive/[mn]i/MG/
+    - derive/nia/MGA/
+    - derive/[mn]ian|[mn]iao/MGAM/
+    - derive/niang/MGAMG/
+    - derive/[mn]ie/MGD/
+    - derive/[mn]in/MGM/
+    - derive/[mn]ing/MGMG/
+    - derive/[mn]iu/MGT/
+    - derive/mo/MM/
+    - derive/nong/MMMG/
+    - derive/[mn]ou/MMT/
+    - derive/[mn]u|nv|ou/MT/
+    - derive/nuan/MTAM/
+    - derive/nve/MTD/
+    - derive/nuo/MTM/
+    - derive/[pqrs]/P/
+    - derive/[ps]a/PA/
+    - derive/[ps]ai/PAG/
+    - derive/[prs]an|[prs]ao/PAM/
+    - derive/[prs]ang/PAMG/
+    - derive/[rs]e/PD/
+    - derive/pei/PDG/
+    - derive/[prs]en/PDM/
+    - derive/[prs]eng/PDMG/
+    - derive/[pqrs]i/PG/
+    - derive/pia|sha/PGA/
+    - derive/shai/PGAG/
+    - derive/[pq]ian|[pq]iao|sha[no]/PGAM/
+    - derive/qiang|shang/PGAMG/
+    - derive/[pq]ie|she/PGD/
+    - derive/shei/PGDG/
+    - derive/shen/PGDM/
+    - derive/sheng/PGDMG/
+    - derive/shi/PGG/
+    - derive/[pq]in/PGM/
+    - derive/[pq]ing/PGMG/
+    - derive/qiong/PGMMG/
+    - derive/shou/PGMT/
+    - derive/qiu|shu/PGT/
+    - derive/shua/PGTA/
+    - derive/shuai/PGTAG/
+    - derive/shuan/PGTAM/
+    - derive/shuang/PGTAMG/
+    - derive/shui/PGTG/
+    - derive/shu[no]/PGTM/
+    - derive/po/PM/
+    - derive/[rs]ong/PMMG/
+    - derive/[prs]ou/PMT/
+    - derive/[pqrs]u/PT/
+    - derive/[prs]uan/PTAM/
+    - derive/que/PTD/
+    - derive/[rs]ui/PTG/
+    - derive/[qrs]un|[rs]uo/PTM/
+    - derive/[tuv]/T/
+    - derive/ta/TA/
+    - derive/tai/TAG/
+    - derive/ta[no]/TAM/
+    - derive/tang/TAMG/
+    - derive/te/TD/
+    - derive/tei/TDG/
+    - derive/teng/TDMG/
+    - derive/ti/TG/
+    - derive/tia[no]/TGAM/
+    - derive/tie/TGD/
+    - derive/ting/TGMG/
+    - derive/tong/TMMG/
+    - derive/tou/TMT/
+    - derive/tu/TT/
+    - derive/tuan/TTAM/
+    - derive/tui/TTG/
+    - derive/tu[no]/TTM/
+    - derive/[wxyz]/W/
+    - derive/[wyz]a/WA/
+    - derive/[wz]ai/WAG/
+    - derive/[wyz]an|[yz]ao/WAM/
+    - derive/[wyz]ang/WAMG/
+    - derive/[yz]e/WD/
+    - derive/[wz]ei/WDG/
+    - derive/[wz]en/WDM/
+    - derive/[wz]eng/WDMG/
+    - derive/[wyz]i/WG/
+    - derive/xia|zha/WGA/
+    - derive/zhai/WGAG/
+    - derive/xia[no]|zha[no]/WGAM/
+    - derive/xiang|zhang/WGAMG/
+    - derive/xie|zhe/WGD/
+    - derive/zhei/WGDG/
+    - derive/zhen/WGDM/
+    - derive/zheng/WGDMG/
+    - derive/zhi/WGG/
+    - derive/[xy]in/WGM/
+    - derive/[xy]ing/WGMG/
+    - derive/xiong|zhong/WGMMG/
+    - derive/zhou/WGMT/
+    - derive/xiu|zhu/WGT/
+    - derive/zhua/WGTA/
+    - derive/zhuai/WGTAG/
+    - derive/zhuan/WGTAM/
+    - derive/zhuang/WGTAMG/
+    - derive/zhui/WGTG/
+    - derive/zhu[no]/WGTM/
+    - derive/[wy]o/WM/
+    - derive/[yz]ong/WMMG/
+    - derive/[yz]ou/WMT/
+    - derive/[wxyz]u/WT/
+    - derive/[wyz]uan/WTAM/
+    - derive/[xy]ue/WTD/
+    - derive/zui/WTG/
+    - derive/[xyz]un|zuo/WTM/
