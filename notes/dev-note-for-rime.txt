@@ -1,2 +1,15 @@
-#+title: Tame Rime
-#_+a
+#+title: Taming Rime
+#+subtitle: Make Ime Great, Again.
+#+author: Sangjee Dondrub
+#+date: \today
+
+* TODO Add Tibetan scheme
+
+* TODO Add my custom dictionary
+
++ [ ] A python script to merge my current =userdb.txt= entries into =mydict.yaml=
++ [ ] Is =userdb= also possible for Tibetan dictionary
+
+* TODO Fix Chinese punctuation issues
+
+- [ ] Can not type Chinese Juhao and Douhao in Rme for both Squirrel and Emacs.

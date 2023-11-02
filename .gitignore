@@ -19,3 +19,6 @@ rime_deployer
 rime_patch
 /sync/
 sync
+/sync-*/
+*.tex
+*.pdf
