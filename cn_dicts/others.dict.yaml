@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2023-09-08"
+version: "2023-10-17"
 sort: by_weight
 ...
 ##### 容错词
@@ -24,6 +24,27 @@ sort: by_weight
 # 「伯伯」方言
 伯伯	bo bo
 伯伯	bai bai
+# 「斜」的古音
+远上寒山石径斜	yuan shang han shan shi jing xie
+远上寒山石径斜	yuan shang han shan shi jing xia
+# 「骑」目前统读 qi
+坐骑	zuo qi
+坐骑	zuo ji
+铁骑	tie qi
+铁骑	tie ji
+一骑绝尘	yi qi jue chen
+一骑绝尘	yi ji jue chen
+一骑当千	yi qi dang qian
+一骑当千	yi ji dang qian
+一骑红尘妃子笑	yi qi hong chen fei zi xiao
+一骑红尘妃子笑	yi ji hong chen fei zi xiao
+走单骑	zou dan qi
+走单骑	zou dan ji
+千里走单骑	qian li zou dan qi
+千里走单骑	qian li zou dan ji
+
+
+
 ##### 错音错字提示。与 corrector.lua 配合，上面的是正确的，下面是错误的
 ### 错音
 馄饨	hun tun
@@ -46,16 +67,6 @@ sort: by_weight
 街溜子	gai liu zi
 说服	shuo fu
 说服	shui fu
-坐骑	zuo qi
-坐骑	zuo ji
-一骑绝尘	yi qi jue chen
-一骑绝尘	yi ji jue chen
-一骑红尘妃子笑	yi qi hong chen fei zi xiao
-一骑红尘妃子笑	yi ji hong chen fei zi xiao
-千里走单骑	qian li zou dan qi
-千里走单骑	qian li zou dan ji
-一骑当千	yi qi dang qian
-一骑当千	yi ji dang qian
 道行	dao heng
 道行	dao hang
 模样	mu yang
@@ -146,6 +157,14 @@ sort: by_weight
 暖和	nuan he
 模棱两可	mo leng liang ke
 模棱两可	mo ling liang ke
+鄱阳湖	po yang hu
+鄱阳湖	pan yang hu
+脖颈	bo geng
+脖颈	bo jing
+脖颈儿	bo geng er
+脖颈儿	bo jing er
+结扎	jie za
+结扎	jie zha
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
@@ -153,11 +172,22 @@ sort: by_weight
 按耐	an nai
 按捺不住	an na bu zhu
 按耐不住	an nai bu zhu
+别价	bie jie
+别介	bie jie
+甭价	beng jie
+甭介	beng jie
 血脉贲张	xue mai ben zhang
 血脉偾张	xue mai fen zhang
 血脉喷张	xue mai pen zhang
 契诃夫	qi he fu
 契科夫	qi ke fu
+龇牙	zi ya
+龇牙	ci ya
+龇着牙	zi zhe ya
+龇着牙	ci zhe ya
+龇牙咧嘴	zi ya lie zui
+龇牙咧嘴	ci ya lie zui
+
 
 ##### 叠字
 # 数据来源：https://zh.wikipedia.org/wiki/%E4%B8%89%E5%8F%A0%E5%AD%97 https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%8F%A0%E5%AD%97

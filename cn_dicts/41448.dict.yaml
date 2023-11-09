@@ -16,7 +16,7 @@
 #          这样小字表里存在的字按权重靠前排列，大字表殿后，生僻字自动就排在末尾。
 ---
 name: 41448
-version: "2023-07-24"
+version: "2023-10-09"
 sort: by_weight
 ...
 # 㕶	n
@@ -7659,6 +7659,7 @@ sort: by_weight
 焚	fen
 燌	fen
 燓	fen
+瞓	fen
 秎	fen
 竕	fen
 粉	fen
@@ -27659,7 +27660,6 @@ sort: by_weight
 涗	shui
 涚	shui
 睡	shui
-瞓	shui
 祱	shui
 稅	shui
 税	shui
@@ -28344,6 +28344,7 @@ sort: by_weight
 𣯯	sui
 𤡪	sui
 𤬫	sui
+𤭢	sui
 𤯖	sui
 𤻄	sui
 𥊴	sui

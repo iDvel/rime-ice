@@ -9,7 +9,7 @@
 schema:
   schema_id: melt_eng
   name: Easy English Nano
-  version: "2023-07-30"
+  version: "2023-10-17"
   author:
     - Patrick <ipatrickmac@gmail.com>
     - tumuyan <tumuyan@21cn.com>
@@ -158,6 +158,8 @@ algebra_rime_ice:
     - derive/7/qi/
     - derive/8/ba/
     - derive/9/jiu/
+    - derive/\+/jia/
+    - derive/#/jing/
 # 自然码双拼
 algebra_double_pinyin:
   __include: algebra_common
@@ -181,6 +183,8 @@ algebra_double_pinyin:
     - derive/7/qi/
     - derive/8/ba/
     - derive/9/jq/
+    - derive/\+/jw/
+    - derive/#/jy/
 # 小鹤双拼
 algebra_flypy:
   __include: algebra_common
@@ -204,6 +208,8 @@ algebra_flypy:
     - derive/7/qi/
     - derive/8/ba/
     - derive/9/jq/
+    - derive/\+/jx/
+    - derive/#/jk/
 # 微软双拼
 algebra_mspy:
   __include: algebra_common
@@ -228,6 +234,8 @@ algebra_mspy:
     - derive/7/qi/
     - derive/8/ba/
     - derive/9/jq/
+    - derive/\+/jw/
+    - derive/#/j;/
 # 搜狗双拼
 algebra_sogou:
   __include: algebra_common
@@ -252,6 +260,8 @@ algebra_sogou:
     - derive/7/qi/
     - derive/8/ba/
     - derive/9/jq/
+    - derive/\+/jw/
+    - derive/#/jy/
 # 智能ABC双拼
 algebra_abc:
   __include: algebra_common
@@ -276,6 +286,8 @@ algebra_abc:
     - derive/7/qi/
     - derive/8/ba/
     - derive/9/jr/
+    - derive/\+/jd/
+    - derive/#/jy/
 # 紫光双拼
 algebra_ziguang:
   __include: algebra_common
@@ -300,3 +312,5 @@ algebra_ziguang:
     - derive/7/qi/
     - derive/8/ba/
     - derive/9/jj/
+    - derive/\+/jx/
+    - derive/#/j;/

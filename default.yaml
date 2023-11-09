@@ -5,17 +5,20 @@
 # 鼠须管在 Sublime Text、Telegram 等个别软件中也无法使用 Control+Shift+数字 的快捷键，可暂时用方案选单切换。
 
 # 要比共享目录的同名文件的 config_version 大才可以生效
-config_version: "2023-08-07"
+config_version: "2023-09-25"
 
 # 方案列表
 schema_list:
-  - schema: rime_ice
-  - schema: double_pinyin
-  - schema: double_pinyin_abc
-  - schema: double_pinyin_mspy
-  - schema: double_pinyin_sogou
-  - schema: double_pinyin_flypy
-  - schema: double_pinyin_ziguang
+  # 可以直接删除或注释不需要的方案，对应的 *.schema.yaml 方案文件也可以直接删除
+  # 除了 t9，它依赖于 rime_ice，用九宫格别删 rime_ice.schema.yaml
+  - schema: rime_ice # 雾凇拼音（全拼）
+  - schema: t9 # 雾凇拼音（九宫格）
+  - schema: double_pinyin # 自然码双拼
+  - schema: double_pinyin_abc # 智能 ABC 双拼
+  - schema: double_pinyin_mspy # 微软双拼
+  - schema: double_pinyin_sogou # 搜狗双拼
+  - schema: double_pinyin_flypy # 小鹤双拼
+  - schema: double_pinyin_ziguang # 紫光双拼
 
 # 菜单
 menu:
@@ -33,9 +36,9 @@ switcher:
     - Control+Shift+grave
   save_options: # 开关记忆，从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
     - ascii_punct
-    - full_shape
     - traditionalization
     - emoji
+    - full_shape
   fold_options: true # 呼出时是否折叠，多方案时建议折叠 true ，一个方案建议展开 false
   abbreviate_options: true # 折叠时是否缩写选项
   option_list_separator: " / " # 折叠时的选项分隔符
