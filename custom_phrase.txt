@@ -18,7 +18,7 @@
 # 比如 Amazon 被纠错为「a ma zong 阿妈粽」，
 # 期望的 Amazon 跑到第二个候选项了，所以这里给它固定死喽。
 #
-# version: "2023-08-15"
+# version: "2023-11-13"
 #
 # 此行之后不能写注释
 
@@ -223,3 +223,4 @@ NASA	nasa
 gone	gone
 Go程	gocheng
 code	code
+SOHO	soho
