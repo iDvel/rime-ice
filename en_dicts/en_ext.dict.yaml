@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-10-30"
+version: "2023-11-13"
 sort: by_weight
 ...
 # 一些杂项
@@ -863,12 +863,10 @@ Siri	Siri
 Sketch	Sketch
 Slicy	Slicy
 Snagit	Snagit
-Snip	Snip
 Sparkbox	Sparkbox
 Sparrow	Sparrow
 Speedtest	Speedtest
 Spotify	Spotify
-Spotlight	Spotlight
 SSL	SSL
 StackSocial	StackSocial
 Sublime Text	SublimeText
@@ -2361,3 +2359,8 @@ B2C	B2C
 C2B	C2B
 O2O	O2O
 NBA 2K	NBA2K
+tempting	tempting
+WebCatalog	WebCatalog
+Apple One	AppleOne
+pixiv	pixiv
+M4A1	M4A1

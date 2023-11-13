@@ -25,13 +25,12 @@
     -   [melt_eng](https://github.com/tumuyan/rime-melt) 英文输入
     -   [优化英文输入体验](https://dvel.me/posts/make-rime-en-better/)
     -   [两分输入法](http://cheonhyeong.com/Simplified/download.html) 拼字
-    -   简繁切换
-    -   日期、时间、星期
     -   自整理的 Emoji
     -   [以词定字](https://github.com/BlindingDark/rime-lua-select-character)
     -   [长词优先](https://github.com/tumuyan/rime-melt/blob/master/lua/melt.lua)
     -   [Unicode](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)
     -   [数字、人民币大写](https://wb98.gitee.io/)
+    -   日期、时间、星期
     -   常见错音错字提示
     -   所有标点符号直接上屏，/ 模式改为 v 模式，/ 直接上屏
     -   增加了许多拼音纠错
@@ -46,6 +45,8 @@
     -   [腾讯词向量](https://ai.tencent.com/ailab/nlp/en/download.html)
 - 词库修订
     - 校对大量异形词、错别字、错误注音
+    - 全词库完成注音
+    - 同义多音字注音
 
 <br>
 
@@ -71,7 +72,7 @@
 
 ⚠️ 单独使用词库注意事项：`rime_ice.dict.yaml` 下面包含了大写字母，这和配置有些许绑定，可以直接删除，详细说明：[#356](https://github.com/iDvel/rime-ice/issues/356)
 
-建议备份原先配置，清空配置目录。
+雾凇拼音提供了一整套开箱即用的完整配置，包括了多个输入方案、词库及其他功能扩展。其中多个文件可能与其他方案同名冲突，如果是新手想一键安装，建议备份原先配置，清空配置目录再导入。
 
 配置目录为小狼毫的 `%APPDATA%\Rime`，鼠须管的 `~/Library/Rime`，可通过右键菜单栏图标打开。
 
