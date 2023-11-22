@@ -7,7 +7,7 @@
 #
 # 需要将 `others/Hamster九宫格/` 里的两个文件拷贝至配置目录：
 # - rime_ice.dict.yaml     覆盖掉原文件。删除了大写字母的编码，因为仓的九宫格拼写默认使用了大写字母
-# - melt_eng.custom.yaml   可选，转写英文的拼写规则到九宫格，以支持英文输入，方便打一些短单词
+# - melt_eng.custom.yaml   可选，需解开 `engine/translators` 下的注释，转写英文的拼写规则到九宫格，以支持英文输入，方便打一些短单词
 
 
 __include: rime_ice.schema.yaml:/
@@ -24,12 +24,10 @@ schema:
     雾凇拼音·九宫格 for 仓输入法
   dependencies:
     - melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
-    # - liangfen  # 两分拼字，作为反查挂载到拼音方案
 
 
 engine:
   processors:
-    # - lua_processor@select_character      # 以词定字
     - ascii_composer
     - recognizer
     - key_binder
@@ -48,7 +46,7 @@ engine:
     - punct_translator
     - script_translator
     - lua_translator@date_translator      # 时间、日期、星期
-    - table_translator@melt_eng           # 英文输入
+    # - table_translator@melt_eng         # 英文输入
   filters:
     - simplifier@emoji                    # Emoji
     - simplifier@traditionalize           # 简繁切换
@@ -71,8 +69,7 @@ punctuator:
 # 程序内部通过候选拼音的小写字母进行精确匹配
 speller:
   algebra:
-    - derive/^a$/ⓐ/
-    - derive/[ⓐbc]/A/
+    - derive/[abc]/A/
     - derive/[bc]a/AA/
     - derive/[bc]ai/AAG/
     - derive/[bc]an|[bc]ao/AAM/
@@ -109,8 +106,7 @@ speller:
     - derive/cuan/ATAM/
     - derive/cui/ATG/
     - derive/cu[no]/ATM/
-    - derive/^e$/ⓔ/
-    - derive/[dⓔf]/D/
+    - derive/[def]/D/
     - derive/[df]a/DA/
     - derive/dai/DAG/
     - derive/[df]an|dao/DAM/
@@ -182,8 +178,7 @@ speller:
     - derive/jue|lve/JTD/
     - derive/kui/JTG/
     - derive/[jkl]un|[kl]uo/JTM/
-    - derive/^o$/ⓞ/
-    - derive/[mnⓞ]/M/
+    - derive/[mno]/M/
     - derive/[mn]a/MA/
     - derive/[mn]ai/MAG/
     - derive/[mn]an|[mn]ao/MAM/
