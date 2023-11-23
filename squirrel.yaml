@@ -26,12 +26,45 @@ show_notifications_when: appropriate
 # ascii_mode、inline、no_inline、vim_mode 等等设定
 # 可参考 /Library/Input Methods/Squirrel.app/Contents/SharedSupport/squirrel.yaml
 app_options:
-  # com.apple.Spotlight:
-  #   ascii_mode: true    # 开启默认英文
-  # com.microsoft.VSCode:
-  #   ascii_mode: false   # 关闭默认英文
+    # 右键『应用.app』-> 显示包内容 Contents/Info.plist -> BundleIdentifier
+    com.apple.dt.Xcode:
+      ascii_mode: true
+    com.apple.Spotlight:
+      ascii_mode: true
+    com.apple.Terminal:
+      ascii_mode: true
+      no_inline: true
+      vim_mode: true
+    io.alacritty:
+      ascii_mode: true
+      no_inline: true
+      vim_mode: true
+    com.googlecode.iterm2:
+      ascii_mode: true
+      vim_mode: true
+    com.alfredapp.Alfred:
+      ascii_mode: true
+    com.runningwithcrayons.Alfred-2:
+      ascii_mode: true
+    com.blacktree.Quicksilver:
+      ascii_mode: true
+    org.vim.MacVim:
+      ascii_mode: true
+      no_inline: true
+      vim_mode: true
+    com.microsoft.VSCode:            # Visual Studio Code
+        ascii_mode: true
+        ascii_punct: true            # 中文状态输出英文标点(半角)
+        vim_mode: true
+    org.gnu.Emacs:
+     ascii_mode: true
+    md.obsidian:
+      ascii_mode: true
+      vim_mode: true
 
-
+#
+# UI and Themes
+#
 style:
   # 选择皮肤，亮色与暗色主题
   color_scheme: tabhu
@@ -341,7 +374,7 @@ preset_color_schemes:
     name: 冷漠／Apathy
     author: LIANG Hai
     horizontal: true  # 水平排列
-    inline_preedit: true #单行显示，false双行显示
+    inline_preedit: true #单行显示，false 双行显示
     candidate_format: "%c\u2005%@\u2005"  # 编号 %c 和候选词 %@ 前后的空间
     corner_radius: 5  #候选条圆角
     border_height: 0
@@ -360,7 +393,7 @@ preset_color_schemes:
     name: 浮尘／Dust
     author: Superoutman <asticosmo@gmail.com>
     horizontal: true  # 水平排列
-    inline_preedit: true #单行显示，false双行显示
+    inline_preedit: true #单行显示，false 双行显示
     candidate_format: "%c\u2005%@\u2005"  # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
     corner_radius: 2  #候选条圆角
     border_height: 3                                   # 窗口边界高度，大于圆角半径才生效
@@ -373,7 +406,7 @@ preset_color_schemes:
     label_font_point: 10   #候选编号大小
     label_color: 0xcbcbcb                              # 预选栏编号颜色
     candidate_text_color: 0x555555                     # 预选项文字颜色
-    text_color: 0x424242                               # 拼音行文字颜色，24位色值，16进制，BGR顺序
+    text_color: 0x424242                               # 拼音行文字颜色，24 位色值，16 进制，BGR 顺序
     comment_text_color: 0x999999                       # 拼音等提示文字颜色
     hilited_text_color: 0x9e9e9e                       # 高亮拼音 (需要开启内嵌编码)
     hilited_candidate_text_color: 0x000000             # 第一候选项文字颜色
@@ -385,7 +418,7 @@ preset_color_schemes:
     name: 沙漠夜／Mojave Dark
     author: xiehuc <xiehuc@gmail.com>
     horizontal: true                        # 水平排列
-    inline_preedit: true                    # 单行显示，false双行显示
+    inline_preedit: true                    # 单行显示，false 双行显示
     candidate_format: "%c\u2005%@"    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
     corner_radius: 5                        # 候选条圆角
     hilited_corner_radius: 3                # 高亮圆角
@@ -395,7 +428,7 @@ preset_color_schemes:
     font_point: 16                          # 候选字词大小
     label_font_point: 14                    # 候选编号大小
 
-    text_color: 0xdedddd                    # 拼音行文字颜色，24位色值，16进制，BGR顺序
+    text_color: 0xdedddd                    # 拼音行文字颜色，24 位色值，16 进制，BGR 顺序
     back_color: 0x252320                    # 候选条背景色
     label_color: 0x888785                   # 预选栏编号颜色
     border_color: 0x020202                  # 边框色
