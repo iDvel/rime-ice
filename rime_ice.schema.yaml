@@ -114,7 +114,7 @@ reduce_english_filter:
   rand, rant, rent, rep, res, ret, rex, rib, rid, rig, rim, rub, rug, rum, runs,
   sac, sail, sal, sam, sans, sap, saw, sax, sew, sham, shaw, shin, sig, sin, sip, sis, suit, sung, suns, sup, sur, sus,
   tad, tail, taj, tar, tax, tec, ted, tel, ter, tex, tic, tied, tier, ties, tim, tin, tit, tour, tout, tum,
-  wag, wand, wap, wax, weir, won,
+  wag, wand, womens, wap, wax, weir, won,
   yan, yen]
 
 
@@ -215,7 +215,7 @@ speller:
     # - derive/^([zcs])h/$1/
     # - derive/^([zcs])([^h])/$1h$2/
     # - derive/^l/n/  # 解释：为 l 开头的拼写派生出 n 开头，即 nai 也可以输出「来、莱、赖……」
-    # - derive/^n/l/  # 可以单向或双向启用模糊音
+    # - derive/^n/l/  # lai 可输出「奶」，可以单向或成对儿启用模糊音
     # - derive/^f/h/
     # - derive/^h/f/
     # - derive/^l/r/

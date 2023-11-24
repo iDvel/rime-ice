@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-11-13"
+version: "2023-11-24"
 sort: by_weight
 ...
 # 一些杂项
@@ -564,6 +564,8 @@ Chief Executive Officer	ChiefExecutiveOfficer
 CTO	CTO
 Chief Technology Officer	CTO
 Chief Technology Officer	ChiefTechnologyOfficer
+CFO	CFO
+Chief Financial Officer	CFO
 Django	Django
 DBMesh	DBMesh
 Facebook	Facebook
@@ -711,7 +713,7 @@ Dropbox	Dropbox
 Dropzone	Dropzone
 Endnote	Endnote
 Entropy	Entropy
-ePub	ePub
+EPUB	EPUB
 Eureka	Eureka
 ExFAT	ExFAT
 Extended File Allocation Table	ExFAT
@@ -2364,3 +2366,11 @@ WebCatalog	WebCatalog
 Apple One	AppleOne
 pixiv	pixiv
 M4A1	M4A1
+shogun	shogun
+wail	wail
+wails	wails
+wailed	wailed
+wailing	wailing
+PK	PK
+WireGuard	WireGuard
+AdGuard	AdGuard
