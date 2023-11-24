@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-10-30"
+version: "2023-11-24"
 sort: by_weight
 ...
 # +_+
@@ -20723,7 +20723,7 @@ Wolverhampton	Wolverhampton
 wolves	wolves
 woman	woman
 women	women
-womens	womens
+women's	women's
 won	won
 wonder	wonder
 wondered	wondered

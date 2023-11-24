@@ -40,9 +40,9 @@ function M.init(env)
         "shed", "shin", "ship", "shit", "shut", "sig", "sim", "sin", "sip", "sir", "sis", "sit", "six", "soul", "soup",
         "sour", "sub", "suit", "sum", "sun", "sung", "suns", "sup", "sur", "sus", "tab", "tad", "tag", "tail", "taj",
         "tan", "tang", "tank", "tap", "tar", "tax", "tec", "ted", "tel", "ten", "ter", "tex", "tic", "tied", "tier",
-        "ties", "tim", "tin", "tip", "tit", "tour", "tout", "tum", "wag", "wait", "wan", "wand", "want", "wap", "war",
-        "was", "wax", "way", "weir", "went", "won", "wow", "yan", "yang", "yen", "yep", "yes", "yet", "yin", "your",
-        "yum", "zen", "zip" }
+        "ties", "tim", "tin", "tip", "tit", "tour", "tout", "tum", "wag", "wait", "wail", "wan", "wand", "womens",
+        "want", "wap", "war", "was", "wax", "way", "weir", "went", "won", "wow", "yan", "yang", "yen", "yep", "yes",
+        "yet", "yin", "your", "yum", "zen", "zip" }
     M.all = {}
     for _, v in ipairs(all) do
         M.all[v] = true
