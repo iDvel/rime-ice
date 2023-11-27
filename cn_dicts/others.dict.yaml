@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2023-10-17"
+version: "2023-11-25"
 sort: by_weight
 ...
 ##### 容错词
@@ -42,7 +42,17 @@ sort: by_weight
 走单骑	zou dan ji
 千里走单骑	qian li zou dan qi
 千里走单骑	qian li zou dan ji
-
+# 「街」的粤语和东北话读音及常见的两种写法
+仆街	pu jie
+仆街	pu gai
+扑街	pu jie
+扑街	pu gai
+扑街仔	pu jie zai
+扑街仔	pu gai zai
+仆街仔	pu jie zai
+仆街仔	pu gai zai
+街溜子	jie liu zi
+街溜子	gai liu zi
 
 
 ##### 错音错字提示。与 corrector.lua 配合，上面的是正确的，下面是错误的
@@ -59,12 +69,6 @@ sort: by_weight
 比萨饼	pi sa bing
 吃比萨	chi bi sa
 吃比萨	chi pi sa
-扑街	pu jie
-扑街	pu gai
-扑街仔	pu jie zai
-扑街仔	pu gai zai
-街溜子	jie liu zi
-街溜子	gai liu zi
 说服	shuo fu
 说服	shui fu
 道行	dao heng
