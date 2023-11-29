@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-11-24"
+version: "2023-11-29"
 sort: by_weight
 ...
 # 一些杂项
@@ -2374,3 +2374,9 @@ wailing	wailing
 PK	PK
 WireGuard	WireGuard
 AdGuard	AdGuard
+Altman	Altman
+Ultraman	Ultraman
+silicones	silicones
+GPTs	GPTs
+sider	sider
+DALL·E	DALL·E

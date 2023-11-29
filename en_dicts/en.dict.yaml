@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-11-24"
+version: "2023-11-29"
 sort: by_weight
 ...
 # +_+
@@ -11060,7 +11060,7 @@ logic	logic
 logical	logical
 login	login
 logistics	logistics
-logitech	logitech
+Logitech	Logitech
 logo	logo
 logon	logon
 logos	logos
