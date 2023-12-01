@@ -1,6 +1,6 @@
 # Rime default settings
 # encoding: utf-8
-#
+
 # 小狼毫似乎不支持 Control+Shift 开头的快捷键，可自行修改成别的。
 # 鼠须管在 Sublime Text、Telegram 等个别软件中也无法使用 Control+Shift+数字 的快捷键，可暂时用方案选单切换。
 
@@ -14,18 +14,17 @@ schema_list:
   # 可以直接删除或注释不需要的方案，对应的 *.schema.yaml 方案文件也可以直接删除
   # 除了 t9，它依赖于 rime_ice，用九宫格别删 rime_ice.schema.yaml
   - schema: rime_ice               # 雾凇拼音（全拼）
-  - schema: t9                     # 雾凇拼音（九宫格）
-  - schema: double_pinyin          # 自然码双拼
-  - schema: double_pinyin_abc      # 智能 ABC 双拼
-  - schema: double_pinyin_mspy     # 微软双拼
-  - schema: double_pinyin_sogou    # 搜狗双拼
-  - schema: double_pinyin_flypy    # 小鹤双拼
-  - schema: double_pinyin_ziguang  # 紫光双拼
-
+  # - schema: t9                     # 雾凇拼音（九宫格）
+  # - schema: double_pinyin          # 自然码双拼
+  # - schema: double_pinyin_abc      # 智能 ABC 双拼
+  # - schema: double_pinyin_mspy     # 微软双拼
+  # - schema: double_pinyin_sogou    # 搜狗双拼
+  # - schema: double_pinyin_flypy    # 小鹤双拼
+  # - schema: double_pinyin_ziguang  # 紫光双拼
 
 # 菜单
 menu:
-  page_size: 5  # 候选词个数
+  page_size: 8  # 候选词个数
   # alternative_select_labels: [ ①, ②, ③, ④, ⑤, ⑥, ⑦, ⑧, ⑨, ⑩ ]  # 修改候选项标签
   # alternative_select_keys: ASDFGHJKL  # 如编码字符占用数字键，则需另设选字键
 
@@ -70,9 +69,6 @@ ascii_composer:
     Shift_R: noop         # commit_code | commit_text | inline_ascii | clear | noop
     Control_L: noop       # commit_code | commit_text | inline_ascii | clear | noop
     Control_R: noop       # commit_code | commit_text | inline_ascii | clear | noop
-
-
-###################################################################################
 
 
 # 下面的 punctuator recognizer key_binder 写了一些所有方案通用的配置项。
