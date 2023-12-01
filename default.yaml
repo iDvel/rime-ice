@@ -168,12 +168,72 @@ key_binder:
   select_last_character: "bracketright"  # 右中括号 ]
 
   bindings:
-    __patch:
-      - key_bindings:/emacs_editing
-      - key_bindings:/move_by_word_with_tab
-      - key_bindings:/paging_with_minus_equal
-      - key_bindings:/paging_with_comma_period
-      - key_bindings:/numbered_mode_switch
+    # Tab / Shift+Tab 切换光标至下/上一个拼音
+    - { when: composing, accept: Shift+Tab, send: Shift+Left }
+    - { when: composing, accept: Tab, send: Shift+Right }
+    # Tab / Shift+Tab 翻页
+    # - { when: has_menu, accept: Shift+Tab, send: Page_Up }
+    # - { when: has_menu, accept: Tab, send: Page_Down }
+
+    # Option/Alt + ←/→ 切换光标至下/上一个拼音
+    - { when: composing, accept: Alt+Left, send: Shift+Left }
+    - { when: composing, accept: Alt+Right, send: Shift+Right }
+
+    # 翻页 - =
+    - { when: has_menu, accept: minus, send: Page_Up }
+    - { when: has_menu, accept: equal, send: Page_Down }
+
+    # 翻页 , .
+    # - { when: paging, accept: comma, send: Page_Up }
+    # - { when: has_menu, accept: period, send: Page_Down }
+
+    # 翻页 [ ]
+    # - { when: paging, accept: bracketleft, send: Page_Up }
+    # - { when: has_menu, accept: bracketright, send: Page_Down }
+
+    # numbered_mode_switch:
+    # - { when: always, accept: Control+Shift+1, select: .next }               # 在最近的两个方案之间切换
+    # - { when: always, accept: Control+Shift+2, toggle: ascii_mode }          # 切换中英
+    - { when: always, accept: Control+Shift+3, toggle: ascii_punct }           # 切换中英标点
+    - { when: always, accept: Control+Shift+4, toggle: traditionalization }    # 切换简繁
+    # - { when: always, accept: Control+Shift+5, toggle: full_shape }          # 切换全半角
+
+    # emacs_editing:
+    # - { when: composing, accept: Control+p, send: Up }
+    # - { when: composing, accept: Control+n, send: Down }
+    # - { when: composing, accept: Control+b, send: Left }
+    # - { when: composing, accept: Control+f, send: Right }
+    # - { when: composing, accept: Control+a, send: Home }
+    # - { when: composing, accept: Control+e, send: End }
+    # - { when: composing, accept: Control+d, send: Delete }
+    # - { when: composing, accept: Control+k, send: Shift+Delete }
+    # - { when: composing, accept: Control+h, send: BackSpace }
+    # - { when: composing, accept: Control+g, send: Escape }
+    # - { when: composing, accept: Control+bracketleft, send: Escape }
+    # - { when: composing, accept: Control+y, send: Page_Up }
+    # - { when: composing, accept: Alt+v, send: Page_Up }
+    # - { when: composing, accept: Control+v, send: Page_Down }
+
+    # optimized_mode_switch:
+    # - { when: always, accept: Control+Shift+space, select: .next }
+    # - { when: always, accept: Shift+space, toggle: ascii_mode }
+    # - { when: always, accept: Control+comma, toggle: full_shape }
+    # - { when: always, accept: Control+period, toggle: ascii_punct }
+    # - { when: always, accept: Control+slash, toggle: traditionalization }
+
+    # 将小键盘 0~9 . 映射到主键盘，数字金额大写的 Lua（R1234.5678）可使用小键盘输入
+    - {accept: KP_0, send: 0, when: composing}
+    - {accept: KP_1, send: 1, when: composing}
+    - {accept: KP_2, send: 2, when: composing}
+    - {accept: KP_3, send: 3, when: composing}
+    - {accept: KP_4, send: 4, when: composing}
+    - {accept: KP_5, send: 5, when: composing}
+    - {accept: KP_6, send: 6, when: composing}
+    - {accept: KP_7, send: 7, when: composing}
+    - {accept: KP_8, send: 8, when: composing}
+    - {accept: KP_9, send: 9, when: composing}
+    - {accept: KP_Decimal, send: period, when: composing}
+
 
 # 按键速查
 # https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md

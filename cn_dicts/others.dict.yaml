@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2023-11-25"
+version: "2023-11-29"
 sort: by_weight
 ...
 ##### 容错词
@@ -191,6 +191,8 @@ sort: by_weight
 龇着牙	ci zhe ya
 龇牙咧嘴	zi ya lie zui
 龇牙咧嘴	ci ya lie zui
+凑合	cou he
+凑活	cou huo
 
 
 ##### 叠字
