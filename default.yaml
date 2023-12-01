@@ -4,10 +4,8 @@
 # 小狼毫似乎不支持 Control+Shift 开头的快捷键，可自行修改成别的。
 # 鼠须管在 Sublime Text、Telegram 等个别软件中也无法使用 Control+Shift+数字 的快捷键，可暂时用方案选单切换。
 
-
 # 要比共享目录的同名文件的 config_version 大才可以生效
 config_version: '2023-09-25'
-
 
 # 方案列表
 schema_list:
@@ -27,7 +25,6 @@ menu:
   page_size: 8  # 候选词个数
   # alternative_select_labels: [ ①, ②, ③, ④, ⑤, ⑥, ⑦, ⑧, ⑨, ⑩ ]  # 修改候选项标签
   # alternative_select_keys: ASDFGHJKL  # 如编码字符占用数字键，则需另设选字键
-
 
 # 方案选单相关
 switcher:
@@ -164,7 +161,6 @@ recognizer:
     # colon: "^[A-Za-z]+:.*"       # 冒号不上屏
     # underscore: "^[A-Za-z]+_.*"  # 下划线不上屏
 
-
 # 快捷键
 key_binder:
   # Lua 配置: 以词定字（上屏当前词句的第一个或最后一个字），和中括号翻页有冲突
@@ -178,7 +174,6 @@ key_binder:
       - key_bindings:/paging_with_minus_equal
       - key_bindings:/paging_with_comma_period
       - key_bindings:/numbered_mode_switch
-
 
 # 按键速查
 # https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md
