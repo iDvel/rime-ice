@@ -52,7 +52,7 @@ app_options:
     vim_mode: true
   com.microsoft.VSCode: # Visual Studio Code
     ascii_mode: true
-    ascii_punct: true # 中文状态输出英文标点(半角)
+    ascii_punct: false
     vim_mode: true
   org.gnu.Emacs:
     ascii_mode: true
