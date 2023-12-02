@@ -64,6 +64,12 @@ punctuator:
     "@": [1, "@", ".", "/", ":", "_", "-", "#"]
 
 
+# 输入时按 1 可以分词
+key_binder:
+  bindings:
+    - { when: has_menu, accept: at, send: apostrophe }
+
+
 # T9拼音
 # 大写字母为穷举后T9拼音的模糊匹配
 # 程序内部通过候选拼音的小写字母进行精确匹配
