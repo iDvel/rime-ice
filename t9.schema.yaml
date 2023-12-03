@@ -70,18 +70,56 @@ key_binder:
     - { when: has_menu, accept: at, send: apostrophe }
 
 
-# T9拼音
-# 大写字母为穷举后T9拼音的模糊匹配
-# 程序内部通过候选拼音的小写字母进行精确匹配
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA987654321
   algebra:
+    ### 模糊音
+    # 声母
+    # - derive/^([zcs])h/$1/
+    # - derive/^([zcs])([^h])/$1h$2/
+    # - derive/^l/n/  # 解释：为 l 开头的拼写派生出 n 开头，即 nai 也可以输出「来、莱、赖……」
+    # - derive/^n/l/  # lai 可输出「奶」，可以单向或成对儿启用模糊音
+    # - derive/^f/h/
+    # - derive/^h/f/
+    # - derive/^l/r/
+    # - derive/^r/l/
+    # - derive/^g/k/
+    # - derive/^k/g/
+    # 韵母
+    # - derive/ang$/an/
+    # - derive/an$/ang/
+    # - derive/eng$/en/
+    # - derive/en$/eng/
+    # - derive/in$/ing/
+    # - derive/ing$/in/
+    # - derive/ian$/iang/
+    # - derive/iang$/ian/
+    # - derive/uan$/uang/
+    # - derive/uang$/uan/
+    # - derive/ai$/an/
+    # - derive/an$/ai/
+    # - derive/ong$/un/
+    # - derive/un$/ong/
+    # - derive/ong$/on/
+    # - derive/iong$/un/
+    # - derive/un$/iong/
+    # - derive/ong$/eng/
+    # - derive/eng$/ong/
+    # 拼音音节
+    # - derive/^fei$/hui/
+    # - derive/^hui$/fei/
+    # - derive/^hu$/fu/
+    # - derive/^fu$/hu/
+    # - derive/^wang$/huang/
+    # - derive/^huang$/wang/
+    ### T9拼音穷举
     - derive/[abc]/2/
     - derive/[bc]a/22/
     - derive/[bc]ai/224/
     - derive/[bc]an|[bc]ao/226/
     - derive/[bc]ang/2264/
     - derive/ce/23/
+    - derive/cei/234/
     - derive/bei/234/
     - derive/[bc]en/236/
     - derive/[bc]eng/2364/
