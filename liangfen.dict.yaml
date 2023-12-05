@@ -5,6 +5,8 @@
 #
 #   derived from scim-table-zh LiangFen table.
 #
+# 修改：
+# 𡈯 kouyuan → buyuan
 
 ---
 name: liangfen
@@ -32253,7 +32255,7 @@ sort: by_weight
 𡈬	koufu
 𡈭	kouyu
 𡈮	kougai
-𡈯	kouyuan
+𡈯	buyuan
 𡈰	kouyu
 𡈱	kouxi
 𡈲	yinyin
