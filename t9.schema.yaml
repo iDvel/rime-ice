@@ -2,12 +2,12 @@
 # encoding: utf-8
 
 
-# 适配了仓输入法 Hamster 九宫格布局。
+# 适配了仓输入法 [Hamster](https://github.com/imfuxiao/Hamster/) 九宫格布局。
 # 参考于仓作者 [morse.hsiao](https://github.com/imfuxiao) 的示例
 #
 # 可选，支持英文：
 # 1. 解开 `engine/translators` 下的注释
-# 2. 将 `others/Hamster九宫格/melt_eng.custom.yaml` 里的文件拷贝至配置目录，转写英文的拼写规则到九宫格；
+# 2. 将 `others/Hamster/melt_eng.custom.yaml` 里的文件拷贝至配置目录，该补丁转写了英文的拼写规则到九宫格；
 
 
 __include: rime_ice.schema.yaml:/
@@ -73,46 +73,13 @@ key_binder:
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA987654321
   algebra:
-    ### 模糊音
-    # 声母
+    # 如果需要模糊音，可参考 rime_ice.schema.yaml 下的示例，放到最前面来就行，但不会正常显示模糊后的拼音。
     # - derive/^([zcs])h/$1/
     # - derive/^([zcs])([^h])/$1h$2/
-    # - derive/^l/n/  # 解释：为 l 开头的拼写派生出 n 开头，即 nai 也可以输出「来、莱、赖……」
-    # - derive/^n/l/  # lai 可输出「奶」，可以单向或成对儿启用模糊音
-    # - derive/^f/h/
-    # - derive/^h/f/
-    # - derive/^l/r/
-    # - derive/^r/l/
-    # - derive/^g/k/
-    # - derive/^k/g/
-    # 韵母
-    # - derive/ang$/an/
-    # - derive/an$/ang/
-    # - derive/eng$/en/
-    # - derive/en$/eng/
-    # - derive/in$/ing/
-    # - derive/ing$/in/
-    # - derive/ian$/iang/
-    # - derive/iang$/ian/
-    # - derive/uan$/uang/
-    # - derive/uang$/uan/
-    # - derive/ai$/an/
-    # - derive/an$/ai/
-    # - derive/ong$/un/
-    # - derive/un$/ong/
-    # - derive/ong$/on/
-    # - derive/iong$/un/
-    # - derive/un$/iong/
-    # - derive/ong$/eng/
-    # - derive/eng$/ong/
-    # 拼音音节
-    # - derive/^fei$/hui/
-    # - derive/^hui$/fei/
-    # - derive/^hu$/fu/
-    # - derive/^fu$/hu/
-    # - derive/^wang$/huang/
-    # - derive/^huang$/wang/
-    ### T9拼音穷举
+    # - derive/^l/n/
+    # - derive/^n/l/
+    # ……
+    # T9拼音穷举，感谢仓作者 [morse.hsiao](https://github.com/imfuxiao) 勤劳的小手。
     - derive/[abc]/2/
     - derive/[bc]a/22/
     - derive/[bc]ai/224/
@@ -344,5 +311,5 @@ speller:
     - derive/[xyz]un|zuo/986/
     # 仓 TF 119 之前的版本需要：
     # 1. 启用大写字母，解开下面的注释
-    # 2. 删除 rime_ice.dict.yaml 下的大写字母
     # - xlit/22233344455566677778889999/AAADDDGGGJJJMMMPPPPTTTWWWW/
+    # 2. 删除 rime_ice.dict.yaml 下的大写字母

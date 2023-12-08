@@ -4,10 +4,4 @@
 
 （可选）解开 `engine/translators` 下的英文翻译器注释，将 `melt_eng.custom.yaml` 复制到配置目录，可以支持九宫格输入英文，方便输入一些短单词，但会导致全键盘方案无法输入英文。
 
-<br>
 
----
-
-<br>
-
-因为 [#332 ](https://github.com/imfuxiao/Hamster/issues/322)的原因，目前还不能选择拼音。
