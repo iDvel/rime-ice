@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2023-11-29"
+version: "2023-12-08"
 sort: by_weight
 ...
 ##### 容错词
@@ -196,7 +196,190 @@ sort: by_weight
 
 
 ##### 叠字
-# 数据来源：https://zh.wikipedia.org/wiki/%E4%B8%89%E5%8F%A0%E5%AD%97 https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%8F%A0%E5%AD%97
+# 数据来源： https://zh.wikipedia.org/zh-cn/%E4%BA%8C%E5%8F%A0%E5%AD%97 https://zh.wikipedia.org/wiki/%E4%B8%89%E5%8F%A0%E5%AD%97 https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%8F%A0%E5%AD%97
+# 二叠字
+两个火
+两个土
+两个一
+两个二
+两个山
+两个口
+两个田
+两个九
+两个人
+两个飞
+两个戈
+两个厶	liang ge si
+两个厶	liang ge mou
+两个又
+两个香
+两个面
+两个兀
+两个女
+两个𡥦	liang ge ni
+两个臣
+两个巾
+两个左
+两个母
+两个来
+两个凡
+两个夕
+两个彐	liang ge ji
+两个𢎘	liang ge han
+两个魚	liang ge yu
+两个明
+两个朿	liang ge ci
+两个乂
+两个曰
+两个尸
+两个户
+两个大
+两个八
+两个而
+两个羊
+两个吉
+两个马
+两个卅
+两个巛	liang ge chuan
+两个止
+两个比
+两个言
+两个申
+两个牛
+两个余
+两个束
+两个罒	liang ge mu
+两个㐅	liang ge wu
+两个金
+两个木
+两个水
+两个火
+两个風	liang ge feng
+两个石
+两个口
+两个日
+两个月
+两个目
+两个白
+两个百
+两个耳
+两个山
+两个屮	liang ge che
+两个屮	liang ge cao
+两个廿
+两个卄	liang ge nian
+两个虫
+两个虎
+两个龍	liang ge long
+两个馬	liang ge ma
+两个犬
+两个人
+两个入
+两个习
+两个卪	liang ge jie
+两个㔾	liang ge jie
+两个几
+两个乙
+两个大
+两个夫
+两个禾
+两个干
+两个井
+两个斤
+两个片
+两个牙
+两个炎
+两个弓
+两个永
+两个亦
+两个手
+两个毛
+两个王
+两个男
+两个女
+两个又
+两个支
+两个隻	liang ge zhi
+两个古
+两个吉
+两个舌
+两个言
+两个户
+两个启
+两个來	liang ge lai
+两个桼	liang ge qi
+两个旡	liang ge ji
+两个夕
+两个歹
+两个匕
+两个幺
+两个玄
+两个心
+两个力
+两个欠
+两个子
+两个予
+两个享
+两个立
+两个音
+两个竟
+两个竞
+两个兄
+两个見	liang ge jian
+两个貝	liang ge bei
+两个辛
+两个瓜
+两个呆
+两个果
+两个鸟
+两个巢
+两个禺	liang ge yu
+两个巿
+两个句
+两个奇
+两个真
+两个尹
+两个昔
+两个易
+两个臣
+两个面
+两个先
+两个老
+两个示
+两个至
+两个生
+两个車	liang ge che
+两个車	liang ge ju
+两个足
+两个區	liang ge qu
+两个香
+两个隹	liang ge zhui
+两个牟
+两个豕
+两个𠂢	liang ge pai
+两个畐	liang ge fu
+两个㣇	liang ge yi
+两个邑
+两个堯	liang ge yao
+两个秉
+两个倉	liang ge cang
+两个東	liang ge dong
+两个善
+两个僉	liang ge qian
+两个齒	liang ge chi
+两个喜
+两个走
+两个止
+两个昌
+两个串
+两个米
+两个束
+两个隶
+两个不
+两个龙
+两个乞
+两个夋	liang ge qun
+两个天
 # 三叠字
 三个生
 三个秦

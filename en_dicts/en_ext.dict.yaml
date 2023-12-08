@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-11-29"
+version: "2023-12-08"
 sort: by_weight
 ...
 # 一些杂项
@@ -2380,3 +2380,6 @@ silicones	silicones
 GPTs	GPTs
 sider	sider
 DALL·E	DALL·E
+keychain	keychain
+keychains	keychains
+guile	guile
