@@ -5,7 +5,7 @@
 #
 # 自定义文本
 # 适用于全拼，在方案的 custom_phrase/user_dict 指定；
-# 双拼默认为 custom_phrase_double.txt 需要手动创建
+# 双拼默认为 custom_phrase_double.txt 需要手动创建并更改上面的 db_name 为 custom_phrase_double
 #
 # 以 Tab 分割：汉字<Tab>编码<Tab>权重
 #

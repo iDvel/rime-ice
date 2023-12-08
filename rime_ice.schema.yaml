@@ -92,7 +92,7 @@ date_translator:
 # 几种模式：
 # all     降低所有 3~4 位长度、前 2~3 位是完整拼音、最后一位是声母的单词
 # none    不降低任何单词，相当于没有启用这个 Lua
-# custom  自定义，只降低 custom 里的
+# custom  自定义，只降低 words 里的
 # （匹配的是编码，不是单词）
 reduce_english_filter:
   mode: custom  # all | none | custom
