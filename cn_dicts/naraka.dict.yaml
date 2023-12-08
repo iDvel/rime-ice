@@ -1,0 +1,472 @@
+# Rime dictionary
+# encoding: utf-8
+#
+#
+# https://github.com/expoli/rime-ice
+# ------- 永劫无间词库 -------
+
+---
+name:	naraka
+version:	"2023-12-08"
+sort:	by_weight
+# columns:
+#   - text
+#   - weight
+...
+# +_+
+暗域	an yu	100
+奥义	ao yi	100
+霸主	ba zhu	100
+白甲	bai jia	100
+百炼洞	bai lian dong	100
+白武	bai wu	100
+白武器	bai wu qi	100
+白银	bai yin	100
+白玉	bai yu	100
+爆风炮	bao feng pao	100
+爆风炮＆燃烧	bao feng pao ran shao	100
+爆裂箭	bao lie jian	100
+毕工淌	bi gong tang	100
+壁虎游墙	bi hu you qiang	100
+壁击枪	bi ji qiang	100
+匕首	bi shou	100
+别跟着我。	bie gen zhe wo	100
+铂金	bo jin	100
+不能听命于自己者，就要受命于他人。	bu neng ting ming yu zi ji zhe	100
+不认识我吗？	bu ren shi wo ma	100
+不祥之刃	bu xiang zhi ren	100
+不舟滩	bu zhou tan	100
+彩虹甲	cai hong jia	100
+财迷	cai mi	100
+彩俑娃娃	cai yong wa wa	100
+藏宝阁	cang bao ge	100
+苍狼来了……	cang lang lai le	100
+藏雨阁	cang yu ge	100
+草原部落	cao yuan bu luo	100
+长棍	chang gun	100
+长剑	chang jian	100
+长剑无限连	chang jian wu xian lian	100
+长枪	chang qiang	100
+长闪	chang shan	100
+长生寨	chang sheng zhai	100
+赤云之刃	chi yun zhi ren	100
+抽芯补天	chou xin bu tian	100
+出发出发！	chu fa chu fa	100
+船坟区	chuan fen qu	100
+船坟野点	chuan fen ye dian	100
+穿甲弹	chuan jia dan	100
+大道玄妙，不可不闻。	da dao xuan miao bu ke bu wen	100
+大佛	da fo	100
+大麦	da mai	100
+大圣游	da sheng you	100
+大圣游＆风卷云残	da sheng you	100
+大师二段	da shi er duan	100
+大师三段	da shi san duan	100
+大师四段	da shi si duan	100
+大小姐要去冒险了，谁有意见吗？	da xiao jie yao qu mao xian le	100
+挡路者，斩！	dang lu zhe zhan	100
+道法自然尔……	dao fa zi ran er	100
+倒塌大船	dao ta da chuan	100
+等待并不可怕，可怕的是无尽的等待。	deng dai bing bu ke pa	100
+地脉之战	di mai zhi zhan	100
+地气喷涌	di qi pen yong	100
+地煞符	di sha fu	100
+地堂霸脚	di tang ba jiao	100
+颠勺	dian shao	100
+都将毁灭	dou jiang hui mie	100
+斗转星移·玄门	dou zhuan xing yi	100
+毒箭	du jian	100
+毒箭＆断筋弩	du jian	100
+赌上武者最后的荣耀。	du shang wu zhe zui hou de rong yao	100
+短棍	duan gun	100
+断筋弩	duan jin nu	100
+短闪	duan shan	100
+夺魂	duo hun	100
+夺魂长	duo hun chang	100
+夺魂长剑	duo hun chang jian	100
+夺魂阔	duo hun kuo	100
+夺魂阔刀	duo hun kuo dao	100
+夺魂太	duo hun tai	100
+夺魂太刀	duo hun tai dao	100
+饿虎下山，定要伤人！	e hu xia shan	100
+返魂	fan hun	100
+凡人们皆奉我为天通元君。	fan ren men jie feng wo wei tian tong yuan jun	100
+凡生者，都将畏惧我。	fan sheng zhe dou jiang wei ju wo	100
+反弹	fan tan	100
+犯我帝国天威者，虽远必诛！	fan wo di guo tian wei zhe sui yuan bi zhu	100
+飞索	fei suo	100
+飞索大师	fei suo da shi	100
+飞踢	fei ti	100
+分水斩	fen shui zhan	100
+凤凰羽	feng huang yu	100
+风卷云残	feng juan yun can	100
+风雷步	feng lei bu	100
+风雷步＆烈火斩	feng lei bu	100
+风男	feng nan	100
+富春山居图	fu chun shan ju tu	100
+赴汤蹈火，在所不辞。	fu tang dao huo zai suo bu ci	100
+伏天	fu tian	100
+感觉又是很轻松的冒险嘛。	gan jue you shi hen qing song de mao xian ma	100
+给他们亮亮爷的獠牙！	gei ta men liang liang ye de liao ya	100
+公道不在人心，在于结果，而那些追求结果的人，往往不择手段。	gong dao bu zai ren xin	100
+攻击	gong ji	100
+弓箭	gong jian	100
+钩锁百裂	gou suo bai lie	100
+勾旋斩	gou xuan zhan	100
+古格努斯杖	gu ge nu si zhang	100
+姑奶奶叫沈妙！我的手妙，人更妙！	gu nai nai jiao shen miao	100
+顾清寒	gu qing han	100
+观山海·四季	guan shan hai si ji	100
+观山海·异兽	guan shan hai yi shou	100
+光佑	guang you	100
+鬼哭神嚎	gui ku shen hao	100
+鬼刃暗扎	gui ren an zha	100
+归元	gui yuan	100
+棍阔	gun kuo	100
+还等什么？	hai deng shen me	100
+寒冬将至，该是雪花绽放的时候了。	han dong jiang zhi	100
+撼山易，撼我岳山，难！！！	han shan yi	100
+豪华版	hao hua ban	100
+和尚	he shang	100
+红甲	hong jia	100
+红皮	hong pi	100
+后摇	hou yao	100
+后摇僵直	hou yao jiang zhi	100
+狐狸	hu li	100
+胡桃	hu tao	100
+胡桃率先出击！	hu tao shuai xian chu ji	100
+胡为	hu wei	100
+湖杨林野点	hu yang lin ye dian	100
+滑步	hua bu	100
+缓射	huan she	100
+缓射＆落金乌	huan she	100
+幻形淌	huan xing tang	100
+幻形淌＆虚影步	huan xing tang	100
+荒村	huang cun	100
+黄金	huang jin	100
+黄金阙	huang jin que	100
+魂燃一线	hun ran yi xian	100
+混身虎胆镇山岗，少年意气任我行！	hun shen hu dan zhen shan gang shao nian yi qi ren wo xing	100
+魂玉	hun yu	100
+火箭	huo jian	100
+火箭＆锁羚羊	huo jian	100
+火罗国	huo lo go	100
+火龙炮	huo long pao	100
+火男	huo nan	100
+火炮	huo pao	100
+火球	huo qiu	100
+季沧海	ji cang hai	100
+机触	ji chu	100
+机触＆破门闩	ji chu	100
+集火	ji huo	100
+极品皮肤	ji pin pi fu	100
+极品时装	ji pin shi zhuang	100
+集束	ji shu	100
+既在人世，何必超凡脱俗。	ji zai ren shi he bi chao fan tuo su	100
+甲爆	jia bao	100
+甲粉	jia fen	100
+迦南	jia nan	100
+见过我的人……还活着的不多。	jian guo wo de ren hai huo zhe de bu duo	100
+剪纸·彩刀	jian zhi cai dao	100
+江畔何人初见雪，江雪何年初映人？	jiang pan he ren chu jian xue	100
+僵直	jiang zhi	100
+叫我船长!	jiao wo chuan zhang	100
+金堆	jin dui	100
+金甲	jin jia	100
+近抗	jin kang	100
+今日起卦，乃是大吉之相！	jin ri qi gua	100
+金武	jin wu	100
+金乌纪	jin wu ji	100
+金玉	jin yu	100
+荆轲献匕	jing ke xian bi	100
+敬我爱我？辱我惧我？与我何干。	jing wo ai wo ru wo ju wo yu wo he gan	100
+精准	jing zhun	100
+就要去冒险了，太期待啦！	jiu yao qu mao xian le	100
+就要去冒险了，太期待啦！	jiu yao qu mao xian le tai qi dai la	100
+觉教	jue jiao	100
+开元宝箱任选礼	kai yuan bao xiang ren xuan li	100
+克烈	ke lie	100
+快蓄	kuai xu	100
+快蓄＆流天雷	kuai xu	100
+矿坑区	kuang keng qu	100
+狂浪怒涛	kuang lang nu tao	100
+捆绑包	kun bang bao	100
+昆仑墟	kun lun xu	100
+昆仑玄女	kun lun xuan nu	100
+阔刀	kuo dao	100
+来，舍身一战！	lai she shen yi zhan	100
+蓝顶	lan ding	100
+蓝堆	lan dui	100
+蓝甲	lan jia	100
+蓝色霸体	lan se ba ti	100
+蓝武	lan wu	100
+蓝蓄	lan xu	100
+蓝玉	lan yu	100
+蓝月	lan yue	100
+蓝月改	lan yue gai	100
+老虎不发威，拿我当病猫？	lao hu bu fa wei na wo dang bing mao	100
+雷刀	lei dao	100
+链舞	lian wu	100
+连珠炮	lian zhu pao	100
+连珠炮＆反弹	lian zhu pao	100
+两仪剑	liang yi jian	100
+两仪剑·御剑	liang yi jian	100
+烈火斩	lie huo zhan	100
+裂空	lie kong	100
+凌波	ling bo	100
+灵狐幻刃	ling hu huan ren	100
+玲珑一笑，吉凶难料。嘻嘻……	ling long yi xiao	100
+凌霄	ling xiao	100
+流火映真	liu huo ying zhen	100
+流天雷	liu tian lei	100
+流星飞坠	liu xing fei zhui	100
+龙虎功	long hu gong	100
+龙之道	long zhi dao	100
+落金乌	luo jin wu	100
+落日寺	luo ri si	100
+麦赫塔	mai he ta	100
+猫足	mao zu	100
+猫足＆壁虎游墙	mao zu	100
+没有人可以阻止我。	mei you ren ke yi zu zhi wo	100
+秘境	mi jing	100
+妙手	miao shou	100
+那不是我的名字。	na bu shi wo de ming zi	100
+哪怕牺牲自己，我也要完成新的使命。	na pa xi sheng zi ji wo ye yao wan cheng xin de shi ming	100
+哪怕一丝希望，我都将奋战到底。	na pa yi si xi wang wo dou jiang fen zhan dao di	100
+奶妈	nai ma	100
+能来帮帮胡桃吗	neng lai bang bang hu tao ma	100
+你不在阎王簿上。	ni bu zai yan wang bu shang	100
+尼尔	ni er	100
+你以为我穿成这样是为了取悦你？你猜对了，亲爱的。	ni yi wei wo chuan cheng zhe yang shi wei le qu yue ni	100
+鸟铳	niao chong	100
+宁红叶	ning hong ye	100
+宁红夜	ning hong ye	100
+怒火焚身	nu huo fen shen	100
+哦？没射到他的心里吗？	o mei she dao ta de xin li ma	100
+哦？我以为只有铁卫是青铜的，没想到在场的都是！	o wo yi wei zhi you tie wei shi qing tong de mei xiang dao zai chang de dou shi	100
+排位赛	pai wei sai	100
+喷火筒	pen huo tong	100
+蓬莱岛	peng lai dao	100
+朋友？哈哈哈……每个人都是我的朋友。	peng you ha ha ha mei ge ren dou shi wo de peng you	100
+琵琶行	pi pa hang	100
+平击	ping ji	100
+平击蓄力	ping ji xu li	100
+破风	po feng	100
+破门闩	po men shuan	100
+前摇	qian yao	100
+强伪连	qiang wei lian	100
+强袭?离火式	qiang xi li huo shi	100
+巧匠	qiao jiang	100
+敲钟	qiao zhong	100
+请挂护航	qing gua hu hang	100
+青鬼	qing gui	100
+青鬼改	qing gui gai	100
+清寒不喜争抢，但……更讨厌抢不到。	qing han bu xi zheng qiang	100
+青铜	qing tong	100
+燃烧	ran shao	100
+让他们见识见识我的手段！	rang ta men jian shi jian shi wo de shou duan	100
+惹怒我的人，可没有好下场！	re nu wo de ren	100
+人爱者有力，爱人者应勇。	ren ai zhe you li	100
+人爱者有力，爱人者应勇。	ren ai zhe you li ai ren zhe ying yong	100
+任何利益都需要付出代价，但我很擅长让其他人承受代价。	ren he li yi dou xu yao fu chu dai jia dan wo hen shan chang rang qi ta ren cheng shou dai jia	100
+日轮国	ri lun go	100
+散射	san she	100
+扫地僧	sao di seng	100
+扫码登录	sao ma deng lu	100
+森罗谷	sen luo gu	100
+沙暴会埋葬我的敌人！	sha bao hui mai zang wo de di ren	100
+沙男	sha nan	100
+扇里走丸	shan li zou wan	100
+神秘	shen mi	100
+沈妙	shen miao	100
+神鹰堡	shen ying bao	100
+胜负不重要，有趣才重要！	sheng fu bu zhong yao you qu cai zhong yao	100
+升华类魂玉	sheng hua lei hun yu	100
+胜利的味道。	sheng li de wei dao	100
+升龙	sheng long	100
+十步之外，枪快，十步之内，我的枪又准又快！	shi bu zhi wai qiang kuai	100
+噬魂斩	shi hun zhan	100
+是时候面对过往的罪恶了。	shi shi hou mian dui guo wang de zui e le	100
+是时候痛痛快快的打一架了！	shi shi hou tong tong kuai kuai de da yi jia le	100
+蚀月	shi yue	100
+狩猎盛宴开始啦！	shou lie sheng yan kai shi la	100
+双刀	shuang dao	100
+双环扫	shuang huan sao	100
+双戟	shuang ji	100
+双截棍	shuang jie gun	100
+双闪	shuang shan	100
+速射	su she	100
+虽是天生地长，也不必被困于天地！	sui shi tian sheng di zhang	100
+锁羚羊	suo ling yang	100
+他们都叫我雾海龙王！	ta men dou jiao wo wu hai long wang	100
+太刀	tai dao	100
+天寒日短，抓紧时间。	tan han ri duan zhua jin shi jian	100
+唐安城	tang an cheng	100
+特木尔	te mu er	100
+体力	ti li	100
+天才阴阳师驾到。	tian cai yin yang shi jia dao	100
+天赐安神	tian ci an shen	100
+天海	tian hai	100
+天寒日短，抓紧时间。	tian han ri duan	100
+天人榜	tian ren bang	100
+天人城	tian ren cheng	100
+天人之战	tian ren zhi zhan	100
+天纵	tian zong	100
+跳振	tiao zhen	100
+铁卫出征，寸草不生，哈哈哈哈！	tie wei chu zheng	100
+铁羽扇	tie yu shan	100
+听从我的号令！	ting cong wo de hao ling	100
+听说在上一劫，狐可是祥瑞之兆。	ting shuo zai shang yi jie hu ke shi xiang rui zhi zhao	100
+通教	tong jiao	100
+同源	tong yuan	100
+同源武器	tong yuan wu qi	100
+吐纳术	tu na shu	100
+完壁	wan bi	100
+万劫不复？那我便将一切推倒重来！	wan jie bu fu na wo bian jiang yi qie tui dao chong lai	100
+完美攻击	wan mei gong ji	100
+完美近抗	wan mei jin kang	100
+完美体力	wan mei ti li	100
+完美远抗	wan mei yuan kang	100
+万刃轮	wan ren lun	100
+万象	wan xiang	100
+违规炸鱼	wei gui zha yu	100
+伪连	wei lian	100
+我必将重现苍狼部落的荣耀！	wo bi jiang chong xian cang lang bu luo de rong yao	100
+我必将阻止悲剧重演。	wo bi jiang zu zhi bei ju chong yan	100
+我倒要看看这里有什么秘密呢！	wo dao yao kan kan zhe li you shen me mi mi ne	100
+我的发明，和我一样妙！	wo de fa ming he wo yi yang miao	100
+我的阴阳术可是很厉害的哟~	wo de yin yang shu ke shi hen li hai de yo	100
+我会让敌人们……安息！	wo hui rang di ren men an xi	100
+我既然选择了这样路，便会一直走下去。	wo ji ran xuan ze le zhe yang lu bian hui yi zhi zou xia qu	100
+我将尽我所能，哪怕粉身碎骨。	wo jiang jin wo suo neng na pa fen shen sui gu	100
+我叫胡桃，是土御门家的天才阴阳师！	wo jiao hu tao shi tu yu men jia de tian cai yin yang shi	100
+我可没时间陪你玩！	wo ke mei shi jian pei ni wan	100
+我没有名字，只有任务。	wo mei you ming zi zhi you ren wu	100
+我们走吧。	wo men zou ba	100
+我乃无极帝国长公主，顾清寒。	wo nai wu ji di go zhang gong zhu gu qing han	100
+我乃无极帝国长公主，顾清寒。	wo nai wu ji di guo zhang gong zhu gu qing han	100
+我乃隐族使者，无尘！	wo nai yin zu shi zhe wu chen	100
+我能让男人们的心跳加快，也能让它们随时停止。	wo neng rang nan ren men de xin tiao jia kuai ye neng rang ta men sui shi ting zhi	100
+我是昆仑玄女，宁红夜！	wo shi kun lun xuan nu ning hong ye	100
+我是昆仑玄女，宁红夜！	wo shi kun lun xuan nv ning hong ye	100
+我是无极帝国武威侯——岳山！	wo shi wu ji di guo wu wei hou yue shan	100
+我踏浪而来！	wo ta lang er lai	100
+我喜欢火药的香味，我不管，那就是香味！	wo xi huan huo yao de xiang wei wo bu guan na jiu shi xiang wei	100
+我要让胜利的烟火，照亮战场的夜空！	wo yao rang sheng li de yan huo zhao liang zhan chang de ye kong	100
+我要重炼阴阳二气，再开乾坤。	wo yao zhong lian yin yang er qi zai kai qian kun	100
+我有着王者的血脉！	wo you zhe wang zhe de xue mai	100
+我早有觉悟。	wo zao you jue wu	100
+我只接受一种结果，就是胜利！	wo zhi jie shou yi zhong jie guo jiu shi sheng li	100
+武备匣	wu bei xia	100
+无常司白七，接令！	wu chang si bai qi jie ling	100
+无常锁	wu chang suo	100
+无常与判官，理应同行。	wu chang yu pan guan li ying tong xing	100
+无尘	wu chen	100
+无敌帧	wu di zhen	100
+五毒洒	wu du sa	100
+雾海龙王	wu hai long wang	100
+无极帝国	wu ji di go	100
+无间泰斗	wu jian tai dou	100
+无间修罗	wu jian xiu luo	100
+吾乃天海，隐族云游者！	wu nai tian hai yin zu yun you zhe	100
+无牵无挂，无尘无敌。	wu qian wu gua wu chen wu di	100
+无双修罗	wu shuang xiu luo	100
+武田信忠	wu tian xin zhong	100
+五眼铳	wu yan chong	100
+无言、无情、无心，即是无常。	wu yan wu qing wu xin ji shi wu chang	100
+武者当爱惜兵刃！	wu zhe dang ai xi bing ren	100
+吸附	xi fu	100
+西行劫·伏魔	xi hang jie fu mo	100
+西行劫·魍魉	xi hang jie wang liang	100
+稀世宝箱	xi shi bao xiang	100
+稀世宝箱任选礼	xi shi bao xiang ren xuan li	100
+夏虫不可语冰。	xia chong bu ke yu bing	100
+狭路相逢勇者胜。	xia lu xiang feng yong zhe sheng	100
+享受这场灵魂的盛宴吧~	xiang shou zhe chang ling hun de sheng yan ba	100
+小彩头	xiao cai tou	100
+消耗类魂玉	xiao hao lei hun yu	100
+信手斩龙	xin shou zhan long	100
+行走江湖，义气为先！	xing zou jiang hu yi qi wei xian	100
+蓄力	xu li	100
+蓄力滑步	xu li hua bu	100
+虚影步	xu ying bu	100
+蓄转振	xu zhuan zhen	100
+雪，是世间至纯之物。	xue nai shi jian zhi chun zhi wu	100
+雪，是世间至纯之物。	xue shi shi jian zhi chun zhi wu	100
+血药	xue yao	100
+巽风震雷刀	xun feng zhen lei dao	100
+炎神	yan shen	100
+阎王簿上的人，活不过今夜。	yan wang bu shang de ren huo bu guo jin ye	100
+妖刀姬	yao dao ji	100
+要做个交易吗？我相信没什么事情不能用钱解决。	yao zuo ge jiao yi ma wo xiang xin mei shen me shi qing bu neng yong qian jie jue	100
+爷爷我叫胡为，胡作非为的胡为。	ye ye wo jiao hu wei hu zuo fei wei de hu wei	100
+一吼降伏百兽，我在，谁敢称王？	yi hou xiang fu bai shou wo zai shui gan cheng wang	100
+一起去乘风破浪吧！	yi qi qu cheng feng po lang ba	100
+一窝蜂	yi wo feng	100
+以我之刃，了结一切！	yi wo zhi ren liao jie yi qie	100
+易武?万华	yi wu wan hua	100
+殷紫萍	yin zi ping	100
+隐族	yin zu	100
+隐族秘藏	yin zu mi cang	100
+隐族使者	yin zu shi zhe	100
+英雄识英雄，好汉知好汉。	ying xiong shi ying xiong hao han zhi hao han	100
+英雄印	ying xiong yin	100
+硬直	ying zhi	100
+永劫	yong jie	100
+永劫无间	yong jie wu jian	100
+幽冥步	you ming bu	100
+幽冥鬼火，永不休止。	you ming gui huo yong bu xiu zhi	100
+优昙华	you tan hua	100
+有我在，就有无极的阵地在！	you wo zai jiu you wu ji de zhen di zai	100
+右蓄	you xu	100
+御地雷	yu di lei	100
+玉玲珑	yu ling long	100
+元教	yuan jiao	100
+远抗	yuan kang	100
+岳山	yue shan	100
+岳山得令！	yue shan de ling	100
+云顶竞速	yun ding jing su	100
+陨星	yun xing	100
+在我眼中，无非是一场游戏罢了。	zai wo yan zhong wu fei shi yi chang you xi ba le	100
+怎么还不开始，本小姐等不及要庆祝胜利了。	zen me hai bu kai shi ben xiao jie deng bu ji yao qing zhu sheng li le	100
+炸鱼	zha yu	100
+战必胜，攻必克！	zhan bi sheng gong bi ke	100
+斩马刀	zhan ma dao	100
+召还术	zhao hai shu	100
+找我？那就算找对人了！	zhao wo na jiu suan zhao dui ren le	100
+这会是不错的消遣！	zhe hui shi bu cuo de xiao qian	100
+这就是武道的顶点吗？	zhe jiu shi wu dao de ding dian ma	100
+这里的每个人都想改变世界，而我只想改变他们。	zhe li de mei ge ren dou xiang gai bian shi jie er wo zhi xiang gai bian ta men	100
+谪星	zhe xing	100
+这一次，就看本小姐的厉害吧。	zhe yi ci jiu kan ben xiao jie de li hai ba	100
+振刀	zhen dao	100
+震雷刀	zhen lei dao	100
+真连	zhen lian	100
+征服大海可不仅仅是男人的浪漫！	zheng fu da hai ke bu jin jin shi nan ren de lang man	100
+正气扫帚	zheng qi sao zhou	100
+正确的选择！	zheng que de xuan ze	100
+征神之路	zheng shen zhi lu	100
+止戈为武。	zhi ge wei wu	100
+知己知彼，方能百战不殆！	zhi ji zhi bi fang neng bai zhan bu dai	100
+治疗箭	zhi liao jian	100
+终极版	zhong ji ban	100
+中闪	zhong shan	100
+中型船内部	zhong xing chuan nei bu	100
+诸行无常，唯有无常不灭。	zhu hang wu chang wei you wu chang bu mie	100
+抓闪	zhua shan	100
+坠击	zhui ji	100
+坠日	zhui ri	100
+准备好庆功宴吧！	zhun bei hao qing gong yan ba	100
+自定义房间	zi ding yi fang jian	100
+自动人形	zi dong ren xing	100
+紫甲	zi jia	100
+自疗弩	zi liao nu	100
+自疗弩＆治疗箭	zi liao nu	100
+自如	zi ru	100
+自业火中重生，一如既往。	zi ye huo zhong chong sheng yi ru ji wang	100
+自由练习	zi you lian xi	100
+纵击	zong ji	100
+宗师二段	zong shi er duan	100
+宗师三段	zong shi san duan	100
+宗师四段	zong shi si duan	100
+宗师一段	zong shi yi duan	100
