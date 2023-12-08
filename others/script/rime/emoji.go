@@ -170,7 +170,11 @@ func checkOthersTXT() {
 			continue
 		}
 		text := strings.Split(line, "\t")[0]
-		set.Add(text)
+		if set.Contains(text) {
+			fmt.Println("❌ duplicate key", text)
+		} else {
+			set.Add(text)
+		}
 	}
 
 	// base+cn_dicts/others.dict.yaml

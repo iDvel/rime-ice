@@ -77,12 +77,12 @@ sort: by_weight
 
 
 ### 小时候没学过的拼音。。。
-# 嗯	n	在 custom_phrase.txt 改为「那、哪」了
-# 嗯	ng	在 custom_phrase.txt 改为「那个、哪个」了
-# 唔	ng
+# 嗯	n	没启用，在 custom_phrase.txt 中设为「那、哪」了
+# 嗯	ng	没启用，在 custom_phrase.txt 中设为「那个、哪个」了
+# 唔	ng  没启用
 # 噷	hm	在 custom_phrase.txt 里置顶了
 # 呣	m	在 custom_phrase.txt 里放到第三位了
-# 哼	hng	    放到 custom_phrase.txt 里置顶了
+# 哼	hng	在 custom_phrase.txt 里置顶了
 嗯	eng	9179528
 欸	ei	534
 哟	yo	59051
