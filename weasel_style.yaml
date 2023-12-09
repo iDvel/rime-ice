@@ -10,13 +10,15 @@
 #   "style/+":
 #     __include: "weasel_style_copy:/style"
 
-
-# 全部 style 选项
 # refer：<https://github.com/rime/weasel/blob/master/RimeWithWeasel/RimeWithWeasel.cpp>
-# Update at：2023.08.20
-# Weasel 版本：15.0, CI #137 <https://github.com/rime/weasel/actions/runs/5912109600>
-# Commit: db79168
+# Update at：2023.12.09
+# Weasel 版本：15.0, Commit: 92944
+# Commit CI #169
 
+# 通知设定
+show_notifications_when: always # always；never；或者用`+`号连接以下选项：ascii_mode, ascii_punct, shape, simplification, schema。例如 ascii_mode+shape+schema
+
+# 字体、布局、窗口等样式设定
 style:
   # 字体设定
   # 字体1[:起始码位:结束码位:字重:字形][,字体2 ...]，详情请参考 <https://github.com/rime/weasel/wiki/字體設定>
@@ -35,8 +37,8 @@ style:
   # 布局设定，同样可以在 layout 的 type 下指定
   fullscreen: false # 全屏排列：true；false
   horizontal: false # 横向排列：true；false
-  vertical_text: false # 竖排：true；false
-  vertical_text_left_to_right: false # 竖排下从左到右：true；false
+  vertical_text: false # 竖排文本：true；false
+  vertical_text_left_to_right: false # 从左到右竖排：true；false
   vertical_text_with_wrap: false # 竖排下，自动换行：true；false
   vertical_auto_reverse: false # 竖排下，输入窗口在上方时倒序排列：true；false
 
@@ -46,9 +48,12 @@ style:
   enhanced_position: false # 无法定位候选框时，在窗口窗口左上角显示候选框：true；false
   display_tray_icon: false # 托盘显示独立于语言栏的额外图标：true；false
   antialias_mode: default # 次像素反锯齿设定：default；force_dword；cleartype；grayscale；aliased
+  text_orientation: horizontal # 文本排布，效果和 `vertical_text` 相同：horizontal；vertical
+  candidate_abbreviate_length:  # 候选项最大的字数，超过此数字则用省略号代替
 
   mouse_hover_ms: 0 # 鼠标悬停响应间隔，设置为 0 时禁用该功能。默认禁用
   paging_on_scroll: false # 在候选窗口上滚轮操作时，对应的响应动作。如设定为 true，则进行翻页操作；如设定为 false（默认)，则进行候选 index 切换（类似上下方向键）
+  click_to_capture: false # 鼠标点击候选项，创建截图：true；false
 
   color_scheme: aqua # 配色方案
 
@@ -75,14 +80,15 @@ style:
     round_corner: 4  # 高亮区域圆角；又名 hilited_corner_radius
 
 
-# 全部 color_schemes 选项，点击小狼毫「输入法设定」可以预览皮肤效果
+# 配色设定
+# 点击小狼毫「输入法设定」可以预览皮肤效果
 # 在小狼毫用户目录新建 preview 文件夹，将自定义皮肤的截图重命名为 color_scheme_<name>.png 放入此文件夹，可以在「输入法设定」中看到自定义皮肤效果
 
 # 小狼毫配色在线设计：
 # [RIME 西米](https://fxliang.github.io/RimeSeeMe/)
 
 preset_color_schemes:
-  scheme_name: # 需要在 `style/color_schema` 指定的值
+  scheme_name: # 在 `style/color_schema` 指定的值
     name: # 方案设置中显示的配色名称
     author: # 配色作者名称
     color_format: # 颜色格式：argb；rgba；abgr
@@ -119,7 +125,7 @@ preset_color_schemes:
 app_options:
   appname.exe: # 带 .exe 的进程名，全小写
     ascii_mode: true # 英文模式
-    inline_preedit: true # 行内显示预编辑区。当前版本小狼毫将 inline_preedit 设定为 false 时，会在输入时预插入一个空格，这在 Firefox 等应用中会引发问题，需要在此处为这些应用单独指定 inline_preedit。refer <https://github.com/rime/weasel/issues/946>
+    inline_preedit: true # 行内显示预编辑区。当前版本小狼毫将 inline_preedit 设定为 false 时，会在输入时预插入一个空格，这在 Firefox 等应用中会引发问题，可以在此处为这些应用单独指定 inline_preedit。refer <https://github.com/rime/weasel/issues/946>
   appname2.exe:
     ascii_mode: false # 非英文模式
 
