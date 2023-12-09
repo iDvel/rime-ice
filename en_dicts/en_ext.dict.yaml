@@ -432,7 +432,6 @@ WYSIWYG	WYSIWYG
 What You See Is What You Get	WYSIWYG
 Mark Text	MarkText
 Joplin	Joplin
-obsidian	obsidian
 SteamOS	SteamOS
 TikTok	TikTok
 IDC	IDC
@@ -2265,7 +2264,6 @@ medallion	medallion
 add-on	add-on
 add-ons	add-ons
 C#	C#
-C#	Csharp
 decode	decode
 KeyCastr	KeyCastr
 Laugh Tale	LaughTale
@@ -2383,3 +2381,6 @@ DALL·E	DALL·E
 keychain	keychain
 keychains	keychains
 guile	guile
+e.g.	e.g.
+i.e.	i.e.
+et al.	etal.

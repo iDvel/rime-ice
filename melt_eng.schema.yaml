@@ -101,6 +101,8 @@ algebra_common:
   - derive/-/hyphen/
   - derive/#/hash/
   - derive/#/number/
+  - derive/#/sharp/
+  - derive/♯/sharp/
   - derive / slash
   - derive/&/and/
   - derive/%/percent/
