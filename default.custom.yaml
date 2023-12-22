@@ -6,4 +6,4 @@ customization:
   rime_version: 1.8.5
 patch:
   schema_list:
-    - {schema: rime_ice}
+    - { schema: rime_ice }
