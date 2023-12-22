@@ -69,6 +69,8 @@ local corrections = {
 	["bo jing"] = { text = "脖颈", comment = "bo geng" },
 	["bo jing er"] = { text = "脖颈儿", comment = "bo geng er" },
 	["jie zha"] = { text = "结扎", comment = "jie za" },
+	["hai shen wei"] = { text = "海参崴", comment = "hai shen wai" },
+	["hou pu"] = { text = "厚朴", comment = "hou po" },
 	-- 错字
 	["pu jie"] = { text = "扑街", comment = "仆街" },
 	["pu gai"] = { text = "扑街", comment = "仆街" },

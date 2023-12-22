@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2023-12-08"
+version: "2023-12-22"
 sort: by_weight
 ...
 ##### 容错词
@@ -169,6 +169,10 @@ sort: by_weight
 脖颈儿	bo jing er
 结扎	jie za
 结扎	jie zha
+海参崴	hai shen wai
+海参崴	hai shen wei
+厚朴	hou po
+厚朴	hou pu
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
@@ -334,7 +338,7 @@ sort: by_weight
 两个鸟
 两个巢
 两个禺	liang ge yu
-两个巿
+两个巿	liang ge fu
 两个句
 两个奇
 两个真

@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-12-08"
+version: "2023-12-22"
 sort: by_weight
 ...
 # 一些杂项
@@ -486,7 +486,6 @@ IntelliJ	IntelliJ
 IntelliJ IDEA	IntelliJIDEA
 IntelliJ IDEA Community	IntelliJIDEACommunity
 IntelliJ IDEA Ultimate	IntelliJIDEAUltimate
-IDEA	IDEA
 IDEA Community	IDEACommunity
 IDEA Ultimate	IDEAUltimate
 IDE	IDE
@@ -834,7 +833,6 @@ PlistEdit	pliPlistEdit
 PopClip	PopClip
 PowerPack	PowerPack
 Privoxy	Privoxy
-Pro	Pro
 Promotee	Promotee
 Proxifier	Proxifier
 Public Beta	PublicBeta
@@ -2384,3 +2382,6 @@ guile	guile
 e.g.	e.g.
 i.e.	i.e.
 et al.	etal.
+Zettlr	Zettlr
+Codium	Codium
+CodiumAI	CodiumAI
