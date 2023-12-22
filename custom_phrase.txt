@@ -5,7 +5,7 @@
 #
 # 自定义文本
 # 适用于全拼，在方案的 custom_phrase/user_dict 指定；
-# 双拼默认为 custom_phrase_double.txt 需要手动创建
+# 双拼默认为 custom_phrase_double.txt 需要手动创建并更改上面的 db_name 为 custom_phrase_double
 #
 # 以 Tab 分割：汉字<Tab>编码<Tab>权重
 #
@@ -18,7 +18,7 @@
 # 比如 Amazon 被纠错为「a ma zong 阿妈粽」，
 # 期望的 Amazon 跑到第二个候选项了，所以这里给它固定死喽。
 #
-# version: "2023-08-15"
+# version: "2023-11-13"
 #
 # 此行之后不能写注释
 
@@ -223,3 +223,4 @@ NASA	nasa
 gone	gone
 Go程	gocheng
 code	code
+SOHO	soho

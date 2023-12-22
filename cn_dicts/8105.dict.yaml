@@ -33,7 +33,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2023-10-30"
+version: "2023-12-05"
 sort: by_weight
 ...
 ### 按需启用
@@ -51,6 +51,9 @@ sort: by_weight
 濛	meng	1
 诶	ei	1
 凃	tu	1
+咲	xiao	1
+晛	xian	0
+珮	pei	0
 𤭢	cei	1000
 𤭢了	cei le	1000
 # 注释掉的这几行已经加入到下面并调整到合适的权重了
@@ -74,12 +77,12 @@ sort: by_weight
 
 
 ### 小时候没学过的拼音。。。
-# 嗯	n	在 custom_phrase.txt 改为「那、哪」了
-# 嗯	ng	在 custom_phrase.txt 改为「那个、哪个」了
-# 唔	ng
+# 嗯	n	没启用，在 custom_phrase.txt 中设为「那、哪」了
+# 嗯	ng	没启用，在 custom_phrase.txt 中设为「那个、哪个」了
+# 唔	ng  没启用
 # 噷	hm	在 custom_phrase.txt 里置顶了
 # 呣	m	在 custom_phrase.txt 里放到第三位了
-# 哼	hng	    放到 custom_phrase.txt 里置顶了
+# 哼	hng	在 custom_phrase.txt 里置顶了
 嗯	eng	9179528
 欸	ei	534
 哟	yo	59051
@@ -91,7 +94,7 @@ sort: by_weight
 # +_+
 啊	a	5366043
 阿	a	867275
-吖	a	854
+吖	a	160000
 锕	a	144
 腌	a	1
 爱	ai	1516399
@@ -623,10 +626,10 @@ sort: by_weight
 艚	cao	50
 螬	cao	26
 𥕢	cao	0
-策	ce	213136
+测	ce	288406
 侧	ce	199092
-测	ce	188406
 册	ce	53084
+策	ce	52131
 厕	ce	45544
 恻	ce	7439
 岑	cen	10316
@@ -1003,11 +1006,11 @@ sort: by_weight
 䲠	chun	0
 堾	chun	0
 𬭚	chun	0
-绰	chuo	27937
 戳	chuo	20671
 啜	chuo	9057
 龊	chuo	7295
 辍	chuo	3649
+绰	chuo	2793
 踔	chuo	162
 惙	chuo	15
 逴	chuo	4
@@ -4219,8 +4222,8 @@ sort: by_weight
 糜	mei	1
 媄	mei	0
 瑂	mei	0
-门	men	2233462
 们	men	1074187
+门	men	223346
 闷	men	203501
 懑	men	2697
 扪	men	2344
@@ -7171,6 +7174,7 @@ sort: by_weight
 雅	ya	387226
 牙	ya	300629
 丫	ya	183167
+吖	ya	160000
 讶	ya	157124
 涯	ya	68222
 哑	ya	65950

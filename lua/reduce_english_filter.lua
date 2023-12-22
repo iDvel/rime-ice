@@ -40,9 +40,12 @@ function M.init(env)
         "shed", "shin", "ship", "shit", "shut", "sig", "sim", "sin", "sip", "sir", "sis", "sit", "six", "soul", "soup",
         "sour", "sub", "suit", "sum", "sun", "sung", "suns", "sup", "sur", "sus", "tab", "tad", "tag", "tail", "taj",
         "tan", "tang", "tank", "tap", "tar", "tax", "tec", "ted", "tel", "ten", "ter", "tex", "tic", "tied", "tier",
-        "ties", "tim", "tin", "tip", "tit", "tour", "tout", "tum", "wag", "wait", "wan", "wand", "want", "wap", "war",
-        "was", "wax", "way", "weir", "went", "won", "wow", "yan", "yang", "yen", "yep", "yes", "yet", "yin", "your",
-        "yum", "zen", "zip" }
+        "ties", "tim", "tin", "tip", "tit", "tour", "tout", "tum", "wag", "wait", "wail", "wan", "wand", "womens",
+        "want", "wap", "war", "was", "wax", "way", "weir", "went", "won", "wow", "yan", "yang", "yen", "yep", "yes",
+        "yet", "yin", "your", "yum", "zen", "zip",
+        -- 下面是大于 4 位的
+        "quanx",
+	}
     M.all = {}
     for _, v in ipairs(all) do
         M.all[v] = true
@@ -76,7 +79,7 @@ function M.func(input, env)
         for cand in input:iter() do
             index = index + 1
             -- 找到要降低的英文词，加入 pending_cands
-            if cand.preedit:find(" ") or not cand.text:match("^[%a' ]+$") then
+            if cand.preedit:find(" ") or not cand.text:match("[a-zA-Z]") then
                 yield(cand)
             else
                 table.insert(pending_cands, cand)

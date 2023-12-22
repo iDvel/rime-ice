@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-10-30"
+version: "2023-12-08"
 sort: by_weight
 ...
 # +_+
@@ -6550,7 +6550,7 @@ Estonian	Estonian
 estrogen	estrogen
 # et	et
 eta	eta
-etc	etc
+etc.	etc.
 eternal	eternal
 eternity	eternity
 Ethan	Ethan
@@ -11060,7 +11060,7 @@ logic	logic
 logical	logical
 login	login
 logistics	logistics
-logitech	logitech
+Logitech	Logitech
 logo	logo
 logon	logon
 logos	logos
@@ -12927,6 +12927,7 @@ observing	observing
 obsessed	obsessed
 obsession	obsession
 obsolete	obsolete
+obsidian	obsidian
 obstacle	obstacle
 obstacles	obstacles
 obstetrics	obstetrics
@@ -19855,7 +19856,7 @@ utterly	utterly
 # uv	uv
 # uw	uw
 # ux	ux
-uzbekistan	uzbekistan
+Uzbekistan	Uzbekistan
 # v	v
 # va	va
 vac	vac
@@ -20723,7 +20724,7 @@ Wolverhampton	Wolverhampton
 wolves	wolves
 woman	woman
 women	women
-womens	womens
+women's	women's
 won	won
 wonder	wonder
 wondered	wondered

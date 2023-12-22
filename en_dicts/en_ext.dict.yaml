@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-10-30"
+version: "2023-12-08"
 sort: by_weight
 ...
 # 一些杂项
@@ -432,7 +432,6 @@ WYSIWYG	WYSIWYG
 What You See Is What You Get	WYSIWYG
 Mark Text	MarkText
 Joplin	Joplin
-obsidian	obsidian
 SteamOS	SteamOS
 TikTok	TikTok
 IDC	IDC
@@ -564,6 +563,8 @@ Chief Executive Officer	ChiefExecutiveOfficer
 CTO	CTO
 Chief Technology Officer	CTO
 Chief Technology Officer	ChiefTechnologyOfficer
+CFO	CFO
+Chief Financial Officer	CFO
 Django	Django
 DBMesh	DBMesh
 Facebook	Facebook
@@ -711,7 +712,7 @@ Dropbox	Dropbox
 Dropzone	Dropzone
 Endnote	Endnote
 Entropy	Entropy
-ePub	ePub
+EPUB	EPUB
 Eureka	Eureka
 ExFAT	ExFAT
 Extended File Allocation Table	ExFAT
@@ -863,12 +864,10 @@ Siri	Siri
 Sketch	Sketch
 Slicy	Slicy
 Snagit	Snagit
-Snip	Snip
 Sparkbox	Sparkbox
 Sparrow	Sparrow
 Speedtest	Speedtest
 Spotify	Spotify
-Spotlight	Spotlight
 SSL	SSL
 StackSocial	StackSocial
 Sublime Text	SublimeText
@@ -2265,7 +2264,6 @@ medallion	medallion
 add-on	add-on
 add-ons	add-ons
 C#	C#
-C#	Csharp
 decode	decode
 KeyCastr	KeyCastr
 Laugh Tale	LaughTale
@@ -2361,3 +2359,28 @@ B2C	B2C
 C2B	C2B
 O2O	O2O
 NBA 2K	NBA2K
+tempting	tempting
+WebCatalog	WebCatalog
+Apple One	AppleOne
+pixiv	pixiv
+M4A1	M4A1
+shogun	shogun
+wail	wail
+wails	wails
+wailed	wailed
+wailing	wailing
+PK	PK
+WireGuard	WireGuard
+AdGuard	AdGuard
+Altman	Altman
+Ultraman	Ultraman
+silicones	silicones
+GPTs	GPTs
+sider	sider
+DALL·E	DALL·E
+keychain	keychain
+keychains	keychains
+guile	guile
+e.g.	e.g.
+i.e.	i.e.
+et al.	etal.

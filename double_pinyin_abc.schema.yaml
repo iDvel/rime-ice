@@ -100,7 +100,7 @@ date_translator:
 # 几种模式：
 # all     降低所有 3~4 位长度、前 2~3 位是完整拼音、最后一位是声母的单词
 # none    不降低任何单词，相当于没有启用这个 Lua
-# custom  自定义，只降低 custom 里的
+# custom  自定义，只降低 words 里的
 # （匹配的是编码，不是单词）
 reduce_english_filter:
   mode: custom  # all | none | custom
@@ -122,7 +122,7 @@ reduce_english_filter:
   rand, rant, rent, rep, res, ret, rex, rib, rid, rig, rim, rub, rug, rum, runs,
   sac, sail, sal, sam, sans, sap, saw, sax, sew, sham, shaw, shin, sig, sin, sip, sis, suit, sung, suns, sup, sur, sus,
   tad, tail, taj, tar, tax, tec, ted, tel, ter, tex, tic, tied, tier, ties, tim, tin, tit, tour, tout, tum,
-  wag, wand, wap, wax, weir, won,
+  wag, wand, womens, wap, wax, weir, won,
   yan, yen]
 
 

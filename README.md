@@ -6,9 +6,9 @@
 
 <br>
 
-[RIME | 中州韵输入法引擎](https://rime.im/) 是一个跨平台的输入法算法框架，这里是 Rime 的一个配置仓库。
+[RIME(Rime Input Method Engine) / 中州韵输入法引擎](https://rime.im/) 是一个跨平台的输入法算法框架。
 
-用户需要[下载各平台对应的 Rime 发行版](https://rime.im/download/)，并将此配置应用到配置目录。
+这里是 Rime 的一份配置仓库。雾凇拼音提供了一套开箱即用的完整配置，包含了输入方案（全拼、双拼）、长期维护的词库及各项扩展功能。用户需要下载平台对应的前端，并将此配置放到配置目录。
 
 详细介绍：[Rime 配置：雾凇拼音](https://dvel.me/posts/rime-ice/)
 
@@ -25,13 +25,12 @@
     -   [melt_eng](https://github.com/tumuyan/rime-melt) 英文输入
     -   [优化英文输入体验](https://dvel.me/posts/make-rime-en-better/)
     -   [两分输入法](http://cheonhyeong.com/Simplified/download.html) 拼字
-    -   简繁切换
-    -   日期、时间、星期
     -   自整理的 Emoji
     -   [以词定字](https://github.com/BlindingDark/rime-lua-select-character)
     -   [长词优先](https://github.com/tumuyan/rime-melt/blob/master/lua/melt.lua)
     -   [Unicode](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)
     -   [数字、人民币大写](https://wb98.gitee.io/)
+    -   日期、时间、星期
     -   常见错音错字提示
     -   所有标点符号直接上屏，/ 模式改为 v 模式，/ 直接上屏
     -   增加了许多拼音纠错
@@ -46,6 +45,8 @@
     -   [腾讯词向量](https://ai.tencent.com/ailab/nlp/en/download.html)
 - 词库修订
     - 校对大量异形词、错别字、错误注音
+    - 全词库完成注音
+    - 同义多音字注音
 
 <br>
 
@@ -71,7 +72,7 @@
 
 ⚠️ 单独使用词库注意事项：`rime_ice.dict.yaml` 下面包含了大写字母，这和配置有些许绑定，可以直接删除，详细说明：[#356](https://github.com/iDvel/rime-ice/issues/356)
 
-建议备份原先配置，清空配置目录。
+雾凇拼音中多个文件可能与其他方案同名冲突，如果是新手想一键安装，建议备份原先配置，清空配置目录再导入。
 
 配置目录为小狼毫的 `%APPDATA%\Rime`，鼠须管的 `~/Library/Rime`，可通过右键菜单栏图标打开。
 
@@ -118,6 +119,8 @@ bash rime-install iDvel/rime-ice:others/recipes/opencc
 ### 仓输入法 [Hamster](https://github.com/imfuxiao/Hamster)
 
 参考 [如何导入"雾淞拼音输入方案"](https://github.com/imfuxiao/Hamster/wiki/%E5%A6%82%E4%BD%95%E5%AF%BC%E5%85%A5%22%E9%9B%BE%E6%B7%9E%E6%8B%BC%E9%9F%B3%E8%BE%93%E5%85%A5%E6%96%B9%E6%A1%88%22)
+
+使用九宫格，需要同时启用九宫格方案和九宫格布局。
 
 ### 自动部署脚本
 
