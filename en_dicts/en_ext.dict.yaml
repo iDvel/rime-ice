@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-12-22"
+version: "2023-12-25"
 sort: by_weight
 ...
 # 一些杂项
@@ -2385,3 +2385,8 @@ et al.	etal.
 Zettlr	Zettlr
 Codium	Codium
 CodiumAI	CodiumAI
+SaaS	SaaS
+Software as a service	SaaS
+gitignore	gitignore
+.gitignore	.gitignore
+humankind	humankind
