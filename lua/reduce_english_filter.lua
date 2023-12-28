@@ -43,8 +43,8 @@ function M.init(env)
         "ties", "tim", "tin", "tip", "tit", "tour", "tout", "tum", "wag", "wait", "wail", "wan", "wand", "womens",
         "want", "wap", "war", "was", "wax", "way", "weir", "went", "won", "wow", "yan", "yang", "yen", "yep", "yes",
         "yet", "yin", "your", "yum", "zen", "zip",
-        -- 下面是大于 4 位的
-        "quanx",
+        -- 下面是其他长度的
+        "quanx", "eg",
 	}
     M.all = {}
     for _, v in ipairs(all) do
