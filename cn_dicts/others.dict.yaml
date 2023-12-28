@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2023-12-22"
+version: "2023-12-28"
 sort: by_weight
 ...
 ##### 容错词
@@ -173,6 +173,8 @@ sort: by_weight
 海参崴	hai shen wei
 厚朴	hou po
 厚朴	hou pu
+大宛马	da yuan ma
+大宛马	da wan ma
 ### 错字
 曾经	ceng jing
 曾今	ceng jin

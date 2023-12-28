@@ -29,7 +29,7 @@ local corrections = {
 	["na mo a mi tuo fo"] = { text = "南无阿弥陀佛", comment = "nā mó ē mí tuó fó" },
 	["nan wu a mi tuo fo"] = { text = "南无阿弥陀佛", comment = "nā mó ē mí tuó fó" },
 	["nan wu e mi tuo fo"] = { text = "南无阿弥陀佛", comment = "nā mó ē mí tuó fó" },
-	["gei yu"] = { text = "给予", comment = "jí yǔ" },
+	["gei yu"] = { text = "给予", comment = "jǐ yǔ" },
 	["bin lang"] = { text = "槟榔", comment = "bīng láng" },
 	["zhang bai zhi"] = { text = "张柏芝", comment = "zhāng bó zhī" },
 	["teng man"] = { text = "藤蔓", comment = "téng wàn" },
@@ -71,6 +71,7 @@ local corrections = {
 	["jie zha"] = { text = "结扎", comment = "jié zā" },
 	["hai shen wei"] = { text = "海参崴", comment = "hǎi shēn wǎi" },
 	["hou pu"] = { text = "厚朴", comment = "hòu pò" },
+	["da wan ma"] = { text = "大宛马", comment = "dà yuān mǎ" },
 	-- 错字
 	["pu jie"] = { text = "扑街", comment = "仆街" },
 	["pu gai"] = { text = "扑街", comment = "仆街" },
