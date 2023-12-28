@@ -61,26 +61,26 @@ preset_color_schemes:
     # 如果将字体设置为 PingFangSC-Regular
     # 会让 🈶🈚️🉑🈲🉐 这几个 Emoji 失去彩色效果，留空反而可以显示。。。
     font_face: "" # 字体及大小
-    font_point: 18
+    font_point: 12
     label_font_face: "Helvetica" # 序号字体及大小
     label_font_point: 12
     comment_font_face: "Helvetica" # 注字体及大小
-    comment_font_point: 16
-    # candidate_list_layout: stacked        # 候选项排列方向 stacked(默认) | linear
+    comment_font_point: 12
+    candidate_list_layout: linear # 候选项排列方向 stacked(默认) | linear
     # text_orientation: horizontal          # 文字排列方向 horizontal(默认) | vertical
-    inline_preedit: true # 拼音位于： 候选框 false | 行内 true
-    translucency: false # 磨砂： false | true
+    inline_preedit: false # 拼音位于： 候选框 false | 行内 true
+    translucency: true # 磨砂： false | true
     mutual_exclusive: false # 色不叠加： false | true
     border_height: 0 # 外边框 高
     border_width: 0 # 外边框 宽
-    corner_radius: 10 # 外边框 圆角半径
+    corner_radius: 12 # 外边框 圆角半径
     hilited_corner_radius: 0 # 选中框 圆角半径
     surrounding_extra_expansion: 0 # 候选项背景相对大小？
     shadow_size: 0 # 阴影大小
-    line_spacing: 5 # 行间距
+    line_spacing: 0 # 行间距
     base_offset: 0 # 字基高
-    alpha: 1 # 透明度，0~1
-    spacing: 10 # 拼音与候选项之间的距离 （inline_preedit: false）
+    alpha: 0.9 # 透明度，0~1
+    spacing: 8 # 拼音与候选项之间的距离 （inline_preedit: false）
     color_space: srgb # 色彩空间： srgb | display_p3
     back_color: 0x545554 # 底色
     hilited_candidate_back_color: 0xE3E3E3 # 选中底色
