@@ -58,7 +58,7 @@ local function formatNum(num,t)
 end
 
 -- 数值转换为中文
-function number2cnChar(num,flag,digitUnit,wordFigure)    --flag=0中文小写反之为大写
+local function number2cnChar(num,flag,digitUnit,wordFigure)    --flag=0中文小写反之为大写
 	local st,result
 	num=tostring(num) result=""
 	local num1,num2=math.modf(num)
