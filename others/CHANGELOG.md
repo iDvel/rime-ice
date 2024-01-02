@@ -4,6 +4,14 @@
 
 
 
+## 2024-01-02 🆕 🐛 ⚠️
+
+🆕 农历功能 [#565](https://github.com/iDvel/rime-ice/issues/565)
+
+🐛 长词优先 `long_word_filter.lua` 不提升包含英文、数字、emoji、假名的候选项 [#592](https://github.com/iDvel/rime-ice/issues/592)
+
+⚠️ 更新并修改 `weasel_style.yaml` 为 `weasel.yaml` （[#584](https://github.com/iDvel/rime-ice/pull/584)）
+
 ## 2023-11-29
 
 九宫格方案 2~9 的映射由 ADGJMPTW 改为 23456789 [a0e0ef8](https://github.com/iDvel/rime-ice/commit/a0e0ef807e4ebc50771563717375f554c9473315)
