@@ -30,7 +30,7 @@
     -   [长词优先](https://github.com/tumuyan/rime-melt/blob/master/lua/melt.lua)
     -   [Unicode](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)
     -   [数字、人民币大写](https://wb98.gitee.io/)
-    -   日期、时间、星期
+    -   日期、时间、星期、农历
     -   常见错音错字提示
     -   所有标点符号直接上屏，/ 模式改为 v 模式，/ 直接上屏
     -   增加了许多拼音纠错
