@@ -71,6 +71,7 @@ engine:
     - punct_translator
     - script_translator
     - lua_translator@date_translator      # 时间、日期、星期
+    - lua_translator@lunar                # 农历
     - table_translator@custom_phrase      # 自定义短语 custom_phrase_double.txt
     - table_translator@melt_eng           # 英文输入
     - reverse_lookup_translator@liangfen  # 反查，两分拼字
@@ -92,6 +93,10 @@ date_translator:
   week: week            # 星期： 星期二
   datetime: datetime    # ISO 8601： 2022-11-29T18:13:11+08:00
   timestamp: timestamp  # 时间戳： 1669716794
+
+
+# Lua 配置：农历
+lunar: lunar  # 癸卯年(兔)冬月廿一  二〇二四年冬月廿一
 
 
 # Lua 配置: 降低部分英语单词在候选项的位置。

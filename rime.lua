@@ -11,6 +11,9 @@ select_character = require("select_character")
 -- 日期时间，可在方案中配置触发关键字。
 date_translator = require("date_translator")
 
+-- 农历，可在方案中配置触发关键字。
+lunar = require("lunar")
+
 -- Unicode，U 开头
 unicode = require("unicode")
 
