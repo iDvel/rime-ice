@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-12-25"
+version: "2024-01-02"
 sort: by_weight
 ...
 # 一些杂项
@@ -2390,3 +2390,4 @@ Software as a service	SaaS
 gitignore	gitignore
 .gitignore	.gitignore
 humankind	humankind
+Alita	Alita
