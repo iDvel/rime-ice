@@ -78,6 +78,9 @@ function M.init(env)
 		["hai shen wei"] = { text = "海参崴", comment = "hǎi shēn wǎi" },
 		["hou pu"] = { text = "厚朴", comment = "hòu pò" },
 		["da wan ma"] = { text = "大宛马", comment = "dà yuān mǎ" },
+		["ci ya"] = { text = "龇牙", comment = "龇(zī)牙" },
+		["ci zhe ya"] = { text = "龇着牙", comment = "龇(zī)着牙" },
+		["ci ya lie zui"] = { text = "龇牙咧嘴", comment = "龇(zī)牙咧嘴" },
 		-- 错字
 		["pu jie"] = { text = "扑街", comment = "仆街" },
 		["pu gai"] = { text = "扑街", comment = "仆街" },
@@ -94,9 +97,6 @@ function M.init(env)
 		["zhao cha er"] = { text = "找茬儿", comment = "找碴儿" },
 		["da jia lai zhao cha"] = { text = "大家来找茬", comment = "大家来找碴" },
 		["da jia lai zhao cha er"] = { text = "大家来找茬儿", comment = "大家来找碴儿" },
-		["ci ya"] = { text = "龇牙", comment = "龇(zī)牙" },
-		["ci zhe ya"] = { text = "龇着牙", comment = "龇(zī)着牙" },
-		["ci ya lie zui"] = { text = "龇牙咧嘴", comment = "龇(zī)牙咧嘴" },
 		["cou huo"] = { text = "凑活", comment = "凑合(he)" },
 	}	
 end
