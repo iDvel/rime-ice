@@ -1,52 +1,24 @@
 # Weasel settings
 # encoding: utf-8
 
-# 感谢 @[Mirtle](https://github.com/mirtlecn) 整理
 # Rime 定制指南 <https://github.com/rime/home/wiki/CustomizationGuide#定製指南>
 # Weasel 定制文档 <https://github.com/rime/weasel/wiki/Weasel-定製化>
 # Weasel 字体设定 <https://github.com/rime/weasel/wiki/字體設定>
 
-# Update at: 2024.01.01
 # 部分选项需要将 Weasel 更新至最新开发版才能生效
-config_version: "2024.01.01"
+config_version: "2024.01.09"
 
 # [app_options]
 # 针对特定应用的设置
 app_options:
   cmd.exe:               # 带 .exe 的进程名：Weasel 15.0 及之前版本须小写; PR #1049 合并后释出的版本大小写不敏感
     ascii_mode: true     # 英文模式
-  firefox.exe:
-    ascii_mode: false    # 非英文模式
-    inline_preedit: true # 行内显示预编辑区 refer <https://github.com/rime/weasel/issues/946>
-  nvim-qt.exe:
-    ascii_mode: true
-    vim_mode: true       # vim 模式, Esc <C-c> <C-[>切换到ascii状态
-  nvim.exe:
-    ascii_mode: true
-    vim_mode: true
-  gvim.exe:
-    ascii_mode: true
-    vim_mode: true
-  windowsterminal.exe:
-    ascii_mode: true
   conhost.exe:
     ascii_mode: true
-  wt.exe:
-    ascii_mode: true
-  photoshop.exe:
-    ascii_mode: true
-  powershell.exe:
-    ascii_mode: true
-  pwsh.exe:
-    ascii_mode: true
-  regedit.exe:
-    ascii_mode: true
-  sublime_text.exe:
-    ascii_mode: true
-  alacritty.exe:
-    ascii_mode: true
-  code.exe:
-    ascii_mode: true
+  firefox.exe:
+    inline_preedit: true # 行内显示预编辑区 refer <https://github.com/rime/weasel/issues/946>
+  nvim-qt.exe:
+    vim_mode: true       # vim 模式, Esc <C-c> <C-[>切换到ascii状态
 # [End of <app_options>]
 
 # [global settings]
@@ -58,68 +30,122 @@ global_ascii: false                        # 切换为 ascii 模式时，是否�
 # [style]
 # 字体；候选项、候选窗口的行为、布局及样式
 style:
-  color_scheme: purity_of_form_custom      # 默认配色方案
-  # color_scheme_dark: nord                # 深色模式下，Weasel 的配色方案，Windows 10 1809+ 可用
+  color_scheme: aqua                       # 默认配色方案
+  # color_scheme_dark: dark_temple         # 深色模式下，Weasel 的配色方案，Windows 10 1809+ 可用
 
   # 全局字体
   # 格式：字体1:起始码位:结束码位:字重:字形,字体2……，字体会依次 fallback
   # 详细设定请参考 <https://github.com/rime/weasel/wiki/字體設定>
-  font_face: "Segoe UI Emoji:30:39, Segoe UI Emoji:23:23, Segoe UI Emoji:2a:2a, Microsoft YaHei, SF Pro, Segoe UI Emoji, Noto Color Emoji"
+  font_face: "Segoe UI Emoji:30:39, Segoe UI Emoji:23:23, Segoe UI Emoji:2a:2a, Segoe UI Emoji:fe0f:fe0f, Segoe UI Emoji:20e3:20e3, Microsoft YaHei, SF Pro, Segoe UI Emoji, Noto Color Emoji"
   label_font_face: "Microsoft YaHei"       # 标签字体
   comment_font_face: "Microsoft YaHei"     # 注释字体
   font_point: 14                           # 全局字体字号
   label_font_point: 14                     # 标签字体字号，不设定 fallback 到 font_point
-  comment_font_point: 13                   # 注释字体字号，不设定 fallback 到 font_point
+  comment_font_point: 14                   # 注释字体字号，不设定 fallback 到 font_point
 
   inline_preedit: true                     # 行内显示预编辑区：true；false
   preedit_type: composition                # 预编辑区内容：composition（编码）； preview（选中的候选）；preview_all（全部候选）
   
   fullscreen: false                        # 候选窗口全屏显示：true；false
-  horizontal: true                         # 候选项横排：true；false
+  horizontal: false                        # 候选项横排：true；false
   vertical_text: false                     # 竖排文本：true；false
-  text_orientation: horizontal             # 文本排列方向，效果和 `vertical_text` 相同：horizontal；vertical
+  # text_orientation: horizontal           # 文本排列方向，效果和 `vertical_text` 相同：horizontal；vertical
   vertical_text_left_to_right: false       # 竖排方向是否从左到右：true；false
   vertical_text_with_wrap: false           # 文本竖排模式下，自动换行：true；false
   vertical_auto_reverse: false             # 文本竖排模式下，候选窗口位于光标上方时倒序排列：true；false
   
-  label_format: "%s"                       # 标签字符：例如 %s. 效果为 1. 2. 3. ....
-  mark_text: "|"                           # 标记字符，显示在选中的候选标签前，需要在配色方案中指定颜色；如该项为空字符串 "" 而配色方案中 hilited_mark_color 非透明色，则显示 Windows 11 输入法风格标记
+  label_format: "%s."                      # 标签字符：例如 %s. 效果为 1. 2. 3. ....
+  mark_text: ""                            # 标记字符，显示在选中的候选标签前，需要在配色方案中指定颜色；如该项为空字符串 "" 而配色方案中 hilited_mark_color 非透明色，则显示 Windows 11 输入法风格标记
   ascii_tip_follow_cursor: false           # 切换 ASCII 模式时，提示跟随鼠标，而非输入光标
   enhanced_position: true                  # 无法定位候选框时，在窗口左上角显示候选框：true；false
   display_tray_icon: false                 # 托盘显示独立于语言栏的额外图标：true；false
   antialias_mode: default                  # 次像素反锯齿设定：default；force_dword；cleartype；grayscale；aliased
-  candidate_abbreviate_length: 30          # 候选项略写，超过此数字则用省略号代替。设置为 0 则不启用此功能
+  candidate_abbreviate_length: 0           # 候选项略写，超过此数字则用省略号代替。设置为 0 则不启用此功能
   mouse_hover_ms: 0                        # 鼠标悬停选词响应时间（ms），设置为 0 时禁用该功能
   paging_on_scroll: true                   # 在候选窗口上滑动滚轮的行为：true（翻页）；false （选中下一个候选）
   click_to_capture: false                  # 鼠标点击候选项，创建截图：true；false
 
   layout:
     align_type: center                     # 标签、候选文字、注解文字之间的相对对齐方式：top ; center ; bottom
-    max_height: 600                        # 候选框最大高度，horizontal 布局如宽超此尺寸则换行显示候选，设置为 0 不启用此功能
-    max_width: 0                           # 候选框最大宽度，文本竖排模式下如高度超此尺寸则换列显示候选，设置为 0 不启用此功能
+    max_height: 0                          # 候选框最大高度，文本竖排模式下如高度超此尺寸则换列显示候选，设置为 0 不启用此功能
+    max_width: 0                           # 候选框最大宽度，horizontal 布局如宽超此尺寸则换行显示候选，设置为 0 不启用此功能
     min_height: 0                          # 候选框最小高度
-    min_width: 10                          # 候选框最小宽度
-    border_width: 2                        # 边框宽度；又名 border
-    margin_x: 8                            # 主体元素和候选框的左右边距；为负值时，不显示候选框
-    margin_y: 8                            # 主体元素的上下边距；为负值时，不显示候选框
-    spacing: 13                            # inline_preedit 为否时，编码区域和候选区域的间距
-    candidate_spacing: 22                  # 候选项之间的间距
-    hilite_spacing: 6                      # 候选项和相应标签的间距
-    hilite_padding: 8                      # 高亮区域和内部文字的间距，影响高亮区域大小
+    min_width: 160                         # 候选框最小宽度
+    border_width: 3                        # 边框宽度；又名 border
+    margin_x: 12                           # 主体元素和候选框的左右边距；为负值时，不显示候选框
+    margin_y: 12                           # 主体元素的上下边距；为负值时，不显示候选框
+    spacing: 10                            # inline_preedit 为否时，编码区域和候选区域的间距
+    candidate_spacing: 5                   # 候选项之间的间距
+    hilite_spacing: 4                      # 候选项和相应标签的间距
+    hilite_padding: 2                      # 高亮区域和内部文字的间距，影响高亮区域大小
     # hilite_padding_x: 8                  # 高亮区域和内部文字的左右间距，如无特殊指定则依 hilite_padding 设置
     # hilite_padding_y: 8                  # 高亮区域和内部文字的上下间距，如无特殊指定则依 hilite_padding 设置
     shadow_radius: 0                       # 阴影区域半径，为 0 不显示阴影；需要同时在配色方案中指定非透明的阴影颜色
     shadow_offset_x: 4                     # 阴影左右偏移距离
     shadow_offset_y: 4                     # 阴影上下偏移距离
-    corner_radius: 8                       # 候选窗口圆角半径
-    round_corner: 8                        # 候选背景色块圆角半径，又名 hilited_corner_radius
+    corner_radius: 4                       # 候选窗口圆角半径
+    round_corner: 4                        # 候选背景色块圆角半径，又名 hilited_corner_radius
     # type: vertical                       # 布局设置，效果和 style 下的设置相同：
                                            # horizontal（横向）；vertical（竖向） ; vertical_text（竖排文本） ; vertical+fullscreen（全屏） ; horizontal+fullscreen（横向全屏）
 # [End of <style>]
 
+# [preset style]
+# 一些预设的样式，默认不起作用，仅提供参考，如果想使用可以自行引入
+# 例如使用节点名为 rime_ice 预设样式，可以在 weasel.custom.yaml 写：
+# patch:
+#   style/+:
+#     __include: weasel:/rime_ice
+#     # 其他定义项
+rime_ice:
+  color_scheme: purity_of_form_custom
+  inline_preedit: true
+  horizontal: false
+  enhanced_position: true
+  candidate_abbreviate_length: 30
+  paging_on_scroll: true
+  layout:
+    min_width: 160
+    margin_x: 12
+    margin_y: 6
+    hilite_padding: 6
+    hilite_padding_x: 12
+    shadow_radius: 4
+    shadow_offset_x: 2
+    shadow_offset_y: 2
+
+# patch:
+#   style/+:
+#     __include: weasel:/rime_ice_horizontal
+#     # 其他定义项
+rime_ice_horizontal:
+  color_scheme: purity_of_form_custom
+  inline_preedit: true
+  horizontal: true
+  label_format: "%s"
+  enhanced_position: true
+  candidate_abbreviate_length: 30
+  paging_on_scroll: true
+  layout:
+    max_width: 1200
+    min_width: 10
+    margin_x: 8
+    margin_y: 8
+    spacing: 13
+    candidate_spacing: 30
+    hilite_spacing: 6
+    hilite_padding: 8
+    shadow_radius: 4
+    corner_radius: 8
+    shadow_offset_x: 2
+    shadow_offset_y: 2
+    round_corner: 8
+# [End of <preset style>]
+
 # [preset_color_schemes]
 # 配色设定
 # 在小狼毫用户目录新建 preview 文件夹，将自定义皮肤的截图重命名为 color_scheme_<name>.png 放入此文件夹，可以在「输入法设定」中看到自定义皮肤效果
+
+# [配色图解](https://github.com/rime/weasel/wiki/定制小狼毫配色)
 
 # 小狼毫配色在线设计：
 # [RIME 西米](https://fxliang.github.io/RimeSeeMe/)
@@ -133,25 +159,25 @@ preset_color_schemes:
     color_format: rgba                       # 颜色格式：argb（0xaarrggbb）；rgba（0xrrggbbaa）；abgr（0xaabbggrr 默认）
     # 默认配色
     text_color: 0x2E3440                     # 文字
-    shadow_color: 0x000000b4                 # 阴影
+    shadow_color: 0x00000080                 # 阴影
     label_color: 0x4C566A                    # 标签
     comment_text_color: 0xD08770             # 注释
     border_color: 0xECEFF4                   # 边框
     back_color: 0xECEFF4                     # 背景
     # 普通候选项配色
-    candidate_back_color: 0xECEFF4           # 背景
+    # candidate_back_color: 0xECEFF4         # 背景
     # candidate_border_color:                # 边框
     # candidate_shadow_color:                # 阴影
-    candidate_text_color: 0x2E3440           # 文字
+    # candidate_text_color: 0x2E3440         # 文字
     # 编码区域配色
-    hilited_text_color: 0x000000             # 文字
+    # hilited_text_color: 0x000000           # 文字
     hilited_back_color: 0xEBCB8B             # 背景
     # hilited_shadow_color:                  # 阴影
     # 选中的候选区域配色
     hilited_mark_color: 0xBF616A             # 标签前的标记
     hilited_label_color: 0x4C566A            # 标签
     hilited_comment_text_color: 0xBF616A     # 注释
-    hilited_candidate_text_color: 0x2E3440   # 文字
+    # hilited_candidate_text_color: 0x2E3440 # 文字
     hilited_candidate_border_color: 0x8FBCBB # 边框
     hilited_candidate_back_color: 0x8FBCBB   # 背景
     # hilited_candidate_shadow_color:        # 阴影
@@ -167,7 +193,7 @@ preset_color_schemes:
     back_color: 0x545554
     label_color: 0xBBBBBB
     border_color: 0x545554
-    shadow_color: 0xb4000000
+    shadow_color: 0x80000000
     comment_text_color: 0x808080
     candidate_text_color: 0xEEEEEE
     hilited_text_color: 0xEEEEEE

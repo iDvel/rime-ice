@@ -1,8 +1,7 @@
 # Rime default settings
 # encoding: utf-8
 #
-# 小狼毫似乎不支持 Control+Shift 开头的快捷键，可自行修改成别的。
-# 鼠须管在 Sublime Text、Telegram 等个别软件中也无法使用 Control+Shift+数字 的快捷键，可暂时用方案选单切换。
+# 鼠须管在 Sublime Text、Telegram 等个别软件中无法使用 Control+Shift+数字的快捷键，可暂时用方案选单切换。
 
 
 # 要比共享目录的同名文件的 config_version 大才可以生效

@@ -24,8 +24,8 @@ schema:
     https://github.com/iDvel/rime-ice
   dependencies:
     - melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
-    - liangfen  # 两分拼字，作为反查挂载到拼音方案
-
+    - radical_pinyin # 部件拆字反查
+    # - stroke    # 笔画反查
 
 # 开关
 # 鼠须管 0.16 后，用快捷键切换时的提示文字由 states 定义
@@ -64,16 +64,21 @@ engine:
     - ascii_segmentor
     - matcher
     - abc_segmentor
+    - affix_segmentor@reverse_lookup     # 统一反查
+    - affix_segmentor@radical_lookup      # 拆字反查 tag
+    # - affix_segmentor@stroke_lookup    # 笔画反查
     - punct_segmentor
     - fallback_segmentor
   translators:
+    - echo_translator
     - punct_translator
     - script_translator
     - lua_translator@date_translator      # 时间、日期、星期
     - lua_translator@lunar                # 农历
     - table_translator@custom_phrase      # 自定义短语 custom_phrase_double.txt
     - table_translator@melt_eng           # 英文输入
-    - reverse_lookup_translator@liangfen  # 反查，两分拼字
+    - table_translator@radical_lookup      # 部件拆字反查
+    # - table_translator@stroke_lookup    # 笔画反查
     - lua_translator@unicode              # Unicode
     - lua_translator@number_translator    # 数字、金额大写
   filters:
@@ -82,6 +87,8 @@ engine:
     - simplifier@traditionalize           # 简繁切换
     - lua_filter@autocap_filter           # 英文自动大写
     - lua_filter@reduce_english_filter    # 降低部分英语单词在候选项的位置
+    - reverse_lookup_filter@radical_reverse_lookup
+    # - reverse_lookup_filter@stroke_reverse_lookup
     - uniquifier                          # 去重
 
 
@@ -192,12 +199,56 @@ melt_eng:
     - xform/.*//           # 清空提示码
 
 
-# 反查：两分（拼字）
-liangfen:
-  dictionary: liangfen     # 挂载两分词典 liangfen.dict.yaml
-  prefix: "L"              # 以 L 开头来反查
-  enable_completion: true  # 补全提示
-  # tips: 〔两分〕          # 反查时显示的文字，建议注释掉，否则很多 L 开头的英文单词也会显示这个
+# 反查：总设定
+reverse_lookup:
+  tag: reverse_lookup
+  prefix: "uU"    # 以 u 开头来反查
+  suffix: "'"     # 反查关闭符
+  tips: "[反查]"  # 反查时显示的文字，建议为空，否则很多 u 开头的英文单词也会显示这个
+  extra_tags:     # 关联其他反查 tag
+    - radical_lookup
+    # - stroke_lookup
+
+
+# 拆字反查提示码设定
+radical_reverse_lookup:
+  tags: [ radical_lookup ]  # 关联反查 tag
+  overwrite_comment: true  # 提示码覆写
+  dictionary: rime_ice     # 反查所得提示码码表，如有部分汉字无注音，可以预编译一全字表码表，并在此处指定
+  comment_format:
+      - xform/v/ü/         # 提示码，v -> ü
+      - xform/^(.*)$/($1)/
+
+
+# 笔画反查提示码设定
+# stroke_reverse_lookup:
+#   __include: radical_reverse_lookup
+#   tags: [ stroke_lookup ]
+
+
+# 拆字反查所用翻译器设定
+radical_lookup:
+  tag: radical_lookup       # 关联反查 tag
+  dictionary: radical_pinyin
+  enable_user_dict: false
+  enable_encoder: false
+  encode_commit_history: false
+  enable_sentence: false
+  enable_completion: true
+  prefix: 'uC'
+  tips: "[拆字反查]"
+  # closing_tips:
+  suffix: "'"
+  comment_format:
+    - erase/^.*$//        # 删除所有提示码
+
+
+# 笔画反查所用翻译器设定
+# stroke_lookup:
+#   __include: radical_lookup
+#   tag: stroke_lookup
+#   dictionary: stroke
+#   prefix: 'uS'
 
 
 # 自定义短语
@@ -214,6 +265,7 @@ custom_phrase:
 emoji:
   opencc_config: emoji.json
   option_name: emoji
+  tags: [ abc ]
 
 
 # 简繁切换
@@ -221,7 +273,7 @@ traditionalize:
   option_name: traditionalization
   opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json
   tips: none                          # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
-  excluded_types: [ reverse_lookup ]  # 不转换反查（两分拼字）的内容
+  excluded_types: [ reverse_lookup , radical_lookup , stroke_lookup]  # 不转换反查的内容
 
 
 # 标点符号
@@ -243,7 +295,9 @@ recognizer:
   import_preset: default  # 从 default.yaml 继承通用的
   patterns:  # 再增加方案专有的：
     punct: "^V([0-9]|10|[A-Za-z]+)$"  # 响应 symbols_caps_v.yaml 的 symbols
-    reverse_lookup: "^L[a-z]+$"       # 响应两分拼字的反查
+    reverse_lookup: "^uU[a-z]+'?$"    # 响应反查
+    radical_lookup: "^uC[a-z]+'?$"     # 响应拆字反查
+    # stroke_lookup: "^uS[a-z]+'?$"   # 响应笔画反查
     unicode: "^U[a-f0-9]+"            # 响应 Unicode
     number: "^R[0-9]+[.]?[0-9]*"      # 响应 number_translator
 
