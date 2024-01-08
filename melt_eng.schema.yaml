@@ -48,9 +48,9 @@ speller:
   algebra:
     # 根据当前所用拼音方案选择 __include 的值
     # 如果要在补丁中（melt_eng.custom.yaml）修改 algebra 以适配双拼，请参考 [常见问题](https://github.com/iDvel/rime-ice/issues/133)
-    __include: algebra_rime_ice         # 全拼
+    # __include: algebra_rime_ice         # 全拼
     # __include: algebra_double_pinyin  # 自然码双拼
-    # __include: algebra_flypy          # 小鹤双拼
+    __include: algebra_flypy          # 小鹤双拼
     # __include: algebra_mspy           # 微软双拼
     # __include: algebra_sogou          # 搜狗双拼
     # __include: algebra_abc            # 智能ABC双拼
