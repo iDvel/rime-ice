@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2024-01-11"
+version: "2024-01-14"
 sort: by_weight
 ...
 # 一些杂项
@@ -2401,3 +2401,5 @@ containerd	containerd
 Melvor	Melvor
 Melvor Idle	MelvorIdle
 paradise	paradise
+ketchup	ketchup
+pinning	pinning
