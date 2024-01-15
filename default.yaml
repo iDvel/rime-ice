@@ -164,9 +164,9 @@ recognizer:
     # uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"  # 自带的，大写字母开头后，可以输入[-_+.'0-9A-Za-z]这些字符（和雾凇有些冲突，关闭了）
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"  # 自带的，URL 正则
     # 一些不直接上屏的配置示例：
+    underscore: "^[A-Za-z]+_.*"    # 下划线不上屏
     # url_2: "^[A-Za-z]+[.].*"     # 句号不上屏，支持 google.com abc.txt 等网址或文件名，使用句号翻页时需要注释掉
     # colon: "^[A-Za-z]+:.*"       # 冒号不上屏
-    # underscore: "^[A-Za-z]+_.*"  # 下划线不上屏
 
 
 # 快捷键
