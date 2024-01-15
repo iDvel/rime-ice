@@ -15,13 +15,13 @@ __include: rime_ice.schema.yaml:/
 
 schema:
   schema_id: t9
-  name: 雾凇拼音·九宫格
+  name: 仓·九宫格
   version: "1"
   author:
     - Dvel
     - '[morse.hsiao](https://github.com/imfuxiao)'
   description: |
-    雾凇拼音·九宫格 for 仓输入法
+    九宫格方案 for 仓输入法
   dependencies:
     - melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
 
