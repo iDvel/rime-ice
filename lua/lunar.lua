@@ -621,7 +621,7 @@ local function Date2LunarDate(Gregorian)
 		LunarMonth = cMonName[LMonth]
 	end
 
-	local _nis = tostring(os.date("%Y"))
+	local _nis = tostring(LYear)
 	local _LunarYears = ""
 	for i = 1, _nis:len() do
 		local _ni_digit = tonumber(_nis:sub(i, i))
