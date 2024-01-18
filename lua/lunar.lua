@@ -433,7 +433,7 @@ local function Dec2bin(n)
 end
 
 -- 2/10/16进制互转
-local function system(x, inPuttype, outputtype)
+local function Atoi(x, inPuttype, outputtype)
 	local r
 	if tonumber(inPuttype) == 2 then
 		if tonumber(outputtype) == 10 then -- 2进制-->10进制
@@ -460,15 +460,15 @@ end
 -- 农历16进制数据分解
 local function Analyze(Data)
 	local rtn1, rtn2, rtn3, rtn4
-	rtn1 = system(string.sub(Data, 1, 3), 16, 2)
+	rtn1 = Atoi(string.sub(Data, 1, 3), 16, 2)
 	if string.len(rtn1) < 12 then
 		rtn1 = "0" .. rtn1
 	end
 	rtn2 = string.sub(Data, 4, 4)
-	rtn3 = system(string.sub(Data, 5, 5), 16, 10)
-	rtn4 = system(string.sub(Data, -2, -1), 16, 10)
+	rtn3 = Atoi(string.sub(Data, 5, 5), 16, 10)
+	rtn4 = Atoi(string.sub(Data, -2, -1), 16, 10)
 	if string.len(rtn4) == 3 then
-		rtn4 = "0" .. system(string.sub(Data, -2, -1), 16, 10)
+		rtn4 = "0" .. Atoi(string.sub(Data, -2, -1), 16, 10)
 	end
 	-- string.gsub(rtn1, "^[0]*", "")
 	return { rtn1, rtn2, rtn3, rtn4 }
