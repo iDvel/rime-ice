@@ -33,7 +33,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2023-12-25"
+version: "2024-01-26"
 sort: by_weight
 ...
 ### 按需启用
@@ -2441,8 +2441,8 @@ sort: by_weight
 铧	hua	952
 砉	hua	111
 觟	hua	3
-怀	huai	607039
 坏	huai	365836
+怀	huai	60703
 淮	huai	36109
 槐	huai	25776
 徊	huai	17842
@@ -2617,6 +2617,8 @@ sort: by_weight
 季	ji	1028550
 击	ji	1010628
 急	ji	1009907
+鸡	ji	1004249
+挤	ji	1003500
 系	ji	942245
 即	ji	900101
 既	ji	853256
@@ -2633,9 +2635,7 @@ sort: by_weight
 迹	ji	234061
 吉	ji	210857
 积	ji	188812
-鸡	ji	184249
 寂	ji	144616
-挤	ji	136500
 疾	ji	120121
 忌	ji	113527
 姬	ji	101929
@@ -3239,10 +3239,10 @@ sort: by_weight
 㵐	jue	0
 𫔎	jue	0
 𫘝	jue	0
-军	jun	2275004
-君	jun	385417
+均	jun	316506
+君	jun	285417
+军	jun	257500
 俊	jun	244925
-均	jun	116506
 郡	jun	57742
 峻	jun	35003
 钧	jun	32200
@@ -6767,6 +6767,7 @@ sort: by_weight
 线	xian	539444
 险	xian	386142
 仙	xian	379429
+咸	xian	330660
 鲜	xian	273041
 限	xian	222821
 闲	xian	202953
@@ -6781,7 +6782,6 @@ sort: by_weight
 掀	xian	47524
 宪	xian	36534
 见	xian	34609
-咸	xian	33066
 衔	xian	27315
 娴	xian	21333
 涎	xian	11149
@@ -7694,8 +7694,8 @@ sort: by_weight
 铕	you	5
 鲉	you	3
 𬨎	you	0
-于	yu	3614992
 与	yu	2104552
+于	yu	1614992
 语	yu	843913
 雨	yu	725801
 玉	yu	721753

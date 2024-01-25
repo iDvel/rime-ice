@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2023-12-28"
+version: "2024-01-26"
 sort: by_weight
 ...
 ##### 容错词
@@ -53,6 +53,9 @@ sort: by_weight
 仆街仔	pu gai zai
 街溜子	jie liu zi
 街溜子	gai liu zi
+# 「錤」这个字念 ji，但是台湾媒体都会念成 qi，他的英文名 Ming-Chi Kuo 也是接近 qi
+郭明錤	guo ming ji
+郭明錤	guo ming qi
 
 
 ##### 错音错字提示。与 corrector.lua 配合，上面的是正确的，下面是错误的
@@ -175,6 +178,12 @@ sort: by_weight
 厚朴	hou pu
 大宛马	da yuan ma
 大宛马	da wan ma
+龇牙	zi ya
+龇牙	ci ya
+龇着牙	zi zhe ya
+龇着牙	ci zhe ya
+龇牙咧嘴	zi ya lie zui
+龇牙咧嘴	ci ya lie zui
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
@@ -191,12 +200,6 @@ sort: by_weight
 血脉喷张	xue mai pen zhang
 契诃夫	qi he fu
 契科夫	qi ke fu
-龇牙	zi ya
-龇牙	ci ya
-龇着牙	zi zhe ya
-龇着牙	ci zhe ya
-龇牙咧嘴	zi ya lie zui
-龇牙咧嘴	ci ya lie zui
 凑合	cou he
 凑活	cou huo
 

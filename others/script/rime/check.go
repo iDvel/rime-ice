@@ -159,20 +159,21 @@ func Check(dictPath string, _type int) {
 			continue
 		}
 		wg.Add(1)
-		go checkLine(dictPath, _type, line, lineNumber, &wg)
+		go func(line string, lineNumber int) {
+			defer wg.Done()
+			checkLine(dictPath, _type, line, lineNumber)
+		}(line, lineNumber)
 	}
+
+	wg.Wait()
 
 	if err := sc.Err(); err != nil {
 		log.Fatalln(err)
 	}
-
-	wg.Wait()
 }
 
 // 检查一行
-func checkLine(dictPath string, _type int, line string, lineNumber int, wg *sync.WaitGroup) {
-	defer wg.Done()
-
+func checkLine(dictPath string, _type int, line string, lineNumber int) {
 	// 忽略注释，base 中有很多被注释了的词汇，暂时没有删除
 	if strings.HasPrefix(line, "#") {
 		// 注释以 '#' 开头，但不是以 '# '开头（强迫症晚期）
