@@ -6,6 +6,10 @@
 -- 以词定字，可在 default.yaml → key_binder 下配置快捷键，默认为左右中括号 [ ]
 select_character = require("select_character")
 
+-- 按键处理，将指定字符后的指定按键替换为相应文本。
+-- 用例：自动 ascii 符号；数字后自动英文；中文符号匹配
+key_processor = require("key_processor")
+
 -- translators:
 
 -- 日期时间，可在方案中配置触发关键字。
@@ -31,6 +35,9 @@ v_filter = require("v_filter")
 
 -- 自动大写英文词汇
 autocap_filter = require("autocap_filter")
+
+-- 辅助码（在候选中使用笔画、两分等方式搜索）
+search = require("search")
 
 -- 降低部分英语单词在候选项的位置，可在方案中配置要降低的模式和单词
 reduce_english_filter = require("reduce_english_filter")
