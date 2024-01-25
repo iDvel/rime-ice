@@ -24,6 +24,9 @@ unicode = require("unicode")
 -- 数字、人民币大写，R 开头
 number_translator = require("number_translator")
 
+-- 无对应词典时，英文生词造词并写入用户词典（需要打开 user_dict）
+parrort_translator = require("parrort_translator")
+
 -- filters:
 
 -- 错音错字提示
