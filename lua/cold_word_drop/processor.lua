@@ -25,7 +25,10 @@ local function get_record_filername(record_type)
     if system == "Darwin" then
         filename = string.format("%s/Library/Rime/lua/cold_word_drop/%s_words.lua", os.getenv('HOME'), record_type)
     elseif system == "Linux" then
-        filename = string.format("%s/.config/ibus/rime/lua/cold_word_drop/%s_words.lua", os.getenv('HOME'), record_type)
+        filename = string.format("%s/%s/rime/lua/cold_word_drop/%s_words.lua",
+            os.getenv('HOME'),
+            (string.find(os.getenv('GTK_IM_MODULE'), 'fcitx') and '.local/share/fcitx5' or '.config/ibus'),
+            record_type)
     end
     return filename
 end
