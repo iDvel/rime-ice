@@ -6,9 +6,8 @@
 # Weasel 定制文档 <https://github.com/rime/weasel/wiki/Weasel-定製化>
 # Weasel 字体设定 <https://github.com/rime/weasel/wiki/字體設定>
 
-# Update at: 2024.01.01
 # 部分选项需要将 Weasel 更新至最新开发版才能生效
-config_version: "2024.01.01"
+config_version: "2024.01.25"
 
 # [app_options]
 # 针对特定应用的设置
@@ -16,41 +15,14 @@ app_options:
   cmd.exe:               # 带 .exe 的进程名：Weasel 15.0 及之前版本须小写; PR #1049 合并后释出的版本大小写不敏感
     ascii_mode: true     # 英文模式
   firefox.exe:
-    ascii_mode: false    # 非英文模式
-    inline_preedit: true # 行内显示预编辑区 refer <https://github.com/rime/weasel/issues/946>
+    inline_preedit: true # 行内显示预编辑区：规避 <https://github.com/rime/weasel/issues/946>
   nvim-qt.exe:
     ascii_mode: true
-    vim_mode: true       # vim 模式, Esc <C-c> <C-[>切换到ascii状态
-  nvim.exe:
-    ascii_mode: true
-    vim_mode: true
-  gvim.exe:
-    ascii_mode: true
-    vim_mode: true
-  windowsterminal.exe:
-    ascii_mode: true
-  conhost.exe:
-    ascii_mode: true
-  wt.exe:
-    ascii_mode: true
-  photoshop.exe:
-    ascii_mode: true
-  powershell.exe:
-    ascii_mode: true
-  pwsh.exe:
-    ascii_mode: true
-  regedit.exe:
-    ascii_mode: true
-  sublime_text.exe:
-    ascii_mode: true
-  alacritty.exe:
-    ascii_mode: true
-  code.exe:
-    ascii_mode: true
+    vim_mode: true       # vim 模式, Esc <C-c> <C-[> 切换到 ascii 状态
 # [End of <app_options>]
 
 # [global settings]
-show_notifications: true                   # 是否显示状态变化（方案内的开头 option ）的通知：true；false
+show_notifications: true                   # 是否显示状态变化的通知：true；false；option_list（方案内的开头 option）
 show_notifications_time: 1200              # 通知显示的时间，单位 ms
 global_ascii: false                        # 切换为 ascii 模式时，是否影响所有窗口：true；false
 # [End of <global settings>]
@@ -64,7 +36,7 @@ style:
   # 全局字体
   # 格式：字体1:起始码位:结束码位:字重:字形,字体2……，字体会依次 fallback
   # 详细设定请参考 <https://github.com/rime/weasel/wiki/字體設定>
-  font_face: "Segoe UI Emoji:30:39, Segoe UI Emoji:23:23, Segoe UI Emoji:2a:2a, Microsoft YaHei, SF Pro, Segoe UI Emoji, Noto Color Emoji"
+  font_face: "Segoe UI Emoji:30:39, Segoe UI Emoji:23:23, Segoe UI Emoji:2a:2a, Segoe UI Emoji:fe0f:fe0f, Segoe UI Emoji:20e3:20e3, Microsoft YaHei, SF Pro, Segoe UI Emoji, Noto Color Emoji"
   label_font_face: "Microsoft YaHei"       # 标签字体
   comment_font_face: "Microsoft YaHei"     # 注释字体
   font_point: 14                           # 全局字体字号
@@ -77,7 +49,7 @@ style:
   fullscreen: false                        # 候选窗口全屏显示：true；false
   horizontal: true                         # 候选项横排：true；false
   vertical_text: false                     # 竖排文本：true；false
-  text_orientation: horizontal             # 文本排列方向，效果和 `vertical_text` 相同：horizontal；vertical
+  # text_orientation: horizontal           # 文本排列方向，效果和 `vertical_text` 相同：horizontal；vertical
   vertical_text_left_to_right: false       # 竖排方向是否从左到右：true；false
   vertical_text_with_wrap: false           # 文本竖排模式下，自动换行：true；false
   vertical_auto_reverse: false             # 文本竖排模式下，候选窗口位于光标上方时倒序排列：true；false
@@ -124,6 +96,8 @@ style:
 # 小狼毫配色在线设计：
 # [RIME 西米](https://fxliang.github.io/RimeSeeMe/)
 # [润笔](https://pdog18.github.io/rime-soak/#/theme)
+
+# [小狼毫配色详解](https://github.com/rime/weasel/wiki/定制小狼毫配色)
 
 preset_color_schemes:
   # 以下是一个配色方案示例

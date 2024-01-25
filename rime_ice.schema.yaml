@@ -158,14 +158,14 @@ liangfen:
   dictionary: liangfen     # 挂载两分词典 liangfen.dict.yaml
   prefix: "u"              # 以 u 开头来反查
   enable_completion: true  # 补全提示
-  # tips: 〔两分〕          # 反查时显示的文字，建议注释掉，否则很多 u 开头的英文单词也会显示这个
+  # tips: 〔两分〕         # 反查时显示的文字，建议注释掉，否则很多 u 开头的英文单词也会显示这个
 
 
 # 自定义短语：custom_phrase.txt
 custom_phrase:
   dictionary: ""
   user_dict: custom_phrase  # 可以修改这里，改成自己的 txt 文件
-  db_class: stabledb
+  db_class: stabledb        # 只读数据库，无法动态调频；设为 tabledb 可以动态调频
   enable_completion: false  # 补全提示
   enable_sentence: false    # 禁止造句
   initial_quality: 99       # custom_phrase 的权重应该比 pinyin 和 melt_eng 大
