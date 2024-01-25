@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2023-12-08"
+version: "2024-01-26"
 sort: by_weight
 ...
 # +_+
@@ -6550,6 +6550,7 @@ Estonian	Estonian
 estrogen	estrogen
 # et	et
 eta	eta
+etc	etc
 etc.	etc.
 eternal	eternal
 eternity	eternity
@@ -14336,7 +14337,7 @@ posterior	posterior
 posters	posters
 postfix	postfix
 postgraduate	postgraduate
-postgresql	postgresql
+PostgreSQL	PostgreSQL
 posting	posting
 postings	postings
 postman	postman
