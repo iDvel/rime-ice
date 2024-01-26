@@ -172,8 +172,8 @@ recognizer:
 # 快捷键
 key_binder:
   # Lua 配置: 以词定字（上屏当前词句的第一个或最后一个字），和中括号翻页有冲突
-  select_first_character: "bracketleft"  # 左中括号 [
-  select_last_character: "bracketright"  # 右中括号 ]
+  select_first_character: "minus"  # 左中括号 [
+  select_last_character: "equal"  # 右中括号 ]
 
   bindings:
     # Tab / Shift+Tab 切换光标至下/上一个拼音
@@ -188,16 +188,16 @@ key_binder:
     - { when: composing, accept: Alt+Right, send: Shift+Right }
 
     # 翻页 - =
-    - { when: has_menu, accept: minus, send: Page_Up }
-    - { when: has_menu, accept: equal, send: Page_Down }
+    # - { when: has_menu, accept: minus, send: Page_Up }
+    # - { when: has_menu, accept: equal, send: Page_Down }
 
     # 翻页 , .
     # - { when: paging, accept: comma, send: Page_Up }
     # - { when: has_menu, accept: period, send: Page_Down }
 
     # 翻页 [ ]
-    # - { when: paging, accept: bracketleft, send: Page_Up }
-    # - { when: has_menu, accept: bracketright, send: Page_Down }
+    - { when: paging, accept: bracketleft, send: Page_Up }
+    - { when: has_menu, accept: bracketright, send: Page_Down }
 
     # numbered_mode_switch:
     # - { when: always, accept: Control+Shift+1, select: .next }               # 在最近的两个方案之间切换
