@@ -1,0 +1,5 @@
+# patch 会自动覆盖 schema 里最后一级的配置，加 /+ 的话，就是追加不覆盖
+
+patch:
+  engine/filters/+:
+    - lua_filter@cn_en_spacer             # 中英文之间自动空格
