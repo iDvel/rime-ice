@@ -37,12 +37,16 @@ switches:
   - name: full_shape
     states: [ 半角, 全角 ]
     reset: 0
+  - name: single_char  # 辅码查词，是否单字优先
+    abbrev: [词, 单]
+    states: [正常, 单字]
+    # reset: 0
 
 
 # 输入引擎
 engine:
   processors:
-    - lua_processor@*auto_commit_single_char
+    - lua_processor@*auto_commit_single_punct
     - lua_processor@select_character      # 以词定字
     - ascii_composer
     - recognizer
@@ -57,7 +61,6 @@ engine:
     - matcher
     - abc_segmentor
     - punct_segmentor
-    - affix_segmentor@radical_lookup
     - fallback_segmentor
   translators:
     - punct_translator
@@ -66,15 +69,14 @@ engine:
     - lua_translator@lunar                # 农历
     - table_translator@custom_phrase      # 自定义短语 custom_phrase.txt
     - table_translator@melt_eng           # 英文输入
-    - table_translator@radical_lookup
+    - reverse_lookup_translator@radical_lookup
     - lua_translator@unicode              # Unicode
     - lua_translator@number_translator    # 数字、金额大写
   filters:
     - lua_filter@corrector                # 错音错字提示
     - simplifier@emoji                    # Emoji
     - simplifier@traditionalize           # 简繁切换
-    - reverse_lookup_filter@radical_reverse_lookup
-    - lua_filter@*search
+    - lua_filter@*search@radical_pinyin
     - lua_filter@v_filter                 # v 模式 symbols 优先（否则是英文优先）
     - lua_filter@autocap_filter           # 英文自动大写
     - lua_filter@reduce_english_filter    # 降低部分英语单词在候选项的位置
@@ -92,6 +94,12 @@ date_translator:
 
 # Lua 配置：农历的触发关键字
 lunar: nl  # 癸卯年（兔）冬月廿一  二〇二四年冬月廿一
+
+
+# Lua 配置：直接上屏单个字符
+# lua_filter@search@radical_pinyin 辅码的引导符在 key_binder/search 定义，目前为 `（反引号）。
+# ` 只在中间时起辅码查询作用，但是输入单个 ` 时仍然需要按空格选择，这个 Lua 让单个的 ` 直接上屏。
+auto_commit_single_punct: "`"
 
 
 # Lua 配置：为 corrector 格式化 comment，占位符为 {comment}
@@ -167,19 +175,26 @@ custom_phrase:
   initial_quality: 99       # custom_phrase 的权重应该比 pinyin 和 melt_eng 大
 
 
+# 部件拆字反查
+radical_lookup:
+  dictionary: radical_pinyin  # 挂载部件拆字词典 radical_lookup.dict.yaml
+  prefix: "u"                 # 以 u 开头来反查
+  # tips: 〔拆字〕             # 反查时显示的文字，以字母开头反查时建议注释掉，否则很多 u 开头的英文单词也会显示这个
+
+
 # Emoji
 emoji:
-  opencc_config: emoji.json
   option_name: emoji
-  tags: [ abc ]
+  opencc_config: emoji.json
+  excluded_types: [ reverse_lookup ]
 
 
 # 简繁切换
 traditionalize:
   option_name: traditionalization
-  opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json
-  tips: none                          # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
-  excluded_types: [ reverse_lookup, radical_lookup ]  # 不转换反查的内容
+  opencc_config: s2t.json  # s2t.json | s2hk.json | s2tw.json | s2twp.json
+  tips: none               # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
+  excluded_types: [ reverse_lookup ]            # 不转换反查的内容
 
 
 # 标点符号
@@ -196,38 +211,12 @@ punctuator:
     __include: symbols_v:/symbols              # 从 symbols_v.yaml 导入配置
 
 
-# 部件拆字
-radical_lookup:
-  tag: radical_lookup
-  dictionary: radical_pinyin
-  prefix: "u"
-  tips: "[拆字]"
-  comment_format:
-    - erase/^.*$//
-# 拆字滤镜
-radical_reverse_lookup:
-  tags: [ radical_lookup ]
-  dictionary: rime_ice
-  overwrite_comment: true
-  comment_format:
-    # - xform/^/(/
-    # - xform/$/)/
-# 部件拆字辅码
-search:
-  schema: radical_pinyin
-  schema_search_limit: 1000
-  key: "`"
-# Lua 配置：直接上屏单个字符
-auto_commit_single_char: "`"  # `（反引号）只在中间时起辅码查询作用，输入单个 ` 时仍然需要按空格选择，这个 Lua 让单个的 ` 直接上屏
-
-
 # 处理符合特定规则的输入码，如网址、反查
 recognizer:
   import_preset: default  # 从 default.yaml 继承通用的
   patterns:  # 再增加方案专有的：
     punct: "^v([0-9]|10|[A-Za-z]+)$"    # 响应 symbols_v.yaml 的 symbols，用 'v' 替换 '/'
-    search: "^[A-Za-z]+`"
-    radical_lookup: "^u[a-z]+$"
+    reverse_lookup: "^u[a-z]+$"
     unicode: "^U[a-f0-9]+"              # 响应 lua_translator@unicode 脚本将自动获取第 2 个字符作为触发前缀
     number: "^R[0-9]+[.]?[0-9]*"        # 响应 lua_translator@number_translator 脚本将自动获取第 2 个字符作为触发前缀
     gregorian_to_lunar: "^N[0-9]{1,8}"  # 响应 lua_translator@lunar 公历转农历，输入 N20240115 得到「二〇二四年腊月初五」，脚本将自动获取第 2 个字符作为触发前缀
@@ -236,7 +225,8 @@ recognizer:
 # 从 default 继承快捷键
 key_binder:
   import_preset: default # 从 default.yaml 继承通用的
-  # bindings:            # 也可以再增加方案专有的
+  search: "`"            # 辅码引导符
+  # bindings:            # 也可以再增加方案专有的快捷键
 
 
 # 拼写设定

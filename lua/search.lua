@@ -53,7 +53,7 @@ function f.init(env)
     local config = env.engine.schema.config
     local ns = 'search'
 
-    f.schema = config:get_string( ns .. '/schema')
+    f.schema = config:get_string(ns .. '/schema')
     if f.schema == 'false' or f.schema == '0' then
         goto checkdb
     end
@@ -63,9 +63,9 @@ function f.init(env)
     if f.schema then
         f.mem = Memory(env.engine, Schema(f.schema))
     end
-    f.schema_search_limit = config:get_int( ns .. "/schema_search_limit") or 1000
+    f.schema_search_limit = config:get_int(ns .. "/schema_search_limit") or 1000
     ::checkdb::
-    f.db = config:get_list( ns .. '/db')
+    f.db = config:get_list(ns .. '/db')
     f.if_schema_lookup = false
     f.if_reverse_lookup = false
     if f.schema and f.mem then
@@ -73,15 +73,15 @@ function f.init(env)
         -- log.error('if_schema_lookup: ' .. 'true')
     end
     if f.db then
-        f.wildcard = config:get_string(ns .. "/wildcard")
+        f.wildcard = config:get_string(ns .. "/wildcard") or "-"
         f.if_reverse_lookup = true
         -- log.error('if_reverse_lookup: ' .. 'true')
     end
 
-    -- 反引号作为查找的引导符号，需要加入 speller 的字母表当中 
-    f.search_key = config:get_string("key_binder/search") or config:get_string( ns .. "/key") or '`'
+    -- 查找的引导符号需要加入 speller 的字母表当中 
+    f.search_key = config:get_string("key_binder/search") or config:get_string(ns .. "/key") or '`'
 
-    -- 处理一下输入码，如果还有没有上屏的词，保留辅助码，否则，清除上屏码
+    -- 处理一下输入码
     f.search_key_string = alt_lua_punc(f.search_key)
 
     -- 如果不使用任何反查手段，则不接管选词逻辑
@@ -106,6 +106,8 @@ function f.init(env)
             ctx.input = ctx.input .. f.search_key
         else
             ctx:commit()
+            -- 此种上屏方法似乎无法记录到历史记录中，若需要，可解开下面的代码手动 push
+            -- ctx.commit_history:push("user_phrase", edit)
         end
     end)
 
@@ -141,7 +143,7 @@ end
 -- 通过 reverse db 查询（以字查码，然后比对辅码是否相同，比校快，但只能匹配未经算法转换的码）
 function f.reverse_lookup(text, s)
     local list = f.db
-    s = s:gsub(f.wildcard,'.*')
+    s = s:gsub(f.wildcard, '.*')
     -- log.error(s)
     for i = 0, list.size - 1 do
         local code = ReverseLookup(list:get_value_at(i).value):lookup(text)
@@ -156,10 +158,7 @@ function f.func(input, env)
     local input_code = env.engine.context.input
     -- 当且仅当当输入码中含有辅码引导符号，并有有辅码存在，进入匹配逻辑
     -- 当无任何查询方式存在，直接上屏
-    if
-        (input_code:find("^[a-z;]+" .. f.search_key_string .. '.+$'))
-        and (f.if_reverse_lookup or f.if_schema_lookup)
-    then
+    if (input_code:find("^[a-z;]+" .. f.search_key_string .. '.+$')) and (f.if_reverse_lookup or f.if_schema_lookup) then
         f.search_string = input_code:match("^.*" .. f.search_key_string .. "(.*)$")
     else
         for cand in input:iter() do
