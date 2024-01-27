@@ -60,6 +60,7 @@ engine:
     - ascii_segmentor
     - matcher
     - abc_segmentor
+    - affix_segmentor@radical_lookup  # 自定义 tag
     - punct_segmentor
     - fallback_segmentor
   translators:
@@ -69,13 +70,14 @@ engine:
     - lua_translator@lunar                # 农历
     - table_translator@custom_phrase      # 自定义短语 custom_phrase.txt
     - table_translator@melt_eng           # 英文输入
-    - reverse_lookup_translator@radical_lookup
+    - table_translator@radical_lookup
     - lua_translator@unicode              # Unicode
     - lua_translator@number_translator    # 数字、金额大写
   filters:
     - lua_filter@corrector                # 错音错字提示
     - simplifier@emoji                    # Emoji
     - simplifier@traditionalize           # 简繁切换
+    - reverse_lookup_filter@radical_reverse_lookup
     - lua_filter@*search@radical_pinyin
     - lua_filter@v_filter                 # v 模式 symbols 优先（否则是英文优先）
     - lua_filter@autocap_filter           # 英文自动大写
@@ -175,18 +177,11 @@ custom_phrase:
   initial_quality: 99       # custom_phrase 的权重应该比 pinyin 和 melt_eng 大
 
 
-# 部件拆字反查
-radical_lookup:
-  dictionary: radical_pinyin  # 挂载部件拆字词典 radical_lookup.dict.yaml
-  prefix: "u"                 # 以 u 开头来反查
-  # tips: 〔拆字〕             # 反查时显示的文字，以字母开头反查时建议注释掉，否则很多 u 开头的英文单词也会显示这个
-
-
 # Emoji
 emoji:
   option_name: emoji
   opencc_config: emoji.json
-  excluded_types: [ reverse_lookup ]
+  tags: [ abc ]
 
 
 # 简繁切换
@@ -194,7 +189,7 @@ traditionalize:
   option_name: traditionalization
   opencc_config: s2t.json  # s2t.json | s2hk.json | s2tw.json | s2twp.json
   tips: none               # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
-  excluded_types: [ reverse_lookup ]            # 不转换反查的内容
+  tags: [ abc ]            # 限制在 abc tag，不对反查的内容做简繁切换
 
 
 # 标点符号
@@ -211,12 +206,30 @@ punctuator:
     __include: symbols_v:/symbols              # 从 symbols_v.yaml 导入配置
 
 
+# 部件拆字反查
+radical_lookup:
+  tag: radical_lookup
+  dictionary: radical_pinyin
+  prefix: "uU"
+  tips: "[拆字]"
+  enable_user_dict: false
+  comment_format:
+    - erase/^.*$//
+# 部件拆字滤镜
+radical_reverse_lookup:
+  tags: [ radical_lookup ]
+  dictionary: rime_ice
+  # comment_format:
+  #  - xform/^/(/
+  #  - xform/$/)/
+
+
 # 处理符合特定规则的输入码，如网址、反查
 recognizer:
   import_preset: default  # 从 default.yaml 继承通用的
   patterns:  # 再增加方案专有的：
     punct: "^v([0-9]|10|[A-Za-z]+)$"    # 响应 symbols_v.yaml 的 symbols，用 'v' 替换 '/'
-    reverse_lookup: "^u[a-z]+$"
+    radical_lookup: "^uU[a-z]+$"
     unicode: "^U[a-f0-9]+"              # 响应 lua_translator@unicode 脚本将自动获取第 2 个字符作为触发前缀
     number: "^R[0-9]+[.]?[0-9]*"        # 响应 lua_translator@number_translator 脚本将自动获取第 2 个字符作为触发前缀
     gregorian_to_lunar: "^N[0-9]{1,8}"  # 响应 lua_translator@lunar 公历转农历，输入 N20240115 得到「二〇二四年腊月初五」，脚本将自动获取第 2 个字符作为触发前缀

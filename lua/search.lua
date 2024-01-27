@@ -5,33 +5,7 @@
 
 -- 取中文字符的第一个 by ChatGPT
 local function getFirstChineseCharacter(str)
-    local index = 1
-    local byteCount = 0
-
-    while index <= #str do
-        local byte = string.byte(str, index)
-        local charLen = 1
-
-        if byte >= 0xC0 and byte <= 0xDF then
-            charLen = 2
-        elseif byte >= 0xE0 and byte <= 0xEF then
-            charLen = 3
-        elseif byte >= 0xF0 and byte <= 0xF7 then
-            charLen = 4
-        end
-
-        if charLen > 1 then
-            -- Found a multi-byte character
-            byteCount = byteCount + 1
-            if byteCount == 1 then
-                return string.sub(str, index, index + charLen - 1)
-            end
-        end
-
-        index = index + charLen
-    end
-
-    return nil -- No Chinese character found
+    return str:sub(1, utf8.offset(str, 2) - 1)
 end
 
 local function alt_lua_punc(s)
@@ -200,8 +174,8 @@ function f.func(input, env)
         end
 
         -- 匹配逻辑，支持同时指定 schema 查询和 reverse 查询
-        if (f.if_schema_lookup and f.dict_match(dict_table, text))
-            or (f.if_reverse_lookup and reverse_lookup(text, f.search_string))
+        if (f.if_reverse_lookup and reverse_lookup(text, f.search_string))
+            or (f.if_schema_lookup and f.dict_match(dict_table, text))
         then
             -- 长词先存起来
             if if_single_char_first and utf8.len(cand.text) > 1 then
