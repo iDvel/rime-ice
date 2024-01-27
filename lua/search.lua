@@ -78,7 +78,7 @@ function f.init(env)
         -- log.error('if_reverse_lookup: ' .. 'true')
     end
 
-    -- 查找的引导符号需要加入 speller 的字母表当中 
+    -- 查找的引导符号需要加入 speller 的字母表当中
     f.search_key = config:get_string("key_binder/search") or config:get_string(ns .. "/key") or '`'
 
     -- 处理一下输入码
@@ -110,7 +110,6 @@ function f.init(env)
             -- ctx.commit_history:push("user_phrase", edit)
         end
     end)
-
 end
 
 -- 查询反查词典当中的匹配项，并且返回字表
@@ -175,17 +174,12 @@ function f.func(input, env)
         dict_table = f.dict_init(f.search_string)
     end
 
-    local other_cand = {}
-    local other_cand_last = {}
+    local long_word_cands = {}
 
     for cand in input:iter() do
         local type = cand.type -- 类型
         local text = cand.text -- 候选文字
         local comment = cand.comment
-        if utf8.len(text) > 1 and if_single_char_first then
-            table.insert(other_cand_last, cand)
-            goto skip
-        end
 
         -- 处理经过 simplify 转化过的候选，使之能够正确匹配
         if cand:get_dynamic_type() == "Shadow" then
@@ -202,44 +196,25 @@ function f.func(input, env)
                 text = getFirstChineseCharacter(text)
             end
         else
-            table.insert(other_cand, cand)
             goto skip
         end
 
-        -- 匹配逻辑
-        local match = false
-        if f.if_schema_lookup then
-            match = f.dict_match(dict_table, text)
-            if match then
+        -- 匹配逻辑，支持同时指定 schema 查询和 reverse 查询
+        if (f.if_schema_lookup and f.dict_match(dict_table, text))
+            or (f.if_reverse_lookup and reverse_lookup(text, f.search_string))
+        then
+            -- 长词先存起来
+            if if_single_char_first and utf8.len(cand.text) > 1 then
+                table.insert(long_word_cands, cand)
+            else
                 yield(cand)
-                goto skip
             end
-        end
-
-        -- 支持同时指定 schema 查询和 reverse 查询
-        if f.if_reverse_lookup then
-            match = f.reverse_lookup(text, f.search_string)
-            if match then
-                yield(cand)
-                goto skip
-            end
-        end
-
-        -- 上屏匹配的候选和插入其余的候选
-        if match then
-            yield(cand)
-        else
-            table.insert(other_cand, cand)
         end
 
         ::skip::
     end
-    -- 上屏其余的候选
-    for i, cand in ipairs(other_cand) do
-        yield(cand)
-    end
-
-    for i, cand in ipairs(other_cand_last) do
+    -- yield 长词
+    for i, cand in ipairs(long_word_cands) do
         yield(cand)
     end
 end
