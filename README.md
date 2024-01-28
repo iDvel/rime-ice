@@ -8,7 +8,9 @@
 
 [RIME(Rime Input Method Engine) / 中州韵输入法引擎](https://rime.im/) 是一个跨平台的输入法算法框架。
 
-这里是 Rime 的一份配置仓库。雾凇拼音提供了一套开箱即用的完整配置，包含了输入方案（全拼、双拼）、长期维护的词库及各项扩展功能。用户需要下载平台对应的前端，并将此配置放到配置目录。
+这里是 Rime 的一份配置仓库，用户需要下载各平台对应的前端，并将此配置应用到配置目录。
+
+雾凇拼音提供了一套开箱即用的完整配置，包含了输入方案（全拼、双拼）、长期维护的词库及各项扩展功能。
 
 详细介绍：[Rime 配置：雾凇拼音](https://dvel.me/posts/rime-ice/)
 
@@ -24,13 +26,13 @@
 - 主要功能
     -   [melt_eng](https://github.com/tumuyan/rime-melt) 英文输入
     -   [优化英文输入体验](https://dvel.me/posts/make-rime-en-better/)
-    -   [两分输入法](http://cheonhyeong.com/Simplified/download.html) 拼字
+    -   [部件拆字方案](https://github.com/mirtlecn/rime-radical-pinyin) 反查、辅码
     -   自整理的 Emoji
     -   [以词定字](https://github.com/BlindingDark/rime-lua-select-character)
     -   [长词优先](https://github.com/tumuyan/rime-melt/blob/master/lua/melt.lua)
     -   [Unicode](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)
     -   [数字、人民币大写](https://wb98.gitee.io/)
-    -   日期、时间、星期、农历
+    -   日期、时间、星期、[农历](https://github.com/boomker/rime-fast-xhup)
     -   常见错音错字提示
     -   所有标点符号直接上屏，/ 模式改为 v 模式，/ 直接上屏
     -   增加了许多拼音纠错
