@@ -12,12 +12,12 @@ function select.init(env)
     select.last_key = config:get_string('key_binder/select_last_character')
 end
 
-function select.func(key,env)
+function select.func(key, env)
     local engine = env.engine
     local context = env.engine.context
 
-    if 
-        not key:release() 
+    if
+        not key:release()
         and (context:is_composing() or context:has_menu())
         and (select.first_key or select.last_key)
     then
@@ -39,4 +39,5 @@ function select.func(key,env)
     end
     return 2
 end
+
 return select
