@@ -94,7 +94,7 @@ date_translator:
 
 
 # Lua 配置：农历的触发关键字
-lunar: nl  # 二〇二三年冬月二十 癸卯年（兔）冬月二十
+lunar: nl  # 农历： 二〇二三年冬月二十 癸卯年（兔）冬月二十
 
 
 # Lua 配置：直接上屏单个字符
@@ -215,7 +215,7 @@ radical_lookup:
 # 部件拆字滤镜
 radical_reverse_lookup:
   tags: [ radical_lookup ]
-  dictionary: rime_ice  # 滤镜标注拼音时使用的词库
+  dictionary: rime_ice  # 拼音标注来源，可将 other/single_pinyin.reverse.bin 拷贝至 build/ 目录，此处改为 single_pinyin 来为所有字显示拼音
   # comment_format:     # 自定义 comment，例如在左右加上括号
   #  - xform/^/(/
   #  - xform/$/)/
@@ -234,9 +234,9 @@ recognizer:
 
 # 从 default 继承快捷键
 key_binder:
-  import_preset: default # 从 default.yaml 继承通用的
-  search: "`"            # 辅码引导符
-  # bindings:            # 也可以再增加方案专有的快捷键
+  import_preset: default  # 从 default.yaml 继承通用的
+  search: "`"             # 辅码引导符，要添加到 speller/alphabet
+  # bindings:             # 也可以再增加方案专有的快捷键
 
 
 # 拼写设定
