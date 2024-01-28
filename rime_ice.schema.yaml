@@ -69,7 +69,7 @@ engine:
     - lua_translator@lunar              # 农历
     - table_translator@custom_phrase    # 自定义短语 custom_phrase.txt
     - table_translator@melt_eng         # 英文输入
-    - script_translator@radical_lookup  # 部件拆字反查
+    - table_translator@radical_lookup   # 部件拆字反查
     - lua_translator@unicode            # Unicode
     - lua_translator@number_translator  # 数字、金额大写
   filters:
@@ -208,6 +208,7 @@ punctuator:
 radical_lookup:
   tag: radical_lookup
   dictionary: radical_pinyin
+  enable_user_dict: false
   prefix: "uU"  # 反查前缀（反查时前缀会消失影响打英文所以设定为两个字母，或可改成一个非字母符号），与 recognizer/patterns/radical_lookup 匹配
   tips: "[拆字]"
   comment_format:

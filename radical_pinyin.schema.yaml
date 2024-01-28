@@ -31,8 +31,7 @@ engine:
   translators:
     - echo_translator
     - punct_translator
-    - script_translator
-    # - table_translator # 记录用户词典有问题
+    - table_translator
 
 speller:
   alphabet: "abcdefghijklmnopqrstuvwxyz;"
@@ -49,6 +48,7 @@ speller:
 
 translator:
   dictionary: radical_pinyin
+  enable_user_dict: false
 
 punctuator:
   import_preset: default
