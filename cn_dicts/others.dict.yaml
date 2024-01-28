@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2024-01-26"
+version: "2024-01-28"
 sort: by_weight
 ...
 ##### 容错词
@@ -184,6 +184,8 @@ sort: by_weight
 龇着牙	ci zhe ya
 龇牙咧嘴	zi ya lie zui
 龇牙咧嘴	ci ya lie zui
+头皮屑	tou pi xie
+头皮屑	tou pi xue
 ### 错字
 曾经	ceng jing
 曾今	ceng jin

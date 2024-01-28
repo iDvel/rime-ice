@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2024-01-26"
+version: "2024-01-28"
 sort: by_weight
 ...
 # 一些杂项
@@ -2420,6 +2420,10 @@ Arch User Repository	AUR
 pacman	pacman
 Pac-Man	Pac-Man
 eBPF	eBPF
-livid livid
-DevOps  DevOps
-Zippo Zippo
+livid	livid
+DevOps	DevOps
+Zippo	Zippo
+goddamn	goddamn
+punctuator	punctuator
+punctuators	punctuators
+QR code	QRcode
