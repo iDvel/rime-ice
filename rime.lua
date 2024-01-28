@@ -6,6 +6,9 @@
 -- 以词定字，可在 default.yaml → key_binder 下配置快捷键，默认为左右中括号 [ ]
 select_character = require("select_character")
 
+-- 让写在 alphabet 中的某标点自动上屏，可在方案中配置标点
+auto_commit_single_punct = require("auto_commit_single_punct")
+
 -- translators:
 
 -- 日期时间，可在方案中配置触发关键字。
@@ -34,6 +37,9 @@ autocap_filter = require("autocap_filter")
 
 -- 降低部分英语单词在候选项的位置，可在方案中配置要降低的模式和单词
 reduce_english_filter = require("reduce_english_filter")
+
+-- 辅码，https://github.com/mirtlecn/rime-radical-pinyin/blob/master/search.lua.md
+search = require("search")
 
 -- 默认未启用：
 

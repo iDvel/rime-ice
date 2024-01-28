@@ -1,4 +1,4 @@
--- 对于特定的符号，自动上屏
+-- 让写在 alphabet 中的某标点自动上屏
 -- 配置，在方案中填写 auto_commit_single_punct: '`'
 -- 用途示例： `（反引号）被添加到了 speller/alphabet 来响应辅码，如 gan`shuijin 得到「淦」。
 --          这样导致在输入单个的 ` 时仍然需要按空格选择一下。

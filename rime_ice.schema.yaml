@@ -6,26 +6,25 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "2023-10-22"
+  version: "2024-01-28"
   author:
     - Dvel
   description: |
     雾凇拼音
     https://github.com/iDvel/rime-ice
   dependencies:
-    - melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
-    - radical_pinyin
+    - melt_eng        # 英文输入，作为次翻译器挂载到拼音方案
+    - radical_pinyin  # 部件拆字，反查及辅码
 
 
 # 开关
-# 鼠须管 0.16 后，用快捷键切换时的提示文字由 states 定义
 # states: 方案选单显示的名称。可以注释掉，仍可以通过快捷键切换。
-# reset: 默认状态。 注释掉后，切换窗口时不会重置到默认状态。
+# reset: 默认状态。注释掉后，切换窗口时不会重置到默认状态。
 switches:
   - name: ascii_mode
     states: [ 中, Ａ ]
     reset: 0
-  - name: ascii_punct # 中英标点
+  - name: ascii_punct  # 中英标点
     states: [ ¥, $ ]
     reset: 0
   - name: traditionalization
@@ -37,7 +36,7 @@ switches:
   - name: full_shape
     states: [ 半角, 全角 ]
     reset: 0
-  - name: single_char  # 辅码查词，是否单字优先
+  - name: single_char  # search.lua 的功能开关，辅码查词时是否单字优先
     abbrev: [词, 单]
     states: [正常, 单字]
     # reset: 0
@@ -46,8 +45,8 @@ switches:
 # 输入引擎
 engine:
   processors:
-    - lua_processor@*auto_commit_single_punct
-    - lua_processor@select_character      # 以词定字
+    - lua_processor@select_character          # 以词定字
+    - lua_processor@auto_commit_single_punct  # 让写在 alphabet 中的某标点自动上屏
     - ascii_composer
     - recognizer
     - key_binder
@@ -60,29 +59,29 @@ engine:
     - ascii_segmentor
     - matcher
     - abc_segmentor
-    - affix_segmentor@radical_lookup  # 自定义 tag
+    - affix_segmentor@radical_lookup  # 部件拆字自定义 tag
     - punct_segmentor
     - fallback_segmentor
   translators:
     - punct_translator
     - script_translator
-    - lua_translator@date_translator      # 时间、日期、星期
-    - lua_translator@lunar                # 农历
-    - table_translator@custom_phrase      # 自定义短语 custom_phrase.txt
-    - table_translator@melt_eng           # 英文输入
-    - table_translator@radical_lookup
-    - lua_translator@unicode              # Unicode
-    - lua_translator@number_translator    # 数字、金额大写
+    - lua_translator@date_translator    # 时间、日期、星期
+    - lua_translator@lunar              # 农历
+    - table_translator@custom_phrase    # 自定义短语 custom_phrase.txt
+    - table_translator@melt_eng         # 英文输入
+    - table_translator@radical_lookup   # 部件拆字反查
+    - lua_translator@unicode            # Unicode
+    - lua_translator@number_translator  # 数字、金额大写
   filters:
-    - lua_filter@corrector                # 错音错字提示
-    - simplifier@emoji                    # Emoji
-    - simplifier@traditionalize           # 简繁切换
-    - reverse_lookup_filter@radical_reverse_lookup
-    - lua_filter@*search@radical_pinyin
-    - lua_filter@v_filter                 # v 模式 symbols 优先（否则是英文优先）
-    - lua_filter@autocap_filter           # 英文自动大写
-    - lua_filter@reduce_english_filter    # 降低部分英语单词在候选项的位置
-    - uniquifier                          # 去重
+    - lua_filter@corrector                          # 错音错字提示
+    - simplifier@emoji                              # Emoji
+    - simplifier@traditionalize                     # 简繁切换
+    - reverse_lookup_filter@radical_reverse_lookup  # 部件拆字滤镜
+    - lua_filter@search@radical_pinyin              # 部件拆字辅码
+    - lua_filter@v_filter                           # v 模式 symbols 优先（否则是英文优先）
+    - lua_filter@autocap_filter                     # 英文自动大写
+    - lua_filter@reduce_english_filter              # 降低部分英语单词在候选项的位置
+    - uniquifier                                    # 去重
 
 
 # Lua 配置: 日期、时间、星期、ISO 8601、时间戳的触发关键字
@@ -95,7 +94,7 @@ date_translator:
 
 
 # Lua 配置：农历的触发关键字
-lunar: nl  # 癸卯年（兔）冬月廿一  二〇二四年冬月廿一
+lunar: nl  # 二〇二三年冬月二十 癸卯年（兔）冬月二十
 
 
 # Lua 配置：直接上屏单个字符
@@ -181,7 +180,6 @@ custom_phrase:
 emoji:
   option_name: emoji
   opencc_config: emoji.json
-  tags: [ abc ]
 
 
 # 简繁切换
@@ -189,7 +187,7 @@ traditionalize:
   option_name: traditionalization
   opencc_config: s2t.json  # s2t.json | s2hk.json | s2tw.json | s2twp.json
   tips: none               # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
-  tags: [ abc ]            # 限制在 abc tag，不对反查的内容做简繁切换
+  tags: [ abc ]            # 限制在 abc tag，不对其他如反查的内容做简繁转换
 
 
 # 标点符号
@@ -210,7 +208,7 @@ punctuator:
 radical_lookup:
   tag: radical_lookup
   dictionary: radical_pinyin
-  prefix: "uU"
+  prefix: "uU"  # 反查前缀（反查时前缀会消失影响打英文所以设定为两个字母，或可改成一个非字母符号），与 recognizer/patterns/radical_lookup 匹配
   tips: "[拆字]"
   enable_user_dict: false
   comment_format:
@@ -218,8 +216,8 @@ radical_lookup:
 # 部件拆字滤镜
 radical_reverse_lookup:
   tags: [ radical_lookup ]
-  dictionary: rime_ice
-  # comment_format:
+  dictionary: rime_ice  # 滤镜标注拼音时使用的词库
+  # comment_format:     # 自定义 comment，例如在左右加上括号
   #  - xform/^/(/
   #  - xform/$/)/
 
@@ -229,10 +227,10 @@ recognizer:
   import_preset: default  # 从 default.yaml 继承通用的
   patterns:  # 再增加方案专有的：
     punct: "^v([0-9]|10|[A-Za-z]+)$"    # 响应 symbols_v.yaml 的 symbols，用 'v' 替换 '/'
-    radical_lookup: "^uU[a-z]+$"
-    unicode: "^U[a-f0-9]+"              # 响应 lua_translator@unicode 脚本将自动获取第 2 个字符作为触发前缀
-    number: "^R[0-9]+[.]?[0-9]*"        # 响应 lua_translator@number_translator 脚本将自动获取第 2 个字符作为触发前缀
-    gregorian_to_lunar: "^N[0-9]{1,8}"  # 响应 lua_translator@lunar 公历转农历，输入 N20240115 得到「二〇二四年腊月初五」，脚本将自动获取第 2 个字符作为触发前缀
+    radical_lookup: "^uU[a-z]+$"        # 响应部件拆字的反查，与 radical_lookup/prefix 匹配
+    unicode: "^U[a-f0-9]+"              # 脚本将自动获取第 2 个字符 U 作为触发前缀，响应 lua_translator@unicode，输出 Unicode 字符
+    number: "^R[0-9]+[.]?[0-9]*"        # 脚本将自动获取第 2 个字符 R 作为触发前缀，响应 lua_translator@number_translator，数字金额大写
+    gregorian_to_lunar: "^N[0-9]{1,8}"  # 脚本将自动获取第 2 个字符 N 作为触发前缀，响应 lua_translator@lunar，公历转农历，输入 N20240115 得到「二〇二三年腊月初五」
 
 
 # 从 default 继承快捷键
@@ -250,10 +248,10 @@ speller:
   algebra:
     ### 模糊音
     # 声母
-    # - derive/^([zcs])h/$1/
-    # - derive/^([zcs])([^h])/$1h$2/
-    # - derive/^l/n/  # 解释：为 l 开头的拼写派生出 n 开头，即 nai 也可以输出「来、莱、赖……」
-    # - derive/^n/l/  # lai 可输出「奶」，可以单向或成对儿启用模糊音
+    # - derive/^([zcs])h/$1/          # zh* ch* sh* 派生出 z* c* s*
+    # - derive/^([zcs])([^h])/$1h$2/  # z* c* s*    派生出 zh* ch* sh*
+    # - derive/^l/n/  # 解释：为 l 开头的拼写派生出 n 开头，即 nai 也可以输出 lai（来、莱、赖……）
+    # - derive/^n/l/  #      lai 可输出 nai（奶、乃、奈……）。 可以单向或成对儿启用模糊音
     # - derive/^f/h/
     # - derive/^h/f/
     # - derive/^l/r/
@@ -301,7 +299,9 @@ speller:
     - abbrev/^([a-z]).+$/$1/   # 超级简拼
     - abbrev/^([zcs]h).+$/$1/  # 超级简拼中，zh ch sh 视为整体（ch'sh → 城市），而不是像这样分开（c'h's'h → 吃好睡好）。
 
-    ### v u 转换，增加对词库中「nue/nve」「qu/qv」等不同注音的支持
+    ### v u 转换
+    # 雾凇的词库严格按照正确的 u v(ü) 注音的，如 qu 和 nve，支持使用 qv 和 nue 来输入
+    # 再增加对其他词库的 qv nue 这种注音的支持
     - derive/^([nl])ue$/$1ve/
     - derive/^([nl])ve$/$1ue/
     - derive/^([jqxy])u/$1v/

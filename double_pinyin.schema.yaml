@@ -1,15 +1,16 @@
 # Rime schema
 # encoding: utf-8
 
-
 # 复制自 rime_ice.schema.yaml ，适配了双拼。
 # 双拼键位映射复制自 https://github.com/rime/rime-double-pinyin
 # 双拼之间主要就是 speller/algebra 和 translator/preedit_format 这里有区别。
 #
 # 全拼的自定义文本和双拼有些冲突，改成了 custom_phrase_double ，需要创建 custom_phrase_double.txt 文件。
 #
-# 默认启用的中英混输词库是全拼的，需要在 melt_eng.dict.yaml 中修改为对应的双拼的。
-# 还需要在英文方案 melt_eng.schema.yaml 将数字的拼写规则 __include: algebra_rime_ice 改为对应的双拼。
+# 将仓库默认的全拼拼写方式改为对应的双拼拼写： （补丁写法参考 [常见问题](https://github.com/iDvel/rime-ice/issues/133)）
+# 1. 在英文词库文件 melt_eng.dict.yaml 修改为对应的双拼词库
+# 2. 在英文方案文件 melt_eng.schema.yaml > speller > algebra 修改为对应的双拼拼写运算
+# 3. 在部件拆字方案 radical_pinyin.schema.yaml > speller > algebra 修改为对应的双拼拼写运算
 
 
 # 方案说明
@@ -23,19 +24,18 @@ schema:
     雾凇拼音 - 自然码双拼
     https://github.com/iDvel/rime-ice
   dependencies:
-    - melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
-    - liangfen  # 两分拼字，作为反查挂载到拼音方案
+    - melt_eng        # 英文输入，作为次翻译器挂载到拼音方案
+    - radical_pinyin  # 部件拆字，反查及辅码
 
 
 # 开关
-# 鼠须管 0.16 后，用快捷键切换时的提示文字由 states 定义
 # states: 方案选单显示的名称。可以注释掉，仍可以通过快捷键切换。
-# reset: 默认状态。 注释掉后，切换窗口时不会重置到默认状态。
+# reset: 默认状态。注释掉后，切换窗口时不会重置到默认状态。
 switches:
   - name: ascii_mode
     states: [ 中, Ａ ]
     reset: 0
-  - name: ascii_punct # 中英标点
+  - name: ascii_punct  # 中英标点
     states: [ ¥, $ ]
     reset: 0
   - name: traditionalization
@@ -47,12 +47,17 @@ switches:
   - name: full_shape
     states: [ 半角, 全角 ]
     reset: 0
+  - name: single_char  # search.lua 的功能开关，辅码查词时是否单字优先
+    abbrev: [词, 单]
+    states: [正常, 单字]
+    # reset: 0
 
 
 # 输入引擎
 engine:
   processors:
-    - lua_processor@select_character      # 以词定字
+    - lua_processor@select_character          # 以词定字
+    - lua_processor@auto_commit_single_punct  # 让写在 alphabet 中的某标点自动上屏
     - ascii_composer
     - recognizer
     - key_binder
@@ -65,25 +70,28 @@ engine:
     - ascii_segmentor
     - matcher
     - abc_segmentor
+    - affix_segmentor@radical_lookup  # 部件拆字自定义 tag
     - punct_segmentor
     - fallback_segmentor
   translators:
     - punct_translator
     - script_translator
-    - lua_translator@date_translator      # 时间、日期、星期
-    - lua_translator@lunar                # 农历
-    - table_translator@custom_phrase      # 自定义短语 custom_phrase_double.txt
-    - table_translator@melt_eng           # 英文输入
-    - reverse_lookup_translator@liangfen  # 反查，两分拼字
-    - lua_translator@unicode              # Unicode
-    - lua_translator@number_translator    # 数字、金额大写
+    - lua_translator@date_translator    # 时间、日期、星期
+    - lua_translator@lunar              # 农历
+    - table_translator@custom_phrase    # 自定义短语 custom_phrase.txt
+    - table_translator@melt_eng         # 英文输入
+    - table_translator@radical_lookup   # 部件拆字反查
+    - lua_translator@unicode            # Unicode
+    - lua_translator@number_translator  # 数字、金额大写
   filters:
-    - lua_filter@corrector                # 错音错字提示
-    - simplifier@emoji                    # Emoji
-    - simplifier@traditionalize           # 简繁切换
-    - lua_filter@autocap_filter           # 英文自动大写
-    - lua_filter@reduce_english_filter    # 降低部分英语单词在候选项的位置
-    - uniquifier                          # 去重
+    - lua_filter@corrector                          # 错音错字提示
+    - simplifier@emoji                              # Emoji
+    - simplifier@traditionalize                     # 简繁切换
+    - reverse_lookup_filter@radical_reverse_lookup  # 部件拆字滤镜
+    - lua_filter@search@radical_pinyin              # 部件拆字辅码
+    - lua_filter@autocap_filter                     # 英文自动大写
+    - lua_filter@reduce_english_filter              # 降低部分英语单词在候选项的位置
+    - uniquifier                                    # 去重
 
 
 # Lua 配置: 日期、时间、星期、ISO 8601、时间戳的触发关键字
@@ -96,7 +104,7 @@ date_translator:
 
 
 # Lua 配置：农历
-lunar: lunar  # 癸卯年(兔)冬月廿一  二〇二四年冬月廿一
+lunar: lunar  # 二〇二三年冬月二十 癸卯年（兔）冬月二十
 
 
 # Lua 配置：为 corrector 格式化 comment，占位符为 {comment}
@@ -140,12 +148,12 @@ reduce_english_filter:
 
 # 主翻译器，拼音
 translator:
-  dictionary: rime_ice           # 挂载词库 rime_ice.dict.yaml
-  prism: double_pinyin           # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
-  spelling_hints: 8              # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
-  always_show_comments: true     # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。
-  initial_quality: 1.2           # 拼音的权重应该比英文大
-  preedit_format:                # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
+  dictionary: rime_ice          # 挂载词库 rime_ice.dict.yaml
+  prism: double_pinyin          # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
+  spelling_hints: 8             # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
+  always_show_comments: true    # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。
+  initial_quality: 1.2          # 拼音的权重应该比英文大
+  preedit_format:               # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
     - xform/([bpmnljqxy])n/$1in/
     - xform/(\w)g/$1eng/
     - xform/(\w)q/$1iu/
@@ -190,14 +198,6 @@ melt_eng:
     - xform/.*//           # 清空提示码
 
 
-# 反查：两分（拼字）
-liangfen:
-  dictionary: liangfen     # 挂载两分词典 liangfen.dict.yaml
-  prefix: "L"              # 以 L 开头来反查
-  enable_completion: true  # 补全提示
-  # tips: 〔两分〕          # 反查时显示的文字，建议注释掉，否则很多 L 开头的英文单词也会显示这个
-
-
 # 自定义短语
 custom_phrase:
   dictionary: ""
@@ -210,16 +210,16 @@ custom_phrase:
 
 # Emoji
 emoji:
-  opencc_config: emoji.json
   option_name: emoji
+  opencc_config: emoji.json
 
 
 # 简繁切换
 traditionalize:
   option_name: traditionalization
-  opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json
-  tips: none                          # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
-  excluded_types: [ reverse_lookup ]  # 不转换反查（两分拼字）的内容
+  opencc_config: s2t.json  # s2t.json | s2hk.json | s2tw.json | s2twp.json
+  tips: none               # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
+  tags: [ abc ]            # 限制在 abc tag，不对其他如反查的内容做简繁转换
 
 
 # 标点符号
@@ -236,27 +236,47 @@ punctuator:
     __include: symbols_caps_v:/symbols         # 从 symbols_caps_v.yaml 导入配置
 
 
+# 部件拆字反查
+radical_lookup:
+  tag: radical_lookup
+  dictionary: radical_pinyin
+  prefix: "uU"  # 反查前缀（反查时前缀会消失影响打英文所以设定为两个字母，或可改成一个非字母符号），与 recognizer/patterns/radical_lookup 匹配
+  tips: "[拆字]"
+  enable_user_dict: false
+  comment_format:
+    - erase/^.*$//
+# 部件拆字滤镜
+radical_reverse_lookup:
+  tags: [ radical_lookup ]
+  dictionary: rime_ice  # 滤镜标注拼音时使用的词库
+  # comment_format:     # 自定义 comment，例如在左右加上括号
+  #  - xform/^/(/
+  #  - xform/$/)/
+
+
 # 处理符合特定规则的输入码，如网址、反查
+
 recognizer:
   import_preset: default  # 从 default.yaml 继承通用的
   patterns:  # 再增加方案专有的：
     punct: "^V([0-9]|10|[A-Za-z]+)$"    # 响应 symbols_caps_v.yaml 的 symbols
-    reverse_lookup: "^L[a-z]+$"         # 响应两分拼字的反查
-    unicode: "^U[a-f0-9]+"              # 响应 lua_translator@unicode 脚本将自动获取第 2 个字符作为触发前缀
-    number: "^R[0-9]+[.]?[0-9]*"        # 响应 lua_translator@number_translator 脚本将自动获取第 2 个字符作为触发前缀
-    gregorian_to_lunar: "^N[0-9]{1,8}"  # 响应 lua_translator@lunar 公历转农历，输入 N20240115 得到「二〇二四年腊月初五」，脚本将自动获取第 2 个字符作为触发前缀
+    radical_lookup: "^uU[a-z]+$"        # 响应部件拆字的反查，与 radical_lookup/prefix 匹配
+    unicode: "^U[a-f0-9]+"              # 脚本将自动获取第 2 个字符 U 作为触发前缀，响应 lua_translator@unicode，输出 Unicode 字符
+    number: "^R[0-9]+[.]?[0-9]*"        # 脚本将自动获取第 2 个字符 R 作为触发前缀，响应 lua_translator@number_translator，数字金额大写
+    gregorian_to_lunar: "^N[0-9]{1,8}"  # 脚本将自动获取第 2 个字符 N 作为触发前缀，响应 lua_translator@lunar，公历转农历，输入 N20240115 得到「二〇二三年腊月初五」
 
 
 # 从 default 继承快捷键
 key_binder:
   import_preset: default  # 从 default.yaml 继承通用的
+  search: "`"             # 辅码引导符
   # bindings:             # 也可以再增加方案专有的
 
 
 # 拼写设定
 speller:
   # 如果不想让什么标点直接上屏，可以加在 alphabet，或者编辑标点符号为两个及以上的映射
-  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA`
   delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
     - erase/^xx$/
