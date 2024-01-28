@@ -1,12 +1,10 @@
 -- search.lua
+-- 拼音辅码查询
 -- Copyright (C) Mirtle <mirtle.cn@outlook.com>
 -- Distributed under terms of the MIT license.
 -- select_notifier 逻辑取自 AuxFilter
 
--- 取中文字符的第一个 by ChatGPT
-local function getFirstChineseCharacter(str)
-    return str:sub(1, utf8.offset(str, 2) - 1)
-end
+-- 使用说明：<https://github.com/mirtlecn/rime-radical-pinyin/search.lua.md>
 
 local function alt_lua_punc(s)
     if s then
@@ -26,6 +24,14 @@ local f = {}
 function f.init(env)
     local config = env.engine.schema.config
     local ns = 'search'
+
+    -- f.mem_main = Memory(env.engine, env.engine.schema)
+    -- local rules = config:get_list('preedit_rules')
+
+    -- if rules then
+    --     f.projection = Projection()
+    --     f.projection:load(rules)
+    -- end
 
     f.schema = config:get_string(ns .. '/schema')
     if f.schema == 'false' or f.schema == '0' then
@@ -47,15 +53,17 @@ function f.init(env)
         -- log.error('if_schema_lookup: ' .. 'true')
     end
     if f.db then
-        f.wildcard = config:get_string(ns .. "/wildcard") or "-"
+        f.wildcard = config:get_string(ns .. "/wildcard") or "'"
         f.if_reverse_lookup = true
         -- log.error('if_reverse_lookup: ' .. 'true')
     end
 
-    -- 查找的引导符号需要加入 speller 的字母表当中
+    f.sort = config:get_bool(ns .. "/show_other_cands")
+
+    -- 反引号作为查找的引导符号，需要加入 speller 的字母表当中 
     f.search_key = config:get_string("key_binder/search") or config:get_string(ns .. "/key") or '`'
 
-    -- 处理一下输入码
+    -- 处理一下输入码，如果还有没有上屏的词，保留辅助码，否则，清除上屏码
     f.search_key_string = alt_lua_punc(f.search_key)
 
     -- 如果不使用任何反查手段，则不接管选词逻辑
@@ -80,11 +88,35 @@ function f.init(env)
             ctx.input = ctx.input .. f.search_key
         else
             ctx:commit()
-            -- 此种上屏方法似乎无法记录到历史记录中，若需要，可解开下面的代码手动 push
+            -- local t = f.entry()
+            -- log.warning(edit .. '|' .. no_search_string)
+            -- 手动推入历史记录
             -- ctx.commit_history:push("user_phrase", edit)
+            -- 手动写入用户词库
+            -- f.update_dict_entry(edit, no_search_string)
         end
     end)
+
 end
+
+-- function f.update_dict_entry(s, code)
+--     local codeLen = #code
+--     if s == '' or (#code % 2 ~= 0) then
+--         log.warning('Ignored!' .. s)
+--         return 0
+--     end
+--     local e = DictEntry()
+--     e.text = s
+--     local custom_code = {}
+--     for i = 1, #code, 2 do
+--         local s = code:sub(i, i + 1)
+--         local c = f.projection:apply(s, true)
+--         table.insert(custom_code, c)
+--     end
+--     e.custom_code = table.concat(custom_code, " ") .. ' '
+--     log.info("[search.lua]: " .. e.text .. ' ' .. e.custom_code)
+--     f.mem_main:update_userdict(e, 1, "")
+-- end
 
 -- 查询反查词典当中的匹配项，并且返回字表
 function f.dict_init(search_string)
@@ -148,12 +180,17 @@ function f.func(input, env)
         dict_table = f.dict_init(f.search_string)
     end
 
+    local other_cand = {}
     local long_word_cands = {}
 
     for cand in input:iter() do
         local type = cand.type -- 类型
         local text = cand.text -- 候选文字
         local comment = cand.comment
+        -- if utf8.len(text) > 1 and if_single_char_first then
+        --     table.insert(other_cand_last, cand)
+        --     goto skip
+        -- end
 
         -- 处理经过 simplify 转化过的候选，使之能够正确匹配
         if cand:get_dynamic_type() == "Shadow" then
@@ -167,30 +204,37 @@ function f.func(input, env)
         if (type == 'phrase' or type == 'user_phrase') then
             -- 当候选多于一个汉字，则取第一个匹配
             if utf8.len(text) > 1 then
-                text = getFirstChineseCharacter(text)
+                text = text:sub(1, utf8.offset(text, 2) - 1)
             end
         else
+            table.insert(other_cand, cand)
             goto skip
         end
 
-        -- 匹配逻辑，支持同时指定 schema 查询和 reverse 查询
-        if (f.if_reverse_lookup and reverse_lookup(text, f.search_string))
-            or (f.if_schema_lookup and f.dict_match(dict_table, text))
-        then
-            -- 长词先存起来
+        -- 匹配逻辑
+        if (f.if_reverse_lookup and f.reverse_lookup(text, f.search_string)) or
+            (f.if_schema_lookup and f.dict_match(dict_table, text)) then
             if if_single_char_first and utf8.len(cand.text) > 1 then
                 table.insert(long_word_cands, cand)
             else
                 yield(cand)
             end
+        else
+            table.insert(other_cand, cand)
         end
-
         ::skip::
     end
-    -- yield 长词
+    -- 上屏其余的候选
     for i, cand in ipairs(long_word_cands) do
         yield(cand)
     end
+
+    if f.sort then
+        for i, cand in ipairs(other_cand) do
+            yield(cand)
+        end
+    end
+
 end
 
 function f.fini(env)

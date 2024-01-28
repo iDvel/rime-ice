@@ -4,7 +4,7 @@
 schema:
   schema_id: radical_pinyin
   name: "偏旁部件拆字"
-  version: "1.01"
+  version: "1.02"
   author: Mirtle
   description: |
     用拼音按顺序拼出偏旁部件，以输入汉字。
@@ -31,10 +31,11 @@ engine:
   translators:
     - echo_translator
     - punct_translator
-    - table_translator
+    - script_translator
+    # - table_translator # 记录用户词典有问题
 
 speller:
-  alphabet: "abcdefghijklmnopqrstuvwxyz"
+  alphabet: "abcdefghijklmnopqrstuvwxyz;"
   delimiter: " '"
   algebra:
     # 根据当前所用拼音方案选择 __include 的值
@@ -48,7 +49,6 @@ speller:
 
 translator:
   dictionary: radical_pinyin
-  enable_user_dict: false
 
 punctuator:
   import_preset: default
