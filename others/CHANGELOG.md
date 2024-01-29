@@ -4,6 +4,15 @@
 
 
 
+## 2024-01-29 🆕 ⚠️
+
+🆕 [部件拆字方案](https://github.com/mirtlecn/rime-radical-pinyin) 反查、辅码 ([#643](https://github.com/iDvel/rime-ice/pull/643))
+
+- 反查：默认以 `uU` 开头
+- 辅码：默认以 `` ` ``（反引号）开启查询
+
+⚠️ 部件拆字方案替换掉了两分方案
+
 ## 2024-01-02 🆕 🐛 ⚠️
 
 🆕 农历功能 [#565](https://github.com/iDvel/rime-ice/issues/565)
@@ -12,7 +21,7 @@
 
 ⚠️ 更新并修改 `weasel_style.yaml` 为 `weasel.yaml` （[#584](https://github.com/iDvel/rime-ice/pull/584)）
 
-## 2023-11-29
+## 2023-11-29 ⚠️
 
 九宫格方案 2~9 的映射由 ADGJMPTW 改为 23456789 [a0e0ef8](https://github.com/iDvel/rime-ice/commit/a0e0ef807e4ebc50771563717375f554c9473315)
 
