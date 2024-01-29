@@ -79,7 +79,7 @@ engine:
     - script_translator
     - lua_translator@date_translator    # 时间、日期、星期
     - lua_translator@lunar              # 农历
-    - table_translator@custom_phrase    # 自定义短语 custom_phrase.txt
+    - table_translator@custom_phrase    # 自定义短语 custom_phrase_double.txt
     - table_translator@melt_eng         # 英文输入
     - table_translator@radical_lookup   # 部件拆字反查
     - lua_translator@unicode            # Unicode
@@ -104,8 +104,14 @@ date_translator:
   timestamp: timestamp  # 时间戳： 1669716794
 
 
-# Lua 配置：农历
+# Lua 配置：农历的触发关键字
 lunar: lunar  # 农历： 二〇二三年冬月二十 癸卯年（兔）冬月二十
+
+
+# Lua 配置：直接上屏单个字符
+# lua_filter@search@radical_pinyin 辅码的引导符在 key_binder/search 定义，目前为 `（反引号）。
+# ` 只在中间时起辅码查询作用，但是输入单个 ` 时仍然需要按空格选择，这个 Lua 让单个的 ` 直接上屏。
+auto_commit_single_punct: "`"
 
 
 # Lua 配置：为 corrector 格式化 comment，占位符为 {comment}
@@ -246,7 +252,7 @@ radical_lookup:
   dictionary: radical_pinyin
   enable_user_dict: false
   prefix: "uU"  # 反查前缀（反查时前缀会消失影响打英文所以设定为两个字母，或可改成一个非字母符号），与 recognizer/patterns/radical_lookup 匹配
-  tips: "[拆字]"
+  tips: "  〔拆字〕"
   comment_format:
     - erase/^.*$//
 # 部件拆字滤镜
