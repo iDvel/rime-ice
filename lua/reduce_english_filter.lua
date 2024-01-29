@@ -1,6 +1,9 @@
 -- 降低部分英语单词在候选项的位置
 -- https://dvel.me/posts/make-rime-en-better/#短单词置顶的问题
 -- 感谢大佬 @[Shewer Lu](https://github.com/shewer) 指点
+-- Mintimate 修改: 
+--   1. 在不设置 mode 情况下，调整为默认全降模式（原本为 none 模式）；
+--   2. all 会合并默认全降内容和自定义内容。
 
 local M = {}
 
@@ -54,19 +57,33 @@ function M.init(env)
     -- 自定义
     M.words = {}
     local list = config:get_list(env.name_space .. "/words")
-    for i = 0, list.size - 1 do
+
+    -- 当 words 没有定义，赋值长度为0
+    local listSize = list and list.size or 0
+
+    for i = 0, listSize - 1 do
         local word = list:get_value_at(i).value
         M.words[word] = true
     end
 
-    -- 模式
+    -- 模式( all 会合并默认「全降内容」)
     local mode = config:get_string(env.name_space .. "/mode")
     if mode == "all" then
-        M.map = M.all
+        -- 合并 all 和 words
+        local mergedTable = {}
+        for key in pairs(M.all) do
+            mergedTable[key] = true
+        end
+        for key in pairs(M.words) do
+            mergedTable[key] = true
+        end
+        M.map = mergedTable
     elseif mode == "custom" then
         M.map = M.words
-    else
+    elseif mode == "none" then
         M.map = {}
+    else 
+        M.map = M.all
     end
 end
 
