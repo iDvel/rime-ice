@@ -1,5 +1,5 @@
 ﻿-- 来源 https://github.com/yanhuacuo/98wubi-tables > http://98wb.ysepan.com/
--- 数字、金额大写 (任意大写字母引导+数字)
+-- 数字、金额大写
 -- 触发前缀默认为 recognizer/patterns/number 的第 2 个字符，即 R
 
 local function splitNumPart(str)
