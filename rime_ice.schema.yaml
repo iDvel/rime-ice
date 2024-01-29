@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "2024-01-28"
+  version: "2024-01-29"
   author:
     - Dvel
   description: |
@@ -23,23 +23,18 @@ schema:
 switches:
   - name: ascii_mode
     states: [ 中, Ａ ]
-    reset: 0
   - name: ascii_punct  # 中英标点
     states: [ ¥, $ ]
-    reset: 0
   - name: traditionalization
     states: [ 简, 繁 ]
-    reset: 0
   - name: emoji
     states: [ 💀, 😄 ]
     reset: 1
   - name: full_shape
     states: [ 半角, 全角 ]
-    reset: 0
   - name: single_char  # search.lua 的功能开关，辅码查词时是否单字优先
     abbrev: [词, 单]
     states: [正常, 单字]
-    # reset: 0
 
 
 # 输入引擎
@@ -180,6 +175,7 @@ custom_phrase:
 emoji:
   option_name: emoji
   opencc_config: emoji.json
+  inherit_comment: false  # 在 corrector.lua 及反查中，emoji 返回空注释
 
 
 # 简繁切换
