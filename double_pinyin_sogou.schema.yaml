@@ -120,12 +120,12 @@ corrector: "{comment}"
 # 正常情况： 输入 rug 得到 「1.rug 2.如果 …… 」
 # 降低之后： 输入 rug 得到 「1.如果 2.rug …… 」
 # 几种模式：
-# all     降低所有 3~4 位长度、前 2~3 位是完整拼音、最后一位是声母的单词
+# all     降低脚本内置的单词（所有 3~4 位长度、前 2~3 位是完整拼音、最后一位是声母），words 作为自定义的额外补充
+# custom  完全自定义，只降低 words 里的
 # none    不降低任何单词，相当于没有启用这个 Lua
-# custom  自定义，只降低 words 里的
 # （匹配的是编码，不是单词）
 reduce_english_filter:
-  mode: custom  # all | none | custom
+  mode: custom  # all | custom | none
   idx: 2        # 降低到第 idx 个位置
   # 自定义的单词列表，示例列表没有降低部分常用单词，如 and cat mail Mac but bad shit ……
   words: [aid, ann,
