@@ -2430,7 +2430,6 @@ QR code	QRcode
 sentry	sentry
 Grafana	Grafana
 Hadoop	Hadoop
-Kafka	Kafka
 HBase	HBase
 Hive	Hive
 Flink	Flink
