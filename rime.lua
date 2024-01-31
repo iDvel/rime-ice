@@ -41,18 +41,10 @@ reduce_english_filter = require("reduce_english_filter")
 -- 辅码，https://github.com/mirtlecn/rime-radical-pinyin/blob/master/search.lua.md
 search = require("search")
 
--- 默认未启用：
-
--- 词条置顶
--- 满足左边的 cand.preedit 时，将右边的 cand 按顺序置顶。
--- 在 engine/filters 增加 - lua_filter@pin_cand_filter
--- 在方案里写配置项：
--- pin_cand_filter:
---   - "l	了"
---   - "le	了"
---   - "ta	他 她 它"
---   - "ni hao	你好 拟好"
+-- 置顶候选项
 pin_cand_filter = require("pin_cand_filter")
+
+-- 默认未启用：
 
 -- 长词优先（全拼）
 -- 在 engine/filters 增加 - lua_filter@long_word_filter

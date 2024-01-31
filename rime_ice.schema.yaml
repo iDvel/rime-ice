@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "2024-01-30"
+  version: "2024-02-01"
   author:
     - Dvel
   description: |
@@ -76,6 +76,7 @@ engine:
     - lua_filter@v_filter                           # v 模式 symbols 优先（否则是英文优先）
     - lua_filter@autocap_filter                     # 英文自动大写
     - lua_filter@reduce_english_filter              # 降低部分英语单词在候选项的位置
+    - lua_filter@pin_cand_filter                    # 置顶候选项
     - uniquifier                                    # 去重
 
 
@@ -135,6 +136,131 @@ reduce_english_filter:
   tad, tail, taj, tar, tax, tec, ted, tel, ter, tex, tic, tied, tier, ties, tim, tin, tit, tour, tout, tum,
   wag, wand, womens, wap, wax, weir, won,
   yan, yen]
+
+
+# Lua 配置: 置顶候选项
+# 符合左边的 cand.preedit 时，按顺序置顶右边的候选项。只是提升已有候选项的顺序，没有自创编码的功能。
+# （对简繁转换无效，除非简繁文字一致 😰）
+#
+# preedit 是经过 translator/preedit_format 处理后的编码，如果是词语则包含空格。
+# ⚠️ 注意方案的 preedit_format 设定，如果 v 显示为 ü，那么左边也要写 ü
+# ⚠️ 双拼 ⚠️ 显示为全拼拼写就要写全拼，如 'shuang pin'，显示为双拼拼写就要写双拼，如 'ul pb' 😰
+#
+# 脚本自动额外生成 preedit 中最后一个空格后面的首字母和 zh ch sh，
+# 如 'ni hao' 会自动生成 'ni hao'、'ni h'
+# 如 'bu hao chi' 会自动生成 'bu hao chi'、'bu hao c'、'bu hao ch'
+# 如果同时写了 da zhuan 和 da zhong，输入 da z 时，排在前面的的优先，除非明确指定 'da z'。
+pin_cand_filter:
+  # 格式：编码<Tab>字词1<Space>字词2……
+  # 示例：
+  # - 'le	了'         # 输入 le 时，置顶「了」
+  # - 'la	啦'         # 输入 la 时，置顶「啦」
+  # - 'ta	他 她 它'    # 可以置顶多个字，按顺序排列
+  # - 'ta	啊'         # ❌ 编码不会产生的字词，不会生效且影响查找效率。自创编码的字词句可以写到 custom_phrase 中。
+  # - 'l	了 啦'      # 支持单编码或输入到一半的编码，输入 l 时，置顶「了、啦」
+  # - 's m	什么'       # 支持简拼，要和输入框的行为一致，有空格加空格
+  # - 'w s m	为什么' # 支持简拼，要和输入框的行为一致，有空格加空格
+  # - 'ni hao	你好 👋 拟好'  # 如果 emoji 被分割开了，可以任意调整 emoji 的位置
+  # # 以下两行，会额外生成 'da z' 'da zh' 的置顶，前两个候选项是「大专、大众」，先写的排在前面
+  # - da zhuang	大专
+  # - da zhong	大众
+  # # 如果明确定义了简码形式，则完全使用简码形式
+  # - da z	打字
+  # - da zh	打仗
+  #
+  # ⚙️ 以下是个人习惯，仅供参考，可以打个补丁来覆盖。
+  # 单编码
+  - q	去 千
+  - w	我 万 往
+  - e	呃
+  - r	让 人
+  - t	他 她 它 祂
+  - y	与 于
+  # - u 在 custom_phrase 置顶
+  # - i 在 custom_phrase 置顶
+  - o	哦
+  - p	片 篇
+  - a	啊
+  - s	是 时 使 式
+  - d	的 地 得
+  - f	发 放 分
+  - g	个 各
+  - h	和 或
+  - j	及 将 即 既 继
+  - k	可
+  - l	了 啦 喽 嘞
+  - z	在 再 自
+  - x	想 像 向
+  - c	才 从
+  # - v
+  - b	吧 把 呗 百
+  - n	那 哪 拿 呐
+  - m	吗 嘛 呣
+  # 单字
+  - de	的 地 得
+  - na	那 哪 拿
+  - ta	他 她 它 祂
+  - er	而 儿 二
+  - ma	吗 嘛 妈
+  - zhe	这 着
+  - hai	还
+  - you	有 🈶 又 由
+  - mei	没
+  - bing	并
+  - tong	同
+  - yu	与 于
+  - he	和
+  - ji	及 即 既
+  - shi	是 时
+  - la	啦 拉
+  - xing	行
+  - dian	点
+  - yao	要
+  - kan	看
+  - bei	被
+  - zuo	做
+  - dao	到 倒
+  - xiang	想 像 向
+  - zhi	只
+  - cai	才
+  - gang	刚
+  - jiu	就
+  # ta、na
+  - ta de	他的 她的 它的
+  - 'tad	他的 她的 它的'  # 英文单词 tad 造成 preedit 为 tad，从而让 ta d 的置顶未生效，需要明确再写上 tad
+  - ta men	他们 她们 它们
+  - ta men de	他们的 她们的 它们的
+  - na er	那儿 哪儿
+  - na ge	那个 哪个
+  - na xie	那些 哪些
+  - na li	那里 哪里
+  - na bian	那边 哪边
+  - na bian er	那边儿 哪边儿
+  - na wei	那位 哪位
+  # 简码
+  - zh	这
+  - d d	等等
+  - 'dd	等等'  # 覆盖英文单词 D&D
+  - d d d d	等等等等
+  - g g	刚刚
+  - c g g	才刚刚
+  - z d	知道
+  - b z d	不知道
+  - w w	往往
+  - h h	哈哈
+  - k k	看看
+  - c c	常常
+  - x x	想想 🤔 想象
+  - y w	因为
+  - s m	什么
+  - w s m	为什么
+  - s b s	是不是
+  - m s m	没什么
+  - s m d	什么的
+  - s m s	什么是
+  - 'sms	什么是'  # 覆盖英文单词 SMS
+  - s m a	什么啊
+  - 'sma	什么啊'  # 覆盖英文单词 S码
 
 
 # 主翻译器，拼音
