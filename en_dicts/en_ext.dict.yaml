@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2024-01-28"
+version: "2024-01-31"
 sort: by_weight
 ...
 # 一些杂项
@@ -1196,7 +1196,6 @@ TickTick	TickTick
 CHDBits	CHDBits
 M-Team	M-Team
 Vim	Vim
-Wikipedia	Wikipedia
 Google Voice	GoogleVoice
 Workers	Workers
 Cloudflare Workers	CloudflareWorkers
@@ -2429,7 +2428,9 @@ punctuators	punctuators
 QR code	QRcode
 sentry	sentry
 Grafana	Grafana
+Mirtle	Mirtle
 Hadoop	Hadoop
 HBase	HBase
 hive	hive
 Flink	Flink
+Palworld	Palworld
