@@ -2431,5 +2431,5 @@ sentry	sentry
 Grafana	Grafana
 Hadoop	Hadoop
 HBase	HBase
-Hive	Hive
+hive	hive
 Flink	Flink
