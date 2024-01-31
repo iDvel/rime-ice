@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-01-26"
+version: "2024-01-31"
 sort: by_weight
 ...
 # +_+
@@ -20604,7 +20604,7 @@ wight	wight
 wigs	wigs
 wiki	wiki
 Wikimedia	Wikimedia
-wikipedia	wikipedia
+Wikipedia	Wikipedia
 # wil	wil
 Wilcox	Wilcox
 wild	wild
