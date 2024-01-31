@@ -4,6 +4,10 @@
 
 
 
+## 2024-02-01 🆕
+
+🆕 `pin_cand_filter.lua` 置顶候选项 [#586](https://github.com/iDvel/rime-ice/issues/586)
+
 ## 2024-01-29 🆕 ⚠️
 
 🆕 [部件拆字方案](https://github.com/mirtlecn/rime-radical-pinyin) 反查、辅码 ([#643](https://github.com/iDvel/rime-ice/pull/643))

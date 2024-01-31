@@ -87,6 +87,7 @@ engine:
     - lua_filter@search@radical_pinyin              # 部件拆字辅码
     - lua_filter@autocap_filter                     # 英文自动大写
     - lua_filter@reduce_english_filter              # 降低部分英语单词在候选项的位置
+    - lua_filter@pin_cand_filter                    # 置顶候选项
     - uniquifier                                    # 去重
 
 
@@ -146,6 +147,42 @@ reduce_english_filter:
   tad, tail, taj, tar, tax, tec, ted, tel, ter, tex, tic, tied, tier, ties, tim, tin, tit, tour, tout, tum,
   wag, wand, womens, wap, wax, weir, won,
   yan, yen]
+
+
+# Lua 配置: 置顶候选项
+# 符合左边的 cand.preedit 时，按顺序置顶右边的候选项。只是提升已有候选项的顺序，没有自创编码的功能。
+# （对简繁转换无效，除非简繁文字一致 😰）
+#
+# preedit 是经过 translator/preedit_format 处理后的编码，如果是词语则包含空格。
+# ⚠️ 注意方案的 preedit_format 设定，如果 v 显示为 ü，那么左边也要写 ü
+# ⚠️ 双拼 ⚠️ 显示为全拼拼写就要写全拼，如 'shuang pin'，显示为双拼拼写就要写双拼，如 'ul pb' 😰
+#
+# 脚本自动额外生成 preedit 中最后一个空格后面的首字母和 zh ch sh，
+# 如 'ni hao' 会自动生成 'ni hao'、'ni h'
+# 如 'bu hao chi' 会自动生成 'bu hao chi'、'bu hao c'、'bu hao ch'
+# 如果同时写了 da zhuan 和 da zhong，输入 da z 时，排在前面的的优先，除非明确指定 'da z'。
+pin_cand_filter:
+  # 格式：编码<Tab>字词1<Space>字词2……
+  # 示例：
+  # - 'le	了'         # 输入 le 时，置顶「了」
+  # - 'la	啦'         # 输入 la 时，置顶「啦」
+  # - 'ta	他 她 它'    # 可以置顶多个字，按顺序排列
+  # - 'ta	啊'         # ❌ 编码不会产生的字词，不会生效且影响查找效率。自创编码的字词句可以写到 custom_phrase 中。
+  # - 'l	了 啦'      # 支持单编码或输入到一半的编码，输入 l 时，置顶「了、啦」
+  # - 's m	什么'       # 支持简拼，要和输入框的行为一致，有空格加空格
+  # - 'w s m	为什么' # 支持简拼，要和输入框的行为一致，有空格加空格
+  # - 'ni hao	你好 👋 拟好'  # 如果 emoji 被分割开了，可以任意调整 emoji 的位置
+  # # 以下两行，会额外生成 'da z' 'da zh' 的置顶，前两个候选项是「大专、大众」，先写的排在前面
+  # - da zhuang	大专
+  # - da zhong	大众
+  # # 如果明确定义了简码形式，则完全使用简码形式
+  # - da z	打字
+  # - da zh	打仗
+  # # ⚠️ 双拼
+  # - 'chong zhuang	重装'  # 保留现有的 preedit_format 时可用全拼
+  # - 'is vl	重装'      # 清空 preedit_format 时要用双拼拼写（示例为小鹤的）
+  # 如果有任意一个方案的 pin_cand_filter 为空则可能会在方案间串台，don't know why ...
+  - d	的
 
 
 # 主翻译器，拼音
