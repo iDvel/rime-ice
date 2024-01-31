@@ -2429,3 +2429,7 @@ punctuators	punctuators
 QR code	QRcode
 sentry	sentry
 Grafana	Grafana
+Hadoop	Hadoop
+HBase	HBase
+hive	hive
+Flink	Flink
