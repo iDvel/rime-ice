@@ -18,10 +18,12 @@ function M.init(env)
 
 	-- 如果定义了 'da zhuan' 或 'da zhong' ，会自动生成 'da z' 和 'da zh'。
 	-- 然而，如果明确定义了 'da z' 或 'da zh'，则会优先使用这些明确自定义的简码，用 set 来做判断。
+	if not list then return end -- no configuration found -> stop
 	local set = {}
 	for i = 0, list.size - 1 do
 		local preedit, texts = list:get_value_at(i).value:match("([^\t]+)\t(.+)")
-		if preedit and texts then
+		-- use #text to match both nil and empty value
+		if #preedit > 0 and #texts > 0 then
 			set[preedit] = true
 		end
 	end
@@ -54,7 +56,8 @@ function M.init(env)
 	M.pin_cands = {}
 	for i = 0, list.size - 1 do
 		local preedit, texts = list:get_value_at(i).value:match("([^\t]+)\t(.+)")
-		if preedit and texts then
+		-- use #text to match both nil and empty value
+		if #preedit > 0 and #texts > 0 then
 			M.pin_cands[preedit] = {}
 			-- 按照配置生成完整的拼写
 			for text in texts:gmatch("%S+") do
@@ -63,7 +66,7 @@ function M.init(env)
 			-- 额外处理包含空格的 preedit，增加最后一个拼音的首字母和 zh, ch, sh 的简码
 			if preedit:find(" ") then
 				local preceding_part, last_part = preedit:match("^(.+)%s(%S+)$")
-				if last_part then
+				if #last_part > 0 then
 					-- 生成最后一个拼音的简码拼写（最后一个空格后的首字母），如 ni hao 生成 ni h
 					local p1 = preceding_part .. " " .. last_part:sub(1, 1)
 					-- 只在没有明确定义此简码时才生成，已有的追加，没有的直接赋值
@@ -77,8 +80,7 @@ function M.init(env)
 						end
 					end
 					-- 生成最后一个拼音的 zh, ch, sh 的简码拼写（最后一个空格后以 zh ch sh 开头），如 zhi chi 生成 zhi ch
-					-- if last_part:match("^(zh|ch|sh)") then -- 😰 ChatGPT 诚欺我
-					if last_part:match("^zh") or last_part:match("^ch") or last_part:match("^sh") then
+					if last_part:match("^[zcs]h") then
 						local p2 = preceding_part .. " " .. last_part:sub(1, 2)
 						-- 只在没有明确定义此简码时才生成，已有的追加，没有的直接赋值
 						if not set[p2] then
@@ -98,11 +100,25 @@ function M.init(env)
 end
 
 function M.func(input)
+	-- If there is no configuration, no filtering will be performed
+	if not M.pin_cands then
+		for cand in input:iter() do yield(cand) end
+		return
+	end
 	local pined = {} -- 提升的候选项
 	local others = {} -- 其余候选项
 	local pined_count = 0
 	for cand in input:iter() do
 		local texts = M.pin_cands[cand.preedit]
+		local candtext = cand.text
+		if cand:get_dynamic_type() == "Shadow" then
+			-- handle cands converted by simplifier
+			local originalCand = cand:get_genuine()
+			if #originalCand.text == #candtext then
+				-- 笑|😄 candtext = 😄; 麼|么 candtext = 麼;
+				candtext = originalCand.text
+			end
+		end
 		if texts then
 			-- 给 pined 几个空字符串占位元素，后面直接 pined[idx] = cand 确保 pined 与 texts 顺序一致
 			if #pined < #texts then
@@ -111,7 +127,7 @@ function M.func(input)
 				end
 			end
 			-- 要置顶的放到 pined 中，其余的放到 others
-			local ok, idx = isInList(texts, cand.text)
+			local ok, idx = isInList(texts, candtext)
 			if ok then
 				pined[idx] = cand
 				pined_count = pined_count + 1
