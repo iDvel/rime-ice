@@ -86,3 +86,15 @@ is_in_user_dict = require("is_in_user_dict")
 -- get_record_filername() 函数中仅支持了 Windows、macOS、Linux
 cold_word_drop_processor = require("cold_word_drop.processor")
 cold_word_drop_filter = require("cold_word_drop.filter")
+
+-- 临时用的
+function debug_checker(input, env)
+	for cand in input:iter() do
+		yield(ShadowCandidate(
+			cand,
+			cand.type,
+			cand.text,
+			env.engine.context.input .. " - " .. env.engine.context:get_preedit().text .. " - " .. cand.preedit
+		))
+	end
+end
