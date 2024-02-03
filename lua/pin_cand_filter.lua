@@ -10,10 +10,6 @@ local function is_in_list(list, str)
 	return false, 0
 end
 
-local function starts_with(a, b)
-	return string.sub(a, 1, string.len(b)) == b
-end
-
 local M = {}
 
 function M.init(env)
@@ -35,9 +31,9 @@ function M.init(env)
 	-- 'l	了 啦' → M.pin_cands["l"] = {"了", "啦"}
 	-- 'ta	他 她 它' → M.pin_cands["ta"] = {"他", "她", "它"}
 	--
-	-- 无空格词汇，如 `nihao	你好` → M.pin_cands["nihao"] = {"你好"}
+	-- 无空格的键，如 `nihao	你好` → M.pin_cands["nihao"] = {"你好"}
 	--
-	-- 包含空格的词汇，同时生成简码的拼写（最后一个空格后的首字母），如：
+	-- 包含空格的的键，同时生成简码的拼写（最后一个空格后的首字母），如：
 	-- 'ni hao	你好 拟好' → M.pin_cands["nihao"] = {"你好", "拟好"}
 	--                   → M.pin_cands["nih"] = {"你好", "拟好"}
 	--
@@ -61,12 +57,18 @@ function M.init(env)
 	M.pin_cands = {}
 	for i = 0, list.size - 1 do
 		local preedit, texts = list:get_value_at(i).value:match("([^\t]+)\t(.+)")
-		-- use #text to match both nil and empty value
 		if #preedit > 0 and #texts > 0 then
+			-- 按照 " > " 或 " " 分割词汇
+			local delimiter = "\0"
+			if texts:find(" > ") then
+				texts = texts:gsub(" > ", delimiter)
+			else
+				texts = texts:gsub(" ", delimiter)
+			end
+			-- 按照键生成完整的拼写
 			local preedit_no_spaces = preedit:gsub(" ", "")
 			M.pin_cands[preedit_no_spaces] = {}
-			-- 按照配置生成完整的拼写
-			for text in texts:gmatch("%S+") do
+			for text in texts:gmatch("[^" .. delimiter .. "]+") do
 				table.insert(M.pin_cands[preedit_no_spaces], text)
 			end
 			-- 额外处理包含空格的 preedit，增加最后一个拼音的首字母和 zh, ch, sh 的简码
@@ -78,7 +80,7 @@ function M.init(env)
 					-- 只在没有明确定义此简码时才生成，已有的追加，没有的直接赋值
 					if not set[p1] then
 						if M.pin_cands[p1] ~= nil then
-							for text in texts:gmatch("%S+") do
+							for text in texts:gmatch("[^" .. delimiter .. "]+") do
 								table.insert(M.pin_cands[p1], text)
 							end
 						else
@@ -91,7 +93,7 @@ function M.init(env)
 						-- 只在没有明确定义此简码时才生成，已有的追加，没有的直接赋值
 						if not set[p2] then
 							if M.pin_cands[p2] ~= nil then
-								for text in texts:gmatch("%S+") do
+								for text in texts:gmatch("[^" .. delimiter .. "]+") do
 									table.insert(M.pin_cands[p2], text)
 								end
 							else
@@ -112,21 +114,33 @@ function M.func(input, env)
 		return
 	end
 
+	-- 当前输入框的 preedit，未经过方案 translator/preedit_format 转换
+	-- 输入 nihaoshij 则为 nihaoshij，选择了「你好」后变成 你好shij
+	local full_preedit = env.engine.context:get_preedit().text
+	-- 非汉字部分的 preedit，如 shij
+	local letter_only_preedit = string.gsub(full_preedit, "[^a-zA-Z]", "")
+	-- 是否正在选词（已经选择了至少一个字词，如 `你好shij` 这种状态）
+	-- local isSelecting = full_preedit ~= letter_only_preedit
+
 	local pined = {} -- 提升的候选项
 	local others = {} -- 其余候选项
 	local pined_count = 0
 
 	for cand in input:iter() do
-		local preedit_no_spaces = cand.preedit:gsub(" ", "")
+		local cand_preedit_no_spaces = cand.preedit:gsub(" ", "")
 
-		-- 跳过不需要处理的部分，这样期望置顶的字词在句子开头及输入到一半时也会被置顶
-		if M.pin_cands[preedit_no_spaces] == nil then
+		-- 无关的输入直接 break
+		if string.find(letter_only_preedit, "^" .. cand_preedit_no_spaces) == nil then
 			yield(cand)
-			goto continue
+			break
 		end
 
-		local texts = M.pin_cands[preedit_no_spaces]
-		if texts then
+		local texts = M.pin_cands[cand_preedit_no_spaces]
+
+		-- 跳过不需要处理的部分，对后续的候选项排序
+		if texts == nil then
+			yield(cand)
+		else
 			-- 给 pined 几个空字符串占位元素，后面直接 pined[idx] = cand 确保 pined 与 texts 顺序一致
 			if #pined < #texts then
 				for _ = 1, #texts do
@@ -134,17 +148,17 @@ function M.func(input, env)
 				end
 			end
 			-- 处理简繁转换后的问题
-			local candtext = cand.text
+			local cand_text = cand.text
 			if cand:get_dynamic_type() == "Shadow" then
 				-- handle cands converted by simplifier
 				local originalCand = cand:get_genuine()
-				if #originalCand.text == #candtext then
-					-- 笑|😄 candtext = 😄; 麼|么 candtext = 麼;
-					candtext = originalCand.text
+				if #originalCand.text == #cand_text and not is_in_list({ "↑", "←", "→", "↓", "丶", "✅", "✔", "⭕" }, cand.text) then
+					-- 笑|😄 cand_text = 😄; 麼|么 cand_text = 麼;
+					cand_text = originalCand.text
 				end
 			end
 			-- 要置顶的放到 pined 中，其余的放到 others
-			local ok, idx = is_in_list(texts, candtext)
+			local ok, idx = is_in_list(texts, cand_text)
 			if ok then
 				pined[idx] = cand
 				pined_count = pined_count + 1
@@ -155,12 +169,7 @@ function M.func(input, env)
 			if pined_count == #texts or #others > 50 then
 				break
 			end
-		else
-			table.insert(others, cand)
-			break
 		end
-
-		::continue::
 	end
 
 	-- yield pined others 及后续的候选项
