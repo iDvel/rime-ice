@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2024-01-31"
+version: "2024-02-03"
 sort: by_weight
 ...
 # 一些杂项
@@ -766,6 +766,7 @@ IPN	IPN
 IPTV	IPTV
 iStat Menus	iStatMenus
 iTerm	iTerm
+iTerm2	iTerm2
 iTunes	iTunes
 iTunes Connect	iTunesConnect
 iTunes Match	iTunesMatch
@@ -818,8 +819,7 @@ OneNote	OneNote
 OS	OS
 Operating System	OS
 Operating System	OperatingSystem
-Overcast	Overcast
-Overflow	Overflow
+overcast	overcast
 PaintCode	PaintCode
 Parallels Desktop	ParallelsDesktop
 PayPal	PayPal
@@ -1421,13 +1421,10 @@ PopCap Games	PopCapGames
 Cyberpunk	Cyberpunk
 Kotlin	Kotlin
 PhpStorm	PhpStorm
-Rider	Rider
 Datalore	Datalore
 DataSpell	DataSpell
 RubyMine	RubyMine
 AppCode	AppCode
-PyCharm Edu	PyCharmEdu
-IntelliJ IDEA Edu	IntelliJIDEAEdu
 Code With Me	CodeWithMe
 JetBrains Mono	JetBrainsMono
 JVM	JVM
@@ -2410,7 +2407,6 @@ sudo	sudo
 flypy	flypy
 traefik	traefik
 deepin	deepin
-Arch Linux CN	ArchLinuxCN
 srv	srv
 usr	usr
 bin	bin
@@ -2437,3 +2433,7 @@ Palworld	Palworld
 lark	lark
 submodule	submodule
 submodules	submodules
+Writerside	Writerside
+groundhog	groundhog
+groundhogs	groundhogs
+Writerside	Writerside

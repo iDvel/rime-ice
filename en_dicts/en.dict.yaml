@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-01-31"
+version: "2024-02-03"
 sort: by_weight
 ...
 # +_+
@@ -11428,11 +11428,11 @@ marcel	marcel
 March	March
 march	march
 marching	marching
-marcia	marcia
-marco	marco
+Marcia	Marcia
+Marco	Marco
 Marcos	Marcos
 marcus	marcus
-mardi	mardi
+# mardi	mardi
 mare	mare
 Margaret	Margaret
 margin	margin
@@ -11904,8 +11904,8 @@ mileage	mileage
 miles	miles
 milestone	milestone
 milestones	milestones
-milf	milf
-milfhunter	milfhunter
+# milf	milf
+# milfhunter	milfhunter
 Milford	Milford
 milfs	milfs
 milfseeker	milfseeker
@@ -19306,7 +19306,7 @@ travels	travels
 traverse	traverse
 travesti	travesti
 travestis	travestis
-travis	travis
+Travis	Travis
 tray	tray
 trays	trays
 tread	tread
