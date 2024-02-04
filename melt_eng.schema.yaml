@@ -112,17 +112,16 @@ algebra_common:
   - derive/[@]//
   - derive/[-]//
   - derive/[_]//
-  # 下面带 ⓘ 的，是为了中英混输词库不派生出纯大写
   # 派生无任何非字母数字字符的拼写
-  - derive/[^a-zA-Z0-9ⓘ]//
+  - derive/[^a-zA-Z0-9]//
   # 禁用非英文、数字开头的编码
-  - erase/^[^a-zA-Z0-9ⓘ].+$/
+  - erase/^[^a-zA-Z0-9].+$/
   # 全小写
   - derive/^.+$/\L$0/
   # 全大写
-  - derive/^(?!ⓘ).+$/\U$0/
+  - derive/^.+$/\U$0/
   # 首字母大写
-  - derive/^(?!ⓘ)./\U$0/
+  - derive/^./\U$0/
   # 前 2~10 个字母大写
   - derive/^([a-z]{2})/\U$1/
   - derive/^([a-z]{3})/\U$1/
@@ -133,9 +132,6 @@ algebra_common:
   - derive/^([a-z]{8})/\U$1/
   - derive/^([a-z]{9})/\U$1/
   - derive/^([a-z]{10})/\U$1/
-  # 派生中英混输词库（词库编码以ⓘ开头），只派生出原始拼写与全小写
-  - derive/^ⓘ(.+)$/$1/
-  - derive/^ⓘ(.+)$/\L$1/
 
 # 全拼
 algebra_rime_ice:
