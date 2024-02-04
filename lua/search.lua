@@ -1,10 +1,9 @@
--- search.lua
--- 拼音辅码查询
 -- Copyright (C) Mirtle <mirtle.cn@outlook.com>
--- Distributed under terms of the MIT license.
--- select_notifier 逻辑取自 AuxFilter
+-- [CC BY 3.0 DEED](https://creativecommons.org/licenses/by/3.0/deed)
 
--- 使用说明：<https://github.com/mirtlecn/rime-radical-pinyin/search.lua.md>
+-- 使用说明：<https://github.com/mirtlecn/rime-radical-pinyin/blob/master/search.lua.md>
+
+-- 感谢 [AuxFilter](https://github.com/HowcanoeWang/rime-lua-aux-code/blob/main/lua/aux_code.lua) 提供参考
 
 local function alt_lua_punc(s)
     if s then
@@ -173,7 +172,7 @@ function f.func(input, env)
     end
 
     -- 查字时是否单字优先
-    local if_single_char_first = env.engine.context:get_option("single_char")
+    local if_single_char_first = env.engine.context:get_option("search_single_char")
 
     local dict_table
     if f.if_schema_lookup then

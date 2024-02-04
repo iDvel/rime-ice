@@ -32,7 +32,7 @@ switches:
     reset: 1
   - name: full_shape
     states: [ 半角, 全角 ]
-  - name: single_char  # search.lua 的功能开关，辅码查词时是否单字优先
+  - name: search_single_char  # search.lua 的功能开关，辅码查词时是否单字优先
     abbrev: [词, 单]
     states: [正常, 单字]
 
