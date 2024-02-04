@@ -112,6 +112,10 @@ algebra_common:
   - derive/[@]//
   - derive/[-]//
   - derive/[_]//
+  # 派生无任何非字母数字字符的拼写
+  - derive/[^a-zA-Z0-9]//
+  # 禁用非英文、数字开头的编码
+  - erase/^[^a-zA-Z0-9].+$/
   # 全小写
   - derive/^.+$/\L$0/
   # 全大写
