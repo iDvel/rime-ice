@@ -30,10 +30,4 @@ install_files: >-
   radical_pinyin.dict.yaml
   melt_eng.schema.yaml
   melt_eng.dict.yaml
-  melt_eng_double_pinyin.dict.yaml
-  melt_eng_abc.dict.yaml
-  melt_eng_mspy.dict.yaml
-  melt_eng_sogou.dict.yaml
-  melt_eng_flypy.dict.yaml
-  melt_eng_ziguang.dict.yaml
   custom_phrase.txt

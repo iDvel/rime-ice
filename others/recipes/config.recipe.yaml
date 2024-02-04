@@ -20,6 +20,5 @@ patch_files:
           __include: radical_pinyin.schema.yaml:/algebra_${schema:-flypy}
   melt_eng.custom.yaml:
     - patch/+:
-        translator/dictionary: melt_eng_${schema:-flypy}
         speller/algebra:
           __include: melt_eng.schema.yaml:/algebra_${schema:-flypy}
