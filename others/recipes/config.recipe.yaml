@@ -1,0 +1,24 @@
+# encoding: utf-8
+---
+recipe:
+  Rx: others/recipes/config
+  args:
+    - schema=flypy
+  description: >-
+    Customize input schema to enable double_pinyin.
+      - flypy（小鹤双拼）
+      - double_pinyin（自然码双拼）
+      - mspy（微软双拼）
+      - sogou（搜狗双拼）
+      - abc（智能 ABC 双拼）
+      - ziguang（紫光双拼）
+
+patch_files:
+  radical_pinyin.custom.yaml:
+    - patch/+:
+        speller/algebra:
+          __include: radical_pinyin.schema.yaml:/algebra_${schema:-flypy}
+  melt_eng.custom.yaml:
+    - patch/+:
+        speller/algebra:
+          __include: melt_eng.schema.yaml:/algebra_${schema:-flypy}
