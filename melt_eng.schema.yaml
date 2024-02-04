@@ -115,9 +115,9 @@ algebra_common:
   # 全小写
   - derive/^.+$/\L$0/
   # 全大写
-  - derive/^(?!ⓘ).+$/\U$0/
+  - derive/^(?!).+$/\U$0/
   # 首字母大写
-  - derive/^(?!ⓘ)./\U$0/
+  - derive/^(?!)./\U$0/
   # 前 2~10 个字母大写
   - derive/^([a-z]{2})/\U$1/
   - derive/^([a-z]{3})/\U$1/
