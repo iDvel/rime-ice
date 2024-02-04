@@ -1,903 +1,908 @@
 # Rime table
-#@/db_name	cn_en_ziguang
+# coding: utf-8
+#@/db_name	cn_en_ziguang.txt
 #@/db_type	tabledb
-#@/tick	1
-
-4S店	4sdf	1
-4S店	4Sdf	1
-A4纸	a4ui	1
-A4纸	A4ui	1
-A4腰	a4yq	1
-A4腰	A4yq	1
-AAA级	aaaji	1
-AAA级	AAAji	1
-AA制	aaui	1
-AA制	AAui	1
-AA吧	aaba	1
-AA吧	AAba	1
-AB型	abx;	1
-AB型	ABx;	1
-AB型血	abx;xn	1
-AB型血	ABx;xn	1
-AB血型	abxnx;	1
-AB血型	ABxnx;	1
-AD钙奶	adgpnp	1
-AD钙奶	ADgpnp	1
-Android版	androidbr	1
-Android版	Androidbr	1
-Android版本	androidbrbw	1
-Android版本	Androidbrbw	1
-Android端	androiddl	1
-Android端	Androiddl	1
-ASCII码	asciima	1
-ASCII码	ASCIIma	1
-ATM机	atmji	1
-ATM机	ATMji	1
-AV女优	avnvyz	1
-AV女优	AVnvyz	1
-A出口	aaukz	1
-A出口	Aaukz	1
-A区	aqu	1
-A区	Aqu	1
-A卡	aka	1
-A卡	Aka	1
-A口	akz	1
-A口	Akz	1
-A和B	aheb	1
-A和B	AheB	1
-A型	ax;	1
-A型	Ax;	1
-A型号	ax;hq	1
-A型号	Ax;hq	1
-A型血	ax;xn	1
-A型血	Ax;xn	1
-A塔	ata	1
-A塔	Ata	1
-A壳	ake	1
-A壳	Ake	1
-A屏	ap;	1
-A屏	Ap;	1
-A座	azo	1
-A座	Azo	1
-A杖	aus	1
-A杖	Aus	1
-A杯	abk	1
-A杯	Abk	1
-A栋	adh	1
-A栋	Adh	1
-A楼	alz	1
-A楼	Alz	1
-A款	akl	1
-A款	Akl	1
-A点	adf	1
-A点	Adf	1
-A片	apf	1
-A片	Apf	1
-A班	abr	1
-A班	Abr	1
-A盘	apr	1
-A盘	Apr	1
-A级	aji	1
-A级	Aji	1
-A组	azu	1
-A组	Azu	1
-A罩	auq	1
-A罩	Auq	1
-A罩杯	auqbk	1
-A罩杯	Auqbk	1
-A股	agu	1
-A股	Agu	1
-A血型	axnx;	1
-A血型	Axnx;	1
-A面	amf	1
-A面	Amf	1
-Backspace键	backspacejf	1
-Backspace键	Backspacejf	1
-BB机	bbji	1
-BB机	BBji	1
-Beta版	betabr	1
-Beta版	Betabr	1
-Beta版本	betabrbw	1
-Beta版本	Betabrbw	1
-Big胆	bigdr	1
-Big胆	Bigdr	1
-BOSS直聘	bossuipy	1
-BOSS直聘	BOSSuipy	1
-B出口	baukz	1
-B出口	Baukz	1
-B区	bqu	1
-B区	Bqu	1
-B口	bkz	1
-B口	Bkz	1
-B哥	bge	1
-B哥	Bge	1
-B型	bx;	1
-B型	Bx;	1
-B型号	bx;hq	1
-B型号	Bx;hq	1
-B型血	bx;xn	1
-B型血	Bx;xn	1
-B壳	bke	1
-B壳	Bke	1
-B座	bzo	1
-B座	Bzo	1
-B杯	bbk	1
-B杯	Bbk	1
-B栋	bdh	1
-B栋	Bdh	1
-B楼	blz	1
-B楼	Blz	1
-B款	bkl	1
-B款	Bkl	1
-B淋巴细胞	blybaxibq	1
-B淋巴细胞	Blybaxibq	1
-B点	bdf	1
-B点	Bdf	1
-B班	bbr	1
-B班	Bbr	1
-B盘	bpr	1
-B盘	Bpr	1
-B站	bur	1
-B站	Bur	1
-B级	bji	1
-B级	Bji	1
-B组	bzu	1
-B组	Bzu	1
-B细胞	bxibq	1
-B细胞	Bxibq	1
-B罩	buq	1
-B罩	Buq	1
-B罩杯	buqbk	1
-B罩杯	Buqbk	1
-B股	bgu	1
-B股	Bgu	1
-B血型	bxnx;	1
-B血型	Bxnx;	1
-B超	baq	1
-B超	Baq	1
-B面	bmf	1
-B面	Bmf	1
-CapsLock键	capslockjf	1
-CapsLock键	CapsLockjf	1
-Caps键	capsjf	1
-Caps键	Capsjf	1
-Chrome系	chromexi	1
-Chrome系	Chromexi	1
-Chromium系	chromiumxi	1
-Chromium系	Chromiumxi	1
-Cinity厅	cinityt;	1
-Cinity厅	Cinityt;	1
-Cmd键	cmdjf	1
-Cmd键	Cmdjf	1
-Command键	commandjf	1
-Command键	Commandjf	1
-Control键	controljf	1
-Control键	Controljf	1
-Ctrl键	ctrljf	1
-Ctrl键	Ctrljf	1
-CT检查	ctjfaa	1
-CT检查	CTjfaa	1
-C出口	caukz	1
-C出口	Caukz	1
-C区	cqu	1
-C区	Cqu	1
-C口	ckz	1
-C口	Ckz	1
-C型	cx;	1
-C型	Cx;	1
-C型号	cx;hq	1
-C型号	Cx;hq	1
-C壳	cke	1
-C壳	Cke	1
-C座	czo	1
-C座	Czo	1
-C杯	cbk	1
-C杯	Cbk	1
-C栋	cdh	1
-C栋	Cdh	1
-C楼	clz	1
-C楼	Clz	1
-C款	ckl	1
-C款	Ckl	1
-C班	cbr	1
-C班	Cbr	1
-C盘	cpr	1
-C盘	Cpr	1
-C级	cji	1
-C级	Cji	1
-C组	czu	1
-C组	Czu	1
-C罗	clo	1
-C罗	Clo	1
-C罩	cuq	1
-C罩	Cuq	1
-C罩杯	cuqbk	1
-C罩杯	Cuqbk	1
-C语言	cyuyr	1
-C语言	Cyuyr	1
-C面	cmf	1
-C面	Cmf	1
-DDoS攻击	ddosghji	1
-DDoS攻击	DDoSghji	1
-Delete键	deletejf	1
-Delete键	Deletejf	1
-Del键	deljf	1
-Del键	Deljf	1
-DJ版	djbr	1
-DJ版	DJbr	1
-DJ舞曲	djwuqu	1
-DJ舞曲	DJwuqu	1
-DNA检测	dnajfce	1
-DNA检测	DNAjfce	1
-DNS劫持	dnsjdai	1
-DNS劫持	DNSjdai	1
-DNS污染	dnswurr	1
-DNS污染	DNSwurr	1
-Dock栏	docklr	1
-Dock栏	Docklr	1
-DoS攻击	dosghji	1
-DoS攻击	DoSghji	1
-DVD版	dvdbr	1
-DVD版	DVDbr	1
-D之一族	duiyizu	1
-D之一族	Duiyizu	1
-D之国	duigo	1
-D之国	Duigo	1
-D出口	daukz	1
-D出口	Daukz	1
-D区	dqu	1
-D区	Dqu	1
-D口	dkz	1
-D口	Dkz	1
-D型	dx;	1
-D型	Dx;	1
-D型号	dx;hq	1
-D型号	Dx;hq	1
-D壳	dke	1
-D壳	Dke	1
-D座	dzo	1
-D座	Dzo	1
-D杯	dbk	1
-D杯	Dbk	1
-D栋	ddh	1
-D栋	Ddh	1
-D楼	dlz	1
-D楼	Dlz	1
-D款	dkl	1
-D款	Dkl	1
-D班	dbr	1
-D班	Dbr	1
-D盘	dpr	1
-D盘	Dpr	1
-D级	dji	1
-D级	Dji	1
-D组	dzu	1
-D组	Dzu	1
-D罩	duq	1
-D罩	Duq	1
-D罩杯	duqbk	1
-D罩杯	Duqbk	1
-D面	dmf	1
-D面	Dmf	1
-Eject键	ejectjf	1
-Eject键	Ejectjf	1
-Enter键	enterjf	1
-Enter键	Enterjf	1
-Esc键	escjf	1
-Esc键	Escjf	1
-Eul的神圣法杖	euldeiwitfaus	1
-Eul的神圣法杖	Euldeiwitfaus	1
-E出口	eaukz	1
-E出口	Eaukz	1
-E区	equ	1
-E区	Equ	1
-E口	ekz	1
-E口	Ekz	1
-E型	ex;	1
-E型	Ex;	1
-E型号	ex;hq	1
-E型号	Ex;hq	1
-E座	ezo	1
-E座	Ezo	1
-e招贷	euqdp	1
-E杯	ebk	1
-E杯	Ebk	1
-E栋	edh	1
-E栋	Edh	1
-E楼	elz	1
-E楼	Elz	1
-E款	ekl	1
-E款	Ekl	1
-E盘	epr	1
-E盘	Epr	1
-E组	ezu	1
-E组	Ezu	1
-E罩	euq	1
-E罩	Euq	1
-E罩杯	euqbk	1
-E罩杯	Euqbk	1
-Fn键	fnjf	1
-Fn键	Fnjf	1
-F出口	faukz	1
-F出口	Faukz	1
-F区	fqu	1
-F区	Fqu	1
-F口	fkz	1
-F口	Fkz	1
-F型	fx;	1
-F型	Fx;	1
-F型号	fx;hq	1
-F型号	Fx;hq	1
-F座	fzo	1
-F座	Fzo	1
-F杯	fbk	1
-F杯	Fbk	1
-F栋	fdh	1
-F栋	Fdh	1
-F楼	flz	1
-F楼	Flz	1
-F款	fkl	1
-F款	Fkl	1
-F盘	fpr	1
-F盘	Fpr	1
-F组	fzu	1
-F组	Fzu	1
-F罩	fuq	1
-F罩	Fuq	1
-F罩杯	fuqbk	1
-F罩杯	Fuqbk	1
-Go圣经	goitj;	1
-Go圣经	Goitj;	1
-Go程	goat	1
-Go程	Goat	1
-Go语言	goyuyr	1
-Go语言	Goyuyr	1
-G杯	gbk	1
-G杯	Gbk	1
-G点	gdf	1
-G点	Gdf	1
-G盘	gpr	1
-G盘	Gpr	1
-G罩	guq	1
-G罩	Guq	1
-G罩杯	guqbk	1
-G罩杯	Guqbk	1
-G胖	gps	1
-G胖	Gps	1
-H杯	hbk	1
-H杯	Hbk	1
-H版	hbr	1
-H版	Hbr	1
-H罩	huq	1
-H罩	Huq	1
-H罩杯	huqbk	1
-H罩杯	Huqbk	1
-H股	hgu	1
-H股	Hgu	1
-ICP备案	icpbkor	1
-ICP备案	ICPbkor	1
-IE浏览器	ieljlrqi	1
-IE浏览器	IEljlrqi	1
-iOS版	iosbr	1
-iOS版	iOSbr	1
-iOS版本	iosbrbw	1
-iOS版本	iOSbrbw	1
-iOS端	iosdl	1
-iOS端	iOSdl	1
-IP卡	ipka	1
-IP卡	IPka	1
-IP地址	ipdiui	1
-IP地址	IPdiui	1
-IP电话	ipdfhx	1
-IP电话	IPdfhx	1
-IT业	itye	1
-IT业	ITye	1
-IT界	itjd	1
-IT界	ITjd	1
-IT行业	ithsye	1
-IT行业	IThsye	1
-J·K·罗琳	jkloly	1
-J·K·罗琳	JKloly	1
-J·R·R·托尔金	jrrtoojjy	1
-J·R·R·托尔金	JRRtoojjy	1
-J盘	jpr	1
-J盘	Jpr	1
-K宝	kbq	1
-K宝	Kbq	1
-K歌	kge	1
-K歌	Kge	1
-K歌王	kgews	1
-K歌王	Kgews	1
-K粉	kfw	1
-K粉	Kfw	1
-K线	kxf	1
-K线	Kxf	1
-K线图	kxftu	1
-K线图	Kxftu	1
-Lite版	litebr	1
-Lite版	Litebr	1
-Lite版本	litebrbw	1
-Lite版本	Litebrbw	1
-L码	lma	1
-L码	Lma	1
-macOS版	macosbr	1
-macOS版	macOSbr	1
-macOS版本	macosbrbw	1
-macOS版本	macOSbrbw	1
-macOS端	macosdl	1
-macOS端	macOSdl	1
-MAC地址	macdiui	1
-MAC地址	MACdiui	1
-Mac版	macbr	1
-Mac版	Macbr	1
-Mac版本	macbrbw	1
-Mac版本	Macbrbw	1
-Mac端	macdl	1
-Mac端	Macdl	1
-M码	mma	1
-M码	Mma	1
-M系列	mxild	1
-M系列	Mxild	1
-N卡	nka	1
-N卡	Nka	1
-N多	ndo	1
-N多	Ndo	1
-N多个	ndoge	1
-N多个	Ndoge	1
-N多人	ndorw	1
-N多人	Ndorw	1
-N年	nnf	1
-N年	Nnf	1
-N次	nci	1
-N次	Nci	1
-n次方	ncifs	1
-N股	ngu	1
-N股	Ngu	1
-N遍	nbf	1
-N遍	Nbf	1
-OK不	okbu	1
-OK不	OKbu	1
-OK么	okme	1
-OK么	OKme	1
-OK了	okle	1
-OK了	OKle	1
-OK了吗	oklema	1
-OK了吗	OKlema	1
-OK吗	okma	1
-OK吗	OKma	1
-OK呀	okya	1
-OK呀	OKya	1
-OK啊	okoa	1
-OK啊	OKoa	1
-OK啦	okla	1
-OK啦	OKla	1
-OK嘛	okma	1
-OK嘛	OKma	1
-Option键	optionjf	1
-Option键	Optionjf	1
-Opt键	optjf	1
-Opt键	Optjf	1
-O不OK	obuok	1
-O不OK	ObuOK	1
-O型	ox;	1
-O型	Ox;	1
-O型血	ox;xn	1
-O型血	Ox;xn	1
-O血型	oxnx;	1
-O血型	Oxnx;	1
-Papi酱	papijg	1
-Papi酱	Papijg	1
-PC版	pcbr	1
-PC版	PCbr	1
-PC版本	pcbrbw	1
-PC版本	PCbrbw	1
-PC端	pcdl	1
-PC端	PCdl	1
-PIN码	pinma	1
-PIN码	PINma	1
-PK赛	pksp	1
-PK赛	PKsp	1
-POS机	posji	1
-POS机	POSji	1
-Pro版	probr	1
-Pro版	Probr	1
-Pro版本	probrbw	1
-Pro版本	Probrbw	1
-PUK码	pukma	1
-PUK码	PUKma	1
-PVC管	pvcgl	1
-PVC管	PVCgl	1
-P一下	pyixx	1
-P一下	Pyixx	1
-P个图	pgetu	1
-P个图	Pgetu	1
-P图	ptu	1
-P图	Ptu	1
-P社	pie	1
-P社	Pie	1
-P站	pur	1
-P站	Pur	1
-QQ三国	qqsrgo	1
-QQ三国	QQsrgo	1
-QQ会员	qqhnyl	1
-QQ会员	QQhnyl	1
-QQ号	qqhq	1
-QQ号	QQhq	1
-QQ号码	qqhqma	1
-QQ号码	QQhqma	1
-QQ堂	qqts	1
-QQ堂	QQts	1
-QQ好友	qqhqyz	1
-QQ好友	QQhqyz	1
-QQ拼音	qqpyyy	1
-QQ拼音	QQpyyy	1
-QQ游戏	qqyzxi	1
-QQ游戏	QQyzxi	1
-QQ游戏大厅	qqyzxidat;	1
-QQ游戏大厅	QQyzxidat;	1
-QQ秀	qqxj	1
-QQ秀	QQxj	1
-QQ空间	qqkhjf	1
-QQ空间	QQkhjf	1
-QQ群	qqqm	1
-QQ群	QQqm	1
-QQ输入法	qqiurufa	1
-QQ输入法	QQiurufa	1
-QQ邮箱	qqyzxg	1
-QQ邮箱	QQyzxg	1
-QQ音乐	qqyyyn	1
-QQ音乐	QQyyyn	1
-QQ音速	qqyysu	1
-QQ音速	QQyysu	1
-QQ飞车	qqfkae	1
-QQ飞车	QQfkae	1
-Q币	qbi	1
-Q币	Qbi	1
-Q弹	qtr	1
-Q弹	Qtr	1
-Q我	qwo	1
-Q我	Qwo	1
-Q版	qbr	1
-Q版	Qbr	1
-Return键	returnjf	1
-Return键	Returnjf	1
-R级	rji	1
-R级	Rji	1
-Server酱	serverjg	1
-Server酱	Serverjg	1
-Shift键	shiftjf	1
-Shift键	Shiftjf	1
-SIM卡	simka	1
-SIM卡	SIMka	1
-Space键	spacejf	1
-Space键	Spacejf	1
-Steam云	steamym	1
-Steam云	Steamym	1
-Switch版	switchbr	1
-Switch版	Switchbr	1
-Switch版本	switchbrbw	1
-Switch版本	Switchbrbw	1
-S形	sx;	1
-S形	Sx;	1
-S曲线	squxf	1
-S曲线	Squxf	1
-S码	sma	1
-S码	Sma	1
-S级	sji	1
-S级	Sji	1
-S股	sgu	1
-S股	Sgu	1
-Tab键	tabjf	1
-Tab键	Tabjf	1
-Telegram群	telegramqm	1
-Telegram群	Telegramqm	1
-TF卡	tfka	1
-TF卡	TFka	1
-TF版	tfbr	1
-TF版	TFbr	1
-TF版本	tfbrbw	1
-TF版本	TFbrbw	1
-TG群	tgqm	1
-TG群	TGqm	1
-TV版	tvbr	1
-TV版	TVbr	1
-TV版本	tvbrbw	1
-TV版本	TVbrbw	1
-T台	ttp	1
-T台	Ttp	1
-T型台	tx;tp	1
-T型台	Tx;tp	1
-T恤	txu	1
-T恤	Txu	1
-T恤衫	txuir	1
-T恤衫	Txuir	1
-T淋巴细胞	tlybaxibq	1
-T淋巴细胞	Tlybaxibq	1
-T细胞	txibq	1
-T细胞	Txibq	1
-UIM卡	uimka	1
-UIM卡	UIMka	1
-Up主	upuu	1
-Up主	Upuu	1
-USB口	usbkz	1
-USB口	USBkz	1
-USB接口	usbjdkz	1
-USB接口	USBjdkz	1
-USB线	usbxf	1
-USB线	USBxf	1
-USIM卡	usimka	1
-USIM卡	USIMka	1
-UU加速器	uujxsuqi	1
-UU加速器	UUjxsuqi	1
-U型锁	ux;so	1
-U型锁	Ux;so	1
-U形	ux;	1
-U形	Ux;	1
-U形管	ux;gl	1
-U形管	Ux;gl	1
-U盘	upr	1
-U盘	Upr	1
-U盾	udm	1
-U盾	Udm	1
-VIP中P	vipuhp	1
-VIP中P	VIPuhP	1
-VIP卡	vipka	1
-VIP卡	VIPka	1
-V字仇杀队	vziaziadn	1
-V字仇杀队	Vziaziadn	1
-V字形	vzix;	1
-V字形	Vzix;	1
-V字领	vzil;	1
-V字领	Vzil;	1
-V怪客	vgyke	1
-V怪客	Vgyke	1
-V煞	via	1
-V煞	Via	1
-V社	vie	1
-V社	Vie	1
-V站	vur	1
-V站	Vur	1
-V领	vl;	1
-V领	Vl;	1
-Web开发	webkpfa	1
-Web开发	Webkpfa	1
-Web版	webbr	1
-Web版	Webbr	1
-Web版本	webbrbw	1
-Web版本	Webbrbw	1
-Web端	webdl	1
-Web端	Webdl	1
-Wi-Fi密码	wifimima	1
-Wi-Fi密码	WiFimima	1
-Windows版	windowsbr	1
-Windows版	Windowsbr	1
-Windows版本	windowsbrbw	1
-Windows版本	Windowsbrbw	1
-Windows端	windowsdl	1
-Windows端	Windowsdl	1
-Win版	winbr	1
-Win版	Winbr	1
-Win版本	winbrbw	1
-Win版本	Winbrbw	1
-Win端	windl	1
-Win端	Windl	1
-X·德雷克	xdelkke	1
-X·德雷克	Xdelkke	1
-X光	xgg	1
-X光	Xgg	1
-X光片	xggpf	1
-X光片	Xggpf	1
-X刀	xdq	1
-X刀	Xdq	1
-X和Y	xhey	1
-X和Y	XheY	1
-X射线	xiexf	1
-X射线	Xiexf	1
-X战警	xurj;	1
-X战警	Xurj;	1
-X教授	xjbiz	1
-X教授	Xjbiz	1
-X染色体	xrrseti	1
-X染色体	Xrrseti	1
-X档案	xdsor	1
-X档案	Xdsor	1
-X轴	xuz	1
-X轴	Xuz	1
-YY语音	yyyuyy	1
-YY语音	YYyuyy	1
-Y染色体	yrrseti	1
-Y染色体	Yrrseti	1
-Y轴	yuz	1
-Y轴	Yuz	1
-z变换	zbfhl	1
-Z轴	zuz	1
-Z轴	Zuz	1
-z逆变换	znibfhl	1
-三K党	srkds	1
-三K党	srKds	1
-三无Marblue	srwumarblue	1
-三无Marblue	srwuMarblue	1
-不OK	buok	1
-不OK	buOK	1
-丰田AE86	fttfae86	1
-丰田AE86	fttfAE86	1
-乔治·R·R·马丁	qbuirrmad;	1
-乔治·R·R·马丁	qbuiRRmad;	1
-二B	ojb	1
-二B	ojB	1
-互fo	hufo	1
-做B超	zobaq	1
-做B超	zoBaq	1
-傻B	iab	1
-傻B	iaB	1
-傻X	iax	1
-傻X	iaX	1
-充Q币	ahqbi	1
-充Q币	ahQbi	1
-公网IP	ghwsip	1
-公网IP	ghwsIP	1
-关底BOSS	gldiboss	1
-关底BOSS	gldiBOSS	1
-写bug	xdbug	1
-减CD	jfcd	1
-减CD	jfCD	1
-加Q	jxq	1
-加Q	jxQ	1
-加QQ	jxqq	1
-加QQ	jxQQ	1
-单边z变换	drbfzbfhl	1
-卡bug	kabug	1
-卡拉OK	kalaok	1
-卡拉OK	kalaOK	1
-发EMS	faems	1
-发EMS	faEMS	1
-周K线	uzkxf	1
-周K线	uzKxf	1
-周刊少年Jump	uzkriqnfjump	1
-周刊少年Jump	uzkriqnfJump	1
-哆啦A梦	dolaamt	1
-哆啦A梦	dolaAmt	1
-哥尔·D·罗杰	geojdlojd	1
-哥尔·D·罗杰	geojDlojd	1
-唱K	ask	1
-唱K	asK	1
-啥bug	iabug	1
-喊cut	hrcut	1
-嗑CP	kecp	1
-嗑CP	keCP	1
-圈X	qlx	1
-圈X	qlX	1
-多边兽Z	dobfizz	1
-多边兽Z	dobfizZ	1
-大V	dav	1
-大V	daV	1
-头文字D	tzwwzid	1
-头文字D	tzwwziD	1
-封IP	ftip	1
-封IP	ftIP	1
-小Baby	xbbaby	1
-小Baby	xbBaby	1
-就OK	jjok	1
-就OK	jjOK	1
-平A	p;a	1
-平A	p;A	1
-开party	kpparty	1
-异维A酸	yiwkasl	1
-异维A酸	yiwkAsl	1
-很OK	hwok	1
-很OK	hwOK	1
-我OK啊	wookoa	1
-我OK啊	woOKoa	1
-我叫MT	wojbmt	1
-我叫MT	wojbMT	1
-找bug	uqbug	1
-拍CT	ppct	1
-拍CT	ppCT	1
-换IP	hlip	1
-换IP	hlIP	1
-提bug	tibug	1
-改bug	gpbug	1
-日K线	rikxf	1
-日K线	riKxf	1
-智能ABC	uintabc	1
-智能ABC	uintABC	1
-智能ABC双拼	uintabcigpy	1
-智能ABC双拼	uintABCigpy	1
-智能ABC双拼方案	uintabcigpyfsor	1
-智能ABC双拼方案	uintABCigpyfsor	1
-智能ABC输入法	uintabciurufa	1
-智能ABC输入法	uintABCiurufa	1
-月K线	ynkxf	1
-月K线	ynKxf	1
-有bug	yzbug	1
-查bug	aabug	1
-查IP	aaip	1
-查IP	aaIP	1
-江南Style	jgnrstyle	1
-江南Style	jgnrStyle	1
-没bug	mkbug	1
-没有bug	mkyzbug	1
-波特卡斯·D·艾斯	botekasidopsi	1
-波特卡斯·D·艾斯	botekasiDopsi	1
-炒CP	aqcp	1
-炒CP	aqCP	1
-牛B	njb	1
-牛B	njB	1
-特拉法尔加·D·瓦铁尔·罗	telafaojjxdwatdojlo	1
-特拉法尔加·D·瓦铁尔·罗	telafaojjxDwatdojlo	1
-立Flag	liflag	1
-立Flag	liFlag	1
-第N次	dinci	1
-第N次	diNci	1
-红Buff	hhbuff	1
-红Buff	hhBuff	1
-维A	wka	1
-维A	wkA	1
-维B	wkb	1
-维B	wkB	1
-维C	wkc	1
-维C	wkC	1
-维D	wkd	1
-维D	wkD	1
-维E	wke	1
-维E	wkE	1
-维E乳	wkeru	1
-维E乳	wkEru	1
-维K	wkk	1
-维K	wkK	1
-维生素A	wkitsua	1
-维生素A	wkitsuA	1
-维生素B	wkitsub	1
-维生素B	wkitsuB	1
-维生素C	wkitsuc	1
-维生素C	wkitsuC	1
-维生素D	wkitsud	1
-维生素D	wkitsuD	1
-维生素E	wkitsue	1
-维生素E	wkitsuE	1
-维生素E乳	wkitsueru	1
-维生素E乳	wkitsuEru	1
-维生素K	wkitsuk	1
-维生素K	wkitsuK	1
-老Baby	lqbaby	1
-老Baby	lqBaby	1
-老K	lqk	1
-老K	lqK	1
-腾讯QQ	ttxmqq	1
-腾讯QQ	ttxmQQ	1
-艾AA	opaa	1
-艾AA	opAA	1
-芒果TV	msgotv	1
-芒果TV	msgoTV	1
-芭比Q	babiq	1
-芭比Q	babiQ	1
-芭比Q了	babiqle	1
-芭比Q了	babiQle	1
-蒙奇·D·卡普	mtqidkapu	1
-蒙奇·D·卡普	mtqiDkapu	1
-蒙奇·D·路飞	mtqidlufk	1
-蒙奇·D·路飞	mtqiDlufk	1
-蒙奇·D·龙	mtqidlh	1
-蒙奇·D·龙	mtqiDlh	1
-蓝Buff	lrbuff	1
-蓝Buff	lrBuff	1
-藤子·F·不二雄	ttzifbuojxh	1
-藤子·F·不二雄	ttziFbuojxh	1
-装B	ugb	1
-装B	ugB	1
-谜拟Q	miniq	1
-谜拟Q	miniQ	1
-逗B	dzb	1
-逗B	dzB	1
-阿Q	oaq	1
-阿Q	oaQ	1
-阿Q正传	oaqutul	1
-阿Q正传	oaQutul	1
-阿Q精神	oaqj;iw	1
-阿Q精神	oaQj;iw	1
-阿Sir	oasir	1
-阿Sir	oaSir	1
-随身Wi-Fi	sniwwifi	1
-随身Wi-Fi	sniwWiFi	1
-马歇尔·D·蒂奇	maxdojddiqi	1
-马歇尔·D·蒂奇	maxdojDdiqi	1
+#
+# https://github.com/iDvel/rime-ice
+# ------- 中英混输词库 for 紫光双拼 -------
+# 由 others/cn_en.txt 自动生成
+#
+# 此行之后不能写注释
+X光	Xgg
+X光	xgg
+X光片	Xggpf
+X光片	xggpf
+X射线	Xiexf
+X射线	xiexf
+T恤	Txu
+T恤	txu
+T恤衫	Txuir
+T恤衫	txuir
+AD钙奶	ADgpnp
+AD钙奶	adgpnp
+UU加速器	UUjxsuqi
+UU加速器	uujxsuqi
+Cinity厅	Cinityt;
+Cinity厅	cinityt;
+Eul的神圣法杖	Euldeiwitfaus
+Eul的神圣法杖	euldeiwitfaus
+A杖	Aus
+A杖	aus
+红Buff	hhBuff
+红Buff	hhbuff
+蓝Buff	lrBuff
+蓝Buff	lrbuff
+老Baby	lqBaby
+老Baby	lqbaby
+小Baby	xbBaby
+小Baby	xbbaby
+艾AA	opAA
+艾AA	opaa
+炒CP	aqCP
+炒CP	aqcp
+嗑CP	keCP
+嗑CP	kecp
+U盘	Upr
+U盘	upr
+B站	Bur
+B站	bur
+V站	Vur
+V站	vur
+P站	Pur
+P站	pur
+大V	daV
+大V	dav
+Q币	Qbi
+Q币	qbi
+QQ号	QQhq
+QQ号	qqhq
+QQ号码	QQhqma
+QQ号码	qqhqma
+QQ空间	QQkhjf
+QQ空间	qqkhjf
+QQ群	QQqm
+QQ群	qqqm
+QQ邮箱	QQyzxg
+QQ邮箱	qqyzxg
+QQ音乐	QQyyyn
+QQ音乐	qqyyyn
+QQ拼音	QQpyyy
+QQ拼音	qqpyyy
+QQ会员	QQhnyl
+QQ会员	qqhnyl
+QQ好友	QQhqyz
+QQ好友	qqhqyz
+QQ输入法	QQiurufa
+QQ输入法	qqiurufa
+Dock栏	Docklr
+Dock栏	docklr
+阿Q精神	oaQj;iw
+阿Q精神	oaqj;iw
+Win版	Winbr
+Win版	winbr
+Win版本	Winbrbw
+Win版本	winbrbw
+Windows版	Windowsbr
+Windows版	windowsbr
+Windows版本	Windowsbrbw
+Windows版本	windowsbrbw
+Mac版	Macbr
+Mac版	macbr
+Mac版本	Macbrbw
+Mac版本	macbrbw
+macOS版	macOSbr
+macOS版	macosbr
+macOS版本	macOSbrbw
+macOS版本	macosbrbw
+iOS版	iOSbr
+iOS版	iosbr
+iOS版本	iOSbrbw
+iOS版本	iosbrbw
+Android版	Androidbr
+Android版	androidbr
+Android版本	Androidbrbw
+Android版本	androidbrbw
+Web版	Webbr
+Web版	webbr
+Web版本	Webbrbw
+Web版本	webbrbw
+PC端	PCdl
+PC端	pcdl
+Win端	Windl
+Win端	windl
+Windows端	Windowsdl
+Windows端	windowsdl
+Mac端	Macdl
+Mac端	macdl
+macOS端	macOSdl
+macOS端	macosdl
+Web端	Webdl
+Web端	webdl
+iOS端	iOSdl
+iOS端	iosdl
+Android端	Androiddl
+Android端	androiddl
+e招贷	euqdp
+G胖	Gps
+G胖	gps
+Up主	Upuu
+Up主	upuu
+BOSS直聘	BOSSuipy
+BOSS直聘	bossuipy
+P社	Pie
+P社	pie
+V社	Vie
+V社	vie
+Go语言	Goyuyr
+Go语言	goyuyr
+维生素A	wkitsuA
+维生素A	wkitsua
+维生素B	wkitsuB
+维生素B	wkitsub
+维生素C	wkitsuC
+维生素C	wkitsuc
+维生素D	wkitsuD
+维生素D	wkitsud
+维生素E	wkitsuE
+维生素E	wkitsue
+维生素K	wkitsuK
+维生素K	wkitsuk
+维A	wkA
+维A	wka
+维B	wkB
+维B	wkb
+维C	wkC
+维C	wkc
+维D	wkD
+维D	wkd
+维E	wkE
+维E	wke
+维K	wkK
+维K	wkk
+维E乳	wkEru
+维E乳	wkeru
+维生素E乳	wkitsuEru
+维生素E乳	wkitsueru
+阿Q	oaQ
+阿Q	oaq
+阿Q正传	oaQutul
+阿Q正传	oaqutul
+单边z变换	drbfzbfhl
+逗B	dzB
+逗B	dzb
+哆啦A梦	dolaAmt
+哆啦A梦	dolaamt
+二B	ojB
+二B	ojb
+卡拉OK	kalaOK
+卡拉OK	kalaok
+牛B	njB
+牛B	njb
+三K党	srKds
+三K党	srkds
+傻B	iaB
+傻B	iab
+傻X	iaX
+傻X	iax
+智能ABC	uintABC
+智能ABC	uintabc
+智能ABC双拼	uintABCigpy
+智能ABC双拼	uintabcigpy
+智能ABC双拼方案	uintABCigpyfsor
+智能ABC双拼方案	uintabcigpyfsor
+智能ABC输入法	uintABCiurufa
+智能ABC输入法	uintabciurufa
+装B	ugB
+装B	ugb
+A股	Agu
+A股	agu
+B股	Bgu
+B股	bgu
+H股	Hgu
+H股	hgu
+N股	Ngu
+N股	ngu
+S股	Sgu
+S股	sgu
+A盘	Apr
+A盘	apr
+A片	Apf
+A片	apf
+AA制	AAui
+AA制	aaui
+ATM机	ATMji
+ATM机	atmji
+B超	Baq
+B超	baq
+B淋巴细胞	Blybaxibq
+B淋巴细胞	blybaxibq
+B盘	Bpr
+B盘	bpr
+B细胞	Bxibq
+B细胞	bxibq
+C盘	Cpr
+C盘	cpr
+C语言	Cyuyr
+C语言	cyuyr
+D盘	Dpr
+D盘	dpr
+E盘	Epr
+E盘	epr
+F盘	Fpr
+F盘	fpr
+G点	Gdf
+G点	gdf
+G盘	Gpr
+G盘	gpr
+IP地址	IPdiui
+IP地址	ipdiui
+IP电话	IPdfhx
+IP电话	ipdfhx
+IP卡	IPka
+IP卡	ipka
+J盘	Jpr
+J盘	jpr
+K宝	Kbq
+K宝	kbq
+K粉	Kfw
+K粉	kfw
+K歌	Kge
+K歌	kge
+K歌王	Kgews
+K歌王	kgews
+POS机	POSji
+POS机	posji
+SIM卡	SIMka
+SIM卡	simka
+T淋巴细胞	Tlybaxibq
+T淋巴细胞	tlybaxibq
+T细胞	Txibq
+T细胞	txibq
+T型台	Tx;tp
+T型台	tx;tp
+U盾	Udm
+U盾	udm
+S形	Sx;
+S形	sx;
+U形	Ux;
+U形	ux;
+U形管	Ux;gl
+U形管	ux;gl
+UIM卡	UIMka
+UIM卡	uimka
+USIM卡	USIMka
+USIM卡	usimka
+X刀	Xdq
+X刀	xdq
+X染色体	Xrrseti
+X染色体	xrrseti
+Y染色体	Yrrseti
+Y染色体	yrrseti
+z变换	zbfhl
+z逆变换	znibfhl
+D之国	Duigo
+D之国	duigo
+D之一族	Duiyizu
+D之一族	duiyizu
+Beta版	Betabr
+Beta版	betabr
+Beta版本	Betabrbw
+Beta版本	betabrbw
+AV女优	AVnvyz
+AV女优	avnvyz
+X战警	Xurj;
+X战警	xurj;
+YY语音	YYyuyy
+YY语音	yyyuyy
+A4纸	Asiui
+A4纸	asiui
+A4腰	Asiyq
+A4腰	asiyq
+N多	Ndo
+N多	ndo
+N多个	Ndoge
+N多个	ndoge
+N次	Nci
+N次	nci
+N遍	Nbf
+N遍	nbf
+蒙奇·D·路飞	mtqiDlufk
+蒙奇·D·路飞	mtqidlufk
+蒙奇·D·龙	mtqiDlh
+蒙奇·D·龙	mtqidlh
+乔治·R·R·马丁	qbuiRRmad;
+乔治·R·R·马丁	qbuirrmad;
+哥尔·D·罗杰	geojDlojd
+哥尔·D·罗杰	geojdlojd
+马歇尔·D·蒂奇	maxdojDdiqi
+马歇尔·D·蒂奇	maxdojddiqi
+X·德雷克	Xdelkke
+X·德雷克	xdelkke
+蒙奇·D·卡普	mtqiDkapu
+蒙奇·D·卡普	mtqidkapu
+波特卡斯·D·艾斯	botekasiDopsi
+波特卡斯·D·艾斯	botekasidopsi
+VIP中P	VIPuhP
+VIP中P	vipuhp
+QQ秀	QQxj
+QQ秀	qqxj
+Big胆	Bigdr
+Big胆	bigdr
+我叫MT	wojbMT
+我叫MT	wojbmt
+谜拟Q	miniQ
+谜拟Q	miniq
+多边兽Z	dobfizZ
+多边兽Z	dobfizz
+藤子·F·不二雄	ttziFbuojxh
+藤子·F·不二雄	ttzifbuojxh
+PC版	PCbr
+PC版	pcbr
+PC版本	PCbrbw
+PC版本	pcbrbw
+A塔	Ata
+A塔	ata
+平A	p;A
+平A	p;a
+立Flag	liFlag
+立Flag	liflag
+C罗	Clo
+C罗	clo
+IE浏览器	IEljlrqi
+IE浏览器	ieljlrqi
+A壳	Ake
+A壳	ake
+B壳	Bke
+B壳	bke
+C壳	Cke
+C壳	cke
+D壳	Dke
+D壳	dke
+A面	Amf
+A面	amf
+B面	Bmf
+B面	bmf
+C面	Cmf
+C面	cmf
+D面	Dmf
+D面	dmf
+Server酱	Serverjg
+Server酱	serverjg
+P图	Ptu
+P图	ptu
+P个图	Pgetu
+P个图	pgetu
+P一下	Pyixx
+P一下	pyixx
+芭比Q	babiQ
+芭比Q	babiq
+芭比Q了	babiQle
+芭比Q了	babiqle
+QQ堂	QQts
+QQ堂	qqts
+PIN码	PINma
+PIN码	pinma
+PUK码	PUKma
+PUK码	pukma
+关底BOSS	gldiBOSS
+关底BOSS	gldiboss
+AA吧	AAba
+AA吧	aaba
+喊cut	hrcut
+ASCII码	ASCIIma
+ASCII码	asciima
+Go圣经	Goitj;
+Go圣经	goitj;
+江南Style	jgnrStyle
+江南Style	jgnrstyle
+头文字D	tzwwziD
+头文字D	tzwwzid
+三无Marblue	srwuMarblue
+三无Marblue	srwumarblue
+A罩杯	Auqbk
+A罩杯	auqbk
+B罩杯	Buqbk
+B罩杯	buqbk
+C罩杯	Cuqbk
+C罩杯	cuqbk
+D罩杯	Duqbk
+D罩杯	duqbk
+E罩杯	Euqbk
+E罩杯	euqbk
+F罩杯	Fuqbk
+F罩杯	fuqbk
+G罩杯	Guqbk
+G罩杯	guqbk
+H罩杯	Huqbk
+H罩杯	huqbk
+A罩	Auq
+A罩	auq
+B罩	Buq
+B罩	buq
+C罩	Cuq
+C罩	cuq
+D罩	Duq
+D罩	duq
+E罩	Euq
+E罩	euq
+F罩	Fuq
+F罩	fuq
+G罩	Guq
+G罩	guq
+H罩	Huq
+H罩	huq
+A杯	Abk
+A杯	abk
+B杯	Bbk
+B杯	bbk
+C杯	Cbk
+C杯	cbk
+D杯	Dbk
+D杯	dbk
+E杯	Ebk
+E杯	ebk
+F杯	Fbk
+F杯	fbk
+G杯	Gbk
+G杯	gbk
+H杯	Hbk
+H杯	hbk
+TV版	TVbr
+TV版	tvbr
+TV版本	TVbrbw
+TV版本	tvbrbw
+芒果TV	msgoTV
+芒果TV	msgotv
+V字仇杀队	Vziaziadn
+V字仇杀队	vziaziadn
+V怪客	Vgyke
+V怪客	vgyke
+V煞	Via
+V煞	via
+Q弹	Qtr
+Q弹	qtr
+Steam云	Steamym
+Steam云	steamym
+M系列	Mxild
+M系列	mxild
+阿Sir	oaSir
+阿Sir	oasir
+Pro版	Probr
+Pro版	probr
+Pro版本	Probrbw
+Pro版本	probrbw
+Lite版	Litebr
+Lite版	litebr
+Lite版本	Litebrbw
+Lite版本	litebrbw
+X教授	Xjbiz
+X教授	xjbiz
+Papi酱	Papijg
+Papi酱	papijg
+MAC地址	MACdiui
+MAC地址	macdiui
+DNS劫持	DNSjdai
+DNS劫持	dnsjdai
+DNS污染	DNSwurr
+DNS污染	dnswurr
+OK了	OKle
+OK了	okle
+OK啦	OKla
+OK啦	okla
+OK啊	OKoa
+OK啊	okoa
+我OK啊	woOKoa
+我OK啊	wookoa
+OK了吗	OKlema
+OK了吗	oklema
+腾讯QQ	ttxmQQ
+腾讯QQ	ttxmqq
+公网IP	ghwsIP
+公网IP	ghwsip
+Web开发	Webkpfa
+Web开发	webkpfa
+圈X	qlX
+圈X	qlx
+Switch版	Switchbr
+Switch版	switchbr
+Switch版本	Switchbrbw
+Switch版本	switchbrbw
+A型血	Ax;xn
+A型血	ax;xn
+A血型	Axnx;
+A血型	axnx;
+B型血	Bx;xn
+B型血	bx;xn
+B血型	Bxnx;
+B血型	bxnx;
+AB型	ABx;
+AB型	abx;
+AB型血	ABx;xn
+AB型血	abx;xn
+AB血型	ABxnx;
+AB血型	abxnx;
+O型	Ox;
+O型	ox;
+O型血	Ox;xn
+O型血	ox;xn
+O血型	Oxnx;
+O血型	oxnx;
+IT界	ITjd
+IT界	itjd
+Fn键	Fnjf
+Fn键	fnjf
+Cmd键	Cmdjf
+Cmd键	cmdjf
+Command键	Commandjf
+Command键	commandjf
+Ctrl键	Ctrljf
+Ctrl键	ctrljf
+Control键	Controljf
+Control键	controljf
+Opt键	Optjf
+Opt键	optjf
+Option键	Optionjf
+Option键	optionjf
+Shift键	Shiftjf
+Shift键	shiftjf
+Tab键	Tabjf
+Tab键	tabjf
+Caps键	Capsjf
+Caps键	capsjf
+CapsLock键	CapsLockjf
+CapsLock键	capslockjf
+Return键	Returnjf
+Return键	returnjf
+Enter键	Enterjf
+Enter键	enterjf
+Space键	Spacejf
+Space键	spacejf
+Backspace键	Backspacejf
+Backspace键	backspacejf
+Del键	Deljf
+Del键	deljf
+Delete键	Deletejf
+Delete键	deletejf
+Esc键	Escjf
+Esc键	escjf
+Eject键	Ejectjf
+Eject键	ejectjf
+J·K·罗琳	JKloly
+J·K·罗琳	jkloly
+周刊少年Jump	uzkriqnfJump
+周刊少年Jump	uzkriqnfjump
+ICP备案	ICPbkor
+ICP备案	icpbkor
+啥bug	iabug
+有bug	yzbug
+没bug	mkbug
+没有bug	mkyzbug
+卡bug	kabug
+提bug	tibug
+写bug	xdbug
+改bug	gpbug
+查bug	aabug
+找bug	uqbug
+J·R·R·托尔金	JRRtoojjy
+J·R·R·托尔金	jrrtoojjy
+异维A酸	yiwkAsl
+异维A酸	yiwkasl
+互fo	hufo
+减CD	jfCD
+减CD	jfcd
+随身Wi-Fi	sniwWiFi
+随身Wi-Fi	sniwwifi
+U型锁	Ux;so
+U型锁	ux;so
+Go程	Goat
+Go程	goat
+TG群	TGqm
+TG群	tgqm
+Telegram群	Telegramqm
+Telegram群	telegramqm
+Wi-Fi密码	WiFimima
+Wi-Fi密码	wifimima
+DNA检测	DNAjfce
+DNA检测	dnajfce
+A级	Aji
+A级	aji
+B级	Bji
+B级	bji
+C级	Cji
+C级	cji
+D级	Dji
+D级	dji
+S级	Sji
+S级	sji
+拍CT	ppCT
+拍CT	ppct
+CT检查	CTjfaa
+CT检查	ctjfaa
+PVC管	PVCgl
+PVC管	pvcgl
+DoS攻击	DoSghji
+DoS攻击	dosghji
+DDoS攻击	DDoSghji
+DDoS攻击	ddosghji
+N卡	Nka
+N卡	nka
+A卡	Aka
+A卡	aka
+M码	Mma
+M码	mma
+S码	Sma
+S码	sma
+L码	Lma
+L码	lma
+Q我	Qwo
+Q我	qwo
+R级	Rji
+R级	rji
+A区	Aqu
+A区	aqu
+B区	Bqu
+B区	bqu
+C区	Cqu
+C区	cqu
+D区	Dqu
+D区	dqu
+E区	Equ
+E区	equ
+F区	Fqu
+F区	fqu
+A组	Azu
+A组	azu
+B组	Bzu
+B组	bzu
+C组	Czu
+C组	czu
+D组	Dzu
+D组	dzu
+E组	Ezu
+E组	ezu
+F组	Fzu
+F组	fzu
+B哥	Bge
+B哥	bge
+Q版	Qbr
+Q版	qbr
+A班	Abr
+A班	abr
+B班	Bbr
+B班	bbr
+C班	Cbr
+C班	cbr
+D班	Dbr
+D班	dbr
+老K	lqK
+老K	lqk
+加Q	jxQ
+加Q	jxq
+加QQ	jxQQ
+加QQ	jxqq
+A座	Azo
+A座	azo
+B座	Bzo
+B座	bzo
+C座	Czo
+C座	czo
+D座	Dzo
+D座	dzo
+E座	Ezo
+E座	ezo
+F座	Fzo
+F座	fzo
+H版	Hbr
+H版	hbr
+A口	Akz
+A口	akz
+B口	Bkz
+B口	bkz
+C口	Ckz
+C口	ckz
+D口	Dkz
+D口	dkz
+E口	Ekz
+E口	ekz
+F口	Fkz
+F口	fkz
+A出口	Aaukz
+A出口	aaukz
+B出口	Baukz
+B出口	baukz
+C出口	Caukz
+C出口	caukz
+D出口	Daukz
+D出口	daukz
+E出口	Eaukz
+E出口	eaukz
+F出口	Faukz
+F出口	faukz
+A楼	Alz
+A楼	alz
+B楼	Blz
+B楼	blz
+C楼	Clz
+C楼	clz
+D楼	Dlz
+D楼	dlz
+E楼	Elz
+E楼	elz
+F楼	Flz
+F楼	flz
+A型号	Ax;hq
+A型号	ax;hq
+B型号	Bx;hq
+B型号	bx;hq
+C型号	Cx;hq
+C型号	cx;hq
+D型号	Dx;hq
+D型号	dx;hq
+E型号	Ex;hq
+E型号	ex;hq
+F型号	Fx;hq
+F型号	fx;hq
+A型	Ax;
+A型	ax;
+B型	Bx;
+B型	bx;
+C型	Cx;
+C型	cx;
+D型	Dx;
+D型	dx;
+E型	Ex;
+E型	ex;
+F型	Fx;
+F型	fx;
+A款	Akl
+A款	akl
+B款	Bkl
+B款	bkl
+C款	Ckl
+C款	ckl
+D款	Dkl
+D款	dkl
+E款	Ekl
+E款	ekl
+F款	Fkl
+F款	fkl
+A栋	Adh
+A栋	adh
+B栋	Bdh
+B栋	bdh
+C栋	Cdh
+C栋	cdh
+D栋	Ddh
+D栋	ddh
+E栋	Edh
+E栋	edh
+F栋	Fdh
+F栋	fdh
+X轴	Xuz
+X轴	xuz
+Y轴	Yuz
+Y轴	yuz
+Z轴	Zuz
+Z轴	zuz
+V领	Vl;
+V领	vl;
+V字领	Vzil;
+V字领	vzil;
+V字形	Vzix;
+V字形	vzix;
+IT业	ITye
+IT业	itye
+IT行业	IThsye
+IT行业	ithsye
+K线	Kxf
+K线	kxf
+K线图	Kxftu
+K线图	kxftu
+日K线	riKxf
+日K线	rikxf
+周K线	uzKxf
+周K线	uzkxf
+月K线	ynKxf
+月K线	ynkxf
+T台	Ttp
+T台	ttp
+TF卡	TFka
+TF卡	tfka
+N年	Nnf
+N年	nnf
+A点	Adf
+A点	adf
+B点	Bdf
+B点	bdf
+A屏	Ap;
+A屏	ap;
+OK吗	OKma
+OK吗	okma
+OK嘛	OKma
+OK嘛	okma
+OK么	OKme
+OK么	okme
+OK呀	OKya
+OK呀	okya
+OK不	OKbu
+OK不	okbu
+BB机	BBji
+BB机	bbji
+做B超	zoBaq
+做B超	zobaq
+DJ版	DJbr
+DJ版	djbr
+唱K	asK
+唱K	ask
+PK赛	PKsp
+PK赛	pksp
+A和B	AheB
+A和B	aheb
+X和Y	XheY
+X和Y	xhey
+查IP	aaIP
+查IP	aaip
+封IP	ftIP
+封IP	ftip
+换IP	hlIP
+换IP	hlip
+VIP卡	VIPka
+VIP卡	vipka
+AAA级	AAAji
+AAA级	aaaji
+第N次	diNci
+第N次	dinci
+发EMS	faEMS
+发EMS	faems
+DVD版	DVDbr
+DVD版	dvdbr
+USB线	USBxf
+USB线	usbxf
+USB口	USBkz
+USB口	usbkz
+USB接口	USBjdkz
+USB接口	usbjdkz
+X档案	Xdsor
+X档案	xdsor
+n次方	ncifs
+N多人	Ndorw
+N多人	ndorw
+S曲线	Squxf
+S曲线	squxf
+DJ舞曲	DJwuqu
+DJ舞曲	djwuqu
+充Q币	ahQbi
+充Q币	ahqbi
+就OK	jjOK
+就OK	jjok
+不OK	buOK
+不OK	buok
+很OK	hwOK
+很OK	hwok
+特拉法尔加·D·瓦铁尔·罗	telafaojjxDwatdojlo
+特拉法尔加·D·瓦铁尔·罗	telafaojjxdwatdojlo
+开party	kpparty
+Chromium系	Chromiumxi
+Chromium系	chromiumxi
+Chrome系	Chromexi
+Chrome系	chromexi
+QQ游戏	QQyzxi
+QQ游戏	qqyzxi
+QQ游戏大厅	QQyzxidat;
+QQ游戏大厅	qqyzxidat;
+QQ音速	QQyysu
+QQ音速	qqyysu
+QQ飞车	QQfkae
+QQ飞车	qqfkae
+QQ三国	QQsrgo
+QQ三国	qqsrgo
+4S店	siSdf
+4S店	sisdf
+丰田AE86	fttfAEbalj
+丰田AE86	fttfaebalj
+TF版	TFbr
+TF版	tfbr
+TF版本	TFbrbw
+TF版本	tfbrbw
+O不OK	ObuOK
+O不OK	obuok
