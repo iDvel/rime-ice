@@ -16,7 +16,7 @@
 #          这样小字表里存在的字按权重靠前排列，大字表殿后，生僻字自动就排在末尾。
 ---
 name: 41448
-version: "2023-12-28"
+version: "2024-02-04"
 sort: by_weight
 ...
 # 㕶	n
@@ -38493,6 +38493,7 @@ sort: by_weight
 褞	yun
 賱	yun
 贇	yun
+贠	yun
 赟	yun
 运	yun
 運	yun
