@@ -4,6 +4,13 @@
 
 
 
+## 2024-02-04 ⚠️
+
+⚠️ 中英混输词库由英文方案附属切换到单独的 table_translator
+
+- 词库文件由 `cn_en*.dict.yaml` 变为 `cn_en*.txt`
+- 双拼不再需要去 `melt_eng.dict.yaml` 更改引用词库
+
 ## 2024-02-01 🆕
 
 🆕 `pin_cand_filter.lua` 置顶候选项 [#586](https://github.com/iDvel/rime-ice/issues/586)
