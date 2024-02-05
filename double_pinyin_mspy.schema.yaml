@@ -8,9 +8,8 @@
 # 全拼的自定义文本和双拼有些冲突，改成了 custom_phrase_double ，需要创建 custom_phrase_double.txt 文件。
 #
 # 目前配置中有个别功能仍然是全拼拼写，不能自动适配，所以需要手动修改一下：
-# 1. 中英混输词库的拼写：     在英文词库文件 melt_eng.dict.yaml 修改为对应的双拼词库
-# 2. 英文中部分符号的派生规则：在英文方案文件 melt_eng.schema.yaml > speller > algebra 修改为对应的双拼拼写运算
-# 3. 部件拆字的拼写规则：     在部件拆字方案 radical_pinyin.schema.yaml > speller > algebra 修改为对应的双拼拼写运算
+# - 英文中部分符号的派生规则：在英文方案文件 melt_eng.schema.yaml > speller > algebra 修改为对应的双拼拼写运算
+# - 部件拆字的拼写规则：在部件拆字方案 radical_pinyin.schema.yaml > speller > algebra 修改为对应的双拼拼写运算
 # 打个补丁一劳永逸，补丁写法参考 [常见问题](https://github.com/iDvel/rime-ice/issues/133)
 
 
@@ -30,8 +29,9 @@ schema:
 
 
 # 开关
-# states: 方案选单显示的名称。可以注释掉，仍可以通过快捷键切换。
 # reset: 默认状态。注释掉后，切换窗口时不会重置到默认状态。
+# states: 方案选单显示的名称。可以注释掉，仍可以通过快捷键切换。
+# abbrev: 默认的缩写取 states 的第一个字符，abbrev 可自定义一个字符
 switches:
   - name: ascii_mode
     states: [ 中, Ａ ]
@@ -151,7 +151,7 @@ reduce_english_filter:
 
 
 # Lua 配置: 置顶候选项
-#TODO 文档和示例
+# 请参考 rime_ice.schema.yaml 中的注释
 pin_cand_filter:
   # 格式：编码<Tab>字词1<Space>字词2……
   - d	的
@@ -201,6 +201,7 @@ translator:
     - "xform/(^|[ '])u/$1sh/"
     - xform/([jqxy])v/$1u/
     - xform/([nl])v/$1ü/
+    - xform/ü/v/  # ü 显示为 v
 
 
 # 次翻译器，英文
@@ -276,7 +277,9 @@ radical_lookup:
 # 部件拆字滤镜
 radical_reverse_lookup:
   tags: [ radical_lookup ]
-  dictionary: rime_ice  # 拼音标注来源，可将 other/single_pinyin.reverse.bin 拷贝至 build/ 目录，此处改为 single_pinyin 来为所有字显示拼音
+  # dictionary 为拼音标注来源。目前是显示本方案词库的注音，可去部件拆字方案下载更全的、带声调的、已编译好的词典
+  # https://github.com/mirtlecn/rime-radical-pinyin?tab=readme-ov-file#%E5%8F%8D%E6%9F%A5%E5%B8%A6%E5%A3%B0%E8%B0%83%E6%B3%A8%E9%9F%B3
+  dictionary: rime_ice
   # comment_format:     # 自定义 comment，例如在左右加上括号
   #  - xform/^/(/
   #  - xform/$/)/

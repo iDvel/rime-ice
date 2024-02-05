@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "2024-02-01"
+  version: "2024-02-05"
   author:
     - Dvel
   description: |
@@ -18,8 +18,9 @@ schema:
 
 
 # 开关
-# states: 方案选单显示的名称。可以注释掉，仍可以通过快捷键切换。
 # reset: 默认状态。注释掉后，切换窗口时不会重置到默认状态。
+# states: 方案选单显示的名称。可以注释掉，仍可以通过快捷键切换。
+# abbrev: 默认的缩写取 states 的第一个字符，abbrev 可自定义一个字符
 switches:
   - name: ascii_mode
     states: [ 中, Ａ ]
@@ -140,7 +141,48 @@ reduce_english_filter:
 
 
 # Lua 配置: 置顶候选项
-#TODO 文档和示例
+# 符合左边的编码(cand.preedit)时，按顺序置顶右边的候选项。只是提升已有候选项的顺序，没有自创编码的功能。
+# 脚本对比的是去掉空格的 cand.preedit，配置里写空格可以生成额外的编码，参考示例。
+# 
+# cand.preedit 是经过 translator/preedit_format 转换后的编码
+# ⚠️ 注意方案的 preedit_format 设定，如果 v 显示为 ü，那么左边也要写 ü
+# ⚠️ 双拼：显示为全拼拼写就要写全拼，如 'shuang pin'，显示为双拼拼写就要写双拼，如 'ul pb'
+#
+# 格式：编码<Tab>字词1<Space>字词2……
+# 按照 YAML 语法，加不加引号都行，也可以这么写 pin_cand_filter: [l	了, 'de	的', "ni hao	你好"]
+#
+# 示例：
+# - 'le	了'       # 输入 le 时，置顶「了」
+# - 'la	啦'       # 输入 la 时，置顶「啦」
+# - 'ta	他 她 它'  # 可以置顶多个字，按顺序排列
+# - 'ta	啊'       # ❌ 编码不会产生的字词，不会生效且影响查找效率。自创编码的字词句可以写到 custom_phrase 中。
+# - 'l	了 啦'    # 支持单编码，输入 l 时，置顶「了、啦」
+#
+### 简拼
+# 支持简拼，简拼加不加空格都行。但需要方案开启简拼，雾凇全拼是默认开启的，双拼默认没开启
+# - s m	什么
+# - wsm	为什么
+#
+### Emoji
+# 如果词汇有 emoji 映射，在调整排序后，相关 emoji 失去吸附效果，所以要将 emoji 也纳入
+# - kan	看 👀
+# - ni hao	你好 👋 拟好
+#
+### 空格的作用：
+# 不包含空格，只生成原样：
+# - 'nihao	你好'  # 只生成 nihao，只有输入完整编码时才起作用，输入 nihao 时首位是「你好」，但输入 nih 时首位可能是「你会 你还」等其他词语
+# 包含空格的词组，额外生成最后一个空格后的拼音的首字母简码：
+# - 'ni hao	你好' # 生成 nihao  nih
+# 包含空格的词组，且结尾以 zh ch sh 开头，再额外生成最后一个空格后的拼音的 zh ch sh 简码：
+# - 'bu hao chi	不好吃'  # 生成 buhaochi  buhaoc  buhaoch
+#
+### 优先级：
+# 以下两行，会额外生成 'da z' 'da zh' 的置顶，前两个候选项是「大专、大众」，先写的排在前面
+# - da zhuang	大专
+# - da zhong	大众
+# 如果明确定义了简码形式，则完全使用简码形式
+# - da z	打字
+# - da zh	打仗
 pin_cand_filter:
   # 格式：编码<Tab>字词1<Space>字词2……
   # ⚙️ 以下是个人习惯，仅供参考，可以打个补丁来覆盖。
@@ -151,13 +193,13 @@ pin_cand_filter:
   - r	让 人
   - t	他 她 它 祂
   - y	与 于
-  # - u 在 custom_phrase 置顶
-  # - i 在 custom_phrase 置顶
+  # - u 在 custom_phrase 置顶了 有 🈶 又 由
+  # - i 在 custom_phrase 置顶了 一 1️⃣ 以 已 亦
   - o	哦 😮
   - p	片 篇
   - a	啊 😲 😦 😧
   - s	是 时 使 式
-  - d	的 地 得
+  - d	的 地 得 🉐
   - f	发 放 分
   - g	个 各
   - h	和 或
@@ -190,7 +232,7 @@ pin_cand_filter:
   - suo	所
   - shang	上 ⬆️ ↑
   - shuo	说
-  - de	的 地 得
+  - de	的 地 得 🉐
   - dan	但
   - dou	都
   - dao	到 倒
@@ -366,7 +408,9 @@ radical_lookup:
 # 部件拆字滤镜
 radical_reverse_lookup:
   tags: [ radical_lookup ]
-  dictionary: rime_ice  # 拼音标注来源，可将 other/single_pinyin.reverse.bin 拷贝至 build/ 目录，此处改为 single_pinyin 来为所有字显示拼音
+  # dictionary 为拼音标注来源。目前是显示本方案词库的注音，可去部件拆字方案下载更全的、带声调的、已编译好的词典
+  # https://github.com/mirtlecn/rime-radical-pinyin?tab=readme-ov-file#%E5%8F%8D%E6%9F%A5%E5%B8%A6%E5%A3%B0%E8%B0%83%E6%B3%A8%E9%9F%B3
+  dictionary: rime_ice
   # comment_format:     # 自定义 comment，例如在左右加上括号
   #  - xform/^/(/
   #  - xform/$/)/
@@ -450,11 +494,11 @@ speller:
     - abbrev/^([zcs]h).+$/$1/  # 超级简拼中，zh ch sh 视为整体（ch'sh → 城市），而不是像这样分开（c'h's'h → 吃好睡好）。
 
     ### v u 转换
-    # 雾凇的词库严格按照正确的 u v(ü) 注音的，如 qu 和 nve，支持使用 qv 和 nue 来输入
-    # 再增加对其他词库的 qv nue 这种注音的支持
-    - derive/^([nl])ue$/$1ve/
+    # 雾凇的词库严格按照正确的 u v(ü) 注音的，支持使用 qu/qv nue/nve 来输入 qu nve
     - derive/^([nl])ve$/$1ue/
     - derive/^([jqxy])u/$1v/
+    # 以防引入的其他词库没按照正确方式注音，也做一个转换
+    - derive/^([nl])ue$/$1ve/
     - derive/^([jqxy])v/$1u/
 
     ### 自动纠错

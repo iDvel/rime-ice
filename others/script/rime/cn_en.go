@@ -480,13 +480,14 @@ func CnEn() {
 		}
 		uniq.Add(line)
 		for _, schema := range schemas {
-			codes := textToPinyin(line, schema)
-			_, err := schema.file.WriteString(line + "\t" + codes[0] + "\n")
+			code := textToPinyin(line, schema)
+			_, err := schema.file.WriteString(line + "\t" + code + "\n")
 			if err != nil {
 				log.Fatalln(err)
 			}
-			if codes[0] != codes[1] {
-				_, err := schema.file.WriteString(line + "\t" + codes[1] + "\n")
+			lowerCode := strings.ToLower(code)
+			if code != lowerCode {
+				_, err := schema.file.WriteString(line + "\t" + lowerCode + "\n")
 				if err != nil {
 					log.Fatalln(err)
 				}
@@ -519,8 +520,8 @@ func writePrefix(s schema) {
 	}
 }
 
-// 生成编码，如果包含大写字母，数组中第一个是原大小写，第二个是纯小写
-func textToPinyin(text string, s schema) [2]string {
+// 生成编码，返回原大小写
+func textToPinyin(text string, s schema) string {
 	var code string
 
 	parts := splitMixedWords(text)
@@ -552,7 +553,7 @@ func textToPinyin(text string, s schema) [2]string {
 		}
 	}
 
-	return [2]string{code, strings.ToLower(code)}
+	return code
 }
 
 // 中英文分割，去掉间隔号和横杠
