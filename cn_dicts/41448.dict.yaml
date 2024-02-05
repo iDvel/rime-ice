@@ -16,7 +16,7 @@
 #          这样小字表里存在的字按权重靠前排列，大字表殿后，生僻字自动就排在末尾。
 ---
 name: 41448
-version: "2024-02-04"
+version: "2024-02-05"
 sort: by_weight
 ...
 # 㕶	n
@@ -14333,6 +14333,7 @@ sort: by_weight
 竫	jing
 競	jing
 竸	jing
+箐	jing
 粳	jing
 精	jing
 経	jing
