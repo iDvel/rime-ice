@@ -6,18 +6,18 @@
 
 ## 2024-02-04 ⚠️
 
-⚠️ 中英混输词库由英文方案附属切换到单独的 table_translator
+⚠️ 中英混输词库由英文方案附属切换到单独的 table_translator ([#662](https://github.com/iDvel/rime-ice/pull/662))
 
 - 词库文件由 `cn_en*.dict.yaml` 变为 `cn_en*.txt`
 - 双拼不再需要去 `melt_eng.dict.yaml` 更改引用词库
 
 ## 2024-02-01 🆕
 
-🆕 `pin_cand_filter.lua` 置顶候选项 [#586](https://github.com/iDvel/rime-ice/issues/586)
+`pin_cand_filter.lua` 置顶候选项 [#586](https://github.com/iDvel/rime-ice/issues/586)
 
 ## 2024-01-29 🆕 ⚠️
 
-🆕 [部件拆字方案](https://github.com/mirtlecn/rime-radical-pinyin) 反查、辅码 ([#643](https://github.com/iDvel/rime-ice/pull/643))
+[部件拆字方案](https://github.com/mirtlecn/rime-radical-pinyin) 反查、辅码 ([#643](https://github.com/iDvel/rime-ice/pull/643))
 
 - 反查：默认以 `uU` 开头
 - 辅码：默认以 `` ` ``（反引号）开启查询
@@ -89,9 +89,9 @@
 - 增加 Lua 脚本 `autocap_filter.lua`
 - 修改了 `melt_eng.schema.yaml` 拼写派生规则。
 
-## 2023-06-15 🐛
+## 2023-05-24 🐛
 
-修复全拼方案模糊音派生规则
+修复全拼方案模糊音派生规则 [6c0618a](https://github.com/iDvel/rime-ice/commit/6c0618aeaf2910482e20ff1c057f482aaa98c051)
 
 ## 2023-05-13 🆕
 

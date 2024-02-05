@@ -6,7 +6,7 @@
 
 <br>
 
-[RIME(Rime Input Method Engine) / 中州韵输入法引擎](https://rime.im/) 是一个跨平台的输入法算法框架。
+[Rime Input Method Engine / 中州韵输入法引擎](https://rime.im/) 是一个跨平台的输入法算法框架。
 
 这里是 Rime 的一份配置仓库，用户需要下载各平台对应的前端，并将此配置应用到配置目录。
 
@@ -34,6 +34,7 @@
     -   [数字、人民币大写](https://wb98.gitee.io/)
     -   日期、时间、星期、[农历](https://github.com/boomker/rime-fast-xhup)
     -   常见错音错字提示
+    -   置顶候选项
     -   所有标点符号直接上屏，/ 模式改为 v 模式，/ 直接上屏
     -   增加了许多拼音纠错
 - 简体字表、词库
@@ -66,7 +67,7 @@
 
 维护内容主要是异形词、错别字的校对，错误注音的修正，缺失的常用词汇的增添，词频的调整。
 
-欢迎在词库方面提 issue，我会及时更新修正。
+欢迎在词库方面提 issue [#666](https://github.com/iDvel/rime-ice/issues/666) ，我会及时更新修正。
 
 <br>
 
@@ -86,36 +87,51 @@
 
 ### 东风破 [plum](https://github.com/rime/plum)
 
-所有配方（`others/recipes/*.recipe.yaml`）只是简单地更新覆盖文件，适合更新词库时使用。后四个配方只是更新词库文件，并不更新 `rime_ice.dict.yaml` 和 `melt_eng.dict.yaml`，因为用户可能会挂载其他词库。如果更新后部署时报错，可能是增、删、改了文件名，需要检查上面两个文件和词库的对应关系。
+选择配方（`others/recipes/*.recipe.yaml`）来进行安装或更新。
 
-安装或更新：全部文件
+词库配方只是更新具体词库文件，并不更新 `rime_ice.dict.yaml` 和 `melt_eng.dict.yaml`，因为用户可能会挂载其他词库。如果更新后部署时报错，可能是增、删、改了文件名，需要检查上面两个文件和词库的对应关系。
+
+℞ 安装或更新全部文件
 
 ```
 bash rime-install iDvel/rime-ice:others/recipes/full
 ```
 
-安装或更新：所有词库文件（包含下面三个）
+℞ 安装或更新所有词库文件（包含下面三个）
 
 ```
 bash rime-install iDvel/rime-ice:others/recipes/all_dicts
 ```
 
-安装或更新：拼音词库文件
+℞ 安装或更新拼音词库文件（ `cn_dicts/` 目录内所有文件）
 
 ```
 bash rime-install iDvel/rime-ice:others/recipes/cn_dicts
 ```
 
-安装或更新：英文词库文件
+℞ 安装或更新英文词库文件（ `en_dicts/` 目录内所有文件）
 
 ```
 bash rime-install iDvel/rime-ice:others/recipes/en_dicts
 ```
 
-安装或更新：opencc(emoji)
+℞ 安装或更新 opencc （ `opencc/` 目录内所有文件）
 
 ```
 bash rime-install iDvel/rime-ice:others/recipes/opencc
+```
+
+下面这个配方会在 `radical_pinyin.custom.yaml` 和 `melt_eng.custom.yaml` 里将 `speller/algebra` 修改为对应的双拼拼写，选择一个自己使用的双拼作为参数。
+
+℞ 双拼补丁
+
+```
+bash rime-install iDvel/rime-ice:others/recipes/config:schema=flypy
+bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin
+bash rime-install iDvel/rime-ice:others/recipes/config:schema=mspy
+bash rime-install iDvel/rime-ice:others/recipes/config:schema=sogou
+bash rime-install iDvel/rime-ice:others/recipes/config:schema=abc
+bash rime-install iDvel/rime-ice:others/recipes/config:schema=ziguang
 ```
 
 ### 仓输入法 [Hamster](https://github.com/imfuxiao/Hamster)
@@ -160,9 +176,10 @@ patch:
   # 以下根据自己所需自行定义，仅做参考。
   # 针对对应处方的定制条目，请使用 <recipe>.custom.yaml 中配置，例如 rime_ice.custom.yaml
   __patch:
-    key_binder/+:
-      select_first_character: "bracketleft" # 即 [
-      select_last_character: "bracketright" # 即 ]
+    key_binder/bindings/+:
+      # 开启逗号句号翻页
+      - { when: paging, accept: comma, send: Page_Up }
+      - { when: has_menu, accept: period, send: Page_Down }
 ```
 
 </details>
@@ -181,11 +198,7 @@ patch:
 
 搜狗转 Rime：[lewangdev/scel2txt](https://github.com/lewangdev/scel2txt)
 
-大量参考：
-
-- [校对标准论坛](http://www.jiaodui.com/bbs/)
-- [汉典](https://www.zdic.net/)
-- [成语典](https://dict.idioms.moe.edu.tw/)
+大量参考 [校对标准论坛](http://www.jiaodui.com/bbs/)
 
 Thanks to JetBrains for the OSS development license.
 

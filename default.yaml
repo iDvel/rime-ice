@@ -3,7 +3,7 @@
 
 
 # 要比共享目录的同名文件的 config_version 大才可以生效
-config_version: '2024-01-29'
+config_version: '2024-02-05'
 
 
 # 方案列表
@@ -11,7 +11,7 @@ schema_list:
   # 可以直接删除或注释不需要的方案，对应的 *.schema.yaml 方案文件也可以直接删除
   # 除了 t9，它依赖于 rime_ice，用九宫格别删 rime_ice.schema.yaml
   - schema: rime_ice               # 雾凇拼音（全拼）
-  - schema: t9                     # 雾凇拼音（九宫格）
+  - schema: t9                     # 九宫格（仓输入法）
   - schema: double_pinyin          # 自然码双拼
   - schema: double_pinyin_abc      # 智能 ABC 双拼
   - schema: double_pinyin_mspy     # 微软双拼
@@ -33,14 +33,14 @@ switcher:
   hotkeys:
     - F4
     - Control+grave
-    # - Alt+grave
     - Control+Shift+grave
+    # - Alt+grave
   save_options:  # 开关记忆（方案中的 switches），从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
     - ascii_punct
     - traditionalization
     - emoji
     - full_shape
-    - single_char
+    - search_single_char
   fold_options: true            # 呼出时是否折叠，多方案时建议折叠 true ，一个方案建议展开 false
   abbreviate_options: true      # 折叠时是否缩写选项
   option_list_separator: ' / '  # 折叠时的选项分隔符
@@ -155,16 +155,14 @@ punctuator:
 
 
 # 处理符合特定规则的输入码，如网址、反查
-# 此处配置所有方案通用的；各方案中另设专有的，比如全拼的拼字用 u，双拼的拼字用 L
+# 此处配置较为通用的选项，各方案中另增加了和方案功能绑定的 patterns。
 recognizer:
   patterns:
-    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"   # 自带的，email 正则
-    # uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"  # 自带的，大写字母开头后，可以输入[-_+.'0-9A-Za-z]这些字符（和雾凇有些冲突，关闭了）
-    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"  # 自带的，URL 正则
-    # 一些不直接上屏的配置示例：
-    underscore: "^[A-Za-z]+_.*"    # 下划线不上屏
-    # url_2: "^[A-Za-z]+[.].*"     # 句号不上屏，支持 google.com abc.txt 等网址或文件名，使用句号翻页时需要注释掉
-    # colon: "^[A-Za-z]+:.*"       # 冒号不上屏
+    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"                            # email @ 之后不上屏
+    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"  # URL
+    underscore: "^[A-Za-z]+_.*"  # 下划线不上屏
+    # url_2: "^[A-Za-z]+[.].*"   # 句号不上屏，支持 google.com abc.txt 等网址或文件名，使用句号翻页时需要注释掉
+    # colon: "^[A-Za-z]+:.*"     # 冒号不上屏
 
 
 # 快捷键
@@ -197,19 +195,18 @@ key_binder:
     # - { when: paging, accept: bracketleft, send: Page_Up }
     # - { when: has_menu, accept: bracketright, send: Page_Down }
 
-    # 鼠须管在 Sublime Text、Telegram 等个别软件中无法使用 Control+Shift+数字 的快捷键，可暂时用方案选单切换。
     # 两种按键配置，鼠须管 Control+Shift+4 生效，小狼毫 Control+Shift+dollar 生效，都写上了。
     # numbered_mode_switch:
-    # - { when: always, accept: Control+Shift+1, select: .next }                  # 在最近的两个方案之间切换
-    # - { when: always, accept: Control+Shift+exclam, select: .next }             # 在最近的两个方案之间切换
-    # - { when: always, accept: Control+Shift+2, toggle: ascii_mode }             # 切换中英
-    # - { when: always, accept: Control+Shift+at, toggle: ascii_mode }            # 切换中英
-    - { when: always, accept: Control+Shift+3, toggle: ascii_punct }              # 切换中英标点
-    - { when: always, accept: Control+Shift+numbersign, toggle: ascii_punct }     # 切换中英标点
-    - { when: always, accept: Control+Shift+4, toggle: traditionalization }       # 切换简繁
-    - { when: always, accept: Control+Shift+dollar, toggle: traditionalization }  # 切换简繁
-    # - { when: always, accept: Control+Shift+5, toggle: full_shape }             # 切换全半角
-    # - { when: always, accept: Control+Shift+percent, toggle: full_shape }       # 切换全半角
+    # - { when: always, select: .next, accept: Control+Shift+1 }                  # 在最近的两个方案之间切换
+    # - { when: always, select: .next, accept: Control+Shift+exclam }             # 在最近的两个方案之间切换
+    # - { when: always, toggle: ascii_mode, accept: Control+Shift+2 }             # 切换中英
+    # - { when: always, toggle: ascii_mode, accept: Control+Shift+at }            # 切换中英
+    - { when: always, toggle: ascii_punct, accept: Control+Shift+3 }              # 切换中英标点
+    - { when: always, toggle: ascii_punct, accept: Control+Shift+numbersign }     # 切换中英标点
+    - { when: always, toggle: traditionalization, accept: Control+Shift+4 }       # 切换简繁
+    - { when: always, toggle: traditionalization, accept: Control+Shift+dollar }  # 切换简繁
+    # - { when: always, toggle: full_shape, accept: Control+Shift+5 }             # 切换全半角
+    # - { when: always, toggle: full_shape, accept: Control+Shift+percent }       # 切换全半角
 
     # emacs_editing:
     # - { when: composing, accept: Control+p, send: Up }
