@@ -108,12 +108,6 @@ function M.init(env)
 end
 
 function M.func(input, env)
-	-- If there is no configuration, no filtering will be performed
-	if not M.pin_cands then
-		for cand in input:iter() do yield(cand) end
-		return
-	end
-
 	-- 当前输入框的 preedit，未经过方案 translator/preedit_format 转换
 	-- 输入 nihaoshij 则为 nihaoshij，选择了「你好」后变成 你好shij
 	local full_preedit = env.engine.context:get_preedit().text
@@ -121,6 +115,12 @@ function M.func(input, env)
 	local letter_only_preedit = string.gsub(full_preedit, "[^a-zA-Z]", "")
 	-- 是否正在选词（已经选择了至少一个字词，如 `你好shij` 这种状态）
 	-- local isSelecting = full_preedit ~= letter_only_preedit
+
+	-- If there is no configuration, no filtering will be performed
+	if not M.pin_cands or #letter_only_preedit == 0 then
+		for cand in input:iter() do yield(cand) end
+		return
+	end
 
 	local pined = {} -- 提升的候选项
 	local others = {} -- 其余候选项
