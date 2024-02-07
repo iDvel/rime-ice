@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2024-01-28"
+version: "2024-02-07"
 sort: by_weight
 ...
 ##### 容错词
@@ -56,6 +56,17 @@ sort: by_weight
 # 「錤」这个字念 ji，但是台湾媒体都会念成 qi，他的英文名 Ming-Chi Kuo 也是接近 qi
 郭明錤	guo ming ji
 郭明錤	guo ming qi
+# 「镐 gao hao」的发音，多为韩国人名，不知道 🤷‍♂️，词库里为 gao，这里额外加上 hao 音
+李昌镐	li chang hao
+曹世镐	cao shi hao
+张镐哲	zhang gao zhe
+姜成镐	jiang cheng hao
+姜镐童	jiang hao tong
+张镐濂	zhang hao lian
+李敏镐	li min hao
+李陈镐	li chen hao
+赵亮镐	zhao liang hao
+郑俊镐	zheng jun hao
 
 
 ##### 错音错字提示。与 corrector.lua 配合，上面的是正确的，下面是错误的
