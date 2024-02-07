@@ -24,28 +24,29 @@
 
 - 简体 | 全拼 | 双拼
 - 主要功能
-    -   [melt_eng](https://github.com/tumuyan/rime-melt) 英文输入
+    -   [melt_eng](https://github.com/tumuyan/rime-melt) 英文输入（@tumuyan | [Apache 2.0](https://github.com/tumuyan/rime-melt/blob/master/LICENSE)）
     -   [优化英文输入体验](https://dvel.me/posts/make-rime-en-better/)
-    -   [部件拆字方案](https://github.com/mirtlecn/rime-radical-pinyin) 反查、辅码
+    -   [部件拆字方案](https://github.com/mirtlecn/rime-radical-pinyin) 反查、辅码（@mirtlecn | [CC BY 3.0 DEED](https://github.com/mirtlecn/rime-radical-pinyin/blob/master/LICENSE)）
     -   自整理的 Emoji
-    -   [以词定字](https://github.com/BlindingDark/rime-lua-select-character)
-    -   [长词优先](https://github.com/tumuyan/rime-melt/blob/master/lua/melt.lua)
-    -   [Unicode](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)
-    -   [数字、人民币大写](https://wb98.gitee.io/)
-    -   日期、时间、星期、[农历](https://github.com/boomker/rime-fast-xhup)
+    -   [以词定字](https://github.com/BlindingDark/rime-lua-select-character)（@BlindingDark | [LGPL 3.0](https://github.com/BlindingDark/rime-lua-select-character/blob/master/LICENSE)）
+    -   [长词优先](https://github.com/tumuyan/rime-melt/blob/master/lua/melt.lua)（@tumuyan | [Apache 2.0](https://github.com/tumuyan/rime-melt/blob/master/LICENSE)）
+    -   [Unicode](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)（@shewer | [MIT](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)）
+    -   [数字、人民币大写](https://github.com/yanhuacuo/98wubi/blob/master/lua/number.lua)（@98wubi）
+    -   日期、时间、星期、[农历](https://github.com/boomker/rime-fast-xhup)（@boomker | [LGPL 3.0](https://github.com/boomker/rime-fast-xhup/blob/master/LICENSE)）
     -   常见错音错字提示
     -   置顶候选项
     -   所有标点符号直接上屏，/ 模式改为 v 模式，/ 直接上屏
     -   增加了许多拼音纠错
 - 简体字表、词库
     -   [《通用规范汉字表》](https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters)
-    -   [华宇野风系统词库](http://bbs.pinyin.thunisoft.com/forum.php?mod=viewthread&tid=30049)
-    -   [清华大学开源词库](https://github.com/thunlp/THUOCL)
-    -   [《现代汉语常用词表》](https://gist.github.com/indiejoseph/eae09c673460aa0b56db)
-    -   [《现代汉语词典》](https://forum.freemdict.com/t/topic/12102)
-    -   [《同义词词林》](https://forum.freemdict.com/t/topic/1211)
-    -   [《新华成语大词典》](https://forum.freemdict.com/t/topic/11407)
-    -   [腾讯词向量](https://ai.tencent.com/ailab/nlp/en/download.html)
+    -   [华宇野风系统词库](http://bbs.pinyin.thunisoft.com/forum.php?mod=viewthread&tid=30049)（@野风）
+    -   [清华大学开源词库](https://github.com/thunlp/THUOCL)（@THUNLP | [MIT](https://github.com/thunlp/THUOCL/blob/master/LICENSE)）
+    -   [现代汉语常用词表](https://gist.github.com/indiejoseph/eae09c673460aa0b56db)（@Joseph cheng）
+    -   [腾讯词向量](https://ai.tencent.com/ailab/nlp/en/download.html)（@Tencent AI Lab | [CC BY 3.0 DEED](https://creativecommons.org/licenses/by/3.0/)）
+    -   参考
+        -   《现代汉语词典》
+        -   《同义词词林》
+        -   《新华成语大词典》
 - 词库修订
     - 校对大量异形词、错别字、错误注音
     - 全词库完成注音
