@@ -53,8 +53,8 @@ switches:
 engine:
   processors:
     - lua_processor@select_character          # 以词定字
-    - lua_processor@auto_commit_single_punct  # 让写在 alphabet 中的某标点自动上屏
     - ascii_composer
+    - lua_processor@auto_commit_single_punct  # 让写在 alphabet 中的某标点自动上屏
     - recognizer
     - key_binder
     - speller
