@@ -1,15 +1,11 @@
 # Rime dictionary
 # encoding: utf-8
 #
-#
 # https://github.com/iDvel/rime-ice
 # ------- 大字表 41448 字 -------
-#
 # 数据来源：https://github.com/mozillazg/pinyin-data/blob/master/pinyin.txt
 # [MIT License](https://github.com/mozillazg/pinyin-data/blob/master/LICENSE)
-#
 # 按 Unicode 排序，将 n m 放到开头并注释掉了。
-#
 # 使用建议： 多个词库文件有重复时，靠前的词库文件中的权重生效。
 #          将 8105  作为第一字表，放到靠前位置；
 #          将 41448 作为第二字表，放到靠后位置。
@@ -32,8 +28,13 @@ sort: by_weight
 # 嗯	n
 # 嘸	m
 # 𠮾	n
+㕶	ng
+哽	ng
+唔	ng
+唵	ng
+嗯	ng
+𠮾	ng
 # -----
-
 〇	ling
 〇	xing
 〇	yuan
@@ -359,8 +360,6 @@ sort: by_weight
 㕲	ying
 㕴	chen
 㕵	guo
-
-㕶	ng
 㕷	hua
 㕷	pa
 㕸	li
@@ -9027,7 +9026,6 @@ sort: by_weight
 呐	ne
 呐	nuo
 呑	tun
-
 呒	wu
 呓	yi
 呔	dai
@@ -9050,7 +9048,6 @@ sort: by_weight
 呡	wen
 呢	ne
 呢	ni
-
 呣	mou
 呤	ling
 呥	ran
@@ -9207,7 +9204,6 @@ sort: by_weight
 咸	xian
 咹	an
 咹	e
-
 咺	xuan
 咻	xiao
 咻	xiu
@@ -9250,7 +9246,6 @@ sort: by_weight
 哎	ai
 哏	gen
 哏	hen
-
 哐	kuang
 哐	qiang
 哑	ya
@@ -9320,8 +9315,6 @@ sort: by_weight
 哼	heng
 哼	hng
 哽	geng
-
-哽	ng
 哽	ying
 哾	shuo
 哾	yue
@@ -9354,9 +9347,6 @@ sort: by_weight
 唑	zuo
 唒	qiu
 唓	che
-
-
-唔	ng
 唔	wu
 唕	zao
 唖	ya
@@ -9404,8 +9394,6 @@ sort: by_weight
 唳	li
 唴	qiang
 唵	an
-
-唵	ng
 唶	jie
 唶	ze
 唷	yo
@@ -9690,8 +9678,6 @@ sort: by_weight
 嗬	he
 嗭	zhi
 嗮	sai
-
-嗯	ng
 嗰	ge
 嗱	na
 嗲	dia
@@ -9793,7 +9779,6 @@ sort: by_weight
 嘶	si
 嘷	hao
 嘸	fu
-
 嘸	wu
 嘹	liao
 嘺	qiao
@@ -35108,8 +35093,6 @@ sort: by_weight
 𠮴	yang
 𠮵	mang
 𠮽	long
-
-𠮾	ng
 𠮿	sa
 𠮿	san
 𠯀	chuan
