@@ -41,11 +41,12 @@
     -   [《通用规范汉字表》](https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters)
     -   [华宇野风系统词库](http://bbs.pinyin.thunisoft.com/forum.php?mod=viewthread&tid=30049)（@野风）
     -   [清华大学开源词库](https://github.com/thunlp/THUOCL)（@THUNLP | [MIT](https://github.com/thunlp/THUOCL/blob/master/LICENSE)）
-    -   [《现代汉语常用词表》](https://gist.github.com/indiejoseph/eae09c673460aa0b56db)（@Joseph cheng）
-    -   [《现代汉语词典》](https://forum.freemdict.com/t/topic/12102)
-    -   [《同义词词林》](https://forum.freemdict.com/t/topic/1211)
-    -   [《新华成语大词典》](https://forum.freemdict.com/t/topic/11407)
+    -   [现代汉语常用词表](https://gist.github.com/indiejoseph/eae09c673460aa0b56db)（@Joseph cheng）
     -   [腾讯词向量](https://ai.tencent.com/ailab/nlp/en/download.html)（@Tencent AI Lab | [CC BY 3.0 DEED](https://creativecommons.org/licenses/by/3.0/)）
+    -   参考
+        -   《现代汉语词典》
+        -   《同义词词林》
+        -   《新华成语大词典》
 - 词库修订
     - 校对大量异形词、错别字、错误注音
     - 全词库完成注音
