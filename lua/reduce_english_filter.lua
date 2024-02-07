@@ -46,7 +46,11 @@ function M.init(env)
         "tier", "ties", "tim", "tin", "tip", "tit", "tour", "tout", "tum", "wag", "wait", "wail", "wan", "wand", "womens",
         "want", "wap", "war", "was", "wax", "way", "weir", "went", "won", "wow", "yan", "yang", "yen", "yep", "yes",
         "yet", "yin", "your", "yum", "zen", "zip",
-        -- 下面是其他长度的
+        -- 后面是 zh ch sh 的
+        "bach", "bash", "bench", "bush", "cash", "couch", "dash", "dish", "hash", "hush", "lash", "loch", "lunch",
+        "lush", "mesh", "much", "nash", "pinch", "pouch", "push", "ranch", "rich", "rush", "such", "tech", "touch",
+        "wash", "zach",
+        -- 其他
         "quanx", "eg",
     }
     M.all = {}
