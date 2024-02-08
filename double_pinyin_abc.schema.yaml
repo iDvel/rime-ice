@@ -83,13 +83,13 @@ engine:
     - lua_translator@force_gc           # 暴力 GC
   filters:
     - lua_filter@corrector                          # 错音错字提示
+    - lua_filter@pin_cand_filter                    # 置顶候选项
     - simplifier@emoji                              # Emoji
     - simplifier@traditionalize                     # 简繁切换
     - reverse_lookup_filter@radical_reverse_lookup  # 部件拆字滤镜
     - lua_filter@search@radical_pinyin              # 部件拆字辅码
     - lua_filter@autocap_filter                     # 英文自动大写
     - lua_filter@reduce_english_filter              # 降低部分英语单词在候选项的位置
-    - lua_filter@pin_cand_filter                    # 置顶候选项
     - uniquifier                                    # 去重
 
 
@@ -153,7 +153,7 @@ reduce_english_filter:
 
 
 # Lua 配置: 置顶候选项
-# 请参考 rime_ice.schema.yaml 中的注释
+# 注释太长了，请参考 pin_cand_filter.lua 开头的说明书。
 pin_cand_filter:
   # 格式：编码<Tab>字词1<Space>字词2……
   - d	的

@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "2024-02-06"
+  version: "2024-02-09"
   author:
     - Dvel
   description: |
@@ -72,6 +72,7 @@ engine:
     - lua_translator@force_gc           # 暴力 GC
   filters:
     - lua_filter@corrector                          # 错音错字提示
+    - lua_filter@pin_cand_filter                    # 置顶候选项（顺序要求：置顶候选项 > Emoji > 简繁切换）
     - simplifier@emoji                              # Emoji
     - simplifier@traditionalize                     # 简繁切换
     - reverse_lookup_filter@radical_reverse_lookup  # 部件拆字滤镜
@@ -79,7 +80,6 @@ engine:
     - lua_filter@v_filter                           # v 模式 symbols 优先（否则是英文优先）
     - lua_filter@autocap_filter                     # 英文自动大写
     - lua_filter@reduce_english_filter              # 降低部分英语单词在候选项的位置
-    - lua_filter@pin_cand_filter                    # 置顶候选项
     - lua_filter@long_word_filter                   # 长词优先
     - uniquifier                                    # 去重
 
@@ -152,76 +152,35 @@ reduce_english_filter:
 
 
 # Lua 配置: 置顶候选项
-# 符合左边的编码(cand.preedit)时，按顺序置顶右边的候选项。只是提升已有候选项的顺序，没有自创编码的功能。
-# 脚本对比的是去掉空格的 cand.preedit，配置里写空格可以生成额外的编码，参考示例。
-# 
-# cand.preedit 是经过 translator/preedit_format 转换后的编码
-# ⚠️ 注意方案的 preedit_format 设定，如果 v 显示为 ü，那么左边也要写 ü
-# ⚠️ 双拼：显示为全拼拼写就要写全拼，如 'shuang pin'，显示为双拼拼写就要写双拼，如 'ul pb'
-#
-# 格式：编码<Tab>字词1<Space>字词2……
-# 按照 YAML 语法，加不加引号都行，也可以这么写 pin_cand_filter: [l	了, 'de	的', "ni hao	你好"]
-#
-# 示例：
-# - 'le	了'       # 输入 le 时，置顶「了」
-# - 'la	啦'       # 输入 la 时，置顶「啦」
-# - 'ta	他 她 它'  # 可以置顶多个字，按顺序排列
-# - 'ta	啊'       # ❌ 编码不会产生的字词，不会生效且影响查找效率。自创编码的字词句可以写到 custom_phrase 中。
-# - 'l	了 啦'    # 支持单编码，输入 l 时，置顶「了、啦」
-#
-### 简拼
-# 支持简拼，简拼加不加空格都行。但需要方案开启简拼，雾凇全拼是默认开启的，双拼默认没开启
-# - s m	什么
-# - wsm	为什么
-#
-### Emoji
-# 如果词汇有 emoji 映射，在调整排序后，相关 emoji 失去吸附效果，所以要将 emoji 也纳入
-# - kan	看 👀
-# - ni hao	你好 👋 拟好
-#
-### 空格的作用：
-# 不包含空格，只生成原样：
-# - 'nihao	你好'  # 只生成 nihao，只有输入完整编码时才起作用，输入 nihao 时首位是「你好」，但输入 nih 时首位可能是「你会 你还」等其他词语
-# 包含空格的词组，额外生成最后一个空格后的拼音的首字母简码：
-# - 'ni hao	你好' # 生成 nihao  nih
-# 包含空格的词组，且结尾以 zh ch sh 开头，再额外生成最后一个空格后的拼音的 zh ch sh 简码：
-# - 'bu hao chi	不好吃'  # 生成 buhaochi  buhaoc  buhaoch
-#
-### 优先级：
-# 以下两行，会额外生成 'da z' 'da zh' 的置顶，前两个候选项是「大专、大众」，先写的排在前面
-# - da zhuang	大专
-# - da zhong	大众
-# 如果明确定义了简码形式，则完全使用简码形式
-# - da z	打字
-# - da zh	打仗
+# 注释太长了，请参考 pin_cand_filter.lua 开头的说明书。
 pin_cand_filter:
   # 格式：编码<Tab>字词1<Space>字词2……
-  # ⚙️ 以下是个人习惯，仅供参考，可以打个补丁来覆盖。
+  # ⚙️ 以下是个人习惯，仅供参考，推荐打补丁用自己的习惯覆盖。
   # 单编码
   - q	去 千
   - w	我 万 往
-  - e	呃 🤔
+  - e	呃
   - r	让 人
   - t	他 她 它 祂
   - y	与 于
   # - u 在 custom_phrase 置顶了 有 🈶 又 由
   # - i 在 custom_phrase 置顶了 一 1️⃣ 以 已 亦
-  - o	哦 😮
+  - o	哦
   - p	片 篇
-  - a	啊 😲 😦 😧
+  - a	啊
   - s	是 时 使 式
-  - d	的 地 得 🉐
+  - d	的 地 得
   - f	发 放 分
   - g	个 各
   - h	和 或
   - j	及 将 即 既 继
-  - k	可 🉑
+  - k	可
   - l	了 啦 喽 嘞
   - z	在 再 自
   - x	想 像 向
   - c	才 从
   # - v
-  - b	吧 把 呗 百
+  - b	把 吧 呗 百
   - n	那 哪 拿 呐
   - m	吗 嘛 呣
   # 常用单字
@@ -229,27 +188,27 @@ pin_cand_filter:
   - qu	去
   - wo	我
   - wei	为
-  - er	而 儿 二 2️⃣
+  - er	而 儿 二
   - en	嗯
   - rang	让
   - ta	他 她 它 祂
   - tai	太
   - tong	同
   - yu	与 于
-  - you	有 🈶 又 由
+  - you	有 又 由
   - yao	要
   - ye	也
   - shi	是 时 使 式
   - suo	所
-  - shang	上 ⬆️ ↑
+  - shang	上
   - shuo	说
-  - de	的 地 得 🉐
+  - de	的 地 得
   - dan	但
   - dou	都
   - dao	到 倒
-  - dian	点 · 丶
+  - dian	点
   - dang	当
-  - dui	对 ⭕ ✅ ✔
+  - dui	对
   - fa	发
   - ge	个 各
   - gang	刚
@@ -257,12 +216,12 @@ pin_cand_filter:
   - huo	或
   - hui	会
   - hai	还
-  - hao	好 👌 🙆‍♂️ 🙆‍♀️
+  - hao	好
   - ji	及 即 既
   - jiu	就
   - jiang	将
-  - ke	可 🉑
-  - kan	看 👀
+  - ke	可
+  - kan	看
   - kai	开
   - le	了
   - la	啦 拉
@@ -274,16 +233,16 @@ pin_cand_filter:
   - zhen	真
   - zui	最
   - zheng	正
-  - zuo	做 坐 左 ⬅️ ←
+  - zuo	做 坐 左
   - ze	则
   - xiang	想 像 向
   - xian	先
-  - xia	下 ⬇️ ↓
+  - xia	下
   - xing	行
   - cai	才
   - cong	从
   - chu	出
-  - ba	吧 把
+  - ba	把 吧
   - bu	不
   - bing	并
   - bei	被
@@ -321,7 +280,7 @@ pin_cand_filter:
   - hh	哈哈
   - kk	看看
   - cc	常常
-  - xx	想想 🤔 想象
+  - xx	想想 想象
   - yw	因为
   - sm	什么
   - wsm	为什么
