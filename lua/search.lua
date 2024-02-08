@@ -59,7 +59,7 @@ function f.init(env)
 
     f.sort = config:get_bool(ns .. "/show_other_cands")
 
-    -- 反引号作为查找的引导符号，需要加入 speller 的字母表当中 
+    -- 反引号作为查找的引导符号，需要加入 speller 的字母表当中
     f.search_key = config:get_string("key_binder/search") or config:get_string(ns .. "/key") or '`'
 
     -- 处理一下输入码，如果还有没有上屏的词，保留辅助码，否则，清除上屏码
@@ -95,7 +95,6 @@ function f.init(env)
             -- f.update_dict_entry(edit, no_search_string)
         end
     end)
-
 end
 
 -- function f.update_dict_entry(s, code)
@@ -233,7 +232,6 @@ function f.func(input, env)
             yield(cand)
         end
     end
-
 end
 
 function f.fini(env)
