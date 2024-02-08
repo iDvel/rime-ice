@@ -4,7 +4,7 @@
 -- 感谢改进 @[t123yh](https://github.com/t123yh) @[Shewer Lu](https://github.com/shewer)
 local function v_filter(input, env)
     local code = env.engine.context.input -- 当前编码
-    env.v_spec_arr = env.v_spec_arr or Set({"0️⃣", "1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣","Vs."})
+    env.v_spec_arr = env.v_spec_arr or Set({ "0️⃣", "1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣", "Vs." })
     -- 仅当当前输入以 v 开头，并且编码长度为 2，才进行处理
     if (string.len(code) == 2 and string.find(code, "^v")) then
         local l = {}
@@ -12,7 +12,7 @@ local function v_filter(input, env)
             -- 特殊情况处理
             if (env.v_spec_arr[cand.text]) then
                 yield(cand)
-        	-- 候选项为单个字符的，提到前面来。
+            -- 候选项为单个字符的，提到前面来。
             elseif (utf8.len(cand.text) == 1) then
                 yield(cand)
             else

@@ -1,4 +1,3 @@
-
 require('cold_word_drop.string')
 require("cold_word_drop.metatable")
 -- local puts = require("tools/debugtool")
@@ -146,7 +145,7 @@ local function processor(key, env)
         return 1 -- kAccept
     end
 
-    return 2     -- kNoop, 不做任何操作, 交给下个组件处理
+    return 2 -- kNoop, 不做任何操作, 交给下个组件处理
 end
 
 return processor

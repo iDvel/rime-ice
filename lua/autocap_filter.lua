@@ -5,7 +5,7 @@
 	- 部分规则不做转换
 	- 输入首字母大写，候选词转换为首字母大写： Hello → Hello
 	- 输入至少前 2 个字母大写，候选词转换为全部大写： HEllo → HELLO
-    
+
     大写时无法动态调整词频
 --]]
 local function autocap_filter(input, env)

@@ -1,4 +1,3 @@
-
 local drop_list = require("cold_word_drop.drop_words")
 local hide_list = require("cold_word_drop.hide_words")
 local turndown_freq_list = require("cold_word_drop.turndown_freq_words")
@@ -24,8 +23,8 @@ local function filter(input, env)
                 i = i + 1
                 ---@diagnostic disable-next-line: undefined-global
                 yield(cand)
-			else
-				table.insert(cands, cand)
+            else
+                table.insert(cands, cand)
             end
         else
             table.insert(cands, cand)
@@ -43,13 +42,13 @@ local function filter(input, env)
                 (hide_list[cand.text] and table.find_index(hide_list[cand.text], cpreedit_code))
             )
         then
-        ---@diagnostic disable-next-line: undefined-global
+            ---@diagnostic disable-next-line: undefined-global
             yield(cand)
         end
     end
-	for cand in input:iter() do
-		yield(cand)
-	end
+    for cand in input:iter() do
+        yield(cand)
+    end
 end
 
 return filter
