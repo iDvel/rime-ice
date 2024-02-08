@@ -4,6 +4,13 @@
 
 
 
+## 2024-02-09 ♻️
+
+重构了 `pin_cand_filter.lua` 置顶候选项功能。 [#675](https://github.com/iDvel/rime-ice/issues/675)
+
+- 调整了方案中 `engine/filters` 的排序
+- 不再需要在配置中写 emoji，emoji 可自动吸附。
+
 ## 2024-02-04 ⚠️
 
 ⚠️ 中英混输词库由英文方案附属切换到单独的 table_translator ([#662](https://github.com/iDvel/rime-ice/pull/662))
