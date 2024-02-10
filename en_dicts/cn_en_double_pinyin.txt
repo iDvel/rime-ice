@@ -848,6 +848,8 @@ X和Y	xhey
 换IP	hrip
 VIP卡	VIPka
 VIP卡	vipka
+VIP会员	VIPhvyr
+VIP会员	viphvyr
 AAA级	AAAji
 AAA级	aaaji
 第N次	diNci

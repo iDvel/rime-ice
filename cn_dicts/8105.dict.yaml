@@ -33,7 +33,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2024-02-05"
+version: "2024-02-10"
 sort: by_weight
 ...
 ### 按需启用
@@ -2268,6 +2268,7 @@ sort: by_weight
 淏	hao	138
 嚆	hao	22
 鄗	hao	10
+镐	hao	1
 和	he	6252031
 何	he	1822108
 合	he	1085786
@@ -3421,6 +3422,7 @@ sort: by_weight
 狯	kuai	590
 郐	kuai	108
 鲙	kuai	16
+浍	kuai	1
 㧟	kuai	0
 宽	kuan	175076
 款	kuan	136499
@@ -4861,6 +4863,7 @@ sort: by_weight
 洴	ping	10
 帡	ping	4
 荓	ping	3
+冯	ping	1
 蚲	ping	1
 涄	ping	0
 玶	ping	0
@@ -6228,6 +6231,7 @@ sort: by_weight
 蜩	tiao	96
 鲦	tiao	86
 朓	tiao	20
+苕	tiao	1
 嬥	tiao	0
 铁	tie	520031
 贴	tie	169181
@@ -6571,6 +6575,7 @@ sort: by_weight
 硪	wo	109
 肟	wo	78
 偓	wo	37
+涴	wo	23
 踒	wo	2
 无	wu	4177289
 物	wu	1225245

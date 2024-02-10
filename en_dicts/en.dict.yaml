@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-02-03"
+version: "2024-02-10"
 sort: by_weight
 ...
 # +_+
@@ -3561,7 +3561,7 @@ clutch	clutch
 clutter	clutter
 Clyde	Clyde
 # cm	cm
-Cmd	Cmd
+cmd	cmd
 # cme	cme
 # cmos	cmos
 # cmp	cmp
@@ -18439,7 +18439,7 @@ systems	systems
 # sz	sz
 # t	t
 # ta	ta
-Tab	Tab
+tab	tab
 table	table
 tables	tables
 tablespoons	tablespoons
