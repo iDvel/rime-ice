@@ -7,18 +7,30 @@
 # Weasel 字体设定 <https://github.com/rime/weasel/wiki/字體設定>
 
 # 部分选项需要将 Weasel 更新至最新开发版才能生效
-config_version: "2024.01.25"
+config_version: "2024-02-10"
 
 # [app_options]
 # 针对特定应用的设置
 app_options:
-  cmd.exe:               # 带 .exe 的进程名：Weasel 15.0 及之前版本须小写; PR #1049 合并后释出的版本大小写不敏感
-    ascii_mode: true     # 英文模式
   firefox.exe:
     inline_preedit: true # 行内显示预编辑区：规避 <https://github.com/rime/weasel/issues/946>
-  nvim-qt.exe:
-    ascii_mode: true
-    vim_mode: true       # vim 模式, Esc <C-c> <C-[> 切换到 ascii 状态
+  # cmd.exe:               # 带 .exe 的进程名：Weasel 15.0 及之前版本须小写; PR #1049 合并后释出的版本大小写不敏感
+  #   ascii_mode: true     # 英文模式
+  # conhost.exe:
+  #   ascii_mode: true
+  # windowsterminal.exe:
+  #   ascii_mode: true
+  # wt.exe:
+  #   ascii_mode: true
+  # pwsh.exe:
+  #   ascii_mode: true
+  # powershell.exe:
+  #   ascii_mode: true
+  # mintty.exe:
+  #   ascii_mode: true
+  # nvim-qt.exe:
+  #   ascii_mode: true
+  #   vim_mode: true       # vim 模式, Esc <C-c> <C-[> 切换到 ascii 状态
 # [End of <app_options>]
 
 # [global settings]
