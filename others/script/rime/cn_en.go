@@ -86,6 +86,8 @@ var polyphones = map[string]string{
 	"X和Y > 和":       "he",
 	"查IP > 查":       "cha",
 	"VIP卡 > 卡":      "ka",
+	"VIP会员 > 会":     "hui",
+	"VIP会员 > 员":     "yuan",
 	"Chromium系 > 系": "xi",
 	"Chrome系 > 系":   "xi",
 	"QQ游戏大厅 > 大":    "da",

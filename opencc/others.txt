@@ -650,24 +650,24 @@ Chandler	Chandler 钱德勒
 菲比	菲比 Phoebe
 Phoebe	Phoebe 菲比
 ----------键盘符号	----------
-Cmd	Cmd Command ⌘
-Command	Command ⌘
+cmd	cmd Command ⌘
+command	command ⌘
 Ctrl	Ctrl Control ⌃
-Control	Control ⌃
+control	control ⌃
 Opt	Opt Option ⌥
-Option	Option ⌥
-Shift	Shift ⇧
-Tab	Tab ⇥ 	
+option	option ⌥
+shift	shift ⇧
+tab	tab ⇥ 	
 Caps	Caps CapsLock ⇪
 CapsLock	CapsLock ⇪
-Return	Return ⏎
-Enter	Enter ⏎
-Space	Space ␣
-Backspace	Backspace ⌫
+return	return ⏎
+enter	enter ⏎
+space	space ␣
+backspace	backspace ⌫
 Del	Del Delete ⌫
-Delete	Delete ⌫
+delete	delete ⌫
 Esc	Esc Escape ⎋
-Eject	Eject ⏏
+eject	eject ⏏
 ----------二叠字	----------
 两个火	两个火 炎 炏
 两个土	两个土 圭

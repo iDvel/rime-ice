@@ -848,6 +848,8 @@ X和Y	xhey
 换IP	huanip
 VIP卡	VIPka
 VIP卡	vipka
+VIP会员	VIPhuiyuan
+VIP会员	viphuiyuan
 AAA级	AAAji
 AAA级	aaaji
 第N次	diNci

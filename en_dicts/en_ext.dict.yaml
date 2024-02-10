@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2024-02-03"
+version: "2024-02-10"
 sort: by_weight
 ...
 # 一些杂项
@@ -19,24 +19,24 @@ README.md	README.md
 
 # 按键
 Fn	Fn
-Cmd	Cmd
-Command	Command
+cmd	cmd
+command	command
 Ctrl	Ctrl
-Control	Control
+control	control
 Opt	Opt
-Option	Option
-Shift	Shift
-Tab	Tab
+option	option
+shift	shift
+tab	tab
 Caps	Caps
 CapsLock	CapsLock
-Return	Return
-Enter	Enter
-Space	Space
-Backspace	Backspace
+return	return
+enter	enter
+space	space
+backspace	backspace
 Del	Del
-Delete	Delete
+delete	delete
 Esc	Esc
-Eject	Eject
+eject	eject
 
 
 # 月份（据说好像 5、6、7 月不要缩写 https://www.zhihu.com/question/29896678）
@@ -1608,7 +1608,6 @@ Application Programming Interface	API
 Ethernet	Ethernet
 SOCKS	SOCKS
 PrintScreen	PrintScreen
-Backspace	Backspace
 DIY	DIY
 Do It Yourself	DIY
 DNA	DNA
@@ -2437,3 +2436,8 @@ Writerside	Writerside
 groundhog	groundhog
 groundhogs	groundhogs
 Writerside	Writerside
+Manifest V2	ManifestV2
+Manifest V3	ManifestV3
+copycat	copycat
+Google Gemini	GoogleGemini
+Google Gemini Advanced	GoogleGeminiAdvanced
