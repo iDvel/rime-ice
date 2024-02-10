@@ -1,36 +1,7 @@
 -- 长词优先（提升「西安」「提案」「图案」「饥饿」等词汇的优先级）
 -- 感谢&参考于： https://github.com/tumuyan/rime-melt
--- 不提升包含英文、数字、emoji、假名的候选项
-
-local function isEmoji(text)
-    for _, char in utf8.codes(text) do
-        if (char >= 0x1F600 and char <= 0x1F64F) or -- Emoticons
-            (char >= 0x1F300 and char <= 0x1F5FF) or -- Misc Symbols and Pictographs
-            (char >= 0x1F680 and char <= 0x1F6FF) or -- Transport and Map
-            (char >= 0x2600 and char <= 0x26FF) or -- Misc symbols
-            (char >= 0x2700 and char <= 0x27BF) or -- Dingbats
-            (char >= 0xFE00 and char <= 0xFE0F) or -- Variation Selectors
-            (char >= 0x1F900 and char <= 0x1F9FF) or -- Supplemental Symbols and Pictographs
-            (char >= 0x1F1E6 and char <= 0x1F1FF) then -- Flags (iOS)
-            return true
-        end
-    end
-    return false
-end
-
-local function containsJapaneseKana(str)
-    for _, code in utf8.codes(str) do
-        -- 检查平假名的 Unicode 范围（0x3040 至 0x309F）
-        if code >= 0x3040 and code <= 0x309F then
-            return true
-        end
-        -- 检查片假名的 Unicode 范围（0x30A0 至 0x30FF）
-        if code >= 0x30A0 and code <= 0x30FF then
-            return true
-        end
-    end
-    return false
-end
+-- 不提升包含英文、数字的候选项
+-- 不提升包含 emoji、假名的候选项（通过将此 Lua 放到 simplifier@emoji 前面来实现）
 
 local M = {}
 
@@ -58,7 +29,7 @@ function M.func(input)
             i = i + 1
             yield(cand)
         -- 长词直接 yield，其余的放到 l 里
-        elseif leng <= firstWordLength or cand.text:find("[%a%d]") or containsJapaneseKana(cand.text) or isEmoji(cand.text) then
+        elseif leng <= firstWordLength or cand.text:find("[%a%d]") then
             table.insert(l, cand)
         else
             yield(cand)
