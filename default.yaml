@@ -188,12 +188,12 @@ key_binder:
     - { when: has_menu, accept: equal, send: Page_Down }
 
     # 翻页 , .
-    # - { when: paging, accept: comma, send: Page_Up }
-    # - { when: has_menu, accept: period, send: Page_Down }
+    - { when: paging, accept: comma, send: Page_Up }
+    - { when: has_menu, accept: period, send: Page_Down }
 
     # 翻页 [ ]
-    # - { when: paging, accept: bracketleft, send: Page_Up }
-    # - { when: has_menu, accept: bracketright, send: Page_Down }
+    - { when: paging, accept: bracketleft, send: Page_Up }
+    - { when: has_menu, accept: bracketright, send: Page_Down }
 
     # 两种按键配置，鼠须管 Control+Shift+4 生效，小狼毫 Control+Shift+dollar 生效，都写上了。
     # numbered_mode_switch:
