@@ -12,6 +12,11 @@ version: "2024-02-07"
 sort: by_weight
 ...
 ##### 容错词
+# 一些口语读音
+空落落	kong luo luo
+空落落	kong lao lao
+空落落的	kong luo luo de
+空落落的	kong lao lao de
 # 「阿房宫」的注音争议比较大
 阿房宫	e pang gong
 阿房宫	a pang gong

@@ -26,14 +26,15 @@
 #
 #
 # 多音字的注音问题：
-# 对于其他词库没有注音的词汇，Rime 按照方案中字表中多音字的权重比值，大于 5:100 的就会参与注音。
-# 所以一个解决方案就是：例如「的 de di」，手动注音 di，然后确保字表权重 de * 0.05 > di
-#                   即手动注音 di，只让 de 参与自动注音。
-#                   对于「长 chang zhang」这样不易区分的，全部注音并用勤劳的双手完成校对。
+# 对于没有注音的词汇，如 tencent.dict.yaml 词库，
+# Rime 按照方案中字表自动注音，多音字的权重比值大于 5:100 的就会参与注音。
+# 目前的解决方案，例如「的 de di」，手动注音 di，然后确保字表权重 de * 0.05 > di
+#              即手动注音所有发 di 音的词汇，只让 de 参与自动注音。
+#              对于「长 chang zhang」这样不易区分的，全部注音并用勤劳的双手完成校对。
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2024-02-10"
+version: "2024-02-14"
 sort: by_weight
 ...
 ### 按需启用
@@ -78,12 +79,12 @@ sort: by_weight
 
 
 ### 小时候没学过的拼音。。。
-# 嗯	n	没启用，在 custom_phrase.txt 中设为「那、哪」了
-# 嗯	ng	没启用，在 custom_phrase.txt 中设为「那个、哪个」了
+# 嗯	n	没启用
+# 嗯	ng	没启用
 # 唔	ng  没启用
+# 呣	m	没启用
+# 哼	hng	没启用
 # 噷	hm	在 custom_phrase.txt 里置顶了
-# 呣	m	在 custom_phrase.txt 里放到第三位了
-# 哼	hng	在 custom_phrase.txt 里置顶了
 嗯	eng	9179528
 欸	ei	534
 哟	yo	59051
@@ -334,6 +335,7 @@ sort: by_weight
 坌	ben	44
 倴	ben	3
 栟	ben	2
+夯	ben	0
 崩	beng	61288
 蹦	beng	49581
 绷	beng	29020
