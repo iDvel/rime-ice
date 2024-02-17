@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-12-08"
+version: "2024-02-10"
 sort: by_weight
 ...
 # 一些杂项
@@ -19,24 +19,24 @@ README.md	README.md
 
 # 按键
 Fn	Fn
-Cmd	Cmd
-Command	Command
+cmd	cmd
+command	command
 Ctrl	Ctrl
-Control	Control
+control	control
 Opt	Opt
-Option	Option
-Shift	Shift
-Tab	Tab
+option	option
+shift	shift
+tab	tab
 Caps	Caps
 CapsLock	CapsLock
-Return	Return
-Enter	Enter
-Space	Space
-Backspace	Backspace
+return	return
+enter	enter
+space	space
+backspace	backspace
 Del	Del
-Delete	Delete
+delete	delete
 Esc	Esc
-Eject	Eject
+eject	eject
 
 
 # 月份（据说好像 5、6、7 月不要缩写 https://www.zhihu.com/question/29896678）
@@ -486,7 +486,6 @@ IntelliJ	IntelliJ
 IntelliJ IDEA	IntelliJIDEA
 IntelliJ IDEA Community	IntelliJIDEACommunity
 IntelliJ IDEA Ultimate	IntelliJIDEAUltimate
-IDEA	IDEA
 IDEA Community	IDEACommunity
 IDEA Ultimate	IDEAUltimate
 IDE	IDE
@@ -588,14 +587,13 @@ MongoDB	MongoDB
 MySQL	MySQL
 Node.js	Node.js
 Pornhub	Pornhub
-PostgreSQL	PostgreSQL
 Postgres	Postgres
 PowerPoint	PowerPoint
 PPT	PPT
 PowerPoint	PPT
 Microsoft PowerPoint	PPT
 PyCharm	PyCharm
-Roguelike	Roguelike
+roguelike	roguelike
 Redis	Redis
 rime	rime
 RION	RION
@@ -768,6 +766,7 @@ IPN	IPN
 IPTV	IPTV
 iStat Menus	iStatMenus
 iTerm	iTerm
+iTerm2	iTerm2
 iTunes	iTunes
 iTunes Connect	iTunesConnect
 iTunes Match	iTunesMatch
@@ -820,8 +819,7 @@ OneNote	OneNote
 OS	OS
 Operating System	OS
 Operating System	OperatingSystem
-Overcast	Overcast
-Overflow	Overflow
+overcast	overcast
 PaintCode	PaintCode
 Parallels Desktop	ParallelsDesktop
 PayPal	PayPal
@@ -834,7 +832,6 @@ PlistEdit	pliPlistEdit
 PopClip	PopClip
 PowerPack	PowerPack
 Privoxy	Privoxy
-Pro	Pro
 Promotee	Promotee
 Proxifier	Proxifier
 Public Beta	PublicBeta
@@ -1199,7 +1196,6 @@ TickTick	TickTick
 CHDBits	CHDBits
 M-Team	M-Team
 Vim	Vim
-Wikipedia	Wikipedia
 Google Voice	GoogleVoice
 Workers	Workers
 Cloudflare Workers	CloudflareWorkers
@@ -1425,13 +1421,10 @@ PopCap Games	PopCapGames
 Cyberpunk	Cyberpunk
 Kotlin	Kotlin
 PhpStorm	PhpStorm
-Rider	Rider
 Datalore	Datalore
 DataSpell	DataSpell
 RubyMine	RubyMine
 AppCode	AppCode
-PyCharm Edu	PyCharmEdu
-IntelliJ IDEA Edu	IntelliJIDEAEdu
 Code With Me	CodeWithMe
 JetBrains Mono	JetBrainsMono
 JVM	JVM
@@ -1615,7 +1608,6 @@ Application Programming Interface	API
 Ethernet	Ethernet
 SOCKS	SOCKS
 PrintScreen	PrintScreen
-Backspace	Backspace
 DIY	DIY
 Do It Yourself	DIY
 DNA	DNA
@@ -1946,6 +1938,7 @@ Aquarius	Aquarius
 Pisces	Pisces
 tailwind	tailwind
 Fcitx	Fcitx
+Fcitx5	Fcitx5
 openSUSE	openSUSE
 defer	defer
 FOMO	FOMO
@@ -2201,6 +2194,7 @@ Loki	Loki
 panzer	panzer
 hardened	hardened
 motherfucker	motherfucker
+motherfuckers	motherfuckers
 motherfucking	motherfucking
 dict	dict
 latte	latte
@@ -2384,3 +2378,66 @@ guile	guile
 e.g.	e.g.
 i.e.	i.e.
 et al.	etal.
+Zettlr	Zettlr
+Codium	Codium
+CodiumAI	CodiumAI
+SaaS	SaaS
+Software as a service	SaaS
+gitignore	gitignore
+.gitignore	.gitignore
+humankind	humankind
+Alita	Alita
+epoll	epoll
+kqueue	kqueue
+LangChain	LangChain
+LangServe	LangServe
+LangSmith	LangSmith
+runc	runc
+containerd	containerd
+Melvor	Melvor
+Melvor Idle	MelvorIdle
+paradise	paradise
+ketchup	ketchup
+pinning	pinning
+WebSocket	WebSocket
+systemctl	systemctl
+reconfig	reconfig
+sudo	sudo
+flypy	flypy
+traefik	traefik
+deepin	deepin
+srv	srv
+usr	usr
+bin	bin
+AUR	AUR
+Arch User Repository	AUR
+pacman	pacman
+Pac-Man	Pac-Man
+eBPF	eBPF
+livid	livid
+DevOps	DevOps
+Zippo	Zippo
+goddamn	goddamn
+punctuator	punctuator
+punctuators	punctuators
+QR code	QRcode
+sentry	sentry
+Grafana	Grafana
+Mirtle	Mirtle
+Hadoop	Hadoop
+HBase	HBase
+hive	hive
+Flink	Flink
+Palworld	Palworld
+lark	lark
+submodule	submodule
+submodules	submodules
+Writerside	Writerside
+groundhog	groundhog
+groundhogs	groundhogs
+Writerside	Writerside
+Manifest V2	ManifestV2
+Manifest V3	ManifestV3
+copycat	copycat
+Google Gemini	GoogleGemini
+Google Gemini Advanced	GoogleGeminiAdvanced

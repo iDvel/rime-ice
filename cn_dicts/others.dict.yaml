@@ -8,10 +8,15 @@
 #
 ---
 name: others
-version: "2023-12-08"
+version: "2024-02-07"
 sort: by_weight
 ...
 ##### 容错词
+# 一些口语读音
+空落落	kong luo luo
+空落落	kong lao lao
+空落落的	kong luo luo de
+空落落的	kong lao lao de
 # 「阿房宫」的注音争议比较大
 阿房宫	e pang gong
 阿房宫	a pang gong
@@ -53,6 +58,20 @@ sort: by_weight
 仆街仔	pu gai zai
 街溜子	jie liu zi
 街溜子	gai liu zi
+# 「錤」这个字念 ji，但是台湾媒体都会念成 qi，他的英文名 Ming-Chi Kuo 也是接近 qi
+郭明錤	guo ming ji
+郭明錤	guo ming qi
+# 「镐 gao hao」的发音，多为韩国人名，不知道 🤷‍♂️，词库里为 gao，这里额外加上 hao 音
+李昌镐	li chang hao
+曹世镐	cao shi hao
+张镐哲	zhang gao zhe
+姜成镐	jiang cheng hao
+姜镐童	jiang hao tong
+张镐濂	zhang hao lian
+李敏镐	li min hao
+李陈镐	li chen hao
+赵亮镐	zhao liang hao
+郑俊镐	zheng jun hao
 
 
 ##### 错音错字提示。与 corrector.lua 配合，上面的是正确的，下面是错误的
@@ -169,6 +188,32 @@ sort: by_weight
 脖颈儿	bo jing er
 结扎	jie za
 结扎	jie zha
+海参崴	hai shen wai
+海参崴	hai shen wei
+厚朴	hou po
+厚朴	hou pu
+大宛马	da yuan ma
+大宛马	da wan ma
+龇牙	zi ya
+龇牙	ci ya
+龇着牙	zi zhe ya
+龇着牙	ci zhe ya
+龇牙咧嘴	zi ya lie zui
+龇牙咧嘴	ci ya lie zui
+头皮屑	tou pi xie
+头皮屑	tou pi xue
+六安	lu an
+六安	liu an
+六安县	lu an xian
+六安县	liu an xian
+六安市	lu an shi
+六安市	liu an shi
+安徽六安	an hui lu an
+安徽六安	an hui liu an
+安徽六安市	an hui lu an shi
+安徽六安市	an hui liu an shi
+安徽省六安市	an hui sheng lu an shi
+安徽省六安市	an hui sheng liu an shi
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
@@ -185,12 +230,6 @@ sort: by_weight
 血脉喷张	xue mai pen zhang
 契诃夫	qi he fu
 契科夫	qi ke fu
-龇牙	zi ya
-龇牙	ci ya
-龇着牙	zi zhe ya
-龇着牙	ci zhe ya
-龇牙咧嘴	zi ya lie zui
-龇牙咧嘴	ci ya lie zui
 凑合	cou he
 凑活	cou huo
 
@@ -334,7 +373,7 @@ sort: by_weight
 两个鸟
 两个巢
 两个禺	liang ge yu
-两个巿
+两个巿	liang ge fu
 两个句
 两个奇
 两个真

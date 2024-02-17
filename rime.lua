@@ -6,10 +6,16 @@
 -- 以词定字，可在 default.yaml → key_binder 下配置快捷键，默认为左右中括号 [ ]
 select_character = require("select_character")
 
+-- 让写在 alphabet 中的某标点自动上屏，可在方案中配置标点
+auto_commit_single_punct = require("auto_commit_single_punct")
+
 -- translators:
 
 -- 日期时间，可在方案中配置触发关键字。
 date_translator = require("date_translator")
+
+-- 农历，可在方案中配置触发关键字。
+lunar = require("lunar")
 
 -- Unicode，U 开头
 unicode = require("unicode")
@@ -32,20 +38,16 @@ autocap_filter = require("autocap_filter")
 -- 降低部分英语单词在候选项的位置，可在方案中配置要降低的模式和单词
 reduce_english_filter = require("reduce_english_filter")
 
--- 默认未启用：
+-- 辅码，https://github.com/mirtlecn/rime-radical-pinyin/blob/master/search.lua.md
+search = require("search")
+
+-- 置顶候选项
+pin_cand_filter = require("pin_cand_filter")
 
 -- 长词优先（全拼）
--- 在 engine/filters 增加 - lua_filter@long_word_filter
--- 在方案里写配置项:
--- 提升 count 个词语，插入到第 idx 个位置。
--- 示例：将 2 个词插入到第 4、5 个候选项，输入 jie 得到「1接 2解 3姐 4饥饿 5极恶」
--- long_word_filter:
---   count: 2
---   idx: 4
---
--- 使用请注意：之前有较多网友反应有内存泄漏，优化过一些但还是偶尔有较高的内存，但并不卡顿也不影响性能，重新部署后即正常
--- 如果要启用，建议放到靠后位置，最后一个放 uniquifier，倒数第二个就放 long_word_filter
 long_word_filter = require("long_word_filter")
+
+-- 默认未启用：
 
 -- 中英混输词条自动空格
 -- 在 engine/filters 增加 - lua_filter@cn_en_spacer
@@ -72,5 +74,27 @@ is_in_user_dict = require("is_in_user_dict")
 -- 在 key_binder 增加快捷键：
 -- turn_down_cand: "Control+j"  # 匹配当前输入码后隐藏指定的候选字词 或候选词条放到第四候选位置
 -- drop_cand: "Control+d"       # 强制删词, 无视输入的编码
+-- get_record_filername() 函数中仅支持了 Windows、macOS、Linux
 cold_word_drop_processor = require("cold_word_drop.processor")
 cold_word_drop_filter = require("cold_word_drop.filter")
+
+
+-- 暴力 GC
+-- 详情 https://github.com/hchunhui/librime-lua/issues/307
+-- 这样也不会导致卡顿，那就每次都调用一下吧，内存稳稳的
+function force_gc()
+    -- collectgarbage()
+    collectgarbage("step")
+end
+
+-- 临时用的
+function debug_checker(input, env)
+    for cand in input:iter() do
+        yield(ShadowCandidate(
+            cand,
+            cand.type,
+            cand.text,
+            env.engine.context.input .. " - " .. env.engine.context:get_preedit().text .. " - " .. cand.preedit
+        ))
+    end
+end

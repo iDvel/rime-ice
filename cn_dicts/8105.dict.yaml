@@ -26,14 +26,15 @@
 #
 #
 # 多音字的注音问题：
-# 对于其他词库没有注音的词汇，Rime 按照方案中字表中多音字的权重比值，大于 5:100 的就会参与注音。
-# 所以一个解决方案就是：例如「的 de di」，手动注音 di，然后确保字表权重 de * 0.05 > di
-#                   即手动注音 di，只让 de 参与自动注音。
-#                   对于「长 chang zhang」这样不易区分的，全部注音并用勤劳的双手完成校对。
+# 对于没有注音的词汇，如 tencent.dict.yaml 词库，
+# Rime 按照方案中字表自动注音，多音字的权重比值大于 5:100 的就会参与注音。
+# 目前的解决方案，例如「的 de di」，手动注音 di，然后确保字表权重 de * 0.05 > di
+#              即手动注音所有发 di 音的词汇，只让 de 参与自动注音。
+#              对于「长 chang zhang」这样不易区分的，全部注音并用勤劳的双手完成校对。
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2023-12-05"
+version: "2024-02-14"
 sort: by_weight
 ...
 ### 按需启用
@@ -43,6 +44,8 @@ sort: by_weight
 
 
 ### 扩展，不在《通用规范汉字表》的字:
+𤭢	cei	1000
+𤭢了	cei le	1000
 𰻝	biang	1
 嬢	niang	1
 薙	ti	1
@@ -52,10 +55,9 @@ sort: by_weight
 诶	ei	1
 凃	tu	1
 咲	xiao	1
-晛	xian	0
+螓	qin	1
 珮	pei	0
-𤭢	cei	1000
-𤭢了	cei le	1000
+睆	huan	1
 # 注释掉的这几行已经加入到下面并调整到合适的权重了
 # 〇	ling
 # 囧	jiong
@@ -77,12 +79,12 @@ sort: by_weight
 
 
 ### 小时候没学过的拼音。。。
-# 嗯	n	没启用，在 custom_phrase.txt 中设为「那、哪」了
-# 嗯	ng	没启用，在 custom_phrase.txt 中设为「那个、哪个」了
+# 嗯	n	没启用
+# 嗯	ng	没启用
 # 唔	ng  没启用
+# 呣	m	没启用
+# 哼	hng	没启用
 # 噷	hm	在 custom_phrase.txt 里置顶了
-# 呣	m	在 custom_phrase.txt 里放到第三位了
-# 哼	hng	在 custom_phrase.txt 里置顶了
 嗯	eng	9179528
 欸	ei	534
 哟	yo	59051
@@ -333,6 +335,7 @@ sort: by_weight
 坌	ben	44
 倴	ben	3
 栟	ben	2
+夯	ben	0
 崩	beng	61288
 蹦	beng	49581
 绷	beng	29020
@@ -2267,6 +2270,7 @@ sort: by_weight
 淏	hao	138
 嚆	hao	22
 鄗	hao	10
+镐	hao	1
 和	he	6252031
 何	he	1822108
 合	he	1085786
@@ -2441,8 +2445,8 @@ sort: by_weight
 铧	hua	952
 砉	hua	111
 觟	hua	3
-怀	huai	607039
 坏	huai	365836
+怀	huai	60703
 淮	huai	36109
 槐	huai	25776
 徊	huai	17842
@@ -2617,6 +2621,8 @@ sort: by_weight
 季	ji	1028550
 击	ji	1010628
 急	ji	1009907
+鸡	ji	1004249
+挤	ji	1003500
 系	ji	942245
 即	ji	900101
 既	ji	853256
@@ -2633,9 +2639,7 @@ sort: by_weight
 迹	ji	234061
 吉	ji	210857
 积	ji	188812
-鸡	ji	184249
 寂	ji	144616
-挤	ji	136500
 疾	ji	120121
 忌	ji	113527
 姬	ji	101929
@@ -3239,10 +3243,10 @@ sort: by_weight
 㵐	jue	0
 𫔎	jue	0
 𫘝	jue	0
-军	jun	2275004
-君	jun	385417
+均	jun	316506
+君	jun	285417
+军	jun	257500
 俊	jun	244925
-均	jun	116506
 郡	jun	57742
 峻	jun	35003
 钧	jun	32200
@@ -3420,6 +3424,7 @@ sort: by_weight
 狯	kuai	590
 郐	kuai	108
 鲙	kuai	16
+浍	kuai	1
 㧟	kuai	0
 宽	kuan	175076
 款	kuan	136499
@@ -4068,7 +4073,6 @@ sort: by_weight
 瘰	luo	77
 泺	luo	58
 蓏	luo	10
-虑	lv	257747
 绿	lv	245485
 律	lv	223633
 率	lv	217561
@@ -4081,6 +4085,7 @@ sort: by_weight
 履	lv	28690
 捋	lv	9568
 滤	lv	5489
+虑	lv	5374
 褛	lv	4042
 铝	lv	3934
 闾	lv	3205
@@ -4860,6 +4865,7 @@ sort: by_weight
 洴	ping	10
 帡	ping	4
 荓	ping	3
+冯	ping	1
 蚲	ping	1
 涄	ping	0
 玶	ping	0
@@ -5190,6 +5196,7 @@ sort: by_weight
 碃	qing	32
 庼	qing	15
 勍	qing	13
+倩	qing	1
 穷	qiong	138792
 琼	qiong	49778
 穹	qiong	16599
@@ -6226,6 +6233,7 @@ sort: by_weight
 蜩	tiao	96
 鲦	tiao	86
 朓	tiao	20
+苕	tiao	1
 嬥	tiao	0
 铁	tie	520031
 贴	tie	169181
@@ -6510,6 +6518,7 @@ sort: by_weight
 硙	wei	2
 薳	wei	2
 峗	wei	1
+崴	wei	1
 洈	wei	1
 螱	wei	0
 鳂	wei	0
@@ -6568,6 +6577,7 @@ sort: by_weight
 硪	wo	109
 肟	wo	78
 偓	wo	37
+涴	wo	23
 踒	wo	2
 无	wu	4177289
 物	wu	1225245
@@ -6766,6 +6776,7 @@ sort: by_weight
 线	xian	539444
 险	xian	386142
 仙	xian	379429
+咸	xian	330660
 鲜	xian	273041
 限	xian	222821
 闲	xian	202953
@@ -6780,7 +6791,6 @@ sort: by_weight
 掀	xian	47524
 宪	xian	36534
 见	xian	34609
-咸	xian	33066
 衔	xian	27315
 娴	xian	21333
 涎	xian	11149
@@ -7693,8 +7703,8 @@ sort: by_weight
 铕	you	5
 鲉	you	3
 𬨎	you	0
-于	yu	3614992
 与	yu	2104552
+于	yu	1614992
 语	yu	843913
 雨	yu	725801
 玉	yu	721753

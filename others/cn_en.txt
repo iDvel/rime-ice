@@ -1,6 +1,6 @@
 # 中英混输词库
 # 根据此文件生成对应的 en_dicts/ 下的全拼及双拼词库
-# version: 2023-12-08
+# version: 2024-02-10
 X光
 X光片
 X射线
@@ -429,6 +429,7 @@ X和Y
 封IP
 换IP
 VIP卡
+VIP会员
 AAA级
 第N次
 发EMS

@@ -19,10 +19,6 @@ func main() {
 		case "t":
 			rime.Temp()
 			return
-		case "p":
-			rime.CheckPolyphone(rime.BasePath)
-			rime.CheckPolyphone(rime.ExtPath)
-			return
 		case "tp":
 			rime.Pinyin(filepath.Join(rime.RimeDir, "cn_dicts/temp.txt"))
 			return
