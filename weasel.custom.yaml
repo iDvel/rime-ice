@@ -2,7 +2,7 @@ customization:
   distribution_code_name: Weasel
   distribution_version: 0.15.0.0
   generator: "Weasel::UIStyleSettings"
-  modified_time: "Wed Jun  7 13:13:44 2023"
+  modified_time: "Sat Feb 17 16:58:03 2024"
   rime_version: 1.8.5
 patch:
   "preset_color_schemes/Cierra_Runis":
@@ -14,12 +14,12 @@ patch:
     hilited_back_color: 0x0000
     hilited_candidate_back_color: 0x0000
     hilited_candidate_text_color: 0x08F
-    name: "Cierra_Runis"
+    name: Cierra_Runis
     text_color: 0xF0F0F0
   "style/color_scheme": Cierra_Runis
-  "style/font_face": "Segoe UI Emoji:20:39:bold, Noto Color Emoji SVG:80, Source Han Sans SC VF:bold"
-  "style/label_font_face": "Source Han Sans SC VF:bold"
   "style/comment_font_face": "Source Han Sans SC VF:bold"
+  "style/font_face": "Segoe UI Emoji:20:39:bold, Noto Color Emoji SVG:80, Source Han Sans SC VF:bold"
   "style/font_point": 12
   "style/horizontal": true
+  "style/label_font_face": "Source Han Sans SC VF:bold"
   "style/layout/corner_radius": 12
