@@ -1,7 +1,6 @@
 # Rime schema
 # encoding: utf-8
 
-
 # 适配了仓输入法 [Hamster](https://github.com/imfuxiao/Hamster/) 九宫格布局。
 # 参考于仓老师 [morse.hsiao](https://github.com/imfuxiao) 的示例
 #
@@ -9,9 +8,7 @@
 # 1. 解开 `engine/translators` 下的注释
 # 2. 将 `others/Hamster/melt_eng.custom.yaml` 里的文件拷贝至配置目录，该补丁转写了英文的拼写规则到九宫格；
 
-
 __include: rime_ice.schema.yaml:/
-
 
 schema:
   schema_id: t9
@@ -19,12 +16,11 @@ schema:
   version: "1"
   author:
     - Dvel
-    - '[morse.hsiao](https://github.com/imfuxiao)'
+    - "[morse.hsiao](https://github.com/imfuxiao)"
   description: |
     九宫格 for 仓输入法
   dependencies:
-    - melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
-
+    - melt_eng # 英文输入，作为次翻译器挂载到拼音方案
 
 engine:
   processors:
@@ -45,19 +41,17 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    - lua_translator@date_translator  # 时间、日期、星期
-    - table_translator@custom_phrase  # 自定义短语 custom_phrase_t9.txt
+    - lua_translator@date_translator # 时间、日期、星期
+    - table_translator@custom_phrase # 自定义短语 custom_phrase_t9.txt
     # - table_translator@melt_eng     # 英文输入
   filters:
-    - simplifier@emoji                    # Emoji
-    - simplifier@traditionalize           # 简繁切换
-    - uniquifier                          # 去重
-
+    - simplifier@emoji # Emoji
+    - simplifier@traditionalize # 简繁切换
+    - uniquifier # 去重
 
 translator:
   prism: t9
   spelling_hints: 100
-
 
 # 自定义短语：custom_phrase_t9.txt
 # ⚠️ 编码要用数字
@@ -69,18 +63,15 @@ custom_phrase:
   enable_sentence: false
   initial_quality: 99
 
-
 # 九宫格 1 键上的符号序列
 punctuator:
   half_shape:
     "@": [1, "@", ".", "/", ":", "_", "-", "#"]
 
-
 # 输入时按 1 可以分词
 key_binder:
   bindings:
     - { when: has_menu, accept: at, send: apostrophe }
-
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA987654321

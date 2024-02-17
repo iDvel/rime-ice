@@ -14,7 +14,7 @@
 # 仍可能存在拆字错误，遇见请提 issue 补充
 # https://github.com/mirtlecn/rime_radical_pinyin
 
-# 特别注音部件: 
+# 特别注音部件:
 # '一': [['heng2','yi1']], # 横
 # '丨': [['shu4']], # 竖
 # '丿': [['pie3']], # 撇
@@ -84,8 +84,7 @@
 name: radical_pinyin
 version: "2024.02.04"
 sort: by_weight
-...
-
+---
 〇	ling
 〇	zhe
 㐂	qi'qi'qi
@@ -36248,4 +36247,3 @@ sort: by_weight
 𱌺	chi'zhen
 𱌽	chi'yi
 𱍂	long'long
-
