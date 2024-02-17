@@ -55,6 +55,8 @@ speller:
     # __include: algebra_sogou          # 搜狗双拼
     # __include: algebra_abc            # 智能ABC双拼
     # __include: algebra_ziguang        # 紫光双拼
+    # __include: algebra_daniupy        # 大牛双拼
+    # __include: algebra_yiliupy        # 易浏双拼
 
 translator:
   dictionary: melt_eng
@@ -312,3 +314,65 @@ algebra_ziguang:
     - derive/9/jj/
     - derive/\+/jx/
     - derive/#/j;/
+# 大牛双拼
+algebra_daniupy:
+  __include: algebra_common
+  __append:
+    - derive/(?<!\d)1([1-9])(?!\d)/vi$1/
+    - derive/(?<!\d)1([1-9])(?!\d)/ui$1/
+    - derive/([1-9])0000(?!0)/$1wd/
+    - derive/([1-9])000(?!0)/$1qq/
+    - derive/([1-9])000(?!0)/$1qc/
+    - derive/([1-9])00(?!0)/$1bh/
+    - derive/([2-9])0(?!0)/$1vi/
+    - derive/([2-9])0(?!0)/$1ui/
+    - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1vi$2/
+    - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1ui$2/
+    - derive/\./dq/
+    - derive/\./dc/
+    - derive/10/vi/
+    - derive/10/ui/
+    - derive/0/lg/
+    - derive/1/yi/
+    - derive/2/eu/
+    - derive/2/ln/
+    - derive/3/sd/
+    - derive/4/si/
+    - derive/5/wu/
+    - derive/6/lt/
+    - derive/7/qi/
+    - derive/8/ba/
+    - derive/9/jt/
+    - derive/\+/jk/
+    - derive/#/jg/
+# 易浏双拼
+algebra_yiliupy:
+  __include: algebra_common
+  __append:
+    - derive/(?<!\d)1([1-9])(?!\d)/vi$1/
+    - derive/(?<!\d)1([1-9])(?!\d)/oi$1/
+    - derive/([1-9])0000(?!0)/$1wd/
+    - derive/([1-9])000(?!0)/$1qq/
+    - derive/([1-9])000(?!0)/$1qc/
+    - derive/([1-9])00(?!0)/$1bh/
+    - derive/([2-9])0(?!0)/$1vi/
+    - derive/([2-9])0(?!0)/$1oi/
+    - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1vi$2/
+    - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1oi$2/
+    - derive/\./dq/
+    - derive/\./dc/
+    - derive/10/vi/
+    - derive/10/oi/
+    - derive/0/lg/
+    - derive/1/yi/
+    - derive/2/er/
+    - derive/2/ln/
+    - derive/3/sd/
+    - derive/4/si/
+    - derive/5/wu/
+    - derive/6/lt/
+    - derive/7/qi/
+    - derive/8/ba/
+    - derive/9/jt/
+    - derive/\+/jk/
+    - derive/#/jg/

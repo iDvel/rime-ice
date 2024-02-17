@@ -42,6 +42,8 @@ speller:
     # __include: algebra_sogou          # 搜狗双拼
     # __include: algebra_abc            # 智能ABC双拼
     # __include: algebra_ziguang        # 紫光双拼
+    # __include: algebra_daniupy        # 大牛双拼
+    # __include: algebra_yiliupy        # 易浏双拼
 
 translator:
   dictionary: radical_pinyin
@@ -271,3 +273,106 @@ algebra_ziguang:
   - xform/an(?=^|$|')/<r>/
   - xform/'|<|>//
 
+algebra_daniupy:
+  - xform/^([aoe].*)(?=^|$|')/<e>$1/
+  - xform/'([aoe].*)(?=^|$|')/'<e>$1/
+  - derive/^([jqxy])u(.*)(?=^|$|')/$1v$2/
+  - derive/'([jqxy])u(.*)(?=^|$|')/'$1v$2/
+  # 飞键-声母
+  - xform/^sh/<u>/
+  - xform/'sh/<u>/
+  - derive/<u>/<v>/
+  - xform/^zh/<o>/
+  - xform/'zh/'<o>/
+  - derive/<o>/<a>/
+  # 飞键-韵母
+  - xform/ian(?=^|$|')/<c>/
+  - derive/<c>/<q>/
+  - xform/ui(?=^|$|')/<n>/
+  - derive/<n>/<v>/
+  # 无飞键声母
+  - xform/^ch/<i>/
+  - xform/'ch/'<i>/
+  # 无飞键韵母
+  - xform/iang(?=^|$|')/<n>/
+  - xform/iao(?=^|$|')/<m>/
+  - xform/uang(?=^|$|')/<x>/
+  - xform/ve(?=^|$|')/<x>/
+  - xform/uan(?=^|$|')/<z>/
+  - xform/eng(?=^|$|')/<j>/
+  - xform/van(?=^|$|')/<j>/
+  - xform/ua(?=^|$|')/<q>/
+  - xform/ei(?=^|$|')/<w>/
+  - xform/vn(?=^|$|')/<w>/
+  - xform/ou(?=^|$|')/<r>/
+  - xform/iu(?=^|$|')/<t>/
+  - xform/er(?=^|$|')/<u>/
+  - xform/uo(?=^|$|')/<o>/
+  - xform/ie(?=^|$|')/<p>/
+  - xform/ao(?=^|$|')/<s>/
+  - xform/an(?=^|$|')/<d>/
+  - xform/ang(?=^|$|')/<f>/
+  - xform/uai(?=^|$|')/<g>/
+  - xform/ing(?=^|$|')/<g>/
+  - xform/ai(?=^|$|')/<h>/
+  - xform/ue(?=^|$|')/<h>/
+  - xform/en(?=^|$|')/<k>/
+  - xform/ia(?=^|$|')/<k>/
+  - xform/i?ong(?=^|$|')/<l>/
+  - xform/in(?=^|$|')/<b>/
+  - xform/un(?=^|$|')/<y>/
+  - xform/'|<|>//
+
+algebra_yiliupy:
+  - xform/^([aoe])$/$1$1/
+  - xform/'([aoe])$/'$1$1/
+  - xform/^([aoe])(ng)$/e$1$2/
+  - xform/'([aoe])(ng)$/'e$1$2/
+  - derive/^([jqxy])u(.*)$/$1v$2/
+  - derive/'([jqxy])u(.*)$/'$1v$2/
+  # 飞键-韵母
+  - xform/ian(?=^|$|')/<c>/
+  - derive/<c>/<q>/
+  - xform/ui(?=^|$|')/ゑ/      # 使用假名标记ui
+  - derive/ゑ/<v>/
+  # 无飞键韵母
+  - xform/uo(?=^|$|')/を/      # 使用假名标记uo
+  - xform/iang(?=^|$|')/<n>/
+  - xform/iao(?=^|$|')/<m>/
+  - xform/uang(?=^|$|')/<x>/
+  - xform/ve(?=^|$|')/<x>/
+  - xform/uan(?=^|$|')/<z>/
+  - xform/([a-z>])eng(?=^|$|')/$1<j>/
+  - xform/([a-z>])van(?=^|$|')/$1<j>/
+  - xform/ua(?=^|$|')/<q>/
+  - xform/([a-z>])ei(?=^|$|')/$1<w>/
+  - xform/([a-z>])vn(?=^|$|')/$1<w>/
+  - xform/([a-z>])ou(?=^|$|')/$1<r>/
+  - xform/iu(?=^|$|')/<t>/
+  - xform/ie(?=^|$|')/<p>/
+  - xform/([a-z>])ao(?=^|$|')/$1<s>/
+  - xform/([a-z>])an(?=^|$|')/$1<d>/
+  - xform/([a-z>])ang(?=^|$|')/$1<f>/
+  - xform/uai(?=^|$|')/<g>/
+  - xform/ing(?=^|$|')/<g>/
+  - xform/([a-z>])ai(?=^|$|')/$1<h>/
+  - xform/([a-z>])ue(?=^|$|')/$1<h>/
+  - xform/([a-z>])en(?=^|$|')/<k>/
+  - xform/([a-z>])ia(?=^|$|')/<k>/
+  - xform/i?ong(?=^|$|')/<l>/
+  - xform/in(?=^|$|')/<b>/
+  - xform/un(?=^|$|')/<y>/
+  # 飞键-声母
+  - xform/^sh/<v>/
+  - xform/'sh/<v>/
+  - derive/<v>([^uを])/<o>$1/  # OO,OU映射到o,ou，不映射到shuo、shu
+  - xform/^zh/<u>/
+  - xform/'zh/'<u>/
+  - derive/<u>([^aiゑを])/<a>$1/  # AA,AI,AN,AO映射到a,ai,an,ao，不映射到zha、zhi、zhui、zhuo
+  # 无飞键声母
+  - xform/^ch/<i>/
+  - xform/'ch/'<i>/'
+  # 还原
+  - xform/ゑ/<n>/
+  - xform/を/<o>/
+  - xform/'|<|>//
