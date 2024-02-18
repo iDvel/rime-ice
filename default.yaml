@@ -22,7 +22,7 @@ schema_list:
 
 # 菜单
 menu:
-  page_size: 5  # 候选词个数
+  page_size: 6  # 候选词个数
   # alternative_select_labels: [ ①, ②, ③, ④, ⑤, ⑥, ⑦, ⑧, ⑨, ⑩ ]  # 修改候选项标签
   # alternative_select_keys: ASDFGHJKL  # 如编码字符占用数字键，则需另设选字键
 
@@ -167,9 +167,9 @@ recognizer:
 
 # 快捷键
 key_binder:
-  # Lua 配置: 以词定字（上屏当前词句的第一个或最后一个字），和中括号翻页有冲突
-  select_first_character: "bracketleft"  # 左中括号 [
-  select_last_character: "bracketright"  # 右中括号 ]
+  # Lua 配置: 以词定字（上屏当前词句的第一个或最后一个字）
+  select_first_character: "minus"  # - 减号
+  select_last_character: "equal"  # = 等号
 
   bindings:
     # Tab / Shift+Tab 切换光标至下/上一个拼音
@@ -184,16 +184,20 @@ key_binder:
     - { when: composing, accept: Alt+Right, send: Shift+Right }
 
     # 翻页 - =
-    - { when: has_menu, accept: minus, send: Page_Up }
-    - { when: has_menu, accept: equal, send: Page_Down }
+    # - { when: has_menu, accept: minus, send: Page_Up }
+    # - { when: has_menu, accept: equal, send: Page_Down }
 
     # 翻页 , .
     # - { when: paging, accept: comma, send: Page_Up }
     # - { when: has_menu, accept: period, send: Page_Down }
 
     # 翻页 [ ]
-    # - { when: paging, accept: bracketleft, send: Page_Up }
-    # - { when: has_menu, accept: bracketright, send: Page_Down }
+    - { when: paging, accept: bracketleft, send: Page_Up }
+    - { when: has_menu, accept: bracketright, send: Page_Down }
+
+    # 分号和引号代表第二三候选字，用于快速上屏
+    - {when: has_menu, accept: semicolon, send: 2 }
+    - {when: has_menu, accept: apostrophe, send: 3 }
 
     # 两种按键配置，鼠须管 Control+Shift+4 生效，小狼毫 Control+Shift+dollar 生效，都写上了。
     # numbered_mode_switch:
