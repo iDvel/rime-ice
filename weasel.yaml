@@ -57,9 +57,9 @@ style:
   font_face: "Segoe UI Emoji:30:39, Segoe UI Emoji:23:23, Segoe UI Emoji:2a:2a, Segoe UI Emoji:fe0f:fe0f, Segoe UI Emoji:20e3:20e3, Microsoft YaHei, SF Pro, Segoe UI Emoji, Noto Color Emoji"
   label_font_face: "Microsoft YaHei"       # 标签字体
   comment_font_face: "Microsoft YaHei"     # 注释字体
-  font_point: 14                           # 全局字体字号
-  label_font_point: 14                     # 标签字体字号，不设定 fallback 到 font_point
-  comment_font_point: 13                   # 注释字体字号，不设定 fallback 到 font_point
+  font_point: 13                           # 全局字体字号
+  label_font_point: 13                     # 标签字体字号，不设定 fallback 到 font_point
+  comment_font_point: 12                   # 注释字体字号，不设定 fallback 到 font_point
 
   inline_preedit: true                     # 行内显示预编辑区：true；false
   preedit_type: composition                # 预编辑区内容：composition（编码）； preview（选中的候选）；preview_all（全部候选）
