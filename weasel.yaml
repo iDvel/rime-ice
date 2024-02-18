@@ -12,20 +12,26 @@ config_version: "2024-02-10"
 # [app_options]
 # 针对特定应用的设置
 app_options:
-  firefox.exe:
-    inline_preedit: true # 行内显示预编辑区：规避 <https://github.com/rime/weasel/issues/946>
-  # cmd.exe:               # 带 .exe 的进程名：Weasel 15.0 及之前版本须小写; PR #1049 合并后释出的版本大小写不敏感
-  #   ascii_mode: true     # 英文模式
-  # conhost.exe:
-  #   ascii_mode: true
-  # windowsterminal.exe:
-  #   ascii_mode: true
-  # wt.exe:
-  #   ascii_mode: true
-  # pwsh.exe:
-  #   ascii_mode: true
-  # powershell.exe:
-  #   ascii_mode: true
+  code.exe: # 带 .exe 的进程名：Weasel 15.0 及之前版本须小写; PR #1049 合并后释出的版本大小写不敏感
+    ascii_mode: true # 英文模式
+  goland64.exe:
+    ascii_mode: true
+  sublime_text.exe:
+    ascii_mode: true
+  windowsterminal.exe:
+    ascii_mode: true
+  cmd.exe:
+    ascii_mode: true
+  conhost.exe:
+    ascii_mode: true
+  wt.exe:
+    ascii_mode: true
+  pwsh.exe:
+    ascii_mode: true
+  powershell.exe:
+    ascii_mode: true
+  # firefox.exe:
+  #   inline_preedit: true # 行内显示预编辑区：规避 <https://github.com/rime/weasel/issues/946>
   # mintty.exe:
   #   ascii_mode: true
   # nvim-qt.exe:
@@ -59,7 +65,7 @@ style:
   preedit_type: composition                # 预编辑区内容：composition（编码）； preview（选中的候选）；preview_all（全部候选）
   
   fullscreen: false                        # 候选窗口全屏显示：true；false
-  horizontal: true                         # 候选项横排：true；false
+  horizontal: false                        # 候选项横排：true；false
   vertical_text: false                     # 竖排文本：true；false
   # text_orientation: horizontal           # 文本排列方向，效果和 `vertical_text` 相同：horizontal；vertical
   vertical_text_left_to_right: false       # 竖排方向是否从左到右：true；false
@@ -67,7 +73,7 @@ style:
   vertical_auto_reverse: false             # 文本竖排模式下，候选窗口位于光标上方时倒序排列：true；false
   
   label_format: "%s"                       # 标签字符：例如 %s. 效果为 1. 2. 3. ....
-  mark_text: "|"                           # 标记字符，显示在选中的候选标签前，需要在配色方案中指定颜色；如该项为空字符串 "" 而配色方案中 hilited_mark_color 非透明色，则显示 Windows 11 输入法风格标记
+  mark_text: ""                           # 标记字符，显示在选中的候选标签前，需要在配色方案中指定颜色；如该项为空字符串 "" 而配色方案中 hilited_mark_color 非透明色，则显示 Windows 11 输入法风格标记
   ascii_tip_follow_cursor: false           # 切换 ASCII 模式时，提示跟随鼠标，而非输入光标
   enhanced_position: true                  # 无法定位候选框时，在窗口左上角显示候选框：true；false
   display_tray_icon: false                 # 托盘显示独立于语言栏的额外图标：true；false
@@ -97,8 +103,7 @@ style:
     shadow_offset_y: 4                     # 阴影上下偏移距离
     corner_radius: 8                       # 候选窗口圆角半径
     round_corner: 8                        # 候选背景色块圆角半径，又名 hilited_corner_radius
-    # type: vertical                       # 布局设置，效果和 style 下的设置相同：
-                                           # horizontal（横向）；vertical（竖向） ; vertical_text（竖排文本） ; vertical+fullscreen（全屏） ; horizontal+fullscreen（横向全屏）
+    # type: vertical                       # 布局设置，效果和 style 下的设置相同：horizontal（横向）；vertical（竖向） ; vertical_text（竖排文本） ; vertical+fullscreen（全屏） ; horizontal+fullscreen（横向全屏）
 # [End of <style>]
 
 # [preset_color_schemes]
