@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2024-02-07"
+version: "2024-02-18"
 sort: by_weight
 ...
 ##### 容错词
@@ -232,6 +232,8 @@ sort: by_weight
 契科夫	qi ke fu
 凑合	cou he
 凑活	cou huo
+巨惠	ju hui
+钜惠	ju hui
 
 
 ##### 叠字
@@ -598,6 +600,3 @@ sort: by_weight
 四个興	si ge xing
 四个龍	si ge long
 四个土
-# 其他。。。
-男女男
-女男女
