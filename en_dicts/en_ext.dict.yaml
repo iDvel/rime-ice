@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2024-02-10"
+version: "2024-02-18"
 sort: by_weight
 ...
 # 一些杂项
@@ -858,7 +858,6 @@ Software Development Kit	SoftwareDevelopmentKit
 Should I Sleep	ShouldISleep
 Simplenote	Simplenote
 Siri	Siri
-Sketch	Sketch
 Slicy	Slicy
 Snagit	Snagit
 Sparkbox	Sparkbox
@@ -2441,3 +2440,10 @@ Manifest V3	ManifestV3
 copycat	copycat
 Google Gemini	GoogleGemini
 Google Gemini Advanced	GoogleGeminiAdvanced
+infuse	infuse
+headless	headless
+IMBA	IMBA
+imbalance	imbalance
+imbalanced	imbalanced
+GitButler	GitButler
+Sora	Sora
