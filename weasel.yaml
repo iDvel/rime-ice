@@ -73,7 +73,7 @@ style:
   vertical_auto_reverse: false             # 文本竖排模式下，候选窗口位于光标上方时倒序排列：true；false
   
   label_format: "%s"                       # 标签字符：例如 %s. 效果为 1. 2. 3. ....
-  mark_text: ""                           # 标记字符，显示在选中的候选标签前，需要在配色方案中指定颜色；如该项为空字符串 "" 而配色方案中 hilited_mark_color 非透明色，则显示 Windows 11 输入法风格标记
+  mark_text: ""                            # 标记字符，显示在选中的候选标签前，需要在配色方案中指定颜色；如该项为空字符串 "" 而配色方案中 hilited_mark_color 非透明色，则显示 Windows 11 输入法风格标记
   ascii_tip_follow_cursor: false           # 切换 ASCII 模式时，提示跟随鼠标，而非输入光标
   enhanced_position: true                  # 无法定位候选框时，在窗口左上角显示候选框：true；false
   display_tray_icon: false                 # 托盘显示独立于语言栏的额外图标：true；false
@@ -119,7 +119,7 @@ style:
 preset_color_schemes:
   # 以下是一个配色方案示例
   nord:                                      # 在 `style/color_schema` 指定的配色方案值
-    name: "远山／Nord"                       # 方案设置中显示的配色名称
+    name: "远山／Nord"                        # 方案设置中显示的配色名称
     author: Mirtle                           # 配色作者名称
     color_format: rgba                       # 颜色格式：argb（0xaarrggbb）；rgba（0xrrggbbaa）；abgr（0xaabbggrr 默认）
     # 默认配色
