@@ -133,7 +133,7 @@ reduce_english_filter:
   words: [aid, ann,
   bail, bait, bam, band, bans, bat, bay, bend, bent, benz, bib, bid, bien, biz, boc, bop, bos, bud, buf, bach, bench, bush,
   cab, cad, cain, cam, cans, cap, cas, cef, chad, chan, chap, chef, cher, chew, chic, chin, chip, chit, coup, cum, cunt, cur, couch,
-  dab, dag, dal, dam, dent, dew, dial, diet, dim, din, dip, dis, dit, doug, dub, dug, dunn,
+  dab, dag, dal, dam, dent, dew, dial, diet, dim, din, dip, dis, dit, doug, dub, dug, dunn, don,
   fab, fax, fob, fog, foul, fur,
   gag, gail, gain, gal, gam, gaol, ged, gel, ger, guam, gus, gut,
   hail, ham, hank, hans, hat, hay, heil, heir, hem, hep, hud, hum, hung, hunk, hut, hush,
@@ -544,6 +544,6 @@ speller:
     - derive/([jqx])iong$/$1oign/
     # 其他
     - derive/([rtsdghkzc])o(u|ng)$/$1o/ # do → dou|dong
-    - derive/ong$/on/ # lon → long
+    - derive/(.+)ong$/$1on/ # lon → long
     - derive/([tl])eng$/$1en/ # ten → teng
     - derive/([qwrtypsdfghjklzxcbnm])([aeio])ng$/$1ng/ # lng → lang、leng、ling、long
