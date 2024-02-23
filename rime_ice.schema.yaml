@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "2024-02-11"
+  version: "2024-02-23"
   author:
     - Dvel
   description: |
@@ -474,27 +474,33 @@ speller:
     - derive/^([jqxy])v/$1u/
 
     ### 自动纠错
-    # 有些规则对全拼简拼混输有副作用：如「x'ai 喜爱」被纠错为「xia 下」
+########## START 这几个有副作用的规则圈起来，方便取舍
+    # 这些规则对全拼简拼混输有副作用：如「x'ai 喜爱」被纠错为「xia 下」
     # zh、ch、sh
     - derive/([zcs])h(a|e|i|u|ai|ei|an|en|ou|uo|ua|un|ui|uan|uai|uang|ang|eng|ong)$/h$1$2/  # hzi → zhi
     - derive/([zcs])h([aeiu])$/$1$2h/  # zih → zhi
+    # # ia
+    # - derive/([qjx])ia$/$1ai/  # qai → qia
+    # # an
+    # - derive/([wrtypsdfghklzcbnm])an$/$1na/  # dna → dan
+    # # en
+    # - derive/([wrpsdfghklzcbnm])en$/$1ne/  # rne → ren
+    # # in
+    # - derive/([qypjlxbnm])in$/$1ni/  # qni → qin
+    # # un
+    # - derive/([qrtysdghjklzxc])un$/$1nu/  # qnu → qun
+########## END
     # ai
     - derive/^([wghk])ai$/$1ia/  # wia → wai
-    # ia
-    - derive/([qjx])ia$/$1ai/  # qai → qia
     # ei
-    - derive/([wfghkz])ei$/$1ie/
+    - derive/([wfghkz])ei$/$1ie/  # wie → wei
     # ie
-    - derive/([jqx])ie$/$1ei/
+    - derive/([jqx])ie$/$1ei/  # jei → jie
     # ao
     - derive/([rtypsdghklzcbnm])ao$/$1oa/
     # ou
     - derive/([ypfm])ou$/$1uo/
     # uo（无）
-    # an
-    - derive/([wrtypsdfghklzcbnm])an$/$1na/
-    # en
-    - derive/([wrpsdfghklzcbnm])en$/$1ne/
     # ang
     - derive/([wrtypsdfghklzcbnm])ang$/$1nag/
     - derive/([wrtypsdfghklzcbnm])ang$/$1agn/
@@ -517,8 +523,6 @@ speller:
     # ian
     - derive/([qtpdjlxbnm])ian$/$1ain/
     # - derive/([qtpdjlxbnm])ian$/$1ina/ # 和「李娜、蒂娜、缉拿」等常用词有冲突
-    # in
-    - derive/([qypjlxbnm])in$/$1ni/
     # iang
     - derive/([qjlxn])iang$/$1aing/
     - derive/([qjlxn])iang$/$1inag/
@@ -530,8 +534,6 @@ speller:
     # uan
     - derive/([qrtysdghjklzxcn])uan$/$1aun/
     # - derive/([qrtysdghjklzxcn])uan$/$1una/ # 和「去哪、露娜」等常用词有冲突
-    # un
-    - derive/([qrtysdghjklzxc])un$/$1nu/
     # ue
     - derive/([nlyjqx])ue$/$1eu/
     # uang
