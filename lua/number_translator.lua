@@ -63,40 +63,35 @@ end
 
 -- 数值转换为中文
 local function number2cnChar(num, flag, digitUnit, wordFigure) --flag=0中文小写反之为大写
-    local st, result
-    num = tostring(num)
-    result = ""
-    local num1, num2 = math.modf(num)
-    if tonumber(num2) == 0 then
-        if tonumber(flag) < 1 then
-            digitUnit = digitUnit or { [1] = "万", [2] = "亿" }
-            wordFigure = wordFigure or { [1] = "〇", [2] = "一", [3] = "十", [4] = "元" }
-        else
-            digitUnit = digitUnit or { [1] = "万", [2] = "亿" }
-            wordFigure = wordFigure or { [1] = "零", [2] = "壹", [3] = "拾", [4] = "元" }
-        end
-        local lens = string.len(num1)
-        if lens < 5 then
-            result = formatNum(num1, flag)
-        elseif lens < 9 then
-            result = formatNum(string.sub(num1, 1, -5), flag) .. digitUnit[1] .. formatNum(string.sub(num1, -4, -1), flag)
-        elseif lens < 13 then
-            result = formatNum(string.sub(num1, 1, -9), flag) ..
-            digitUnit[2] ..
-            formatNum(string.sub(num1, -8, -5), flag) .. digitUnit[1] .. formatNum(string.sub(num1, -4, -1), flag)
-        else
-            result = ""
-        end
-        result = result:gsub("^" .. wordFigure[1], "")
-        result = result:gsub(wordFigure[1] .. digitUnit[1], "")
-        result = result:gsub(wordFigure[1] .. digitUnit[2], "")
-        result = result:gsub(wordFigure[1] .. wordFigure[1], wordFigure[1])
-        result = result:gsub(wordFigure[1] .. "$", "")
-        if lens > 4 then result = result:gsub("^" .. wordFigure[2] .. wordFigure[3], wordFigure[3]) end
-        if result ~= "" then result = result .. wordFigure[4] else result = "数值超限！" end
+    local result = ""
+
+    if tonumber(flag) < 1 then
+        digitUnit = digitUnit or { [1] = "万", [2] = "亿" }
+        wordFigure = wordFigure or { [1] = "〇", [2] = "一", [3] = "十", [4] = "元" }
     else
-        return "数值超限！"
+        digitUnit = digitUnit or { [1] = "万", [2] = "亿" }
+        wordFigure = wordFigure or { [1] = "零", [2] = "壹", [3] = "拾", [4] = "元" }
     end
+    local lens = string.len(num)
+    if lens < 5 then
+        result = formatNum(num, flag)
+    elseif lens < 9 then
+        result = formatNum(string.sub(num, 1, -5), flag) .. digitUnit[1] .. formatNum(string.sub(num, -4, -1), flag)
+    elseif lens < 13 then
+        result = formatNum(string.sub(num, 1, -9), flag) ..
+            digitUnit[2] ..
+            formatNum(string.sub(num, -8, -5), flag) .. digitUnit[1] .. formatNum(string.sub(num, -4, -1), flag)
+    else
+        result = ""
+    end
+
+    result = result:gsub("^" .. wordFigure[1], "")
+    result = result:gsub(wordFigure[1] .. digitUnit[1], "")
+    result = result:gsub(wordFigure[1] .. digitUnit[2], "")
+    result = result:gsub(wordFigure[1] .. wordFigure[1], wordFigure[1])
+    result = result:gsub(wordFigure[1] .. "$", "")
+    if lens > 4 then result = result:gsub("^" .. wordFigure[2] .. wordFigure[3], wordFigure[3]) end
+    if result ~= "" then result = result .. wordFigure[4] else result = "数值超限！" end
 
     return result
 end
@@ -145,7 +140,7 @@ end
 local function number_translator(input, seg, env)
     -- 获取 recognizer/patterns/number 的第 2 个字符作为触发前缀
     env.number_keyword = env.number_keyword or
-    env.engine.schema.config:get_string('recognizer/patterns/number'):sub(2, 2)
+        env.engine.schema.config:get_string('recognizer/patterns/number'):sub(2, 2)
     local str, num, numberPart
     if env.number_keyword ~= '' and input:sub(1, 1) == env.number_keyword then
         str = string.gsub(input, "^(%a+)", "")
