@@ -1,8 +1,13 @@
 -- 让写在 alphabet 中的某标点自动上屏
+--
+-- 感谢 @[Mirtle](https://github.com/mirtlecn) 的 PR
+--
 -- 配置，在方案中填写 auto_commit_single_punct: '`'
 -- 用途示例： `（反引号）被添加到了 speller/alphabet 来响应辅码，如 gan`shuijin 得到「淦」。
 --          这样导致在输入单个的 ` 时仍然需要按空格选择一下。
 --          因为 ` 只在非开头状态下产生作用，所以我希望输入单个的 ` 时和其他标点一样都直接上屏。
+-- 支持设置多个符号，例如双拼可以设置为 auto_commit_single_punct: '`;' 让单个的分号也直接上屏
+
 local P = {}
 
 function P.get_punct_text(cfg, path)
@@ -28,22 +33,31 @@ end
 
 function P.init(env)
     local cfg = env.engine.schema.config
-    P.punct = cfg:get_string(env.name_space:gsub('^*', ''))
-    if not P.punct then
+    local puncts = cfg:get_string(env.name_space:gsub('^*', ''))
+    if not puncts then
         return
     end
 
-    local full_shape_path = "punctuator/full_shape/" .. P.punct
-    local half_shape_path = "punctuator/half_shape/" .. P.punct
-    P.full_shape_text = P.get_punct_text(cfg, full_shape_path)
-    P.half_shape_text = P.get_punct_text(cfg, half_shape_path)
+    P.puncts = {}
+    for punct in puncts:gmatch(".") do
+        table.insert(P.puncts, punct)
+    end
+
+    P.full_shape_texts = {}
+    P.half_shape_texts = {}
+    for _, punct in ipairs(P.puncts) do
+        local full_shape_path = "punctuator/full_shape/" .. punct
+        local half_shape_path = "punctuator/half_shape/" .. punct
+        P.full_shape_texts[punct] = P.get_punct_text(cfg, full_shape_path)
+        P.half_shape_texts[punct] = P.get_punct_text(cfg, half_shape_path)
+    end
 end
 
 function P.func(key, env)
     local context = env.engine.context
 
     -- 不影响组合键
-    if not P.punct or key:release() or key:ctrl() or key:alt() or key:super() then
+    if not P.puncts or key:release() or key:ctrl() or key:alt() or key:super() then
         return 2 -- kNoop
     end
 
@@ -57,16 +71,19 @@ function P.func(key, env)
     -- 	return 1
     -- end
 
-    if not context:is_composing() and ascii_str == P.punct then
-        local is_full_shape = env.engine.context:get_option("full_shape")
-        if is_full_shape and P.full_shape_text then
-            env.engine:commit_text(P.full_shape_text)
-            return 1
-        elseif (not is_full_shape) and P.half_shape_text then
-            env.engine:commit_text(P.half_shape_text)
-            return 1
+    for _, punct in ipairs(P.puncts) do
+        if not context:is_composing() and ascii_str == punct then
+            local is_full_shape = env.engine.context:get_option("full_shape")
+            if is_full_shape and P.full_shape_texts[punct] then
+                env.engine:commit_text(P.full_shape_texts[punct])
+                return 1
+            elseif (not is_full_shape) and P.half_shape_texts[punct] then
+                env.engine:commit_text(P.half_shape_texts[punct])
+                return 1
+            end
         end
     end
+
     return 2 -- kNoop
 end
 
