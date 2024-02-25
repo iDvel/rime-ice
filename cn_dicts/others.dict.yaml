@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2024-02-18"
+version: "2024-02-25"
 sort: by_weight
 ...
 ##### 容错词
@@ -234,6 +234,8 @@ sort: by_weight
 凑活	cou huo
 巨惠	ju hui
 钜惠	ju hui
+摩羯座	mo jie zuo
+魔蝎座	mo xie zuo
 
 
 ##### 叠字

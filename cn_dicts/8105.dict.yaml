@@ -34,7 +34,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2024-02-14"
+version: "2024-02-25"
 sort: by_weight
 ...
 ### 按需启用
@@ -1498,13 +1498,13 @@ sort: by_weight
 躲	duo	249450
 朵	duo	202374
 夺	duo	175135
-度	duo	50671
 堕	duo	30285
 哆	duo	30257
 跺	duo	20222
 踱	duo	19897
 舵	duo	17755
 咄	duo	14825
+度	duo	9000
 剁	duo	8222
 铎	duo	7819
 惰	duo	7669
@@ -5696,7 +5696,6 @@ sort: by_weight
 式	shi	600521
 示	shi	492951
 试	shi	489076
-什	shi	482836
 史	shi	409099
 食	shi	353226
 施	shi	301591
@@ -5728,6 +5727,7 @@ sort: by_weight
 谥	shi	2561
 舐	shi	1734
 媞	shi	1080
+什	shi	1000
 豕	shi	812
 莳	shi	778
 筮	shi	492
