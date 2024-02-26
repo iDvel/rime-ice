@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2024-02-18"
+version: "2024-02-25"
 sort: by_weight
 ...
 # 一些杂项
@@ -2449,3 +2449,7 @@ GitButler	GitButler
 Sora	Sora
 WinNAS	WinNAS
 prune	prune
+Wireshark	Wireshark
+Theseus	Theseus
+Laravel	Laravel
+monolith	monolith

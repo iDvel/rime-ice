@@ -105,6 +105,7 @@ function M.init(env)
         ["da jia lai zhao cha er"] = { text = "大家来找茬儿", comment = "大家来找碴儿" },
         ["cou huo"] = { text = "凑活", comment = "凑合(he)" },
         ["ju hui"] = { text = "钜惠", comment = "巨惠" },
+        ["mo xie zuo"] = { text = "魔蝎座", comment = "摩羯(jié)座" },
     }
 end
 

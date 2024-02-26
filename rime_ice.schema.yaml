@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "2024-02-23"
+  version: "2024-02-25"
   author:
     - Dvel
   description: |
@@ -43,7 +43,6 @@ engine:
   processors:
     - lua_processor@select_character          # 以词定字
     - ascii_composer
-    - lua_processor@auto_commit_single_punct  # 让写在 alphabet 中的某标点自动上屏
     - recognizer
     - key_binder
     - speller
@@ -103,12 +102,6 @@ lunar: nl  # 农历： 二〇二三年冬月二十 癸卯年（兔）冬月二�
 long_word_filter:
   count: 2
   idx: 4
-
-
-# Lua 配置：直接上屏单个字符
-# lua_filter@search@radical_pinyin 辅码的引导符在 key_binder/search 定义，目前为 `（反引号）。
-# ` 只在中间时起辅码查询作用，但是输入单个 ` 时仍然需要按空格选择，这个 Lua 让单个的 ` 直接上屏。
-auto_commit_single_punct: "`"
 
 
 # Lua 配置：为 corrector 格式化 comment，占位符为 {comment}
@@ -244,7 +237,7 @@ pin_cand_filter:
   - cai	才
   - cong	从
   - chu	出
-  - ba	吧 把
+  - ba	把 吧
   - bu	不
   - bing	并
   - bei	被
@@ -256,6 +249,7 @@ pin_cand_filter:
   - ma	吗 嘛 妈
   - mei	没
   - mai	买 卖
+  - reng	仍 扔
   # ta、na
   - ta men	他们 她们 它们
   - tm	他们 她们 它们
@@ -410,6 +404,8 @@ key_binder:
 speller:
   # 如果不想让什么标点直接上屏，可以加在 alphabet，或者编辑标点符号为两个及以上的映射
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA`
+  # initials 定义仅作为始码的按键，排除 ` 让单个的 ` 可以直接上屏
+  initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
     ### 模糊音
@@ -489,6 +485,8 @@ speller:
     # - derive/([qypjlxbnm])in$/$1ni/  # qni → qin
     # # un
     # - derive/([qrtysdghjklzxc])un$/$1nu/  # qnu → qun
+    # # ian
+    # - derive/([qtpdjlxbnm])ian$/$1ain/
 ########## END
     # ai
     - derive/^([wghk])ai$/$1ia/  # wia → wai
@@ -520,9 +518,6 @@ speller:
     - derive/([rtsghkzc])ui$/$1iu/
     # iu
     - derive/([qjlxnm])iu$/$1ui/
-    # ian
-    - derive/([qtpdjlxbnm])ian$/$1ain/
-    # - derive/([qtpdjlxbnm])ian$/$1ina/ # 和「李娜、蒂娜、缉拿」等常用词有冲突
     # iang
     - derive/([qjlxn])iang$/$1aing/
     - derive/([qjlxn])iang$/$1inag/
