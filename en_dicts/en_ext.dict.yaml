@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2024-02-25"
+version: "2024-02-27"
 sort: by_weight
 ...
 # 一些杂项
@@ -2453,3 +2453,4 @@ Wireshark	Wireshark
 Theseus	Theseus
 Laravel	Laravel
 monolith	monolith
+Chiikawa	Chiikawa
