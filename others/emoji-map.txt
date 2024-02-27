@@ -1,7 +1,7 @@
 # Emoji 映射表
 # 根据此文件生成 emoji.txt
 #
-# version: 2024-02-25
+# version: 2024-02-27
 #
 # 中文映射由 Dvel 纯手工打造 https://github.com/iDvel/rime-ice
 #
@@ -667,7 +667,7 @@ S$ 新加坡元 新加坡币
 🦨 鼬 臭鼬
 🦘 袋鼠
 🦡 獾 蜜獾
-🐾 掌印 爪印
+🐾 掌印 爪印 动物脚印
 # animal-bird
 🦃 火鸡
 🐔 鸡 鸡头 鸡巴
