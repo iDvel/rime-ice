@@ -18,124 +18,30 @@ README.md	README.md
 
 
 # 按键
-Fn	Fn
-cmd	cmd
-command	command
-Ctrl	Ctrl
-control	control
 Opt	Opt
-option	option
-shift	shift
-tab	tab
-Caps	Caps
 CapsLock	CapsLock
-return	return
-enter	enter
-space	space
 backspace	backspace
 Del	Del
-delete	delete
-Esc	Esc
-eject	eject
 
 
-# 月份（据说好像 5、6、7 月不要缩写 https://www.zhihu.com/question/29896678）
-January	January
-Jan.	Jan.
-January	Jan
-February	February
-Feb.	Feb.
-February	Feb
-March	March
-Mar.	Mar.
-March	Mar
-April	April
-Apr.	Apr.
-April	Apr
-May	May
-June	June
-# Jun.	Jun
-June	Jun
-July	July
-# Jul.	Jul
-# July	Jul
-August	August
-Aug.	Aug.
-August	Aug
-September	September
-Sep.	Sep.
-Sept.	Sep.
-Sept.	Sept.
-September	Sep
-September	Sept
-October	October
-Oct.	Oct.
-October	Oct
-November	November
-Nov.	Nov.
-November	Nov
-December	December
-Dec.	Dec.
-December	Dec
-
-
-# 星期
-Monday	Monday
-Mon.	Mon.
-Monday	Mon
-Tuesday	Tuesday
-Tue.	Tue.
-Tuesday	Tue.
-Wednesday	Wednesday
-Wed.	Wed.
-Wednesday	Wed
-Thursday	Thursday
-Thu.	Thu.
-Thurs.	Thu.
-Thurs.	Thurs.
-Thursday	Thu
-Thursday	Thurs
-Friday	Friday
-Fri.	Fri.
-Friday	Fri
-Saturday	Saturday
-Sat.	Sat.
-Saturday	Sat
-Sunday	Sunday
-Sun.	Sun.
-Sunday	Sun
+# 月份、星期，包含在主词典（据说好像 5、6、7 月不要缩写 https://www.zhihu.com/question/29896678）
 
 
 # 生活大爆炸 & 老友记
-Sheldon	Sheldon
-Leonard	Leonard
-Howard	Howard
 Rajesh	Rajesh
-Penny	Penny
 Bernadette	Bernadette
-Amy	Amy
-Rachel	Rachel
-Monica	Monica
-Joey	Joey
-Ross	Ross
-Chandler	Chandler
 Phoebe	Phoebe
 
 
 # 特定的排序，为了每组的排序，code 必须保持一致
-hell	hell	2
 he'll	hell	1
 shell	shell	2
 she'll	shell	1
-well	well	2
 we'll	well	1
 ill	ill	2
 I'll	ill	1
-ID	id	2
 I'd	id	1
-shed	shed	2
 she'd	shed	1
-net	net	2
 .NET	net	1
 .NET	dotnet
 
@@ -163,7 +69,6 @@ OS X Mavericks	OSX	3
 OS X Yosemite	OSX	4
 OS X El Capitan	OSX	5
 
-macOS	macOS	999
 macOS Sierra	macOS	1
 macOS High Sierra	macOS	2
 macOS Mojave	macOS	3
@@ -268,72 +173,32 @@ Big Sur	BigSur
 TypeORM	TypeORM
 Griffiths	Griffiths
 Chapman	Chapman
-Walsh	Walsh
 Matthews	Matthews
 Patel	Patel
-Willie	Willie
 ChillSeph	ChillSeph
-Ernest	Ernest
-Phillip	Phillip
-Teresa	Teresa
-Doris	Doris
-Evelyn	Evelyn
-Cheryl	Cheryl
 Mildred	Mildred
-Katherine	Katherine
-Judith	Judith
-Janice	Janice
-Theresa	Theresa
-Kimberly	Kimberly
-Denise	Denise
-Irene	Irene
-Shirley	Shirley
-Cynthia	Cynthia
-Brenda	Brenda
 Kathleen	Kathleen
-Jacqueline	Jacqueline
 Wanda	Wanda
-Debra	Debra
-Lois	Lois
-Carolyn	Carolyn
-Tina	Tina
-Phyllis	Phyllis
-Norma	Norma
-Paula	Paula
-Frances	Frances
-Lillian	Lillian
-Olivia	Olivia
 Ava	Ava
-Isabella	Isabella
 Sherlock	Sherlock
 Amelia	Amelia
-Sophia	Sophia
 Abigail	Abigail
-Liam	Liam
-Noah	Noah
-Jay	Jay
-Enya	Enya
 Juno	Juno
 Trump	Trump
 Biden	Biden
 Joseph	Joseph
-Braun	Braun
 Bayes	Bayes
 Saul	Saul
 Wick	Wick
-RPG	RPG
 Role-Playing Game	RPG
 Role-Playing Game	RolePlayingGame
-ADC	ADC
 Attack Damage Carry	ADC
 Attack Damage Carry	AttackDamageCarry
 APC	APC
 Ability Power Carry	APC
 Ability Power Carry	AbilityPowerCarry
-GDP	GDP
 Gross Domestic Product	GDP
 Gross Domestic Product	GrossDomesticProduct
-LOL	LOL
 League of Legends	LOL
 League of Legends	LeagueofLegends
 Laugh Out Loudly	LOL
@@ -344,14 +209,12 @@ Microsoft SQL Server	MicrosoftSQLServer
 SSH	SSH
 Secure Shell	SSH
 Secure Shell	SecureShell
-ISO	ISO
 International Organization for Standardization	ISO
 ISO 8601	ISO8601
 RFC	RFC
 Request for Comments	RFC
 RFC 3339	RFC3339
 RFCs	RFCs
-IETF	IETF
 Internet Engineering Task Force	IETF
 Pro Max	ProMax
 Aeron	Aeron
@@ -362,7 +225,6 @@ Dota	Dota
 Database	Database
 Macintosh	Macintosh
 Superlist	Superlist
-DJ	DJ
 DLC	DLC
 Downloadable content	DLC
 Downloadable content	Downloadablecontent
@@ -379,7 +241,6 @@ Hybrid drive	Hybriddrive
 SSD	SSD
 Solid-state drive	SSD
 Solid-state drive	Solidstatedrive
-CPU	CPU
 Central Processing Unit	CPU
 Central Processing Unit	CentralProcessingUnit
 GPU	GPU
@@ -391,26 +252,20 @@ Advanced RISC Machine	ARM
 Advanced RISC Machine	AdvancedRISCMachine
 eGPU	eGPU
 One Piece	OnePiece
-CCTV	CCTV
 Closed-Circuit Television	CCTV
 Closed-Circuit Television	ClosedCircuitTelevision
 China Central Television	CCTV
 ColorOS	ColorOS
 China Central Television	ChinaCentralTelevision
-GTA	GTA
 Grand Theft Auto	GTA
 Grand Theft Auto	GrandTheftAuto
 GTAV	GTAV
 Grand Theft Auto V	GTAV
 Grand Theft Auto V	GrandTheftAutoV
 LGBT	LGBT
-GPS	GPS
-ATM	ATM
 automated teller machine	ATM
 automated teller machine	automatedtellermachine
 CentOS	CentOS
-Debian	Debian
-BBC	BBC
 DataGrip	DataGrip
 AlphaGo	AlphaGo
 AlphaFold	AlphaFold
@@ -431,10 +286,8 @@ Google Workspace	GoogleWorkspace
 WYSIWYG	WYSIWYG
 What You See Is What You Get	WYSIWYG
 Mark Text	MarkText
-Joplin	Joplin
 SteamOS	SteamOS
 TikTok	TikTok
-IDC	IDC
 International Data Corporation	IDC
 International Data Corporation	InternationalDataCorporation
 Wunderlist	Wunderlist
@@ -450,13 +303,11 @@ Twitch	Twitch
 Todoist	Todoist
 TeamViewer	TeamViewer
 Sleep Cycle	SleepCycle
-Sony	Sony
 PDF Expert	PDFExpert
 OSCHINA	OSCHINA
 Navicat	Navicat
 Navicat Premium	NavicatPremium
 NameSilo	NameSilo
-localhost	localhost
 Musixmatch	Musixmatch
 G Suite	GSuite
 CloudXNS	CloudXNS
@@ -467,17 +318,14 @@ Google Photos	GooglePhotos
 Google Calendar	GoogleCalendar
 LyricsX	LyricsX
 OneDrive	OneDrive
-Xbox	Xbox
 Xbox One	XboxOne
 Xbox One X	XboxOneX
 Xbox Series	XboxSeries
 Xbox Series S	XboxSeriesS
 Switch	Switch
-CSS	CSS
 Cascading Style Sheets	CSS
 Cascading Style Sheets	CascadingStyleSheets
 cascading	cascading
-OTC	OTC
 IEPL	IEPL
 International Ethernet Private Line	IEPL
 IPLC	IPLC
@@ -488,7 +336,6 @@ IntelliJ IDEA Community	IntelliJIDEACommunity
 IntelliJ IDEA Ultimate	IntelliJIDEAUltimate
 IDEA Community	IDEACommunity
 IDEA Ultimate	IDEAUltimate
-IDE	IDE
 NTR	NTR
 Notion	Notion
 Touch Bar	TouchBar
@@ -504,7 +351,6 @@ AirPods Pro	AirPodsPro
 AirPods Max	AirPods
 AirPods Max	AirPodsMax
 CallKit	CallKit
-OSS	OSS
 Object Storage Service	OSS
 Object Storage Service	ObjectStorageService
 OceanBase	OceanBase
@@ -513,15 +359,12 @@ Apple Music	AppleMusic
 TED	TED
 DeepL	DeepL
 Homebrew	Homebrew
-brew	brew
 Finder	Finder
 VMess	VMess
 Shadowsocks	Shadowsocks
-PC	PC
 iStat	iStat
 ClashX	ClashX
 ClashX Pro	ClashXPro
-tracker	tracker
 trackers	trackers
 qBittorrent	qBittorrent
 qBittorrent	qBit
@@ -535,13 +378,9 @@ YAML Ain't Markup Language	YAML
 TOML	TOML
 Tom's Obvious Minimal Language	TOML
 Hexo	Hexo
-Hugo	Hugo
-Epic	Epic
 Epic Games	EpicGames
 Instagram	Instagram
-archive	archive
 Evernote	Evernote
-PDF	PDF
 Portable Document Format	PDF
 Portable Document Format	PortableDocumentFormat
 QuickTime Player	QuickTimePlayer
@@ -551,46 +390,35 @@ Gitea	Gitea
 GitBook	GitBook
 Gboard	Gboard
 Access	Access
-BMW	BMW
 Bayerische Motoren Werke AG	BMW
 BGM	BGM
 Background music	BGM
 Background music	Backgroundmusic
-CEO	CEO
 Chief Executive Officer	CEO
 Chief Executive Officer	ChiefExecutiveOfficer
 CTO	CTO
 Chief Technology Officer	CTO
 Chief Technology Officer	ChiefTechnologyOfficer
-CFO	CFO
 Chief Financial Officer	CFO
 Django	Django
 DBMesh	DBMesh
 Facebook	Facebook
-Firefox	Firefox
 git	git
 GoLand	GoLand
 Golang	Golang
 IQOS	IQOS
-Intel	Intel
 JSON	JSON
 JetBrains	JetBrains
 KTV	KTV
 MBP	MBP
 MacBook Pro	MBP
-MBA	MBA
 MacBook Air	MBA
 MariaDB	MariaDB
-markdown	markdown
 Microsoft Access	Access
 MongoDB	MongoDB
-MySQL	MySQL
 Node.js	Node.js
 Pornhub	Pornhub
 Postgres	Postgres
-PowerPoint	PowerPoint
-PPT	PPT
-PowerPoint	PPT
 Microsoft PowerPoint	PPT
 PyCharm	PyCharm
 roguelike	roguelike
@@ -598,8 +426,6 @@ Redis	Redis
 rime	rime
 RION	RION
 SegmentFault	SegmentFault
-SPA	SPA
-SQL	SQL
 Structured Query Language	SQL
 Structured Query Language	StructuredQueryLanguage
 SQLite	SQLite
@@ -614,31 +440,23 @@ Vue.js	Vue.js
 WebStorm	WebStorm
 Xcode	Xcode
 emoji	emoji
-exe	exe
 gakki	gakki
 iMazing	iMazing
 jQuery	jQuery
-JPG	JPG
 Joint Photographic Experts Group	JPG
-JPEG	JPEG
 Joint Photographic Experts Group	JPEG
-PNG	PNG
 Portable Network Graphics	PNG
-GIF	GIF
 Graphics Interchange Format	GIF
-DNS	DNS
 Domain Name System	DNS
 Domain Name System	DomainNameSystem
 RimWorld	RimWorld
 Factorio	Factorio
 Game Boy	GameBoy
-GBA	GBA
 Game Boy Advance	GBA
 Game Boy Advance	GameBoyAdvance
 GBC	GBC
 Game Boy Color	GBC
 Game Boy Color	GameBoyColor
-GCC	GCC
 GNU Compiler Collection	GCC
 GNU Compiler Collection	GNUCompilerCollection
 uBlacklist	uBlacklist
@@ -647,7 +465,6 @@ AppleCare	AppleCare
 AppleCare+	AppleCare+
 Apple Card	AppleCard
 Apple Books	AppleBooks
-ATI	ATI
 Apple Store	AppleStore
 Apple TV	AppleTV
 Apple TV+	AppleTV+
@@ -657,13 +474,10 @@ Apple ID	AppleID
 Apple News	AppleNews
 Apple Pay	ApplePay
 iTunes Store	iTunesStore
-AMD	AMD
 Amphetamine	Amphetamine
 App Store	AppStore
 AirDrop	AirDrop
-Alfred	Alfred
 Amazon	Amazon
-Adobe	Adobe
 Axure	Axure
 Bartender	Bartender
 Better Snap Tool	BetterSnapTool
@@ -677,7 +491,6 @@ Caffeine	Caffeine
 Calcbot	Calcbot
 Calibre	Calibre
 CarPlay	CarPlay
-CDN	CDN
 Content Delivery Network	CDN
 Content Delivery Network	ContentDeliveryNetwork
 CheatSheet	CheatSheet
@@ -737,11 +550,9 @@ Graffle	Graffle
 Handoff	Handoff
 Hazel	Hazel
 HomeKit	HomeKit
-HTML	HTML
 HyperText Markup Language	HTML
 HyperText Markup Language	HyperTextMarkupLanguage
 iA Writer	iAWriter
-IBM	IBM
 International Business Machines	IBM
 International Business Machines	InternationalBusinessMachines
 iCloud	iCloud
@@ -757,7 +568,6 @@ Inboard	Inboard
 Instacast	Instacast
 Instashare	Instashare
 Intensify	Intensify
-IP	IP
 iPack	iPack
 iPad Air	iPadAir
 iPad mini	iPadmini
@@ -767,7 +577,6 @@ IPTV	IPTV
 iStat Menus	iStatMenus
 iTerm	iTerm
 iTerm2	iTerm2
-iTunes	iTunes
 iTunes Connect	iTunesConnect
 iTunes Match	iTunesMatch
 iWatch	iWatch
@@ -816,13 +625,10 @@ OmniGraffle	OmniGraffle
 OmniOutliner	OmniOutliner
 OmniPlan	OmniPlan
 OneNote	OneNote
-OS	OS
 Operating System	OS
 Operating System	OperatingSystem
-overcast	overcast
 PaintCode	PaintCode
 Parallels Desktop	ParallelsDesktop
-PayPal	PayPal
 PhotoDesk	PhotoDesk
 Picatext	Picatext
 PingWest	PingWest
@@ -852,7 +658,6 @@ ScreenFloat	ScreenFloat
 ScreenFlow	ScreenFlow
 scribble	scribble
 Scrivener	Scrivener
-SDK	SDK
 Software Development Kit	SDK
 Software Development Kit	SoftwareDevelopmentKit
 Should I Sleep	ShouldISleep
@@ -864,7 +669,6 @@ Sparkbox	Sparkbox
 Sparrow	Sparrow
 Speedtest	Speedtest
 Spotify	Spotify
-SSL	SSL
 StackSocial	StackSocial
 Sublime Text	SublimeText
 TechWeb	TechWeb
@@ -884,19 +688,15 @@ tvOS	tvOS
 Tweetbot	Tweetbot
 tweet	tweet
 Typora	Typora
-Uber	Uber
 uBlock	uBlock
 uBlock Origin	uBlockOrigin
 Ulysses	Ulysses
-USB	USB
 Universal Serial Bus	USB
 Universal Serial Bus	UniversalSerialBus
 Versions	Versions
-VPN	VPN
 virtual private network	VPN
 watchOS	watchOS
 Wi-Fi	Wi-Fi
-WiFi	WiFi
 Widget	Widget
 WiFi Explorer	WiFiExplorer
 WiFi Scanner	WiFiScanner
@@ -913,7 +713,6 @@ WorkFlowy	WorkFlowy
 WWDC	WWDC
 Apple Worldwide Developers Conference	WWDC
 Xee	Xee
-Xeon	Xeon
 Xmind	Xmind
 xScope	xScope
 XtraFinder	XtraFinder
@@ -922,14 +721,10 @@ YouTuber	YouTuber
 ZEALER	ZEALER
 Rosetta	Rosetta
 Face ID	FaceID
-URL	URL
 Uniform Resource Locator	URL
-URI	URI
 Uniform Resource Identifier	URI
-HTTP	HTTP
 Hypertext Transfer Protocol	HTTP
 Hypertext Transfer Protocol	HypertextTransferProtocol
-HTTPS	HTTPS
 Hypertext Transfer Protocol Secure	HTTPS
 Hypertext Transfer Protocol Secure	HypertextTransferProtocolSecure
 WSGI	WSGI
@@ -953,24 +748,18 @@ Jinja	Jinja
 capitalize	capitalize
 NetSetMan	NetSetMan
 Cinity	Cinity
-UTC	UTC
 Coordinated Universal Time	UTC
 Coordinated Universal Time	CoordinatedUniversalTime
-GMT	GMT
 Greenwich Mean Time	GMT
 Greenwich Mean Time	GreenwichMeanTime
 GoDaddy	GoDaddy
 Eason	Eason
-alchemy	alchemy
 SQLAlchemy	SQLAlchemy
 Admin	Admin
 Administrator	Administrator
 ASMR	ASMR
 Autonomous sensory meridian response	ASMR
 Autonomous sensory meridian response	Autonomoussensorymeridianresponse
-autonomous	autonomous
-sensory	sensory
-meridian	meridian
 iKlear	iKlear
 # Legal High	ligouhai
 Legal High	LegalHigh
@@ -1015,7 +804,6 @@ Gitee Pages	GiteePages
 CNAME	CNAME
 macOS Server	macOSServer
 Darwin	Darwin
-NAS	NAS
 Network Attached Storage	NAS
 Network Attached Storage	NetworkAttachedStorage
 CommonMark	CommonMark
@@ -1024,14 +812,12 @@ blackFriday	blackFriday
 One UI	OneUI
 Raycast	Raycast
 CloudFront	CloudFront
-RSS	RSS
 RDF Site Summary	RSS
 Really Simple Syndication	RSS
 gosh	gosh
 CocoaPods	CocoaPods
 Zsh	Zsh
 Oh My Zsh	OhMyZsh
-deploy	deploy
 ProxyChains	ProxyChains
 AdSense	AdSense
 Google AdSense	GoogleAdSense
@@ -1044,7 +830,6 @@ Vercel	Vercel
 chore	chore
 chores	chores
 swag	swag
-CS	CS
 Counter-Strike	CS
 Backblaze	Backblaze
 WebP	WebP
@@ -1055,7 +840,6 @@ GraphQL	GraphQL
 TOTP	TOTP
 Time-based One-Time Password	TOTP
 Unclutter	Unclutter
-sitemap	sitemap
 DuckDuckGo	DuckDuckGo
 Yandex	Yandex
 Geralt	Geralt
@@ -1067,10 +851,8 @@ Gecko	Gecko
 omicron	omicron
 TinyPNG	TinyPNG
 Thanos	Thanos
-XML	XML
 Extensible Markup Language	XML
 Extensible Markup Language	ExtensibleMarkupLanguage
-XHTML	XHTML
 eXtensible HyperText Markup Language	XHTML
 eXtensible HyperText Markup Language	eXtensibleHyperTextMarkupLanguage
 Googlebot	Googlebot
@@ -1079,8 +861,6 @@ Bingbot	Bingbot
 SogouSpider	SogouSpider
 YoudaoBot	YoudaoBot
 swat	swat
-footer	footer
-header	header
 GitHub Copilot	GitHubCopilot
 GitHub Copilot X	GitHubCopilotX
 GitHub Copilot CLI	GitHubCopilotCLI
@@ -1092,7 +872,6 @@ HHKB	HHKB
 Happy Hacking Keyboard	HHKB
 Happy Hacking Keyboard	HappyHackingKeyboard
 MAPPA	MAPPA
-SEO	SEO
 Search Engine Optimization	SEO
 Search Engine Optimization	SearchEngineOptimization
 OCSP	OCSP
@@ -1105,7 +884,6 @@ Pied Piper	PiedPiper
 Pikachu	Pikachu
 Fastmail	Fastmail
 rumour	rumour
-WordPress	WordPress
 AOSP	AOSP
 Android Open Source Project	AOSP
 Android Open Source Project	AndroidOpenSourceProject
@@ -1113,11 +891,9 @@ TypeScript	TypeScript
 Unity	Unity
 MIUI	MIUI
 Shottr	Shottr
-turbo	turbo
 Turbo Boost	TurboBoost
 Turbo Boost Switcher	TurboBoostSwitcher
 OPPO	OPPO
-vivo	vivo
 Uno	Uno
 gopher	gopher
 GDPR	GDPR
@@ -1134,16 +910,13 @@ WonderCV	WonderCV
 WebKit	WebKit
 Igalia	Igalia
 WebCore	WebCore
-GNU	GNU
 GNU General Public License	GNU
 GNU General Public License	GNUGeneralPublicLicense
-GPL	GPL
 GNU General Public License	GPL
 Ukraine	Ukraine
 Minions	Minions
 Rush B	RushB
 Rush A	RushA
-AK	AK
 AK47	AK47
 AK74	AK74
 Mastercard	Mastercard
@@ -1151,7 +924,6 @@ COVID	COVID
 COVID-19	COVID-19
 Wallpaper Engine	WallpaperEngine
 Erlang	Erlang
-FAQ	FAQ
 Frequently Asked Question	FAQ
 Frequently Asked Question	FrequentlyAskedQuestion
 Panamera	Panamera
@@ -1162,32 +934,24 @@ Laugh My Ass Off	LMAO
 Laugh My Ass Off	LaughMyAssOff
 Vivaldi	Vivaldi
 Cryptomator	Cryptomator
-WTF	WTF
 what the fuck	WTF
 what the fuck	whatthefuck
-ASAP	ASAP
 as soon as possible	ASAP
 PUBG	PUBG
 PLAYERUNKNOWN'S BATTLEGROUNDS	PUBG
-Ruby	Ruby
 GFM	GFM
 GitHub Flavored Markdown	GFM
 GitHub Flavored Markdown	GitHubFlavoredMarkdown
 GeekNote	GeekNote
-GUI	GUI
 Graphical User Interface	GUI
 Graphical User Interface	GraphicalUserInterface
 VPS	VPS
 Virtual private server	VPS
 Virtual private server	Virtualprivateserver
-BIOS	BIOS
 Basic Input/Output System	BIOS
 Basic Input/Output System	BasicInputOutputSystem
-unbelievable	unbelievable
 goroutine	goroutine
 Celsius	Celsius
-Fahrenheit	Fahrenheit
-nil	nil
 Mojito	Mojito
 weasel	weasel
 Niconico	Niconico
@@ -1218,7 +982,6 @@ Microsoft Outlook	MicrosoftOutlook
 Microsoft OneNote	MicrosoftOneNote
 Microsoft Azure	MicrosoftAzure
 Microsoft Edge	MicrosoftEdge
-IE	IE
 Internet Explorer	IE
 Internet Explorer	InternetExplorer
 Windows Media Player	WindowsMediaPlayer
@@ -1228,12 +991,10 @@ Visual Studio Code	VisualStudioCode
 Visual Studio Code	VSCode
 PowerShell	PowerShell
 Surface	Surface
-MSN	MSN
 Skype	Skype
 TOC	TOC
 Table of Contents	TOC
 Table of Contents	TableOfContents
-Jenny	Jenny
 One Dark	OneDark
 IINA	IINA
 GUID	GUID
@@ -1271,7 +1032,6 @@ Non-Player Character	NonPlayerCharacter
 MVP	MVP
 Quantumult X	QuantumultX
 Confluence	Confluence
-followers	followers
 Skynet	Skynet
 serverless	serverless
 Identifier	Identifier
@@ -1280,9 +1040,7 @@ rime-ice	rime-ice
 Handover	Handover
 Language Reactor	LanguageReactor
 Tencent	Tencent
-Alibaba	Alibaba
 Alibaba Group	AlibabaGroup
-Linus	Linus
 PaaS	PaaS
 platform as a service	PaaS
 aPaaS	aPaaS
@@ -1290,58 +1048,41 @@ application Platform as a Service	aPaaS
 WhatsApp	WhatsApp
 Messenger	Messenger
 Doge	Doge
-SUV	SUV
 Sport Utility Vehicle	SUV
 Sport Utility Vehicle	SportUtilityVehicle
-UFO	UFO
 Unidentified Flying Object	UFO
 Unidentified Flying Object	UnidentifiedFlyingObject
 Copyright	Copyright
 Registered	Registered
 TM	TM
-SOS	SOS
 abcd	abcd
 ABCD	ABCD
-abc	abc
-ABC	ABC
-Starbucks	Starbucks
 I Love You	ILoveYou
 ZZZ	ZZZ
-PS	PS
-Photoshop	PS
-Photoshop	Photoshop
 Adobe Photoshop	AdobePhotoshop
-dashboard	dashboard
 Honey Select	HoneySelect
 McCafe	McCafe
-BSD	BSD
 Berkeley Software Distribution	BSD
 Berkeley Software Distribution	BerkeleySoftwareDistribution
 DNSPod	DNSPod
 Bandizip	Bandizip
-NATO	NATO
 North Atlantic Treaty Organization	NATO
 North Atlantic Treaty Organization	NorthAtlanticTreatyOrganization
 MissWarmJ	MissWarmJ
-NASA	NASA
 National Aeronautics and Space Administration	NASA
 Meta	Meta
 PictureView	PictureView
-RAM	RAM
 Random-access memory	RAM
 Random-access memory	RandomAccessMemory
 ROM	ROM
 Read-only memory	ROM
 Read-only memory	ReadOnlyMemory
-AV	AV
 Adult Video	AV
 Adult Video	AdultVideo
 TODO	TODO
 Microsoft To Do	MicrosoftToDo
-VCD	VCD
 Video CD	VCD
 Video CD	VideoCD
-FBI	FBI
 Federal Bureau of Investigation	FBI
 Federal Bureau of Investigation	FederalBureauofInvestigation
 FBI WARNING	FBIWARNING
@@ -1351,7 +1092,6 @@ CD Projekt	CDProjekt
 CD Projekt RED	CDProjektRED
 ACG	ACG
 Animation Comics Games	ACG
-NBA	NBA
 National Basketball Association	NBA
 National Basketball Association	NationalBasketballAssociation
 CBA	CBA
@@ -1359,10 +1099,8 @@ Chinese Basketball Association	CBA
 Chinese Basketball Association	ChineseBasketballAssociation
 SpaceX	SpaceX
 Avira	Avira
-uninstall	uninstall
 FeHelper	FeHelper
 Hypertext	Hypertext
-PHP	PHP
 Hypertext Preprocessor	PHP
 Hypertext Preprocessor	HypertextPreprocessor
 cannot	cannot
@@ -1378,27 +1116,22 @@ ICMP	ICMP
 Internet Control Message Protocol	ICMP
 Internet Control Message Protocol	InternetControlMessageProtocol
 Electron	Electron
-FTP	FTP
 File Transfer Protocol	FTP
 File Transfer Protocol	FileTransferProtocol
 SFTP	SFTP
 SSH File Transfer Protocol	SFTP
 SSH File Transfer Protocol	SSHFileTransferProtocol
 uPic	uPic
-homemade	homemade
 refactoring	refactoring
 refactor	refactor
 Notepad	Notepad
 Notepad++	Notepad++
 O'Reilly	O'Reilly
 Octocat	Octocat
-IMAP	IMAP
 Internet Message Access Protocol	IMAP
 Internet Message Access Protocol	InternetMessageAccessProtocol
-SMTP	SMTP
 Simple Mail Transfer Protocol	SMTP
 Simple Mail Transfer Protocol	SimpleMailTransferProtocol
-unacceptable	unacceptable
 Waterfox	Waterfox
 Let's go	Let'sgo
 one-liner	one-liner
@@ -1442,35 +1175,25 @@ First In, First Out	FIFO
 LIFO	LIFO
 Last In, First out	LIFO
 Neat Download Manager	NeatDownloadManager
-furry	furry
-Maine	Maine
-Elijah	Elijah
 Love & Peace	Love&Peace
 Peace & Love	Peace&Love
 Liquid	Liquid
-LCD	LCD
 Liquid Crystal Display	LCD
 Liquid Crystal Display	LiquidCrystalDisplay
 Emotional Damage	EmotionalDamage
 revert	revert
 GitLab	GitLab
 Apple silicon	Applesilicon
-ADSL	ADSL
 Asymmetric Digital Subscriber Line	ADSL
 Asymmetric Digital Subscriber Line	AsymmetricDigitalSubscriberLine
 ICP	ICP
 Internet Content Provider	ICP
 Internet Content Provider	InternetContentProvider
 iRime	iRime
-emo	emo
-colon	colon
 APK	APK
 Android application package	APK
 Android application package	Androidapplicationpackage
 whack	whack
-encore	encore
-suffix	suffix
-prefix	prefix
 Type-A	TypeA
 Type-B	TypeB
 Type-C	TypeC
@@ -1493,7 +1216,6 @@ Midjourney	Midjourney
 Champion's inequality	Champion'sinequality
 NovelAI	NovelAI
 swab	swab
-angular	angular
 addressable	addressable
 rebase	rebase
 Motrix	Motrix
@@ -1503,12 +1225,10 @@ version control system	versioncontrolsystem
 cnBeta	cnBeta
 pull request	pullrequest
 merge request	mergerequest
-squash	squash
 Ant Design	AntDesign
 Disney	Disney
 early access	earlyaccess
 deprecate	deprecate
-deprecated	deprecated
 tum	tum
 rapper	rapper
 Fedora	Fedora
@@ -1516,35 +1236,25 @@ downbeat	downbeat
 hading	hading
 LeetCode	LeetCode
 danced	danced
-ghosts	ghosts
 moonlit	moonlit
 Helvetica	Helvetica
 limon	limon
-annotate	annotate
-annotated	annotated
 GFW	GFW
 Great Firewall	GFW
 Great Firewall	GreatFirewall
-departed	departed
 GeoIP	GeoIP
 Vimium	Vimium
 Nvim	Nvim
 Neovim	Neovim
-nerd	nerd
 MacVim	MacVim
 VimR	VimR
-plugin	plugin
-plugins	plugins
-buffer	buffer
 LunarVim	LunarVim
 IdeaVim	IdeaVim
 unfo	unfo
-timestamp	timestamp
 ChatGPT	ChatGPT
 OpenAI	OpenAI
 OpenAI Codex	OpenAICodex
 OpenAI ChatGPT	OpenAIChatGPT
-VoIP	VoIP
 Voice over Internet Protocol	VoIP
 Greasy Fork	GreasyFork
 greasy	greasy
@@ -1574,205 +1284,93 @@ AVAST!	AVAST!
 Bitdefender	Bitdefender
 ClamAV	ClamAV
 Comodo	Comodo
-McAfee	McAfee
-OK	OK
 NG	NG
-TV	TV
 VTuber	VTuber
 NVMe	NVMe
 NGFF	NGFF
 PCIe	PCIe
 PCI Express	PCIe
 PCI Express	PCIExpress
-SATA	SATA
 eSATA	eSATA
 mSATA	mSATA
 GPIB	GPIB
 GPIO	GPIO
-LCD	LCD
-DVD	DVD
-CD	CD
 eSIM	eSIM
 UTF	UTF
 UTF-8	UTF-8
 UTF-16	UTF-16
-ASCII	ASCII
-ANSI	ANSI
-IEEE	IEEE
 Institute of Electrical and Electronics Engineers	IEEE
 DjVu	DjVu
-LaTeX	LaTeX
-API	API
 Application Programming Interface	API
 Ethernet	Ethernet
 SOCKS	SOCKS
 PrintScreen	PrintScreen
-DIY	DIY
 Do It Yourself	DIY
-DNA	DNA
 deoxyribonucleic acid	DNA
-RNA	RNA
 ribonucleic acid	RNA
-mRNA	mRNA
 messenger RNA	mRNA
 C++	C++
 C++	Cpp
 Python	Python
-MIT	MIT
 Massachusetts Institute of Technology	MIT
 Massachusetts Institute of Technology	MassachusettsInstituteofTechnology
 MIT License	MITLicense
 LGPL	LGPL
 GNU Lesser General Public License	LGPL
 GNU Lesser General Public License	GNULesserGeneralPublicLicense
-Mozilla	Mozilla
 Mozilla Firefox	MozillaFirefox
-Apache	Apache
 Steam	Steam
 Steam Deck	SteamDeck
 Android	Android
 android	android
 Chrome	Chrome
-arch	arch
-iOS	iOS
-Linux	Linux
-Ubuntu	Ubuntu
 Windows	Windows
-Microsoft	Microsoft
-Nintendo	Nintendo
-Google	Google
-nexus	nexus
 Wii U	WiiU
 Wii	Wii
 Oracle	Oracle
 OriginOS	OriginOS
 iPhone	iPhone
 iPad	iPad
-iPod	iPod
-UI	UI
-UK	UK
 United Kingdom	UK
 United Kingdom	UnitedKingdom
-DirectX	DirectX
 Kinect	Kinect
 azure	azure
 Cloudflare	Cloudflare
-Buddhism	Buddhism
-Catholic	Catholic
-Christ	Christ
-Christian	Christian
-Christmas	Christmas
-Easter	Easter
-Egyptian	Egyptian
 Islam	Islam
-Jupiter	Jupiter
-Latin	Latin
-Mars	Mars
 Marxist	Marxist
 Moslem	Moslem
-Negro	Negro
 Thanksgiving	Thanksgiving
-Venus	Venus
 X-ray	X-ray
-American	American
-Australia	Australia
-Australian	Australian
-Brazil	Brazil
-Brazilian	Brazilian
-Britain	Britain
-Canada	Canada
-Canadian	Canadian
-Chinese	Chinese
-Danish	Danish
-Denmark	Denmark
-Dutch	Dutch
-Egypt	Egypt
-England	England
-English	English
-Filipino	Filipino
-Finland	Finland
 Finn	Finn
-Finnish	Finnish
-France	France
-French	French
-German	German
-Germany	Germany
-Greece	Greece
-Greek	Greek
-Hebrew	Hebrew
-Hindi	Hindi
 Hip-Hop	Hip-Hop
-Iceland	Iceland
 Icelander	Icelander
-Icelandic	Icelandic
-India	India
-Indian	Indian
-Iran	Iran
-Iranian	Iranian
-Ireland	Ireland
-Irish	Irish
 Irishman	Irishman
-Israel	Israel
-Israeli	Israeli
-Italian	Italian
 Italilian	Italilian
-Italy	Italy
-Japan	Japan
-Japanese	Japanese
-Korea	Korea
-Korean	Korean
 native American	nativeAmerican
-Netherlands	Netherlands
 New Zealand	NewZealand
 New Zealander	NewZealander
 Philppines	Philppines
-Poland	Poland
-Pole	Pole
-Polish	Polish
-Portugal	Portugal
-Portuguese	Portuguese
-Russia	Russia
-Russian	Russian
-Scotland	Scotland
 Scots	Scots
-Scottish	Scottish
 Simplified Chinese	SimplifiedChinese
 Traditional Chinese	TraditionalChinese
-Singapore	Singapore
-Spain	Spain
-Spanish	Spanish
 Swede	Swede
-Sweden	Sweden
-Swedish	Swedish
-Swiss	Swiss
-Thai	Thai
-Thailand	Thailand
 United Kingdom	UnitedKingdom
-USA	USA
 The United States of America	USA
 United States	UnitedStates
-USD	USD
 United States Dollar	USD
 United States Dollar	UnitedStatesDollar
-Wales	Wales
 Welsh	Welsh
-CN	CN
-MTV	MTV
 Music Television	MTV
 Music Television	MusicTelevision
-Mrs.	Mrs.
 MitM	MitM
 man-in-the-middle	MitM
 ToDesk	ToDesk
 PreSearch	PreSearch
 Odysee	Odysee
-ISBN	ISBN
 International Standard Book Number	ISBN
 International Standard Book Number	InternationalStandardBookNumber
-ISSN	ISSN
 International Standard Serial Number	ISSN
 International Standard Serial Number	InternationalStandardSerialNumber
-QoS	QoS
 Quality of Service	QoS
 Quality of Service	QualityofService
 DoH	DoH
@@ -1783,38 +1381,27 @@ DNS over HTTPS/3	DNSoverHTTPS
 DoQ	DoQ
 DNS over QUIC	DoQ
 DNS over QUIC	DNSoverQUIC
-HK	HK
 Hong Kong	HK
 Hong Kong	HongKong
 Party Animals	PartyAnimals
-clipboard	clipboard
-ABS	ABS
 Anti-lock Braking System	ABS
 Anti-lock Braking System	AntilockBrakingSystem
-ADHD	ADHD
 attention deficit hyperactivity disorder	ADHD
 attention deficit hyperactivity disorder	attentiondeficithyperactivitydisorder
-BBQ	BBQ
-barbecue	BBQ
-BBS	BBS
 Bulletin Board System	BBS
 Bulletin Board System	BulletinBoardSystem
 chrono	chrono
 Widevine	Widevine
 Google Ads	GoogleAds
 Valhalla	Valhalla
-flies	flies
 KFC	KFC
 AWP	AWP
 Arctic Warfare Police	AWP
 Arctic Warfare Police	ArcticWarfarePolice
-CLI	CLI
 Command-Line Interface	CLI
 Command-Line Interface	CommandLineInterface
 Dnsmasq	Dnsmasq
 clique	clique
-candid	candid
-DOS	DOS
 Disk Operating System	DOS
 Disk Operating System	DiskOperatingSystem
 diss	diss
@@ -1850,42 +1437,31 @@ switcher	switcher
 fuckity	fuckity
 Funtouch OS	FuntouchOS
 fo	fo
-layouts	layouts
-redirect	redirect
 redirects	redirects
 Unix shell	Unixshell
-shells	shells
 Zaraz	Zaraz
 waitlist	waitlist
-diffusion	diffusion
 Scribble Diffusion	ScribbleDiffusion
 Lenovo	Lenovo
 Adios	Adios
-EMS	EMS
 Express Mail Service	EMS
 IPFS	IPFS
 InterPlanetary File System	IPFS
 InterPlanetary File System	InterPlanetaryFileSystem
 interplanetary	interplanetary
 Noria	Noria
-DHCP	DHCP
 Dynamic Host Configuration Protocol	DHCP
 PPPoE	PPPoE
 Point-to-Point Protocol over Ethernet	PPPoE
 IPoE	IPoE
 Internet Protocol over Ethernet	IPoE
-VLAN	VLAN
 Virtual Local Area Network	VLAN
-WLAN	WLAN
 Wireless LAN	WLAN
 GPT	GPT
 Generative Pre-trained Transformer	GPT
 GPT-4	GPT-4
-bard	bard
 LaMDA	LaMDA
 Language Model for Dialogue Applications	LaMDA
-tokens	tokens
-roadmap	roadmap
 Coinbase Wallet	CoinbaseWallet
 MetaMask	MetaMask
 favicon	favicon
@@ -1901,14 +1477,11 @@ Arch Linux	ArchLinux
 AlmaLinux	AlmaLinux
 Fedora CoreOS	FedoraCoreOS
 CoreOS	CoreOS
-OpenBSD	OpenBSD
 Rocky Linux	RockyLinux
 Vultr	Vultr
 GoFrame	GoFrame
 ORM	ORM
 Object Relational Mapping	ORM
-iris	iris
-burnt	burnt
 KPI	KPI
 Key Performance Indicators	KPI
 mutex	mutex
@@ -1924,10 +1497,7 @@ OpenWrt	OpenWrt
 AWS	AWS
 Amazon Web Services	AWS
 Amazon Web Services	AmazonWebServices
-Orion	Orion
 Virgo	Virgo
-Aries	Aries
-Taurus	Taurus
 Cancer	Cancer
 Libra	Libra
 Scorpio	Scorpio
@@ -1949,54 +1519,34 @@ woof	woof
 bromite	bromite
 hutch	hutch
 Laotian	Laotian
-mitigation	mitigation
-transformer	transformer
 mayonnaise	mayonnaise
 orz	orz
 parametric	parametric
 Scooby-Doo	Scooby-Doo
-SpongeBob	SpongeBob
 SquarePants	SquarePants
 SpongeBob SquarePants	SpongeBobSquarePants
 Universal Actions	UniversalActions
 Louis Vuitton	LouisVuitton
-FIFA	FIFA
 Fédération Internationale de Football Association	FIFA
-FYI	FYI
 for your information	FYI
-IPO	IPO
 Initial Public Offerings	IPO
-MVC	MVC
 Model-View-Controller	MVC
 MVVM	MVVM
 Model-View-ViewModel	MVVM
-NGO	NGO
 Non-Governmental Organization	NGO
-OMG	OMG
 Oh My God	OMG
-RFT	RFT
 Rich Text Format	RFT
-SVG	SVG
 Scalable Vector Graphics	SVG
-SVN	SVN
 Apache Subversion	SVN
-TLS	TLS
 Transport Layer Security	TLS
-SSL	SSL
 Secure Sockets Layer	SSL
-UDP	UDP
 User Datagram Protocol	UDP
-TCP	TCP
 Transmission Control Protocol	TCP
-UID	UID
 User ID	UID
-USSR	USSR
 Union of Soviet Socialist Republics	USSR
-WMV	WMV
 Windows Media Video	WMV
 WWI	WWI
 World War I	WWI
-WWII	WWII
 World War II	WWII
 WWIII	WWIII
 World War III	WWIII
@@ -2005,7 +1555,6 @@ Procedural Language / PostGres Structured Query Language	PL/pgSQL
 IQ	IQ
 Intelligence quotient	IQ
 quotient	quotient
-BTW	BTW
 by the way	BTW
 QUIC	QUIC
 Quick UDP Internet Connections	QUIC
@@ -2026,11 +1575,9 @@ stargazer	stargazer
 stargazers	stargazers
 fallback	fallback
 Fyne	Fyne
-Claude	Claude
 Claude+	Claude+
 Anthropic	Anthropic
 overdue	overdue
-Cinderella	Cinderella
 WebGPU	WebGPU
 Mailfence	Mailfence
 gimme	gimme
@@ -2158,19 +1705,15 @@ Apple Vision Pro	AppleVisionPro
 Vision Pro	VisionPro
 shithead	shithead
 a11y	a11y
-accessibility	a11y
 i18n	i18n
 internationalization	i18n
 internationalization	internationalization
 l10n	l10n
-localization	l10n
 g11n	g11n
-globalization	g11n
 m17n	m17n
 multilingualization	m17n
 multilingualization	multilingualization
 t9n	t9n
-translation	t9n
 p13n	p13n
 personalization	p13n
 personalization	personalization
@@ -2395,7 +1938,6 @@ runc	runc
 containerd	containerd
 Melvor	Melvor
 Melvor Idle	MelvorIdle
-paradise	paradise
 ketchup	ketchup
 pinning	pinning
 WebSocket	WebSocket
@@ -2407,7 +1949,6 @@ traefik	traefik
 deepin	deepin
 srv	srv
 usr	usr
-bin	bin
 AUR	AUR
 Arch User Repository	AUR
 pacman	pacman
