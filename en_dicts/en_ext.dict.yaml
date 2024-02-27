@@ -34,14 +34,19 @@ Phoebe	Phoebe
 
 
 # 特定的排序，为了每组的排序，code 必须保持一致
+hell	hell	2
 he'll	hell	1
 shell	shell	2
 she'll	shell	1
+well	well	2
 we'll	well	1
 ill	ill	2
 I'll	ill	1
+ID	id	2
 I'd	id	1
+shed	shed	2
 she'd	shed	1
+net	net	2
 .NET	net	1
 .NET	dotnet
 
