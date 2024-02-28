@@ -1,5 +1,7 @@
 # Rime schema settings
 # encoding: utf-8
+# Copyright (C) Mirtle <mirtle.cn@outlook.com>
+# License: CC BY-SA 4.0 DEED (https://creativecommons.org/licenses/by-sa/4.0/)
 
 schema:
   schema_id: radical_pinyin

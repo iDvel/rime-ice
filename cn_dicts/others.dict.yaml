@@ -8,10 +8,15 @@
 #
 ---
 name: others
-version: "2024-02-07"
+version: "2024-02-25"
 sort: by_weight
 ...
 ##### 容错词
+# 一些口语读音
+空落落	kong luo luo
+空落落	kong lao lao
+空落落的	kong luo luo de
+空落落的	kong lao lao de
 # 「阿房宫」的注音争议比较大
 阿房宫	e pang gong
 阿房宫	a pang gong
@@ -227,6 +232,10 @@ sort: by_weight
 契科夫	qi ke fu
 凑合	cou he
 凑活	cou huo
+巨惠	ju hui
+钜惠	ju hui
+摩羯座	mo jie zuo
+魔蝎座	mo xie zuo
 
 
 ##### 叠字
@@ -593,6 +602,3 @@ sort: by_weight
 四个興	si ge xing
 四个龍	si ge long
 四个土
-# 其他。。。
-男女男
-女男女
