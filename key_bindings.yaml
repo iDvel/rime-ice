@@ -1,0 +1,209 @@
+# Rime key bindings
+# encoding: utf-8
+
+# emacs 风格的编辑快捷键
+emacs_editing:
+  __append:
+    # - { when: composing, accept: Control+p, send: Up }
+    # - { when: composing, accept: Control+n, send: Down }
+    # - { when: composing, accept: Control+b, send: Left }
+    # - { when: composing, accept: Control+f, send: Right }
+    # - { when: composing, accept: Control+a, send: Home }
+    # - { when: composing, accept: Control+e, send: End }
+    # - { when: composing, accept: Control+d, send: Delete }
+    - { when: composing, accept: Control+k, send: Shift+Delete }
+    # - { when: composing, accept: Control+h, send: BackSpace }
+    # - { when: composing, accept: Control+g, send: Escape }
+    # - { when: composing, accept: Control+bracketleft, send: Escape }
+    # - { when: composing, accept: Control+y, send: Page_Up }
+    # - { when: composing, accept: Alt+v, send: Page_Up }
+    # - { when: composing, accept: Control+v, send: Page_Down }
+
+
+# Tab / Shift+Tab 切换光标至下/上一个拼音
+move_by_word_with_tab:
+  __append:
+    - { when: composing, accept: Shift+Tab, send: Shift+Left }
+    - { when: composing, accept: Tab, send: Shift+Right }
+
+# Option/Alt + ←/→ 切换光标至下/上一个拼音
+move_by_word_with_alt_arrow:
+  __append:
+    - { when: composing, accept: Alt+Left, send: Shift+Left }
+    - { when: composing, accept: Alt+Right, send: Shift+Right }
+
+# Tab / Shift+Tab 翻页
+paging_with_tab:
+  __append:
+    - { when: has_menu, accept: Shift+Tab, send: Page_Up }
+    - { when: has_menu, accept: Tab, send: Page_Down }
+
+# 翻页 - =
+paging_with_minus_equal:
+  __append:
+    - { when: has_menu, accept: minus, send: Page_Up }
+    - { when: has_menu, accept: equal, send: Page_Down }
+
+# 翻页 , .
+paging_with_comma_period:
+  __append:
+    - { when: has_menu, accept: comma, send: Page_Up }
+    - { when: has_menu, accept: period, send: Page_Down }
+
+# 翻页 [ ]
+paging_with_brackets:
+  __append:
+    - { when: has_menu, accept: bracketleft, send: Page_Up }
+    - { when: has_menu, accept: bracketright, send: Page_Down }
+
+# 用按键开关方案的选项（如简繁切换）
+# 两种按键配置，鼠须管 Control+Shift+4 生效，小狼毫 Control+Shift+dollar 生效，都写上了。
+numbered_mode_switch:
+  __append:
+    # - { when: always, select: .next, accept: Control+Shift+1 }                  # 在最近的两个方案之间切换
+    # - { when: always, select: .next, accept: Control+Shift+exclam }             # 在最近的两个方案之间切换
+    # - { when: always, toggle: ascii_mode, accept: Control+Shift+2 }             # 切换中英
+    # - { when: always, toggle: ascii_mode, accept: Control+Shift+at }            # 切换中英
+    - { when: always, toggle: ascii_punct, accept: Control+Shift+3 }              # 切换中英标点
+    - { when: always, toggle: ascii_punct, accept: Control+Shift+numbersign }     # 切换中英标点
+    - { when: always, toggle: traditionalization, accept: Control+Shift+4 }       # 切换简繁
+    - { when: always, toggle: traditionalization, accept: Control+Shift+dollar }  # 切换简繁
+    # - { when: always, toggle: full_shape, accept: Control+Shift+5 }             # 切换全半角
+    # - { when: always, toggle: full_shape, accept: Control+Shift+percent }       # 切换全半角
+
+optimized_mode_switch:
+  __append:
+    - { when: always, accept: Control+Shift+space, select: .next }
+    - { when: always, accept: Shift+space, toggle: ascii_mode }
+    - { when: always, accept: Control+comma, toggle: full_shape }
+    - { when: always, accept: Control+period, toggle: ascii_punct }
+    - { when: always, accept: Control+slash, toggle: traditionalization }
+
+# 将小键盘 0~9 . 映射到主键盘，数字金额大写的 Lua 如 R1234.5678 可使用小键盘输入
+numpad_mapping:
+  __append:
+    - {accept: KP_0, send: 0, when: composing}
+    - {accept: KP_1, send: 1, when: composing}
+    - {accept: KP_2, send: 2, when: composing}
+    - {accept: KP_3, send: 3, when: composing}
+    - {accept: KP_4, send: 4, when: composing}
+    - {accept: KP_5, send: 5, when: composing}
+    - {accept: KP_6, send: 6, when: composing}
+    - {accept: KP_7, send: 7, when: composing}
+    - {accept: KP_8, send: 8, when: composing}
+    - {accept: KP_9, send: 9, when: composing}
+    - {accept: KP_Decimal, send: period, when: composing}
+
+# 按键速查
+# https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md
+# （没有 Command 键，不支持）
+# accept 和 send 可用字段除 A-Za-z0-9 外，还包含以下键盘上实际有的键：
+# （区分大小写）
+# BackSpace	退格
+# Tab	水平定位符
+# Linefeed	换行
+# Clear	清除
+# Return	回车
+# Pause	暂停
+# Sys_Req	印屏
+# Escape	退出
+# Delete	删除
+# Home	原位
+# Left	左箭头
+# Up	上箭头
+# Right	右箭头
+# Down	下箭头
+# Prior、Page_Up	上翻
+# Next、Page_Down	下翻
+# End	末位
+# Begin	始位
+# Shift_L	左Shift
+# Shift_R	右Shift
+# Control_L	左Ctrl
+# Control_R	右Ctrl
+# Meta_L	左Meta
+# Meta_R	右Meta
+# Alt_L	左Alt
+# Alt_R	右Alt
+# Super_L	左Super
+# Super_R	右Super
+# Hyper_L	左Hyper
+# Hyper_R	右Hyper
+# Caps_Lock	大写锁
+# Shift_Lock	上档锁
+# Scroll_Lock	滚动锁
+# Num_Lock	小键板锁
+# Select	选定
+# Print	打印
+# Execute	运行
+# Insert	插入
+# Undo	还原
+# Redo	重做
+# Menu	菜单
+# Find	搜寻
+# Cancel	取消
+# Help	帮助
+# Break	中断
+# space	空格
+# exclam	!
+# quotedbl	"
+# numbersign	#
+# dollar	$
+# percent	%
+# ampersand	&
+# apostrophe	'
+# parenleft	(
+# parenright	)
+# asterisk	*
+# plus	+
+# comma	,
+# minus	-
+# period	.
+# slash	/
+# colon	:
+# semicolon	;
+# less	<
+# equal	=
+# greater	>
+# question	?
+# at	@
+# bracketleft	[
+# backslash	\
+# bracketright	]
+# asciicircum	^
+# underscore	_
+# grave	`
+# braceleft	{
+# bar	|
+# braceright	}
+# asciitilde	~
+# KP_Space	小键板空格
+# KP_Tab	小键板水平定位符
+# KP_Enter	小键板回车
+# KP_Delete	小键板删除
+# KP_Home	小键板原位
+# KP_Left	小键板左箭头
+# KP_Up	小键板上箭头
+# KP_Right	小键板右箭头
+# KP_Down	小键板下箭头
+# KP_Prior、KP_Page_Up	小键板上翻
+# KP_Next、KP_Page_Down	小键板下翻
+# KP_End	小键板末位
+# KP_Begin	小键板始位
+# KP_Insert	小键板插入
+# KP_Equal	小键板等于
+# KP_Multiply	小键板乘号
+# KP_Add	小键板加号
+# KP_Subtract	小键板减号
+# KP_Divide	小键板除号
+# KP_Decimal	小键板小数点
+# KP_0	小键板0
+# KP_1	小键板1
+# KP_2	小键板2
+# KP_3	小键板3
+# KP_4	小键板4
+# KP_5	小键板5
+# KP_6	小键板6
+# KP_7	小键板7
+# KP_8	小键板8
+# KP_9	小键板9

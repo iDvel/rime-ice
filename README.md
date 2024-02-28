@@ -179,8 +179,7 @@ patch:
   __patch:
     key_binder/bindings/+:
       # 开启逗号句号翻页
-      - { when: paging, accept: comma, send: Page_Up }
-      - { when: has_menu, accept: period, send: Page_Down }
+      __include: key_bindings:/paging_with_comma_period/__append
 ```
 
 </details>
