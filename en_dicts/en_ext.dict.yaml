@@ -585,6 +585,8 @@ markdown	markdown
 Microsoft Access	Access
 MongoDB	MongoDB
 MySQL	MySQL
+MyISAM	MyISAM
+InnoDB	InnoDB
 Node.js	Node.js
 Pornhub	Pornhub
 Postgres	Postgres
