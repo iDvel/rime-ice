@@ -621,6 +621,7 @@
 佐野由真	佐野由真 佐野ゆま
 天川空	天川空 天川そら
 宫濑里子	宫濑里子 宮瀬リコ
+梦实香苗	梦实香苗 夢実かなえ
 ----------生活大爆炸&老友记	----------
 谢耳朵	谢耳朵 Sheldon
 谢尔顿	谢尔顿 Sheldon
@@ -650,24 +651,24 @@ Chandler	Chandler 钱德勒
 菲比	菲比 Phoebe
 Phoebe	Phoebe 菲比
 ----------键盘符号	----------
-Cmd	Cmd Command ⌘
-Command	Command ⌘
+cmd	cmd Command ⌘
+command	command ⌘
 Ctrl	Ctrl Control ⌃
-Control	Control ⌃
+control	control ⌃
 Opt	Opt Option ⌥
-Option	Option ⌥
-Shift	Shift ⇧
-Tab	Tab ⇥ 	
+option	option ⌥
+shift	shift ⇧
+tab	tab ⇥ 	
 Caps	Caps CapsLock ⇪
 CapsLock	CapsLock ⇪
-Return	Return ⏎
-Enter	Enter ⏎
-Space	Space ␣
-Backspace	Backspace ⌫
+return	return ⏎
+enter	enter ⏎
+space	space ␣
+backspace	backspace ⌫
 Del	Del Delete ⌫
-Delete	Delete ⌫
+delete	delete ⌫
 Esc	Esc Escape ⎋
-Eject	Eject ⏏
+eject	eject ⏏
 ----------二叠字	----------
 两个火	两个火 炎 炏
 两个土	两个土 圭
@@ -1006,8 +1007,6 @@ Eject	Eject ⏏
 四个興	四个興 𠔻
 四个龍	四个龍 𪚥
 四个土	四个土 㙓
-男女男	男女男 嬲
-女男女	女男女 嫐
 ----------化学式	----------
 水	水 💦 H₂O
 一氧化二氢	一氧化二氢 H₂O

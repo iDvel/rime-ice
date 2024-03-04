@@ -86,24 +86,43 @@ var polyphones = map[string]string{
 	"X和Y > 和":       "he",
 	"查IP > 查":       "cha",
 	"VIP卡 > 卡":      "ka",
+	"VIP会员 > 会":     "hui",
+	"VIP会员 > 员":     "yuan",
 	"Chromium系 > 系": "xi",
 	"Chrome系 > 系":   "xi",
 	"QQ游戏大厅 > 大":    "da",
 	"QQ飞车 > 车":      "che",
 }
 
+var digitMap = map[string]string{
+	"0": "零",
+	"1": "一",
+	"2": "二",
+	"3": "三",
+	"4": "四",
+	"5": "五",
+	"6": "六",
+	"7": "七",
+	"8": "八",
+	"9": "九",
+}
+
 type schema struct {
-	name    string
-	desc    string
-	path    string
-	mapping map[string]string
-	file    *os.File
+	name              string
+	desc              string
+	combinationType   string
+	path              string
+	mapping           map[string]string
+	additionalMapping map[string]string
+	excludingMapping  map[string]string
+	file              *os.File
 }
 
 var doublePinyin = schema{
-	name: "cn_en_double_pinyin",
-	desc: "自然码双拼",
-	path: filepath.Join(RimeDir, "en_dicts/cn_en_double_pinyin.dict.yaml"),
+	name:            "cn_en_double_pinyin",
+	desc:            "自然码双拼",
+	combinationType: "unique",
+	path:            filepath.Join(RimeDir, "en_dicts/cn_en_double_pinyin.txt"),
 	mapping: map[string]string{
 		// 零声母
 		"-a-":   "aa",
@@ -154,9 +173,10 @@ var doublePinyin = schema{
 }
 
 var doublePinyinFlypy = schema{
-	name: "cn_en_double_pinyin_flypy",
-	desc: "小鹤双拼",
-	path: filepath.Join(RimeDir, "en_dicts/cn_en_double_pinyin_flypy.dict.yaml"),
+	name:            "cn_en_flypy",
+	desc:            "小鹤双拼",
+	combinationType: "unique",
+	path:            filepath.Join(RimeDir, "en_dicts/cn_en_flypy.txt"),
 	mapping: map[string]string{
 		// 零声母
 		"-a-":   "aa",
@@ -207,9 +227,10 @@ var doublePinyinFlypy = schema{
 }
 
 var doublePinyinMSPY = schema{
-	name: "cn_en_double_pinyin_mspy",
-	desc: "微软双拼",
-	path: filepath.Join(RimeDir, "en_dicts/cn_en_double_pinyin_mspy.dict.yaml"),
+	name:            "cn_en_mspy",
+	desc:            "微软双拼",
+	combinationType: "unique",
+	path:            filepath.Join(RimeDir, "en_dicts/cn_en_mspy.txt"),
 	mapping: map[string]string{
 		// 零声母
 		"-a-":   "oa",
@@ -261,9 +282,10 @@ var doublePinyinMSPY = schema{
 }
 
 var doublePinyinSogou = schema{
-	name: "cn_en_double_pinyin_sogou",
-	desc: "搜狗双拼",
-	path: filepath.Join(RimeDir, "en_dicts/cn_en_double_pinyin_sogou.dict.yaml"),
+	name:            "cn_en_sogou",
+	desc:            "搜狗双拼",
+	combinationType: "unique",
+	path:            filepath.Join(RimeDir, "en_dicts/cn_en_sogou.txt"),
 	mapping: map[string]string{
 		// 零声母
 		"-a-":   "oa",
@@ -315,9 +337,10 @@ var doublePinyinSogou = schema{
 }
 
 var doublePinyinZiGuang = schema{
-	name: "cn_en_double_pinyin_ziguang",
-	desc: "紫光双拼",
-	path: filepath.Join(RimeDir, "en_dicts/cn_en_double_pinyin_ziguang.dict.yaml"),
+	name:            "cn_en_ziguang",
+	desc:            "紫光双拼",
+	combinationType: "unique",
+	path:            filepath.Join(RimeDir, "en_dicts/cn_en_ziguang.txt"),
 	mapping: map[string]string{
 		// 零声母
 		"-a-":   "oa",
@@ -368,9 +391,10 @@ var doublePinyinZiGuang = schema{
 }
 
 var doublePinyinABC = schema{
-	name: "cn_en_double_pinyin_abc",
-	desc: "智能 ABC 双拼",
-	path: filepath.Join(RimeDir, "en_dicts/cn_en_double_pinyin_abc.dict.yaml"),
+	name:            "cn_en_abc",
+	desc:            "智能 ABC 双拼",
+	combinationType: "unique",
+	path:            filepath.Join(RimeDir, "en_dicts/cn_en_abc.txt"),
 	mapping: map[string]string{
 		// 零声母
 		"-a-":   "oa",
@@ -432,7 +456,7 @@ func CnEn() {
 	defer cnEnTXT.Close()
 
 	schemas := []schema{
-		{name: "cn_en", desc: "全拼", path: filepath.Join(RimeDir, "en_dicts/cn_en.dict.yaml")},
+		{name: "cn_en", desc: "全拼", combinationType: "unique", path: filepath.Join(RimeDir, "en_dicts/cn_en.txt")},
 		doublePinyin,
 		doublePinyinFlypy,
 		doublePinyinMSPY,
@@ -467,10 +491,35 @@ func CnEn() {
 		}
 		uniq.Add(line)
 		for _, schema := range schemas {
-			code := textToPinyin(line, schema)
-			_, err := schema.file.WriteString(line + "\t" + "ⓘ" + code + "\n")
-			if err != nil {
-				log.Fatalln(err)
+			if schema.combinationType != "multi" {
+				code := textToPinyin(line, schema)
+				_, err := schema.file.WriteString(line + "\t" + code + "\n")
+				if err != nil {
+					log.Fatalln(err)
+				}
+				lowerCode := strings.ToLower(code)
+				if code != lowerCode {
+					_, err := schema.file.WriteString(line + "\t" + lowerCode + "\n")
+					if err != nil {
+						log.Fatalln(err)
+					}
+				}
+			} else {
+				codes := textToPinyinMulti(line, schema)
+				for _, code := range codes {
+					_, err := schema.file.WriteString(line + "\t" + code + "\n")
+					if err != nil {
+						log.Fatalln(err)
+					}
+
+					lowerCode := strings.ToLower(code)
+					if code != lowerCode {
+						_, err := schema.file.WriteString(line + "\t" + lowerCode + "\n")
+						if err != nil {
+							log.Fatalln(err)
+						}
+					}
+				}
 			}
 		}
 	}
@@ -482,21 +531,17 @@ func CnEn() {
 
 // 写入前缀内容
 func writePrefix(s schema) {
-	content := fmt.Sprintf(`# Rime dictionary
-# encoding: utf-8
-#
+	content := fmt.Sprintf(`# Rime table
+# coding: utf-8
+#@/db_name	%s.txt
+#@/db_type	tabledb
 #
 # https://github.com/iDvel/rime-ice
 # ------- 中英混输词库 for %s -------
 # 由 others/cn_en.txt 自动生成
-# 编码前的 ⓘ 符号是为了防止英文方案拼写派生时派生出全大写字母（在 melt_eng.schema.yaml 中实现）
-# 示例：输入 txu 得到 T恤；输入 Txu 得到 T恤； 输入 TXU 则只会得到 TXU
----
-name: %s
-version: "1"
-sort: by_weight
-...
-`, s.desc, s.name)
+#
+# 此行之后不能写注释
+`, s.name, s.desc)
 
 	_, err := s.file.WriteString(content)
 	if err != nil {
@@ -504,13 +549,19 @@ sort: by_weight
 	}
 }
 
-// 生成编码
+// 生成编码，返回原大小写
 func textToPinyin(text string, s schema) string {
 	var code string
 
 	parts := splitMixedWords(text)
 	for _, part := range parts {
-		if len(hanPinyin[part]) == 0 { // 英文数字，不做转换
+		if digit, ok := digitMap[part]; ok { // 数字
+			if s.desc == "全拼" {
+				code += hanPinyin[digit][0]
+			} else {
+				code += convertToDoublePinyin(hanPinyin[digit][0], s)
+			}
+		} else if len(hanPinyin[part]) == 0 { // 不在字典的就是英文，返回原大小写
 			code += part
 		} else if len(hanPinyin[part]) > 1 { // 多音字，按字典指定的读音
 			if value, ok := polyphones[text+" > "+part]; ok {
@@ -534,11 +585,51 @@ func textToPinyin(text string, s schema) string {
 	return code
 }
 
+func textToPinyinMulti(text string, s schema) []string {
+	parts := splitMixedWords(text)
+	map4DoublePinyins := make(map[int][]string)
+	for index, part := range parts {
+		if digit, ok := digitMap[part]; ok { // 数字
+			map4DoublePinyins[index] = convertToDoublePinyinMulti(hanPinyin[digit][0], s)
+		} else if len(hanPinyin[part]) > 1 { // 多音字，按字典指定的读音
+			if value, ok := polyphones[text+" > "+part]; ok {
+				map4DoublePinyins[index] = convertToDoublePinyinMulti(value, s)
+			} else {
+				log.Fatalln("❌ 多音字未指定读音", text, part)
+			}
+		} else if len(hanPinyin[part]) == 1 {
+			// 非多音字汉字，按唯一的读音
+			map4DoublePinyins[index] = convertToDoublePinyinMulti(hanPinyin[part][0], s)
+		}
+	}
+
+	var result = make([]string, 0)
+	return stepFurther(parts, 0, "", map4DoublePinyins, result)
+}
+
+func stepFurther(parts []string, index int, arranged string, map4DoublePinyins map[int][]string, result []string) []string {
+	if index >= len(parts) {
+		result = append(result, arranged)
+		return result
+	}
+	if combinations, ok := map4DoublePinyins[index]; ok {
+		// 数字或汉字
+		for _, combination := range combinations {
+			result = stepFurther(parts, index+1, arranged+combination, map4DoublePinyins, result)
+		}
+	} else {
+		// 英文字母
+		result = stepFurther(parts, index+1, arranged+parts[index], map4DoublePinyins, result)
+	}
+	return result
+}
+
 // 中英文分割，去掉间隔号和横杠
 // "哆啦A梦" → ["哆", "啦", "A", "梦"]
 // "QQ号" → ["QQ", "号"]
 // "Wi-Fi密码" → ["WiFi", "密", "码"]
 // "特拉法尔加·D·瓦铁尔·罗" → ["特", "拉", "法", "尔", "加", "D", "瓦", "铁", "尔", "罗"]
+// "A4纸" → ["A", "4", "纸"]
 func splitMixedWords(input string) []string {
 	var result []string
 	word := ""
@@ -583,4 +674,52 @@ func convertToDoublePinyin(code string, s schema) string {
 	// 其余单个的声母和韵母不转换
 
 	return initial + final
+}
+
+func convertToDoublePinyinMulti(code string, s schema) []string {
+	// 零声母
+	i := []string{"a", "e", "o", "ai", "ei", "ou", "an", "en", "ang", "eng", "ao", "er"}
+	if contains(i, code) {
+		return []string{s.mapping["-"+code+"-"]}
+	}
+
+	// 分割为声母和韵母
+	consonantRegexp := regexp.MustCompile(`^(b|p|m|f|d|t|n|l|g|k|h|j|q|x|zh|ch|sh|r|z|c|s|y|w)`)
+	initial := consonantRegexp.FindString(code)
+	final := consonantRegexp.ReplaceAllString(code, "")
+
+	// 声母转换
+	isRetroflex := initial == "zh" || initial == "ch" || initial == "sh"
+	if isRetroflex {
+		initial = s.mapping[initial]
+	}
+	// 韵母转换
+	if len(final) > 1 {
+		final = s.mapping[final]
+	}
+
+	var result []string
+	if isRetroflex || len(final) > 1 {
+		leadings := strings.Split(initial, ",")
+		followings := strings.Split(final, ",")
+		for _, leading := range leadings {
+			for _, following := range followings {
+				if exclusion, ok := s.excludingMapping[code]; ok {
+					if exclusion == (leading + following) {
+						continue
+					}
+				}
+				result = append(result, leading+following)
+			}
+		}
+	} else {
+		// 其余单个的声母和韵母不转换
+		result = append(result, initial+final)
+	}
+
+	if addition, ok := s.additionalMapping[code]; ok {
+		result = append(result, addition)
+	}
+
+	return result
 }

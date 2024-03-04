@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2024-01-26"
+version: "2024-02-27"
 sort: by_weight
 ...
 # 一些杂项
@@ -19,24 +19,24 @@ README.md	README.md
 
 # 按键
 Fn	Fn
-Cmd	Cmd
-Command	Command
+cmd	cmd
+command	command
 Ctrl	Ctrl
-Control	Control
+control	control
 Opt	Opt
-Option	Option
-Shift	Shift
-Tab	Tab
+option	option
+shift	shift
+tab	tab
 Caps	Caps
 CapsLock	CapsLock
-Return	Return
-Enter	Enter
-Space	Space
-Backspace	Backspace
+return	return
+enter	enter
+space	space
+backspace	backspace
 Del	Del
-Delete	Delete
+delete	delete
 Esc	Esc
-Eject	Eject
+eject	eject
 
 
 # 月份（据说好像 5、6、7 月不要缩写 https://www.zhihu.com/question/29896678）
@@ -585,6 +585,8 @@ markdown	markdown
 Microsoft Access	Access
 MongoDB	MongoDB
 MySQL	MySQL
+MyISAM	MyISAM
+InnoDB	InnoDB
 Node.js	Node.js
 Pornhub	Pornhub
 Postgres	Postgres
@@ -766,6 +768,7 @@ IPN	IPN
 IPTV	IPTV
 iStat Menus	iStatMenus
 iTerm	iTerm
+iTerm2	iTerm2
 iTunes	iTunes
 iTunes Connect	iTunesConnect
 iTunes Match	iTunesMatch
@@ -818,8 +821,7 @@ OneNote	OneNote
 OS	OS
 Operating System	OS
 Operating System	OperatingSystem
-Overcast	Overcast
-Overflow	Overflow
+overcast	overcast
 PaintCode	PaintCode
 Parallels Desktop	ParallelsDesktop
 PayPal	PayPal
@@ -858,7 +860,6 @@ Software Development Kit	SoftwareDevelopmentKit
 Should I Sleep	ShouldISleep
 Simplenote	Simplenote
 Siri	Siri
-Sketch	Sketch
 Slicy	Slicy
 Snagit	Snagit
 Sparkbox	Sparkbox
@@ -1196,7 +1197,6 @@ TickTick	TickTick
 CHDBits	CHDBits
 M-Team	M-Team
 Vim	Vim
-Wikipedia	Wikipedia
 Google Voice	GoogleVoice
 Workers	Workers
 Cloudflare Workers	CloudflareWorkers
@@ -1422,13 +1422,10 @@ PopCap Games	PopCapGames
 Cyberpunk	Cyberpunk
 Kotlin	Kotlin
 PhpStorm	PhpStorm
-Rider	Rider
 Datalore	Datalore
 DataSpell	DataSpell
 RubyMine	RubyMine
 AppCode	AppCode
-PyCharm Edu	PyCharmEdu
-IntelliJ IDEA Edu	IntelliJIDEAEdu
 Code With Me	CodeWithMe
 JetBrains Mono	JetBrainsMono
 JVM	JVM
@@ -1612,7 +1609,6 @@ Application Programming Interface	API
 Ethernet	Ethernet
 SOCKS	SOCKS
 PrintScreen	PrintScreen
-Backspace	Backspace
 DIY	DIY
 Do It Yourself	DIY
 DNA	DNA
@@ -2411,7 +2407,6 @@ sudo	sudo
 flypy	flypy
 traefik	traefik
 deepin	deepin
-Arch Linux CN	ArchLinuxCN
 srv	srv
 usr	usr
 bin	bin
@@ -2420,6 +2415,44 @@ Arch User Repository	AUR
 pacman	pacman
 Pac-Man	Pac-Man
 eBPF	eBPF
-livid livid
-DevOps  DevOps
-Zippo Zippo
+livid	livid
+DevOps	DevOps
+Zippo	Zippo
+goddamn	goddamn
+punctuator	punctuator
+punctuators	punctuators
+QR code	QRcode
+sentry	sentry
+Grafana	Grafana
+Mirtle	Mirtle
+Hadoop	Hadoop
+HBase	HBase
+hive	hive
+Flink	Flink
+Palworld	Palworld
+lark	lark
+submodule	submodule
+submodules	submodules
+Writerside	Writerside
+groundhog	groundhog
+groundhogs	groundhogs
+Writerside	Writerside
+Manifest V2	ManifestV2
+Manifest V3	ManifestV3
+copycat	copycat
+Google Gemini	GoogleGemini
+Google Gemini Advanced	GoogleGeminiAdvanced
+infuse	infuse
+headless	headless
+IMBA	IMBA
+imbalance	imbalance
+imbalanced	imbalanced
+GitButler	GitButler
+Sora	Sora
+WinNAS	WinNAS
+prune	prune
+Wireshark	Wireshark
+Theseus	Theseus
+Laravel	Laravel
+monolith	monolith
+Chiikawa	Chiikawa

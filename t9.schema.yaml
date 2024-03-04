@@ -3,7 +3,7 @@
 
 
 # 适配了仓输入法 [Hamster](https://github.com/imfuxiao/Hamster/) 九宫格布局。
-# 参考于仓作者 [morse.hsiao](https://github.com/imfuxiao) 的示例
+# 参考于仓老师 [morse.hsiao](https://github.com/imfuxiao) 的示例
 #
 # 可选，支持英文：
 # 1. 解开 `engine/translators` 下的注释
@@ -21,7 +21,7 @@ schema:
     - Dvel
     - '[morse.hsiao](https://github.com/imfuxiao)'
   description: |
-    九宫格方案 for 仓输入法
+    九宫格 for 仓输入法
   dependencies:
     - melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
 
@@ -45,8 +45,9 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    - lua_translator@date_translator      # 时间、日期、星期
-    # - table_translator@melt_eng         # 英文输入
+    - lua_translator@date_translator  # 时间、日期、星期
+    - table_translator@custom_phrase  # 自定义短语 custom_phrase_t9.txt
+    # - table_translator@melt_eng     # 英文输入
   filters:
     - simplifier@emoji                    # Emoji
     - simplifier@traditionalize           # 简繁切换
@@ -56,6 +57,17 @@ engine:
 translator:
   prism: t9
   spelling_hints: 100
+
+
+# 自定义短语：custom_phrase_t9.txt
+# ⚠️ 编码要用数字
+custom_phrase:
+  dictionary: ""
+  user_dict: custom_phrase_t9
+  db_class: stabledb
+  enable_completion: false
+  enable_sentence: false
+  initial_quality: 99
 
 
 # 九宫格 1 键上的符号序列
@@ -79,7 +91,7 @@ speller:
     # - derive/^l/n/
     # - derive/^n/l/
     # ……
-    # T9拼音穷举，感谢仓作者 [morse.hsiao](https://github.com/imfuxiao) 勤劳的小手。
+    # T9拼音穷举，感谢仓老师 [morse.hsiao](https://github.com/imfuxiao) 勤劳的小手。
     - derive/[abc]/2/
     - derive/[bc]a/22/
     - derive/[bc]ai/224/
@@ -309,7 +321,3 @@ speller:
     - derive/[xy]ue/983/
     - derive/zui/984/
     - derive/[xyz]un|zuo/986/
-    # 仓 TF 119 之前的版本需要：
-    # 1. 启用大写字母，解开下面的注释
-    # - xlit/22233344455566677778889999/AAADDDGGGJJJMMMPPPPTTTWWWW/
-    # 2. 删除 rime_ice.dict.yaml 下的大写字母

@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-01-26"
+version: "2024-02-23"
 sort: by_weight
 ...
 # +_+
@@ -481,8 +481,8 @@ aimed	aimed
 aiming	aiming
 aims	aims
 air	air
-airborne	airborne
 air-conditioning	air-conditioning
+airborne	airborne
 aircraft	aircraft
 aired	aired
 aires	aires
@@ -1810,7 +1810,7 @@ behind	behind
 behold	behold
 # bei	bei
 beige	beige
-beijing	beijing
+Beijing	Beijing
 being	being
 beings	beings
 Beirut	Beirut
@@ -2644,10 +2644,10 @@ buzz	buzz
 # bw	bw
 # bx	bx
 by	by
+by-product	by-product
 bye	bye
 bylaws	bylaws
 bypass	bypass
-by-product	by-product
 Byrd	Byrd
 Byrne	Byrne
 Byron	Byron
@@ -2753,6 +2753,7 @@ campus	campus
 campuses	campuses
 cams	cams
 can	can
+can't	can't
 Canada	Canada
 Canadian	Canadian
 Canadians	Canadians
@@ -2785,7 +2786,6 @@ canon	canon
 canonical	canonical
 canopy	canopy
 cans	cans
-can't	can't
 cant	cant
 canteen	canteen
 canterbury	canterbury
@@ -2993,14 +2993,14 @@ cayman	cayman
 # ccm	ccm
 CCTV	CCTV
 CD	CD
+CD-ROM	CDROM
+CD-RW	CDRW
 CDC	CDC
 CDMA	CDMA
 CDN	CDN
 cDNA	cDNA
 # cdp	cdp
 # cdr	cdr
-CD-ROM	CDROM
-CD-RW	CDRW
 # CdS	CdS
 # CDT	CDT
 # ce	ce
@@ -3561,7 +3561,7 @@ clutch	clutch
 clutter	clutter
 Clyde	Clyde
 # cm	cm
-Cmd	Cmd
+cmd	cmd
 # cme	cme
 # cmos	cmos
 # cmp	cmp
@@ -5498,8 +5498,8 @@ disgrace	disgrace
 disguise	disguise
 disgust	disgust
 dish	dish
-dishes	dishes
 Dish Network	DishNetwork
+dishes	dishes
 dishwasher	dishwasher
 disillusion	disillusion
 disk	disk
@@ -5678,6 +5678,7 @@ dominican	dominican
 dominion	dominion
 domino	domino
 don	don
+don't	don't
 Donald	Donald
 donate	donate
 donated	donated
@@ -5691,7 +5692,6 @@ Donna	Donna
 donor	donor
 donors	donors
 Donovan	Donovan
-don't	don't
 # dont	dont
 # doo	doo
 doom	doom
@@ -5938,6 +5938,7 @@ dysfunction	dysfunction
 Dyson	Dyson
 # dz	dz
 # e	e
+E-Business	EBusiness
 # ea	ea
 each	each
 eager	eager
@@ -5988,7 +5989,6 @@ ebb	ebb
 ebony	ebony
 ebook	ebook
 ebooks	ebooks
-E-Business	EBusiness
 # ec	ec
 ecard	ecard
 eCards	eCards
@@ -7254,9 +7254,9 @@ firmness	firmness
 firms	firms
 firmware	firmware
 first	first
+first-rate	first-rate
 FirstGov	FirstGov
 firstly	firstly
-first-rate	first-rate
 fiscal	fiscal
 Fischer	Fischer
 fish	fish
@@ -7416,12 +7416,12 @@ folk	folk
 folklore	folklore
 folks	folks
 follow	follow
+follow-up	follow-up
 followed	followed
 follower	follower
 followers	followers
 following	following
 follows	follows
-follow-up	follow-up
 # fomit	fomit
 fond	fond
 font	font
@@ -8613,6 +8613,7 @@ HBO	HBO
 HDD	HDD
 HDTV	HDTV
 he	he
+he's	he's
 head	head
 headache	headache
 headaches	headaches
@@ -8752,7 +8753,6 @@ Hershey	Hershey
 Hertfordshire	Hertfordshire
 hertz	hertz
 Herzegovina	Herzegovina
-he's	he's
 hesitate	hesitate
 Hess	Hess
 # het	het
@@ -8767,6 +8767,7 @@ hey	hey
 # hh	hh
 # hhs	hhs
 hi	hi
+Hi-Fi	HiFi
 hickory	hickory
 hicks	hicks
 hid	hid
@@ -8777,7 +8778,6 @@ hiding	hiding
 # hier	hier
 hierarchical	hierarchical
 hierarchy	hierarchy
-Hi-Fi	HiFi
 Higgins	Higgins
 high	high
 # highbeam	highbeam
@@ -9935,6 +9935,7 @@ issuing	issuing
 istanbul	istanbul
 # isuzu	isuzu
 it	it
+it's	it's
 # ita	ita
 Italia	Italia
 Italian	Italian
@@ -9949,7 +9950,6 @@ iteration	iteration
 Ithaca	Ithaca
 itinerary	itinerary
 # itk	itk
-it's	it's
 itself	itself
 # itu	itu
 iTunes	iTunes
@@ -10762,9 +10762,9 @@ lessons	lessons
 lest	lest
 Lester	Lester
 let	let
+let's	let's
 lethal	lethal
 # letras	letras
-let's	let's
 # lett	lett
 letter	letter
 lettering	lettering
@@ -11418,8 +11418,8 @@ mapped	mapped
 mapping	mapping
 MapQuest	MapQuest
 maps	maps
-Mar.	Mar
 mar	mar
+Mar.	Mar
 mara	mara
 marathon	marathon
 marble	marble
@@ -11428,11 +11428,11 @@ marcel	marcel
 March	March
 march	march
 marching	marching
-marcia	marcia
-marco	marco
+Marcia	Marcia
+Marco	Marco
 Marcos	Marcos
 marcus	marcus
-mardi	mardi
+# mardi	mardi
 mare	mare
 Margaret	Margaret
 margin	margin
@@ -11904,8 +11904,8 @@ mileage	mileage
 miles	miles
 milestone	milestone
 milestones	milestones
-milf	milf
-milfhunter	milfhunter
+# milf	milf
+# milfhunter	milfhunter
 Milford	Milford
 milfs	milfs
 milfseeker	milfseeker
@@ -12882,6 +12882,7 @@ NYSE	NYSE
 # nyt	nyt
 # nz	nz
 # o	o
+o'clock	o'clock
 # oa	oa
 Oahu	Oahu
 oak	oak
@@ -12927,8 +12928,8 @@ observers	observers
 observing	observing
 obsessed	obsessed
 obsession	obsession
-obsolete	obsolete
 obsidian	obsidian
+obsolete	obsolete
 obstacle	obstacle
 obstacles	obstacles
 obstetrics	obstetrics
@@ -12965,7 +12966,6 @@ oceanic	oceanic
 oceans	oceans
 # och	och
 # oclc	oclc
-o'clock	o'clock
 # ocr	ocr
 Oct.	Oct
 octave	octave
@@ -14377,7 +14377,7 @@ PowerBook	PowerBook
 powered	powered
 powerful	powerful
 PowerPC	PowerPC
-powerpoint	powerpoint
+PowerPoint	PowerPoint
 powers	powers
 powerseller	powerseller
 powershot	powershot
@@ -16357,8 +16357,8 @@ SARS	SARS
 saskatchewan	saskatchewan
 saskatoon	saskatoon
 sassy	sassy
-Sat.	Sat
 sat	sat
+Sat.	Sat
 SATA	SATA
 satan	satan
 satellite	satellite
@@ -16603,9 +16603,9 @@ seattle	seattle
 sebastian	sebastian
 sec	sec
 second	second
+second-hand	second-hand
 secondary	secondary
 seconded	seconded
-second-hand	second-hand
 secondly	secondly
 seconds	seconds
 secrecy	secrecy
@@ -16740,8 +16740,8 @@ separating	separating
 separation	separation
 separator	separator
 # seperate	seperate
-Sept.	Sept
 sept	sept
+Sept.	Sept
 September	September
 septic	septic
 # seq	seq
@@ -17328,6 +17328,7 @@ sneak	sneak
 sneeze	sneeze
 sniff	sniff
 sniper	sniper
+snippet	snippet
 snippets	snippets
 SNMP	SNMP
 snooker	snooker
@@ -17343,6 +17344,7 @@ snowy	snowy
 # snr	snr
 Snyder	Snyder
 so	so
+so-called	so-called
 # SOA	SOA
 soak	soak
 soap	soap
@@ -17353,7 +17355,6 @@ soaring	soaring
 sober	sober
 # sobre	sobre
 # soc	soc
-so-called	so-called
 soccer	soccer
 sociable	sociable
 social	social
@@ -18183,8 +18184,8 @@ summers	summers
 summit	summit
 summon	summon
 sums	sums
-Sun.	Sun
 sun	sun
+Sun.	Sun
 Sundance	Sundance
 Sunday	Sunday
 Sundays	Sundays
@@ -18439,7 +18440,7 @@ systems	systems
 # sz	sz
 # t	t
 # ta	ta
-Tab	Tab
+tab	tab
 table	table
 tables	tables
 tablespoons	tablespoons
@@ -18806,13 +18807,13 @@ therapist	therapist
 therapists	therapists
 therapy	therapy
 there	there
+there's	there's
 thereafter	thereafter
 thereby	thereby
 therefore	therefore
 therein	therein
 thereof	thereof
 thereon	thereon
-there's	there's
 Theresa	Theresa
 thereto	thereto
 thermal	thermal
@@ -19306,7 +19307,7 @@ travels	travels
 traverse	traverse
 travesti	travesti
 travestis	travestis
-travis	travis
+Travis	Travis
 tray	tray
 trays	trays
 tread	tread
@@ -19747,6 +19748,7 @@ unwanted	unwanted
 unwilling	unwilling
 unwrap	unwrap
 up	up
+up-to-date	up-to-date
 # upc	upc
 upcoming	upcoming
 update	update
@@ -19778,7 +19780,6 @@ upstream	upstream
 uptake	uptake
 uptime	uptime
 # upto	upto
-up-to-date	up-to-date
 uptown	uptown
 upward	upward
 upwards	upwards
@@ -20487,9 +20488,9 @@ weld	weld
 welding	welding
 welfare	welfare
 well	well
+well-known	well-known
 Wellbutrin	Wellbutrin
 wellington	wellington
-well-known	well-known
 wellness	wellness
 wells	wells
 welsh	welsh
@@ -20523,8 +20524,8 @@ whale	whale
 whales	whales
 wharf	wharf
 what	what
-whatever	whatever
 what's	what's
+whatever	whatever
 whatsoever	whatsoever
 wheat	wheat
 Wheaton	Wheaton
@@ -20604,7 +20605,7 @@ wight	wight
 wigs	wigs
 wiki	wiki
 Wikimedia	Wikimedia
-wikipedia	wikipedia
+Wikipedia	Wikipedia
 # wil	wil
 Wilcox	Wilcox
 wild	wild
@@ -20727,6 +20728,7 @@ woman	woman
 women	women
 women's	women's
 won	won
+won't	won't
 wonder	wonder
 wondered	wondered
 wonderful	wonderful
@@ -20735,7 +20737,6 @@ wondering	wondering
 wonderland	wonderland
 wonders	wonders
 # wong	wong
-won't	won't
 wont	wont
 woo	woo
 Wood	Wood

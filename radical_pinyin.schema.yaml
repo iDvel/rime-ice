@@ -1,0 +1,286 @@
+# Rime schema settings
+# encoding: utf-8
+# Copyright (C) Mirtle <mirtle.cn@outlook.com>
+# License: CC BY-SA 4.0 DEED (https://creativecommons.org/licenses/by-sa/4.0/)
+
+schema:
+  schema_id: radical_pinyin
+  name: "偏旁部件拆字"
+  version: "1.02"
+  author: Mirtle
+  description: |
+    用拼音按顺序拼出偏旁部件，以输入汉字。
+    码表：開放詞典 / henrysting / Mirtle
+    注音、校对、方案：Mirtle
+    报错：<https://github.com/mirtlecn/rime_radical_pinyin>
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - echo_translator
+    - punct_translator
+    - table_translator
+
+speller:
+  alphabet: "abcdefghijklmnopqrstuvwxyz;"
+  delimiter: " '"
+  algebra:
+    # 根据当前所用拼音方案选择 __include 的值
+    __include: algebra_pinyin           # 全拼
+    # __include: algebra_double_pinyin  # 自然码双拼
+    # __include: algebra_flypy          # 小鹤双拼
+    # __include: algebra_mspy           # 微软双拼
+    # __include: algebra_sogou          # 搜狗双拼
+    # __include: algebra_abc            # 智能ABC双拼
+    # __include: algebra_ziguang        # 紫光双拼
+
+translator:
+  dictionary: radical_pinyin
+  enable_user_dict: false
+
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+
+algebra_pinyin:
+  - xform/'//
+  - derive/^([nl])ue$/$1ve/
+  - derive/'([nl])ue$/'$1ve/
+  - derive/^([jqxy])u/$1v/
+  - derive/'([jqxy])u/'$1v/
+
+algebra_double_pinyin:
+  - derive/^([jqxy])u(?=^|$|')/$1v/
+  - derive/'([jqxy])u(?=^|$|')/'$1v/
+  - derive/^([aoe])([ioun])(?=^|$|')/$1$1$2/
+  - derive/'([aoe])([ioun])(?=^|$|')/'$1$1$2/
+  - xform/^([aoe])(ng)?(?=^|$|')/$1$1$2/
+  - xform/'([aoe])(ng)?(?=^|$|')/'$1$1$2/
+  - xform/iu(?=^|$|')/<q>/
+  - xform/[iu]a(?=^|$|')/<w>/
+  - xform/[uv]an(?=^|$|')/<r>/
+  - xform/[uv]e(?=^|$|')/<t>/
+  - xform/ing(?=^|$|')|uai(?=^|$|')/<y>/
+  - xform/^sh/<u>/
+  - xform/^ch/<i>/
+  - xform/^zh/<v>/
+  - xform/'sh/'<u>/
+  - xform/'ch/'<i>/
+  - xform/'zh/'<v>/
+  - xform/uo(?=^|$|')/<o>/
+  - xform/[uv]n(?=^|$|')/<p>/
+  - xform/([a-z>])i?ong(?=^|$|')/$1<s>/
+  - xform/[iu]ang(?=^|$|')/<d>/
+  - xform/([a-z>])en(?=^|$|')/$1<f>/
+  - xform/([a-z>])eng(?=^|$|')/$1<g>/
+  - xform/([a-z>])ang(?=^|$|')/$1<h>/
+  - xform/ian(?=^|$|')/<m>/
+  - xform/([a-z>])an(?=^|$|')/$1<j>/
+  - xform/iao(?=^|$|')/<c>/
+  - xform/([a-z>])ao(?=^|$|')/$1<k>/
+  - xform/([a-z>])ai(?=^|$|')/$1<l>/
+  - xform/([a-z>])ei(?=^|$|')/$1<z>/
+  - xform/ie(?=^|$|')/<x>/
+  - xform/ui(?=^|$|')/<v>/
+  - xform/([a-z>])ou(?=^|$|')/$1<b>/
+  - xform/in(?=^|$|')/<n>/
+  - xform/'|<|>//
+
+algebra_flypy:
+  - derive/^([jqxy])u(?=^|$|')/$1v/
+  - derive/'([jqxy])u(?=^|$|')/'$1v/
+  - derive/^([aoe])([ioun])(?=^|$|')/$1$1$2/
+  - derive/'([aoe])([ioun])(?=^|$|')/'$1$1$2/
+  - xform/^([aoe])(ng)?(?=^|$|')/$1$1$2/
+  - xform/'([aoe])(ng)?(?=^|$|')/'$1$1$2/
+  - xform/iu(?=^|$|')/<q>/
+  - xform/(.)ei(?=^|$|')/$1<w>/
+  - xform/uan(?=^|$|')/<r>/
+  - xform/[uv]e(?=^|$|')/<t>/
+  - xform/un(?=^|$|')/<y>/
+  - xform/^sh/<u>/
+  - xform/^ch/<i>/
+  - xform/^zh/<v>/
+  - xform/'sh/'<u>/
+  - xform/'ch/'<i>/
+  - xform/'zh/'<v>/
+  - xform/uo(?=^|$|')/<o>/
+  - xform/ie(?=^|$|')/<p>/
+  - xform/([a-z>])i?ong(?=^|$|')/$1<s>/
+  - xform/ing(?=^|$|')|uai(?=^|$|')/<k>/
+  - xform/([a-z>])ai(?=^|$|')/$1<d>/
+  - xform/([a-z>])en(?=^|$|')/$1<f>/
+  - xform/([a-z>])eng(?=^|$|')/$1<g>/
+  - xform/[iu]ang(?=^|$|')/<l>/
+  - xform/([a-z>])ang(?=^|$|')/$1<h>/
+  - xform/ian(?=^|$|')/<m>/
+  - xform/([a-z>])an(?=^|$|')/$1<j>/
+  - xform/([a-z>])ou(?=^|$|')/$1<z>/
+  - xform/[iu]a(?=^|$|')/<x>/
+  - xform/iao(?=^|$|')/<n>/
+  - xform/([a-z>])ao(?=^|$|')/$1<c>/
+  - xform/ui(?=^|$|')/<v>/
+  - xform/in(?=^|$|')/<b>/
+  - xform/'|<|>//
+
+algebra_mspy:
+  - derive/^([jqxy])u(?=^|$|')/$1v/
+  - derive/'([jqxy])u(?=^|$|')/'$1v/
+  - derive/^([aoe].*)(?=^|$|')/o$1/
+  - derive/'([aoe].*)(?=^|$|')/'o$1/
+  - xform/^([ae])(.*)(?=^|$|')/$1$1$2/
+  - xform/'([ae])(.*)(?=^|$|')/'$1$1$2/
+  - xform/iu(?=^|$|')/<q>/
+  - xform/[iu]a(?=^|$|')/<w>/
+  - xform/er(?=^|$|')|[uv]an(?=^|$|')/<r>/
+  - xform/[uv]e(?=^|$|')/<t>/
+  - xform/v(?=^|$|')|uai(?=^|$|')/<y>/
+  - xform/^sh/<u>/
+  - xform/^ch/<i>/
+  - xform/^zh/<v>/
+  - xform/'sh/'<u>/
+  - xform/'ch/'<i>/
+  - xform/'zh/'<v>/
+  - xform/uo(?=^|$|')/<o>/
+  - xform/[uv]n(?=^|$|')/<p>/
+  - xform/([a-z>])i?ong(?=^|$|')/$1<s>/
+  - xform/[iu]ang(?=^|$|')/<d>/
+  - xform/([a-z>])en(?=^|$|')/$1<f>/
+  - xform/([a-z>])eng(?=^|$|')/$1<g>/
+  - xform/([a-z>])ang(?=^|$|')/$1<h>/
+  - xform/ian(?=^|$|')/<m>/
+  - xform/([a-z>])an(?=^|$|')/$1<j>/
+  - xform/iao(?=^|$|')/<c>/
+  - xform/([a-z>])ao(?=^|$|')/$1<k>/
+  - xform/([a-z>])ai(?=^|$|')/$1<l>/
+  - xform/([a-z>])ei(?=^|$|')/$1<z>/
+  - xform/ie(?=^|$|')/<x>/
+  - xform/ui(?=^|$|')/<v>/
+  - derive/<t>(?=^|$|')/<v>/
+  - xform/([a-z>])ou(?=^|$|')/$1<b>/
+  - xform/in(?=^|$|')/<n>/
+  - xform/ing(?=^|$|')/;/
+  - xform/'|<|>//
+
+algebra_sogou:
+  - derive/^([jqxy])u(?=^|$|')/$1v/
+  - derive/'([jqxy])u(?=^|$|')/'$1v/
+  - derive/^([aoe].*)(?=^|$|')/o$1/
+  - derive/'([aoe].*)(?=^|$|')/'o$1/
+  - xform/^([ae])(.*)(?=^|$|')/$1$1$2/
+  - xform/'([ae])(.*)(?=^|$|')/'$1$1$2/
+  - xform/iu(?=^|$|')/<q>/
+  - xform/[iu]a(?=^|$|')/<w>/
+  - xform/er(?=^|$|')|[uv]an(?=^|$|')/<r>/
+  - xform/[uv]e(?=^|$|')/<t>/
+  - xform/v(?=^|$|')|uai(?=^|$|')/<y>/
+  - xform/^sh/<u>/
+  - xform/^ch/<i>/
+  - xform/^zh/<v>/
+  - xform/'sh/'<u>/
+  - xform/'ch/'<i>/
+  - xform/'zh/'<v>/
+  - xform/uo(?=^|$|')/<o>/
+  - xform/[uv]n(?=^|$|')/<p>/
+  - xform/([a-z>])i?ong(?=^|$|')/$1<s>/
+  - xform/[iu]ang(?=^|$|')/<d>/
+  - xform/([a-z>])en(?=^|$|')/$1<f>/
+  - xform/([a-z>])eng(?=^|$|')/$1<g>/
+  - xform/([a-z>])ang(?=^|$|')/$1<h>/
+  - xform/ian(?=^|$|')/<m>/
+  - xform/([a-z>])an(?=^|$|')/$1<j>/
+  - xform/iao(?=^|$|')/<c>/
+  - xform/([a-z>])ao(?=^|$|')/$1<k>/
+  - xform/([a-z>])ai(?=^|$|')/$1<l>/
+  - xform/([a-z>])ei(?=^|$|')/$1<z>/
+  - xform/ie(?=^|$|')/<x>/
+  - xform/ui(?=^|$|')/<v>/
+  - xform/([a-z>])ou(?=^|$|')/$1<b>/
+  - xform/in(?=^|$|')/<n>/
+  - xform/ing(?=^|$|')/;/
+  - xform/'|<|>//
+
+algebra_abc:
+  - xform/^zh/<a>/
+  - xform/^ch/<e>/
+  - xform/^sh/<v>/
+  - xform/'zh/'<a>/
+  - xform/'ch/'<e>/
+  - xform/'sh/'<v>/
+  - xform/^([aoe].*)(?=^|$|')/<o>$1/
+  - xform/'([aoe].*)(?=^|$|')/'<o>$1/
+  - xform/ei(?=^|$|')/<q>/
+  - xform/ian(?=^|$|')/<w>/
+  - xform/er(?=^|$|')|iu(?=^|$|')/<r>/
+  - xform/[iu]ang(?=^|$|')/<t>/
+  - xform/ing(?=^|$|')/<y>/
+  - xform/uo(?=^|$|')/<o>/
+  - xform/uan(?=^|$|')/<p>/
+  - xform/([a-z>])i?ong(?=^|$|')/$1<s>/
+  - xform/[iu]a(?=^|$|')/<d>/
+  - xform/en(?=^|$|')/<f>/
+  - xform/eng(?=^|$|')/<g>/
+  - xform/ang(?=^|$|')/<h>/
+  - xform/an(?=^|$|')/<j>/
+  - xform/iao(?=^|$|')/<z>/
+  - xform/ao(?=^|$|')/<k>/
+  - xform/in(?=^|$|')|uai(?=^|$|')/<c>/
+  - xform/ai(?=^|$|')/<l>/
+  - xform/ie(?=^|$|')/<x>/
+  - xform/ou(?=^|$|')/<b>/
+  - xform/un(?=^|$|')/<n>/
+  - xform/[uv]e(?=^|$|')|ui(?=^|$|')/<m>/
+  - xform/'|<|>//
+
+algebra_ziguang:
+  - derive/^([jqxy])u(?=^|$|')/$1v/
+  - derive/'([jqxy])u(?=^|$|')/'$1v/
+  - xform/'([aoe].*)(?=^|$|')/'<o>$1/
+  - xform/^([aoe].*)(?=^|$|')/<o>$1/
+  - xform/en(?=^|$|')/<w>/
+  - xform/eng(?=^|$|')/<t>/
+  - xform/in(?=^|$|')|uai(?=^|$|')/<y>/
+  - xform/^zh/<u>/
+  - xform/^sh/<i>/
+  - xform/'zh/'<u>/
+  - xform/'sh/'<i>/
+  - xform/uo(?=^|$|')/<o>/
+  - xform/ai(?=^|$|')/<p>/
+  - xform/^ch/<a>/
+  - xform/'ch/'<a>/
+  - xform/[iu]ang(?=^|$|')/<g>/
+  - xform/ang(?=^|$|')/<s>/
+  - xform/ie(?=^|$|')/<d>/
+  - xform/ian(?=^|$|')/<f>/
+  - xform/([a-z>])i?ong(?=^|$|')/$1<h>/
+  - xform/er(?=^|$|')|iu(?=^|$|')/<j>/
+  - xform/ei(?=^|$|')/<k>/
+  - xform/uan(?=^|$|')/<l>/
+  - xform/ing(?=^|$|')/;/
+  - xform/ou(?=^|$|')/<z>/
+  - xform/[iu]a(?=^|$|')/<x>/
+  - xform/iao(?=^|$|')/<b>/
+  - xform/ue(?=^|$|')|ui(?=^|$|')|ve(?=^|$|')/<n>/
+  - xform/un(?=^|$|')/<m>/
+  - xform/ao(?=^|$|')/<q>/
+  - xform/an(?=^|$|')/<r>/
+  - xform/'|<|>//

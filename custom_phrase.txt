@@ -3,49 +3,27 @@
 #@/db_name	custom_phrase.txt
 #@/db_type	tabledb
 #
-# 自定义文本
-# 适用于全拼。
-# 双拼默认为 custom_phrase_double.txt 需要手动创建，并更改上面的 db_name 为 custom_phrase_double.txt
+# 自定义短语
+# 可为方案增加一些要置顶的词汇及短语，例如邮箱、手机号、常用短语等等。编码可以随便起，不限于拼音。
+#
+# 适用于全拼。双拼默认为 custom_phrase_double.txt 需要手动创建，并更改上面的 db_name 为 custom_phrase_double.txt
 #
 # 以下固定的词汇及顺序纯属个人偏好，仅作示例，
 # 可以增加自己的 .txt 文件，并在方案的 custom_phrase/user_dict 指定为自己的文件。
 #
-# 以 Tab 分割：汉字<Tab>编码<Tab>权重
+# 以 Tab 分割：词汇<Tab>编码<Tab>权重
 #
 # 这个文件内的字词会占据最高权重（即排在候选项的最前面，因为指定了高权重 custom_phrase/initial_quality: 99）。
 # 但不与其他翻译器互相造词，如果使用了完整编码，那么这个字或词将无法参与造词，即自造词无法被记住。
-# 所以建议只固定非完整编码的字词，「的de」应为「的d」，「是shi」应为「是s」，「仙剑xianjian」应为「仙剑xj」。
-# 也不要写 a e o，因为这三个本身就是完整编码，写了则无法参与造词。
+# 所以只建议固定非完整拼音的编码，如果需求是置顶指定拼音的候选项，请参考方案中的 pin_cand_filter。
 #
-# 最下面的英文是因为一些常用单词的第一候选项被纠错覆盖了，
-# 比如 Amazon 被纠错为「a ma zong 阿妈粽」，
-# 期望的 Amazon 跑到第二个候选项了，所以这里给它固定死喽。
+# 最下面的英文是因为一些常用单词的第一候选项被纠错覆盖了，如 Amazon 被纠错为「a ma zong 阿妈粽」，期望的 Amazon 跑到第二个候选项了，所以这里给它固定死喽。
 #
-# version: "2023-11-13"
+# version: "2024-02-14"
 #
 # 此行之后不能写注释
 
-
 噷	hm
-哼	hng
-
-
-去	q	2
-千	q	1
-
-我	w	3
-万	w	2
-往	w	1
-
-儿	r
-
-他	t	4
-她	t	3
-它	t	2
-祂	t	1
-
-与	y	2
-于	y	1
 
 有	u	3
 又	u	2
@@ -56,122 +34,6 @@
 已	i	2
 亦	i	1
 
-片	p	2
-篇	p	1
-
-是	s	4
-时	s	3
-使	s	2
-式	s	1
-
-的	d	3
-地	d	2
-得	d	1
-
-发	f	2
-分	f	1
-
-个	g
-
-和	h	2
-或	h	1
-
-及	j	5
-将	j	4
-即	j	3
-既	j	2
-继	j	1
-
-可	k
-
-了	l	4
-啦	l	3
-喽	l	2
-嘞	l	1
-
-在	z	3
-再	z	2
-自	z	1
-
-想	x	3
-像	x	2
-向	x	1
-
-才	c	2
-从	c	1
-
-吧	b	3
-百	b	2
-呗	b	1
-
-那	n	4
-哪	n	3
-拿	n	2
-呐	n	1
-
-吗	m	3
-嘛	m	2
-呣	m	1
-
-
-我们	wm
-我们	wom
-我们	wmen
-你们	nm
-你们	nim
-你们	nmen
-人们	rm
-人们	renm
-人们	rmen
-
-
-他的	td	3
-她的	td	2
-它的	td	1
-他的	tad	3
-她的	tad	2
-它的	tad	1
-他的	tde	3
-她的	tde	2
-它的	tde	1
-他们	tm	3
-她们	tm	2
-它们	tm	1
-他们	tam	3
-她们	tam	2
-它们	tam	1
-他们	tmen	3
-她们	tmen	2
-它们	tmen	1
-
-
-那儿	nr	2
-哪儿	nr	1
-那儿	nar	2
-哪儿	nar	1
-那个	ng	2
-哪个	ng	1
-那个	nag	2
-哪个	nag	1
-那些	nx	2
-哪些	nx	1
-那些	nax	2
-哪些	nax	1
-那里	nl	2
-哪里	nl	1
-那里	nal	2
-哪里	nal	1
-那边	nb	2
-哪边	nb	1
-那边	nab	2
-哪边	nab	1
-那位	nw	2
-哪位	nw	1
-那位	naw	2
-哪位	naw	1
-
-
-这	zh
 一个	ig
 有个	ug
 是一个	sig
@@ -183,35 +45,6 @@
 又有	uu
 又又又	uuu
 又双叒叕	uuuu
-
-
-等等	dd
-的地得	ddd
-等等等等	dddd
-刚刚	gg
-才刚刚	cgg
-知道	zd
-不知道	bzd
-往往	ww
-哈哈	hh
-看看	kk
-常常	cc
-想想	xx	2
-想象	xx	1
-隐约	yy
-因为	yw
-什么	sm
-所以	sy
-为什么	wsm
-是不是	sbs
-没什么	msm
-有时候	ysh
-有时候	yshh
-有时候	yshou
-什么的	smd
-什么是	sms
-什么啊	sma
-
 
 go	go
 Golang	golang
