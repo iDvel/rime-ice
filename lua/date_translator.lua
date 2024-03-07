@@ -47,6 +47,7 @@ function M.func(input, seg, env)
     -- ISO 8601/RFC 3339 的时间格式 （固定东八区）（示例 2022-01-07T20:42:51+08:00）
     elseif (input == M.datetime) then
         local current_time = os.time()
+        yield_cand(seg, os.date('%Y-%m-%d %H:%M:%S', current_time))
         yield_cand(seg, os.date('%Y-%m-%dT%H:%M:%S+08:00', current_time))
         yield_cand(seg, os.date('%Y%m%d%H%M%S', current_time))
 
