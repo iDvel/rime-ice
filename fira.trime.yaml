@@ -27,7 +27,7 @@ style:
   background_dim_amount: 0.5
   root_background: keyboard_back_color # 整個鍵盤區+候選欄的背景圖/色
   candidate_font: hanb.ttf # 候選字體
-  candidate_padding: 10 # 候選項內邊距
+  candidate_padding: 15 # 候選項內邊距
   candidate_spacing: 0 # 候選間距
   candidate_text_size: 20 # 候選字號
   candidate_use_cursor: true # 高亮候選項
