@@ -938,6 +938,7 @@ WSGI	WSGI
 BTC	BTC
 Bitcoin	BTC
 Bitcoin	Bitcoin
+Blockchain	Blockchain
 gank	gank
 debuff	debuff
 MagSafe	MagSafe
@@ -2179,6 +2180,8 @@ personalization	personalization
 K8s	K8s
 Kubernetes	K8s
 Kubernetes	Kubernetes
+Kubeadm	Kubeadm
+Minikube	Minikube
 containerized	containerized
 shitty	shitty
 shitwork	shitwork
@@ -2423,6 +2426,7 @@ punctuator	punctuator
 punctuators	punctuators
 QR code	QRcode
 sentry	sentry
+Prometheus	Prometheus
 Grafana	Grafana
 Mirtle	Mirtle
 Hadoop	Hadoop
