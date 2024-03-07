@@ -412,8 +412,8 @@ speller:
   algebra:
     ### 模糊音
     # 声母
-    # - derive/^([zcs])h/$1/          # zh* ch* sh* 派生出 z* c* s*
-    # - derive/^([zcs])([^h])/$1h$2/  # z* c* s*    派生出 zh* ch* sh*
+    - derive/^([zcs])h/$1/          # zh* ch* sh* 派生出 z* c* s*
+    - derive/^([zcs])([^h])/$1h$2/  # z* c* s*    派生出 zh* ch* sh*
     # - derive/^l/n/  # 解释：为 l 开头的拼写派生出 n 开头，即 nai 也可以输出 lai（来、莱、赖……）
     # - derive/^n/l/  #      lai 可输出 nai（奶、乃、奈……）。 可以单向或成对儿启用模糊音
     # - derive/^f/h/
