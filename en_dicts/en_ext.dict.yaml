@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2024-02-27"
+version: "2024-03-11"
 sort: by_weight
 ...
 # 一些杂项
@@ -2460,3 +2460,5 @@ Theseus	Theseus
 Laravel	Laravel
 monolith	monolith
 Chiikawa	Chiikawa
+anxious	anxious
+trudge	trudge
