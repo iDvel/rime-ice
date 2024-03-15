@@ -65,6 +65,9 @@ t9_preedit = require("t9_preedit")
 -- is_in_user_dict: false    为未输入过的内容加星号
 is_in_user_dict = require("is_in_user_dict")
 
+-- 智能补全 url 输入
+url = require("url").translator
+
 -- 词条隐藏、降频
 -- 在 engine/processors 增加 - lua_processor@cold_word_drop_processor
 -- 在 engine/filters 增加 - lua_filter@cold_word_drop_filter

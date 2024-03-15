@@ -159,7 +159,7 @@ punctuator:
 recognizer:
   patterns:
     email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"                            # email @ 之后不上屏
-    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"  # URL
+    url: '^(?:[a-z]+:/{0,2})$|^(?:[a-z]+://).*$|^(?:[^.]+\.){1,2}[^.]*$' # URL
     underscore: "^[A-Za-z]+_.*"  # 下划线不上屏
     # url_2: "^[A-Za-z]+[.].*"   # 句号不上屏，支持 google.com abc.txt 等网址或文件名，使用句号翻页时需要注释掉
     # colon: "^[A-Za-z]+:.*"     # 冒号不上屏
