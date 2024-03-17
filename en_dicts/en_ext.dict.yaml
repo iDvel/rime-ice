@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2024-03-11"
+version: "2024-03-18"
 sort: by_weight
 ...
 # 一些杂项
@@ -2463,3 +2463,4 @@ Chiikawa	Chiikawa
 anxious	anxious
 trudge	trudge
 LibreOffice	LibreOffice
+Asics	Asics
