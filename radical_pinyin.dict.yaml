@@ -744,7 +744,9 @@ sort: original
 乐	fang'xiao
 乐	kuang'xiao
 乐	pie'shu'deng
+乐	pie'shu'heng'xiao
 乐	pie'shu'mu
+乐	pie'shu'yi'xiao
 乑	pie'shu'pie'pie'dian'na
 乑	pie'shu'pie'pie'na'na
 乒	qiu'pie
@@ -770,6 +772,7 @@ sort: original
 也	zhe'shu'gou
 习	diao'dian
 习	diao'na
+习	zhe'bing
 乡	zhe'zhe'pie
 乢	shan'gou
 乢	shan'yi
@@ -2132,9 +2135,11 @@ sort: original
 兼	ba'yi'yu'shu'shu'ba
 兽	ba'tian'heng'kou
 兽	ba'tian'yi'kou
+兾	ba'tian'gong
 兾	ba'yi
 兿	ba'heng'zhi'yun
 兿	ba'yi'zhi'yun
+冀	bei'tian'gong
 冀	bei'yi
 冁	dan'zhan
 冂	shu'yi
@@ -2156,8 +2161,10 @@ sort: original
 冈	tong'yi
 冉	jiong'shi'heng
 冉	jiong'shi'yi
+冉	jiong'tu
 冉	tong'shi'heng
 冉	tong'shi'yi
+冉	tong'tu
 冊	jiong'heng'shu'shu
 冊	jiong'yi'shu'shu
 冊	tong'heng'shu'shu
@@ -2174,14 +2181,18 @@ sort: original
 册	tong'tong'yi
 再	heng'jiong'shi'heng
 再	heng'jiong'shi'yi
+再	heng'jiong'tu
 再	heng'ran
 再	heng'tong'shi'heng
 再	heng'tong'shi'yi
+再	heng'tong'tu
 再	yi'jiong'shi'heng
 再	yi'jiong'shi'yi
+再	yi'jiong'tu
 再	yi'ran
 再	yi'tong'shi'heng
 再	yi'tong'shi'yi
+再	yi'tong'tu
 冏	jiong'ba'kou
 冏	tong'ba'kou
 冐	jiong'er'yue
@@ -8066,6 +8077,7 @@ sort: original
 廖	guang'yu'zhen
 廗	guang'dai
 廘	guang'lu
+廙	guang'tian'gong
 廙	guang'yi
 廚	guang'shi'dou'cun
 廚	guang'shu
@@ -9627,8 +9639,11 @@ sort: original
 戲	hu'dou'ge
 戳	di'ge
 戳	yu'zhui'ge
+戴	shi'ge'tian'gong
 戴	shi'ge'yi
+戴	tu'ge'tian'gong
 戴	tu'ge'yi
+戴	zai'tian'gong
 戴	zai'yi
 戵	mu'mu'zhui'ge
 戵	qu'ge
@@ -12701,7 +12716,9 @@ sort: original
 杀	yi'mu
 杀	yi'yi'xiao
 杂	jiu'deng
+杂	jiu'heng'xiao
 杂	jiu'mu
+杂	jiu'yi'xiao
 权	mu'you
 杄	mu'qian
 杅	mu'yu
@@ -15731,6 +15748,7 @@ sort: original
 潦	shui'shen'xiao
 潧	shui'ceng
 潨	shui'zhong
+潩	shui'tian'gong
 潩	shui'yi
 潪	shui'zhi
 潫	shui'juan
@@ -16605,6 +16623,7 @@ sort: original
 熺	huo'xi
 熻	huo'he'yu
 熻	huo'xi
+熼	huo'tian'gong
 熼	huo'yi
 熽	huo'su
 熾	huo'yin'ge
@@ -20531,6 +20550,7 @@ sort: original
 禧	shi'xi
 禨	shi'ji
 禨	shi'qi
+禩	shi'tian'gong
 禩	shi'yi
 禪	shi'chan
 禪	shi'dan
@@ -20796,6 +20816,7 @@ sort: original
 穏	he'zhua'shan'xin
 穐	he'gui
 穑	he'se
+穓	he'tian'gong
 穓	he'yi
 穔	he'huang
 穕	he'ji
@@ -23725,6 +23746,7 @@ sort: original
 翹	yao'yu
 翺	gao'yu
 翻	fan'yu
+翼	yu'tian'gong
 翼	yu'yi
 翽	sui'yu
 翽	suo'yu
@@ -29754,6 +29776,7 @@ sort: original
 趨	zou'bao'che'bao'che
 趨	zou'chu
 趨	zou'zou
+趩	zou'tian'gong
 趩	zou'yi
 趪	zou'huang
 趫	zou'jiao
@@ -34408,6 +34431,7 @@ sort: original
 霪	yu'shui'zhao'ren
 霪	yu'shui'zhua'ren
 霫	yu'xi
+霬	yu'tian'gong
 霬	yu'yi
 霭	yu'ye
 霮	yu'zhan
