@@ -309,30 +309,30 @@ speller:
   delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
     - erase/^xx$/
-    - xform/^zh/Ⓐ/
-    - xform/^ch/Ⓔ/
-    - xform/^sh/Ⓥ/
-    - xform/^([aoe].*)$/Ⓞ$1/
-    - xform/ei$/Ⓠ/
-    - xform/ian$/Ⓦ/
-    - xform/er$|iu$/Ⓡ/
-    - xform/[iu]ang$/Ⓣ/
-    - xform/ing$/Ⓨ/
-    - xform/uo$/Ⓞ/
-    - xform/uan$/Ⓟ/
-    - xform/(.)i?ong$/$1Ⓢ/
-    - xform/[iu]a$/Ⓓ/
-    - xform/en$/Ⓕ/
-    - xform/eng$/Ⓖ/
-    - xform/ang$/Ⓗ/
-    - xform/an$/Ⓙ/
-    - xform/iao$/Ⓩ/
-    - xform/ao$/Ⓚ/
-    - xform/in$|uai$/Ⓒ/
-    - xform/ai$/Ⓛ/
-    - xform/ie$/Ⓧ/
-    - xform/ou$/Ⓑ/
-    - xform/un$/Ⓝ/
-    - xform/[uv]e$|ui$/Ⓜ/
-    - xlit/ⓆⓌⒺⓇⓉⓎⓄⓅⒶⓈⒹⒻⒼⒽⒿⓀⓁⓏⓍⒸⓋⒷⓃⓂ/qwertyopasdfghjklzxcvbnm/
+    - xform/^zh/<a>/
+    - xform/^ch/<e>/
+    - xform/^sh/<v>/
+    - xform/^([aoe].*)$/<o>$1/
+    - xform/ei$/<q>/
+    - xform/ian$/<w>/
+    - xform/er$|iu$/<r>/
+    - xform/[iu]ang$/<t>/
+    - xform/ing$/<y>/
+    - xform/uo$/<o>/
+    - xform/uan$/<p>/
+    - xform/(.)i?ong$/$1<s>/
+    - xform/[iu]a$/<d>/
+    - xform/en$/<f>/
+    - xform/eng$/<g>/
+    - xform/ang$/<h>/
+    - xform/an$/<j>/
+    - xform/iao$/<z>/
+    - xform/ao$/<k>/
+    - xform/in$|uai$/<c>/
+    - xform/ai$/<l>/
+    - xform/ie$/<x>/
+    - xform/ou$/<b>/
+    - xform/un$/<n>/
+    - xform/[uv]e$|ui$/<m>/
+    - xform/<|>/
     # - abbrev/^(.).+$/$1/  # 首字母简拼，开启后会导致 3 个字母时 kj'x 变成 k'jx 的问题

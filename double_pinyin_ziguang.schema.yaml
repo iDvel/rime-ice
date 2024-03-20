@@ -309,30 +309,30 @@ speller:
   algebra:
     - erase/^xx$/
     - derive/^([jqxy])u$/$1v/
-    - xform/^([aoe].*)$/Ⓞ$1/  # 添上固定的零聲母o，先標記爲大寫O
-    - xform/en$/Ⓦ/
-    - xform/eng$/Ⓣ/
-    - xform/in$|uai$/Ⓨ/
-    - xform/^zh/Ⓤ/
-    - xform/^sh/Ⓘ/
-    - xform/uo$/Ⓞ/
-    - xform/ai$/Ⓟ/
-    - xform/^ch/Ⓐ/
-    - xform/[iu]ang$/Ⓖ/
-    - xform/ang$/Ⓢ/  # ang should be placed after iang/uang
-    - xform/ie$/Ⓓ/
-    - xform/ian$/Ⓕ/
-    - xform/(.)i?ong$/$1Ⓗ/
-    - xform/er$|iu$/Ⓙ/
-    - xform/ei$/Ⓚ/
-    - xform/uan$/Ⓛ/
+    - xform/^([aoe].*)$/<o>$1/  # 添上固定的零聲母o，先標記爲大寫O
+    - xform/en$/<w>/
+    - xform/eng$/<t>/
+    - xform/in$|uai$/<y>/
+    - xform/^zh/<u>/
+    - xform/^sh/<i>/
+    - xform/uo$/<o>/
+    - xform/ai$/<p>/
+    - xform/^ch/<a>/
+    - xform/[iu]ang$/<g>/
+    - xform/ang$/<s>/  # ang should be placed after iang/uang
+    - xform/ie$/<d>/
+    - xform/ian$/<f>/
+    - xform/(.)i?ong$/$1<h>/
+    - xform/er$|iu$/<j>/
+    - xform/ei$/<k>/
+    - xform/uan$/<l>/
     - xform/ing$/;/
-    - xform/ou$/Ⓩ/
-    - xform/[iu]a$/Ⓧ/
-    - xform/iao$/Ⓑ/
-    - xform/ue$|ui$|ve$/Ⓝ/
-    - xform/un$/Ⓜ/
-    - xform/ao$/Ⓠ/ # ao should be placed after iao
-    - xform/an$/Ⓡ/ # an should be placed after uan/ian
-    - xlit/ⓌⓉⓎⓊⒾⓄⓅⒶⒼⓈⒹⒻⒽⒿⓀⓁⓏⓍⒷⓃⓂⓆⓇ/wtyuiopagsdfhjklzxbnmqr/
+    - xform/ou$/<z>/
+    - xform/[iu]a$/<x>/
+    - xform/iao$/<b>/
+    - xform/ue$|ui$|ve$/<n>/
+    - xform/un$/<m>/
+    - xform/ao$/<q>/ # ao should be placed after iao
+    - xform/an$/<r>/ # an should be placed after uan/ian
+    - xform/<|>/
     # - abbrev/^(.).+$/$1/  # 首字母简拼，开启后会导致 3 个字母时 kj'x 变成 k'jx 的问题

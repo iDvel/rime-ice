@@ -313,31 +313,31 @@ speller:
     - derive/^([jqxy])u$/$1v/
     - derive/^([aoe].*)$/o$1/
     - xform/^([ae])(.*)$/$1$1$2/
-    - xform/iu$/Ⓠ/
-    - xform/[iu]a$/Ⓦ/
-    - xform/er$|[uv]an$/Ⓡ/
-    - xform/[uv]e$/Ⓣ/
-    - xform/v$|uai$/Ⓨ/
-    - xform/^sh/Ⓤ/
-    - xform/^ch/Ⓘ/
-    - xform/^zh/Ⓥ/
-    - xform/uo$/Ⓞ/
-    - xform/[uv]n$/Ⓟ/
-    - xform/(.)i?ong$/$1Ⓢ/
-    - xform/[iu]ang$/Ⓓ/
-    - xform/(.)en$/$1Ⓕ/
-    - xform/(.)eng$/$1Ⓖ/
-    - xform/(.)ang$/$1Ⓗ/
-    - xform/ian$/Ⓜ/
-    - xform/(.)an$/$1Ⓙ/
-    - xform/iao$/Ⓒ/
-    - xform/(.)ao$/$1Ⓚ/
-    - xform/(.)ai$/$1Ⓛ/
-    - xform/(.)ei$/$1Ⓩ/
-    - xform/ie$/Ⓧ/
-    - xform/ui$/Ⓥ/
-    - xform/(.)ou$/$1Ⓑ/
-    - xform/in$/Ⓝ/
+    - xform/iu$/<q>/
+    - xform/[iu]a$/<w>/
+    - xform/er$|[uv]an$/<r>/
+    - xform/[uv]e$/<t>/
+    - xform/v$|uai$/<y>/
+    - xform/^sh/<u>/
+    - xform/^ch/<i>/
+    - xform/^zh/<v>/
+    - xform/uo$/<o>/
+    - xform/[uv]n$/<p>/
+    - xform/(.)i?ong$/$1<s>/
+    - xform/[iu]ang$/<d>/
+    - xform/(.)en$/$1<f>/
+    - xform/(.)eng$/$1<g>/
+    - xform/(.)ang$/$1<h>/
+    - xform/ian$/<m>/
+    - xform/(.)an$/$1<j>/
+    - xform/iao$/<c>/
+    - xform/(.)ao$/$1<k>/
+    - xform/(.)ai$/$1<l>/
+    - xform/(.)ei$/$1<z>/
+    - xform/ie$/<x>/
+    - xform/ui$/<v>/
+    - xform/(.)ou$/$1<b>/
+    - xform/in$/<n>/
     - xform/ing$/;/
-    - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⓂⒿⒸⓀⓁⓏⓍⓋⒷⓃ/qwrtyuiopsdfghmjcklzxvbn/
+    - xform/<|>/
     # - abbrev/^(.).+$/$1/  # 首字母简拼，开启后会导致 3 个字母时 kj'x 变成 k'jx 的问题
