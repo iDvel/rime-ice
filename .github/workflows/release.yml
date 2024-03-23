@@ -1,0 +1,64 @@
+name: Release CI
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - '[0-9]+.*'
+    paths:
+      - '**/**'
+      - '!**.md'
+      - '!**.gitignore'
+      - '!others/**'
+      - '!.github/**'
+  workflow_dispatch:
+
+jobs:
+  Release:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Pack distributions
+        run: |
+          mkdir dist
+          Compress-Archive cn_dicts, en_dicts, lua, opencc, *.lua, *.yaml, *.txt dist/full.zip
+          Compress-Archive cn_dicts, en_dicts, opencc, radical_pinyin.dict.yaml dist/all_dicts.zip
+          Compress-Archive cn_dicts/* dist/cn_dicts.zip
+          Compress-Archive en_dicts/* dist/en_dicts.zip
+          Compress-Archive opencc/* dist/opencc.zip
+          Copy-Item LICENSE dist/
+
+      - name: Create nightly release
+        if: ${{ github.ref == 'refs/heads/main' }}
+        uses: 'softprops/action-gh-release@v2.0.2'
+        with:
+          body: |
+            ## 文件说明
+            - `full.zip` : 包含所有词典和方案文件
+            - `cn_dicts.zip`：中文词库
+            - `en_dicts.zip`：英文词库
+            - `opencc.zip`：opencc 词库（emoji 等）
+            - `all_dicts.zip`：以上三个词库的整合
+          tag_name: nightly
+          name: "nightly build"
+          prerelease: true
+          generate_release_notes: true
+          fail_on_unmatched_files: true
+          files: |
+            dist/*
+
+      - name: Create stable release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: 'softprops/action-gh-release@v2.0.2'
+        with:
+          body_path: ${{ github.workspace }}/others/CHANGELOG.md
+          generate_release_notes: true
+          draft: true
+          prerelease: false
+          fail_on_unmatched_files: true
+          files: |
+            dist/*
