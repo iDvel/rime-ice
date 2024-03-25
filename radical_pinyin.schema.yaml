@@ -1,18 +1,16 @@
 # Rime schema settings
 # encoding: utf-8
-# Copyright (C) Mirtle <mirtle.cn@outlook.com>
-# License: CC BY-SA 4.0 DEED (https://creativecommons.org/licenses/by-sa/4.0/)
 
 schema:
   schema_id: radical_pinyin
-  name: "偏旁部件拆字"
-  version: "1.02"
+  name: "部件拆字 | 全拼双拼"
+  version: "1.0.3"
   author: Mirtle
   description: |
-    用拼音按顺序拼出偏旁部件，以输入汉字。
+    用拼音按顺序打出偏旁部件，组合出汉字
     码表：開放詞典 / henrysting / Mirtle
     注音、校对、方案：Mirtle
-    报错：<https://github.com/mirtlecn/rime_radical_pinyin>
+    仓库：https://github.com/mirtlecn/rime_radical_pinyin
 
 engine:
   processors:
