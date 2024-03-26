@@ -34,7 +34,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2024-03-11"
+version: "2024-03-20"
 sort: by_weight
 ...
 ### 按需启用
@@ -2632,6 +2632,8 @@ sort: by_weight
 激	ji	535171
 继	ji	503302
 基	ji	499224
+寄	ji	487256
+忌	ji	461352
 己	ji	456925
 际	ji	352008
 纪	ji	335852
@@ -2642,12 +2644,10 @@ sort: by_weight
 积	ji	188812
 寂	ji	144616
 疾	ji	120121
-忌	ji	113527
 姬	ji	101929
 绩	ji	99008
 祭	ji	89101
 肌	ji	85083
-寄	ji	72560
 辑	ji	71050
 籍	ji	66610
 圾	ji	45932
@@ -4729,14 +4729,14 @@ sort: by_weight
 喷	pen	112711
 盆	pen	64086
 湓	pen	93
-朋	peng	588716
 碰	peng	240438
-彭	peng	86069
+朋	peng	88716
 鹏	peng	79602
 捧	peng	68202
 砰	peng	54753
 蓬	peng	46160
 篷	peng	41474
+彭	peng	36069
 棚	peng	28567
 膨	peng	17894
 澎	peng	16976

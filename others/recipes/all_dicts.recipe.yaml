@@ -9,3 +9,4 @@ install_files: >-
   cn_dicts/*.*
   en_dicts/*.*
   opencc/*.*
+  radical_pinyin.dict.yaml

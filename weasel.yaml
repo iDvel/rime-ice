@@ -3,11 +3,11 @@
 
 # 感谢 @[Mirtle](https://github.com/mirtlecn) 整理
 # Rime 定制指南 <https://github.com/rime/home/wiki/CustomizationGuide#定製指南>
-# Weasel 定制文档 <https://github.com/rime/weasel/wiki/Weasel-定製化>
+# Weasel 定制文档 <https://github.com/rime/weasel/wiki/Weasel-定制化>
 # Weasel 字体设定 <https://github.com/rime/weasel/wiki/字體設定>
 
 # 部分选项需要将 Weasel 更新至最新开发版才能生效
-config_version: "2024-02-10"
+config_version: "2024.03.20"
 
 # [app_options]
 # 针对特定应用的设置
@@ -57,7 +57,7 @@ style:
 
   inline_preedit: true                     # 行内显示预编辑区：true；false
   preedit_type: composition                # 预编辑区内容：composition（编码）； preview（选中的候选）；preview_all（全部候选）
-  
+
   fullscreen: false                        # 候选窗口全屏显示：true；false
   horizontal: true                         # 候选项横排：true；false
   vertical_text: false                     # 竖排文本：true；false
@@ -65,7 +65,7 @@ style:
   vertical_text_left_to_right: false       # 竖排方向是否从左到右：true；false
   vertical_text_with_wrap: false           # 文本竖排模式下，自动换行：true；false
   vertical_auto_reverse: false             # 文本竖排模式下，候选窗口位于光标上方时倒序排列：true；false
-  
+
   label_format: "%s"                       # 标签字符：例如 %s. 效果为 1. 2. 3. ....
   mark_text: "|"                           # 标记字符，显示在选中的候选标签前，需要在配色方案中指定颜色；如该项为空字符串 "" 而配色方案中 hilited_mark_color 非透明色，则显示 Windows 11 输入法风格标记
   ascii_tip_follow_cursor: false           # 切换 ASCII 模式时，提示跟随鼠标，而非输入光标
@@ -79,8 +79,8 @@ style:
 
   layout:
     align_type: center                     # 标签、候选文字、注解文字之间的相对对齐方式：top ; center ; bottom
-    max_height: 600                        # 候选框最大高度，horizontal 布局如宽超此尺寸则换行显示候选，设置为 0 不启用此功能
-    max_width: 0                           # 候选框最大宽度，文本竖排模式下如高度超此尺寸则换列显示候选，设置为 0 不启用此功能
+    max_height: 600                        # 候选框最大高度，文本竖排模式下如高度超此尺寸则换列显示候选，设置为 0 不启用此功能
+    max_width: 0                           # 候选框最大宽度，horizontal 布局如宽超此尺寸则换行显示候选，设置为 0 不启用此功能
     min_height: 0                          # 候选框最小高度
     min_width: 10                          # 候选框最小宽度
     border_width: 2                        # 边框宽度；又名 border

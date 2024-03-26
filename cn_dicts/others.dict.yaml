@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2024-02-25"
+version: "2024-03-20"
 sort: by_weight
 ...
 ##### 容错词
@@ -236,6 +236,8 @@ sort: by_weight
 钜惠	ju hui
 摩羯座	mo jie zuo
 魔蝎座	mo xie zuo
+偌大	ruo da
+诺大	nuo da
 
 
 ##### 叠字
