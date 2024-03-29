@@ -17,8 +17,10 @@ local is_user = {
 
 function M.func(input)
     for cand in input:iter() do
-        if is_user[cand.type] == M.is_in_user_dict then
-            cand.comment = cand.comment .. '*'
+        if cand.text==cand:get_genuine().text then
+            if is_user[cand.type] == M.is_in_user_dict then
+                cand=ShadowCandidate(cand,"","",cand.comment.."*")
+            end
         end
         yield(cand)
     end
