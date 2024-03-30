@@ -109,10 +109,10 @@ style:
   enter_labels: # 定義 Enter 鍵的文本
     go: 前往
     done: 完成
-    next: 下個
-    pre: 上個
+    next: 下个
+    pre: 上个
     search: 搜索
-    send: 發送
+    send: 发送
     default: Enter # 定義默認 Enter 鍵的文本
 
 fallback_colors:
@@ -292,13 +292,13 @@ liquid_keyboard:
     keys: EXIT
   clipboard:
     type: CLIPBOARD
-    name: 剪貼板
+    name: 剪切板
 
 # 鍵盤佈局
 preset_keyboards:
   default:
     author: "ChiesiMario"
-    name: 26 鍵默認佈局
+    name: 26 键默认布局
     width: 10
     key_text_offset_y: 1.8
     # height: 45
@@ -458,7 +458,7 @@ preset_keyboards:
 
   numberandsymbol:
     author: "ChiesiMario"
-    name: 數字和符號
+    name: 数字和符号
     width: 10
     key_text_offset_y: 1.8
     # height: 45
@@ -678,7 +678,7 @@ preset_keyboards:
 
   number:
     author: "ChiesiMario"
-    name: 數字
+    name: 数字
     width: 16.6
     # height: 48
     ascii_mode: 1
@@ -775,7 +775,7 @@ preset_keyboards:
 
   bqfh1:
     author: "ChiesiMario"
-    name: 中文符號
+    name: 中文符号
     width: 10
     ascii_mode: 0
     height: *jpgd1
@@ -857,7 +857,7 @@ preset_keyboards:
 
   bqfh2:
     author: "ChiesiMario"
-    name: 中文符號 2
+    name: 中文符号 2
     ascii_mode: 0
     width: 10
     key_text_size: 10
@@ -1013,24 +1013,24 @@ preset_keys:
   # 安卓
   BRIGHTNESS_DOWN: { label: 亮度-, send: BRIGHTNESS_DOWN }
   BRIGHTNESS_UP: { label: 亮度+, send: BRIGHTNESS_UP }
-  CALCULATOR: { label: 計算機, send: CALCULATOR }
-  CALENDAR: { label: 日曆, send: CALENDAR }
-  CONTACTS: { label: 電話簿, send: CONTACTS }
+  CALCULATOR: { label: 计算器, send: CALCULATOR }
+  CALENDAR: { label: 日历, send: CALENDAR }
+  CONTACTS: { label: 通讯录, send: CONTACTS }
   ENVELOPE: { label: 信箱, send: ENVELOPE }
-  EXPLORER: { label: 瀏覽器, send: EXPLORER }
-  MUSIC: { label: 音樂, send: MUSIC }
-  POWER: { label: 電源, send: POWER }
-  SEARCH: { label: 搜尋, send: Find }
+  EXPLORER: { label: 浏览器, send: EXPLORER }
+  MUSIC: { label: 音乐, send: MUSIC }
+  POWER: { label: 电源, send: POWER }
+  SEARCH: { label: 搜索, send: Find }
   SLEEP: { label: 休眠, send: SLEEP }
-  VOICE_ASSIST: { label: 語音, functional: true, send: VOICE_ASSIST }
+  VOICE_ASSIST: { label: 语音, functional: true, send: VOICE_ASSIST }
   VOLUME_DOWN: { label: 音量-, send: VOLUME_DOWN }
   VOLUME_UP: { label: 音量+, send: VOLUME_UP }
-  VOLUME_MUTE: { label: 靜音, send: VOLUME_MUTE }
+  VOLUME_MUTE: { label: 静音, send: VOLUME_MUTE }
   # 編輯
   Shift_L: { label: Shift, preview: "⇪", functional: false, send: Shift_L }
   Return: { label: enter_labels, preview: "↩", functional: false, send: Return }
   Return1: { label: Enter, preview: "↩", functional: false, send: Return }
-  Hide: { label: 隱藏, send: BACK }
+  Hide: { label: 隐藏, send: BACK }
   BackSpace:
     {
       label: 退格,
@@ -1052,7 +1052,7 @@ preset_keys:
   Escape: { label: 取消, functional: false, send: Escape }
   Home: { label: 行首, send: Home, functional: false }
   Insert: { label: 插入, send: Insert }
-  Delete: { label: 刪除, send: Delete, functional: false }
+  Delete: { label: 删除, send: Delete, functional: false }
   End: { label: 行尾, send: End, functional: false }
   Page_Up: { label: ⬆️, send: Page_Up, functional: false }
   Page_Down: { label: ⬇️, send: Page_Down, functional: false }
@@ -1060,17 +1060,17 @@ preset_keys:
   Down: { label: "↓", send: Down, functional: false }
   Up: { label: "↑", send: Up, functional: false }
   Right: { label: "→", send: Right, repeatable: true, functional: false }
-  select_all: { label: 全選, functional: false, send: Control+a }
+  select_all: { label: 全选, functional: false, send: Control+a }
   cut: { label: 剪切, functional: false, send: Control+x }
-  copy: { label: 複製, functional: false, send: Control+c }
-  paste: { label: 粘貼, functional: false, send: Control+v }
-  paste_clip: { label: 粘貼, send: function, command: clipboard }
-  paste_text: { label: 貼上文本, send: Control+Shift+Alt+v } # >=Android 6.0
+  copy: { label: 复制, functional: false, send: Control+c }
+  paste: { label: 粘贴, functional: false, send: Control+v }
+  paste_clip: { label: 粘贴, send: function, command: clipboard }
+  paste_text: { label: 贴上文本, send: Control+Shift+Alt+v } # >=Android 6.0
   share_text: { label: 分享文本, send: Control+Alt+s } # >=Android 6.0
   redo: { label: 重做, functional: false, send: Control+Shift+z } # >=Android 6.0
-  undo: { label: 撤銷, functional: false, send: Control+z } # >=Android 6.0
-  delimiter: { label: 分詞, text: "'" }
-  x1: { text: "{Home}{Right}{Right}", label: 單字, functional: false }
+  undo: { label: 撤销, functional: false, send: Control+z } # >=Android 6.0
+  delimiter: { label: 分词, text: "'" }
+  x1: { text: "{Home}{Right}{Right}", label: 单字, functional: false }
   x2:
     {
       text: "{Home}{Right}{Right}{Right}{Right}",
@@ -1091,19 +1091,19 @@ preset_keys:
     }
   # x1: {text: '{Home}{Right}{Right}', label: 單字, functional: false}
   # rime 組合鍵
-  F4: { label: 方案菜單, send: F4 }
-  BackToPreviousSyllable: { label: 刪音節, send: Control+BackSpace }
-  CommitRawInput: { label: 編碼, send: Control+Return }
-  CommitScriptText: { label: 編碼, send: Shift+Return }
-  CommitComment: { label: 編碼, send: Control+Shift+Return }
-  DeleteCandidate: { label: 刪詞, send: Control+Delete, functional: false }
+  F4: { label: 方案菜单, send: F4 }
+  BackToPreviousSyllable: { label: 删音节, send: Control+BackSpace }
+  CommitRawInput: { label: 编码, send: Control+Return }
+  CommitScriptText: { label: 编码, send: Shift+Return }
+  CommitComment: { label: 编码, send: Control+Shift+Return }
+  DeleteCandidate: { label: 删词, send: Control+Delete, functional: false }
   # 切換鍵盤
   Keyboard_default:
     { label: 返回, functional: false, send: Eisu_toggle, select: .default }
   Keyboard_number:
     { label: 123, functional: false, send: Eisu_toggle, select: number }
   Keyboard_switch:
-    { label: 鍵盤, functional: true, send: Eisu_toggle, select: .next }
+    { label: 键盘, functional: true, send: Eisu_toggle, select: .next }
   Keyboard_numberandsymbol:
     {
       label: 12$#,
@@ -1115,12 +1115,12 @@ preset_keys:
     { label: 更多, functional: false, send: Eisu_toggle, select: symbols }
   Keyboard_move: { label: ❖, functional: true, send: Eisu_toggle, select: move }
   Keyboard_next:
-    { label: 後退, functional: false, send: Eisu_toggle, select: .next }
+    { label: 后退, functional: false, send: Eisu_toggle, select: .next }
   Keyboard_last:
-    { label: 後退, functional: false, send: Eisu_toggle, select: .last }
+    { label: 后退, functional: false, send: Eisu_toggle, select: .last }
   Keyboard_last_lock: { label: 返回, send: Eisu_toggle, select: .last_lock } # 直接切換到下一鍵盤
   liquid_keyboard_clipboard:
-    { label: 剪貼, send: function, command: liquid_keyboard, option: "剪貼板" }
+    { label: 剪贴, send: function, command: liquid_keyboard, option: "剪贴板" }
   # rime 狀態
   Mode_switch:
     {
@@ -1131,9 +1131,9 @@ preset_keys:
     }
   Zenkaku_Hankaku:
     { toggle: full_shape, send: Mode_switch, states: [半角, 全角] }
-  Henkan: { toggle: simplification, send: Mode_switch, states: [漢字, 漢字] }
+  Henkan: { toggle: simplification, send: Mode_switch, states: [汉字, 汉字] }
   Charset_switch:
-    { toggle: extended_charset, send: Mode_switch, states: [常用, 增廣] }
+    { toggle: extended_charset, send: Mode_switch, states: [常用, 增广] }
   Punct_switch: { toggle: ascii_punct, send: Mode_switch, states: [。，, ．，] }
   # trime 設置
   IME_switch: { label: 🌐, send: LANGUAGE_SWITCH } # 彈出對話框選擇輸入法
@@ -1141,12 +1141,12 @@ preset_keys:
   IME_next: { label: 🔒, send: LANGUAGE_SWITCH, select: .next } # 直接切換到下一輸入法
   Schema_switch: { label: 下一方案, functional: false, send: Control+Shift+1 }
   Schema_Eng: { label: En, functional: true, send: Control+Shift+0 }
-  Theme_settings: { label: 主題, send: SETTINGS, option: "theme" }
+  Theme_settings: { label: 主题, send: SETTINGS, option: "theme" }
   Color_switch: { label: 配色, functional: false, send: PROG_RED }
-  Help: { label: 說明, send: Help }
-  Info: { label: 關於, send: INFO }
-  Menu: { label: 菜單, functional: false, send: Menu }
-  Settings: { label: 設置, functional: false, send: SETTINGS }
+  Help: { label: 说明, send: Help }
+  Info: { label: 关于, send: INFO }
+  Menu: { label: 菜单, functional: false, send: Menu }
+  Settings: { label: 设置, functional: false, send: SETTINGS }
   # trime 命令
   Date: { label: 日期, send: function, command: date, option: " yyyy-MM-dd " }
   Time: { label: 時間, send: function, command: date, option: "HH:mm:ss" } # 時間： date 格式
@@ -1157,19 +1157,19 @@ preset_keys:
       option: "com.osfans.trime",
     } # 運行程序: run 包名
   TrimeCmp: {
-      label: 同文組件,
+      label: 同文组件,
       send: function,
       command: run,
       option: "com.osfans.trime/.Pref",
     } # 運行程序指定組件: run 包名/組件名
   Homepage: {
-      label: 同文主頁,
+      label: 同文主页,
       send: function,
       command: run,
       option: "https://github.com/osfans/trime",
     } # 查看網頁: run 網址
   Wiki: {
-      label: 維基,
+      label: 维基,
       send: function,
       command: run,
       option: "https://zh.wikipedia.org/wiki/%s",
@@ -1193,19 +1193,19 @@ preset_keys:
       option: "https://www.baidu.com/s?wd=%4$s",
     } # 搜索網頁: %4s 為光標前所有字符
   Zdic: {
-      label: 漢典,
+      label: 汉典,
       send: function,
       command: run,
       option: "http://www.zdic.net/sousuo/?q=%1$s",
     } # 搜索網頁: %s 或者%1$s 為當前字符
   Zdic2: {
-      label: 漢典,
+      label: 汉典,
       send: function,
       command: run,
       option: "http://www.zdic.net/sousuo/?q=%2$s",
     } # 搜索網頁: %2$s 為當前輸入的編碼
   WebSearch: {
-      label: 搜索網頁,
+      label: 搜索网页,
       send: function,
       command: web_search,
       option: "%4$s",
@@ -1214,7 +1214,7 @@ preset_keys:
   Left1: { label: "⇦", send: Control+Left, repeatable: true, functional: false }
   Right1:
     { label: "⇨", send: Control+Right, repeatable: true, functional: false }
-  Shift_L2: { label: 選擇, preview: "⇪", functional: false, send: Shift_L }
+  Shift_L2: { label: 选择, preview: "⇪", functional: false, send: Shift_L }
 
   # 22 自定義功能鍵
   Keyboard_defaulten:
@@ -1224,7 +1224,7 @@ preset_keys:
   Schema_switchcn: { label: 中文, send: Control+Shift+6, functional: false }
   Keyboard_v2: { label: "✾", functional: false, send: v }
   Keyboard_r2: { label: "❀", functional: false, send: r }
-  Keyboard_fc: { label: "'分詞", send: apostrophe, functional: false }
+  Keyboard_fc: { label: "'分词", send: apostrophe, functional: false }
   Control_L: { label: "退格", send: Control_L, functional: false }
 
   # aoeiu 功能鍵
@@ -1261,16 +1261,16 @@ preset_keys:
   Keyboard_bqfh1:
     { label: "#!?", functional: false, send: Eisu_toggle, select: bqfh1 }
   Keyboard_bqfh2:
-    { label: "上頁", functional: false, send: Eisu_toggle, select: bqfh2 }
+    { label: "上页", functional: false, send: Eisu_toggle, select: bqfh2 }
   Keyboard_bqfh3:
-    { label: "上頁", functional: false, send: Eisu_toggle, select: bqfh3 }
+    { label: "上页", functional: false, send: Eisu_toggle, select: bqfh3 }
   Keyboard_bqfh4:
-    { label: "下頁", functional: false, send: Eisu_toggle, select: bqfh4 }
+    { label: "下页", functional: false, send: Eisu_toggle, select: bqfh4 }
   Keyboard_bqsy1:
     { label: "中文", functional: false, send: Eisu_toggle, select: bqfh1 }
 
-  Zcj: { label: 單字, functional: false, text: "{Home}{Right}{Right}" }
-  Tab: { label: 字詞, send: Tab }
+  Zcj: { label: 单字, functional: false, text: "{Home}{Right}{Right}" }
+  Tab: { label: 字词, send: Tab }
   Tab1: { label: Tab, functional: false, send: Tab }
   space_R1:
-    { label: "EN", functional: false, send: Eisu_toggle, select: letter }
+    { label: EN, functional: false, send: Eisu_toggle, select: letter }
