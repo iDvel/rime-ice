@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-02-23"
+version: "2024-04-06"
 sort: by_weight
 ...
 # +_+
@@ -7923,9 +7923,9 @@ generate	generate
 generated	generated
 generates	generates
 generating	generating
-generative	generative
 generation	generation
 generations	generations
+generative	generative
 generator	generator
 generators	generators
 generic	generic
@@ -9267,8 +9267,8 @@ immediate	immediate
 immediately	immediately
 immense	immense
 immerse	immerse
-immersive immersive
 immersion	immersion
+immersive	immersive
 immigrant	immigrant
 immigrants	immigrants
 immigrate	immigrate

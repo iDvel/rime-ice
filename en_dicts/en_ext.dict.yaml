@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2024-03-18"
+version: "2024-04-06"
 sort: by_weight
 ...
 # 一些杂项
@@ -2464,3 +2464,4 @@ anxious	anxious
 trudge	trudge
 LibreOffice	LibreOffice
 Asics	Asics
+dubbing	dubbing
