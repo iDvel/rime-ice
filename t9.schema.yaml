@@ -84,6 +84,7 @@ key_binder:
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA987654321
+  initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA987654321
   algebra:
     # 如果需要模糊音，可参考 rime_ice.schema.yaml 下的示例，放到最前面来就行，但不会正常显示模糊后的拼音。
     # - derive/^([zcs])h/$1/
