@@ -34,7 +34,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2024-03-20"
+version: "2024-04-06"
 sort: by_weight
 ...
 ### 按需启用
@@ -6096,13 +6096,13 @@ sort: by_weight
 澹	tan	1
 榃	tan	0
 磹	tan	0
-堂	tang	408194
-唐	tang	339749
+唐	tang	239749
 躺	tang	220026
 汤	tang	124040
 趟	tang	65492
 糖	tang	60725
 烫	tang	41461
+堂	tang	40819
 膛	tang	37836
 倘	tang	34043
 淌	tang	33568
