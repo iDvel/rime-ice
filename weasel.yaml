@@ -48,7 +48,7 @@ style:
   # 全局字体
   # 格式：字体1:起始码位:结束码位:字重:字形,字体2……，字体会依次 fallback
   # 详细设定请参考 <https://github.com/rime/weasel/wiki/字體設定>
-  font_face: "Microsoft YaHei:61:9A ,Microsoft YaHei:41:5A, Segoe UI Emoji, Microsoft YaHei, SF Pro, Noto Color Emoji"
+  font_face: "Segoe UI Emoji, Microsoft YaHei, SF Pro, Noto Color Emoji"
   label_font_face: "Microsoft YaHei"       # 标签字体
   comment_font_face: "Microsoft YaHei"     # 注释字体
   font_point: 14                           # 全局字体字号
