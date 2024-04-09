@@ -2157,7 +2157,7 @@ pranksters	pranksters
 npm	npm
 Node Package Manager	npm
 Node Package Manager	NodePackageManager
-.npmrc	npmrc
+.npmrc	.npmrc
 Apple Vision	AppleVision
 Apple Vision Pro	AppleVisionPro
 Vision Pro	VisionPro
@@ -2470,13 +2470,10 @@ nvm	nvm
 Node Version Manager	nvm
 Node Version Manager	NodeVersionManager
 Prettier	Prettier
-.prettierrc	prettierrc
 ESLint	ESLint
-eslint.config.js	eslintconfigjs
-.eslintrc.js	eslintrcjs
 Hibernate	Hibernate
 MyBatis	MyBatis
-MyBatis-Plus	MyBatisPlus
+MyBatis-Plus	MyBatis-Plus
 Spring Boot	SpringBoot
 Spring Cloud	SpringCloud
 Element Plus	ElementPlus

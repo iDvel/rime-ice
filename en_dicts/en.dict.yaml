@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-04-06"
+version: "2024-04-10"
 sort: by_weight
 ...
 # +_+
@@ -5074,8 +5074,8 @@ demonstration	demonstration
 demonstrations	demonstrations
 demos	demos
 demote	demote
-demotes	demotes
 demoted	demoted
+demotes	demotes
 demoting	demoting
 demotion	demotion
 demotions	demotions
@@ -12080,6 +12080,7 @@ mixtures	mixtures
 # mnt	mnt
 # mo	mo
 moan	moan
+moaning	moaning
 mob	mob
 Mobil	Mobil
 mobile	mobile
@@ -16036,6 +16037,7 @@ roam	roam
 roaming	roaming
 Roanoke	Roanoke
 roar	roar
+roaring	roaring
 roast	roast
 roasted	roasted
 rob	rob
@@ -19134,6 +19136,7 @@ tops	tops
 tor	tor
 torah	torah
 torch	torch
+torches	torches
 tori	tori
 Torino	Torino
 torment	torment
