@@ -116,7 +116,8 @@ function M.func(input)
         local c = M.corrections[cand.comment]
         if c and cand.text == c.text then
             cand:get_genuine().comment = string.gsub(M.style, "{comment}", c.comment)
-        elseif cand.type == "user_phrase" or cand.type == "phrase" or cand.type == "sentence" then
+        elseif cand.type == "user_phrase" or cand.type == "phrase" or cand.type == "sentence" or cand.type == "completion" then
+	    -- or cand.type == "completion" 清空了补全与联想的注释，如果需要，将其删去
             cand:get_genuine().comment = ""
         end
         yield(cand)
