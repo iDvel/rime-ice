@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-02-23"
+version: "2024-04-10"
 sort: by_weight
 ...
 # +_+
@@ -4926,11 +4926,23 @@ decorating	decorating
 decoration	decoration
 decorations	decorations
 decorative	decorative
+decouple	decouple
+decoupled	decoupled
+decoupler	decoupler
+decouplers	decouplers
+decouples	decouples
+decoupling	decoupling
 decrease	decrease
 decreased	decreased
 decreases	decreases
 decreasing	decreasing
 decree	decree
+decried	decried
+decrier	decrier
+decriers	decriers
+decries	decries
+decry	decry
+decrying	decrying
 dedicate	dedicate
 dedicated	dedicated
 dedication	dedication
@@ -5061,6 +5073,12 @@ demonstrating	demonstrating
 demonstration	demonstration
 demonstrations	demonstrations
 demos	demos
+demote	demote
+demoted	demoted
+demotes	demotes
+demoting	demoting
+demotion	demotion
+demotions	demotions
 # dems	dems
 demux	demux
 den	den
@@ -5728,6 +5746,10 @@ dove	dove
 dover	dover
 # dow	dow
 down	down
+downgrade	downgrade
+downgraded	downgraded
+downgrades	downgrades
+downgrading	downgrading
 downhill	downhill
 downing	downing
 download	download
@@ -7925,6 +7947,7 @@ generates	generates
 generating	generating
 generation	generation
 generations	generations
+generative	generative
 generator	generator
 generators	generators
 generic	generic
@@ -8768,6 +8791,11 @@ hey	hey
 # hhs	hhs
 hi	hi
 Hi-Fi	HiFi
+hibernate	hibernate
+hibernation	hibernation
+hibernations	hibernations
+hibernator	hibernator
+hibernators	hibernators
 hickory	hickory
 hicks	hicks
 hid	hid
@@ -9267,6 +9295,7 @@ immediately	immediately
 immense	immense
 immerse	immerse
 immersion	immersion
+immersive	immersive
 immigrant	immigrant
 immigrants	immigrants
 immigrate	immigrate
@@ -12051,6 +12080,7 @@ mixtures	mixtures
 # mnt	mnt
 # mo	mo
 moan	moan
+moaning	moaning
 mob	mob
 Mobil	Mobil
 mobile	mobile
@@ -16007,6 +16037,7 @@ roam	roam
 roaming	roaming
 Roanoke	Roanoke
 roar	roar
+roaring	roaring
 roast	roast
 roasted	roasted
 rob	rob
@@ -17673,6 +17704,9 @@ sprout	sprout
 spruce	spruce
 spun	spun
 spur	spur
+spurious	spurious
+spuriously	spuriously
+spuriousness	spuriousness
 spurs	spurs
 spy	spy
 spying	spying
@@ -19102,6 +19136,7 @@ tops	tops
 tor	tor
 torah	torah
 torch	torch
+torches	torches
 tori	tori
 Torino	Torino
 torment	torment

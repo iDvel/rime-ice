@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2024-03-18"
+version: "2024-04-06"
 sort: by_weight
 ...
 # 一些杂项
@@ -1393,6 +1393,7 @@ refactoring	refactoring
 refactor	refactor
 Notepad	Notepad
 Notepad++	Notepad++
+Notepad++	npp
 O'Reilly	O'Reilly
 Octocat	Octocat
 IMAP	IMAP
@@ -2156,6 +2157,7 @@ pranksters	pranksters
 npm	npm
 Node Package Manager	npm
 Node Package Manager	NodePackageManager
+.npmrc	.npmrc
 Apple Vision	AppleVision
 Apple Vision Pro	AppleVisionPro
 Vision Pro	VisionPro
@@ -2460,7 +2462,18 @@ Theseus	Theseus
 Laravel	Laravel
 monolith	monolith
 Chiikawa	Chiikawa
-anxious	anxious
 trudge	trudge
 LibreOffice	LibreOffice
 Asics	Asics
+dubbing	dubbing
+nvm	nvm
+Node Version Manager	nvm
+Node Version Manager	NodeVersionManager
+Prettier	Prettier
+ESLint	ESLint
+Hibernate	Hibernate
+MyBatis	MyBatis
+MyBatis-Plus	MyBatis-Plus
+Spring Boot	SpringBoot
+Spring Cloud	SpringCloud
+Element Plus	ElementPlus
