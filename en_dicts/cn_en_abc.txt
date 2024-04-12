@@ -908,3 +908,5 @@ TF版本	TFbjbf
 TF版本	tfbjbf
 O不OK	ObuOK
 O不OK	obuok
+人均GDP	rfjnGDP
+人均GDP	rfjngdp

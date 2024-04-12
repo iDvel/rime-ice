@@ -71,7 +71,8 @@ func areYouOK() {
 	fmt.Println("Are you OK:")
 	var isOK string
 	_, _ = fmt.Scanf("%s", &isOK)
-	if strings.ToLower(isOK) != "ok" {
+	isOK = strings.ToLower(isOK)
+	if isOK != "ok" && isOK != "y" && isOK != "yes" {
 		os.Exit(123)
 	}
 }

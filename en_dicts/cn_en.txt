@@ -908,3 +908,5 @@ TF版本	TFbanben
 TF版本	tfbanben
 O不OK	ObuOK
 O不OK	obuok
+人均GDP	renjunGDP
+人均GDP	renjungdp
