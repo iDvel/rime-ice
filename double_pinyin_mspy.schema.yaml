@@ -85,10 +85,10 @@ engine:
     - reverse_lookup_filter@radical_reverse_lookup  # 部件拆字滤镜
     - lua_filter@autocap_filter                     # 英文自动大写
     - lua_filter@pin_cand_filter                    # 置顶候选项（顺序要求：置顶候选项 > Emoji > 简繁切换）
+    - lua_filter@reduce_english_filter              # 降低部分英语单词在候选项的位置
     - simplifier@emoji                              # Emoji
     - simplifier@traditionalize                     # 简繁切换
     - lua_filter@search@radical_pinyin              # 部件拆字辅码
-    - lua_filter@reduce_english_filter              # 降低部分英语单词在候选项的位置
     - uniquifier                                    # 去重
 
 
