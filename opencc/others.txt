@@ -1014,7 +1014,7 @@ eject	eject ⏏
 一氧化二氢	一氧化二氢 H₂O
 酒精	酒精 C₂H₆O
 乙醇	乙醇 C₂H₆O
-高锰酸钾	高锰酸钾 K₂MnO₄
+高锰酸钾	高锰酸钾 KMnO₄
 石灰石	石灰石 CaCO₃
 石灰水	石灰水 Ca(OH)₂
 胆矾	胆矾 CuSO₄·5H₂O
