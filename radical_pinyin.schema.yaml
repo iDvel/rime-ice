@@ -4,34 +4,31 @@
 schema:
   schema_id: radical_pinyin
   name: "部件拆字 | 全拼双拼"
-  version: "1.0.3"
+  version: "1.1.0"
   author: Mirtle
   description: |
     用拼音按顺序打出偏旁部件，组合出汉字
-    码表：開放詞典 / henrysting / Mirtle
+    码表：开放词典 / henrysting / Mirtle
     注音、校对、方案：Mirtle
     仓库：https://github.com/mirtlecn/rime_radical_pinyin
 
 engine:
   processors:
-    - ascii_composer
-    - recognizer
     - key_binder
     - speller
-    - punctuator
     - selector
     - navigator
     - express_editor
   segmentors:
-    - ascii_segmentor
-    - matcher
     - abc_segmentor
-    - punct_segmentor
-    - fallback_segmentor
   translators:
     - echo_translator
-    - punct_translator
     - table_translator
+  filters:
+    - uniquifier
+
+key_binder:
+  __include: default:/key_binder?
 
 speller:
   alphabet: "abcdefghijklmnopqrstuvwxyz;"
@@ -49,15 +46,6 @@ speller:
 translator:
   dictionary: radical_pinyin
   enable_user_dict: false
-
-punctuator:
-  import_preset: default
-
-key_binder:
-  import_preset: default
-
-recognizer:
-  import_preset: default
 
 algebra_pinyin:
   - xform/'//
@@ -282,3 +270,4 @@ algebra_ziguang:
   - xform/ao(?=^|$|')/<q>/
   - xform/an(?=^|$|')/<r>/
   - xform/'|<|>//
+
