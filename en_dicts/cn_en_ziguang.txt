@@ -908,3 +908,7 @@ TF版本	TFbrbw
 TF版本	tfbrbw
 O不OK	ObuOK
 O不OK	obuok
+人均GDP	rwjmGDP
+人均GDP	rwjmgdp
+V8引擎	Vbayyq;
+V8引擎	vbayyq;

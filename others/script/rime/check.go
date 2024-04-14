@@ -276,9 +276,11 @@ func checkLine(dictPath string, _type int, line string, lineNumber int) {
 
 	// 需要注音但没有注音的字
 	if dictPath == TencentPath {
-		for _, word := range polyphoneWords.ToSlice() {
-			if strings.Contains(text, word) {
-				fmt.Println("❌ 需要注音：", line)
+		if !strings.Contains(text, "什么") { // 不处理「什么」
+			for _, word := range polyphoneWords.ToSlice() {
+				if strings.Contains(text, word) {
+					fmt.Println("❌ 需要注音：", line)
+				}
 			}
 		}
 	}
