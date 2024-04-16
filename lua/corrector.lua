@@ -13,6 +13,10 @@ local M = {}
 
 function M.init(env)
     local config = env.engine.schema.config
+    local delimiter = config:get_string('speller/delimiter')
+    if delimiter and #delimiter > 0 and delimiter:sub(1,1) ~= ' ' then
+        env.delimiter = delimiter:sub(1,1)
+    end
     env.name_space = env.name_space:gsub('^*', '')
     M.style = config:get_string(env.name_space) or '{comment}'
     M.corrections = {
@@ -110,11 +114,14 @@ function M.init(env)
     }
 end
 
-function M.func(input)
+function M.func(input, env)
     for cand in input:iter() do
         -- cand.comment 是目前输入的词汇的完整拼音
         local pinyin = cand.comment:match("^［(.-)］$")
         if pinyin and #pinyin > 0 then
+            if env.delimiter then
+                pinyin = pinyin:gsub(env.delimiter,' ')
+            end
             local c = M.corrections[pinyin]
             if c and cand.text == c.text then
                 cand:get_genuine().comment = string.gsub(M.style, "{comment}", c.comment)
