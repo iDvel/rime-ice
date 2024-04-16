@@ -3,13 +3,17 @@
 .vscode/
 
 build/
+sync/
 *.userdb/
 installation.yaml
 user.yaml
 .custom.yaml
+!others/**/*.custom.yaml
 
+custom_phrase_double.txt
 others/script/scel2txt/out/*
 others/script/scel2txt/scel/*
+cn_dicts/temp.txt
 
 *private*
 

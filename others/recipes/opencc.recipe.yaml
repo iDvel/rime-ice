@@ -6,6 +6,4 @@ recipe:
   description: >-
     opencc(Emoji)安装、更新
 install_files: >-
-  opencc/emoji.json
-  opencc/emoji.txt
-  opencc/others.txt
+  opencc/*.*

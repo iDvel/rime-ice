@@ -8,107 +8,15 @@
 #
 ---
 name: others
-version: "2023-04-08"
+version: "2024-03-20"
 sort: by_weight
 ...
-##### 大写字母
-# 因为默认的双拼拼写规则用掉了大写字母。这些奇怪的编码是为了做 xlit 转写，同时适配全拼和双拼。
-A	ā
-B	ḃ
-C	ç
-D	ď
-E	ē
-F	ḟ
-G	ḡ
-H	ĥ
-I	ī
-J	ĵ
-K	ḱ
-L	ĺ
-M	ḿ
-N	ń
-O	ō
-P	ṕ
-Q	ɋ
-R	ŕ
-S	ś
-T	ť
-U	ū
-V	ṽ
-W	ẃ
-X	ẋ
-Y	ȳ
-Z	ź
-
 ##### 容错词
-# 「血xue、xie」「谁shui、shei」「露lu、lou」「熟shu、shou」「密钥yao、yue」已在 base 中实现
-# ---
-# 「馄饨」，正确是 tun，北方口语是 dun
-馄饨	hun tun
-馄饨	hun dun
-# 「主角」，正确是 jue，港台是 jiao
-主角	zhu jue
-主角	zhu jiao
-角色	jue se
-角色	jiao se
-# 「比萨」，正确是 bi，Pizza 发音为 pi
-比萨	bi sa
-比萨	pi sa
-比萨饼	bi sa bing
-比萨饼	pi sa bing
-吃比萨	chi bi sa
-吃比萨	chi pi sa
-超级至尊比萨	chao ji zhi zun bi sa
-超级至尊比萨	chao ji zhi zun pi sa
-至尊比萨	zhi zun bi sa
-至尊比萨	zhi zun pi sa
-大西洋珍鲑比萨	da xi yang zhen gui bi sa
-大西洋珍鲑比萨	da xi yang zhen gui pi sa
-海鲜比萨	hai xian bi sa
-海鲜比萨	hai xian pi sa
-蔬菜比萨	shu cai bi sa
-蔬菜比萨	shu cai pi sa
-做比萨	zuo bi sa
-做比萨	zuo pi sa
-可口的比萨	ke kou de bi sa
-可口的比萨	ke kou de pi sa
-烤比萨	kao bi sa
-烤比萨	kao pi sa
-美味的比萨	mei wei de bi sa
-美味的比萨	mei wei de pi sa
-# 「扑街」，正确是 jie，口语是 gai
-扑街	pu jie
-扑街	pu gai
-街溜子	jie liu zi
-街溜子	gai liu zi
-扑街仔	pu jie zai
-扑街仔	pu gai zai
-# 「说服」，正确是 shuo，但「游说」「说客」仍然保留着 shui 的读音
-说服	shuo fu
-说服	shui fu
-# 「坐骑」，正确是 qi，《现汉7》只保留了 qi，《现汉6》一些词组中是念 ji
-坐骑	zuo qi
-坐骑	zuo ji
-一骑绝尘	yi qi jue chen
-一骑绝尘	yi ji jue chen
-一骑红尘妃子笑	yi qi hong chen fei zi xiao
-一骑红尘妃子笑	yi ji hong chen fei zi xiao
-千里走单骑	qian li zou dan qi
-千里走单骑	qian li zou dan ji
-一骑当千	yi qi dang qian
-一骑当千	yi ji dang qian
-# 「道行」，正确是 heng，但「道行hang」比较流行
-道行	dao heng
-道行	dao hang
-# 「模样」，正确是 mu，口语常念 mo
-模样	mu yang
-模样	mo yang
-有模有样	you mu you yang
-有模有样	you mo you yang
-一模一样	yi mu yi yang
-一模一样	yi mo yi yang
-装模作样	zhuang mu zuo yang
-装模作样	zhuang mo zuo yang
+# 一些口语读音
+空落落	kong luo luo
+空落落	kong lao lao
+空落落的	kong luo luo de
+空落落的	kong lao lao de
 # 「阿房宫」的注音争议比较大
 阿房宫	e pang gong
 阿房宫	a pang gong
@@ -121,10 +29,402 @@ Z	ź
 # 「伯伯」方言
 伯伯	bo bo
 伯伯	bai bai
+# 「斜」的古音
+远上寒山石径斜	yuan shang han shan shi jing xie
+远上寒山石径斜	yuan shang han shan shi jing xia
+# 「骑」目前统读 qi
+坐骑	zuo qi
+坐骑	zuo ji
+铁骑	tie qi
+铁骑	tie ji
+一骑绝尘	yi qi jue chen
+一骑绝尘	yi ji jue chen
+一骑当千	yi qi dang qian
+一骑当千	yi ji dang qian
+一骑红尘妃子笑	yi qi hong chen fei zi xiao
+一骑红尘妃子笑	yi ji hong chen fei zi xiao
+走单骑	zou dan qi
+走单骑	zou dan ji
+千里走单骑	qian li zou dan qi
+千里走单骑	qian li zou dan ji
+# 「街」的粤语和东北话读音及常见的两种写法
+仆街	pu jie
+仆街	pu gai
+扑街	pu jie
+扑街	pu gai
+扑街仔	pu jie zai
+扑街仔	pu gai zai
+仆街仔	pu jie zai
+仆街仔	pu gai zai
+街溜子	jie liu zi
+街溜子	gai liu zi
+# 「錤」这个字念 ji，但是台湾媒体都会念成 qi，他的英文名 Ming-Chi Kuo 也是接近 qi
+郭明錤	guo ming ji
+郭明錤	guo ming qi
+# 「镐 gao hao」的发音，多为韩国人名，不知道 🤷‍♂️，词库里为 gao，这里额外加上 hao 音
+李昌镐	li chang hao
+曹世镐	cao shi hao
+张镐哲	zhang gao zhe
+姜成镐	jiang cheng hao
+姜镐童	jiang hao tong
+张镐濂	zhang hao lian
+李敏镐	li min hao
+李陈镐	li chen hao
+赵亮镐	zhao liang hao
+郑俊镐	zheng jun hao
+
+
+##### 错音错字提示。与 corrector.lua 配合，上面的是正确的，下面是错误的
+### 错音
+馄饨	hun tun
+馄饨	hun dun
+主角	zhu jue
+主角	zhu jiao
+角色	jue se
+角色	jiao se
+比萨	bi sa
+比萨	pi sa
+比萨饼	bi sa bing
+比萨饼	pi sa bing
+吃比萨	chi bi sa
+吃比萨	chi pi sa
+说服	shuo fu
+说服	shui fu
+道行	dao heng
+道行	dao hang
+模样	mu yang
+模样	mo yang
+有模有样	you mu you yang
+有模有样	you mo you yang
+一模一样	yi mu yi yang
+一模一样	yi mo yi yang
+装模作样	zhuang mu zuo yang
+装模作样	zhuang mo zuo yang
+人模狗样	ren mu gou yang
+人模狗样	ren mo gou yang
+模板	mu ban
+模板	mo ban
+阿弥陀佛	e mi tuo fo
+阿弥陀佛	a mi tuo fo
+南无阿弥陀佛	na mo e mi tuo fo
+南无阿弥陀佛	na mo a mi tuo fo
+南无阿弥陀佛	nan wu e mi tuo fo
+南无阿弥陀佛	nan wu a mi tuo fo
+给予	ji yu
+给予	gei yu
+槟榔	bing lang
+槟榔	bin lang
+张柏芝	zhang bo zhi
+张柏芝	zhang bai zhi
+藤蔓	teng wan
+藤蔓	teng man
+弄堂	long tang
+弄堂	nong tang
+心宽体胖	xin kuan ti pan
+心宽体胖	xin kuan ti pang
+埋怨	man yuan
+埋怨	mai yuan
+虚与委蛇	xu yu wei yi
+虚与委蛇	xu yu wei she
+木讷	mu ne
+木讷	mu na
+独乐乐	du yue le
+独乐乐	du le le
+众乐乐	zhong yue le
+众乐乐	zhong le le
+荨麻	qian ma
+荨麻	xun ma
+荨麻疹	xun ma zhen
+荨麻疹	qian ma zhen
+模具	mu ju
+模具	mo ju
+草薙	cao ti
+草薙	cao zhi
+草薙京	cao ti jing
+草薙京	cao zhi jing
+草薙剑	cao ti jian
+草薙剑	cao zhi jian
+贾平凹	jia ping wa
+贾平凹	jia ping ao
+雪佛兰	xue fu lan
+雪佛兰	xue fo lan
+强劲	qiang jing
+强劲	qiang jin
+胴体	dong ti
+胴体	tong ti
+力能扛鼎	li neng gang ding
+力能扛鼎	li neng kang ding
+鸭绿江	ya lu jiang
+鸭绿江	ya lv jiang
+大腹便便	da fu pian pian
+大腹便便	da fu bian bian
+卡脖子	qia bo zi
+卡脖子	ka bo zi
+吱声	zi sheng
+吱声	zhi sheng
+掺和	chan huo
+掺和	chan he
+掺和	can huo
+掺和	can he
+称职	chen zhi
+称职	cheng zhi
+螺蛳粉	luo si fen
+螺蛳粉	luo shi fen
+调换	diao huan
+调换	tiao huan
+太行山	tai hang shan
+太行山	tai xing shan
+歇斯底里	xie si di li
+歇斯底里	jie si di li
+暖和	nuan huo
+暖和	nuan he
+模棱两可	mo leng liang ke
+模棱两可	mo ling liang ke
+鄱阳湖	po yang hu
+鄱阳湖	pan yang hu
+脖颈	bo geng
+脖颈	bo jing
+脖颈儿	bo geng er
+脖颈儿	bo jing er
+结扎	jie za
+结扎	jie zha
+海参崴	hai shen wai
+海参崴	hai shen wei
+厚朴	hou po
+厚朴	hou pu
+大宛马	da yuan ma
+大宛马	da wan ma
+龇牙	zi ya
+龇牙	ci ya
+龇着牙	zi zhe ya
+龇着牙	ci zhe ya
+龇牙咧嘴	zi ya lie zui
+龇牙咧嘴	ci ya lie zui
+头皮屑	tou pi xie
+头皮屑	tou pi xue
+六安	lu an
+六安	liu an
+六安县	lu an xian
+六安县	liu an xian
+六安市	lu an shi
+六安市	liu an shi
+安徽六安	an hui lu an
+安徽六安	an hui liu an
+安徽六安市	an hui lu an shi
+安徽六安市	an hui liu an shi
+安徽省六安市	an hui sheng lu an shi
+安徽省六安市	an hui sheng liu an shi
+### 错字
+曾经	ceng jing
+曾今	ceng jin
+按捺	an na
+按耐	an nai
+按捺不住	an na bu zhu
+按耐不住	an nai bu zhu
+别价	bie jie
+别介	bie jie
+甭价	beng jie
+甭介	beng jie
+血脉贲张	xue mai ben zhang
+血脉偾张	xue mai fen zhang
+血脉喷张	xue mai pen zhang
+契诃夫	qi he fu
+契科夫	qi ke fu
+凑合	cou he
+凑活	cou huo
+巨惠	ju hui
+钜惠	ju hui
+摩羯座	mo jie zuo
+魔蝎座	mo xie zuo
+偌大	ruo da
+诺大	nuo da
 
 
 ##### 叠字
-# 数据来源：https://zh.wikipedia.org/wiki/%E4%B8%89%E5%8F%A0%E5%AD%97 https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%8F%A0%E5%AD%97
+# 数据来源： https://zh.wikipedia.org/zh-cn/%E4%BA%8C%E5%8F%A0%E5%AD%97 https://zh.wikipedia.org/wiki/%E4%B8%89%E5%8F%A0%E5%AD%97 https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%8F%A0%E5%AD%97
+# 二叠字
+两个火
+两个土
+两个一
+两个二
+两个山
+两个口
+两个田
+两个九
+两个人
+两个飞
+两个戈
+两个厶	liang ge si
+两个厶	liang ge mou
+两个又
+两个香
+两个面
+两个兀
+两个女
+两个𡥦	liang ge ni
+两个臣
+两个巾
+两个左
+两个母
+两个来
+两个凡
+两个夕
+两个彐	liang ge ji
+两个𢎘	liang ge han
+两个魚	liang ge yu
+两个明
+两个朿	liang ge ci
+两个乂
+两个曰
+两个尸
+两个户
+两个大
+两个八
+两个而
+两个羊
+两个吉
+两个马
+两个卅
+两个巛	liang ge chuan
+两个止
+两个比
+两个言
+两个申
+两个牛
+两个余
+两个束
+两个罒	liang ge mu
+两个㐅	liang ge wu
+两个金
+两个木
+两个水
+两个火
+两个風	liang ge feng
+两个石
+两个口
+两个日
+两个月
+两个目
+两个白
+两个百
+两个耳
+两个山
+两个屮	liang ge che
+两个屮	liang ge cao
+两个廿
+两个卄	liang ge nian
+两个虫
+两个虎
+两个龍	liang ge long
+两个馬	liang ge ma
+两个犬
+两个人
+两个入
+两个习
+两个卪	liang ge jie
+两个㔾	liang ge jie
+两个几
+两个乙
+两个大
+两个夫
+两个禾
+两个干
+两个井
+两个斤
+两个片
+两个牙
+两个炎
+两个弓
+两个永
+两个亦
+两个手
+两个毛
+两个王
+两个男
+两个女
+两个又
+两个支
+两个隻	liang ge zhi
+两个古
+两个吉
+两个舌
+两个言
+两个户
+两个启
+两个來	liang ge lai
+两个桼	liang ge qi
+两个旡	liang ge ji
+两个夕
+两个歹
+两个匕
+两个幺
+两个玄
+两个心
+两个力
+两个欠
+两个子
+两个予
+两个享
+两个立
+两个音
+两个竟
+两个竞
+两个兄
+两个見	liang ge jian
+两个貝	liang ge bei
+两个辛
+两个瓜
+两个呆
+两个果
+两个鸟
+两个巢
+两个禺	liang ge yu
+两个巿	liang ge fu
+两个句
+两个奇
+两个真
+两个尹
+两个昔
+两个易
+两个臣
+两个面
+两个先
+两个老
+两个示
+两个至
+两个生
+两个車	liang ge che
+两个車	liang ge ju
+两个足
+两个區	liang ge qu
+两个香
+两个隹	liang ge zhui
+两个牟
+两个豕
+两个𠂢	liang ge pai
+两个畐	liang ge fu
+两个㣇	liang ge yi
+两个邑
+两个堯	liang ge yao
+两个秉
+两个倉	liang ge cang
+两个東	liang ge dong
+两个善
+两个僉	liang ge qian
+两个齒	liang ge chi
+两个喜
+两个走
+两个止
+两个昌
+两个串
+两个米
+两个束
+两个隶
+两个不
+两个龙
+两个乞
+两个夋	liang ge qun
+两个天
 # 三叠字
 三个生
 三个秦
@@ -304,6 +604,3 @@ Z	ź
 四个興	si ge xing
 四个龍	si ge long
 四个土
-# 其他。。。
-男女男
-女男女

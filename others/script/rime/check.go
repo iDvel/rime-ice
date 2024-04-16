@@ -51,7 +51,7 @@ func init() {
 	sc := bufio.NewScanner(file1)
 	for sc.Scan() {
 		line := sc.Text()
-		if strings.HasPrefix(line, "#") {
+		if strings.HasPrefix(line, "#") || line == "" {
 			continue
 		}
 		polyphoneWords.Add(line)
@@ -159,21 +159,22 @@ func Check(dictPath string, _type int) {
 			continue
 		}
 		wg.Add(1)
-		go checkLine(dictPath, _type, line, lineNumber, &wg)
+		go func(line string, lineNumber int) {
+			defer wg.Done()
+			checkLine(dictPath, _type, line, lineNumber)
+		}(line, lineNumber)
 	}
+
+	wg.Wait()
 
 	if err := sc.Err(); err != nil {
 		log.Fatalln(err)
 	}
-
-	wg.Wait()
 }
 
 // 检查一行
-func checkLine(dictPath string, _type int, line string, lineNumber int, wg *sync.WaitGroup) {
-	defer wg.Done()
-
-	// 忽略注释，base 中有很多被注视了词汇，暂时没有删除
+func checkLine(dictPath string, _type int, line string, lineNumber int) {
+	// 忽略注释，base 中有很多被注释了的词汇，暂时没有删除
 	if strings.HasPrefix(line, "#") {
 		// 注释以 '#' 开头，但不是以 '# '开头（强迫症晚期）
 		if !strings.HasPrefix(line, "# ") {
@@ -187,10 +188,6 @@ func checkLine(dictPath string, _type int, line string, lineNumber int, wg *sync
 		fmt.Println("empty line", line)
 	}
 
-	// 开头结尾有空格
-	if strings.HasPrefix(line, " ") || strings.HasSuffix(line, " ") {
-		fmt.Println()
-	}
 	// +---------------------------------------------------------------
 	// | 开始检查分割后的内容，分割为： 词汇text 编码code 权重weight
 	// +---------------------------------------------------------------
@@ -201,7 +198,7 @@ func checkLine(dictPath string, _type int, line string, lineNumber int, wg *sync
 		text = parts[0]
 	case _type == 2 && len(parts) == 2: // 两列，【汉字+注音】
 		text, code = parts[0], parts[1]
-	case _type == 3 && len(parts) == 3: // 散列，【汉字+注音+权重】
+	case _type == 3 && len(parts) == 3: // 三列，【汉字+注音+权重】
 		text, code, weight = parts[0], parts[1], parts[2]
 	case _type == 4 && len(parts) == 2: // 两列，【汉字+权重】
 		text, weight = parts[0], parts[1]
@@ -278,10 +275,12 @@ func checkLine(dictPath string, _type int, line string, lineNumber int, wg *sync
 	// +---------------------------------------------------------------
 
 	// 需要注音但没有注音的字
-	if dictPath == ExtPath || dictPath == TencentPath {
-		for _, word := range polyphoneWords.ToSlice() {
-			if strings.Contains(text, word) {
-				fmt.Println("❌ 需要注音：", line)
+	if dictPath == TencentPath {
+		if !strings.Contains(text, "什么") { // 不处理「什么」
+			for _, word := range polyphoneWords.ToSlice() {
+				if strings.Contains(text, word) {
+					fmt.Println("❌ 需要注音：", line)
+				}
 			}
 		}
 	}
@@ -294,7 +293,7 @@ func checkLine(dictPath string, _type int, line string, lineNumber int, wg *sync
 		i := 0
 		for _, zi := range textWithoutDian {
 			if !contains(hanPinyin[string(zi)], pinyins[i]) {
-				fmt.Printf("注音错误 or 字表未包含的汉字及注音: %s - %s.+%s\n", line, string(zi), pinyins[i])
+				fmt.Printf("❌ 注音错误 or 字表未包含的汉字及注音: %s - %s.+%s\n", line, string(zi), pinyins[i])
 			}
 			i++
 		}
@@ -303,7 +302,13 @@ func checkLine(dictPath string, _type int, line string, lineNumber int, wg *sync
 	// 错别字检查，最耗时的检查
 	if dictPath != HanziPath && !wrongWordsFilter.Contains(text) {
 		wrongWords.Each(func(wrongWord string) bool {
-			if strings.Contains(text, wrongWord) {
+			if strings.HasPrefix(wrongWord, "=") {
+				wrongWord = strings.TrimLeft(wrongWord, "= ")
+				if text == wrongWord {
+					fmt.Printf("❌ 错别字: %s = %s\n", text, wrongWord)
+					return true
+				}
+			} else if strings.Contains(text, wrongWord) {
 				fmt.Printf("❌ 错别字: %s - %s\n", text, wrongWord)
 				return true
 			}
