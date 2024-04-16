@@ -113,11 +113,14 @@ end
 function M.func(input)
     for cand in input:iter() do
         -- cand.comment 是目前输入的词汇的完整拼音
-        local c = M.corrections[cand.comment]
-        if c and cand.text == c.text then
-            cand:get_genuine().comment = string.gsub(M.style, "{comment}", c.comment)
-        elseif cand.type == "user_phrase" or cand.type == "phrase" or cand.type == "sentence" then
-            cand:get_genuine().comment = ""
+        local pinyin = cand.comment:match("^［(.-)］$")
+        if pinyin and #pinyin > 0 then
+            local c = M.corrections[pinyin]
+            if c and cand.text == c.text then
+                cand:get_genuine().comment = string.gsub(M.style, "{comment}", c.comment)
+            else
+                cand:get_genuine().comment = ""
+            end
         end
         yield(cand)
     end
