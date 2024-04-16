@@ -1,0 +1,21 @@
+patch:
+  # 开关
+  # 鼠须管 0.16 后，用快捷键切换时的提示文字由 states 定义
+  # states: 方案选单显示的名称。可以注释掉，仍可以通过快捷键切换。
+  # reset: 默认状态。 注释掉后，切换窗口时不会重置到默认状态。
+  switches:
+    - name: ascii_mode
+      states: [ 中, A ]
+      reset: 0
+    - name: ascii_punct # 中英标点
+      states: [ ¥, $ ]
+      reset: 0
+    - name: traditionalization
+      states: [ 简, 繁 ]
+      reset: 0
+        #  - name: emoji
+        #    states: [ 💀, 😄 ]
+        #    reset: 1
+    - name: full_shape
+      states: [ 半角, 全角 ]
+      reset: 0
