@@ -7,7 +7,7 @@
 # Weasel 字体设定 <https://github.com/rime/weasel/wiki/字體設定>
 
 # 部分选项需要将 Weasel 更新至最新开发版才能生效
-config_version: "2024.04.06"
+config_version: "2024-04-16"
 
 # [app_options]
 # 针对特定应用的设置
@@ -67,17 +67,21 @@ style:
   vertical_auto_reverse: false             # 文本竖排模式下，候选窗口位于光标上方时倒序排列：true；false
 
   label_format: "%s"                       # 标签字符：例如 %s. 效果为 1. 2. 3. ....
-  mark_text: "|"                           # 标记字符，显示在选中的候选标签前，需要在配色方案中指定颜色；如该项为空字符串 "" 而配色方案中 hilited_mark_color 非透明色，则显示 Windows 11 输入法风格标记
+  mark_text: ""                           # 标记字符，显示在选中的候选标签前，需要在配色方案中指定颜色；如该项为空字符串 "" 而配色方案中 hilited_mark_color 非透明色，则显示 Windows 11 输入法风格标记
   ascii_tip_follow_cursor: false           # 切换 ASCII 模式时，提示跟随鼠标，而非输入光标
   enhanced_position: true                  # 无法定位候选框时，在窗口左上角显示候选框：true；false
   display_tray_icon: false                 # 托盘显示独立于语言栏的额外图标：true；false
   antialias_mode: default                  # 次像素反锯齿设定：default；force_dword；cleartype；grayscale；aliased
   candidate_abbreviate_length: 30          # 候选项略写，超过此数字则用省略号代替。设置为 0 则不启用此功能
-  mouse_hover_ms: 0                        # 鼠标悬停选词响应时间（ms），设置为 0 时禁用该功能
+  # mouse_hover_ms: 0                      # ! 已弃用。鼠标悬停选词响应时间（ms），设置为 0 时禁用该功能
+  hover_type: semi_hilite                  # 鼠标在候选窗口悬停时：none（无动作）；hilite（选中鼠标下的候选）；semi_hilite（高亮鼠标下的候选）
+
   paging_on_scroll: true                   # 在候选窗口上滑动滚轮的行为：true（翻页）；false （选中下一个候选）
   click_to_capture: false                  # 鼠标点击候选项，创建截图：true；false
 
   layout:
+    baseline: 0                            # 0 - 100，字号百分比。<https://github.com/rime/weasel/pull/1177>
+    linespacing: 0                         # 0 - 100，字号百分比。与 baseline 一同设置可解决字体跳动问题，设置为 0 为禁用
     align_type: center                     # 标签、候选文字、注解文字之间的相对对齐方式：top ; center ; bottom
     max_height: 600                        # 候选框最大高度，文本竖排模式下如高度超此尺寸则换列显示候选，设置为 0 不启用此功能
     max_width: 0                           # 候选框最大宽度，horizontal 布局如宽超此尺寸则换行显示候选，设置为 0 不启用此功能
@@ -107,7 +111,6 @@ style:
 
 # 小狼毫配色在线设计：
 # [RIME 西米](https://fxliang.github.io/RimeSeeMe/)
-# [润笔](https://pdog18.github.io/rime-soak/#/theme)
 
 # [小狼毫配色详解](https://github.com/rime/weasel/wiki/定制小狼毫配色)
 
