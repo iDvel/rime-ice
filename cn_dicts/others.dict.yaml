@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2024-03-20"
+version: "2024-04-19"
 sort: by_weight
 ...
 ##### 容错词
@@ -208,12 +208,20 @@ sort: by_weight
 六安县	liu an xian
 六安市	lu an shi
 六安市	liu an shi
+六合区	lu he qu
+六合区	liu he qu
 安徽六安	an hui lu an
 安徽六安	an hui liu an
 安徽六安市	an hui lu an shi
 安徽六安市	an hui liu an shi
 安徽省六安市	an hui sheng lu an shi
 安徽省六安市	an hui sheng liu an shi
+南京六合	nan jing lu he
+南京六合	nan jing liu he
+南京六合区	nan jing lu he qu
+南京六合区	nan jing liu he qu
+南京市六合区	nan jing shi lu he qu
+南京市六合区	nan jing shi liu he qu
 ### 错字
 曾经	ceng jing
 曾今	ceng jin

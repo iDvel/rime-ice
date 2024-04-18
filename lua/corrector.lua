@@ -91,6 +91,9 @@ function M.init(env)
         ["an hui sheng liu an shi"] = { text = "安徽省六安市", comment = "ān huī shěng lù ān shì" },
         ["an hui liu an"] = { text = "安徽六安", comment = "ān huī lù ān" },
         ["an hui liu an shi"] = { text = "安徽六安市", comment = "ān huī lù ān shì" },
+        ["nan jing liu he"] = { text = "南京六合", comment = "nán jīng lù hé" },
+        ["nan jing shi liu he"] = { text = "南京六合区", comment = "nán jīng lù hé qū" },
+        ["nan jing shi liu he qu"] = { text = "南京市六合区", comment = "nán jīng shì lù hé qū" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
         ["pu gai"] = { text = "扑街", comment = "仆街" },
