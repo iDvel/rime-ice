@@ -57,6 +57,7 @@ engine:
 translator:
   prism: t9
   spelling_hints: 100
+  comment_format: []
 
 
 # 自定义短语：custom_phrase_t9.txt
