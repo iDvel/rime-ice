@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2024-04-06"
+version: "2024-04-19"
 sort: by_weight
 ...
 # 一些杂项
@@ -2467,6 +2467,7 @@ Chiikawa	Chiikawa
 trudge	trudge
 LibreOffice	LibreOffice
 Asics	Asics
+Saucony	Saucony
 dubbing	dubbing
 nvm	nvm
 Node Version Manager	nvm
@@ -2487,3 +2488,8 @@ V8 JS engine	V8JSengine
 V8 JavaScript engine	V8JavaScriptengine
 Wasm	Wasm
 WebAssembly	WebAssembly
+Feign	Feign
+OpenFeign	OpenFeign
+IMF	IMF
+International Monetary Fund	IMF
+International Monetary Fund	InternationalMonetaryFund

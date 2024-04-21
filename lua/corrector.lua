@@ -13,6 +13,10 @@ local M = {}
 
 function M.init(env)
     local config = env.engine.schema.config
+    local delimiter = config:get_string('speller/delimiter')
+    if delimiter and #delimiter > 0 and delimiter:sub(1,1) ~= ' ' then
+        env.delimiter = delimiter:sub(1,1)
+    end
     env.name_space = env.name_space:gsub('^*', '')
     M.style = config:get_string(env.name_space) or '{comment}'
     M.corrections = {
@@ -87,6 +91,9 @@ function M.init(env)
         ["an hui sheng liu an shi"] = { text = "安徽省六安市", comment = "ān huī shěng lù ān shì" },
         ["an hui liu an"] = { text = "安徽六安", comment = "ān huī lù ān" },
         ["an hui liu an shi"] = { text = "安徽六安市", comment = "ān huī lù ān shì" },
+        ["nan jing liu he"] = { text = "南京六合", comment = "nán jīng lù hé" },
+        ["nan jing shi liu he"] = { text = "南京六合区", comment = "nán jīng lù hé qū" },
+        ["nan jing shi liu he qu"] = { text = "南京市六合区", comment = "nán jīng shì lù hé qū" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
         ["pu gai"] = { text = "扑街", comment = "仆街" },
@@ -110,14 +117,20 @@ function M.init(env)
     }
 end
 
-function M.func(input)
+function M.func(input, env)
     for cand in input:iter() do
         -- cand.comment 是目前输入的词汇的完整拼音
-        local c = M.corrections[cand.comment]
-        if c and cand.text == c.text then
-            cand:get_genuine().comment = string.gsub(M.style, "{comment}", c.comment)
-        elseif cand.type == "user_phrase" or cand.type == "phrase" or cand.type == "sentence" then
-            cand:get_genuine().comment = ""
+        local pinyin = cand.comment:match("^［(.-)］$")
+        if pinyin and #pinyin > 0 then
+            if env.delimiter then
+                pinyin = pinyin:gsub(env.delimiter,' ')
+            end
+            local c = M.corrections[pinyin]
+            if c and cand.text == c.text then
+                cand:get_genuine().comment = string.gsub(M.style, "{comment}", c.comment)
+            else
+                cand:get_genuine().comment = ""
+            end
         end
         yield(cand)
     end

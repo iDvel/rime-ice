@@ -34,7 +34,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2024-04-06"
+version: "2024-04-19"
 sort: by_weight
 ...
 ### 按需启用
@@ -751,8 +751,8 @@ sort: by_weight
 鲳	chang	98
 鲿	chang	0
 𬬮	chang	0
+超	chao	839240
 朝	chao	709793
-超	chao	383924
 潮	chao	139090
 吵	chao	117058
 嘲	chao	67228
@@ -2573,8 +2573,8 @@ sort: by_weight
 烠	hui	0
 𬤝	hui	0
 𬭬	hui	0
-婚	hun	386955
 混	hun	338565
+婚	hun	306955
 魂	hun	291928
 昏	hun	197245
 浑	hun	175322
@@ -3123,13 +3123,13 @@ sort: by_weight
 桕	jiu	120
 氿	jiu	3
 㠇	jiu	0
-句	ju	754300
-居	ju	627014
-举	ju	493503
+巨	ju	753729
+举	ju	693503
+居	ju	527014
 局	ju	461034
-巨	ju	453729
 具	ju	433976
 据	ju	405279
+句	ju	254300
 聚	ju	222383
 剧	ju	220880
 距	ju	193245
@@ -5017,14 +5017,14 @@ sort: by_weight
 䓫	qi	0
 𨙸	qi	0
 𬨂	qi	0
-卡	qia	0
-恰	qia	0
-拤	qia	0
-掐	qia	0
-洽	qia	0
-葜	qia	0
-袷	qia	0
-髂	qia	0
+卡	qia	5555
+恰	qia	3333
+掐	qia	2222
+洽	qia	1111
+拤	qia	2
+葜	qia	1
+袷	qia	1
+髂	qia	1
 前	qian	3967855
 钱	qian	1034329
 千	qian	794964
@@ -5448,11 +5448,11 @@ sort: by_weight
 爇	ruo	35
 蒻	ruo	20
 鄀	ruo	8
-萨	sa	151844
 撒	sa	140910
 洒	sa	96761
 飒	sa	12008
 仨	sa	5719
+萨	sa	5184
 卅	sa	1019
 靸	sa	168
 挲	sa	100
@@ -5593,7 +5593,6 @@ sort: by_weight
 鞘	shao	1
 柖	shao	0
 玿	shao	0
-社	she	476704
 射	she	386983
 设	she	369436
 舍	she	276743
@@ -5601,6 +5600,7 @@ sort: by_weight
 舌	she	115405
 涉	she	80705
 摄	she	80547
+社	she	76704
 奢	she	32985
 慑	she	20266
 赦	she	16333
@@ -6096,13 +6096,13 @@ sort: by_weight
 澹	tan	1
 榃	tan	0
 磹	tan	0
-唐	tang	239749
 躺	tang	220026
 汤	tang	124040
-趟	tang	65492
 糖	tang	60725
+趟	tang	55492
 烫	tang	41461
 堂	tang	40819
+唐	tang	39749
 膛	tang	37836
 倘	tang	34043
 淌	tang	33568
@@ -6126,9 +6126,9 @@ sort: by_weight
 铴	tang	5
 䣘	tang	0
 鄌	tang	0
+套	tao	478641
 逃	tao	388318
 讨	tao	282187
-套	tao	278641
 桃	tao	107204
 涛	tao	105605
 掏	tao	102071
@@ -6357,9 +6357,9 @@ sort: by_weight
 忳	tun	8
 焞	tun	5
 褪	tun	1
+拖	tuo	463823
 脱	tuo	375299
 托	tuo	267516
-拖	tuo	163823
 妥	tuo	67901
 拓	tuo	63143
 陀	tuo	30349
@@ -8053,8 +8053,8 @@ sort: by_weight
 瘵	zhai	34
 祭	zhai	1
 豸	zhai	1
-战	zhan	1924225
 站	zhan	994038
+战	zhan	924225
 展	zhan	570379
 占	zhan	246282
 斩	zhan	102461
