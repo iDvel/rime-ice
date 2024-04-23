@@ -3618,6 +3618,7 @@ codec	codec
 coded	coded
 codes	codes
 codex	codex
+codices	codices
 coding	coding
 Cody	Cody
 # coe	coe
@@ -4148,6 +4149,8 @@ contacts	contacts
 contain	contain
 contained	contained
 container	container
+containerization	containerization
+containerize	containerize
 containerized	containerized
 containers	containers
 containing	containing
@@ -4295,6 +4298,9 @@ Coppermine	Coppermine
 cops	cops
 copy	copy
 copycat	copycat
+copycats	copycats
+copycatted	copycatted
+copycatting	copycatting
 copying	copying
 copyright	copyright
 copyrighted	copyrighted
@@ -4331,6 +4337,7 @@ corpse	corpse
 corpus	corpus
 # corr	corr
 correct	correct
+correctable	correctable
 corrected	corrected
 correcting	correcting
 correction	correction
@@ -4340,6 +4347,8 @@ corrective	corrective
 correctly	correctly
 correctness	correctness
 corrector	corrector
+correctors	correctors
+corrects	corrects
 correlate	correlate
 correlated	correlated
 correlation	correlation
@@ -4732,6 +4741,7 @@ cylinder	cylinder
 cylinders	cylinders
 Cymru	Cymru
 cynical	cynical
+cynically	cynically
 Cynthia	Cynthia
 cypher	cypher
 cypress	cypress
@@ -5230,6 +5240,7 @@ destiny	destiny
 destroy	destroy
 destroyed	destroyed
 destroying	destroying
+destructibility	destructibility
 destructible	destructible
 destruction	destruction
 destructive	destructive
@@ -5537,6 +5548,7 @@ dishes	dishes
 dishwasher	dishwasher
 disillusion	disillusion
 disjunction	disjunction
+disjunctions	disjunctions
 disk	disk
 disks	disks
 dislike	dislike
@@ -5894,6 +5906,7 @@ dubbed	dubbed
 dubbing	dubbing
 dubious	dubious
 dublin	dublin
+dubs	dubs
 duck	duck
 ducks	ducks
 duct	duct
@@ -6984,6 +6997,7 @@ falcons	falcons
 Falkland	Falkland
 fall	fall
 fallback	fallback
+fallbacks	fallbacks
 fallen	fallen
 falling	falling
 falls	falls
@@ -7279,6 +7293,10 @@ Fiona	Fiona
 fioricet	fioricet
 fir	fir
 fire	fire
+fire engine	fireengine
+fire engines	fireengines
+fire truck	firetruck
+fire trucks	firetrucks
 firearm	firearm
 firearms	firearms
 fired	fired
@@ -7290,7 +7308,6 @@ fireman	fireman
 fireplace	fireplace
 fireplaces	fireplaces
 fires	fires
-firetruck	firetruck
 firewall	firewall
 firewalls	firewalls
 firewire	firewire
@@ -7350,7 +7367,9 @@ flank	flank
 flannel	flannel
 flap	flap
 flare	flare
+flared	flared
 flares	flares
+flaring	flaring
 flash	flash
 flashers	flashers
 flashes	flashes
@@ -7392,6 +7411,9 @@ flip	flip
 flirt	flirt
 float	float
 floating	floating
+flocci	flocci
+flocculi	flocculi
+flocculus	flocculus
 floccus	floccus
 flock	flock
 flood	flood
@@ -8162,6 +8184,7 @@ goats	goats
 goblet	goblet
 god	god
 goddamn	goddamn
+goddamned	goddamned
 goddess	goddess
 godfather	godfather
 gods	gods
@@ -8431,6 +8454,9 @@ guides	guides
 guiding	guiding
 guild	guild
 guile	guile
+guiled	guiled
+guiles	guiles
+guiling	guiling
 guilt	guilt
 guilty	guilty
 guinea	guinea
@@ -8583,6 +8609,8 @@ hardcore	hardcore
 hardcover	hardcover
 harden	harden
 hardened	hardened
+hardening	hardening
+hardens	hardens
 harder	harder
 hardest	hardest
 harding	harding
@@ -8683,6 +8711,7 @@ headers	headers
 heading	heading
 headings	headings
 headless	headless
+headlessness	headlessness
 headlights	headlights
 headline	headline
 headlines	headlines
@@ -8908,6 +8937,9 @@ hits	hits
 hitting	hitting
 HIV	HIV
 hive	hive
+hived	hived
+hives	hives
+hiving	hiving
 # hj	hj
 HK	HK
 # hklm	hklm
@@ -8959,6 +8991,9 @@ homecoming	homecoming
 homeland	homeland
 homeless	homeless
 homelessness	homelessness
+homelier	homelier
+homeliest	homeliest
+homeliness	homeliness
 homely	homely
 homemade	homemade
 homeowner	homeowner
@@ -8971,8 +9006,13 @@ homestead	homestead
 hometown	hometown
 homework	homework
 homey	homey
+homeyness	homeyness
+homeys	homeys
 homicide	homicide
 homie	homie
+homier	homier
+homies	homies
+homiest	homiest
 # homme	homme
 homo	homo
 homogeneous	homogeneous
@@ -9205,6 +9245,9 @@ hyperlink	hyperlink
 hypertension	hypertension
 hypertext	hypertext
 hyphen	hyphen
+hyphened	hyphened
+hyphening	hyphening
+hyphens	hyphens
 hypnosis	hypnosis
 hypocrisy	hypocrisy
 hypotheses	hypotheses
@@ -9332,6 +9375,7 @@ imaging	imaging
 IMAP	IMAP
 imbalance	imbalance
 imbalanced	imbalanced
+imbalances	imbalances
 # imc	imc
 IMDb	IMDb
 img	img
@@ -9487,7 +9531,10 @@ indemnity	indemnity
 independence	independence
 independent	independent
 independently	independently
+indestructibility	indestructibility
 indestructible	indestructible
+indestructibleness	indestructibleness
+indestructibly	indestructibly
 index	index
 indexed	indexed
 indexes	indexes
@@ -9594,6 +9641,11 @@ infrared	infrared
 infrastructure	infrastructure
 infringement	infringement
 infuse	infuse
+infused	infused
+infuser	infuser
+infusers	infusers
+infuses	infuses
+infusing	infusing
 infusion	infusion
 ing	ing
 ingenious	ingenious
@@ -10212,6 +10264,7 @@ joints	joints
 JoJo	JoJo
 joke	joke
 joker	joker
+jokers	jokers
 jokes	jokes
 Jolie	Jolie
 Jolla	Jolla
@@ -10648,6 +10701,14 @@ larger	larger
 largest	largest
 largo	largo
 lark	lark
+larked	larked
+larker	larker
+larkers	larkers
+larking	larking
+larkish	larkish
+larkishly	larkishly
+larkishness	larkishness
+larks	larks
 larry	larry
 Lars	Lars
 Larsen	Larsen
@@ -11086,6 +11147,10 @@ lives	lives
 livesex	livesex
 livestock	livestock
 livid	livid
+lividities	lividities
+lividity	lividity
+lividly	lividly
+lividness	lividness
 living	living
 living room	livingroom
 Livingston	Livingston
@@ -11488,7 +11553,9 @@ manpower	manpower
 Mansfield	Mansfield
 mansion	mansion
 Manson	Manson
+mantes	mantes
 mantis	mantis
+mantises	mantises
 mantle	mantle
 manual	manual
 manually	manually
@@ -11626,8 +11693,13 @@ masterpiece	masterpiece
 masters	masters
 mastery	mastery
 masturbate	masturbate
+masturbated	masturbated
+masturbates	masturbates
 masturbating	masturbating
 masturbation	masturbation
+masturbator	masturbator
+masturbators	masturbators
+masturbatory	masturbatory
 mat	mat
 match	match
 matched	matched
@@ -11754,6 +11826,7 @@ mechanisms	mechanisms
 med	med
 medal	medal
 medallion	medallion
+medallions	medallions
 medals	medals
 Medford	Medford
 media	media
@@ -11955,6 +12028,7 @@ micro	micro
 microbial	microbial
 microbiology	microbiology
 micrometer	micrometer
+micrometers	micrometers
 micron	micron
 Micronesia	Micronesia
 microphone	microphone
@@ -12246,6 +12320,7 @@ mono	mono
 monoclonal	monoclonal
 monogram	monogram
 monolith	monolith
+monolithic	monolithic
 monophonic	monophonic
 monopoly	monopoly
 monotonous	monotonous
@@ -12527,6 +12602,7 @@ Nancy	Nancy
 nanny	nanny
 nano	nano
 nanometer	nanometer
+nanometers	nanometers
 nanotechnology	nanotechnology
 Naomi	Naomi
 nap	nap
@@ -13919,6 +13995,7 @@ permitting	permitting
 perpendicular	perpendicular
 perpetual	perpetual
 perplex	perplex
+perplexities	perplexities
 perplexity	perplexity
 perry	perry
 # pers	pers
@@ -14028,6 +14105,13 @@ phoenix	phoenix
 phone	phone
 # phonephone	phonephone
 phones	phones
+phoney	phoney
+phoneys	phoneys
+phonier	phonier
+phonies	phonies
+phoniest	phoniest
+phonily	phonily
+phoniness	phoniness
 phony	phony
 phosphate	phosphate
 phosphorus	phosphorus
@@ -14123,6 +14207,8 @@ pineapple	pineapple
 pines	pines
 ping	ping
 pink	pink
+pinkie	pinkie
+pinkies	pinkies
 # pinkworld	pinkworld
 pinky	pinky
 pinnacle	pinnacle
@@ -14528,6 +14614,9 @@ prairie	prairie
 praise	praise
 praised	praised
 prank	prank
+pranked	pranked
+pranking	pranking
+pranks	pranks
 prankster	prankster
 pranksters	pranksters
 pratt	pratt
@@ -14954,6 +15043,9 @@ prozac	prozac
 prudent	prudent
 prudential	prudential
 prune	prune
+pruned	pruned
+prunes	prunes
+pruning	pruning
 # prweb	prweb
 PS	PS
 # psa	psa
@@ -16327,6 +16419,7 @@ Rumsfeld	Rumsfeld
 run	run
 runaway	runaway
 rune	rune
+runes	runes
 runner	runner
 runners	runners
 running	running
@@ -16768,6 +16861,13 @@ sediment	sediment
 sediments	sediments
 Sedona	Sedona
 seduce	seduce
+seduced	seduced
+seducer	seducer
+seducers	seducers
+seduces	seduces
+seducing	seducing
+seduction	seduction
+seductions	seductions
 see	see
 seed	seed
 seeds	seeds
@@ -16859,6 +16959,12 @@ sentences	sentences
 sentencing	sentencing
 sentiment	sentiment
 sentinel	sentinel
+sentineled	sentineled
+sentineling	sentineling
+sentinelled	sentinelled
+sentinelling	sentinelled
+sentinels	sentinels
+sentries	sentries
 sentry	sentry
 SEO	SEO
 Seoul	Seoul
@@ -17216,6 +17322,7 @@ silk	silk
 silky	silky
 silly	silly
 silo	silo
+silos	silos
 silva	silva
 silver	silver
 SIM	SIM
@@ -18073,6 +18180,7 @@ storms	storms
 stormwater	stormwater
 story	story
 storyteller	storyteller
+storytellers	storytellers
 storytelling	storytelling
 stout	stout
 stove	stove
@@ -18149,6 +18257,7 @@ stroller	stroller
 strollers	strollers
 strong	strong
 strongbox	strongbox
+strongboxes	strongboxes
 stronger	stronger
 strongest	strongest
 strongly	strongly
@@ -18254,6 +18363,8 @@ substrate	substrate
 substrates	substrates
 subsystem	subsystem
 subtext	subtext
+subtextual	subtextual
+subtextually	subtextually
 subtitle	subtitle
 subtitles	subtitles
 subtle	subtle
@@ -18589,6 +18700,7 @@ systems	systems
 # t	t
 # ta	ta
 tab	tab
+tabbies	tabbies
 tabby	tabby
 table	table
 tables	tables
@@ -18625,6 +18737,7 @@ tailor	tailor
 tailored	tailored
 tails	tails
 tailwind	tailwind
+tailwinds	tailwinds
 Taipei	Taipei
 Taiwan	Taiwan
 taj	taj
@@ -18821,6 +18934,7 @@ tempt	tempt
 temptation	temptation
 tempted	tempted
 tempting	tempting
+temptingly	temptingly
 ten	ten
 tenacious	tenacious
 tenant	tenant
@@ -19493,6 +19607,7 @@ tremble	tremble
 tremendous	tremendous
 trench	trench
 trend	trend
+trended	trended
 trending	trending
 trends	trends
 trendy	trendy
@@ -19565,6 +19680,11 @@ truck	truck
 trucking	trucking
 trucks	trucks
 trudge	trudge
+trudged	trudged
+trudger	trudger
+trudgers	trudgers
+trudges	trudges
+trudging	trudging
 true	true
 truly	truly
 Truman	Truman
@@ -20644,6 +20764,7 @@ weights	weights
 weir	weir
 weird	weird
 weirdo	weirdo
+weirdoes	weirdoes
 weiss	weiss
 welch	welch
 welcome	welcome
@@ -20665,6 +20786,7 @@ wendy	wendy
 went	went
 were	were
 werewolf	werewolf
+werewolves	werewolves
 Werner	Werner
 # wes	wes
 wesley	wesley
@@ -20893,6 +21015,7 @@ Wolverhampton	Wolverhampton
 wolves	wolves
 woman	woman
 wombat	wombat
+wombats	wombats
 women	women
 women's	women's
 won	won
@@ -20909,6 +21032,8 @@ wont	wont
 woo	woo
 Wood	Wood
 wood	wood
+woodchuck	woodchuck
+woodchucks	woodchucks
 wooden	wooden
 woodland	woodland
 woodlands	woodlands
