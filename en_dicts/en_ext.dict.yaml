@@ -20,6 +20,7 @@ README.md	README.md
 # 按键
 Fn	Fn
 cmd	cmd
+cmdline	cmdline
 command	command
 Ctrl	Ctrl
 control	control
@@ -662,6 +663,7 @@ Apple News	AppleNews
 Apple Pay	ApplePay
 iTunes Store	iTunesStore
 AMD	AMD
+amdgpu	amdgpu
 Amphetamine	Amphetamine
 App Store	AppStore
 AirDrop	AirDrop
@@ -864,6 +866,7 @@ Simplenote	Simplenote
 Siri	Siri
 Slicy	Slicy
 Snagit	Snagit
+snapper	snapper
 Sparkbox	Sparkbox
 Sparrow	Sparrow
 Speedtest	Speedtest
@@ -1304,6 +1307,7 @@ Unidentified Flying Object	UnidentifiedFlyingObject
 Copyright	Copyright
 Registered	Registered
 TM	TM
+tmux	tmux
 SOS	SOS
 abcd	abcd
 ABCD	ABCD
@@ -1536,6 +1540,9 @@ GeoIP	GeoIP
 Vimium	Vimium
 Nvim	Nvim
 Neovim	Neovim
+nvidia-dkms	nvidia-dkms
+nvidia-smi	nvidia-smi
+nvidia-utlis	nvidia-utlis
 nerd	nerd
 MacVim	MacVim
 VimR	VimR
@@ -1546,6 +1553,7 @@ LunarVim	LunarVim
 IdeaVim	IdeaVim
 unfo	unfo
 timestamp	timestamp
+timeshift	timeshift
 ChatGPT	ChatGPT
 OpenAI	OpenAI
 OpenAI Codex	OpenAICodex
@@ -1573,6 +1581,7 @@ millisecond	millisecond
 microsecond	microsecond
 nanosecond	nanosecond
 offload	offload
+offtopic	offtopic
 Hammerspoon	Hammerspoon
 CrossOver	CrossOver
 hallelujahIM	hallelujahIM
@@ -1642,6 +1651,7 @@ Chrome	Chrome
 arch	arch
 iOS	iOS
 Linux	Linux
+linux-headers	linux-headers
 Ubuntu	Ubuntu
 Windows	Windows
 Microsoft	Microsoft
@@ -1944,6 +1954,9 @@ Pisces	Pisces
 tailwind	tailwind
 Fcitx	Fcitx
 Fcitx5	Fcitx5
+fcitx5-android	fcitx5-android
+fcitx5-diagnose	fcitx5-diagnose
+fcitx5-chinese-addons	fcitx5-chinese-addons
 openSUSE	openSUSE
 defer	defer
 FOMO	FOMO
@@ -2101,6 +2114,7 @@ Braavos Wallet	Braavos
 OneKey	OneKey
 hamster	hamster
 hamsters	hamsters
+hackintosh	hackintosh
 DYOR	DYOR
 Do Your Own Research	DYOR
 Noita	Noita

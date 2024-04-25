@@ -2509,6 +2509,7 @@ BSD	BSD
 # bst	bst
 # bt	bt
 BTW	BTW
+btrfs	btrfs
 # bu	bu
 bubble	bubble
 bubbles	bubbles
@@ -4303,6 +4304,7 @@ core	core
 Corel	Corel
 cores	cores
 Corey	Corey
+coredump	coredump
 Corinthians	Corinthians
 cork	cork
 corn	corn
@@ -7059,6 +7061,7 @@ FBI	FBI
 # FCC	FCC
 # fd	fd
 FDA	FDA
+fdroid	fdroid
 # fe	fe
 fear	fear
 feared	feared
@@ -14050,6 +14053,7 @@ pilots	pilots
 # pim	pim
 pimp	pimp
 pin	pin
+pinned	pinned
 pinball	pinball
 pinch	pinch
 pine	pine
@@ -16211,6 +16215,7 @@ RPG	RPG
 # rs	rs
 # rsa	rsa
 RSS	RSS
+rsync	rsync
 # rsvp	rsvp
 # rt	rt
 # rts	rts
@@ -16615,6 +16620,7 @@ sculpture	sculpture
 sculptures	sculptures
 # sd	sd
 SDK	SDK
+sddm	sddm
 # SDL	SDL
 # sdn	sdn
 # sdram	sdram
@@ -19610,6 +19616,7 @@ Ubuntu	Ubuntu
 # ucla	ucla
 # ud	ud
 UDP	UDP
+udev	udev
 # ue	ue
 # uefa	uefa
 # uf	uf
@@ -20455,6 +20462,7 @@ waver	waver
 waves	waves
 wax	wax
 way	way
+wayland	wayland
 Wayne	Wayne
 ways	ways
 # wb	wb
@@ -20914,6 +20922,7 @@ xanax	xanax
 Xavier	Xavier
 # xb	xb
 Xbox	Xbox
+X11	X11
 # xc	xc
 # xd	xd
 # xda	xda
@@ -21060,6 +21069,7 @@ Zion	Zion
 zip	zip
 zipper	zipper
 zirconia	zirconia
+zlibrary	zlibrary
 zodiac	zodiac
 Zoe	Zoe
 Zoloft	Zoloft
