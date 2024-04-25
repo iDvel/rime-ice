@@ -122,7 +122,7 @@ func Sort(dictPath string, _type int) {
 			}
 			return false
 		})
-	} else {
+	} else if !strings.Contains(dictPath, "en_ext.dict.yaml") {
 		sort.Slice(contents, func(i, j int) bool {
 			if contents[i].code != contents[j].code {
 				return contents[i].code < contents[j].code
@@ -166,35 +166,43 @@ func Sort(dictPath string, _type int) {
 	}
 
 	// ext tencent 词库需要从一个或多个词库中去重后再写入
-	if dictPath == ExtPath || dictPath == TencentPath {
+	isEnExt := dictPath == EnExtPath
+	if dictPath == ExtPath || dictPath == TencentPath || isEnExt {
 		var intersect mapset.Set[string] // 交集，有交集的就是重复的
 		switch dictPath {
 		case ExtPath:
 			intersect = ExtSet.Intersect(BaseSet)
 		case TencentPath:
 			intersect = TencentSet.Intersect(BaseSet.Union(ExtSet))
+		case EnExtPath:
+			intersect = EnExtSet.Intersect(EnSet)
 		}
 
+		baseName := strings.Split(path.Base(dictPath), ".")[0]
+
 		for _, line := range contents {
-			if intersect.Contains(line.text) {
-				fmt.Printf("%s 重复于其他词库：%s\n", strings.Split(path.Base(dictPath), ".")[0], line.text)
+			var key string
+			if isEnExt {
+				key = getKey4EngSet(line.text, line.code, rule4EnExt)
+			} else {
+				key = line.text
+			}
+
+			if intersect.Contains(key) {
+				fmt.Printf("%s 重复于其他词库：%s\n", baseName, line.text)
 				continue
 			}
-			var s string
-			if line.code != "" {
-				s = line.text + "\t" + line.code + "\t" + strconv.Itoa(line.weight) + "\n"
+
+			if isEnExt {
+				writeEntry(file, line.text, line.code, 0, false)
 			} else {
-				s = line.text + "\t" + strconv.Itoa(line.weight) + "\n"
-			}
-			_, err := file.WriteString(s)
-			if err != nil {
-				log.Fatalln(err)
+				writeEntry(file, line.text, line.code, line.weight, true)
 			}
 		}
 	}
 
 	// 外部词库或临时文件，只排序，不去重
-	if !contains([]string{HanziPath, BasePath, ExtPath, TencentPath}, dictPath) {
+	if !contains([]string{HanziPath, BasePath, ExtPath, TencentPath, EnExtPath}, dictPath) {
 		switch _type {
 		case 1:
 			for _, line := range contents {
@@ -228,6 +236,23 @@ func Sort(dictPath string, _type int) {
 	}
 
 	if err := file.Sync(); err != nil {
+		log.Fatalln(err)
+	}
+}
+
+func writeEntry(file *os.File, text string, code string, weight int, writeWeight bool) {
+	var entry string
+	if code != "" {
+		entry = fmt.Sprintf("%s\t%s", text, code)
+	} else {
+		entry = text
+	}
+	if writeWeight {
+		entry += fmt.Sprintf("\t%d\n", weight)
+	} else {
+		entry += "\n"
+	}
+	if _, err := file.WriteString(entry); err != nil {
 		log.Fatalln(err)
 	}
 }
