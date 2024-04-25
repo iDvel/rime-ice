@@ -145,7 +145,7 @@ local function number_translator(input, seg, env)
     if env.number_keyword ~= '' and input:sub(1, 1) == env.number_keyword then
         str = string.gsub(input, "^(%a+)", "")
         numberPart = number_translatorFunc(str)
-        if #numberPart > 0 then
+        if str and #str > 0 and #numberPart > 0 then
             for i = 1, #numberPart do
                 yield(Candidate(input, seg.start, seg._end, numberPart[i][1], numberPart[i][2]))
             end
