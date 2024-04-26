@@ -664,7 +664,7 @@ Apple News	AppleNews
 Apple Pay	ApplePay
 iTunes Store	iTunesStore
 AMD	AMD
-amdgpu	amdgpu
+AMDgpu	AMDgpu
 Amphetamine	Amphetamine
 App Store	AppStore
 AirDrop	AirDrop
@@ -1542,12 +1542,10 @@ Great Firewall	GFW
 Great Firewall	GreatFirewall
 departed	departed
 GeoIP	GeoIP
+gVim	gVim
 Vimium	Vimium
 Nvim	Nvim
 Neovim	Neovim
-nvidia-dkms	nvidia-dkms
-nvidia-smi	nvidia-smi
-nvidia-utlis	nvidia-utlis
 nerd	nerd
 MacVim	MacVim
 VimR	VimR
@@ -1655,7 +1653,6 @@ Chrome	Chrome
 arch	arch
 iOS	iOS
 Linux	Linux
-linux-headers	linux-headers
 Ubuntu	Ubuntu
 Windows	Windows
 Microsoft	Microsoft
@@ -1960,9 +1957,6 @@ Pisces	Pisces
 tailwind	tailwind
 Fcitx	Fcitx
 Fcitx5	Fcitx5
-fcitx5-android	fcitx5-android
-fcitx5-diagnose	fcitx5-diagnose
-fcitx5-chinese-addons	fcitx5-chinese-addons
 openSUSE	openSUSE
 defer	defer
 FOMO	FOMO
@@ -2120,7 +2114,7 @@ Braavos Wallet	Braavos
 OneKey	OneKey
 hamster	hamster
 hamsters	hamsters
-hackintosh	hackintosh
+Hackintosh	Hackintosh
 DYOR	DYOR
 Do Your Own Research	DYOR
 Noita	Noita
