@@ -680,7 +680,7 @@ Brackets	Brackets
 BundleHunt	BundleHunt
 Byword	Byword
 Btitish	Btitish
-btrfs	btrfs
+Btrfs	Btrfs
 Caffeine	Caffeine
 Calcbot	Calcbot
 Calibre	Calibre
@@ -724,7 +724,7 @@ ExFAT	ExFAT
 Extended File Allocation Table	ExFAT
 Extended File Allocation Table	ExtendedFileAllocationTable
 Fantastical	Fantastical
-fdroid	fdroid
+F-Droid	F-Droid
 FileVault	FileVault
 Final Cut Pro	FinalCutPro
 Flickr	Flickr
@@ -862,7 +862,8 @@ ScreenFlow	ScreenFlow
 scribble	scribble
 Scrivener	Scrivener
 SDK	SDK
-sddm	sddm
+SDDM	SDDM
+Simple Desktop Display Manager	SDDM
 Software Development Kit	SDK
 Software Development Kit	SoftwareDevelopmentKit
 Should I Sleep	ShouldISleep
@@ -1874,7 +1875,7 @@ redirect	redirect
 redirects	redirects
 Unix shell	Unixshell
 shells	shells
-zlibrary	zlibrary
+Z-Library	Z-Library
 Zaraz	Zaraz
 waitlist	waitlist
 diffusion	diffusion
@@ -1901,6 +1902,7 @@ Wireless LAN	WLAN
 GPT	GPT
 Generative Pre-trained Transformer	GPT
 GPT-4	GPT-4
+GPT-3.5	GPT-3.5
 bard	bard
 LaMDA	LaMDA
 Language Model for Dialogue Applications	LaMDA
@@ -2007,7 +2009,6 @@ TLS	TLS
 Transport Layer Security	TLS
 SSL	SSL
 Secure Sockets Layer	SSL
-udev	udev
 UDP	UDP
 User Datagram Protocol	UDP
 TCP	TCP
@@ -2269,7 +2270,7 @@ JDK	JDK
 Java Development Kit	JDK
 polyphony	polyphony
 iota	iota
-mu	mu
+# mu	mu
 rho	rho
 upsilon	upsilon
 D&D	D&D
