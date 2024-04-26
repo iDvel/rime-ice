@@ -760,6 +760,8 @@ iExplorer	iExplorer
 iFFmpeg	iFFmpeg
 IFTTT	IFTTT
 iMac	iMac
+IME	IME
+Input Method Editor	IME
 iMessage	iMessage
 iMore	iMore
 Inboard	Inboard
@@ -2121,7 +2123,7 @@ Noita	Noita
 Screen Studio	ScreenStudio
 Norah	Norah
 floccus	floccus
-wayland	wayland
+Wayland	Wayland
 Wappalyzer	Wappalyzer
 phony	phony
 noop	noop
@@ -2510,3 +2512,5 @@ International Monetary Fund	IMF
 International Monetary Fund	InternationalMonetaryFund
 Terraform	Terraform
 systemd	systemd
+FPGA	FPGA
+field-programmable gate array	FPGA
