@@ -427,6 +427,7 @@ Code Runner	CodeRunner
 AfterShokz Aeropex	AfterShokzAeropex
 AfterShokz	AfterShokz
 Aeropex	Aeropex
+X11	X11
 Xnip	Xnip
 Workspace	Workspace
 Google Chrome	GoogleChrome
@@ -679,6 +680,7 @@ Brackets	Brackets
 BundleHunt	BundleHunt
 Byword	Byword
 Btitish	Btitish
+btrfs	btrfs
 Caffeine	Caffeine
 Calcbot	Calcbot
 Calibre	Calibre
@@ -722,6 +724,7 @@ ExFAT	ExFAT
 Extended File Allocation Table	ExFAT
 Extended File Allocation Table	ExtendedFileAllocationTable
 Fantastical	Fantastical
+fdroid	fdroid
 FileVault	FileVault
 Final Cut Pro	FinalCutPro
 Flickr	Flickr
@@ -859,6 +862,7 @@ ScreenFlow	ScreenFlow
 scribble	scribble
 Scrivener	Scrivener
 SDK	SDK
+sddm	sddm
 Software Development Kit	SDK
 Software Development Kit	SoftwareDevelopmentKit
 Should I Sleep	ShouldISleep
@@ -866,7 +870,6 @@ Simplenote	Simplenote
 Siri	Siri
 Slicy	Slicy
 Snagit	Snagit
-snapper	snapper
 Sparkbox	Sparkbox
 Sparrow	Sparrow
 Speedtest	Speedtest
@@ -1033,6 +1036,7 @@ One UI	OneUI
 Raycast	Raycast
 CloudFront	CloudFront
 RSS	RSS
+rsync	rsync
 RDF Site Summary	RSS
 Really Simple Syndication	RSS
 gosh	gosh
@@ -1581,7 +1585,6 @@ millisecond	millisecond
 microsecond	microsecond
 nanosecond	nanosecond
 offload	offload
-offtopic	offtopic
 Hammerspoon	Hammerspoon
 CrossOver	CrossOver
 hallelujahIM	hallelujahIM
@@ -1871,6 +1874,7 @@ redirect	redirect
 redirects	redirects
 Unix shell	Unixshell
 shells	shells
+zlibrary	zlibrary
 Zaraz	Zaraz
 waitlist	waitlist
 diffusion	diffusion
@@ -2003,6 +2007,7 @@ TLS	TLS
 Transport Layer Security	TLS
 SSL	SSL
 Secure Sockets Layer	SSL
+udev	udev
 UDP	UDP
 User Datagram Protocol	UDP
 TCP	TCP
@@ -2121,6 +2126,7 @@ Noita	Noita
 Screen Studio	ScreenStudio
 Norah	Norah
 floccus	floccus
+wayland	wayland
 Wappalyzer	Wappalyzer
 phony	phony
 noop	noop
