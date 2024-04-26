@@ -543,6 +543,7 @@ alcoholic	alcoholic
 alcoholism	alcoholism
 ale	ale
 Alec	Alec
+alembic	alembic
 alert	alert
 alerts	alerts
 Alex	Alex
@@ -2788,6 +2789,7 @@ canned	canned
 Cannes	Cannes
 cannibalistic	cannibalistic
 cannon	cannon
+cannot	cannot
 canoe	canoe
 canoeing	canoeing
 canon	canon
@@ -2814,6 +2816,7 @@ capita	capita
 capital	capital
 capitalism	capitalism
 capitalist	capitalist
+capitalize	capitalize
 capitals	capitals
 capitol	capitol
 capped	capped
@@ -3039,8 +3042,8 @@ cello	cello
 cellphone	cellphone
 cells	cells
 cellular	cellular
-celtic	celtic
 celluloid	celluloid
+celtic	celtic
 cement	cement
 cemeteries	cemeteries
 cemetery	cemetery
@@ -3314,6 +3317,8 @@ chopper	chopper
 choral	choral
 chord	chord
 chords	chords
+chore	chore
+chores	chores
 chorus	chorus
 chose	chose
 chosen	chosen
@@ -4017,6 +4022,7 @@ confirms	confirms
 conflict	conflict
 conflicting	conflicting
 conflicts	conflicts
+confluence	confluence
 conform	conform
 conformance	conformance
 conforming	conforming
@@ -4292,6 +4298,7 @@ copied	copied
 copier	copier
 copiers	copiers
 copies	copies
+copilot	copilot
 coping	coping
 copper	copper
 Coppermine	Coppermine
@@ -4313,10 +4320,10 @@ cordial	cordial
 cordless	cordless
 cords	cords
 core	core
+core dump	coredump
 Corel	Corel
 cores	cores
 Corey	Corey
-core dump	coredump
 Corinthians	Corinthians
 cork	cork
 corn	corn
@@ -4818,7 +4825,7 @@ Darth	Darth
 Dartmouth	Dartmouth
 darts	darts
 Darussalam	Darussalam
-darwin	darwin
+Darwin	Darwin
 # das	das
 dash	dash
 dashboard	dashboard
@@ -5159,6 +5166,7 @@ deploy	deploy
 deployed	deployed
 deploying	deploying
 deployment	deployment
+deploys	deploys
 deposit	deposit
 deposited	deposited
 deposition	deposition
@@ -5556,7 +5564,7 @@ dismay	dismay
 dismiss	dismiss
 dismissal	dismissal
 dismissed	dismissed
-disney	disney
+Disney	Disney
 Disneyland	Disneyland
 disorder	disorder
 disorders	disorders
@@ -5673,6 +5681,7 @@ do	do
 doc	doc
 DocBook	DocBook
 dock	dock
+docker	docker
 docket	docket
 docking	docking
 docs	docs
@@ -5696,6 +5705,7 @@ doe	doe
 does	does
 doesn't	doesn't
 dog	dog
+doge	doge
 dogg	dogg
 dogs	dogs
 # doi	doi
@@ -5943,6 +5953,7 @@ duo	duo
 duplex	duplex
 duplicate	duplicate
 duplicated	duplicated
+duplicates	duplicates
 duplication	duplication
 DuPont	DuPont
 durability	durability
@@ -7966,6 +7977,7 @@ GCC	GCC
 gear	gear
 geared	geared
 gears	gears
+gecko	gecko
 ged	ged
 gee	gee
 geek	geek
@@ -8220,12 +8232,14 @@ Goodwin	Goodwin
 Google	Google
 goose	goose
 # gop	gop
+gopher	gopher
 gordon	gordon
 gore	gore
 gorge	gorge
 gorgeous	gorgeous
 gorilla	gorilla
 gorillaz	gorillaz
+gosh	gosh
 gospel	gospel
 gossip	gossip
 got	got
@@ -8569,6 +8583,7 @@ handling	handling
 handmade	handmade
 handout	handout
 handouts	handouts
+handover	handover
 hands	hands
 handset	handset
 handsets	handsets
@@ -9286,8 +9301,6 @@ id	id
 # ida	ida
 idaho	idaho
 IDC	IDC
-ide	ide
-IDE	IDE
 idea	idea
 ideal	ideal
 idealism	idealism
@@ -9474,6 +9487,7 @@ inbound	inbound
 inbox	inbox
 Inc.	Inc
 incapable	incapable
+incase	incase
 incense	incense
 incentive	incentive
 incentives	incentives
@@ -10190,9 +10204,11 @@ jelsoft	jelsoft
 # jen	jen
 Jenkins	Jenkins
 Jenna	Jenna
+jennies	jennies
 Jennifer	Jennifer
 Jennings	Jennings
 Jenny	Jenny
+jenny	jenny
 Jensen	Jensen
 Jeremiah	Jeremiah
 Jeremy	Jeremy
@@ -10760,6 +10776,7 @@ laughing	laughing
 laughs	laughs
 laughter	laughter
 launch	launch
+launch pad	launchpad
 launched	launched
 launches	launches
 launching	launching
@@ -12131,6 +12148,8 @@ minimize	minimize
 minimizing	minimizing
 minimum	minimum
 mining	mining
+minion	minion
+minions	minions
 minister	minister
 ministerial	ministerial
 ministers	ministers
@@ -12899,7 +12918,7 @@ noir	noir
 noise	noise
 noisy	noisy
 # nok	nok
-nokia	nokia
+Nokia	Nokia
 Nolan	Nolan
 # nom	nom
 nominal	nominal
@@ -13174,6 +13193,7 @@ oecd	oecd
 # of	of
 of	of
 off	off
+off-topic	off-topic
 offence	offence
 offences	offences
 offend	offend
@@ -13200,7 +13220,6 @@ offs	offs
 offset	offset
 offshore	offshore
 offspring	offspring
-off-topic	off-topic
 often	often
 # og	og
 Ogden	Ogden
@@ -13245,6 +13264,7 @@ Omar	Omar
 ombudsman	ombudsman
 omega	omega
 OMG	OMG
+omicron	omicron
 omission	omission
 omissions	omissions
 omit	omit
@@ -14178,6 +14198,7 @@ picturesque	picturesque
 pie	pie
 piece	piece
 pieces	pieces
+pied piper	piedpiper
 piedmont	piedmont
 pier	pier
 pierce	pierce
@@ -14205,7 +14226,6 @@ pilots	pilots
 # pim	pim
 pimp	pimp
 pin	pin
-pinned	pinned
 pinball	pinball
 pinch	pinch
 pine	pine
@@ -14218,6 +14238,7 @@ pinkies	pinkies
 # pinkworld	pinkworld
 pinky	pinky
 pinnacle	pinnacle
+pinned	pinned
 pins	pins
 pint	pint
 pioneer	pioneer
@@ -14265,6 +14286,7 @@ pkg	pkg
 place	place
 placebo	placebo
 placed	placed
+placeholder	placeholder
 placement	placement
 placements	placements
 places	places
@@ -15182,6 +15204,7 @@ PVC	PVC
 pyjamas	pyjamas
 pyramid	pyramid
 python	python
+pythonic	pythonic
 # q	q
 # qa	qa
 # qaeda	qaeda
@@ -15578,6 +15601,7 @@ recycled	recycled
 recycling	recycling
 red	red
 redeem	redeem
+redefine	redefine
 redemption	redemption
 redesign	redesign
 redevelopment	redevelopment
@@ -16005,6 +16029,7 @@ rest	rest
 restart	restart
 restaurant	restaurant
 restaurants	restaurants
+restful	restful
 resting	resting
 restless	restless
 restoration	restoration
@@ -16421,6 +16446,7 @@ rum	rum
 rumble	rumble
 rumor	rumor
 rumors	rumors
+rumour	rumour
 Rumsfeld	Rumsfeld
 run	run
 runaway	runaway
@@ -17946,6 +17972,7 @@ squid	squid
 squirrel	squirrel
 squirt	squirt
 squirting	squirting
+squoosh	squoosh
 # sr	sr
 src	src
 # sri	sri
@@ -18601,6 +18628,7 @@ Svenska	Svenska
 SVG	SVG
 SVN	SVN
 # sw	sw
+swag	swag
 swallow	swallow
 swallowing	swallowing
 swamp	swamp
@@ -18610,6 +18638,7 @@ swap	swap
 swapping	swapping
 swarm	swarm
 Swarovski	Swarovski
+swat	swat
 sway	sway
 swaziland	swaziland
 swear	swear
@@ -19237,6 +19266,7 @@ Tim	Tim
 timber	timber
 timberland	timberland
 time	time
+time capsule	timecapsule
 timed	timed
 timeless	timeless
 timeline	timeline
@@ -19786,6 +19816,7 @@ TV	TV
 twain	twain
 tweak	tweak
 tweed	tweed
+tweet	tweet
 twelve	twelve
 twentieth	twentieth
 twenty	twenty
@@ -20178,6 +20209,7 @@ validate	validate
 validated	validated
 validation	validation
 validity	validity
+valine	valine
 valium	valium
 # vallarta	vallarta
 valley	valley
@@ -20387,6 +20419,7 @@ villagers	villagers
 villages	villages
 villas	villas
 # ville	ville
+vim	vim
 # vin	vin
 Vince	Vince
 vincent	vincent
@@ -20710,6 +20743,7 @@ wear	wear
 wearing	wearing
 wears	wears
 weary	weary
+weasel	weasel
 weather	weather
 weave	weave
 weaver	weaver
@@ -20855,8 +20889,8 @@ whistle	whistle
 whistler	whistler
 white	white
 White	White
-whitespace	whitespace
 whites	whites
+whitespace	whitespace
 whitewash	whitewash
 whitewater	whitewater
 Whitman	Whitman
