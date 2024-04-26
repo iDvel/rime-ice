@@ -322,6 +322,7 @@ Braun	Braun
 Bayes	Bayes
 Saul	Saul
 Wick	Wick
+wick	wick
 RPG	RPG
 Role-Playing Game	RPG
 Role-Playing Game	RolePlayingGame
@@ -1876,8 +1877,6 @@ Unix shell	Unixshell
 shells	shells
 Z-Library	Z-Library
 Zaraz	Zaraz
-waitlist	waitlist
-diffusion	diffusion
 Scribble Diffusion	ScribbleDiffusion
 Lenovo	Lenovo
 Adios	Adios
@@ -1886,7 +1885,6 @@ Express Mail Service	EMS
 IPFS	IPFS
 InterPlanetary File System	IPFS
 InterPlanetary File System	InterPlanetaryFileSystem
-interplanetary	interplanetary
 Noria	Noria
 DHCP	DHCP
 Dynamic Host Configuration Protocol	DHCP
@@ -1902,18 +1900,15 @@ GPT	GPT
 Generative Pre-trained Transformer	GPT
 GPT-4	GPT-4
 GPT-3.5	GPT-3.5
-bard	bard
+Google Bard	GoogleBard
 LaMDA	LaMDA
 Language Model for Dialogue Applications	LaMDA
-tokens	tokens
-roadmap	roadmap
 Coinbase Wallet	CoinbaseWallet
 MetaMask	MetaMask
 favicon	favicon
 Discord	Discord
 New Bing	NewBing
 Notion AI	NotionAI
-memos	memos
 flomo	flomo
 arabica	Arabica
 robusta	robusta
@@ -1928,8 +1923,6 @@ Vultr	Vultr
 GoFrame	GoFrame
 ORM	ORM
 Object Relational Mapping	ORM
-iris	iris
-burnt	burnt
 KPI	KPI
 Key Performance Indicators	KPI
 mutex	mutex
@@ -1956,23 +1949,19 @@ Sagittarius	Sagittarius
 Capricorn	Capricorn
 Aquarius	Aquarius
 Pisces	Pisces
-tailwind	tailwind
+Tailwind	Tailwind
+Tailwind CSS	TailwindCSS
 Fcitx	Fcitx
 Fcitx5	Fcitx5
 openSUSE	openSUSE
 defer	defer
 FOMO	FOMO
 Fear of Missing Out	FOMO
-rune	rune
-wick	wick
 meow	meow
 woof	woof
 bromite	bromite
 hutch	hutch
 Laotian	Laotian
-mitigation	mitigation
-transformer	transformer
-mayonnaise	mayonnaise
 orz	orz
 parametric	parametric
 Scooby-Doo	Scooby-Doo
@@ -2025,13 +2014,11 @@ PL/pgSQL	PL/pgSQL
 Procedural Language / PostGres Structured Query Language	PL/pgSQL
 IQ	IQ
 Intelligence quotient	IQ
-quotient	quotient
 BTW	BTW
 by the way	BTW
 QUIC	QUIC
 Quick UDP Internet Connections	QUIC
 SRWare Iron	SRWareIron
-trending	trending
 Nexitally	Nexitally
 AGI	AGI
 Artificial general intelligence	AGI
@@ -2043,22 +2030,15 @@ BREAKING CHANGE	BREAKINGCHANGE
 GitHub Actions	GitHubActions
 UUID	UUID
 Universally Unique Identifier	UUID
-stargazer	stargazer
-stargazers	stargazers
-fallback	fallback
 Fyne	Fyne
 Claude	Claude
 Claude+	Claude+
 Anthropic	Anthropic
-overdue	overdue
 Cinderella	Cinderella
 WebGPU	WebGPU
 Mailfence	Mailfence
-gimme	gimme
 CodeWhisperer	CodeWhisperer
 Heisenberg	Heisenberg
-codex	codex
-storyteller	storyteller
 troublemaker	troublemaker
 troublemaking	troublemaking
 espanso	espanso
@@ -2125,11 +2105,8 @@ Norah	Norah
 floccus	floccus
 Wayland	Wayland
 Wappalyzer	Wappalyzer
-phony	phony
 noop	noop
 Kung Fu	KungFu
-prefixes	prefixes
-suffixes	suffixes
 DeepMind	DeepMind
 Google DeepMind	GoogleDeepMind
 TL;DR	TL;DR
@@ -2137,32 +2114,22 @@ too long; didn't read	TL;DR
 Ant-Man	Ant-Man
 ungoogled	ungoogled
 ungoogled-chromium	ungoogled-chromium
-taxman	taxman
 RouterOS	RouterOS
 Sumatra	Sumatra
 Sumatra PDF	SumatraPDF
 sideload	sideload
 sideloading	sideloading
-misdirection	misdirection
 librime	librime
 JRPG	JRPG
 Japanese Role-Playing Game	JRPG
 Kuromis	Kuromis
-sorcerer	sorcerer
-sorcerers	sorcerers
-werewolf	werewolf
-disjunction	disjunction
 heil	heil
-maintainers	maintainers
 AmyTelecom	AmyTelecom
 Patreon	Patreon
 Anaconda	Anaconda
 LLaMA	LLaMA
 Large Language Model Meta AI	LLaMA
-fellatio	fellatio
-silo	silo
 R.I.P	R.I.P
-requiescat	requiescat
 AIGC	AIGC
 AI Generated Content	AIGC
 Presto	Presto
@@ -2170,9 +2137,6 @@ presto	presto
 Upscayl	Upscayl
 Cocos Creator	CocosCreator
 John Wick	JohnWick
-firetruck	firetruck
-prankster	prankster
-pranksters	pranksters
 npm	npm
 Node Package Manager	npm
 Node Package Manager	NodePackageManager
@@ -2180,7 +2144,6 @@ Node Package Manager	NodePackageManager
 Apple Vision	AppleVision
 Apple Vision Pro	AppleVisionPro
 Vision Pro	VisionPro
-shithead	shithead
 a11y	a11y
 accessibility	a11y
 i18n	i18n
@@ -2203,29 +2166,14 @@ Kubernetes	K8s
 Kubernetes	Kubernetes
 Kubeadm	Kubeadm
 Minikube	Minikube
-containerized	containerized
 shitty	shitty
 shitwork	shitwork
 A4	A4
 3D	3D
-polyphone	polyphone
-traditionalization	traditionalization
-traditionalize	traditionalize
-traditionalist	traditionalist
-traditionalistic	traditionalistic
-simplification	simplification
-simplifier	simplifier
 Loki	Loki
-panzer	panzer
-hardened	hardened
-motherfucker	motherfucker
-motherfuckers	motherfuckers
-motherfucking	motherfucking
 dict	dict
-latte	latte
 Hughie	Hughie
 Maeve	Maeve
-hyphen	hyphen
 Oppenheimer	Oppenheimer
 UltraEdit	UltraEdit
 GoldenDict	GoldenDict
@@ -2240,31 +2188,17 @@ keysym	keysym
 keysyms	keysyms
 PotPlayer	PotPlayer
 Code::Blocks	Code::Blocks
-passkey	passkey
 Protocol Buffers	ProtocolBuffers
 protobuf	protobuf
-interstellar	interstellar
-weirdo	weirdo
 beyatch	beyatch
-perplexity	perplexity
-masturbate	masturbate
-thorium	thorium
 iBus	iBus
 BT	BT
-corrector	corrector
 hashtag	hashtag
 ProtonMail	ProtonMail
 Elasticsearch	Elasticsearch
 Next.js	Next.js
-mantis	mantis
-strongbox	strongbox
-tabby	tabby
-subtext	subtext
-homophone	homophone
-homophones	homophones
 JDK	JDK
 Java Development Kit	JDK
-polyphony	polyphony
 iota	iota
 # mu	mu
 rho	rho
@@ -2279,26 +2213,15 @@ Minecraft	Minecraft
 LSP	LSP
 Language Server Protocol	LSP
 Google Pixel	GooglePixel
-medallion	medallion
-add-on	add-on
-add-ons	add-ons
 C#	C#
 decode	decode
 KeyCastr	KeyCastr
 Laugh Tale	LaughTale
 Joy Boy	JoyBoy
-gotcha	gotcha
-wombat	wombat
-prank	prank
 RustRover	RustRover
 bilibili	bilibili
 Terraria	Terraria
 Unihan	Unihan
-adrift	adrift
-joker	joker
-cannibalistic	cannibalistic
-micrometer	micrometer
-nanometer	nanometer
 DLsite	DLsite
 picosecond	picosecond
 femtosecond	femtosecond
@@ -2356,20 +2279,12 @@ Musk	Musk
 Logseq	Logseq
 WPS	WPS
 Morty	Morty
-destructible	destructible
-indestructible	indestructible
 Frundles	Frundles
 Brotato	Brotato
-homie	homie
-homey	homey
-cynical	cynical
-seduce	seduce
-pinky	pinky
 engineman	engineman
 unhuman	unhuman
 unhumified	unhumified
 unhumanize	unhumanize
-flares	flares
 P2P	P2P
 F2A	F2A
 B2B	B2B
@@ -2378,28 +2293,20 @@ B2C	B2C
 C2B	C2B
 O2O	O2O
 NBA 2K	NBA2K
-tempting	tempting
 WebCatalog	WebCatalog
 Apple One	AppleOne
 pixiv	pixiv
 M4A1	M4A1
-shogun	shogun
-wail	wail
-wails	wails
-wailed	wailed
-wailing	wailing
 PK	PK
 WireGuard	WireGuard
 AdGuard	AdGuard
 Altman	Altman
 Ultraman	Ultraman
-silicones	silicones
 GPTs	GPTs
 sider	sider
 DALL·E	DALL·E
 keychain	keychain
 keychains	keychains
-guile	guile
 e.g.	e.g.
 i.e.	i.e.
 et al.	etal.
@@ -2410,7 +2317,6 @@ SaaS	SaaS
 Software as a service	SaaS
 gitignore	gitignore
 .gitignore	.gitignore
-humankind	humankind
 Alita	Alita
 epoll	epoll
 kqueue	kqueue
@@ -2421,8 +2327,6 @@ runc	runc
 containerd	containerd
 Melvor	Melvor
 Melvor Idle	MelvorIdle
-paradise	paradise
-ketchup	ketchup
 pinning	pinning
 WebSocket	WebSocket
 systemctl	systemctl
@@ -2439,53 +2343,37 @@ Arch User Repository	AUR
 pacman	pacman
 Pac-Man	Pac-Man
 eBPF	eBPF
-livid	livid
 DevOps	DevOps
 Zippo	Zippo
-goddamn	goddamn
-punctuator	punctuator
-punctuators	punctuators
 QR code	QRcode
-sentry	sentry
 Prometheus	Prometheus
 Grafana	Grafana
 Mirtle	Mirtle
 Hadoop	Hadoop
 HBase	HBase
-hive	hive
+Hive	Hive
+Apache Hive	ApacheHive
 Flink	Flink
 Palworld	Palworld
-lark	lark
 submodule	submodule
 submodules	submodules
 Writerside	Writerside
-groundhog	groundhog
-groundhogs	groundhogs
 Writerside	Writerside
 Manifest V2	ManifestV2
 Manifest V3	ManifestV3
-copycat	copycat
 Google Gemini	GoogleGemini
 Google Gemini Advanced	GoogleGeminiAdvanced
-infuse	infuse
-headless	headless
 IMBA	IMBA
-imbalance	imbalance
-imbalanced	imbalanced
 GitButler	GitButler
 Sora	Sora
 WinNAS	WinNAS
-prune	prune
 Wireshark	Wireshark
 Theseus	Theseus
 Laravel	Laravel
-monolith	monolith
 Chiikawa	Chiikawa
-trudge	trudge
 LibreOffice	LibreOffice
 Asics	Asics
 Saucony	Saucony
-dubbing	dubbing
 nvm	nvm
 Node Version Manager	nvm
 Node Version Manager	NodeVersionManager
