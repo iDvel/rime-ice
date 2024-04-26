@@ -20,6 +20,7 @@ README.md	README.md
 # 按键
 Fn	Fn
 cmd	cmd
+cmdline	cmdline
 command	command
 Ctrl	Ctrl
 control	control
@@ -426,6 +427,7 @@ Code Runner	CodeRunner
 AfterShokz Aeropex	AfterShokzAeropex
 AfterShokz	AfterShokz
 Aeropex	Aeropex
+X11	X11
 Xnip	Xnip
 Workspace	Workspace
 Google Chrome	GoogleChrome
@@ -662,6 +664,7 @@ Apple News	AppleNews
 Apple Pay	ApplePay
 iTunes Store	iTunesStore
 AMD	AMD
+AMDgpu	AMDgpu
 Amphetamine	Amphetamine
 App Store	AppStore
 AirDrop	AirDrop
@@ -677,6 +680,7 @@ Brackets	Brackets
 BundleHunt	BundleHunt
 Byword	Byword
 Btitish	Btitish
+Btrfs	Btrfs
 Caffeine	Caffeine
 Calcbot	Calcbot
 Calibre	Calibre
@@ -720,6 +724,7 @@ ExFAT	ExFAT
 Extended File Allocation Table	ExFAT
 Extended File Allocation Table	ExtendedFileAllocationTable
 Fantastical	Fantastical
+F-Droid	F-Droid
 FileVault	FileVault
 Final Cut Pro	FinalCutPro
 Flickr	Flickr
@@ -755,6 +760,8 @@ iExplorer	iExplorer
 iFFmpeg	iFFmpeg
 IFTTT	IFTTT
 iMac	iMac
+IME	IME
+Input Method Editor	IME
 iMessage	iMessage
 iMore	iMore
 Inboard	Inboard
@@ -857,6 +864,8 @@ ScreenFlow	ScreenFlow
 scribble	scribble
 Scrivener	Scrivener
 SDK	SDK
+SDDM	SDDM
+Simple Desktop Display Manager	SDDM
 Software Development Kit	SDK
 Software Development Kit	SoftwareDevelopmentKit
 Should I Sleep	ShouldISleep
@@ -1030,6 +1039,7 @@ One UI	OneUI
 Raycast	Raycast
 CloudFront	CloudFront
 RSS	RSS
+rsync	rsync
 RDF Site Summary	RSS
 Really Simple Syndication	RSS
 gosh	gosh
@@ -1304,6 +1314,7 @@ Unidentified Flying Object	UnidentifiedFlyingObject
 Copyright	Copyright
 Registered	Registered
 TM	TM
+tmux	tmux
 SOS	SOS
 abcd	abcd
 ABCD	ABCD
@@ -1533,6 +1544,7 @@ Great Firewall	GFW
 Great Firewall	GreatFirewall
 departed	departed
 GeoIP	GeoIP
+gVim	gVim
 Vimium	Vimium
 Nvim	Nvim
 Neovim	Neovim
@@ -1546,6 +1558,7 @@ LunarVim	LunarVim
 IdeaVim	IdeaVim
 unfo	unfo
 timestamp	timestamp
+timeshift	timeshift
 ChatGPT	ChatGPT
 OpenAI	OpenAI
 OpenAI Codex	OpenAICodex
@@ -1861,6 +1874,7 @@ redirect	redirect
 redirects	redirects
 Unix shell	Unixshell
 shells	shells
+Z-Library	Z-Library
 Zaraz	Zaraz
 waitlist	waitlist
 diffusion	diffusion
@@ -1887,6 +1901,7 @@ Wireless LAN	WLAN
 GPT	GPT
 Generative Pre-trained Transformer	GPT
 GPT-4	GPT-4
+GPT-3.5	GPT-3.5
 bard	bard
 LaMDA	LaMDA
 Language Model for Dialogue Applications	LaMDA
@@ -2101,12 +2116,14 @@ Braavos Wallet	Braavos
 OneKey	OneKey
 hamster	hamster
 hamsters	hamsters
+Hackintosh	Hackintosh
 DYOR	DYOR
 Do Your Own Research	DYOR
 Noita	Noita
 Screen Studio	ScreenStudio
 Norah	Norah
 floccus	floccus
+Wayland	Wayland
 Wappalyzer	Wappalyzer
 phony	phony
 noop	noop
@@ -2249,7 +2266,7 @@ JDK	JDK
 Java Development Kit	JDK
 polyphony	polyphony
 iota	iota
-mu	mu
+# mu	mu
 rho	rho
 upsilon	upsilon
 D&D	D&D
@@ -2495,3 +2512,5 @@ International Monetary Fund	IMF
 International Monetary Fund	InternationalMonetaryFund
 Terraform	Terraform
 systemd	systemd
+FPGA	FPGA
+field-programmable gate array	FPGA
