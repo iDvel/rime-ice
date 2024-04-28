@@ -1,0 +1,3 @@
+[submodule "lua/rime_lua_aux_code"]
+	path = lua/rime_lua_aux_code
+	url = https://github.com/expoli/rime-lua-aux-code.git
