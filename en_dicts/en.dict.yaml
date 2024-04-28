@@ -4320,7 +4320,7 @@ cordial	cordial
 cordless	cordless
 cords	cords
 core	core
-core dump	coredump
+# core dump	coredump
 Corel	Corel
 cores	cores
 Corey	Corey
@@ -7304,10 +7304,10 @@ Fiona	Fiona
 fioricet	fioricet
 fir	fir
 fire	fire
-fire engine	fireengine
-fire engines	fireengines
-fire truck	firetruck
-fire trucks	firetrucks
+# fire engine	fireengine
+# fire engines	fireengines
+# fire truck	firetruck
+# fire trucks	firetrucks
 firearm	firearm
 firearms	firearms
 fired	fired
@@ -9285,7 +9285,7 @@ iBook	iBook
 ICANN	ICANN
 # icc	icc
 ice	ice
-ice cream	icecream
+# ice cream	icecream
 iceberg	iceberg
 Iceland	Iceland
 Icelandic	Icelandic
@@ -10776,7 +10776,8 @@ laughing	laughing
 laughs	laughs
 laughter	laughter
 launch	launch
-launch pad	launchpad
+# launch pad	launchpad
+Launchpad	Launchpad
 launched	launched
 launches	launches
 launching	launching
@@ -11175,7 +11176,7 @@ lividity	lividity
 lividly	lividly
 lividness	lividness
 living	living
-living room	livingroom
+# living room	livingroom
 Livingston	Livingston
 Liz	Liz
 lizard	lizard
@@ -14198,7 +14199,7 @@ picturesque	picturesque
 pie	pie
 piece	piece
 pieces	pieces
-pied piper	piedpiper
+# pied piper	piedpiper
 piedmont	piedmont
 pier	pier
 pierce	pierce
@@ -19266,7 +19267,7 @@ Tim	Tim
 timber	timber
 timberland	timberland
 time	time
-time capsule	timecapsule
+# time capsule	timecapsule
 timed	timed
 timeless	timeless
 timeline	timeline
