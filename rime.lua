@@ -95,3 +95,8 @@ function debug_checker(input, env)
         ))
     end
 end
+
+-- RIME 输入法辅助码与音形分离插件
+-- engine/filters/+ 增加 - lua_filter@aux_code@rime_lua_aux_code/lua/flypy_full
+-- 第二个 @ 后面的是辅助码文件路径，可以自定义
+aux_code = require("rime_lua_aux_code.lua.aux_code")
