@@ -1,0 +1,32 @@
+patch:
+  engine/filters/+:
+    # 第二个 @ 后面的是辅助码文件路径，可以自定义
+    - lua_filter@aux_code@rime_lua_aux_code/lua/flypy_full
+    - lua_filter@is_in_user_dict
+    # - lua_filter@*aux_code@ZRM_Aux-code_4.3
+    # - lua_filter@*aux_code@flypy_full
+
+  # 允许以 `;` 符号上屏，最后的 `;` 为英文半角字符，非中文全角。前面部分根据个人配置自行调整
+  speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA/~
+  
+  # 自定义触发键，注意：请确保所选字符已包含在上述 speller/alphabet 的值中
+  key_binder/+:
+    aux_code_trigger: "/"
+    search: "~" # 此为辅码引导键
+
+  is_in_user_dict: true
+
+  # （按需选择）清空 preedit_format 中的内容，输入时显示双拼编码
+  translator/preedit_format: []
+
+  # Lua 配置：农历
+  lunar: NL  # 癸卯年(兔)冬月廿一  二〇二四年冬月廿一
+
+  # 处理符合特定规则的输入码，如网址、反查
+  recognizer:
+    import_preset: default  # 从 default.yaml 继承通用的
+    patterns:  # 再增加方案专有的：
+      punct: "^V([0-9]|10|[A-Za-z]+)$"    # 响应 symbols_caps_v.yaml 的 symbols
+      unicode: "^U[a-f0-9]+"              # 响应 lua_translator@unicode 脚本将自动获取第 2 个字符作为触发前缀
+      number: "^D[0-9]+[.]?[0-9]*"        # 响应 lua_translator@number_translator 脚本将自动获取第 2 个字符作为触发前缀
+      gregorian_to_lunar: "^N[0-9]{1,8}"  # 响应 lua_translator@lunar 公历转农历，输入 N20240115 得到「二〇二四年腊月初五」，脚本将自动获取第 2 个字符作为触发前缀
