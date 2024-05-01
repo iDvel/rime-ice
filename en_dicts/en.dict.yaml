@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-04-19"
+version: "2024-05-02"
 sort: by_weight
 ...
 # +_+
@@ -10778,10 +10778,10 @@ laughs	laughs
 laughter	laughter
 launch	launch
 # launch pad	launchpad
-Launchpad	Launchpad
 launched	launched
 launches	launches
 launching	launching
+Launchpad	Launchpad
 laundering	laundering
 laundry	laundry
 Laura	Laura
