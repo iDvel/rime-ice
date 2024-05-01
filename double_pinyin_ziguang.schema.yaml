@@ -169,7 +169,7 @@ translator:
     - xform/([jqxy])n/$1ue/         # 提前轉換雙拼碼 n 和 g，因爲轉換後的拼音裏就快要出現這兩個字母了，那時將難以分辨出雙拼碼
     - xform/([nl])n/$1ve/
     - xform/([dtgkhzcsuai])n/$1ui/
-    - xform/([nljqx])g/$1iang/
+    - xform/([nljqxb])g/$1iang/
     - xform/([gkhuai])g/$1uang/
     - xform/(\w)w/$1en/
     - xform/(\w)r/$1an/
