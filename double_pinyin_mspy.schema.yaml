@@ -182,7 +182,7 @@ translator:
     - xform/(\w)p/$1un/
     - xform/([jqx])s/$1iong/
     - xform/(\w)s/$1ong/
-    - xform/([jqxnl])d/$1iang/
+    - xform/([jqxnlb])d/$1iang/
     - xform/(\w)d/$1uang/
     - xform/(\w)f/$1en/
     - xform/(\w)h/$1ang/
