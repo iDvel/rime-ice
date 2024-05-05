@@ -12,7 +12,8 @@ patch:
   # 自定义触发键，注意：请确保所选字符已包含在上述 speller/alphabet 的值中
   key_binder/+:
     aux_code_trigger: "/"
-    search: "~" # 此为辅码引导键
+    show_aux_notice: false  # 设置是否显示辅助码字母提示
+    search: "~"             # 此为辅码引导键
     bindings/+:
      - {when: has_menu, accept: 0, send: Control+Delete}
 
