@@ -522,6 +522,7 @@ Buddha	Buddha
 Buddhism	Buddhism
 Buddhist	Buddhist
 # Buena	Buena
+Buenos Aires	BuenosAires
 Buick	Buick
 Bulgaria	Bulgaria
 Bulgarian	Bulgarian
@@ -559,6 +560,9 @@ CIA	CIA
 # CID	CID
 CIO	CIO
 CLI	CLI
+CMS	CMS
+CN	CN
+CNET	CNET
 CNN	CNN
 COOLPIX	COOLPIX
 CORBA	CORBA
@@ -697,6 +701,7 @@ Chinatown	Chinatown
 Chinese	Chinese
 Ching	Ching
 Chippewa	Chippewa
+Chris	Chris
 Christ	Christ
 Christchurch	Christchurch
 Christensen	Christensen
@@ -726,6 +731,7 @@ Clark	Clark
 Clarke	Clarke
 Clarkson	Clarkson
 Claude	Claude
+Claudia	Claudia
 Claus	Claus
 Clayton	Clayton
 Clearwater	Clearwater
@@ -820,6 +826,7 @@ Cynthia	Cynthia
 Cyprus	Cyprus
 Cyrus	Cyrus
 Czech	Czech
+Czechs	Czechs
 DEWALT	DEWALT
 DHCP	DHCP
 DHTML	DHTML
@@ -829,6 +836,7 @@ DNA	DNA
 DNS	DNS
 DOS	DOS
 DVD	DVD
+DVDs	DVDs
 Daewoo	Daewoo
 Dagon	Dagon
 Dakota	Dakota
@@ -931,6 +939,7 @@ Doric	Doric
 Doris	Doris
 Dorothy	Dorothy
 Dorset	Dorset
+Doug	Doug
 Douglas	Douglas
 Dover	Dover
 Downing	Downing
@@ -958,6 +967,7 @@ Durham	Durham
 Dustin	Dustin
 Dutch	Dutch
 Dutchman	Dutchman
+Duval	Duval
 Dwight	Dwight
 Dylan	Dylan
 Dyson	Dyson
@@ -1069,6 +1079,7 @@ Excalibur	Excalibur
 Exeter	Exeter
 Exif	Exif
 Expasy	Expasy
+Ezek.	Ezek.
 Ezekiel	Ezekiel
 Ezine	Ezine
 Ezra	Ezra
@@ -1178,6 +1189,7 @@ Fuji	Fuji
 FujiFilm	FujiFilm
 Fullerton	Fullerton
 Fulton	Fulton
+GBP	GBP
 GCC	GCC
 # GCSE	GCSE
 # GDB	GDB
@@ -1405,7 +1417,6 @@ Hewitt	Hewitt
 Hi-Fi	Hi-Fi
 Hicks	Hicks
 Higgins	Higgins
-Highlands	Highlands
 Hilary	Hilary
 Hilfiger	Hilfiger
 Hillary	Hillary
@@ -1676,6 +1687,8 @@ Kate	Kate
 Katherine	Katherine
 Kathleen	Kathleen
 Kathryn	Kathryn
+Kathy	Kathy
+Katie	Katie
 Katrina	Katrina
 Katy	Katy
 Katz	Katz
@@ -1971,10 +1984,12 @@ Margaret	Margaret
 Margot	Margot
 Marian	Marian
 Mariana	Mariana
+Marianne	Marianne
 Marie	Marie
 Marietta	Marietta
 Marilyn	Marilyn
 Marin	Marin
+Marines	Marines
 Marino	Marino
 Mario	Mario
 Marion	Marion
@@ -1988,6 +2003,7 @@ Mars	Mars
 Marshall	Marshall
 Martha	Martha
 Martian	Martian
+Martians	Martians
 Martin	Martin
 Martinez	Martinez
 Martinique	Martinique
@@ -2058,6 +2074,7 @@ Metacritic	Metacritic
 Methodist	Methodist
 Meuse	Meuse
 Mexican	Mexican
+Mexicans	Mexicans
 Mexico	Mexico
 Miami	Miami
 Micah	Micah
@@ -2163,6 +2180,7 @@ NBC	NBC
 NCAA	NCAA
 NETGEAR	NETGEAR
 NGO	NGO
+NVIDIA	NVIDIA
 NYC	NYC
 NYSE	NYSE
 Nagasaki	Nagasaki
@@ -2171,6 +2189,7 @@ Namibia	Namibia
 Namur	Namur
 Naomi	Naomi
 Naples	Naples
+Napoleon	Napoleon
 Napster	Napster
 Narnia	Narnia
 Nasdaq	Nasdaq
@@ -2201,6 +2220,7 @@ Neptune	Neptune
 NetBSD	NetBSD
 Netherlands	Netherlands
 Nevada	Nevada
+Neville	Neville
 Nevis	Nevis
 New Zealand	NewZealand
 New Zealander	NewZealander
@@ -2220,6 +2240,7 @@ Nichols	Nichols
 Nicholson	Nicholson
 Nickelback	Nickelback
 Nicolas	Nicolas
+Nicole	Nicole
 Nielsen	Nielsen
 Nigel	Nigel
 Nigeria	Nigeria
@@ -2227,8 +2248,10 @@ Nigerian	Nigerian
 Nightwish	Nightwish
 Nike	Nike
 Nikki	Nikki
+Nikon	Nikon
 Nile	Nile
 Nina	Nina
+Nintendo	Nintendo
 Niue	Niue
 Nixon	Nixon
 Noah	Noah
@@ -2239,9 +2262,12 @@ Nordic	Nordic
 Norfolk	Norfolk
 Norma	Norma
 Norman	Norman
+Normans	Normans
 Norris	Norris
 Norse	Norse
 Northampton	Northampton
+Northamptonshire	Northamptonshire
+Northumberland	Northumberland
 Norton	Norton
 Norway	Norway
 Norwegian	Norwegian
@@ -2309,6 +2335,7 @@ Osaka	Osaka
 Osama	Osama
 Osborne	Osborne
 Osiris	Osiris
+# Oslo	Oslo
 Ostend	Ostend
 Ottawa	Ottawa
 Outkast	Outkast
@@ -2318,6 +2345,7 @@ Oxfordshire	Oxfordshire
 Oxley	Oxley
 PAT	PAT
 PC	PC
+PCI	PCI
 PCMCIA	PCMCIA
 # PCs	PCs
 # PDA	PDA
@@ -2329,6 +2357,7 @@ PNG	PNG
 POS	POS
 POSIX	POSIX
 PPT	PPT
+PSP	PSP
 PVC	PVC
 Pablo	Pablo
 Padua	Padua
@@ -2449,6 +2478,7 @@ Pluto	Pluto
 Plymouth	Plymouth
 Pocket PC	Pocket PC
 Poe	Poe
+Pokemon	Pokemon
 Poland	Poland
 Polaroid	Polaroid
 Pole	Pole
@@ -2636,6 +2666,7 @@ SDK	SDK
 SEO	SEO
 SEP	SEP
 SIG	SIG
+SIM	SIM
 SMS	SMS
 SMTP	SMTP
 SNMP	SNMP
@@ -2680,6 +2711,7 @@ Santana	Santana
 Santiago	Santiago
 Santos	Santos
 Sappho	Sappho
+Sara	Sara
 Saracen	Saracen
 Sarah	Sarah
 Sarasota	Sarasota
@@ -2830,7 +2862,9 @@ Spokane	Spokane
 SpongeBob	SpongeBob
 Springfield	Springfield
 Stacey	Stacey
+Stacy	Stacy
 Stafford	Stafford
+Staffordshire	Staffordshire
 Staind	Staind
 Stamford	Stamford
 Stan	Stan
@@ -3049,6 +3083,7 @@ UFO	UFO
 UI	UI
 UID	UID
 UK	UK
+UNESCO	UNESCO
 UNICEF	UNICEF
 UPS	UPS
 URI	URI
@@ -3117,6 +3152,7 @@ Viagra	Viagra
 Vicenza	Vicenza
 Vicki	Vicki
 Vicodin	Vicodin
+Victoria	Victoria
 Victorian	Victorian
 Vida	Vida
 Vienna	Vienna
@@ -3147,8 +3183,8 @@ Vulcan	Vulcan
 WAV	WAV
 WAVES	WAVES
 WLAN	WLAN
+WMO	WMO
 WMV	WMV
-WOW	WOW
 WTF	WTF
 WTO	WTO
 WWII	WWII
@@ -3204,6 +3240,7 @@ Westminster	Westminster
 Weston	Weston
 Westport	Westport
 Westwood	Westwood
+Weymouth	Weymouth
 Whales	Whales
 Wheaton	Wheaton
 White	White
@@ -3251,6 +3288,7 @@ Woodward	Woodward
 Worcester	Worcester
 Word	Word
 WordPress	WordPress
+WorldCat	WorldCat
 Worms	Worms
 Wyatt	Wyatt
 Wyndham	Wyndham
@@ -3265,9 +3303,11 @@ Xenical	Xenical
 Xenophon	Xenophon
 Xeon	Xeon
 Xerox	Xerox
+Xerxes	Xerxes
 YMCA	YMCA
 Yakima	Yakima
 Yale	Yale
+Yamaha	Yamaha
 Yankee	Yankee
 Yankees	Yankees
 Yates	Yates
@@ -3289,6 +3329,7 @@ Zanzibar	Zanzibar
 Zealand	Zealand
 Zechariah	Zechariah
 Zeeland	Zeeland
+Zeke	Zeke
 Zelda	Zelda
 Zen	Zen
 Zimbabwe	Zimbabwe

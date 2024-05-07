@@ -1329,7 +1329,6 @@ Software Freedom Conservancy	SFC
 Software Freedom Conservancy	SoftwareFreedomConservancy
 PopCap	PopCap
 PopCap Games	PopCapGames
-Cyberpunk	Cyberpunk
 Kotlin	Kotlin
 PhpStorm	PhpStorm
 Datalore	Datalore
@@ -1527,7 +1526,6 @@ United Kingdom	UK
 United Kingdom	UnitedKingdom
 DirectX	DirectX
 Kinect	Kinect
-Azure	Azure
 Cloudflare	Cloudflare
 Buddhism	Buddhism
 Catholic	Catholic
@@ -2117,3 +2115,8 @@ ActiveX	ActiveX
 arXiv	arXiv
 # pgSQL	pgSQL
 phpBB	phpBB
+Gzip	Gzip
+ThinkPad	ThinkPad
+www	www
+Zope	Zope
+WebLogic	WebLogic
