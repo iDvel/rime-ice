@@ -166,7 +166,7 @@ function f.init( env )
     -- 配置：辅码引导符号，默认为反引号 `
     local search_key = config:get_string( 'key_binder/search' ) or config:get_string( ns .. '/key' ) or '`'
     env.search_key_alt = alt_lua_punc( search_key )
-    local code_pattern = config:get_string( ns .. '/code_pattern' ) or '[a-z]'
+    local code_pattern = config:get_string( ns .. '/code_pattern' ) or '[a-z;]'
 
     -- 配置：seg tag
     local tag = config:get_list( ns .. '/tags' )
