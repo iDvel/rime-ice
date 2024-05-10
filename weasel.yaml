@@ -264,6 +264,7 @@ preset_color_schemes:
 
   google:
     name: 谷歌／Google
+    author: skoj <skoj@qq.com>
     candidate_format: "%c %@ "               # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
     font_point: 16                           # 候选文字大小
     label_font_point: 15                     # 候选编号大小
