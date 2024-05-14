@@ -40,7 +40,9 @@ local function update_dict_entry( s, code, mem, proj )
     local custom_code = {}
     local loop = 1
     for i = 1, #code, 2 do
-        local code_convert = proj:apply( code:sub( i, i + 1 ), true )
+        local code_convert = code:sub( i, i + 1 )
+        local p = proj:apply( code_convert, true )
+        if p and #p > 0 then code_convert = p end
         if code_convert == 'dian' and pos[loop] then
             -- Ignored
         else
@@ -87,19 +89,21 @@ local function reverse_lookup( code_projection, db_table, wildcard, text, s, glo
     -- log.error(s)
     for _, db in ipairs( db_table ) do
         local code = db:lookup( text )
-        for part in code:gmatch( '%S+' ) do
-            if global_match then
-                if part:find( s ) then return true end
-            else
-                if part:find( ' ' .. s ) or part:find( '^' .. s ) then return true end
+        if code and #code > 0 then
+            for part in code:gmatch( '%S+' ) do
+                if global_match then
+                    if part:find( s ) then return true end
+                else
+                    if part:find( '^' .. s ) then return true end -- an error pointing at this line. do not know why. so I'll keep an eye.
+                end
             end
         end
     end
     return false
 end
 
--- 处理长词优先
-local function handle_long_cand(if_single_char_first, cand, long_word_cands)
+-- 处理单字优先
+local function handle_long_cand( if_single_char_first, cand, long_word_cands )
     if if_single_char_first and utf8.len( cand.text ) > 1 then
         table.insert( long_word_cands, cand )
     else
@@ -116,7 +120,7 @@ function f.init( env )
     env.if_reverse_lookup = false
 
     -- 配置：仅限 script_translator 引擎
-    local engine = config:get_list('engine/translators')
+    local engine = config:get_list( 'engine/translators' )
     local engine_table = {}
     for i = 0, engine.size - 1 do engine_table[engine:get_value_at( i ).value] = true end
     if not engine_table['script_translator'] then
@@ -166,7 +170,7 @@ function f.init( env )
     -- 配置：辅码引导符号，默认为反引号 `
     local search_key = config:get_string( 'key_binder/search' ) or config:get_string( ns .. '/key' ) or '`'
     env.search_key_alt = alt_lua_punc( search_key )
-    local code_pattern = config:get_string( ns .. '/code_pattern' ) or '[a-z;]'
+    local code_pattern = config:get_string( ns .. '/code_pattern' ) or '[a-z]'
 
     -- 配置：seg tag
     local tag = config:get_list( ns .. '/tags' )
@@ -256,23 +260,19 @@ function f.func( input, env )
         end
 
         if fuma_2 and #fuma_2 > 0 and env.if_reverse_lookup and not env.if_schema_lookup then
-            if
-                -- 第一个辅码匹配第一个字，第二个辅码正则匹配第一个字**或者**匹配第二个字
-                reverse_lookup( env.code_projection, env.db_table, env.wildcard, text, fuma ) and
+            if -- 第一个辅码匹配第一个字，第二个辅码正则匹配第一个字**或者**匹配第二个字
+            reverse_lookup( env.code_projection, env.db_table, env.wildcard, text, fuma ) and
                 ((text_2 and reverse_lookup( env.code_projection, env.db_table, env.wildcard, text_2, fuma_2 )) or
-                reverse_lookup( env.code_projection, env.db_table, env.wildcard, text, fuma_2, true ))
-            then
-                handle_long_cand(if_single_char_first, cand, long_word_cands)
+                    reverse_lookup( env.code_projection, env.db_table, env.wildcard, text, fuma_2, true )) then
+                handle_long_cand( if_single_char_first, cand, long_word_cands )
             else
                 table.insert( other_cand, cand )
             end
         else
-            if
-                -- 用辅码匹配第一个字
-                (env.if_reverse_lookup and reverse_lookup( env.code_projection, env.db_table, env.wildcard, text, fuma )) or
-                (env.if_schema_lookup and dict_match( dict_table, text ))
-            then
-                handle_long_cand(if_single_char_first, cand, long_word_cands)
+            if -- 用辅码匹配第一个字
+            (env.if_reverse_lookup and reverse_lookup( env.code_projection, env.db_table, env.wildcard, text, fuma )) or
+                (env.if_schema_lookup and dict_match( dict_table, text )) then
+                handle_long_cand( if_single_char_first, cand, long_word_cands )
             else
                 table.insert( other_cand, cand )
             end
@@ -294,7 +294,8 @@ function f.fini( env )
     if env.if_reverse_lookup or env.if_schema_lookup then
         env.notifier:disconnect()
         env.commit_notifier:disconnect()
-        if env.mem or env.search then
+        if env.mem or env.search or env.db_table then
+            env.db_table = nil
             env.mem = nil
             env.search = nil
             collectgarbage( 'collect' )
