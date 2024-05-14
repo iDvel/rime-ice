@@ -1,7 +1,7 @@
 # Trime custom style settings
 # encoding: utf-8
 
-config_version: "2.0"
+config_version: "3.1"
 name: Fira
 author: ChiesiMario # Modify: HalcyonAzure
 
@@ -20,7 +20,7 @@ round_corner:
   1: &round1 20 # 按鍵圓角半徑
   2: &round2 15 # 候選窗口圓角
   3: &round3 15 # 回車鍵圓角
-  
+
 # 界面風格、功能開關
 style:
   auto_caps: false # 自動句首大寫:true|false|ascii
@@ -161,7 +161,7 @@ preset_color_schemes:
     2: &Fira_dark_color2 0xff393c3f # 主要按鍵背景色
     3: &Fira_dark_color3 0xff000000 # 主要背景色
     4: &Fira_dark_color4 0xff676767 # 功能鍵背景色
-    6: &Fira_dark_color5 0xff28d66a # 強調背景色
+    6: &Fira_dark_color5 0xff2472e1 # 強調背景色
     7: &Fira_dark_color6 0xff000000 # 強調文本色
     8: &Fira_dark_color7 0xffB6B6B6 # 次要文本色
     # ----------------------------------------
@@ -178,10 +178,10 @@ preset_color_schemes:
     hilited_candidate_text_color: *Fira_dark_color5 # 高亮候選文本
     hilited_comment_text_color: *Fira_dark_color7 # 高亮提示
     hilited_key_back_color: *Fira_dark_color5 # 高亮按鍵背景
-    hilited_key_symbol_color: *Fira_dark_color2 # 高亮按鍵符號
-    hilited_key_text_color: *Fira_dark_color1 # 高亮按鍵文本
-    hilited_off_key_back_color: *Fira_dark_color2 # 高亮按鍵關閉狀態背景
-    hilited_off_key_text_color: *Fira_dark_color1 # 高亮按鍵關閉狀態文本
+    hilited_key_symbol_color: *Fira_dark_color6 # 高亮按鍵符號
+    hilited_key_text_color: *Fira_dark_color6 # 高亮按鍵文本
+    hilited_off_key_back_color: *Fira_dark_color5 # 高亮按鍵關閉狀態背景
+    hilited_off_key_text_color: *Fira_dark_color6 # 高亮按鍵關閉狀態文本
     hilited_text_color: *Fira_dark_color1 # 高亮編碼
     key_back_color: *Fira_dark_color2 # 按鍵背景
     key_symbol_color: *Fira_dark_color7 # 按鍵符號
@@ -216,7 +216,7 @@ preset_color_schemes:
   # Fira Light 配色方案
   fira_light:
     # 顏色定義
-    1: &Fira_light_color1 0xff464646 # 主要文本色
+    1: &Fira_light_color1 0xff656565 # 主要文本色
     2: &Fira_light_color2 0xffffffff # 主要按鍵背景色
     3: &Fira_light_color3 0xffe7e9eb # 主要背景色
     4: &Fira_light_color4 0xffcacdd3 # 功能鍵背景色
@@ -237,10 +237,10 @@ preset_color_schemes:
     hilited_candidate_text_color: *Fira_light_color5 # 高亮候選文本
     hilited_comment_text_color: *Fira_light_color7 # 高亮提示
     hilited_key_back_color: *Fira_light_color5 # 高亮按鍵背景
-    hilited_key_symbol_color: *Fira_light_color2 # 高亮按鍵符號
-    hilited_key_text_color: *Fira_light_color1 # 高亮按鍵文本
-    hilited_off_key_back_color: *Fira_light_color2 # 高亮按鍵關閉狀態背景
-    hilited_off_key_text_color: *Fira_light_color1 # 高亮按鍵關閉狀態文本
+    hilited_key_symbol_color: *Fira_light_color6 # 高亮按鍵符號
+    hilited_key_text_color: *Fira_light_color6 # 高亮按鍵文本
+    hilited_off_key_back_color: *Fira_light_color5 # 高亮按鍵關閉狀態背景
+    hilited_off_key_text_color: *Fira_light_color6 # 高亮按鍵關閉狀態文本
     hilited_text_color: *Fira_light_color1 # 高亮編碼
     key_back_color: *Fira_light_color2 # 按鍵背景
     key_symbol_color: *Fira_light_color7 # 按鍵符號
@@ -272,6 +272,242 @@ preset_color_schemes:
     bh4: *Fira_light_color2 # 第四行背景色
     th4: *Fira_light_color1 # 第四行文字顏色
 
+  # Fira Dimmed 配色方案
+  fira_light_dimmed:
+    # 顏色定義
+    1: &Fira_light_dimmed_color1 0xff828282 # 主要文本色
+    2: &Fira_light_dimmed_color2 0xffF6F7F7 # 主要按鍵背景色
+    3: &Fira_light_dimmed_color3 0xffffffff # 主要背景色
+    4: &Fira_light_dimmed_color4 0xffECEEEF # 功能鍵背景色
+    6: &Fira_light_dimmed_color5 0xff2472e1 # 強調背景色
+    7: &Fira_light_dimmed_color6 0xffF2F2F2 # 強調文本色
+    8: &Fira_light_dimmed_color7 0xff636363 # 次要文本色
+    # ----------------------------------------
+    name: "Fira Dimmed" # 方案名稱
+    author: ChiesiMario # 作者信息
+    dark_scheme: fira_dark_dimmed # 視當前為淺色模式的配色。当系统切换为深色模式后，切換至該主題
+    back_color: *Fira_light_dimmed_color3 # 候選區背景狀態欄
+    border_color: *Fira_light_dimmed_color1 # 邊框顏色
+    candidate_separator_color: 0xffFF0000 # 候選分割背景
+    candidate_text_color: *Fira_light_dimmed_color1 # 候選文本
+    comment_text_color: *Fira_light_dimmed_color7 # 提示
+    hilited_back_color: *Fira_light_dimmed_color3 # 高亮編碼背景
+    hilited_candidate_back_color: *Fira_light_dimmed_color3 # 高亮候選背景
+    hilited_candidate_text_color: *Fira_light_dimmed_color5 # 高亮候選文本
+    hilited_comment_text_color: *Fira_light_dimmed_color7 # 高亮提示
+    hilited_key_back_color: *Fira_light_dimmed_color5 # 高亮按鍵背景
+    hilited_key_symbol_color: *Fira_light_dimmed_color6 # 高亮按鍵符號
+    hilited_key_text_color: *Fira_light_dimmed_color6 # 高亮按鍵文本
+    hilited_off_key_back_color: *Fira_light_dimmed_color5 # 高亮按鍵關閉狀態背景
+    hilited_off_key_text_color: *Fira_light_dimmed_color6 # 高亮按鍵關閉狀態文本
+    hilited_text_color: *Fira_light_dimmed_color1 # 高亮編碼
+    key_back_color: *Fira_light_dimmed_color2 # 按鍵背景
+    key_symbol_color: *Fira_light_dimmed_color7 # 按鍵符號
+    key_text_color: *Fira_light_dimmed_color1 # 按鍵文本
+    keyboard_back_color: *Fira_light_dimmed_color3 # 鍵盤背景
+    label_color: *Fira_light_dimmed_color5 # 標籤
+    off_key_back_color: *Fira_light_dimmed_color4 # 按鍵關閉狀態背景
+    off_key_text_color: *Fira_light_dimmed_color7 # 按鍵關閉狀態文本
+    preview_back_color: *Fira_light_dimmed_color4 # 按鍵提示背景
+    preview_text_color: *Fira_light_dimmed_color5 # 按鍵提示文本
+    text_color: *Fira_light_dimmed_color5 # 編碼
+    text_back_color: *Fira_light_dimmed_color3 # 編碼區背景
+    bkg: *Fira_light_dimmed_color2 # 空格鍵背景色
+    tkg: *Fira_light_dimmed_color1 # 空格鍵文字顏色
+    benter: *Fira_light_dimmed_color5 # 回車鍵背景色
+    tenter: *Fira_light_dimmed_color6 # 回車鍵文字顏色
+    bgn: *Fira_light_dimmed_color4 # 功能鍵背景色
+    tgn: *Fira_light_dimmed_color1 # 功能鍵文字顏色
+    bbs: *Fira_light_dimmed_color4 # 退格鍵背景色
+    tbs: *Fira_light_dimmed_color1 # 退格鍵文字顏色
+    baoe: *Fira_light_dimmed_color2 # aoeiu 背景色
+    taoe: *Fira_light_dimmed_color5 # aoeiu 文字顏色
+    bh1: *Fira_light_dimmed_color2 # 第一行背景色
+    th1: *Fira_light_dimmed_color1 # 第一行文字顏色
+    bh2: *Fira_light_dimmed_color2 # 第二行背景色
+    th2: *Fira_light_dimmed_color1 # 第二行文字顏色
+    bh3: *Fira_light_dimmed_color2 # 第三行背景色
+    th3: *Fira_light_dimmed_color1 # 第三行文字顏色
+    bh4: *Fira_light_dimmed_color2 # 第四行背景色
+    th4: *Fira_light_dimmed_color1 # 第四行文字顏色
+
+  # Fira Dimmed (Dark)配色方案
+  fira_dark_dimmed:
+    # 顏色定義
+    1: &Fira_dark_dimmed_color1 0xffc5d1de # 主要文本色
+    2: &Fira_dark_dimmed_color2 0xff2b3038 # 主要按鍵背景色
+    3: &Fira_dark_dimmed_color3 0xff22272e # 主要背景色
+    4: &Fira_dark_dimmed_color4 0xff373e47 # 功能鍵背景色
+    6: &Fira_dark_dimmed_color5 0xff2472e1 # 強調背景色
+    7: &Fira_dark_dimmed_color6 0xffc5d1de # 強調文本色
+    8: &Fira_dark_dimmed_color7 0xff717d7e # 次要文本色
+    # ----------------------------------------
+    name: "Fira Dimmed (Dark)" # 方案名稱
+    author: ChiesiMario # 作者信息
+    light_scheme: fira_light_dimmed # 視當前為深色模式的配色。当系统切换为淺色模式后，切換至該主題
+    back_color: *Fira_dark_dimmed_color3 # 候選區背景狀態欄
+    border_color: *Fira_dark_dimmed_color1 # 邊框顏色
+    candidate_separator_color: 0xffFF0000 # 候選分割背景
+    candidate_text_color: *Fira_dark_dimmed_color1 # 候選文本
+    comment_text_color: *Fira_dark_dimmed_color7 # 提示
+    hilited_back_color: *Fira_dark_dimmed_color3 # 高亮編碼背景
+    hilited_candidate_back_color: *Fira_dark_dimmed_color3 # 高亮候選背景
+    hilited_candidate_text_color: *Fira_dark_dimmed_color5 # 高亮候選文本
+    hilited_comment_text_color: *Fira_dark_dimmed_color7 # 高亮提示
+    hilited_key_back_color: *Fira_dark_dimmed_color5 # 高亮按鍵背景
+    hilited_key_symbol_color: *Fira_dark_dimmed_color6 # 高亮按鍵符號
+    hilited_key_text_color: *Fira_dark_dimmed_color6 # 高亮按鍵文本
+    hilited_off_key_back_color: *Fira_dark_dimmed_color5 # 高亮按鍵關閉狀態背景
+    hilited_off_key_text_color: *Fira_dark_dimmed_color6 # 高亮按鍵關閉狀態文本
+    hilited_text_color: *Fira_dark_dimmed_color1 # 高亮編碼
+    key_back_color: *Fira_dark_dimmed_color2 # 按鍵背景
+    key_symbol_color: *Fira_dark_dimmed_color7 # 按鍵符號
+    key_text_color: *Fira_dark_dimmed_color1 # 按鍵文本
+    keyboard_back_color: *Fira_dark_dimmed_color3 # 鍵盤背景
+    label_color: *Fira_dark_dimmed_color5 # 標籤
+    off_key_back_color: *Fira_dark_dimmed_color4 # 按鍵關閉狀態背景
+    off_key_text_color: *Fira_dark_dimmed_color7 # 按鍵關閉狀態文本
+    preview_back_color: *Fira_dark_dimmed_color4 # 按鍵提示背景
+    preview_text_color: *Fira_dark_dimmed_color5 # 按鍵提示文本
+    text_color: *Fira_dark_dimmed_color5 # 編碼
+    text_back_color: *Fira_dark_dimmed_color3 # 編碼區背景
+    bkg: *Fira_dark_dimmed_color2 # 空格鍵背景色
+    tkg: *Fira_dark_dimmed_color1 # 空格鍵文字顏色
+    benter: *Fira_dark_dimmed_color5 # 回車鍵背景色
+    tenter: *Fira_dark_dimmed_color6 # 回車鍵文字顏色
+    bgn: *Fira_dark_dimmed_color4 # 功能鍵背景色
+    tgn: *Fira_dark_dimmed_color1 # 功能鍵文字顏色
+    bbs: *Fira_dark_dimmed_color4 # 退格鍵背景色
+    tbs: *Fira_dark_dimmed_color1 # 退格鍵文字顏色
+    baoe: *Fira_dark_dimmed_color2 # aoeiu 背景色
+    taoe: *Fira_dark_dimmed_color5 # aoeiu 文字顏色
+    bh1: *Fira_dark_dimmed_color2 # 第一行背景色
+    th1: *Fira_dark_dimmed_color1 # 第一行文字顏色
+    bh2: *Fira_dark_dimmed_color2 # 第二行背景色
+    th2: *Fira_dark_dimmed_color1 # 第二行文字顏色
+    bh3: *Fira_dark_dimmed_color2 # 第三行背景色
+    th3: *Fira_dark_dimmed_color1 # 第三行文字顏色
+    bh4: *Fira_dark_dimmed_color2 # 第四行背景色
+    th4: *Fira_dark_dimmed_color1 # 第四行文字顏色
+
+  # Fira Pink 配色方案
+  fira_light_pink:
+    # 顏色定義
+    1: &Fira_light_dimmed_color1 0xff505050 # 主要文本色
+    2: &Fira_light_dimmed_color2 0xffffffff # 主要按鍵背景色
+    3: &Fira_light_dimmed_color3 0xfffbeded # 主要背景色
+    4: &Fira_light_dimmed_color4 0xfffad8da # 功能鍵背景色
+    6: &Fira_light_dimmed_color5 0xffFE8B90 # 強調背景色
+    7: &Fira_light_dimmed_color6 0xff505050 # 強調文本色
+    8: &Fira_light_dimmed_color7 0xff959595 # 次要文本色
+    # ----------------------------------------
+    name: "Fira Pink" # 方案名稱
+    author: ChiesiMario # 作者信息
+    dark_scheme: fira_dark_pink # 視當前為淺色模式的配色。当系统切换为深色模式后，切換至該主題
+    back_color: *Fira_light_dimmed_color3 # 候選區背景狀態欄
+    border_color: *Fira_light_dimmed_color1 # 邊框顏色
+    candidate_separator_color: 0xffFF0000 # 候選分割背景
+    candidate_text_color: *Fira_light_dimmed_color1 # 候選文本
+    comment_text_color: *Fira_light_dimmed_color7 # 提示
+    hilited_back_color: *Fira_light_dimmed_color3 # 高亮編碼背景
+    hilited_candidate_back_color: *Fira_light_dimmed_color3 # 高亮候選背景
+    hilited_candidate_text_color: *Fira_light_dimmed_color5 # 高亮候選文本
+    hilited_comment_text_color: *Fira_light_dimmed_color7 # 高亮提示
+    hilited_key_back_color: *Fira_light_dimmed_color5 # 高亮按鍵背景
+    hilited_key_symbol_color: *Fira_light_dimmed_color6 # 高亮按鍵符號
+    hilited_key_text_color: *Fira_light_dimmed_color6 # 高亮按鍵文本
+    hilited_off_key_back_color: *Fira_light_dimmed_color5 # 高亮按鍵關閉狀態背景
+    hilited_off_key_text_color: *Fira_light_dimmed_color6 # 高亮按鍵關閉狀態文本
+    hilited_text_color: *Fira_light_dimmed_color1 # 高亮編碼
+    key_back_color: *Fira_light_dimmed_color2 # 按鍵背景
+    key_symbol_color: *Fira_light_dimmed_color7 # 按鍵符號
+    key_text_color: *Fira_light_dimmed_color1 # 按鍵文本
+    keyboard_back_color: *Fira_light_dimmed_color3 # 鍵盤背景
+    label_color: *Fira_light_dimmed_color5 # 標籤
+    off_key_back_color: *Fira_light_dimmed_color4 # 按鍵關閉狀態背景
+    off_key_text_color: *Fira_light_dimmed_color7 # 按鍵關閉狀態文本
+    preview_back_color: *Fira_light_dimmed_color4 # 按鍵提示背景
+    preview_text_color: *Fira_light_dimmed_color5 # 按鍵提示文本
+    text_color: *Fira_light_dimmed_color5 # 編碼
+    text_back_color: *Fira_light_dimmed_color3 # 編碼區背景
+    bkg: *Fira_light_dimmed_color2 # 空格鍵背景色
+    tkg: *Fira_light_dimmed_color1 # 空格鍵文字顏色
+    benter: *Fira_light_dimmed_color5 # 回車鍵背景色
+    tenter: *Fira_light_dimmed_color6 # 回車鍵文字顏色
+    bgn: *Fira_light_dimmed_color4 # 功能鍵背景色
+    tgn: *Fira_light_dimmed_color1 # 功能鍵文字顏色
+    bbs: *Fira_light_dimmed_color4 # 退格鍵背景色
+    tbs: *Fira_light_dimmed_color1 # 退格鍵文字顏色
+    baoe: *Fira_light_dimmed_color2 # aoeiu 背景色
+    taoe: *Fira_light_dimmed_color5 # aoeiu 文字顏色
+    bh1: *Fira_light_dimmed_color2 # 第一行背景色
+    th1: *Fira_light_dimmed_color1 # 第一行文字顏色
+    bh2: *Fira_light_dimmed_color2 # 第二行背景色
+    th2: *Fira_light_dimmed_color1 # 第二行文字顏色
+    bh3: *Fira_light_dimmed_color2 # 第三行背景色
+    th3: *Fira_light_dimmed_color1 # 第三行文字顏色
+    bh4: *Fira_light_dimmed_color2 # 第四行背景色
+    th4: *Fira_light_dimmed_color1 # 第四行文字顏色
+
+  # Fira Pink (Dark)配色方案
+  fira_dark_pink:
+    # 顏色定義
+    1: &Fira_dark_dimmed_color1 0xffFE8B90 # 主要文本色
+    2: &Fira_dark_dimmed_color2 0xff383838 # 主要按鍵背景色
+    3: &Fira_dark_dimmed_color3 0xff000000 # 主要背景色
+    4: &Fira_dark_dimmed_color4 0xff5D5D5D # 功能鍵背景色
+    6: &Fira_dark_dimmed_color5 0xffFA5F66 # 強調背景色
+    7: &Fira_dark_dimmed_color6 0xff1B1B1B # 強調文本色
+    8: &Fira_dark_dimmed_color7 0xff888888 # 次要文本色
+    # ----------------------------------------
+    name: "Fira Pink (Dark)" # 方案名稱
+    author: ChiesiMario # 作者信息
+    light_scheme: fira_light_pink # 視當前為深色模式的配色。当系统切换为淺色模式后，切換至該主題
+    back_color: *Fira_dark_dimmed_color3 # 候選區背景狀態欄
+    border_color: *Fira_dark_dimmed_color1 # 邊框顏色
+    candidate_separator_color: 0xffFF0000 # 候選分割背景
+    candidate_text_color: *Fira_dark_dimmed_color1 # 候選文本
+    comment_text_color: *Fira_dark_dimmed_color7 # 提示
+    hilited_back_color: *Fira_dark_dimmed_color3 # 高亮編碼背景
+    hilited_candidate_back_color: *Fira_dark_dimmed_color3 # 高亮候選背景
+    hilited_candidate_text_color: *Fira_dark_dimmed_color5 # 高亮候選文本
+    hilited_comment_text_color: *Fira_dark_dimmed_color7 # 高亮提示
+    hilited_key_back_color: *Fira_dark_dimmed_color5 # 高亮按鍵背景
+    hilited_key_symbol_color: *Fira_dark_dimmed_color6 # 高亮按鍵符號
+    hilited_key_text_color: *Fira_dark_dimmed_color6 # 高亮按鍵文本
+    hilited_off_key_back_color: *Fira_dark_dimmed_color5 # 高亮按鍵關閉狀態背景
+    hilited_off_key_text_color: *Fira_dark_dimmed_color6 # 高亮按鍵關閉狀態文本
+    hilited_text_color: *Fira_dark_dimmed_color1 # 高亮編碼
+    key_back_color: *Fira_dark_dimmed_color2 # 按鍵背景
+    key_symbol_color: *Fira_dark_dimmed_color7 # 按鍵符號
+    key_text_color: *Fira_dark_dimmed_color1 # 按鍵文本
+    keyboard_back_color: *Fira_dark_dimmed_color3 # 鍵盤背景
+    label_color: *Fira_dark_dimmed_color5 # 標籤
+    off_key_back_color: *Fira_dark_dimmed_color4 # 按鍵關閉狀態背景
+    off_key_text_color: *Fira_dark_dimmed_color7 # 按鍵關閉狀態文本
+    preview_back_color: *Fira_dark_dimmed_color4 # 按鍵提示背景
+    preview_text_color: *Fira_dark_dimmed_color5 # 按鍵提示文本
+    text_color: *Fira_dark_dimmed_color5 # 編碼
+    text_back_color: *Fira_dark_dimmed_color3 # 編碼區背景
+    bkg: *Fira_dark_dimmed_color2 # 空格鍵背景色
+    tkg: *Fira_dark_dimmed_color1 # 空格鍵文字顏色
+    benter: *Fira_dark_dimmed_color5 # 回車鍵背景色
+    tenter: *Fira_dark_dimmed_color6 # 回車鍵文字顏色
+    bgn: *Fira_dark_dimmed_color4 # 功能鍵背景色
+    tgn: *Fira_dark_dimmed_color1 # 功能鍵文字顏色
+    bbs: *Fira_dark_dimmed_color4 # 退格鍵背景色
+    tbs: *Fira_dark_dimmed_color1 # 退格鍵文字顏色
+    baoe: *Fira_dark_dimmed_color2 # aoeiu 背景色
+    taoe: *Fira_dark_dimmed_color5 # aoeiu 文字顏色
+    bh1: *Fira_dark_dimmed_color2 # 第一行背景色
+    th1: *Fira_dark_dimmed_color1 # 第一行文字顏色
+    bh2: *Fira_dark_dimmed_color2 # 第二行背景色
+    th2: *Fira_dark_dimmed_color1 # 第二行文字顏色
+    bh3: *Fira_dark_dimmed_color2 # 第三行背景色
+    th3: *Fira_dark_dimmed_color1 # 第三行文字顏色
+    bh4: *Fira_dark_dimmed_color2 # 第四行背景色
+    th4: *Fira_dark_dimmed_color1 # 第四行文字顏色
+
 #--------配色結束----------------#
 
 liquid_keyboard:
@@ -292,7 +528,7 @@ liquid_keyboard:
     keys: EXIT
   clipboard:
     type: CLIPBOARD
-    name: 剪切板
+    name: 剪贴板
 
 # 鍵盤佈局
 preset_keyboards:
@@ -683,9 +919,21 @@ preset_keyboards:
     # height: 48
     ascii_mode: 1
     keys:
-      - { click: 1 }
-      - { click: 2 }
-      - { click: 3 }
+      - {
+          click: 1,
+          key_back_color: key_back_color,
+          key_text_color: key_text_color,
+        }
+      - {
+          click: 2,
+          key_back_color: key_back_color,
+          key_text_color: key_text_color,
+        }
+      - {
+          click: 3,
+          key_back_color: key_back_color,
+          key_text_color: key_text_color,
+        }
       - {
           click: "+",
           key_text_size: 20,
@@ -709,9 +957,21 @@ preset_keyboards:
           key_text_offset_y: 5,
         }
 
-      - { click: 4 }
-      - { click: 5 }
-      - { click: 6 }
+      - {
+          click: 4,
+          key_back_color: key_back_color,
+          key_text_color: key_text_color,
+        }
+      - {
+          click: 5,
+          key_back_color: key_back_color,
+          key_text_color: key_text_color,
+        }
+      - {
+          click: 6,
+          key_back_color: key_back_color,
+          key_text_color: key_text_color,
+        }
       - {
           click: "-",
           long_click: "{Percent}",
@@ -736,9 +996,21 @@ preset_keyboards:
           key_text_offset_y: 5,
         }
 
-      - { click: 7 }
-      - { click: 8 }
-      - { click: 9 }
+      - {
+          click: 7,
+          key_back_color: key_back_color,
+          key_text_color: key_text_color,
+        }
+      - {
+          click: 8,
+          key_back_color: key_back_color,
+          key_text_color: key_text_color,
+        }
+      - {
+          click: 9,
+          key_back_color: key_back_color,
+          key_text_color: key_text_color,
+        }
       - {
           click: "{Parentheses}",
           long_click: "@",
@@ -755,7 +1027,11 @@ preset_keyboards:
         }
 
       - { click: Keyboard_default, key_back_color: bgn, key_text_color: "tgn" }
-      - { click: 0 }
+      - {
+          click: 0,
+          key_back_color: key_back_color,
+          key_text_color: key_text_color,
+        }
       - {
           click: "{Period}",
           long_click: "{Comma}",
