@@ -6,8 +6,8 @@
 # Weasel 定制文档 <https://github.com/rime/weasel/wiki/Weasel-定制化>
 # Weasel 字体设定 <https://github.com/rime/weasel/wiki/字體設定>
 
-# 部分选项需要将 Weasel 更新至最新开发版才能生效
-config_version: "2024-04-16"
+# 部分选项需要将 Weasel 更新 16.0 及以上版本才能生效
+config_version: "2024-05-14"
 
 # [app_options]
 # 针对特定应用的设置
