@@ -115,6 +115,7 @@ function M.init(env)
         ["ju hui"] = { text = "钜惠", comment = "巨惠" },
         ["mo xie zuo"] = { text = "魔蝎座", comment = "摩羯(jié)座" },
         ["nuo da"] = { text = "诺大", comment = "偌(ruò)大" },
+        ["yin jiu zhi ke"] = { text = "饮鸩止渴", comment = "饮鸩(zhèn)止渴" },
     }
 end
 

@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2024-04-19"
+version: "2024-05-16"
 sort: by_weight
 ...
 ##### 容错词
@@ -246,6 +246,8 @@ sort: by_weight
 魔蝎座	mo xie zuo
 偌大	ruo da
 诺大	nuo da
+饮鸩止渴	yin zhen zhi ke
+饮鸩止渴	yin jiu zhi ke
 
 
 ##### 叠字
