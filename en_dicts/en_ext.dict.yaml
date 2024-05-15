@@ -16,7 +16,6 @@ sort: by_weight
 .DS_Store	.DS_Store
 README.md	README.md
 
-
 # 按键
 Fn	Fn
 cmd	cmd
@@ -2403,3 +2402,6 @@ FPGA	FPGA
 field-programmable gate array	FPGA
 Samsung	Samsung
 Samsung Galaxy	SamsungGalaxy
+VimL	VimL
+Vimscript	Vimscript
+Vimscripts	Vimscripts
