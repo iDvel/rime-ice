@@ -7,7 +7,7 @@ local M = {}
 function M.init(env)
     local config = env.engine.schema.config
     env.name_space = env.name_space:gsub('^*', '')
-    M.is_in_user_dict = config:get_bool(env.name_space) or nil
+    env.is_in_user_dict = config:get_bool(env.name_space) or nil
 end
 
 local is_user = {
@@ -17,7 +17,7 @@ local is_user = {
 
 function M.func(input)
     for cand in input:iter() do
-        if is_user[cand.type] == M.is_in_user_dict then
+        if is_user[cand.type] == env.is_in_user_dict then
             cand.comment = cand.comment .. '*'
         end
         yield(cand)
