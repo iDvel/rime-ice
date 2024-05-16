@@ -2,7 +2,15 @@
 
 除日常更新词库外的一些主要更新 🆕 及破坏性变更 ⚠️。
 
+## 2024-05-15
 
+- `select_character.lua`: 🆕 当候选字数为 1 时，快捷键使其上屏（为旧版行为）；
+- `search.lua`：
+    - 重写，使其在 librime 1.85 也能正常工作；
+    - 开启辅码方案的用户字典时（非默认行为，您也不应该这么做），不再造成用户词典锁定
+- `corrector.lua`：
+    - ⚠️ 使用 translator 中的 comment_format 标记拼音串，以适配 librime 1.11；
+    - 🆕 `translator/keep_comments: true`：可以保留拼音注释
 
 ## 2024-02-09 ♻️
 
