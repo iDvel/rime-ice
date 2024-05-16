@@ -13,6 +13,7 @@ local M = {}
 
 function M.init(env)
     local config = env.engine.schema.config
+    env.keep_comment = config:get_bool('translator/keep_comments')
     local delimiter = config:get_string('speller/delimiter')
     if delimiter and #delimiter > 0 and delimiter:sub(1,1) ~= ' ' then
         env.delimiter = delimiter:sub(1,1)
@@ -114,6 +115,7 @@ function M.init(env)
         ["ju hui"] = { text = "钜惠", comment = "巨惠" },
         ["mo xie zuo"] = { text = "魔蝎座", comment = "摩羯(jié)座" },
         ["nuo da"] = { text = "诺大", comment = "偌(ruò)大" },
+        ["yin jiu zhi ke"] = { text = "饮鸩止渴", comment = "饮鸩(zhèn)止渴" },
     }
 end
 
@@ -122,14 +124,19 @@ function M.func(input, env)
         -- cand.comment 是目前输入的词汇的完整拼音
         local pinyin = cand.comment:match("^［(.-)］$")
         if pinyin and #pinyin > 0 then
+            local correction_pinyin = pinyin
             if env.delimiter then
-                pinyin = pinyin:gsub(env.delimiter,' ')
+                correction_pinyin = correction_pinyin:gsub(env.delimiter,' ')
             end
-            local c = M.corrections[pinyin]
+            local c = M.corrections[correction_pinyin]
             if c and cand.text == c.text then
                 cand:get_genuine().comment = string.gsub(M.style, "{comment}", c.comment)
             else
-                cand:get_genuine().comment = ""
+                if env.keep_comment then
+                    cand:get_genuine().comment = string.gsub(M.style, "{comment}", pinyin)
+                else
+                    cand:get_genuine().comment = ""
+                end
             end
         end
         yield(cand)
