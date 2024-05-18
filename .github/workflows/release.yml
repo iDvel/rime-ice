@@ -26,7 +26,7 @@ jobs:
         run: |
           mkdir dist
           echo "Pack all ..."
-          find . -name "*.lua" -o -name "*.yaml" -o -name "*.txt" | zip dist/full.zip -@ cn_dicts en_dicts lua opencc LICENSE
+          find . -maxdepth 1 -name "*.lua" -o -name "*.yaml" -o -name "*.txt" | zip dist/full.zip -@ cn_dicts en_dicts lua opencc LICENSE
           echo "Pack dicts ..."
           zip -r dist/all_dicts.zip cn_dicts en_dicts radical_pinyin.dict.yaml
           echo "Pack cn_dicts ..."
