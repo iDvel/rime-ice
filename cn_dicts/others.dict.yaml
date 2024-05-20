@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2024-05-16"
+version: "2024-05-21"
 sort: by_weight
 ...
 ##### 容错词
@@ -222,6 +222,12 @@ sort: by_weight
 南京六合区	nan jing liu he qu
 南京市六合区	nan jing shi lu he qu
 南京市六合区	nan jing shi liu he qu
+偌大	ruo da
+偌大	nuo da
+饮鸩止渴	yin zhen zhi ke
+饮鸩止渴	yin jiu zhi ke
+饮鸩解渴	yin zhen jie ke
+饮鸩解渴	yin jiu jie ke
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
@@ -244,10 +250,6 @@ sort: by_weight
 钜惠	ju hui
 摩羯座	mo jie zuo
 魔蝎座	mo xie zuo
-偌大	ruo da
-诺大	nuo da
-饮鸩止渴	yin zhen zhi ke
-饮鸩止渴	yin jiu zhi ke
 
 
 ##### 叠字

@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-05-16"
+version: "2024-05-21"
 sort: by_weight
 ...
 # +_+
@@ -14690,6 +14690,7 @@ predictive	predictive
 predicts	predicts
 predominant	predominant
 predominantly	predominantly
+preedit	preedit
 preface	preface
 prefer	prefer
 preferable	preferable
