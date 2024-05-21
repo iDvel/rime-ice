@@ -95,6 +95,9 @@ function M.init(env)
         ["nan jing liu he"] = { text = "南京六合", comment = "nán jīng lù hé" },
         ["nan jing shi liu he"] = { text = "南京六合区", comment = "nán jīng lù hé qū" },
         ["nan jing shi liu he qu"] = { text = "南京市六合区", comment = "nán jīng shì lù hé qū" },
+        ["nuo da"] = { text = "偌大", comment = "偌(ruò)大" },
+        ["yin jiu zhi ke"] = { text = "饮鸩止渴", comment = "饮鸩(zhèn)止渴" },
+        ["yin jiu jie ke"] = { text = "饮鸩解渴", comment = "饮鸩(zhèn)解渴" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
         ["pu gai"] = { text = "扑街", comment = "仆街" },
@@ -114,8 +117,6 @@ function M.init(env)
         ["cou huo"] = { text = "凑活", comment = "凑合(he)" },
         ["ju hui"] = { text = "钜惠", comment = "巨惠" },
         ["mo xie zuo"] = { text = "魔蝎座", comment = "摩羯(jié)座" },
-        ["nuo da"] = { text = "诺大", comment = "偌(ruò)大" },
-        ["yin jiu zhi ke"] = { text = "饮鸩止渴", comment = "饮鸩(zhèn)止渴" },
     }
 end
 
