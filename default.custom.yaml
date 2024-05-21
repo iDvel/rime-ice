@@ -1,0 +1,51 @@
+patch:
+
+  menu:
+    page_size: 7  # 候选词个数
+
+  # 方案选单相关
+  switcher:
+    caption: 「方案选单」
+    hotkeys:
+      - F4
+      # Control+grave 为 control + `
+      # - Control+grave
+      # - Control+Shift+grave
+      # - Alt+grave
+
+  # 快捷键
+  key_binder:
+    # Lua 配置: 以词定字（上屏当前词句的第一个或最后一个字），比如我想输入肯德基的基，不用先打肯德基再删除肯德，直接按下=即可。
+    select_first_character: "minus"  #  -
+    select_last_character: "equal"   #  =
+
+
+    bindings:
+      # Tab / Shift+Tab 切换光标至下/上一个拼音
+      - { when: composing, accept: Shift+Tab, send: Shift+Left }
+      - { when: composing, accept: Tab, send: Shift+Right }
+      # Option/Alt + ←/→ 切换光标至下/上一个拼音
+      - { when: composing, accept: Alt+Left, send: Shift+Left }
+      - { when: composing, accept: Alt+Right, send: Shift+Right }
+      # 翻页 [ ]
+      - { when: has_menu, accept: bracketleft, send: Page_Up }
+      - { when: has_menu, accept: bracketright, send: Page_Down }
+
+      - { when: always, toggle: ascii_punct, accept: Control+Shift+3 }              # 切换中英标点
+      - { when: always, toggle: ascii_punct, accept: Control+Shift+numbersign }     # 切换中英标点
+      - { when: always, toggle: traditionalization, accept: Control+Shift+4 }       # 切换简繁
+      - { when: always, toggle: traditionalization, accept: Control+Shift+dollar }  # 切换简繁
+
+      - { when: composing, accept: Control+k, send: Shift+Delete }
+      - {accept: KP_0, send: 0, when: composing}
+      - {accept: KP_1, send: 1, when: composing}
+      - {accept: KP_2, send: 2, when: composing}
+      - {accept: KP_3, send: 3, when: composing}
+      - {accept: KP_4, send: 4, when: composing}
+      - {accept: KP_5, send: 5, when: composing}
+      - {accept: KP_6, send: 6, when: composing}
+      - {accept: KP_7, send: 7, when: composing}
+      - {accept: KP_8, send: 8, when: composing}
+      - {accept: KP_9, send: 9, when: composing}
+      - {accept: KP_Decimal, send: period, when: composing}
+
