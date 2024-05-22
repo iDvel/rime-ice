@@ -37,7 +37,6 @@
     -   置顶候选项
     -   所有标点符号直接上屏，/ 模式改为 v 模式，/ 直接上屏
     -   增加了许多拼音纠错
-    -   RIME 输入法辅助码与音形分离插件（自然码辅码表和小鹤形码表）
 - 简体字表、词库
     -   [《通用规范汉字表》](https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters)
     -   [华宇野风系统词库](http://bbs.pinyin.thunisoft.com/forum.php?mod=viewthread&tid=30049)（@野风）
