@@ -1,117 +1,44 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.15.0.0
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Thu May 23 23:39:32 2024"
+  rime_version: 1.8.5
 patch:
-  show_notifications: true                   # 是否显示状态变化的通知：true；false；option_list（方案内的开头 option）
-  show_notifications_time: 1200              # 通知显示的时间，单位 ms
-  global_ascii: false                        # 切换为 ascii 模式时，是否影响所有窗口：true；false
-
-  style:
-    color_scheme: catppuccin_latte
-    color_scheme_dark: catppuccin_latte
-
-    inline_preedit: true # 拼音显示在输入的地方还是显示在输入法上面
-    candidate_format: "%c %@ "  # 序号和候选词之间的字符
-
-    label_font_face: "Jetbrains Mono"
-    label_font_point: 16
-    font_face: 'LXGW WenKai' # 候选字字体
-    font_point: 18 # 候选字词大小 
-
-
-# 皮肤主题
+  app_options:
+    firefox.exe: {inline_preedit: true}
+  global_ascii: false
   preset_color_schemes:
-    wechat:
-      name: 微信/wechat
-      author: 空山明月 <sqqlove123@163.com>
-      back_color: 0xFFFFFF
-      border_color: 0x9F9F9F
-      text_color: 0x202121
-      hilited_label_color: 0xDBDBDB
-      hilited_text_color: 0x202121
-      hilited_back_color: 0xE4EBF0
-      hilited_candidate_text_color: 0xF8FBF4
-      hilited_candidate_back_color: 0x78AF22 # 微信绿 0x78AF22，魅蓝紫 0xC73262，活力橙 0x2283D9
-      hilited_comment_text_color: 0xDBDBDB
-      candidate_text_color: 0x555555
-      comment_text_color: 0x9F9F9F
-      corner_radius: 5  #候选条圆角
-      border_height: 6      # 窗口边界高度，大于圆角半径才生效 
-      border_width: 6     # 窗口边界宽度，大于圆角半径才生效   
-      hilited_corner_radius: 3
-      spacing: 2 # 候选词行距 横向 如何理解
-      line_spacing: 6
-      border_color_width: 5
-
-
-    catppuccin_latte:
-      name: Catppuccin Latte
-      horizontal: false                             # true横排，false竖排
-      candidate_format: "%c %@ "                   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
-      corner_radius: 5                             # 窗口圆角
-      hilited_corner_radius: 5                     # 高亮圆角
-      line_spacing: 10                             # 行间距(适用于竖排)
-      border_height: 4                             # 窗口上下高度，大于圆角半径才生效
-      border_width: 4                              # 窗口左右宽度，大于圆角半径才生效
-      font_face: "PingFangSC"                      # 候选词字体
-      font_point: 16                               # 候选字大小
-      label_font_point: 13                         # 候选编号大小
-      back_color: 0xE8E0DC                         # 候选条背景色
-      border_color: 0xEFE9E6                       # 边框色
-      text_color: 0x775F5C                         # 拼音行文字颜色
-      label_color: 0x856F6C                        # 预选栏编号颜色
-      candidate_text_color: 0x694F4C               # 预选项文字颜色
-      hilited_back_color: 0x7878DD                 # 第一候选项背景背景色
-      hilited_candidate_text_color: 0xF5F1EF       # 第一候选项文字颜色
-      hilited_candidate_label_color: 0xDAD0CC      # 第一候选项编号颜色
-      hilited_text_color: 0xBEB0AC                 # 高亮拼音 (需要开启内嵌编码)
-      hilited_comment_text_color: 0xDAD0CC          # 注解文字高亮
-      comment_text_color: 0xBEB0AC                 # 拼音等提示文字颜色
-
-
-    catppuccin_frappe:
-      name: Catppuccin Frappe
-      horizontal: false                             # true横排，false竖排
-      candidate_format: "%c %@ "                   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
-      corner_radius: 5                             # 窗口圆角
-      hilited_corner_radius: 5                     # 高亮圆角
-      line_spacing: 10                             # 行间距(适用于竖排)
-      border_height: 4                             # 窗口上下高度，大于圆角半径才生效
-      border_width: 4                              # 窗口左右宽度，大于圆角半径才生效
-      font_face: "PingFangSC"                      # 候选词字体
-      font_point: 16                               # 候选字大小f
-      label_font_point: 13                         # 候选编号大小
-      back_color: 0x342623                         # 候选条背景色
-      border_color: 0x3C2C29                       # 边框色
-      text_color: 0xE2BFB5                         # 拼音行文字颜色
-      label_color: 0xCEADA5                        # 预选栏编号颜色
-      candidate_text_color: 0xF5D0C6               # 预选项文字颜色
-      hilited_back_color: 0x89D1A6                 # 第一候选项背景背景色
-      hilited_candidate_text_color: 0x463430       # 第一候选项文字颜色
-      hilited_candidate_label_color: 0x594541      # 第一候选项编号颜色
-      hilited_text_color: 0xBB9C94                 # 高亮拼音 (需要开启内嵌编码)
-      hilited_comment_text_color: 0x594541         # 注解文字高亮
-      comment_text_color: 0xBB9C94                 # 拼音等提示文字颜色
-
-
-    catppuccin_macchiato:
-      name: Catppuccin Macchiato
-      horizontal: true                             # true横排，false竖排
-      candidate_format: "%c %@ "                   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
-      corner_radius: 5                             # 窗口圆角
-      hilited_corner_radius: 5                     # 高亮圆角
-      line_spacing: 10                             # 行间距(适用于竖排)
-      border_height: 4                             # 窗口上下高度，大于圆角半径才生效
-      border_width: 4                              # 窗口左右宽度，大于圆角半径才生效
-      font_face: "PingFangSC"                      # 候选词字体
-      font_point: 16                               # 候选字大小
-      label_font_point: 13                         # 候选编号大小
-      back_color: 0x261918                         # 候选条背景色
-      border_color: 0x30201E                       # 边框色
-      text_color: 0xE0C0B8                         # 拼音行文字颜色
-      label_color: 0xCBADA5                        # 预选栏编号颜色
-      candidate_text_color: 0xF5D3CA               # 预选项文字颜色
-      hilited_back_color: 0xF4AD8A                 # 第一候选项背景背景色
-      hilited_candidate_text_color: 0x3A2724       # 第一候选项文字颜色
-      hilited_candidate_label_color: 0x4F3A36      # 第一候选项编号颜色
-      hilited_text_color: 0xB79A93                 # 高亮拼音 (需要开启内嵌编码)
-      hilited_comment_text_color: 0x4F3A36         # 注解文字高亮
-      comment_text_color: 0xB79A93                 # 拼音等提示文字颜色
-
+    catppuccin_frappe: {back_color: 0x342623, border_color: 0x3C2C29, border_height: 4, border_width: 4, candidate_format: "%c %@ ", candidate_text_color: 0xF5D0C6, comment_text_color: 0xBB9C94, corner_radius: 5, font_face: PingFangSC, font_point: 16, hilited_back_color: 0x89D1A6, hilited_candidate_label_color: 0x594541, hilited_candidate_text_color: 0x463430, hilited_comment_text_color: 0x594541, hilited_corner_radius: 5, hilited_text_color: 0xBB9C94, horizontal: false, label_color: 0xCEADA5, label_font_point: 13, line_spacing: 10, name: "Catppuccin Frappe", text_color: 0xE2BFB5}
+    catppuccin_latte: {back_color: 0xE8E0DC, border_color: 0xEFE9E6, border_height: 1, border_width: 1, candidate_format: "%c %@ ", candidate_text_color: 0x694F4C, comment_text_color: 0xBEB0AC, corner_radius: 2, font_face: PingFangSC, font_point: 14, hilited_back_color: 0x7878DD, hilited_candidate_label_color: 0xDAD0CC, hilited_candidate_text_color: 0xF5F1EF, hilited_comment_text_color: 0xDAD0CC, hilited_corner_radius: 2, hilited_text_color: 0xBEB0AC, horizontal: false, label_color: 0x856F6C, label_font_point: 13, line_spacing: 10, name: "Catppuccin Latte", text_color: 0x775F5C}
+    catppuccin_macchiato: {back_color: 0x261918, border_color: 0x30201E, border_height: 4, border_width: 4, candidate_format: "%c %@ ", candidate_text_color: 0xF5D3CA, comment_text_color: 0xB79A93, corner_radius: 5, font_face: PingFangSC, font_point: 16, hilited_back_color: 0xF4AD8A, hilited_candidate_label_color: 0x4F3A36, hilited_candidate_text_color: 0x3A2724, hilited_comment_text_color: 0x4F3A36, hilited_corner_radius: 5, hilited_text_color: 0xB79A93, horizontal: true, label_color: 0xCBADA5, label_font_point: 13, line_spacing: 10, name: "Catppuccin Macchiato", text_color: 0xE0C0B8}
+    wechat: {author: "空山明月 <sqqlove123@163.com>", back_color: 0xFFFFFF, border_color: 0x9F9F9F, border_color_width: 5, border_height: 6, border_width: 6, candidate_text_color: 0x555555, comment_text_color: 0x9F9F9F, corner_radius: 5, hilited_back_color: 0xE4EBF0, hilited_candidate_back_color: 0x78AF22, hilited_candidate_text_color: 0xF8FBF4, hilited_comment_text_color: 0xDBDBDB, hilited_corner_radius: 3, hilited_label_color: 0xDBDBDB, hilited_text_color: 0x202121, line_spacing: 6, name: "微信/wechat", spacing: 2, text_color: 0x202121}
+  show_notifications: true
+  show_notifications_time: 1200
+  style:
+    antialias_mode: default
+    ascii_tip_follow_cursor: false
+    candidate_abbreviate_length: 30
+    candidate_format: "%c %@ "
+    click_to_capture: false
+    comment_font_face: "Microsoft YaHei"
+    comment_font_point: 13
+    display_tray_icon: false
+    enhanced_position: true
+    font_face: "LXGW WenKai"
+    font_point: 16
+    fullscreen: false
+    horizontal: false
+    inline_preedit: true
+    label_font_face: "Microsoft YaHei"
+    label_font_point: 14
+    label_format: "%s"
+    mark_text: "|"
+    mouse_hover_ms: 0
+    paging_on_scroll: true
+    preedit_type: composition
+    vertical_auto_reverse: false
+    vertical_text: false
+    vertical_text_left_to_right: false
+    vertical_text_with_wrap: false
+  "style/color_scheme": catppuccin_latte
