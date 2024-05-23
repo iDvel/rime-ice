@@ -13,6 +13,7 @@ local M = {}
 
 function M.init(env)
     local config = env.engine.schema.config
+    env.keep_comment = config:get_bool('translator/keep_comments')
     local delimiter = config:get_string('speller/delimiter')
     if delimiter and #delimiter > 0 and delimiter:sub(1,1) ~= ' ' then
         env.delimiter = delimiter:sub(1,1)
@@ -94,6 +95,9 @@ function M.init(env)
         ["nan jing liu he"] = { text = "南京六合", comment = "nán jīng lù hé" },
         ["nan jing shi liu he"] = { text = "南京六合区", comment = "nán jīng lù hé qū" },
         ["nan jing shi liu he qu"] = { text = "南京市六合区", comment = "nán jīng shì lù hé qū" },
+        ["nuo da"] = { text = "偌大", comment = "偌(ruò)大" },
+        ["yin jiu zhi ke"] = { text = "饮鸩止渴", comment = "饮鸩(zhèn)止渴" },
+        ["yin jiu jie ke"] = { text = "饮鸩解渴", comment = "饮鸩(zhèn)解渴" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
         ["pu gai"] = { text = "扑街", comment = "仆街" },
@@ -113,7 +117,6 @@ function M.init(env)
         ["cou huo"] = { text = "凑活", comment = "凑合(he)" },
         ["ju hui"] = { text = "钜惠", comment = "巨惠" },
         ["mo xie zuo"] = { text = "魔蝎座", comment = "摩羯(jié)座" },
-        ["nuo da"] = { text = "诺大", comment = "偌(ruò)大" },
     }
 end
 
@@ -122,14 +125,19 @@ function M.func(input, env)
         -- cand.comment 是目前输入的词汇的完整拼音
         local pinyin = cand.comment:match("^［(.-)］$")
         if pinyin and #pinyin > 0 then
+            local correction_pinyin = pinyin
             if env.delimiter then
-                pinyin = pinyin:gsub(env.delimiter,' ')
+                correction_pinyin = correction_pinyin:gsub(env.delimiter,' ')
             end
-            local c = M.corrections[pinyin]
+            local c = M.corrections[correction_pinyin]
             if c and cand.text == c.text then
                 cand:get_genuine().comment = string.gsub(M.style, "{comment}", c.comment)
             else
-                cand:get_genuine().comment = ""
+                if env.keep_comment then
+                    cand:get_genuine().comment = string.gsub(M.style, "{comment}", pinyin)
+                else
+                    cand:get_genuine().comment = ""
+                end
             end
         end
         yield(cand)
