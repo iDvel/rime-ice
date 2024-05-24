@@ -1,0 +1,6 @@
+patch:
+  app_options/cmd.exe: {ascii_mode: false}
+  app_options/test1.exe: {ascii_mode: false}
+  app_options/test2.exe: {ascii_mode: false}
+  app_options/test3.exe: {ascii_mode: false}
+  app_options/test4.exe: {ascii_mode: false}

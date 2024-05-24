@@ -12,6 +12,26 @@ schema:
     注音、校对、方案：Mirtle
     仓库：https://github.com/mirtlecn/rime_radical_pinyin
 
+switches:
+  - name: ascii_mode
+    states: [ 中, Ａ ]
+    reset: 1
+  - name: ascii_punct
+    states: [ ¥, $ ]
+    reset: 0
+  - name: traditionalization
+    states: [ 简, 繁 ]
+    reset: 0
+  - name: emoji
+    states: [ 💀, 😄 ]
+    reset: 1
+  - name: full_shape
+    states: [ 半角, 全角 ]
+    reset: 1
+  - name: search_single_char
+    abbrev: [词, 单]
+    states: [正常, 单字]
+    reset: 0
 engine:
   processors:
     - key_binder
@@ -271,3 +291,31 @@ algebra_ziguang:
   - xform/an(?=^|$|')/<r>/
   - xform/'|<|>//
 
+key_binder:
+  select_first_character: "bracketleft"
+  select_last_character: "bracketright"
+  bindings:
+    - { when: composing, accept: Shift+Tab, send: Shift+Left }
+    - { when: composing, accept: Tab, send: Shift+Right }
+    - { when: composing, accept: Alt+Left, send: Shift+Left }
+    - { when: composing, accept: Alt+Right, send: Shift+Right }
+    - { when: has_menu, accept: minus, send: Page_Up }
+    - { when: has_menu, accept: equal, send: Page_Down }
+    - { when: always, toggle: ascii_punct, accept: Control+Shift+3 }
+    - { when: always, toggle: ascii_punct, accept: Control+Shift+numbersign }
+    - { when: always, toggle: traditionalization, accept: Control+Shift+4 }
+    - { when: always, toggle: traditionalization, accept: Control+Shift+dollar }
+    - { when: composing, accept: Control+k, send: Shift+Delete }
+    - {accept: KP_0, send: 0, when: composing}
+    - {accept: KP_1, send: 1, when: composing}
+    - {accept: KP_2, send: 2, when: composing}
+    - {accept: KP_3, send: 3, when: composing}
+    - {accept: KP_4, send: 4, when: composing}
+    - {accept: KP_5, send: 5, when: composing}
+    - {accept: KP_6, send: 6, when: composing}
+    - {accept: KP_7, send: 7, when: composing}
+    - {accept: KP_8, send: 8, when: composing}
+    - {accept: KP_9, send: 9, when: composing}
+    - {accept: KP_Decimal, send: period, when: composing}
+menu:
+  page_size: 9
