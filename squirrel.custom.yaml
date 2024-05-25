@@ -12,7 +12,7 @@ patch:
   # [End of <global settings>]
 
   style:
-    color_scheme: wechat
+    color_scheme: catppuccin_latte
     color_scheme_dark: catppuccin_latte
 
     inline_preedit: true # 拼音显示在输入的地方还是显示在输入法上面
@@ -21,6 +21,7 @@ patch:
     label_font_face: "Jetbrains Mono"
     label_font_point: 16
     font_face: 'LXGW WenKai' # 候选字字体
+    # font_face: "PingFangSC"                      # 候选词字体
     font_point: 21 # 候选字词大小 
 
 
@@ -59,7 +60,6 @@ patch:
       line_spacing: 10                             # 行间距(适用于竖排)
       border_height: 4                             # 窗口上下高度，大于圆角半径才生效
       border_width: 4                              # 窗口左右宽度，大于圆角半径才生效
-      font_face: "PingFangSC"                      # 候选词字体
       font_point: 16                               # 候选字大小
       label_font_point: 13                         # 候选编号大小
       back_color: 0xE8E0DC                         # 候选条背景色
