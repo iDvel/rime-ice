@@ -29,7 +29,7 @@ jobs:
           find . -maxdepth 1 -name "*.lua" -o -name "*.yaml" -o -name "*.txt" | zip dist/full.zip -@
           zip -r dist/full.zip cn_dicts en_dicts lua opencc LICENSE
           echo "Pack dicts ..."
-          zip -r dist/all_dicts.zip cn_dicts en_dicts radical_pinyin.dict.yaml
+          zip -r dist/all_dicts.zip cn_dicts en_dicts opencc radical_pinyin.dict.yaml
           echo "Pack cn_dicts ..."
           zip -r dist/cn_dicts.zip cn_dicts
           echo "Pack en_dicts ..."
