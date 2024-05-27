@@ -83,17 +83,17 @@ style:
     baseline: 0 # 字号百分比，与 linespacing 一同设置可解决字体跳动问题，设置为 0 为禁用
     linespacing: 0 # 字号百分比，参考 <https://github.com/rime/weasel/pull/1177>
     align_type: center # 标签、候选文字、注解文字之间的相对对齐方式：top ; center ; bottom
-    max_height: 600 # 候选框最大高度，文本竖排模式下如高度超此尺寸则换列显示候选，设置为 0 不启用此功能
+    max_height: 0 # 候选框最大高度，文本竖排模式下如高度超此尺寸则换列显示候选，设置为 0 不启用此功能
     max_width: 0 # 候选框最大宽度，horizontal 布局如宽超此尺寸则换行显示候选，设置为 0 不启用此功能
     min_height: 0 # 候选框最小高度
-    min_width: 10 # 候选框最小宽度
-    border_width: 2 # 边框宽度；又名 border
-    margin_x: 8 # 主体元素和候选框的左右边距；为负值时，不显示候选框
-    margin_y: 8 # 主体元素的上下边距；为负值时，不显示候选框
-    spacing: 13 # inline_preedit 为否时，编码区域和候选区域的间距
-    candidate_spacing: 22 # 候选项之间的间距
-    hilite_spacing: 6 # 候选项和相应标签的间距
-    hilite_padding: 8 # 高亮区域和内部文字的间距，影响高亮区域大小
+    min_width: 160 # 候选框最小宽度
+    border_width: 3 # 边框宽度；又名 border
+    margin_x: 10 # 主体元素和候选框的左右边距；为负值时，不显示候选框
+    margin_y: 10 # 主体元素的上下边距；为负值时，不显示候选框
+    spacing: 10 # inline_preedit 为否时，编码区域和候选区域的间距
+    candidate_spacing: 5 # 候选项之间的间距
+    hilite_spacing: 4 # 候选项和相应标签的间距
+    hilite_padding: 2 # 高亮区域和内部文字的间距，影响高亮区域大小
     # hilite_padding_x: 8                  # 高亮区域和内部文字的左右间距，如无特殊指定则依 hilite_padding 设置
     # hilite_padding_y: 8                  # 高亮区域和内部文字的上下间距，如无特殊指定则依 hilite_padding 设置
     shadow_radius: 0 # 阴影区域半径，为 0 不显示阴影；需要同时在配色方案中指定非透明的阴影颜色

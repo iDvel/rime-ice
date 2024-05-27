@@ -1,11 +1,11 @@
 customization:
   distribution_code_name: Weasel
-  distribution_version: 0.15.0.0
-  generator: "Weasel::UIStyleSettings"
-  modified_time: "Sat Feb 17 16:58:03 2024"
-  rime_version: 1.8.5
+  distribution_version: 0.16.0
+  generator: 'Weasel::UIStyleSettings'
+  modified_time: 'Tue May 21 17:16:45 2024'
+  rime_version: 1.11.2
 patch:
-  "preset_color_schemes/Cierra_Runis":
+  'preset_color_schemes/Cierra_Runis':
     author: Cierra_Runis
     back_color: 0xD0222222
     border_color: 0x222222
@@ -16,10 +16,12 @@ patch:
     hilited_candidate_text_color: 0x08F
     name: Cierra_Runis
     text_color: 0xF0F0F0
-  "style/color_scheme": Cierra_Runis
-  "style/comment_font_face": "Source Han Sans SC VF:bold"
-  "style/font_face": "Segoe UI Emoji:20:39:bold, Noto Color Emoji SVG:80, Source Han Sans SC VF:bold"
-  "style/font_point": 12
-  "style/horizontal": true
-  "style/label_font_face": "Source Han Sans SC VF:bold"
-  "style/layout/corner_radius": 12
+  'style/color_scheme': Cierra_Runis
+  'style/comment_font_face': 'Cascadia Code'
+  'style/font_face': 'Segoe UI Emoji:20:39, Noto Color Emoji SVG:80, MiSans:medium'
+  'style/font_point': 12
+  'style/label_font_point': 12 # 标签字体字号，不设定 fallback 到 font_point
+  'style/comment_font_point': 12 # 注释字体字号，不设定 fallback 到 font_point
+  'style/horizontal': true
+  'style/label_font_face': 'Cascadia Code'
+  'style/layout/corner_radius': 12
