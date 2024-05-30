@@ -793,6 +793,7 @@ anesthesia	anesthesia
 # ang	ang
 angel	angel
 Angela	Angela
+Angeles	Angeles
 Angelina	Angelina
 Angelo	Angelo
 angels	angels
@@ -8224,6 +8225,7 @@ Gonzales	Gonzales
 Gonzalez	Gonzalez
 goo	goo
 good	good
+goodby	goodby
 good-by	good-by
 goodbye	goodbye
 goodies	goodies
@@ -12219,6 +12221,7 @@ mistake	mistake
 mistaken	mistaken
 mistakes	mistakes
 Mister	Mister
+mister	mister
 mistress	mistress
 misty	misty
 misunderstand	misunderstand
@@ -12405,7 +12408,7 @@ mortar	mortar
 mortgage	mortgage
 mortgages	mortgages
 Morton	Morton
-MOS	MOS
+mos	mos
 mosaic	mosaic
 Moscow	Moscow
 Moses	Moses
@@ -12683,7 +12686,7 @@ Nauru	Nauru
 nausea	nausea
 nautical	nautical
 nav	nav
-NAV	NAV
+# NAV	NAV
 Navajo	Navajo
 naval	naval
 navigate	navigate
@@ -13236,7 +13239,7 @@ ohm	ohm
 oil	oil
 oils	oils
 # oj	oj
-OK	OK
+# OK	OK
 ok	ok
 okay	okay
 # oki	oki
@@ -13248,7 +13251,7 @@ oldest	oldest
 Oldham	Oldham
 oldies	oldies
 # oldmedline	oldmedline
-Olds	Olds
+# Olds	Olds
 # oldsmobile	oldsmobile
 ole	ole
 olive	olive
@@ -14496,6 +14499,7 @@ poor	poor
 poorest	poorest
 poorly	poorly
 pop	pop
+popup	popup
 pop-up	pop-up
 popcorn	popcorn
 pope	pope
@@ -16724,6 +16728,7 @@ scheduler	scheduler
 schedules	schedules
 scheduling	scheduling
 schema	schema
+schemata	schemata
 schematic	schematic
 scheme	scheme
 schemes	schemes
@@ -19331,8 +19336,8 @@ TLS	TLS
 # tn	tn
 TNT	TNT
 to	to
-to-do	to-do
-to-dos	to-dos
+# to-do	to-do
+# to-dos	to-dos
 toad	toad
 toast	toast
 toaster	toaster
