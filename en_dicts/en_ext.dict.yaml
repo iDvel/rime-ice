@@ -914,9 +914,7 @@ Widget	Widget
 WiFi Explorer	WiFiExplorer
 WiFi Scanner	WiFiScanner
 Window Tidy	WindowTidy
-Windows Vista	WindowsVista
 Windows RT	WindowsRT
-Windows Me	WindowsMe
 Windows NT	WindowsNT
 Windows Server	WindowsServer
 Windows Mobile	WindowsMobile
@@ -1608,7 +1606,6 @@ eSATA	eSATA
 mSATA	mSATA
 GPIB	GPIB
 GPIO	GPIO
-LCD	LCD
 DVD	DVD
 CD	CD
 eSIM	eSIM
@@ -1766,7 +1763,6 @@ Swedish	Swedish
 Swiss	Swiss
 Thai	Thai
 Thailand	Thailand
-United Kingdom	UnitedKingdom
 USA	USA
 The United States of America	USA
 United States	UnitedStates
@@ -1967,7 +1963,6 @@ Scooby-Doo	Scooby-Doo
 SpongeBob	SpongeBob
 SquarePants	SquarePants
 SpongeBob SquarePants	SpongeBobSquarePants
-Universal Actions	UniversalActions
 Louis Vuitton	LouisVuitton
 FIFA	FIFA
 Fédération Internationale de Football Association	FIFA
@@ -1991,7 +1986,6 @@ SVN	SVN
 Apache Subversion	SVN
 TLS	TLS
 Transport Layer Security	TLS
-SSL	SSL
 Secure Sockets Layer	SSL
 UDP	UDP
 User Datagram Protocol	UDP
@@ -2356,7 +2350,6 @@ Flink	Flink
 Palworld	Palworld
 submodule	submodule
 submodules	submodules
-Writerside	Writerside
 Writerside	Writerside
 Manifest V2	ManifestV2
 Manifest V3	ManifestV3
