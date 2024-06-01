@@ -2407,3 +2407,6 @@ VimL	VimL
 Vimscript	Vimscript
 Vimscripts	Vimscripts
 kubectl	kubectl
+mvn	mvn
+mvnd	mvnd
+maven	maven
