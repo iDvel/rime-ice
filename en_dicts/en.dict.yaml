@@ -220,7 +220,6 @@ activated	activated
 activation	activation
 active	active
 actively	actively
-ActiveX	ActiveX
 activism	activism
 activist	activist
 activists	activists
@@ -1154,7 +1153,6 @@ artists	artists
 arts	arts
 artwork	artwork
 Aruba	Aruba
-arXiv	arXiv
 as	as
 # asa	asa
 ASAP	ASAP
@@ -8215,7 +8213,6 @@ gnaw	gnaw
 gnome	gnome
 gnu	gnu
 GNU	GNU
-Go	Go
 go	go
 # goa	goa
 goal	goal
@@ -8539,7 +8536,6 @@ gyms	gyms
 gypsy	gypsy
 Gypsy	Gypsy
 # gz	gz
-Gzip	Gzip
 # h	h
 # ha	ha
 # haas	haas
@@ -9319,7 +9315,6 @@ Ian	Ian
 Ibiza	Ibiza
 IBM	IBM
 ibn	ibn
-iBook	iBook
 # ic	ic
 ICANN	ICANN
 # icc	icc
@@ -10055,7 +10050,6 @@ IP	IP
 IPC	IPC
 IPO	IPO
 iPod	iPod
-# ipods	ipods
 # ips	ips
 IPSec	IPSec
 Ipswich	Ipswich
@@ -11013,7 +11007,6 @@ lex	lex
 Lexar	Lexar
 lexicon	lexicon
 Lexington	Lexington
-LexisNexis	LexisNexis
 lexmark	lexmark
 lexus	lexus
 # lf	lf
@@ -11448,7 +11441,7 @@ lyrics	lyrics
 # lys	lys
 # m	m
 # ma	ma
-Mac	Mac
+mac	mac
 Macau	Macau
 MacDonald	MacDonald
 macedonia	macedonia
@@ -13950,8 +13943,6 @@ PCMCIA	PCMCIA
 # PDA	PDA
 # PDAS	PDAS
 # pdb	pdb
-PDF	PDF
-PDFs	PDFs
 # pdp	pdp
 # PDT	PDT
 # pe	pe
@@ -14155,7 +14146,6 @@ Pfizer	Pfizer
 # pg	pg
 # pga	pga
 # pgp	pgp
-# pgSQL	pgSQL
 # ph	ph
 phantom	phantom
 # phantomnode	phantomnode
@@ -14224,7 +14214,6 @@ photos	photos
 Photoshop	Photoshop
 # photosmart	photosmart
 PHP	PHP
-phpBB	phpBB
 phrase	phrase
 phrases	phrases
 # phs	phs
@@ -19230,7 +19219,6 @@ thing	thing
 things	things
 think	think
 thinking	thinking
-ThinkPad	ThinkPad
 thinks	thinks
 third	third
 thirds	thirds
@@ -20215,8 +20203,6 @@ urging	urging
 URI	URI
 urinary	urinary
 urine	urine
-URL	URL
-URLs	URLs
 urn	urn
 urology	urology
 Uruguay	Uruguay
@@ -20866,7 +20852,6 @@ weber	weber
 # webhosting	webhosting
 # webinar	webinar
 weblog	weblog
-# weblogic	weblogic
 weblogs	weblogs
 # webmail	webmail
 webmaster	webmaster
@@ -21020,6 +21005,8 @@ whose	whose
 why	why
 # wi	wi
 Wichita	Wichita
+Wick	Wick
+wick	wick
 wicked	wicked
 wicker	wicker
 wide	wide
@@ -21346,7 +21333,7 @@ XXL	XXL
 # ya	ya
 yacht	yacht
 yachts	yachts
-Yahoo	Yahoo
+yahoo	yahoo
 Yakima	Yakima
 Yale	Yale
 Yamaha	Yamaha
@@ -21461,7 +21448,6 @@ zoofilia	zoofilia
 zoology	zoology
 zoom	zoom
 zoophilia	zoophilia
-Zope	Zope
 # zshops	zshops
 # zu	zu
 # zum	zum

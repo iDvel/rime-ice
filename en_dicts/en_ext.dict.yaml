@@ -263,8 +263,6 @@ High Sierra	HighSierra
 Mojave	Mojave
 Big Sur	BigSur
 TypeORM	TypeORM
-Wick	Wick
-wick	wick
 RPG	RPG
 Role-Playing Game	RPG
 Role-Playing Game	RolePlayingGame
@@ -306,7 +304,6 @@ Netscape	Netscape
 WeChat	WeChat
 Dota	Dota
 Database	Database
-Macintosh	Macintosh
 Superlist	Superlist
 DJ	DJ
 DLC	DLC
@@ -436,6 +433,7 @@ IDEA Ultimate	IDEAUltimate
 IDE	IDE
 NTR	NTR
 Notion	Notion
+Notion AI	NotionAI
 Touch Bar	TouchBar
 DOM	DOM
 D.VA	D.VA
@@ -480,11 +478,14 @@ Hexo	Hexo
 Hugo	Hugo
 Epic	Epic
 Epic Games	EpicGames
+Instagram	IG
+Instagram	INS
 Instagram	Instagram
 Evernote	Evernote
 PDF	PDF
 Portable Document Format	PDF
 Portable Document Format	PortableDocumentFormat
+PDFs	PDFs
 QuickTime Player	QuickTimePlayer
 CSDN	CSDN
 Gitee	Gitee
@@ -510,6 +511,7 @@ DBMesh	DBMesh
 Facebook	Facebook
 Firefox	Firefox
 git	git
+Go	Go
 GoLand	GoLand
 Golang	Golang
 IQOS	IQOS
@@ -517,6 +519,8 @@ Intel	Intel
 JSON	JSON
 JetBrains	JetBrains
 KTV	KTV
+Mac	Mac
+Macintosh	Macintosh
 MBP	MBP
 MacBook Pro	MBP
 MBA	MBA
@@ -715,6 +719,7 @@ iTerm2	iTerm2
 iTunes	iTunes
 iTunes Connect	iTunesConnect
 iTunes Match	iTunesMatch
+iBook	iBook
 iWatch	iWatch
 Kaleidoscope	Kaleidoscope
 Karabiner	Karabiner
@@ -795,9 +800,9 @@ Scrapbook	Scrapbook
 ScreenFloat	ScreenFloat
 ScreenFlow	ScreenFlow
 Scrivener	Scrivener
-SDK	SDK
 SDDM	SDDM
 Simple Desktop Display Manager	SDDM
+SDK	SDK
 Software Development Kit	SDK
 Software Development Kit	SoftwareDevelopmentKit
 Should I Sleep	ShouldISleep
@@ -810,6 +815,7 @@ Sparrow	Sparrow
 Speedtest	Speedtest
 Spotify	Spotify
 SSL	SSL
+Secure Sockets Layer	SSL
 StackSocial	StackSocial
 Sublime Text	SublimeText
 TechWeb	TechWeb
@@ -866,6 +872,7 @@ Rosetta	Rosetta
 Face ID	FaceID
 URL	URL
 Uniform Resource Locator	URL
+URLs	URLs
 URI	URI
 Uniform Resource Identifier	URI
 HTTP	HTTP
@@ -902,7 +909,6 @@ GMT	GMT
 Greenwich Mean Time	GMT
 Greenwich Mean Time	GreenwichMeanTime
 GoDaddy	GoDaddy
-Eason	Eason
 SQLAlchemy	SQLAlchemy
 Admin	Admin
 Administrator	Administrator
@@ -993,8 +999,6 @@ Yandex	Yandex
 Geralt	Geralt
 ServerCat	ServerCat
 Zoho	Zoho
-Harington	Harington
-Hades	Hades
 Gecko	Gecko
 TinyPNG	TinyPNG
 Thanos	Thanos
@@ -1064,7 +1068,6 @@ GNU General Public License	GNU
 GNU General Public License	GNUGeneralPublicLicense
 GPL	GPL
 GNU General Public License	GPL
-Ukraine	Ukraine
 Minions	Minions
 Rush B	RushB
 Rush A	RushA
@@ -1109,6 +1112,7 @@ BIOS	BIOS
 Basic Input/Output System	BIOS
 Basic Input/Output System	BasicInput/OutputSystem
 goroutine	goroutine
+goroutines	goroutines
 Celsius	Celsius
 Fahrenheit	Fahrenheit
 Mojito	Mojito
@@ -1143,9 +1147,9 @@ Microsoft Edge	MicrosoftEdge
 IE	IE
 Internet Explorer	IE
 Internet Explorer	InternetExplorer
-Windows Media Player	WindowsMediaPlayer
 Media Player	MediaPlayer
 Windows Media Player	MediaPlayer
+Windows Media Player	WindowsMediaPlayer
 Visual Studio Code	VisualStudioCode
 Visual Studio Code	VSCode
 PowerShell	PowerShell
@@ -1155,7 +1159,6 @@ Skype	Skype
 TOC	TOC
 Table of Contents	TOC
 Table of Contents	TableOfContents
-Jenny	Jenny
 One Dark	OneDark
 IINA	IINA
 GUID	GUID
@@ -1179,7 +1182,6 @@ Sheeran	Sheeran
 Cloudflare Images	CloudflareImages
 Cloudflare Stream	CloudflareStream
 Zero Trust	ZeroTrust
-goroutines	goroutines
 Universal Actions	UniversalActions
 Google Drive	GoogleDrive
 Google One	GoogleOne
@@ -1300,8 +1302,8 @@ SFTP	SFTP
 SSH File Transfer Protocol	SFTP
 SSH File Transfer Protocol	SSHFileTransferProtocol
 uPic	uPic
-refactoring	refactoring
 refactor	refactor
+refactoring	refactoring
 Notepad	Notepad
 Notepad++	Notepad++
 Notepad++	npp
@@ -1355,6 +1357,7 @@ FIFO	FIFO
 First In, First Out	FIFO
 LIFO	LIFO
 Last In, First out	LIFO
+Neat Download Manager	NDM
 Neat Download Manager	NeatDownloadManager
 Maine	Maine
 Elijah	Elijah
@@ -1455,6 +1458,7 @@ McAfee	McAfee
 OK	OK
 NG	NG
 TV	TV
+television	TV
 VTuber	VTuber
 NVMe	NVMe
 NGFF	NGFF
@@ -1524,6 +1528,7 @@ OriginOS	OriginOS
 iPhone	iPhone
 iPad	iPad
 iPod	iPod
+# iPods	iPods
 UI	UI
 UK	UK
 United Kingdom	UK
@@ -1531,104 +1536,16 @@ United Kingdom	UnitedKingdom
 DirectX	DirectX
 Kinect	Kinect
 Cloudflare	Cloudflare
-Buddhism	Buddhism
-Catholic	Catholic
-Christ	Christ
-Christian	Christian
-Christmas	Christmas
-Easter	Easter
-Egyptian	Egyptian
-Islam	Islam
-Jupiter	Jupiter
-Latin	Latin
-Mars	Mars
-Marxist	Marxist
-Moslem	Moslem
-Negro	Negro
-Thanksgiving	Thanksgiving
-Venus	Venus
 X-ray	X-ray
-American	American
-Australia	Australia
-Australian	Australian
-Brazil	Brazil
-Brazilian	Brazilian
-Britain	Britain
-Canada	Canada
-Canadian	Canadian
-Chinese	Chinese
-Danish	Danish
-Denmark	Denmark
-Dutch	Dutch
-Egypt	Egypt
-England	England
-English	English
-Filipino	Filipino
-Finland	Finland
-Finn	Finn
-Finnish	Finnish
-France	France
-French	French
-German	German
-Germany	Germany
-Greece	Greece
-Greek	Greek
-Hebrew	Hebrew
-Hindi	Hindi
 Hip-Hop	Hip-Hop
-Iceland	Iceland
-Icelander	Icelander
-Icelandic	Icelandic
-India	India
-Indian	Indian
-Iran	Iran
-Iranian	Iranian
-Ireland	Ireland
-Irish	Irish
-Irishman	Irishman
-Israel	Israel
-Israeli	Israeli
-Italian	Italian
-Italilian	Italilian
-Italy	Italy
-Japan	Japan
-Japanese	Japanese
-Korea	Korea
-Korean	Korean
-native American	nativeAmerican
-Netherlands	Netherlands
-New Zealand	NewZealand
-New Zealander	NewZealander
-Philppines	Philppines
-Poland	Poland
-Pole	Pole
-Polish	Polish
-Portugal	Portugal
-Portuguese	Portuguese
-Russia	Russia
-Russian	Russian
-Scotland	Scotland
-Scots	Scots
-Scottish	Scottish
 Simplified Chinese	SimplifiedChinese
 Traditional Chinese	TraditionalChinese
-Singapore	Singapore
-Spain	Spain
-Spanish	Spanish
-Swede	Swede
-Sweden	Sweden
-Swedish	Swedish
-Swiss	Swiss
-Thai	Thai
-Thailand	Thailand
 USA	USA
 The United States of America	USA
 United States	UnitedStates
 USD	USD
 United States Dollar	USD
 United States Dollar	UnitedStatesDollar
-Wales	Wales
-Welsh	Welsh
 CN	CN
 MTV	MTV
 Music Television	MTV
@@ -1746,7 +1663,6 @@ Coinbase Wallet	CoinbaseWallet
 MetaMask	MetaMask
 Discord	Discord
 New Bing	NewBing
-Notion AI	NotionAI
 flomo	flomo
 HanLP	HanLP
 Arch Linux	ArchLinux
@@ -1774,17 +1690,6 @@ OpenWrt	OpenWrt
 AWS	AWS
 Amazon Web Services	AWS
 Amazon Web Services	AmazonWebServices
-Orion	Orion
-Virgo	Virgo
-Aries	Aries
-Taurus	Taurus
-Cancer	Cancer
-Libra	Libra
-Scorpio	Scorpio
-Sagittarius	Sagittarius
-Capricorn	Capricorn
-Aquarius	Aquarius
-Pisces	Pisces
 Tailwind	Tailwind
 Tailwind CSS	TailwindCSS
 Fcitx	Fcitx
@@ -1793,7 +1698,6 @@ openSUSE	openSUSE
 FOMO	FOMO
 Fear of Missing Out	FOMO
 bromite	bromite
-Laotian	Laotian
 orz	orz
 Scooby-Doo	Scooby-Doo
 SpongeBob	SpongeBob
@@ -1822,7 +1726,6 @@ SVN	SVN
 Apache Subversion	SVN
 TLS	TLS
 Transport Layer Security	TLS
-Secure Sockets Layer	SSL
 UDP	UDP
 User Datagram Protocol	UDP
 TCP	TCP
@@ -1839,6 +1742,8 @@ WWII	WWII
 World War II	WWII
 WWIII	WWIII
 World War III	WWIII
+pgSQL	pgSQL
+PostgreSQL	pgSQL
 PL/pgSQL	PL/pgSQL
 Procedural Language / PostGres Structured Query Language	PL/pgSQL
 IQ	IQ
@@ -1867,7 +1772,6 @@ Cinderella	Cinderella
 WebGPU	WebGPU
 Mailfence	Mailfence
 CodeWhisperer	CodeWhisperer
-Heisenberg	Heisenberg
 espanso	espanso
 okey	okey
 okey-dokey	okey-dokey
@@ -2221,3 +2125,12 @@ mvn	mvn
 mvnd	mvnd
 maven	maven
 Fluent UI	FluentUI
+ActiveX	ActiveX
+arXiv	arXiv
+Gzip	Gzip
+LexisNexis	LexisNexis
+phpBB	phpBB
+ThinkPad	ThinkPad
+WebLogic	WebLogic
+Yahoo	Yahoo
+Zope	Zope
