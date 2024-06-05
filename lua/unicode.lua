@@ -8,7 +8,7 @@
 local path = 'recognizer/patterns/unicode'
 local function unicode(input, seg, env)
     if not seg:has_tag("unicode") or input == '' then return end
-    -- 获取 recognizer/patterns/unicode 的第 2 个字符作为触发前缀
+    -- 获取 recognizer/patterns/unicode 的第 2 个字符作为触发前缀 
     -- config:get_string(path) 可能取得 nil 造成error
     if not env.unicode_keyword then
         local pattern = env.engine.schema.config:get_string(path) or "UU"
