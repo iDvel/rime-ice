@@ -1,8 +1,8 @@
 # radical_pinyin.custom.yaml
 patch:
   speller/algebra:
-    __include: radical_pinyin.schema.yaml:/algebra_flypy
-    # __include: radical_pinyin.schema.yaml:/algebra_double_pinyin
+    # __include: radical_pinyin.schema.yaml:/algebra_flypy
+    __include: radical_pinyin.schema.yaml:/algebra_double_pinyin
     # __include: radical_pinyin.schema.yaml:/algebra_mspy
     # __include: radical_pinyin.schema.yaml:/algebra_abc
     # __include: radical_pinyin.schema.yaml:/algebra_ziguang
