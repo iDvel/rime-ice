@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-05-31"
+version: "2024-06-10"
 sort: by_weight
 ...
 # +_+
@@ -1358,7 +1358,7 @@ attribution	attribution
 ATV	ATV
 # atx	atx
 # au	au
-Auburn	Auburn
+auburn	auburn
 Auch	Auch
 Auckland	Auckland
 auction	auction
