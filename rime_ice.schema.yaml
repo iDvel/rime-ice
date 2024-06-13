@@ -33,6 +33,9 @@ switches:
     reset: 1
   - name: full_shape
     states: [ 半角, 全角 ]
+  - name: kaomoji
+    states: [ ￣へ￣, (u‿ฺu✿ฺ) ]
+    reset: 1
   - name: search_single_char  # search.lua 的功能开关，辅码查词时是否单字优先
     abbrev: [词, 单]
     states: [正常, 单字]
@@ -78,6 +81,7 @@ engine:
     - lua_filter@long_word_filter                   # 长词优先（顺序要求：长词优先 > Emoji）
     - lua_filter@reduce_english_filter              # 降低部分英语单词在候选项的位置
     - simplifier@emoji                              # Emoji
+    - simplifier@kaomoji                            # kaomoji 颜文字
     - simplifier@traditionalize                     # 简繁切换
     - lua_filter@search@radical_pinyin              # 部件拆字辅码
     - uniquifier                                    # 去重
@@ -342,6 +346,11 @@ emoji:
   opencc_config: emoji.json
   inherit_comment: false  # 在 corrector.lua 及反查中，emoji 返回空注释
 
+# kaomoji 颜文字
+kaomoji:
+  option_name: kaomoji
+  opencc_config: kaomoji.json
+  inherit_comment: false  # 在 corrector.lua 及反查中，kaomoji 返回空注释
 
 # 简繁切换
 traditionalize:

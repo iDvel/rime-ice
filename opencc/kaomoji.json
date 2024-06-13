@@ -1,0 +1,19 @@
+{
+    "name": "Chinese to Kaomoji",
+    "segmentation": {
+        "type": "mmseg",
+        "dict": {
+            "type": "text",
+            "file": "kaomoji.txt"
+        }
+    },
+    "conversion_chain": [
+        {
+            "dict": {
+                "type": "text",
+                "file": "kaomoji.txt"
+
+            }
+        }
+    ]
+}
