@@ -1,54 +1,60 @@
-local drop_list = require("cold_word_drop.drop_words")
-local hide_list = require("cold_word_drop.hide_words")
-local turndown_freq_list = require("cold_word_drop.turndown_freq_words")
+local filter = {}
 
-local function filter(input, env)
-    local idx = 3 -- 降频的词条放到第三个后面, 即第四位, 可在 yaml 里配置
-    local i = 1
-    local cands = {}
-    local context = env.engine.context
-    local preedit_code = context.input
+function filter.init(env)
+	local engine = env.engine
+	local config = engine.schema.config
+	env.word_reduce_idx = config:get_int("cold_word_reduce/idx") or 4
+	env.drop_words = require("cold_word_drop.drop_words") or {}
+	env.hide_words = require("cold_word_drop.hide_words") or {}
+	env.reduce_freq_words = require("cold_word_drop.reduce_freq_words") or {}
+end
 
-    for cand in input:iter() do
-        local cpreedit_code = string.gsub(cand.preedit, ' ', '')
-        if (i <= idx) then
-            local tfl = turndown_freq_list[cand.text] or nil
-            -- 前三个 候选项排除 要调整词频的词条, 要删的(实际假性删词, 彻底隐藏罢了) 和要隐藏的词条
-            if not
-                ((tfl and table.find_index(tfl, cpreedit_code)) or
-                    table.find_index(drop_list, cand.text) or
-                    (hide_list[cand.text] and table.find_index(hide_list[cand.text], cpreedit_code))
-                )
-            then
-                i = i + 1
-                ---@diagnostic disable-next-line: undefined-global
-                yield(cand)
-            else
-                table.insert(cands, cand)
-            end
-        else
-            table.insert(cands, cand)
-        end
-        if (#cands > 50) then
-            break
-        end
-    end
-    for _, cand in ipairs(cands) do
-        local cpreedit_code = string.gsub(cand.preedit, ' ', '')
-        if not
-            -- 要删的 和要隐藏的词条不显示
-            (
-                table.find_index(drop_list, cand.text) or
-                (hide_list[cand.text] and table.find_index(hide_list[cand.text], cpreedit_code))
-            )
-        then
-            ---@diagnostic disable-next-line: undefined-global
-            yield(cand)
-        end
-    end
-    for cand in input:iter() do
-        yield(cand)
-    end
+function filter.func(input, env)
+	local cands = {}
+	local context = env.engine.context
+	local preedit_str = context.input:gsub(" ", "")
+	local drop_words = env.drop_words
+	local hide_words = env.hide_words
+	local word_reduce_idx = env.word_reduce_idx
+	local reduce_freq_words = env.reduce_freq_words
+	for cand in input:iter() do
+		local cand_text = cand.text:gsub(" ", "")
+		local preedit_code = cand.preedit:gsub(" ", "") or preedit_str
+
+		local reduce_freq_list = reduce_freq_words[cand_text] or {}
+		if word_reduce_idx > 1 then
+			-- 前三个 候选项排除 要调整词频的词条, 要删的(实际假性删词, 彻底隐藏罢了) 和要隐藏的词条
+			if reduce_freq_list and table.find_index(reduce_freq_list, preedit_code) then
+				table.insert(cands, cand)
+			elseif
+				not (
+					table.find_index(drop_words, cand_text)
+					or (hide_words[cand_text] and table.find_index(hide_words[cand_text], preedit_code))
+
+				)
+			then
+				yield(cand)
+				word_reduce_idx = word_reduce_idx - 1
+			end
+		else
+			if
+				not (
+					table.find_index(drop_words, cand_text)
+					or (hide_words[cand_text] and table.find_index(hide_words[cand_text], preedit_code))
+				)
+			then
+				table.insert(cands, cand)
+			end
+		end
+
+		if #cands >= 80 then
+			break
+		end
+	end
+
+	for _, cand in ipairs(cands) do
+		yield(cand)
+	end
 end
 
 return filter
