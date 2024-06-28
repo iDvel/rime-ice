@@ -370,7 +370,33 @@ Aeropex	Aeropex
 X11	X11
 Xnip	Xnip
 Workspace	Workspace
+AdSense	AdSense
+Authenticator	Authenticator
+Chrome	Chrome
+DeepMind	DeepMind
+Google	Google
+Google Ads	GoogleAds
+Google AdSense	GoogleAdSense
+Google Analytics	GoogleAnalytics
+Google Authenticator	GoogleAuthenticator
+Google Bard	GoogleBard
+Googlebot	Googlebot
+Google Calendar	GoogleCalendar
 Google Chrome	GoogleChrome
+Google DeepMind	GoogleDeepMind
+Google Docs	GoogleDocs
+Google Drive	GoogleDrive
+Google Gemini	GoogleGemini
+Google Gemini Advanced	GoogleGeminiAdvanced
+Google Keep	GoogleKeep
+Google Maps	GoogleMaps
+Google One	GoogleOne
+Google Photos	GooglePhotos
+Google Pixel	GooglePixel
+Google Play	GooglePlay
+Google Play Music	GooglePlayMusic
+Google TV	GoogleTV
+Google Voice	GoogleVoice
 Google Workspace	GoogleWorkspace
 WYSIWYG	WYSIWYG
 What You See Is What You Get	WYSIWYG
@@ -406,8 +432,6 @@ CloudXNS	CloudXNS
 Bitwarden	Bitwarden
 BitComet	BitComet
 Bitbucket	Bitbucket
-Google Photos	GooglePhotos
-Google Calendar	GoogleCalendar
 LyricsX	LyricsX
 OneDrive	OneDrive
 Xbox	Xbox
@@ -678,8 +702,6 @@ Gif Brewery	GifBrewery
 gists	gists
 GitHub	GitHub
 GoagentX	GoagentX
-Google Play	GooglePlay
-Google Play Music	GooglePlayMusic
 Graffle	Graffle
 Handoff	Handoff
 Hazel	Hazel
@@ -950,7 +972,6 @@ Pickup Artists	PickupArtists
 Dockerfile	Dockerfile
 Docker Hub	DockerHub
 Darcula	Darcula
-Google Analytics	GoogleAnalytics
 Cloudflare Pages	CloudflarePages
 GitHub Pages	GitHubPages
 Coding Pages	CodingPages
@@ -975,8 +996,6 @@ CocoaPods	CocoaPods
 Zsh	Zsh
 Oh My Zsh	OhMyZsh
 ProxyChains	ProxyChains
-AdSense	AdSense
-Google AdSense	GoogleAdSense
 Disqus	Disqus
 Waline	Waline
 Valine	Valine
@@ -1008,7 +1027,6 @@ Extensible Markup Language	ExtensibleMarkupLanguage
 XHTML	XHTML
 eXtensible HyperText Markup Language	XHTML
 eXtensible HyperText Markup Language	eXtensibleHyperTextMarkupLanguage
-Googlebot	Googlebot
 Baiduspider	Baiduspider
 Bingbot	Bingbot
 SogouSpider	SogouSpider
@@ -1121,7 +1139,6 @@ TickTick	TickTick
 CHDBits	CHDBits
 M-Team	M-Team
 Vim	Vim
-Google Voice	GoogleVoice
 Workers	Workers
 Cloudflare Workers	CloudflareWorkers
 PlayStation	PlayStation
@@ -1183,8 +1200,6 @@ Cloudflare Images	CloudflareImages
 Cloudflare Stream	CloudflareStream
 Zero Trust	ZeroTrust
 Universal Actions	UniversalActions
-Google Drive	GoogleDrive
-Google One	GoogleOne
 Airbnb	Airbnb
 OpenCC	OpenCC
 HarmonyOS	HarmonyOS
@@ -1512,14 +1527,12 @@ Steam	Steam
 Steam Deck	SteamDeck
 Android	Android
 android	android
-Chrome	Chrome
 iOS	iOS
 Linux	Linux
 Ubuntu	Ubuntu
 Windows	Windows
 Microsoft	Microsoft
 Nintendo	Nintendo
-Google	Google
 Nexus	Nexus
 Wii U	WiiU
 Wii	Wii
@@ -1590,7 +1603,6 @@ Bulletin Board System	BBS
 Bulletin Board System	BulletinBoardSystem
 chrono	chrono
 Widevine	Widevine
-Google Ads	GoogleAds
 Valhalla	Valhalla
 KFC	KFC
 AWP	AWP
@@ -1609,9 +1621,6 @@ Lua	Lua
 MacType	MacType
 Alipay	Alipay
 WeChat Pay	WeChatPay
-Google Maps	GoogleMaps
-Google Keep	GoogleKeep
-Google Docs	GoogleDocs
 UPnP	UPnP
 Universal Plug and Play	UPnP
 Universal Plug and Play	UniversalPlugandPlay
@@ -1656,7 +1665,6 @@ GPT	GPT
 Generative Pre-trained Transformer	GPT
 GPT-4	GPT-4
 GPT-3.5	GPT-3.5
-Google Bard	GoogleBard
 LaMDA	LaMDA
 Language Model for Dialogue Applications	LaMDA
 Coinbase Wallet	CoinbaseWallet
@@ -1680,9 +1688,6 @@ Key Performance Indicators	KPI
 mutex	mutex
 TIOBE	TIOBE
 DigitalOcean	DigitalOcean
-Google Authenticator	GoogleAuthenticator
-Authenticator	Authenticator
-authenticator	authenticator
 Depay	Depay
 Codeium	Codeium
 OpenCat	OpenCat
@@ -1835,8 +1840,6 @@ Wayland	Wayland
 Wappalyzer	Wappalyzer
 noop	noop
 Kung Fu	KungFu
-DeepMind	DeepMind
-Google DeepMind	GoogleDeepMind
 TL;DR	TL;DR
 too long; didn't read	TL;DR
 Ant-Man	Ant-Man
@@ -1935,7 +1938,6 @@ Dungeons & Dragons	DnD
 Minecraft	Minecraft
 LSP	LSP
 Language Server Protocol	LSP
-Google Pixel	GooglePixel
 C#	C#
 KeyCastr	KeyCastr
 Laugh Tale	LaughTale
@@ -1987,7 +1989,6 @@ they've	they've
 lemme	lemme
 outta	outta
 whatcha	whatcha
-Google TV	GoogleTV
 PVP	PVP
 Player versus Player	PVP
 PVE	PVE
@@ -2074,8 +2075,6 @@ submodules	submodules
 Writerside	Writerside
 Manifest V2	ManifestV2
 Manifest V3	ManifestV3
-Google Gemini	GoogleGemini
-Google Gemini Advanced	GoogleGeminiAdvanced
 IMBA	IMBA
 GitButler	GitButler
 Sora	Sora
