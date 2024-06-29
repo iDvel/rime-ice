@@ -14,70 +14,172 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-07-13"
+version: "2024-07-22"
 sort: by_weight
 ...
 # +_+
 # a	a
 AA	AA
+AAA	AAA
 aaa	aaa
 # aac	aac
 Aaliyah	Aaliyah
 Aaron	Aaron
 # ab	ab
+Aba	Aba
 aba	aba
+aback	aback
+abaft	abaft
 abandon	abandon
 abandoned	abandoned
+abandons	abandons
+abase	abase
+abased	abased
+abasement	abasement
+abashed	abashed
+abate	abate
+abated	abated
 abatement	abatement
+abating	abating
 Abba	Abba
+abbess	abbess
 abbey	abbey
+abbeys	abbeys
+abbot	abbot
+abbots	abbots
 Abbott	Abbott
+abbreviated	abbreviated
 abbreviation	abbreviation
 abbreviations	abbreviations
 Abby	Abby
 abc	abc
 ABC	ABC
+abdicate	abdicate
+abdicated	abdicated
+abdication	abdication
 abdomen	abdomen
 abdominal	abdominal
+abduct	abduct
+abducting	abducting
+abduction	abduction
+abductor	abductor
+abductors	abductors
+abducts	abducts
 Abdul	Abdul
+Abdullah	Abdullah
 # abe	abe
+abed	abed
+Abelard	Abelard
 Aberdeen	Aberdeen
+aberration	aberration
+aberrations	aberrations
+abet	abet
+abetment	abetment
+abets	abets
+abetted	abetted
+abetting	abetting
+abettor	abettor
+abeyance	abeyance
+abhor	abhor
+abhorred	abhorred
+abhorrence	abhorrence
+abhorrent	abhorrent
+abhorrer	abhorrer
+abhorring	abhorring
+abhors	abhors
 # abi	abi
 abide	abide
+abides	abides
 Abigail	Abigail
 abilities	abilities
 ability	ability
 # abit	abit
+abject	abject
+abjectly	abjectly
+abjure	abjure
+abjured	abjured
+abjures	abjures
+abjuring	abjuring
 ablate	ablate
 ablation	ablation
+ablaze	ablaze
 able	able
+able-bodied	able-bodied
+abler	abler
+ablest	ablest
+ablution	ablution
+ablutions	ablutions
+ably	ably
 # abn	abn
+abnegation	abnegation
+Abner	Abner
 abnormal	abnormal
 abnormalities	abnormalities
+abnormally	abnormally
 aboard	aboard
+abode	abode
+abodes	abodes
 abolish	abolish
+abolishing	abolishing
+abolitionist	abolitionist
+abolitionists	abolitionists
+abominably	abominably
+abomination	abomination
 aboriginal	aboriginal
+Aborigines	Aborigines
 abortion	abortion
+abortive	abortive
 abound	abound
+abounded	abounded
+abounding	abounding
+abounds	abounds
 about	about
 above	above
+abovementioned	abovementioned
 Abraham	Abraham
 Abramoff	Abramoff
+abridge	abridge
+abridged	abridged
+abridgement	abridgement
+abridgment	abridgment
 abroad	abroad
+abrogated	abrogated
 abrupt	abrupt
-ABS	ABS
+abruptness	abruptness
+abscess	abscess
 absence	absence
+absences	absences
 absent	absent
+absent-minded	absent-minded
+absented	absented
+absentee	absentee
+absently	absently
+absinthe	absinthe
 absolute	absolute
 absolutely	absolutely
+absolution	absolution
+absolutism	absolutism
+absolve	absolve
+absolved	absolved
 absorb	absorb
 absorbed	absorbed
 absorbing	absorbing
+absorbs	absorbs
 absorption	absorption
+abstained	abstained
+abstaining	abstaining
+abstemious	abstemious
+abstention	abstention
+abstinence	abstinence
 abstract	abstract
+abstracted	abstracted
+abstractedly	abstractedly
 abstraction	abstraction
+abstractions	abstractions
 abstracts	abstracts
+abstruse	abstruse
 absurd	absurd
+absurdly	absurdly
 # abt	abt
 # abu	abu
 abundance	abundance
@@ -85,26 +187,37 @@ abundant	abundant
 abuse	abuse
 abused	abused
 abuses	abuses
+abusing	abusing
 abusive	abusive
+abysmal	abysmal
+Abyssinia	Abyssinia
+Abyssinian	Abyssinian
 # ac	ac
 # aca	aca
+acacia	acacia
 # acad	acad
 academia	academia
 academic	academic
+academically	academically
 academics	academics
 academies	academies
 academy	academy
 Acapulco	Acapulco
 # acc	acc
+accede	accede
+acceded	acceded
 accelerate	accelerate
 accelerated	accelerated
 acceleration	acceleration
 accelerator	accelerator
 accent	accent
+accented	accented
 accents	accents
+accentuated	accentuated
 accept	accept
 acceptable	acceptable
 acceptance	acceptance
+acceptation	acceptation
 accepted	accepted
 accepting	accepting
 accepts	accepts
@@ -115,6 +228,7 @@ accessibility	accessibility
 accessible	accessible
 accessing	accessing
 accession	accession
+accessions	accessions
 accessories	accessories
 accessory	accessory
 accident	accident
@@ -123,22 +237,33 @@ accidentally	accidentally
 accidents	accidents
 acclaim	acclaim
 acclaimed	acclaimed
+acclamation	acclamation
+acclamations	acclamations
 accolades	accolades
 accommodate	accommodate
+accommodated	accommodated
+accommodating	accommodating
 accommodation	accommodation
 accommodations	accommodations
-# accomodation	accomodation
 accompanied	accompanied
+accompanies	accompanies
 accompany	accompany
 accompanying	accompanying
+accomplice	accomplice
 accomplish	accomplish
 accomplished	accomplished
+accomplishes	accomplishes
+accomplishing	accomplishing
 accomplishment	accomplishment
 accomplishments	accomplishments
 accord	accord
 accordance	accordance
+accordant	accordant
 according	according
 accordingly	accordingly
+accords	accords
+accost	accost
+accosted	accosted
 account	account
 accountability	accountability
 accountable	accountable
@@ -148,18 +273,28 @@ accountants	accountants
 accounted	accounted
 accounting	accounting
 accounts	accounts
+accoutred	accoutred
+accoutrements	accoutrements
 accreditation	accreditation
 accredited	accredited
+accrue	accrue
 accrued	accrued
+accruing	accruing
 # acct	acct
 accumulate	accumulate
 accumulated	accumulated
+accumulates	accumulates
+accumulating	accumulating
 accumulation	accumulation
 accuracy	accuracy
 accurate	accurate
 accurately	accurately
 accuse	accuse
 accused	accused
+accuser	accuser
+accuses	accuses
+accusing	accusing
+accustom	accustom
 accustomed	accustomed
 acdbentity	acdbentity
 AcDbLine	AcDbLine
@@ -167,6 +302,8 @@ ace	ace
 Acer	Acer
 aces	aces
 acetate	acetate
+acetic	acetic
+acetylene	acetylene
 ache	ache
 achieve	achieve
 achieved	achieved
@@ -174,7 +311,9 @@ achievement	achievement
 achievements	achievements
 achieves	achieves
 achieving	achieving
+Achilles	Achilles
 acid	acid
+acidity	acidity
 acids	acids
 ACK	ACK
 acknowledge	acknowledge
@@ -194,18 +333,28 @@ acoustics	acoustics
 # acp	acp
 acquaint	acquaint
 acquaintance	acquaintance
+acquaintanceship	acquaintanceship
+acquainted	acquainted
+acquiesce	acquiesce
 acquire	acquire
 acquired	acquired
+acquirement	acquirement
 acquires	acquires
 acquiring	acquiring
 acquisition	acquisition
 acquisitions	acquisitions
+acquit	acquit
+acquittal	acquittal
 acre	acre
 acreage	acreage
 acres	acres
+acrid	acrid
+acrimonious	acrimonious
+acrimony	acrimony
 acrobat	acrobat
 acronym	acronym
 acronyms	acronyms
+acropolis	acropolis
 across	across
 acrylic	acrylic
 # acs	acs
@@ -231,15 +380,23 @@ actress	actress
 actresses	actresses
 acts	acts
 actual	actual
+actuality	actuality
 actually	actually
 actuarial	actuarial
+actuated	actuated
+acumen	acumen
 acupuncture	acupuncture
 Acura	Acura
 acute	acute
+acutely	acutely
+acuteness	acuteness
 Acxiom	Acxiom
 # ad	ad
 Ada	Ada
+adage	adage
 Adam	Adam
+adamant	adamant
+adamantine	adamantine
 Adams	Adams
 adapt	adapt
 adaptation	adaptation
@@ -256,6 +413,7 @@ add-on	add-on
 add-ons	add-ons
 added	added
 addendum	addendum
+adder	adder
 addict	addict
 addicted	addicted
 addiction	addiction
@@ -275,13 +433,21 @@ addressed	addressed
 addresses	addresses
 addressing	addressing
 adds	adds
+adduce	adduce
+adduced	adduced
 Adelaide	Adelaide
+Adele	Adele
+Aden	Aden
+adept	adept
 adequacy	adequacy
 adequate	adequate
 adequately	adequately
 ADHD	ADHD
 adhere	adhere
+adhered	adhered
 adherence	adherence
+adherent	adherent
+adhering	adhering
 adhesion	adhesion
 adhesive	adhesive
 adhesives	adhesives
@@ -290,9 +456,12 @@ adipex	adipex
 adj	adj
 adjacent	adjacent
 adjective	adjective
+adjectives	adjectives
 adjoin	adjoin
 adjoining	adjoining
+adjourn	adjourn
 adjourned	adjourned
+adjournment	adjournment
 adjunct	adjunct
 adjust	adjust
 adjustable	adjustable
@@ -300,6 +469,7 @@ adjusted	adjusted
 adjusting	adjusting
 adjustment	adjustment
 adjustments	adjustments
+adjutant	adjutant
 Adler	Adler
 ADM	ADM
 admin	admin
@@ -312,32 +482,54 @@ administrator	administrator
 administrators	administrators
 admins	admins
 admiral	admiral
+Admiralty	Admiralty
 admiration	admiration
 admire	admire
+admiringly	admiringly
+admissible	admissible
 admission	admission
 admissions	admissions
 admit	admit
 admits	admits
+admittance	admittance
 admitted	admitted
+admittedly	admittedly
+admixture	admixture
+admonish	admonish
+admonition	admonition
+ado	ado
 Adobe	Adobe
 adobe	adobe
+adolescence	adolescence
 adolescent	adolescent
 adolescents	adolescents
+Adolf	Adolf
+Adonis	Adonis
 adopt	adopt
 adopted	adopted
 adopting	adopting
 adoption	adoption
 adorable	adorable
 adore	adore
+adorer	adorer
+adores	adores
+adoring	adoring
+adornment	adornment
+adown	adown
 # adp	adp
 # adr	adr
 adrenaline	adrenaline
 Adrian	Adrian
 adrift	adrift
+adroit	adroit
+adroitly	adroitly
 # ads	ads
 adsense	adsense
 ADSL	ADSL
+adulation	adulation
 adult	adult
+adulterous	adulterous
+adultery	adultery
 adults	adults
 # adv	adv
 advance	advance
@@ -349,12 +541,16 @@ advantage	advantage
 advantageous	advantageous
 advantages	advantages
 advent	advent
+adventitious	adventitious
 adventure	adventure
 adventures	adventures
+adventuress	adventuress
 adverb	adverb
+adverbs	adverbs
 adverse	adverse
 adversely	adversely
 advert	advert
+adverted	adverted
 advertise	advertise
 advertised	advertised
 advertisement	advertisement
@@ -364,6 +560,7 @@ advertisers	advertisers
 advertising	advertising
 adverts	adverts
 advice	advice
+advisability	advisability
 advisable	advisable
 advise	advise
 advised	advised
@@ -377,9 +574,12 @@ advisors	advisors
 advisory	advisory
 advocacy	advocacy
 advocate	advocate
+advocated	advocated
 advocates	advocates
+advocating	advocating
 adware	adware
 # ae	ae
+Aeneas	Aeneas
 aerial	aerial
 aero	aero
 aerobic	aerobic
@@ -388,6 +588,7 @@ aerosmith	aerosmith
 aerosol	aerosol
 aerospace	aerospace
 # aes	aes
+Aeschylus	Aeschylus
 # aest	aest
 aesthetic	aesthetic
 aesthetics	aesthetics
@@ -395,6 +596,8 @@ aesthetics	aesthetics
 # afb	afb
 # afc	afc
 aff	aff
+affable	affable
+affably	affably
 affair	affair
 affairs	affairs
 affect	affect
@@ -410,15 +613,25 @@ affiliation	affiliation
 affiliations	affiliations
 affinity	affinity
 affirm	affirm
+affirmation	affirmation
 affirmative	affirmative
 affirmed	affirmed
+affix	affix
+afflict	afflict
+afflicts	afflicts
+affluence	affluence
 affluent	affluent
 afford	afford
 affordable	affordable
 afforded	afforded
+affray	affray
+affront	affront
 Afghan	Afghan
 Afghanistan	Afghanistan
+afire	afire
 # afl	afl
+aflame	aflame
+afoot	afoot
 aforementioned	aforementioned
 # afp	afp
 afraid	afraid
@@ -427,14 +640,19 @@ African	African
 Afro	Afro
 aft	aft
 after	after
+afterglow	afterglow
 aftermarket	aftermarket
 aftermath	aftermath
 afternoon	afternoon
+afterthought	afterthought
 afterward	afterward
 afterwards	afterwards
 # ag	ag
 again	again
 against	against
+Agamemnon	Agamemnon
+agape	agape
+agate	agate
 age	age
 aged	aged
 ageing	ageing
@@ -445,21 +663,38 @@ agendas	agendas
 agent	agent
 agents	agents
 ages	ages
+aggrandizement	aggrandizement
 aggravate	aggravate
+aggravated	aggravated
+aggravation	aggravation
 aggregate	aggregate
 aggregation	aggregation
 aggregator	aggregator
 aggression	aggression
 aggressive	aggressive
+aggressively	aggressively
+aggressor	aggressor
+aggrieved	aggrieved
 agile	agile
 agility	agility
 aging	aging
 agitate	agitate
+agitating	agitating
 agitation	agitation
+agitator	agitator
+aglow	aglow
 Agnes	Agnes
+agnostic	agnostic
 ago	ago
+agog	agog
+agone	agone
+agonised	agonised
+agonising	agonising
+agonized	agonized
+agonizing	agonizing
 agony	agony
 # agp	agp
+agrarian	agrarian
 agree	agree
 agreeable	agreeable
 agreed	agreed
@@ -470,21 +705,34 @@ agrees	agrees
 # agri	agri
 agricultural	agricultural
 agriculture	agriculture
+aground	aground
+ague	ague
 Aguilera	Aguilera
 # ah	ah
 ahead	ahead
 Ahmad	Ahmad
 Ahmed	Ahmed
+ahoy	ahoy
 AI	AI
 aid	aid
 aide	aide
 aided	aided
 aides	aides
+aiding	aiding
 aids	aids
+AIDS	AIDS
+ail	ail
+ailed	ailed
+ailing	ailing
+ailment	ailment
+ails	ails
 aim	aim
 aimed	aimed
 aiming	aiming
+aimless	aimless
 aims	aims
+ain	ain
+ain't	ain't
 air	air
 air-conditioning	air-conditioning
 airborne	airborne
@@ -493,6 +741,8 @@ aired	aired
 aires	aires
 airfare	airfare
 airfares	airfares
+airily	airily
+airing	airing
 airline	airline
 airlines	airlines
 airmail	airmail
@@ -500,25 +750,31 @@ airplane	airplane
 airplanes	airplanes
 airport	airport
 airports	airports
+airship	airship
 airsoft	airsoft
 airways	airways
+airy	airy
 aisle	aisle
 # aix	aix
 # aj	aj
+ajar	ajar
 AJAX	AJAX
 AK	AK
 aka	aka
+akimbo	akimbo
 akin	akin
 Akon	Akon
 Akron	Akron
 # al	al
 # ala	ala
 Alabama	Alabama
+alabaster	alabaster
 Aladdin	Aladdin
 Alain	Alain
 alameda	alameda
 alamo	alamo
 Alan	Alan
+Alaric	Alaric
 alarm	alarm
 alarms	alarms
 alas	alas
@@ -534,17 +790,24 @@ Alberta	Alberta
 Alberto	Alberto
 Albion	Albion
 album	album
+albumen	albumen
+albumin	albumin
 albums	albums
 Albuquerque	Albuquerque
 Alcatel	Alcatel
+alchemists	alchemists
 alchemy	alchemy
 alcohol	alcohol
 alcoholic	alcoholic
 alcoholism	alcoholism
+alcove	alcove
+alder	alder
+alderman	alderman
 ale	ale
 Alec	Alec
 alembic	alembic
 alert	alert
+alertness	alertness
 alerts	alerts
 Alex	Alex
 Alexa	Alexa
@@ -554,42 +817,60 @@ Alexandre	Alexandre
 Alexandria	Alexandria
 Alexis	Alexis
 alfa	alfa
+alfalfa	alfalfa
+Alfonso	Alfonso
 Alfred	Alfred
 algae	algae
 algebra	algebra
 algebraic	algebraic
 Algeria	Algeria
+Algiers	Algiers
+Algonquin	Algonquin
 algorithm	algorithm
 algorithms	algorithms
 Ali	Ali
 alias	alias
 aliases	aliases
 Alibaba	Alibaba
+alibi	alibi
 Alibris	Alibris
 Alicante	Alicante
 Alice	Alice
 Alicia	Alicia
 alien	alien
+alienate	alienate
+alienation	alienation
 aliens	aliens
 Alienware	Alienware
 align	align
 aligned	aligned
 alignment	alignment
 alike	alike
+aliment	aliment
+alimentary	alimentary
 Alison	Alison
 Alito	Alito
 alive	alive
+alkali	alkali
 alkaline	alkaline
 all	all
+all-embracing	all-embracing
+all-important	all-important
+all-powerful	all-powerful
+all-round	all-round
 # alla	alla
 Allah	Allah
 Allan	Allan
+allay	allay
 # alle	alle
+allegation	allegation
 allegations	allegations
 allege	allege
 alleged	alleged
 allegedly	allegedly
 allegiance	allegiance
+allegorical	allegorical
+allegory	allegory
 Allegra	Allegra
 allegro	allegro
 Allen	Allen
@@ -600,13 +881,17 @@ alleviate	alleviate
 alley	alley
 alliance	alliance
 alliances	alliances
+Allie	Allie
 allied	allied
 allies	allies
+alligator	alligator
 Allison	Allison
 allocate	allocate
 allocated	allocated
 allocation	allocation
 allocations	allocations
+allot	allot
+allotment	allotment
 allow	allow
 allowable	allowable
 allowance	allowance
@@ -616,17 +901,26 @@ allowing	allowing
 allows	allows
 alloy	alloy
 alloys	alloys
+allspice	allspice
+allude	allude
+alluding	alluding
+allure	allure
+allurement	allurement
+alluring	alluring
+alluvial	alluvial
 ally	ally
 Alma	Alma
 almanac	almanac
 almighty	almighty
 almond	almond
+almoner	almoner
 almost	almost
 aloe	aloe
 aloha	aloha
 alone	alone
 along	along
 alongside	alongside
+aloofness	aloofness
 # alot	alot
 aloud	aloud
 alpha	alpha
@@ -640,6 +934,7 @@ Alps	Alps
 already	already
 alright	alright
 # als	als
+Alsatian	Alsatian
 also	also
 alt	alt
 Alta	Alta
@@ -648,18 +943,25 @@ Altavista	Altavista
 alter	alter
 alteration	alteration
 alterations	alterations
+altercation	altercation
 altered	altered
 altering	altering
 alternate	alternate
 alternating	alternating
+alternation	alternation
 alternative	alternative
 alternatively	alternatively
 alternatives	alternatives
+althea	althea
 although	although
 altitude	altitude
 alto	alto
 altogether	altogether
 Alton	Alton
+altruism	altruism
+altruistic	altruistic
+alum	alum
+alumina	alumina
 aluminium	aluminium
 aluminum	aluminum
 alumni	alumni
@@ -668,10 +970,17 @@ always	always
 alzheimer	alzheimer
 am	am
 ama	ama
+amalgamated	amalgamated
+amalgamation	amalgamation
 Amanda	Amanda
+amanuensis	amanuensis
 Amarillo	Amarillo
+amaryllis	amaryllis
+amass	amass
+amassed	amassed
 amateur	amateur
 amateurs	amateurs
+amatory	amatory
 amatuer	amatuer
 amature	amature
 amaze	amaze
@@ -681,16 +990,21 @@ amazingly	amazingly
 Amazon	Amazon
 ambassador	ambassador
 amber	amber
+ambergris	ambergris
 Ambien	Ambien
 ambient	ambient
+ambiguity	ambiguity
 ambiguous	ambiguous
 ambition	ambition
 ambitious	ambitious
+ambrosia	ambrosia
 ambulance	ambulance
+ambuscade	ambuscade
 # amc	amc
-AMD	AMD
 Amelia	Amelia
+amelioration	amelioration
 amen	amen
+amenable	amenable
 amend	amend
 amended	amended
 amending	amending
@@ -709,22 +1023,31 @@ Amex	Amex
 # amg	amg
 Amherst	Amherst
 # ami	ami
+amiability	amiability
 amiable	amiable
+amiably	amiably
+amicable	amicable
+amicably	amicably
 amid	amid
+amidships	amidships
 Amiga	Amiga
 amino	amino
 ammo	ammo
 ammonia	ammonia
+ammonium	ammonium
 ammunition	ammunition
 amnesty	amnesty
 among	among
 amongst	amongst
 amor	amor
+amorphous	amorphous
 amortization	amortization
 # amos	amos
 amount	amount
 amounts	amounts
 amp	amp
+amphibious	amphibious
+amphitheatre	amphitheatre
 ampland	ampland
 ample	ample
 amplification	amplification
@@ -734,9 +1057,11 @@ amplifiers	amplifiers
 amplify	amplify
 amplitude	amplitude
 amps	amps
+amputation	amputation
 # ams	ams
 Amsterdam	Amsterdam
 # amt	amt
+amulet	amulet
 amuse	amuse
 amusement	amusement
 amusing	amusing
@@ -744,9 +1069,11 @@ Amy	Amy
 # an	an
 ana	ana
 anabolic	anabolic
+anachronism	anachronism
 Anaheim	Anaheim
 anal	anal
 analog	analog
+analogies	analogies
 analogous	analogous
 analogue	analogue
 analogy	analogy
@@ -764,7 +1091,10 @@ analyzed	analyzed
 analyzer	analyzer
 analyzes	analyzes
 analyzing	analyzing
+anarchist	anarchist
 anarchy	anarchy
+anathema	anathema
+anatomical	anatomical
 anatomy	anatomy
 ancestor	ancestor
 ancestors	ancestors
@@ -774,11 +1104,14 @@ anchorage	anchorage
 anchors	anchors
 ancient	ancient
 ancillary	ancillary
+Ancona	Ancona
 and	and
 andale	andale
+Andalusia	Andalusia
 Anders	Anders
 Andersen	Andersen
 Anderson	Anderson
+Andes	Andes
 Andorra	Andorra
 Andover	Andover
 Andre	Andre
@@ -786,36 +1119,51 @@ Andrea	Andrea
 Andreas	Andreas
 Andrew	Andrew
 Andrews	Andrews
+Andromeda	Andromeda
+andromeda	andromeda
+Andros	Andros
 Andy	Andy
 anecdote	anecdote
 anemia	anemia
+anent	anent
 anesthesia	anesthesia
 # ang	ang
 angel	angel
 Angela	Angela
 Angeles	Angeles
+angelic	angelic
 Angelina	Angelina
 Angelo	Angelo
 angels	angels
+Angelus	Angelus
 anger	anger
 Angie	Angie
 angle	angle
+angler	angler
 angles	angles
+Anglia	Anglia
 Anglican	Anglican
 Anglo	Anglo
+Anglo-Indian	Anglo-Indian
 Angola	Angola
 angry	angry
 Anguilla	Anguilla
 anguish	anguish
 angular	angular
 Angus	Angus
+aniline	aniline
 animal	animal
 animals	animals
 # animalsex	animalsex
+animate	animate
 animated	animated
+animates	animates
+animating	animating
 animation	animation
 animations	animations
 anime	anime
+animosity	animosity
+animus	animus
 Aniston	Aniston
 Anita	Anita
 ankle	ankle
@@ -826,7 +1174,10 @@ Annapolis	Annapolis
 Anne	Anne
 Annette	Annette
 annex	annex
+annexation	annexation
 Annie	Annie
+annihilate	annihilate
+annihilation	annihilation
 anniversary	anniversary
 annotate	annotate
 annotated	annotated
@@ -844,9 +1195,15 @@ annoying	annoying
 annual	annual
 annually	annually
 annuity	annuity
+annul	annul
 annum	annum
+Annunciation	Annunciation
 anode	anode
+anodyne	anodyne
+anoint	anoint
+anointing	anointing
 anomalies	anomalies
+anomalous	anomalous
 anomaly	anomaly
 anon	anon
 anonymous	anonymous
@@ -854,16 +1211,25 @@ another	another
 # ans	ans
 ANSI	ANSI
 answer	answer
+answerable	answerable
 answered	answered
 answering	answering
 answers	answers
 ant	ant
+antagonism	antagonism
+antagonistic	antagonistic
 Antarctic	Antarctic
 Antarctica	Antarctica
 ante	ante
+antecedent	antecedent
+antechamber	antechamber
+antediluvian	antediluvian
+antelope	antelope
 antenna	antenna
 antennas	antennas
 anterior	anterior
+anteroom	anteroom
+Anthea	Anthea
 anthem	anthem
 anthology	anthology
 Anthony	Anthony
@@ -877,18 +1243,28 @@ antibody	antibody
 anticipate	anticipate
 anticipated	anticipated
 anticipation	anticipation
+antidote	antidote
 antigen	antigen
 antigens	antigens
 antigua	antigua
 Antilles	Antilles
+antimony	antimony
+antipathy	antipathy
+antipodes	antipodes
+antiquarian	antiquarian
+antiquary	antiquary
+antiquated	antiquated
 antique	antique
 antiques	antiques
+antiseptic	antiseptic
+antithesis	antithesis
 antitrust	antitrust
 antivirus	antivirus
 Anton	Anton
 Antonio	Antonio
 Antony	Antony
 ants	ants
+anvil	anvil
 anxiety	anxiety
 anxious	anxious
 any	any
@@ -905,31 +1281,49 @@ anywhere	anywhere
 # aol	aol
 # ap	ap
 # apa	apa
+apace	apace
 Apache	Apache
+apache	apache
 apart	apart
 apartment	apartment
 apartments	apartments
+apathetic	apathetic
+apathy	apathy
 # apc	apc
 # ape	ape
 aperture	aperture
+apes	apes
 apex	apex
+aphorism	aphorism
+aphorisms	aphorisms
 Aphrodite	Aphrodite
 API	API
 APIs	APIs
 APNIC	APNIC
 # apo	apo
 apocalypse	apocalypse
+apocryphal	apocryphal
 Apollo	Apollo
+apologetic	apologetic
 apologies	apologies
 apologise	apologise
 apologize	apologize
 apology	apology
+apoplectic	apoplectic
+apoplexy	apoplexy
 apoptosis	apoptosis
+apostasy	apostasy
+apostate	apostate
 apostle	apostle
 apostles	apostles
+apostolic	apostolic
+apostrophe	apostrophe
+apothecary	apothecary
+apotheosis	apotheosis
 app	app
 appal	appal
 Appalachian	Appalachian
+appalled	appalled
 apparatus	apparatus
 apparel	apparel
 apparent	apparent
@@ -937,6 +1331,7 @@ apparently	apparently
 appeal	appeal
 appealed	appealed
 appealing	appealing
+appealingly	appealingly
 appeals	appeals
 appear	appear
 appearance	appearance
@@ -944,11 +1339,14 @@ appearances	appearances
 appeared	appeared
 appearing	appearing
 appears	appears
+appease	appease
 appellant	appellant
 appellate	appellate
 append	append
+appendage	appendage
 appendices	appendices
 appendix	appendix
+appertain	appertain
 appetite	appetite
 appetizers	appetizers
 # appl	appl
@@ -976,15 +1374,19 @@ appoint	appoint
 appointed	appointed
 appointment	appointment
 appointments	appointments
+apposite	apposite
 appraisal	appraisal
 appraisals	appraisals
+appraised	appraised
 appraiser	appraiser
 appreciable	appreciable
 appreciate	appreciate
 appreciated	appreciated
 appreciation	appreciation
+appreciative	appreciative
 apprentice	apprentice
 apprenticeship	apprenticeship
+apprise	apprise
 approach	approach
 approached	approached
 approaches	approaches
@@ -992,6 +1394,7 @@ approaching	approaching
 appropriate	appropriate
 appropriated	appropriated
 appropriately	appropriately
+appropriateness	appropriateness
 appropriation	appropriation
 appropriations	appropriations
 approval	approval
@@ -1000,23 +1403,33 @@ approve	approve
 approved	approved
 approves	approves
 approving	approving
+approvingly	approvingly
 approx	approx
 approximate	approximate
 approximately	approximately
 approximation	approximation
 apps	apps
+appurtenances	appurtenances
 Apr.	Apr.
+apricot	apricot
 April	April
 apron	apron
+apropos	apropos
 # aps	aps
+apse	apse
 apt	apt
+aptitude	aptitude
+Apulia	Apulia
 # aq	aq
 aqua	aqua
 aquaculture	aquaculture
 aquarium	aquarium
 Aquarius	Aquarius
 aquatic	aquatic
+aqueduct	aqueduct
 aqueous	aqueous
+Aquila	Aquila
+aquiline	aquiline
 # ar	ar
 Arab	Arab
 Arabia	Arabia
@@ -1024,10 +1437,13 @@ Arabian	Arabian
 Arabic	Arabic
 arabica	arabica
 arabidopsis	arabidopsis
+arable	arable
 Arabs	Arabs
 Arafat	Arafat
+arbiter	arbiter
 arbitrary	arbitrary
 arbitration	arbitration
+arbitrator	arbitrator
 arbor	arbor
 arc	arc
 arcade	arcade
@@ -1036,9 +1452,14 @@ Arcadian	Arcadian
 arch	arch
 archaeological	archaeological
 archaeology	archaeology
+archaic	archaic
+archangel	archangel
 archbishop	archbishop
+archduke	archduke
 archer	archer
 archery	archery
+Archibald	Archibald
+archipelago	archipelago
 architect	architect
 architects	architects
 architectural	architectural
@@ -1051,15 +1472,18 @@ archives	archives
 archiving	archiving
 arctic	arctic
 Arden	Arden
+ardently	ardently
 are	are
 area	area
 areas	areas
+aren't	aren't
 arena	arena
 Ares	Ares
 arg	arg
 argent	argent
 Argentina	Argentina
 Argentine	Argentine
+Argo	Argo
 Argos	Argos
 args	args
 arguably	arguably
@@ -1068,12 +1492,14 @@ argued	argued
 argues	argues
 arguing	arguing
 argument	argument
+argumentative	argumentative
 arguments	arguments
 Argus	Argus
 argv	argv
 # ari	ari
 aria	aria
 arial	arial
+Arian	Arian
 arid	arid
 Ariel	Ariel
 Aries	Aries
@@ -1081,6 +1507,7 @@ Aries	Aries
 arise	arise
 arises	arises
 arising	arising
+aristocrat	aristocrat
 Aristotle	Aristotle
 arithmetic	arithmetic
 Arizona	Arizona
@@ -1089,14 +1516,20 @@ Arkansas	Arkansas
 Arlington	Arlington
 arm	arm
 armada	armada
+armament	armament
 Armani	Armani
+armature	armature
 armed	armed
 Armenia	Armenia
 Armenian	Armenian
+armful	armful
 armies	armies
+armistice	armistice
 armor	armor
 armored	armored
+armory	armory
 armour	armour
+armoury	armoury
 arms	arms
 Armstrong	Armstrong
 army	army
@@ -1107,15 +1540,20 @@ aromatic	aromatic
 arose	arose
 around	around
 arouse	arouse
+arousing	arousing
 # arp	arp
 arr	arr
+Arran	Arran
 arrange	arrange
 arranged	arranged
 arrangement	arrangement
 arrangements	arrangements
 arranging	arranging
+arrant	arrant
+arras	arras
 array	array
 arrays	arrays
+arrears	arrears
 arrest	arrest
 arrested	arrested
 arrests	arrests
@@ -1128,11 +1566,14 @@ arriving	arriving
 arrogant	arrogant
 arrow	arrow
 arrows	arrows
+arroyo	arroyo
 # ars	ars
 arsenal	arsenal
 arsenic	arsenic
+arson	arson
 art	art
 # arte	arte
+Artemis	Artemis
 arterial	arterial
 arteries	arteries
 artery	artery
@@ -1142,27 +1583,35 @@ article	article
 articles	articles
 articulate	articulate
 articulated	articulated
+articulation	articulation
 artifact	artifact
 artifacts	artifacts
+artifice	artifice
+artificer	artificer
+artificers	artificers
 artificial	artificial
+artificially	artificially
 artillery	artillery
 artisan	artisan
 artist	artist
 artistic	artistic
 artists	artists
+artless	artless
 arts	arts
 artwork	artwork
 Aruba	Aruba
+Aryan	Aryan
 as	as
 # asa	asa
 ASAP	ASAP
 asbestos	asbestos
 asc	asc
 ascend	ascend
+ascendancy	ascendancy
 ascending	ascending
 ascension	ascension
 ascertain	ascertain
-ASCII	ASCII
+asceticism	asceticism
 ascribe	ascribe
 ASEAN	ASEAN
 # asf	asf
@@ -1170,6 +1619,7 @@ ash	ash
 ashamed	ashamed
 Ashanti	Ashanti
 Ashcroft	Ashcroft
+ashen	ashen
 ashes	ashes
 Asheville	Asheville
 Ashford	Ashford
@@ -1178,6 +1628,7 @@ Ashlee	Ashlee
 Ashley	Ashley
 ashore	ashore
 Ashton	Ashton
+ashy	ashy
 # ASI	ASI
 Asia	Asia
 Asian	Asian
@@ -1186,6 +1637,7 @@ aside	aside
 Asin	Asin
 ask	ask
 asked	asked
+askew	askew
 asking	asking
 asks	asks
 asleep	asleep
@@ -1193,16 +1645,24 @@ asleep	asleep
 # ASN	ASN
 # asnblock	asnblock
 asp	asp
+asparagus	asparagus
 aspect	aspect
 aspects	aspects
 aspen	aspen
 asphalt	asphalt
+aspirant	aspirant
+aspiration	aspiration
 aspirations	aspirations
 aspire	aspire
 aspirin	aspirin
 ass	ass
+assail	assail
+assailant	assailant
+Assam	Assam
+assassin	assassin
 assassinate	assassinate
 assassination	assassination
+assassins	assassins
 assault	assault
 assay	assay
 assays	assays
@@ -1210,6 +1670,7 @@ assemble	assemble
 assembled	assembled
 assembler	assembler
 assemblies	assemblies
+assembling	assembling
 assembly	assembly
 assert	assert
 asserted	asserted
@@ -1225,6 +1686,8 @@ assessor	assessor
 asset	asset
 assets	assets
 asshole	asshole
+assiduous	assiduous
+assiduously	assiduously
 assign	assign
 assigned	assigned
 assigning	assigning
@@ -1232,6 +1695,8 @@ assignment	assignment
 assignments	assignments
 assigns	assigns
 assimilate	assimilate
+assimilating	assimilating
+assimilation	assimilation
 assist	assist
 assistance	assistance
 assistant	assistant
@@ -1243,11 +1708,13 @@ Assoc	Assoc
 associate	associate
 associated	associated
 associates	associates
+associating	associating
 association	association
 associations	associations
 assorted	assorted
 assortment	assortment
 asst	asst
+assuage	assuage
 assume	assume
 assumed	assumed
 assumes	assumes
@@ -1259,20 +1726,30 @@ assure	assure
 assured	assured
 # AST	AST
 asterisk	asterisk
+astern	astern
 asthma	asthma
 # astm	astm
 Aston	Aston
 astonish	astonish
 astonishment	astonishment
 Astoria	Astoria
+astounded	astounded
+astounding	astounding
 # astra	astra
+astral	astral
+astride	astride
+astringent	astringent
 # astro	astro
+astrologer	astrologer
 astrology	astrology
 astronaut	astronaut
+astronomer	astronomer
 astronomical	astronomical
 astronomy	astronomy
 astrophysics	astrophysics
 Astros	Astros
+astute	astute
+astuteness	astuteness
 # asu	asu
 ASUS	ASUS
 asylum	asylum
@@ -1282,6 +1759,7 @@ at	at
 Atari	Atari
 # atc	atc
 ate	ate
+atheism	atheism
 atheist	atheist
 Athena	Athena
 Athens	Athens
@@ -1290,7 +1768,8 @@ athletes	athletes
 athletic	athletic
 athletics	athletics
 Athlon	Athlon
-ATI	ATI
+athwart	athwart
+# ATI	ATI
 Ativan	Ativan
 ATK	ATK
 Atkins	Atkins
@@ -1306,8 +1785,13 @@ atmospheric	atmospheric
 atom	atom
 atomic	atomic
 atoms	atoms
+atone	atone
+atop	atop
 # atp	atp
 Atreyu	Atreyu
+atrium	atrium
+atrocity	atrocity
+atrophy	atrophy
 # ats	ats
 # att	att
 attach	attach
@@ -1332,8 +1816,13 @@ attendant	attendant
 attended	attended
 attendees	attendees
 attending	attending
+attends	attends
 attention	attention
+attest	attest
+attestation	attestation
+attested	attested
 attic	attic
+Attica	Attica
 attitude	attitude
 attitudes	attitudes
 # attn	attn
@@ -1360,6 +1849,7 @@ auburn	auburn
 Auch	Auch
 Auckland	Auckland
 auction	auction
+auctioneer	auctioneer
 auctions	auctions
 AUD	AUD
 Audi	Audi
@@ -1388,14 +1878,20 @@ Audubon	Audubon
 Aug.	Aug.
 augment	augment
 augmentation	augmentation
+augur	augur
+augury	augury
 August	August
 august	august
 Augusta	Augusta
 Augustine	Augustine
+Augustinian	Augustinian
 Augustus	Augustus
 aunt	aunt
+auntie	auntie
+aunty	aunty
 aura	aura
 aural	aural
+aureole	aureole
 aurora	aurora
 # aus	aus
 Aussie	Aussie
@@ -1408,6 +1904,7 @@ Australians	Australians
 Austria	Austria
 Austrian	Austrian
 # aut	aut
+# autem	autem
 auth	auth
 authentic	authentic
 authenticated	authenticated
@@ -1430,8 +1927,12 @@ authorizing	authorizing
 authors	authors
 autism	autism
 auto	auto
+autobiographical	autobiographical
 autobiography	autobiography
 AutoCAD	AutoCAD
+autocracy	autocracy
+autocrat	autocrat
+autocratic	autocratic
 Autodesk	Autodesk
 autograph	autograph
 autographed	autographed
@@ -1441,6 +1942,7 @@ automated	automated
 automatic	automatic
 automatically	automatically
 automation	automation
+automaton	automaton
 automobile	automobile
 automobiles	automobiles
 automotive	automotive
@@ -1458,24 +1960,31 @@ available	available
 avalanche	avalanche
 Avalon	Avalon
 avant	avant
+avaricious	avaricious
 avatar	avatar
 avatars	avatars
 Avaya	Avaya
 ave	ave
 # avec	avec
+avenger	avenger
 avenue	avenue
 avenues	avenues
+aver	aver
 average	average
 averaged	averaged
 averages	averages
 averaging	averaging
+Averil	Averil
 avert	avert
 Avery	Avery
 avg	avg
 AVI	AVI
 avian	avian
 aviation	aviation
+aviator	aviator
 avid	avid
+avidity	avidity
+Avignon	Avignon
 # avis	avis
 Aviv	Aviv
 avoid	avoid
@@ -1484,6 +1993,8 @@ avoided	avoided
 avoiding	avoiding
 avoids	avoids
 Avon	Avon
+avow	avow
+avowal	avowal
 # avr	avr
 Avril	Avril
 # avs	avs
@@ -1501,21 +2012,32 @@ aware	aware
 awareness	awareness
 away	away
 awe	awe
+awe-inspiring	awe-inspiring
 awesome	awesome
+awestruck	awestruck
 awful	awful
+awfulness	awfulness
 awhile	awhile
 awkward	awkward
+awkwardly	awkwardly
+awkwardness	awkwardness
+awning	awning
+awry	awry
 # ax	ax
 axe	axe
 axel	axel
 axes	axes
 axial	axial
+axiom	axiom
 axis	axis
 axle	axle
 # ay	ay
 aye	aye
 # az	az
+azalea	azalea
 Azerbaijan	Azerbaijan
+Azores	Azores
+Aztec	Aztec
 azure	azure
 # b	b
 # ba	ba
