@@ -79,6 +79,7 @@ engine:
     - table_translator@radical_lookup   # 部件拆字反查
     - lua_translator@unicode            # Unicode
     - lua_translator@number_translator  # 数字、金额大写
+    - lua_translator@calc_translator    # 计算器
     - lua_translator@force_gc           # 暴力 GC
   filters:
     - lua_filter@corrector                          # 错音错字提示
@@ -292,6 +293,7 @@ recognizer:
     radical_lookup: "^uU[a-z;]+$"       # 响应部件拆字的反查，与 radical_lookup/prefix 匹配
     unicode: "^U[a-f0-9]+"              # 脚本将自动获取第 2 个字符 U 作为触发前缀，响应 lua_translator@unicode，输出 Unicode 字符
     number: "^R[0-9]+[.]?[0-9]*"        # 脚本将自动获取第 2 个字符 R 作为触发前缀，响应 lua_translator@number_translator，数字金额大写
+    calculator: "^cC.+"              # 脚本将自动获取第 2-3 个字符 cC 作为触发前缀，响应 lua_translator@calc_translator，计算器
     gregorian_to_lunar: "^N[0-9]{1,8}"  # 脚本将自动获取第 2 个字符 N 作为触发前缀，响应 lua_translator@lunar，公历转农历，输入 N20240115 得到「二〇二三年腊月初五」
 
 

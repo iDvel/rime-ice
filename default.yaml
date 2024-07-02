@@ -243,6 +243,11 @@ key_binder:
     - {accept: KP_8, send: 8, when: composing}
     - {accept: KP_9, send: 9, when: composing}
     - {accept: KP_Decimal, send: period, when: composing}
+    # 将小键盘 + - * / 映射到主键盘，使计算器 如 1+2-3*4 可使用小键盘输入
+    - {accept: KP_Multiply, send: asterisk, when: composing}
+    - {accept: KP_Add,      send: plus,     when: composing}
+    - {accept: KP_Subtract, send: minus,    when: composing}
+    - {accept: KP_Divide,   send: slash,    when: composing}
 
 
 # 按键速查
