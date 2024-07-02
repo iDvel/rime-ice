@@ -585,7 +585,12 @@ Xcode	Xcode
 emoji	emoji
 gakki	gakki
 iMazing	iMazing
+ECMAScript	ECMAScript
 jQuery	jQuery
+JS	JS
+JavaScript	JS
+JavaScript	JavaScript
+JSP	JSP
 JPG	JPG
 Joint Photographic Experts Group	JPG
 JPEG	JPEG
@@ -1357,6 +1362,12 @@ RubyMine	RubyMine
 AppCode	AppCode
 Code With Me	CodeWithMe
 JetBrains Mono	JetBrainsMono
+JDK	JDK
+Java Development Kit	JDK
+Java Development Kit	JavaDevelopmentKit
+JRE	JRE
+Java Runtime Environment	JRE
+Java Runtime Environment	JavaRuntimeEnvironment
 JVM	JVM
 Java Virtual Machine	JVM
 Java Virtual Machine	JavaVirtualMachine
@@ -1553,9 +1564,10 @@ X-ray	X-ray
 Hip-Hop	Hip-Hop
 Simplified Chinese	SimplifiedChinese
 Traditional Chinese	TraditionalChinese
+United States	US
+United States	UnitedStates
 USA	USA
 The United States of America	USA
-United States	UnitedStates
 USD	USD
 United States Dollar	USD
 United States Dollar	UnitedStatesDollar
@@ -1665,6 +1677,7 @@ GPT	GPT
 Generative Pre-trained Transformer	GPT
 GPT-4	GPT-4
 GPT-3.5	GPT-3.5
+GPTs	GPTs
 LaMDA	LaMDA
 Language Model for Dialogue Applications	LaMDA
 Coinbase Wallet	CoinbaseWallet
@@ -1926,8 +1939,6 @@ BT	BT
 ProtonMail	ProtonMail
 Elasticsearch	Elasticsearch
 Next.js	Next.js
-JDK	JDK
-Java Development Kit	JDK
 rho	rho
 D&D	D&D
 Dungeons & Dragons	D&D
@@ -2021,7 +2032,6 @@ WireGuard	WireGuard
 AdGuard	AdGuard
 Altman	Altman
 Ultraman	Ultraman
-GPTs	GPTs
 sider	sider
 DALL·E	DALL·E
 e.g.	e.g.
@@ -2136,3 +2146,10 @@ Zope	Zope
 GameBoy	GameBoy
 GameCube	GameCube
 GameFAQs	GameFAQs
+WSL	WSL
+Windows Subsystem for Linux	WSL
+MSVC	MSVC
+Microsoft Visual C++	MSVC
+Microsoft Visual C++	MicrosoftVisualC++
+DBeaver	DBeaver
+Vite	Vite
