@@ -6,7 +6,6 @@ import (
 	mapset "github.com/deckarep/golang-set/v2"
 	"log"
 	"os"
-	"os/user"
 	"path"
 	"path/filepath"
 	"strconv"
@@ -22,8 +21,8 @@ type lemma struct {
 }
 
 var (
-	mark          = "# +_+"      // 词库中的标记符号，表示从这行开始进行检查或排序
-	RimeDir       = getRimeDir() // Rime 配置目录
+	mark    = "# +_+"      // 词库中的标记符号，表示从这行开始进行检查或排序
+	RimeDir = getRimeDir() // Rime 配置目录
 
 	EmojiMapPath = filepath.Join(RimeDir, "others/emoji-map.txt")
 	EmojiPath    = filepath.Join(RimeDir, "opencc/emoji.txt")
@@ -42,15 +41,6 @@ var (
 	错别字TXT    = filepath.Join(RimeDir, "others/script/rime/错别字.txt")
 	汉字拼音映射TXT = filepath.Join(RimeDir, "others/script/rime/汉字拼音映射.txt")
 )
-
-// 获取 macOS Rime 配置目录
-func getRimeDir() string {
-	u, err := user.Current()
-	if err != nil {
-		log.Fatalln(err)
-	}
-	return filepath.Join(u.HomeDir, "Library/Rime")
-}
 
 // 将所有词库读入 set，供检查或排序使用
 func readToSet(dictPath string) mapset.Set[string] {

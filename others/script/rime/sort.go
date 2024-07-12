@@ -107,18 +107,35 @@ func Sort(dictPath string, _type int) {
 	}
 
 	// 排序：拼音升序，权重降序，最后直接按 Unicode 编码排序
-	sort.Slice(contents, func(i, j int) bool {
-		if contents[i].code != contents[j].code {
-			return contents[i].code < contents[j].code
-		}
-		if contents[i].weight != contents[j].weight {
-			return contents[i].weight > contents[j].weight
-		}
-		if contents[i].text != contents[j].text {
-			return contents[i].text < contents[j].text
-		}
-		return false
-	})
+	// 英文排序不区分大小写
+	if strings.Contains(dictPath, "en.dict.yaml") {
+		sort.SliceStable(contents, func(i, j int) bool {
+			textI, textJ := strings.ToLower(contents[i].text), strings.ToLower(contents[j].text)
+			if strings.HasPrefix(textI, "# ") {
+				textI = textI[2:]
+			}
+			if strings.HasPrefix(textJ, "# ") {
+				textJ = textJ[2:]
+			}
+			if textI != textJ {
+				return textI < textJ
+			}
+			return false
+		})
+	} else {
+		sort.Slice(contents, func(i, j int) bool {
+			if contents[i].code != contents[j].code {
+				return contents[i].code < contents[j].code
+			}
+			if contents[i].weight != contents[j].weight {
+				return contents[i].weight > contents[j].weight
+			}
+			if contents[i].text != contents[j].text {
+				return contents[i].text < contents[j].text
+			}
+			return false
+		})
+	}
 
 	// 准备写入，清空文件，移动指针到开头
 	err = file.Truncate(0)

@@ -8,10 +8,15 @@
 #
 ---
 name: others
-version: "2024-02-07"
+version: "2024-06-10"
 sort: by_weight
 ...
 ##### 容错词
+# 一些口语读音
+空落落	kong luo luo
+空落落	kong lao lao
+空落落的	kong luo luo de
+空落落的	kong lao lao de
 # 「阿房宫」的注音争议比较大
 阿房宫	e pang gong
 阿房宫	a pang gong
@@ -77,8 +82,6 @@ sort: by_weight
 主角	zhu jiao
 角色	jue se
 角色	jiao se
-比萨	bi sa
-比萨	pi sa
 比萨饼	bi sa bing
 比萨饼	pi sa bing
 吃比萨	chi bi sa
@@ -203,12 +206,28 @@ sort: by_weight
 六安县	liu an xian
 六安市	lu an shi
 六安市	liu an shi
+六合区	lu he qu
+六合区	liu he qu
 安徽六安	an hui lu an
 安徽六安	an hui liu an
 安徽六安市	an hui lu an shi
 安徽六安市	an hui liu an shi
 安徽省六安市	an hui sheng lu an shi
 安徽省六安市	an hui sheng liu an shi
+南京六合	nan jing lu he
+南京六合	nan jing liu he
+南京六合区	nan jing lu he qu
+南京六合区	nan jing liu he qu
+南京市六合区	nan jing shi lu he qu
+南京市六合区	nan jing shi liu he qu
+偌大	ruo da
+偌大	nuo da
+饮鸩止渴	yin zhen zhi ke
+饮鸩止渴	yin jiu zhi ke
+饮鸩解渴	yin zhen jie ke
+饮鸩解渴	yin jiu jie ke
+宫商角徵羽	gong shang jue zhi yu
+宫商角徵羽	gong shang jiao zhi yu
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
@@ -227,6 +246,12 @@ sort: by_weight
 契科夫	qi ke fu
 凑合	cou he
 凑活	cou huo
+巨惠	ju hui
+钜惠	ju hui
+摩羯座	mo jie zuo
+魔蝎座	mo xie zuo
+比萨	bi sa
+披萨	pi sa
 
 
 ##### 叠字
@@ -593,6 +618,3 @@ sort: by_weight
 四个興	si ge xing
 四个龍	si ge long
 四个土
-# 其他。。。
-男女男
-女男女
