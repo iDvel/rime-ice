@@ -109,7 +109,7 @@ func Sort(dictPath string, _type int) {
 	// 排序：拼音升序，权重降序，最后直接按 Unicode 编码排序
 	// 英文排序不区分大小写
 	if strings.Contains(dictPath, "en.dict.yaml") {
-		sort.Slice(contents, func(i, j int) bool {
+		sort.SliceStable(contents, func(i, j int) bool {
 			textI, textJ := strings.ToLower(contents[i].text), strings.ToLower(contents[j].text)
 			if strings.HasPrefix(textI, "# ") {
 				textI = textI[2:]
