@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-06-10"
+version: "2024-07-13"
 sort: by_weight
 ...
 # +_+
@@ -6527,6 +6527,7 @@ epic	epic
 epidemic	epidemic
 epidemiology	epidemiology
 epilepsy	epilepsy
+epilogue	epilogue
 epinions	epinions
 episcopal	episcopal
 episode	episode
