@@ -171,6 +171,7 @@ macOS Big Sur	macOS	5
 macOS Monterey	macOS	6
 macOS Ventura	macOS	7
 macOS Sonoma	macOS	8
+macOS Sequoia	macOS	8
 
 Windows	Windows	999
 Windows 95	Windows	1
@@ -246,6 +247,7 @@ macOS Big Sur	macOSBigSur
 macOS Monterey	macOSMonterey
 macOS Ventura	macOSVentura
 macOS Sonoma	macOSSonoma
+macOS Sequoia	macOSSequoia
 Windows 95	Windows95
 Windows 98	Windows98
 Windows Me	WindowsMe

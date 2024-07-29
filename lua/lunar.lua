@@ -549,6 +549,7 @@ local function Date2LunarDate(Gregorian)
     Month = tonumber(Gregorian.sub(Gregorian, 5, 6))
     Day = tonumber(Gregorian.sub(Gregorian, 7, 8))
     if Year > 2100 or Year < 1899 or Month > 12 or Month < 1 or Day < 1 or Day > 31 or string.len(Gregorian) < 8 then
+    -- 2024.07.27 这个不能判断不存在的日期，例如 02.31 04.30 等，会显示农历，但不存在 by Mirtle
         return "无效日期", "无效日期"
     end
 
@@ -657,7 +658,7 @@ local function translator(input, seg, env)
         local lunar_date = Candidate("", seg.start, seg._end, date1, "")
         lunar_date.quality = 999
         yield(lunar_date)
-    elseif env.gregorian_to_lunar ~= '' and input:sub(1, 1) == env.gregorian_to_lunar then
+    elseif env.gregorian_to_lunar ~= '' and input:sub(1, 1) == env.gregorian_to_lunar and input:sub(2):find("^%d%d%d%d%d%d%d%d$")  then
         local date1, date2 = Date2LunarDate(input:sub(2))
         local lunar_ymd = (Candidate("", seg.start, seg._end, date2, ""))
         lunar_ymd.quality = 999
