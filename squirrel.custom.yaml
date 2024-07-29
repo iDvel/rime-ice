@@ -13,21 +13,28 @@ patch:
 
   style:
     color_scheme: catppuccin_latte
-    color_scheme_dark: catppuccin_latte
+    color_scheme_dark: catppuccin_frappe
 
     inline_preedit: true # 拼音显示在输入的地方还是显示在输入法上面
     candidate_format: "%c %@ "  # 序号和候选词之间的字符
 
     label_font_face: "Jetbrains Mono"
     label_font_point: 16
-    font_face: 'LXGW WenKai' # 候选字字体
-    # font_face: "PingFangSC"                      # 候选词字体
+    font_face: 'LXGW WenKai, PingFangSC' # 候选字字体
     font_point: 21 # 候选字词大小 
 
-
+    # 预设选项。如果皮肤没写，则使用这些属性；如果皮肤写了，使用皮肤的。
+    text_orientation: horizontal  # horizontal | vertical
+    corner_radius: 10
+    hilited_corner_radius: 0
+    border_height: 0
+    border_width: 0
+    line_spacing: 5
+    spacing: 10
+    comment_font_point: 18
 
 # 皮肤主题
-  preset_color_schemes:
+  preset_color_schemes/+:
     wechat:
       name: 微信/wechat
       author: 空山明月 <sqqlove123@163.com>
