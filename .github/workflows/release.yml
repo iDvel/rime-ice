@@ -36,6 +36,9 @@ jobs:
           zip -r dist/en_dicts.zip en_dicts
           echo "Pack opencc ..."
           zip -r dist/opencc.zip opencc
+          echo "copy LICENSE and README.md..."
+          cp LICENSE dist/LICENSE.txt
+          cp README.md dist/README.md
 
       - name: Create nightly release
         if: ${{ github.ref == 'refs/heads/main' }}
@@ -46,11 +49,13 @@ jobs:
             
             这里是每次提交后自动打包的版本，包含最新的功能和词库
 
+            - `README.md`：简易的使用说明
             - `full.zip` : 包含所有词典和方案文件
             - `cn_dicts.zip`：中文词库
             - `en_dicts.zip`：英文词库
             - `opencc.zip`：opencc 词库（emoji 等）
             - `all_dicts.zip`：以上三个词库的整合
+            - `LICENSE.txt`：开源协议
 
           tag_name: nightly
           name: "nightly build"
