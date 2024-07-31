@@ -14,7 +14,7 @@ config_version: "2024-05-14"
 app_options:
   firefox.exe:
     inline_preedit: true   # 行内显示预编辑区：规避 <https://github.com/rime/weasel/issues/946>
-  # cmd.exe:               # 带 .exe 的进程名：Weasel 15.0 及之前版本须小写; PR #1049 合并后释出的版本大小写不敏感
+  # cmd.exe:               # 带 .exe 的进程名：Weasel 15.0 及之前版本须小写
   #   ascii_mode: true     # 英文模式
   # conhost.exe:
   #   ascii_mode: true

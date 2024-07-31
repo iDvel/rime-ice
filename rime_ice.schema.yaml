@@ -289,19 +289,20 @@ pin_cand_filter:
 
 # 主翻译器，拼音
 translator:
-  dictionary: rime_ice        # 挂载词库 rime_ice.dict.yaml
-  spelling_hints: 8           # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
-  always_show_comments: true  # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。
-  initial_quality: 1.2        # 拼音的权重应该比英文大
-  comment_format:             # 标记拼音注释，供 corrector.lua 做判断用
+  dictionary: rime_ice         # 挂载词库 rime_ice.dict.yaml
+  enable_word_completion: true # 大于 4 音节的词条自动补全，librime > 1.11.2
+  spelling_hints: 8            # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
+  always_show_comments: true   # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。
+  initial_quality: 1.2         # 拼音的权重应该比英文大
+  comment_format:              # 标记拼音注释，供 corrector.lua 做判断用
     - xform/^/［/
     - xform/$/］/
-  preedit_format:             # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
-    - xform/([jqxy])v/$1u/    # 显示为 ju qu xu yu
-    # - xform/([nl])v/$1ü/    # 显示为 nü lü
-    # - xform/([nl])ue/$1üe/  # 显示为 nüe lüe
-    - xform/([nl])v/$1v/      # 显示为 nv lv
-    - xform/([nl])ue/$1ve/    # 显示为 nve lve
+  preedit_format:              # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
+    - xform/([jqxy])v/$1u/     # 显示为 ju qu xu yu
+    # - xform/([nl])v/$1ü/     # 显示为 nü lü
+    # - xform/([nl])ue/$1üe/   # 显示为 nüe lüe
+    - xform/([nl])v/$1v/       # 显示为 nv lv
+    - xform/([nl])ue/$1ve/     # 显示为 nve lve
 
 
 # 次翻译器，英文
