@@ -41,8 +41,8 @@
     -   拼音纠错（模糊音）
     -   更多默认未启用的功能请参考 `rime.lua` 文件以及方案注释
 - 简体字表、词库
-    -   [《通用规范汉字表》](https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters)
-    -   [Unihan 大字库](https://www.unicode.org/Public/) + [汉典注音](https://github.com/mozillazg/pinyin-data/)（by Unicode lnc & mozillazg | 含更多汉字，默认未启用）
+    -   [《通用规范汉字表》](https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters) 8K 常用汉字
+    -   [Unihan 字库](https://www.unicode.org/Public/) + [汉典注音](https://github.com/mozillazg/pinyin-data/)（by Unicode lnc & mozillazg | [UNICODE LICENSE V3](https://www.unicode.org/Public/draft/UCD/ReadMe.txt) + [MIT](https://github.com/mozillazg/pinyin-data/blob/master/LICENSE)）40K 大字库， **默认未启用**
     -   [华宇野风系统词库](http://bbs.pinyin.thunisoft.com/forum.php?mod=viewthread&tid=30049)（by 野风）
     -   [简化字八股文](https://github.com/rime/rime-essay-simp)（by rime | [LGPL](https://github.com/rime/rime-essay-simp/blob/master/LICENSE)）
     -   [清华大学开源词库](https://github.com/thunlp/THUOCL)（by THUNLP | [MIT](https://github.com/thunlp/THUOCL/blob/master/LICENSE)）
