@@ -68,6 +68,11 @@ SORT:
 }
 
 func areYouOK() {
+	if rime.AutoConfirm {
+		fmt.Println("Auto confirm enabled. Skipping prompt.")
+		return
+	}
+
 	fmt.Println("Are you OK:")
 	var isOK string
 	_, _ = fmt.Scanf("%s", &isOK)
