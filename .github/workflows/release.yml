@@ -22,6 +22,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.22'
+
+      - name: Install dependencies
+        run: |
+          cd others/script
+          go mod tidy
+
+      - name: Build and Run
+        run: |
+          cd others/script
+          echo "Running script with custom Rime path..."
+          go run main.go --rime_path "${{ github.workspace }}" --auto_confirm
+
       - name: Pack dicts
         run: |
           mkdir dist
@@ -58,7 +74,7 @@ jobs:
             - `LICENSE.txt`：开源协议
 
           tag_name: nightly
-          name: "nightly build"
+          name: "Nightly Build"
           make_latest: true
           files: |
             dist/*
