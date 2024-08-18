@@ -25,7 +25,8 @@ MOP$ 澳门元 澳门币 葡币
 S$ 新加坡元 新加坡币
 € 欧元
 £ 英镑
-
+₿ 比特币
+฿ 泰铢 铢
 
 ### Smileys & Emotion
 # face-smiling
