@@ -32,6 +32,7 @@ local function update_dict_entry( s, code, mem, proj )
         return 0
     end
     local e = DictEntry()
+    s = s:gsub( '^%s+', '' ):gsub( '%s+$', '' )
     e.text = s
 
     local pos = {}
@@ -80,7 +81,7 @@ end
 
 -- 通过 reverse db 查询（以字查码，然后比对辅码是否相同，快，但只能匹配未经算法转换的码）
 local function reverse_lookup( code_projection, db_table, wildcard, text, s, global_match )
-    if wildcard then s = s:gsub( wildcard, '.*' ) end
+    if wildcard then s = s:gsub( wildcard, '.+' ) end
     if code_projection then
         -- old librime do not return original string when apply failed
         local p = code_projection:apply( s, true )
@@ -294,6 +295,8 @@ function f.fini( env )
     if env.if_reverse_lookup or env.if_schema_lookup then
         env.notifier:disconnect()
         env.commit_notifier:disconnect()
+        if env.mem and env.mem.disconnect then env.mem:disconnect() end
+        if env.search and env.search.disconnect then env.search:disconnect() end
         if env.mem or env.search or env.db_table then
             env.db_table = nil
             env.mem = nil
