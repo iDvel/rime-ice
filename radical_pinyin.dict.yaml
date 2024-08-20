@@ -83,7 +83,7 @@
 
 ---
 name: radical_pinyin
-version: "2024.05.13"
+version: "2024.05.15"
 
 sort: original
 
@@ -27539,7 +27539,10 @@ sort: original
 札	mu'gou
 本	mu'heng
 末	mu'heng
+末	heng'mu
+未	mu'heng
 未	heng'mu
+未	er'xiao
 朩	heng'xiao
 木	shi'ren
 木	shi'ba
@@ -39240,9 +39243,48 @@ sort: original
 䏡	rou'shi
 䏝	yue'zhuan
 䏝	rou'zhuan
+䏍	si'yue
+䏌	ba'yue
+䏊	er'long
+䏉	er'xian
+䏈	er'si
+䏇	er'piao
+䏆	er'cao
+䏅	er'ji
+䏄	er'zhi
+䏃	er'ming
+䏂	er'sou
+䏁	er'zai
+䏀	er'la
+䎿	er'qiu
+䎾	er'lun
+䎽	er'hun
+䎼	er'lu
+䎻	er'zhou
+䎺	er'zhi
+䎹	cai'er
+䎸	er'wu
+䎷	er'zhu
+䎶	er'shen
+䎵	er'bi
+䎴	er'jing
+䎳	er'yue
+䎲	er'yi
+䎡	er'huo
+䎠	wan'er
+䎟	nv'er
 䎜	lao'lao
 䎖	ceng'yu
 䎃	ran'yu
+䍲	yang'ni
+䍲	yang'er
+䍱	yang'yu
+䍯	yang'wei
+䍮	yang'zhao
+䍬	yang'ping
+䍫	yang'ta
+䍪	yang'mo
+䍩	yang'wen
 䍇	fou'fa
 䍁	si'sui
 䍀	si'jian
