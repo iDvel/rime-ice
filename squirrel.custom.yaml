@@ -20,7 +20,7 @@ patch:
 
     label_font_face: "Jetbrains Mono"
     label_font_point: 16
-    font_face: 'LXGW WenKai, PingFangSC' # 候选字字体
+    font_face: 'LXGW WenKai Screen, PingFangSC' # 候选字字体
     font_point: 21 # 候选字词大小 
 
     # 预设选项。如果皮肤没写，则使用这些属性；如果皮肤写了，使用皮肤的。
