@@ -912,3 +912,7 @@ O不OK	obuok
 人均GDP	rfjygdp
 V8引擎	Vbaybqk
 V8引擎	vbaybqk
+4A级	siAji
+4A级	siaji
+5A级	wuAji
+5A级	wuaji
