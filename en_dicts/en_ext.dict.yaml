@@ -1,10 +1,8 @@
 # Rime dictionary
 # encoding: utf-8
 #
-#
 # https://github.com/iDvel/rime-ice
 # ------- 补充的英文词汇 -------
-#
 ---
 name: en_ext
 version: "2024-06-10"
@@ -36,8 +34,6 @@ Del	Del
 delete	delete
 Esc	Esc
 eject	eject
-
-
 # 月份（据说好像 5、6、7 月不要缩写 https://www.zhihu.com/question/29896678）
 January	January
 Jan.	Jan.
@@ -76,8 +72,6 @@ November	Nov
 December	December
 Dec.	Dec.
 December	Dec
-
-
 # 星期
 Monday	Monday
 Mon.	Mon.
@@ -103,8 +97,6 @@ Saturday	Sat
 Sunday	Sunday
 Sun.	Sun.
 Sunday	Sun
-
-
 # 生活大爆炸 & 老友记
 Sheldon	Sheldon
 Leonard	Leonard
@@ -119,8 +111,6 @@ Joey	Joey
 Ross	Ross
 Chandler	Chandler
 Phoebe	Phoebe
-
-
 # 特定的排序，为了每组的排序，code 必须保持一致
 hell	hell	2
 he'll	hell	1
@@ -137,15 +127,12 @@ she'd	shed	1
 net	net	2
 .NET	net	1
 .NET	dotnet
-
-
 # 带权重的系列
 iPhone	iPhone	999
 iPhone 15	iPhone	4
 iPhone 15 Plus	iPhone	3
 iPhone 15 Pro	iPhone	2
 iPhone 15 Pro Max	iPhone	1
-
 Mac OS X	MacOSX	999
 Mac OS X Cheetah	MacOSX	1
 Mac OS X Puma	MacOSX	2
@@ -154,14 +141,12 @@ Mac OS X Panther	MacOSX	4
 Mac OS X Tiger	MacOSX	5
 Mac OS X Leopard	MacOSX	6
 Mac OS X Snow Leopard	MacOSX	7
-
 OS X	OSX	999
 OS X Lion	OSX	1
 OS X Mountain Lion	OSX	2
 OS X Mavericks	OSX	3
 OS X Yosemite	OSX	4
 OS X El Capitan	OSX	5
-
 macOS	macOS	999
 macOS Sierra	macOS	1
 macOS High Sierra	macOS	2
@@ -172,7 +157,6 @@ macOS Monterey	macOS	6
 macOS Ventura	macOS	7
 macOS Sonoma	macOS	8
 macOS Sequoia	macOS	8
-
 Windows	Windows	999
 Windows 95	Windows	1
 Windows 98	Windows	2
@@ -185,8 +169,6 @@ Windows 7	Windows	7
 Windows 8	Windows	8
 Windows 10	Windows	10
 Windows 11	Windows	11
-
-
 # +_+
 iPhone 3G	iPhone3G
 iPhone 3GS	iPhone3GS
@@ -252,7 +234,6 @@ Windows 95	Windows95
 Windows 98	Windows98
 Windows Me	WindowsMe
 Windows 2000	Windows2000
-Windows XP	WindowsXP
 Windows Vista	WindowsVista
 Windows 7	Windows7
 Windows 8	Windows8
@@ -2160,10 +2141,8 @@ M1	M1
 M2	M2
 M3	M3
 M4	M4
-M4A1	M4A1
 3G	3G
 4G	4G
 5G	5G
 2D	2D
-3D	3D
 4D	4D
