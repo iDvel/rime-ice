@@ -1,0 +1,76 @@
+name: Bug 报告
+description: 我遇到了一个 bug 或是非预期行为
+title: '[Bug]: '
+labels:
+  - bug
+body:
+  - type: input
+    id: input
+    attributes:
+      label: 摘要
+      description: 一两句话概述遇到的问题
+    validations:
+      required: true
+  - type: checkboxes
+    id: check_box
+    attributes:
+      label: 基本检查
+      description: 如实勾选相关选项，以提高沟通的效率
+      options:
+        - label: 我使用的是雾凇拼音 iDvel/rime-ice
+          required: true
+        - label: 我搜索了过往的 issue，没找到解决办法
+          required: true
+        - label: 我查看了置顶 issue 和详细介绍，没找到解决办法
+          required: true
+        - label: 不对雾凇拼音进行任何修改，也会有这个问题
+          required: false
+        - label: 雾凇拼音最新 commit 或 Nightly 版，仍然有这个问题
+          required: false
+        - label: 我知晓：如果此 issue 不符合模板，或者长时间不活跃，会被无条件关闭
+          required: true
+  - type: input
+    id: os_version
+    attributes:
+      label: 系统信息
+      description: 请提供你能复现此问题的系统名称，以及版本号
+      placeholder: macOS 14.5 / Windows 11 23H2 / Ubuntu 22.04 LTS
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: 应用信息
+      description: 提供你使用的 RIME 前端和版本号，自构建前端请说明
+      placeholder: Squirrel 1.0.2 / Weasel 0.16.1
+    validations:
+      required: true
+  - type: textarea
+    id: step_to_reproduce
+    attributes:
+      label: 复现办法和预期行为
+      description: 重现该问题的办法，雾凇在你预期中应当如何行为
+      value: |
+        1.
+        2.
+    validations:
+      required: true
+  - type: textarea
+    id: info
+    attributes:
+      label: '补充信息'
+      description: ' 请提供你认为重要的其他信息，例如截图、视频、Rime 的报错信息等'
+  - type: textarea
+    id: config
+    attributes:
+      label: 自定义配置
+      description: 如果你对雾凇进行了修改或者打了补丁，请在此处提供你的自定义配置
+      placeholder: |
+        完整配置文件请压缩上传。
+        配置片段请包裹在 Markdown 代码块中。即用三个反引号（```）包裹，如
+        ```yaml
+        # 你的配置片段
+        ```
+
+
+

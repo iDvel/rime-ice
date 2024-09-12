@@ -1,0 +1,39 @@
+name: 想法、求助和提议
+description: 我有一些想法和建议；或是一些不理解的地方想要求助
+title: '请问：'
+
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: 摘要
+      description: 用一两句话概括此 issue 的内容
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: 应用信息
+      description: 如果必要，请提供你使用的 RIME 前端和版本号
+      placeholder: 例如：Squirrel 1.0.2 / Fcitx5 for Android 0.9 / Weasel 15.0
+    validations:
+      required: false
+  - type: textarea
+    id: content
+    attributes:
+      label: 详细说明
+      description: 请详细说明你的问题或者想法，越具体越好。
+    validations:
+      required: true
+  - type: textarea
+    id: config
+    attributes:
+      label: 补充信息
+      description: 如果必要，在此处提供你的自定义配置片段或完整配置、脚本文件
+      placeholder: |
+        完整配置文件请压缩上传。
+        配置片段请包裹在 Markdown 代码块中。即用三个反引号（```）包裹，如
+        ```yaml
+        # 你的配置片段
+        ```
+
