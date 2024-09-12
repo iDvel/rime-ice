@@ -92,6 +92,10 @@ var polyphones = map[string]string{
 	"Chrome系 > 系":   "xi",
 	"QQ游戏大厅 > 大":    "da",
 	"QQ飞车 > 车":      "che",
+	"2G网络 > 络":      "luo",
+	"3G网络 > 络":      "luo",
+	"4G网络 > 络":      "luo",
+	"5G网络 > 络":      "luo",
 }
 
 var digitMap = map[string]string{
