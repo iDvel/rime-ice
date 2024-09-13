@@ -1,6 +1,5 @@
 name: 想法、求助和提议
 description: 我有一些想法和建议；或是一些不理解的地方想要求助
-title: '请问：'
 
 body:
   - type: input
