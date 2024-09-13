@@ -19,46 +19,11 @@
 #
 # 最下面的英文是因为一些常用单词的第一候选项被纠错覆盖了，如 Amazon 被纠错为「a ma zong 阿妈粽」，期望的 Amazon 跑到第二个候选项了，所以这里给它固定死喽。
 #
-# version: "2024-03-12"
+# version: "2024-09-13"
 #
 # 此行之后不能写注释
 
-噷	hm
-呣	m
-呒	m
-
-有	u	3
-又	u	2
-由	u	1
-
-一	i	4
-以	i	3
-已	i	2
-亦	i	1
-
-一个	ig
-有个	ug
-是一个	sig
-有一个	uig
-有一个	uyig
-有一个	uyige
-有没有	umu
-有没有	umeiu
-又有	uu
-又又又	uuu
-又双叒叕	uuuu
-
-go	go
-Golang	golang
-Hugo	hugo
-goto	goto
-domain	domain
-TODO	todo
-Dota	dota
-main	main
-Amazon	amazon
-NASA	nasa
-gone	gone
-Go程	gocheng
-code	code
-SOHO	soho
+dearfantasy@qq.com	em
+xwindfantasy@gmail.com	em
+alicensure@gmail.com	em
+chenxiang@cmss.chinamobile.com	em

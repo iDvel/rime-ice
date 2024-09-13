@@ -27,6 +27,9 @@ schema:
     - melt_eng        # 英文输入，作为次翻译器挂载到拼音方案
     - radical_pinyin  # 部件拆字，反查及辅码
 
+# 根据是否在用户词典，在结尾加上一个星号 *
+is_in_user_dict: true  # true:为输入过的内容加星号/false:为未输入过的内容加星号
+
 
 # 开关
 # reset: 默认状态。注释掉后，切换窗口时不会重置到默认状态。
@@ -35,6 +38,7 @@ schema:
 switches:
   - name: ascii_mode
     states: [ 中, Ａ ]
+    reset: 1
   - name: ascii_punct  # 中英标点
     states: [ ¥, $ ]
   - name: traditionalization
@@ -89,6 +93,7 @@ engine:
     - simplifier@emoji                              # Emoji
     - simplifier@traditionalize                     # 简繁切换
     - lua_filter@search@radical_pinyin              # 部件拆字辅码
+    - lua_filter@is_in_user_dict                    # 是否加星号
     - uniquifier                                    # 去重
 
 
@@ -226,7 +231,7 @@ cn_en:
 # 自定义短语
 custom_phrase:
   dictionary: ""
-  user_dict: custom_phrase_double  # 需要手动创建 custom_phrase_double.txt 文件
+  user_dict: custom_phrase  # 需要手动创建 custom_phrase.txt 文件
   db_class: stabledb
   enable_completion: false # 补全提示
   enable_sentence: false   # 禁止造句
