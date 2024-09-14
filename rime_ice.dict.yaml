@@ -20,6 +20,7 @@ import_tables:
   - cn_dicts/myname
   - cn_dicts/yiyao
   - cn_dicts/loupan
+  - cn_dicts/luna_pinyin.sogou
 ...
 
 # 按需启用：
