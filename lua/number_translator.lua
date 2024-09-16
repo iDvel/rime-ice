@@ -137,8 +137,9 @@ local function number_translatorFunc(num)
         local number2cnCharInt_var = number2cnCharInt:gsub('^拾', '壹拾')
         table.insert(result, { number2cnCharInt_var .. number2cnCharDec , "〔金额大写〕"})
         -- 会计书写要求 https://github.com/iDvel/rime-ice/issues/989
+    else
+        table.insert(result, { number2cnCharInt .. number2cnCharDec , "〔金额大写〕"})
     end
-    -- table.insert(result, { number2cnCharInt .. number2cnCharDec , "〔金额大写〕"})
     return result
 end
 
