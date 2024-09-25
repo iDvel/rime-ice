@@ -13,24 +13,33 @@ body:
     id: app_version
     attributes:
       label: 相关应用
-      description: 这个议题涉及的（你在使用的）RIME 前端和版本号
-      placeholder: 例如：Squirrel 1.0.2 / Fcitx5 for Android 0.9 / Weasel 15.0
+      description: 这个议题涉及的，或者是你在使用的 RIME 前端
+      placeholder: e.g. Squirrel 1.0.2 / Fcitx5 for Android 0.9 / Weasel CI 9bc58
+    validations:
+      required: true
+  - type: input
+    id: os_version
+    attributes:
+      label: 系统信息
+      description: 这个议题涉及的，或者是你在使用的系统及版本号，Unix/Linux 请提供具体发行版名称
+      placeholder: e.g. macOS 14.5 / Windows 11 23H2 / Ubuntu 22.04 LTS
     validations:
       required: true
   - type: textarea
     id: content
     attributes:
       label: 详细说明
-      description: 请详细说明你的问题或者想法，越具体越好。
+      description: 请详细说明你的问题或者想法，越具体越好。可以辅以图片、视频等资料。
     validations:
       required: true
   - type: textarea
     id: config
     attributes:
       label: 补充信息
-      description: 如果必要，在此处提供你的自定义配置片段或完整配置、脚本文件
+      description: 此处可以提供配置文件片段、完整配置文件压缩包、或者日志等信息。你认为相关的 issue 也可以在此处注明。
       placeholder: |
         完整配置文件请压缩上传。
+
         配置片段请包裹在 Markdown 代码块中。即用三个反引号（```）包裹，如
         ```yaml
         # 你的配置片段
