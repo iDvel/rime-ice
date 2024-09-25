@@ -129,10 +129,10 @@ net	net	2
 .NET	dotnet
 # 带权重的系列
 iPhone	iPhone	999
-iPhone 15	iPhone	4
-iPhone 15 Plus	iPhone	3
-iPhone 15 Pro	iPhone	2
-iPhone 15 Pro Max	iPhone	1
+iPhone 16	iPhone	4
+iPhone 16 Plus	iPhone	3
+iPhone 16 Pro	iPhone	2
+iPhone 16 Pro Max	iPhone	1
 Mac OS X	MacOSX	999
 Mac OS X Cheetah	MacOSX	1
 Mac OS X Puma	MacOSX	2
@@ -209,6 +209,10 @@ iPhone 15	iPhone15
 iPhone 15 Plus	iPhone15Plus
 iPhone 15 Pro	iPhone15Pro
 iPhone 15 Pro Max	iPhone15ProMax
+iPhone 16	iPhone16
+iPhone 16 Plus	iPhone16Plus
+iPhone 16 Pro	iPhone16Pro
+iPhone 16 Pro Max	iPhone16ProMax
 Mac OS X Cheetah	MacOSXCheetah
 Mac OS X Puma	MacOSXPuma
 Mac OS X Jaguar	MacOSXJaguar
