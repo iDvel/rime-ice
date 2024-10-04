@@ -238,7 +238,7 @@ var onlyOne = map[string]string{
 	"给":   "gei",
 }
 
-func init() {
+func initPinyin() {
 	// 从 base、ext 准备结巴的词典和词组拼音映射
 	for _, dictPath := range []string{BasePath, ExtPath} {
 		file, err := os.Open(dictPath)

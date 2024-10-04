@@ -6,15 +6,21 @@
 # Weasel 定制文档 <https://github.com/rime/weasel/wiki/Weasel-定制化>
 # Weasel 字体设定 <https://github.com/rime/weasel/wiki/字體設定>
 
+# Weasel 特殊行为的命令行选项
+# WeaselServer.exe /ascii - CLI 中切换 ASCII 模式
+# WeaselServer.exe /nascii - CLI 中切换非 ASCII 模式
+# WeaselSetup.exe /toggleime - 设置系统快捷键用于开启/关闭键盘（0.16.1 以上版本）
+# WeaselSetup.exe /toggleascii - 设置系统快捷键用于切换 ASCII 模式（0.16.1 以上版本）
+
 # 部分选项需要将 Weasel 更新 16.0 及以上版本才能生效
-config_version: "2024-05-14"
+config_version: "2024-09-25"
 
 # [app_options]
 # 针对特定应用的设置
 app_options:
   firefox.exe:
     inline_preedit: true   # 行内显示预编辑区：规避 <https://github.com/rime/weasel/issues/946>
-  # cmd.exe:               # 带 .exe 的进程名：Weasel 15.0 及之前版本须小写; PR #1049 合并后释出的版本大小写不敏感
+  # cmd.exe:               # 带 .exe 的进程名：Weasel 15.0 及之前版本须小写
   #   ascii_mode: true     # 英文模式
   # conhost.exe:
   #   ascii_mode: true

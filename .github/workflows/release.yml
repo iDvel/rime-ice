@@ -1,26 +1,40 @@
-name: Pack and Release
+name: Build and Release
 
 on:
   push:
     branches:
       - main
     tags:
-      - '[0-9]+.*'
+      - "[0-9]+.*"
     paths:
-      - '**/**'
-      - '!**.md'
-      - '!**.gitignore'
-      - '!others/**'
-      - '!.github/**'
+      - "**/**"
+      - "!**.md"
+      - "!**.gitignore"
+      - "!.github/**"
   workflow_dispatch:
 
 jobs:
   Release:
     runs-on: ubuntu-latest
+    if: github.repository == 'iDvel/rime-ice'
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Setup Go
+        if: ${{ contains(github.event.head_commit.message, ' [build]') || github.event_name == 'workflow_dispatch' }}
+        uses: actions/setup-go@v5
+        with:
+          go-version: 1.22
+
+      - name: Check and build
+        id: check_and_build
+        if: ${{ contains(github.event.head_commit.message, ' [build]') || github.event_name == 'workflow_dispatch' }}
+        run: |
+          cd others/script
+          go mod tidy
+          go run main.go --rime_path "${{ github.workspace }}" --auto_confirm
 
       - name: Pack dicts
         run: |
@@ -36,21 +50,26 @@ jobs:
           zip -r dist/en_dicts.zip en_dicts
           echo "Pack opencc ..."
           zip -r dist/opencc.zip opencc
+          echo "copy LICENSE and README.md..."
+          cp LICENSE dist/LICENSE.txt
+          cp README.md dist/README.md
 
       - name: Create nightly release
         if: ${{ github.ref == 'refs/heads/main' }}
-        uses: 'softprops/action-gh-release@v2'
+        uses: "softprops/action-gh-release@v2"
         with:
           body: |
             ## 说明
-            
+
             这里是每次提交后自动打包的版本，包含最新的功能和词库
 
+            - `README.md`：简易的使用说明
             - `full.zip` : 包含所有词典和方案文件
             - `cn_dicts.zip`：中文词库
             - `en_dicts.zip`：英文词库
             - `opencc.zip`：opencc 词库（emoji 等）
             - `all_dicts.zip`：以上三个词库的整合
+            - `LICENSE.txt`：开源协议
 
           tag_name: nightly
           name: "nightly build"
@@ -60,10 +79,24 @@ jobs:
 
       - name: Create stable release
         if: startsWith(github.ref, 'refs/tags/')
-        uses: 'softprops/action-gh-release@v2'
+        uses: "softprops/action-gh-release@v2"
         with:
           body_path: ${{ github.workspace }}/others/CHANGELOG.md
           draft: true
           make_latest: true
           files: |
             dist/*
+
+      - name: Push and commit
+        if: ${{ steps.check_and_build.outcome == 'success' }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add --all
+          if ! git diff --cached --quiet; then
+            COMMIT_MSG=$(git log -1 --pretty=%B | sed -e 's/\s\[build\]$//' -e 's/^[a-zA-Z()]*:\s*//')
+            git commit -m "build(ci): auto build for -> ${COMMIT_MSG} <-"
+            git push
+          else
+            echo "No changes to commit."
+          fi
