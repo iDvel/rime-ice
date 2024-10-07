@@ -47,7 +47,7 @@ function filter.func(input, env)
 			end
 		end
 
-		if #cands >= 80 then
+		if #cands >= 180 then
 			break
 		end
 	end
