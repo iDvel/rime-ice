@@ -142,7 +142,8 @@ reduce_english_filter:
     tad, tail, taj, tar, tax, tec, ted, tel, ter, tex, tic, tied, tier, ties, tim, tin, tit, tour, tout, tum,
     wag, wand, womens, wap, wax, weir, won, went,
     yan, yen,
-    zach
+    zach,
+    my, mt, dj, as, js, cs, ak, ps, cd, cn, hk, bt, pk  # 一些由算法转写的大写单词编码
   ]
 
 
