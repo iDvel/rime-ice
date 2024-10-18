@@ -65,7 +65,7 @@ ascii_composer:
   switch_key:
     Caps_Lock: clear      # commit_code | commit_text | clear
     Shift_L: commit_code  # commit_code | commit_text | inline_ascii | clear | noop
-    Shift_R: noop         # commit_code | commit_text | inline_ascii | clear | noop
+    Shift_R: commit_code         # commit_code | commit_text | inline_ascii | clear | noop
     Control_L: noop       # commit_code | commit_text | inline_ascii | clear | noop
     Control_R: noop       # commit_code | commit_text | inline_ascii | clear | noop
 
@@ -203,7 +203,7 @@ key_binder:
     # - { when: always, toggle: ascii_mode, accept: Control+Shift+at }            # 切换中英
     # - { when: always, toggle: ascii_punct, accept: Control+Shift+3 }              # 切换中英标点
     # - { when: always, toggle: ascii_punct, accept: Control+Shift+numbersign }     # 切换中英标点
-    - { when: always, toggle: traditionalization, accept: Control+Shift+4 }       # 切换简繁
+    # - { when: always, toggle: traditionalization, accept: Control+Shift+4 }       # 切换简繁
     - { when: always, toggle: traditionalization, accept: Control+Shift+dollar }  # 切换简繁
     # - { when: always, toggle: full_shape, accept: Control+Shift+5 }             # 切换全半角
     # - { when: always, toggle: full_shape, accept: Control+Shift+percent }       # 切换全半角
