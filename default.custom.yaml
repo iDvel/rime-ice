@@ -31,9 +31,6 @@ patch:
       - { when: has_menu, accept: bracketleft, send: Page_Up }
       - { when: has_menu, accept: bracketright, send: Page_Down }
 
-      - { when: always, toggle: ascii_punct, accept: Control+Shift+3 }              # 切换中英标点
-      - { when: always, toggle: ascii_punct, accept: Control+Shift+numbersign }     # 切换中英标点
-      - { when: always, toggle: traditionalization, accept: Control+Shift+4 }       # 切换简繁
       - { when: always, toggle: traditionalization, accept: Control+Shift+dollar }  # 切换简繁
 
       - { when: composing, accept: Control+k, send: Shift+Delete }
