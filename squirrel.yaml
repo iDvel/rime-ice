@@ -9,7 +9,7 @@
 # 鼠须管作者写的图形化的皮肤设计器： https://github.com/LEOYoon-Tsaw/Squirrel-Designer
 
 # 要比共享目录的同名文件的 config_version 大才可以生效
-config_version: "2023-02-27"
+config_version: '2023-02-27'
 
 # options: last | default | _custom_
 # last: the last used latin keyboard layout
@@ -45,7 +45,7 @@ style:
   spacing: 10
   #candidate_format: '%c. %@'
   #base_offset: 6
-  font_face: "Lucida Grande"
+  font_face: 'Lucida Grande'
   font_point: 21
   #label_font_face: 'Lucida Grande'
   label_font_point: 18
@@ -56,15 +56,15 @@ style:
 preset_color_schemes:
   # 对 purity_of_form 略微调整颜色，让色彩更柔和点，补全其他选项和注释
   purity_of_form_custom:
-    name: "純粹的形式／Purity of Form Custom"
+    name: '純粹的形式／Purity of Form Custom'
     author: 雨過之後、佛振
     # 如果将字体设置为 PingFangSC-Regular
     # 会让 🈶🈚️🉑🈲🉐 这几个 Emoji 失去彩色效果，留空反而可以显示。。。
-    font_face: "" # 字体及大小
+    font_face: '' # 字体及大小
     font_point: 12
-    label_font_face: "Helvetica" # 序号字体及大小
+    label_font_face: 'Helvetica' # 序号字体及大小
     label_font_point: 12
-    comment_font_face: "Helvetica" # 注字体及大小
+    comment_font_face: 'Helvetica' # 注字体及大小
     comment_font_point: 12
     candidate_list_layout: linear # 候选项排列方向 stacked(默认) | linear
     # text_orientation: horizontal          # 文字排列方向 horizontal(默认) | vertical
@@ -97,7 +97,7 @@ preset_color_schemes:
     # hilited_back_color:                   # 选中拼音底色 （inline_preedit: false）
     # border_color:                         # 外边框颜色
 
-  # 下面是内置的皮肤 /Library/Input Methods/Squirrel.app/Contents/SharedSupport/squirrel.yaml
+  # 下面是内置的皮肤 https://github.com/rime/squirrel/blob/master/data/squirrel.yaml
 
   native:
     name: 系統配色
@@ -255,8 +255,8 @@ preset_color_schemes:
   clean_white:
     name: 简约白／Clean White
     author: Chongyu Zhu <lembacon@gmail.com>, based on 搜狗「简约白」
-    horizontal: true
-    candidate_format: "%c %@"
+    candidate_list_layout: linear
+    candidate_format: '%c %@'
     corner_radius: 6
     border_height: 6
     border_width: 6
@@ -275,17 +275,17 @@ preset_color_schemes:
   apathy:
     name: 冷漠／Apathy
     author: LIANG Hai
-    horizontal: true # 水平排列
+    candidate_list_layout: linear # 水平排列
     inline_preedit: true #单行显示，false双行显示
     candidate_format: "%c\u2005%@\u2005" # 编号 %c 和候选词 %@ 前后的空间
     corner_radius: 5 #候选条圆角
     border_height: 0
     border_width: 0
     back_color: 0xFFFFFF #候选条背景色
-    font_face: "PingFangSC-Regular,HanaMinB" #候选词字体
+    font_face: 'PingFangSC-Regular,HanaMinB' #候选词字体
     font_point: 16 #候选字词大小
     text_color: 0x424242 #高亮选中词颜色
-    label_font_face: "STHeitiSC-Light" #候选词编号字体
+    label_font_face: 'STHeitiSC-Light' #候选词编号字体
     label_font_point: 12 #候选编号大小
     hilited_candidate_text_color: 0xEE6E00 #候选文字颜色
     hilited_candidate_back_color: 0xFFF0E4 #候选文字背景色
@@ -294,7 +294,7 @@ preset_color_schemes:
   dust:
     name: 浮尘／Dust
     author: Superoutman <asticosmo@gmail.com>
-    horizontal: true # 水平排列
+    candidate_list_layout: linear # 水平排列
     inline_preedit: true #单行显示，false双行显示
     candidate_format: "%c\u2005%@\u2005" # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
     corner_radius: 2 #候选条圆角
@@ -302,9 +302,9 @@ preset_color_schemes:
     border_width: 8 # 窗口边界宽度，大于圆角半径才生效
     back_color: 0xeeffffff #候选条背景色
     border_color: 0xE0B693 # 边框色
-    font_face: "HYQiHei-55S Book,HanaMinA Regular" #候选词字体
+    font_face: 'HYQiHei-55S Book,HanaMinA Regular' #候选词字体
     font_point: 14 #候选字词大小
-    label_font_face: "SimHei" #候选词编号字体
+    label_font_face: 'SimHei' #候选词编号字体
     label_font_point: 10 #候选编号大小
     label_color: 0xcbcbcb # 预选栏编号颜色
     candidate_text_color: 0x555555 # 预选项文字颜色
@@ -319,14 +319,14 @@ preset_color_schemes:
   mojave_dark:
     name: 沙漠夜／Mojave Dark
     author: xiehuc <xiehuc@gmail.com>
-    horizontal: true # 水平排列
+    candidate_list_layout: linear # 水平排列
     inline_preedit: true # 单行显示，false双行显示
     candidate_format: "%c\u2005%@" # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
     corner_radius: 5 # 候选条圆角
     hilited_corner_radius: 3 # 高亮圆角
     border_height: 6 # 窗口边界高度，大于圆角半径才生效
     border_width: 6 # 窗口边界宽度，大于圆角半径才生效
-    font_face: "PingFangSC" # 候选词字体
+    font_face: 'PingFangSC' # 候选词字体
     font_point: 16 # 候选字词大小
     label_font_point: 14 # 候选编号大小
 
@@ -347,34 +347,35 @@ preset_color_schemes:
     name: 曬經・日／Solarized Light
     author: 雪齋 <lyc20041@gmail.com>
     color_space: display_p3 # Only available on macOS 10.12+
-    back_color: 0xf0E5F6FB #Lab 97, 0, 10
-    border_color: 0xf0EDFFFF #Lab 100, 0, 10
-    preedit_back_color: 0xf0D7E8ED #Lab 92, 0, 10
-    candidate_text_color: 0x3942CB #Lab 50, 65, 45
-    label_color: 0x2566C6 #Lab 55, 45, 65
-    comment_text_color: 0x8144C2 #Lab 50, 65, -5
-    text_color: 0x756E5D #Lab 45, -7, -7
-    hilited_back_color: 0xf0C9DADF #Lab 87, 0, 10
-    hilited_candidate_back_color: 0x403516 #Lab 20, -12, -12
-    hilited_candidate_text_color: 0x989F52 #Lab 60, -35, -5
-    hilited_candidate_label_color: 0xCC8947 #Lab 55, -10, -45
-    hilited_comment_text_color: 0x289989 #Lab 60, -20, 65
-    hilited_text_color: 0xBE706D #Lab 50, 15, -45
+    back_color: 0xF0E5F6FB #Lab 97 , 0 , 10
+    border_color: 0xEDFFFF #Lab 100, 0 , 10
+    preedit_back_color: 0x403516 #Lab 20 ,-12,-12
+    #candidate_back_color: 0x403516         #Lab 20 ,-12,-12
+    candidate_text_color: 0x595E00 #Lab 35 ,-35,-5
+    label_color: 0xA36407 #Lab 40 ,-10,-45
+    comment_text_color: 0x005947 #Lab 35 ,-20, 65
+    text_color: 0xA1A095 #Lab 65 ,-5 ,-2
+    hilited_back_color: 0x4C4022 #Lab 25 ,-12,-12
+    hilited_candidate_back_color: 0xD7E8ED #Lab 92 , 0 , 10
+    hilited_candidate_text_color: 0x3942CB #Lab 50 , 65, 45
+    hilited_candidate_label_color: 0x2566C6 #Lab 55 , 45, 65
+    hilited_comment_text_color: 0x8144C2 #Lab 50 , 65,-5
+    hilited_text_color: 0x2C8BAE #Lab 60 , 10, 65
 
   solarized_dark:
     name: 曬經・月／Solarized Dark
     author: 雪齋 <lyc20041@gmail.com>
-    color_space: display_p3 # Only available on macOS 10.12+
-    back_color: 0xf0352A0A #Lab 15, -12, -12
-    border_color: 0xf02A1F00 #Lab 10, -12, -12
-    preedit_back_color: 0xf0403516 #Lab 20, -12, -12
-    candidate_text_color: 0x989F52 #Lab 60, -35, -5
-    label_color: 0xCC8947 #Lab 55, -10, -45
-    comment_text_color: 0x289989 #Lab 60, -20, 65
-    text_color: 0xA1A095 #Lab 65, -05, -02
-    hilited_back_color: 0xf04C4022 #Lab 25, -12, -12
-    hilited_candidate_back_color: 0xD7E8ED #Lab 92, 0, 10
-    hilited_candidate_text_color: 0x3942CB #Lab 50, 65, 45
-    hilited_candidate_label_color: 0x2566C6 #Lab 55, 45, 65
-    hilited_comment_text_color: 0x8144C2 #Lab 50, 65, -5
-    hilited_text_color: 0x2C8BAE #Lab 60, 10, 65
+    back_color: 0xF0352A0A #Lab 15 ,-12,-12
+    border_color: 0x2A1F00 #Lab 10 ,-12,-12
+    preedit_back_color: 0xD7E8ED #Lab 92 , 0 , 10
+    #candidate_back_color: 0xD7E8ED         #Lab 92 , 0 , 10
+    candidate_text_color: 0x7389FF #Lab 75 , 65, 45
+    label_color: 0x478DF4 #Lab 70 , 45, 65
+    comment_text_color: 0xC38AFF #Lab 75 , 65,-5
+    text_color: 0x756E5D #Lab 45 ,-7 ,-7
+    hilited_back_color: 0xC9DADF #Lab 87 , 0 , 10
+    hilited_candidate_back_color: 0x403516 #Lab 20 ,-12,-12
+    hilited_candidate_text_color: 0x989F52 #Lab 60 ,-35,-5
+    hilited_candidate_label_color: 0xCC8947 #Lab 55 ,-10,-45
+    hilited_comment_text_color: 0x289989 #Lab 60 ,-20, 65
+    hilited_text_color: 0xBE706D #Lab 50 , 15,-45

@@ -61,30 +61,9 @@ Z	Z
 7	qi
 8	ba
 9	jiu
-# 示例：输入 siSdian 得到 4S店
-3G
-4G
-5G
-3G网络
-4G网络
-5G网络
-3G流量
-4G流量
-5G流量
-2D
-3D
-4D
-3D打印
-2D电影
-3D电影
-4S店
-AE86
-M1
-M2
-M3
-M4
-M4A1
 
+# 示例：输入 sanDdayin 得到 3D打印
+3D打印
 
 # 加入词典，响应 opencc/others.txt 的 emoji 集合
 V动物

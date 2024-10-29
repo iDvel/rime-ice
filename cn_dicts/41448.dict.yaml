@@ -17,7 +17,7 @@
 #          这样小字表里存在的字按权重靠前排列，大字表殿后，生僻字自动就排在末尾。
 ---
 name: 41448
-version: "2024-05-16"
+version: "2024-07-28"
 sort: by_weight
 ...
 # 注释掉了一些
@@ -8676,6 +8676,7 @@ sort: by_weight
 𩙣	feng
 𩪌	feng
 𪐃	feng
+覅	fiao
 㤇	fo
 仏	fo
 仸	fo
@@ -23504,6 +23505,7 @@ sort: by_weight
 疑	ni
 眤	ni
 睨	ni
+祢	ni
 秜	ni
 籾	ni
 縌	ni

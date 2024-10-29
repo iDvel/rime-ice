@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2024-05-21"
+version: "2024-06-10"
 sort: by_weight
 ...
 ##### 容错词
@@ -82,8 +82,6 @@ sort: by_weight
 主角	zhu jiao
 角色	jue se
 角色	jiao se
-比萨	bi sa
-比萨	pi sa
 比萨饼	bi sa bing
 比萨饼	pi sa bing
 吃比萨	chi bi sa
@@ -228,6 +226,8 @@ sort: by_weight
 饮鸩止渴	yin jiu zhi ke
 饮鸩解渴	yin zhen jie ke
 饮鸩解渴	yin jiu jie ke
+宫商角徵羽	gong shang jue zhi yu
+宫商角徵羽	gong shang jiao zhi yu
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
@@ -250,6 +250,8 @@ sort: by_weight
 钜惠	ju hui
 摩羯座	mo jie zuo
 魔蝎座	mo xie zuo
+比萨	bi sa
+披萨	pi sa
 
 
 ##### 叠字
