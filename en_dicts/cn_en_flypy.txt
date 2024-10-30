@@ -501,8 +501,6 @@ OK了吗	oklema
 公网IP	gswhip
 Web开发	Webkdfa
 Web开发	webkdfa
-圈X	qrX
-圈X	qrx
 Switch版	Switchbj
 Switch版	switchbj
 Switch版本	Switchbjbf

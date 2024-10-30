@@ -501,8 +501,6 @@ OK了吗	oklema
 公网IP	gongwangip
 Web开发	Webkaifa
 Web开发	webkaifa
-圈X	quanX
-圈X	quanx
 Switch版	Switchban
 Switch版	switchban
 Switch版本	Switchbanben

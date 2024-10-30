@@ -34,7 +34,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2024-06-10"
+version: "2024-10-30"
 sort: by_weight
 ...
 ### 按需启用
@@ -60,8 +60,6 @@ sort: by_weight
 睆	huan	1
 挼	rua	1
 㨃	dui	1
-燿	yao	1
-侗	tong	1
 
 # 注释掉的这几行已经加入到下面并调整到合适的权重了
 # 〇	ling
@@ -6299,6 +6297,7 @@ sort: by_weight
 哃	tong	11
 穜	tong	6
 鲖	tong	3
+侗	tong	1
 峒	tong	1
 洞	tong	1
 㛚	tong	0

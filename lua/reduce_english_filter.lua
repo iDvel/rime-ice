@@ -51,7 +51,7 @@ function M.init(env)
         "lush", "mesh", "much", "nash", "pinch", "pouch", "push", "ranch", "rich", "rush", "such", "tech", "touch",
         "wash", "zach",
         -- 其他
-        "quanx", "eg",
+        "eg",
         "my", "mt", "dj", "as", "js", "cs", "ak", "ps", "cd", "cn", "hk", "bt", "pk"
     }
     M.all = {}

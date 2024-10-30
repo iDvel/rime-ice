@@ -501,8 +501,6 @@ OK了吗	oklema
 公网IP	ghwsip
 Web开发	Webkpfa
 Web开发	webkpfa
-圈X	qlX
-圈X	qlx
 Switch版	Switchbr
 Switch版	switchbr
 Switch版本	Switchbrbw

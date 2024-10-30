@@ -5,6 +5,7 @@ package rime
 
 import (
 	"log"
+	"os/user"
 	"path/filepath"
 )
 
