@@ -5,7 +5,7 @@
 # ------- 补充的英文词汇 -------
 ---
 name: en_ext
-version: "2024-06-10"
+version: "2024-10-30"
 sort: by_weight
 ...
 # 一些杂项
@@ -249,6 +249,7 @@ ERC-1155	ERC-1155
 High Sierra	HighSierra
 Mojave	Mojave
 Big Sur	BigSur
+Sequoia	Sequoia
 TypeORM	TypeORM
 RPG	RPG
 Role-Playing Game	RPG
@@ -1531,7 +1532,6 @@ Ubuntu	Ubuntu
 Windows	Windows
 Microsoft	Microsoft
 Nintendo	Nintendo
-Nexus	Nexus
 Wii U	WiiU
 Wii	Wii
 Oracle	Oracle
@@ -2150,3 +2150,9 @@ M4	M4
 5G	5G
 2D	2D
 4D	4D
+Floorp	Floorp
+Costco	Costco
+NFC	NFC
+Near Field Communication	NFC
+Near Field Communication	NearFieldCommunication
+Apple Intelligence	AppleIntelligence

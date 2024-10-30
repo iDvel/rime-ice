@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-07-13"
+version: "2024-10-30"
 sort: by_weight
 ...
 # +_+
@@ -1451,7 +1451,6 @@ autumn	autumn
 AUX	AUX
 auxiliary	auxiliary
 AV	AV
-Ava	Ava
 avail	avail
 availability	availability
 available	available
@@ -2784,7 +2783,6 @@ cancellation	cancellation
 cancellations	cancellations
 cancelled	cancelled
 cancer	cancer
-Cancer	Cancer
 cancers	cancers
 # Cancun	Cancun
 candid	candid
@@ -2932,7 +2930,6 @@ carved	carved
 carver	carver
 carving	carving
 Cary	Cary
-CAS	CAS
 casa	casa
 cascade	cascade
 cascading	cascading
@@ -5258,6 +5255,7 @@ despair	despair
 despatch	despatch
 desperate	desperate
 desperately	desperately
+desperation	desperation
 despise	despise
 despite	despite
 dessert	dessert

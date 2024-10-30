@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2024-06-10"
+version: "2024-10-30"
 sort: by_weight
 ...
 ##### 容错词
@@ -228,6 +228,9 @@ sort: by_weight
 饮鸩解渴	yin jiu jie ke
 宫商角徵羽	gong shang jue zhi yu
 宫商角徵羽	gong shang jiao zhi yu
+氙气灯	shan qi deng
+氙气大灯	shan qi da deng
+氙气手电筒	shan qi shou dian tong
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
