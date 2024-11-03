@@ -52,7 +52,7 @@ function M.init(env)
         "wash", "zach",
         -- 其他
         "eg",
-        "my", "mt", "dj", "as", "js", "cs", "ak", "ps", "cd", "cn", "hk", "bt", "pk"
+        "my", "mt", "dj", "as", "js", "cs", "ak", "ps", "cd", "cn", "hk", "bt", "pk", "ml"
     }
     M.all = {}
     for _, v in ipairs(all) do

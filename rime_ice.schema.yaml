@@ -143,7 +143,7 @@ reduce_english_filter:
     wag, wand, womens, wap, wax, weir, won, went,
     yan, yen,
     zach,
-    my, mt, dj, as, js, cs, ak, ps, cd, cn, hk, bt, pk  # 一些由算法转写的大写单词编码
+    my, mt, dj, as, js, cs, ak, ps, cd, cn, hk, bt, pk, ml  # 一些由算法转写的大写单词编码，会影响简拼（全拼专有）
   ]
 
 
