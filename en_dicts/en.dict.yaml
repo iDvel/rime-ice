@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-10-30"
+version: "2024-11-04"
 sort: by_weight
 ...
 # +_+
@@ -21414,7 +21414,7 @@ zeal	zeal
 Zealand	Zealand
 zebra	zebra
 Zelda	Zelda
-Zen	Zen
+zen	zen
 zenith	zenith
 zeppelin	zeppelin
 zero	zero
