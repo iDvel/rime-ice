@@ -10,14 +10,14 @@
 
 
 # 要比共享目录的同名文件的 config_version 大才可以生效
-config_version: '2023-02-27'
+config_version: '2024-11-04'  # config_version: '1.0'
 
 
 # options: last | default | _custom_
 # last: the last used latin keyboard layout
 # default: US (ABC) keyboard layout
 # _custom_: keyboard layout of your choice, e.g. 'com.apple.keylayout.USExtended' or simply 'USExtended'
-keyboard_layout: default
+keyboard_layout: last
 # for veteran chord-typist
 chord_duration: 0.1  # seconds
 # options: always | never | appropriate
@@ -38,23 +38,49 @@ style:
   color_scheme: purity_of_form_custom
   color_scheme_dark: purity_of_form_custom
 
-  # 预设选项。如果皮肤没写，则使用这些属性；如果皮肤写了，使用皮肤的。
-  text_orientation: horizontal  # horizontal | vertical
-  inline_preedit: true
-  corner_radius: 10
+  # 以下是预设选项。如果皮肤没写，则使用这些属性；如果皮肤写了，使用皮肤的。
+
+  # 候选框与文字的排列方式
+  candidate_list_layout: stacked  # stacked | linear       皮肤横竖排显示是调整这个
+  text_orientation: horizontal    # horizontal | vertical  文字方向
+  # 拼音或词句是否显示在键入位置
+  inline_preedit: true     # true | false  键入码显示位置
+  inline_candidate: false  # true | false  选中词显示位置
+
+  # Whether candidate panel stick to screen edge to reduce jumping
+  memorize_size: true
+  # Whether transparent colors stack on each other
+  mutual_exclusive: false
+  # Whether to use a translucent background. Only visible when background color is transparent
+  translucency: false
+
+  corner_radius: 7
   hilited_corner_radius: 0
-  border_height: 0
-  border_width: 0
+  border_height: -2
+  border_width: -2
+  # Space between candidates in stacked layout
   line_spacing: 5
-  spacing: 10
-  #candidate_format: '%c. %@'
-  #base_offset: 6
-  font_face: 'Lucida Grande'
-  font_point: 21
-  #label_font_face: 'Lucida Grande'
-  label_font_point: 18
-  #comment_font_face: 'Lucida Grande'
-  comment_font_point: 18
+  # Space between preedit and candidates in non-inline mode
+  spacing: 8
+  # A number greater than 0 renders shadow around high-lighted candidate
+  shadow_size: 0
+  # Controls non-hililighted candidate background size, relative to highlighted
+  # Nagetive means shrink, positive meas expand
+  #surrounding_extra_expansion: 0
+
+  # format using %@ and %c is deprecated since 1.0, Squirrel 1.0
+  # %@ is automatically expanded to "[candidate] [comment]"
+  # and %c is replaced by "[label]"
+  candidate_format: '[label]. [candidate] [comment]'  # 候选项格式化
+
+  # adjust the base line of text
+  #base_offset: 0
+  font_face: 'Avenir'
+  font_point: 16
+  #label_font_face: 'Avenir'
+  #label_font_point: 12
+  #comment_font_face: 'Avenir'
+  #comment_font_point: 16
 
 
 # 皮肤列表
@@ -73,9 +99,10 @@ preset_color_schemes:
     comment_font_point: 16
     # candidate_list_layout: stacked        # 候选项排列方向 stacked(默认) | linear
     # text_orientation: horizontal          # 文字排列方向 horizontal(默认) | vertical
-    inline_preedit: true                    # 拼音位于： 候选框 false | 行内 true
-    translucency: false                     # 磨砂： false | true
-    mutual_exclusive: false                 # 色不叠加： false | true
+    inline_preedit: true                    # 键入码（拼音）是否显示在键入位置 true | false
+    inline_candidate: false                 # 候选项（词句）是否显示在键入位置 true | false
+    translucency: false                     # 磨砂： true | false
+    mutual_exclusive: false                 # 色不叠加： true | false
     border_height: 0                        # 外边框 高
     border_width: 0                         # 外边框 宽
     corner_radius: 10                       # 外边框 圆角半径
