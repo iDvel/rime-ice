@@ -63,6 +63,15 @@ Z	Z
 9	jiu
 
 # 示例：输入 sanDdayin 得到 3D打印
+M1
+M2
+M3
+M4
+3G
+4G
+5G
+2D
+4D
 3D打印
 
 # 加入词典，响应 opencc/others.txt 的 emoji 集合
