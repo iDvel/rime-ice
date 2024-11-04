@@ -98,9 +98,10 @@ function M.init(env)
         ["yin jiu zhi ke"] = { text = "饮鸩止渴", comment = "饮鸩(zhèn)止渴" },
         ["yin jiu jie ke"] = { text = "饮鸩解渴", comment = "饮鸩(zhèn)解渴" },
         ["gong shang jiao zhi yu"] = { text = "宫商角徵羽", comment = "宫商角(jué)徵羽" },
-        ["shan qi deng"] = { text = "氙气灯", comment = "氙(xian)气灯" },
-        ["shan qi da deng"] = { text = "氙气大灯", comment = "氙(xian)气大灯" },
-        ["shan qi shou dian tong"] = { text = "氙气手电筒", comment = "氙(xian)气手电筒" },
+        ["shan qi deng"] = { text = "氙气灯", comment = "氙(xiān)气灯" },
+        ["shan qi da deng"] = { text = "氙气大灯", comment = "氙(xiān)气大灯" },
+        ["shan qi shou dian tong"] = { text = "氙气手电筒", comment = "氙(xiān)气手电筒" },
+        ["yin gai"] = { text = "应该", comment = "应(yīng)该" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
         ["pu gai"] = { text = "扑街", comment = "仆街" },
