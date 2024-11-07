@@ -102,6 +102,7 @@ function M.init(env)
         ["shan qi da deng"] = { text = "氙气大灯", comment = "氙(xiān)气大灯" },
         ["shan qi shou dian tong"] = { text = "氙气手电筒", comment = "氙(xiān)气手电筒" },
         ["yin gai"] = { text = "应该", comment = "应(yīng)该" },
+        ["nian tie"] = { text = "粘贴", comment = "粘(zhān)贴" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
         ["pu gai"] = { text = "扑街", comment = "仆街" },

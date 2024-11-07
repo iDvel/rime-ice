@@ -5,7 +5,7 @@
 # ------- 补充的英文词汇 -------
 ---
 name: en_ext
-version: "2024-10-30"
+version: "2024-11-08"
 sort: by_weight
 ...
 # 一些杂项
@@ -2147,3 +2147,4 @@ NFC	NFC
 Near Field Communication	NFC
 Near Field Communication	NearFieldCommunication
 Apple Intelligence	AppleIntelligence
+7-Zip	7-Zip
