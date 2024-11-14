@@ -102,6 +102,7 @@ func initCheck() {
 		text, code := parts[0], parts[1]
 		hanPinyin[text] = append(hanPinyin[text], code)
 	}
+	hanPinyin["栖"] = []string{"qi"} // 只检查 qi 音，在 hanPinyinFilter 过滤「栖栖xi、栖栖xi遑遑」
 	// 给 hanPinyin 补充不在字表的读音，和过滤列表 hanPinyinFilter
 	file4, err := os.Open(汉字拼音映射TXT)
 	if err != nil {
@@ -128,6 +129,7 @@ func initCheck() {
 			hanPinyinFilter.Add(line)
 		}
 	}
+
 }
 
 // Check 对传入的词库文件进行检查

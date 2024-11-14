@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2024-11-04"
+version: "2024-11-15"
 sort: by_weight
 ...
 ##### 容错词
@@ -238,6 +238,8 @@ sort: by_weight
 应该	yin gai
 粘贴	zhan tie
 粘贴	nian tie
+高句丽	gao gou li
+高句丽	gao ju li
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
