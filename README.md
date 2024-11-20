@@ -91,7 +91,7 @@
 
 您可以将仓库打包下载，或者整体 clone 后，将所有文件复制粘贴到配置目录，重新部署。
 
-更新词库，手动覆盖 `cn_dicts` `en_dcits` `opencc` 三个文件夹。
+更新词库，手动覆盖 `cn_dicts` `en_dicts` `opencc` 三个文件夹。
 
 您也可以前往 [Release](https://github.com/iDvel/rime-ice/releases) 界面，下载特定版本的词典文件（具体描述见 Release 说明），覆盖配置目录的对应文件。
 
