@@ -28,7 +28,7 @@ function M.init(env)
         ["chi pi sa"] = { text = "吃比萨", comment = "chī bǐ sà" },
         ["pi sa bing"] = { text = "比萨饼", comment = "bǐ sà bǐng" },
         ["shui fu"] = { text = "说服", comment = "shuō fú" },
-        ["dao hang"] = { text = "道行", comment = "dào héng" },
+        ["dao hang"] = { text = "道行", comment = "dào heng" },
         ["mo yang"] = { text = "模样", comment = "mú yàng" },
         ["you mo you yang"] = { text = "有模有样", comment = "yǒu mú yǒu yàng" },
         ["yi mo yi yang"] = { text = "一模一样", comment = "yī mú yī yàng" },
