@@ -1,10 +1,13 @@
+-- 计算器插件
 -- author: https://github.com/ChaosAlphard
 
-local M = {}
+local calc = {}
 
-function M.init(env)
+function calc.init(env)
     local config = env.engine.schema.config
-    M.prefix = config:get_string('recognizer/patterns/calculator'):sub(2, 3) or 'cC'
+    env.prefix = config:get_string('calculator/prefix') or 'cC'
+    env.show_prefix = config:get_bool('calculator/show_prefix') -- set to true to show prefix in preedit area
+    -- env.decimalPlaces = config:get_string('calculator/decimalPlaces') or '4'
 end
 
 local function startsWith(str, start)
@@ -13,6 +16,15 @@ end
 
 local function truncateFromStart(str, truncateStr)
     return string.sub(str, string.len(truncateStr) + 1)
+end
+
+local function yield_calc_cand(seg, cand_text, cand_comment, cand_preedit, show_prefix)
+    local cand = Candidate("calc", seg.start, seg._end, cand_text, cand_comment)
+    cand.quality = 99999
+    if not show_prefix then
+        cand.preedit = cand_preedit
+    end
+    yield(cand)
 end
 
 -- 函数表
@@ -29,6 +41,7 @@ local function random(...)
 end
 -- 注册到函数表中
 calcPlugin["rdm"] = random
+calcPlugin["random"] = random
 
 -- 正弦
 local function sin(x)
@@ -224,21 +237,20 @@ local function replaceToFactorial(str)
 end
 
 -- 简单计算器
-function M.func(input, seg, env)
-    if not startsWith(input, M.prefix) then return end
+function calc.func(input, seg, env)
+    if not seg:has_tag("calculator") or input == '' then return end
     -- 提取算式
-    local express = truncateFromStart(input, M.prefix)
-
+    local express = truncateFromStart(input, env.prefix)
+    if express == '' then return end -- 防止用户写错了正则表达式造成错误
     local code = replaceToFactorial(express)
-
     local success, result = pcall(load("return " .. code, "calculate", "t", calcPlugin))
-    if success then
-        yield(Candidate(input, seg.start, seg._end, result, ""))
-        yield(Candidate(input, seg.start, seg._end, express .. "=" .. result, ""))
+    if success and result and (type(result) == "string" or type(result) == "number") and #tostring(result) > 0 then
+        yield_calc_cand(seg, result, "", express, env.show_prefix)
+        yield_calc_cand(seg, express .. "=" .. result, "", express, env.show_prefix)
     else
-        yield(Candidate(input, seg.start, seg._end, express, "解析失败"))
-        yield(Candidate(input, seg.start, seg._end, code, "入参"))
+        yield_calc_cand(seg, express, "解析失败", express, env.show_prefix)
+        yield_calc_cand(seg, code, "入参", express, env.show_prefix)
     end
 end
 
-return M
+return calc
