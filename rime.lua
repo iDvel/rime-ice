@@ -21,7 +21,7 @@ unicode = require("unicode")
 number_translator = require("number_translator")
 
 -- 计算器
-calc_translator = require("calculator")
+calc_translator = require("calc_translator")
 
 -- filters:
 
