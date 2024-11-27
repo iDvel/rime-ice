@@ -20,6 +20,9 @@ unicode = require("unicode")
 -- 数字、人民币大写，R 开头
 number_translator = require("number_translator")
 
+-- 计算器
+calc_translator = require("calc_translator")
+
 -- filters:
 
 -- 错音错字提示
