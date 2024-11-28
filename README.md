@@ -96,6 +96,18 @@
 
 您也可以前往 [Release](https://github.com/iDvel/rime-ice/releases) 界面，下载特定版本的词典文件（具体描述见 Release 说明），覆盖配置目录的对应文件。
 
+### Git 安装
+
+您如果熟悉 git 常用操作，可以使用 git clone 命令将本仓库克隆到对应前端的用户目录。由于本库提交历史较多且更改频繁，添加 `--depth` 参数可以显著减少传输体积。
+
+```bash
+git clone https://github.com/iDvel/rime-ice.git Rime --depth 1
+
+# 更新
+cd Rime
+git pull
+```
+
 ### 东风破 [plum](https://github.com/rime/plum)
 
 选择配方（`others/recipes/*.recipe.yaml`）来进行安装或更新。
