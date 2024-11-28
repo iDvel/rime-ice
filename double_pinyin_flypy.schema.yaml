@@ -82,6 +82,7 @@ engine:
     - lua_translator@calc_translator    # 计算器
     - lua_translator@force_gc           # 暴力 GC
   filters:
+    - lua_filter@completion_filter                  # 限制多音节补全的候选词个数
     - lua_filter@corrector                          # 错音错字提示
     - reverse_lookup_filter@radical_reverse_lookup  # 部件拆字滤镜
     - lua_filter@autocap_filter                     # 英文自动大写
@@ -158,7 +159,8 @@ pin_cand_filter:
 # 主翻译器，拼音
 translator:
   dictionary: rime_ice          # 挂载词库 rime_ice.dict.yaml
-  enable_word_completion: true  # 大于 4 音节的词条自动补全，librime > 1.11.2
+  enable_word_completion: true  # 大于 4 音节的词条自动补全，librime ≥ 1.12
+  word_completion_count: 1      # 大于 4 音节的词条补全候选个数，via completion_filter.lua librime ≥ 1.11
   prism: double_pinyin_flypy    # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
   spelling_hints: 8             # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
   always_show_comments: true    # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。

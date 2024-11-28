@@ -25,6 +25,9 @@ calc_translator = require("calc_translator")
 
 -- filters:
 
+-- 限定补全词的个数，配置项 translator/word_completion_count，默认 1，librime ≥ 1.11
+completion_filter = require("completion_filter")
+
 -- 错音错字提示
 -- 关闭此 Lua 时，同时需要关闭 translator/spelling_hints，否则 comment 里都是拼音
 corrector = require("corrector")
