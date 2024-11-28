@@ -81,7 +81,7 @@ end
 
 -- 通过 reverse db 查询（以字查码，然后比对辅码是否相同，快，但只能匹配未经算法转换的码）
 local function reverse_lookup( code_projection, db_table, wildcard, text, s, global_match )
-    if wildcard then s = s:gsub( wildcard, '.+' ) end
+    if wildcard then s = s:gsub( wildcard, '.*' ) end
     if code_projection then
         -- old librime do not return original string when apply failed
         local p = code_projection:apply( s, true )
