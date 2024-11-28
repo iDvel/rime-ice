@@ -34,6 +34,7 @@
     -   数字、人民币大写（<kbd>R</kbd>+数字）
     -   日期、时间、星期（详见方案 `/date_translator` 节点）
     -   农历（转写：<kbd>N</kbd>+八位数字；获取当前农历：全拼<kbd>nl</kbd>，双拼<kbd>lunar</kbd>）
+    -   简易计算器（<kbd>cC</kbd>+算式）
     -   常见错音错字提示
     -   置顶候选项（详见方案 `/pin_cand_filter` 节点）
     -   所有标点符号直接上屏
@@ -98,6 +99,41 @@
 ### 东风破 [plum](https://github.com/rime/plum)
 
 选择配方（`others/recipes/*.recipe.yaml`）来进行安装或更新。
+
+<details>
+<summary>/plum/ 简易安装和使用教程</summary>
+
+---
+
+安装 plum（仅需要执行一次）
+```bash
+# 请先安装 git 和 bash，并加入环境变量
+# 请确保和 github.com 的连接稳定
+cd ~
+git clone https://github.com/rime/plum.git plum
+# 卸载 plum 只需要删除 ~/plum 文件夹即可
+```
+
+更新 plum
+```bash
+cd ~/plum
+bash rime-install plum
+```
+
+使用 plum 安装「雾凇拼音」方案的韵书（recipe）
+```bash
+cd ~/plum
+bash rime-install iDvel/rime-ice:others/recipes/full
+```
+
+使用 plum 更新「雾凇拼音」的词库文件
+```sh
+cd ~/plum
+bash rime-install iDvel/rime-ice:others/recipes/all_dicts
+```
+
+---
+</details>
 
 词库配方只是更新具体词库文件，并不更新 `rime_ice.dict.yaml` 和 `melt_eng.dict.yaml`，因为用户可能会挂载其他词库。如果更新后部署时报错，可能是增、删、改了文件名，需要检查上面两个文件和词库的对应关系。
 
@@ -210,7 +246,7 @@ patch:
 
 - @mozillazg 开发的汉字转拼音工具和数据库（MIT）
 - [melt_eng](https://github.com/tumuyan/rime-melt)（@tumuyan | [Apache 2.0](https://github.com/tumuyan/rime-melt/blob/master/LICENSE)） ：提供了部分（约 1000 条）英文词汇以及原始英文方案参考；
-- [部件拆字方案](https://github.com/mirtlecn/rime-radical-pinyin)（@mirtlecn | [GPL 3.0](https://github.com/mirtlecn/rime-radical-pinyin/blob/master/LICENSE)）：提供的拆字反查，辅码插件；
+- [部件拆字方案](https://github.com/mirtlecn/rime-radical-pinyin)（@mirtlecn | [GPL 3.0](https://github.com/mirtlecn/rime-radical-pinyin/blob/master/LICENSE)）：提供的拆字反查和候选筛选插件；
 - [长词优先插件](https://github.com/tumuyan/rime-melt/blob/master/lua/melt.lua)（@tumuyan | [Apache 2.0](https://github.com/tumuyan/rime-melt/blob/master/LICENSE)）
 - [Unicode 插件](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)（@shewer | [MIT](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)）
 - [数字、人民币大写插件](https://github.com/yanhuacuo/98wubi/blob/master/lua/number.lua)（@98wubi）
