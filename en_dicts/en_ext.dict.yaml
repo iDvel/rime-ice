@@ -5,7 +5,7 @@
 # ------- 补充的英文词汇 -------
 ---
 name: en_ext
-version: "2024-11-08"
+version: "2024-11-28"
 sort: by_weight
 ...
 # 一些杂项
@@ -427,7 +427,6 @@ Xbox One	XboxOne
 Xbox One X	XboxOneX
 Xbox Series	XboxSeries
 Xbox Series S	XboxSeriesS
-Switch	Switch
 CSS	CSS
 Cascading Style Sheets	CSS
 Cascading Style Sheets	CascadingStyleSheets
@@ -1199,10 +1198,8 @@ HarmonyOS	HarmonyOS
 NPC	NPC
 Non-Player Character	NPC
 Non-Player Character	Non-PlayerCharacter
-MVP	MVP
 Quantumult X	QuantumultX
-Confluence	Confluence
-Skynet	Skynet
+skynet	skynet
 serverless	serverless
 Identifier	Identifier
 NameCheap	NameCheap
@@ -2151,3 +2148,4 @@ Apple Intelligence	AppleIntelligence
 LGTM	LGTM
 PTAL	PTAL
 GPT-4o	GPT-4o
+Grok	Grok
