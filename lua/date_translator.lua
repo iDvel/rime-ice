@@ -1,4 +1,4 @@
--- 日期时间
+-- 日期时间，可在方案中配置触发关键字。
 
 -- 提高权重的原因：因为在方案中设置了大于 1 的 initial_quality，导致 rq sj xq dt ts 产出的候选项在所有词语的最后。
 local function yield_cand(seg, text)

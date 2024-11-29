@@ -3,6 +3,8 @@
 	示例：「给予」的正确读音是 ji yu，当用户输入 gei yu 时，在候选项的 comment 显示正确读音
 	示例：「按耐」的正确写法是「按捺」，当用户输入「按耐」时，在候选项的 comment 显示正确写法
 
+	关闭此 Lua 时，同时需要关闭 translator/spelling_hints，否则 comment 里都是拼音
+
 	为了让这个 Lua 同时适配全拼与双拼，使用 `spelling_hints` 生成的 comment（全拼拼音）作为通用的判断条件。
 	感谢大佬@[Shewer Lu](https://github.com/shewer)提供的思路。
 	
