@@ -104,6 +104,9 @@ function M.init(env)
         ["yin gai"] = { text = "应该", comment = "应(yīng)该" },
         ["nian tie"] = { text = "粘贴", comment = "粘(zhān)贴" },
         ["gao ju li"] = { text = "高句丽", comment = "高句(gōu)丽" },
+        ["jiao dou shi"] = { text = "角斗士", comment = "角(jué)斗士" },
+        ["suo sha mi"] = { text = "缩砂密", comment = "缩(sù)砂密" },
+        ["po ji pao"] = { text = "迫击炮", comment = "迫(pǎi)击炮" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
         ["pu gai"] = { text = "扑街", comment = "仆街" },

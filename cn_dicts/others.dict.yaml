@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2024-11-15"
+version: "2024-11-30"
 sort: by_weight
 ...
 ##### 容错词
@@ -240,6 +240,12 @@ sort: by_weight
 粘贴	nian tie
 高句丽	gao gou li
 高句丽	gao ju li
+角斗士	jue dou shi
+角斗士	jiao dou shi
+缩砂密	su sha mi
+缩砂密	suo sha mi
+迫击炮	pai ji pao
+迫击炮	po ji pao
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
