@@ -22,7 +22,7 @@ patch:
     - xlit/abcdefghijklmnopqrstuvwxyz/22233344455566677778889999/
 
   # 让输入框从数字变成字母
-  engine/filters/@before 0: lua_filter@t9_preedit
+  engine/filters/@before 0: lua_filter@*t9_preedit
   translator/spelling_hints: 16
 
   # 重写了，因为需要 @ 和 # 的映射，否则键盘上那俩按钮不起作用。

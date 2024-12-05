@@ -45,9 +45,9 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    - lua_translator@date_translator  # 时间、日期、星期
-    - table_translator@custom_phrase  # 自定义短语 custom_phrase_t9.txt
-    # - table_translator@melt_eng     # 英文输入
+    - lua_translator@*date_translator  # 时间、日期、星期
+    - table_translator@custom_phrase   # 自定义短语 custom_phrase_t9.txt
+    # - table_translator@melt_eng      # 英文输入
   filters:
     - simplifier@emoji                    # Emoji
     - simplifier@traditionalize           # 简繁切换

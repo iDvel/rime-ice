@@ -1,3 +1,11 @@
+-- 词条隐藏、降频
+-- 在 engine/processors 增加 - lua_processor@cold_word_drop.processor
+-- 在 engine/filters 增加 - lua_filter@cold_word_drop.filter
+-- 在 key_binder 增加快捷键：
+-- turn_down_cand: "Control+j"  # 匹配当前输入码后隐藏指定的候选字词 或候选词条放到第四候选位置
+-- drop_cand: "Control+d"       # 强制删词, 无视输入的编码
+-- get_record_filername() 函数中仅支持了 Windows、macOS、Linux
+
 require("cold_word_drop.string")
 require("cold_word_drop.metatable")
 local processor = {}

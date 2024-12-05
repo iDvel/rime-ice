@@ -1,4 +1,4 @@
--- v 模式，单个字符优先
+-- v 模式，单个字符优先（全拼）
 -- 因为设置了英文翻译器的 initial_quality 大于 1，导致输入「va」时，候选项是「van vain …… ā á ǎ à」
 -- 把候选项应改为「ā á ǎ à …… van vain」，让单个字符的排在前面
 -- 感谢改进 @[t123yh](https://github.com/t123yh) @[Shewer Lu](https://github.com/shewer)

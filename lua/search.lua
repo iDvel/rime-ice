@@ -1,3 +1,5 @@
+-- 辅码，https://github.com/mirtlecn/rime-radical-pinyin/blob/master/search.lua.md
+--
 -- Copyright (C) [Mirtle](https://github.com/mirtlecn)
 -- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 -- 使用说明：<https://github.com/mirtlecn/rime-radical-pinyin/blob/master/search.lua.md>

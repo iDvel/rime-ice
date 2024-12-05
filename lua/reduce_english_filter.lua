@@ -1,4 +1,4 @@
--- 降低部分英语单词在候选项的位置
+-- 降低部分英语单词在候选项的位置，可在方案中配置要降低的模式和单词
 -- https://dvel.me/posts/make-rime-en-better/#短单词置顶的问题
 -- 感谢大佬 @[Shewer Lu](https://github.com/shewer) 指点
 -- Mintimate 修改:

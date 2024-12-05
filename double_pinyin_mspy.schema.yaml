@@ -52,7 +52,7 @@ switches:
 # 输入引擎
 engine:
   processors:
-    - lua_processor@select_character          # 以词定字
+    - lua_processor@*select_character  # 以词定字
     - ascii_composer
     - recognizer
     - key_binder
@@ -71,25 +71,25 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    - lua_translator@date_translator    # 时间、日期、星期
-    - lua_translator@lunar              # 农历
-    - table_translator@custom_phrase    # 自定义短语 custom_phrase_double.txt
-    - table_translator@melt_eng         # 英文输入
-    - table_translator@cn_en            # 中英混合词汇
-    - table_translator@radical_lookup   # 部件拆字反查
-    - lua_translator@unicode            # Unicode
-    - lua_translator@number_translator  # 数字、金额大写
-    - lua_translator@calc_translator    # 计算器
-    - lua_translator@force_gc           # 暴力 GC
+    - lua_translator@*date_translator    # 时间、日期、星期
+    - lua_translator@*lunar              # 农历
+    - table_translator@custom_phrase     # 自定义短语 custom_phrase_double.txt
+    - table_translator@melt_eng          # 英文输入
+    - table_translator@cn_en             # 中英混合词汇
+    - table_translator@radical_lookup    # 部件拆字反查
+    - lua_translator@*unicode            # Unicode
+    - lua_translator@*number_translator  # 数字、金额大写
+    - lua_translator@*calc_translator    # 计算器
+    - lua_translator@*force_gc           # 暴力 GC
   filters:
-    - lua_filter@corrector                          # 错音错字提示
+    - lua_filter@*corrector                         # 错音错字提示
     - reverse_lookup_filter@radical_reverse_lookup  # 部件拆字滤镜
-    - lua_filter@autocap_filter                     # 英文自动大写
-    - lua_filter@pin_cand_filter                    # 置顶候选项（顺序要求：置顶候选项 > Emoji > 简繁切换）
-    - lua_filter@reduce_english_filter              # 降低部分英语单词在候选项的位置
+    - lua_filter@*autocap_filter                    # 英文自动大写
+    - lua_filter@*pin_cand_filter                   # 置顶候选项（顺序要求：置顶候选项 > Emoji > 简繁切换）
+    - lua_filter@*reduce_english_filter             # 降低部分英语单词在候选项的位置
     - simplifier@emoji                              # Emoji
     - simplifier@traditionalize                     # 简繁切换
-    - lua_filter@search@radical_pinyin              # 部件拆字辅码
+    - lua_filter@*search@radical_pinyin             # 部件拆字辅码
     - uniquifier                                    # 去重
 
 
@@ -294,10 +294,10 @@ recognizer:
   patterns:                             # 再增加方案专有的：
     punct: "^V([0-9]|10|[A-Za-z]+)$"    # 响应 symbols_caps_v.yaml 的 symbols
     radical_lookup: "^uU[a-z;]+$"       # 响应部件拆字的反查，与 radical_lookup/prefix 匹配
-    unicode: "^U[a-f0-9]+"              # 脚本将自动获取第 2 个字符 U 作为触发前缀，响应 lua_translator@unicode，输出 Unicode 字符
-    number: "^R[0-9]+[.]?[0-9]*"        # 脚本将自动获取第 2 个字符 R 作为触发前缀，响应 lua_translator@number_translator，数字金额大写
-    calculator: "^cC.+"                 # 响应 lua_translator@calc_translator，计算器。前缀设定项 calculator/prefix
-    gregorian_to_lunar: "^N[0-9]{1,8}"  # 脚本将自动获取第 2 个字符 N 作为触发前缀，响应 lua_translator@lunar，公历转农历，输入 N20240115 得到「二〇二三年腊月初五」
+    unicode: "^U[a-f0-9]+"              # 脚本将自动获取第 2 个字符 U 作为触发前缀，响应 lua_translator@*unicode，输出 Unicode 字符
+    number: "^R[0-9]+[.]?[0-9]*"        # 脚本将自动获取第 2 个字符 R 作为触发前缀，响应 lua_translator@*number_translator，数字金额大写
+    calculator: "^cC.+"                 # 响应 lua_translator@*calc_translator，计算器。前缀设定项 calculator/prefix
+    gregorian_to_lunar: "^N[0-9]{1,8}"  # 脚本将自动获取第 2 个字符 N 作为触发前缀，响应 lua_translator@*lunar，公历转农历，输入 N20240115 得到「二〇二三年腊月初五」
 
 
 # 从 default 继承快捷键
