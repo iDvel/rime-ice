@@ -7,11 +7,10 @@ patch:
   switcher:
     caption: 「方案选单」
     hotkeys:
-      - F4
+      - F6
       # Control+grave 为 control + `
       # - Control+grave
       # - Control+Shift+grave
-      # - Alt+grave
 
   # 快捷键
   key_binder:
