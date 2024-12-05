@@ -40,7 +40,7 @@
     -   所有标点符号直接上屏
     -   特殊符号、字符输入（全拼<kbd>v</kbd>+首字母缩写；双拼<kbd>V</kbd>+首字母缩写）
     -   拼音纠错（模糊音）
-    -   更多默认未启用的功能请参考 `rime.lua` 文件以及方案注释
+    -   更多默认未启用的功能请参考 `lua/` 及方案注释
 - 简体字表、词库
     -   [通用规范汉字表](https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters)（by 中华人民共和国教育部）8K 常用汉字
     -   [Unihan 字库](https://www.unicode.org/Public/)（by Unicode lnc | [UNICODE LICENSE V3](https://www.unicode.org/license.txt)）40K 大字库， **默认未启用**
