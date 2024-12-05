@@ -52,7 +52,7 @@ switches:
 # 输入引擎
 engine:
   processors:
-    - lua_processor@*select_character          # 以词定字
+    - lua_processor@*select_character  # 以词定字
     - ascii_composer
     - recognizer
     - key_binder
@@ -73,24 +73,24 @@ engine:
     - script_translator
     - lua_translator@*date_translator    # 时间、日期、星期
     - lua_translator@*lunar              # 农历
-    - table_translator@custom_phrase    # 自定义短语 custom_phrase_double.txt
-    - table_translator@melt_eng         # 英文输入
-    - table_translator@cn_en            # 中英混合词汇
-    - table_translator@radical_lookup   # 部件拆字反查
+    - table_translator@custom_phrase     # 自定义短语 custom_phrase_double.txt
+    - table_translator@melt_eng          # 英文输入
+    - table_translator@cn_en             # 中英混合词汇
+    - table_translator@radical_lookup    # 部件拆字反查
     - lua_translator@*unicode            # Unicode
     - lua_translator@*number_translator  # 数字、金额大写
     - lua_translator@*calc_translator    # 计算器
     - lua_translator@*force_gc           # 暴力 GC
   filters:
     - lua_filter@*corrector                          # 错音错字提示
-    - reverse_lookup_filter@radical_reverse_lookup  # 部件拆字滤镜
+    - reverse_lookup_filter@radical_reverse_lookup   # 部件拆字滤镜
     - lua_filter@*autocap_filter                     # 英文自动大写
     - lua_filter@*pin_cand_filter                    # 置顶候选项（顺序要求：置顶候选项 > Emoji > 简繁切换）
     - lua_filter@*reduce_english_filter              # 降低部分英语单词在候选项的位置
-    - simplifier@emoji                              # Emoji
-    - simplifier@traditionalize                     # 简繁切换
+    - simplifier@emoji                               # Emoji
+    - simplifier@traditionalize                      # 简繁切换
     - lua_filter@*search@radical_pinyin              # 部件拆字辅码
-    - uniquifier                                    # 去重
+    - uniquifier                                     # 去重
 
 
 # Lua 配置: 日期、时间、星期、ISO 8601、时间戳的触发关键字
