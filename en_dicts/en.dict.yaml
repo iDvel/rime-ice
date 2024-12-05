@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-11-28"
+version: "2024-12-06"
 sort: by_weight
 ...
 # +_+
@@ -5731,6 +5731,8 @@ dog	dog
 doge	doge
 dogg	dogg
 dogs	dogs
+dogsbody	dogsbody
+dogsleep	dogsleep
 # doi	doi
 doing	doing
 Dolby	Dolby
@@ -6381,6 +6383,7 @@ encouraged	encouraged
 encouragement	encouragement
 encourages	encourages
 encouraging	encouraging
+encrypt	encrypt
 encrypted	encrypted
 encryption	encryption
 encyclopedia	encyclopedia
@@ -13611,6 +13614,7 @@ oversight	oversight
 oversized	oversized
 overstock	overstock
 overtake	overtake
+overtaken	overtaken
 overthrow	overthrow
 overtime	overtime
 overture	overture

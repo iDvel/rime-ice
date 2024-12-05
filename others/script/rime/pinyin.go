@@ -237,6 +237,7 @@ var onlyOne = map[string]string{
 	"凹":   "ao",
 	"给":   "gei",
 	"栖":   "qi",
+	"窨":   "yin",
 }
 
 func initPinyin() {
