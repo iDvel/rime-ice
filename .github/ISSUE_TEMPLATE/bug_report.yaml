@@ -1,8 +1,7 @@
 name: Bug 报告
 description: 我遇到了一个 bug 或是非预期行为
 title: '[Bug]: '
-labels:
-  - bug
+
 body:
   - type: input
     id: input
@@ -43,6 +42,24 @@ body:
       label: 应用信息
       description: 提供你使用的 RIME 前端和版本号，自构建前端请说明
       placeholder: Squirrel 1.0.2 / Weasel 0.16.1
+    validations:
+      required: true
+  - type: dropdown
+    id: schema_type
+    attributes:
+      label: 输入方案
+      description: 请选择你在使用的，或者此 issue 涉及的主要输入方案
+      options:
+        - '-- 请选择 --'
+        - 雾凇拼音 全拼 rime_ice
+        - 小鹤双拼 double_pinyin_flypy
+        - 智能 ABC double_pinyin_abc
+        - 微软双拼 double_pinyin_mspy
+        - 搜狗双拼 double_pinyin_sougou
+        - 紫光双拼 double_pinyin_ziguang
+        - 自然码 double_pinyin
+        - 仓·九宫格 t9
+        - '-- 其他（在补充信息处说明）--'
     validations:
       required: true
   - type: textarea
