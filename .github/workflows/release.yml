@@ -81,7 +81,16 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         uses: "softprops/action-gh-release@v2"
         with:
-          body_path: ${{ github.workspace }}/others/CHANGELOG.md
+          body: |
+            ## 说明
+
+            - `README.md`：简易的使用说明
+            - `full.zip` : 包含所有词典和方案文件
+            - `cn_dicts.zip`：中文词库
+            - `en_dicts.zip`：英文词库
+            - `opencc.zip`：opencc 词库（emoji 等）
+            - `all_dicts.zip`：以上三个词库的整合
+            - `LICENSE.txt`：开源协议
           draft: true
           make_latest: true
           files: |
