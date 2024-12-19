@@ -5,7 +5,7 @@
 # ------- 补充的英文词汇 -------
 ---
 name: en_ext
-version: "2024-11-28"
+version: "2024-12-19"
 sort: by_weight
 ...
 # 一些杂项
@@ -348,9 +348,12 @@ AlphaFold	AlphaFold
 Valve	Valve
 CS:GO	CS:GO
 Counter-Strike: Global Offensive	CS:GO
+Counter-Strike: Global Offensive	Counter-Strike:GlobalOffensive
 Counter-Strike	Counter-Strike
+Counter-Strike 2	Counter-Strike2
+CS2	CS2
+Counter-Strike 2	CS2
 Tesla	Tesla
-Polo	Polo
 Code Runner	CodeRunner
 AfterShokz Aeropex	AfterShokzAeropex
 AfterShokz	AfterShokz

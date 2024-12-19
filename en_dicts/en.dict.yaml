@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-12-06"
+version: "2024-12-19"
 sort: by_weight
 ...
 # +_+
@@ -1704,6 +1704,7 @@ baskets	baskets
 basque	basque
 bass	bass
 bastard	bastard
+bastion	bastion
 bat	bat
 batch	batch
 bates	bates

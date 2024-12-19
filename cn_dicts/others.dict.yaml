@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2024-11-30"
+version: "2024-12-19"
 sort: by_weight
 ...
 ##### 容错词
@@ -246,6 +246,8 @@ sort: by_weight
 缩砂密	suo sha mi
 迫击炮	pai ji pao
 迫击炮	po ji pao
+关卡	guan qia
+关卡	guan ka	1000
 ### 错字
 曾经	ceng jing
 曾今	ceng jin

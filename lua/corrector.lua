@@ -109,6 +109,7 @@ function M.init(env)
         ["jiao dou shi"] = { text = "角斗士", comment = "角(jué)斗士" },
         ["suo sha mi"] = { text = "缩砂密", comment = "缩(sù)砂密" },
         ["po ji pao"] = { text = "迫击炮", comment = "迫(pǎi)击炮" },
+        ["guan ka"] = { text = "关卡", comment = "guān qiǎ" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
         ["pu gai"] = { text = "扑街", comment = "仆街" },
