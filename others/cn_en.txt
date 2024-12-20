@@ -473,3 +473,19 @@ V8引擎
 3D打印
 2D电影
 3D电影
+BCD码
+8421码
+2421码
+5421码
+余3码
+Apache许可证
+BSD许可证
+GNU通用公共许可证
+GNU宽通用公共许可证
+GNU Affero通用公共许可证
+ISC许可证
+MIT许可证
+Mozilla公共许可证
+Python软件基金会许可证
+zlib许可证
+反996许可证

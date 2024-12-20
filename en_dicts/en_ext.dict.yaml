@@ -304,6 +304,9 @@ Chief Operating Officer	COO
 Chief Operating Officer	ChiefOperatingOfficer
 iShot	iShot
 TapTap	TapTap
+HDD	HDD
+Hard disk drive	HDD
+Hard disk drive	Harddiskdrive
 HHD	HHD
 Hybrid drive	HHD
 Hybrid drive	Hybriddrive
@@ -724,6 +727,8 @@ Instacast	Instacast
 Instashare	Instashare
 Intensify	Intensify
 IP	IP
+internet protocol	IP
+internet protocol	internetprotocol
 iPack	iPack
 iPad Air	iPadAir
 iPad mini	iPadmini
@@ -1661,6 +1666,8 @@ Virtual Local Area Network	VLAN
 WLAN	WLAN
 Wireless LAN	WLAN
 GPT	GPT
+GUID Partition Table	GUIDPartitionTable
+GUID Partition Table	GPT
 Generative Pre-trained Transformer	GPT
 GPT-4	GPT-4
 GPT-3.5	GPT-3.5
@@ -2152,3 +2159,30 @@ LGTM	LGTM
 PTAL	PTAL
 GPT-4o	GPT-4o
 Grok	Grok
+MSE	MSE
+Microsoft Security Essentials	MicrosoftSecurityEssentials
+Microsoft Security Essentials	MSE
+BCD	BCD
+Boot Configuration Data	BootConfigurationData
+Boot Configuration Data	BCD
+MBR	MBR
+master boot record	masterbootrecord
+master boot record	MBR
+EFI	EFI
+Extensible Firmware Interface	ExtensibleFirmwareInterface
+Extensible Firmware Interface	EFI
+UEFI	UEFI
+Unified Extensible Firmware Interface	UnifiedExtensibleFirmwareInterface
+Unified Extensible Firmware Interface	UEFI
+CMOS	CMOS
+complementary metal-oxide-semiconductor	complementarymetal-oxide-semiconductor
+complementary metal-oxide-semiconductor	CMOS
+DMA	DMA
+direct memory access	directmemoryaccess
+direct memory access	DMA
+OOP	OOP
+object-oriented programming	object-orientedprogramming
+object-oriented programming	OOP
+IDE	IDE
+integrated development environment	integrateddevelopmentenvironment
+integrated development environment	IDE
