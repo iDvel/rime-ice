@@ -74,6 +74,8 @@ function M.init(env)
         M.map = M.words
     elseif mode == "none" then
         M.map = {}
+    elseif mode == "force" then
+        M.force = true
     else -- 默认 mode 为 all 且合并 M.all 和 words
         for key in pairs(M.words) do
             M.all[key] = true
@@ -85,7 +87,7 @@ end
 function M.func(input, env)
     -- filter start
     local code = env.engine.context.input
-    if M.map[code] then
+    if M.force or M.map[code] then
         local pending_cands = {}
         local index = 0
         for cand in input:iter() do
