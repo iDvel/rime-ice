@@ -934,3 +934,6 @@ V8引擎	vbayinqing
 2D电影	erddianying
 3D电影	sanDdianying
 3D电影	sanddianying
+city不city	citybucity
+打call	dacall
+hold住	holdzhu
