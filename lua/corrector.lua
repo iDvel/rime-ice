@@ -112,6 +112,7 @@ function M.init(env)
         ["rou yi"] = { text = "柔荑", comment = "柔荑(tí)" },
         ["rou yi hua xu"] = { text = "柔荑花序", comment = "柔荑(tí)花序" },
         ["shou ru rou yi"] = { text = "手如柔荑", comment = "手如柔荑(tí)" },
+        ["wen ting jun"] = { text = "温庭筠", comment = "温庭筠(yún)" },
         ["guan ka"] = { text = "关卡", comment = "guān qiǎ" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
