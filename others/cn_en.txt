@@ -4,6 +4,7 @@
 X光
 X光片
 X射线
+Nabla算子
 T恤
 T恤衫
 AD钙奶
