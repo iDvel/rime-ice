@@ -74,13 +74,13 @@ custom_phrase:
 # 九宫格 1 键上的符号序列
 punctuator:
   half_shape:
-    "@": [1, "@", ".", "/", ":", "_", "-", "#"]
+    "1": [1, "@", ".", "/", ":", "_", "-", "#"]
 
 
 # 输入时按 1 可以分词
 key_binder:
   bindings:
-    - { when: has_menu, accept: at, send: apostrophe }
+    - { when: has_menu, accept: 1, send: apostrophe }
 
 
 speller:
