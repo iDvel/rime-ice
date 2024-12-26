@@ -14,6 +14,8 @@ X光片	Xggpf
 X光片	xggpf
 X射线	Xiexf
 X射线	xiexf
+Nabla算子	Nablaslzi
+Nabla算子	nablaslzi
 T恤	Txu
 T恤	txu
 T恤衫	Txuir

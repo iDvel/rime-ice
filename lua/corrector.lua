@@ -114,6 +114,7 @@ function M.init(env)
         ["shou ru rou yi"] = { text = "手如柔荑", comment = "手如柔荑(tí)" },
         ["wen ting jun"] = { text = "温庭筠", comment = "温庭筠(yún)" },
         ["guan ka"] = { text = "关卡", comment = "guān qiǎ" },
+        ["san wei zhen huo"] = { text = "三昧真火", comment = "三昧(mèi)真火" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
         ["pu gai"] = { text = "扑街", comment = "仆街" },
@@ -134,6 +135,7 @@ function M.init(env)
         ["ju hui"] = { text = "钜惠", comment = "巨惠" },
         ["mo xie zuo"] = { text = "魔蝎座", comment = "摩羯(jié)座" },
         ["pi sa"] = { text = "披萨", comment = "比(bǐ)萨" },
+        ["geng quan"] = { text = "梗犬", comment = "㹴犬" },
     }
 end
 

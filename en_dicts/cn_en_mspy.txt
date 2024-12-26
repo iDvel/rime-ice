@@ -14,6 +14,8 @@ X光片	Xgdpm
 X光片	xgdpm
 X射线	Xuexm
 X射线	xuexm
+Nabla算子	Nablasrzi
+Nabla算子	nablasrzi
 T恤	Txu
 T恤	txu
 T恤衫	Txuuj

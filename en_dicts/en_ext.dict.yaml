@@ -5,7 +5,7 @@
 # ------- 补充的英文词汇 -------
 ---
 name: en_ext
-version: "2024-12-19"
+version: "2024-12-27"
 sort: by_weight
 ...
 # 一些杂项
@@ -403,7 +403,6 @@ International Data Corporation	IDC
 International Data Corporation	InternationalDataCorporation
 Wunderlist	Wunderlist
 VMware	VMware
-Fusion	Fusion
 Flyme	Flyme
 VMware Fusion	VMwareFusion
 VMware Fusion Player	VMwareFusionPlayer
@@ -447,7 +446,6 @@ IntelliJ IDEA Community	IntelliJIDEACommunity
 IntelliJ IDEA Ultimate	IntelliJIDEAUltimate
 IDEA Community	IDEACommunity
 IDEA Ultimate	IDEAUltimate
-IDE	IDE
 NTR	NTR
 Notion	Notion
 Notion AI	NotionAI
@@ -473,7 +471,6 @@ Apple Music	AppleMusic
 TED	TED
 DeepL	DeepL
 Homebrew	Homebrew
-Finder	Finder
 VMess	VMess
 Shadowsocks	Shadowsocks
 PC	PC
@@ -1189,11 +1186,6 @@ New Technology File System	NewTechnologyFileSystem
 Microsoft NTFS	NTFS
 Microsoft NTFS	MicrosoftNTFS
 ChromeOS	ChromeOS
-GCD	GCD
-Grand Central Dispatch	GCD
-Grand Central Dispatch	GrandCentralDispatch
-greatest common divisor	GCD
-greatest common divisor	Greatestcommondivisor
 Ed Sheeran	EdSheeran
 Sheeran	Sheeran
 Cloudflare Images	CloudflareImages
@@ -1346,7 +1338,6 @@ Software Freedom Conservancy	SFC
 Software Freedom Conservancy	SoftwareFreedomConservancy
 PopCap	PopCap
 PopCap Games	PopCapGames
-Cyberpunk	Cyberpunk
 Kotlin	Kotlin
 PhpStorm	PhpStorm
 Datalore	Datalore
@@ -1666,8 +1657,6 @@ Virtual Local Area Network	VLAN
 WLAN	WLAN
 Wireless LAN	WLAN
 GPT	GPT
-GUID Partition Table	GUIDPartitionTable
-GUID Partition Table	GPT
 Generative Pre-trained Transformer	GPT
 GPT-4	GPT-4
 GPT-3.5	GPT-3.5
@@ -2159,9 +2148,6 @@ LGTM	LGTM
 PTAL	PTAL
 GPT-4o	GPT-4o
 Grok	Grok
-BCD	BCD
-Boot Configuration Data	BootConfigurationData
-Boot Configuration Data	BCD
 MBR	MBR
 master boot record	masterbootrecord
 master boot record	MBR
@@ -2174,9 +2160,6 @@ Unified Extensible Firmware Interface	UEFI
 CMOS	CMOS
 complementary metal-oxide-semiconductor	complementarymetal-oxide-semiconductor
 complementary metal-oxide-semiconductor	CMOS
-DMA	DMA
-direct memory access	directmemoryaccess
-direct memory access	DMA
 OOP	OOP
 object-oriented programming	object-orientedprogramming
 object-oriented programming	OOP

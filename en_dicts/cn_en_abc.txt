@@ -14,6 +14,8 @@ X光片	Xgtpw
 X光片	xgtpw
 X射线	Xvexw
 X射线	xvexw
+Nabla算子	Nablaspzi
+Nabla算子	nablaspzi
 T恤	Txu
 T恤	txu
 T恤衫	Txuvj
