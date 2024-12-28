@@ -115,6 +115,9 @@ function M.init(env)
         ["wen ting jun"] = { text = "温庭筠", comment = "温庭筠(yún)" },
         ["guan ka"] = { text = "关卡", comment = "guān qiǎ" },
         ["san wei zhen huo"] = { text = "三昧真火", comment = "三昧(mèi)真火" },
+        ["qing ping zhi mo"] = { text = "青𬞟之末", comment = "青𬞟(pín)之末" },
+        ["qi yu qing ping zhi mo"] = { text = "起于青𬞟之末", comment = "起于青𬞟(pín)之末" },
+        ["feng qi yu qing ping zhi mo"] = { text = "风起于青𬞟之末", comment = "风起于青𬞟(pín)之末" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
         ["pu gai"] = { text = "扑街", comment = "仆街" },

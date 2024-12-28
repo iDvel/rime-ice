@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2024-12-27"
+version: "2024-12-29"
 sort: by_weight
 ...
 ##### 容错词
@@ -258,6 +258,12 @@ sort: by_weight
 关卡	guan ka	1000
 三昧真火	san mei zhen huo
 三昧真火	san wei zhen huo
+青𬞟之末	qing pin zhi mo
+青𬞟之末	qing ping zhi mo
+起于青𬞟之末	qi yu qing pin zhi mo
+起于青𬞟之末	qi yu qing ping zhi mo
+风起于青𬞟之末	feng qi yu qing pin zhi mo
+风起于青𬞟之末	feng qi yu qing ping zhi mo
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
