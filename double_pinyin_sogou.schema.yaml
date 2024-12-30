@@ -49,6 +49,13 @@ switches:
     abbrev: [词, 单]
 
 
+# 快捷键
+key_binder:
+  # Lua 配置: 以词定字（上屏当前词句的第一个或最后一个字），和中括号翻页有冲突
+  select_first_character: "bracketleft"  # 左中括号 [
+  select_last_character: "bracketright"  # 右中括号 ]
+
+
 # 输入引擎
 engine:
   processors:
