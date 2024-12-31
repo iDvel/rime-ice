@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2024-12-29"
+version: "2024-12-31"
 sort: by_weight
 ...
 ##### 容错词
@@ -174,6 +174,12 @@ sort: by_weight
 太行山	tai xing shan
 歇斯底里	xie si di li
 歇斯底里	jie si di li
+发酵	fa jiao
+发酵	fa xiao
+酵母菌	jiao mu jun
+酵母菌	xiao mu jun
+殷红	yan hong
+殷红	yin hong
 暖和	nuan huo
 暖和	nuan he
 模棱两可	mo leng liang ke
@@ -184,6 +190,18 @@ sort: by_weight
 脖颈	bo jing
 脖颈儿	bo geng er
 脖颈儿	bo jing er
+牛皮癣	niu pi xuan
+牛皮癣	niu pi xian
+花斑癣	hua ban xuan
+花斑癣	hua ban xian
+体癣	ti xuan
+体癣	ti xian
+股癣	gu xuan
+股癣	gu xian
+脚癣	jiao xuan
+脚癣	jiao xian
+足癣	zu xuan
+足癣	zu xian
 结扎	jie za
 结扎	jie zha
 海参崴	hai shen wai
@@ -246,6 +264,8 @@ sort: by_weight
 缩砂密	suo sha mi
 迫击炮	pai ji pao
 迫击炮	po ji pao
+荸荠	bi qi
+荸荠	bi ji
 柔荑	rou ti
 柔荑	rou yi
 柔荑花序	rou ti hua xu
