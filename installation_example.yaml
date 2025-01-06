@@ -1,0 +1,11 @@
+distribution_code_name: Weasel
+distribution_name: "小狼毫"
+distribution_version: 0.16.3
+install_time: "Mon May 27 11:19:22 2024"
+installation_id: "mechrevo-vm-work"
+rime_version: 1.11.2
+sync_dir: "//10.0.0.1/iuxt/OneDrive/ProgramData/rime_dict"
+# sync_dir: "\\\\10.0.0.1\\iuxt\\OneDrive\\ProgramData\\rime_dict"
+# sync_dir: "C:/Users/iuxt/111"
+# sync_dir: "C:\\Users\\iuxt\\Resilio Sync\\rime_dict"
+update_time: "Mon Oct 14 01:10:24 2024"
