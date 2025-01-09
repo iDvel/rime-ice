@@ -129,6 +129,8 @@ function M.init(env)
         ["qi yu qing ping zhi mo"] = { text = "起于青𬞟之末", comment = "起于青𬞟(pín)之末" },
         ["feng qi yu qing ping zhi mo"] = { text = "风起于青𬞟之末", comment = "风起于青𬞟(pín)之末" },
         ["you hui juan"] = { text = "优惠券", comment = "优惠券(quàn)" },
+        ["pu ru"] = { text = "哺乳", comment = "bǔ rǔ" },
+        ["nao zu zhong"] = { text = "脑卒中", comment = "nǎo cù zhòng" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
         ["pu gai"] = { text = "扑街", comment = "仆街" },
