@@ -17,84 +17,84 @@ README.md	README.md
 Fn	Fn
 cmd	cmd
 cmdline	cmdline
-command	command
+# command	command
 Ctrl	Ctrl
-control	control
+# control	control
 Opt	Opt
-option	option
-shift	shift
-tab	tab
+# option	option
+# shift	shift
+# tab	tab
 Caps	Caps
 CapsLock	CapsLock
-return	return
-enter	enter
-space	space
+# return	return
+# enter	enter
+# space	space
 backspace	backspace
 Del	Del
-delete	delete
+# delete	delete
 Esc	Esc
-eject	eject
+# eject	eject
 # 月份（据说好像 5、6、7 月不要缩写 https://www.zhihu.com/question/29896678）
-January	January
+# January	January
 Jan.	Jan.
 January	Jan
-February	February
+# February	February
 Feb.	Feb.
 February	Feb
-March	March
+# March	March
 Mar.	Mar.
 March	Mar
-April	April
+# April	April
 Apr.	Apr.
 April	Apr
-May	May
-June	June
+# May	May
+# June	June
 # Jun.	Jun
-June	Jun
-July	July
+# June	Jun
+# July	July
 # Jul.	Jul
 # July	Jul
-August	August
+# August	August
 Aug.	Aug.
 August	Aug
-September	September
+# September	September
 Sep.	Sep.
 Sept.	Sep.
 Sept.	Sept.
 September	Sep
 September	Sept
-October	October
+# October	October
 Oct.	Oct.
 October	Oct
-November	November
+# November	November
 Nov.	Nov.
 November	Nov
-December	December
+# December	December
 Dec.	Dec.
 December	Dec
 # 星期
-Monday	Monday
+# Monday	Monday
 Mon.	Mon.
 Monday	Mon
-Tuesday	Tuesday
+# Tuesday	Tuesday
 Tue.	Tue.
 Tuesday	Tue.
-Wednesday	Wednesday
+# Wednesday	Wednesday
 Wed.	Wed.
 Wednesday	Wed
-Thursday	Thursday
+# Thursday	Thursday
 Thu.	Thu.
 Thurs.	Thu.
 Thurs.	Thurs.
 Thursday	Thu
 Thursday	Thurs
-Friday	Friday
+# Friday	Friday
 Fri.	Fri.
 Friday	Fri
-Saturday	Saturday
+# Saturday	Saturday
 Sat.	Sat.
 Saturday	Sat
-Sunday	Sunday
+# Sunday	Sunday
 Sun.	Sun.
 Sunday	Sun
 # 生活大爆炸 & 老友记
@@ -1481,7 +1481,9 @@ mSATA	mSATA
 GPIB	GPIB
 GPIO	GPIO
 DVD	DVD
+DVDs	DVDs
 CD	CD
+CDs	CDs
 eSIM	eSIM
 UTF	UTF
 UTF-8	UTF-8
@@ -1525,14 +1527,12 @@ android	android
 iOS	iOS
 Linux	Linux
 Ubuntu	Ubuntu
-Windows	Windows
 Microsoft	Microsoft
 Nintendo	Nintendo
 Wii U	WiiU
 Wii	Wii
 Oracle	Oracle
 OriginOS	OriginOS
-iPhone	iPhone
 iPad	iPad
 iPod	iPod
 # iPods	iPods
@@ -1821,7 +1821,6 @@ NFT	NFT
 Non-Fungible Token	NFT
 Solidity	Solidity
 Argent	Argent
-argent	argent
 Argent X	ArgentX
 Braavos	Braavos
 Braavos Wallet	Braavos
@@ -1859,8 +1858,9 @@ Large Language Model Meta AI	LLaMA
 R.I.P	R.I.P
 AIGC	AIGC
 AI Generated Content	AIGC
+PyTorch	PyTorch
+TensorFlow	TensorFlow
 Presto	Presto
-presto	presto
 Upscayl	Upscayl
 Cocos Creator	CocosCreator
 John Wick	JohnWick
