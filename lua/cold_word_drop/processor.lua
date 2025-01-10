@@ -16,12 +16,12 @@ local function get_record_filername(record_type)
 	local user_distribute_name = rime_api:get_distribution_code_name()
 	if user_distribute_name:lower():match("weasel") then path_sep = [[\]] end
 	if user_distribute_name:lower():match("ibus") then
-		return string.format("%s/rime/lua/cold_word_records/%s_words.lua",
+		return string.format("%s/rime/lua/cold_word_drop/%s_words.lua",
 			os.getenv("HOME") .. "/.config/ibus",
 			record_type
 		)
 	else
-		local file_path = string.format("%s/lua/cold_word_records/%s_words.lua", user_data_dir, record_type)
+		local file_path = string.format("%s/lua/cold_word_drop/%s_words.lua", user_data_dir, record_type)
 		return file_path:gsub("/", path_sep)
 	end
 end
