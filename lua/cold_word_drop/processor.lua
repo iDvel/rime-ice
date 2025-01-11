@@ -74,21 +74,20 @@ local function append_word_to_droplist(env, ctx, action_type)
 end
 
 function processor.init(env)
-	local engine = env.engine
-	local config = engine.schema.config
+    local engine = env.engine
+    local config = engine.schema.config
     local _sd, drop_words = pcall(require, "cold_word_drop/drop_words")
     local _sh, hide_words = pcall(require, "cold_word_drop/hide_words")
     local _st, turn_down_words = pcall(require, "cold_word_drop/turn_down_words")
     local _sr, reduce_freq_words = pcall(require, "cold_word_drop/reduce_freq_words")
-    
-	env.drop_cand_key = config:get_string("key_binder/drop_cand") or "Control+d"
-	env.hide_cand_key = config:get_string("key_binder/hide_cand") or "Control+x"
-    env.turn_down_cand_key = config:get_string("key_binder/turn_down_cand") or nil
-	env.reduce_cand_key = env.turn_down_cand_key or config:get_string("key_binder/reduce_freq_cand") or "Control+j"
     env.drop_words = _sd and drop_words or {}
     env.hide_words = _sh and hide_words or {}
     env.reduce_freq_words = (_st and turn_down_words) or (_sr and reduce_freq_words) or {}
-	env.tbls = {
+    env.drop_cand_key = config:get_string("key_binder/drop_cand") or "Control+d"
+	env.hide_cand_key = config:get_string("key_binder/hide_cand") or "Control+x"
+    env.turn_down_cand_key = config:get_string("key_binder/turn_down_cand") or nil
+	env.reduce_cand_key = env.turn_down_cand_key or config:get_string("key_binder/reduce_freq_cand") or "Control+j"
+    env.tbls = {
 		["drop_list"] = env.drop_words,
 		["hide_list"] = env.hide_words,
 		["reduce_freq_list"] = env.reduce_freq_words,
