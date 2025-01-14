@@ -4,6 +4,7 @@
 #
 # https://github.com/iDvel/rime-ice
 # ------- 英文主词库 -------
+# 20k 左右的常见单词
 #
 #
 # 来源：
@@ -14,7 +15,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-12-27"
+version: "2025-01-14"
 sort: by_weight
 ...
 # +_+
@@ -818,6 +819,7 @@ animations	animations
 anime	anime
 Aniston	Aniston
 Anita	Anita
+ankh	ankh
 ankle	ankle
 Ann	Ann
 Anna	Anna
@@ -11443,7 +11445,7 @@ lyrics	lyrics
 # lys	lys
 # m	m
 # ma	ma
-mac	mac
+Mac	Mac
 Macau	Macau
 MacDonald	MacDonald
 macedonia	macedonia

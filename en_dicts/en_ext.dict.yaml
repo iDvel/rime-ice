@@ -3,9 +3,10 @@
 #
 # https://github.com/iDvel/rime-ice
 # ------- 补充的英文词汇 -------
+# 少数单词与 en 重复，纯粹是为了排版美观，部署时的报错 duplicate word definition 可忽略，无任何影响
 ---
 name: en_ext
-version: "2024-12-27"
+version: "2025-01-14"
 sort: by_weight
 ...
 # 一些杂项
@@ -157,7 +158,6 @@ macOS Monterey	macOS	6
 macOS Ventura	macOS	7
 macOS Sonoma	macOS	8
 macOS Sequoia	macOS	8
-Windows	Windows	999
 Windows 95	Windows	1
 Windows 98	Windows	2
 Windows Me	Windows	3
@@ -366,7 +366,6 @@ Xnip	Xnip
 Workspace	Workspace
 AdSense	AdSense
 Authenticator	Authenticator
-Chrome	Chrome
 DeepMind	DeepMind
 Google	Google
 Google Ads	GoogleAds
@@ -533,7 +532,6 @@ Intel	Intel
 JSON	JSON
 JetBrains	JetBrains
 KTV	KTV
-Mac	Mac
 Macintosh	Macintosh
 MBP	MBP
 MacBook Pro	MBP
@@ -1230,8 +1228,6 @@ tmux	tmux
 SOS	SOS
 abcd	abcd
 ABCD	ABCD
-abc	abc
-ABC	ABC
 Starbucks	Starbucks
 I Love You	ILoveYou
 ZZZ	ZZZ
@@ -1487,7 +1483,6 @@ UTF	UTF
 UTF-8	UTF-8
 UTF-16	UTF-16
 ASCII	ASCII
-ANSI	ANSI
 IEEE	IEEE
 Institute of Electrical and Electronics Engineers	IEEE
 DjVu	DjVu
@@ -1507,7 +1502,6 @@ mRNA	mRNA
 messenger RNA	mRNA
 C++	C++
 C++	Cpp
-Python	Python
 MIT	MIT
 Massachusetts Institute of Technology	MIT
 Massachusetts Institute of Technology	MassachusettsInstituteofTechnology
@@ -1515,10 +1509,7 @@ MIT License	MITLicense
 LGPL	LGPL
 GNU Lesser General Public License	LGPL
 GNU Lesser General Public License	GNULesserGeneralPublicLicense
-Mozilla	Mozilla
 Mozilla Firefox	MozillaFirefox
-Apache	Apache
-Steam	Steam
 Steam Deck	SteamDeck
 Android	Android
 android	android
@@ -1820,8 +1811,6 @@ dYdX	dYdX
 NFT	NFT
 Non-Fungible Token	NFT
 Solidity	Solidity
-Argent	Argent
-argent	argent
 Argent X	ArgentX
 Braavos	Braavos
 Braavos Wallet	Braavos
@@ -1859,8 +1848,6 @@ Large Language Model Meta AI	LLaMA
 R.I.P	R.I.P
 AIGC	AIGC
 AI Generated Content	AIGC
-Presto	Presto
-presto	presto
 Upscayl	Upscayl
 Cocos Creator	CocosCreator
 John Wick	JohnWick
