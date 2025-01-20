@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 recipe:
-  Rx: others/recipes/full
+  Rx: default
   args:
   description: >-
     完整安装、更新
@@ -9,11 +9,7 @@ install_files: >-
   cn_dicts/*.*
   en_dicts/*.*
   opencc/*.*
-  lua/*.*
-  lua/cold_word_drop/*.*
   default.yaml
-  squirrel.yaml
-  weasel.yaml
   rime_ice.schema.yaml
   rime_ice.dict.yaml
   t9.schema.yaml
@@ -27,6 +23,4 @@ install_files: >-
   symbols_caps_v.yaml
   radical_pinyin.schema.yaml
   radical_pinyin.dict.yaml
-  melt_eng.schema.yaml
-  melt_eng.dict.yaml
   custom_phrase.txt

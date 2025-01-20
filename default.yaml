@@ -40,7 +40,6 @@ switcher:
     - traditionalization
     - emoji
     - full_shape
-    - search_single_char
   fold_options: true            # 呼出时是否折叠，多方案时建议折叠 true ，一个方案建议展开 false
   abbreviate_options: true      # 折叠时是否缩写选项
   option_list_separator: ' / '  # 折叠时的选项分隔符
@@ -168,10 +167,6 @@ recognizer:
 
 # 快捷键
 key_binder:
-  # Lua 配置: 以词定字（上屏当前词句的第一个或最后一个字），和中括号翻页有冲突
-  select_first_character: "bracketleft"  # 左中括号 [
-  select_last_character: "bracketright"  # 右中括号 ]
-
   bindings:
     # Tab / Shift+Tab 切换光标至下/上一个拼音
     - { when: composing, accept: Shift+Tab, send: Shift+Left }
@@ -232,7 +227,7 @@ key_binder:
     # - { when: always, accept: Control+period, toggle: ascii_punct }
     # - { when: always, accept: Control+slash, toggle: traditionalization }
 
-    # 将小键盘 0~9 . 映射到主键盘，数字金额大写的 Lua 如 R1234.5678 可使用小键盘输入
+    # 将小键盘 0~9 . 映射到主键盘
     - {accept: KP_0, send: 0, when: composing}
     - {accept: KP_1, send: 1, when: composing}
     - {accept: KP_2, send: 2, when: composing}
