@@ -15,7 +15,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-01-14"
+version: "2025-01-23"
 sort: by_weight
 ...
 # +_+
@@ -538,6 +538,7 @@ album	album
 albums	albums
 Albuquerque	Albuquerque
 Alcatel	Alcatel
+alchemist	alchemist
 alchemy	alchemy
 alcohol	alcohol
 alcoholic	alcoholic
@@ -4817,6 +4818,7 @@ dancer	dancer
 dancers	dancers
 dances	dances
 dancing	dancing
+dandelion	dandelion
 Dane	Dane
 danger	danger
 dangerous	dangerous
@@ -11298,6 +11300,7 @@ LOL	LOL
 Lola	Lola
 Lolita	Lolita
 # lolitas	lolitas
+lollipop	lollipop
 # lon	lon
 London	London
 lone	lone
@@ -12563,7 +12566,7 @@ MSNBC	MSNBC
 # mt	mt
 # mta	mta
 MTV	MTV
-# mu	mu
+mu	mu
 much	much
 mud	mud
 muddy	muddy
@@ -20202,6 +20205,7 @@ upward	upward
 upwards	upwards
 # ur	ur
 uranium	uranium
+Uranus	Uranus
 urban	urban
 Urbana	Urbana
 urge	urge

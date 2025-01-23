@@ -6,7 +6,7 @@
 # 少数单词与 en 重复，纯粹是为了排版美观，部署时的报错 duplicate word definition 可忽略，无任何影响
 ---
 name: en_ext
-version: "2025-01-14"
+version: "2025-01-23"
 sort: by_weight
 ...
 # 一些杂项
@@ -2153,3 +2153,6 @@ object-oriented programming	OOP
 IDE	IDE
 integrated development environment	integrateddevelopmentenvironment
 integrated development environment	IDE
+tensor	tensor
+TensorFlow	TensorFlow
+PyTorch	PyTorch
