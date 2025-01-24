@@ -1,9 +1,10 @@
 name: Deploy rime-ice with fcitx5-rime.js
 
 on:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
+  workflow_dispatch:
 
 jobs:
   deploy:
