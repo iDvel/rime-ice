@@ -15,7 +15,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-01-23"
+version: "2025-01-31"
 sort: by_weight
 ...
 # +_+
@@ -17826,6 +17826,8 @@ sorts	sorts
 SOS	SOS
 sought	sought
 soul	soul
+soulmate	soulmate
+soulmates	soulmates
 souls	souls
 sound	sound
 sounded	sounded
@@ -19081,6 +19083,7 @@ tense	tense
 tensile	tensile
 tension	tension
 tensions	tensions
+tensor	tensor
 tent	tent
 tentative	tentative
 tenth	tenth
