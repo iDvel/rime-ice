@@ -15,7 +15,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-02-01"
+version: "2025-02-02"
 sort: by_weight
 ...
 # +_+

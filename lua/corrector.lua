@@ -137,6 +137,8 @@ function M.init(env)
         ["guo pu"] = { text = "果脯", comment = "guǒ fǔ" },
         ["rou pu"] = { text = "肉脯", comment = "ròu fǔ" },
         ["bai qi tun"] = { text = "白𬶨豚", comment = "bái jì tún" },
+        ["nao gu"] = { text = "桡骨", comment = "ráo gǔ" },
+        ["bai zhe bu rao"] = { text = "百折不挠", comment = "bǎi zhé bù náo" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
         ["pu gai"] = { text = "扑街", comment = "仆街" },
