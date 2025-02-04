@@ -27,7 +27,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2025-02-01"
+version: "2025-02-03"
 sort: by_weight
 ...
 ### 按需启用
@@ -997,6 +997,7 @@ sort: by_weight
 棰	chui	405
 倕	chui	17
 圌	chui	1
+椎	chui	1
 春	chun	414544
 纯	chun	212265
 唇	chun	161329
@@ -4316,7 +4317,7 @@ sort: by_weight
 勔	mian	58
 愐	mian	5
 偭	mian	1
-𩾃	mian	0
+𩾃	mian	1
 妙	miao	280421
 秒	miao	90580
 描	miao	87436
