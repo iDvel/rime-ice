@@ -3,7 +3,6 @@ package rime
 import (
 	"bufio"
 	"fmt"
-	mapset "github.com/deckarep/golang-set/v2"
 	"log"
 	"os"
 	"path/filepath"
@@ -11,6 +10,8 @@ import (
 	"strings"
 	"time"
 	"unicode"
+
+	mapset "github.com/deckarep/golang-set/v2"
 )
 
 // 多音字，手动选择注音
@@ -638,17 +639,17 @@ func stepFurther(parts []string, index int, arranged string, map4DoublePinyins m
 	return result
 }
 
-// 中英文分割，去掉间隔号和横杠
+// 中英文分割，去掉间隔号、句点和横杠
 // "哆啦A梦" → ["哆", "啦", "A", "梦"]
 // "QQ号" → ["QQ", "号"]
 // "Wi-Fi密码" → ["WiFi", "密", "码"]
-// "特拉法尔加·D·瓦铁尔·罗" → ["特", "拉", "法", "尔", "加", "D", "瓦", "铁", "尔", "罗"]
+// "乔治·R.R.马丁" → ["乔", "治", "RR", "马", "丁"]
 // "A4纸" → ["A", "4", "纸"]
 func splitMixedWords(input string) []string {
 	var result []string
 	word := ""
 	for _, r := range input {
-		if string(r) == "·" || string(r) == "-" {
+		if string(r) == "·" || string(r) == "-" || string(r) == "." {
 			continue
 		} else if unicode.Is(unicode.Latin, r) {
 			word += string(r)

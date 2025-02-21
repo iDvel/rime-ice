@@ -312,8 +312,6 @@ N遍	nbw
 蒙奇·D·路飞	mgqidlufq
 蒙奇·D·龙	mgqiDls
 蒙奇·D·龙	mgqidls
-乔治·R·R·马丁	qzaiRRmady
-乔治·R·R·马丁	qzairrmady
 哥尔·D·罗杰	georDlojx
 哥尔·D·罗杰	geordlojx
 马歇尔·D·蒂奇	maxxorDdiqi
@@ -567,8 +565,6 @@ Esc键	Escjw
 Esc键	escjw
 Eject键	Ejectjw
 Eject键	ejectjw
-J·K·罗琳	JKlolc
-J·K·罗琳	jklolc
 周刊少年Jump	abkjvknwJump
 周刊少年Jump	abkjvknwjump
 ICP备案	ICPbqoj
@@ -583,8 +579,12 @@ ICP备案	icpbqoj
 改bug	glbug
 查bug	eabug
 找bug	akbug
-J·R·R·托尔金	JRRtoorjc
-J·R·R·托尔金	jrrtoorjc
+J.K.罗琳	JKlolc
+J.K.罗琳	jklolc
+J.R.R.托尔金	JRRtoorjc
+J.R.R.托尔金	jrrtoorjc
+乔治·R.R.马丁	qzaiRRmady
+乔治·R.R.马丁	qzairrmady
 异维A酸	yiwqAsp
 异维A酸	yiwqasp
 互fo	hufo

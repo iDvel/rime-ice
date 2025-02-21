@@ -155,7 +155,6 @@ N次
 N遍
 蒙奇·D·路飞
 蒙奇·D·龙
-乔治·R·R·马丁
 哥尔·D·罗杰
 马歇尔·D·蒂奇
 X·德雷克
@@ -283,7 +282,6 @@ Del键
 Delete键
 Esc键
 Eject键
-J·K·罗琳
 周刊少年Jump
 ICP备案
 啥bug
@@ -296,7 +294,9 @@ ICP备案
 改bug
 查bug
 找bug
-J·R·R·托尔金
+J.K.罗琳
+J.R.R.托尔金
+乔治·R.R.马丁
 异维A酸
 互fo
 减CD
