@@ -248,11 +248,13 @@ traditionalize:
 
 
 # 标点符号
-# punctuator 下面有三个子项：
+# punctuator 下面的三个子项：
 #   full_shape 全角标点映射
 #   half_shape 半角标点映射
 #   symbols    Rime 的预设配置是以 '/' 前缀开头输出一系列字符，自定义的 symbols_caps_v.yaml 修改成了 'V' 开头。
+# 以及新版 digit_separators 相关的属性
 punctuator:
+  __include: default:/punctuator               # 从 default.yaml 导入 punctuator 的所有配置，为了引用 digit_separators 等属性
   full_shape:
     __include: default:/punctuator/full_shape  # 从 default.yaml 导入配置
   half_shape:
