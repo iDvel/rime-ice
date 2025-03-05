@@ -6,7 +6,7 @@
 # 少数单词与 en 重复，纯粹是为了排版美观，部署时的报错 duplicate word definition 可忽略，无任何影响
 ---
 name: en_ext
-version: "2025-01-31"
+version: "2025-03-06"
 sort: by_weight
 ...
 # 一些杂项
@@ -157,7 +157,8 @@ macOS Big Sur	macOS	5
 macOS Monterey	macOS	6
 macOS Ventura	macOS	7
 macOS Sonoma	macOS	8
-macOS Sequoia	macOS	8
+macOS Sequoia	macOS	9
+Windows	Windows	999
 Windows 95	Windows	1
 Windows 98	Windows	2
 Windows Me	Windows	3
@@ -169,7 +170,7 @@ Windows 7	Windows	7
 Windows 8	Windows	8
 Windows 10	Windows	10
 Windows 11	Windows	11
-Windows	Windows	12
+Windows 12	Windows	12
 # +_+
 iPhone 3G	iPhone3G
 iPhone 3GS	iPhone3GS
@@ -244,6 +245,7 @@ Windows 7	Windows7
 Windows 8	Windows8
 Windows 10	Windows10
 Windows 11	Windows11
+Windows 12	Windows12
 ERC-20	ERC-20
 ERC-721	ERC-721
 ERC-1155	ERC-1155
@@ -641,6 +643,9 @@ Caffeine	Caffeine
 Calcbot	Calcbot
 Calibre	Calibre
 CarPlay	CarPlay
+CarLife	CarLife
+CarLife+	CarLife+
+HiCar	HiCar
 CDN	CDN
 Content Delivery Network	CDN
 Content Delivery Network	ContentDeliveryNetwork
@@ -1222,8 +1227,6 @@ Sport Utility Vehicle	SportUtilityVehicle
 UFO	UFO
 Unidentified Flying Object	UFO
 Unidentified Flying Object	UnidentifiedFlyingObject
-Copyright	Copyright
-Registered	Registered
 TM	TM
 tmux	tmux
 SOS	SOS
@@ -1517,7 +1520,6 @@ android	android
 iOS	iOS
 Linux	Linux
 Ubuntu	Ubuntu
-Windows	Windows
 Microsoft	Microsoft
 Nintendo	Nintendo
 Wii U	WiiU
@@ -2157,3 +2159,4 @@ integrated development environment	IDE
 TensorFlow	TensorFlow
 PyTorch	PyTorch
 DeepSeek	DeepSeek
+Mercedes-Benz	Mercedes-Benz

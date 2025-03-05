@@ -15,7 +15,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-02-02"
+version: "2025-03-06"
 sort: by_weight
 ...
 # +_+
@@ -6313,7 +6313,7 @@ Emerson	Emerson
 # emi	emi
 emigrate	emigrate
 Emily	Emily
-eminem	eminem
+Eminem	Eminem
 eminent	eminent
 emirates	emirates
 emission	emission
@@ -9968,6 +9968,7 @@ intimidate	intimidate
 # intl	intl
 into	into
 intonation	intonation
+intoxicating	intoxicating
 intra	intra
 intracellular	intracellular
 intranet	intranet
@@ -11462,7 +11463,7 @@ Mack	Mack
 Mackay	Mackay
 Mackenzie	Mackenzie
 Macmillan	Macmillan
-Macon	Macon
+macon	macon
 macOS	macOS
 Macquarie	Macquarie
 macro	macro
@@ -11997,7 +11998,7 @@ menu	menu
 menus	menus
 meow	meow
 # mer	mer
-mercedes	mercedes
+Mercedes	Mercedes
 mercer	mercer
 merchandise	merchandise
 merchandising	merchandising
@@ -12826,6 +12827,7 @@ Nepal	Nepal
 nephew	nephew
 Neptune	Neptune
 nerd	nerd
+nerf	nerf
 nerve	nerve
 nerves	nerves
 nervous	nervous
@@ -15277,7 +15279,6 @@ PVC	PVC
 # py	py
 pyjamas	pyjamas
 pyramid	pyramid
-Python	python
 python	python
 pythonic	pythonic
 # q	q
@@ -18203,7 +18204,6 @@ steal	steal
 stealing	stealing
 steals	steals
 stealth	stealth
-Steam	steam
 steam	steam
 steamer	steamer
 steel	steel
@@ -21089,7 +21089,7 @@ wind	wind
 winding	winding
 windmill	windmill
 window	window
-windows	windows
+Windows	Windows
 winds	winds
 windshield	windshield
 Windsor	Windsor

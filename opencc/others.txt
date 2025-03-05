@@ -1473,3 +1473,6 @@ Twitter	Twitter 𝕏
 橡胶果实	橡胶果实 幻兽种·人人果实·尼卡（太阳神）形态
 直角引号	直角引号 「」 『』
 千瓦	千瓦 瓩
+奔驰	奔驰 Benz Mercedes-Benz
+梅赛德斯	梅赛德斯 Mercedes
+梅赛德斯-奔驰	梅赛德斯-奔驰 Mercedes-Benz

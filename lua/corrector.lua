@@ -141,6 +141,13 @@ function M.init(env)
         ["bai zhe bu rao"] = { text = "百折不挠", comment = "百折不挠(náo)" },
         ["zhui xin qi xie"] = { text = "椎心泣血", comment = "椎(chuí)心泣血" },
         ["zhui xin qi xue"] = { text = "椎心泣血", comment = "椎(chuí)心泣血" },
+        ["xia chi"] = { text = "挟持", comment = "挟(xié)持" },
+        ["hao zhou"] = { text = "亳州", comment = "亳(bó)州" },
+        ["niu jing"] = { text = "牛丼", comment = "牛丼(dǎn)" },
+        ["niu jing fan"] = { text = "牛丼饭", comment = "牛丼(dǎn)饭" },
+        ["an pou"] = { text = "安瓿", comment = "安瓿(bù)" },
+        ["an pou ping"] = { text = "安瓿瓶", comment = "安瓿(bù)瓶" },
+        ["jin kui"] = { text = "金匮", comment = "金匮(guì)" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
         ["pu gai"] = { text = "扑街", comment = "仆街" },

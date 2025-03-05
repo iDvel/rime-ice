@@ -27,7 +27,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2025-03-03"
+version: "2025-03-06"
 sort: by_weight
 ...
 ### 按需启用
@@ -1184,6 +1184,7 @@ sort: by_weight
 惮	dan	16732
 石	dan	14278
 眈	dan	12773
+丼	dan	9000
 澹	dan	6736
 掸	dan	4870
 郸	dan	4714
@@ -6471,6 +6472,7 @@ sort: by_weight
 维	wei	369458
 危	wei	279881
 委	wei	274305
+胃	wei	253113
 伟	wei	242973
 谓	wei	235703
 唯	wei	217658
@@ -6485,7 +6487,6 @@ sort: by_weight
 畏	wei	70481
 伪	wei	66990
 尉	wei	62071
-胃	wei	53113
 巍	wei	20904
 蔚	wei	20152
 偎	wei	18007

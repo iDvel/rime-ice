@@ -1,7 +1,7 @@
 # Emoji 映射表
 # 根据此文件生成 emoji.txt
 #
-# version: 2025-01-31
+# version: 2025-03-06
 #
 # 中文映射由 Dvel 纯手工打造 https://github.com/iDvel/rime-ice
 #
@@ -1674,8 +1674,8 @@ S$ 新加坡元 新加坡币
 ✳️ 八轮辐星号
 ✴️ 八角星
 # ❇
-© 版权 版权符号 Copyright
-® 注册 注册标记 注册商标符号 注册商标 Registered
+© 版权 版权符号 copyright
+® 注册 注册标记 注册商标符号 注册商标 registered
 ™ 商标 商标符号 TM
 # keycap
 #️⃣ 井号 井号键

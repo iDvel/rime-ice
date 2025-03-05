@@ -3,7 +3,6 @@ package rime
 import (
 	"bufio"
 	"fmt"
-	mapset "github.com/deckarep/golang-set/v2"
 	"log"
 	"os"
 	"path"
@@ -13,6 +12,8 @@ import (
 	"time"
 	"unicode"
 	"unicode/utf8"
+
+	mapset "github.com/deckarep/golang-set/v2"
 )
 
 var (
@@ -34,6 +35,7 @@ func initCheck() {
 	specialWords.Add("特里斯坦–达库尼亚")
 	specialWords.Add("特里斯坦–达库尼亚群岛")
 	specialWords.Add("茱莉亚·路易斯-德瑞弗斯")
+	specialWords.Add("梅赛德斯-奔驰")
 	specialWords.Add("科科斯（基林）群岛")
 	specialWords.Add("刚果（金）")
 	specialWords.Add("刚果（布）")
