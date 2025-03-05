@@ -27,7 +27,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2025-02-21"
+version: "2025-03-03"
 sort: by_weight
 ...
 ### 按需启用
@@ -2733,6 +2733,7 @@ sort: by_weight
 惎	ji	2
 期	ji	1
 鱾	ji	1
+𬶭	ji	1
 㴔	ji	0
 堲	ji	0
 徛	ji	0
@@ -2744,7 +2745,6 @@ sort: by_weight
 𫓹	ji	0
 𬯀	ji	0
 𬶨	ji	0
-𬶭	ji	0
 家	jia	4546765
 加	jia	1329722
 价	jia	384863
