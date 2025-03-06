@@ -296,11 +296,6 @@ key_binder:
   search: "`"             # 辅码引导符，要添加到 speller/alphabet
   # bindings:             # 也可以再增加方案专有的
 
-# 定制组合键
-editor:
-  bindings:
-    Shift+KP_Enter: commit_script_text  # 增加小键盘回车组合键，与Shift+回车的默认行为一致
-    # Shift+Return: commit_raw_input    # 更改Shift+回车的行为
 
 # 拼写设定
 speller:
