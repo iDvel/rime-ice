@@ -161,6 +161,9 @@ translator:
     - xform/^/［/
     - xform/$/］/
   preedit_format:               # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
+    - xform/(^|[ '])aa/$1a/
+    - xform/(^|[ '])ee/$1e/
+    - xform/(^|[ '])oo/$1o/
     - xform/([bpmfdtnljqx])n/$1iao/
     - xform/(\w)g/$1eng/
     - xform/(\w)q/$1iu/
