@@ -1,4 +1,4 @@
--- 降低部分英语单词在候选项的位置
+-- 降低部分英语单词在候选项的位置，可在方案中配置要降低的模式和单词
 -- https://dvel.me/posts/make-rime-en-better/#短单词置顶的问题
 -- 感谢大佬 @[Shewer Lu](https://github.com/shewer) 指点
 -- Mintimate 修改:
@@ -18,7 +18,7 @@ function M.init(env)
     local all = { "aid", "aim", "air", "and", "ann", "ant", "any", "bad", "bag", "bail", "bait", "bam", "ban", "band",
         "bang", "bank", "bans", "bar", "bat", "bay", "bend", "benq", "bent", "benz", "bib", "bid", "bien", "big", "bin",
         "bind", "bit", "biz", "bob", "boc", "bop", "bos", "bot", "bow", "box", "boy", "bud", "buf", "bug", "bus",
-        "but", "buy", "cab", "cad", "cain", "cam", "can", "cans", "cant", "cap", "car", "cas", "cat", "cef", "cen",
+        "but", "buy", "cab", "cad", "cain", "cam", "can", "cans", "cant", "cap", "car", "cat", "cef", "cen",
         "cent", "chad", "chan", "chap", "char", "chat", "chef", "chen", "cher", "chew", "chic", "chin", "chip", "chit",
         "coup", "cum", "cunt", "cup", "cur", "cut", "dab", "dad", "dag", "dal", "dam", "day", "def", "del", "den",
         "dent", "deny", "der", "dew", "dial", "did", "died", "dies", "diet", "dig", "dim", "din", "dip", "dir", "dis",
@@ -51,7 +51,8 @@ function M.init(env)
         "lush", "mesh", "much", "nash", "pinch", "pouch", "push", "ranch", "rich", "rush", "such", "tech", "touch",
         "wash", "zach",
         -- 其他
-        "quanx", "eg",
+        "eg",
+        "my", "mt", "dj", "as", "js", "cs", "ak", "ps", "cd", "cn", "hk", "bt", "pk", "ml"
     }
     M.all = {}
     for _, v in ipairs(all) do
@@ -90,7 +91,7 @@ function M.func(input, env)
         for cand in input:iter() do
             index = index + 1
             -- 找到要降低的英文词，加入 pending_cands
-            if cand.preedit:find(" ") or not cand.text:match("[a-zA-Z]") then
+            if cand.preedit:find(" ") or not cand.text:match("[a-zA-Z]") or cand.type == "user_table" then
                 yield(cand)
             else
                 table.insert(pending_cands, cand)

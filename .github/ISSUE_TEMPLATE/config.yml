@@ -1,0 +1,26 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: 词库问题
+    url: https://github.com/iDvel/rime-ice/issues/666
+    about: 如果你发现了词库中有字词音形有错讹、缺漏等情况，请直接在这个链接中评论。鼓励你直接 PR，参与雾凇的维护。
+
+  - name: 雾凇拼音详细介绍
+    url: https://dvel.me/posts/rime-ice/
+    about: 这里是雾凇拼音的详细介绍，包括了安装、配置、使用和配置思路等内容。
+
+  - name: 雾凇拼音常见问题
+    url: https://github.com/iDvel/rime-ice/issues/133
+    about: 这里有一些重要问题的答案，提问前请查看，也请事先搜索 issue，你的问题也许已经有现成的答案。
+
+  - name: RIME 定制文档
+    url: https://github.com/rime/home/wiki
+    about: 这里有自定义 RIME 方案的全面教程。
+
+  - name: 小狼毫（Weasel）文档
+    url: https://github.com/rime/weasel/wiki
+    about: 这里有定制 Weasel 样式和行为的指导。
+
+  - name: 鼠须管（Squirrel）文档
+    url: https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/鼠鬚管介面配置指南.md
+    about: 这里有定制 Squirrel 样式和行为的参考资料。

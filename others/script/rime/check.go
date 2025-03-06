@@ -3,7 +3,6 @@ package rime
 import (
 	"bufio"
 	"fmt"
-	mapset "github.com/deckarep/golang-set/v2"
 	"log"
 	"os"
 	"path"
@@ -13,6 +12,8 @@ import (
 	"time"
 	"unicode"
 	"unicode/utf8"
+
+	mapset "github.com/deckarep/golang-set/v2"
 )
 
 var (
@@ -34,6 +35,7 @@ func initCheck() {
 	specialWords.Add("特里斯坦–达库尼亚")
 	specialWords.Add("特里斯坦–达库尼亚群岛")
 	specialWords.Add("茱莉亚·路易斯-德瑞弗斯")
+	specialWords.Add("梅赛德斯-奔驰")
 	specialWords.Add("科科斯（基林）群岛")
 	specialWords.Add("刚果（金）")
 	specialWords.Add("刚果（布）")
@@ -102,6 +104,7 @@ func initCheck() {
 		text, code := parts[0], parts[1]
 		hanPinyin[text] = append(hanPinyin[text], code)
 	}
+	hanPinyin["栖"] = []string{"qi"} // 只检查 qi 音，在 hanPinyinFilter 过滤「栖栖xi、栖栖xi遑遑」
 	// 给 hanPinyin 补充不在字表的读音，和过滤列表 hanPinyinFilter
 	file4, err := os.Open(汉字拼音映射TXT)
 	if err != nil {
@@ -128,6 +131,7 @@ func initCheck() {
 			hanPinyinFilter.Add(line)
 		}
 	}
+
 }
 
 // Check 对传入的词库文件进行检查

@@ -3,10 +3,10 @@
 
 ---
 name: rime_ice
-version: "2023-11-13"
+version: "2024-11-27"
 import_tables:
   - cn_dicts/8105     # 字表
-  # - cn_dicts/41448  # 大字表（按需启用）
+  # - cn_dicts/41448  # 大字表（按需启用）（启用时和 8105 同时启用并放在 8105 下面）
   - cn_dicts/base     # 基础词库
   - cn_dicts/ext      # 扩展词库
   - cn_dicts/tencent  # 腾讯词向量（大词库，部署时间较长）
@@ -20,7 +20,7 @@ import_tables:
 
 # 大写字母
 # 可在拼音方案下直接输入大写字母（Shift + 字母），大写字母参与造句。
-# 示例：输入 `nihaoASDFzaijian` 得到 `你好ASDF再见`
+# 示例：输入 `zuogeDNAjiance` 得到 `做个DNA检测`
 # （非雾凇方案的双拼如果要启用，需要参考双拼方案下的 speller/algebra 将大写字母搭桥改成一些特殊字符）
 A	A
 B	B
@@ -61,30 +61,19 @@ Z	Z
 7	qi
 8	ba
 9	jiu
-# 示例：输入 siSdian 得到 4S店
-3G
-4G
-5G
-3G网络
-4G网络
-5G网络
-3G流量
-4G流量
-5G流量
-2D
-3D
-4D
-3D打印
-2D电影
-3D电影
-4S店
-AE86
+
+# 示例：输入 sanDdayin 得到 3D打印
 M1
 M2
 M3
 M4
-M4A1
-
+3G
+4G
+5G
+2D
+3D
+4D
+3D打印
 
 # 加入词典，响应 opencc/others.txt 的 emoji 集合
 V动物

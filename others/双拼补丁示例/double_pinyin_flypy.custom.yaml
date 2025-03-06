@@ -1,0 +1,4 @@
+# 这是小鹤的补丁，其他双拼将文件名前面那部分改成对应方案 ID 就可以了
+patch:
+  # （按需选择）清空 preedit_format 中的内容，输入时显示双拼编码
+  translator/preedit_format: []

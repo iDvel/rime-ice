@@ -1,30 +1,25 @@
 # Rime schema
 # encoding: utf-8
 
-
 # 适配了仓输入法 [Hamster](https://github.com/imfuxiao/Hamster/) 九宫格布局。
-# 参考于仓老师 [morse.hsiao](https://github.com/imfuxiao) 的示例
 #
 # 可选，支持英文：
 # 1. 解开 `engine/translators` 下的注释
 # 2. 将 `others/Hamster/melt_eng.custom.yaml` 里的文件拷贝至配置目录，该补丁转写了英文的拼写规则到九宫格；
 
-
 __include: rime_ice.schema.yaml:/
-
 
 schema:
   schema_id: t9
   name: 仓·九宫格
-  version: "1"
+  version: "2.0.0"
   author:
     - Dvel
-    - '[morse.hsiao](https://github.com/imfuxiao)'
+    - "[morse.hsiao](https://github.com/imfuxiao)"
   description: |
     九宫格 for 仓输入法
   dependencies:
-    - melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
-
+    - melt_eng # 英文输入，作为次翻译器挂载到拼音方案
 
 engine:
   processors:
@@ -45,20 +40,18 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    - lua_translator@date_translator  # 时间、日期、星期
-    - table_translator@custom_phrase  # 自定义短语 custom_phrase_t9.txt
+    - lua_translator@*date_translator # 时间、日期、星期
+    - table_translator@custom_phrase # 自定义短语 custom_phrase_t9.txt
     # - table_translator@melt_eng     # 英文输入
   filters:
-    - simplifier@emoji                    # Emoji
-    - simplifier@traditionalize           # 简繁切换
-    - uniquifier                          # 去重
-
+    - simplifier@emoji # Emoji
+    - simplifier@traditionalize # 简繁切换
+    - uniquifier # 去重
 
 translator:
   prism: t9
   spelling_hints: 100
   comment_format: []
-
 
 # 自定义短语：custom_phrase_t9.txt
 # ⚠️ 编码要用数字
@@ -70,256 +63,41 @@ custom_phrase:
   enable_sentence: false
   initial_quality: 99
 
-
 # 九宫格 1 键上的符号序列
 punctuator:
   half_shape:
-    "@": [1, "@", ".", "/", ":", "_", "-", "#"]
-
+    "1": [1, "@", ".", "/", ":", "_", "-", "#"]
+    "@": [1, "@", ！, ：, 、, ……, ～]
+    "#": [0, "#", "$", "%", "^", "&", "*", "(", ")"]
 
 # 输入时按 1 可以分词
 key_binder:
   bindings:
-    - { when: has_menu, accept: at, send: apostrophe }
-
+    - { when: has_menu, accept: 1, send: apostrophe }
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA987654321
   initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA987654321
   algebra:
-    # 如果需要模糊音，可参考 rime_ice.schema.yaml 下的示例，放到最前面来就行，但不会正常显示模糊后的拼音。
-    # - derive/^([zcs])h/$1/
-    # - derive/^([zcs])([^h])/$1h$2/
-    # - derive/^l/n/
-    # - derive/^n/l/
-    # ……
-    # T9拼音穷举，感谢仓老师 [morse.hsiao](https://github.com/imfuxiao) 勤劳的小手。
+    # ### 超级简拼
+    - abbrev/^([a-z]).+$/$1/ # 超级简拼
+    - abbrev/^([zcs]h).+$/$1/ # 超级简拼中，zh ch sh 视为整体（ch'sh → 城市），而不是像这样分开（c'h's'h → 吃好睡好）。
+    - derive/^([nl])ve$/$1ue/
+    - derive/^([jqxy])u/$1v/
+    - derive/un$/uen/
+    - derive/ui$/uei/
+    - derive/iu$/iou/
+    - derive/([aeiou])ng$/$1gn/
+    - derive/([dtngkhrzcs])o(u|ng)$/$1o/
+    - derive/ong$/on/
+    - derive/ao$/oa/
+    - derive/([iu])a(o|ng?)$/a$1$2/
+    # ### 九宫格数字映射
     - derive/[abc]/2/
-    - derive/[bc]a/22/
-    - derive/[bc]ai/224/
-    - derive/[bc]an|[bc]ao/226/
-    - derive/[bc]ang/2264/
-    - derive/ce/23/
-    - derive/cei/234/
-    - derive/bei/234/
-    - derive/[bc]en/236/
-    - derive/[bc]eng/2364/
-    - derive/[abc]i/24/
-    - derive/cha/242/
-    - derive/chai/2424/
-    - derive/bia[no]|cha[no]/2426/
-    - derive/biang/24264/
-    - derive/chang/24264/
-    - derive/bie|che/243/
-    - derive/chen/2436/
-    - derive/cheng/24364/
-    - derive/chi/244/
-    - derive/bin/246/
-    - derive/bing/2464/
-    - derive/chong/24664/
-    - derive/chou/2468/
-    - derive/chu/248/
-    - derive/chua/2482/
-    - derive/chuai/24824/
-    - derive/chuan/24826/
-    - derive/chuang/248264/
-    - derive/chui/2484/
-    - derive/chu[no]/2486/
-    - derive/a[no]|bo/26/
-    - derive/ang/264/
-    - derive/cong/2664/
-    - derive/cou/268/
-    - derive/[bc]u/28/
-    - derive/cuan/2826/
-    - derive/cui/284/
-    - derive/cu[no]/286/
     - derive/[def]/3/
-    - derive/[df]a/32/
-    - derive/dai/324/
-    - derive/[df]an|dao/326/
-    - derive/[df]ang/3264/
-    - derive/de/33/
-    - derive/[df]ei/334/
-    - derive/[df]en/336/
-    - derive/[df]eng/3364/
-    - derive/[de]i/34/
-    - derive/dia/342/
-    - derive/dia[no]/3426/
-    - derive/die/343/
-    - derive/ding/3464/
-    - derive/diu/348/
-    - derive/en|fo/36/
-    - derive/eng/364/
-    - derive/dong/3664/
-    - derive/[df]ou/368/
-    - derive/er/37/
-    - derive/[df]u/38/
-    - derive/duan/3826/
-    - derive/dui/384/
-    - derive/du[no]/386/
-    - derive/[ghi]/4/
-    - derive/[gh]a/42/
-    - derive/[gh]ai/424/
-    - derive/[gh]an|[gh]ao/426/
-    - derive/[gh]ang/4264/
-    - derive/[gh]e/43/
-    - derive/[gh]ei/434/
-    - derive/[gh]en/436/
-    - derive/[gh]eng/4364/
-    - derive/hm/46/
-    - derive/[gh]ong/4664/
-    - derive/[gh]ou/468/
-    - derive/[gh]u/48/
-    - derive/[gh]ua/482/
-    - derive/[gh]uai/4824/
-    - derive/[gh]uan/4826/
-    - derive/[gh]uang/48264/
-    - derive/[gh]ui/484/
-    - derive/[gh]un|[gh]uo/486/
+    - derive/[hgi]/4/
     - derive/[jkl]/5/
-    - derive/[kl]a/52/
-    - derive/[kl]ai/524/
-    - derive/[kl]an|[kl]ao/526/
-    - derive/[kl]ang/5264/
-    - derive/[kl]e/53/
-    - derive/[kl]ei/534/
-    - derive/ken/536/
-    - derive/[kl]eng/5364/
-    - derive/[jl]i/54/
-    - derive/[jl]ia/542/
-    - derive/[jl]ian|[jl]iao/5426/
-    - derive/[jl]iang/54264/
-    - derive/[jl]ie/543/
-    - derive/[jl]in/546/
-    - derive/[jl]ing/5464/
-    - derive/jiong/54664/
-    - derive/[jl]iu/548/
-    - derive/lo/56/
-    - derive/[kl]ong/5664/
-    - derive/[kl]ou/568/
-    - derive/[jkl]u|lv/58/
-    - derive/kua/582/
-    - derive/kuai/5824/
-    - derive/[jkl]uan/5826/
-    - derive/kuang/58264/
-    - derive/jue|lve/583/
-    - derive/kui/584/
-    - derive/[jkl]un|[kl]uo/586/
-    - derive/[mno]/6/
-    - derive/[mn]a/62/
-    - derive/[mn]ai/624/
-    - derive/[mn]an|[mn]ao/626/
-    - derive/[mn]ang/6264/
-    - derive/[mn]e/63/
-    - derive/[mn]ei/634/
-    - derive/[mn]en/636/
-    - derive/[mn]eng/6364/
-    - derive/[mn]i/64/
-    - derive/nia/642/
-    - derive/[mn]ian|[mn]iao/6426/
-    - derive/niang/64264/
-    - derive/[mn]ie/643/
-    - derive/[mn]in/646/
-    - derive/[mn]ing/6464/
-    - derive/[mn]iu/648/
-    - derive/mo/66/
-    - derive/nong/6664/
-    - derive/[mn]ou/668/
-    - derive/[mn]u|nv|ou/68/
-    - derive/nuan/6826/
-    - derive/nve/683/
-    - derive/nuo/686/
+    - derive/[omn]/6/
     - derive/[pqrs]/7/
-    - derive/[ps]a/72/
-    - derive/[ps]ai/724/
-    - derive/[prs]an|[prs]ao/726/
-    - derive/[prs]ang/7264/
-    - derive/[rs]e/73/
-    - derive/pei/734/
-    - derive/[prs]en/736/
-    - derive/[prs]eng/7364/
-    - derive/[pqrs]i/74/
-    - derive/pia|sha/742/
-    - derive/shai/7424/
-    - derive/[pq]ian|[pq]iao|sha[no]/7426/
-    - derive/qiang|shang/74264/
-    - derive/[pq]ie|she/743/
-    - derive/shei/7434/
-    - derive/shen/7436/
-    - derive/sheng/74364/
-    - derive/shi/744/
-    - derive/[pq]in/746/
-    - derive/[pq]ing/7464/
-    - derive/qiong/74664/
-    - derive/shou/7468/
-    - derive/qiu|shu/748/
-    - derive/shua/7482/
-    - derive/shuai/74824/
-    - derive/shuan/74826/
-    - derive/shuang/748264/
-    - derive/shui/7484/
-    - derive/shu[no]/7486/
-    - derive/po/76/
-    - derive/[rs]ong/7664/
-    - derive/[prs]ou/768/
-    - derive/[pqrs]u/78/
-    - derive/[prs]uan/7826/
-    - derive/que/783/
-    - derive/[rs]ui/784/
-    - derive/[qrs]un|[rs]uo/786/
     - derive/[tuv]/8/
-    - derive/ta/82/
-    - derive/tai/824/
-    - derive/ta[no]/826/
-    - derive/tang/8264/
-    - derive/te/83/
-    - derive/tei/834/
-    - derive/teng/8364/
-    - derive/ti/84/
-    - derive/tia[no]/8426/
-    - derive/tie/843/
-    - derive/ting/8464/
-    - derive/tong/8664/
-    - derive/tou/868/
-    - derive/tu/88/
-    - derive/tuan/8826/
-    - derive/tui/884/
-    - derive/tu[no]/886/
     - derive/[wxyz]/9/
-    - derive/[wyz]a/92/
-    - derive/[wz]ai/924/
-    - derive/[wyz]an|[yz]ao/926/
-    - derive/[wyz]ang/9264/
-    - derive/[yz]e/93/
-    - derive/[wz]ei/934/
-    - derive/[wz]en/936/
-    - derive/[wz]eng/9364/
-    - derive/[wyz]i/94/
-    - derive/xia|zha/942/
-    - derive/zhai/9424/
-    - derive/xia[no]|zha[no]/9426/
-    - derive/xiang|zhang/94264/
-    - derive/xie|zhe/943/
-    - derive/zhei/9434/
-    - derive/zhen/9436/
-    - derive/zheng/94364/
-    - derive/zhi/944/
-    - derive/[xy]in/946/
-    - derive/[xy]ing/9464/
-    - derive/xiong|zhong/94664/
-    - derive/zhou/9468/
-    - derive/xiu|zhu/948/
-    - derive/zhua/9482/
-    - derive/zhuai/94824/
-    - derive/zhuan/94826/
-    - derive/zhuang/948264/
-    - derive/zhui/9484/
-    - derive/zhu[no]/9486/
-    - derive/[wy]o/96/
-    - derive/[yz]ong/9664/
-    - derive/[yz]ou/968/
-    - derive/[wxyz]u/98/
-    - derive/[wyz]uan/9826/
-    - derive/[xy]ue/983/
-    - derive/zui/984/
-    - derive/[xyz]un|zuo/986/

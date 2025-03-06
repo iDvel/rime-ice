@@ -3,7 +3,6 @@ package rime
 import (
 	"bufio"
 	"fmt"
-	mapset "github.com/deckarep/golang-set/v2"
 	"log"
 	"os"
 	"path/filepath"
@@ -11,6 +10,8 @@ import (
 	"strings"
 	"time"
 	"unicode"
+
+	mapset "github.com/deckarep/golang-set/v2"
 )
 
 // 多音字，手动选择注音
@@ -56,7 +57,6 @@ var polyphones = map[string]string{
 	"MAC地址 > 地":     "di",
 	"OK了 > 了":       "le",
 	"OK了吗 > 了":      "le",
-	"圈X > 圈":        "quan",
 	"A型血 > 血":       "xue",
 	"A血型 > 血":       "xue",
 	"B型血 > 血":       "xue",
@@ -92,6 +92,10 @@ var polyphones = map[string]string{
 	"Chrome系 > 系":   "xi",
 	"QQ游戏大厅 > 大":    "da",
 	"QQ飞车 > 车":      "che",
+	"2G网络 > 络":      "luo",
+	"3G网络 > 络":      "luo",
+	"4G网络 > 络":      "luo",
+	"5G网络 > 络":      "luo",
 }
 
 var digitMap = map[string]string{
@@ -635,17 +639,17 @@ func stepFurther(parts []string, index int, arranged string, map4DoublePinyins m
 	return result
 }
 
-// 中英文分割，去掉间隔号和横杠
+// 中英文分割，去掉间隔号、句点和横杠
 // "哆啦A梦" → ["哆", "啦", "A", "梦"]
 // "QQ号" → ["QQ", "号"]
 // "Wi-Fi密码" → ["WiFi", "密", "码"]
-// "特拉法尔加·D·瓦铁尔·罗" → ["特", "拉", "法", "尔", "加", "D", "瓦", "铁", "尔", "罗"]
+// "乔治·R.R.马丁" → ["乔", "治", "RR", "马", "丁"]
 // "A4纸" → ["A", "4", "纸"]
 func splitMixedWords(input string) []string {
 	var result []string
 	word := ""
 	for _, r := range input {
-		if string(r) == "·" || string(r) == "-" {
+		if string(r) == "·" || string(r) == "-" || string(r) == "." {
 			continue
 		} else if unicode.Is(unicode.Latin, r) {
 			word += string(r)

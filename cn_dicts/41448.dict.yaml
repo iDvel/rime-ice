@@ -17,7 +17,7 @@
 #          这样小字表里存在的字按权重靠前排列，大字表殿后，生僻字自动就排在末尾。
 ---
 name: 41448
-version: "2024-07-28"
+version: "2025-02-02"
 sort: by_weight
 ...
 # 注释掉了一些
@@ -4655,6 +4655,7 @@ sort: by_weight
 𩞆	chuang
 𩪘	chuang
 𪁱	chuang
+𪭢	chuang
 㓃	chui
 㝽	chui
 㥨	chui
@@ -5106,6 +5107,7 @@ sort: by_weight
 𨽁	cong
 𩬼	cong
 𩯍	cong
+𪻐	cong
 㫶	cou
 傶	cou
 凑	cou
@@ -5953,6 +5955,7 @@ sort: by_weight
 𩼉	dang
 𩽳	dang
 𪇁	dang
+𪠽	dang
 㔑	dao
 㠀	dao
 㧅	dao
@@ -9185,6 +9188,7 @@ sort: by_weight
 𪆠	fu
 𪊐	fu
 𪍏	fu
+𮔅	fu
 伽	ga
 呷	ga
 咖	ga
@@ -11900,6 +11904,7 @@ sort: by_weight
 𩰓	hong
 𩶥	hong
 𪈘	hong
+𫚉	hong
 𫟹	hong
 㕈	hou
 㖃	hou
@@ -16624,6 +16629,8 @@ sort: by_weight
 𪈴	jue
 𪖜	jue
 𪚅	jue
+𫛞	jue
+𱉔	jue
 㑺	jun
 㒞	jun
 㓴	jun
@@ -34356,6 +34363,7 @@ sort: by_weight
 𪂄	wei
 𪑐	wei
 𪑭	wei
+𮧵	wei
 㑮	wen
 㒚	wen
 㖧	wen
@@ -40585,6 +40593,8 @@ sort: by_weight
 𩹅	ying
 𩻷	ying
 𪊵	ying
+𬎆	ying
+𮐨	ying
 哟	yo
 唷	yo
 喲	yo
@@ -45449,6 +45459,7 @@ sort: by_weight
 𪗉	zi
 𪗋	zi
 𪗐	zi
+㙡	zong
 㚇	zong
 㢔	zong
 㯶	zong
@@ -45563,6 +45574,7 @@ sort: by_weight
 𩮀	zong
 𩰽	zong
 𪖁	zong
+𭎂	zong
 㔿	zou
 㞫	zou
 㵵	zou

@@ -10,14 +10,14 @@
 
 
 # 要比共享目录的同名文件的 config_version 大才可以生效
-config_version: '2023-02-27'
+config_version: '2024-11-04'  # config_version: '1.0'
 
 
 # options: last | default | _custom_
 # last: the last used latin keyboard layout
 # default: US (ABC) keyboard layout
 # _custom_: keyboard layout of your choice, e.g. 'com.apple.keylayout.USExtended' or simply 'USExtended'
-keyboard_layout: default
+keyboard_layout: last
 # for veteran chord-typist
 chord_duration: 0.1  # seconds
 # options: always | never | appropriate
@@ -38,23 +38,49 @@ style:
   color_scheme: purity_of_form_custom
   color_scheme_dark: purity_of_form_custom
 
-  # 预设选项。如果皮肤没写，则使用这些属性；如果皮肤写了，使用皮肤的。
-  text_orientation: horizontal  # horizontal | vertical
-  inline_preedit: true
-  corner_radius: 10
+  # 以下是预设选项。如果皮肤没写，则使用这些属性；如果皮肤写了，使用皮肤的。
+
+  # 候选框与文字的排列方式
+  candidate_list_layout: stacked  # stacked | linear       皮肤横竖排显示是调整这个
+  text_orientation: horizontal    # horizontal | vertical  文字方向
+  # 拼音或词句是否显示在键入位置
+  inline_preedit: true     # true | false  键入码显示位置
+  inline_candidate: false  # true | false  选中词显示位置
+
+  # Whether candidate panel stick to screen edge to reduce jumping
+  memorize_size: true
+  # Whether transparent colors stack on each other
+  mutual_exclusive: false
+  # Whether to use a translucent background. Only visible when background color is transparent
+  translucency: false
+
+  corner_radius: 7
   hilited_corner_radius: 0
-  border_height: 0
-  border_width: 0
+  border_height: -2
+  border_width: -2
+  # Space between candidates in stacked layout
   line_spacing: 5
-  spacing: 10
-  #candidate_format: '%c. %@'
-  #base_offset: 6
-  font_face: 'Lucida Grande'
-  font_point: 21
-  #label_font_face: 'Lucida Grande'
-  label_font_point: 18
-  #comment_font_face: 'Lucida Grande'
-  comment_font_point: 18
+  # Space between preedit and candidates in non-inline mode
+  spacing: 8
+  # A number greater than 0 renders shadow around high-lighted candidate
+  shadow_size: 0
+  # Controls non-hililighted candidate background size, relative to highlighted
+  # Nagetive means shrink, positive meas expand
+  #surrounding_extra_expansion: 0
+
+  # format using %@ and %c is deprecated since 1.0, Squirrel 1.0
+  # %@ is automatically expanded to "[candidate] [comment]"
+  # and %c is replaced by "[label]"
+  candidate_format: '[label]. [candidate] [comment]'  # 候选项格式化
+
+  # adjust the base line of text
+  #base_offset: 0
+  font_face: 'Avenir'
+  font_point: 16
+  #label_font_face: 'Avenir'
+  #label_font_point: 12
+  #comment_font_face: 'Avenir'
+  #comment_font_point: 16
 
 
 # 皮肤列表
@@ -73,9 +99,10 @@ preset_color_schemes:
     comment_font_point: 16
     # candidate_list_layout: stacked        # 候选项排列方向 stacked(默认) | linear
     # text_orientation: horizontal          # 文字排列方向 horizontal(默认) | vertical
-    inline_preedit: true                    # 拼音位于： 候选框 false | 行内 true
-    translucency: false                     # 磨砂： false | true
-    mutual_exclusive: false                 # 色不叠加： false | true
+    inline_preedit: true                    # 键入码（拼音）是否显示在键入位置 true | false
+    inline_candidate: false                 # 候选项（词句）是否显示在键入位置 true | false
+    translucency: false                     # 磨砂： true | false
+    mutual_exclusive: false                 # 色不叠加： true | false
     border_height: 0                        # 外边框 高
     border_width: 0                         # 外边框 宽
     corner_radius: 10                       # 外边框 圆角半径
@@ -103,8 +130,7 @@ preset_color_schemes:
     # border_color:                         # 外边框颜色
 
 
-  # 下面是内置的皮肤 /Library/Input Methods/Squirrel.app/Contents/SharedSupport/squirrel.yaml
-
+  # 下面是内置的皮肤 https://github.com/rime/squirrel/blob/master/data/squirrel.yaml
 
   native:
     name: 系統配色
@@ -262,7 +288,7 @@ preset_color_schemes:
   clean_white:
     name: 简约白／Clean White
     author: Chongyu Zhu <lembacon@gmail.com>, based on 搜狗「简约白」
-    horizontal: true
+    candidate_list_layout: linear
     candidate_format: '%c %@'
     corner_radius: 6
     border_height: 6
@@ -282,7 +308,7 @@ preset_color_schemes:
   apathy:
     name: 冷漠／Apathy
     author: LIANG Hai
-    horizontal: true  # 水平排列
+    candidate_list_layout: linear  # 水平排列
     inline_preedit: true #单行显示，false双行显示
     candidate_format: "%c\u2005%@\u2005"  # 编号 %c 和候选词 %@ 前后的空间
     corner_radius: 5  #候选条圆角
@@ -301,7 +327,7 @@ preset_color_schemes:
   dust:
     name: 浮尘／Dust
     author: Superoutman <asticosmo@gmail.com>
-    horizontal: true  # 水平排列
+    candidate_list_layout: linear  # 水平排列
     inline_preedit: true #单行显示，false双行显示
     candidate_format: "%c\u2005%@\u2005"  # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
     corner_radius: 2  #候选条圆角
@@ -326,7 +352,7 @@ preset_color_schemes:
   mojave_dark:
     name: 沙漠夜／Mojave Dark
     author: xiehuc <xiehuc@gmail.com>
-    horizontal: true                        # 水平排列
+    candidate_list_layout: linear           # 水平排列
     inline_preedit: true                    # 单行显示，false双行显示
     candidate_format: "%c\u2005%@"    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
     corner_radius: 5                        # 候选条圆角
@@ -354,34 +380,35 @@ preset_color_schemes:
     name: 曬經・日／Solarized Light
     author: 雪齋 <lyc20041@gmail.com>
     color_space: display_p3 # Only available on macOS 10.12+
-    back_color: 0xf0E5F6FB #Lab 97, 0, 10
-    border_color: 0xf0EDFFFF #Lab 100, 0, 10
-    preedit_back_color: 0xf0D7E8ED #Lab 92, 0, 10
-    candidate_text_color: 0x3942CB #Lab 50, 65, 45
-    label_color: 0x2566C6 #Lab 55, 45, 65
-    comment_text_color: 0x8144C2 #Lab 50, 65, -5
-    text_color: 0x756E5D #Lab 45, -7, -7
-    hilited_back_color: 0xf0C9DADF #Lab 87, 0, 10
-    hilited_candidate_back_color: 0x403516 #Lab 20, -12, -12
-    hilited_candidate_text_color: 0x989F52 #Lab 60, -35, -5
-    hilited_candidate_label_color: 0xCC8947 #Lab 55, -10, -45
-    hilited_comment_text_color: 0x289989 #Lab 60, -20, 65
-    hilited_text_color: 0xBE706D #Lab 50, 15, -45
+    back_color: 0xF0E5F6FB                  #Lab 97 , 0 , 10
+    border_color: 0xEDFFFF                  #Lab 100, 0 , 10
+    preedit_back_color: 0x403516            #Lab 20 ,-12,-12
+    #candidate_back_color: 0x403516         #Lab 20 ,-12,-12
+    candidate_text_color: 0x595E00          #Lab 35 ,-35,-5
+    label_color: 0xA36407                   #Lab 40 ,-10,-45
+    comment_text_color: 0x005947            #Lab 35 ,-20, 65
+    text_color: 0xA1A095                    #Lab 65 ,-5 ,-2
+    hilited_back_color: 0x4C4022            #Lab 25 ,-12,-12
+    hilited_candidate_back_color: 0xD7E8ED  #Lab 92 , 0 , 10
+    hilited_candidate_text_color: 0x3942CB  #Lab 50 , 65, 45
+    hilited_candidate_label_color: 0x2566C6 #Lab 55 , 45, 65
+    hilited_comment_text_color: 0x8144C2    #Lab 50 , 65,-5
+    hilited_text_color: 0x2C8BAE            #Lab 60 , 10, 65
 
   solarized_dark:
     name: 曬經・月／Solarized Dark
     author: 雪齋 <lyc20041@gmail.com>
-    color_space: display_p3 # Only available on macOS 10.12+
-    back_color: 0xf0352A0A #Lab 15, -12, -12
-    border_color: 0xf02A1F00 #Lab 10, -12, -12
-    preedit_back_color: 0xf0403516 #Lab 20, -12, -12
-    candidate_text_color: 0x989F52 #Lab 60, -35, -5
-    label_color: 0xCC8947 #Lab 55, -10, -45
-    comment_text_color: 0x289989 #Lab 60, -20, 65
-    text_color: 0xA1A095 #Lab 65, -05, -02
-    hilited_back_color: 0xf04C4022 #Lab 25, -12, -12
-    hilited_candidate_back_color: 0xD7E8ED #Lab 92, 0, 10
-    hilited_candidate_text_color: 0x3942CB #Lab 50, 65, 45
-    hilited_candidate_label_color: 0x2566C6 #Lab 55, 45, 65
-    hilited_comment_text_color: 0x8144C2 #Lab 50, 65, -5
-    hilited_text_color: 0x2C8BAE #Lab 60, 10, 65
+    back_color: 0xF0352A0A                  #Lab 15 ,-12,-12
+    border_color: 0x2A1F00                  #Lab 10 ,-12,-12
+    preedit_back_color: 0xD7E8ED            #Lab 92 , 0 , 10
+    #candidate_back_color: 0xD7E8ED         #Lab 92 , 0 , 10
+    candidate_text_color: 0x7389FF          #Lab 75 , 65, 45
+    label_color: 0x478DF4                   #Lab 70 , 45, 65
+    comment_text_color: 0xC38AFF            #Lab 75 , 65,-5
+    text_color: 0x756E5D                    #Lab 45 ,-7 ,-7
+    hilited_back_color: 0xC9DADF            #Lab 87 , 0 , 10
+    hilited_candidate_back_color: 0x403516  #Lab 20 ,-12,-12
+    hilited_candidate_text_color: 0x989F52  #Lab 60 ,-35,-5
+    hilited_candidate_label_color: 0xCC8947 #Lab 55 ,-10,-45
+    hilited_comment_text_color: 0x289989    #Lab 60 ,-20, 65
+    hilited_text_color: 0xBE706D            #Lab 50 , 15,-45

@@ -1,0 +1,62 @@
+name: 想法、求助和提议
+description: 我有一些想法和建议；或是一些不理解的地方想要求助
+
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: 摘要
+      description: 用一两句话概括此 issue 的内容
+    validations:
+      required: true
+  - type: dropdown
+    id: schema_type
+    attributes:
+      label: 输入方案
+      description: 请选择你在使用的，或者此 issue 涉及的主要输入方案
+      options:
+        - '-- 请选择 --'
+        - 雾凇拼音 全拼 rime_ice
+        - 小鹤双拼 double_pinyin_flypy
+        - 智能 ABC double_pinyin_abc
+        - 微软双拼 double_pinyin_mspy
+        - 搜狗双拼 double_pinyin_sougou
+        - 紫光双拼 double_pinyin_ziguang
+        - 自然码 double_pinyin
+        - 仓·九宫格 t9
+        - 所有方案
+        - '-- 其他（在补充信息处说明）--'
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: 相关应用
+      description: 这个议题涉及的，或者是你在使用的 RIME 前端
+      placeholder: e.g. Squirrel 1.0.2 / Fcitx5 for Android 0.9 / Weasel CI 9bc58
+    validations:
+      required: true
+  - type: input
+    id: os_version
+    attributes:
+      label: 系统信息
+      description: 这个议题涉及的，或者是你在使用的系统及版本号（Unix/Linux 请提供具体发行版名称，Android 请说明 Android 版本以及 ROM 名，如 HyperOS、Flyme）
+      placeholder: e.g. macOS 14.5 / Windows 11 23H2 / Ubuntu 24.04 LTS
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: 详细说明
+      description: 请详细说明你的问题或者想法，越具体越好。可以辅以图片、视频等资料。
+    validations:
+      required: true
+  - type: textarea
+    id: config
+    attributes:
+      label: 自定义配置
+      description: 如果你对雾凇进行了修改或者打了补丁，请在此处提供你的自定义配置
+      placeholder: |
+        你可以将自定义文件打包为 zip（请不要包含 build 文件夹和 userdb 文件夹），拖放到此处。
+
+        也可以将配置片段放在 Markdown 的代码块中。

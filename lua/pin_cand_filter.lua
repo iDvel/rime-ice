@@ -26,23 +26,26 @@ cand.preedit 是经过 translator/preedit_format 转换后的编码
 - wsm	为什么
 
 ### 空格的作用：
+- nihao	你好
 无空格，生成原样；
 生成 nihao，输入 nihao 时首位是「你好」，但输入 nih 时首位可能是「你会 你还」等其他词语。
-- nihao	你好
+
+- ni hao	你好
 包含空格，额外生成最后一个空格后的拼音的首字母简码；
 生成 nihao nih ，现在输入 nih 时首位也会是「你好」。
-- ni hao	你好
+
+- bu hao chi	不好吃
 包含空格且结尾以 zh ch sh 开头，再额外生成最后一个空格后的拼音的 zh ch sh 简码；
 生成 buhaochi buhaoc buhaoch
-- bu hao chi	不好吃
 
 ### 优先级：
-以下两行，会额外生成 'da z' 'da zh' 的置顶，前两个候选项是「大专、大众」，先写的排在前面
 - da zhuang	大专
 - da zhong	大众
+上面两行，会额外生成 'da z' 'da zh' 的置顶，前两个候选项是「大专、大众」，先写的排在前面
+
+- da z	打字
 如果明确定义了简码形式，则完全使用简码形式
 此时输入 daz 首位为「打字」，输入 dazh 首位仍为「大专、大众」
-- da z	打字
 --]]
 
 local function find_index(list, str)

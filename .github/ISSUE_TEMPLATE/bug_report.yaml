@@ -1,0 +1,107 @@
+name: Bug 报告
+description: 我遇到了一个 bug 或是非预期行为
+title: '[Bug]: '
+
+body:
+  - type: input
+    id: input
+    attributes:
+      label: 摘要
+      description: 一两句话概述遇到的问题
+    validations:
+      required: true
+  - type: checkboxes
+    id: check_box
+    attributes:
+      label: 我确认以下信息
+      description: 必要检查
+      options:
+        - label: 我使用的是雾凇拼音 iDvel/rime-ice
+          required: true
+        - label: 我搜索了过往的 issue、官方文档、常见问题，都没找到解决办法：https://github.com/iDvel/rime-ice/issues?q=
+          required: true
+        - label: 如果此 issue 不符合模板，或者长时间不活跃，会被无条件关闭
+          required: true
+  - type: dropdown
+    id: is_custom
+    attributes:
+      label: 是否和自定义配置相关？
+      description: 不对雾凇拼音进行任何修改，仅使用官方配置，有没有这个问题
+      options:
+        - "-- 请选择 --"
+        - "我不清楚"
+        - "使用原版配置，则没有这个问题（请在「自定义配置」栏贴出配置）"
+        - "使用原版配置，也有这个问题"
+    validations:
+      required: true
+  - type: dropdown
+    id: is_old
+    attributes:
+      label: 是否已经在新提交中修复？
+      description: 使用雾凇拼音最新 commit 或 nightly 版，是不是仍然有这个问题
+      options:
+        - "-- 请选择 --"
+        - "我不清楚"
+        - "使用最新配置，则没有这个问题（请尝试更新雾凇拼音）"
+        - "使用最新配置，也有这个问题"
+    validations:
+      required: true
+  - type: input
+    id: os_version
+    attributes:
+      label: 系统信息
+      description: 这个议题涉及的，或者是你在使用的系统及版本号（Unix/Linux 请提供具体发行版名称，Android 请说明 Android 版本以及 ROM 名，如 HyperOS、Flyme）
+      placeholder: macOS 14.5 / Windows 11 23H2 / Ubuntu 24.04 LTS
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: 应用信息
+      description: 提供议题涉及的、或者你使用的 RIME 前端和版本号，自构建前端请说明
+      placeholder: Squirrel 1.0.2 / Weasel 0.16.1
+    validations:
+      required: true
+  - type: dropdown
+    id: schema_type
+    attributes:
+      label: 输入方案
+      description: 请选择你在使用的，或者此 issue 涉及的主要输入方案
+      options:
+        - '-- 请选择 --'
+        - 雾凇拼音 全拼 rime_ice
+        - 小鹤双拼 double_pinyin_flypy
+        - 智能 ABC double_pinyin_abc
+        - 微软双拼 double_pinyin_mspy
+        - 搜狗双拼 double_pinyin_sougou
+        - 紫光双拼 double_pinyin_ziguang
+        - 自然码 double_pinyin
+        - 仓·九宫格 t9
+        - 所有方案
+        - '-- 其他（在补充信息处说明）--'
+    validations:
+      required: true
+  - type: textarea
+    id: step_to_reproduce
+    attributes:
+      label: 复现办法和预期行为
+      description: 重现该问题的办法，雾凇在你预期中应当如何行为
+      value: |
+        1.
+        2.
+    validations:
+      required: true
+  - type: textarea
+    id: info
+    attributes:
+      label: '补充信息'
+      description: ' 请提供你认为重要的其他信息，例如截图、视频、Rime 的报错信息等'
+  - type: textarea
+    id: config
+    attributes:
+      label: 自定义配置
+      description: 如果你对雾凇进行了修改或者打了补丁，请在此处提供你的自定义配置
+      placeholder: |
+        你可以将自定义文件打包为 zip（请不要包含 build 文件夹和 userdb 文件夹），拖放到此处。
+
+        也可以将配置片段放在 Markdown 的代码块中。

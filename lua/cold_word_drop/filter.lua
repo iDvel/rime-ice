@@ -1,12 +1,24 @@
+-- 词条隐藏、降频
+-- 在 engine/processors 增加 - lua_processor@cold_word_drop.processor
+-- 在 engine/filters 增加 - lua_filter@cold_word_drop.filter
+-- 在 key_binder 增加快捷键：
+-- reduce_freq_cand: "Control+j"  # 匹配当前输入码后隐藏指定的候选字词 或候选词条放到第四候选位置
+-- drop_cand: "Control+d"       # 强制删词, 无视输入的编码
+-- get_record_filername() 函数中仅支持了 Windows、macOS、Linux
+
 local filter = {}
 
 function filter.init(env)
-	local engine = env.engine
-	local config = engine.schema.config
-	env.word_reduce_idx = config:get_int("cold_word_reduce/idx") or 4
-	env.drop_words = require("cold_word_drop.drop_words") or {}
-	env.hide_words = require("cold_word_drop.hide_words") or {}
-	env.reduce_freq_words = require("cold_word_drop.reduce_freq_words") or {}
+    local engine = env.engine
+    local config = engine.schema.config
+    local _sd, drop_words = pcall(require, "cold_word_drop/drop_words")
+    local _sh, hide_words = pcall(require, "cold_word_drop/hide_words")
+    local _st, turn_down_words = pcall(require, "cold_word_drop/turn_down_words")
+    local _sr, reduce_freq_words = pcall(require, "cold_word_drop/reduce_freq_words")
+    env.word_reduce_idx = config:get_int("cold_word_reduce/idx") or 4
+    env.drop_words = _sd and drop_words or {}
+    env.hide_words = _sh and hide_words or {}
+    env.reduce_freq_words = (_st and turn_down_words) or (_sr and reduce_freq_words) or {}
 end
 
 function filter.func(input, env)
@@ -47,7 +59,7 @@ function filter.func(input, env)
 			end
 		end
 
-		if #cands >= 80 then
+		if #cands >= 180 then
 			break
 		end
 	end
