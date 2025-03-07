@@ -1619,6 +1619,12 @@ denial-of-service attack	denial-of-serviceattack
 DDoS	DDoS
 distributed denial-of-service attack	DDoS
 distributed denial-of-service attack	distributeddenial-of-serviceattack
+CVE	CVE
+Common Vulnerabilities and Exposures	CVE
+Common Vulnerabilities and Exposures	CommonVulnerabilitiesandExposures
+CWE	CWE
+Common Weakness Enumeration	CWE
+Common Weakness Enumeration	CommonWeaknessEnumeration
 LibreWolf	LibreWolf
 WebRTC	WebRTC
 WebDAV	WebDAV
@@ -1884,6 +1890,7 @@ Kubernetes	Kubernetes
 Kubeadm	Kubeadm
 Minikube	Minikube
 shitwork	shitwork
+W3C	W3C
 A4	A4
 3D	3D
 Loki	Loki
