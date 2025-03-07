@@ -235,7 +235,7 @@ func checkLine(dictPath string, _type int, line string, lineNumber int) {
 		return
 	}
 
-	// text 不应该有非汉字内容，除了间隔号 ·和连接号 -（Hyphen-Minus: U+002D）
+	// text 不应该有非汉字内容，除了间隔号 · (Middle Dot: U+00B7)和连接号 - (Hyphen-Minus: U+002D)
 	for _, c := range text {
 		if !unicode.Is(unicode.Han, c) && !strings.ContainsRune("·-", c) {
 			fmt.Println("❌ text 含有非汉字内容：", line)
