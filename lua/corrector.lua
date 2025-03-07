@@ -124,6 +124,7 @@ function M.init(env)
         ["rou yi hua xu"] = { text = "柔荑花序", comment = "柔荑(tí)花序" },
         ["shou ru rou yi"] = { text = "手如柔荑", comment = "手如柔荑(tí)" },
         ["wen ting jun"] = { text = "温庭筠", comment = "温庭筠(yún)" },
+        ["zhu you tang"] = { text = "朱祐樘", comment = "朱祐樘(chēng)" },        
         ["guan ka"] = { text = "关卡", comment = "guān qiǎ" },
         ["san wei zhen huo"] = { text = "三昧真火", comment = "三昧(mèi)真火" },
         ["qing ping zhi mo"] = { text = "青𬞟之末", comment = "青𬞟(pín)之末" },
