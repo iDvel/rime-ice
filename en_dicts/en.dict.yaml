@@ -15,7 +15,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-03-07"
+version: "2025-03-08"
 sort: by_weight
 ...
 # +_+
@@ -11831,7 +11831,7 @@ maximize	maximize
 maximizing	maximizing
 maximum	maximum
 Maxtor	Maxtor
-maxwell	maxwell
+Maxwell	Maxwell
 may	may
 May	May
 maya	maya
