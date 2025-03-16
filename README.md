@@ -98,6 +98,7 @@
 
 | 系统    | RIME 前端                                                    | 雾凇拼音版本要求                  | 备注                                                         |
 | ------- | ------------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------ |
+| Harmony OS | [超越输入法](https://appgallery.huawei.com/app/detail?id=app.flytype.hmos.bim&channelId=SHARE)  | N/A                           | 免费，鸿蒙系统5.0以上。支持九键                                               |
 | Android | [fcitx5-android](https://github.com/fcitx5-android/fcitx5-android/releases) + plugin.rime（小企鹅输入法） | ≥ 0.0.8                           | 暂不支持九宫格                                               |
 | Android | [Trime](https://github.com/osfans/trime)（同文输入法）       | ≥ 3.2.11                          |                                                              |
 | iOS     | [Hamster](https://apps.apple.com/cn/app/%E4%BB%93%E8%BE%93%E5%85%A5%E6%B3%95/id6446617683)（仓输入法） | N/A                               | 闭源；有内购                                                 |

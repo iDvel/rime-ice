@@ -1,0 +1,101 @@
+# Rime schema
+# encoding: utf-8
+
+
+__include: rime_ice.schema.yaml:/
+
+schema:
+  schema_id: bim_t9
+  name: 超越拼音九键
+  version: "1.0.0"
+  author:
+    - jimmy54
+  description: |
+    超越拼音九键（方案参考t9.schema）
+  dependencies:
+    - melt_eng # 英文输入，作为次翻译器挂载到拼音方案
+
+engine:
+  processors:
+    - TxProcessor
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+    - lua_translator@*date_translator # 时间、日期、星期
+    - table_translator@custom_phrase # 自定义短语 custom_phrase_t9.txt
+      #- table_translator@melt_eng     # 英文输入
+  filters:
+    - simplifier@emoji # Emoji
+    - simplifier@traditionalize # 简繁切换
+    - uniquifier # 去重
+
+translator:
+  prism: bim_t9
+  spelling_hints: 100
+  comment_format: []
+
+# 自定义短语：custom_phrase_t9.txt
+# ⚠️ 编码要用数字
+custom_phrase:
+  dictionary: ""
+  user_dict: custom_phrase_t9
+  db_class: stabledb
+  enable_completion: false
+  enable_sentence: false
+  initial_quality: 99
+
+# 九宫格 1 键上的符号序列
+punctuator:
+  half_shape:
+    "1": [1, "@", ".", "/", ":", "_", "-", "#"]
+    "@": [1, "@", ！, ：, 、, ……, ～]
+    "#": [0, "#", "$", "%", "^", "&", "*", "(", ")"]
+# 输入时按 1 可以分词
+key_binder:
+  bindings:
+    - { when: has_menu, accept: 1, send: apostrophe }
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+  initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+  algebra:
+    # ### 超级简拼
+    - abbrev/^([a-z]).+$/$1/ # 超级简拼
+    - abbrev/^([zcs]h).+$/$1/ # 超级简拼中，zh ch sh 视为整体（ch'sh → 城市），而不是像这样分开（c'h's'h → 吃好睡好）。
+    - derive/^([nl])ve$/$1ue/
+    - derive/^([jqxy])u/$1v/
+    - derive/un$/uen/
+    - derive/ui$/uei/
+    - derive/iu$/iou/
+    - derive/([aeiou])ng$/$1gn/
+    - derive/([dtngkhrzcs])o(u|ng)$/$1o/
+    - derive/ong$/on/
+    - derive/ao$/oa/
+    - derive/([iu])a(o|ng?)$/a$1$2/
+    # ### 九宫格数字映射
+    - derive/[abc]/a/
+    - derive/[def]/d/
+    - derive/[hgi]/g/
+    - derive/[jkl]/j/
+    - derive/[omn]/m/
+    - derive/[pqrs]/p/
+    - derive/[tuv]/t/
+    - derive/[wxyz]/w/
+    
+
+tx:
+  db: bim_t9.db
