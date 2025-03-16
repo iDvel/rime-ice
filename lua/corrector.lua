@@ -159,6 +159,7 @@ function M.init(env)
         ["qing ping le"] = { text = "清平乐", comment = "清平乐(yuè)" },
         ["ta sha xing"] = { text = "踏莎行", comment = "踏莎(suō)行" },
         ["sha cao"] = { text = "莎草", comment = "suō cǎo" },
+        ["shan mu"] = { text = "杉木", comment = "shā mù" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
         ["pu gai"] = { text = "扑街", comment = "仆街" },
