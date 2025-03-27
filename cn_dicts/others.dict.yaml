@@ -56,6 +56,8 @@ sort: by_weight
 坐骑	zuo ji
 铁骑	tie qi
 铁骑	tie ji
+铁骑突出刀枪鸣	tie qi tu chu dao qiang ming
+铁骑突出刀枪鸣	tie ji tu chu dao qiang ming
 一骑绝尘	yi qi jue chen
 一骑绝尘	yi ji jue chen
 一骑当千	yi qi dang qian
@@ -321,6 +323,14 @@ sort: by_weight
 果脯	guo pu
 肉脯	rou fu
 肉脯	rou pu
+脯氨酸	fu an suan
+脯氨酸	pu an suan
+酪氨酸	lao an suan
+酪氨酸	luo an suan
+没食子	mo shi zi
+没食子	mei shi zi
+裳凤蝶	chang feng die
+裳凤蝶	shang feng die
 白𬶨豚	bai ji tun
 白𬶨豚	bai qi tun
 桡骨	rao gu
@@ -343,8 +353,24 @@ sort: by_weight
 安瓿	an pou
 安瓿瓶	an bu ping
 安瓿瓶	an pou ping
+解剖	jie pou
+解剖	jie pao
+剖分	pou fen
+剖分	pao fen
+剖腹产	pou fu chan
+剖腹产	pao fu chan
+剖宫产	pou gong chan
+剖宫产	pao gong chan
 金匮	jin gui
 金匮	jin kui
+清平乐	qing ping yue
+清平乐	qing ping le
+踏莎行	ta suo xing
+踏莎行	ta sha xing
+莎草	suo cao
+莎草	sha cao
+杉木	sha mu
+杉木	shan mu
 ### 错字
 曾经	ceng jing
 曾今	ceng jin

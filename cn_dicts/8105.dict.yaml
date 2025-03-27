@@ -27,7 +27,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2025-03-07"
+version: "2025-03-15"
 sort: by_weight
 ...
 ### 按需启用
@@ -740,11 +740,11 @@ sort: by_weight
 娼	chang	10278
 嫦	chang	8971
 猖	chang	8948
+裳	chang	6543
 昶	chang	2483
 徜	chang	2131
 氅	chang	1698
 伥	chang	1014
-裳	chang	1000
 菖	chang	870
 苌	chang	866
 阊	chang	332
@@ -1435,7 +1435,7 @@ sort: by_weight
 蚪	dou	1267
 蔸	dou	358
 篼	dou	149
-钭	dou	109
+钭	dou	3
 读	dou	1
 度	du	827850
 独	du	456526
@@ -2736,6 +2736,7 @@ sort: by_weight
 惎	ji	2
 期	ji	1
 鱾	ji	1
+𬶨	ji	1
 𬶭	ji	1
 㴔	ji	0
 堲	ji	0
@@ -2747,7 +2748,6 @@ sort: by_weight
 𫓯	ji	0
 𫓹	ji	0
 𬯀	ji	0
-𬶨	ji	0
 家	jia	4546765
 加	jia	1329722
 价	jia	384863
@@ -3833,10 +3833,10 @@ sort: by_weight
 捩	lie	399
 埒	lie	194
 躐	lie	54
+䴕	lie	1
 峛	lie	1
 脟	lie	1
-䴕	lie	0
-𫚭	lie	0
+𫚭	lie	1
 林	lin	1435296
 临	lin	332190
 琳	lin	156208
@@ -4857,8 +4857,8 @@ sort: by_weight
 颦	pin	4297
 姘	pin	1291
 牝	pin	864
-玭	pin	280
-𬞟	pin	0
+玭	pin	28
+𬞟	pin	3
 平	ping	1439957
 凭	ping	221418
 评	ping	170396
@@ -7052,9 +7052,9 @@ sort: by_weight
 髹	xiu	95
 鸺	xiu	24
 珛	xiu	2
+䗛	xiu	1
 滫	xiu	1
 臭	xiu	1
-䗛	xiu	0
 许	xu	1299512
 续	xu	591245
 需	xu	543409
@@ -7991,7 +7991,7 @@ sort: by_weight
 璪	zao	24
 慥	zao	13
 簉	zao	13
-𥖨	zao	0
+𥖨	zao	1
 则	ze	740891
 责	ze	370704
 择	ze	254252

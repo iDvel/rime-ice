@@ -17,7 +17,7 @@
 #          这样小字表里存在的字按权重靠前排列，大字表殿后，生僻字自动就排在末尾。
 ---
 name: 41448
-version: "2025-02-02"
+version: "2025-03-15"
 sort: by_weight
 ...
 # 注释掉了一些
@@ -36061,6 +36061,7 @@ sort: by_weight
 𪄏	xian
 𪄷	xian
 𪔩	xian
+𮬣	xian
 㗽	xiang
 㟄	xiang
 㟟	xiang
@@ -37085,6 +37086,7 @@ sort: by_weight
 㱙	xiu
 㳜	xiu
 㾋	xiu
+䗛	xiu
 䜬	xiu
 䰍	xiu
 休	xiu
@@ -43067,6 +43069,7 @@ sort: by_weight
 𪏉	zhan
 𪗦	zhan
 𪘪	zhan
+𰲳	zhan
 㕩	zhang
 㙊	zhang
 㙣	zhang
