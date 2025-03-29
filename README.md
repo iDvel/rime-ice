@@ -233,7 +233,7 @@ bash rime-install iDvel/rime-ice@2024.05.21:others/recipes/full
 
 参考 [如何导入"雾凇拼音输入方案"](https://github.com/imfuxiao/Hamster/wiki/%E5%A6%82%E4%BD%95%E5%AF%BC%E5%85%A5%22%E9%9B%BE%E6%B7%9E%E6%8B%BC%E9%9F%B3%E8%BE%93%E5%85%A5%E6%96%B9%E6%A1%88%22)
 
-仓输入法目前已内置雾凇拼音，也可以通过【输入方案设置 - 右上角加号 - 方案下载 - 覆盖并部署】来更新雾凇拼音。
+仓输入法目前已内置雾凇拼音。
 
 使用九宫格，需要同时启用九宫格方案（输入方案设置）和九宫格布局（键盘设置 - 键盘布局 - 中文 9 键）。
 
@@ -297,6 +297,8 @@ patch:
 感谢 [@Huandeep](https://github.com/Huandeep) 整理的多个词库。
 
 感谢 [@Mirtle](https://github.com/mirtlecn) 完善的多个功能。
+
+感谢 [@Lithium-7](https://github.com/Lithium-7) 对词库的大量修订。
 
 感谢所有贡献者。
 
