@@ -15,7 +15,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-03-08"
+version: "2025-03-30"
 sort: by_weight
 ...
 # +_+
@@ -320,7 +320,6 @@ admissions	admissions
 admit	admit
 admits	admits
 admitted	admitted
-Adobe	Adobe
 adobe	adobe
 adolescent	adolescent
 adolescents	adolescents
@@ -2847,6 +2846,7 @@ capture	capture
 captured	captured
 captures	captures
 capturing	capturing
+capybara	capybara
 car	car
 carat	carat
 caravan	caravan
@@ -5980,6 +5980,7 @@ dune	dune
 dunes	dunes
 dungeon	dungeon
 dungeons	dungeons
+dunk	dunk
 Dunlop	Dunlop
 Dunn	Dunn
 dunno	dunno

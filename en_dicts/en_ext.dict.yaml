@@ -6,7 +6,7 @@
 # 少数单词与 en 重复，纯粹是为了排版美观，部署时的报错 duplicate word definition 可忽略，无任何影响
 ---
 name: en_ext
-version: "2025-03-06"
+version: "2025-03-30"
 sort: by_weight
 ...
 # 一些杂项
@@ -2167,3 +2167,6 @@ TensorFlow	TensorFlow
 PyTorch	PyTorch
 DeepSeek	DeepSeek
 Mercedes-Benz	Mercedes-Benz
+1Password	1Password
+WD40	WD40
+Coca-Cola	Coca-Cola
