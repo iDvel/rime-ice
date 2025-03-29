@@ -4,6 +4,7 @@
 #
 # https://github.com/iDvel/rime-ice
 # ------- 英文主词库 -------
+# 20k 左右的常见单词
 #
 #
 # 来源：
@@ -14,7 +15,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-12-27"
+version: "2025-03-08"
 sort: by_weight
 ...
 # +_+
@@ -537,6 +538,7 @@ album	album
 albums	albums
 Albuquerque	Albuquerque
 Alcatel	Alcatel
+alchemist	alchemist
 alchemy	alchemy
 alcohol	alcohol
 alcoholic	alcoholic
@@ -602,6 +604,7 @@ alliance	alliance
 alliances	alliances
 allied	allied
 allies	allies
+alligator	alligator
 Allison	Allison
 allocate	allocate
 allocated	allocated
@@ -818,6 +821,7 @@ animations	animations
 anime	anime
 Aniston	Aniston
 Anita	Anita
+ankh	ankh
 ankle	ankle
 Ann	Ann
 Anna	Anna
@@ -3299,6 +3303,7 @@ chili	chili
 chill	chill
 ChillSeph	ChillSeph
 chimney	chimney
+chimpanzee	chimpanzee
 chin	chin
 China	China
 china	china
@@ -4815,6 +4820,7 @@ dancer	dancer
 dancers	dancers
 dances	dances
 dancing	dancing
+dandelion	dandelion
 Dane	Dane
 danger	danger
 dangerous	dangerous
@@ -6309,7 +6315,7 @@ Emerson	Emerson
 # emi	emi
 emigrate	emigrate
 Emily	Emily
-eminem	eminem
+Eminem	Eminem
 eminent	eminent
 emirates	emirates
 emission	emission
@@ -8145,6 +8151,7 @@ Gina	Gina
 ginger	ginger
 Giorgio	Giorgio
 Giovanni	Giovanni
+giraffe	giraffe
 girl	girl
 girlfriend	girlfriend
 girls	girls
@@ -9964,6 +9971,9 @@ intimidate	intimidate
 # intl	intl
 into	into
 intonation	intonation
+intoxicate	intoxicate
+intoxicated	intoxicated
+intoxicating	intoxicating
 intra	intra
 intracellular	intracellular
 intranet	intranet
@@ -11296,6 +11306,7 @@ LOL	LOL
 Lola	Lola
 Lolita	Lolita
 # lolitas	lolitas
+lollipop	lollipop
 # lon	lon
 London	London
 lone	lone
@@ -11443,7 +11454,7 @@ lyrics	lyrics
 # lys	lys
 # m	m
 # ma	ma
-mac	mac
+Mac	Mac
 Macau	Macau
 MacDonald	MacDonald
 macedonia	macedonia
@@ -11457,7 +11468,7 @@ Mack	Mack
 Mackay	Mackay
 Mackenzie	Mackenzie
 Macmillan	Macmillan
-Macon	Macon
+macon	macon
 macOS	macOS
 Macquarie	Macquarie
 macro	macro
@@ -11820,7 +11831,7 @@ maximize	maximize
 maximizing	maximizing
 maximum	maximum
 Maxtor	Maxtor
-maxwell	maxwell
+Maxwell	Maxwell
 may	may
 May	May
 maya	maya
@@ -11992,7 +12003,7 @@ menu	menu
 menus	menus
 meow	meow
 # mer	mer
-mercedes	mercedes
+Mercedes	Mercedes
 mercer	mercer
 merchandise	merchandise
 merchandising	merchandising
@@ -12561,7 +12572,7 @@ MSNBC	MSNBC
 # mt	mt
 # mta	mta
 MTV	MTV
-# mu	mu
+mu	mu
 much	much
 mud	mud
 muddy	muddy
@@ -12821,6 +12832,7 @@ Nepal	Nepal
 nephew	nephew
 Neptune	Neptune
 nerd	nerd
+nerf	nerf
 nerve	nerve
 nerves	nerves
 nervous	nervous
@@ -17821,6 +17833,8 @@ sorts	sorts
 SOS	SOS
 sought	sought
 soul	soul
+soulmate	soulmate
+soulmates	soulmates
 souls	souls
 sound	sound
 sounded	sounded
@@ -18154,6 +18168,7 @@ startle	startle
 starts	starts
 startup	startup
 starve	starve
+stash	stash
 stat	stat
 state	state
 stated	stated
@@ -19076,6 +19091,7 @@ tense	tense
 tensile	tensile
 tension	tension
 tensions	tensions
+tensor	tensor
 tent	tent
 tentative	tentative
 tenth	tenth
@@ -20200,6 +20216,7 @@ upward	upward
 upwards	upwards
 # ur	ur
 uranium	uranium
+Uranus	Uranus
 urban	urban
 Urbana	Urbana
 urge	urge
@@ -20873,7 +20890,7 @@ webshots	webshots
 website	website
 websites	websites
 WebSphere	WebSphere
-webster	webster
+Webster	Webster
 wed	wed
 Wed.	Wed.
 wedding	wedding
@@ -21078,7 +21095,7 @@ wind	wind
 winding	winding
 windmill	windmill
 window	window
-windows	windows
+Windows	Windows
 winds	winds
 windshield	windshield
 Windsor	Windsor

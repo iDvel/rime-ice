@@ -312,8 +312,6 @@ N遍	nbian
 蒙奇·D·路飞	mengqidlufei
 蒙奇·D·龙	mengqiDlong
 蒙奇·D·龙	mengqidlong
-乔治·R·R·马丁	qiaozhiRRmading
-乔治·R·R·马丁	qiaozhirrmading
 哥尔·D·罗杰	geerDluojie
 哥尔·D·罗杰	geerdluojie
 马歇尔·D·蒂奇	maxieerDdiqi
@@ -567,8 +565,6 @@ Esc键	Escjian
 Esc键	escjian
 Eject键	Ejectjian
 Eject键	ejectjian
-J·K·罗琳	JKluolin
-J·K·罗琳	jkluolin
 周刊少年Jump	zhoukanshaonianJump
 周刊少年Jump	zhoukanshaonianjump
 ICP备案	ICPbeian
@@ -583,8 +579,12 @@ ICP备案	icpbeian
 改bug	gaibug
 查bug	chabug
 找bug	zhaobug
-J·R·R·托尔金	JRRtuoerjin
-J·R·R·托尔金	jrrtuoerjin
+J.K.罗琳	JKluolin
+J.K.罗琳	jkluolin
+J.R.R.托尔金	JRRtuoerjin
+J.R.R.托尔金	jrrtuoerjin
+乔治·R.R.马丁	qiaozhiRRmading
+乔治·R.R.马丁	qiaozhirrmading
 异维A酸	yiweiAsuan
 异维A酸	yiweiasuan
 互fo	hufo
