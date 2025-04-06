@@ -161,6 +161,7 @@ function M.init(env)
         ["ta sha xing"] = { text = "踏莎行", comment = "踏莎(suō)行" },
         ["sha cao"] = { text = "莎草", comment = "suō cǎo" },
         ["shan mu"] = { text = "杉木", comment = "shā mù" },
+        ["dao zai shi ni"] = { text = "道在屎溺", comment = "道在屎溺(niào)" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
         ["pu gai"] = { text = "扑街", comment = "仆街" },

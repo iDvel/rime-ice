@@ -17,7 +17,7 @@
 #          这样小字表里存在的字按权重靠前排列，大字表殿后，生僻字自动就排在末尾。
 ---
 name: 41448
-version: "2025-03-15"
+version: "2025-04-05"
 sort: by_weight
 ...
 # 注释掉了一些
@@ -23383,7 +23383,6 @@ sort: by_weight
 𣧍	ne
 𧤜	ne
 㐻	nei
-㖏	nei
 㘨	nei
 㨅	nei
 㼏	nei
@@ -23747,6 +23746,7 @@ sort: by_weight
 𩭑	niao
 𪅝	niao
 𪈼	niao
+㖏	nie
 㖕	nie
 㖖	nie
 㘝	nie
@@ -41616,6 +41616,8 @@ sort: by_weight
 𪑌	yu
 𪑝	yu
 𪓊	yu
+𫚪	yu
+𮬛	yu
 㘣	yuan
 㛪	yuan
 㟲	yuan
