@@ -14,6 +14,11 @@ git clone git@github.com:iuxt/rime-ice.git Rime
 git clone git@github.com:iuxt/rime-ice.git Rime
 ```
 
+## linux ibus
+
+```bash
+git clone git@github.com:iuxt/rime-ice.git ~/.config/ibus/rime
+```
 
 
 ## 同步
