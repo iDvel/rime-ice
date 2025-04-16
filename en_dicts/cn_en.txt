@@ -939,3 +939,4 @@ V8引擎	vbayinqing
 city不city	citybucity
 打call	dacall
 hold住	holdzhu
+i次方	icifang

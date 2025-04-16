@@ -939,3 +939,4 @@ V8引擎	vbaycqy
 city不city	citybucity
 打call	dacall
 hold住	holdau
+i次方	icifh
