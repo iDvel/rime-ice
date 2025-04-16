@@ -900,8 +900,6 @@ QQ三国	QQsrgo
 QQ三国	qqsrgo
 4S店	siSdf
 4S店	sisdf
-丰田AE86	fttfAEbalj
-丰田AE86	fttfaebalj
 TF版	TFbr
 TF版	tfbr
 TF版本	TFbrbw

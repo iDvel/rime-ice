@@ -3,10 +3,14 @@
 #
 # https://github.com/iDvel/rime-ice
 # ------- 补充的英文词汇 -------
+#
+# en.dict.yaml 放置正经单词
+# en_ext.dict.yaml 大部分是缩写或互联网相关
+#
 # 少数单词与 en 重复，纯粹是为了排版美观，部署时的报错 duplicate word definition 可忽略，无任何影响
 ---
 name: en_ext
-version: "2025-03-30"
+version: "2025-04-16"
 sort: by_weight
 ...
 # 一些杂项
@@ -909,8 +913,6 @@ BTC	BTC
 Bitcoin	BTC
 Bitcoin	Bitcoin
 Blockchain	Blockchain
-gank	gank
-debuff	debuff
 MagSafe	MagSafe
 Magic UI	MagicUI
 HDMI	HDMI
@@ -2169,4 +2171,3 @@ DeepSeek	DeepSeek
 Mercedes-Benz	Mercedes-Benz
 1Password	1Password
 WD40	WD40
-Coca-Cola	Coca-Cola

@@ -1,7 +1,7 @@
 # Emoji 映射表
 # 根据此文件生成 emoji.txt
 #
-# version: 2025-03-30
+# version: 2025-04-16
 #
 # 中文映射由 Dvel 纯手工打造 https://github.com/iDvel/rime-ice
 #
@@ -80,7 +80,7 @@ S$ 新加坡元 新加坡币
 😙 微笑亲亲
 🥲 含泪的笑脸 含泪笑脸 欣慰
 # face-tongue
-😋 好吃 美味 津津有味 yummy
+😋 好吃 好好吃 美味 津津有味 yummy
 😛 吐舌 吐舌头 略略略
 😜 单眼吐舌 吐舌 吐舌头 调皮 捣蛋 略略略
 🤪 傻瓜 傻瓜脸

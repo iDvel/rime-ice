@@ -900,8 +900,6 @@ QQ三国	QQsanguo
 QQ三国	qqsanguo
 4S店	siSdian
 4S店	sisdian
-丰田AE86	fengtianAEbaliu
-丰田AE86	fengtianaebaliu
 TF版	TFban
 TF版	tfban
 TF版本	TFbanben

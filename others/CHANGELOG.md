@@ -2,6 +2,12 @@
 
 除日常更新词库外的一些主要更新 🆕、破坏性变更 ⚠️。
 
+*2025.04.06 Release*
+
+## 2025-04-06
+
+- 消除输入框里大写字母之间的空格 [#1213](https://github.com/iDvel/rime-ice/issues/1213)
+
 ## 2025-03-30
 
 - `editor` 配置示例（定制操作键的行为） [#1131](https://github.com/iDvel/rime-ice/pull/1131)
