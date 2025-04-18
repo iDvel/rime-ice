@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-04-16"
+version: "2025-04-18"
 sort: by_weight
 ...
 # +_+
@@ -547,6 +547,7 @@ alcoholism	alcoholism
 ale	ale
 Alec	Alec
 alembic	alembic
+aleph	aleph
 alert	alert
 alerts	alerts
 Alex	Alex
@@ -9490,6 +9491,7 @@ implementations	implementations
 implemented	implemented
 implementing	implementing
 implements	implements
+implicate	implicate
 implication	implication
 implications	implications
 implicit	implicit
