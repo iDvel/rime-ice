@@ -866,7 +866,10 @@ USB接口	USBjdkz
 USB接口	usbjdkz
 X档案	Xdsor
 X档案	xdsor
+i次方	icifs
+i次幂	icimi
 n次方	ncifs
+n次幂	ncimi
 N多人	Ndorw
 N多人	ndorw
 S曲线	Squxf
@@ -937,4 +940,3 @@ V8引擎	vbayyq;
 city不city	citybucity
 打call	dacall
 hold住	holduu
-i次方	icifs

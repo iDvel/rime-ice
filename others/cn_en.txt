@@ -438,7 +438,10 @@ USB线
 USB口
 USB接口
 X档案
+i次方
+i次幂
 n次方
+n次幂
 N多人
 S曲线
 DJ舞曲
@@ -476,4 +479,3 @@ V8引擎
 city不city
 打call
 hold住
-i次方
