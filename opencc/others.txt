@@ -1401,7 +1401,6 @@ omega	omega ω Ω
 aleph	aleph ℵ
 阿列夫	阿列夫 ℵ
 圆周率	圆周率 π
-nabla	nabla ∇
 Nabla算子	Nabla算子 ∇
 劈形算子	劈形算子 ∇
 劈形算符	劈形算符 ∇
