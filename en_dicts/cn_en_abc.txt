@@ -866,7 +866,10 @@ USB接口	USBjxkb
 USB接口	usbjxkb
 X档案	Xdhoj
 X档案	xdhoj
+i次方	icifh
+i次幂	icimi
 n次方	ncifh
+n次幂	ncimi
 N多人	Ndorf
 N多人	ndorf
 S曲线	Squxw
@@ -937,4 +940,3 @@ V8引擎	vbaycqy
 city不city	citybucity
 打call	dacall
 hold住	holdau
-i次方	icifh
