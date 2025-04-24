@@ -114,6 +114,7 @@ function M.init(env)
         ["shan qi shou dian tong"] = { text = "氙气手电筒", comment = "氙(xiān)气手电筒" },
         ["yin gai"] = { text = "应该", comment = "应(yīng)该" },
         ["nian tie"] = { text = "粘贴", comment = "粘(zhān)贴" },
+        ["nian yi nian"] = { text = "粘一粘", comment = "粘(zhān)" },
         ["gao ju li"] = { text = "高句丽", comment = "高句(gōu)丽" },
         ["jiao dou shi"] = { text = "角斗士", comment = "角(jué)斗士" },
         ["suo sha mi"] = { text = "缩砂密", comment = "缩(sù)砂密" },

@@ -3,99 +3,108 @@
 #
 #
 ### ----------不在字表的注音：----------
-珮 pei
-塚 zhong
-䇲 jia
-蒾 mi
-荵 ren
-鯙 chun
-魾 pi
-礤 ca
-楢 you
-鮧 yi
-魣 yu
-𫚙 pu
-𫚪 yu
-煐 ying
-螉 weng
-樋 tong
-鳆 fu
-𫁡 li
-鯮 zong
-𧈢 ba
-蚖 yuan
-䗃 zhan
-魟 hong
-𮬣 xian
-矽 xi
-㹴 geng
-箝 qian
-猼 bo
-魮 pi
-㞎 ba
-䍁 sui
-畑 tian
-躄 bi
-螣 teng
-鱎 jiao
-蟱 wu
-鵖 bi
-閦 chu
-鳽 jian
-獚 huang
 爊 ao
-鰕 xia
-鵙 ju
-𫚒 fu
-轧 ga
-鯥 lu
+𧈢 ba
+㞎 ba
+粄 ban
+躄 bi
+鵖 bi
+猼 bo
+礤 ca
+閦 chu
+鯙 chun
+蟌 cong
 蜑 dan
-鰋 yan
-犭 quan
-𫚔 hui
+蟷 dang
+螲 die
 鮗 dong
 犎 feng
-揎 xuan
-濬 jun
-脝 heng
-蠵 xi
-鬅 peng
-鷃 yan
+鳆 fu
+𫚒 fu
+轧 ga
+㹴 geng
 栱 gong
-螲 die
-蟷 dang
-蟳 xun
-鱥 gui
 冓 gou
-㖏 nie
-凪 zhi
-栃 li
-梶 wei
+鱥 gui
+脝 heng
+魟 hong
+㺀 hu
+獚 huang
+𫚔 hui
+檵 ji
+䇲 jia
+榎 jia
+鳽 jian
+鱎 jiao
+鵙 ju
+濬 jun
+埈 jun
 峠 ka
 堀 ku
-麿 mo
-辻 shi
-糸 si
-鮨 yi
-檵 ji
-濛 meng
-氽 tun
-鯻 la
-魠 tuo
-脷 li
-垅 long
-蟌 cong
-鱚 xi
-鱵 zhen
-欻 chua
 窾 kuan
-稊 ti
-粄 ban
-拏 na
-揾 wen
+鯻 la
+睖 leng
+𫁡 li
+栃 li
+脷 li
+敹 liao
+垅 long
+鯥 lu
+𤝽 lv
 脢 mei
-蚿 xian
+濛 meng
+蒾 mi
+慜 min
+麿 mo
+拏 na
+㖏 nie
+珮 pei
+鬅 peng
+魾 pi
+魮 pi
+𫚙 pu
+箝 qian
+犭 quan
+荵 ren
+辻 shi
+昰 shi
+糸 si
 𧊕 song
+䍁 sui
+㓥 tang
+螣 teng
+稊 ti
+畑 tian
+樋 tong
+氽 tun
+魠 tuo
+梶 wei
+揾 wen
+螉 weng
+蟱 wu
+矽 xi
+蠵 xi
+鰕 xia
+𮬣 xian
+蚿 xian
+揎 xuan
+蟳 xun
+鰋 yan
+鷃 yan
+鮧 yi
+鮨 yi
+煐 ying
+楢 you
+魣 yu
+𫚪 yu
+蚖 yuan
+䗃 zhan
+鱵 zhen
+炡 zheng
+晸 zheng
+凪 zhi
+塚 zhong
+鯮 zong
 𭎂 zong
 ### ----------在字表但未被脚本自动纳入的注音：----------
 # 嗯 eng # 目前以 en 为主
@@ -167,12 +176,10 @@
 飘飖兮若流风之回雪
 绮榭飘飖紫庭客
 火齐汤
+火齐红
+火齐珠
 㺢㹢狓
 鵋鶀
-榎本温子
-榎本武扬
-榎木淳弥
-榎木孝明
 浅浅
 约氏獛
 瑟氏獛
@@ -275,6 +282,7 @@
 龙象般若功
 摩诃般若波罗蜜
 摩诃般若波罗蜜多
+行深般若波罗蜜多时
 螲蟷
 闭户螲蟷
 蝼螲
@@ -296,12 +304,6 @@
 宗罗睺
 挼搓
 手挼红杏蕊
-干将莫邪
-呼韩邪单于
-呼韩邪
-浑邪王
-莫邪
-上邪
 川射干
 射干
 射干抗病毒注射液
@@ -430,6 +432,7 @@
 阿房
 阿房宫
 阿房宫赋
+阿房出
 秦阿房宫
 匚部
 放饭流歠
@@ -556,7 +559,6 @@
 马泘沱
 金毛犼
 金旼炡
-咸恩炡
 金鎞刮膜
 今日云輧渡鹊桥
 蟼掌突蟾
@@ -602,7 +604,6 @@
 连属
 亮菛锹甲
 林㹭
-朴炡禹
 柳树酄镇
 六硍镇
 罗惇曧
@@ -663,10 +664,7 @@
 彡部
 石濑兮浅浅
 楤木
-宋昰昀
 蜙蝑
-孙昌慜
-孙兴慜
 索琼茅以筳篿兮
 嗒然
 嗒然若丧
@@ -678,7 +676,6 @@
 太姥山
 天城燐音
 团圞
-文晸赫
 齆鼻儿
 齆声齆气
 䰀鬌
@@ -740,7 +737,6 @@
 若陀龙王
 通什镇
 匚匸凵冂
-林孝埈
 嫑忈嘦姕
 兰若
 兰若庭
@@ -837,4 +833,7 @@
 耳著明月珰
 著我旧时裳
 波流弟靡
+鱼县鸟窜
+嬛嬛一袅楚宫腰
+予恶乎知说生之非惑邪
 姓能

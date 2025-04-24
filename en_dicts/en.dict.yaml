@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-04-18"
+version: "2025-04-23"
 sort: by_weight
 ...
 # +_+
@@ -867,6 +867,7 @@ ant	ant
 Antarctic	Antarctic
 Antarctica	Antarctica
 ante	ante
+antecedent	antecedent
 antenna	antenna
 antennas	antennas
 anterior	anterior
@@ -1799,6 +1800,7 @@ Bedfordshire	Bedfordshire
 bedroom	bedroom
 bedrooms	bedrooms
 beds	beds
+bedspread	 bedspread
 bee	bee
 beech	beech
 beef	beef
@@ -2797,6 +2799,7 @@ candidate	candidate
 candidates	candidates
 candle	candle
 candles	candles
+candlewick	candlewick
 candy	candy
 cane	cane
 canine	canine
@@ -3390,6 +3393,7 @@ cigaret	cigaret
 cigarette	cigarette
 cigarettes	cigarettes
 cigars	cigars
+cilantro	cilantro
 # cimel	cimel
 Cincinnati	Cincinnati
 Cinderella	Cinderella
@@ -3998,6 +4002,7 @@ condemn	condemn
 condemned	condemned
 condense	condense
 condensed	condensed
+condiment	condiment
 condition	condition
 conditional	conditional
 conditioned	conditioned
@@ -4103,6 +4108,7 @@ consensus	consensus
 consent	consent
 consequence	consequence
 consequences	consequences
+consequent	consequent
 consequential	consequential
 consequently	consequently
 # conserv	conserv
@@ -4354,6 +4360,7 @@ core	core
 Corel	Corel
 cores	cores
 Corey	Corey
+coriander	coriander
 Corinthians	Corinthians
 cork	cork
 corn	corn
@@ -4777,6 +4784,7 @@ cyclone	cyclone
 Cygwin	Cygwin
 cylinder	cylinder
 cylinders	cylinders
+cylindrical	cylindrical
 Cymru	Cymru
 cynical	cynical
 cynically	cynically
@@ -5073,6 +5081,10 @@ deflect	deflect
 deflection	deflection
 deform	deform
 deformation	deformation
+defraud	defraud
+defrauded	defrauded
+defrauding	defrauding
+defrauds	defrauds
 defy	defy
 # deg	deg
 degenerate	degenerate
@@ -5437,6 +5449,9 @@ difficulties	difficulties
 difficulty	difficulty
 diffs	diffs
 diffuse	diffuse
+diffused	diffused
+diffuses	diffuses
+diffusing	diffusing
 diffusion	diffusion
 dig	dig
 digest	digest
@@ -6006,6 +6021,7 @@ Durango	Durango
 duration	duration
 Durban	Durban
 Durham	Durham
+durian	durian
 during	during
 dusk	dusk
 dust	dust
@@ -6414,6 +6430,7 @@ ended	ended
 endif	endif
 ending	ending
 endless	endless
+endlessly	endlessly
 endocrine	endocrine
 endorse	endorse
 endorsed	endorsed
@@ -7443,6 +7460,7 @@ flatten	flatten
 flatter	flatter
 flavor	flavor
 flavored	flavored
+flavoring	flavoring
 flavors	flavors
 flavour	flavour
 flaw	flaw
@@ -7455,6 +7473,7 @@ fleece	fleece
 fleet	fleet
 Fleming	Fleming
 flesh	flesh
+fleshy	fleshy
 Fletcher	Fletcher
 flew	flew
 flex	flex
@@ -9146,6 +9165,7 @@ horror	horror
 horse	horse
 horseback	horseback
 horsepower	horsepower
+horseradish	horseradish
 horses	horses
 horticulture	horticulture
 Horton	Horton
@@ -9492,6 +9512,9 @@ implemented	implemented
 implementing	implementing
 implements	implements
 implicate	implicate
+implicated	implicated
+implicates	implicates
+implicating	implicating
 implication	implication
 implications	implications
 implicit	implicit
@@ -10739,7 +10762,7 @@ lama	lama
 Lamar	Lamar
 lamb	lamb
 lambda	lambda
-lambert	lambert
+Lambert	Lambert
 Lamborghini	Lamborghini
 lame	lame
 laminate	laminate
@@ -11346,6 +11369,7 @@ loosely	loosely
 loosen	loosen
 loot	loot
 Lopez	Lopez
+loquat	loquat
 lord	lord
 lords	lords
 lore	lore
@@ -11396,6 +11420,8 @@ lows	lows
 loyal	loyal
 loyalty	loyalty
 # loyola	loyola
+lozenge	lozenge
+lozenges	lozenges
 # lp	lp
 # lps	lps
 # lq	lq
@@ -12429,6 +12455,7 @@ monophonic	monophonic
 monopoly	monopoly
 monotonous	monotonous
 Monroe	Monroe
+monsoon	monsoon
 monster	monster
 monsters	monsters
 monstrous	monstrous
@@ -13267,6 +13294,7 @@ Oct.	Oct.
 octave	octave
 octet	octet
 October	October
+octopus	octopus
 # od	od
 # odbc	odbc
 odd	odd
@@ -13834,6 +13862,7 @@ parrot	parrot
 parse	parse
 parser	parser
 parsing	parsing
+parsley	parsley
 parsons	parsons
 part	part
 partial	partial
@@ -14340,6 +14369,8 @@ pipelines	pipelines
 piper	piper
 pipes	pipes
 piping	piping
+piquancy	piquancy
+piquant	piquant
 piracy	piracy
 pirate	pirate
 pirates	pirates
@@ -14444,6 +14475,7 @@ plaza	plaza
 plea	plea
 plead	plead
 pleasant	pleasant
+pleasantly	pleasantly
 please	please
 pleased	pleased
 pleasing	pleasing
@@ -14892,6 +14924,7 @@ prices	prices
 pricetool	pricetool
 pricing	pricing
 prick	prick
+prickly	prickly
 pride	pride
 priest	priest
 priests	priests
@@ -15222,6 +15255,7 @@ pulling	pulling
 pulls	pulls
 pulmonary	pulmonary
 pulp	pulp
+pulpy	pulpy
 pulse	pulse
 pulses	pulses
 puma	puma
@@ -16244,6 +16278,7 @@ rhapsody	rhapsody
 rhetoric	rhetoric
 rheumatoid	rheumatoid
 rhino	rhino
+rhizome	rhizome
 rhode	rhode
 Rhodes	Rhodes
 rhymes	rhymes
@@ -16300,6 +16335,7 @@ riley	riley
 rim	rim
 rime	rime
 rims	rims
+rind	rind
 ring	ring
 ringer	ringer
 ringing	ringing
@@ -17724,6 +17760,7 @@ snowstorm	snowstorm
 snowy	snowy
 # snp	snp
 # snr	snr
+snuff	snuff
 Snyder	Snyder
 so	so
 so-called	so-called
@@ -18530,6 +18567,8 @@ successfully	successfully
 succession	succession
 successive	successive
 successor	successor
+succulent	succulent
+succulently	succulently
 such	such
 # suche	suche
 suck	suck
@@ -18965,6 +19004,7 @@ tattoos	tattoos
 tau	tau
 taught	taught
 Taurus	Taurus
+tautology	tautology
 tavern	tavern
 # tawnee	tawnee
 tax	tax
@@ -19399,7 +19439,7 @@ timezone	timezone
 timid	timid
 timing	timing
 Timor	Timor
-timothy	timothy
+Timothy	Timothy
 tin	tin
 Tina	Tina
 tiny	tiny
@@ -19505,6 +19545,7 @@ tools	tools
 toon	toon
 toons	toons
 tooth	tooth
+toothsome	toothsome
 top	top
 topaz	topaz
 Topeka	Topeka
@@ -19870,6 +19911,7 @@ tsunami	tsunami
 # tu	tu
 # tub	tub
 tube	tube
+tuber	tuber
 tuberculosis	tuberculosis
 tubes	tubes
 tubing	tubing
@@ -20109,6 +20151,7 @@ unhappy	unhappy
 # uni	uni
 UNICEF	UNICEF
 Unicode	Unicode
+unicorn	unicorn
 unidentified	unidentified
 unified	unified
 uniform	uniform
@@ -20803,6 +20846,7 @@ warsaw	warsaw
 Warwick	Warwick
 Warwickshire	Warwickshire
 was	was
+wasabi	wasabi
 wash	wash
 washable	washable
 washed	washed
@@ -21463,6 +21507,7 @@ zenith	zenith
 zeppelin	zeppelin
 zero	zero
 # zerodegrees	zerodegrees
+zest	zest
 zeta	zeta
 # zh	zh
 # zhang	zhang
