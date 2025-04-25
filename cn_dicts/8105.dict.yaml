@@ -967,7 +967,7 @@ sort: by_weight
 濋	chu	0
 琡	chu	0
 𬺓	chu	0
-欻	chua	9
+欻	chua	3
 揣	chuai	27568
 踹	chuai	22631
 搋	chuai	351
@@ -2738,6 +2738,7 @@ sort: by_weight
 惎	ji	2
 期	ji	1
 鱾	ji	1
+𪟝	ji	1
 𬶨	ji	1
 𬶭	ji	1
 㴔	ji	0
@@ -2745,7 +2746,6 @@ sort: by_weight
 徛	ji	0
 枅	ji	0
 瀱	ji	0
-𪟝	ji	0
 𫌀	ji	0
 𫓯	ji	0
 𫓹	ji	0
@@ -4303,7 +4303,7 @@ sort: by_weight
 蓂	mi	72
 脒	mi	10
 洣	mi	2
-醾	mi	0
+醾	mi	1
 面	mian	4532962
 免	mian	289084
 勉	mian	95918
@@ -8494,10 +8494,10 @@ sort: by_weight
 禚	zhuo	8
 椓	zhuo	7
 晫	zhuo	6
+䓬	zhuo	5
 叕	zhuo	4
 汋	zhuo	2
 焯	zhuo	1
-䓬	zhuo	0
 䦃	zhuo	0
 𬸦	zhuo	0
 子	zi	8641973
