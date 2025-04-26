@@ -17,7 +17,7 @@
 #          这样小字表里存在的字按权重靠前排列，大字表殿后，生僻字自动就排在末尾。
 ---
 name: 41448
-version: "2025-04-05"
+version: "2025-04-23"
 sort: by_weight
 ...
 # 注释掉了一些
@@ -137,6 +137,7 @@ sort: by_weight
 靉	ai
 餲	ai
 馤	ai
+騃	ai
 鱫	ai
 鴱	ai
 𠊎	ai
@@ -185,6 +186,7 @@ sort: by_weight
 𩮖	ai
 𪇈	ai
 𪕭	ai
+𫘤	ai
 㜝	an
 㟁	an
 㱘	an
@@ -4106,6 +4108,7 @@ sort: by_weight
 𪌹	chi
 𪏐	chi
 𪏸	chi
+𫛶	chi
 㓼	chong
 㓽	chong
 㧤	chong
@@ -5806,6 +5809,7 @@ sort: by_weight
 黕	dan
 黮	dan
 黵	dan
+鿕	dan
 𠆛	dan
 𠆶	dan
 𠇋	dan
@@ -9189,6 +9193,7 @@ sort: by_weight
 𪆠	fu
 𪊐	fu
 𪍏	fu
+𫚒	fu
 𮔅	fu
 伽	ga
 呷	ga
@@ -12018,6 +12023,7 @@ sort: by_weight
 㷤	hu
 㸦	hu
 㹱	hu
+㺀	hu
 㺉	hu
 㽇	hu
 㾰	hu
@@ -13125,6 +13131,7 @@ sort: by_weight
 𪔊	hui
 𪖕	hui
 𪛂	hui
+𫚔	hui
 㑮	hun
 㕵	hun
 㥵	hun
@@ -21161,6 +21168,7 @@ sort: by_weight
 𣭇	lv
 𤁵	lv
 𤗬	lv
+𤝽	lv
 𤾺	lv
 𥖼	lv
 𥡢	lv
@@ -28611,6 +28619,7 @@ sort: by_weight
 𨧨	rui
 𨳙	rui
 𪏩	rui
+𮉫	rui
 㝄	run
 㠈	run
 䏕	run
@@ -30920,6 +30929,7 @@ sort: by_weight
 𣩠	si
 𣱻	si
 𤆟	si
+𤝽	si
 𤣵	si
 𤱸	si
 𤺊	si
@@ -30958,6 +30968,7 @@ sort: by_weight
 𪊍	si
 𪕳	si
 𪖉	si
+𫘤	si
 㕬	song
 㞞	song
 㣝	song
@@ -32028,6 +32039,7 @@ sort: by_weight
 𪍵	tan
 㑽	tang
 㒉	tang
+㓥	tang
 㙶	tang
 㜍	tang
 㦂	tang
@@ -34971,6 +34983,7 @@ sort: by_weight
 㳀	xi
 㳧	xi
 㵿	xi
+㶉	xi
 㸍	xi
 㹫	xi
 㺣	xi
@@ -38623,6 +38636,7 @@ sort: by_weight
 䬺	yang
 䭐	yang
 䭥	yang
+䱀	yang
 䵮	yang
 仰	yang
 佒	yang
@@ -38774,6 +38788,7 @@ sort: by_weight
 𪓛	yang
 𪕫	yang
 𪚻	yang
+𫚐	yang
 㑸	yao
 㑾	yao
 㓞	yao
