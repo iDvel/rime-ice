@@ -477,19 +477,19 @@ local function translator(input, seg, env)
     env.gregorian_to_lunar = env.gregorian_to_lunar or
         (env.engine.schema.config:get_string('recognizer/patterns/gregorian_to_lunar'):sub(2, 2) or 'N')
     if input == env.lunar_key_word then
-        local date1, date2 = solar2LunarByTime(os.date("%Y%m%d"))
-        local lunar_ymd = (Candidate("", seg.start, seg._end, date2, ""))
+        local lunarDateData = solar2LunarByTime(os.date("%Y%m%d"))
+        local lunar_ymd = (Candidate("", seg.start, seg._end, lunarDateData.lunarDate_YMD, ""))
         lunar_ymd.quality = 999
         yield(lunar_ymd)
-        local lunar_date = Candidate("", seg.start, seg._end, date1, "")
+        local lunar_date = Candidate("", seg.start, seg._end, lunarDateData.lunarDate_4, "")
         lunar_date.quality = 999
         yield(lunar_date)
     elseif env.gregorian_to_lunar ~= '' and input:sub(1, 1) == env.gregorian_to_lunar and input:sub(2):find("^%d%d%d%d%d%d%d%d$")  then
-        local date1, date2 = solar2LunarByTime(input:sub(2))
-        local lunar_ymd = (Candidate("", seg.start, seg._end, date2, ""))
+        local lunarDateData = solar2LunarByTime(input:sub(2))
+        local lunar_ymd = (Candidate("", seg.start, seg._end, lunarDateData.lunarDate_YMD, ""))
         lunar_ymd.quality = 999
         yield(lunar_ymd)
-        local lunar_date = Candidate("", seg.start, seg._end, date1, "")
+        local lunar_date = Candidate("", seg.start, seg._end, lunarDateData.lunarDate_4, "")
         lunar_date.quality = 999
         yield(lunar_date)
     end
