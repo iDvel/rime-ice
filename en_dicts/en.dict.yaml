@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-04-23"
+version: "2025-04-28"
 sort: by_weight
 ...
 # +_+
@@ -3017,6 +3017,7 @@ cattle	cattle
 Caucasian	Caucasian
 caucus	caucus
 caught	caught
+cauliflower	cauliflower
 causal	causal
 cause	cause
 caused	caused
@@ -9472,6 +9473,7 @@ ignoring	ignoring
 # ile	ile
 illegal	illegal
 illegally	illegally
+illegitimate	illegitimate
 illicit	illicit
 Illinois	Illinois
 illiterate	illiterate
@@ -9605,6 +9607,7 @@ inappropriate	inappropriate
 inasmuch	inasmuch
 inaugural	inaugural
 inaugurate	inaugurate
+inauthentic	inauthentic
 inbound	inbound
 inbox	inbox
 Inc.	Inc.
@@ -14659,6 +14662,7 @@ polyphonic	polyphonic
 polyphony	polyphony
 polytechnic	polytechnic
 pomegranate	pomegranate
+pomelo	pomelo
 pond	pond
 ponder	ponder
 ponds	ponds
@@ -20049,6 +20053,7 @@ turnaround	turnaround
 turned	turned
 turner	turner
 turning	turning
+turnip	turnip
 turnout	turnout
 turnover	turnover
 turns	turns
