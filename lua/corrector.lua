@@ -50,6 +50,7 @@ function M.init(env)
         ["mai yuan"] = { text = "埋怨", comment = "mán yuàn" },
         ["xu yu wei she"] = { text = "虚与委蛇", comment = "xū yǔ wēi yí" },
         ["mu na"] = { text = "木讷", comment = "mù nè" },
+        ["gui lie"] = { text = "龟裂", comment = "jūn liè" },
         ["du le le"] = { text = "独乐乐", comment = "dú yuè lè" },
         ["zhong le le"] = { text = "众乐乐", comment = "zhòng yuè lè" },
         ["xun ma"] = { text = "荨麻", comment = "qián má" },

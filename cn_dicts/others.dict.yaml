@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2025-03-06"
+version: "2025-04-28"
 sort: by_weight
 ...
 ##### 容错词
@@ -147,6 +147,8 @@ sort: by_weight
 虚与委蛇	xu yu wei she
 木讷	mu ne
 木讷	mu na
+龟裂	jun lie
+龟裂	gui lie
 独乐乐	du yue le
 独乐乐	du le le
 众乐乐	zhong yue le
