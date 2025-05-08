@@ -583,7 +583,10 @@ alike	alike
 Alison	Alison
 Alito	Alito
 alive	alive
+alkali	alkali
 alkaline	alkaline
+alkalinity	alkalinity
+alkaloid	alkaloid
 all	all
 # alla	alla
 Allah	Allah
@@ -738,6 +741,7 @@ amplifier	amplifier
 amplifiers	amplifiers
 amplify	amplify
 amplitude	amplitude
+ampoule	ampoule
 amps	amps
 # ams	ams
 Amsterdam	Amsterdam
@@ -751,6 +755,7 @@ ana	ana
 anabolic	anabolic
 Anaheim	Anaheim
 anal	anal
+analgesic	analgesic
 analog	analog
 analogous	analogous
 analogue	analogue
@@ -3327,6 +3332,7 @@ chickens	chickens
 chicks	chicks
 Chico	Chico
 chief	chief
+chiefly	chiefly
 chiefs	chiefs
 child	child
 childbirth	childbirth
@@ -4660,6 +4666,7 @@ Croatia	Croatia
 Croatian	Croatian
 crochet	crochet
 crocodile	crocodile
+croissant	croissant
 Croix	Croix
 cron	cron
 crooked	crooked
@@ -4704,6 +4711,7 @@ crypt	crypt
 crypto	crypto
 cryptography	cryptography
 crystal	crystal
+crystalline	crystalline
 crystals	crystals
 CS	CS
 # csa	csa
@@ -6347,6 +6355,7 @@ Elizabeth	Elizabeth
 Ellen	Ellen
 Elliot	Elliot
 elliott	elliott
+ellipsis	ellipsis
 elliptical	elliptical
 Ellis	Ellis
 elm	elm
@@ -6620,6 +6629,7 @@ epidemic	epidemic
 epidemiology	epidemiology
 epilepsy	epilepsy
 epilogue	epilogue
+epinephrine	epinephrine
 epinions	epinions
 episcopal	episcopal
 episode	episode
@@ -9228,6 +9238,7 @@ horizontal	horizontal
 hormone	hormone
 hormones	hormones
 horn	horn
+hornet	hornet
 horns	horns
 horny	horny
 horoscope	horoscope
@@ -9469,6 +9480,8 @@ identify	identify
 identifying	identifying
 identities	identities
 identity	identity
+ideogram	ideogram
+ideographic	ideographic
 ideological	ideological
 ideology	ideology
 # idg	idg
@@ -9510,6 +9523,7 @@ illegal	illegal
 illegally	illegally
 illegitimate	illegitimate
 illicit	illicit
+illicitly	illicitly
 Illinois	Illinois
 illiterate	illiterate
 illness	illness
@@ -9694,6 +9708,8 @@ incredibly	incredibly
 increment	increment
 incremental	incremental
 increments	increments
+incubate	incubate
+incubator	incubator
 incubus	incubus
 incumbent	incumbent
 incur	incur
@@ -9903,6 +9919,7 @@ insane	insane
 insanity	insanity
 insect	insect
 insects	insects
+insensitive	insensitive
 insert	insert
 inserted	inserted
 inserting	inserting
@@ -10391,6 +10408,7 @@ jess	jess
 Jesse	Jesse
 Jessica	Jessica
 Jessie	Jessie
+jester	jester
 Jesus	Jesus
 jet	jet
 jets	jets
@@ -12839,6 +12857,7 @@ napkin	napkin
 Naples	Naples
 napoleon	napoleon
 Napster	Napster
+narcotic	narcotic
 Narnia	Narnia
 narration	narration
 narrative	narrative
@@ -13358,6 +13377,7 @@ obstruction	obstruction
 obtain	obtain
 obtained	obtained
 obtaining	obtaining
+obtuse	obtuse
 obvious	obvious
 obviously	obviously
 # oc	oc
@@ -13911,6 +13931,7 @@ paperback	paperback
 paperbacks	paperbacks
 papers	papers
 paperwork	paperwork
+papery	papery
 Papua	Papua
 par	par
 para	para
@@ -15848,6 +15869,7 @@ recycle	recycle
 recycled	recycled
 recycling	recycling
 red	red
+reddish	reddish
 redeem	redeem
 redefine	redefine
 redemption	redemption
@@ -17161,6 +17183,7 @@ securities	securities
 security	security
 # sed	sed
 sedan	sedan
+sedative	sedative
 sediment	sediment
 sedimentary	sedimentary
 sediments	sediments
@@ -17226,6 +17249,7 @@ semantic	semantic
 semantics	semantics
 semester	semester
 semi	semi
+semicolon	semicolon
 semiconductor	semiconductor
 semiconductors	semiconductors
 seminar	seminar
@@ -17769,6 +17793,7 @@ slab	slab
 slack	slack
 slam	slam
 slang	slang
+slant	slant
 slap	slap
 slash	slash
 # slashdot	slashdot
@@ -17971,6 +17996,7 @@ solicitors	solicitors
 solid	solid
 solidarity	solidarity
 solids	solids
+solidus	solidus
 solitaire	solitaire
 solitary	solitary
 solo	solo
@@ -18466,6 +18492,7 @@ sticky	sticky
 stiff	stiff
 still	still
 stills	stills
+stimulant	stimulant
 stimulate	stimulate
 stimulated	stimulated
 stimulating	stimulating
@@ -18849,6 +18876,7 @@ suppose	suppose
 supposed	supposed
 supposedly	supposedly
 suppress	suppress
+suppressant	suppressant
 suppressed	suppressed
 suppression	suppression
 supra	supra
@@ -19172,12 +19200,14 @@ tautology	tautology
 tavern	tavern
 # tawnee	tawnee
 tax	tax
+taxa	taxa
 taxable	taxable
 taxation	taxation
 taxes	taxes
 taxi	taxi
 taxis	taxis
 taxman	taxman
+taxon	taxon
 taxonomy	taxonomy
 taxpayer	taxpayer
 taxpayers	taxpayers
@@ -20795,6 +20825,7 @@ Virginia	Virginia
 Virginian	Virginian
 virgins	virgins
 Virgo	Virgo
+virgule	virgule
 virtual	virtual
 virtually	virtually
 virtue	virtue
