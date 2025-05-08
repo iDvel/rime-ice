@@ -866,7 +866,10 @@ USB接口	USBjdkz
 USB接口	usbjdkz
 X档案	Xdsor
 X档案	xdsor
+i次方	icifs
+i次幂	icimi
 n次方	ncifs
+n次幂	ncimi
 N多人	Ndorw
 N多人	ndorw
 S曲线	Squxf
@@ -900,8 +903,6 @@ QQ三国	QQsrgo
 QQ三国	qqsrgo
 4S店	siSdf
 4S店	sisdf
-丰田AE86	fttfAEbalj
-丰田AE86	fttfaebalj
 TF版	TFbr
 TF版	tfbr
 TF版本	TFbrbw

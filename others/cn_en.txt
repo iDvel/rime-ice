@@ -438,7 +438,10 @@ USB线
 USB口
 USB接口
 X档案
+i次方
+i次幂
 n次方
+n次幂
 N多人
 S曲线
 DJ舞曲
@@ -456,7 +459,6 @@ QQ音速
 QQ飞车
 QQ三国
 4S店
-丰田AE86
 TF版
 TF版本
 O不OK

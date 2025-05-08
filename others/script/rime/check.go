@@ -34,9 +34,6 @@ func initCheck() {
 	specialWords.Add("科科斯（基林）群岛")
 	specialWords.Add("刚果（金）")
 	specialWords.Add("刚果（布）")
-	specialWords.Add("赛博朋克：边缘行者")
-	specialWords.Add("赛博朋克：边缘跑手")
-	specialWords.Add("赛博朋克：命运之轮")
 
 	// 需要注音的列表
 	file1, err := os.Open(需要注音TXT)

@@ -866,7 +866,10 @@ USB接口	USBjiekou
 USB接口	usbjiekou
 X档案	Xdangan
 X档案	xdangan
+i次方	icifang
+i次幂	icimi
 n次方	ncifang
+n次幂	ncimi
 N多人	Nduoren
 N多人	nduoren
 S曲线	Squxian
@@ -900,8 +903,6 @@ QQ三国	QQsanguo
 QQ三国	qqsanguo
 4S店	siSdian
 4S店	sisdian
-丰田AE86	fengtianAEbaliu
-丰田AE86	fengtianaebaliu
 TF版	TFban
 TF版	tfban
 TF版本	TFbanben

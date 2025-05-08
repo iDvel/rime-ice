@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2025-03-06"
+version: "2025-04-28"
 sort: by_weight
 ...
 ##### 容错词
@@ -147,6 +147,8 @@ sort: by_weight
 虚与委蛇	xu yu wei she
 木讷	mu ne
 木讷	mu na
+龟裂	jun lie
+龟裂	gui lie
 独乐乐	du yue le
 独乐乐	du le le
 众乐乐	zhong yue le
@@ -277,6 +279,8 @@ sort: by_weight
 应该	yin gai
 粘贴	zhan tie
 粘贴	nian tie
+粘一粘	zhan yi zhan
+粘一粘	nian yi nian
 高句丽	gao gou li
 高句丽	gao ju li
 角斗士	jue dou shi
@@ -371,6 +375,8 @@ sort: by_weight
 莎草	sha cao
 杉木	sha mu
 杉木	shan mu
+道在屎溺	dao zai shi niao
+道在屎溺	dao zai shi ni
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
