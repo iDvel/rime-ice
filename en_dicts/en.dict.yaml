@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-04-28"
+version: "2025-05-05"
 sort: by_weight
 ...
 # +_+
@@ -583,7 +583,10 @@ alike	alike
 Alison	Alison
 Alito	Alito
 alive	alive
+alkali	alkali
 alkaline	alkaline
+alkalinity	alkalinity
+alkaloid	alkaloid
 all	all
 # alla	alla
 Allah	Allah
@@ -738,6 +741,7 @@ amplifier	amplifier
 amplifiers	amplifiers
 amplify	amplify
 amplitude	amplitude
+ampoule	ampoule
 amps	amps
 # ams	ams
 Amsterdam	Amsterdam
@@ -751,6 +755,7 @@ ana	ana
 anabolic	anabolic
 Anaheim	Anaheim
 anal	anal
+analgesic	analgesic
 analog	analog
 analogous	analogous
 analogue	analogue
@@ -1278,6 +1283,7 @@ astonish	astonish
 astonishment	astonishment
 Astoria	Astoria
 # astra	astra
+astringent	astringent
 # astro	astro
 astrology	astrology
 astronaut	astronaut
@@ -1365,6 +1371,7 @@ attribute	attribute
 attributed	attributed
 attributes	attributes
 attribution	attribution
+attributive	attributive
 ATV	ATV
 # atx	atx
 # au	au
@@ -2171,6 +2178,7 @@ blowout	blowout
 blows	blows
 # blu	blu
 blue	blue
+blueberry	blueberry
 bluegrass	bluegrass
 blueprint	blueprint
 blues	blues
@@ -2267,6 +2275,7 @@ bookstores	bookstores
 bool	bool
 boolean	boolean
 boom	boom
+boomerang	boomerang
 Boone	Boone
 boost	boost
 booster	booster
@@ -2508,6 +2517,7 @@ Brooklyn	Brooklyn
 brooks	brooks
 broom	broom
 bros	bros
+brothel	brothel
 brother	brother
 brotherhood	brotherhood
 brothers	brothers
@@ -2525,6 +2535,7 @@ browsing	browsing
 Bruce	Bruce
 Bruins	Bruins
 bruise	bruise
+bruised	bruised
 brunch	brunch
 Brunei	Brunei
 brunette	brunette
@@ -2609,6 +2620,8 @@ bulls	bulls
 bullshit	bullshit
 bully	bully
 bullying	bullying
+bumble	bumble
+bumblebee	bumblebee
 bump	bump
 bumper	bumper
 bunch	bunch
@@ -2616,6 +2629,7 @@ bundle	bundle
 bundled	bundled
 bundles	bundles
 bungalow	bungalow
+bungle	bungle
 bunk	bunk
 bunker	bunker
 bunny	bunny
@@ -2760,7 +2774,10 @@ callback	callback
 called	called
 caller	caller
 calling	calling
+callous	callous
+calloused	calloused
 calls	calls
+callus	callus
 calm	calm
 calorie	calorie
 calories	calories
@@ -3190,6 +3207,7 @@ chaotic	chaotic
 chap	chap
 chapel	chapel
 Chapman	Chapman
+chapped	chapped
 chapter	chapter
 chapters	chapters
 char	char
@@ -3314,6 +3332,7 @@ chickens	chickens
 chicks	chicks
 Chico	Chico
 chief	chief
+chiefly	chiefly
 chiefs	chiefs
 child	child
 childbirth	childbirth
@@ -3326,16 +3345,17 @@ chile	chile
 Chilean	Chilean
 chili	chili
 chill	chill
-ChillSeph	ChillSeph
+# ChillSeph	ChillSeph
 chimney	chimney
 chimpanzee	chimpanzee
 chin	chin
 China	China
-china	china
+# china	china
 Chinatown	Chinatown
 Chinese	Chinese
 Ching	Ching
 chip	chip
+chipmunk	chipmunk
 chips	chips
 chipset	chipset
 chiropractic	chiropractic
@@ -3359,6 +3379,7 @@ choosing	choosing
 chop	chop
 chopped	chopped
 chopper	chopper
+chopsticks	chopsticks
 choral	choral
 chord	chord
 chords	chords
@@ -3610,6 +3631,8 @@ clouds	clouds
 cloudy	cloudy
 clover	clover
 clown	clown
+cloy	cloy
+cloying	cloying
 # clr	clr
 club	club
 clubhouse	clubhouse
@@ -3660,6 +3683,7 @@ Coca-Cola	Coca-Cola
 cocaine	cocaine
 cock	cock
 cockpit	cockpit
+cockroach	cockroach
 cocks	cocks
 cocktail	cocktail
 cocktails	cocktails
@@ -4642,6 +4666,7 @@ Croatia	Croatia
 Croatian	Croatian
 crochet	crochet
 crocodile	crocodile
+croissant	croissant
 Croix	Croix
 cron	cron
 crooked	crooked
@@ -4678,6 +4703,7 @@ crusade	crusade
 crush	crush
 crushed	crushed
 crust	crust
+crutch	crutch
 Cruz	Cruz
 cry	cry
 crying	crying
@@ -4685,6 +4711,7 @@ crypt	crypt
 crypto	crypto
 cryptography	cryptography
 crystal	crystal
+crystalline	crystalline
 crystals	crystals
 CS	CS
 # csa	csa
@@ -4834,6 +4861,7 @@ dads	dads
 daemon	daemon
 Daewoo	Daewoo
 dag	dag
+dagger	dagger
 daily	daily
 dairy	dairy
 daisy	daisy
@@ -4999,6 +5027,7 @@ decided	decided
 decidedly	decidedly
 decides	decides
 deciding	deciding
+deciduous	deciduous
 decimal	decimal
 decision	decision
 decisions	decisions
@@ -5808,6 +5837,8 @@ domain	domain
 domains	domains
 dome	dome
 domestic	domestic
+domesticate	domesticate
+domesticated	domesticated
 dominance	dominance
 dominant	dominant
 dominate	dominate
@@ -5975,6 +6006,7 @@ drugs	drugs
 drum	drum
 drummer	drummer
 drums	drums
+drumsticks	drumsticks
 drunk	drunk
 drunken	drunken
 Drupal	Drupal
@@ -6322,7 +6354,8 @@ Elizabeth	Elizabeth
 # elle	elle
 Ellen	Ellen
 Elliot	Elliot
-elliott	elliott
+Elliott	Elliott
+ellipsis	ellipsis
 elliptical	elliptical
 Ellis	Ellis
 elm	elm
@@ -6596,6 +6629,7 @@ epidemic	epidemic
 epidemiology	epidemiology
 epilepsy	epilepsy
 epilogue	epilogue
+epinephrine	epinephrine
 epinions	epinions
 episcopal	episcopal
 episode	episode
@@ -7567,9 +7601,13 @@ fluorescence	fluorescence
 fluorescent	fluorescent
 fluorine	fluorine
 flush	flush
+flushed	flushed
 flushing	flushing
 flute	flute
 flutter	flutter
+fluttered	fluttered
+fluttering	fluttering
+flutters	flutters
 flux	flux
 fly	fly
 flyer	flyer
@@ -8343,7 +8381,7 @@ gore	gore
 gorge	gorge
 gorgeous	gorgeous
 gorilla	gorilla
-gorillaz	gorillaz
+# gorillaz	gorillaz
 gosh	gosh
 gospel	gospel
 gossip	gossip
@@ -8788,6 +8826,7 @@ hasty	hasty
 hat	hat
 hatch	hatch
 hatchback	hatchback
+hatching	hatching
 hate	hate
 hated	hated
 hates	hates
@@ -8893,6 +8932,7 @@ heck	heck
 hectares	hectares
 hector	hector
 hedge	hedge
+hedgehog	hedgehog
 # hee	hee
 heel	heel
 heels	heels
@@ -8992,6 +9032,7 @@ hibernation	hibernation
 hibernations	hibernations
 hibernator	hibernator
 hibernators	hibernators
+hibiscus	hibiscus
 hickory	hickory
 hicks	hicks
 hid	hid
@@ -9040,6 +9081,7 @@ hint	hint
 hints	hints
 hip	hip
 # hipaa	hipaa
+hippopotamus	hippopotamus
 hips	hips
 hire	hire
 hired	hired
@@ -9156,6 +9198,7 @@ honest	honest
 honestly	honestly
 honesty	honesty
 honey	honey
+honeybee	honeybee
 honeymoon	honeymoon
 hong	hong
 Honolulu	Honolulu
@@ -9195,6 +9238,7 @@ horizontal	horizontal
 hormone	hormone
 hormones	hormones
 horn	horn
+hornet	hornet
 horns	horns
 horny	horny
 horoscope	horoscope
@@ -9313,6 +9357,7 @@ hummer	hummer
 humor	humor
 humorous	humorous
 humour	humour
+hump	hump
 Humphrey	Humphrey
 # hun	hun
 hundred	hundred
@@ -9358,6 +9403,7 @@ Hutchinson	Hutchinson
 # hwy	hwy
 # hx	hx
 # hy	hy
+hyacinth	hyacinth
 hyatt	hyatt
 hybrid	hybrid
 Hyde	Hyde
@@ -9434,6 +9480,8 @@ identify	identify
 identifying	identifying
 identities	identities
 identity	identity
+ideogram	ideogram
+ideographic	ideographic
 ideological	ideological
 ideology	ideology
 # idg	idg
@@ -9475,6 +9523,7 @@ illegal	illegal
 illegally	illegally
 illegitimate	illegitimate
 illicit	illicit
+illicitly	illicitly
 Illinois	Illinois
 illiterate	illiterate
 illness	illness
@@ -9659,6 +9708,8 @@ incredibly	incredibly
 increment	increment
 incremental	incremental
 increments	increments
+incubate	incubate
+incubator	incubator
 incubus	incubus
 incumbent	incumbent
 incur	incur
@@ -9804,6 +9855,7 @@ inhabitant	inhabitant
 inhabitants	inhabitants
 inhalation	inhalation
 inhale	inhale
+inhaler	inhaler
 inherent	inherent
 inherently	inherently
 inherit	inherit
@@ -9867,6 +9919,7 @@ insane	insane
 insanity	insanity
 insect	insect
 insects	insects
+insensitive	insensitive
 insert	insert
 inserted	inserted
 inserting	inserting
@@ -10294,7 +10347,7 @@ Janis	Janis
 janitorial	janitorial
 January	January
 Japan	Japan
-japan	japan
+# japan	japan
 Japanese	Japanese
 jar	jar
 Jared	Jared
@@ -10355,6 +10408,7 @@ jess	jess
 Jesse	Jesse
 Jessica	Jessica
 Jessie	Jessie
+jester	jester
 Jesus	Jesus
 jet	jet
 jets	jets
@@ -10714,6 +10768,7 @@ knows	knows
 Knox	Knox
 Knoxville	Knoxville
 # ko	ko
+koala	koala
 Kobe	Kobe
 Koch	Koch
 kodak	kodak
@@ -10969,7 +11024,9 @@ leadership	leadership
 leading	leading
 leads	leads
 leaf	leaf
+leafless	leafless
 leaflet	leaflet
+leafy	leafy
 league	league
 leagues	leagues
 Leah	Leah
@@ -11320,6 +11377,7 @@ lizard	lizard
 # lj	lj
 # lk	lk
 # ll	ll
+llama	llama
 # llc	llc
 Lloyd	Lloyd
 # llp	llp
@@ -11973,6 +12031,7 @@ meadow	meadow
 meadows	meadows
 meal	meal
 meals	meals
+mealy	mealy
 mean	mean
 meaning	meaning
 meaningful	meaningful
@@ -12796,8 +12855,9 @@ nap	nap
 NAPA	NAPA
 napkin	napkin
 Naples	Naples
-napoleon	napoleon
-Napster	Napster
+Napoleon	Napoleon
+# Napster	Napster
+narcotic	narcotic
 Narnia	Narnia
 narration	narration
 narrative	narrative
@@ -13317,6 +13377,7 @@ obstruction	obstruction
 obtain	obtain
 obtained	obtained
 obtaining	obtaining
+obtuse	obtuse
 obvious	obvious
 obviously	obviously
 # oc	oc
@@ -13402,6 +13463,7 @@ ohm	ohm
 # oi	oi
 oil	oil
 oils	oils
+oily	oily
 # oj	oj
 # OK	OK
 ok	ok
@@ -13538,10 +13600,12 @@ Ora	Ora
 oracle	oracle
 oral	oral
 orange	orange
+orangutan	orangutan
 orb	orb
 orbit	orbit
 orbital	orbital
 Orbitz	Orbitz
+orca	orca
 orchard	orchard
 orchestra	orchestra
 orchid	orchid
@@ -13867,6 +13931,7 @@ paperback	paperback
 paperbacks	paperbacks
 papers	papers
 paperwork	paperwork
+papery	papery
 Papua	Papua
 par	par
 para	para
@@ -14669,6 +14734,7 @@ ponds	ponds
 pong	pong
 Pontiac	Pontiac
 pony	pony
+poodle	poodle
 pooh	pooh
 pool	pool
 Poole	Poole
@@ -14692,6 +14758,7 @@ popup	popup
 por	por
 porcelain	porcelain
 porch	porch
+porcupine	porcupine
 pore	pore
 pork	pork
 porn	porn
@@ -14776,6 +14843,7 @@ potential	potential
 potentially	potentially
 potentials	potentials
 pots	pots
+potted	potted
 potter	potter
 pottery	pottery
 pouch	pouch
@@ -15311,6 +15379,7 @@ pudding	pudding
 Pueblo	Pueblo
 puerto	puerto
 puff	puff
+puffer	puffer
 puffy	puffy
 pull	pull
 pulled	pulled
@@ -15498,6 +15567,7 @@ rabbi	rabbi
 rabbit	rabbit
 rabbits	rabbits
 # rac	rac
+raccoon	raccoon
 race	race
 racer	racer
 races	races
@@ -15607,6 +15677,7 @@ rapidity	rapidity
 rapidly	rapidly
 rapids	rapids
 rapper	rapper
+raptor	raptor
 rapture	rapture
 rare	rare
 rarely	rarely
@@ -15798,6 +15869,7 @@ recycle	recycle
 recycled	recycled
 recycling	recycling
 red	red
+reddish	reddish
 redeem	redeem
 redefine	redefine
 redemption	redemption
@@ -16349,6 +16421,7 @@ rhenium	rhenium
 rhetoric	rhetoric
 rheumatoid	rheumatoid
 rhino	rhino
+rhinoceros	rhinoceros
 rhizome	rhizome
 rhode	rhode
 Rhodes	Rhodes
@@ -16500,6 +16573,7 @@ Rockwell	Rockwell
 rocky	rocky
 rod	rod
 rode	rode
+rodent	rodent
 rodeo	rodeo
 Rodgers	Rodgers
 Rodney	Rodney
@@ -16557,6 +16631,7 @@ rosemary	rosemary
 Rosen	Rosen
 Rosenberg	Rosenberg
 roses	roses
+rosette	rosette
 rosie	rosie
 Ross	Ross
 Rossi	Rossi
@@ -16650,6 +16725,7 @@ ruling	ruling
 rulings	rulings
 rum	rum
 rumble	rumble
+ruminant	ruminant
 rumor	rumor
 rumors	rumors
 rumour	rumour
@@ -16846,6 +16922,7 @@ Saudi	Saudi
 Saul	Saul
 sauna	sauna
 saunders	saunders
+sauropod	sauropod
 sausage	sausage
 Sauvignon	Sauvignon
 savage	savage
@@ -16980,6 +17057,7 @@ scores	scores
 scoring	scoring
 scorn	scorn
 Scorpio	Scorpio
+scorpion	scorpion
 scotch	scotch
 scotia	scotia
 Scotland	Scotland
@@ -17013,6 +17091,7 @@ screensavers	screensavers
 screenshot	screenshot
 screenshots	screenshots
 screw	screw
+screwdriver	screwdriver
 screwed	screwed
 screws	screws
 scribble	scribble
@@ -17104,6 +17183,7 @@ securities	securities
 security	security
 # sed	sed
 sedan	sedan
+sedative	sedative
 sediment	sediment
 sedimentary	sedimentary
 sediments	sediments
@@ -17118,6 +17198,7 @@ seduction	seduction
 seductions	seductions
 see	see
 seed	seed
+seedling	seedling
 seeds	seeds
 seeing	seeing
 seek	seek
@@ -17168,6 +17249,7 @@ semantic	semantic
 semantics	semantics
 semester	semester
 semi	semi
+semicolon	semicolon
 semiconductor	semiconductor
 semiconductors	semiconductors
 seminar	seminar
@@ -17347,6 +17429,7 @@ sham	sham
 shame	shame
 shameful	shameful
 shampoo	shampoo
+shamrock	shamrock
 Shane	Shane
 shanghai	shanghai
 Shania	Shania
@@ -17492,6 +17575,7 @@ shouted	shouted
 shouting	shouting
 shouts	shouts
 shove	shove
+shovel	shovel
 show	show
 showcase	showcase
 showdown	showdown
@@ -17697,6 +17781,7 @@ skirts	skirts
 skis	skis
 # sku	sku
 skull	skull
+skunk	skunk
 sky	sky
 Skye	Skye
 skyline	skyline
@@ -17708,6 +17793,7 @@ slab	slab
 slack	slack
 slam	slam
 slang	slang
+slant	slant
 slap	slap
 slash	slash
 # slashdot	slashdot
@@ -17743,6 +17829,8 @@ sliding	sliding
 slight	slight
 slightly	slightly
 slim	slim
+slime	slime
+slimy	slimy
 sling	sling
 slip	slip
 slipknot	slipknot
@@ -17757,6 +17845,7 @@ slogan	slogan
 slope	slope
 slopes	slopes
 slot	slot
+sloth	sloth
 slots	slots
 Slovak	Slovak
 Slovakia	Slovakia
@@ -17786,6 +17875,10 @@ smashing	smashing
 # smb	smb
 # smc	smc
 # sme	sme
+smear	smear
+smeared	smeared
+smearing	smearing
+smears	smears
 smell	smell
 smells	smells
 # smes	smes
@@ -17816,6 +17909,7 @@ smuggle	smuggle
 # sn	sn
 snack	snack
 snacks	snacks
+snail	snail
 snake	snake
 snakes	snakes
 snap	snap
@@ -17883,6 +17977,7 @@ softly	softly
 software	software
 SOHO	SOHO
 soil	soil
+soiled	soiled
 soils	soils
 # sol	sol
 solar	solar
@@ -17901,6 +17996,7 @@ solicitors	solicitors
 solid	solid
 solidarity	solidarity
 solids	solids
+solidus	solidus
 solitaire	solitaire
 solitary	solitary
 solo	solo
@@ -18162,6 +18258,8 @@ spotted	spotted
 spotting	spotting
 spouse	spouse
 spouses	spouses
+spout	spout
+spouting	spouting
 # spp	spp
 spray	spray
 spread	spread
@@ -18373,6 +18471,7 @@ sterling	sterling
 stern	stern
 steroid	steroid
 steroids	steroids
+stethoscope	stethoscope
 Steve	Steve
 Steven	Steven
 Stevens	Stevens
@@ -18393,6 +18492,7 @@ sticky	sticky
 stiff	stiff
 still	still
 stills	stills
+stimulant	stimulant
 stimulate	stimulate
 stimulated	stimulated
 stimulating	stimulating
@@ -18776,6 +18876,7 @@ suppose	suppose
 supposed	supposed
 supposedly	supposedly
 suppress	suppress
+suppressant	suppressant
 suppressed	suppressed
 suppression	suppression
 supra	supra
@@ -18961,6 +19062,7 @@ synthetic	synthetic
 Syracuse	Syracuse
 Syria	Syria
 Syrian	Syrian
+syringe	syringe
 syrup	syrup
 # SYS	SYS
 system	system
@@ -19044,6 +19146,7 @@ Tampa	Tampa
 tan	tan
 tandem	tandem
 tang	tang
+tangerine	tangerine
 tangible	tangible
 tangle	tangle
 tango	tango
@@ -19052,6 +19155,8 @@ tanker	tanker
 tanks	tanks
 tanned	tanned
 tanner	tanner
+tannic	tannic
+tannin	tannin
 tanning	tanning
 tantalum	tantalum
 Tanya	Tanya
@@ -19095,12 +19200,14 @@ tautology	tautology
 tavern	tavern
 # tawnee	tawnee
 tax	tax
+taxa	taxa
 taxable	taxable
 taxation	taxation
 taxes	taxes
 taxi	taxi
 taxis	taxis
 taxman	taxman
+taxon	taxon
 taxonomy	taxonomy
 taxpayer	taxpayer
 taxpayers	taxpayers
@@ -19533,6 +19640,9 @@ Timor	Timor
 Timothy	Timothy
 tin	tin
 Tina	Tina
+tinge	tinge
+tinged	tinged
+tinges	tinges
 tiny	tiny
 tion	tion
 # tional	tional
@@ -20715,6 +20825,7 @@ Virginia	Virginia
 Virginian	Virginian
 virgins	virgins
 Virgo	Virgo
+virgule	virgule
 virtual	virtual
 virtually	virtually
 virtue	virtue
@@ -20724,6 +20835,7 @@ viruses	viruses
 # vis	vis
 Visa	Visa
 Visas	Visas
+viscid	viscid
 viscous	viscous
 visibility	visibility
 visible	visible
@@ -21238,7 +21350,11 @@ wills	wills
 willy	willy
 Wilmington	Wilmington
 Wilson	Wilson
+wilt	wilt
+wilted	wilted
+wilting	wilting
 Wilton	Wilton
+wilts	wilts
 Wiltshire	Wiltshire
 Wimbledon	Wimbledon
 win	win
