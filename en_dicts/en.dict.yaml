@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-05-05"
+version: "2025-05-07"
 sort: by_weight
 ...
 # +_+
@@ -733,7 +733,9 @@ amortization	amortization
 amount	amount
 amounts	amounts
 amp	amp
-ampland	ampland
+amphetamine	amphetamine
+amphora	amphora
+# ampland	ampland
 ample	ample
 amplification	amplification
 amplified	amplified
@@ -891,9 +893,10 @@ anticipated	anticipated
 anticipation	anticipation
 antigen	antigen
 antigens	antigens
-antigua	antigua
+Antigua	Antigua
 Antilles	Antilles
 antimony	antimony
+antiquated	antiquated
 antique	antique
 antiques	antiques
 antitrust	antitrust
@@ -3353,7 +3356,7 @@ China	China
 # china	china
 Chinatown	Chinatown
 Chinese	Chinese
-Ching	Ching
+# Ching	Ching
 chip	chip
 chipmunk	chipmunk
 chips	chips
@@ -3949,6 +3952,7 @@ completing	completing
 completion	completion
 complex	complex
 complexes	complexes
+complexion	complexion
 complexity	complexity
 compliance	compliance
 compliant	compliant
@@ -4764,6 +4768,7 @@ Cunningham	Cunningham
 cunt	cunt
 cup	cup
 cupboard	cupboard
+cupcake	cupcake
 cuprum	cuprum
 cups	cups
 cur	cur
@@ -4796,6 +4801,7 @@ curved	curved
 curves	curves
 cushion	cushion
 cushions	cushions
+custard	custard
 custodian	custodian
 custody	custody
 custom	custom
@@ -5746,6 +5752,7 @@ disturbed	disturbed
 disturbing	disturbing
 dit	dit
 ditch	ditch
+ditto	ditto
 div	div
 diva	diva
 dive	dive
@@ -5801,7 +5808,7 @@ doctoral	doctoral
 doctorate	doctorate
 doctors	doctors
 doctrine	doctrine
-docume	docume
+# docume	docume
 document	document
 documentaries	documentaries
 documentary	documentary
@@ -5894,6 +5901,7 @@ doubtless	doubtless
 doubts	doubts
 Doug	Doug
 dough	dough
+doughnut	doughnut
 doughty	doughty
 Douglas	Douglas
 dove	dove
@@ -6630,7 +6638,7 @@ epidemiology	epidemiology
 epilepsy	epilepsy
 epilogue	epilogue
 epinephrine	epinephrine
-epinions	epinions
+# epinions	epinions
 episcopal	episcopal
 episode	episode
 episodes	episodes
@@ -6696,6 +6704,7 @@ erupt	erupt
 # esa	esa
 Esc	Esc
 escalate	escalate
+escalator	escalator
 escape	escape
 escaped	escaped
 escapes	escapes
@@ -7504,6 +7513,7 @@ flagship	flagship
 flagstaff	flagstaff
 flair	flair
 flake	flake
+flaky	flaky
 flame	flame
 flames	flames
 flaming	flaming
@@ -7984,8 +7994,9 @@ fury	fury
 fuse	fuse
 fusion	fusion
 fuss	fuss
+fusty	fusty
 futile	futile
-futuna	futuna
+Futuna	Futuna
 future	future
 futures	futures
 fuzzy	fuzzy
@@ -8317,6 +8328,7 @@ glowing	glowing
 # glu	glu
 glucose	glucose
 glue	glue
+glutinous	glutinous
 # gly	gly
 # gm	gm
 Gmail	Gmail
@@ -8422,6 +8434,7 @@ grace	grace
 graceful	graceful
 gracious	gracious
 grad	grad
+gradation	gradation
 grade	grade
 graded	graded
 graders	graders
@@ -9330,6 +9343,8 @@ hubs	hubs
 HUD	HUD
 huddle	huddle
 Hudson	Hudson
+hue	hue
+hues	hues
 hug	hug
 huge	huge
 Hugh	Hugh
@@ -11991,7 +12006,7 @@ mayo	mayo
 mayonnaise	mayonnaise
 mayor	mayor
 Mayotte	Mayotte
-mazda	mazda
+Mazda	Mazda
 maze	maze
 # mb	mb
 MBA	MBA
@@ -12306,6 +12321,8 @@ mil	mil
 Milan	Milan
 Milano	Milano
 mild	mild
+mildew	mildew
+mildewed	mildewed
 Mildred	Mildred
 mile	mile
 mileage	mileage
@@ -12521,6 +12538,7 @@ mold	mold
 molded	molded
 molding	molding
 Moldova	Moldova
+moldy	moldy
 mole	mole
 molecular	molecular
 molecule	molecule
@@ -12607,7 +12625,8 @@ Mormon	Mormon
 morning	morning
 mornings	mornings
 Moroccan	Moroccan
-morocco	morocco
+Morocco	Morocco
+morphine	morphine
 morphology	morphology
 Morris	Morris
 Morrison	Morrison
@@ -12662,6 +12681,7 @@ motorsports	motorsports
 motorway	motorway
 motto	motto
 mould	mould
+mouldy	mouldy
 mound	mound
 mount	mount
 mountain	mountain
@@ -12786,6 +12806,7 @@ Muslims	Muslims
 must	must
 mustang	mustang
 mustard	mustard
+musty	musty
 mutant	mutant
 mutants	mutants
 mutation	mutation
@@ -13407,6 +13428,8 @@ oceans	oceans
 # oclc	oclc
 # ocr	ocr
 Oct.	Oct.
+octagon	octagon
+octagonal	octagonal
 octave	octave
 octet	octet
 October	October
@@ -14631,6 +14654,7 @@ plumbum	plumbum
 plump	plump
 plunder	plunder
 plunge	plunge
+plunger	plunger
 plural	plural
 plus	plus
 plush	plush
@@ -14902,6 +14926,7 @@ pranks	pranks
 prankster	prankster
 pranksters	pranksters
 pratt	pratt
+prawn	prawn
 pray	pray
 prayer	prayer
 prayers	prayers
@@ -16497,6 +16522,9 @@ Ripley	Ripley
 ripped	ripped
 ripper	ripper
 ripple	ripple
+rippled	rippled
+ripples	ripples
+rippling	rippling
 rise	rise
 risen	risen
 rises	rises
@@ -17555,6 +17583,7 @@ shores	shores
 short	short
 shortage	shortage
 shortages	shortages
+shortcake	shortcake
 shortcoming	shortcoming
 shortcut	shortcut
 shortcuts	shortcuts
@@ -19008,6 +19037,10 @@ swinger	swinger
 swingers	swingers
 swinging	swinging
 swings	swings
+swirl	swirl
+swirled	swirled
+swirling	swirling
+swirls	swirls
 Swiss	Swiss
 switch	switch
 switchboard	switchboard
@@ -19643,6 +19676,10 @@ Tina	Tina
 tinge	tinge
 tinged	tinged
 tinges	tinges
+tint	tint
+tinted	tinted
+tinting	tinting
+tints	tints
 tiny	tiny
 tion	tion
 # tional	tional
@@ -20620,6 +20657,8 @@ variants	variants
 variation	variation
 variations	variations
 varied	varied
+variegate	variegate
+variegated	variegated
 varies	varies
 varieties	varieties
 variety	variety
@@ -20833,9 +20872,11 @@ virtues	virtues
 virus	virus
 viruses	viruses
 # vis	vis
-Visa	Visa
-Visas	Visas
+visa	visa
+visas	visas
 viscid	viscid
+viscidity	viscidity
+viscosity	viscosity
 viscous	viscous
 visibility	visibility
 visible	visible
@@ -21709,9 +21750,9 @@ yummy	yummy
 # z	z
 # za	za
 Zach	Zach
-zaire	zaire
+Zaire	Zaire
 Zambia	Zambia
-ZDnet	ZDnet
+# ZDnet	ZDnet
 zeal	zeal
 Zealand	Zealand
 zebra	zebra
