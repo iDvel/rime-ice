@@ -136,6 +136,7 @@ function M.init(env)
         ["gong quan"] = { text = "拱券", comment = "gǒng xuàn" },
         ["pu ru"] = { text = "哺乳", comment = "bǔ rǔ" },
         ["nao zu zhong"] = { text = "脑卒中", comment = "nǎo cù zhòng" },
+        ["fa zhi"] = { text = "阈值", comment = "yù zhí" },
         ["xie hu"] = { text = "潟湖", comment = "xì hú" },
         ["guo pu"] = { text = "果脯", comment = "guǒ fǔ" },
         ["rou pu"] = { text = "肉脯", comment = "ròu fǔ" },
