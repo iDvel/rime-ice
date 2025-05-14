@@ -1,7 +1,6 @@
 # Rime schema
 # encoding: utf-8
 
-
 # 方案说明
 schema:
   schema_id: rime_ice
@@ -13,9 +12,8 @@ schema:
     雾凇拼音
     https://github.com/iDvel/rime-ice
   dependencies:
-    - melt_eng        # 英文输入，作为次翻译器挂载到拼音方案
-    - radical_pinyin  # 部件拆字，反查及辅码
-
+    - melt_eng # 英文输入，作为次翻译器挂载到拼音方案
+    - radical_pinyin # 部件拆字，反查及辅码
 
 # 开关
 # reset: 默认状态。注释掉后，切换窗口时不会重置到默认状态。
@@ -23,25 +21,24 @@ schema:
 # abbrev: 默认的缩写取 states 的第一个字符，abbrev 可自定义一个字符
 switches:
   - name: ascii_mode
-    states: [ 中, Ａ ]
-  - name: ascii_punct  # 中英标点
-    states: [ ¥, $ ]
+    states: [中, Ａ]
+  - name: ascii_punct # 中英标点
+    states: [¥, $]
   - name: traditionalization
-    states: [ 简, 繁 ]
+    states: [简, 繁]
   - name: emoji
-    states: [ 💀, 😄 ]
+    states: [💀, 😄]
     reset: 1
   - name: full_shape
-    states: [ 半角, 全角 ]
-  - name: search_single_char  # search.lua 的功能开关，辅码查词时是否单字优先
+    states: [半角, 全角]
+  - name: search_single_char # search.lua 的功能开关，辅码查词时是否单字优先
     states: [正常, 单字]
     abbrev: [词, 单]
-
 
 # 输入引擎
 engine:
   processors:
-    - lua_processor@*select_character  # 以词定字
+    - lua_processor@*select_character # 以词定字
     - ascii_composer
     - recognizer
     - key_binder
@@ -54,48 +51,46 @@ engine:
     - ascii_segmentor
     - matcher
     - abc_segmentor
-    - affix_segmentor@radical_lookup  # 部件拆字自定义 tag
+    - affix_segmentor@radical_lookup # 部件拆字自定义 tag
     - punct_segmentor
     - fallback_segmentor
   translators:
     - punct_translator
     - script_translator
-    - lua_translator@*date_translator    # 时间、日期、星期
-    - lua_translator@*lunar              # 农历
-    - table_translator@custom_phrase     # 自定义短语 custom_phrase.txt
-    - table_translator@melt_eng          # 英文输入
-    - table_translator@cn_en             # 中英混合词汇
-    - table_translator@radical_lookup    # 部件拆字反查
-    - lua_translator@*unicode            # Unicode
-    - lua_translator@*number_translator  # 数字、金额大写
-    - lua_translator@*calc_translator    # 计算器
-    - lua_translator@*force_gc           # 暴力 GC
+    - lua_translator@*date_translator # 时间、日期、星期
+    - lua_translator@*lunar # 农历
+    - table_translator@custom_phrase # 自定义短语 custom_phrase.txt
+    - table_translator@melt_eng # 英文输入
+    - table_translator@cn_en # 中英混合词汇
+    - table_translator@radical_lookup # 部件拆字反查
+    - lua_translator@*unicode # Unicode
+    - lua_translator@*number_translator # 数字、金额大写
+    - lua_translator@*calc_translator # 计算器
+    - lua_translator@*force_gc # 暴力 GC
   filters:
-    - lua_filter@*corrector                         # 错音错字提示
-    - reverse_lookup_filter@radical_reverse_lookup  # 部件拆字滤镜
-    - lua_filter@*autocap_filter                    # 英文自动大写
-    - lua_filter@*v_filter                          # v 模式 symbols 优先
-    - lua_filter@*pin_cand_filter                   # 置顶候选项（顺序要求：置顶候选项 > Emoji > 简繁切换）
-    - lua_filter@*long_word_filter                  # 长词优先（顺序要求：长词优先 > Emoji）
-    - lua_filter@*reduce_english_filter             # 降低部分英语单词在候选项的位置
-    - simplifier@emoji                              # Emoji
-    - simplifier@traditionalize                     # 简繁切换
-    - lua_filter@*search@radical_pinyin             # 部件拆字辅码
-    - uniquifier                                    # 去重
-
+    - lua_filter@*cn_en_spacer # 中英混合词汇的空格处理
+    - lua_filter@*corrector # 错音错字提示
+    - reverse_lookup_filter@radical_reverse_lookup # 部件拆字滤镜
+    - lua_filter@*autocap_filter # 英文自动大写
+    - lua_filter@*v_filter # v 模式 symbols 优先
+    - lua_filter@*pin_cand_filter # 置顶候选项（顺序要求：置顶候选项 > Emoji > 简繁切换）
+    - lua_filter@*long_word_filter # 长词优先（顺序要求：长词优先 > Emoji）
+    - lua_filter@*reduce_english_filter # 降低部分英语单词在候选项的位置
+    - simplifier@emoji # Emoji
+    - simplifier@traditionalize # 简繁切换
+    - lua_filter@*search@radical_pinyin # 部件拆字辅码
+    - uniquifier # 去重
 
 # Lua 配置: 日期、时间、星期、ISO 8601、时间戳的触发关键字
 date_translator:
-  date: rq       # 日期： 2022-11-29
-  time: sj       # 时间： 18:13
-  week: xq       # 星期： 星期二
-  datetime: dt   # ISO 8601： 2022-11-29T18:13:11+08:00
-  timestamp: ts  # 时间戳： 1669716794
-
+  date: rq # 日期： 2022-11-29
+  time: sj # 时间： 18:13
+  week: xq # 星期： 星期二
+  datetime: dt # ISO 8601： 2022-11-29T18:13:11+08:00
+  timestamp: ts # 时间戳： 1669716794
 
 # Lua 配置：农历的触发关键字
-lunar: nl  # 农历： 二〇二三年冬月二十 癸卯年（兔）冬月二十
-
+lunar: nl # 农历： 二〇二三年冬月二十 癸卯年（兔）冬月二十
 
 # Lua 配置：长词优先
 # 提升 count 个词语，插入到第 idx 个位置。
@@ -103,7 +98,6 @@ lunar: nl  # 农历： 二〇二三年冬月二十 癸卯年（兔）冬月二�
 long_word_filter:
   count: 2
   idx: 4
-
 
 # Lua 配置: 降低部分英语单词在候选项的位置。
 # 详细介绍 https://dvel.me/posts/make-rime-en-better/#短单词置顶的问题
@@ -115,32 +109,293 @@ long_word_filter:
 # none    不降低任何单词，相当于没有启用这个 Lua
 # （匹配的是编码，不是单词）
 reduce_english_filter:
-  mode: custom  # all | custom | none
-  idx: 2        # 降低到第 idx 个位置
+  mode: custom # all | custom | none
+  idx: 2 # 降低到第 idx 个位置
   # 自定义的单词列表，示例列表没有降低部分常用单词，如 and cat mail Mac but bad shit ……
   words: [
-    aid, ann,
-    bail, bait, bam, band, bans, bat, bay, bend, bent, benz, bib, bid, bien, biz, boc, bop, bos, bud, buf, bach, bench, bush,
-    cab, cad, cain, cam, cans, cap, cef, chad, chan, chap, chef, cher, chew, chic, chin, chip, chit, coup, cum, cunt, cur, couch,
-    dab, dag, dal, dam, dent, dew, dial, diet, dim, din, dip, dis, dit, doug, dub, dug, dunn, don,
-    fab, fax, fob, fog, foul, fur,
-    gag, gail, gain, gal, gam, gaol, ged, gel, ger, guam, gus, gut,
-    hail, ham, hank, hans, hat, hay, heil, heir, hem, hep, hud, hum, hung, hunk, hut, hush,
-    jim, jug,
-    kat,
-    lab, lad, lag, laid, lam, laos, lap, lat, lax, lay, led, leg, lex, liam, lib, lid, lied, lien, lies, linn, lip, lit, liz, lob, lug, lund, lung, lux, lash, loch, lush,
-    mag, maid, mann, mar, mat, med, mel, mend, mens, ment, mil, mins, mint, mob, moc, mop, mos, mot, mud, mug, mum, mesh,
-    nap, nat, nay, neil, nib, nip, noun, nous, nun, nut, nail, nash,
-    pac, paid, pail, pain, pair, pak, pal, pam, pans, pant, pap, par, pat, paw, pax, pens, pic, pier, pies, pins, pint, pit, pix, pod, pop, pos, pot, pour, pow, pub, pinch, pouch,
-    rand, rant, rent, rep, res, ret, rex, rib, rid, rig, rim, rub, rug, rum, runc, runs, ranch,
-    sac, sail, sal, sam, sans, sap, saw, sax, sew, sham, shaw, shin, sig, sin, sip, sis, suit, sung, suns, sup, sur, sus,
-    tad, tail, taj, tar, tax, tec, ted, tel, ter, tex, tic, tied, tier, ties, tim, tin, tit, tour, tout, tum,
-    wag, wand, womens, wap, wax, weir, won, went,
-    yan, yen,
-    zach,
-    my, mt, dj, as, js, cs, ak, ps, cd, cn, hk, bt, pk, ml  # 一些由算法转写的大写单词编码，会影响简拼（全拼专有）
-  ]
-
+      aid,
+      ann,
+      bail,
+      bait,
+      bam,
+      band,
+      bans,
+      bat,
+      bay,
+      bend,
+      bent,
+      benz,
+      bib,
+      bid,
+      bien,
+      biz,
+      boc,
+      bop,
+      bos,
+      bud,
+      buf,
+      bach,
+      bench,
+      bush,
+      cab,
+      cad,
+      cain,
+      cam,
+      cans,
+      cap,
+      cef,
+      chad,
+      chan,
+      chap,
+      chef,
+      cher,
+      chew,
+      chic,
+      chin,
+      chip,
+      chit,
+      coup,
+      cum,
+      cunt,
+      cur,
+      couch,
+      dab,
+      dag,
+      dal,
+      dam,
+      dent,
+      dew,
+      dial,
+      diet,
+      dim,
+      din,
+      dip,
+      dis,
+      dit,
+      doug,
+      dub,
+      dug,
+      dunn,
+      don,
+      fab,
+      fax,
+      fob,
+      fog,
+      foul,
+      fur,
+      gag,
+      gail,
+      gain,
+      gal,
+      gam,
+      gaol,
+      ged,
+      gel,
+      ger,
+      guam,
+      gus,
+      gut,
+      hail,
+      ham,
+      hank,
+      hans,
+      hat,
+      hay,
+      heil,
+      heir,
+      hem,
+      hep,
+      hud,
+      hum,
+      hung,
+      hunk,
+      hut,
+      hush,
+      jim,
+      jug,
+      kat,
+      lab,
+      lad,
+      lag,
+      laid,
+      lam,
+      laos,
+      lap,
+      lat,
+      lax,
+      lay,
+      led,
+      leg,
+      lex,
+      liam,
+      lib,
+      lid,
+      lied,
+      lien,
+      lies,
+      linn,
+      lip,
+      lit,
+      liz,
+      lob,
+      lug,
+      lund,
+      lung,
+      lux,
+      lash,
+      loch,
+      lush,
+      mag,
+      maid,
+      mann,
+      mar,
+      mat,
+      med,
+      mel,
+      mend,
+      mens,
+      ment,
+      mil,
+      mins,
+      mint,
+      mob,
+      moc,
+      mop,
+      mos,
+      mot,
+      mud,
+      mug,
+      mum,
+      mesh,
+      nap,
+      nat,
+      nay,
+      neil,
+      nib,
+      nip,
+      noun,
+      nous,
+      nun,
+      nut,
+      nail,
+      nash,
+      pac,
+      paid,
+      pail,
+      pain,
+      pair,
+      pak,
+      pal,
+      pam,
+      pans,
+      pant,
+      pap,
+      par,
+      pat,
+      paw,
+      pax,
+      pens,
+      pic,
+      pier,
+      pies,
+      pins,
+      pint,
+      pit,
+      pix,
+      pod,
+      pop,
+      pos,
+      pot,
+      pour,
+      pow,
+      pub,
+      pinch,
+      pouch,
+      rand,
+      rant,
+      rent,
+      rep,
+      res,
+      ret,
+      rex,
+      rib,
+      rid,
+      rig,
+      rim,
+      rub,
+      rug,
+      rum,
+      runc,
+      runs,
+      ranch,
+      sac,
+      sail,
+      sal,
+      sam,
+      sans,
+      sap,
+      saw,
+      sax,
+      sew,
+      sham,
+      shaw,
+      shin,
+      sig,
+      sin,
+      sip,
+      sis,
+      suit,
+      sung,
+      suns,
+      sup,
+      sur,
+      sus,
+      tad,
+      tail,
+      taj,
+      tar,
+      tax,
+      tec,
+      ted,
+      tel,
+      ter,
+      tex,
+      tic,
+      tied,
+      tier,
+      ties,
+      tim,
+      tin,
+      tit,
+      tour,
+      tout,
+      tum,
+      wag,
+      wand,
+      womens,
+      wap,
+      wax,
+      weir,
+      won,
+      went,
+      yan,
+      yen,
+      zach,
+      my,
+      mt,
+      dj,
+      as,
+      js,
+      cs,
+      ak,
+      ps,
+      cd,
+      cn,
+      hk,
+      bt,
+      pk,
+      ml, # 一些由算法转写的大写单词编码，会影响简拼（全拼专有）
+    ]
 
 # Lua 配置: 置顶候选项
 # 注释太长了，请参考 pin_cand_filter.lua 开头的说明书。
@@ -282,35 +537,32 @@ pin_cand_filter:
   - sms	什么是
   - sma	什么啊
 
-
 # 主翻译器，拼音
 translator:
-  dictionary: rime_ice         # 挂载词库 rime_ice.dict.yaml
+  dictionary: rime_ice # 挂载词库 rime_ice.dict.yaml
   enable_word_completion: true # 大于 4 音节的词条自动补全，librime > 1.11.2
-  spelling_hints: 8            # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
-  always_show_comments: true   # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。
-  initial_quality: 1.2         # 拼音的权重应该比英文大
-  comment_format:              # 标记拼音注释，供 corrector.lua 做判断用
+  spelling_hints: 8 # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
+  always_show_comments: true # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。
+  initial_quality: 1.2 # 拼音的权重应该比英文大
+  comment_format: # 标记拼音注释，供 corrector.lua 做判断用
     - xform/^/［/
     - xform/$/］/
-  preedit_format:              # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
-    - xform/([jqxy])v/$1u/     # 显示为 ju qu xu yu
+  preedit_format: # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
+    - xform/([jqxy])v/$1u/ # 显示为 ju qu xu yu
     # - xform/([nl])v/$1ü/     # 显示为 nü lü
     # - xform/([nl])ue/$1üe/   # 显示为 nüe lüe
-    - xform/([nl])v/$1v/       # 显示为 nv lv
-    - xform/([nl])ue/$1ve/     # 显示为 nve lve
-    - xform/(?<=[A-Z])\s(?=[A-Z])//  # 消除大写字母之间的空格
-
+    - xform/([nl])v/$1v/ # 显示为 nv lv
+    - xform/([nl])ue/$1ve/ # 显示为 nve lve
+    - xform/(?<=[A-Z])\s(?=[A-Z])// # 消除大写字母之间的空格
 
 # 次翻译器，英文
 melt_eng:
-  dictionary: melt_eng     # 挂载词库 melt_eng.dict.yaml
-  enable_sentence: false   # 禁止造句
-  enable_user_dict: false  # 禁用用户词典
-  initial_quality: 1.1     # 初始权重
-  comment_format:          # 自定义提示码
-    - xform/.*//           # 清空提示码
-
+  dictionary: melt_eng # 挂载词库 melt_eng.dict.yaml
+  enable_sentence: false # 禁止造句
+  enable_user_dict: false # 禁用用户词典
+  initial_quality: 1.1 # 初始权重
+  comment_format: # 自定义提示码
+    - xform/.*// # 清空提示码
 
 # 中英混合词汇
 cn_en:
@@ -323,31 +575,27 @@ cn_en:
   comment_format:
     - xform/^.+$//
 
-
 # 自定义短语：custom_phrase.txt
 custom_phrase:
   dictionary: ""
-  user_dict: custom_phrase  # 可以修改这里，改成自己的 txt 文件
-  db_class: stabledb        # 只读数据库，无法动态调频；设为 tabledb 可以动态调频
-  enable_completion: false  # 补全提示
-  enable_sentence: false    # 禁止造句
-  initial_quality: 99       # custom_phrase 的权重应该比 pinyin 和 melt_eng 大
-
+  user_dict: custom_phrase # 可以修改这里，改成自己的 txt 文件
+  db_class: stabledb # 只读数据库，无法动态调频；设为 tabledb 可以动态调频
+  enable_completion: false # 补全提示
+  enable_sentence: false # 禁止造句
+  initial_quality: 99 # custom_phrase 的权重应该比 pinyin 和 melt_eng 大
 
 # Emoji
 emoji:
-  option_name: emoji         # 对应 switches 中的 name
-  opencc_config: emoji.json  # 选择要加载的 OpenCC 配置
-  inherit_comment: false     # 在 corrector.lua 及反查中，emoji 的 comment 显示为空
-
+  option_name: emoji # 对应 switches 中的 name
+  opencc_config: emoji.json # 选择要加载的 OpenCC 配置
+  inherit_comment: false # 在 corrector.lua 及反查中，emoji 的 comment 显示为空
 
 # 简繁切换
 traditionalize:
-  option_name: traditionalization  # 对应 switches 中的 name
-  opencc_config: s2t.json          # s2t.json | s2hk.json | s2tw.json | s2twp.json （Rime 内置配置，在程序目录可找到）
-  tips: none                       # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
-  tags: [ abc, number, gregorian_to_lunar ]  # 限制在对应 tag，不对其他如反查的内容做简繁转换
-
+  option_name: traditionalization # 对应 switches 中的 name
+  opencc_config: s2t.json # s2t.json | s2hk.json | s2tw.json | s2twp.json （Rime 内置配置，在程序目录可找到）
+  tips: none # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
+  tags: [abc, number, gregorian_to_lunar] # 限制在对应 tag，不对其他如反查的内容做简繁转换
 
 # 标点符号
 # punctuator 下面的三个子项：
@@ -356,27 +604,26 @@ traditionalize:
 #   symbols    Rime 的预设配置是以 '/' 前缀开头输出一系列字符，自定义的 symbols_v.yaml 修改成了 'v' 开头。
 # 以及新版 digit_separators 相关的属性
 punctuator:
-  __include: default:/punctuator               # 从 default.yaml 导入 punctuator 的所有配置，为了引用 digit_separators 等属性
+  __include: default:/punctuator # 从 default.yaml 导入 punctuator 的所有配置，为了引用 digit_separators 等属性
   full_shape:
-    __include: default:/punctuator/full_shape  # 从 default.yaml 导入配置
+    __include: default:/punctuator/full_shape # 从 default.yaml 导入配置
   half_shape:
-    __include: default:/punctuator/half_shape  # 从 default.yaml 导入配置
+    __include: default:/punctuator/half_shape # 从 default.yaml 导入配置
   symbols:
-    __include: symbols_v:/symbols              # 从 symbols_v.yaml 导入配置
-
+    __include: symbols_v:/symbols # 从 symbols_v.yaml 导入配置
 
 # 部件拆字反查
 radical_lookup:
   tag: radical_lookup
   dictionary: radical_pinyin
   enable_user_dict: false
-  prefix: "uU"  # 反查前缀（反查时前缀会消失影响打英文所以设定为两个字母，或可改成一个非字母符号），与 recognizer/patterns/radical_lookup 匹配
+  prefix: "uU" # 反查前缀（反查时前缀会消失影响打英文所以设定为两个字母，或可改成一个非字母符号），与 recognizer/patterns/radical_lookup 匹配
   tips: "  〔拆字〕"
   comment_format:
     - erase/^.*$//
 # 部件拆字滤镜
 radical_reverse_lookup:
-  tags: [ radical_lookup ]
+  tags: [radical_lookup]
   # dictionary 为拼音标注来源，目前是显示本方案词库的注音。
   # 可去部件拆字方案下载更全的、带声调的、已编译好的词典： https://github.com/mirtlecn/rime-radical-pinyin#反查带声调注音
   dictionary: rime_ice
@@ -384,39 +631,35 @@ radical_reverse_lookup:
   #  - xform/^/(/
   #  - xform/$/)/
 
-
 # 处理符合特定规则的输入码，如网址、反查
 recognizer:
-  import_preset: default                # 从 default.yaml 继承通用的
-  patterns:                             # 再增加方案专有的：
-    punct: "^v([0-9]|10|[A-Za-z]+)$"    # 响应 symbols_v.yaml 的 symbols，用 'v' 替换 '/'
-    radical_lookup: "^uU[a-z]+$"        # 响应部件拆字的反查，触发前缀与 radical_lookup/prefix 匹配
-    unicode: "^U[a-f0-9]+"              # 脚本将自动获取第 2 个字符 U 作为触发前缀，响应 lua_translator@*unicode，输出 Unicode 字符
-    number: "^R[0-9]+[.]?[0-9]*"        # 脚本将自动获取第 2 个字符 R 作为触发前缀，响应 lua_translator@*number_translator，数字金额大写
-    calculator: "^cC.+"                 # 响应 lua_translator@*calc_translator，计算器。前缀设定项 calculator/prefix
-    gregorian_to_lunar: "^N[0-9]{1,8}"  # 脚本将自动获取第 2 个字符 N 作为触发前缀，响应 lua_translator@*lunar，公历转农历，输入 N20240115 得到「二〇二三年腊月初五」
-
+  import_preset: default # 从 default.yaml 继承通用的
+  patterns: # 再增加方案专有的：
+    punct: "^v([0-9]|10|[A-Za-z]+)$" # 响应 symbols_v.yaml 的 symbols，用 'v' 替换 '/'
+    radical_lookup: "^uU[a-z]+$" # 响应部件拆字的反查，触发前缀与 radical_lookup/prefix 匹配
+    unicode: "^U[a-f0-9]+" # 脚本将自动获取第 2 个字符 U 作为触发前缀，响应 lua_translator@*unicode，输出 Unicode 字符
+    number: "^R[0-9]+[.]?[0-9]*" # 脚本将自动获取第 2 个字符 R 作为触发前缀，响应 lua_translator@*number_translator，数字金额大写
+    calculator: "^cC.+" # 响应 lua_translator@*calc_translator，计算器。前缀设定项 calculator/prefix
+    gregorian_to_lunar: "^N[0-9]{1,8}" # 脚本将自动获取第 2 个字符 N 作为触发前缀，响应 lua_translator@*lunar，公历转农历，输入 N20240115 得到「二〇二三年腊月初五」
 
 # 从 default 继承快捷键
 key_binder:
-  import_preset: default  # 从 default.yaml 继承通用的
-  search: "`"             # 辅码引导符，要添加到 speller/alphabet
+  import_preset: default # 从 default.yaml 继承通用的
+  search: "`" # 辅码引导符，要添加到 speller/alphabet
   # bindings:             # 也可以再增加方案专有的快捷键
-
 
 # editor 用来定制操作键的行为，以下是默认行为 https://github.com/rime/librime/blob/master/src/rime/gear/editor.cc
 editor:
   bindings:
-    space: confirm                        # 空格键：上屏候选项
-    Return: commit_raw_input              # 回车键：上屏原始输入
-    Control+Return: commit_script_text    # Ctrl+回车键：上屏变换后输入（经过 preedit_format 转换的）
-    Control+Shift+Return: commit_comment  # Ctrl+Shift+回车键：上屏 comment
-    BackSpace: revert                     # 退格键：向前删除（撤消上次输入）
-    Delete: delete                        # Delete 键：向后删除
-    Control+BackSpace: back_syllable      # Ctrl+退格键：删除一个音节
-    Control+Delete: delete_candidate      # Ctrl+Delete键：删除或降权候选项
-    Escape: cancel                        # Esc 键：取消输入
-
+    space: confirm # 空格键：上屏候选项
+    Return: commit_raw_input # 回车键：上屏原始输入
+    Control+Return: commit_script_text # Ctrl+回车键：上屏变换后输入（经过 preedit_format 转换的）
+    Control+Shift+Return: commit_comment # Ctrl+Shift+回车键：上屏 comment
+    BackSpace: revert # 退格键：向前删除（撤消上次输入）
+    Delete: delete # Delete 键：向后删除
+    Control+BackSpace: back_syllable # Ctrl+退格键：删除一个音节
+    Control+Delete: delete_candidate # Ctrl+Delete键：删除或降权候选项
+    Escape: cancel # Esc 键：取消输入
 
 # 拼写设定
 speller:
@@ -424,7 +667,7 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA`
   # initials 定义仅作为始码的按键，排除 ` 让单个的 ` 可以直接上屏
   initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
-  delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
+  delimiter: " '" # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
     ### 模糊音
     # 声母
@@ -473,11 +716,11 @@ speller:
 
     ### 超级简拼
     - erase/^hm$/ # 响应超级简拼，取消「噷 hm」的独占（如果拼音词库有这个音节的话，雾凇里没有）
-    - erase/^m$/  # 响应超级简拼，取消「呣 m」的独占（如果拼音词库有这个音节的话，雾凇里没有）
-    - erase/^n$/  # 响应超级简拼，取消「嗯 n」的独占（如果拼音词库有这个音节的话，雾凇里没有）
+    - erase/^m$/ # 响应超级简拼，取消「呣 m」的独占（如果拼音词库有这个音节的话，雾凇里没有）
+    - erase/^n$/ # 响应超级简拼，取消「嗯 n」的独占（如果拼音词库有这个音节的话，雾凇里没有）
     - erase/^ng$/ # 响应超级简拼，取消「嗯 ng」的独占（如果拼音词库有这个音节的话，雾凇里没有）
-    - abbrev/^([a-z]).+$/$1/   # 超级简拼
-    - abbrev/^([zcs]h).+$/$1/  # 超级简拼中，zh ch sh 视为整体（ch'sh → 城市），而不是像这样分开（c'h's'h → 吃好睡好）。
+    - abbrev/^([a-z]).+$/$1/ # 超级简拼
+    - abbrev/^([zcs]h).+$/$1/ # 超级简拼中，zh ch sh 视为整体（ch'sh → 城市），而不是像这样分开（c'h's'h → 吃好睡好）。
 
     ### v u 转换
     # 雾凇的词库严格按照正确的 u v(ü) 注音的，下面两行支持使用错误的拼音，例如 qv nue 来响应 qu nve
@@ -488,11 +731,11 @@ speller:
     - derive/^([jqxy])v/$1u/
 
     ### 自动纠错
-########## START 这几个有副作用的规则圈起来，方便取舍
+    ########## START 这几个有副作用的规则圈起来，方便取舍
     # 这些规则对全拼简拼混输有副作用：如「x'ai 喜爱」被纠错为「xia 下」
     # zh、ch、sh
-    - derive/([zcs])h(a|e|i|u|ai|ei|an|en|ou|uo|ua|un|ui|uan|uai|uang|ang|eng|ong)$/h$1$2/  # hzi → zhi
-    - derive/([zcs])h([aeiu])$/$1$2h/  # zih → zhi
+    - derive/([zcs])h(a|e|i|u|ai|ei|an|en|ou|uo|ua|un|ui|uan|uai|uang|ang|eng|ong)$/h$1$2/ # hzi → zhi
+    - derive/([zcs])h([aeiu])$/$1$2h/ # zih → zhi
     # # ia
     # - derive/([qjx])ia$/$1ai/  # qai → qia
     # # an
@@ -505,13 +748,13 @@ speller:
     # - derive/([qrtysdghjklzxc])un$/$1nu/  # qnu → qun
     # # ian
     # - derive/([qtpdjlxbnm])ian$/$1ain/
-########## END
+    ########## END
     # ai
-    - derive/^([wghk])ai$/$1ia/  # wia → wai
+    - derive/^([wghk])ai$/$1ia/ # wia → wai
     # ei
-    - derive/([wfghkz])ei$/$1ie/  # wie → wei
+    - derive/([wfghkz])ei$/$1ie/ # wie → wei
     # ie
-    - derive/([jqx])ie$/$1ei/  # jei → jie
+    - derive/([jqx])ie$/$1ei/ # jei → jie
     # ao
     - derive/([rtypsdghklzcbnm])ao$/$1oa/
     # ou
