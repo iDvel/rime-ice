@@ -22,23 +22,36 @@ function select.func(key, env)
         and (context:is_composing() or context:has_menu())
         and (env.first_key or env.last_key)
     then
-        local text = context.input
+        local candidate = context.input
         if context:get_selected_candidate() then
-            text = context:get_selected_candidate().text
+            candidate = context:get_selected_candidate().text
         end
-        if utf8.len(text) > 1 then
+        if utf8.len(candidate) > 1 then
+            local selected = ""
             if (key:repr() == env.first_key) then
-                engine:commit_text(text:sub(1, utf8.offset(text, 2) - 1))
-                context:clear()
-                return 1
+                selected = candidate:sub(1, utf8.offset(candidate, 2) - 1)
             elseif (key:repr() == env.last_key) then
-                engine:commit_text(text:sub(utf8.offset(text, -1)))
+                selected = candidate:sub(utf8.offset(candidate, -1))
+            else
+                return 2
+            end
+            local committed = context:get_commit_text()
+            local start_pos, end_pos = committed:find(candidate)
+            if start_pos and end_pos then
+                local part1 = committed:sub(1, end_pos):gsub(candidate, selected)
+                local part2 = committed:sub(end_pos + 1)
+                engine:commit_text(part1)
                 context:clear()
+                if part2 ~= "" then
+                    context:push_input(part2)
+                end
                 return 1
+            else
+                return 2
             end
         else
             if key:repr() == env.first_key or key:repr() == env.last_key then
-                engine:commit_text(text)
+                engine:commit_text(candidate)
                 context:clear()
                 return 1
             end
