@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2025-04-28"
+version: "2025-05-10"
 sort: by_weight
 ...
 ##### 容错词
@@ -321,6 +321,8 @@ sort: by_weight
 哺乳	pu ru
 脑卒中	nao cu zhong
 脑卒中	nao zu zhong
+阈值	yu zhi
+阈值	fa zhi
 潟湖	xi hu
 潟湖	xie hu
 果脯	guo fu

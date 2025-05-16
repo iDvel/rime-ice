@@ -27,7 +27,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2025-05-07"
+version: "2025-05-10"
 sort: by_weight
 ...
 ### 按需启用
@@ -61,6 +61,7 @@ sort: by_weight
 挼	rua	1
 朊	ruan	1
 辻	shi	1
+亖	si	1
 牠	ta	1
 薙	ti	1
 鿬	tian	1
@@ -4457,8 +4458,8 @@ sort: by_weight
 仫	mu	27
 姥	mu	1
 牟	mu	1
-𧿹	mu	0
-𬭁	mu	0
+𧿹	mu	1
+𬭁	mu	1
 那	na	9929703
 哪	na	998544
 拿	na	958908
@@ -4490,9 +4491,9 @@ sort: by_weight
 南	nan	856521
 喃	nan	132068
 楠	nan	66793
+腩	nan	4859
 囡	nan	3654
 赧	nan	2834
-腩	nan	859
 蝻	nan	34
 萳	nan	23
 婻	nan	1
@@ -8072,9 +8073,9 @@ sort: by_weight
 溠	zha	0
 鲝	zha	0
 齇	zha	0
-寨	zhai	67653
+摘	zhai	64922
 宅	zhai	53376
-摘	zhai	49225
+寨	zhai	47653
 债	zhai	43823
 窄	zhai	34397
 斋	zhai	25200

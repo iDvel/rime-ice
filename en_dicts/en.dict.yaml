@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-05-07"
+version: "2025-05-10"
 sort: by_weight
 ...
 # +_+
@@ -390,6 +390,7 @@ aerosmith	aerosmith
 aerosol	aerosol
 aerospace	aerospace
 # aes	aes
+Aesculapius	Aesculapius
 # aest	aest
 aesthetic	aesthetic
 aesthetics	aesthetics
@@ -1182,6 +1183,7 @@ ascending	ascending
 ascension	ascension
 ascertain	ascertain
 ASCII	ASCII
+Asclepius	Asclepius
 ascribe	ascribe
 ASEAN	ASEAN
 # asf	asf
@@ -2735,6 +2737,7 @@ cad	cad
 cadet	cadet
 Cadillac	Cadillac
 cadmium	cadmium
+caduceus	caduceus
 Caesar	Caesar
 cafe	cafe
 cafes	cafes
@@ -3000,6 +3003,10 @@ cast	cast
 casting	casting
 castle	castle
 castles	castles
+castrate	castrate
+castrated	castrated
+castrates	castrates
+castrating	castrating
 Castro	Castro
 casts	casts
 casual	casual
@@ -5939,6 +5946,7 @@ draft	draft
 drafted	drafted
 drafting	drafting
 drafts	drafts
+drafty	drafty
 drag	drag
 dragged	dragged
 dragging	dragging
@@ -5958,6 +5966,8 @@ dramatically	dramatically
 drank	drank
 draper	draper
 drastic	drastic
+draught	draught
+draughty	draughty
 draw	draw
 drawback	drawback
 drawer	drawer
@@ -7829,7 +7839,7 @@ frank	frank
 Frank	Frank
 Frankfurt	Frankfurt
 Frankie	Frankie
-franklin	franklin
+Franklin	Franklin
 frankly	frankly
 Franz	Franz
 Fraser	Fraser
@@ -10123,6 +10133,7 @@ intoxicating	intoxicating
 intra	intra
 intracellular	intracellular
 intranet	intranet
+intransitive	intransitive
 intravenous	intravenous
 intricate	intricate
 intrigue	intrigue
@@ -13032,6 +13043,7 @@ neurological	neurological
 neurology	neurology
 neurons	neurons
 neuroscience	neuroscience
+neuter	neuter
 neutral	neutral
 neutron	neutron
 Nevada	Nevada
@@ -14551,6 +14563,7 @@ pizza	pizza
 # pk	pk
 pkg	pkg
 # pl	pl
+placard	placard
 place	place
 placebo	placebo
 placed	placed
@@ -16386,7 +16399,7 @@ returns	returns
 reunion	reunion
 reusable	reusable
 reuse	reuse
-reuters	reuters
+Reuters	Reuters
 rev	rev
 reveal	reveal
 revealed	revealed
@@ -18155,6 +18168,10 @@ sparse	sparse
 # spas	spas
 spatial	spatial
 spawn	spawn
+spay	spay
+spayed	spayed
+spaying	spaying
+spays	spays
 # spc	spc
 # spd	spd
 speak	speak
@@ -19875,6 +19892,7 @@ tracing	tracing
 track	track
 trackback	trackback
 trackbacks	trackbacks
+trackball	trackball
 tracked	tracked
 tracker	tracker
 trackers	trackers
@@ -19962,6 +19980,7 @@ transit	transit
 transition	transition
 transitional	transitional
 transitions	transitions
+transitive	transitive
 translate	translate
 translated	translated
 translates	translates
