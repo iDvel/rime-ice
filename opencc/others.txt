@@ -1535,8 +1535,6 @@ rime	rime 㞢
 鼠须管	鼠须管 Squirrel
 小狼毫	小狼毫 Weasel
 仓输入法	仓输入法 Hamster
-apple	apple 
-Apple	Apple 
 纳粹	纳粹 卐
 进击的巨人	进击的巨人 進撃の巨人
 中央电视台	中央电视台 装垫儿台
