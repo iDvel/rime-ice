@@ -872,7 +872,7 @@ VPN	VPN
 virtual private network	VPN
 watchOS	watchOS
 Wi-Fi	Wi-Fi
-WiFi	WiFi
+# WiFi	WiFi
 Widget	Widget
 WiFi Explorer	WiFiExplorer
 WiFi Scanner	WiFiScanner
