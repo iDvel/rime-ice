@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-05-10"
+version: "2025-05-16"
 sort: by_weight
 ...
 # +_+
@@ -1054,6 +1054,7 @@ Arcadian	Arcadian
 arch	arch
 archaeological	archaeological
 archaeology	archaeology
+archaic	archaic
 archbishop	archbishop
 archer	archer
 archery	archery
@@ -1589,6 +1590,7 @@ bag	bag
 baggage	baggage
 Baghdad	Baghdad
 bags	bags
+baguette	baguette
 Bahamas	Bahamas
 Bahrain	Bahrain
 baht	baht
@@ -1829,6 +1831,7 @@ been	been
 beer	beer
 beers	beers
 bees	bees
+beet	beet
 Beethoven	Beethoven
 beetle	beetle
 before	before
@@ -1878,6 +1881,7 @@ Bell	Bell
 Bella	Bella
 belle	belle
 Bellevue	Bellevue
+bellhop	bellhop
 bells	bells
 Bellsouth	Bellsouth
 belly	belly
@@ -2175,6 +2179,7 @@ blossom	blossom
 blouse	blouse
 blow	blow
 blower	blower
+blowfish	blowfish
 blowing	blowing
 blowjob	blowjob
 blowjobs	blowjobs
@@ -2205,6 +2210,7 @@ BMW	BMW
 # bnet	bnet
 # bo	bo
 boa	boa
+boar	boar
 board	board
 boarding	boarding
 boards	boards
@@ -5111,6 +5117,7 @@ deepthroat	deepthroat
 deer	deer
 Deere	Deere
 def	def
+defame	defame
 default	default
 defaults	defaults
 defeat	defeat
@@ -6845,6 +6852,7 @@ evolve	evolve
 evolved	evolved
 evolving	evolving
 # ew	ew
+ewe	ewe
 # ex	ex
 exact	exact
 exactly	exactly
@@ -7986,6 +7994,8 @@ funds	funds
 funeral	funeral
 fungal	fungal
 fungi	fungi
+fungous	fungous
+fungus	fungus
 funk	funk
 funky	funky
 funny	funny
@@ -12284,6 +12294,7 @@ Michigan	Michigan
 mick	mick
 mickey	mickey
 micro	micro
+microbe	microbe
 microbial	microbial
 microbiology	microbiology
 micrometer	micrometer
@@ -12970,6 +12981,7 @@ necessity	necessity
 neck	neck
 necklace	necklace
 necklaces	necklaces
+necktie	necktie
 # ned	ned
 Nederland	Nederland
 Nederlands	Nederlands
@@ -13830,6 +13842,7 @@ overtime	overtime
 overture	overture
 overturn	overturn
 overview	overview
+overwatch	overwatch
 overweight	overweight
 overwhelm	overwhelm
 overwhelmed	overwhelmed
@@ -13866,6 +13879,8 @@ Pablo	Pablo
 PAC	PAC
 pace	pace
 paced	paced
+pacemaker	pacemaker
+pacer	pacer
 pacific	pacific
 pack	pack
 package	package
@@ -15418,6 +15433,7 @@ Pueblo	Pueblo
 puerto	puerto
 puff	puff
 puffer	puffer
+pufferfish	pufferfish
 puffy	puffy
 pull	pull
 pulled	pulled
@@ -18167,6 +18183,7 @@ sparrow	sparrow
 sparse	sparse
 # spas	spas
 spatial	spatial
+spatter	spatter
 spawn	spawn
 spay	spay
 spayed	spayed
@@ -18268,6 +18285,7 @@ spirituality	spirituality
 spit	spit
 spite	spite
 splash	splash
+splatter	splatter
 splendid	splendid
 splinter	splinter
 split	split
@@ -19102,6 +19120,7 @@ syndication	syndication
 syndrome	syndrome
 synergy	synergy
 synonym	synonym
+synonymous	synonymous
 synonyms	synonyms
 synopsis	synopsis
 syntax	syntax
@@ -20187,6 +20206,7 @@ tulip	tulip
 Tulsa	Tulsa
 tum	tum
 tumble	tumble
+tumbler	tumbler
 tummy	tummy
 tumor	tumor
 tumors	tumors
@@ -21012,6 +21032,7 @@ vulnerable	vulnerable
 wacky	wacky
 # waco	waco
 wade	wade
+waffle	waffle
 wag	wag
 wage	wage
 wagering	wagering
@@ -21463,6 +21484,7 @@ wished	wished
 wishes	wishes
 wishing	wishing
 wishlist	wishlist
+wisp	wisp
 wit	wit
 witch	witch
 witches	witches
