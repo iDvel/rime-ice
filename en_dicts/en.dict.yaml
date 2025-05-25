@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-05-16"
+version: "2025-05-20"
 sort: by_weight
 ...
 # +_+
@@ -2408,8 +2408,10 @@ Branson	Branson
 bras	bras
 # Brasil	Brasil
 brass	brass
+brat	brat
 Braun	Braun
 brave	brave
+bravery	bravery
 braves	braves
 bravo	bravo
 Brazil	Brazil
@@ -3318,6 +3320,8 @@ Cheney	Cheney
 # cheng	cheng
 Chennai	Chennai
 cheque	cheque
+chequer	chequer
+chequered	chequered
 cheques	cheques
 Cher	Cher
 cherish	cherish
@@ -6094,6 +6098,7 @@ Dunlop	Dunlop
 Dunn	Dunn
 dunno	dunno
 duo	duo
+dupe	dupe
 duplex	duplex
 duplicate	duplicate
 duplicated	duplicated
@@ -20296,6 +20301,7 @@ typically	typically
 typing	typing
 typist	typist
 typo	typo
+typography	typography
 # tyr	tyr
 tyranny	tyranny
 tyrant	tyrant
