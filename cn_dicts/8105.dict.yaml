@@ -27,7 +27,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2025-05-16"
+version: "2025-05-20"
 sort: by_weight
 ...
 ### 按需启用
@@ -6550,6 +6550,7 @@ sort: by_weight
 崴	wei	1
 洈	wei	1
 螱	wei	1
+遗	wei	1
 𣲗	wei	0
 𫇭	wei	0
 𬀩	wei	0

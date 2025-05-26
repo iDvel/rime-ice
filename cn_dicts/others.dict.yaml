@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2025-05-10"
+version: "2025-05-20"
 sort: by_weight
 ...
 ##### 容错词
@@ -289,6 +289,10 @@ sort: by_weight
 缩砂密	suo sha mi
 迫击炮	pai ji pao
 迫击炮	po ji pao
+封禅	feng shan
+封禅	feng chan
+芫荽	yan sui
+芫荽	yuan sui
 榅桲	wen po
 榅桲	wen bo
 荸荠	bi qi
