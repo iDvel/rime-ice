@@ -17,7 +17,7 @@
 #          这样小字表里存在的字按权重靠前排列，大字表殿后，生僻字自动就排在末尾。
 ---
 name: 41448
-version: "2025-05-10"
+version: "2025-05-25"
 sort: by_weight
 ...
 # 注释掉了一些
@@ -28635,6 +28635,7 @@ sort: by_weight
 閠	run
 闰	run
 𠷀	run
+𥆧	run
 𨳝	run
 𨷎	run
 𩀋	run
@@ -30735,6 +30736,7 @@ sort: by_weight
 順	shun
 顺	shun
 鬊	shun
+𥆧	shun
 𨝜	shun
 𨺠	shun
 㮶	shuo
