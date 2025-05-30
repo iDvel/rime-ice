@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-05-20"
+version: "2025-05-25"
 sort: by_weight
 ...
 # +_+
@@ -14501,6 +14501,7 @@ pierce	pierce
 pierced	pierced
 piercing	piercing
 Pierre	Pierre
+pierrot	pierrot
 pies	pies
 pig	pig
 pigeon	pigeon
@@ -19460,11 +19461,14 @@ testament	testament
 tested	tested
 tester	tester
 testers	testers
+testicle	testicle
 testified	testified
 testify	testify
+testimonial	testimonial
 testimonials	testimonials
 testimony	testimony
 testing	testing
+testis	testis
 testosterone	testosterone
 tests	tests
 Tetris	Tetris
@@ -20177,6 +20181,7 @@ trustee	trustee
 trustees	trustees
 TrustPass	TrustPass
 trusts	trusts
+trustworthy	trustworthy
 truth	truth
 truths	truths
 try	try
@@ -20506,6 +20511,7 @@ untie	untie
 until	until
 untitled	untitled
 unto	unto
+untrustworthy	untrustworthy
 unused	unused
 unusual	unusual
 unusually	unusually

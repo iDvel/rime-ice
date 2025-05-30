@@ -27,7 +27,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2025-05-20"
+version: "2025-05-25"
 sort: by_weight
 ...
 ### 按需启用
@@ -60,6 +60,7 @@ sort: by_weight
 卻	que	1
 挼	rua	1
 朊	ruan	1
+挼	ruo	1
 辻	shi	1
 亖	si	1
 牠	ta	1
@@ -1557,6 +1558,7 @@ sort: by_weight
 婀	e	5532
 讹	e	4383
 阿	e	4336
+阏	e	3812
 锷	e	3471
 颚	e	2867
 鹗	e	1868
@@ -3522,6 +3524,7 @@ sort: by_weight
 阔	kuo	77181
 廓	kuo	15567
 蛞	kuo	118
+适	kuo	1
 啦	la	3655999
 拉	la	109679
 辣	la	82598
@@ -6979,6 +6982,7 @@ sort: by_weight
 澥	xie	15
 薢	xie	3
 叶	xie	1
+契	xie	1
 颉	xie	1
 㙦	xie	0
 偰	xie	0
@@ -7286,7 +7290,6 @@ sort: by_weight
 偃	yan	4730
 闫	yan	4234
 腌	yan	4020
-阏	yan	3812
 恹	yan	3306
 谚	yan	3210
 兖	yan	3094
@@ -7319,6 +7322,7 @@ sort: by_weight
 蝘	yan	2
 殷	yan	1
 铅	yan	1
+阏	yan	1
 𬙂	yan	1
 墕	yan	0
 戭	yan	0
@@ -8441,6 +8445,7 @@ sort: by_weight
 抓	zhua	82875
 爪	zhua	74674
 髽	zhua	9
+挝	zhua	1
 拽	zhuai	45251
 转	zhuan	1276312
 专	zhuan	360222
