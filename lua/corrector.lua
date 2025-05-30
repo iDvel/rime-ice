@@ -142,6 +142,7 @@ function M.init(env)
         ["xie hu"] = { text = "潟湖", comment = "xì hú" },
         ["guo pu"] = { text = "果脯", comment = "guǒ fǔ" },
         ["rou pu"] = { text = "肉脯", comment = "ròu fǔ" },
+        ["huo luo"] = { text = "饸饹", comment = "hé le" },
         ["pu an suan"] = { text = "脯氨酸", comment = "脯(fǔ)氨酸" },
         ["luo an suan"] = { text = "酪氨酸", comment = "酪(lào)氨酸" },
         ["mei shi zi"] = { text = "没食子", comment = "没(mò)食子" },
@@ -167,6 +168,7 @@ function M.init(env)
         ["sha cao"] = { text = "莎草", comment = "suō cǎo" },
         ["shan mu"] = { text = "杉木", comment = "shā mù" },
         ["dao zai shi ni"] = { text = "道在屎溺", comment = "道在屎溺(niào)" },
+        ["jing gao"] = { text = "甑糕", comment = "甑(zèng)糕" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
         ["pu gai"] = { text = "扑街", comment = "仆街" },
