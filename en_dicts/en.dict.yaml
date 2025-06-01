@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-05-25"
+version: "2025-05-30"
 sort: by_weight
 ...
 # +_+
@@ -9370,6 +9370,7 @@ huddle	huddle
 Hudson	Hudson
 hue	hue
 hues	hues
+Huffman	Huffman
 hug	hug
 huge	huge
 Hugh	Hugh
