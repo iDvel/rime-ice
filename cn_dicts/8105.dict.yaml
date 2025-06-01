@@ -27,7 +27,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2025-05-25"
+version: "2025-05-30"
 sort: by_weight
 ...
 ### 按需启用
@@ -2777,7 +2777,6 @@ sort: by_weight
 颊	jia	52050
 迦	jia	30382
 伽	jia	18295
-茄	jia	16373
 稼	jia	10734
 枷	jia	8877
 珈	jia	4077
@@ -2801,6 +2800,7 @@ sort: by_weight
 镓	jia	28
 瘕	jia	20
 泇	jia	1
+茄	jia	1
 𬂩	jia	0
 见	jian	3460998
 间	jian	3067939
