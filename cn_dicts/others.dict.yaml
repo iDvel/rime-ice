@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2025-03-06"
+version: "2025-05-20"
 sort: by_weight
 ...
 ##### 容错词
@@ -147,6 +147,8 @@ sort: by_weight
 虚与委蛇	xu yu wei she
 木讷	mu ne
 木讷	mu na
+龟裂	jun lie
+龟裂	gui lie
 独乐乐	du yue le
 独乐乐	du le le
 众乐乐	zhong yue le
@@ -277,6 +279,8 @@ sort: by_weight
 应该	yin gai
 粘贴	zhan tie
 粘贴	nian tie
+粘一粘	zhan yi zhan
+粘一粘	nian yi nian
 高句丽	gao gou li
 高句丽	gao ju li
 角斗士	jue dou shi
@@ -285,6 +289,10 @@ sort: by_weight
 缩砂密	suo sha mi
 迫击炮	pai ji pao
 迫击炮	po ji pao
+封禅	feng shan
+封禅	feng chan
+芫荽	yan sui
+芫荽	yuan sui
 榅桲	wen po
 榅桲	wen bo
 荸荠	bi qi
@@ -317,12 +325,16 @@ sort: by_weight
 哺乳	pu ru
 脑卒中	nao cu zhong
 脑卒中	nao zu zhong
+阈值	yu zhi
+阈值	fa zhi
 潟湖	xi hu
 潟湖	xie hu
 果脯	guo fu
 果脯	guo pu
 肉脯	rou fu
 肉脯	rou pu
+饸饹	he le
+饸饹	huo luo
 脯氨酸	fu an suan
 脯氨酸	pu an suan
 酪氨酸	lao an suan
@@ -373,6 +385,8 @@ sort: by_weight
 杉木	shan mu
 道在屎溺	dao zai shi niao
 道在屎溺	dao zai shi ni
+甑糕	zeng gao
+甑糕	jing gao
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
