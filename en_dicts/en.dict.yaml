@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-05-30"
+version: "2025-06-01"
 sort: by_weight
 ...
 # +_+
@@ -11851,7 +11851,9 @@ MapQuest	MapQuest
 maps	maps
 mar	mar
 Mar.	Mar.
-mara	mara
+Mara	Mara
+maraca	maraca
+maracas	maracas
 marathon	marathon
 marble	marble
 marc	marc
@@ -15466,7 +15468,7 @@ punctuator	punctuator
 punctuators	punctuators
 pundit	pundit
 pungent	pungent
-pungently	pungently 
+pungently	pungently
 punish	punish
 punished	punished
 punishment	punishment
