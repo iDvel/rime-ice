@@ -1,0 +1,1 @@
+rsync -avz --delete --exclude='build' --exclude='.git' --exclude='.DS_Store' `pwd`/ 10.12.1.91:`pwd`/
