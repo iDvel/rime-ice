@@ -42,6 +42,7 @@ speller:
     # __include: algebra_sogou          # 搜狗双拼
     # __include: algebra_abc            # 智能ABC双拼
     # __include: algebra_ziguang        # 紫光双拼
+    # __include: algebra_jiajia         # 拼音加加双拼
 
 translator:
   dictionary: radical_pinyin
@@ -271,5 +272,39 @@ algebra_ziguang:
   - xform/an(?=^|$|')/<r>/
   - xform/'|<|>//
 
-
-
+algebra_jiajia:
+  - derive/^([jqxy])u(?=^|$|')/$1v/
+  - derive/'([jqxy])u(?=^|$|')/'$1v/
+  - derive/^([aoe])([ioun])(?=^|$|')/$1$1$2/
+  - derive/'([aoe])([ioun])(?=^|$|')/'$1$1$2/
+  - xform/^([aoe])(ng)?(?=^|$|')/$1$1$2/
+  - xform/'([aoe])(ng)?(?=^|$|')/'$1$1$2/
+  - xform/iu(?=^|$|')/<n>/
+  - xform/[iu]a(?=^|$|')/<b>/
+  - xform/[uv]an(?=^|$|')/<c>/
+  - xform/[uv]e(?=^|$|')/<x>/
+  - xform/ing(?=^|$|')|er(?=^|$|')/<q>/
+  - xform/^sh/<i>/
+  - xform/^ch/<u>/
+  - xform/^zh/<v>/
+  - xform/'sh/'<i>/
+  - xform/'ch/'<u>/
+  - xform/'zh/'<v>/
+  - xform/uo(?=^|$|')/<o>/
+  - xform/[uv]n(?=^|$|')/<z>/
+  - xform/([a-z>])i?ong(?=^|$|')/$1<y>/
+  - xform/[iu]ang(?=^|$|')/<h>/
+  - xform/([a-z>])en(?=^|$|')/$1<r>/
+  - xform/([a-z>])eng(?=^|$|')/$1<t>/
+  - xform/([a-z>])ang(?=^|$|')/$1<g>/
+  - xform/ian(?=^|$|')/<j>/
+  - xform/([a-z>])an(?=^|$|')/$1<f>/
+  - xform/iao(?=^|$|')/<k>/
+  - xform/([a-z>])ao(?=^|$|')/$1<d>/
+  - xform/([a-z>])ai(?=^|$|')/$1<s>/
+  - xform/([a-z>])ei(?=^|$|')/$1<w>/
+  - xform/ie(?=^|$|')/<m>/
+  - xform/ui(?=^|$|')/<v>/
+  - xform/([a-z>])ou(?=^|$|')/$1<p>/
+  - xform/in(?=^|$|')/<l>/
+  - xform/'|<|>//

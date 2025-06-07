@@ -55,6 +55,7 @@ speller:
     # __include: algebra_sogou          # 搜狗双拼
     # __include: algebra_abc            # 智能ABC双拼
     # __include: algebra_ziguang        # 紫光双拼
+    # __include: algebra_jiajia         # 拼音加加双拼
 
 translator:
   dictionary: melt_eng
@@ -312,3 +313,28 @@ algebra_ziguang:
     - derive/9/jj/
     - derive/\+/jx/
     - derive/#/j;/
+# 拼音加加
+algebra_jiajia:
+  __include: algebra_common
+  __append:
+    - derive/(?<!\d)1([1-9])(?!\d)/ii$1/
+    - derive/([1-9])0000(?!0)/$1wf/
+    - derive/([1-9])000(?!0)/$1qj/
+    - derive/([1-9])00(?!0)/$1bs/
+    - derive/([2-9])0(?!0)/$1ii/
+    - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1ii$2/
+    - derive/\./dj/
+    - derive/10/ii/
+    - derive/0/lq/
+    - derive/1/yi/
+    - derive/2/eq/
+    - derive/2/lh/
+    - derive/3/sf/
+    - derive/4/si/
+    - derive/5/wu/
+    - derive/6/ln/
+    - derive/7/qi/
+    - derive/8/ba/
+    - derive/9/jn/
+    - derive/\+/jb/
+    - derive/#/jq/
