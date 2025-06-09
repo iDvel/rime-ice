@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-05-30"
+version: "2025-06-01"
 sort: by_weight
 ...
 # +_+
@@ -2787,6 +2787,7 @@ Callaway	Callaway
 callback	callback
 called	called
 caller	caller
+calligraphy	calligraphy
 calling	calling
 callous	callous
 calloused	calloused
@@ -5357,7 +5358,7 @@ desire	desire
 desired	desired
 desires	desires
 desk	desk
-DeskJet	DeskJet
+# DeskJet	DeskJet
 desks	desks
 desktop	desktop
 desktops	desktops
@@ -5953,6 +5954,7 @@ DPI	DPI
 # dq	dq
 # dr	dr
 draconic	draconic
+Dracula	Dracula
 draft	draft
 drafted	drafted
 drafting	drafting
@@ -7609,6 +7611,7 @@ flora	flora
 floral	floral
 Florence	Florence
 Flores	Flores
+florid	florid
 Florida	Florida
 florist	florist
 florists	florists
@@ -11456,6 +11459,7 @@ locations	locations
 locator	locator
 loch	loch
 lock	lock
+lockdown	lockdown
 Locke	Locke
 locked	locked
 locker	locker
@@ -11851,7 +11855,9 @@ MapQuest	MapQuest
 maps	maps
 mar	mar
 Mar.	Mar.
-mara	mara
+Mara	Mara
+maraca	maraca
+maracas	maracas
 marathon	marathon
 marble	marble
 marc	marc
@@ -12840,6 +12846,7 @@ mutants	mutants
 mutation	mutation
 mutations	mutations
 mute	mute
+muted	muted
 mutter	mutter
 mutton	mutton
 mutual	mutual
@@ -13723,6 +13730,7 @@ orleans	orleans
 ornament	ornament
 ornamental	ornamental
 ornaments	ornaments
+ornate	ornate
 # oro	oro
 orphan	orphan
 # ors	ors
@@ -14924,8 +14932,8 @@ powerful	powerful
 PowerPC	PowerPC
 PowerPoint	PowerPoint
 powers	powers
-powerseller	powerseller
-powershot	powershot
+# powerseller	powerseller
+# powershot	powershot
 # poy	poy
 # pp	pp
 # ppc	ppc
