@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-06-01"
+version: "2025-06-10"
 sort: by_weight
 ...
 # +_+
@@ -527,7 +527,7 @@ alarms	alarms
 alas	alas
 Alaska	Alaska
 Alaskan	Alaskan
-alba	alba
+Alba	Alba
 Albania	Albania
 Albanian	Albanian
 Albany	Albany
@@ -788,7 +788,7 @@ anchors	anchors
 ancient	ancient
 ancillary	ancillary
 and	and
-andale	andale
+# andale	andale
 Anders	Anders
 Andersen	Andersen
 Anderson	Anderson
@@ -4809,6 +4809,7 @@ curriculum	curriculum
 curry	curry
 curse	curse
 cursed	cursed
+cursive	cursive
 cursor	cursor
 curt	curt
 curtain	curtain
@@ -5053,6 +5054,8 @@ decides	decides
 deciding	deciding
 deciduous	deciduous
 decimal	decimal
+decipher	decipher
+decipherment	decipherment
 decision	decision
 decisions	decisions
 decisive	decisive
@@ -11117,6 +11120,9 @@ legally	legally
 legend	legend
 legendary	legendary
 legends	legends
+legibility	legibility
+legible	legible
+legibly	legibly
 legion	legion
 legislation	legislation
 legislative	legislative
@@ -12609,7 +12615,7 @@ monk	monk
 monkey	monkey
 monkeys	monkeys
 monks	monks
-Monmouth	Monmouth
+# Monmouth	Monmouth
 mono	mono
 monoclonal	monoclonal
 monogram	monogram
@@ -12617,6 +12623,8 @@ monolith	monolith
 monolithic	monolithic
 monophonic	monophonic
 monopoly	monopoly
+monospace	monospace
+monospaced	monospaced
 monotonous	monotonous
 Monroe	Monroe
 monsoon	monsoon
@@ -16943,6 +16951,7 @@ sanitary	sanitary
 sanitation	sanitation
 sanity	sanity
 sans	sans
+sans-serif	sans-serif
 Santa	Santa
 Santana	Santana
 Santiago	Santiago
@@ -17399,9 +17408,11 @@ sergeant	sergeant
 # sergio	sergio
 serial	serial
 serials	serials
-Serie	Serie
+# Serie	Serie
 series	series
 serif	serif
+serifed	serifed
+seriffed	seriffed
 serious	serious
 seriously	seriously
 sermon	sermon
