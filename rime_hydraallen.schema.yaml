@@ -4,14 +4,14 @@
 
 # 方案说明
 schema:
-  schema_id: rime_ice
+  schema_id: rime_hydraallen
   name: 雾凇拼音
-  version: "2025-03-30"
+  version: "2025-06-29"
   author:
-    - Dvel
+    - Hydraallen
   description: |
     雾凇拼音
-    https://github.com/iDvel/rime-ice
+    https://github.com/Hydraallen/Rime
   dependencies:
     - melt_eng        # 英文输入，作为次翻译器挂载到拼音方案
     - radical_pinyin  # 部件拆字，反查及辅码
@@ -285,7 +285,7 @@ pin_cand_filter:
 
 # 主翻译器，拼音
 translator:
-  dictionary: rime_ice         # 挂载词库 rime_ice.dict.yaml
+  dictionary: rime_hydraallen         # 挂载词库 rime_hydraallen.dict.yaml
   enable_word_completion: true # 大于 4 音节的词条自动补全，librime > 1.11.2
   spelling_hints: 8            # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
   always_show_comments: true   # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。
@@ -379,7 +379,7 @@ radical_reverse_lookup:
   tags: [ radical_lookup ]
   # dictionary 为拼音标注来源，目前是显示本方案词库的注音。
   # 可去部件拆字方案下载更全的、带声调的、已编译好的词典： https://github.com/mirtlecn/rime-radical-pinyin#反查带声调注音
-  dictionary: rime_ice
+  dictionary: rime_hydraallen
   # comment_format:     # 自定义 comment，例如在左右加上括号
   #  - xform/^/(/
   #  - xform/$/)/

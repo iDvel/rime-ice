@@ -7,7 +7,7 @@
 # 1. 解开 `engine/translators` 下的注释
 # 2. 将 `others/Hamster/melt_eng.custom.yaml` 里的文件拷贝至配置目录，该补丁转写了英文的拼写规则到九宫格；
 
-__include: rime_ice.schema.yaml:/
+__include: rime_hydraallen.schema.yaml:/
 
 schema:
   schema_id: t9

@@ -62,3 +62,14 @@ gone	gone
 Go程	gocheng
 code	code
 SOHO	soho
+
+iOS	ios
+iPhone	iph
+macOS	macos
+Mac	mac
+B站	bzhan
+HarmonyOS	hm	2
+U盘	upan
+up主	upzhu
+神盾  sd
+神盾局特工  sdjtg

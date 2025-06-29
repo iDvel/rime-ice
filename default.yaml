@@ -3,27 +3,27 @@
 
 
 # 要比共享目录的同名文件的 config_version 大才可以生效
-config_version: '2025-02-24'
+config_version: '2025-06-29'
 
 
 # 方案列表
 schema_list:
   # 可以直接删除或注释不需要的方案，对应的 *.schema.yaml 方案文件也可以直接删除
-  # 除了 t9，它依赖于 rime_ice，用九宫格别删 rime_ice.schema.yaml
-  - schema: rime_ice               # 雾凇拼音（全拼）
-  - schema: t9                     # 九宫格（仓输入法）
-  - schema: double_pinyin          # 自然码双拼
-  - schema: double_pinyin_abc      # 智能 ABC 双拼
-  - schema: double_pinyin_mspy     # 微软双拼
-  - schema: double_pinyin_sogou    # 搜狗双拼
-  - schema: double_pinyin_flypy    # 小鹤双拼
-  - schema: double_pinyin_ziguang  # 紫光双拼
-  - schema: double_pinyin_jiajia   # 拼音加加双拼
+  # 除了 t9，它依赖于 rime_hydraallen，用九宫格别删 rime_hydraallen.schema.yaml
+  - schema: rime_hydraallen               # 雾凇拼音（全拼）
+  # - schema: t9                     # 九宫格（仓输入法）
+  # - schema: double_pinyin          # 自然码双拼
+  # - schema: double_pinyin_abc      # 智能 ABC 双拼
+  # - schema: double_pinyin_mspy     # 微软双拼
+  # - schema: double_pinyin_sogou    # 搜狗双拼
+  # - schema: double_pinyin_flypy    # 小鹤双拼
+  # - schema: double_pinyin_ziguang  # 紫光双拼
+  # - schema: double_pinyin_jiajia   # 拼音加加双拼
 
 
 # 菜单
 menu:
-  page_size: 5  # 候选词个数
+  page_size: 9  # 候选词个数
   # alternative_select_labels: [ ①, ②, ③, ④, ⑤, ⑥, ⑦, ⑧, ⑨, ⑩ ]  # 修改候选项标签
   # alternative_select_keys: ASDFGHJKL  # 如编码字符占用数字键，则需另设选字键（注意在雾凇中，大写字母也作为编码了）
 
@@ -66,10 +66,9 @@ ascii_composer:
   switch_key:
     Caps_Lock: clear      # commit_code | commit_text | clear
     Shift_L: commit_code  # commit_code | commit_text | inline_ascii | clear | noop
-    Shift_R: noop         # commit_code | commit_text | inline_ascii | clear | noop
+    Shift_R: commit_code  # commit_code | commit_text | inline_ascii | clear | noop
     Control_L: noop       # commit_code | commit_text | inline_ascii | clear | noop
     Control_R: noop       # commit_code | commit_text | inline_ascii | clear | noop
-
 
 ###################################################################################
 

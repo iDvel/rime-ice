@@ -69,7 +69,7 @@ body:
       description: 请选择你在使用的，或者此 issue 涉及的主要输入方案
       options:
         - '-- 请选择 --'
-        - 雾凇拼音 全拼 rime_ice
+        - 雾凇拼音 全拼 rime_hydraallen
         - 小鹤双拼 double_pinyin_flypy
         - 智能 ABC double_pinyin_abc
         - 微软双拼 double_pinyin_mspy

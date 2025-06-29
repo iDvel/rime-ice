@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 ---
-name: rime_ice
+name: rime_hydraallen
 version: "2024-11-27"
 import_tables:
   - cn_dicts/8105     # 字表

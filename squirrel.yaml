@@ -31,12 +31,76 @@ app_options:
   #   ascii_mode: true    # 开启默认英文
   # com.microsoft.VSCode:
   #   ascii_mode: false   # 关闭默认英文
+    com.apple.finder:
+      ascii_mode: false
+    com.alibaba.DingTalkMac:
+      ascii_mode: false
+    com.tencent.xinWeChat:
+      ascii_mode: false
+    com.microsoft.edgemac.Beta:
+      ascii_mode: false
+    com.runningwithcrayons.Alfred:
+      ascii_mode: false
+    com.apple.dt.Xcode:
+      ascii_mode: true
+    com.apple.Terminal:
+      ascii_mode: true
+    com.googlecode.iterm2:
+      ascii_mode: true
+      no_inline: false
+      vim_mode: true
+    net.kovidgoyal.kitty:
+      ascii_mode: true
+      no_inline: false
+      vim_mode: true
+    com.sublimetext.3:
+      ascii_mode: true
+    com.apple.calculator:
+      ascii_mode: true
+    com.apple.launchpad.launcher:
+      ascii_mode: true
+    com.apple.systempreferences:
+      ascii_mode: true
+    com.apple.ActivityMonitor:
+      ascii_mode: true
+    com.apple.keychainaccess:
+      ascii_mode: true
+    com.apple.Spotlight:
+      ascii_mode: true
+    com.jetbrains.intellij:
+      ascii_mode: true
+    com.jetbrains.datagrip:
+      ascii_mode: true
+    com.jetbrains.pycharm:
+      ascii_mode: true
+    io.nteract.nteract:
+      ascii_mode: true
+    com.sequelpro.SequelPro:
+      ascii_mode: true
+    io.termix.client:
+      ascii_mode: true
+    com.agilebits.onepassword7:
+      ascii_mode: true
+    com.agilebits.onepassword7-helper:
+      ascii_mode: true
+    com.kapeli.dashdoc:
+      ascii_mode: true
+    com.svend.uPic:
+      ascii_mode: true
+    com.eusoft.eudic:
+      ascii_mode: true
+    com.microsoft.VSCode:
+      ascii_mode: true
+      vim_mode: true
+    com.jetbrains.CLion:
+      ascii_mode: true
+      vim_mode: true
 
 
 style:
   # 选择皮肤，亮色与暗色主题
-  color_scheme: purity_of_form_custom
-  color_scheme_dark: purity_of_form_custom
+  color_scheme: Hydraallen
+  color_scheme_dark: Hydraallen
 
   # 以下是预设选项。如果皮肤没写，则使用这些属性；如果皮肤写了，使用皮肤的。
 
@@ -85,6 +149,29 @@ style:
 
 # 皮肤列表
 preset_color_schemes:
+  Hydraallen:
+    author: "Hydraallen"
+    back_color: 0xFFFFFF # 候选条背景色，24位色值，16进制，BGR顺序
+    border_height: 6 # 窗口上下高度，大于圆角半径才生效
+    border_width: 6 # 窗口左右宽度
+    candidate_format: "%c %@"
+    candidate_text_color: 0x444444
+    comment_text_color: 0x808080 #拼音等提示文字颜色
+    corner_radius: 6 # 窗口圆角
+    font_point: 16 # 候选文字大小
+    hilited_candidate_back_color: 0xFFF0E4    # 候选文字背景色
+    hilited_candidate_label_color: 0xEE6E00  #后选字数字
+    hilited_candidate_text_color: 0xEE6E00    # 第一候选项文字颜色
+    hilited_text_color: 0xeeeeee #后选字背景
+    horizontal: true # true横排，false竖排
+    inline_preedit: true
+    label_color: 0x888888
+    label_font_point: 12
+    name: "Hydraallen"
+    text_color: 0x808080  # 拼音行文字颜色
+    line_spacing: 10               # 行间距(适用于竖排)
+
+
   # 对 purity_of_form 略微调整颜色，让色彩更柔和点，补全其他选项和注释
   purity_of_form_custom:
     name: "純粹的形式／Purity of Form Custom"
