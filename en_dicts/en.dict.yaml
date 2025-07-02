@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-06-30"
+version: "2025-07-01"
 sort: by_weight
 ...
 # +_+
@@ -7339,7 +7339,7 @@ fermentative	fermentative
 fern	fern
 Fernandez	Fernandez
 Fernando	Fernando
-ferrari	ferrari
+Ferrari	Ferrari
 ferries	ferries
 Ferris	Ferris
 ferrous	ferrous
@@ -13693,6 +13693,7 @@ orchard	orchard
 orchestra	orchestra
 orchid	orchid
 # ord	ord
+ordain	ordain
 order	order
 ordered	ordered
 ordering	ordering
@@ -15077,9 +15078,11 @@ preschool	preschool
 Prescott	Prescott
 prescribe	prescribe
 prescribed	prescribed
+prescribes	prescribes
 prescribing	prescribing
 prescription	prescription
 prescriptions	prescriptions
+prescriptive	prescriptive
 presence	presence
 present	present
 presentation	presentation
