@@ -41,6 +41,7 @@ function M.init(env)
         ["na mo a mi tuo fo"] = { text = "南无阿弥陀佛", comment = "nā mó ē mí tuó fó" },
         ["nan wu a mi tuo fo"] = { text = "南无阿弥陀佛", comment = "nā mó ē mí tuó fó" },
         ["nan wu e mi tuo fo"] = { text = "南无阿弥陀佛", comment = "nā mó ē mí tuó fó" },
+        ["sha di li"] = { text = "刹帝利", comment = "chà dì lì" },
         ["gei yu"] = { text = "给予", comment = "jǐ yǔ" },
         ["bin lang"] = { text = "槟榔", comment = "bīng láng" },
         ["zhang bai zhi"] = { text = "张柏芝", comment = "zhāng bó zhī" },

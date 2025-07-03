@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2025-05-20"
+version: "2025-06-10"
 sort: by_weight
 ...
 ##### 容错词
@@ -129,6 +129,8 @@ sort: by_weight
 南无阿弥陀佛	na mo a mi tuo fo
 南无阿弥陀佛	nan wu e mi tuo fo
 南无阿弥陀佛	nan wu a mi tuo fo
+刹帝利	cha di li
+刹帝利	sha di li
 给予	ji yu
 给予	gei yu
 槟榔	bing lang
