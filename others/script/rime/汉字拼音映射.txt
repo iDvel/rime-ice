@@ -14,6 +14,7 @@
 礤 ca
 閦 chu
 鯙 chun
+𪻐 cong
 蜑 dan
 氹 dang
 鮗 dong
@@ -84,7 +85,6 @@
 𧊕 song
 䍁 sui
 㓥 tang
-螣 teng
 稊 ti
 瓋 ti
 畑 tian
