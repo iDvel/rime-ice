@@ -47,7 +47,6 @@
 朘 juan
 濬 jun
 埈 jun
-佧 ka
 峠 ka
 窾 kuan
 鯻 la
@@ -87,7 +86,6 @@
 㓥 tang
 稊 ti
 瓋 ti
-畑 tian
 魠 tuo
 梶 wei
 揾 wen
@@ -132,6 +130,7 @@
 欸 ei
 鿔 ge
 睆 huan
+佧 ka
 堀 ku
 菈 la
 𫟷 li
@@ -144,6 +143,7 @@
 挼 ruo
 辻 shi
 薙 ti
+畑 tian
 鿬 tian
 樋 tong
 氽 tun
