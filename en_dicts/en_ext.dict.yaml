@@ -240,6 +240,7 @@ macOS Monterey	macOSMonterey
 macOS Ventura	macOSVentura
 macOS Sonoma	macOSSonoma
 macOS Sequoia	macOSSequoia
+macOS Tahoe	macOSTahoe
 Windows 95	Windows95
 Windows 98	Windows98
 Windows Me	WindowsMe
@@ -844,7 +845,7 @@ Secure Sockets Layer	SSL
 StackSocial	StackSocial
 Sublime Text	SublimeText
 TechWeb	TechWeb
-Terminal	Terminal
+# Terminal	Terminal
 TestFlight	TestFlight
 Texshop	Texshop
 Textastic	Textastic
@@ -933,8 +934,8 @@ Greenwich Mean Time	GMT
 Greenwich Mean Time	GreenwichMeanTime
 GoDaddy	GoDaddy
 SQLAlchemy	SQLAlchemy
-Admin	Admin
-Administrator	Administrator
+# Admin	Admin
+# Administrator	Administrator
 ASMR	ASMR
 Autonomous sensory meridian response	ASMR
 Autonomous sensory meridian response	Autonomoussensorymeridianresponse

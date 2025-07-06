@@ -14,6 +14,7 @@
 礤 ca
 閦 chu
 鯙 chun
+𪻐 cong
 蜑 dan
 氹 dang
 鮗 dong
@@ -21,6 +22,7 @@
 犎 feng
 鳆 fu
 𫚒 fu
+咈 fu
 㹴 geng
 栱 gong
 冓 gou
@@ -37,14 +39,16 @@
 䇲 jia
 榎 jia
 鳽 jian
+珓 jiao
+挢 jiao
 鱎 jiao
+喼 jie
 椇 ju
 鵙 ju
 罥 juan
 朘 juan
 濬 jun
 埈 jun
-佧 ka
 峠 ka
 窾 kuan
 鯻 la
@@ -82,10 +86,8 @@
 𧊕 song
 䍁 sui
 㓥 tang
-螣 teng
 稊 ti
 瓋 ti
-畑 tian
 魠 tuo
 梶 wei
 揾 wen
@@ -130,6 +132,7 @@
 欸 ei
 鿔 ge
 睆 huan
+佧 ka
 堀 ku
 菈 la
 𫟷 li
@@ -142,6 +145,7 @@
 挼 ruo
 辻 shi
 薙 ti
+畑 tian
 鿬 tian
 樋 tong
 氽 tun
@@ -332,9 +336,6 @@
 陈金釭起义旧址
 青釭剑
 噌吰
-瞠目挢舌
-目瞪舌挢
-目定舌挢
 郕王
 城中居民风裂骭
 池酒林胾
@@ -400,8 +401,6 @@
 张书旂
 崔杋圭
 豆䜺儿
-都俞吁咈
-吁咈都俞
 多宝槅
 蛾眉螓首
 螓首蛾眉
@@ -764,10 +763,6 @@
 蔄山镇
 暴衣露盖
 暴衣露冠
-魂不著体
-棋输先著
-一鞭先著
-枝附叶著
 宕昌前个木虱
 宕昌县
 陇南宕昌
@@ -801,6 +796,10 @@
 轻裾随风还
 耳著明月珰
 著我旧时裳
+脚著谢公屐
+林花著雨胭脂湿
+头上著头
+泻水著地
 波流弟靡
 鱼县鸟窜
 嬛嬛一袅楚宫腰

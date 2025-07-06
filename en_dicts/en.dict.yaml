@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-06-10"
+version: "2025-07-01"
 sort: by_weight
 ...
 # +_+
@@ -838,6 +838,7 @@ Anna	Anna
 annals	annals
 Annapolis	Annapolis
 Anne	Anne
+anneal	anneal
 Annette	Annette
 annex	annex
 Annie	Annie
@@ -1495,6 +1496,7 @@ average	average
 averaged	averaged
 averages	averages
 averaging	averaging
+averse	averse
 avert	avert
 Avery	Avery
 avg	avg
@@ -1930,8 +1932,8 @@ Bergen	Bergen
 Berger	Berger
 Berkeley	Berkeley
 Berkshire	Berkshire
-berlin	berlin
-BerliOS	BerliOS
+Berlin	Berlin
+# BerliOS	BerliOS
 Bermuda	Bermuda
 Bern	Bern
 Bernard	Bernard
@@ -4382,7 +4384,7 @@ cooler	cooler
 coolers	coolers
 coolest	coolest
 cooling	cooling
-COOLPIX	COOLPIX
+# COOLPIX	COOLPIX
 coop	coop
 cooper	cooper
 cooperate	cooperate
@@ -5450,7 +5452,7 @@ devoted	devoted
 devotion	devotion
 devour	devour
 dew	dew
-DEWALT	DEWALT
+# DEWALT	DEWALT
 Dewey	Dewey
 # dex	dex
 dexter	dexter
@@ -5494,7 +5496,7 @@ diary	diary
 diazepam	diazepam
 dice	dice
 dick	dick
-dicke	dicke
+# dicke	dicke
 dickens	dickens
 Dickinson	Dickinson
 dicks	dicks
@@ -5607,7 +5609,7 @@ directories	directories
 directors	directors
 directory	directory
 directs	directs
-DirecTV	DirecTV
+# DirecTV	DirecTV
 DirectX	DirectX
 dirk	dirk
 dirt	dirt
@@ -5979,6 +5981,7 @@ drama	drama
 dramas	dramas
 dramatic	dramatic
 dramatically	dramatically
+dramatist	dramatist
 drank	drank
 draper	draper
 drastic	drastic
@@ -7336,7 +7339,7 @@ fermentative	fermentative
 fern	fern
 Fernandez	Fernandez
 Fernando	Fernando
-ferrari	ferrari
+Ferrari	Ferrari
 ferries	ferries
 Ferris	Ferris
 ferrous	ferrous
@@ -7361,7 +7364,6 @@ fewer	fewer
 # ff	ff
 # ffi	ffi
 # ffl	ffl
-Ffremont	Ffremont
 # fg	fg
 # fgets	fgets
 # fh	fh
@@ -7894,6 +7896,7 @@ freezer	freezer
 freezers	freezers
 freezing	freezing
 freight	freight
+Fremont	Fremont
 French	French
 frenzy	frenzy
 freq	freq
@@ -7923,6 +7926,7 @@ friendly	friendly
 friends	friends
 friendship	friendship
 fries	fries
+frieze	frieze
 fright	fright
 frighten	frighten
 frightful	frightful
@@ -8361,6 +8365,8 @@ glucose	glucose
 glue	glue
 glutinous	glutinous
 # gly	gly
+glyph	glyph
+glyphic	glyphic
 # gm	gm
 Gmail	Gmail
 GmbH	GmbH
@@ -8515,7 +8521,7 @@ graphical	graphical
 graphics	graphics
 graphite	graphite
 graphs	graphs
-GRAS	GRAS
+# GRAS	GRAS
 grasp	grasp
 grass	grass
 grasshopper	grasshopper
@@ -8704,6 +8710,8 @@ habit	habit
 habitat	habitat
 habitats	habitats
 habits	habits
+habitual	habitual
+habitually	habitually
 hack	hack
 hacked	hacked
 hacker	hacker
@@ -9244,7 +9252,7 @@ honesty	honesty
 honey	honey
 honeybee	honeybee
 honeymoon	honeymoon
-hong	hong
+# hong	hong
 Honolulu	Honolulu
 honor	honor
 honorable	honorable
@@ -9814,6 +9822,9 @@ individual	individual
 individually	individually
 individuals	individuals
 # indo	indo
+indole	indole
+indolence	indolence
+indolent	indolent
 Indonesia	Indonesia
 Indonesian	Indonesian
 indoor	indoor
@@ -9878,9 +9889,9 @@ informed	informed
 informing	informing
 informs	informs
 # infos	infos
-Infospace	Infospace
-InfoUSA	InfoUSA
-InfoWorld	InfoWorld
+# Infospace	Infospace
+# InfoUSA	InfoUSA
+# InfoWorld	InfoWorld
 infrared	infrared
 infrastructure	infrastructure
 infringement	infringement
@@ -10978,7 +10989,7 @@ Larson	Larson
 larvae	larvae
 # las	las
 laser	laser
-LaserJet	LaserJet
+# LaserJet	LaserJet
 lasers	lasers
 lash	lash
 # lasik	lasik
@@ -11009,7 +11020,7 @@ latter	latter
 lattice	lattice
 Latvia	Latvia
 Latvian	Latvian
-lauderdale	lauderdale
+# lauderdale	lauderdale
 laugh	laugh
 laughed	laughed
 laughing	laughing
@@ -11055,6 +11066,7 @@ layout	layout
 layouts	layouts
 lays	lays
 layup	layup
+laziness	laziness
 lazy	lazy
 # lb	lb
 # lbs	lbs
@@ -11408,7 +11420,7 @@ little	little
 live	live
 livecam	livecam
 lived	lived
-LiveJournal	LiveJournal
+# LiveJournal	LiveJournal
 lively	lively
 liver	liver
 Liverpool	Liverpool
@@ -11654,9 +11666,10 @@ lyrics	lyrics
 # m	m
 # ma	ma
 Mac	Mac
+Macao	Macao
 Macau	Macau
 MacDonald	MacDonald
-macedonia	macedonia
+Macedonia	Macedonia
 # mach	mach
 machine	machine
 machinery	machinery
@@ -11685,6 +11698,7 @@ Madame	Madame
 madden	madden
 made	made
 Madison	Madison
+madman	madman
 madness	madness
 Madonna	Madonna
 Madrid	Madrid
@@ -12255,7 +12269,7 @@ Metacritic	Metacritic
 metadata	metadata
 metal	metal
 metallic	metallic
-metallica	metallica
+# metallica	metallica
 metallurgy	metallurgy
 metals	metals
 metaphor	metaphor
@@ -12777,7 +12791,7 @@ msg	msg
 # msie	msie
 # msm	msm
 MSN	MSN
-MSNBC	MSNBC
+# MSNBC	MSNBC
 # mso	mso
 # msrp	msrp
 # mst	mst
@@ -13064,7 +13078,7 @@ NetBSD	NetBSD
 NETGEAR	NETGEAR
 Netherlands	Netherlands
 nets	nets
-netscape	netscape
+# netscape	netscape
 netware	netware
 network	network
 networked	networked
@@ -13232,6 +13246,8 @@ nonfiction	nonfiction
 nonlinear	nonlinear
 nonprofit	nonprofit
 nonsense	nonsense
+nonverbal	nonverbal
+nonverbally	nonverbally
 noodle	noodle
 noodles	noodles
 noon	noon
@@ -13371,7 +13387,7 @@ nutrients	nutrients
 nutrition	nutrition
 nutritional	nutritional
 nuts	nuts
-nutten	nutten
+# nutten	nutten
 # nv	nv
 NVIDIA	NVIDIA
 # nw	nw
@@ -13678,6 +13694,7 @@ orchard	orchard
 orchestra	orchestra
 orchid	orchid
 # ord	ord
+ordain	ordain
 order	order
 ordered	ordered
 ordering	ordering
@@ -14723,7 +14740,7 @@ pneumonia	pneumonia
 PNG	PNG
 # po	po
 pocket	pocket
-Pocket PC	PocketPC
+# Pocket PC	PocketPC
 pockets	pockets
 pod	pod
 podcast	podcast
@@ -15062,9 +15079,11 @@ preschool	preschool
 Prescott	Prescott
 prescribe	prescribe
 prescribed	prescribed
+prescribes	prescribes
 prescribing	prescribing
 prescription	prescription
 prescriptions	prescriptions
+prescriptive	prescriptive
 presence	presence
 present	present
 presentation	presentation
@@ -19154,6 +19173,7 @@ synth	synth
 synthase	synthase
 synthesis	synthesis
 synthetic	synthetic
+synthetically	synthetically
 Syracuse	Syracuse
 Syria	Syria
 Syrian	Syrian
@@ -19768,8 +19788,8 @@ title	title
 titled	titled
 titles	titles
 tits	tits
-titten	titten
-tittens	tittens
+# titten	titten
+# tittens	tittens
 Titus	Titus
 # tive	tive
 TiVo	TiVo
@@ -20384,6 +20404,7 @@ unacceptable	unacceptable
 unanimous	unanimous
 unanimously	unanimously
 unanswered	unanswered
+unary	unary
 unauthorized	unauthorized
 unavailable	unavailable
 unaware	unaware
@@ -20826,6 +20847,7 @@ vertically	vertically
 vertices	vertices
 very	very
 verzeichnis	verzeichnis
+vesicle	vesicle
 vessel	vessel
 vessels	vessels
 vest	vest
@@ -21063,15 +21085,19 @@ vulnerable	vulnerable
 # wac	wac
 wacky	wacky
 # waco	waco
+waddle	waddle
 wade	wade
 waffle	waffle
 wag	wag
 wage	wage
 wagering	wagering
 wages	wages
+wagged	wagged
+wagging	wagging
 waggon	waggon
 Wagner	Wagner
 wagon	wagon
+wags	wags
 # wai	wai
 wail	wail
 wailed	wailed
@@ -21770,7 +21796,7 @@ years	years
 yeast	yeast
 yell	yell
 yellow	yellow
-yellowstone	yellowstone
+Yellowstone	Yellowstone
 Yemen	Yemen
 yen	yen
 yep	yep
@@ -21784,7 +21810,7 @@ yielded	yielded
 yielding	yielding
 yields	yields
 yin	yin
-YMCA	YMCA
+# YMCA	YMCA
 # yn	yn
 # yo	yo
 yoga	yoga
