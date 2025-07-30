@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-07-01"
+version: "2025-07-25"
 sort: by_weight
 ...
 # +_+
@@ -1696,6 +1696,7 @@ barometer	barometer
 baron	baron
 baroque	baroque
 # barr	barr
+barracuda	barracuda
 barre	barre
 barred	barred
 barrel	barrel
@@ -2268,6 +2269,7 @@ bonsai	bonsai
 # bontril	bontril
 bonus	bonus
 bonuses	bonuses
+bony	bony
 boo	boo
 boob	boob
 boobs	boobs
@@ -2391,6 +2393,7 @@ brad	brad
 Bradford	Bradford
 Bradley	Bradley
 Brady	Brady
+brag	brag
 Braille	Braille
 brain	brain
 brains	brains
@@ -3068,6 +3071,9 @@ cavaliers	cavaliers
 cavalry	cavalry
 cave	cave
 caves	caves
+cavitary	cavitary
+cavitate	cavitate
+cavitation	cavitation
 cavity	cavity
 cayman	cayman
 # cb	cb
@@ -3457,6 +3463,7 @@ cigaret	cigaret
 cigarette	cigarette
 cigarettes	cigarettes
 cigars	cigars
+ciguatera	ciguatera
 cilantro	cilantro
 # cimel	cimel
 Cincinnati	Cincinnati
@@ -3705,11 +3712,13 @@ coca	coca
 Coca-Cola	Coca-Cola
 cocaine	cocaine
 cock	cock
+cockily	cockily
 cockpit	cockpit
 cockroach	cockroach
 cocks	cocks
 cocktail	cocktail
 cocktails	cocktails
+cocky	cocky
 Coco	Coco
 cocoa	cocoa
 coconut	coconut
@@ -4449,6 +4458,7 @@ corporations	corporations
 corps	corps
 corpse	corpse
 corpus	corpus
+corpuscle	corpuscle
 # corr	corr
 correct	correct
 correctable	correctable
@@ -4565,6 +4575,7 @@ covered	covered
 covering	covering
 covers	covers
 covert	covert
+covetous	covetous
 Covington	Covington
 cow	cow
 coward	coward
@@ -5127,6 +5138,7 @@ deepthroat	deepthroat
 deer	deer
 Deere	Deere
 def	def
+deface	deface
 defame	defame
 default	default
 defaults	defaults
@@ -5329,6 +5341,7 @@ derivative	derivative
 derivatives	derivatives
 derive	derive
 derived	derived
+dermal	dermal
 dermatology	dermatology
 # des	des
 desc	desc
@@ -5375,6 +5388,7 @@ desperately	desperately
 desperation	desperation
 despise	despise
 despite	despite
+despoil	despoil
 dessert	dessert
 desserts	desserts
 destination	destination
@@ -6397,6 +6411,7 @@ ellipsis	ellipsis
 elliptical	elliptical
 Ellis	Ellis
 elm	elm
+elongate	elongate
 eloquence	eloquence
 eloquent	eloquent
 else	else
@@ -6665,6 +6680,7 @@ Epic	Epic
 epic	epic
 epidemic	epidemic
 epidemiology	epidemiology
+epidermal	epidermal
 epilepsy	epilepsy
 epilogue	epilogue
 epinephrine	epinephrine
@@ -7403,6 +7419,7 @@ figurine	figurine
 figurines	figurines
 Fiji	Fiji
 filament	filament
+filamentous	filamentous
 file	file
 filed	filed
 FileMaker	FileMaker
@@ -8571,6 +8588,7 @@ greg	greg
 Gregg	Gregg
 Gregory	Gregory
 Grenada	Grenada
+grenade	grenade
 Grenadines	Grenadines
 grep	grep
 grew	grew
@@ -9562,6 +9580,7 @@ ignite	ignite
 ignition	ignition
 ignorance	ignorance
 ignorant	ignorant
+ignorantly	ignorantly
 ignore	ignore
 ignored	ignored
 ignoring	ignoring
@@ -9905,6 +9924,8 @@ infusion	infusion
 ing	ing
 ingenious	ingenious
 ingenuity	ingenuity
+ingest	ingest
+ingestion	ingestion
 Ingram	Ingram
 ingredient	ingredient
 ingredients	ingredients
@@ -10285,6 +10306,7 @@ irony	irony
 irregular	irregular
 irregularity	irregularity
 irrelevant	irrelevant
+irreproducible	irreproducible
 irrespective	irrespective
 irrigate	irrigate
 irrigation	irrigation
@@ -12118,6 +12140,7 @@ measures	measures
 measuring	measuring
 meat	meat
 meats	meats
+meaty	meaty
 mechanic	mechanic
 mechanical	mechanical
 mechanics	mechanics
@@ -13454,6 +13477,7 @@ obstacle	obstacle
 obstacles	obstacles
 obstetrics	obstetrics
 obstinate	obstinate
+obstinately	obstinately
 obstruct	obstruct
 obstruction	obstruction
 obtain	obtain
@@ -13810,6 +13834,7 @@ outfit	outfit
 outfits	outfits
 outfitters	outfitters
 outgoing	outgoing
+outgrowth	outgrowth
 outing	outing
 Outkast	Outkast
 outlaw	outlaw
@@ -14021,6 +14046,10 @@ paperbacks	paperbacks
 papers	papers
 paperwork	paperwork
 papery	papery
+papilla	papilla
+papillae	papillae
+papillate	papillate
+papillose	papillose
 Papua	Papua
 par	par
 para	para
@@ -14234,6 +14263,7 @@ peas	peas
 peasant	peasant
 pebble	pebble
 peck	peck
+pectoral	pectoral
 peculiar	peculiar
 peculiarity	peculiarity
 pedal	pedal
@@ -14385,6 +14415,8 @@ pertinent	pertinent
 Peru	Peru
 Peruvian	Peruvian
 pervasive	pervasive
+perverse	perverse
+perversely	perversely
 peso	peso
 pesos	pesos
 pessimistic	pessimistic
@@ -14547,6 +14579,7 @@ pile	pile
 piles	piles
 pilgrim	pilgrim
 pill	pill
+pillage	pillage
 pillar	pillar
 pillars	pillars
 pillow	pillow
@@ -15019,8 +15052,13 @@ precisely	precisely
 precision	precision
 preclude	preclude
 precursor	precursor
+predaceous	predaceous
+predacious	predacious
+predacity	predacity
+predation	predation
 predator	predator
 predators	predators
+predatory	predatory
 predecessor	predecessor
 predicate	predicate
 predict	predict
@@ -15391,6 +15429,7 @@ protocols	protocols
 proton	proton
 prototype	prototype
 prototypes	prototypes
+protuberance	protuberance
 proud	proud
 proudly	proudly
 # prov	prov
@@ -15765,6 +15804,7 @@ rant	rant
 rants	rants
 # rao	rao
 rap	rap
+rapacious	rapacious
 rape	rape
 raped	raped
 Raphael	Raphael
@@ -15772,6 +15812,7 @@ rapid	rapid
 rapidity	rapidity
 rapidly	rapidly
 rapids	rapids
+rapine	rapine
 rapper	rapper
 raptor	raptor
 rapture	rapture
@@ -15798,6 +15839,7 @@ rats	rats
 rattle	rattle
 rave	rave
 raven	raven
+ravenous	ravenous
 ravens	ravens
 raw	raw
 ray	ray
@@ -16290,6 +16332,7 @@ reprints	reprints
 reproach	reproach
 reproduce	reproduce
 reproduced	reproduced
+reproducible	reproducible
 reproduction	reproduction
 reproductions	reproductions
 reproductive	reproductive
@@ -17038,6 +17081,7 @@ saving	saving
 savings	savings
 savior	savior
 savory	savory
+savoury	savoury
 savvy	savvy
 saw	saw
 saws	saws
@@ -19212,6 +19256,7 @@ tact	tact
 tactic	tactic
 tactical	tactical
 tactics	tactics
+tactile	tactile
 tad	tad
 tag	tag
 tagged	tagged
@@ -20469,6 +20514,7 @@ uneasy	uneasy
 unemployed	unemployed
 unemployment	unemployment
 UNESCO	UNESCO
+unethical	unethical
 unexpected	unexpected
 unfair	unfair
 unfamiliar	unfamiliar
@@ -20729,6 +20775,11 @@ van	van
 vanadium	vanadium
 Vance	Vance
 Vancouver	Vancouver
+Vandal	Vandal
+Vandalic	Vandalic
+vandalise	vandalise
+vandalism	vandalism
+vandalize	vandalize
 Vanderbilt	Vanderbilt
 Vanessa	Vanessa
 vanguard	vanguard
@@ -21078,6 +21129,7 @@ vulgar	vulgar
 vulnerabilities	vulnerabilities
 vulnerability	vulnerability
 vulnerable	vulnerable
+vulva	vulva
 # vv	vv
 # vw	vw
 # vx	vx
@@ -21471,12 +21523,16 @@ wilder	wilder
 wilderness	wilderness
 wildlife	wildlife
 Wiley	Wiley
+wilful	wilful
+wilfulness	wilfulness
 Wilhelm	Wilhelm
 Wilkes	Wilkes
 Wilkins	Wilkins
 Wilkinson	Wilkinson
 will	will
 Willard	Willard
+willful	willful
+willfully	willfully
 William	William
 Williams	Williams
 Williamsburg	Williamsburg
