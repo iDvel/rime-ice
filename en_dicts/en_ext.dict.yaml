@@ -496,6 +496,7 @@ YAML Ain't Markup Language	YAML
 TOML	TOML
 Tom's Obvious Minimal Language	TOML
 Hexo	Hexo
+hexo	hexo
 Hugo	Hugo
 Epic	Epic
 Epic Games	EpicGames
@@ -2169,10 +2170,31 @@ Mercedes-Benz	Mercedes-Benz
 1Password	1Password
 WD-40	WD-40
 OpenStreetMap	OpenStreetMap
-BanG Dream!	BanGDream
+BanG Dream!	BanGDream!
 MyGO!!!!!	MyGO!!!!!
 Ave Mujica	AveMujica
 GPT-4.1	GPT-4.1
 GPT-4.5	GPT-4.5
 Rust	Rust
 Syncthing	Syncthing
+Heptabase	Heptabase
+Ghostty	Ghostty
+WezTerm	WezTerm
+Wez's Terminal Emulator	WezTerm
+Phigros	Phigros
+Arcaea	Arcaea
+OsmAnd	OsmAnd
+Xray	Xray
+sing-box	sing-box
+live house	livehouse
+Clang	Clang
+CMake	CMake
+DiskGenius	DiskGenius
+AList	AList
+OpenList	OpenList
+ICPC	ICPC
+International Collegiate Programming Contest	ICPC
+International Collegiate Programming Contest	InternationalCollegiateProgrammingContest
+UML	UML
+Unified Modeling Language	UML
+Unified Modeling Language	UnifiedModelingLanguage
