@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-07-01"
+version: "2025-07-10"
 sort: by_weight
 ...
 # +_+
@@ -4449,6 +4449,7 @@ corporations	corporations
 corps	corps
 corpse	corpse
 corpus	corpus
+corpuscle	corpuscle
 # corr	corr
 correct	correct
 correctable	correctable
@@ -5329,6 +5330,7 @@ derivative	derivative
 derivatives	derivatives
 derive	derive
 derived	derived
+dermal	dermal
 dermatology	dermatology
 # des	des
 desc	desc
@@ -6665,6 +6667,7 @@ Epic	Epic
 epic	epic
 epidemic	epidemic
 epidemiology	epidemiology
+epidermal	epidermal
 epilepsy	epilepsy
 epilogue	epilogue
 epinephrine	epinephrine
@@ -7403,6 +7406,7 @@ figurine	figurine
 figurines	figurines
 Fiji	Fiji
 filament	filament
+filamentous	filamentous
 file	file
 filed	filed
 FileMaker	FileMaker
@@ -10285,6 +10289,7 @@ irony	irony
 irregular	irregular
 irregularity	irregularity
 irrelevant	irrelevant
+irreproducible	irreproducible
 irrespective	irrespective
 irrigate	irrigate
 irrigation	irrigation
@@ -13810,6 +13815,7 @@ outfit	outfit
 outfits	outfits
 outfitters	outfitters
 outgoing	outgoing
+outgrowth	outgrowth
 outing	outing
 Outkast	Outkast
 outlaw	outlaw
@@ -14021,6 +14027,10 @@ paperbacks	paperbacks
 papers	papers
 paperwork	paperwork
 papery	papery
+papilla	papilla
+papillae	papillae
+papillate	papillate
+papillose	papillose
 Papua	Papua
 par	par
 para	para
@@ -15391,6 +15401,7 @@ protocols	protocols
 proton	proton
 prototype	prototype
 prototypes	prototypes
+protuberance	protuberance
 proud	proud
 proudly	proudly
 # prov	prov
@@ -16290,6 +16301,7 @@ reprints	reprints
 reproach	reproach
 reproduce	reproduce
 reproduced	reproduced
+reproducible	reproducible
 reproduction	reproduction
 reproductions	reproductions
 reproductive	reproductive
@@ -19212,6 +19224,7 @@ tact	tact
 tactic	tactic
 tactical	tactical
 tactics	tactics
+tactile	tactile
 tad	tad
 tag	tag
 tagged	tagged
