@@ -27,7 +27,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2025-07-10"
+version: "2025-08-01"
 sort: by_weight
 ...
 ### 按需启用
@@ -5101,9 +5101,9 @@ sort: by_weight
 杄	qian	20
 鹐	qian	10
 岍	qian	8
+伣	qian	1
 圲	qian	1
 犍	qian	1
-伣	qian	0
 墘	qian	0
 磏	qian	0
 𬘬	qian	0
@@ -6862,12 +6862,12 @@ sort: by_weight
 缐	xian	14
 孅	xian	6
 伭	xian	2
+𬸣	xian	2
 禒	xian	1
+𪾢	xian	1
+𫍯	xian	1
+𬀪	xian	1
 㬎	xian	0
-𪾢	xian	0
-𫍯	xian	0
-𬀪	xian	0
-𬸣	xian	0
 想	xiang	6140550
 向	xiang	2570964
 相	xiang	2037658
