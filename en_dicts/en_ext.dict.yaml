@@ -10,7 +10,7 @@
 # 少数单词与 en 重复，纯粹是为了排版美观，部署时的报错 duplicate word definition 可忽略，无任何影响
 ---
 name: en_ext
-version: "2025-04-16"
+version: "2025-08-01"
 sort: by_weight
 ...
 # 一些杂项
@@ -162,6 +162,7 @@ macOS Monterey	macOS	6
 macOS Ventura	macOS	7
 macOS Sonoma	macOS	8
 macOS Sequoia	macOS	9
+macOS Tahoe	macOS	10
 Windows	Windows	999
 Windows 95	Windows	1
 Windows 98	Windows	2
@@ -174,7 +175,7 @@ Windows 7	Windows	7
 Windows 8	Windows	8
 Windows 10	Windows	10
 Windows 11	Windows	11
-Windows 12	Windows	12
+# Windows 12	Windows	12
 # +_+
 iPhone 3G	iPhone3G
 iPhone 3GS	iPhone3GS
@@ -299,9 +300,9 @@ Aeron Chair	AeronChair
 Netscape	Netscape
 WeChat	WeChat
 Dota	Dota
-Database	Database
 Superlist	Superlist
 DJ	DJ
+Disc Jockey	DJ
 DLC	DLC
 Downloadable content	DLC
 Downloadable content	Downloadablecontent
@@ -333,6 +334,7 @@ Advanced RISC Machine	ARM
 Advanced RISC Machine	AdvancedRISCMachine
 eGPU	eGPU
 One Piece	OnePiece
+CBD	CBD
 CCTV	CCTV
 Closed-Circuit Television	CCTV
 Closed-Circuit Television	Closed-CircuitTelevision
@@ -356,7 +358,6 @@ BBC	BBC
 DataGrip	DataGrip
 AlphaGo	AlphaGo
 AlphaFold	AlphaFold
-Valve	Valve
 CS:GO	CS:GO
 Counter-Strike: Global Offensive	CS:GO
 Counter-Strike: Global Offensive	Counter-Strike:GlobalOffensive
@@ -421,6 +422,14 @@ Todoist	Todoist
 TeamViewer	TeamViewer
 Sleep Cycle	SleepCycle
 Sony	Sony
+Nikon	Nikon
+Canon	Canon
+FujiFilm	FujiFilm
+Panasonic	Panasonic
+Ricoh	Ricoh
+Casio	Casio
+CCD	CCD
+Charge-Coupled Device	CCD
 PDF Expert	PDFExpert
 OSCHINA	OSCHINA
 Navicat	Navicat
@@ -496,9 +505,7 @@ YAML Ain't Markup Language	YAML
 TOML	TOML
 Tom's Obvious Minimal Language	TOML
 Hexo	Hexo
-hexo	hexo
 Hugo	Hugo
-Epic	Epic
 Epic Games	EpicGames
 Instagram	IG
 Instagram	INS
@@ -611,6 +618,10 @@ Game Boy Color	GameBoyColor
 GCC	GCC
 GNU Compiler Collection	GCC
 GNU Compiler Collection	GNUCompilerCollection
+LLVM	LLVM
+LLDB	LLDB
+Clang	Clang
+CMake	CMake
 uBlacklist	uBlacklist
 Apple Watch	AppleWatch
 AppleCare	AppleCare
@@ -654,6 +665,8 @@ HiCar	HiCar
 CDN	CDN
 Content Delivery Network	CDN
 Content Delivery Network	ContentDeliveryNetwork
+PCDN	PCDN
+Peer-to-Peer Content Delivery Network	PCDN
 CheatSheet	CheatSheet
 Chocolatey	Chocolatey
 choco	choco
@@ -747,7 +760,6 @@ iTunes	iTunes
 iTunes Connect	iTunesConnect
 iTunes Match	iTunesMatch
 iBook	iBook
-iWatch	iWatch
 Kaleidoscope	Kaleidoscope
 Karabiner	Karabiner
 Keka	Keka
@@ -773,7 +785,7 @@ MacUpdate Desktop	MacUpdateDesktop
 Mailbox	Mailbox
 MAMP PRO	MAMPPRO
 Manico	Manico
-Maple	Maple
+Matlab	Matlab
 MarkMyWords	MarkMyWords
 MarsEdit	MarsEdit
 Mathtype	Mathtype
@@ -888,7 +900,6 @@ WorkFlowy	WorkFlowy
 WWDC	WWDC
 Apple Worldwide Developers Conference	WWDC
 Xee	Xee
-Xeon	Xeon
 Xmind	Xmind
 xScope	xScope
 XtraFinder	XtraFinder
@@ -1073,6 +1084,7 @@ General Data Protection Regulation	GDPR
 Netlify	Netlify
 Mac Studio	MacStudio
 Studio Display	StudioDisplay
+Pro Display XDR	ProDisplayXDR
 OC	OC
 Objective-C	OC
 Objective-C	Objective-C
@@ -1116,7 +1128,6 @@ ASAP	ASAP
 as soon as possible	ASAP
 PUBG	PUBG
 PLAYERUNKNOWN'S BATTLEGROUNDS	PUBG
-Ruby	Ruby
 GFM	GFM
 GitHub Flavored Markdown	GFM
 GitHub Flavored Markdown	GitHubFlavoredMarkdown
@@ -1524,12 +1535,12 @@ Microsoft	Microsoft
 Nintendo	Nintendo
 Wii U	WiiU
 Wii	Wii
-Oracle	Oracle
 OriginOS	OriginOS
 iPhone	iPhone
 iPad	iPad
 iPod	iPod
-# iPods	iPods
+HomePod	HomePod
+HomePod mini	HomePodmini
 UI	UI
 UK	UK
 United Kingdom	UK
@@ -1537,10 +1548,10 @@ United Kingdom	UnitedKingdom
 DirectX	DirectX
 Kinect	Kinect
 Cloudflare	Cloudflare
-X-ray	X-ray
 Hip-Hop	Hip-Hop
 Simplified Chinese	SimplifiedChinese
 Traditional Chinese	TraditionalChinese
+US	US
 United States	US
 United States	UnitedStates
 USA	USA
@@ -1638,6 +1649,7 @@ Unix shell	Unixshell
 Z-Library	Z-Library
 Zaraz	Zaraz
 Scribble Diffusion	ScribbleDiffusion
+ASUS	ASUS
 Lenovo	Lenovo
 Adios	Adios
 EMS	EMS
@@ -1658,9 +1670,13 @@ WLAN	WLAN
 Wireless LAN	WLAN
 GPT	GPT
 Generative Pre-trained Transformer	GPT
-GPT-4	GPT-4
-GPT-3.5	GPT-3.5
 GPTs	GPTs
+GPT-3	GPT-3
+GPT-3.5	GPT-3.5
+GPT-4	GPT-4
+GPT-4o	GPT-4o
+GPT-4.1	GPT-4.1
+GPT-4.5	GPT-4.5
 LaMDA	LaMDA
 Language Model for Dialogue Applications	LaMDA
 Coinbase Wallet	CoinbaseWallet
@@ -1891,6 +1907,7 @@ Kubeadm	Kubeadm
 Minikube	Minikube
 shitwork	shitwork
 W3C	W3C
+World Wide Web Consortium	W3C
 A4	A4
 3D	3D
 Loki	Loki
@@ -1902,11 +1919,25 @@ UltraEdit	UltraEdit
 GoldenDict	GoldenDict
 tokenizer	tokenizer
 Stable Diffusion	StableDiffusion
+CISC	CISC
+RISC	RISC
 x86	x86
 x86-64	x86-64
 x64	x64
 amd64	amd64
 arm64	arm64
+Xeon	Xeon
+Pentium	Pentium
+Celeron	Celeron
+EPYC	EPYC
+Ryzen	Ryzen
+Athlon	Athlon
+DSL	DSL
+Domain Specific Language	DSL
+HDL	HDL
+Hardware Description Language	HDL
+VHDL	VHDL
+Verilog	Verilog
 keysym	keysym
 keysyms	keysyms
 PotPlayer	PotPlayer
@@ -1916,6 +1947,7 @@ protobuf	protobuf
 beyatch	beyatch
 iBus	iBus
 BT	BT
+BitTorrent	BT
 ProtonMail	ProtonMail
 Elasticsearch	Elasticsearch
 Next.js	Next.js
@@ -1996,6 +2028,7 @@ unhuman	unhuman
 unhumified	unhumified
 unhumanize	unhumanize
 P2P	P2P
+peer-to-peer	P2P
 F2A	F2A
 B2B	B2B
 C2C	C2C
@@ -2102,13 +2135,15 @@ International Monetary Fund	IMF
 International Monetary Fund	InternationalMonetaryFund
 Terraform	Terraform
 systemd	systemd
+IC	IC
+Integrated Circuit	IC
+ASIC	ASIC
 FPGA	FPGA
-field-programmable gate array	FPGA
+Field-Programmable Gate Array	FPGA
 Samsung	Samsung
 Samsung Galaxy	SamsungGalaxy
 VimL	VimL
 Vimscript	Vimscript
-Vimscripts	Vimscripts
 kubectl	kubectl
 mvn	mvn
 mvnd	mvnd
@@ -2143,7 +2178,6 @@ Apple Intelligence	AppleIntelligence
 7-Zip	7-Zip
 LGTM	LGTM
 PTAL	PTAL
-GPT-4o	GPT-4o
 Grok	Grok
 MBR	MBR
 master boot record	masterbootrecord
@@ -2170,28 +2204,15 @@ Mercedes-Benz	Mercedes-Benz
 1Password	1Password
 WD-40	WD-40
 OpenStreetMap	OpenStreetMap
-BanG Dream!	BanGDream!
-MyGO!!!!!	MyGO!!!!!
-Ave Mujica	AveMujica
-GPT-4.1	GPT-4.1
-GPT-4.5	GPT-4.5
-Rust	Rust
+OsmAnd	OsmAnd
 Syncthing	Syncthing
 Heptabase	Heptabase
 Ghostty	Ghostty
 WezTerm	WezTerm
 Wez's Terminal Emulator	WezTerm
-Phigros	Phigros
-Arcaea	Arcaea
-OsmAnd	OsmAnd
-Xray	Xray
 sing-box	sing-box
 live house	livehouse
-Clang	Clang
-CMake	CMake
 DiskGenius	DiskGenius
-AList	AList
-OpenList	OpenList
 ICPC	ICPC
 International Collegiate Programming Contest	ICPC
 International Collegiate Programming Contest	InternationalCollegiateProgrammingContest
