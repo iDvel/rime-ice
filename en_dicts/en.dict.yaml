@@ -557,7 +557,7 @@ Alexandra	Alexandra
 Alexandre	Alexandre
 Alexandria	Alexandria
 Alexis	Alexis
-Alfa	Alfa
+# Alfa	Alfa
 Alfred	Alfred
 algae	algae
 algebra	algebra
@@ -2086,10 +2086,10 @@ bitter	bitter
 bitterness	bitterness
 biz	biz
 bizarre	bizarre
-Bizjournals	Bizjournals
-Bizjournalshire	Bizjournalshire
-Bizkit	Bizkit
-bizrate	bizrate
+# Bizjournals	Bizjournals
+# Bizjournalshire	Bizjournalshire
+# Bizkit	Bizkit
+# bizrate	bizrate
 # bj	bj
 # bk	bk
 # bl	bl
@@ -19255,6 +19255,7 @@ sync	sync
 synchronization	synchronization
 synchronize	synchronize
 synchronized	synchronized
+synchronizes	synchronizes
 synchronizing	synchronizing
 synchronous	synchronous
 syndicate	syndicate
