@@ -42,6 +42,9 @@ switches:
   - name: emoji
     states: [ 💀, 😄 ]
     reset: 1
+  - name: others
+    states: [符号关 , 符号开 ]
+    reset: 1
   - name: full_shape
     states: [ 半角, 全角 ]
   - name: search_single_char  # search.lua 的功能开关，辅码查词时是否单字优先
@@ -88,6 +91,7 @@ engine:
     - lua_filter@*pin_cand_filter                    # 置顶候选项（顺序要求：置顶候选项 > Emoji > 简繁切换）
     - lua_filter@*reduce_english_filter              # 降低部分英语单词在候选项的位置
     - simplifier@emoji                               # Emoji
+    - simplifier@others                             # 其他符号
     - simplifier@traditionalize                      # 简繁切换
     - lua_filter@*search@radical_pinyin              # 部件拆字辅码
     - uniquifier                                     # 去重
@@ -237,7 +241,15 @@ emoji:
   option_name: emoji         # 对应 switches 中的 name
   opencc_config: emoji.json  # 选择要加载的 OpenCC 配置
   inherit_comment: false     # 在 corrector.lua 及反查中，emoji 的 comment 显示为空
+  tips: all                  # 转换提示：all 都显示 | char 仅单字显示 | none 不显示。
 
+
+# opencc/others的其它符号配置
+others:
+  option_name: others        # 对应 switches 中的 others
+  opencc_config: others.json  # 选择要加载的 OpenCC 配置
+  inherit_comment: false      # 在 corrector.lua 及反查中，others 的 comment 显示为空
+  tips: all                   # 转换提示：all 都显示 | char 仅单字显示 | none 不显示。
 
 # 简繁切换
 traditionalize:
