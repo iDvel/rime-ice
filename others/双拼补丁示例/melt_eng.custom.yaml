@@ -8,3 +8,4 @@ patch:
     # __include: melt_eng.schema.yaml:/algebra_sogou          # 搜狗双拼
     # __include: melt_eng.schema.yaml:/algebra_abc            # 智能ABC双拼
     # __include: melt_eng.schema.yaml:/algebra_ziguang        # 紫光双拼
+    # __include: melt_eng.schema.yaml:/algebra_jiajia         # 拼音加加双拼

@@ -129,6 +129,7 @@ var (
 	doublePinyinSogou   schema
 	doublePinyinZiGuang schema
 	doublePinyinABC     schema
+	doublePinyinJiajia  schema
 )
 
 func initSchemas() {
@@ -457,6 +458,60 @@ func initSchemas() {
 			"un":   "n",
 		},
 	}
+
+	doublePinyinJiajia = schema{
+		name:            "cn_en_jiajia",
+		desc:            "拼音加加双拼",
+		combinationType: "unique",
+		path:            filepath.Join(RimeDir, "en_dicts/cn_en_jiajia.txt"),
+		mapping: map[string]string{
+			// 零声母
+			"-a-":   "aa",
+			"-e-":   "ee",
+			"-o-":   "oo",
+			"-ai-":  "as",
+			"-ei-":  "ew",
+			"-ou-":  "op",
+			"-an-":  "af",
+			"-en-":  "er",
+			"-ang-": "ag",
+			"-eng-": "et",
+			"-ao-":  "ad",
+			"-er-":  "eq",
+			// zh ch sh
+			"zh": "v",
+			"ch": "u",
+			"sh": "i",
+			// 韵母
+			"ao":   "d",
+			"en":   "r",
+			"an":   "f",
+			"eng":  "t",
+			"in":   "l",
+			"uai":  "x",
+			"uo":   "o",
+			"ai":   "s",
+			"ang":  "g",
+			"ie":   "m",
+			"ian":  "j",
+			"iang": "h",
+			"uang": "h",
+			"iong": "y",
+			"ong":  "y",
+			"er":   "q",
+			"iu":   "n",
+			"ei":   "w",
+			"uan":  "c",
+			"ing":  "q",
+			"ou":   "p",
+			"ia":   "b",
+			"ua":   "b",
+			"iao":  "k",
+			"ue":   "x",
+			"ui":   "v",
+			"un":   "z",
+		},
+	}
 }
 
 // CnEn 从 others/cn_en.txt 生成全拼和各个双拼的中英混输词库
@@ -478,6 +533,7 @@ func CnEn() {
 		doublePinyinSogou,
 		doublePinyinZiGuang,
 		doublePinyinABC,
+		doublePinyinJiajia,
 	}
 
 	// 写入前缀内容

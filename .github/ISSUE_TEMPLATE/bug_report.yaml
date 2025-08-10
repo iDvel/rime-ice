@@ -75,6 +75,7 @@ body:
         - 微软双拼 double_pinyin_mspy
         - 搜狗双拼 double_pinyin_sougou
         - 紫光双拼 double_pinyin_ziguang
+        - 拼音加加 double_pinyin_jiajia
         - 自然码 double_pinyin
         - 仓·九宫格 t9
         - 所有方案

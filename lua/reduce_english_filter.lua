@@ -97,11 +97,12 @@ function M.func(input, env)
                 table.insert(pending_cands, cand)
             end
             if index >= M.idx + #pending_cands - 1 then
-                for _, cand in ipairs(pending_cands) do
-                    yield(cand)
-                end
                 break
             end
+        end
+        -- 将pending_cands按顺序输出
+        for _, cand in ipairs(pending_cands) do
+            yield(cand)
         end
     end
 
