@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2025-04-28"
+version: "2025-06-10"
 sort: by_weight
 ...
 ##### 容错词
@@ -129,6 +129,8 @@ sort: by_weight
 南无阿弥陀佛	na mo a mi tuo fo
 南无阿弥陀佛	nan wu e mi tuo fo
 南无阿弥陀佛	nan wu a mi tuo fo
+刹帝利	cha di li
+刹帝利	sha di li
 给予	ji yu
 给予	gei yu
 槟榔	bing lang
@@ -289,6 +291,10 @@ sort: by_weight
 缩砂密	suo sha mi
 迫击炮	pai ji pao
 迫击炮	po ji pao
+封禅	feng shan
+封禅	feng chan
+芫荽	yan sui
+芫荽	yuan sui
 榅桲	wen po
 榅桲	wen bo
 荸荠	bi qi
@@ -321,12 +327,16 @@ sort: by_weight
 哺乳	pu ru
 脑卒中	nao cu zhong
 脑卒中	nao zu zhong
+阈值	yu zhi
+阈值	fa zhi
 潟湖	xi hu
 潟湖	xie hu
 果脯	guo fu
 果脯	guo pu
 肉脯	rou fu
 肉脯	rou pu
+饸饹	he le
+饸饹	huo luo
 脯氨酸	fu an suan
 脯氨酸	pu an suan
 酪氨酸	lao an suan
@@ -377,6 +387,8 @@ sort: by_weight
 杉木	shan mu
 道在屎溺	dao zai shi niao
 道在屎溺	dao zai shi ni
+甑糕	zeng gao
+甑糕	jing gao
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
