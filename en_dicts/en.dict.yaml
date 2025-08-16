@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-08-01"
+version: "2025-08-10"
 sort: by_weight
 ...
 # +_+
@@ -287,7 +287,10 @@ adherence	adherence
 adhesion	adhesion
 adhesive	adhesive
 adhesives	adhesives
+adiabatic	adiabatic
+adiabatically	adiabatically
 adidas	adidas
+adieu	adieu
 adipex	adipex
 adj	adj
 adjacent	adjacent
@@ -557,7 +560,7 @@ Alexandra	Alexandra
 Alexandre	Alexandre
 Alexandria	Alexandria
 Alexis	Alexis
-# Alfa	Alfa
+alfalfa	alfalfa
 Alfred	Alfred
 algae	algae
 algebra	algebra
@@ -1047,6 +1050,8 @@ Arafat	Arafat
 arbitrary	arbitrary
 arbitration	arbitration
 arbor	arbor
+arboreal	arboreal
+arbour	arbour
 arc	arc
 arcade	arcade
 Arcadia	Arcadia
@@ -1158,6 +1163,7 @@ arterial	arterial
 arteries	arteries
 artery	artery
 arthritis	arthritis
+arthropod	arthropod
 Arthur	Arthur
 article	article
 articles	articles
@@ -1568,6 +1574,7 @@ backpack	backpack
 backpacking	backpacking
 backpacks	backpacks
 backs	backs
+backslash	backslash
 backstage	backstage
 backstreet	backstreet
 backup	backup
@@ -3067,6 +3074,7 @@ cavaliers	cavaliers
 cavalry	cavalry
 cave	cave
 caves	caves
+caviar	caviar
 cavitary	cavitary
 cavitate	cavitate
 cavitation	cavitation
@@ -3204,6 +3212,7 @@ challenges	challenges
 challenging	challenging
 chamber	chamber
 chambers	chambers
+chameleon	chameleon
 champ	champ
 champagne	champagne
 champaign	champaign
@@ -3710,6 +3719,9 @@ coats	coats
 coaxial	coaxial
 cobalt	cobalt
 Cobb	Cobb
+cobble	cobble
+cobbler	cobbler
+cobblestone	cobblestone
 cobra	cobra
 coca	coca
 Coca-Cola	Coca-Cola
@@ -4970,6 +4982,8 @@ Darwin	Darwin
 dash	dash
 dashboard	dashboard
 dashed	dashed
+dashes	dashes
+dashing	dashing
 # dat	dat
 data	data
 database	database
@@ -5474,6 +5488,7 @@ devour	devour
 dew	dew
 # DEWALT	DEWALT
 Dewey	Dewey
+dewlap	dewlap
 # dex	dex
 dexter	dexter
 # df	df
@@ -5930,11 +5945,13 @@ dorado	dorado
 Doris	Doris
 dorm	dorm
 Dorothy	Dorothy
+dorsal	dorsal
 Dorset	Dorset
 DOS	DOS
 dosage	dosage
 dose	dose
 doses	doses
+dossal	dossal
 dot	dot
 dots	dots
 dotted	dotted
@@ -6509,7 +6526,7 @@ EMS	EMS
 emu	emu
 emulation	emulation
 emulator	emulator
-Emule	Emule
+# Emule	Emule
 # en	en
 enable	enable
 enabled	enabled
@@ -6824,6 +6841,7 @@ etiology	etiology
 etiquette	etiquette
 # eu	eu
 Eugene	Eugene
+Euler	Euler
 EUR	EUR
 eureka	eureka
 euro	euro
@@ -8552,6 +8570,7 @@ grass	grass
 grasshopper	grasshopper
 grassroots	grassroots
 grassy	grassy
+grate	grate
 grateful	grateful
 gratis	gratis
 gratitude	gratitude
@@ -9599,6 +9618,7 @@ ignore	ignore
 ignored	ignored
 ignoring	ignoring
 # igor	igor
+iguana	iguana
 # ih	ih
 # ii	ii
 # iii	iii
@@ -10102,6 +10122,7 @@ integrates	integrates
 integrating	integrating
 integration	integration
 integrity	integrity
+integument	integument
 Intel	Intel
 intellect	intellect
 intellectual	intellectual
@@ -11633,8 +11654,10 @@ low	low
 Lowe	Lowe
 Lowell	Lowell
 lower	lower
+lowercase	lowercase
 lowered	lowered
 lowering	lowering
+lowers	lowers
 lowest	lowest
 lows	lows
 loyal	loyal
@@ -12319,6 +12342,7 @@ metallic	metallic
 # metallica	metallica
 metallurgy	metallurgy
 metals	metals
+metamorphose	metamorphose
 metaphor	metaphor
 metasearch	metasearch
 meteorological	meteorological
@@ -13079,6 +13103,7 @@ neck	neck
 necklace	necklace
 necklaces	necklaces
 necktie	necktie
+nectar	nectar
 # ned	ned
 Nederland	Nederland
 Nederlands	Nederlands
@@ -13190,6 +13215,7 @@ newspapers	newspapers
 newsroom	newsroom
 Newsweek	Newsweek
 newswire	newswire
+newt	newt
 newton	newton
 next	next
 NexTag	NexTag
@@ -14659,6 +14685,7 @@ piping	piping
 piquancy	piquancy
 piquant	piquant
 piracy	piracy
+piranha	piranha
 pirate	pirate
 pirates	pirates
 Pisces	Pisces
@@ -16986,6 +17013,7 @@ Sagittarius	Sagittarius
 Sahara	Sahara
 said	said
 sail	sail
+sailfish	sailfish
 sailing	sailing
 sailor	sailor
 sailors	sailors
@@ -16996,6 +17024,7 @@ sake	sake
 sal	sal
 salad	salad
 salads	salads
+salamander	salamander
 salaries	salaries
 salary	salary
 sale	sale
@@ -18115,9 +18144,11 @@ snatch	snatch
 sneak	sneak
 sneeze	sneeze
 sniff	sniff
+snipe	snipe
 sniper	sniper
 snippet	snippet
 snippets	snippets
+snitch	snitch
 SNMP	SNMP
 snooker	snooker
 snoop	snoop
@@ -18867,6 +18898,7 @@ stunning	stunning
 stunt	stunt
 stupid	stupid
 sturdy	sturdy
+sturgeon	sturgeon
 Stuttgart	Stuttgart
 style	style
 styled	styled
@@ -19103,7 +19135,7 @@ surgery	surgery
 surgical	surgical
 Suriname	Suriname
 surname	surname
-Surnames	Surnames
+surnames	surnames
 surpass	surpass
 surplus	surplus
 surprise	surprise
@@ -19172,6 +19204,7 @@ swab	swab
 swag	swag
 swallow	swallow
 swallowing	swallowing
+swallowtail	swallowtail
 swamp	swamp
 swan	swan
 Swansea	Swansea
@@ -19321,6 +19354,7 @@ Tahiti	Tahiti
 Tahoe	Tahoe
 Tai	Tai
 tail	tail
+tailcoat	tailcoat
 tailed	tailed
 tailor	tailor
 tailored	tailored
@@ -20688,6 +20722,7 @@ uploading	uploading
 uploads	uploads
 upon	upon
 upper	upper
+uppercase	uppercase
 upright	upright
 uproar	uproar
 UPS	UPS
