@@ -826,8 +826,6 @@ TF卡	TFka
 TF卡	tfka
 SD卡	SDka
 SD卡	sdka
-NAND闪存	NANDshancun
-NAND闪存	nandshancun
 N年	Nnian
 N年	nnian
 A点	Adian

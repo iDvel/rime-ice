@@ -826,8 +826,6 @@ TF卡	TFka
 TF卡	tfka
 SD卡	SDka
 SD卡	sdka
-NAND闪存	NANDvjcn
-NAND闪存	nandvjcn
 N年	Nnw
 N年	nnw
 A点	Adw

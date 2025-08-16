@@ -418,7 +418,6 @@ K线图
 T台
 TF卡
 SD卡
-NAND闪存
 N年
 A点
 B点
