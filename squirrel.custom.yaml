@@ -1,0 +1,60 @@
+patch:
+  style:
+    color_scheme: gruvbox_dark_hard
+    color_scheme_dark: gruvbox_dark_hard
+    candidate_list_layout: linear
+    font_point: 50
+
+  preset_color_schemes:
+    macos_dark:
+      name: Mac仿原生暗色/macos_dark
+      author: 一方
+      back_color: 0x252a2e # 候选条背景色，24位色值，16进制，BGR顺序
+      border_color: 0x050505 # 边框色
+      text_color: 0x424242 # 拼音行文字颜色
+      hilited_back_color: 0xD75A00 # 第一候选项背景背景色
+      hilited_candidate_text_color: 0xFFFFFF # 第一候选项文字颜色
+      hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
+      hilited_comment_text_color: 0x999999 # 注解文字高亮
+      hilited_text_color: 0x999999 # 高亮拼音 (需要开启内嵌编码)
+      candidate_text_color: 0xe9e9ea # 预选项文字颜色
+      comment_text_color: 0x999999 # 拼音等提示文字颜色
+      horizontal: true # 水平排列
+      inline_preedit: true # 单行显示，false双行显示
+      label_color: 0x999999 # 预选栏编号颜色
+      candidate_format: "%c\u2005%@" # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
+      font_face: "PingFangSC" # 候选词编号字体
+      # font_point: 17 # 候选文字大小
+      # label_font_point: 13 # 候选编号大小
+      corner_radius: 5 # 候选条圆角
+      hilited_corner_radius: 5 # 高亮圆角
+      border_height: 4 # 窗口上下高度
+      border_width: 4 # 窗口左右宽度
+      border_color_width: 0 #输入条边框宽度
+      #label_font_face: "SFCompactText-Regular"  # 候选词编号字体
+
+    gruvbox_dark_hard:
+      name: gruvbox_dark_hard
+      author: franklin
+      back_color: 0x21201d # 候选条背景色 - dark0_hard
+      border_color: 0x0a0a0b # 边框色
+      text_color: 0x748392 # 拼音行文字颜色 - gray
+      hilited_back_color: 0x0e5dd6 # 第一候选项背景色 - bright_orange (#fe8019 转 BGR)
+      hilited_candidate_text_color: 0xb2dbeb # 第一候选项文字颜色 - light1
+      hilited_candidate_label_color: 0xb2dbeb # 第一候选项编号颜色 - light1
+      # hilited_candidate_text_color: 0x21201d # 第一候选项文字颜色 - dark0_hard
+      # hilited_candidate_label_color: 0x21201d # 第一候选项编号颜色 - dark0_hard
+      hilited_comment_text_color: 0x545c66 # 注解文字高亮 - dark4
+      hilited_text_color: 0x2fbdaf # 高亮拼音 - bright_yellow
+      candidate_text_color: 0xb2dbeb # 预选项文字颜色 - light1
+      comment_text_color: 0x748392 # 拼音等提示文字颜色 - gray
+      horizontal: true
+      inline_preedit: true
+      label_color: 0x8499a8 # 预选栏编号颜色 - light4
+      candidate_format: "%c\u2005%@"
+      font_face: "PingFangSC"
+      corner_radius: 5
+      hilited_corner_radius: 5
+      border_height: 4
+      border_width: 4
+      border_color_width: 0

@@ -1,0 +1,9 @@
+patch:
+  menu:
+    page_size: 5
+  key_binder:
+    select_first_character: ""  # 取消以词定字
+    select_last_character: ""  # 取消以词定字
+    bindings:
+      - { when: has_menu, accept: bracketleft, send: Page_Up }
+      - { when: has_menu, accept: bracketright, send: Page_Down }
