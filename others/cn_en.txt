@@ -1,10 +1,10 @@
 # 中英混输词库
 # 根据此文件生成对应的 en_dicts/ 下的全拼及双拼词库
-# version: 2025-08-10
+# version: 2025-08-16
 X光
 X光片
 X射线
-Nabla算子
+X刀
 T恤
 T恤衫
 AD钙奶
@@ -131,6 +131,8 @@ K宝
 K粉
 K歌
 K歌王
+K歌之王
+K金
 POS机
 SIM卡
 T淋巴细胞
@@ -142,7 +144,6 @@ U形
 U形管
 UIM卡
 USIM卡
-X刀
 X染色体
 Y染色体
 z变换
@@ -314,6 +315,12 @@ Telegram群
 Wi-Fi密码
 DNA检测
 pH值
+PN结
+P型半导体
+N型半导体
+G谱号
+F谱号
+C谱号
 A级
 B级
 C级
@@ -428,6 +435,7 @@ OK么
 OK呀
 OK不
 BB机
+BP机
 做B超
 DJ版
 唱K
@@ -447,6 +455,8 @@ USB线
 USB口
 USB接口
 X档案
+lambda演算
+nabla算子
 i次方
 i次幂
 n次方
@@ -479,6 +489,7 @@ V8引擎
 3D打印
 2D电影
 3D电影
+3C认证
 city不city
 打call
 hold住

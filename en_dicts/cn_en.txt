@@ -14,8 +14,8 @@ X光片	Xguangpian
 X光片	xguangpian
 X射线	Xshexian
 X射线	xshexian
-Nabla算子	Nablasuanzi
-Nabla算子	nablasuanzi
+X刀	Xdao
+X刀	xdao
 T恤	Txu
 T恤	txu
 T恤衫	Txushan
@@ -266,6 +266,10 @@ K歌	Kge
 K歌	kge
 K歌王	Kgewang
 K歌王	kgewang
+K歌之王	Kgezhiwang
+K歌之王	kgezhiwang
+K金	Kjin
+K金	kjin
 POS机	POSji
 POS机	posji
 SIM卡	SIMka
@@ -288,8 +292,6 @@ UIM卡	UIMka
 UIM卡	uimka
 USIM卡	USIMka
 USIM卡	usimka
-X刀	Xdao
-X刀	xdao
 X染色体	Xranseti
 X染色体	xranseti
 Y染色体	Yranseti
@@ -618,6 +620,18 @@ DNA检测	DNAjiance
 DNA检测	dnajiance
 pH值	pHzhi
 pH值	phzhi
+PN结	PNjie
+PN结	pnjie
+P型半导体	Pxingbandaoti
+P型半导体	pxingbandaoti
+N型半导体	Nxingbandaoti
+N型半导体	nxingbandaoti
+G谱号	Gpuhao
+G谱号	gpuhao
+F谱号	Fpuhao
+F谱号	fpuhao
+C谱号	Cpuhao
+C谱号	cpuhao
 A级	Aji
 A级	aji
 B级	Bji
@@ -846,6 +860,8 @@ OK不	OKbu
 OK不	okbu
 BB机	BBji
 BB机	bbji
+BP机	BPji
+BP机	bpji
 做B超	zuoBchao
 做B超	zuobchao
 DJ版	DJban
@@ -884,6 +900,8 @@ USB接口	USBjiekou
 USB接口	usbjiekou
 X档案	Xdangan
 X档案	xdangan
+lambda演算	lambdayansuan
+nabla算子	nablasuanzi
 i次方	icifang
 i次幂	icimi
 n次方	ncifang
@@ -943,6 +961,8 @@ V8引擎	vbayinqing
 2D电影	erddianying
 3D电影	sanDdianying
 3D电影	sanddianying
+3C认证	sanCrenzheng
+3C认证	sancrenzheng
 city不city	citybucity
 打call	dacall
 hold住	holdzhu
