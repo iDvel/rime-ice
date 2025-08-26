@@ -14,8 +14,8 @@ X光片	Xggpf
 X光片	xggpf
 X射线	Xiexf
 X射线	xiexf
-Nabla算子	Nablaslzi
-Nabla算子	nablaslzi
+X刀	Xdq
+X刀	xdq
 T恤	Txu
 T恤	txu
 T恤衫	Txuir
@@ -266,6 +266,10 @@ K歌	Kge
 K歌	kge
 K歌王	Kgews
 K歌王	kgews
+K歌之王	Kgeuiws
+K歌之王	kgeuiws
+K金	Kjy
+K金	kjy
 POS机	POSji
 POS机	posji
 SIM卡	SIMka
@@ -288,8 +292,6 @@ UIM卡	UIMka
 UIM卡	uimka
 USIM卡	USIMka
 USIM卡	usimka
-X刀	Xdq
-X刀	xdq
 X染色体	Xrrseti
 X染色体	xrrseti
 Y染色体	Yrrseti
@@ -618,6 +620,18 @@ DNA检测	DNAjfce
 DNA检测	dnajfce
 pH值	pHui
 pH值	phui
+PN结	PNjd
+PN结	pnjd
+P型半导体	Px;brdqti
+P型半导体	px;brdqti
+N型半导体	Nx;brdqti
+N型半导体	nx;brdqti
+G谱号	Gpuhq
+G谱号	gpuhq
+F谱号	Fpuhq
+F谱号	fpuhq
+C谱号	Cpuhq
+C谱号	cpuhq
 A级	Aji
 A级	aji
 B级	Bji
@@ -846,6 +860,8 @@ OK不	OKbu
 OK不	okbu
 BB机	BBji
 BB机	bbji
+BP机	BPji
+BP机	bpji
 做B超	zoBaq
 做B超	zobaq
 DJ版	DJbr
@@ -884,6 +900,8 @@ USB接口	USBjdkz
 USB接口	usbjdkz
 X档案	Xdsor
 X档案	xdsor
+lambda演算	lambdayrsl
+nabla算子	nablaslzi
 i次方	icifs
 i次幂	icimi
 n次方	ncifs
@@ -943,6 +961,8 @@ V8引擎	vbayyq;
 2D电影	ojddfy;
 3D电影	srDdfy;
 3D电影	srddfy;
+3C认证	srCrwut
+3C认证	srcrwut
 city不city	citybucity
 打call	dacall
 hold住	holduu
