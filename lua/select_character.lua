@@ -1,6 +1,6 @@
 -- 以词定字
 -- 原脚本 https://github.com/BlindingDark/rime-lua-select-character
--- 删除了默认按键 [ ]，和方括号翻页冲突，需要在 key_binder 下指定才能生效
+-- 可在 default.yaml → key_binder 下配置快捷键，默认为左右中括号 [ ]
 -- 20230526195910 不再错误地获取commit_text，而是直接获取get_selected_candidate().text
 -- 20240128141207 重写：将读取设置移动到 init 方法中；简化中文取字方法；预先判断候选存在与否，无候选取 input
 -- 20240508111725 当候选字数为 1 时，快捷键使该字上屏

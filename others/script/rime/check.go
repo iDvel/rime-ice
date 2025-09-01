@@ -3,7 +3,6 @@ package rime
 import (
 	"bufio"
 	"fmt"
-	mapset "github.com/deckarep/golang-set/v2"
 	"log"
 	"os"
 	"path"
@@ -13,6 +12,8 @@ import (
 	"time"
 	"unicode"
 	"unicode/utf8"
+
+	mapset "github.com/deckarep/golang-set/v2"
 )
 
 var (
@@ -30,17 +31,9 @@ var (
 // 初始化特殊词汇列表、需要注音列表、错别字列表、拼音列表
 func initCheck() {
 	// 特殊词汇列表，不进行任何检查
-	specialWords.Add("狄尔斯–阿尔德反应")
-	specialWords.Add("特里斯坦–达库尼亚")
-	specialWords.Add("特里斯坦–达库尼亚群岛")
-	specialWords.Add("茱莉亚·路易斯-德瑞弗斯")
 	specialWords.Add("科科斯（基林）群岛")
 	specialWords.Add("刚果（金）")
 	specialWords.Add("刚果（布）")
-	specialWords.Add("赛博朋克：边缘行者")
-	specialWords.Add("赛博朋克：边缘跑手")
-	specialWords.Add("赛博朋克：命运之轮")
-	specialWords.Add("哈勃–勒梅特定律")
 
 	// 需要注音的列表
 	file1, err := os.Open(需要注音TXT)
@@ -102,6 +95,7 @@ func initCheck() {
 		text, code := parts[0], parts[1]
 		hanPinyin[text] = append(hanPinyin[text], code)
 	}
+	hanPinyin["栖"] = []string{"qi"} // 只检查 qi 音，在 hanPinyinFilter 过滤「栖栖xi、栖栖xi遑遑」
 	// 给 hanPinyin 补充不在字表的读音，和过滤列表 hanPinyinFilter
 	file4, err := os.Open(汉字拼音映射TXT)
 	if err != nil {
@@ -128,6 +122,7 @@ func initCheck() {
 			hanPinyinFilter.Add(line)
 		}
 	}
+
 }
 
 // Check 对传入的词库文件进行检查
@@ -237,9 +232,9 @@ func checkLine(dictPath string, _type int, line string, lineNumber int) {
 		return
 	}
 
-	// text 不应该有非汉字内容，除了间隔号 ·
+	// text 不应该有非汉字内容，除了间隔号 · (Middle Dot: U+00B7)和连接号 - (Hyphen-Minus: U+002D)
 	for _, c := range text {
-		if string(c) != "·" && !unicode.Is(unicode.Han, c) {
+		if !unicode.Is(unicode.Han, c) && !strings.ContainsRune("·-", c) {
 			fmt.Println("❌ text 含有非汉字内容：", line)
 			break
 		}
@@ -259,8 +254,9 @@ func checkLine(dictPath string, _type int, line string, lineNumber int) {
 	if code != "" {
 		codeCount := len(strings.Split(code, " "))
 		textCount := utf8.RuneCountInString(text)
-		if strings.Contains(text, "·") {
+		if strings.ContainsAny(text, "·-") {
 			textCount -= strings.Count(text, "·")
+			textCount -= strings.Count(text, "-")
 		}
 		if strings.HasPrefix(text, "# ") {
 			textCount -= 2
@@ -288,10 +284,10 @@ func checkLine(dictPath string, _type int, line string, lineNumber int) {
 	// 检查拼写错误，如「赞zan」写成了zna；顺便检查是否存在字表中没有注音的字
 	if dictPath != HanziPath && (_type == 2 || _type == 3) && !hanPinyinFilter.Contains(text) {
 		// 把汉字和拼音弄成一一对应关系，「拼音:pin yin」→「拼:pin」「音:yin」
-		textWithoutDian := strings.ReplaceAll(text, "·", "") // 去掉间隔号
+		textWithoutSpecialChars := strings.NewReplacer("·", "", "-", "").Replace(text) // 去掉间隔号和连接号
 		pinyins := strings.Split(code, " ")
 		i := 0
-		for _, zi := range textWithoutDian {
+		for _, zi := range textWithoutSpecialChars {
 			if !contains(hanPinyin[string(zi)], pinyins[i]) {
 				fmt.Printf("❌ 注音错误 or 字表未包含的汉字及注音: %s - %s.+%s\n", line, string(zi), pinyins[i])
 			}

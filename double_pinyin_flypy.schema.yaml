@@ -10,7 +10,7 @@
 # 目前配置中有个别功能仍然是全拼拼写，不能自动适配，所以需要手动修改一下：
 # - 英文中部分符号的派生规则：在英文方案文件 melt_eng.schema.yaml > speller > algebra 修改为对应的双拼拼写运算
 # - 部件拆字的拼写规则：在部件拆字方案 radical_pinyin.schema.yaml > speller > algebra 修改为对应的双拼拼写运算
-# 打个补丁一劳永逸，补丁写法参考 [常见问题](https://github.com/iDvel/rime-ice/issues/133)
+# 打个补丁一劳永逸，补丁写法参考 [常见问题](https://github.com/iDvel/rime-ice/issues/133) 或 others/双拼补丁示例/ 文件夹
 
 
 # 方案说明
@@ -45,14 +45,14 @@ switches:
   - name: full_shape
     states: [ 半角, 全角 ]
   - name: search_single_char  # search.lua 的功能开关，辅码查词时是否单字优先
-    abbrev: [词, 单]
     states: [正常, 单字]
+    abbrev: [词, 单]
 
 
 # 输入引擎
 engine:
   processors:
-    - lua_processor@select_character          # 以词定字
+    - lua_processor@*select_character  # 以词定字
     - ascii_composer
     - recognizer
     - key_binder
@@ -71,24 +71,25 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    - lua_translator@date_translator    # 时间、日期、星期
-    - lua_translator@lunar              # 农历
-    - table_translator@custom_phrase    # 自定义短语 custom_phrase_double.txt
-    - table_translator@melt_eng         # 英文输入
-    - table_translator@cn_en            # 中英混合词汇
-    - table_translator@radical_lookup   # 部件拆字反查
-    - lua_translator@unicode            # Unicode
-    - lua_translator@number_translator  # 数字、金额大写
-    - lua_translator@force_gc           # 暴力 GC
+    - lua_translator@*date_translator    # 时间、日期、星期
+    - lua_translator@*lunar              # 农历
+    - table_translator@custom_phrase     # 自定义短语 custom_phrase_double.txt
+    - table_translator@melt_eng          # 英文输入
+    - table_translator@cn_en             # 中英混合词汇
+    - table_translator@radical_lookup    # 部件拆字反查
+    - lua_translator@*unicode            # Unicode
+    - lua_translator@*number_translator  # 数字、金额大写
+    - lua_translator@*calc_translator    # 计算器
+    - lua_translator@*force_gc           # 暴力 GC
   filters:
-    - lua_filter@corrector                          # 错音错字提示
+    - lua_filter@*corrector                         # 错音错字提示
     - reverse_lookup_filter@radical_reverse_lookup  # 部件拆字滤镜
-    - lua_filter@autocap_filter                     # 英文自动大写
-    - lua_filter@pin_cand_filter                    # 置顶候选项（顺序要求：置顶候选项 > Emoji > 简繁切换）
-    - lua_filter@reduce_english_filter              # 降低部分英语单词在候选项的位置
+    - lua_filter@*autocap_filter                    # 英文自动大写
+    - lua_filter@*pin_cand_filter                   # 置顶候选项（顺序要求：置顶候选项 > Emoji > 简繁切换）
+    - lua_filter@*reduce_english_filter             # 降低部分英语单词在候选项的位置
     - simplifier@emoji                              # Emoji
     - simplifier@traditionalize                     # 简繁切换
-    - lua_filter@search@radical_pinyin              # 部件拆字辅码
+    - lua_filter@*search@radical_pinyin             # 部件拆字辅码
     - uniquifier                                    # 去重
 
 
@@ -103,12 +104,6 @@ date_translator:
 
 # Lua 配置：农历的触发关键字
 lunar: lunar  # 农历： 二〇二三年冬月二十 癸卯年（兔）冬月二十
-
-
-# Lua 配置：为 corrector 格式化 comment，占位符为 {comment}
-# 默认 "{comment}" 输入 hun dun 时会在「馄饨」旁边生成 hún tun 的 comment
-# 例如左右加个括号 "({comment})" 就会变成 (hún tun)
-corrector: "{comment}"
 
 
 # Lua 配置: 降低部分英语单词在候选项的位置。
@@ -127,7 +122,7 @@ reduce_english_filter:
   words: [
     aid, ann,
     bail, bait, bam, band, bans, bat, bay, bend, bent, benz, bib, bid, bien, biz, boc, bop, bos, bud, buf, bach, bench, bush,
-    cab, cad, cain, cam, cans, cap, cas, cef, chad, chan, chap, chef, cher, chew, chic, chin, chip, chit, coup, cum, cunt, cur, couch,
+    cab, cad, cain, cam, cans, cap, cef, chad, chan, chap, chef, cher, chew, chic, chin, chip, chit, coup, cum, cunt, cur, couch,
     dab, dag, dal, dam, dent, dew, dial, diet, dim, din, dip, dis, dit, doug, dub, dug, dunn,
     fab, fax, fob, fog, foul, fur,
     gag, gail, gain, gal, gam, gaol, ged, gel, ger, guam, gus, gut,
@@ -166,6 +161,9 @@ translator:
     - xform/^/［/
     - xform/$/］/
   preedit_format:               # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
+    - xform/(^|[ '])aa/$1a/
+    - xform/(^|[ '])ee/$1e/
+    - xform/(^|[ '])oo/$1o/
     - xform/([bpmfdtnljqx])n/$1iao/
     - xform/(\w)g/$1eng/
     - xform/(\w)q/$1iu/
@@ -199,6 +197,7 @@ translator:
     - xform/([jqxy])v/$1u/
     - xform/([nl])v/$1ü/
     - xform/ü/v/  # ü 显示为 v
+    - xform/(?<=[A-Z])\s(?=[A-Z])//  # 消除大写字母之间的空格
 
 
 # 次翻译器，英文
@@ -235,25 +234,27 @@ custom_phrase:
 
 # Emoji
 emoji:
-  option_name: emoji
-  opencc_config: emoji.json
-  inherit_comment: false  # 在 corrector.lua 及反查中，emoji 返回空注释
+  option_name: emoji         # 对应 switches 中的 name
+  opencc_config: emoji.json  # 选择要加载的 OpenCC 配置
+  inherit_comment: false     # 在 corrector.lua 及反查中，emoji 的 comment 显示为空
 
 
 # 简繁切换
 traditionalize:
-  option_name: traditionalization
-  opencc_config: s2t.json  # s2t.json | s2hk.json | s2tw.json | s2twp.json
-  tips: none               # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
+  option_name: traditionalization  # 对应 switches 中的 name
+  opencc_config: s2t.json          # s2t.json | s2hk.json | s2tw.json | s2twp.json （Rime 内置配置，在程序目录可找到）
+  tips: none                       # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
   tags: [ abc, number, gregorian_to_lunar ]  # 限制在对应 tag，不对其他如反查的内容做简繁转换
 
 
 # 标点符号
-# punctuator 下面有三个子项：
+# punctuator 下面的三个子项：
 #   full_shape 全角标点映射
 #   half_shape 半角标点映射
 #   symbols    Rime 的预设配置是以 '/' 前缀开头输出一系列字符，自定义的 symbols_caps_v.yaml 修改成了 'V' 开头。
+# 以及新版 digit_separators 相关的属性
 punctuator:
+  __include: default:/punctuator               # 从 default.yaml 导入 punctuator 的所有配置，为了引用 digit_separators 等属性
   full_shape:
     __include: default:/punctuator/full_shape  # 从 default.yaml 导入配置
   half_shape:
@@ -274,8 +275,8 @@ radical_lookup:
 # 部件拆字滤镜
 radical_reverse_lookup:
   tags: [ radical_lookup ]
-  # dictionary 为拼音标注来源。目前是显示本方案词库的注音，可去部件拆字方案下载更全的、带声调的、已编译好的词典
-  # https://github.com/mirtlecn/rime-radical-pinyin?tab=readme-ov-file#%E5%8F%8D%E6%9F%A5%E5%B8%A6%E5%A3%B0%E8%B0%83%E6%B3%A8%E9%9F%B3
+  # dictionary 为拼音标注来源，目前是显示本方案词库的注音。
+  # 可去部件拆字方案下载更全的、带声调的、已编译好的词典： https://github.com/mirtlecn/rime-radical-pinyin#反查带声调注音
   dictionary: rime_ice
   # comment_format:     # 自定义 comment，例如在左右加上括号
   #  - xform/^/(/
@@ -285,13 +286,14 @@ radical_reverse_lookup:
 # 处理符合特定规则的输入码，如网址、反查
 
 recognizer:
-  import_preset: default  # 从 default.yaml 继承通用的
-  patterns:  # 再增加方案专有的：
+  import_preset: default                # 从 default.yaml 继承通用的
+  patterns:                             # 再增加方案专有的：
     punct: "^V([0-9]|10|[A-Za-z]+)$"    # 响应 symbols_caps_v.yaml 的 symbols
-    radical_lookup: "^uU[a-z]+$"        # 响应部件拆字的反查，与 radical_lookup/prefix 匹配
-    unicode: "^U[a-f0-9]+"              # 脚本将自动获取第 2 个字符 U 作为触发前缀，响应 lua_translator@unicode，输出 Unicode 字符
-    number: "^R[0-9]+[.]?[0-9]*"        # 脚本将自动获取第 2 个字符 R 作为触发前缀，响应 lua_translator@number_translator，数字金额大写
-    gregorian_to_lunar: "^N[0-9]{1,8}"  # 脚本将自动获取第 2 个字符 N 作为触发前缀，响应 lua_translator@lunar，公历转农历，输入 N20240115 得到「二〇二三年腊月初五」
+    radical_lookup: "^uU[a-z]+$"        # 响应部件拆字的反查，触发前缀与 radical_lookup/prefix 匹配
+    unicode: "^U[a-f0-9]+"              # 脚本将自动获取第 2 个字符 U 作为触发前缀，响应 lua_translator@*unicode，输出 Unicode 字符
+    number: "^R[0-9]+[.]?[0-9]*"        # 脚本将自动获取第 2 个字符 R 作为触发前缀，响应 lua_translator@*number_translator，数字金额大写
+    calculator: "^cC.+"                 # 响应 lua_translator@*calc_translator，计算器。前缀设定项 calculator/prefix
+    gregorian_to_lunar: "^N[0-9]{1,8}"  # 脚本将自动获取第 2 个字符 N 作为触发前缀，响应 lua_translator@*lunar，公历转农历，输入 N20240115 得到「二〇二三年腊月初五」
 
 
 # 从 default 继承快捷键
@@ -299,6 +301,20 @@ key_binder:
   import_preset: default  # 从 default.yaml 继承通用的
   search: "`"             # 辅码引导符，要添加到 speller/alphabet
   # bindings:             # 也可以再增加方案专有的
+
+
+# editor 用来定制操作键的行为，以下是默认行为 https://github.com/rime/librime/blob/master/src/rime/gear/editor.cc
+editor:
+  bindings:
+    space: confirm                        # 空格键：上屏候选项
+    Return: commit_raw_input              # 回车键：上屏原始输入
+    Control+Return: commit_script_text    # Ctrl+回车键：上屏变换后输入（经过 preedit_format 转换的）
+    Control+Shift+Return: commit_comment  # Ctrl+Shift+回车键：上屏 comment
+    BackSpace: revert                     # 退格键：向前删除（撤消上次输入）
+    Delete: delete                        # Delete 键：向后删除
+    Control+BackSpace: back_syllable      # Ctrl+退格键：删除一个音节
+    Control+Delete: delete_candidate      # Ctrl+Delete键：删除或降权候选项
+    Escape: cancel                        # Esc 键：取消输入
 
 
 # 拼写设定

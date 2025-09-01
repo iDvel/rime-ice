@@ -3,7 +3,6 @@ package rime
 import (
 	"bufio"
 	"fmt"
-	mapset "github.com/deckarep/golang-set/v2"
 	"log"
 	"os"
 	"path/filepath"
@@ -11,6 +10,8 @@ import (
 	"strings"
 	"time"
 	"unicode"
+
+	mapset "github.com/deckarep/golang-set/v2"
 )
 
 // 多音字，手动选择注音
@@ -56,7 +57,6 @@ var polyphones = map[string]string{
 	"MAC地址 > 地":     "di",
 	"OK了 > 了":       "le",
 	"OK了吗 > 了":      "le",
-	"圈X > 圈":        "quan",
 	"A型血 > 血":       "xue",
 	"A血型 > 血":       "xue",
 	"B型血 > 血":       "xue",
@@ -129,6 +129,7 @@ var (
 	doublePinyinSogou   schema
 	doublePinyinZiGuang schema
 	doublePinyinABC     schema
+	doublePinyinJiajia  schema
 )
 
 func initSchemas() {
@@ -457,6 +458,60 @@ func initSchemas() {
 			"un":   "n",
 		},
 	}
+
+	doublePinyinJiajia = schema{
+		name:            "cn_en_jiajia",
+		desc:            "拼音加加双拼",
+		combinationType: "unique",
+		path:            filepath.Join(RimeDir, "en_dicts/cn_en_jiajia.txt"),
+		mapping: map[string]string{
+			// 零声母
+			"-a-":   "aa",
+			"-e-":   "ee",
+			"-o-":   "oo",
+			"-ai-":  "as",
+			"-ei-":  "ew",
+			"-ou-":  "op",
+			"-an-":  "af",
+			"-en-":  "er",
+			"-ang-": "ag",
+			"-eng-": "et",
+			"-ao-":  "ad",
+			"-er-":  "eq",
+			// zh ch sh
+			"zh": "v",
+			"ch": "u",
+			"sh": "i",
+			// 韵母
+			"ao":   "d",
+			"en":   "r",
+			"an":   "f",
+			"eng":  "t",
+			"in":   "l",
+			"uai":  "x",
+			"uo":   "o",
+			"ai":   "s",
+			"ang":  "g",
+			"ie":   "m",
+			"ian":  "j",
+			"iang": "h",
+			"uang": "h",
+			"iong": "y",
+			"ong":  "y",
+			"er":   "q",
+			"iu":   "n",
+			"ei":   "w",
+			"uan":  "c",
+			"ing":  "q",
+			"ou":   "p",
+			"ia":   "b",
+			"ua":   "b",
+			"iao":  "k",
+			"ue":   "x",
+			"ui":   "v",
+			"un":   "z",
+		},
+	}
 }
 
 // CnEn 从 others/cn_en.txt 生成全拼和各个双拼的中英混输词库
@@ -478,6 +533,7 @@ func CnEn() {
 		doublePinyinSogou,
 		doublePinyinZiGuang,
 		doublePinyinABC,
+		doublePinyinJiajia,
 	}
 
 	// 写入前缀内容
@@ -639,17 +695,17 @@ func stepFurther(parts []string, index int, arranged string, map4DoublePinyins m
 	return result
 }
 
-// 中英文分割，去掉间隔号和横杠
+// 中英文分割，去掉间隔号、句点和横杠
 // "哆啦A梦" → ["哆", "啦", "A", "梦"]
 // "QQ号" → ["QQ", "号"]
 // "Wi-Fi密码" → ["WiFi", "密", "码"]
-// "特拉法尔加·D·瓦铁尔·罗" → ["特", "拉", "法", "尔", "加", "D", "瓦", "铁", "尔", "罗"]
+// "乔治·R.R.马丁" → ["乔", "治", "RR", "马", "丁"]
 // "A4纸" → ["A", "4", "纸"]
 func splitMixedWords(input string) []string {
 	var result []string
 	word := ""
 	for _, r := range input {
-		if string(r) == "·" || string(r) == "-" {
+		if string(r) == "·" || string(r) == "-" || string(r) == "." {
 			continue
 		} else if unicode.Is(unicode.Latin, r) {
 			word += string(r)

@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2024-06-10"
+version: "2025-06-10"
 sort: by_weight
 ...
 ##### 容错词
@@ -29,7 +29,26 @@ sort: by_weight
 # 「伯伯」方言
 伯伯	bo bo
 伯伯	bai bai
-# 「斜」的古音
+# 「还」的旧读
+欲就还推	yu jiu hai tui
+欲就还推	yu jiu huan tui
+欲拒还迎	yu ju hai ying
+欲拒还迎	yu ju huan ying
+欲说还休	yu shuo hai xiu
+欲说还休	yu shuo huan xiu
+欲说还休梦已阑	yu shuo hai xiu meng yi lan
+欲说还休梦已阑	yu shuo huan xiu meng yi lan
+欲言还止	yu yan hai zhi
+欲言还止	yu yan huan zhi
+欲迎还拒	yu ying hai ju
+欲迎还拒	yu ying huan ju
+欲语还休	yu yu hai xiu
+欲语还休	yu yu huan xiu
+欲语还羞	yu yu hai xiu
+欲语还羞	yu yu huan xiu
+欲走还留	yu zou hai liu
+欲走还留	yu zou huan liu
+# 「斜」的协音读法
 远上寒山石径斜	yuan shang han shan shi jing xie
 远上寒山石径斜	yuan shang han shan shi jing xia
 # 「骑」目前统读 qi
@@ -37,6 +56,8 @@ sort: by_weight
 坐骑	zuo ji
 铁骑	tie qi
 铁骑	tie ji
+铁骑突出刀枪鸣	tie qi tu chu dao qiang ming
+铁骑突出刀枪鸣	tie ji tu chu dao qiang ming
 一骑绝尘	yi qi jue chen
 一骑绝尘	yi ji jue chen
 一骑当千	yi qi dang qian
@@ -108,6 +129,8 @@ sort: by_weight
 南无阿弥陀佛	na mo a mi tuo fo
 南无阿弥陀佛	nan wu e mi tuo fo
 南无阿弥陀佛	nan wu a mi tuo fo
+刹帝利	cha di li
+刹帝利	sha di li
 给予	ji yu
 给予	gei yu
 槟榔	bing lang
@@ -126,6 +149,8 @@ sort: by_weight
 虚与委蛇	xu yu wei she
 木讷	mu ne
 木讷	mu na
+龟裂	jun lie
+龟裂	gui lie
 独乐乐	du yue le
 独乐乐	du le le
 众乐乐	zhong yue le
@@ -174,6 +199,12 @@ sort: by_weight
 太行山	tai xing shan
 歇斯底里	xie si di li
 歇斯底里	jie si di li
+发酵	fa jiao
+发酵	fa xiao
+酵母菌	jiao mu jun
+酵母菌	xiao mu jun
+殷红	yan hong
+殷红	yin hong
 暖和	nuan huo
 暖和	nuan he
 模棱两可	mo leng liang ke
@@ -184,6 +215,18 @@ sort: by_weight
 脖颈	bo jing
 脖颈儿	bo geng er
 脖颈儿	bo jing er
+牛皮癣	niu pi xuan
+牛皮癣	niu pi xian
+花斑癣	hua ban xuan
+花斑癣	hua ban xian
+体癣	ti xuan
+体癣	ti xian
+股癣	gu xuan
+股癣	gu xian
+脚癣	jiao xuan
+脚癣	jiao xian
+足癣	zu xuan
+足癣	zu xian
 结扎	jie za
 结扎	jie zha
 海参崴	hai shen wai
@@ -228,6 +271,124 @@ sort: by_weight
 饮鸩解渴	yin jiu jie ke
 宫商角徵羽	gong shang jue zhi yu
 宫商角徵羽	gong shang jiao zhi yu
+氙气灯	xian qi deng
+氙气灯	shan qi deng
+氙气大灯	xian qi da deng
+氙气大灯	shan qi da deng
+氙气手电筒	xian qi shou dian tong
+氙气手电筒	shan qi shou dian tong
+应该	ying gai
+应该	yin gai
+粘贴	zhan tie
+粘贴	nian tie
+粘一粘	zhan yi zhan
+粘一粘	nian yi nian
+高句丽	gao gou li
+高句丽	gao ju li
+角斗士	jue dou shi
+角斗士	jiao dou shi
+缩砂密	su sha mi
+缩砂密	suo sha mi
+迫击炮	pai ji pao
+迫击炮	po ji pao
+封禅	feng shan
+封禅	feng chan
+芫荽	yan sui
+芫荽	yuan sui
+榅桲	wen po
+榅桲	wen bo
+荸荠	bi qi
+荸荠	bi ji
+柔荑	rou ti
+柔荑	rou yi
+柔荑花序	rou ti hua xu
+柔荑花序	rou yi hua xu
+手如柔荑	shou ru rou ti
+手如柔荑	shou ru rou yi
+温庭筠	wen ting yun
+温庭筠	wen ting jun
+朱祐樘	zhu you cheng
+朱祐樘	zhu you tang
+关卡	guan qia
+关卡	guan ka	1000
+三昧真火	san mei zhen huo
+三昧真火	san wei zhen huo
+青𬞟之末	qing pin zhi mo
+青𬞟之末	qing ping zhi mo
+起于青𬞟之末	qi yu qing pin zhi mo
+起于青𬞟之末	qi yu qing ping zhi mo
+风起于青𬞟之末	feng qi yu qing pin zhi mo
+风起于青𬞟之末	feng qi yu qing ping zhi mo
+优惠券	you hui quan
+优惠券	you hui juan
+拱券	gong xuan
+拱券	gong quan
+哺乳	bu ru
+哺乳	pu ru
+脑卒中	nao cu zhong
+脑卒中	nao zu zhong
+阈值	yu zhi
+阈值	fa zhi
+潟湖	xi hu
+潟湖	xie hu
+果脯	guo fu
+果脯	guo pu
+肉脯	rou fu
+肉脯	rou pu
+饸饹	he le
+饸饹	huo luo
+脯氨酸	fu an suan
+脯氨酸	pu an suan
+酪氨酸	lao an suan
+酪氨酸	luo an suan
+没食子	mo shi zi
+没食子	mei shi zi
+裳凤蝶	chang feng die
+裳凤蝶	shang feng die
+白𬶨豚	bai ji tun
+白𬶨豚	bai qi tun
+桡骨	rao gu
+桡骨	nao gu
+百折不挠	bai zhe bu nao
+百折不挠	bai zhe bu rao
+椎心泣血	chui xin qi xie
+椎心泣血	zhui xin qi xie
+椎心泣血	chui xin qi xue
+椎心泣血	zhui xin qi xue
+挟持	xie chi
+挟持	xia chi
+亳州	bo zhou
+亳州	hao zhou
+牛丼	niu dan
+牛丼	niu jing
+牛丼饭	niu dan fan
+牛丼饭	niu jing fan
+安瓿	an bu
+安瓿	an pou
+安瓿瓶	an bu ping
+安瓿瓶	an pou ping
+解剖	jie pou
+解剖	jie pao
+剖分	pou fen
+剖分	pao fen
+剖腹产	pou fu chan
+剖腹产	pao fu chan
+剖宫产	pou gong chan
+剖宫产	pao gong chan
+金匮	jin gui
+金匮	jin kui
+清平乐	qing ping yue
+清平乐	qing ping le
+踏莎行	ta suo xing
+踏莎行	ta sha xing
+莎草	suo cao
+莎草	sha cao
+杉木	sha mu
+杉木	shan mu
+道在屎溺	dao zai shi niao
+道在屎溺	dao zai shi ni
+甑糕	zeng gao
+甑糕	jing gao
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
@@ -252,6 +413,8 @@ sort: by_weight
 魔蝎座	mo xie zuo
 比萨	bi sa
 披萨	pi sa
+㹴犬	geng quan
+梗犬	geng quan
 
 
 ##### 叠字

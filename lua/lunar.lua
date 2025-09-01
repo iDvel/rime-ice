@@ -2,6 +2,8 @@
 	Lua 阿拉伯数字转中文实现 https://blog.csdn.net/lp12345678910/article/details/121396243
 	农历功能复制自 https://github.com/boomker/rime-fast-xhup
 --]]
+--
+-- 农历，可在方案中配置触发关键字。
 
 -- 数字转中文：
 

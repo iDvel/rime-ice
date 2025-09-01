@@ -12,7 +12,7 @@ contact_links:
   - name: 雾凇拼音常见问题
     url: https://github.com/iDvel/rime-ice/issues/133
     about: 这里有一些重要问题的答案，提问前请查看，也请事先搜索 issue，你的问题也许已经有现成的答案。
-  
+
   - name: RIME 定制文档
     url: https://github.com/rime/home/wiki
     about: 这里有自定义 RIME 方案的全面教程。

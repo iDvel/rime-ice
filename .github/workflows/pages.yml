@@ -1,0 +1,45 @@
+name: Deploy rime-ice with fcitx5-rime.js
+
+on:
+  # push:
+  #   branches:
+  #     - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build rime-ice
+        uses: rimeinn/deploy-schema@master
+        with:
+          user-recipe-list: |-
+            iDvel/rime-ice:others/recipes/full
+          shared-recipe-list:
+          package-items: |-
+            build
+            lua
+            opencc
+            custom_phrase.txt
+
+      - name: Download fcitx5-rime.js
+        run: |
+          curl -L -o fcitx5-rime.tgz https://github.com/rimeinn/fcitx5-rime.js/releases/download/latest/fcitx5-rime.tgz
+          mkdir -p fcitx5-rime
+          tar -xzvf fcitx5-rime.tgz -C fcitx5-rime
+
+      - name: Move files to publish directory
+        run: |
+          mkdir -p ./public/dist
+          mv /tmp/deploy-schema/artifact.zip ./public/rime-ice.zip
+          mv fcitx5-rime/package/dist/* ./public/dist
+          cp others/pages/index.html ./public/index.html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public

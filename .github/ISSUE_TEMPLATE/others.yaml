@@ -9,6 +9,26 @@ body:
       description: 用一两句话概括此 issue 的内容
     validations:
       required: true
+  - type: dropdown
+    id: schema_type
+    attributes:
+      label: 输入方案
+      description: 请选择你在使用的，或者此 issue 涉及的主要输入方案
+      options:
+        - '-- 请选择 --'
+        - 雾凇拼音 全拼 rime_ice
+        - 小鹤双拼 double_pinyin_flypy
+        - 智能 ABC double_pinyin_abc
+        - 微软双拼 double_pinyin_mspy
+        - 搜狗双拼 double_pinyin_sougou
+        - 紫光双拼 double_pinyin_ziguang
+        - 拼音加加 double_pinyin_jiajia
+        - 自然码 double_pinyin
+        - 仓·九宫格 t9
+        - 所有方案
+        - '-- 其他（在补充信息处说明）--'
+    validations:
+      required: true
   - type: input
     id: app_version
     attributes:
@@ -21,8 +41,8 @@ body:
     id: os_version
     attributes:
       label: 系统信息
-      description: 这个议题涉及的，或者是你在使用的系统及版本号，Unix/Linux 请提供具体发行版名称
-      placeholder: e.g. macOS 14.5 / Windows 11 23H2 / Ubuntu 22.04 LTS
+      description: 这个议题涉及的，或者是你在使用的系统及版本号（Unix/Linux 请提供具体发行版名称，Android 请说明 Android 版本以及 ROM 名，如 HyperOS、Flyme）
+      placeholder: e.g. macOS 14.5 / Windows 11 23H2 / Ubuntu 24.04 LTS
     validations:
       required: true
   - type: textarea
@@ -35,13 +55,9 @@ body:
   - type: textarea
     id: config
     attributes:
-      label: 补充信息
-      description: 此处可以提供配置文件片段、完整配置文件压缩包、或者日志等信息。你认为相关的 issue 也可以在此处注明。
+      label: 自定义配置
+      description: 如果你对雾凇进行了修改或者打了补丁，请在此处提供你的自定义配置
       placeholder: |
-        完整配置文件请压缩上传。
+        你可以将自定义文件打包为 zip（请不要包含 build 文件夹和 userdb 文件夹），拖放到此处。
 
-        配置片段请包裹在 Markdown 代码块中。即用三个反引号（```）包裹，如
-        ```yaml
-        # 你的配置片段
-        ```
-
+        也可以将配置片段放在 Markdown 的代码块中。

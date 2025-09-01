@@ -2,6 +2,54 @@
 
 除日常更新词库外的一些主要更新 🆕、破坏性变更 ⚠️。
 
+*2025.04.06 Release*
+
+## 2025-04-06
+
+- 消除输入框里大写字母之间的空格 [#1213](https://github.com/iDvel/rime-ice/issues/1213)
+
+## 2025-03-30
+
+- `editor` 配置示例（定制操作键的行为） [#1131](https://github.com/iDvel/rime-ice/pull/1131)
+
+## 2025-03-30
+
+- 所有中文词汇的连接号暂时统一使用 Hyphen-minus `U+002D` [#1194](https://github.com/iDvel/rime-ice/pull/1194)
+
+## 2025-02-24
+
+- 适配 `punctuator` 新属性 [#1180](https://github.com/iDvel/rime-ice/issues/1180)
+
+---
+
+*2024.12.12 Release*
+
+## 2024-12-06
+
+- ⚠️ Lua 模块引用方式变更
+    - 删除了 `rime.lua`
+    - 在方案中引用时添加 `*` 前缀
+
+---
+
+*2024.11.29 Release*
+
+## 2024-11-27
+
+- `calc_translator.lua` 🆕： 计算器插件，按 `cC` 后输入算式获得结果
+
+## 2024-11-21
+
+- ⚙️ 非夹注的 symbol 调用按键从 `vfj` 更改为 `vfjz`
+
+## 2024-11-04
+
+- ⚠️ 同步新版鼠须管配置，注意 `candidate_format` 和 1.0.0 之前的版本不兼容，需要手动改回旧版 `candidate_format: '%c. %@'`
+
+---
+
+*2024-09-25 Release*
+
 ## 2024-09-25
 
 - `number_translator.lua`：⚙️ 依会计凭证书写要求，修正万亿的金额大写格式
@@ -18,6 +66,10 @@
 
 - `number_translator.lua`: 🆕 转换时，将「拾万」和「壹拾万」作为两个独立的候选。
 - `en_spacer.lua`：⚠️ 现在不会在中英标点、空字符前添加空格。将在英文后添加空格，修改为在英文前添加空格。
+
+---
+
+*2024.05.21 Release*
 
 ## 2024-05-15
 
