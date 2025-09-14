@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-08-10"
+version: "2025-09-01"
 sort: by_weight
 ...
 # +_+
@@ -28,7 +28,7 @@ aaa	aaa
 Aaliyah	Aaliyah
 Aaron	Aaron
 # ab	ab
-aba	aba
+# aba	aba
 abandon	abandon
 abandoned	abandoned
 abatement	abatement
@@ -485,6 +485,7 @@ aid	aid
 aide	aide
 aided	aided
 aides	aides
+AIDS	AIDS
 aids	aids
 aim	aim
 aimed	aimed
@@ -701,6 +702,7 @@ ambulance	ambulance
 # amc	amc
 AMD	AMD
 Amelia	Amelia
+ameliorate	ameliorate
 amen	amen
 amend	amend
 amended	amended
@@ -1123,6 +1125,8 @@ armies	armies
 armor	armor
 armored	armored
 armour	armour
+armpit	armpit
+armpits	armpits
 arms	arms
 Armstrong	Armstrong
 army	army
@@ -1711,6 +1715,7 @@ Barrie	Barrie
 barrier	barrier
 barriers	barriers
 Barron	Barron
+barroom	barroom
 barrow	barrow
 Barry	Barry
 bars	bars
@@ -1836,6 +1841,8 @@ bee	bee
 beech	beech
 beef	beef
 been	been
+beep	beep
+beeper	beeper
 beer	beer
 beers	beers
 bees	bees
@@ -2757,7 +2764,6 @@ cadmium	cadmium
 caduceus	caduceus
 Caesar	Caesar
 cafe	cafe
-cafes	cafes
 cafeteria	cafeteria
 caffeine	caffeine
 cage	cage
@@ -2919,6 +2925,7 @@ carbohydrates	carbohydrates
 carbon	carbon
 carbonate	carbonate
 carbs	carbs
+carcass	carcass
 carcinoma	carcinoma
 card	card
 cardboard	cardboard
@@ -2987,6 +2994,8 @@ cart	cart
 Carte	Carte
 carter	carter
 Cartier	Cartier
+cartilage	cartilage
+cartilaginous	cartilaginous
 carton	carton
 cartoon	cartoon
 cartoons	cartoons
@@ -3383,6 +3392,7 @@ Chilean	Chilean
 chili	chili
 chill	chill
 # ChillSeph	ChillSeph
+chimera	chimera
 chimney	chimney
 chimpanzee	chimpanzee
 chin	chin
@@ -3603,6 +3613,7 @@ clearly	clearly
 clears	clears
 Clearwater	Clearwater
 cleavage	cleavage
+clef	clef
 clement	clement
 Clemson	Clemson
 clergy	clergy
@@ -3935,12 +3946,12 @@ commuter	commuter
 Comoros	Comoros
 comp	comp
 compact	compact
-CompactFlash	CompactFlash
+# CompactFlash	CompactFlash
 companies	companies
 companion	companion
 companions	companions
 company	company
-compaq	compaq
+# Compaq	Compaq
 comparable	comparable
 comparative	comparative
 compare	compare
@@ -5578,7 +5589,8 @@ dig	dig
 digest	digest
 digestion	digestion
 digestive	digestive
-digg	digg
+# digg	digg
+digger	digger
 digging	digging
 Diggs	Diggs
 digi	digi
@@ -6049,6 +6061,7 @@ dresser	dresser
 dresses	dresses
 dressing	dressing
 drew	drew
+dribble	dribble
 dried	dried
 drift	drift
 drill	drill
@@ -6060,6 +6073,7 @@ drinking	drinking
 drinks	drinks
 drip	drip
 drive	drive
+drivel	drivel
 driven	driven
 driver	driver
 drivers	drivers
@@ -6067,6 +6081,7 @@ drives	drives
 driveway	driveway
 driving	driving
 # drm	drm
+drool	drool
 drop	drop
 dropped	dropped
 dropping	dropping
@@ -6336,6 +6351,7 @@ efficiently	efficiently
 effluent	effluent
 effort	effort
 efforts	efforts
+effusive	effusive
 # eg	eg
 egg	egg
 eggs	eggs
@@ -7122,6 +7138,7 @@ externally	externally
 extinct	extinct
 extinction	extinction
 extinguish	extinguish
+extirpate	extirpate
 extra	extra
 extract	extract
 extracted	extracted
@@ -9563,9 +9580,10 @@ icons	icons
 ICQ	ICQ
 # ics	ics
 ICT	ICT
+ICU	ICU
 icy	icy
 ID	ID
-id	id
+# id	id
 # ida	ida
 Idaho	Idaho
 IDC	IDC
@@ -10345,6 +10363,7 @@ irregularity	irregularity
 irrelevant	irrelevant
 irreproducible	irreproducible
 irrespective	irrespective
+irretrievable	irretrievable
 irrigate	irrigate
 irrigation	irrigation
 irritate	irritate
@@ -10898,11 +10917,11 @@ Knoxville	Knoxville
 koala	koala
 Kobe	Kobe
 Koch	Koch
-kodak	kodak
+Kodak	Kodak
 # koh	koh
 Kona	Kona
-kong	kong
-Konica	Konica
+# kong	kong
+# Konica	Konica
 # kontakt	kontakt
 # kool	kool
 Korea	Korea
@@ -10967,6 +10986,7 @@ lacks	lacks
 lacquer	lacquer
 lacquerware	lacquerware
 lacrosse	lacrosse
+lacuna	lacuna
 lad	lad
 ladder	ladder
 ladders	ladders
@@ -11023,6 +11043,9 @@ Lange	Lange
 langley	langley
 language	language
 languages	languages
+languid	languid
+languish	languish
+languorous	languorous
 Lansing	Lansing
 lantern	lantern
 lanthanide	lanthanide
@@ -11465,6 +11488,7 @@ listening	listening
 lister	lister
 listing	listing
 listings	listings
+listless	listless
 # listmania	listmania
 listprice	listprice
 lists	lists
@@ -11577,6 +11601,8 @@ logos	logos
 logout	logout
 logs	logs
 Lohan	Lohan
+loin	loin
+loins	loins
 Lois	Lois
 LOL	LOL
 Lola	Lola
@@ -11854,6 +11880,7 @@ Malcolm	Malcolm
 Maldives	Maldives
 male	male
 males	males
+malformed	malformed
 Mali	Mali
 Malibu	Malibu
 malice	malice
@@ -11992,8 +12019,9 @@ marked	marked
 marker	marker
 markers	markers
 market	market
+marketable	marketable
 marketed	marketed
-marketers	marketers
+marketer	marketer
 marketing	marketing
 marketplace	marketplace
 markets	markets
@@ -12425,7 +12453,8 @@ Middletown	Middletown
 middleware	middleware
 middot	middot
 midget	midget
-midi	midi
+MIDI	MIDI
+# midi	midi
 midland	midland
 midlands	midlands
 midnight	midnight
@@ -12524,7 +12553,7 @@ ministry	ministry
 Minneapolis	Minneapolis
 Minnesota	Minnesota
 Minnie	Minnie
-minolta	minolta
+# Minolta	Minolta
 minor	minor
 minorities	minorities
 minority	minority
@@ -12860,7 +12889,7 @@ Mozilla	Mozilla
 MPLS	MPLS
 # mps	mps
 # mr	mr
-# mri	mri
+MRI	MRI
 mRNA	mRNA
 Mrs.	Mrs.
 # ms	ms
@@ -12886,6 +12915,7 @@ MTV	MTV
 mu	mu
 much	much
 mud	mud
+muddle	muddle
 muddy	muddy
 Mudvayne	Mudvayne
 Mueller	Mueller
@@ -12934,7 +12964,7 @@ museums	museums
 mushroom	mushroom
 mushrooms	mushrooms
 music	music
-Musica	Musica
+# Musica	Musica
 musical	musical
 musicals	musicals
 musician	musician
@@ -12996,6 +13026,7 @@ nail	nail
 nails	nails
 Nairobi	Nairobi
 naive	naive
+naively	naively
 naked	naked
 # nam	nam
 name	name
@@ -13144,9 +13175,10 @@ nelly	nelly
 nelson	nelson
 nemo	nemo
 # neo	neo
+neologism	neologism
 neon	neon
 neonatal	neonatal
-# neoplasms	neoplasms
+neoplasm	neoplasm
 Nepal	Nepal
 nephew	nephew
 Neptune	Neptune
@@ -13335,6 +13367,7 @@ nonfiction	nonfiction
 nonlinear	nonlinear
 nonprofit	nonprofit
 nonsense	nonsense
+nonstandard	nonstandard
 nonverbal	nonverbal
 nonverbally	nonverbally
 noodle	noodle
@@ -13593,6 +13626,7 @@ ode	ode
 Oder	Oder
 Odessa	Odessa
 odor	odor
+odour	odour
 Odyssey	Odyssey
 # oe	oe
 OECD	OECD
@@ -13678,6 +13712,14 @@ omissions	omissions
 omit	omit
 omitted	omitted
 omni	omni
+omnibus	omnibus
+omnidirectional	omnidirectional
+omnipotence	omnipotence
+omnipotent	omnipotent
+omnipresence	omnipresence
+omnipresent	omnipresent
+omniscient	omniscient
+omnisciently	omnisciently
 on	on
 onboard	onboard
 once	once
@@ -13851,6 +13893,7 @@ orphan	orphan
 # ors	ors
 ortho	ortho
 orthodox	orthodox
+orthography	orthography
 orthopedic	orthopedic
 OS	OS
 Osaka	Osaka
@@ -15689,6 +15732,7 @@ QQ	QQ
 # qtr	qtr
 # qty	qty
 quad	quad
+quadruped	quadruped
 quake	quake
 qualification	qualification
 qualifications	qualifications
@@ -16414,6 +16458,7 @@ reptiles	reptiles
 republic	republic
 republican	republican
 republicans	republicans
+repulsive	repulsive
 reputable	reputable
 reputation	reputation
 # req	req
@@ -16536,6 +16581,7 @@ results	results
 resume	resume
 resumed	resumed
 resumes	resumes
+resuming	resuming
 resurrection	resurrection
 ret	ret
 retail	retail
@@ -16622,6 +16668,7 @@ Reynolds	Reynolds
 # rf	rf
 # rfc	rfc
 # rfid	rfid
+RFID	RFID
 # rfp	rfp
 RFT	RFT
 # rg	rg
@@ -17033,6 +17080,8 @@ sales	sales
 salesman	salesman
 saline	saline
 Salisbury	Salisbury
+saliva	saliva
+salivate	salivate
 sally	sally
 salmon	salmon
 Salomon	Salomon
@@ -17081,6 +17130,7 @@ sands	sands
 sandwich	sandwich
 sandwiches	sandwiches
 sandy	sandy
+Sandy	Sandy
 sane	sane
 Sanford	Sanford
 sang	sang
@@ -17492,6 +17542,7 @@ senior	senior
 seniors	seniors
 Sennheiser	Sennheiser
 sensation	sensation
+sensational	sensational
 sensations	sensations
 sense	sense
 senseless	senseless
@@ -18025,6 +18076,7 @@ slate	slate
 slater	slater
 slaughter	slaughter
 slave	slave
+slaver	slaver
 slavery	slavery
 slaves	slaves
 slayer	slayer
@@ -18065,6 +18117,7 @@ slippery	slippery
 slips	slips
 slit	slit
 Sloan	Sloan
+slobber	slobber
 slogan	slogan
 slope	slope
 slopes	slopes
@@ -18083,6 +18136,7 @@ slowly	slowly
 # slr	slr
 sludge	sludge
 slug	slug
+sluggish	sluggish
 slum	slum
 slut	slut
 sluts	sluts
@@ -18133,6 +18187,7 @@ smuggle	smuggle
 # sn	sn
 snack	snack
 snacks	snacks
+snafu	snafu
 snail	snail
 snake	snake
 snakes	snakes
@@ -18140,6 +18195,7 @@ snap	snap
 snapper	snapper
 snapshot	snapshot
 snapshots	snapshots
+snarl	snarl
 snatch	snatch
 sneak	sneak
 sneeze	sneeze
@@ -18450,11 +18506,13 @@ spiral	spiral
 spires	spires
 spirit	spirit
 spirited	spirited
+spiritless	spiritless
 spirits	spirits
 spiritual	spiritual
 spirituality	spirituality
 spit	spit
 spite	spite
+spittle	spittle
 splash	splash
 splatter	splatter
 splendid	splendid
@@ -18893,6 +18951,7 @@ stuff	stuff
 stuffed	stuffed
 stuffing	stuffing
 stumble	stumble
+stump	stump
 stun	stun
 stunning	stunning
 stunt	stunt
@@ -19330,6 +19389,7 @@ tablet	tablet
 tabletop	tabletop
 tablets	tablets
 tableware	tableware
+tabloid	tabloid
 taboo	taboo
 tabs	tabs
 tabulate	tabulate
@@ -19863,6 +19923,7 @@ tightly	tightly
 tights	tights
 tiki	tiki
 # til	til
+tilde	tilde
 tile	tile
 tiles	tiles
 till	till
@@ -20284,6 +20345,7 @@ tribunal	tribunal
 tribune	tribune
 tribute	tribute
 trick	trick
+trickle	trickle
 tricks	tricks
 tricky	tricky
 tried	tried
@@ -20301,7 +20363,7 @@ Trinidad	Trinidad
 trinity	trinity
 trio	trio
 trip	trip
-tripadvisor	tripadvisor
+# tripadvisor	tripadvisor
 triple	triple
 tripod	tripod
 trips	trips
@@ -20986,6 +21048,10 @@ verses	verses
 version	version
 versions	versions
 versus	versus
+vertebra	vertebra
+vertebrae	vertebrae
+vertebras	vertebras
+vertebrate	vertebrate
 vertex	vertex
 vertical	vertical
 vertically	vertically
@@ -21214,7 +21280,7 @@ voyuer	voyuer
 VPN	VPN
 # vr	vr
 # vs	vs
-vsnet	vsnet
+# vsnet	vsnet
 # vt	vt
 # vu	vu
 # vuitton	vuitton
@@ -21233,6 +21299,7 @@ wacky	wacky
 # waco	waco
 waddle	waddle
 wade	wade
+wafer	wafer
 waffle	waffle
 wag	wag
 wage	wage
