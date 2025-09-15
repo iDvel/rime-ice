@@ -534,6 +534,7 @@ Alba	Alba
 Albania	Albania
 Albanian	Albanian
 Albany	Albany
+albatross	albatross
 albeit	albeit
 Albert	Albert
 Alberta	Alberta
@@ -3611,7 +3612,7 @@ clearing	clearing
 clearinghouse	clearinghouse
 clearly	clearly
 clears	clears
-Clearwater	Clearwater
+# Clearwater	Clearwater
 cleavage	cleavage
 clef	clef
 clement	clement
@@ -4245,6 +4246,7 @@ consolidated	consolidated
 consolidation	consolidation
 consortium	consortium
 conspicuous	conspicuous
+conspicuously	conspicuously
 conspiracy	conspiracy
 const	const
 constant	constant
@@ -5755,6 +5757,10 @@ Disney	Disney
 Disneyland	Disneyland
 disorder	disorder
 disorders	disorders
+disparage	disparage
+disparaged	disparaged
+disparages	disparages
+disparaging	disparaging
 dispatch	dispatch
 dispatched	dispatched
 dispenser	dispenser
@@ -6343,6 +6349,7 @@ effective	effective
 effectively	effectively
 effectiveness	effectiveness
 effects	effects
+effeminate	effeminate
 efficacy	efficacy
 efficiencies	efficiencies
 efficiency	efficiency
@@ -6578,6 +6585,7 @@ encouraging	encouraging
 encrypt	encrypt
 encrypted	encrypted
 encryption	encryption
+encumbrance	encumbrance
 encyclopedia	encyclopedia
 end	end
 endanger	endanger
@@ -7413,8 +7421,9 @@ festivals	festivals
 festive	festive
 fetal	fetal
 fetch	fetch
-fetisch	fetisch
+# fetisch	fetisch
 fetish	fetish
+fetishism	fetishism
 fetus	fetus
 feudal	feudal
 fever	fever
@@ -7589,6 +7598,7 @@ fittings	fittings
 Fitzgerald	Fitzgerald
 five	five
 fix	fix
+fixation	fixation
 fixed	fixed
 fixes	fixes
 fixing	fixing
@@ -12068,6 +12078,7 @@ masculine	masculine
 Maserati	Maserati
 mask	mask
 masks	masks
+masochism	 masochism
 Mason	Mason
 mason	mason
 masonry	masonry
@@ -12917,7 +12928,6 @@ much	much
 mud	mud
 muddle	muddle
 muddy	muddy
-Mudvayne	Mudvayne
 Mueller	Mueller
 mug	mug
 mugs	mugs
@@ -13172,7 +13182,7 @@ Neil	Neil
 neither	neither
 # nel	nel
 nelly	nelly
-nelson	nelson
+Nelson	Nelson
 nemo	nemo
 # neo	neo
 neologism	neologism
@@ -13568,8 +13578,10 @@ observed	observed
 observer	observer
 observers	observers
 observing	observing
+obsess	obsess
 obsessed	obsessed
 obsession	obsession
+obsessive	obsessive
 obsidian	obsidian
 obsolete	obsolete
 obstacle	obstacle
@@ -14181,6 +14193,7 @@ parametric	parametric
 paramount	paramount
 paranoid	paranoid
 paranormal	paranormal
+paraphilia	paraphilia
 parasite	parasite
 parcel	parcel
 parcels	parcels
@@ -14382,6 +14395,7 @@ pediatric	pediatric
 pediatrics	pediatrics
 pedigree	pedigree
 pedlar	pedlar
+pedophilia	pedophilia
 Pedro	Pedro
 pee	pee
 peeing	peeing
@@ -16628,7 +16642,10 @@ revelation	revelation
 revenge	revenge
 revenue	revenue
 revenues	revenues
+revere	revere
+reverence	reverence
 reverend	reverend
+reverent	reverent
 reversal	reversal
 reverse	reverse
 reversed	reversed
@@ -17043,8 +17060,10 @@ sacrifice	sacrifice
 sad	sad
 Saddam	Saddam
 saddle	saddle
+sadism	sadism
 sadly	sadly
 sadness	sadness
+sadomasochism	sadomasochism
 safari	safari
 safaris	safaris
 safe	safe
@@ -18326,6 +18345,7 @@ soothing	soothing
 soothsay	soothsay
 soothsayer	soothsayer
 soothsaying	soothsaying
+sooty	sooty
 Sophia	Sophia
 # sophie	sophie
 sophisticated	sophisticated
@@ -21004,6 +21024,7 @@ velvet	velvet
 vending	vending
 vendor	vendor
 vendors	vendors
+venerate	venerate
 Venetian	Venetian
 Venezuela	Venezuela
 vengeance	vengeance
