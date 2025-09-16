@@ -31,6 +31,7 @@ var polyphones = map[string]string{
 	"卡拉OK > 卡":      "ka",
 	"IP地址 > 地":      "di",
 	"IP卡 > 卡":       "ka",
+	"SD卡 > 卡":       "ka",
 	"SIM卡 > 卡":      "ka",
 	"UIM卡 > 卡":      "ka",
 	"USIM卡 > 卡":     "ka",
