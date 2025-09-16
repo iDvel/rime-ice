@@ -65,6 +65,14 @@ var polyphones = map[string]string{
 	"AB血型 > 血":      "xue",
 	"O型血 > 血":       "xue",
 	"O血型 > 血":       "xue",
+	"ABO血型系统 > 血":   "xue",
+	"ABO血型系统 > 系":   "xi",
+	"Rh阳性血 > 血":     "xue",
+	"Rh阳性血型 > 血":    "xue",
+	"Rh阴性血 > 血":     "xue",
+	"Rh阴性血型 > 血":    "xue",
+	"Rh血型系统 > 血":    "xue",
+	"Rh血型系统 > 系":    "xi",
 	"没bug > 没":      "mei",
 	"没有bug > 没":     "mei",
 	"卡bug > 卡":      "ka",
@@ -81,6 +89,7 @@ var polyphones = map[string]string{
 	"F区 > 区":        "qu",
 	"IT行业 > 行":      "hang",
 	"TF卡 > 卡":       "ka",
+	"SD卡 > 卡":       "ka",
 	"A屏 > 屏":        "ping",
 	"A和B > 和":       "he",
 	"X和Y > 和":       "he",
@@ -96,6 +105,8 @@ var polyphones = map[string]string{
 	"3G网络 > 络":      "luo",
 	"4G网络 > 络":      "luo",
 	"5G网络 > 络":      "luo",
+	"2B铅笔 > 铅":      "qian",
+	"HB铅笔 > 铅":      "qian",
 }
 
 var digitMap = map[string]string{
