@@ -236,6 +236,8 @@ ATM机	ATMji
 ATM机	atmji
 B超	Bic
 B超	bic
+B型超声波	Bxkicugbo
+B型超声波	bxkicugbo
 B淋巴细胞	Blbbaxibc
 B淋巴细胞	blbbaxibc
 B盘	Bpj
@@ -246,6 +248,8 @@ C盘	Cpj
 C盘	cpj
 C语言	Cyuyj
 C语言	cyuyj
+R语言	Ryuyj
+R语言	ryuyj
 D盘	Dpj
 D盘	dpj
 E盘	Epj

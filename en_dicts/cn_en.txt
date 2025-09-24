@@ -236,6 +236,8 @@ ATM机	ATMji
 ATM机	atmji
 B超	Bchao
 B超	bchao
+B型超声波	Bxingchaoshengbo
+B型超声波	bxingchaoshengbo
 B淋巴细胞	Blinbaxibao
 B淋巴细胞	blinbaxibao
 B盘	Bpan
@@ -246,6 +248,8 @@ C盘	Cpan
 C盘	cpan
 C语言	Cyuyan
 C语言	cyuyan
+R语言	Ryuyan
+R语言	ryuyan
 D盘	Dpan
 D盘	dpan
 E盘	Epan

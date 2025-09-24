@@ -236,6 +236,8 @@ ATM机	ATMji
 ATM机	atmji
 B超	Bud
 B超	bud
+B型超声波	Bxquditbo
+B型超声波	bxquditbo
 B淋巴细胞	Bllbaxibd
 B淋巴细胞	bllbaxibd
 B盘	Bpf
@@ -246,6 +248,8 @@ C盘	Cpf
 C盘	cpf
 C语言	Cyuyf
 C语言	cyuyf
+R语言	Ryuyf
+R语言	ryuyf
 D盘	Dpf
 D盘	dpf
 E盘	Epf
