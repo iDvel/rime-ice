@@ -27,7 +27,7 @@ var polyphones = map[string]string{
 	"阿Q > 阿":        "a",
 	"阿Q正传 > 阿":      "a",
 	"阿Q正传 > 传":      "zhuan",
-	"单边z变换 > 单":     "dan",
+	"单边Z变换 > 单":     "dan",
 	"卡拉OK > 卡":      "ka",
 	"IP地址 > 地":      "di",
 	"IP卡 > 卡":       "ka",
@@ -120,6 +120,8 @@ var digitMap = map[string]string{
 	"7": "七",
 	"8": "八",
 	"9": "九",
+	"Ⅰ": "一",
+	"Ⅱ": "二",
 }
 
 type schema struct {
