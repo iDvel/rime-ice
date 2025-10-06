@@ -1032,7 +1032,6 @@ eject	eject ⏏
 硫酸钠	硫酸钠 Na₂SO₄
 亚硝酸钠	亚硝酸钠 NaNO₂
 纤维素	纤维素 (C₆H₁₀O₅)n
-铁粉	铁粉 Fe
 三聚氰胺	三聚氰胺 C₃H₆N₆
 丁烷	丁烷 CH₃CH₂CH₂CH₃
 食醋	食醋 CH₃COOH
@@ -1617,6 +1616,7 @@ Twitter	Twitter 𝕏
 梅赛德斯-奔驰	梅赛德斯-奔驰 Mercedes-Benz
 naive	naive naïve
 cafe	cafe café
+cliche	cliche cliché
 resume	resume résumé
 ankh	ankh ☥
 生命之符	生命之符 ☥

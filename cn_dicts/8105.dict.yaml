@@ -27,7 +27,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2025-08-10"
+version: "2025-09-21"
 sort: by_weight
 ...
 ### 按需启用
@@ -4670,8 +4670,8 @@ sort: by_weight
 讴	ou	753
 沤	ou	528
 耦	ou	443
+𬉼	ou	5
 𠙶	ou	0
-𬉼	ou	0
 怕	pa	1114820
 爬	pa	183266
 帕	pa	75768
@@ -8225,6 +8225,7 @@ sort: by_weight
 瑧	zhen	117
 畛	zhen	113
 胗	zhen	108
+瑱	zhen	65
 鬒	zhen	17
 袗	zhen	15
 葴	zhen	6

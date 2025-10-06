@@ -189,7 +189,6 @@ Go程	gocheng
 阿Q	aq
 阿Q正传	aQzhengzhuan
 阿Q正传	aqzhengzhuan
-单边z变换	danbianzbianhuan
 逗B	douB
 逗B	doub
 哆啦A梦	duolaAmeng
@@ -240,6 +239,8 @@ B型超声波	Bxingchaoshengbo
 B型超声波	bxingchaoshengbo
 B淋巴细胞	Blinbaxibao
 B淋巴细胞	blinbaxibao
+B级片	Bjipian
+B级片	bjipian
 B盘	Bpan
 B盘	bpan
 B细胞	Bxibao
@@ -306,8 +307,6 @@ X染色体	Xranseti
 X染色体	xranseti
 Y染色体	Yranseti
 Y染色体	yranseti
-z变换	zbianhuan
-z逆变换	znibianhuan
 Beta版	Betaban
 Beta版	betaban
 Beta版本	Betabanben
@@ -330,6 +329,8 @@ N多	Nduo
 N多	nduo
 N多个	Nduoge
 N多个	nduoge
+N多人	Nduoren
+N多人	nduoren
 N次	Nci
 N次	nci
 N遍	Nbian
@@ -891,8 +892,18 @@ i次方	icifang
 i次幂	icimi
 n次方	ncifang
 n次幂	ncimi
-N多人	Nduoren
-N多人	nduoren
+Z变换	Zbianhuan
+Z变换	zbianhuan
+逆Z变换	niZbianhuan
+逆Z变换	nizbianhuan
+Z逆变换	Znibianhuan
+Z逆变换	znibianhuan
+单边Z变换	danbianZbianhuan
+单边Z变换	danbianzbianhuan
+双边Z变换	shuangbianZbianhuan
+双边Z变换	shuangbianzbianhuan
+Ⅰ型错误	yixingcuowu
+Ⅱ型错误	erxingcuowu
 S曲线	Squxian
 S曲线	squxian
 DJ舞曲	DJwuqu

@@ -189,7 +189,6 @@ Go程	goeg
 阿Q	oaq
 阿Q正传	oaQagap
 阿Q正传	oaqagap
-单边z变换	djbwzbwhp
 逗B	dbB
 逗B	dbb
 哆啦A梦	dolaAmg
@@ -240,6 +239,8 @@ B型超声波	Bxyekvgbo
 B型超声波	bxyekvgbo
 B淋巴细胞	Blcbaxibk
 B淋巴细胞	blcbaxibk
+B级片	Bjipw
+B级片	bjipw
 B盘	Bpj
 B盘	bpj
 B细胞	Bxibk
@@ -306,8 +307,6 @@ X染色体	Xrjseti
 X染色体	xrjseti
 Y染色体	Yrjseti
 Y染色体	yrjseti
-z变换	zbwhp
-z逆变换	znibwhp
 Beta版	Betabj
 Beta版	betabj
 Beta版本	Betabjbf
@@ -330,6 +329,8 @@ N多	Ndo
 N多	ndo
 N多个	Ndoge
 N多个	ndoge
+N多人	Ndorf
+N多人	ndorf
 N次	Nci
 N次	nci
 N遍	Nbw
@@ -891,8 +892,18 @@ i次方	icifh
 i次幂	icimi
 n次方	ncifh
 n次幂	ncimi
-N多人	Ndorf
-N多人	ndorf
+Z变换	Zbwhp
+Z变换	zbwhp
+逆Z变换	niZbwhp
+逆Z变换	nizbwhp
+Z逆变换	Znibwhp
+Z逆变换	znibwhp
+单边Z变换	djbwZbwhp
+单边Z变换	djbwzbwhp
+双边Z变换	vtbwZbwhp
+双边Z变换	vtbwzbwhp
+Ⅰ型错误	yixycowu
+Ⅱ型错误	orxycowu
 S曲线	Squxw
 S曲线	squxw
 DJ舞曲	DJwuqu
