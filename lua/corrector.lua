@@ -195,6 +195,8 @@ function M.init(env)
 end
 
 function M.func(input, env)
+    local input_str = env.engine.context.input
+    local input_len = #input_str
     for cand in input:iter() do
         -- cand.comment 是目前输入的词汇的完整拼音
         local pinyin = cand.comment:match("^［(.-)］$")
@@ -208,7 +210,13 @@ function M.func(input, env)
                 cand:get_genuine().comment = string.gsub(M.style, "{comment}", c.comment)
             else
                 if env.keep_comment then
-                    cand:get_genuine().comment = string.gsub(M.style, "{comment}", pinyin)
+                    -- 输入的拼音长度<=候选词的注音长度时，该候选词不显示注音
+                    correction_pinyin = correction_pinyin:gsub('[%s+]', '')
+                    if #correction_pinyin <= input_len and correction_pinyin.find(input_str, correction_pinyin) then
+                        cand:get_genuine().comment = ""
+                    else
+                        cand:get_genuine().comment = string.gsub(M.style, "{comment}", pinyin)
+                    end
                 else
                     cand:get_genuine().comment = ""
                 end
