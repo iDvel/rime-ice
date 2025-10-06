@@ -239,6 +239,8 @@ B型超声波	Bxyekvgbo
 B型超声波	bxyekvgbo
 B淋巴细胞	Blcbaxibk
 B淋巴细胞	blcbaxibk
+B级片	Bjipw
+B级片	bjipw
 B盘	Bpj
 B盘	bpj
 B细胞	Bxibk
