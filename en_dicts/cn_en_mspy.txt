@@ -359,6 +359,8 @@ D之一族	dviyizu
 周刊少年Jump	vbkjuknmjump
 藤子·F·不二雄	tgziFbuorxs
 藤子·F·不二雄	tgzifbuorxs
+藤子不二雄A	tgzibuorxsA
+藤子不二雄A	tgzibuorxsa
 我叫MT	wojcMT
 我叫MT	wojcmt
 谜拟Q	miniQ

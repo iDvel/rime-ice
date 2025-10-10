@@ -359,6 +359,8 @@ D之一族	dzhiyizu
 周刊少年Jump	zhoukanshaonianjump
 藤子·F·不二雄	tengziFbuerxiong
 藤子·F·不二雄	tengzifbuerxiong
+藤子不二雄A	tengzibuerxiongA
+藤子不二雄A	tengzibuerxionga
 我叫MT	wojiaoMT
 我叫MT	wojiaomt
 谜拟Q	miniQ

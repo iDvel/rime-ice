@@ -27,7 +27,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2025-09-21"
+version: "2025-10-01"
 sort: by_weight
 ...
 ### 按需启用
@@ -3496,10 +3496,10 @@ sort: by_weight
 聩	kui	1284
 跬	kui	289
 愦	kui	225
-悝	kui	209
 蝰	kui	178
 暌	kui	172
 蒉	kui	159
+悝	kui	109
 櫆	kui	41
 骙	kui	29
 喹	kui	9
@@ -3713,6 +3713,7 @@ sort: by_weight
 鹂	li	2319
 蠡	li	2200
 栎	li	1981
+锂	li	1935
 唳	li	1892
 喱	li	1783
 罹	li	1763
@@ -3739,8 +3740,8 @@ sort: by_weight
 疠	li	201
 粝	li	199
 嫠	li	195
-锂	li	193
 篥	li	148
+悝	li	99
 轹	li	72
 鲡	li	67
 疬	li	57
