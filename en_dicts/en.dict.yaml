@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-09-10"
+version: "2025-10-01"
 sort: by_weight
 ...
 # +_+
@@ -3251,6 +3251,7 @@ chang	chang
 change	change
 changed	changed
 changelog	changelog
+changeover	changeover
 changer	changer
 changes	changes
 changing	changing
@@ -6208,6 +6209,7 @@ durable	durable
 Durango	Durango
 duration	duration
 Durban	Durban
+duress	duress
 Durham	Durham
 durian	durian
 during	during
@@ -8020,7 +8022,7 @@ freshman	freshman
 freshmen	freshmen
 freshness	freshness
 freshwater	freshwater
-Fresno	Fresno
+# Fresno	Fresno
 fret	fret
 Frey	Frey
 Fri.	Fri
@@ -11435,6 +11437,9 @@ lifted	lifted
 lifting	lifting
 lifts	lifts
 ligand	ligand
+ligate	ligate
+ligation	ligation
+ligature	ligature
 light	light
 lightbox	lightbox
 lighted	lighted
@@ -18621,6 +18626,7 @@ sponsors	sponsors
 sponsorship	sponsorship
 spontaneous	spontaneous
 spoon	spoon
+spore	spore
 sport	sport
 sporting	sporting
 sports	sports
@@ -19981,7 +19987,6 @@ thyroid	thyroid
 # ti	ti
 # tia	tia
 tiara	tiara
-Tiava	Tiava
 Tibet	Tibet
 Tibetan	Tibetan
 tic	tic

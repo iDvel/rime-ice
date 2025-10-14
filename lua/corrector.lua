@@ -168,7 +168,10 @@ function M.init(env)
         ["ta sha xing"] = { text = "踏莎行", comment = "踏莎(suō)行" },
         ["sha cao"] = { text = "莎草", comment = "suō cǎo" },
         ["shan mu"] = { text = "杉木", comment = "shā mù" },
+        ["li li"] = { text = "李悝", comment = "lǐ kuī" },
+        ["gui bu"] = { text = "跬步", comment = "kuǐ bù" },
         ["dao zai shi ni"] = { text = "道在屎溺", comment = "道在屎溺(niào)" },
+        ["bao lian tian wu"] = { text = "暴殄天物", comment = "暴殄(tiǎn)天物" },
         ["jing gao"] = { text = "甑糕", comment = "甑(zèng)糕" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },

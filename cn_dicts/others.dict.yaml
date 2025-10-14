@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2025-06-10"
+version: "2025-10-01"
 sort: by_weight
 ...
 ##### 容错词
@@ -385,8 +385,14 @@ sort: by_weight
 莎草	sha cao
 杉木	sha mu
 杉木	shan mu
+李悝	li kui
+李悝	li li
+跬步	kui bu
+跬步	gui bu
 道在屎溺	dao zai shi niao
 道在屎溺	dao zai shi ni
+暴殄天物	bao tian tian wu
+暴殄天物	bao lian tian wu
 甑糕	zeng gao
 甑糕	jing gao
 ### 错字
