@@ -18,6 +18,7 @@ schema_list:
   - schema: double_pinyin_sogou    # 搜狗双拼
   - schema: double_pinyin_flypy    # 小鹤双拼
   - schema: double_pinyin_ziguang  # 紫光双拼
+  - schema: double_pinyin_jiajia   # 拼音加加双拼
 
 
 # 菜单

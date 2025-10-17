@@ -27,7 +27,7 @@ var polyphones = map[string]string{
 	"阿Q > 阿":        "a",
 	"阿Q正传 > 阿":      "a",
 	"阿Q正传 > 传":      "zhuan",
-	"单边z变换 > 单":     "dan",
+	"单边Z变换 > 单":     "dan",
 	"卡拉OK > 卡":      "ka",
 	"IP地址 > 地":      "di",
 	"IP卡 > 卡":       "ka",
@@ -65,6 +65,14 @@ var polyphones = map[string]string{
 	"AB血型 > 血":      "xue",
 	"O型血 > 血":       "xue",
 	"O血型 > 血":       "xue",
+	"ABO血型系统 > 血":   "xue",
+	"ABO血型系统 > 系":   "xi",
+	"Rh阳性血 > 血":     "xue",
+	"Rh阳性血型 > 血":    "xue",
+	"Rh阴性血 > 血":     "xue",
+	"Rh阴性血型 > 血":    "xue",
+	"Rh血型系统 > 血":    "xue",
+	"Rh血型系统 > 系":    "xi",
 	"没bug > 没":      "mei",
 	"没有bug > 没":     "mei",
 	"卡bug > 卡":      "ka",
@@ -81,6 +89,7 @@ var polyphones = map[string]string{
 	"F区 > 区":        "qu",
 	"IT行业 > 行":      "hang",
 	"TF卡 > 卡":       "ka",
+	"SD卡 > 卡":       "ka",
 	"A屏 > 屏":        "ping",
 	"A和B > 和":       "he",
 	"X和Y > 和":       "he",
@@ -96,6 +105,8 @@ var polyphones = map[string]string{
 	"3G网络 > 络":      "luo",
 	"4G网络 > 络":      "luo",
 	"5G网络 > 络":      "luo",
+	"2B铅笔 > 铅":      "qian",
+	"HB铅笔 > 铅":      "qian",
 }
 
 var digitMap = map[string]string{
@@ -109,6 +120,8 @@ var digitMap = map[string]string{
 	"7": "七",
 	"8": "八",
 	"9": "九",
+	"Ⅰ": "一",
+	"Ⅱ": "二",
 }
 
 type schema struct {
@@ -129,6 +142,7 @@ var (
 	doublePinyinSogou   schema
 	doublePinyinZiGuang schema
 	doublePinyinABC     schema
+	doublePinyinJiajia  schema
 )
 
 func initSchemas() {
@@ -457,6 +471,60 @@ func initSchemas() {
 			"un":   "n",
 		},
 	}
+
+	doublePinyinJiajia = schema{
+		name:            "cn_en_jiajia",
+		desc:            "拼音加加双拼",
+		combinationType: "unique",
+		path:            filepath.Join(RimeDir, "en_dicts/cn_en_jiajia.txt"),
+		mapping: map[string]string{
+			// 零声母
+			"-a-":   "aa",
+			"-e-":   "ee",
+			"-o-":   "oo",
+			"-ai-":  "as",
+			"-ei-":  "ew",
+			"-ou-":  "op",
+			"-an-":  "af",
+			"-en-":  "er",
+			"-ang-": "ag",
+			"-eng-": "et",
+			"-ao-":  "ad",
+			"-er-":  "eq",
+			// zh ch sh
+			"zh": "v",
+			"ch": "u",
+			"sh": "i",
+			// 韵母
+			"ao":   "d",
+			"en":   "r",
+			"an":   "f",
+			"eng":  "t",
+			"in":   "l",
+			"uai":  "x",
+			"uo":   "o",
+			"ai":   "s",
+			"ang":  "g",
+			"ie":   "m",
+			"ian":  "j",
+			"iang": "h",
+			"uang": "h",
+			"iong": "y",
+			"ong":  "y",
+			"er":   "q",
+			"iu":   "n",
+			"ei":   "w",
+			"uan":  "c",
+			"ing":  "q",
+			"ou":   "p",
+			"ia":   "b",
+			"ua":   "b",
+			"iao":  "k",
+			"ue":   "x",
+			"ui":   "v",
+			"un":   "z",
+		},
+	}
 }
 
 // CnEn 从 others/cn_en.txt 生成全拼和各个双拼的中英混输词库
@@ -478,6 +546,7 @@ func CnEn() {
 		doublePinyinSogou,
 		doublePinyinZiGuang,
 		doublePinyinABC,
+		doublePinyinJiajia,
 	}
 
 	// 写入前缀内容

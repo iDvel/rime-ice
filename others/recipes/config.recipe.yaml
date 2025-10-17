@@ -11,6 +11,7 @@ recipe:
       - mspy（微软双拼）
       - sogou（搜狗双拼）
       - abc（智能 ABC 双拼）
+      - jiajia（拼音加加双拼）
       - ziguang（紫光双拼）
 
 patch_files:

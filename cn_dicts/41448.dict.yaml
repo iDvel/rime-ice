@@ -17,7 +17,7 @@
 #          这样小字表里存在的字按权重靠前排列，大字表殿后，生僻字自动就排在末尾。
 ---
 name: 41448
-version: "2025-04-23"
+version: "2025-08-10"
 sort: by_weight
 ...
 # 注释掉了一些
@@ -2168,6 +2168,7 @@ sort: by_weight
 般	bo
 舶	bo
 艊	bo
+艴	bo
 苩	bo
 菠	bo
 萡	bo
@@ -6934,6 +6935,7 @@ sort: by_weight
 鶫	dong
 鸫	dong
 鼕	dong
+鿴	dong
 𠄉	dong
 𢔅	dong
 𢛔	dong
@@ -12472,6 +12474,7 @@ sort: by_weight
 𩵏	hua
 𩸄	hua
 𪗽	hua
+𫰡	hua
 㜳	huai
 㠢	huai
 䃶	huai
@@ -13237,6 +13240,7 @@ sort: by_weight
 㯛	huo
 㶡	huo
 㸌	huo
+㺢	huo
 䁨	huo
 䂄	huo
 䄀	huo
@@ -14039,10 +14043,12 @@ sort: by_weight
 𪌍	ji
 𪔋	ji
 𪘥	ji
+𰳁	ji
 㔠	jia
 㕅	jia
 㪴	jia
 㮖	jia
+㹢	jia
 㼪	jia
 㿓	jia
 䀫	jia
@@ -17904,6 +17910,7 @@ sort: by_weight
 萿	kuo
 葀	kuo
 蛞	kuo
+适	kuo
 銛	kuo
 銽	kuo
 铦	kuo
@@ -21547,6 +21554,7 @@ sort: by_weight
 𩷶	mang
 𪁪	mang
 𪚢	mang
+𱇮	mang
 㒵	mao
 㒻	mao
 㚹	mao
@@ -23899,7 +23907,9 @@ sort: by_weight
 𪌿	nie
 𪎃	nie
 𪎅	nie
+𪘅	nie
 𪘎	nie
+𰳆	nie
 㤛	nin
 䋻	nin
 䚾	nin
@@ -25118,6 +25128,7 @@ sort: by_weight
 𪌈	pi
 𪖞	pi
 𪛎	pi
+𱇒	pi
 㓲	pian
 㛹	pian
 㸤	pian
@@ -28633,6 +28644,7 @@ sort: by_weight
 閠	run
 闰	run
 𠷀	run
+𥆧	run
 𨳝	run
 𨷎	run
 𩀋	run
@@ -30733,6 +30745,7 @@ sort: by_weight
 順	shun
 顺	shun
 鬊	shun
+𥆧	shun
 𨝜	shun
 𨺠	shun
 㮶	shuo
@@ -31636,6 +31649,7 @@ sort: by_weight
 𪍔	suo
 𪍟	suo
 𪍨	suo
+𱇳	suo
 㒓	ta
 㗳	ta
 㛥	ta
@@ -31728,6 +31742,7 @@ sort: by_weight
 鮙	ta
 鰨	ta
 鳎	ta
+𠉂	ta
 𠴲	ta
 𠷍	ta
 𡂖	ta
@@ -32484,6 +32499,7 @@ sort: by_weight
 𣜹	ti
 𣤖	ti
 𣧂	ti
+𣨼	ti
 𣸒	ti
 𣹲	ti
 𤗘	ti
@@ -36078,6 +36094,7 @@ sort: by_weight
 𪄏	xian
 𪄷	xian
 𪔩	xian
+𬖑	xian
 𮬣	xian
 㗽	xiang
 㟄	xiang
@@ -37499,6 +37516,7 @@ sort: by_weight
 䀏	xuan
 䁔	xuan
 䁢	xuan
+䃠	xuan
 䍗	xuan
 䍻	xuan
 䗠	xuan
@@ -45221,6 +45239,7 @@ sort: by_weight
 謶	zhuo
 诼	zhuo
 趠	zhuo
+躅	zhuo
 酌	zhuo
 鋜	zhuo
 鐯	zhuo
