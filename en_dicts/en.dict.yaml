@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-10-01"
+version: "2025-10-20"
 sort: by_weight
 ...
 # +_+
@@ -16762,6 +16762,7 @@ rhizome	rhizome
 rhode	rhode
 Rhodes	Rhodes
 rhodium	rhodium
+rhyme	rhyme
 rhymes	rhymes
 rhythm	rhythm
 rhythms	rhythms
@@ -20573,6 +20574,7 @@ turbulence	turbulence
 turbulent	turbulent
 turf	turf
 Turin	Turin
+Turing	Turing
 Turismo	Turismo
 Turkey	Turkey
 turkey	turkey
