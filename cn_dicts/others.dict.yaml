@@ -1,0 +1,790 @@
+# Rime dictionary
+# encoding: utf-8
+#
+#
+# https://github.com/iDvel/rime-ice
+# ------- 一些杂项，按需选择 -------
+#
+#
+---
+name: others
+version: "2025-10-20"
+sort: by_weight
+...
+##### 容错词
+# 一些口语读音
+空落落	kong luo luo
+空落落	kong lao lao
+空落落的	kong luo luo de
+空落落的	kong lao lao de
+阿房宫	e pang gong
+阿房宫	a pang gong
+阿房宫	e fang gong
+阿房宫	a fang gong
+阿房宫赋	e pang gong fu
+阿房宫赋	a pang gong fu
+阿房宫赋	e fang gong fu
+阿房宫赋	a fang gong fu
+# 「伯伯」方言
+伯伯	bo bo
+伯伯	bai bai
+# 「还」的旧读
+欲就还推	yu jiu hai tui
+欲就还推	yu jiu huan tui
+欲拒还迎	yu ju hai ying
+欲拒还迎	yu ju huan ying
+欲说还休	yu shuo hai xiu
+欲说还休	yu shuo huan xiu
+欲说还休梦已阑	yu shuo hai xiu meng yi lan
+欲说还休梦已阑	yu shuo huan xiu meng yi lan
+欲言还止	yu yan hai zhi
+欲言还止	yu yan huan zhi
+欲迎还拒	yu ying hai ju
+欲迎还拒	yu ying huan ju
+欲语还休	yu yu hai xiu
+欲语还休	yu yu huan xiu
+欲语还羞	yu yu hai xiu
+欲语还羞	yu yu huan xiu
+欲走还留	yu zou hai liu
+欲走还留	yu zou huan liu
+# 「斜」的协音读法
+远上寒山石径斜	yuan shang han shan shi jing xie
+远上寒山石径斜	yuan shang han shan shi jing xia
+# 「骑」目前统读 qi
+坐骑	zuo qi
+坐骑	zuo ji
+铁骑	tie qi
+铁骑	tie ji
+铁骑突出刀枪鸣	tie qi tu chu dao qiang ming
+铁骑突出刀枪鸣	tie ji tu chu dao qiang ming
+一骑绝尘	yi qi jue chen
+一骑绝尘	yi ji jue chen
+一骑当千	yi qi dang qian
+一骑当千	yi ji dang qian
+一骑红尘妃子笑	yi qi hong chen fei zi xiao
+一骑红尘妃子笑	yi ji hong chen fei zi xiao
+走单骑	zou dan qi
+走单骑	zou dan ji
+千里走单骑	qian li zou dan qi
+千里走单骑	qian li zou dan ji
+# 「街」的粤语和东北话读音及常见的两种写法
+仆街	pu jie
+仆街	pu gai
+扑街	pu jie
+扑街	pu gai
+扑街仔	pu jie zai
+扑街仔	pu gai zai
+仆街仔	pu jie zai
+仆街仔	pu gai zai
+街溜子	jie liu zi
+街溜子	gai liu zi
+# 「錤」这个字念 ji，但是台湾媒体都会念成 qi，他的英文名 Ming-Chi Kuo 也是接近 qi
+郭明錤	guo ming ji
+郭明錤	guo ming qi
+# 「镐 gao hao」的发音，多为韩国人名，不知道 🤷‍♂️，词库里为 gao，这里额外加上 hao 音
+李昌镐	li chang hao
+曹世镐	cao shi hao
+张镐哲	zhang gao zhe
+姜成镐	jiang cheng hao
+姜镐童	jiang hao tong
+张镐濂	zhang hao lian
+李敏镐	li min hao
+李陈镐	li chen hao
+赵亮镐	zhao liang hao
+郑俊镐	zheng jun hao
+
+
+##### 错音错字提示。与 corrector.lua 配合，上面的是正确的，下面是错误的
+### 错音
+馄饨	hun tun
+馄饨	hun dun
+主角	zhu jue
+主角	zhu jiao
+角色	jue se
+角色	jiao se
+比萨饼	bi sa bing
+比萨饼	pi sa bing
+吃比萨	chi bi sa
+吃比萨	chi pi sa
+说服	shuo fu
+说服	shui fu
+道行	dao heng
+道行	dao hang
+模样	mu yang
+模样	mo yang
+有模有样	you mu you yang
+有模有样	you mo you yang
+一模一样	yi mu yi yang
+一模一样	yi mo yi yang
+装模作样	zhuang mu zuo yang
+装模作样	zhuang mo zuo yang
+人模狗样	ren mu gou yang
+人模狗样	ren mo gou yang
+模板	mu ban
+模板	mo ban
+阿弥陀佛	e mi tuo fo
+阿弥陀佛	a mi tuo fo
+南无阿弥陀佛	na mo e mi tuo fo
+南无阿弥陀佛	na mo a mi tuo fo
+南无阿弥陀佛	nan wu e mi tuo fo
+南无阿弥陀佛	nan wu a mi tuo fo
+刹帝利	cha di li
+刹帝利	sha di li
+给予	ji yu
+给予	gei yu
+槟榔	bing lang
+槟榔	bin lang
+张柏芝	zhang bo zhi
+张柏芝	zhang bai zhi
+藤蔓	teng wan
+藤蔓	teng man
+弄堂	long tang
+弄堂	nong tang
+心宽体胖	xin kuan ti pan
+心宽体胖	xin kuan ti pang
+埋怨	man yuan
+埋怨	mai yuan
+虚与委蛇	xu yu wei yi
+虚与委蛇	xu yu wei she
+木讷	mu ne
+木讷	mu na
+龟裂	jun lie
+龟裂	gui lie
+独乐乐	du yue le
+独乐乐	du le le
+众乐乐	zhong yue le
+众乐乐	zhong le le
+荨麻	qian ma
+荨麻	xun ma
+荨麻疹	xun ma zhen
+荨麻疹	qian ma zhen
+模具	mu ju
+模具	mo ju
+草薙	cao ti
+草薙	cao zhi
+草薙京	cao ti jing
+草薙京	cao zhi jing
+草薙剑	cao ti jian
+草薙剑	cao zhi jian
+贾平凹	jia ping wa
+贾平凹	jia ping ao
+雪佛兰	xue fu lan
+雪佛兰	xue fo lan
+强劲	qiang jing
+强劲	qiang jin
+胴体	dong ti
+胴体	tong ti
+力能扛鼎	li neng gang ding
+力能扛鼎	li neng kang ding
+鸭绿江	ya lu jiang
+鸭绿江	ya lv jiang
+大腹便便	da fu pian pian
+大腹便便	da fu bian bian
+卡脖子	qia bo zi
+卡脖子	ka bo zi
+吱声	zi sheng
+吱声	zhi sheng
+掺和	chan huo
+掺和	chan he
+掺和	can huo
+掺和	can he
+称职	chen zhi
+称职	cheng zhi
+螺蛳粉	luo si fen
+螺蛳粉	luo shi fen
+调换	diao huan
+调换	tiao huan
+太行山	tai hang shan
+太行山	tai xing shan
+歇斯底里	xie si di li
+歇斯底里	jie si di li
+发酵	fa jiao
+发酵	fa xiao
+酵母菌	jiao mu jun
+酵母菌	xiao mu jun
+殷红	yan hong
+殷红	yin hong
+暖和	nuan huo
+暖和	nuan he
+模棱两可	mo leng liang ke
+模棱两可	mo ling liang ke
+鄱阳湖	po yang hu
+鄱阳湖	pan yang hu
+脖颈	bo geng
+脖颈	bo jing
+脖颈儿	bo geng er
+脖颈儿	bo jing er
+牛皮癣	niu pi xuan
+牛皮癣	niu pi xian
+花斑癣	hua ban xuan
+花斑癣	hua ban xian
+体癣	ti xuan
+体癣	ti xian
+股癣	gu xuan
+股癣	gu xian
+脚癣	jiao xuan
+脚癣	jiao xian
+足癣	zu xuan
+足癣	zu xian
+结扎	jie za
+结扎	jie zha
+海参崴	hai shen wai
+海参崴	hai shen wei
+厚朴	hou po
+厚朴	hou pu
+大宛马	da yuan ma
+大宛马	da wan ma
+龇牙	zi ya
+龇牙	ci ya
+龇着牙	zi zhe ya
+龇着牙	ci zhe ya
+龇牙咧嘴	zi ya lie zui
+龇牙咧嘴	ci ya lie zui
+头皮屑	tou pi xie
+头皮屑	tou pi xue
+六安	lu an
+六安	liu an
+六安县	lu an xian
+六安县	liu an xian
+六安市	lu an shi
+六安市	liu an shi
+六合区	lu he qu
+六合区	liu he qu
+安徽六安	an hui lu an
+安徽六安	an hui liu an
+安徽六安市	an hui lu an shi
+安徽六安市	an hui liu an shi
+安徽省六安市	an hui sheng lu an shi
+安徽省六安市	an hui sheng liu an shi
+南京六合	nan jing lu he
+南京六合	nan jing liu he
+南京六合区	nan jing lu he qu
+南京六合区	nan jing liu he qu
+南京市六合区	nan jing shi lu he qu
+南京市六合区	nan jing shi liu he qu
+偌大	ruo da
+偌大	nuo da
+饮鸩止渴	yin zhen zhi ke
+饮鸩止渴	yin jiu zhi ke
+饮鸩解渴	yin zhen jie ke
+饮鸩解渴	yin jiu jie ke
+宫商角徵羽	gong shang jue zhi yu
+宫商角徵羽	gong shang jiao zhi yu
+氙气灯	xian qi deng
+氙气灯	shan qi deng
+氙气大灯	xian qi da deng
+氙气大灯	shan qi da deng
+氙气手电筒	xian qi shou dian tong
+氙气手电筒	shan qi shou dian tong
+应该	ying gai
+应该	yin gai
+粘贴	zhan tie
+粘贴	nian tie
+粘一粘	zhan yi zhan
+粘一粘	nian yi nian
+高句丽	gao gou li
+高句丽	gao ju li
+角斗士	jue dou shi
+角斗士	jiao dou shi
+缩砂密	su sha mi
+缩砂密	suo sha mi
+迫击炮	pai ji pao
+迫击炮	po ji pao
+封禅	feng shan
+封禅	feng chan
+芫荽	yan sui
+芫荽	yuan sui
+榅桲	wen po
+榅桲	wen bo
+荸荠	bi qi
+荸荠	bi ji
+柔荑	rou ti
+柔荑	rou yi
+柔荑花序	rou ti hua xu
+柔荑花序	rou yi hua xu
+手如柔荑	shou ru rou ti
+手如柔荑	shou ru rou yi
+温庭筠	wen ting yun
+温庭筠	wen ting jun
+朱祐樘	zhu you cheng
+朱祐樘	zhu you tang
+关卡	guan qia
+关卡	guan ka	1000
+三昧真火	san mei zhen huo
+三昧真火	san wei zhen huo
+青𬞟之末	qing pin zhi mo
+青𬞟之末	qing ping zhi mo
+起于青𬞟之末	qi yu qing pin zhi mo
+起于青𬞟之末	qi yu qing ping zhi mo
+风起于青𬞟之末	feng qi yu qing pin zhi mo
+风起于青𬞟之末	feng qi yu qing ping zhi mo
+优惠券	you hui quan
+优惠券	you hui juan
+拱券	gong xuan
+拱券	gong quan
+哺乳	bu ru
+哺乳	pu ru
+脑卒中	nao cu zhong
+脑卒中	nao zu zhong
+阈值	yu zhi
+阈值	fa zhi
+潟湖	xi hu
+潟湖	xie hu
+果脯	guo fu
+果脯	guo pu
+肉脯	rou fu
+肉脯	rou pu
+饸饹	he le
+饸饹	huo luo
+脯氨酸	fu an suan
+脯氨酸	pu an suan
+酪氨酸	lao an suan
+酪氨酸	luo an suan
+没食子	mo shi zi
+没食子	mei shi zi
+裳凤蝶	chang feng die
+裳凤蝶	shang feng die
+白𬶨豚	bai ji tun
+白𬶨豚	bai qi tun
+桡骨	rao gu
+桡骨	nao gu
+百折不挠	bai zhe bu nao
+百折不挠	bai zhe bu rao
+椎心泣血	chui xin qi xie
+椎心泣血	zhui xin qi xie
+椎心泣血	chui xin qi xue
+椎心泣血	zhui xin qi xue
+挟持	xie chi
+挟持	xia chi
+亳州	bo zhou
+亳州	hao zhou
+牛丼	niu dan
+牛丼	niu jing
+牛丼饭	niu dan fan
+牛丼饭	niu jing fan
+安瓿	an bu
+安瓿	an pou
+安瓿瓶	an bu ping
+安瓿瓶	an pou ping
+解剖	jie pou
+解剖	jie pao
+剖分	pou fen
+剖分	pao fen
+剖腹产	pou fu chan
+剖腹产	pao fu chan
+剖宫产	pou gong chan
+剖宫产	pao gong chan
+金匮	jin gui
+金匮	jin kui
+清平乐	qing ping yue
+清平乐	qing ping le
+踏莎行	ta suo xing
+踏莎行	ta sha xing
+莎草	suo cao
+莎草	sha cao
+杉木	sha mu
+杉木	shan mu
+李悝	li kui
+李悝	li li
+跬步	kui bu
+跬步	gui bu
+道在屎溺	dao zai shi niao
+道在屎溺	dao zai shi ni
+暴殄天物	bao tian tian wu
+暴殄天物	bao lian tian wu
+甑糕	zeng gao
+甑糕	jing gao
+着想	zhuo xiang
+着想	zhao xiang
+### 错字
+曾经	ceng jing
+曾今	ceng jin
+按捺	an na
+按耐	an nai
+按捺不住	an na bu zhu
+按耐不住	an nai bu zhu
+别价	bie jie
+别介	bie jie
+甭价	beng jie
+甭介	beng jie
+血脉贲张	xue mai ben zhang
+血脉偾张	xue mai fen zhang
+血脉喷张	xue mai pen zhang
+契诃夫	qi he fu
+契科夫	qi ke fu
+凑合	cou he
+凑活	cou huo
+巨惠	ju hui
+钜惠	ju hui
+摩羯座	mo jie zuo
+魔蝎座	mo xie zuo
+比萨	bi sa
+披萨	pi sa
+㹴犬	geng quan
+梗犬	geng quan
+
+
+##### 叠字
+# 数据来源： https://zh.wikipedia.org/zh-cn/%E4%BA%8C%E5%8F%A0%E5%AD%97 https://zh.wikipedia.org/wiki/%E4%B8%89%E5%8F%A0%E5%AD%97 https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%8F%A0%E5%AD%97
+# 二叠字
+两个火
+两个土
+两个一
+两个二
+两个山
+两个口
+两个田
+两个九
+两个人
+两个飞
+两个戈
+两个厶	liang ge si
+两个厶	liang ge mou
+两个又
+两个香
+两个面
+两个兀
+两个女
+两个𡥦	liang ge ni
+两个臣
+两个巾
+两个左
+两个母
+两个来
+两个凡
+两个夕
+两个彐	liang ge ji
+两个𢎘	liang ge han
+两个魚	liang ge yu
+两个明
+两个朿	liang ge ci
+两个乂
+两个曰
+两个尸
+两个户
+两个大
+两个八
+两个而
+两个羊
+两个吉
+两个马
+两个卅
+两个巛	liang ge chuan
+两个止
+两个比
+两个言
+两个申
+两个牛
+两个余
+两个束
+两个罒	liang ge mu
+两个㐅	liang ge wu
+两个金
+两个木
+两个水
+两个火
+两个風	liang ge feng
+两个石
+两个口
+两个日
+两个月
+两个目
+两个白
+两个百
+两个耳
+两个山
+两个屮	liang ge che
+两个屮	liang ge cao
+两个廿
+两个卄	liang ge nian
+两个虫
+两个虎
+两个龍	liang ge long
+两个馬	liang ge ma
+两个犬
+两个人
+两个入
+两个习
+两个卪	liang ge jie
+两个㔾	liang ge jie
+两个几
+两个乙
+两个大
+两个夫
+两个禾
+两个干
+两个井
+两个斤
+两个片
+两个牙
+两个炎
+两个弓
+两个永
+两个亦
+两个手
+两个毛
+两个王
+两个男
+两个女
+两个又
+两个支
+两个隻	liang ge zhi
+两个古
+两个吉
+两个舌
+两个言
+两个户
+两个启
+两个來	liang ge lai
+两个桼	liang ge qi
+两个旡	liang ge ji
+两个夕
+两个歹
+两个匕
+两个幺
+两个玄
+两个心
+两个力
+两个欠
+两个子
+两个予
+两个享
+两个立
+两个音
+两个竟
+两个竞
+两个兄
+两个見	liang ge jian
+两个貝	liang ge bei
+两个辛
+两个瓜
+两个呆
+两个果
+两个鸟
+两个巢
+两个禺	liang ge yu
+两个巿	liang ge fu
+两个句
+两个奇
+两个真
+两个尹
+两个昔
+两个易
+两个臣
+两个面
+两个先
+两个老
+两个示
+两个至
+两个生
+两个車	liang ge che
+两个車	liang ge ju
+两个足
+两个區	liang ge qu
+两个香
+两个隹	liang ge zhui
+两个牟
+两个豕
+两个𠂢	liang ge pai
+两个畐	liang ge fu
+两个㣇	liang ge yi
+两个邑
+两个堯	liang ge yao
+两个秉
+两个倉	liang ge cang
+两个東	liang ge dong
+两个善
+两个僉	liang ge qian
+两个齒	liang ge chi
+两个喜
+两个走
+两个止
+两个昌
+两个串
+两个米
+两个束
+两个隶
+两个不
+两个龙
+两个乞
+两个夋	liang ge qun
+两个天
+# 三叠字
+三个生
+三个秦
+三个若
+三个雲	san ge yun
+三个人
+三个刀
+三个十
+三个力
+三个原
+三个厶	san ge si
+三个厶	san ge mou
+三个又
+三个口
+三个七
+三个吉
+三个土
+三个士
+三个女
+三个子
+三个小
+三个心
+三个手
+三个日
+三个木
+三个止
+三个毛
+三个水
+三个泉
+三个火
+三个牛
+三个犬
+三个田
+三个白
+三个目
+三个直
+三个石
+三个羊
+三个耳
+三个舌
+三个屮	san ge che
+三个屮	san ge cao
+三个虫
+三个言
+三个贝
+三个車	san ge che
+三个金
+三个隹	san ge zhui
+三个雷
+三个風	san ge feng
+三个飛	san ge fei
+三个香
+三个马
+三个魚	san ge yu
+三个鹿
+三个龍	san ge long
+三个个
+三个丶	san ge zhu
+三个丶	san ge dian
+三个了
+三个介
+三个企
+三个舍
+三个圥	san ge lu
+三个光
+三个兔
+三个全
+三个𠙽	san ge kuai
+三个𠧪	san ge tiao
+三个𠧪	san ge you
+三个㔾	san ge jie
+三个厡	san ge yuan
+三个可
+三个因
+三个夏
+三个大
+三个天
+三个太
+三个𦉼	san ge ku
+三个宝
+三个宜
+三个客
+三个寒
+三个少
+三个山
+三个市
+三个文
+三个斗
+三个朿	san ge ci
+三个束
+三个林
+三个果
+三个欠
+三个𣥚	san ge zou
+三个爪
+三个妥
+三个用
+三个甲
+三个百
+三个盖
+三个県	san ge xian
+三个空
+三个亇	san ge ge
+三个竹
+三个罒	san ge mu
+三个羗	san ge qiang
+三个老
+三个月
+三个至
+三个興	san ge xing
+三个足
+三个㖖	san ge nie
+三个門	san ge men
+三个面
+三个頁	san ge ye
+三个鳥	san ge niao
+三个男
+三个立
+三个九
+三个也
+三个加
+三个動	san ge dong
+三个千
+三个方
+三个朔
+三个玉
+三个申
+三个𡿨	san ge quan
+三个去
+三个弓
+三个䖝	san ge chong
+三个丿	san ge pie
+三个户
+三个瓜
+三个鸟
+三个米
+# 四叠字
+四个乂	si ge yi
+四个人
+四个厶	si ge si
+四个厶	si ge mou
+四个又
+四个匕
+四个工
+四个口
+四个天
+四个小
+四个屮	si ge che
+四个屮	si ge cao
+四个火
+四个牛
+四个魚	si ge yu
+四个月
+四个日
+四个林
+四个水
+四个石
+四个田
+四个甲
+四个且
+四个囚
+四个困
+四个竹
+四个老
+四个朿	si ge ci
+四个先
+四个金
+四个泉
+四个言
+四个門	si ge men
+四个果
+四个春
+四个車	si ge che
+四个風	si ge feng
+四个雷
+四个雲	si ge yun
+四个興	si ge xing
+四个龍	si ge long
+四个土
