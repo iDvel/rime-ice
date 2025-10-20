@@ -173,6 +173,7 @@ function M.init(env)
         ["dao zai shi ni"] = { text = "道在屎溺", comment = "道在屎溺(niào)" },
         ["bao lian tian wu"] = { text = "暴殄天物", comment = "暴殄(tiǎn)天物" },
         ["jing gao"] = { text = "甑糕", comment = "甑(zèng)糕" },
+        ["zhao xiang"] = { text = "着想", comment = "着(zhuó)想" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
         ["pu gai"] = { text = "扑街", comment = "仆街" },

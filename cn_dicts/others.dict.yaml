@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2025-10-01"
+version: "2025-10-20"
 sort: by_weight
 ...
 ##### 容错词
@@ -395,6 +395,8 @@ sort: by_weight
 暴殄天物	bao lian tian wu
 甑糕	zeng gao
 甑糕	jing gao
+着想	zhuo xiang
+着想	zhao xiang
 ### 错字
 曾经	ceng jing
 曾今	ceng jin
