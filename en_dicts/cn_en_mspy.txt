@@ -605,6 +605,8 @@ J.R.R.托尔金	JRRtoorjn
 J.R.R.托尔金	jrrtoorjn
 乔治·R.R.马丁	qcviRRmad;
 乔治·R.R.马丁	qcvirrmad;
+T.S.艾略特	TSollvte
+T.S.艾略特	tsollvte
 互fo	hufo
 减CD	jmCD
 减CD	jmcd
