@@ -43,6 +43,7 @@ var polyphones = map[string]string{
 	"蒙奇·D·卡普 > 卡":   "ka",
 	"波特卡斯·D·艾斯 > 卡": "ka",
 	"波特卡斯·D·艾斯 > 艾": "ai",
+	"T.S.艾略特 > 艾":   "ai",
 	"A壳 > 壳":        "ke",
 	"B壳 > 壳":        "ke",
 	"C壳 > 壳":        "ke",
