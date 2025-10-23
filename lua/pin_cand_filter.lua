@@ -12,7 +12,7 @@ cand.preedit 是经过 translator/preedit_format 转换后的编码
 格式：编码<Tab>字词1<Space>字词2……
 按照 YAML 语法，加不加引号都行，也可以这么写 pin_cand_filter: [l	了, 'de	的', "ni hao	你好"]
 
-示例：
+示例：（文件末尾有常见编码可供直接复制参考）
 - 'le	了'       # 输入 le 时，置顶「了」
 - 'ta	他 她 它'  # 可以置顶多个字，按顺序排列
 - 'l	了 啦'    # 支持单编码，输入 l 时，置顶「了、啦」
@@ -28,7 +28,7 @@ cand.preedit 是经过 translator/preedit_format 转换后的编码
 ### 空格的作用：
 - nihao	你好
 无空格，生成原样；
-生成 nihao，输入 nihao 时首位是「你好」，但输入 nih 时首位可能是「你会 你还」等其他词语。
+生成 nihao，只有输入完整的 nihao 时首位才是「你好」，但输入 nih 时首位可能是「你会 你还」等其他词语。
 
 - ni hao	你好
 包含空格，额外生成最后一个空格后的拼音的首字母简码；
@@ -236,3 +236,144 @@ function M.func(input, env)
 end
 
 return M
+
+
+--[[
+# 常用编码示例
+pin_cand_filter:
+  # 格式：编码<Tab>字词1<Space>字词2……
+  # 单编码
+  - q	去 千
+  - w	我 万 往
+  - e	呃
+  - r	让 人
+  - t	他 她 它 祂
+  - y	与 于
+  # - u 在 custom_phrase 置顶了 有 🈶 又 由
+  # - i 在 custom_phrase 置顶了 一 以 已 亦
+  - o	哦
+  - p	片 篇
+  - a	啊
+  - s	是 时 使 式
+  - d	的 地 得
+  - f	发 放 分
+  - g	个 各
+  - h	和 或
+  - j	及 将 即 既 继
+  - k	可
+  - l	了 啦 喽 嘞
+  - z	在 再 自
+  - x	想 像 向
+  - c	才 从
+  # - v
+  - b	吧 把 呗 百
+  - n	那 哪 拿 呐
+  - m	吗 嘛 呣 呒
+  # 常用单字
+  - qing	请
+  - qu	去
+  - wo	我
+  - wei	为
+  - er	而 儿 二
+  - en	嗯
+  - rang	让
+  - ta	他 她 它 祂
+  - tai	太
+  - tong	同
+  - yu	与 于
+  - you	有 又 由
+  - yao	要
+  - ye	也
+  - shi	是 时 使 式
+  - suo	所
+  - shang	上
+  - shuo	说
+  - de	的 地 得
+  - dan	但
+  - dou	都
+  - dao	到 倒
+  - dian	点
+  - dang	当
+  - dui	对
+  - fa	发
+  - ge	个 各
+  - gang	刚
+  - he	和
+  - huo	或
+  - hui	会
+  - hai	还
+  - hao	好
+  - ji	及 即 既
+  - jiu	就
+  - jiang	将
+  - ke	可
+  - kan	看
+  - kai	开
+  - le	了
+  - la	啦 拉
+  - lai	来
+  - li	里
+  - zai	在 再
+  - zhi	只
+  - zhe	这 着
+  - zhen	真
+  - zui	最
+  - zheng	正
+  - zuo	做 坐 左
+  - ze	则
+  - xiang	想 像 向
+  - xian	先
+  - xia	下
+  - xing	行
+  - cai	才
+  - cong	从
+  - chu	出
+  - ba	把 吧
+  - bu	不
+  - bing	并
+  - bei	被
+  - bie	别
+  - bi	比
+  - bing	并
+  - na	那 哪 拿 呐
+  - ni	你
+  - ma	吗 嘛 妈
+  - mei	没
+  - mai	买 卖
+  - reng	仍 扔
+  # ta、na
+  - ta men	他们 她们 它们
+  - tm	他们 她们 它们
+  - ta de	他的 她的 它的
+  - td	他的 她的 它的
+  - ta men de	他们的 她们的 它们的
+  - na er	那儿 哪儿
+  - na ge	那个 哪个
+  - ng	那个 哪个 拿个
+  - na xie	那些 哪些
+  - na li	那里 哪里
+  - na bian	那边 哪边
+  - na bian er	那边儿 哪边儿
+  - na wei	那位 哪位
+  # 简码
+  - zh	这
+  - dd	等等
+  - dddd	等等等等
+  - gg	刚刚
+  - cgg	才刚刚
+  - zd	知道
+  - bzd	不知道
+  - ww	往往
+  - hh	哈哈
+  - kk	看看
+  - cc	常常
+  - xx	想想 想象
+  - yw	因为
+  - sm	什么
+  - wsm	为什么
+  - sbs	是不是
+  - msm	没什么
+  - smd	什么的
+  - sms	什么是
+  - sma	什么啊
+--]]
