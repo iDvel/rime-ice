@@ -1491,25 +1491,19 @@ lambda演算	lambda演算 λ演算
 平方厘米	平方厘米 cm²
 平方分米	平方分米 dm²
 平方米	平方米 m²
+立方毫米	立方毫米 mm³
 立方厘米	立方厘米 cm³
-升	升 L
 立方分米	立方分米 dm³
 立方米	立方米 m³
 度	度 °
 摄氏度	摄氏度 °C
 华氏度	华氏度 °F
-小时	小时 h hour
-分钟	分钟 min minute
-秒	秒 s second
 毫秒	毫秒 ms millisecond
 微秒	微秒 μs microsecond
 纳秒	纳秒 ns nanosecond
 皮秒	皮秒 ps picosecond
 飞秒	飞秒 fs femtosecond
 阿秒	阿秒 as attosecond
-公里	公里 km kilometer
-千米	千米 km kilometer
-米	米 m meter
 分米	分米 dm decimeter
 厘米	厘米 cm centimeter
 毫米	毫米 mm millimeter
@@ -1519,8 +1513,6 @@ lambda演算	lambda演算 λ演算
 千瓦	千瓦 瓩
 千帕	千帕 kPa
 兆帕	兆帕 MPa N/mm²
-牛顿	牛顿 N
-千牛	千牛 kN
 牛米	牛米 N⋅m
 千牛米	千牛米 kN⋅m
 ----------笔画标点	----------
@@ -1538,8 +1530,6 @@ lambda演算	lambda演算 λ演算
 连接符	连接符 —
 连字符	连字符 －
 破折号	破折号 ——
-波浪号	波浪号 ~
-到	到 ~ - －
 隔音符号	隔音符号 ’
 反引号	反引号 `
 反问号	反问号 ¿
