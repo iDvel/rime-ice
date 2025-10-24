@@ -61,6 +61,7 @@ engine:
     - punct_translator
     - script_translator
     - lua_translator@*date_translator    # 时间、日期、星期
+    - lua_translator@*uuid               # uuid
     - lua_translator@*lunar              # 农历
     - table_translator@custom_phrase     # 自定义短语 custom_phrase.txt
     - table_translator@melt_eng          # 英文输入
@@ -92,6 +93,8 @@ date_translator:
   datetime: dt   # ISO 8601： 2022-11-29T18:13:11+08:00
   timestamp: ts  # 时间戳： 1669716794
 
+# Lua 配置: 生成uuid的触发字
+uuid: uuid
 
 # Lua 配置：农历的触发关键字
 lunar: nl  # 农历： 二〇二三年冬月二十 癸卯年（兔）冬月二十
