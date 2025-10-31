@@ -99,7 +99,7 @@ lunar: nl  # 农历： 二〇二三年冬月二十 癸卯年（兔）冬月二�
 
 
 # Lua 配置: 生成 UUID 的触发关键字
-uuid: UUID
+uuid: uuid
 
 
 # Lua 配置：长词优先
