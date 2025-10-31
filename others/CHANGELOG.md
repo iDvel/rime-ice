@@ -2,6 +2,16 @@
 
 除日常更新词库外的一些主要更新 🆕、破坏性变更 ⚠️。
 
+### 2025-10-31
+
+- `uuid.lua` 生成符合 RFC 4122 标准的 UUID v4 [#1383](https://github.com/iDvel/rime-ice/pull/1383)
+
+### 2025-06-09
+
+- 添加拼音加加双拼方案 [#1228](https://github.com/iDvel/rime-ice/pull/1228)
+
+---
+
 *2025.04.06 Release*
 
 ## 2025-04-06
