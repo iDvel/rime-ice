@@ -10,7 +10,7 @@
 # 少数单词与 en 重复，纯粹是为了排版美观，部署时的报错 duplicate word definition 可忽略，无任何影响
 ---
 name: en_ext
-version: "2025-10-23"
+version: "2025-10-31"
 sort: by_weight
 ...
 # 一些杂项
@@ -828,7 +828,6 @@ Quiver	Quiver
 Rdio	Rdio
 Readability	Readability
 Readkit	Readkit
-regulex	regulex
 RescueTime	RescueTime
 Safari View Controller	SafariViewController
 SaneDesk	SaneDesk
