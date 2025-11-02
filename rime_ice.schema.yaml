@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "2025-10-31"
+  version: "2025-11-02"
   author:
     - Dvel
   description: |
@@ -153,6 +153,8 @@ reduce_english_filter:
 pin_cand_filter:
   # 格式：编码<Tab>字词1<Space>字词2……
   - d	的
+  - m	吗 嘛  # 置顶一个来覆盖 custom_phrase.txt 呒(ḿ) 呣(ḿ)
+  - hm	后面   # 置顶一个来覆盖 custom_phrase.txt 噷(hm)
 
 
 # 主翻译器，拼音

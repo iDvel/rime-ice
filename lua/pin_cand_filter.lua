@@ -268,8 +268,9 @@ pin_cand_filter:
   # - v
   - b	吧 把 呗 百
   - n	那 哪 拿 呐
-  - m	吗 嘛 呣 呒
+  - m	吗 嘛  # 置顶一个来覆盖 custom_phrase.txt 呒(ḿ) 呣(ḿ)
   # 常用单字
+  - hm	后面  # 置顶一个覆盖 custom_phrase.txt 噷(hm)
   - qing	请
   - qu	去
   - wo	我
