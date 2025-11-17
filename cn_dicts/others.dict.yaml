@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2025-10-20"
+version: "2025-11-10"
 sort: by_weight
 ...
 ##### 容错词
@@ -385,6 +385,8 @@ sort: by_weight
 莎草	sha cao
 杉木	sha mu
 杉木	shan mu
+苣荬菜	qu mai cai
+苣荬菜	ju mai cai
 李悝	li kui
 李悝	li li
 跬步	kui bu
@@ -393,6 +395,8 @@ sort: by_weight
 道在屎溺	dao zai shi ni
 暴殄天物	bao tian tian wu
 暴殄天物	bao lian tian wu
+以己度人	yi ji duo ren
+以己度人	yi ji du ren
 甑糕	zeng gao
 甑糕	jing gao
 着想	zhuo xiang
