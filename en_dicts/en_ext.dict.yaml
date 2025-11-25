@@ -10,7 +10,7 @@
 # 少数单词与 en 重复，纯粹是为了排版美观，部署时的报错 duplicate word definition 可忽略，无任何影响
 ---
 name: en_ext
-version: "2025-10-31"
+version: "2025-11-25"
 sort: by_weight
 ...
 # 一些杂项
@@ -376,6 +376,7 @@ Workspace	Workspace
 AdSense	AdSense
 Authenticator	Authenticator
 DeepMind	DeepMind
+Figma	Figma
 Google	Google
 Google Ads	GoogleAds
 Google AdSense	GoogleAdSense
