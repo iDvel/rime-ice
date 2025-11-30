@@ -10,7 +10,7 @@
 
 
 # 要比共享目录的同名文件的 config_version 大才可以生效
-config_version: '2024-11-04'  # config_version: '1.0'
+config_version: '2025-10-23'  # config_version: '1.0.3'
 
 
 # options: last | default | _custom_
@@ -53,6 +53,8 @@ style:
   mutual_exclusive: false
   # Whether to use a translucent background. Only visible when background color is transparent
   translucency: false
+  # Enable to show small arrows that indicates if paging up/down is possible
+  show_paging: false
 
   corner_radius: 7
   hilited_corner_radius: 0

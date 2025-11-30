@@ -1,5 +1,6 @@
 -- 计算器插件
 -- author: https://github.com/ChaosAlphard
+-- contributor: https://github.com/DeepChirp
 local calc = {}
 
 function calc.init( env )
@@ -189,13 +190,27 @@ local function replaceToFactorial( str )
     return str:gsub( '([0-9]+)!', 'fact(%1)' )
 end
 
+-- 处理百分号
+local function replacePercent(str)
+    str = str .. ' '
+    -- 先处理括号形式 ( ... )%
+    str = str:gsub("(%b())%%(%D)", function(block, tail)
+        return "(" .. block .. "/100)" .. tail
+    end)
+    -- 再处理纯数字形式 123% 12.3%
+    str = str:gsub("(%d+%.?%d*)%%(%D)", function(num, tail)
+        return "(" .. num .. "/100)" .. tail
+    end)
+    return str:sub(1, -2)
+end
+
 -- 简单计算器
 function calc.func( input, seg, env )
     if not seg:has_tag( 'calculator' ) or input == '' then return end
     -- 提取算式
     local express = truncateFromStart( input, env.prefix )
     if express == '' then return end -- 防止用户写错了正则表达式造成错误
-    local code = replaceToFactorial( express )
+    local code = replacePercent( replaceToFactorial( express ) )
     local success, result = pcall( load( 'return ' .. code, 'calculate', 't', calcPlugin ) )
     if success and result and (type( result ) == 'string' or type( result ) == 'number') and #tostring( result ) > 0 then
         yield_calc_cand( seg, result, '', express, env.show_prefix )
