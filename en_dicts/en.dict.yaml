@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-10-01"
+version: "2025-11-22"
 sort: by_weight
 ...
 # +_+
@@ -805,6 +805,7 @@ Andrea	Andrea
 Andreas	Andreas
 Andrew	Andrew
 Andrews	Andrews
+androecium	androecium
 Andy	Andy
 anecdote	anecdote
 anemia	anemia
@@ -818,6 +819,7 @@ Angelo	Angelo
 angels	angels
 anger	anger
 Angie	Angie
+angiosperm	angiosperm
 angle	angle
 angles	angles
 Anglican	Anglican
@@ -887,6 +889,7 @@ antenna	antenna
 antennas	antennas
 anterior	anterior
 anthem	anthem
+anther	anther
 anthology	anthology
 Anthony	Anthony
 anthrax	anthrax
@@ -912,6 +915,8 @@ antivirus	antivirus
 Anton	Anton
 Antonio	Antonio
 Antony	Antony
+antonym	antonym
+antonymous	antonymous
 ants	ants
 anxiety	anxiety
 anxious	anxious
@@ -1899,7 +1904,7 @@ bell	bell
 Bell	Bell
 Bella	Bella
 belle	belle
-Bellevue	Bellevue
+# Bellevue	Bellevue
 bellhop	bellhop
 bells	bells
 Bellsouth	Bellsouth
@@ -2404,6 +2409,7 @@ bracelets	bracelets
 braces	braces
 bracket	bracket
 brackets	brackets
+bract	bract
 brad	brad
 Bradford	Bradford
 Bradley	Bradley
@@ -2822,6 +2828,7 @@ calm	calm
 calorie	calorie
 calories	calories
 Calvin	Calvin
+calyx	calyx
 cam	cam
 Camaro	Camaro
 Cambodia	Cambodia
@@ -2982,6 +2989,7 @@ Carolina	Carolina
 Caroline	Caroline
 Carolyn	Carolyn
 carp	carp
+carpel	carpel
 carpenter	carpenter
 carpet	carpet
 carpets	carpets
@@ -3153,7 +3161,7 @@ Celtic	Celtic
 cement	cement
 cemeteries	cemeteries
 cemetery	cemetery
-Cen	Cen
+# Cen	Cen
 censor	censor
 censorship	censorship
 census	census
@@ -3392,6 +3400,7 @@ Chico	Chico
 chief	chief
 chiefly	chiefly
 chiefs	chiefs
+chiffon	chiffon
 child	child
 childbirth	childbirth
 childcare	childcare
@@ -3854,6 +3863,7 @@ colon	colon
 colonel	colonel
 colonial	colonial
 colonies	colonies
+colonnade	colonnade
 colony	colony
 color	color
 Colorado	Colorado
@@ -3958,6 +3968,7 @@ communism	communism
 communist	communist
 communities	communities
 community	community
+commutation	commutation
 commute	commute
 commuter	commuter
 # como	como
@@ -4495,6 +4506,7 @@ corners	corners
 cornerstone	cornerstone
 corning	corning
 Cornwall	Cornwall
+corolla	corolla
 corona	corona
 coronary	coronary
 coronet	coronet
@@ -5294,6 +5306,7 @@ democratic	democratic
 democrats	democrats
 demographic	demographic
 demographics	demographics
+demolish	demolish
 demolition	demolition
 demon	demon
 demonic	demonic
@@ -5928,6 +5941,7 @@ documenting	documenting
 documents	documents
 # dod	dod
 dodge	dodge
+dodger	dodger
 dodgers	dodgers
 doe	doe
 does	does
@@ -6032,6 +6046,7 @@ downloadable	downloadable
 downloaded	downloaded
 downloading	downloading
 downloads	downloads
+downpour	downpour
 downs	downs
 downstairs	downstairs
 downstream	downstream
@@ -6118,6 +6133,7 @@ drivers	drivers
 drives	drives
 driveway	driveway
 driving	driving
+drizzle	drizzle
 # drm	drm
 drool	drool
 drop	drop
@@ -8284,8 +8300,9 @@ GeForce	GeForce
 # geile	geile
 geisha	geisha
 gel	gel
+gelatin	gelatin
 gem	gem
-Gemini	Gemini
+gemini	gemini
 gems	gems
 gemstone	gemstone
 gemstones	gemstones
@@ -8712,6 +8729,7 @@ groan	groan
 grocer	grocer
 groceries	groceries
 grocery	grocery
+grok	grok
 groom	groom
 grooming	grooming
 groove	groove
@@ -8812,7 +8830,9 @@ Gwen	Gwen
 gym	gym
 gymnasium	gymnasium
 gymnastics	gymnastics
+gymnosperm	gymnosperm
 gyms	gyms
+gynoecium	gynoecium
 gypsy	gypsy
 Gypsy	Gypsy
 # gz	gz
@@ -8929,6 +8949,7 @@ happier	happier
 happily	happily
 happiness	happiness
 happy	happy
+haptic	haptic
 # har	har
 harassment	harassment
 harbor	harbor
@@ -9821,6 +9842,11 @@ improvement	improvement
 improvements	improvements
 improves	improves
 improving	improving
+improvisation	improvisation
+improvise	improvise
+improvised	improvised
+improvises	improvises
+improvising	improvising
 impulse	impulse
 impurity	impurity
 # ims	ims
@@ -10102,6 +10128,7 @@ ins	ins
 insane	insane
 insanity	insanity
 insect	insect
+insecticide	insecticide
 insects	insects
 insensitive	insensitive
 insert	insert
@@ -10117,6 +10144,7 @@ insight	insight
 insightful	insightful
 insights	insights
 insignificant	insignificant
+insipid	insipid
 insist	insist
 insisted	insisted
 insistent	insistent
@@ -10311,6 +10339,7 @@ intrude	intrude
 intrusion	intrusion
 intuition	intuition
 intuitive	intuitive
+intuitively	intuitively
 Inuyasha	Inuyasha
 invade	invade
 invalid	invalid
@@ -11415,6 +11444,7 @@ licenses	licenses
 licensing	licensing
 licensors	licensors
 licensure	licensure
+lichen	lichen
 lick	lick
 licking	licking
 lid	lid
@@ -12632,6 +12662,7 @@ miracle	miracle
 miracles	miracles
 mirage	mirage
 Miranda	Miranda
+mire	mire
 # miriam	miriam
 mirror	mirror
 mirrors	mirrors
@@ -12874,6 +12905,7 @@ Moses	Moses
 Moslem	Moslem
 mosque	mosque
 mosquito	mosquito
+mosquitocide	mosquitocide
 moss	moss
 most	most
 mostly	mostly
@@ -13163,6 +13195,7 @@ nav	nav
 # NAV	NAV
 Navajo	Navajo
 naval	naval
+navel	navel
 navigate	navigate
 navigation	navigation
 navigational	navigational
@@ -13839,10 +13872,12 @@ operations	operations
 operative	operative
 operator	operator
 operators	operators
+Ophelia	Ophelia
 ophthalmology	ophthalmology
 opinion	opinion
 opinions	opinions
 opium	opium
+opossum	opossum
 # opp	opp
 opponent	opponent
 opponents	opponents
@@ -14024,6 +14059,7 @@ outlook	outlook
 outlying	outlying
 outpatient	outpatient
 outpost	outpost
+outpouring	outpouring
 output	output
 outputs	outputs
 outrage	outrage
@@ -14037,9 +14073,11 @@ outskirts	outskirts
 outsourcing	outsourcing
 outstanding	outstanding
 outward	outward
+outwit	outwit
 # ov	ov
 oval	oval
 ovarian	ovarian
+ovary	ovary
 oven	oven
 ovens	ovens
 over	over
@@ -14088,6 +14126,8 @@ overweight	overweight
 overwhelm	overwhelm
 overwhelmed	overwhelmed
 overwhelming	overwhelming
+ovule	ovule
+ovules	ovules
 # ow	ow
 owe	owe
 owed	owed
@@ -14227,6 +14267,7 @@ papillae	papillae
 papillate	papillate
 papillose	papillose
 Papua	Papua
+papule	papule
 par	par
 para	para
 parachute	parachute
@@ -14449,6 +14490,7 @@ pedestal	pedestal
 pedestrian	pedestrian
 pediatric	pediatric
 pediatrics	pediatrics
+pedicel	pedicel
 pedigree	pedigree
 pedlar	pedlar
 pedophilia	pedophilia
@@ -14456,6 +14498,7 @@ Pedro	Pedro
 pee	pee
 peeing	peeing
 peek	peek
+peekaboo	peekaboo
 peel	peel
 peep	peep
 peer	peer
@@ -14533,6 +14576,7 @@ performs	performs
 perfume	perfume
 perfumes	perfumes
 perhaps	perhaps
+perianth	perianth
 peril	peril
 perimeter	perimeter
 period	period
@@ -14604,6 +14648,8 @@ pesticide	pesticide
 pesticides	pesticides
 pests	pests
 pet	pet
+petal	petal
+petals	petals
 pete	pete
 peter	peter
 Peter	Peter
@@ -14805,6 +14851,7 @@ Pisces	Pisces
 piss	piss
 pissed	pissed
 pissing	pissing
+pistil	pistil
 pistol	pistol
 pistols	pistols
 piston	piston
@@ -14933,6 +14980,7 @@ plumber	plumber
 plumbers	plumbers
 plumbing	plumbing
 plumbum	plumbum
+plume	plume
 plump	plump
 plunder	plunder
 plunge	plunge
@@ -15489,6 +15537,7 @@ profitability	profitability
 profitable	profitable
 profits	profits
 profound	profound
+profoundly	profoundly
 prog	prog
 prognosis	prognosis
 prognosticate	prognosticate
@@ -16114,6 +16163,8 @@ recall	recall
 recalled	recalled
 recalls	recalls
 recap	recap
+recapitulate	recapitulate
+recapitulation	recapitulation
 recede	recede
 receipt	receipt
 receipts	receipts
@@ -16126,6 +16177,7 @@ receives	receives
 receiving	receiving
 recent	recent
 recently	recently
+receptacle	receptacle
 reception	reception
 receptor	receptor
 receptors	receptors
@@ -16147,6 +16199,7 @@ reclamation	reclamation
 recognise	recognise
 recognised	recognised
 recognition	recognition
+recognizable	recognizable
 recognize	recognize
 recognized	recognized
 recognizes	recognizes
@@ -16333,6 +16386,7 @@ regulations	regulations
 regulator	regulator
 regulators	regulators
 regulatory	regulatory
+regulex	regulex
 rehab	rehab
 rehabilitation	rehabilitation
 rehearsal	rehearsal
@@ -16670,6 +16724,7 @@ retains	retains
 retard	retard
 retardation	retardation
 retention	retention
+retina	retina
 retire	retire
 retired	retired
 retirement	retirement
@@ -16762,6 +16817,7 @@ rhizome	rhizome
 rhode	rhode
 Rhodes	Rhodes
 rhodium	rhodium
+rhyme	rhyme
 rhymes	rhymes
 rhythm	rhythm
 rhythms	rhythms
@@ -16800,6 +16856,7 @@ ridge	ridge
 ridicule	ridicule
 ridiculous	ridiculous
 riding	riding
+riff	riff
 rifle	rifle
 rifles	rifles
 rig	rig
@@ -16865,6 +16922,7 @@ Riviera	Riviera
 RNA	RNA
 # ro	ro
 roach	roach
+roaches	roaches
 road	road
 roadmap	roadmap
 roads	roads
@@ -17659,6 +17717,8 @@ sentry	sentry
 SEO	SEO
 Seoul	Seoul
 Sep.	Sep.
+sepal	sepal
+sepals	sepals
 separate	separate
 separated	separated
 separately	separately
@@ -18175,6 +18235,7 @@ sleeper	sleeper
 sleeping	sleeping
 sleeps	sleeps
 sleepy	sleepy
+sleet	sleet
 sleeve	sleeve
 sleeves	sleeves
 slender	slender
@@ -18225,6 +18286,8 @@ sludge	sludge
 slug	slug
 sluggish	sluggish
 slum	slum
+slush	slush
+slushy	slushy
 slut	slut
 sluts	sluts
 sly	sly
@@ -18735,6 +18798,7 @@ stale	stale
 stalk	stalk
 stall	stall
 stalls	stalls
+stamen	stamen
 Stamford	Stamford
 stamp	stamp
 stamped	stamped
@@ -18875,6 +18939,7 @@ sticking	sticking
 sticks	sticks
 sticky	sticky
 stiff	stiff
+stigma	stigma
 still	still
 stills	stills
 stimulant	stimulant
@@ -18885,6 +18950,7 @@ stimulation	stimulation
 stimuli	stimuli
 stimulus	stimulus
 sting	sting
+stinker	stinker
 stir	stir
 Stirling	Stirling
 stirring	stirring
@@ -19139,6 +19205,7 @@ successfully	successfully
 succession	succession
 successive	successive
 successor	successor
+succinct	succinct
 succulent	succulent
 succulently	succulently
 such	such
@@ -19219,6 +19286,8 @@ superannuation	superannuation
 superb	superb
 superficial	superficial
 superfluous	superfluous
+superhero	superhero
+superheroes	superheroes
 superintendent	superintendent
 superior	superior
 superiority	superiority
@@ -19422,6 +19491,7 @@ syllabus	syllabus
 Sylvia	Sylvia
 symantec	symantec
 Symbian	Symbian
+symbiotic	symbiotic
 symbol	symbol
 symbolic	symbolic
 symbols	symbols
@@ -19747,6 +19817,7 @@ tentative	tentative
 tenth	tenth
 tents	tents
 tenure	tenure
+tepal	tepal
 ter	ter
 tera	tera
 Teresa	Teresa
@@ -19994,7 +20065,7 @@ tick	tick
 # tickboxes	tickboxes
 ticker	ticker
 ticket	ticket
-ticketmaster	ticketmaster
+# ticketmaster	ticketmaster
 tickets	tickets
 tickle	tickle
 tickling	tickling
@@ -20545,6 +20616,7 @@ Tue.	Tue.
 # tues	tues
 Tuesday	Tuesday
 Tuesdays	Tuesdays
+tuft	tuft
 # tug	tug
 tuition	tuition
 tulip	tulip
@@ -20573,6 +20645,7 @@ turbulence	turbulence
 turbulent	turbulent
 turf	turf
 Turin	Turin
+Turing	Turing
 Turismo	Turismo
 Turkey	Turkey
 turkey	turkey
@@ -20690,6 +20763,8 @@ ultraviolet	ultraviolet
 # um	um
 # uma	uma
 umami	umami
+umbilical	umbilical
+umbilicus	umbilicus
 umbrella	umbrella
 # umd	umd
 # uml	uml
@@ -20831,6 +20906,7 @@ unrated	unrated
 unread	unread
 unreal	unreal
 unreasonable	unreasonable
+unrecognizable	unrecognizable
 unregistered	unregistered
 unrelated	unrelated
 unresolved	unresolved
@@ -21282,6 +21358,7 @@ viscosity	viscosity
 viscous	viscous
 visibility	visibility
 visible	visible
+visibly	visibly
 vision	vision
 visionary	visionary
 visions	visions
@@ -22207,6 +22284,7 @@ zoo	zoo
 zoofilia	zoofilia
 zoology	zoology
 zoom	zoom
+zoomorphic	zoomorphic
 zoophilia	zoophilia
 # zshops	zshops
 # zu	zu

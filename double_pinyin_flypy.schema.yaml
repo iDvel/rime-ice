@@ -73,6 +73,7 @@ engine:
     - script_translator
     - lua_translator@*date_translator    # 时间、日期、星期
     - lua_translator@*lunar              # 农历
+    - lua_translator@*uuid               # UUID
     - table_translator@custom_phrase     # 自定义短语 custom_phrase_double.txt
     - table_translator@melt_eng          # 英文输入
     - table_translator@cn_en             # 中英混合词汇
@@ -104,6 +105,10 @@ date_translator:
 
 # Lua 配置：农历的触发关键字
 lunar: lunar  # 农历： 二〇二三年冬月二十 癸卯年（兔）冬月二十
+
+
+# Lua 配置: 生成 UUID 的触发关键字
+uuid: uuid
 
 
 # Lua 配置: 降低部分英语单词在候选项的位置。
