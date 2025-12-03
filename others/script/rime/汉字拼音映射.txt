@@ -21,7 +21,6 @@
 鮗 dong
 遯 dun
 犎 feng
-鳆 fu
 𫚒 fu
 咈 fu
 㹴 geng
@@ -37,7 +36,6 @@
 㺀 hu
 獚 huang
 𫚔 hui
-檵 ji
 䇲 jia
 榎 jia
 鳽 jian
@@ -48,7 +46,6 @@
 椇 ju
 鵙 ju
 罥 juan
-朘 juan
 濬 jun
 埈 jun
 峠 ka
@@ -75,7 +72,6 @@
 暋 min
 麿 mo
 拏 na
-㖏 nie
 鬅 peng
 魾 pi
 魮 pi
@@ -96,11 +92,9 @@
 瓋 ti
 魠 tuo
 梶 wei
-揾 wen
 螉 weng
 蟱 wu
 㵲 wu
-矽 xi
 蠵 xi
 鰕 xia
 𮬣 xian
@@ -113,7 +107,6 @@
 鰋 yan
 鷃 yan
 飖 yao
-蓺 yi
 鮧 yi
 鮨 yi
 煐 ying
@@ -127,9 +120,9 @@
 凪 zhi
 塚 zhong
 鯮 zong
-𭎂 zong
 ### ----------在字表但未被脚本自动纳入的注音：----------
 # 嗯 eng # 目前以 en 为主
+揞 an
 鿫 ao
 㞎 ba
 𰻝 biang
@@ -137,15 +130,20 @@
 蟌 cong
 㨃 dui
 欸 ei
+鳆 fu
 鿔 ge
 睆 huan
+檵 ji
+朘 juan
 佧 ka
 堀 ku
 菈 la
 𫟷 li
 鿭 ni
 嬢 niang
+㖏 nie
 珮 pei
+榀 pin
 螓 qin
 䞍 qing
 朊 ruan
@@ -156,12 +154,17 @@
 鿬 tian
 樋 tong
 氽 tun
+揾 wen
+矽 xi
 雫 xia
 咲 xiao
+蓺 yi
 哟 yo
 唷 yo
 𫚪 yu
+膣 zhi
 跩 zhuai
+𭎂 zong
 # -_- ----------这行下面是要过滤掉的词汇，不进行注音检查----------
 娭毑
 杭育
