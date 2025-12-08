@@ -175,6 +175,7 @@ bash rime-install <recipe_name>
 部分发行版可能需要手动指定安装位置
 
 ```bash
+# 为 fictx5 安装
 rime_frontend=fcitx5-rime bash rime-install <recipe_name>
 ```
 
