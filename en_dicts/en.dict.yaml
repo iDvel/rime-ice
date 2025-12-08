@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-11-22"
+version: "2025-12-01"
 sort: by_weight
 ...
 # +_+
@@ -29,6 +29,7 @@ Aaliyah	Aaliyah
 Aaron	Aaron
 # ab	ab
 # aba	aba
+abalone	abalone
 abandon	abandon
 abandoned	abandoned
 abatement	abatement
@@ -2252,6 +2253,7 @@ bodily	bodily
 body	body
 bodybuilding	bodybuilding
 Boeing	Boeing
+bog	bog
 bogus	bogus
 bohemian	bohemian
 boil	boil
@@ -3020,6 +3022,7 @@ cartoons	cartoons
 cartridge	cartridge
 cartridges	cartridges
 carts	carts
+caruncle	caruncle
 carve	carve
 carved	carved
 carver	carver
@@ -3386,6 +3389,7 @@ Chevelle	Chevelle
 chevrolet	chevrolet
 chevy	chevy
 chew	chew
+chewy	chewy
 Cheyenne	Cheyenne
 # chf	chf
 chi	chi
@@ -3430,6 +3434,7 @@ chipset	chipset
 chiropractic	chiropractic
 chit	chit
 chive	chive
+chives	chives
 Chloe	Chloe
 chloride	chloride
 chlorine	chlorine
@@ -4117,6 +4122,7 @@ concerto	concerto
 concerts	concerts
 concession	concession
 concessions	concessions
+conch	conch
 concierge	concierge
 concise	concise
 conclude	conclude
@@ -4744,6 +4750,7 @@ cripple	cripple
 crises	crises
 crisis	crisis
 crisp	crisp
+crispy	crispy
 criteria	criteria
 criterion	criterion
 critic	critic
@@ -4795,6 +4802,7 @@ cruises	cruises
 cruising	cruising
 crumble	crumble
 crunch	crunch
+crunchy	crunchy
 crusade	crusade
 crush	crush
 crushed	crushed
@@ -6053,6 +6061,7 @@ downstream	downstream
 downtime	downtime
 downtown	downtown
 downward	downward
+dowry	dowry
 Doyle	Doyle
 doze	doze
 dozen	dozen
@@ -6958,6 +6967,7 @@ eventually	eventually
 ever	ever
 Everest	Everest
 Everett	Everett
+everglade	everglade
 evergreen	evergreen
 everlasting	everlasting
 EverQuest	EverQuest
@@ -7448,8 +7458,10 @@ femtosecond	femtosecond
 fence	fence
 fences	fences
 fencing	fencing
+fend	fend
 fender	fender
 # feng	feng
+fennel	fennel
 # feof	feof
 Ferdinand	Ferdinand
 Ferguson	Ferguson
@@ -7539,6 +7551,7 @@ Filipino	Filipino
 fill	fill
 filled	filled
 filler	filler
+fillet	fillet
 filling	filling
 fills	fills
 film	film
@@ -8620,6 +8633,7 @@ Graham	Graham
 graham	graham
 grain	grain
 grains	grains
+grainy	grainy
 gram	gram
 grammar	grammar
 gramme	gramme
@@ -10758,6 +10772,7 @@ Jules	Jules
 Julia	Julia
 Julian	Julian
 Julie	Julie
+julienne	julienne
 Juliet	Juliet
 Julio	Julio
 Julius	Julius
@@ -12611,6 +12626,7 @@ Milwaukee	Milwaukee
 mime	mime
 # mimi	mimi
 min	min
+mince	mince
 mind	mind
 minded	minded
 mindless	mindless
@@ -13054,6 +13070,7 @@ museum	museum
 museums	museums
 mushroom	mushroom
 mushrooms	mushrooms
+mushy	mushy
 music	music
 # Musica	Musica
 musical	musical
@@ -13064,6 +13081,7 @@ musicians	musicians
 musings	musings
 Muslim	Muslim
 Muslims	Muslims
+mussel	mussel
 must	must
 mustang	mustang
 mustard	mustard
@@ -13589,6 +13607,7 @@ number	number
 numbered	numbered
 numbering	numbering
 numbers	numbers
+numbing	numbing
 numeric	numeric
 numerical	numerical
 numerous	numerous
@@ -13777,6 +13796,7 @@ ok	ok
 okay	okay
 # oki	oki
 Oklahoma	Oklahoma
+okra	okra
 # ol	ol
 old	old
 older	older
@@ -14109,6 +14129,7 @@ overly	overly
 overnight	overnight
 overpass	overpass
 override	override
+overripe	overripe
 overseas	overseas
 oversee	oversee
 oversight	oversight
@@ -14479,6 +14500,8 @@ pearls	pearls
 Pearson	Pearson
 peas	peas
 peasant	peasant
+peat	peat
+peatland	peatland
 pebble	pebble
 peck	peck
 pectoral	pectoral
@@ -16021,6 +16044,7 @@ Ramsey	Ramsey
 ran	ran
 ranch	ranch
 rancho	rancho
+rancid	rancid
 rand	rand
 Randall	Randall
 Randolph	Randolph
@@ -17374,6 +17398,7 @@ scaled	scaled
 scales	scales
 scaling	scaling
 scallion	scallion
+scallop	scallop
 scam	scam
 scams	scams
 scan	scan
@@ -18009,6 +18034,7 @@ shown	shown
 showroom	showroom
 shows	shows
 showtimes	showtimes
+shred	shred
 Shrek	Shrek
 Shreveport	Shreveport
 shrewd	shrewd
@@ -18407,6 +18433,7 @@ softball	softball
 softcover	softcover
 softly	softly
 software	software
+soggy	soggy
 SOHO	SOHO
 soil	soil
 soiled	soiled
@@ -18673,6 +18700,7 @@ splits	splits
 splitter	splitter
 splitting	splitting
 spoil	spoil
+spoiled	spoiled
 spoiler	spoiler
 spoilers	spoilers
 Spokane	Spokane
@@ -19054,6 +19082,7 @@ striking	striking
 string	string
 stringent	stringent
 strings	strings
+stringy	stringy
 strip	strip
 stripe	stripe
 striped	striped
@@ -20980,6 +21009,7 @@ uranium	uranium
 Uranus	Uranus
 urban	urban
 Urbana	Urbana
+urchin	urchin
 urge	urge
 urged	urged
 urgency	urgency
@@ -21174,6 +21204,7 @@ vel	vel
 Velcro	Velcro
 velocity	velocity
 velvet	velvet
+velvety	velvety
 vending	vending
 vendor	vendor
 vendors	vendors
@@ -21945,6 +21976,7 @@ withdraw	withdraw
 withdrawal	withdrawal
 withdrawn	withdrawn
 wither	wither
+withered	withered
 withheld	withheld
 withhold	withhold
 withholding	withholding
@@ -22288,6 +22320,7 @@ zoomorphic	zoomorphic
 zoophilia	zoophilia
 # zshops	zshops
 # zu	zu
+zucchini	zucchini
 # zum	zum
 # zur	zur
 Zurich	Zurich

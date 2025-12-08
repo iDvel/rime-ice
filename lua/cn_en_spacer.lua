@@ -1,5 +1,5 @@
 -- 中英混输词条自动空格
--- 在 engine/filters 增加 - lua_filter@cn_en_spacer
+-- 在 engine/filters 增加 - lua_filter@*cn_en_spacer
 --
 -- 为中英混输词条（cn_en.dict.yaml）自动空格
 -- 示例：`VIP中P` → `VIP 中 P`

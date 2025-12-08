@@ -1,6 +1,6 @@
 github.com/deckarep/golang-set/v2 v2.3.0 h1:qs18EKUfHm2X9fA50Mr/M5hccg2tNnVqsiBImnyDs0g=
 github.com/deckarep/golang-set/v2 v2.3.0/go.mod h1:VAky9rY/yGXJOLEDv3OMci+7wtDpOF4IN+y82NBOac4=
-github.com/yanyiwu/gojieba v1.3.0 h1:6VeaPOR+MawnImdeSvWNr7rP4tvUfnGlEKaoBnR33Ds=
-github.com/yanyiwu/gojieba v1.3.0/go.mod h1:54wkP7sMJ6bklf7yPl6F+JG71dzVUU1WigZbR47nGdY=
+github.com/yanyiwu/gojieba v1.4.6 h1:9oKbZijSHBdoTabXK34romSWj4aQLvs+j1ctIQjSxPk=
+github.com/yanyiwu/gojieba v1.4.6/go.mod h1:JUq4DddFVGdHXJHxxepxRmhrKlDpaBxR8O28v6fKYLY=
 golang.org/x/sys v0.19.0 h1:q5f1RH2jigJ1MoAWp2KTp3gm5zAGFUTarQZ5U386+4o=
 golang.org/x/sys v0.19.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=
