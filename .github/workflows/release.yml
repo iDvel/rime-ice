@@ -38,10 +38,6 @@ jobs:
 
       - name: Pack dicts
         run: |
-          ## 备用 Prepare opencc dict, 启用后 emoji.json 也要做改动
-          # apt install opencc
-          # opencc_dict -i opencc/emoji.txt -o opencc/emoji.ocd2 -f text -t ocd2
-
           mkdir dist
           echo "Pack all ..."
           find . -maxdepth 1 -name "*.lua" -o -name "*.yaml" -o -name "*.txt" | zip dist/full.zip -@
