@@ -186,16 +186,20 @@ key_binder:
     - { when: composing, accept: Alt+Left, send: Shift+Left }
     - { when: composing, accept: Alt+Right, send: Shift+Right }
 
+    # 翻页的【上一页】按键效果，可按需选择：
+    # paging 在第一页时按下，会直接上屏并输出此符号。
+    # has_menu 始终不会输出。
+
     # 翻页 - =
-    - { when: has_menu, accept: minus, send: Page_Up }  # 上一页设置为 paging 时会导致直接上屏并输出减号
+    - { when: has_menu, accept: minus, send: Page_Up }
     - { when: has_menu, accept: equal, send: Page_Down }
 
     # 翻页 , .
-    # - { when: paging, accept: comma, send: Page_Up }
+    # - { when: has_menu, accept: comma, send: Page_Up }
     # - { when: has_menu, accept: period, send: Page_Down }
 
     # 翻页 [ ]  ⚠️ 开启时请修改上面以词定字的快捷键
-    # - { when: paging, accept: bracketleft, send: Page_Up }
+    # - { when: has_menu, accept: bracketleft, send: Page_Up }
     # - { when: has_menu, accept: bracketright, send: Page_Down }
 
     # 两种按键配置，鼠须管 Control+Shift+4 生效，小狼毫 Control+Shift+dollar 生效，都写上了。
