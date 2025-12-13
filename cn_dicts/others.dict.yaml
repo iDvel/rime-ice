@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2025-11-10"
+version: "2025-12-13"
 sort: by_weight
 ...
 ##### 容错词
@@ -401,6 +401,8 @@ sort: by_weight
 甑糕	jing gao
 着想	zhuo xiang
 着想	zhao xiang
+胳肢窝	ga zhi wo
+胳肢窝	ge zhi wo
 ### 错字
 曾经	ceng jing
 曾今	ceng jin

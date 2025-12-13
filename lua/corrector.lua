@@ -176,6 +176,7 @@ function M.init(env)
         ["yi ji du ren"] = { text = "以己度人", comment = "以己度(duó)人" },
         ["jing gao"] = { text = "甑糕", comment = "甑(zèng)糕" },
         ["zhao xiang"] = { text = "着想", comment = "着(zhuó)想" },
+        ["ge zhi wo"] = { text = "胳肢窝", comment = "胳(gā)肢窝" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
         ["pu gai"] = { text = "扑街", comment = "仆街" },

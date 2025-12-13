@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-12-01"
+version: "2025-12-13"
 sort: by_weight
 ...
 # +_+
@@ -594,6 +594,7 @@ alkaline	alkaline
 alkalinity	alkalinity
 alkaloid	alkaloid
 all	all
+all-in-one	all-in-one
 # alla	alla
 Allah	Allah
 Allan	Allan
@@ -863,6 +864,8 @@ announcements	announcements
 announces	announces
 announcing	announcing
 annoy	annoy
+annoyance	annoyance
+annoyances	annoyances
 annoyed	annoyed
 annoying	annoying
 annual	annual
@@ -1089,6 +1092,7 @@ are	are
 area	area
 areas	areas
 arena	arena
+arenas	arenas
 areola	areola
 Ares	Ares
 arg	arg
@@ -2038,7 +2042,7 @@ billboard	billboard
 billed	billed
 billiard	billiard
 billiards	billiards
-billie	billie
+Billie	Billie
 billing	billing
 billings	billings
 billion	billion
@@ -2827,6 +2831,7 @@ calloused	calloused
 calls	calls
 callus	callus
 calm	calm
+calmer	calmer
 calorie	calorie
 calories	calories
 Calvin	Calvin
@@ -3166,6 +3171,7 @@ cemeteries	cemeteries
 cemetery	cemetery
 # Cen	Cen
 censor	censor
+censored	censored
 censorship	censorship
 census	census
 cent	cent
@@ -3340,6 +3346,7 @@ checked	checked
 checker	checker
 checking	checking
 checklist	checklist
+checkmate	checkmate
 checkout	checkout
 checkpoint	checkpoint
 checks	checks
@@ -6540,6 +6547,7 @@ embellish	embellish
 embellishment	embellishment
 # embl	embl
 emblem	emblem
+emblems	emblems
 embodiment	embodiment
 embody	embody
 embrace	embrace
@@ -7998,6 +8006,7 @@ Francois	Francois
 francs	francs
 frank	frank
 Frank	Frank
+Frankenstein	Frankenstein
 Frankfurt	Frankfurt
 Frankie	Frankie
 Franklin	Franklin
@@ -8546,6 +8555,7 @@ golf	golf
 golfers	golfers
 golfing	golfing
 Gomez	Gomez
+gomoku	gomoku
 gone	gone
 gong	gong
 gonna	gonna
@@ -10952,6 +10962,7 @@ kinetic	kinetic
 kinetics	kinetics
 king	king
 kingdom	kingdom
+kingdoms	kingdoms
 kings	kings
 Kingston	Kingston
 kinky	kinky
@@ -13794,6 +13805,8 @@ oily	oily
 # OK	OK
 ok	ok
 okay	okay
+okey	okey
+okey-dokey	okey-dokey
 # oki	oki
 Oklahoma	Oklahoma
 okra	okra
@@ -15582,6 +15595,7 @@ prohibition	prohibition
 prohibits	prohibits
 project	project
 projected	projected
+projectile	projectile
 projection	projection
 projections	projections
 projector	projector
@@ -16669,6 +16683,7 @@ resin	resin
 resist	resist
 resistance	resistance
 resistant	resistant
+resisted	resisted
 resistor	resistor
 resize	resize
 resolute	resolute
@@ -20818,6 +20833,7 @@ uncertain	uncertain
 uncertainties	uncertainties
 uncertainty	uncertainty
 unchanged	unchanged
+uncharted	uncharted
 unclassified	unclassified
 uncle	uncle
 unclear	unclear

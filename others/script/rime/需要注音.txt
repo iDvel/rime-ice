@@ -284,7 +284,7 @@
 查士标
 # 模 mo mu （全部注音）
 模
-# 校 xiao jiao （全部注音）
+# 校 xiao jiao （全部注音） //TODO 只注音 jiao
 校
 # 省 sheng xing （全部注音）
 省
