@@ -13,6 +13,7 @@
 猼 bo
 礤 ca
 閦 chu
+膪 chuai
 鯙 chun
 𪻐 cong
 䐛 da
@@ -65,7 +66,6 @@
 𱇮 mang
 脢 mei
 濛 meng
-蒾 mi
 䕷 mi
 旼 min
 慜 min
@@ -128,6 +128,7 @@
 𰻝 biang
 𤭢 cei
 蟌 cong
+鿕 dan
 㨃 dui
 欸 ei
 鳆 fu
@@ -139,9 +140,11 @@
 堀 ku
 菈 la
 𫟷 li
+蒾 mi
 鿭 ni
 嬢 niang
 㖏 nie
+𤆵 pa
 珮 pei
 榀 pin
 螓 qin
@@ -813,3 +816,5 @@
 𦗒狐
 不亦说乎
 日掛中天
+鹤庆乾酒
+吴廷瑈
