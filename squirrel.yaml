@@ -41,7 +41,7 @@ style:
   # 以下是预设选项。如果皮肤没写，则使用这些属性；如果皮肤写了，使用皮肤的。
 
   # 候选框与文字的排列方式
-  candidate_list_layout: stacked  # stacked | linear       皮肤横竖排显示是调整这个
+  candidate_list_layout: linear   # stacked | linear       皮肤横竖排显示是调整这个
   text_orientation: horizontal    # horizontal | vertical  文字方向
   # 拼音或词句是否显示在键入位置
   inline_preedit: true     # true | false  键入码显示位置
