@@ -36,7 +36,11 @@ switcher:
     - Control+grave
     - Control+Shift+grave
     # - Alt+grave
-  save_options:  # 开关记忆（方案中的 switches），从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
+  # 开关记忆（方案中的 switches），从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
+  # 部分前端（如小企鹅），实现了全局状态，切换后在任何焦点都会记住；
+  # 部分前端（如鼠须管），仅在当前会话中记住，每个App或一个App的不同输入框都会单独管理；
+  # 部分前端（如小狼毫），仅实现了中英全局状态，其他开关仍然是单独管理。
+  save_options:
     - ascii_punct
     - traditionalization
     - emoji
@@ -86,7 +90,7 @@ ascii_composer:
 #              '~' 是半角的，
 #              '`'（反引号）没有改成 '·'（间隔号）。
 punctuator:
-  digit_separators: ",.:"  # 在此处指定的字符，在数字后被输入，若再次输入数字，则连同数字直接上屏；若双击，则恢复映射。 # librime >= 28a234f
+  digit_separators: ",.:"  # 在此处指定的字符，在数字后被输入，若再次输入数字，则连同数字直接上屏；若双击，则恢复映射。 # librime >= 1.13.0
   # digit_separator_action: commit  # 关闭上述行为 librime >= 1.13.1
   full_shape:
     ' ' : { commit: '　' }
