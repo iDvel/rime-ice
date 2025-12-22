@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-12-13"
+version: "2025-12-15"
 sort: by_weight
 ...
 # +_+
@@ -3418,8 +3418,8 @@ childcare	childcare
 childhood	childhood
 childish	childish
 children	children
-childrens	childrens
-childs	childs
+# childrens	childrens
+# childs	childs
 chile	chile
 Chilean	Chilean
 chili	chili
@@ -5314,6 +5314,7 @@ demanding	demanding
 demands	demands
 dementia	dementia
 # demi	demi
+demise	demise
 demo	demo
 democracy	democracy
 democrat	democrat
@@ -6406,6 +6407,7 @@ Edward	Edward
 Edwards	Edwards
 Edwin	Edwin
 # ee	ee
+eel	eel
 # een	een
 # ef	ef
 eff	eff
@@ -6662,6 +6664,7 @@ endeavour	endeavour
 ended	ended
 endif	endif
 ending	ending
+endive	endive
 endless	endless
 endlessly	endlessly
 endocrine	endocrine
@@ -8486,6 +8489,8 @@ Glenn	Glenn
 glide	glide
 glider	glider
 glimpse	glimpse
+glisten	glisten
+glistening	glistening
 glitter	glitter
 # gln	gln
 global	global
@@ -8572,6 +8577,7 @@ goodness	goodness
 goods	goods
 goodwill	goodwill
 Goodwin	Goodwin
+gooey	gooey
 Google	Google
 goose	goose
 # gop	gop
@@ -8893,6 +8899,7 @@ Haitian	Haitian
 hale	hale
 half	half
 halfway	halfway
+halibut	halibut
 Halifax	Halifax
 hall	hall
 hallmark	hallmark
@@ -9183,6 +9190,7 @@ helps	helps
 Helsinki	Helsinki
 hem	hem
 hemisphere	hemisphere
+hemispherical	hemispherical
 hemp	hemp
 hen	hen
 hence	hence
@@ -11326,6 +11334,7 @@ lee	lee
 leech	leech
 Leeds	Leeds
 leek	leek
+leeway	leeway
 left	left
 leg	leg
 legacy	legacy
@@ -13837,6 +13846,8 @@ Omar	Omar
 # omb	omb
 ombudsman	ombudsman
 omega	omega
+omelet	omelet
+omelette	omelette
 OMG	OMG
 omicron	omicron
 omission	omission
@@ -14276,6 +14287,7 @@ panic	panic
 panorama	panorama
 panoramic	panoramic
 pans	pans
+pansy	pansy
 pant	pant
 # pantera	pantera
 panther	panther
@@ -14795,6 +14807,7 @@ physiol	physiol
 physiological	physiological
 physiology	physiology
 physiopathology	physiopathology
+phytosanitary	phytosanitary
 pi	pi
 pianist	pianist
 piano	piano
@@ -15539,6 +15552,7 @@ processor	processor
 processors	processors
 proclaim	proclaim
 proclaimed	proclaimed
+procumbent	procumbent
 procurement	procurement
 prod	prod
 produce	produce
@@ -17266,6 +17280,7 @@ salon	salon
 # salons	salons
 saloon	saloon
 salsa	salsa
+salsify	salsify
 salt	salt
 salts	salts
 saltwater	saltwater
@@ -17746,6 +17761,7 @@ sentenced	sentenced
 sentences	sentences
 sentencing	sentencing
 sentiment	sentiment
+sentimental	sentimental
 sentinel	sentinel
 sentineled	sentineled
 sentineling	sentineling
@@ -17781,6 +17797,7 @@ sequential	sequential
 Serbia	Serbia
 Serbian	Serbian
 Serena	Serena
+serendipity	serendipity
 serenity	serenity
 sergeant	sergeant
 # sergio	sergio
@@ -18879,7 +18896,6 @@ stark	stark
 # starr	starr
 starring	starring
 stars	stars
-starsmerchant	starsmerchant
 start	start
 started	started
 starter	starter
@@ -19897,7 +19913,9 @@ terrorists	terrorists
 terry	terry
 tertiary	tertiary
 # tes	tes
-Tesco	Tesco
+# Tesco	Tesco
+tessellate	tessellate
+tessellation	tessellation
 test	test
 testament	testament
 tested	tested
@@ -19996,6 +20014,7 @@ thesaurus	thesaurus
 these	these
 theses	theses
 thesis	thesis
+thespian	thespian
 Thessalonians	Thessalonians
 theta	theta
 they	they
@@ -20134,6 +20153,7 @@ tiki	tiki
 tilde	tilde
 tile	tile
 tiles	tiles
+tiling	tiling
 till	till
 tilt	tilt
 Tim	Tim
@@ -21854,6 +21874,7 @@ whites	whites
 whitespace	whitespace
 whitewash	whitewash
 whitewater	whitewater
+whitish	whitish
 Whitman	Whitman
 Whitney	Whitney
 who	who
