@@ -7,7 +7,7 @@
 # 映射的汉字改为简体，
 # 一些韵母前四位顺序改为「一声、二声、三声、四声、其他...」如输入 va 得到 ā á ǎ à
 #
-# version: 2024-12-19
+# version: 2025-12-23
 
 symbols:
 #符号、电脑
@@ -414,6 +414,13 @@ symbols:
   'vdel': [⌦]
   'vescape': [⎋]
   'veject': [⏏]
+  'vtab': [↹, ⇤, ⇥]
+  'vtabl': [⇤]
+  'vtabr': [⇥]
+  'vhome': [↖]
+  'vend': [↘]
+  'vpgup': [⇞]
+  'vpgdn': [⇟]
   # 其他
   'vshang': [↑, ⬆️]
   'vxia': [↓, ⬇️]

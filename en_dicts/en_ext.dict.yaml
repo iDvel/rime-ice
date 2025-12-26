@@ -10,7 +10,7 @@
 # 少数单词与 en 重复，纯粹是为了排版美观，部署时的报错 duplicate word definition 可忽略，无任何影响
 ---
 name: en_ext
-version: "2025-11-25"
+version: "2025-12-13"
 sort: by_weight
 ...
 # 一些杂项
@@ -134,10 +134,9 @@ net	net	2
 .NET	dotnet
 # 带权重的系列
 iPhone	iPhone	999
-iPhone 16	iPhone	4
-iPhone 16 Plus	iPhone	3
-iPhone 16 Pro	iPhone	2
-iPhone 16 Pro Max	iPhone	1
+iPhone 17	iPhone	3
+iPhone 17 Pro	iPhone	2
+iPhone 17 Pro Max	iPhone	1
 Mac OS X	MacOSX	999
 Mac OS X Cheetah	MacOSX	1
 Mac OS X Puma	MacOSX	2
@@ -217,9 +216,14 @@ iPhone 15 Plus	iPhone15Plus
 iPhone 15 Pro	iPhone15Pro
 iPhone 15 Pro Max	iPhone15ProMax
 iPhone 16	iPhone16
+iPhone 16e	iPhone16e
 iPhone 16 Plus	iPhone16Plus
 iPhone 16 Pro	iPhone16Pro
 iPhone 16 Pro Max	iPhone16ProMax
+iPhone 17	iPhone17
+iPhone Air	iPhoneAir
+iPhone 17 Pro	iPhone17Pro
+iPhone 17 Pro Max	iPhone17ProMax
 Mac OS X Cheetah	MacOSXCheetah
 Mac OS X Puma	MacOSXPuma
 Mac OS X Jaguar	MacOSXJaguar
@@ -406,6 +410,8 @@ What You See Is What You Get	WYSIWYG
 Mark Text	MarkText
 Joplin	Joplin
 SteamOS	SteamOS
+Steam Deck	SteamDeck
+Steam Machine	SteamMachine
 TikTok	TikTok
 IDC	IDC
 International Data Corporation	IDC
@@ -873,6 +879,7 @@ Typora	Typora
 Uber	Uber
 uBlock	uBlock
 uBlock Origin	uBlockOrigin
+uBlock Origin Lite	uBlockOriginLite
 Ulysses	Ulysses
 USB	USB
 Universal Serial Bus	USB
@@ -1027,7 +1034,6 @@ Yandex	Yandex
 Geralt	Geralt
 ServerCat	ServerCat
 Zoho	Zoho
-Gecko	Gecko
 TinyPNG	TinyPNG
 Thanos	Thanos
 XML	XML
@@ -1459,7 +1465,6 @@ VoWiFi	VoWiFi
 Voice Over LTE	VoLTE
 CEF	CEF
 Chromium Embedded Framework	CEF
-Chromium Embedded Framework	ChromiumEmbeddedFramework
 RustDesk	RustDesk
 Capcom	Capcom
 Paxlovid	Paxlovid
@@ -1521,7 +1526,6 @@ LGPL	LGPL
 GNU Lesser General Public License	LGPL
 GNU Lesser General Public License	GNULesserGeneralPublicLicense
 Mozilla Firefox	MozillaFirefox
-Steam Deck	SteamDeck
 Android	Android
 android	android
 iOS	iOS
@@ -1674,6 +1678,8 @@ GPT-4o	GPT-4o
 GPT-4.1	GPT-4.1
 GPT-4.5	GPT-4.5
 GPT-5	GPT-5
+GPT-5.1	GPT-5.1
+GPT-5.2	GPT-5.2
 LaMDA	LaMDA
 Language Model for Dialogue Applications	LaMDA
 Coinbase Wallet	CoinbaseWallet
@@ -1780,15 +1786,12 @@ UUID	UUID
 Universally Unique Identifier	UUID
 Fyne	Fyne
 Claude	Claude
-Claude+	Claude+
 Anthropic	Anthropic
 Cinderella	Cinderella
 WebGPU	WebGPU
 Mailfence	Mailfence
 CodeWhisperer	CodeWhisperer
 espanso	espanso
-okey	okey
-okey-dokey	okey-dokey
 CAPTCHA	CAPTCHA
 Coinbase	Coinbase
 Kraken	Kraken
@@ -2215,3 +2218,6 @@ International Collegiate Programming Contest	InternationalCollegiateProgrammingC
 UML	UML
 Unified Modeling Language	UML
 Unified Modeling Language	UnifiedModelingLanguage
+Ollama	Ollama
+Omarchy	Omarchy
+LMArena	LMArena
