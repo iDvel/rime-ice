@@ -1,9 +1,10 @@
 ---
 name: mydict
-version: "2025-12-08"
-sort: by_weight
+version: "2025-12-25-2"
+sort: original
 ...
 
 陈佳慧	chen jia hui	50000
 没有	mei you	50000
 整个	zheng ge	50000
+同意	tong yi	50000
