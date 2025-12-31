@@ -21,7 +21,7 @@
 # '𠃋': [['zhe2']], # 折
 # '丶': [['dian3','na4']],  # 点 & 捺
 # '𠂉': [['ren2']], # 一撇一横，牛字去掉十字，施字的右侧上部，视作「人」
-# '⺌': [['xiao3']], # 巣、尖、尙、尚等字上部，视为「小」
+# '⺌': [['xiao3']], # 巣、尖、尙、尚等字上部，视为「小」」
 # '卜': [['bo1','bu3']],
 # '厶': [['si1']],
 # '爿': [['pian4']], # 牁 鼎
@@ -85,7 +85,7 @@
 
 ---
 name: radical_pinyin
-version: "2025.01.18"
+version: "2025.12.31"
 
 sort: original
 
@@ -198,6 +198,8 @@ sort: original
 𰷠	bei'ye
 𰵴	yan'shu
 𰵝	yan'he
+𰳆	chong'chi
+𰳁	chong'ze
 𰱱	cao'zi
 𰧉	shi'zhi
 𰟘	huo'yan
@@ -269,9 +271,6 @@ sort: original
 𮔊	chong'liang
 𮔅	chong'fu
 𮔂	chong'jie
-𪘅	chong'chi
-𰳆	chong'chi
-𰳁	chong'ze
 𮐨	cao'ying
 𮌀	er'nie
 𮌀	er'er'er'er
@@ -295,12 +294,14 @@ sort: original
 𭥗	yue'ri
 𭥗	ri'yue
 𭥗	ri'ri
+𭤰	fang'ren'yu
 𭣇	shou'dian
 𭚦	gong'guang
 𭙤	guang'zhu
 𭙤	guang'shi'dou
 𭘓	jin'wu
 𭕘	shi'mu
+𭕆	xiao'bei
 𭑈	tian'tian
 𭐪	si'ba'wen'si'ba'wen
 𭐪	qun'qun
@@ -543,6 +544,7 @@ sort: original
 𬑗	mu'jian
 𬑔	wang'geng
 𬑔	si'geng
+𬐚	ren'kou'min
 𬏍	shen'shen'shen
 𬍼	yu'yu'yu
 𬍤	yu'xun
@@ -571,6 +573,7 @@ sort: original
 𬂩	mu'jia
 𬂚	shuo'shuo'shuo
 𬁠	ri'xiang
+𬀷	ren'yang
 𬀱	ri'qi
 𬀪	ri'jian
 𬀩	ri'wei
@@ -730,6 +733,7 @@ sort: original
 𫞦	wang'qi
 𫞥	wang'bei
 𫞣	quan'jian
+𫞢	xue'niu
 𫞡	huo'rong
 𫞠	huo'ling
 𫞝	shui'que
@@ -915,6 +919,7 @@ sort: original
 𫖯	zhao'ye
 𫖮	qi'ye
 𫖬	ye'zhen
+𫖪	ren'na'ye
 𫖞	chi'ye
 𫖜	yin'mu
 𫖖	wei'deng
@@ -1097,6 +1102,7 @@ sort: original
 𫌣	xian'ye
 𫌣	jian'ye
 𫌙	yi'jian
+𫌃	yi'pie'yao'zou
 𫌀	yi'ze
 𫋪	xue'bi
 𫋒	you'kun
@@ -1288,6 +1294,8 @@ sort: original
 𪰸	ri'su
 𪰖	ri'shi
 𪰍	ri'dou
+𪰅	fang'ren'wen
+𪰅	fang'ren'sheng
 𪯱	jin'wen
 𪯨	chan'chu
 𪯢	wen'wen
@@ -1476,6 +1484,7 @@ sort: original
 𪞿	tun'dao
 𪞫	bing'chi
 𪞝	bing'you'er'shu
+𪞝	bing'yi
 𪞓	mi'shi
 𪞓	bao'shi
 𪝙	ren'he
@@ -1489,6 +1498,7 @@ sort: original
 𪜅	mu'na'dian'jing
 𪜅	mu'dian'na'jing
 𪜅	mu'dian'dian'jing
+𪜃	gou'heng'kou'shan
 𪛒	yue'shu
 𪛎	ji'yue
 𪛊	yue'jin
@@ -1600,6 +1610,7 @@ sort: original
 𪘉	chi'duo
 𪘇	chi'hou
 𪘆	chi'xiu
+𪘅	chong'chi
 𪘃	chi'you
 𪘁	chi'he
 𪘀	chi'bing
@@ -2675,6 +2686,7 @@ sort: original
 𩷼	yu'juan
 𩷻	yu'jie
 𩷹	yu'zhuo
+𩷸	yu'ren'bao'fang
 𩷶	yu'mang
 𩷵	yu'tun
 𩷰	yu'xun
@@ -3781,7 +3793,20 @@ sort: original
 𩠟	shou'si'ge
 𩠚	shou'hai
 𩠑	ding'shou
+𩠏	shi'zhang
+𩠎	shi'cao
 𩠌	shi'song
+𩠋	shi'xu
+𩠊	shi'duan
+𩠉	shi'juan
+𩠈	shi'nian
+𩠇	shi'xun
+𩠆	shi'ding
+𩠃	shi'jia
+𩠂	shi'yi
+𩠁	shi'gan
+𩠀	shi'ba
+𩟿	shi'nei
 𩟺	shi'lan
 𩟺	shi'la
 𩟷	yong'shi
@@ -4171,6 +4196,7 @@ sort: original
 𩕀	ao'ye
 𩔼	shu'ye
 𩔻	xu'pou
+𩔻	xu'li'kou
 𩔹	xu'bei
 𩔸	qu'ye
 𩔸	qiu'ye
@@ -4367,6 +4393,7 @@ sort: original
 𩐀	wei'jia
 𩏿	wei'shi
 𩏾	wei'tao
+𩏽	wei'yi
 𩏼	wei'nei
 𩏺	wei'jue
 𩏺	hui'jue
@@ -5261,6 +5288,7 @@ sort: original
 𨶨	men'ce
 𨶢	men'yu
 𨶠	men'niao
+𨶟	men'yu'ren'shan
 𨶝	men'shu
 𨶜	men'dou
 𨶙	men'neng
@@ -5348,6 +5376,7 @@ sort: original
 𨴏	men'tong
 𨴎	men'er
 𨴍	men'mou
+𨴌	men'si'shan
 𨴊	men'shi
 𨴆	men'da
 𨴀	men'jiong
@@ -5966,6 +5995,8 @@ sort: original
 𨛣	han'er
 𨛡	yuan'er
 𨛜	yi'yi
+𨛖	bu'cong'er
+𨛖	bo'cong'er
 𨛕	you'er
 𨛔	fou'er
 𨛓	nong'er
@@ -6051,6 +6082,7 @@ sort: original
 𨘁	zhi'yao'fang'si
 𨘁	zhi'yao'fang'mi
 𨗾	zhi'fu'ta
+𨗼	zhi'ren'dai
 𨗰	zhi'you'si
 𨗰	zhi'you'mi
 𨗨	zhi'wei
@@ -6166,6 +6198,7 @@ sort: original
 𨒅	zhi'zhi
 𨒄	zhi'yan
 𨒃	zhi'ban
+𨒀	zhi'dao'dao
 𨑿	zhi'xiong'shi
 𨑿	zhi'kan'shi
 𨑽	zhi'ji
@@ -6190,6 +6223,9 @@ sort: original
 𨑌	lei'chen
 𨑊	duo'nong
 𨑂	nie'nie'nie
+𨐾	yi'pian
+𨐾	yi'bian
+𨐾	yi'ban
 𨐶	xin'hua
 𨐴	pi'jia
 𨐱	xin'yue'xin
@@ -6201,6 +6237,7 @@ sort: original
 𨐡	xin'ku
 𨐛	niao'xin
 𨐖	sha'xin
+𨐕	shan'shan'xin
 𨐔	duo'xin
 𨐑	xin'yun
 𨐍	shan'xin
@@ -6784,6 +6821,9 @@ sort: original
 𨂢	ji'zu
 𨂡	zu'zou
 𨂠	zu'ye
+𨂟	zu'ren'zhi'er
+𨂟	zu'ren'zheng'er
+𨂟	zu'ren'ting'er
 𨂞	zu'bing
 𨂞	zu'bang
 𨂞	zu'ban
@@ -6845,6 +6885,7 @@ sort: original
 𨀯	zu'qiong
 𨀮	zu'yuan
 𨀬	zu'zai
+𨀫	zu'ren'kang
 𨀧	zu'cheng
 𨀥	zu'ci
 𨀤	zu'lei
@@ -7031,6 +7072,7 @@ sort: original
 𧻰	zou'gao
 𧻧	zou'chi
 𧻧	zou'che
+𧻝	zou'ren'zhi
 𧻜	zou'wei
 𧻚	zou'gen
 𧻙	zou'bai
@@ -7075,6 +7117,7 @@ sort: original
 𧺏	zou'ye
 𧺎	zou'jiu
 𧺍	zou'ba
+𧺆	yao'zou
 𧺅	shu'xi'chi
 𧹾	yi'chi
 𧹽	chi'xian
@@ -7615,6 +7658,7 @@ sort: original
 𧧭	yan'jiang
 𧧬	zai'yan
 𧧩	yan'yi
+𧧠	yan'shan'shan
 𧧟	yan'zai
 𧧝	yan'ya
 𧧜	yan'wang
@@ -7653,6 +7697,7 @@ sort: original
 𧥺	yan'bao'er
 𧥹	yan'feng
 𧥸	yan'niu
+𧥷	yan'ren'heng'yi
 𧥵	yan'ri
 𧥴	yan'ang
 𧥱	yan'fu
@@ -7664,6 +7709,14 @@ sort: original
 𧥟	yan'zhe
 𧥟	yan'gou
 𧥞	yan'shu
+𧥜	yi'er'xiong
+𧥜	yi'er'kan
+𧥜	tou'er'xiong
+𧥜	tou'er'kan
+𧥛	yi'er'tong
+𧥛	yi'er'jiong
+𧥛	tou'er'tong
+𧥛	tou'er'jiong
 𧥚	xian'xian'pu'jiao
 𧥖	jiao'si
 𧥖	jiao'li
@@ -8192,6 +8245,12 @@ sort: original
 𧕮	chong'gu
 𧕮	chong'chi
 𧕨	chong'cang
+𧕧	pou'wei'yi'kun
+𧕧	pou'kou'yi'kun
+𧕧	pou'guo'yi'kun
+𧕧	ju'wei'yi'kun
+𧕧	ju'kou'yi'kun
+𧕧	ju'guo'yi'kun
 𧕦	zhan'kun
 𧕦	tan'kun
 𧕦	shan'kun
@@ -8579,6 +8638,7 @@ sort: original
 𧉊	fu'chong
 𧉈	chong'bu
 𧉇	wang'chong
+𧉆	chong'zou
 𧉅	chong'yin
 𧉄	chong'mian
 𧉃	chong'yun
@@ -8785,6 +8845,8 @@ sort: original
 𧀺	cao'jie
 𧀺	cao'jia
 𧀹	cao'zhe
+𧀶	cao'shi'mi'tian'si'zou
+𧀶	cao'shi'bao'tian'si'zou
 𧀵	cao'qian
 𧀴	cao'lu
 𧀴	cao'fu
@@ -8995,6 +9057,7 @@ sort: original
 𦺓	cao'chao
 𦺒	cao'wu
 𦺑	cao'pou'mao
+𦺑	cao'li'kou'mao
 𦺐	cao'can
 𦺎	cao'pei
 𦺎	cao'bu
@@ -9371,6 +9434,7 @@ sort: original
 𦩞	zhou'yu
 𦩝	zhou'wei
 𦩜	zhou'pou
+𦩜	zhou'li'kou
 𦩘	zhou'ding
 𦩖	zhou'bei
 𦩕	zhou'hu
@@ -9829,6 +9893,7 @@ sort: original
 𦙜	yue'e
 𦙙	yue'shui
 𦙍	pie'yao'yue
+𦙋	yue'ren'hua
 𦙊	huo'yue
 𦙉	yue'you'ji
 𦙈	yue'zu
@@ -9839,6 +9904,8 @@ sort: original
 𦙀	yue'fan
 𦘼	yu'yue
 𦘹	yue'shan
+𦘸	yue'bu'yi
+𦘸	yue'bo'yi
 𦘶	yue'chuan
 𦘵	yue'heng'jiu
 𦘴	yue'zhe
@@ -9917,6 +9984,14 @@ sort: original
 𦕷	er'gong
 𦕵	er'lao
 𦕰	er'duo
+𦕢	bu'er'zhi
+𦕢	bu'er'zheng
+𦕢	bu'er'ting
+𦕢	bo'er'zhi
+𦕢	bo'er'zheng
+𦕢	bo'er'ting
+𦕡	bu'er'jing
+𦕡	bo'er'jing
 𦕠	er'gong
 𦕙	er'ju
 𦕓	gong'ji'er
@@ -10168,6 +10243,8 @@ sort: original
 𦍒	tu'yang
 𦍏	yang'ren
 𦍌	cao'tu
+𦍅	mi'yi'xuan
+𦍅	bao'yi'xuan
 𦍁	wang'bi
 𦍁	si'bi
 𦍀	wang'nuo
@@ -10283,6 +10360,9 @@ sort: original
 𦊽	si'shi
 𦊼	wang'lv
 𦊼	si'lv
+𦊻	nie'yi'mu
+𦊬	mi'yi'yi
+𦊬	bao'yi'yi
 𦊫	wang'guang
 𦊫	si'guang
 𦊪	wang'he
@@ -10297,6 +10377,8 @@ sort: original
 𦊎	wang'shi
 𦊎	si'shi
 𦊍	wang'hu
+𦊋	mi'yi'mu
+𦊋	bao'yi'mu
 𦊊	wang'tian
 𦊊	si'tian
 𦊃	wang'jin
@@ -10449,6 +10531,8 @@ sort: original
 𦅻	su'yuan
 𦅺	si'li'min
 𦅺	mi'li'min
+𦅸	you'bu'xi
+𦅸	you'bo'xi
 𦅷	si'zhu
 𦅷	mi'zhu
 𦅶	si'ge
@@ -10649,6 +10733,7 @@ sort: original
 𥿞	si'ta
 𥿝	dai'si
 𥿝	dai'mi
+𥿜	si'ren'xiao
 𥿚	tu'dao'si
 𥿚	tu'dao'mi
 𥿑	si'cong
@@ -10831,6 +10916,10 @@ sort: original
 𥹈	mi'ta
 𥹇	mi'bian
 𥹆	mi'ni
+𥹄	bu'mi'bian
+𥹄	bu'bao'bian
+𥹄	bo'mi'bian
+𥹄	bo'bao'bian
 𥹂	mi'pi
 𥹁	mi'zha
 𥸵	mi'tun
@@ -11041,6 +11130,7 @@ sort: original
 𥲡	zhu'xue'si'xin
 𥲠	zhu'wang
 𥲟	zhu'diao
+𥲝	zhu'shan'shan'pi
 𥲜	zhu'hu'min
 𥲛	zhu'fu
 𥲚	zhu'cong
@@ -11572,6 +11662,12 @@ sort: original
 𥝉	yu'jia'tong'heng'dian
 𥝉	yu'jia'jiong'heng'na
 𥝉	yu'jia'jiong'heng'dian
+𥝄	kuang'wei'yi'rou
+𥝄	kuang'kou'yi'rou
+𥝄	kuang'guo'yi'rou
+𥝄	guan'wei'yi'rou
+𥝄	guan'kou'yi'rou
+𥝄	guan'guo'yi'rou
 𥝂	yu'e
 𥝀	yu'ye
 𥜶	shi'kui
@@ -11650,6 +11746,7 @@ sort: original
 𥙨	shi'duo
 𥙦	ru'shi
 𥙣	shi'xun
+𥙡	shi'ren'dan
 𥙎	shi'pai
 𥙋	shi'chu
 𥙉	shi'tai
@@ -11765,6 +11862,12 @@ sort: original
 𥕍	shi'lou
 𥕍	shi'lei
 𥕉	shi'cuo
+𥕇	shi'kuang'shan'wei'yi
+𥕇	shi'kuang'shan'kou'yi
+𥕇	shi'kuang'shan'guo'yi
+𥕇	shi'fang'shan'wei'yi
+𥕇	shi'fang'shan'kou'yi
+𥕇	shi'fang'shan'guo'yi
 𥕂	shi'ji
 𥕁	shi'qi
 𥕀	shi'weng
@@ -11817,6 +11920,7 @@ sort: original
 𥒭	shi'zu
 𥒬	shi'song
 𥒫	shi'fu
+𥒧	shi'you'zou
 𥒥	shi'duo
 𥒢	shi'li
 𥒡	shi'cheng
@@ -12066,6 +12170,7 @@ sort: original
 𥊊	mu'hui'ba'ren'shi
 𥊉	mu'xue'he
 𥊈	mu'li
+𥊇	chen'ren'er'mu
 𥊀	mu'shen
 𥊀	mu'can
 𥉿	mu'bu'xian
@@ -12341,6 +12446,7 @@ sort: original
 𥀛	pi'cao
 𥀙	rou'pi'pi
 𥀘	yu'pi'pi
+𥀖	pi'zhong'heng'hui
 𥀔	lu'pi
 𥀓	liu'pi
 𥀏	za'pi
@@ -12703,6 +12809,7 @@ sort: original
 𤵘	ne'bi
 𤵒	ne'wen
 𤵐	ne'wu
+𤵎	ne'ren'ji
 𤵋	ne'hu
 𤵊	ne'tun
 𤵂	ne'xin
@@ -12726,8 +12833,11 @@ sort: original
 𤴢	zhi'ding
 𤴟	dai'pi
 𤴟	dai'ding
+𤴛	zhuan'zou
+𤴛	hui'zou
 𤴙	cong'pi
 𤴙	cong'ding
+𤴓	heng'zou
 𤴒	lei'hui'niao
 𤴒	hui'hui'niao
 𤴍	die'ning
@@ -12744,6 +12854,8 @@ sort: original
 𤳦	lei'da
 𤳥	tian'tian'lin
 𤳤	zai'xi
+𤳠	tian'bu'ri'xun
+𤳠	tian'bo'ri'xun
 𤳝	tian'li'dao
 𤳘	shen'deng
 𤳖	fan'qu
@@ -12904,8 +13016,6 @@ sort: original
 𤬩	yi'wa
 𤬨	wa'fan
 𤬧	wa'shi
-𤬦	mi'wa
-𤬦	bao'wa
 𤬥	yi'xuan'xi'gua'yi
 𤬥	yi'song'xi'gua'yi
 𤬥	tou'xuan'xi'gua'yi
@@ -12927,6 +13037,7 @@ sort: original
 𤬏	lei'gua
 𤬌	tuan'gua
 𤬃	pou'gua
+𤬃	li'kou'gua
 𤬂	shu'gua
 𤬁	guo'gua
 𤫻	bu'gua
@@ -13466,6 +13577,7 @@ sort: original
 𤗘	pian'shi
 𤗓	pian'cheng
 𤗏	pian'pou
+𤗏	pian'li'kou
 𤗎	pian'yan
 𤗍	pian'wan
 𤗈	pian'qie
@@ -13545,6 +13657,8 @@ sort: original
 𤔙	zhao'zhao'zhao
 𤔖	guo'zhao
 𤔔	biao'si'rou'you
+𤔌	zhua'shan'gong
+𤔌	zhao'shan'gong
 𤔋	zhao'ju
 𤔉	zhao'tian
 𤔀	zhao'nu
@@ -14022,6 +14136,12 @@ sort: original
 𣸃	shui'zhu
 𣸀	shui'hui
 𣷾	shui'gui
+𣷶	shui'bu'wei'yao
+𣷶	shui'bu'kou'yao
+𣷶	shui'bu'guo'yao
+𣷶	shui'bo'wei'yao
+𣷶	shui'bo'kou'yao
+𣷶	shui'bo'guo'yao
 𣷫	shui'fang
 𣷩	shui'huo'yue
 𣷡	shui'zhong
@@ -14110,9 +14230,12 @@ sort: original
 𣲜	jing'shui
 𣲘	shui'wu
 𣲗	shui'wei
+𣲓	shui'zou
 𣲒	shui'le
 𣲑	shui'hu
 𣲋	shui'sui
+𣲊	bu'yi'shui
+𣲊	bo'yi'shui
 𣲄	shui'jiu
 𣲂	shun'shui
 𣲂	chuan'shui
@@ -14273,6 +14396,7 @@ sort: original
 𣬝	mao'le
 𣬚	chuo'tu'tu
 𣬙	pou'bi'jing
+𣬙	li'kou'bi'jing
 𣬘	bi'wang'bi'zhuan
 𣬘	bi'si'bi'zhuan
 𣬕	chuo'wu
@@ -14448,6 +14572,8 @@ sort: original
 𣧃	dai'tuo
 𣧂	dai'da
 𣦼	e'you
+𣦵	bu'mao
+𣦵	bo'mao
 𣦴	zou'zou'zou
 𣦯	li'lei'zhi
 𣦭	suo'shen
@@ -14583,6 +14709,7 @@ sort: original
 𣢺	han'qian
 𣢷	ge'qian
 𣢶	zhi'qian
+𣢴	ren'kai'qian
 𣢲	ba'jin'qian
 𣢰	shu'qian
 𣢬	yin'qian
@@ -14913,6 +15040,7 @@ sort: original
 𣔮	mu'zai'yu
 𣔮	mu'zai'qiao
 𣔮	mu'zai'kao
+𣔫	mu'ren'gui
 𣔛	mu'xue'wu
 𣔚	fu'mu
 𣔙	mu'xin
@@ -14989,6 +15117,7 @@ sort: original
 𣏫	mu'li
 𣏪	mu'shuang
 𣏥	mu'liu
+𣏡	mu'zou
 𣏠	mu'yao
 𣏟	pin'pin
 𣏞	mu'you
@@ -15060,6 +15189,8 @@ sort: original
 𣌏	ai'wo
 𣌏	ai'huo
 𣌍	ri'nie
+𣌅	mi'er'li
+𣌅	bao'er'li
 𣋿	yi'duo'zhui'ri
 𣋿	tou'duo'zhui'ri
 𣋹	ri'bi
@@ -15152,6 +15283,7 @@ sort: original
 𣇦	ri'chui
 𣇢	ri'bi
 𣇙	mao'ri
+𣇗	ri'chang'shan'you
 𣇖	xuan'gong
 𣇇	yan'dan
 𣆽	dan'ting
@@ -15211,14 +15343,25 @@ sort: original
 𣄰	ji'ke
 𣄯	fan'ji
 𣄮	ji'kou
+𣄧	fang'ren'yi
+𣄧	fang'ren'wei
+𣄧	fang'ren'sui
+𣄠	fang'ren'biao
 𣄝	fang'qian
 𣄜	fang'gui
+𣄙	fang'ren'huang
 𣄓	fang'zhu'mao
+𣄑	fang'ren'yan
 𣄏	fang'ben
 𣄎	fang'fu
 𣄍	fang'shi
+𣄉	fang'ren'you
 𣄅	fang'ji'xia'kou
 𣃾	fang'yan
+𣃽	fang'ren'duo
+𣃵	fang'ren'shen
+𣃳	fang'ren'nie
+𣃧	fang'ren'ri
 𣃝	fang'yang
 𣃚	fang'kang
 𣃘	yan'shu
@@ -15310,6 +15453,7 @@ sort: original
 𣀀	lei'pu
 𢿸	ce'pu
 𢿲	yao'wen
+𢿭	hu'wen'zhuo
 𢿧	tang'pu
 𢿦	cheng'pu
 𢿤	deng'pu
@@ -15979,12 +16123,14 @@ sort: original
 𢩸	wen'shou
 𢩷	shou'zhe
 𢩷	shou'tuo
+𢩲	shou'yi'shi
 𢩯	shou'le'heng
 𢩮	shou'yi
 𢩪	shou'le
 𢩨	shou'yu
 𢩨	shou'qiao
 𢩨	shou'kao
+𢩦	yi'shou
 𢩢	hu'chan
 𢩠	hu'qiong
 𢩟	xie'bian
@@ -16018,6 +16164,12 @@ sort: original
 𢨦	hu'shi
 𢨥	heng'hu
 𢨡	he'ge'kun
+𢨟	bu'wei'ge'xian
+𢨟	bu'kou'ge'xian
+𢨟	bu'guo'ge'xian
+𢨟	bo'wei'ge'xian
+𢨟	bo'kou'ge'xian
+𢨟	bo'guo'ge'xian
 𢨝	cai'ge
 𢨜	ge'gong'kun
 𢨔	qian'ge
@@ -16314,11 +16466,13 @@ sort: original
 𢛁	zhi'xin
 𢚻	xin'kou'jie
 𢚺	xin'tun
+𢚮	xin'ren'zuo'san
 𢚭	xin'pin
 𢚭	xin'chi
 𢚪	shi'huo'xin
 𢚨	he'xin
 𢚗	xin'song
+𢚌	xin'shan'fu
 𢚋	xin'mao
 𢚆	xin'zhu
 𢚅	ban'xin
@@ -16620,6 +16774,7 @@ sort: original
 𢒾	ren'jiu
 𢒾	chi'jiu
 𢒷	xu'pou
+𢒷	xu'li'kou
 𢒲	yi'shan'xi
 𢒲	yi'san'xi
 𢒲	tou'shan'xi
@@ -16651,9 +16806,16 @@ sort: original
 𢒆	xin'san
 𢑹	hui'ya
 𢑹	hui'e
+𢑮	shan'shan'fei
+𢑬	shan'shan'lai
+𢑧	shan'shan'shu
 𢑢	ri'yi
+𢑠	shan'shan'yi
 𢑟	shan'mi'fa
 𢑟	shan'bao'fa
+𢑝	shan'shan'you
+𢑝	shan'shan'yin
+𢑖	shan'jia
 𢑓	ji'er'yi
 𢑑	shan'shan
 𢑈	gong'yao
@@ -16696,6 +16858,8 @@ sort: original
 𢏗	jian'gong
 𢏕	gong'tong
 𢏎	gong'si
+𢏍	gong'bu'si
+𢏍	gong'bo'si
 𢏈	gong'yi
 𢏆	gong'gu
 𢏅	gong'huo
@@ -17025,6 +17189,7 @@ sort: original
 𢄱	jin'lan
 𢄧	zu'jin
 𢄦	jin'niao
+𢄥	shan'dao'jin'nie
 𢄤	zhan'jin
 𢄣	jin'hui
 𢄢	yi'jin
@@ -17039,6 +17204,7 @@ sort: original
 𢄟	jin'tong
 𢄜	jin'han
 𢄗	bo'jiong
+𢄔	ren'dai
 𢄓	jin'ya
 𢄓	jin'wu
 𢄐	jin'meng
@@ -17074,6 +17240,7 @@ sort: original
 𢃢	jin'qing
 𢃜	jin'zhi
 𢃛	qi'jin
+𢃘	hu'wen'jin
 𢃗	jin'han
 𢃕	jin'da
 𢃐	jin'kong
@@ -17617,9 +17784,11 @@ sort: original
 𡯿	you'fu
 𡯽	you'xian
 𡯷	wang'pou
+𡯷	wang'li'kou
 𡯵	you'wei
 𡯴	you'zhuo
 𡯳	you'pou
+𡯳	you'li'kou
 𡯱	wang'xiang
 𡯱	wang'ji
 𡯱	wang'bi
@@ -17691,6 +17860,7 @@ sort: original
 𡬲	shun'mu'cun
 𡬲	chuan'mu'cun
 𡬫	zhou'cun
+𡬞	yi'yi'yi'cun
 𡬜	han'han'han
 𡬚	ke'ke'ke
 𡬘	lu'kuan
@@ -17769,6 +17939,7 @@ sort: original
 𡨇	bao'ji
 𡨇	bao'bi
 𡨅	bao'ju
+𡨄	bao'jing'heng'ba
 𡨂	bao'wu
 𡨀	bao'yu
 𡧽	bao'huang
@@ -18184,6 +18355,12 @@ sort: original
 𡒢	gu'tu
 𡒖	gai'tu
 𡒒	ming'tu'wu'zhong
+𡒏	tu'shun'wei'yi'pie'shui'gou
+𡒏	tu'shun'kou'yi'pie'shui'gou
+𡒏	tu'shun'guo'yi'pie'shui'gou
+𡒏	tu'chuan'wei'yi'pie'shui'gou
+𡒏	tu'chuan'kou'yi'pie'shui'gou
+𡒏	tu'chuan'guo'yi'pie'shui'gou
 𡒍	ju'tu
 𡒌	tu'qian
 𡒊	yu'tu
@@ -18878,11 +19055,16 @@ sort: original
 𠹭	kou'ge
 𠹦	kou'bi'si
 𠹦	kou'bi'mi
+𠹥	kou'mi'er'yu
+𠹥	kou'bao'er'yu
 𠹤	kou'hui
 𠹠	kou'jiu'mu
+𠹟	bao'jing'heng'ba'kou
 𠹝	lin'jiu'kou
 𠹛	kou'qi
 𠹛	kou'kai
+𠹘	kou'bu'mu'sui
+𠹘	kou'bo'mu'sui
 𠹖	kou'zhan
 𠹕	kou'bao
 𠹔	kou'tang
@@ -18960,6 +19142,7 @@ sort: original
 𠶸	kou'que
 𠶸	kou'jiao
 𠶷	pou'zhong
+𠶷	li'kou'zhong
 𠶲	kou'qie
 𠶱	ke'ge
 𠶰	dao'na'zhou
@@ -19037,6 +19220,7 @@ sort: original
 𠳏	kou'che
 𠳎	kou'shi
 𠳌	qu'ke
+𠳋	zhong'heng'yi
 𠳊	ke'qu
 𠳇	ting'kou
 𠳆	zai'kou
@@ -19077,6 +19261,7 @@ sort: original
 𠲊	kou'tu'wen
 𠱸	kou'chen
 𠱳	kou'jiang
+𠱲	kou'shan'shan
 𠱯	xuan'gong
 𠱯	song'gong
 𠱥	kou'hui
@@ -19111,6 +19296,7 @@ sort: original
 𠰳	kou'bing
 𠰢	kou'ban
 𠰛	shan'gu
+𠰚	kou'ren'xiao
 𠰕	chu'kou
 𠰓	kou'he
 𠰑	kou'han
@@ -19198,11 +19384,15 @@ sort: original
 𠭖	zhao'you'gu
 𠭋	zhuo'xian
 𠭋	zhuo'jie
+𠭉	bu'yong'you
+𠭉	bo'yong'you
 𠭈	si'mi'you
 𠭈	si'bao'you
 𠬾	you'zi
 𠬾	you'you
 𠬸	hui'you
+𠬶	shan'mi'you
+𠬶	shan'bao'you
 𠬬	ba'ji
 𠬪	zhua'you
 𠬪	zhao'you
@@ -19234,6 +19424,7 @@ sort: original
 𠫤	wu'gong
 𠫣	si'nei
 𠫝	si'chuan
+𠫜	si'yi'li
 𠫘	si'shi
 𠫓	si'heng
 𠫒	yuan'yuan'yuan
@@ -19324,6 +19515,12 @@ sort: original
 𠧵	chi'da
 𠧴	zhe'you
 𠧴	zhe'tiao
+𠧰	bu'tong'er'kou
+𠧰	bu'jiong'er'kou
+𠧰	bo'tong'er'kou
+𠧰	bo'jiong'er'kou
+𠧫	bu'ri'wen
+𠧫	bo'ri'wen
 𠧩	mei'bu
 𠧩	mei'bo
 𠧠	zhe'you
@@ -19331,9 +19528,15 @@ sort: original
 𠧞	zhao'bu
 𠧞	zhao'bo
 𠧛	shang'chi
+𠧚	bu'qiu
+𠧚	bo'qiu
 𠧙	zhao'bu
 𠧙	zhao'bo
+𠧖	bu'bei
+𠧖	bo'bei
 𠧕	shang'shi
+𠧒	bu'yi
+𠧒	bo'yi
 𠧇	zhuo'yu
 𠧅	wo'bei
 𠧅	wai'bei
@@ -19392,6 +19595,10 @@ sort: original
 𠥦	fang'yi
 𠥢	kuang'wu
 𠥢	fang'wu
+𠥞	kuang'bu'mu'quan
+𠥞	kuang'bo'mu'quan
+𠥞	fang'bu'mu'quan
+𠥞	fang'bo'mu'quan
 𠥝	kuang'pin'shu
 𠥝	fang'pin'shu
 𠥜	kuang'xie
@@ -19449,6 +19656,8 @@ sort: original
 𠣫	zhao'ju
 𠣪	ju'ju
 𠣡	bao'ba'dan
+𠣠	bao'bu'cong
+𠣠	bao'bo'cong
 𠣘	bao'zhou
 𠣖	bao'xuan
 𠣕	bao'zhu
@@ -19497,6 +19706,7 @@ sort: original
 𠡷	xie'mu
 𠡷	lie'mu
 𠡶	juan'li
+𠡱	xiao'dan'li
 𠡮	peng'li
 𠡭	ling'li
 𠡥	li'bing
@@ -19588,6 +19798,8 @@ sort: original
 𠞕	chong'ren
 𠞊	cha'dao
 𠞉	li'dao
+𠞈	mi'er'yu'dao
+𠞈	bao'er'yu'dao
 𠞆	ya'dao
 𠞆	wu'dao
 𠞄	si'dao
@@ -19632,6 +19844,8 @@ sort: original
 𠜖	lve'dao
 𠜖	lv'dao
 𠜑	dui'dao
+𠜐	bu'cong'dao
+𠜐	bo'cong'dao
 𠜎	xian'dao
 𠜋	ren'chou'dao
 𠜉	cheng'dao
@@ -19673,6 +19887,7 @@ sort: original
 𠛀	gong'dao
 𠚽	zhi'dao
 𠚼	fen'dao
+𠚻	ren'diao'dao
 𠚺	shao'dao
 𠚹	shu'dao
 𠚵	ji'dao
@@ -19793,9 +20008,37 @@ sort: original
 𠕴	bao'jiu
 𠕳	mi'ru
 𠕳	bao'ru
+𠕰	mi'er'ni
+𠕰	mi'er'mi
+𠕰	mi'er'er
+𠕰	bao'er'ni
+𠕰	bao'er'mi
+𠕰	bao'er'er
+𠕮	mi'er'si'ren'yu
+𠕮	mi'er'si'chi'yu
+𠕮	mi'er'mi'ren'yu
+𠕮	mi'er'mi'chi'yu
+𠕮	bao'er'si'ren'yu
+𠕮	bao'er'si'chi'yu
+𠕮	bao'er'mi'ren'yu
+𠕮	bao'er'mi'chi'yu
+𠕭	mi'er'zhao
+𠕭	bao'er'zhao
 𠕨	jiong'yu
 𠕧	zhi'jiong
+𠕦	mi'er'yu
+𠕦	bao'er'yu
+𠕥	mi'er'dao
+𠕥	bao'er'dao
+𠕤	mi'er'tu
+𠕤	bao'er'tu
+𠕣	mi'er'xian
+𠕣	bao'er'xian
+𠕠	mi'er'cheng
+𠕠	bao'er'cheng
 𠕟	ran'zhan
+𠕝	mi'er'duo
+𠕝	bao'er'duo
 𠕘	tong'na'na'na'xiao
 𠕘	tong'na'na'dian'xiao
 𠕘	tong'na'dian'na'xiao
@@ -19812,6 +20055,8 @@ sort: original
 𠕘	jiong'dian'na'dian'xiao
 𠕘	jiong'dian'dian'na'xiao
 𠕘	jiong'dian'dian'dian'xiao
+𠕖	mi'er'mu
+𠕖	bao'er'mu
 𠕕	tong'gua
 𠕕	jiong'gua
 𠕑	tong'yi'kou
@@ -19872,6 +20117,9 @@ sort: original
 𠔑	fen'fen
 𠔍	ba'you
 𠔌	ba'ba'kou
+𠔋	ba'wei'yi
+𠔋	ba'kou'yi
+𠔋	ba'guo'yi
 𠔊	qiu'ba
 𠔈	ba'zhong
 𠔃	ba'yu
@@ -20033,6 +20281,9 @@ sort: original
 𠍜	dai'zhi
 𠍛	ren'bai'tong'nv
 𠍛	ren'bai'jiong'nv
+𠍚	ren'bai'wei'yi
+𠍚	ren'bai'kou'yi
+𠍚	ren'bai'guo'yi
 𠍙	ren'wang'dai
 𠍗	he'pou
 𠍗	he'ju
@@ -20075,6 +20326,7 @@ sort: original
 𠋞	ren'ye
 𠋞	ren'she
 𠋝	ren'miao
+𠋜	ren'xiao'heng'heng'heng'kou
 𠋖	ren'jian
 𠋆	ren'qin
 𠊾	ren'gui
@@ -20227,11 +20479,17 @@ sort: original
 𠅃	yi'cong
 𠅃	tou'cong
 𠄿	er'wei
+𠄹	er'kou
+𠄵	er'xuan
 𠄱	er'shu'chen
 𠄰	er'wei'huo
 𠄰	er'kou'huo
 𠄰	er'guo'huo
+𠄮	er'zi
+𠄮	er'you
 𠄤	tun'er
+𠄢	er'hui
+𠄡	er'wu
 𠄠	heng'heng
 𠄟	heng'heng
 𠄞	heng'heng
@@ -20256,6 +20514,7 @@ sort: original
 𠃳	jiu'lv
 𠃲	zhui'gou
 𠃧	fei'fei
+𠃥	yi'wei
 𠃤	qiu'chuan
 𠃟	nian'gou
 𠃞	heng'shun'gou
@@ -20305,6 +20564,9 @@ sort: original
 𠀸	heng'tong'wen'qi
 𠀸	heng'jiong'wen'qi
 𠀱	bu'fu
+𠀮	heng'ba'wei'yi
+𠀮	heng'ba'kou'yi
+𠀮	heng'ba'guo'yi
 𠀬	tian'ren
 𠀦	heng'zhou
 𠀤	bi'heng
@@ -21645,8 +21907,6 @@ sort: original
 鲅	yu'you'na
 鲅	yu'you'dian
 鲅	yu'ba
-𫚪	yu'yu
-𫚪	yu'mao'jiong
 鲄	yu'ke
 鲃	yu'ba
 鲂	yu'fang
@@ -54157,7 +54417,6 @@ sort: original
 噼	kou'pi
 噻	kou'sai
 噺	kou'xin
-𪠽	kou'dang
 噹	kou'dang
 噸	kou'dun
 噸	kou'du
@@ -56191,9 +56450,12 @@ sort: original
 冘	bao'pie'gou
 冗	mi'ji
 冗	bao'ji
+冖	wa
 冖	shu'zhe
 冖	na'zhe
+冖	mi'wa
 冖	dian'zhe
+冖	bao'wa
 冕	yue'mian
 冕	tong'er'mian
 冕	ri'mian
@@ -57823,6 +58085,7 @@ sort: original
 䴼	mai'can
 䴻	li'mai
 䴺	mai'pou
+䴺	mai'li'kou
 䴹	mai'guo
 䴸	mai'fu
 䴷	mai'wan
@@ -57927,6 +58190,7 @@ sort: original
 䳟	ming'niao
 䳞	feng'niao
 䳝	pou'niao
+䳝	li'kou'niao
 䳜	yu'niao
 䳛	yan'niao
 䳚	han'niao
@@ -58225,8 +58489,11 @@ sort: original
 䯾	piao'zhou
 䯾	biao'zhou
 䯽	shan'pou
+䯽	shan'li'kou
 䯽	piao'pou
+䯽	piao'li'kou
 䯽	biao'pou
+䯽	biao'li'kou
 䯼	shan'di
 䯼	piao'di
 䯼	biao'di
@@ -58523,6 +58790,7 @@ sort: original
 䬑	feng'wei
 䬐	feng'wei
 䬏	feng'pou
+䬏	feng'li'kou
 䬎	feng'huo
 䬍	feng'hu
 䬌	hu'feng
@@ -58601,6 +58869,7 @@ sort: original
 䫕	di'ye
 䫔	qi'ye
 䫓	pou'ye
+䫓	li'kou'ye
 䫒	hun'ye
 䫑	qi'ye
 䫐	lin'ye
@@ -58946,6 +59215,7 @@ sort: original
 䦥	men'lin
 䦤	men'zhuo
 䦣	men'pou
+䦣	men'li'kou
 䦢	men'fa
 䦡	men'guan
 䦠	men'chu
@@ -59524,6 +59794,7 @@ sort: original
 䟂	zou'man
 䟁	zou'chao
 䟀	zou'cha
+䞿	bao'jing'heng'ba'zou
 䞾	zou'si
 䞽	zou'suo
 䞼	zou'tuan
@@ -59536,6 +59807,7 @@ sort: original
 䞵	zou'zhuo
 䞴	zou'zhou
 䞳	zou'pou
+䞳	zou'li'kou
 䞱	zou'gu
 䞰	zou'chi
 䞯	zou'fu
@@ -60054,6 +60326,7 @@ sort: original
 䗛	chong'ren'shu'wen'yue
 䗛	chong'ren'shu'wen'rou
 䗚	chong'fu
+䗙	bao'jing'heng'ba'chong
 䗘	chong'he
 䗗	chong'ji
 䗖	chong'dai
@@ -60080,7 +60353,6 @@ sort: original
 䗄	chong'fu
 䗃	chong'jian
 䗃	chong'can
-𰲳	chong'jian
 䗂	chong'hu
 䗁	chong'qi
 䗀	chong'ling
@@ -60572,7 +60844,9 @@ sort: original
 䐂	yue'lu
 䐁	yue'chu
 䐀	yue'qi
+䏿	hu'wen'yue
 䏽	yue'pou
+䏽	yue'li'kou
 䏼	yue'jian
 䏼	yue'can
 䏻	yuan'qu
@@ -60667,6 +60941,7 @@ sort: original
 䎩	lei'zai
 䎨	lei'yan
 䎧	lei'pou
+䎧	lei'li'kou
 䎦	lei'yan
 䎤	lei'ju
 䎣	lei'yi
@@ -60714,10 +60989,69 @@ sort: original
 䍫	yang'ta
 䍪	yang'mo
 䍩	yang'wen
+䍦	wang'li
+䍦	wang'gu
+䍦	wang'chi
+䍦	si'li
+䍦	si'gu
+䍦	si'chi
+䍥	wang'li
+䍥	si'li
+䍤	wang'zi
+䍤	wang'zhai
+䍤	wang'qi
+䍤	wang'jian
+䍤	wang'ji
+䍤	si'zi
+䍤	si'zhai
+䍤	si'qi
+䍤	si'jian
+䍤	si'ji
+䍣	wang'lei
+䍣	si'lei
+䍢	wang'wu
+䍢	wang'mo
+䍢	si'wu
+䍢	si'mo
+䍡	wang'lu
+䍡	si'lu
+䍠	wang'li
+䍠	si'li
+䍟	wang'zong
+䍟	si'zong
 䍞	wang'huo
+䍝	wang'da
+䍝	si'da
+䍜	wang'zhui
+䍜	si'zhui
+䍛	wang'gu
+䍛	si'gu
+䍚	wang'liang
+䍚	si'liang
+䍙	wang'mei
+䍙	si'mei
+䍘	wang'mi
+䍘	si'mi
+䍗	wang'xuan
+䍗	si'xuan
+䍖	wang'bao
+䍖	si'bao
+䍕	wang'di
+䍕	si'di
+䍔	wang'hong
+䍔	wang'gong
+䍔	si'hong
+䍔	si'gong
+䍓	wang'ya
+䍓	si'ya
+䍒	wang'mu
+䍒	si'mu
 䍑	wang'gan
+䍐	wang'gan
+䍐	si'gan
 䍎	fou'jian
 䍌	fou'pou
+䍌	fou'li'kou
 䍋	fou'chui
 䍊	fou'jiao
 䍉	fou'zhi
@@ -60848,6 +61182,7 @@ sort: original
 䋩	si'ni
 䋩	si'er
 䋨	si'pou
+䋨	si'li'kou
 䋧	si'ju
 䋦	si'mei
 䋥	si'li
@@ -60991,8 +61326,10 @@ sort: original
 䉝	zhu'xi
 䉜	zhu'zhi
 䉛	zhu'ao
-䉚	zhu'wang'wa
-䉚	zhu'si'wa
+䉚	zhu'wang'mi'wa
+䉚	zhu'wang'bao'wa
+䉚	zhu'si'mi'wa
+䉚	zhu'si'bao'wa
 䉙	zhu'yun
 䉘	zhu'zong
 䉗	zhu'yi
@@ -61056,6 +61393,8 @@ sort: original
 䈞	zhu'xiang
 䈝	zhu'xu
 䈜	zhu'qin
+䈛	zhu'bu'ce'you
+䈛	zhu'bo'ce'you
 䈚	zhu'dai
 䈙	zhu'zhou
 䈘	zhu'zi
@@ -61551,6 +61890,7 @@ sort: original
 䁌	mu'wei
 䁋	mu'ye
 䁊	wo'mu
+䁈	hu'wen'mu
 䁇	mi'mu
 䁆	mu'yan
 䁅	mu'meng
@@ -61734,6 +62074,7 @@ sort: original
 㾨	ne'qi
 㾧	ne'guo
 㾦	ne'pou
+㾦	ne'li'kou
 㾥	ne'shu
 㾤	ne'kong
 㾣	ne'jin
@@ -61840,6 +62181,7 @@ sort: original
 㽌	liu'wa
 㽋	luan'wa
 㽊	xie'wa
+㽉	jian'wa
 㽈	yi'wa
 㽇	xue'wa
 㽆	dang'wa
@@ -61912,7 +62254,6 @@ sort: original
 㼉	gua'yin
 㼈	wang'luo
 㼇	wang'xi
-𬎆	wang'ying
 㼆	wang'ying
 㻿	wang'shu
 㻾	yong'yu
@@ -62564,6 +62905,7 @@ sort: original
 㱠	dai'gu
 㱟	dai'pi
 㱞	dai'li
+㱜	dai'zou
 㱛	dai'dai
 㱚	dai'yue
 㱙	dai'yu
@@ -62604,6 +62946,7 @@ sort: original
 㰶	jiu'qian
 㰵	zu'qian
 㰴	pou'qian
+㰴	li'kou'qian
 㰳	ya'qian
 㰳	e'qian
 㰲	huo'qian
@@ -62669,6 +63012,7 @@ sort: original
 㯿	mu'lie
 㯾	mu'zao
 㯽	mu'bin
+㯺	jian'mu
 㯸	mu'jin
 㯷	mu'pu
 㯷	mu'bu
@@ -62930,7 +63274,10 @@ sort: original
 㫒	ri'gong
 㫑	ri'li
 㫐	ri'bi
+㫏	fang'ren'yao
 㫎	fang'jun
+㫍	fang'ren'you
+㫊	fang'ren'ke
 㫅	yan'qi
 㫄	er'bao'fang
 㫃	fang'ren
@@ -62980,6 +63327,7 @@ sort: original
 㪚	gong'wen'ri
 㪙	guo'wen
 㪗	pou'pu
+㪗	li'kou'pu
 㪖	lu'pu
 㪕	zhuo'pu
 㪔	lin'pu
@@ -63393,6 +63741,7 @@ sort: original
 㥋	yi'xin
 㥊	xin'peng
 㥉	xin'pou
+㥉	xin'li'kou
 㥈	tie'xin
 㥇	xin'jian
 㥇	xin'can
@@ -63794,6 +64143,7 @@ sort: original
 㟞	shan'jian
 㟞	shan'can
 㟝	shan'pou
+㟝	shan'li'kou
 㟜	shan'mi
 㟛	shan'qian
 㟚	zhi'shan
@@ -64183,7 +64533,6 @@ sort: original
 㙤	tu'hu
 㙣	tu'zhang
 㙢	tu'man
-𭎂	tu'cong
 㙡	tu'zong
 㙡	tu'cong
 㙠	yi'tu
@@ -64301,6 +64650,7 @@ sort: original
 㗼	kou'ye
 㗻	kou'huo
 㗻	kou'guo
+㗷	kou'bao'jing'heng'bei
 㗶	kou'fa
 㗶	kou'bo
 㗵	kou'chua
@@ -64439,6 +64789,8 @@ sort: original
 㕤	kou'jiu
 㕣	ba'kou
 㕠	zhun'you
+㕟	bu'cong'you
+㕟	bo'cong'you
 㕞	shi'you
 㕞	diao'you
 㕞	bei'you
@@ -64473,6 +64825,8 @@ sort: original
 㕃	chang'kai
 㕂	chang'jin
 㔾	zhe'gou
+㔽	bu'hui
+㔽	bo'hui
 㔼	tui'shi
 㔻	bu'shi
 㔺	shi'shi'shi
@@ -64618,6 +64972,20 @@ sort: original
 㓂	bao'yuan'nv
 㓁	mi'ba
 㓁	bao'ba
+㒿	mi'er'li
+㒿	mi'er'gu
+㒿	mi'er'chi
+㒿	bao'er'li
+㒿	bao'er'gu
+㒿	bao'er'chi
+㒾	mi'er'shi
+㒾	bao'er'shi
+㒽	mi'er'juan
+㒽	bao'er'juan
+㒻	mi'er'xian
+㒻	mi'er'jian
+㒻	bao'er'xian
+㒻	bao'er'jian
 㒹	zhen'zhen
 㒸	ba'shi
 㒵	bai'ba
@@ -64729,6 +65097,7 @@ sort: original
 㑉	ren'su
 㑈	ren'dong
 㑇	ren'chu
+㑅	ren'ren'shang
 㑄	ren'mu
 㑃	ren'you
 㑂	ren'bing
@@ -64751,6 +65120,7 @@ sort: original
 㐰	ren'kou
 㐯	yi'lv'xiang
 㐯	tou'lv'xiang
+㐮	yi'ba'jing'heng
 㐭	yi'hui
 㐭	tou'hui
 㐬	tu'chuan
