@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2025-12-13"
+version: "2026-01-05"
 sort: by_weight
 ...
 ##### 容错词
@@ -429,6 +429,8 @@ sort: by_weight
 披萨	pi sa
 㹴犬	geng quan
 梗犬	geng quan
+莜麦菜	you mai cai
+油麦菜	you mai cai
 
 
 ##### 叠字

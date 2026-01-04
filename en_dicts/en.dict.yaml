@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2025-12-15"
+version: "2026-01-05"
 sort: by_weight
 ...
 # +_+
@@ -808,6 +808,7 @@ Andreas	Andreas
 Andrew	Andrew
 Andrews	Andrews
 androecium	androecium
+android	android
 Andy	Andy
 anecdote	anecdote
 anemia	anemia
@@ -897,6 +898,7 @@ anther	anther
 anthology	anthology
 Anthony	Anthony
 anthrax	anthrax
+anthropic	anthropic
 anthropology	anthropology
 anti	anti
 antibiotic	antibiotic
@@ -1591,6 +1593,7 @@ backing	backing
 backpack	backpack
 backpacking	backpacking
 backpacks	backpacks
+backpropagation	backpropagation
 backs	backs
 backslash	backslash
 backstage	backstage
@@ -1621,7 +1624,6 @@ Bahrain	Bahrain
 baht	baht
 bail	bail
 bailey	bailey
-Bailey	Bailey
 bait	bait
 Baja	Baja
 bake	bake
@@ -2942,6 +2944,7 @@ capturing	capturing
 capybara	capybara
 car	car
 carat	carat
+carats	carats
 caravan	caravan
 carb	carb
 carbohydrate	carbohydrate
@@ -4315,6 +4318,7 @@ constructive	constructive
 constructor	constructor
 constructs	constructs
 construed	construed
+consul	consul
 consulate	consulate
 consult	consult
 consultancy	consultancy
@@ -4587,6 +4591,7 @@ cottage	cottage
 cottages	cottages
 cotton	cotton
 couch	couch
+couches	couches
 cough	cough
 could	could
 council	council
@@ -5860,6 +5865,7 @@ distance	distance
 distances	distances
 distant	distant
 distill	distill
+distillation	distillation
 distinct	distinct
 distinction	distinction
 distinctive	distinctive
@@ -6513,6 +6519,7 @@ Eliot	Eliot
 # elisa	elisa
 Elisabeth	Elisabeth
 elite	elite
+elixir	elixir
 Eliza	Eliza
 Elizabeth	Elizabeth
 # elk	elk
@@ -6544,6 +6551,7 @@ embarrassing	embarrassing
 embassy	embassy
 embed	embed
 embedded	embedded
+embedding	embedding
 embellish	embellish
 embellishment	embellishment
 # embl	embl
@@ -7599,6 +7607,7 @@ findings	findings
 findlaw	findlaw
 finds	finds
 fine	fine
+fine-tuning	fine-tuning
 fined	fined
 finely	finely
 FinePix	FinePix
@@ -8092,6 +8101,7 @@ from	from
 front	front
 front-page	front-page
 frontal	frontal
+frontend	frontend
 frontgate	frontgate
 frontier	frontier
 frontiers	frontiers
@@ -8290,6 +8300,7 @@ gather	gather
 gathered	gathered
 gathering	gathering
 gatherings	gatherings
+Gatsby	Gatsby
 Gatwick	Gatwick
 gauge	gauge
 gauges	gauges
@@ -10827,6 +10838,7 @@ juxtapose	juxtapose
 # jw	jw
 # k	k
 # ka	ka
+Kafka	Kafka
 # kai	kai
 Kaiser	Kaiser
 Kalamazoo	Kalamazoo
@@ -11482,6 +11494,7 @@ lichen	lichen
 lick	lick
 licking	licking
 lid	lid
+lido	lido
 lie	lie
 Liechtenstein	Liechtenstein
 lied	lied
@@ -11553,6 +11566,7 @@ linden	linden
 Lindsay	Lindsay
 Lindsey	Lindsey
 line	line
+linea	linea
 lineage	lineage
 linear	linear
 lined	lined
@@ -11759,6 +11773,7 @@ loosen	loosen
 loot	loot
 Lopez	Lopez
 loquat	loquat
+Lora	Lora
 lord	lord
 lords	lords
 lore	lore
@@ -12497,6 +12512,8 @@ metals	metals
 metamorphose	metamorphose
 metaphor	metaphor
 metasearch	metasearch
+metaverse	metaverse
+Meteora	Meteora
 meteorological	meteorological
 meteorology	meteorology
 meter	meter
@@ -12737,6 +12754,7 @@ mistaken	mistaken
 mistakes	mistakes
 Mister	Mister
 mister	mister
+Mistral	Mistral
 mistress	mistress
 misty	misty
 misunderstand	misunderstand
@@ -12846,6 +12864,7 @@ mommy	mommy
 Mon.	Mon.
 Mona	Mona
 Monaco	Monaco
+monad	monad
 monarch	monarch
 monastery	monastery
 Monday	Monday
@@ -13695,6 +13714,7 @@ oblique	oblique
 # obs	obs
 obscene	obscene
 obscure	obscure
+observability	observability
 observation	observation
 observations	observations
 observatory	observatory
@@ -15214,6 +15234,7 @@ possibility	possibility
 possible	possible
 possibly	possibly
 post	post
+post-training	post-training
 postage	postage
 postal	postal
 postcard	postcard
@@ -15312,9 +15333,11 @@ prayers	prayers
 praying	praying
 # prc	prc
 # pre	pre
+pre-training	pre-training
 preach	preach
 preacher	preacher
 preaching	preaching
+preact	preact
 precaution	precaution
 precautions	precautions
 precede	precede
@@ -15502,6 +15525,7 @@ prior	prior
 priorities	priorities
 priority	priority
 prism	prism
+prisma	prisma
 prison	prison
 prisoner	prisoner
 prisoners	prisoners
@@ -15923,6 +15947,7 @@ quantify	quantify
 quantitative	quantitative
 quantities	quantities
 quantity	quantity
+quantization	quantization
 quantum	quantum
 quark	quark
 quarrel	quarrel
@@ -17419,6 +17444,7 @@ sbjct	sbjct
 # sbs	sbs
 # sc	sc
 # sca	sca
+Scala	Scala
 scalability	scalability
 scalable	scalable
 scalar	scalar
@@ -17708,6 +17734,7 @@ selector	selector
 selects	selects
 selenium	selenium
 self	self
+self-attention	Self-attention
 selfish	selfish
 sell	sell
 seller	seller
@@ -18540,6 +18567,7 @@ Sophia	Sophia
 sophisticated	sophisticated
 sophomore	sophomore
 soprano	soprano
+sora	sora
 sorcerer	sorcerer
 sorcerers	sorcerers
 sore	sore
@@ -18824,6 +18852,8 @@ stab	stab
 stability	stability
 stabilization	stabilization
 stable	stable
+stablecoin	stablecoin
+stablecoins	stablecoins
 Stacey	Stacey
 stack	stack
 stacked	stacked
@@ -19474,6 +19504,7 @@ Suzuki	Suzuki
 Svalbard	Svalbard
 # svc	svc
 # svcd	svcd
+svelte	svelte
 Sven	Sven
 Svenska	Svenska
 SVG	SVG
@@ -19862,6 +19893,7 @@ tender	tender
 tenders	tenders
 tends	tends
 Tenerife	Tenerife
+tenet	tenet
 Tennessee	Tennessee
 tennis	tennis
 tenor	tenor
@@ -19890,6 +19922,7 @@ termination	termination
 terminator	terminator
 terming	terming
 terminology	terminology
+terminus	terminus
 terms	terms
 terra	terra
 terrace	terrace
@@ -20250,6 +20283,7 @@ toilets	toilets
 toilette	toilette
 Tokelau	Tokelau
 token	token
+tokenization	tokenization
 tokens	tokens
 Tokyo	Tokyo
 told	told
@@ -20739,6 +20773,7 @@ TV	TV
 # tw	tw
 twain	twain
 tweak	tweak
+tweaks	tweaks
 tweed	tweed
 tweet	tweet
 twelve	twelve
@@ -21446,6 +21481,7 @@ vital	vital
 vitality	vitality
 vitamin	vitamin
 vitamins	vitamins
+vite	vite
 # vitro	vitro
 viva	viva
 Vivian	Vivian
@@ -22332,6 +22368,7 @@ zeta	zeta
 # zh	zh
 # zhang	zhang
 # ziff	ziff
+zig	zig
 zigzag	zigzag
 Zimbabwe	Zimbabwe
 zinc	zinc
@@ -22363,34 +22400,3 @@ Zurich	Zurich
 # zus	zus
 Zyban	Zyban
 # zz	zz
-Mistral	Mistral
-vite	vite
-svelte	svelte
-Gatsby	Gatsby
-preact	preact
-zig	zig
-elixir	elixir
-Scala	Scala
-Kafka	Kafka
-consul	consul
-prisma	prisma
-embedding	embedding
-self-attention	Self-attention
-pre-training	pre-training
-post-training	post-training
-fine-tuning	fine-tuning
-Lora	Lora
-quantization	quantization
-distillation	distillation
-observability	observability
-tokenization	tokenization
-backpropagation	backpropagation
-lido	lido
-stablecoin	stablecoin
-stablecoins	stablecoins
-metaverse	metaverse
-sora	sora
-android	android
-Meteora	Meteora
-monad	monad
-linea	linea

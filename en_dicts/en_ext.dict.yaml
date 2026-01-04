@@ -1983,7 +1983,6 @@ UUID	UUID
 Universally Unique Identifier	UUID
 Fyne	Fyne
 Claude	Claude
-Anthropic	Anthropic
 Cinderella	Cinderella
 WebGPU	WebGPU
 Mailfence	Mailfence
@@ -2446,3 +2445,4 @@ MaxMind	MaxMind
 PM2.5	PM2.5
 PM10	PM10
 SARS-CoV-2	SARS-CoV-2
+Nano Banana	NanoBanana
