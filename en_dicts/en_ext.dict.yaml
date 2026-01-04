@@ -10,7 +10,7 @@
 # 少数单词与 en 重复，纯粹是为了排版美观，部署时的报错 duplicate word definition 可忽略，无任何影响
 ---
 name: en_ext
-version: "2025-12-23"
+version: "2026-01-05"
 sort: by_weight
 ...
 # 一些杂项
@@ -381,7 +381,6 @@ AdSense	AdSense
 Authenticator	Authenticator
 DeepMind	DeepMind
 Figma	Figma
-Mistral	Mistral
 Google	Google
 Google Ads	GoogleAds
 Google AdSense	GoogleAdSense
@@ -508,8 +507,6 @@ ClashX	ClashX
 ClashX Pro	ClashXPro
 Clash for Windows	ClashForWindows
 Clash for Android	ClashForAndroid
-clash-verge	clash-verge
-OpenClash	Clash
 OpenClash	OpenClash
 passwall	passwall
 passwall2	passwall2
@@ -605,19 +602,15 @@ V2EX	V2EX
 VSCode	VSCode
 Vue	Vue
 Vue.js	Vue.js
-Vite	Vite
 Vite+	Vite+
 Vitest	Vitest
 VuePress	VuePress
 VitePress	VitePress
 Oxc	Oxc
-Nest.js	Nest.js
 NestJS	NestJS
 Next.js	Next.js
 Nuxt	Nuxt
 Jekyll	Jekyll
-Svelte	Svelte
-Gatsby	Gatsby
 DuckDB	DuckDB
 Vitess	Vitess
 SurrealDB	SurrealDB
@@ -628,15 +621,11 @@ GreptimeDB	GreptimeDB
 TDengine	TDengine
 TiKV	TiKV
 ShardingSphere	ShardingSphere
-Apache ShardingSphere	ShardingSphere
 Apache ShardingSphere	ApacheShardingSphere
 Dubbo	Dubbo
-Apache Dubbo	Dubbo
 Apache Dubbo	ApacheDubbo
 ZooKeeper	ZooKeeper
-Apache ZooKeeper	ZooKeeper
 Apache ZooKeeper	ApacheZooKeeper
-Apache Tomcat	Tomcat
 Apache Tomcat	ApacheTomcat
 Nacos	Nacos
 Swagger	Swagger
@@ -652,15 +641,11 @@ Directus	Directus
 FastAPI	FastAPI
 Hono	Hono
 Fastify	Fastify
-Flask	Flask
 Ruby on Rails	RubyonRails
 Symfony	Symfony
 Beego	Beego
-koa	koa
-koa.js	koa.js
-Koa.js	Koa.js
+KoaJS	KoaJS
 SolidJS	SolidJS
-Preact	Preact
 Qwik	Qwik
 Ember.js	Ember.js
 Backbone.js	Backbone.js
@@ -676,8 +661,9 @@ GitBucket	GitBucket
 OpenCV	OpenCV
 Keras	Keras
 PaddleOCR	PaddleOCR
-Content Management System	CMS
 Content Management System	ContentManagementSystem
+CMS	CMS
+Content Management System	CMS
 Godot	Godot
 Godot Engine	GodotEngine
 Three.js	Three.js
@@ -689,18 +675,10 @@ TradingView	TradingView
 ECharts	ECharts
 Apache ECharts	ECharts
 Apache ECharts	ApacheECharts
-Rust	Rust
 CPython	CPython
-CPython	Python
-Python	Python
-Zig	Zig
-OpenJDK	JDK
 OpenJDK	OpenJDK
-Nim	Nim
-Elixir	Elixir
 OCaml	OCaml
 Clojure	Clojure
-Scala	Scala
 CoffeeScript	CoffeeScript
 Starlark	Starlark
 MinIO	MinIO
@@ -712,13 +690,10 @@ Playwright	Playwright
 Puppeteer	Puppeteer
 Appium	Appium
 JMeter	JMeter
-Apache JMeter	JMeter
 Apache JMeter	ApacheJMeter
 Tauri	Tauri
 React Native	ReactNative
-Ionic	Ionic
 Ionic Framework	IonicFramework
-Kafka	Kafka
 Apache Kafka	Kafka
 Apache Kafka	ApacheKafka
 RabbitMQ	RabbitMQ
@@ -728,7 +703,6 @@ Excalidraw	Excalidraw
 PlantUML	PlantUML
 Meilisearch	Meilisearch
 etcd	etcd
-Consul	Consul
 Shadcn	Shadcn
 Semantic UI	SemanticUI
 Nmap	Nmap
@@ -740,7 +714,6 @@ Turbopack	Turbopack
 esbuild	esbuild
 Mongoose	Mongoose
 Sequelize	Sequelize
-Prisma	Prisma
 Arduino	Arduino
 Raspberry Pi	RaspberryPi
 OpenTofu	OpenTofu
@@ -749,50 +722,11 @@ LM Studio	LMStudio
 LLM	LLM
 Large Language Model	LLM
 Large Language Model	LargeLanguageModel
-Embedding	Embedding
-Zero-shot Learning	ZeroShotLearning
-Few-shot Learning	FewShotLearning
-Transfer Learning	TransferLearning
-Chain of Thought	ChainOfThought
-Context Length	ContextLength
-Self-attention	SelfAttention
-Self-supervised Learning	SelfSupervisedLearning
-Pre-training	PreTraining
-Post-training	PostTraining
-Fine-tuning	FineTuning
-Alignment Tuning	AlignmentTuning
-Instruction Tuning	InstructionTuning
-LoRA	LoRA
-Low-Rank Adaptation	LoRA
-RLHF	RLHF
-Reinforcement Learning from Human Feedback	RLHF
-Prompt Engineering	PromptEngineering
-Generative Adversarial Network	GAN
-Generative Adversarial Network	GenerativeAdversarialNetwork
-Variational Autoencoder	VAE
-RAG	RAG
-Retrieval Augmented Generation	RAG
-Retrieval Augmented Generation	RetrievalAugmentedGeneration
 NLP	NLP
 Natural Language Processing	NLP
-quantization	quantization
-distillation	distillation
-observability	observability
-tokenization	tokenization
-backpropagation	backpropagation
-Hugging Face	HuggingFace
-Retention Rate	RetentionRate
-Agentic AI	AgenticAI
-AI agent	AIAgent
-Multi-head Attention	MultiHeadAttention
-MoE	MoE
-Mixture of Experts	MoE
 Dify	Dify
 ComfyUI	ComfyUI
 Cherry Studio	CherryStudio
-MCP	MCP
-Model Context Protocol	MCP
-Model Context Protocol	ModelContextProtocol
 Open WebUI	OpenWebUI
 OpenRouter	OpenRouter
 CUDA	CUDA
@@ -1130,13 +1064,9 @@ Hypertext Transfer Protocol	HypertextTransferProtocol
 HTTPS	HTTPS
 Hypertext Transfer Protocol Secure	HTTPS
 Hypertext Transfer Protocol Secure	HypertextTransferProtocolSecure
-WSGI	WSGI
-GPG	GPG
-GNU Privacy Guard	GPG
 HandBrake	HandBrake
 Logi Options	LogiOptions
 Logi Options+	LogiOptions+
-Logi Options Plus	LogiOptionsPlus
 Downie	Downie
 MindNode	MindNode
 Permute	Permute
@@ -1150,7 +1080,7 @@ Bitcoin	BTC
 Bitcoin	Bitcoin
 ETH	ETH
 Ethereum	ETH
-TRON	TRON
+Ethereum	Ethereum
 Monero	Monero
 Litecoin	Litecoin
 Aptos	Aptos
@@ -1179,50 +1109,10 @@ CryptoQuant	CryptoQuant
 TokenInsight	TokenInsight
 Trust Wallet	TrustWallet
 imToken	imToken
-Lido	Lido
-Decentralized Autonomous Organization	DAO
 MakerDAO	MakerDAO
 Magic Eden	MagicEden
 Substack	Substack
-LayerZero	LayerZero
-Layer 0	Layer0
-Layer 1	Layer1
-Layer 2	Layer2
-PoC	PoC
-Proof of Concept	PoC
-Proof of Concept	ProofOfConcept
-PoW	PoW
-Proof of Work	PoW
-Proof of Work	ProofOfWork
-PoS	PoS
-Proof of Stake	PoS
-Proof of Stake	ProofOfStake
-Stablecoin	Stablecoin
-Decentralized Exchange	DEX
-Decentralized Exchange	DecentralizedExchange
-Decentralized Finance	DeFi
-Decentralized Finance	DecentralizedFinance
-Centralized Exchange	CEX
-Centralized Exchange	CentralizedExchange
-Liquid Staking	LiquidStaking
-Real World Assets	RWA
-Real World Assets	RealWorldAssets
-Artificial Intelligence	AI
-Artificial Intelligence	ArtificialIntelligence
-Zero Knowledge	ZeroKnowledge
-DePIN	DePIN
-Decentralized Physical Infrastructure Network	DePIN
-Automated Market Maker	AMM
-Automated Market Maker	AutomatedMarketMaker
-Directed Acyclic Graph	DAG
-Directed Acyclic Graph	DirectedAcyclicGraph
 GameFi	GameFi
-Rollup	Rollup
-Rolldown	Rolldown
-Metaverse	Metaverse
-IoT	IoT
-Internet of Things	IoT
-Internet of Things	InternetOfThings
 MagSafe	MagSafe
 Magic UI	MagicUI
 HDMI	HDMI
@@ -1690,10 +1580,6 @@ GitLab	GitLab
 GitLab Runner	GitLabRunner
 CI/CD	CI/CD
 DevSecOps	DevSecOps
-Continuous Integration	CI
-Continuous Delivery	CD
-Continuous Deployment	CD
-Pull Request	PR
 Apple silicon	Applesilicon
 ADSL	ADSL
 Asymmetric Digital Subscriber Line	ADSL
@@ -1743,14 +1629,8 @@ limon	limon
 GFW	GFW
 Great Firewall	GFW
 Great Firewall	GreatFirewall
-GreatFire	GreatFire
-FreeBrowser	FreeBrowser
-FreeWeChat	FreeWeChat
-FreeWeibo	FreeWeibo
-FreeZhihu	FreeZhihu
 gfwlist	gfwlist
 GeoIP	GeoIP
-GeoSite	GeoSite
 gVim	gVim
 Vimium	Vimium
 Nvim	Nvim
@@ -1763,12 +1643,6 @@ unfo	unfo
 timeshift	timeshift
 ChatGPT	ChatGPT
 OpenAI	OpenAI
-OpenAI Codex	Codex
-OpenAI Codex	OpenAICodex
-OpenAI ChatGPT	ChatGPT
-OpenAI ChatGPT	OpenAIChatGPT
-OpenAI Sora	Sora
-OpenAI Sora	OpenAISora
 VoIP	VoIP
 Voice over Internet Protocol	VoIP
 Greasy Fork	GreasyFork
@@ -1842,10 +1716,10 @@ Mozilla Firefox	MozillaFirefox
 Android	Android
 Android Auto	AndroidAuto
 Android TV	AndroidTV
-android	android
 iOS	iOS
 Linux	Linux
 Ubuntu	Ubuntu
+RHEL	RHEL
 Red Hat Enterprise Linux	RHEL
 Red Hat Enterprise Linux	RedHatEnterpriseLinux
 NixOS	NixOS
@@ -1936,23 +1810,8 @@ Disk Operating System	DiskOperatingSystem
 Tether	Tether
 USDT	USDT
 USDC	USDC
+USDe	USDe
 USDS	USDS
-USDe	USDE
-Ethena USDe	USDE
-Ethena USDe	EthenaUSDE
-USD1	USD1
-USDF	USDF
-Falcon USD	USDF
-PYUSD	USD
-PYUSD	PYUSD
-PayPal USD	USD
-PayPal USD	PayPalUSD
-BFUSD	USD
-BFUSD	BFUSD
-RLUSD	USD
-RLUSD	RLUSD
-Ripple USD	USD
-Ripple USD	RippleUSD
 Lua	Lua
 MacType	MacType
 Alipay	Alipay
@@ -2125,8 +1984,6 @@ Universally Unique Identifier	UUID
 Fyne	Fyne
 Claude	Claude
 Anthropic	Anthropic
-Anthropic Claude	Claude
-Anthropic Claude	AnthropicClaude
 Cinderella	Cinderella
 WebGPU	WebGPU
 Mailfence	Mailfence
@@ -2144,7 +2001,6 @@ Avalanche	Avalanche
 Binance	Binance
 Binance Smart Chain	BinanceSmartChain
 Aevo	Aevo
-BingX	BingX
 Bybit	Bybit
 Bitget	Bitget
 BitMart	BitMart
@@ -2152,16 +2008,9 @@ Bitstamp	Bitstamp
 Deribit	Deribit
 Hyperliquid	Hyperliquid
 HashKey	HashKey
-HashKey Exchange	HashKeyExchange
-MEXC	MEXC
-Meteora	Meteora
-Monad	Monad
-Linea	Linea
 Pionex	Pionex
 Polymarket	Polymarket
 Raydium	Raydium
-Sei Network	SeiNetwork
-Merlin Chain	MerlinChain
 OpenSea	OpenSea
 BNB Chain	BNBChain
 Chainlink	Chainlink
@@ -2278,10 +2127,6 @@ Oppenheimer	Oppenheimer
 UltraEdit	UltraEdit
 GoldenDict	GoldenDict
 tokenizer	tokenizer
-Stable Diffusion	SD
-Stable Diffusion	StableDiffusion
-Stable Diffusion WebUI	SDWebUI
-Stable Diffusion WebUI	StableDiffusionWebUI
 ControlNet	ControlNet
 CISC	CISC
 RISC	RISC
@@ -2326,7 +2171,6 @@ Minecraft	Minecraft
 LSP	LSP
 Language Server Protocol	LSP
 C#	C#
-C#	Csharp
 KeyCastr	KeyCastr
 Laugh Tale	LaughTale
 Joy Boy	JoyBoy
@@ -2465,7 +2309,6 @@ Manifest V2	ManifestV2
 Manifest V3	ManifestV3
 IMBA	IMBA
 GitButler	GitButler
-Sora	Sora
 WinNAS	WinNAS
 Wireshark	Wireshark
 Theseus	Theseus
@@ -2563,7 +2406,6 @@ integrated development environment	IDE
 TensorFlow	TensorFlow
 PyTorch	PyTorch
 DeepSeek	DeepSeek
-Mercedes-Benz	Benz
 Mercedes-Benz	Mercedes-Benz
 1Password	1Password
 WD-40	WD-40
@@ -2575,8 +2417,6 @@ Ghostty	Ghostty
 WezTerm	WezTerm
 Wez's Terminal Emulator	WezTerm
 Tailscale	Tailscale
-TProxy	TProxy
-TUN	TUN
 Shadowrocket	Shadowrocket
 Quantumult	Quantumult
 Quantumult X	QuantumultX
@@ -2587,13 +2427,8 @@ v2ray-core	v2ray-core
 Xray-core	Xray-core
 mihomo	mihomo
 trojan-go	trojan-go
-Trojan-Go	Trojan-Go
 VLESS	VLESS
 Hysteria	Hysteria
-Hysteria2	Hysteria2
-ShadowTLS	ShadowTLS
-AnyTLS	AnyTLS
-TUIC	TUIC
 sing-box	sing-box
 SagerNet	SagerNet
 live house	livehouse
@@ -2611,4 +2446,3 @@ MaxMind	MaxMind
 PM2.5	PM2.5
 PM10	PM10
 SARS-CoV-2	SARS-CoV-2
-Severe Acute Respiratory Syndrome Coronavirus 2	SARS-CoV-2
