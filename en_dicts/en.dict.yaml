@@ -3742,7 +3742,6 @@ cmd	cmd
 # cme	cme
 # cmos	cmos
 # cmp	cmp
-CMS	CMS
 CN	CN
 # cnc	cnc
 CNET	CNET
@@ -22364,3 +22363,34 @@ Zurich	Zurich
 # zus	zus
 Zyban	Zyban
 # zz	zz
+Mistral	Mistral
+vite	vite
+svelte	svelte
+Gatsby	Gatsby
+preact	preact
+zig	zig
+elixir	elixir
+Scala	Scala
+Kafka	Kafka
+consul	consul
+prisma	prisma
+embedding	embedding
+self-attention	Self-attention
+pre-training	pre-training
+post-training	post-training
+fine-tuning	fine-tuning
+Lora	Lora
+quantization	quantization
+distillation	distillation
+observability	observability
+tokenization	tokenization
+backpropagation	backpropagation
+lido	lido
+stablecoin	stablecoin
+stablecoins	stablecoins
+metaverse	metaverse
+sora	sora
+android	android
+Meteora	Meteora
+monad	monad
+linea	linea
