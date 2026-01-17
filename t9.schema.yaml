@@ -9,20 +9,29 @@
 
 __include: rime_ice.schema.yaml:/
 
+t9:
+  # 是否显示 rime 中原始的预编辑文本，默认为 true
+  # true: 对 preedit 不做处理，显示 rime 返回的原始 preedit 值。
+  #       如果想通过 lua 自己调整 preedit 的显示，可以设置为 true。
+  # false: 根据候选字 comment 显示转换后的 preedit 内容。
+  #        注意：请务必保证候选字 comment 有效且正确，否则可能导致预编辑文本显示异常。
+  isDisplayOriginalPreedit: false
+
 schema:
   schema_id: t9
-  name: 仓·九宫格
-  version: "2.0.0"
+  name: 中文九键
+  version: "3.0.0"
   author:
     - Dvel
     - "[morse.hsiao](https://github.com/imfuxiao)"
   description: |
-    九宫格 for 仓输入法
+    中文九键 for 仓输入法 & 元书输入法
   dependencies:
     - melt_eng # 英文输入，作为次翻译器挂载到拼音方案
 
 engine:
   processors:
+    - t9_processor
     - ascii_composer
     - recognizer
     - key_binder
@@ -76,8 +85,8 @@ key_binder:
     - { when: has_menu, accept: 1, send: apostrophe }
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA987654321
-  initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA987654321
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA9876543210
+  initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA9876543210
   algebra:
     # ### 超级简拼
     - abbrev/^([a-z]).+$/$1/ # 超级简拼
