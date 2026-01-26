@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2026-01-05"
+version: "2026-01-26"
 sort: by_weight
 ...
 ##### 容错词
@@ -403,6 +403,8 @@ sort: by_weight
 着想	zhao xiang
 胳肢窝	ga zhi wo
 胳肢窝	ge zhi wo
+潏河	jue he
+潏河	yu he
 ### 错字
 曾经	ceng jing
 曾今	ceng jin

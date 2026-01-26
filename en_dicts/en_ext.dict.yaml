@@ -10,7 +10,7 @@
 # 少数单词与 en 重复，纯粹是为了排版美观，部署时的报错 duplicate word definition 可忽略，无任何影响
 ---
 name: en_ext
-version: "2026-01-05"
+version: "2026-01-26"
 sort: by_weight
 ...
 # 一些杂项
@@ -21,7 +21,6 @@ README.md	README.md
 # 按键
 Fn	Fn
 cmd	cmd
-cmdline	cmdline
 command	command
 Ctrl	Ctrl
 control	control
@@ -1544,7 +1543,6 @@ DataSpell	DataSpell
 RubyMine	RubyMine
 AppCode	AppCode
 Code With Me	CodeWithMe
-JetBrains Mono	JetBrainsMono
 JDK	JDK
 Java Development Kit	JDK
 Java Development Kit	JavaDevelopmentKit

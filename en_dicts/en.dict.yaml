@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-01-05"
+version: "2026-01-26"
 sort: by_weight
 ...
 # +_+
@@ -6491,7 +6491,7 @@ electronics	electronics
 electrons	electrons
 elegance	elegance
 elegant	elegant
-elem	elem
+# elem	elem
 element	element
 elemental	elemental
 elementary	elementary
