@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-01-26"
+version: "2026-01-28"
 sort: by_weight
 ...
 # +_+
@@ -550,6 +550,7 @@ alchemy	alchemy
 alcohol	alcohol
 alcoholic	alcoholic
 alcoholism	alcoholism
+alderman	alderman
 ale	ale
 Alec	Alec
 alembic	alembic
@@ -3086,6 +3087,7 @@ categories	categories
 categorized	categorized
 category	category
 cater	cater
+caterer	caterer
 catering	catering
 caterpillar	caterpillar
 cathedral	cathedral
@@ -6069,6 +6071,7 @@ downloading	downloading
 downloads	downloads
 downpour	downpour
 downs	downs
+downside	downside
 downstairs	downstairs
 downstream	downstream
 downtime	downtime
@@ -7520,6 +7523,7 @@ fewer	fewer
 # fh	fh
 # fha	fha
 # fi	fi
+fiance	fiance
 FIAT	FIAT
 fiber	fiber
 fiberglass	fiberglass
@@ -7868,6 +7872,7 @@ footprint	footprint
 footstep	footstep
 footwear	footwear
 for	for
+fora	fora
 Forbes	Forbes
 forbid	forbid
 forbidden	forbidden
@@ -12382,7 +12387,8 @@ medicinal	medicinal
 medicine	medicine
 medicines	medicines
 medieval	medieval
-medina	medina
+Medina	Medina
+mediocrity	mediocrity
 meditate	meditate
 meditation	meditation
 mediterranean	mediterranean
@@ -13208,6 +13214,7 @@ narration	narration
 narrative	narrative
 narrator	narrator
 narrow	narrow
+nary	nary
 NAS	NAS
 NASA	NASA
 nasal	nasal
@@ -14036,6 +14043,7 @@ oriental	oriental
 orientation	orientation
 oriented	oriented
 orig	orig
+origami	origami
 origin	origin
 original	original
 originality	originality
@@ -16359,6 +16367,7 @@ reef	reef
 reel	reel
 reels	reels
 Reese	Reese
+reeve	reeve
 reeves	reeves
 # ref	ref
 refer	refer
@@ -16483,6 +16492,7 @@ rejected	rejected
 rejection	rejection
 rejects	rejects
 rejoice	rejoice
+rejuvenation	rejuvenation
 # rel	rel
 relate	relate
 related	related
@@ -17569,6 +17579,7 @@ scrape	scrape
 scraps	scraps
 scratch	scratch
 scratches	scratches
+scrawny	scrawny
 scream	scream
 screaming	screaming
 screen	screen
@@ -19284,6 +19295,7 @@ suburbs	suburbs
 subversion	subversion
 subway	subway
 subwoofer	subwoofer
+subzero	subzero
 succeed	succeed
 succeeded	succeeded
 succeeding	succeeding

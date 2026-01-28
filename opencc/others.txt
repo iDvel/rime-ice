@@ -1486,6 +1486,7 @@ naive	naive naïve
 cafe	cafe café
 cliche	cliche cliché
 resume	resume résumé
+fiance	fiance fiancé
 ankh	ankh ☥
 生命之符	生命之符 ☥
 双蛇杖	双蛇杖 ☤
