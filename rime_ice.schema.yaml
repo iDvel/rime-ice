@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "2025-11-02"
+  version: "2026-01-29"
   author:
     - Dvel
   description: |
@@ -174,6 +174,7 @@ translator:
     - xform/([nl])v/$1v/       # 显示为 nv lv
     - xform/([nl])ue/$1ve/     # 显示为 nve lve
     - xform/(?<=[A-Z])\s(?=[A-Z])//  # 消除大写字母之间的空格
+  # dictionary_exclude: [肏屄, 鸡巴]  # 如有屏蔽 NSFW 词汇需求 librime >= 1.14.0 等价于从 .dict.yaml 中删除对应词条，但不影响组句和用户词库。
 
 
 # 次翻译器，英文
