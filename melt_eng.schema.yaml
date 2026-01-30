@@ -9,7 +9,7 @@
 schema:
   schema_id: melt_eng
   name: Easy English Nano
-  version: "2023-10-17"
+  version: "2026-01-30"
   author:
     - Patrick <ipatrickmac@gmail.com>
     - tumuyan <tumuyan@21cn.com>
@@ -133,6 +133,8 @@ algebra_common:
   - derive/^([a-z]{8})/\U$1/
   - derive/^([a-z]{9})/\U$1/
   - derive/^([a-z]{10})/\U$1/
+  # 禁用小写单编码
+  - erase/^[a-z]$/
 
 # 全拼
 algebra_rime_ice:
