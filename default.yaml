@@ -3,7 +3,7 @@
 
 
 # 要比共享目录的同名文件的 config_version 大才可以生效
-config_version: '2026-01-26'
+config_version: '2026-01-31'
 
 
 # 方案列表
@@ -258,6 +258,8 @@ key_binder:
     - {accept: KP_Add,      send: plus,     when: composing}
     - {accept: KP_Subtract, send: minus,    when: composing}
     - {accept: KP_Divide,   send: slash,    when: composing}
+    # 将小键盘回车映射到主键盘回车
+    - {accept: KP_Enter,    send: Return,   when: composing}
 
 
 # 按键速查
