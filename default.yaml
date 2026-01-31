@@ -65,14 +65,18 @@ switcher:
 # clear        清除未上屏内容，然后切换到英文
 # inline_ascii 切换到临时英文模式，按回车上屏后回到中文状态
 # noop         屏蔽快捷键，不切换中英，但不要屏蔽 CapsLock
+#
+# 使用Shift, Control, Alt, Super等修饰键切换中英。# librime >= 1.14.0
+# set_ascii_mode   切换到英文模式
+# unset_ascii_mode 切换到中文模式
 ascii_composer:
   good_old_caps_lock: true  # true | false
   switch_key:
     Caps_Lock: clear      # commit_code | commit_text | clear
-    Shift_L: commit_code  # commit_code | commit_text | inline_ascii | clear | noop
-    Shift_R: noop         # commit_code | commit_text | inline_ascii | clear | noop
-    Control_L: noop       # commit_code | commit_text | inline_ascii | clear | noop
-    Control_R: noop       # commit_code | commit_text | inline_ascii | clear | noop
+    Shift_L: commit_code  # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
+    Shift_R: noop         # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
+    Control_L: noop       # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
+    Control_R: noop       # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
 
 
 ###################################################################################
