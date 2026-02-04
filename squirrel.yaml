@@ -10,7 +10,7 @@
 
 
 # 要比共享目录的同名文件的 config_version 大才可以生效
-config_version: '2026-01-31'  # config_version: '1.0.3'
+config_version: '2026-01-31'  # 对应的鼠须管版本: 1.1.2
 
 
 # 键盘布局  last | default | _custom_

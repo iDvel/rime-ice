@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-01-28"
+version: "2026-02-04"
 sort: by_weight
 ...
 # +_+
@@ -339,6 +339,7 @@ adore	adore
 adrenaline	adrenaline
 Adrian	Adrian
 adrift	adrift
+adrifts	adrifts
 # ads	ads
 adsense	adsense
 ADSL	ADSL
@@ -7913,6 +7914,7 @@ forgiveness	forgiveness
 forgot	forgot
 forgotten	forgotten
 fork	fork
+forked	forked
 forks	forks
 form	form
 forma	forma
@@ -12102,6 +12104,7 @@ manufacturers	manufacturers
 manufactures	manufactures
 manufacturing	manufacturing
 manure	manure
+manus	manus
 manuscript	manuscript
 manuscripts	manuscripts
 many	many
@@ -16432,6 +16435,7 @@ regardless	regardless
 regards	regards
 RegEd	RegEd
 regency	regency
+regenerate	regenerate
 regeneration	regeneration
 regenerative	regenerative
 regent	regent
@@ -18934,6 +18938,7 @@ stargazers	stargazers
 staring	staring
 stark	stark
 # starr	starr
+starred	starred
 starring	starring
 stars	stars
 start	start

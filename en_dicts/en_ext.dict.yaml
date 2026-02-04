@@ -10,7 +10,7 @@
 # 少数单词与 en 重复，纯粹是为了排版美观，部署时的报错 duplicate word definition 可忽略，无任何影响
 ---
 name: en_ext
-version: "2026-01-26"
+version: "2026-02-04"
 sort: by_weight
 ...
 # 一些杂项
@@ -2447,8 +2447,9 @@ Nano Banana	NanoBanana
 Zotero	Zotero
 CP2K	CP2K
 VASP	VASP
-DFT	DFT
-DRIFTS	DRIFTS
 FTIR	FTIR
 Slurm	Slurm
 Qwen	Qwen
+UnoCSS	UnoCSS
+Temu	Temu
+Clawdbot	Clawdbot
