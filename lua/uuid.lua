@@ -33,12 +33,12 @@ end
 local M = {}
 
 function M.init(env)
+	randomseed(os.time() + os.clock() * 1000)
 	M.uuid = env.engine.schema.config:get_string(env.name_space:gsub("^*", "")) or "uuid"
 end
 
 function M.func(input, seg, _)
 	if input == M.uuid then
-		randomseed(os.time())
 		yield_cand(seg, generate_uuid_v4())
 	end
 end
