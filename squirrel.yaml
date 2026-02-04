@@ -10,17 +10,17 @@
 
 
 # 要比共享目录的同名文件的 config_version 大才可以生效
-config_version: '2025-10-23'  # config_version: '1.0.3'
+config_version: '2026-01-31'  # config_version: '1.0.3'
 
 
-# options: last | default | _custom_
-# last: the last used latin keyboard layout
-# default: US (ABC) keyboard layout
-# _custom_: keyboard layout of your choice, e.g. 'com.apple.keylayout.USExtended' or simply 'USExtended'
+# 键盘布局  last | default | _custom_
+# last: 上次使用的英文键盘布局
+# default: US (ABC)
+# _custom_: 自定义，例如 'com.apple.keylayout.USExtended' 或者 'USExtended'
 keyboard_layout: last
-# for veteran chord-typist
-chord_duration: 0.1  # seconds
-# options: always | never | appropriate
+# 并击输入  秒
+chord_duration: 0.1
+# 何时显示通知  always | never | appropriate
 show_notifications_when: appropriate
 
 
@@ -44,39 +44,27 @@ style:
   candidate_list_layout: stacked  # stacked | linear       皮肤横竖排显示是调整这个
   text_orientation: horizontal    # horizontal | vertical  文字方向
   # 拼音或词句是否显示在键入位置
-  inline_preedit: true     # true | false  键入码显示位置
-  inline_candidate: false  # true | false  选中词显示位置
+  inline_preedit: true            # true | false  键入码显示位置
+  inline_candidate: false         # true | false  选中词显示位置
 
-  # Whether candidate panel stick to screen edge to reduce jumping
-  memorize_size: true
-  # Whether transparent colors stack on each other
-  mutual_exclusive: false
-  # Whether to use a translucent background. Only visible when background color is transparent
-  translucency: false
-  # Enable to show small arrows that indicates if paging up/down is possible
-  show_paging: false
+  memorize_size: true             # true | false  候选窗口吸附到屏幕边缘，以减少位置跳动
+  mutual_exclusive: false         # true | false  半透明颜色进行叠加计算
+  translucency: false             # true | false  磨砂背景，仅在背景颜色为透明时可见
+  show_paging: false              # true | false  上下翻页可用的小箭头提示
+  corner_radius: 7                # 外边框 圆角半径
+  hilited_corner_radius: 0        # 选中框 圆角半径
+  border_height: -2               # 外边框 高
+  border_width: -2                # 外边框 宽
+  line_spacing: 5                 # stacked竖向布局的行间距间距
+  spacing: 8                      # 非linear行内模式下，预编辑文本与候选框之间的间距
+  shadow_size: 0                  # 阴影大小
+  #surrounding_extra_expansion: 0 # 控制未高亮候选项背景相对于高亮项的大小，负值缩小，正值放大
 
-  corner_radius: 7
-  hilited_corner_radius: 0
-  border_height: -2
-  border_width: -2
-  # Space between candidates in stacked layout
-  line_spacing: 5
-  # Space between preedit and candidates in non-inline mode
-  spacing: 8
-  # A number greater than 0 renders shadow around high-lighted candidate
-  shadow_size: 0
-  # Controls non-hililighted candidate background size, relative to highlighted
-  # Nagetive means shrink, positive meas expand
-  #surrounding_extra_expansion: 0
+  # 候选项格式化
+  # %@ 和 %c 在鼠须管 1.0 弃用，%@ 等同于 "[candidate] [comment]"，%c 于等同 "[label]"
+  candidate_format: '[label]. [candidate] [comment]'
 
-  # format using %@ and %c is deprecated since 1.0, Squirrel 1.0
-  # %@ is automatically expanded to "[candidate] [comment]"
-  # and %c is replaced by "[label]"
-  candidate_format: '[label]. [candidate] [comment]'  # 候选项格式化
-
-  # adjust the base line of text
-  #base_offset: 0
+  #base_offset: 0                 # 字基高
   font_face: 'Avenir'
   font_point: 16
   #label_font_face: 'Avenir'
@@ -225,7 +213,7 @@ preset_color_schemes:
   purity_of_form:
     name: 純粹的形式／Purity of Form
     author: 雨過之後、佛振
-    text_color: 0xc2c2c2
+    text_color: 0xc2c222
     back_color: 0x444444
     candidate_text_color: 0xeeeeee
     hilited_text_color: 0xeeeeee
@@ -253,9 +241,14 @@ preset_color_schemes:
     candidate_text_color: 0x30bb55
     back_color: 0xee000000
     border_color: 0x1010a0
+    border_width: 2
+    border_height: 2
+    corner_radius: 8
+    hilited_corner_radius: 8
     hilited_text_color: 0xfecb96
     hilited_back_color: 0x000000
     hilited_candidate_text_color: 0x70ffaf
+    hilited_candidate_label_color: 0x40cf7f
     hilited_candidate_back_color: 0x00000000
     comment_text_color: 0x1010d0
     hilited_comment_text_color: 0x1010f0
@@ -414,3 +407,31 @@ preset_color_schemes:
     hilited_candidate_label_color: 0xCC8947 #Lab 55 ,-10,-45
     hilited_comment_text_color: 0x289989    #Lab 60 ,-20, 65
     hilited_text_color: 0xBE706D            #Lab 50 , 15,-45
+
+  retro_green:
+    name: 綠色熒光屏
+    author: 佛振 <chen.sst@gmail.com>
+    text_color: 0x00FF00
+    back_color: 0x000000
+    label_color: 0x00FF00
+    hilited_candidate_text_color: 0x000000
+    hilited_candidate_back_color: 0x00FF00
+    hilited_candidate_label_color: 0x000000
+    corner_radius: 16
+    border_width: 2
+    border_height: 2
+    border_color: 0x00FF00
+
+  retro_orange:
+    name: 琥珀色熒光屏
+    author: 佛振 <chen.sst@gmail.com>
+    text_color: 0x0093FF
+    back_color: 0x000000
+    label_color: 0x0093FF
+    hilited_candidate_text_color: 0x000000
+    hilited_candidate_back_color: 0x0093FF
+    hilited_candidate_label_color: 0x000000
+    corner_radius: 16
+    border_width: 2
+    border_height: 2
+    border_color: 0x0093FF
