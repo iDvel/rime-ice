@@ -3,7 +3,7 @@
 
 
 # 要比共享目录的同名文件的 config_version 大才可以生效
-config_version: '2026-01-31'
+config_version: '2026-02-06'
 
 
 # 方案列表
@@ -77,6 +77,33 @@ ascii_composer:
     Shift_R: noop         # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
     Control_L: noop       # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
     Control_R: noop       # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
+
+
+# 处理输入栏内光标的移动
+# 需要 librime >= 1.16.0 才有 no_loop 等属性，才会自动在方案引用 default:/{navigator,selector}
+# 在边界按音节移动，在音节内部按字符移动  rewind | forward
+# 按字符移动（循环）       left_by_char | right_by_char
+# 按字符移动（不循环）     left_by_char_no_loop | right_by_char_no_loop
+# 按音节跳转（循环）       left_by_syllable | right_by_syllable
+# 按音节跳转（不循环）     left_by_syllable_no_loop | right_by_syllable_no_loop
+# 首尾跳转               home | end
+navigator:
+  bindings:
+    Left: left_by_char_no_loop
+    Right: right_by_char_no_loop
+    Shift+Left: left_by_syllable
+    Shift+Right: right_by_syllable
+    # 其他键 KP_Left KP_Right Home KP_Home End KP_End
+
+
+# 选字处理器，感觉这个没有自定义的必要
+# selector:
+#   bindings:
+#     Up: previous_candidate # 上一个
+#     Down: next_candidate   # 下一个
+#     Prior: previous_page   # 上一页
+#     Next: next_page        # 下一页
+#     # 其他键 KP_Up KP_Down KP_Prior KP_Next Home KP_Home End KP_End
 
 
 ###################################################################################
