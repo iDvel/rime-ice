@@ -194,7 +194,7 @@ function M.init(env)
         ["yi ye bian zhou"] = { text = "一叶扁舟", comment = "一叶扁(piān)舟" },
         ["bo wen qiang shi"] = { text = "博闻强识", comment = "博闻强识(zhì)" },
         ["ben lin"] = { text = "贲临", comment = "贲(bì)临" },
-        ["bo yang hu"] = { text = "鄱阳湖", comment = "鄱(pó)阳湖" },
+        ["bo yang"] = { text = "鄱阳", comment = "鄱(pó)阳" },
         ["qing zha"] = { text = "倾轧", comment = "倾轧(yà)" },
         ["ren chen"] = { text = "妊娠", comment = "妊娠(shēn)" },
         ["xin xin xue zi"] = { text = "莘莘学子", comment = "莘(shēn)莘学子" },
