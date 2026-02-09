@@ -265,10 +265,21 @@ function M.func(input, env)
             if env.delimiter then
                 correction_pinyin = correction_pinyin:gsub(env.delimiter,' ')
             end
+            local matched = false
             local c = M.corrections[correction_pinyin]
             if c and cand.text == c.text then
                 cand:get_genuine().comment = string.gsub(M.style, "{comment}", c.comment)
+                matched = true
             else
+                for key, item in pairs(M.corrections) do
+                    if correction_pinyin:find(key, 1, true) and cand.text:find(item.text, 1, true) then
+                        cand:get_genuine().comment = string.gsub(M.style, "{comment}", item.comment)
+                        matched = true
+                        break
+                    end
+                end
+            end
+            if not matched then
                 if env.keep_comment then
                     cand:get_genuine().comment = string.gsub(M.style, "{comment}", pinyin)
                 else
