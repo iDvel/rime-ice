@@ -896,6 +896,7 @@ i次方	icifh
 i次幂	icimi
 n次方	ncifh
 n次幂	ncimi
+p进数	pjnuu
 Z变换	Zbmhr
 Z变换	zbmhr
 逆Z变换	niZbmhr
@@ -908,6 +909,10 @@ Z逆变换	znibmhr
 双边Z变换	udbmzbmhr
 Ⅰ型错误	yixycowu
 Ⅱ型错误	erxycowu
+P波	Pbo
+P波	pbo
+S波	Sbo
+S波	sbo
 S曲线	Squxm
 S曲线	squxm
 DJ舞曲	DJwuqu

@@ -117,6 +117,8 @@ function M.init(env)
         ["yin gai"] = { text = "应该", comment = "应(yīng)该" },
         ["nian tie"] = { text = "粘贴", comment = "粘(zhān)贴" },
         ["nian yi nian"] = { text = "粘一粘", comment = "粘(zhān)" },
+        ["tu fan"] = { text = "吐蕃", comment = "吐蕃(bō)" },
+        ["tu gu hun"] = { text = "吐谷浑", comment = "吐谷(yù)浑" },
         ["gao ju li"] = { text = "高句丽", comment = "高句(gōu)丽" },
         ["jiao dou shi"] = { text = "角斗士", comment = "角(jué)斗士" },
         ["suo sha mi"] = { text = "缩砂密", comment = "缩(sù)砂密" },
