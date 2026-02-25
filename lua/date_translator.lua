@@ -1,5 +1,8 @@
 -- 日期时间，可在方案中配置触发关键字。
 
+local convert_num = require("convert_ar_num_to_zh").convert
+local convert_digits = require("convert_ar_num_to_zh").digits
+
 -- 提高权重的原因：因为在方案中设置了大于 1 的 initial_quality，导致 rq sj xq dt ts 产出的候选项在所有词语的最后。
 local function yield_cand(seg, text)
     local cand = Candidate('', seg.start, seg._end, text, '')
@@ -9,6 +12,11 @@ end
 
 local M = {}
 
+-- 月份名称表
+local month_names_short = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" }
+local month_names_long = { "January", "February", "March", "April", "May", "June", "July", "August", "September",
+    "October", "November", "December" }
+
 function M.init(env)
     local config = env.engine.schema.config
     env.name_space = env.name_space:gsub('^*', '')
@@ -17,6 +25,7 @@ function M.init(env)
     M.week = config:get_string(env.name_space .. '/week') or 'xq'
     M.datetime = config:get_string(env.name_space .. '/datetime') or 'dt'
     M.timestamp = config:get_string(env.name_space .. '/timestamp') or 'ts'
+    M.date_zh = config:get_string(env.name_space .. '/datezh') or 'rqzh'
     M.date_en = config:get_string(env.name_space .. '/dateen') or 'rqen'
 end
 
@@ -57,27 +66,38 @@ function M.func(input, seg, env)
         local current_time = os.time()
         yield_cand(seg, string.format('%d', current_time))
 
+        -- 中文日期
+    elseif (input == M.date_zh) then
+        local current_time = os.time()
+        local year_0 = convert_digits(tonumber(os.date('%Y', current_time)), true)
+        local year_zero = convert_digits(tonumber(os.date('%Y', current_time)), false)
+        local month = convert_num(tonumber(os.date('%m', current_time)))
+        local day = convert_num(tonumber(os.date('%d', current_time)))
+
+        yield_cand(seg, string.format('%s年%s月%s日', year_0, month, day))
+        yield_cand(seg, string.format('%s年%s月%s日', year_zero, month, day))
+        yield_cand(seg, os.date('%Y年%m月%d日', current_time):gsub('年0', '年'):gsub('月0', '月'))
+
         -- 英文日期
     elseif (input == M.date_en) then
         local current_time = os.time()
         local day = tonumber(os.date("%d", current_time))
         local month = tonumber(os.date("%m", current_time))
         local year = os.date("%Y", current_time)
-        -- 月份名称表
-        local month_names_short = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"}
-        local month_names_long = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"}
         -- 计算日期序数后缀
         local suffix = "th"
-        if day % 10 == 1 and day ~= 11 then suffix = "st"
-        elseif day % 10 == 2 and day ~= 12 then suffix = "nd"
-        elseif day % 10 == 3 and day ~= 13 then suffix = "rd"
+        if day % 10 == 1 and day ~= 11 then
+            suffix = "st"
+        elseif day % 10 == 2 and day ~= 12 then
+            suffix = "nd"
+        elseif day % 10 == 3 and day ~= 13 then
+            suffix = "rd"
         end
-        -- 生成两种格式
-        local date_short = string.format("%d%s %s %s", day, suffix, month_names_short[month], year)
-        local date_long  = string.format("%d%s %s %s", day, suffix, month_names_long[month], year)
-        
-        yield_cand(seg, date_short)
-        yield_cand(seg, date_long)
+
+        yield_cand(seg, string.format("%d%s %s %s", day, suffix, month_names_short[month], year))
+        yield_cand(seg, string.format("%d%s %s %s", day, suffix, month_names_long[month], year)) -- en_US
+        yield_cand(seg, string.format("%s %d%s %s", month_names_short[month], day, suffix, year))
+        yield_cand(seg, string.format("%s %d%s %s", month_names_long[month], day, suffix, year)) -- en_UK
     end
 
     -- -- 显示内存
