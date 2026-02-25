@@ -42,6 +42,7 @@ function M.func(input, seg, env)
         -- 时间
     elseif (input == M.time) then
         local current_time = os.time()
+
         local hour = tonumber(os.date("%H", current_time))
         local period_name
 
@@ -61,8 +62,10 @@ function M.func(input, seg, env)
         yield_cand(seg, os.date('%H:%M', current_time))
         yield_cand(seg, os.date('%H:%M:%S', current_time))
         yield_cand(seg, period_name .. " " .. os.date("%H:%M", current_time))
+        yield_cand(seg, os.date("%H:%M %p", current_time))
         -- 带上时间划分时，很少有带秒数的，暂时注释掉
         -- yield_cand(seg, period_name .. " " .. os.date("%H:%M:%S", current_time))
+        -- yield_cand(seg, os.date("%H:%M:%S %p", current_time))
 
         -- 星期
     elseif (input == M.week) then
