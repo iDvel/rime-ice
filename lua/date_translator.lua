@@ -42,8 +42,27 @@ function M.func(input, seg, env)
         -- 时间
     elseif (input == M.time) then
         local current_time = os.time()
+        local hour = tonumber(os.date("%H", current_time))
+        local period_name
+
+        -- 时间段划分（可根据生活习惯自定义）
+        if hour >= 5 and hour < 11 then
+            period_name = "早上"
+        elseif hour >= 11 and hour < 13 then
+            period_name = "中午"
+        elseif hour >= 13 and hour < 18 then
+            period_name = "下午"
+        elseif hour >= 18 and hour < 23 then
+            period_name = "晚上"
+        else
+            period_name = "凌晨"
+        end
+
         yield_cand(seg, os.date('%H:%M', current_time))
         yield_cand(seg, os.date('%H:%M:%S', current_time))
+        yield_cand(seg, period_name .. " " .. os.date("%H:%M", current_time))
+        -- 带上时间划分时，很少有带秒数的，暂时注释掉
+        -- yield_cand(seg, period_name .. " " .. os.date("%H:%M:%S", current_time))
 
         -- 星期
     elseif (input == M.week) then
