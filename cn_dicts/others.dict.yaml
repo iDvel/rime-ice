@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2026-01-26"
+version: "2026-02-22"
 sort: by_weight
 ...
 ##### 容错词
@@ -68,6 +68,11 @@ sort: by_weight
 走单骑	zou dan ji
 千里走单骑	qian li zou dan qi
 千里走单骑	qian li zou dan ji
+# 「齐」表示合金时读作jì，然而今多读qí
+汞齐	gong ji
+汞齐	gong qi
+汞齐电极	gong ji dian ji
+汞齐电极	gong qi dian ji
 # 「街」的粤语和东北话读音及常见的两种写法
 仆街	pu jie
 仆街	pu gai
