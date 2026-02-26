@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-02-04"
+version: "2026-02-22"
 sort: by_weight
 ...
 # +_+
@@ -545,7 +545,8 @@ Albion	Albion
 album	album
 albums	albums
 Albuquerque	Albuquerque
-Alcatel	Alcatel
+# Alcatel	Alcatel
+alchemical	alchemical
 alchemist	alchemist
 alchemy	alchemy
 alcohol	alcohol
@@ -1854,7 +1855,7 @@ Bedfordshire	Bedfordshire
 bedroom	bedroom
 bedrooms	bedrooms
 beds	beds
-bedspread	 bedspread
+bedspread	bedspread
 bee	bee
 beech	beech
 beef	beef
@@ -2648,7 +2649,6 @@ bug	bug
 buggy	buggy
 bugle	bugle
 bugs	bugs
-bugzilla	bugzilla
 Buick	Buick
 build	build
 builder	builder
@@ -3365,6 +3365,7 @@ cheerleader	cheerleader
 cheerleaders	cheerleaders
 cheers	cheers
 cheese	cheese
+cheesecloth	cheesecloth
 cheetah	cheetah
 chef	chef
 chefs	chefs
@@ -8313,6 +8314,7 @@ gauge	gauge
 gauges	gauges
 gaussian	gaussian
 Gauteng	Gauteng
+gauze	gauze
 gave	gave
 Gavin	Gavin
 gay	gay
@@ -8470,6 +8472,7 @@ gimp	gimp
 gin	gin
 Gina	Gina
 ginger	ginger
+ginseng	ginseng
 Giorgio	Giorgio
 Giovanni	Giovanni
 giraffe	giraffe
@@ -9285,6 +9288,7 @@ high	high
 # highbeam	highbeam
 higher	higher
 highest	highest
+highfalutin	highfalutin
 highland	highland
 highlands	highlands
 highlight	highlight
@@ -12214,7 +12218,7 @@ masculine	masculine
 Maserati	Maserati
 mask	mask
 masks	masks
-masochism	 masochism
+masochism	masochism
 Mason	Mason
 mason	mason
 masonry	masonry
@@ -15162,6 +15166,7 @@ polyphony	polyphony
 polytechnic	polytechnic
 pomegranate	pomegranate
 pomelo	pomelo
+pompous	pompous
 pond	pond
 ponder	ponder
 ponds	ponds
@@ -15226,6 +15231,7 @@ POS	POS
 pose	pose
 posed	posed
 poses	poses
+posh	posh
 posing	posing
 position	position
 positioned	positioned
@@ -15473,6 +15479,7 @@ presume	presume
 presumed	presumed
 preteen	preteen
 pretend	pretend
+pretentious	pretentious
 pretext	pretext
 Pretoria	Pretoria
 pretty	pretty
@@ -20191,6 +20198,7 @@ tier	tier
 ties	ties
 tiff	tiff
 tiffany	tiffany
+Tiffany	Tiffany
 tiger	tiger
 tigers	tigers
 tight	tight
@@ -20637,6 +20645,7 @@ trillion	trillion
 trilogy	trilogy
 trim	trim
 trimmed	trimmed
+trimming	trimming
 Trina	Trina
 Trinidad	Trinidad
 trinity	trinity
@@ -21319,6 +21328,7 @@ verbatim	verbatim
 verbs	verbs
 Verde	Verde
 verdict	verdict
+verdigris	verdigris
 verge	verge
 verification	verification
 verified	verified

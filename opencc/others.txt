@@ -1119,7 +1119,6 @@ eject	eject ⏏
 石膏	石膏 CaSO₄·2H₂O
 熟石膏	熟石膏 2CaSO₄·H₂O
 蓝矾	蓝矾 CuSO₄·₅H₂O
-碳酸钠晶体	碳酸钠晶体 Na₂CO₃·10H₂O
 尿素	尿素 CO(NH₂)₂
 硫酸铵	硫酸铵 (NH₄)₂SO₄
 碳酸氢铵	碳酸氢铵 NH₄HCO₃

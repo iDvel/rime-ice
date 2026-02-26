@@ -27,7 +27,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2025-12-15"
+version: "2026-02-22"
 sort: by_weight
 ...
 ### 按需启用
@@ -2773,6 +2773,7 @@ sort: by_weight
 惎	ji	2
 期	ji	1
 鱾	ji	1
+齐	ji	1
 𫓹	ji	1
 㴔	ji	0
 堲	ji	0
@@ -6012,10 +6013,10 @@ sort: by_weight
 骕	su	55
 甦	su	53
 鹔	su	22
+𫗧	su	7
 傃	su	4
 蹜	su	3
 缩	su	1
-𫗧	su	0
 算	suan	1263186
 酸	suan	115604
 蒜	suan	14174
@@ -6112,6 +6113,7 @@ sort: by_weight
 炱	tai	88
 骀	tai	79
 鲐	tai	14
+呔	tai	1
 谈	tan	536829
 叹	tan	421997
 弹	tan	355948
@@ -7878,6 +7880,7 @@ sort: by_weight
 艅	yu	1
 菀	yu	1
 蔚	yu	1
+谷	yu	1
 原	yuan	1473346
 远	yuan	1319096
 员	yuan	887168

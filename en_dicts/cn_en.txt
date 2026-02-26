@@ -896,6 +896,7 @@ i次方	icifang
 i次幂	icimi
 n次方	ncifang
 n次幂	ncimi
+p进数	pjinshu
 Z变换	Zbianhuan
 Z变换	zbianhuan
 逆Z变换	niZbianhuan
@@ -908,6 +909,10 @@ Z逆变换	znibianhuan
 双边Z变换	shuangbianzbianhuan
 Ⅰ型错误	yixingcuowu
 Ⅱ型错误	erxingcuowu
+P波	Pbo
+P波	pbo
+S波	Sbo
+S波	sbo
 S曲线	Squxian
 S曲线	squxian
 DJ舞曲	DJwuqu
