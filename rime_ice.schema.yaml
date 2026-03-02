@@ -92,6 +92,8 @@ date_translator:
   week: xq       # 星期： 星期二
   datetime: dt   # ISO 8601： 2022-11-29T18:13:11+08:00
   timestamp: ts  # 时间戳： 1669716794
+  dateen: rqen   # 英文日期： 23rd Sep 2025 || 25th February 2026 ||
+  datezh: rqzh   # 中文日期： 二〇二六年二月二十五日 || 二零二六年二月二十五日
 
 
 # Lua 配置：农历的触发关键字
