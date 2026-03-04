@@ -1,0 +1,25 @@
+patch:
+  translator/always_show_comments: false
+  translator/spelling_hints: 0
+  translator/comment_format: []
+  engine/processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  engine/translators:
+    - punct_translator
+    - script_translator
+    - table_translator@custom_phrase
+    - table_translator@melt_eng
+    - table_translator@cn_en
+    - table_translator@radical_lookup
+  engine/filters:
+    - reverse_lookup_filter@radical_reverse_lookup
+    - simplifier@emoji
+    - simplifier@traditionalize
+    - uniquifier

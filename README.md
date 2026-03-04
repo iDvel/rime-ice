@@ -115,12 +115,17 @@
 | Android | [Trime](https://github.com/osfans/trime)（同文输入法）       | ≥ 3.2.11                          |                                                              |
 | iOS     | [Hamster](https://apps.apple.com/cn/app/%E4%BB%93%E8%BE%93%E5%85%A5%E6%B3%95/id6446617683)（仓输入法） | N/A                               | 闭源；有内购                                                 |
 | Linux   | ibus + [ibus-rime](https://github.com/rime/ibus-rime)        | librime ≥ 1.8.5 且装有 librime-lua | 部分发行版需手动安装 librime-lua                             |
+| Linux   | fcitx4 + [fcitx-rime](https://github.com/fcitx/fcitx-rime)   | 完整模式：librime ≥ 1.8.5 且装有 librime-lua | 仅支持 Linux 的 fcitx4 + fcitx-rime；配置目录为 `$HOME/.config/fcitx/rime/` |
 | Linux   | fcitx5 + [fcitx5-rime](https://github.com/fcitx/fcitx5-rime) | librime ≥ 1.8.5 且装有 librime-lua | 部分发行版需手动安装 librime-lua                             |
 | macOS   | [Squirrel](https://github.com/rime/squirrel)（鼠须管）       | ≥ 1.0.0                           | 0.16.0 - 0.18.0 版本请参考[🔗](https://github.com/iDvel/rime-ice/issues/1062) |
 | macOS   | [fcitx5-macos](https://github.com/fcitx-contrib/fcitx5-macos) | N/A                               | 支持[卷轴模式](https://github.com/iDvel/rime-ice/issues/941) |
 | Windows | [Weasel](https://github.com/rime/weasel)（小狼毫）           | ≥ 0.15.0                            | 0.14.3 可手动更新 [rime.dll](https://github.com/iDvel/rime-ice/issues/197)（但不支持彩色 emoji）<br />Weasel 当下有兼容性问题，建议安装其他输入法备用 |
 
 Linux 依赖问题的具体解释请参考 [#840](https://github.com/iDvel/rime-ice/issues/840)。
+
+> [!NOTE]
+> 本仓库中提供的 fcitx4 兼容（`others/fcitx4/`）仅支持 **Linux + fcitx4 + fcitx-rime**。
+> 不适用于 fcitx5、ibus、macOS、Windows 等其他前端或平台。
 
 雾凇拼音的部分配置可能要求更高的 librime 或者客户端版本，这些功能已在具体配置文件中注明。
 
@@ -190,6 +195,9 @@ bash rime-install <recipe_name>
 ```bash
 # 为 fictx5 安装
 rime_frontend=fcitx5-rime bash rime-install <recipe_name>
+
+# 为 fcitx4 安装
+rime_frontend=fcitx-rime bash rime-install <recipe_name>
 ```
 
 ---
@@ -298,6 +306,39 @@ patch:
 ```
 
 </details>
+
+### Linux Fcitx4
+如果您使用的是 Linux + Fcitx4，可使用仓库自带脚本自动备份并同步配置：
+
+```bash
+bash others/fcitx4/install_to_fcitx4.sh
+```
+
+如果系统较旧（例如 `librime < 1.8.5` 或缺少 `librime-lua`），可使用兼容模式（禁用 Lua 扩展功能，仅保留基础拼音/词库能力）：
+
+```bash
+bash others/fcitx4/install_to_fcitx4.sh --legacy-no-lua
+```
+
+说明：默认执行 `bash others/fcitx4/install_to_fcitx4.sh` 时，脚本会自动检测环境；若版本过旧或缺少 `librime-lua`，会自动切换到兼容模式。
+
+兼容模式（`--legacy-no-lua`）会关闭以下 Lua 扩展能力：
+- 以词定字（`[`、`]`）
+- 日期、时间、星期
+- 农历
+- UUID
+- Unicode 输入（`U` 前缀）
+- 数字、金额大写（`R` 前缀）
+- 简易计算器（`cC` 前缀）
+- 错音错字提示
+- 英文自动大写
+- v 模式 symbols 优先
+- 置顶候选项
+- 长词优先
+- 英文候选降权
+- 部件拆字辅码（`search.lua`）
+
+兼容模式仍保留：基础拼音输入、词库、`melt_eng` 英文输入、中英混输、简繁切换、Emoji、用户短语。
 
 <br>
 
