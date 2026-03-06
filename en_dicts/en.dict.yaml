@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-03-01"
+version: "2026-03-03"
 sort: by_weight
 ...
 # +_+
@@ -3432,6 +3432,7 @@ Chilean	Chilean
 chili	chili
 chill	chill
 # ChillSeph	ChillSeph
+chime	chime
 chimera	chimera
 chimney	chimney
 chimpanzee	chimpanzee
@@ -6946,6 +6947,7 @@ ethnic	ethnic
 ethnicity	ethnicity
 etiology	etiology
 etiquette	etiquette
+etymology	etymology
 # eu	eu
 Eugene	Eugene
 Euler	Euler
@@ -8768,6 +8770,7 @@ grille	grille
 grilled	grilled
 grills	grills
 grim	grim
+grime	grime
 grin	grin
 grind	grind
 grinder	grinder
@@ -13076,6 +13079,7 @@ MSN	MSN
 MTV	MTV
 mu	mu
 much	much
+muck	muck
 mud	mud
 muddle	muddle
 muddy	muddy
@@ -18443,6 +18447,7 @@ SMS	SMS
 SMTP	SMTP
 smuggle	smuggle
 # smugmug	smugmug
+smut	smut
 # sn	sn
 snack	snack
 snacks	snacks
@@ -18583,6 +18588,7 @@ Sony	Sony
 soon	soon
 sooner	sooner
 soonest	soonest
+soot	soot
 soothing	soothing
 soothsay	soothsay
 soothsayer	soothsayer

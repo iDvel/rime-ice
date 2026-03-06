@@ -176,6 +176,7 @@ function M.init(env)
         ["dao zai shi ni"] = { text = "道在屎溺", comment = "道在屎溺(niào)" },
         ["bao lian tian wu"] = { text = "暴殄天物", comment = "暴殄(tiǎn)天物" },
         ["yi ji du ren"] = { text = "以己度人", comment = "以己度(duó)人" },
+        ["yi yu cheng zhen"] = { text = "一语成谶", comment = "一语成谶(chèn)" },
         ["jing gao"] = { text = "甑糕", comment = "甑(zèng)糕" },
         ["zhao xiang"] = { text = "着想", comment = "着(zhuó)想" },
         ["ge zhi wo"] = { text = "胳肢窝", comment = "胳(gā)肢窝" },

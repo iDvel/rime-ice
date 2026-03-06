@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2026-02-22"
+version: "2026-03-03"
 sort: by_weight
 ...
 ##### 容错词
@@ -406,6 +406,8 @@ sort: by_weight
 暴殄天物	bao lian tian wu
 以己度人	yi ji duo ren
 以己度人	yi ji du ren
+一语成谶	yi yu cheng chen
+一语成谶	yi yu cheng zhen
 甑糕	zeng gao
 甑糕	jing gao
 着想	zhuo xiang
