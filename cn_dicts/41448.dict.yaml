@@ -17,7 +17,7 @@
 #          这样小字表里存在的字按权重靠前排列，大字表殿后，生僻字自动就排在末尾。
 ---
 name: 41448
-version: "2026-03-01"
+version: "2026-03-03"
 sort: by_weight
 ...
 # 注释掉了一些
@@ -16723,6 +16723,7 @@ sort: by_weight
 鈞	jun
 銁	jun
 銞	jun
+鋆	jun
 鍕	jun
 钧	jun
 陖	jun
@@ -28259,6 +28260,7 @@ sort: by_weight
 𥾋	reng
 𧹈	reng
 𨸐	reng
+㒲	ri
 䒤	ri
 囸	ri
 日	ri
@@ -28386,6 +28388,7 @@ sort: by_weight
 𨍅	rong
 𨍷	rong
 𨒆	rong
+𨦡	rong
 𨲟	rong
 𩍉	rong
 𩎂	rong
@@ -28397,6 +28400,7 @@ sort: by_weight
 𪕁	rong
 𪕎	rong
 𪗴	rong
+𰽽	rong
 㖻	rou
 㮟	rou
 㽥	rou
@@ -38849,6 +38853,7 @@ sort: by_weight
 𪕫	yang
 𪚻	yang
 𫚐	yang
+𰽽	yang
 㑸	yao
 㑾	yao
 㓞	yao
@@ -40800,7 +40805,6 @@ sort: by_weight
 𧻹	yong
 𨓨	yong
 𨤂	yong
-𨦡	yong
 𨴭	yong
 𨶽	yong
 𩆄	yong
