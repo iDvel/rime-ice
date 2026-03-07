@@ -107,19 +107,17 @@ function M.func(input, seg, env)
         local month = tonumber(os.date("%m", current_time))
         local year = os.date("%Y", current_time)
         -- 计算日期序数后缀
-        local suffix = "th"
-        if day % 10 == 1 and day ~= 11 then
-            suffix = "st"
-        elseif day % 10 == 2 and day ~= 12 then
-            suffix = "nd"
-        elseif day % 10 == 3 and day ~= 13 then
-            suffix = "rd"
-        end
+        -- local suffix = "th"
+        -- if day % 10 == 1 and day ~= 11 then
+        --     suffix = "st"
+        -- elseif day % 10 == 2 and day ~= 12 then
+        --     suffix = "nd"
+        -- elseif day % 10 == 3 and day ~= 13 then
+        --     suffix = "rd"
+        -- end
 
-        yield_cand(seg, string.format("%d%s %s %s", day, suffix, month_names_short[month], year))
-        yield_cand(seg, string.format("%d%s %s %s", day, suffix, month_names_long[month], year)) -- en_US
-        yield_cand(seg, string.format("%s %d%s %s", month_names_short[month], day, suffix, year))
-        yield_cand(seg, string.format("%s %d%s %s", month_names_long[month], day, suffix, year)) -- en_UK
+        yield_cand(seg, string.format("%d %s %s", day, month_names_long[month], year)) -- en_UK
+        yield_cand(seg, string.format("%s %d, %s", month_names_long[month], day, year)) -- en_US
     end
 
     -- -- 显示内存
