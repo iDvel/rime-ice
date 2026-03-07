@@ -10,7 +10,7 @@
 # 少数单词与 en 重复，纯粹是为了排版美观，部署时的报错 duplicate word definition 可忽略，无任何影响
 ---
 name: en_ext
-version: "2026-02-04"
+version: "2026-03-07"
 sort: by_weight
 ...
 # 一些杂项
@@ -133,9 +133,10 @@ net	net	2
 .NET	dotnet
 # 带权重的系列
 iPhone	iPhone	999
-iPhone 17	iPhone	3
-iPhone 17 Pro	iPhone	2
-iPhone 17 Pro Max	iPhone	1
+iPhone 17	iPhone	4
+iPhone 17 Pro	iPhone	3
+iPhone 17 Pro Max	iPhone	2
+iPhone 17e	iPhone	1
 Mac OS X	MacOSX	999
 Mac OS X Cheetah	MacOSX	1
 Mac OS X Puma	MacOSX	2
@@ -220,6 +221,7 @@ iPhone 16 Plus	iPhone16Plus
 iPhone 16 Pro	iPhone16Pro
 iPhone 16 Pro Max	iPhone16ProMax
 iPhone 17	iPhone17
+iPhone 17e	iPhone17e
 iPhone Air	iPhoneAir
 iPhone 17 Pro	iPhone17Pro
 iPhone 17 Pro Max	iPhone17ProMax
@@ -486,8 +488,8 @@ uTools	uTool
 uTools	uTools
 AirPods	AirPods
 AirPods Pro	AirPodsPro
-AirPods Max	AirPods
 AirPods Max	AirPodsMax
+EarPods	EarPods
 CallKit	CallKit
 OSS	OSS
 Object Storage Service	OSS
@@ -569,6 +571,8 @@ MBP	MBP
 MacBook Pro	MBP
 MBA	MBA
 MacBook Air	MBA
+MBN	MBN
+MacBook Neo	MBN
 MariaDB	MariaDB
 Microsoft Access	Access
 MongoDB	MongoDB
@@ -769,7 +773,11 @@ LLDB	LLDB
 Clang	Clang
 CMake	CMake
 uBlacklist	uBlacklist
+AirTag	AirTag
+Apple AirTag	AppleAirTag
 Apple Watch	AppleWatch
+Apple Watch SE	AppleWatchSE
+Apple Watch Ultra	AppleWatchUltra
 AppleCare	AppleCare
 AppleCare+	AppleCare+
 Apple Card	AppleCard
@@ -778,11 +786,14 @@ ATI	ATI
 Apple Store	AppleStore
 Apple TV	AppleTV
 Apple TV+	AppleTV+
+Apple TV 4K	AppleTV4K
 Apple Developer	AppleDeveloper
 Apple File System	AppleFileSystem
 Apple ID	AppleID
 Apple News	AppleNews
+Apple News+	AppleNews+
 Apple Pay	ApplePay
+Apple Fitness+	AppleFitness+
 iTunes Store	iTunesStore
 AMD	AMD
 AMDgpu	AMDgpu
@@ -925,6 +936,7 @@ MacAppDeals	MacAppDeals
 MacBook	MacBook
 MacBook Air	MacBookAir
 MacBook Pro	MacBookPro
+MacBook Neo	MacBookNeo
 Mac Pro	MacPro
 MacID	MacID
 MacTips	MacTips
@@ -1271,6 +1283,7 @@ General Data Protection Regulation	GDPR
 Netlify	Netlify
 Mac Studio	MacStudio
 Studio Display	StudioDisplay
+Studio Display XDR	StudioDisplayXDR
 Pro Display XDR	ProDisplayXDR
 OC	OC
 Objective-C	OC
