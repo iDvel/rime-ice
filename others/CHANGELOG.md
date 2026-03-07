@@ -2,24 +2,29 @@
 
 除日常更新词库外的一些主要更新 🆕、破坏性变更 ⚠️。
 
+## 2026-03-08
+
+- feat: 加入一些时间和日期的自定义展示 [#1485](https://github.com/iDvel/rime-ice/pull/1485)
+    - 中英日期触发关键字，全拼默认为 `rqzh` 和 `rqen`，双拼默认为 `datezh` 和 `dateen`
+
 ---
 
 *2025.12.08 Release*
 
-### 2025-12-08
+## 2025-12-08
 
 - 修正了 lua 注释中的引入错误 [#1405](https://github.com/iDvel/rime-ice/issues/1405)
 
-### 2025-10-31
+## 2025-10-31
 
 - `uuid.lua` 生成符合 RFC 4122 标准的 UUID v4 [#1383](https://github.com/iDvel/rime-ice/pull/1383)
 
-### 2025-10-23
+## 2025-10-23
 
 - 以词定字长句输入支持 ([#1252](https://github.com/iDvel/rime-ice/issues/1252))
 - 计算器百分号支持([#1298](https://github.com/iDvel/rime-ice/pull/1298))
 
-### 2025-06-09
+## 2025-06-09
 
 - 添加拼音加加双拼方案 [#1228](https://github.com/iDvel/rime-ice/pull/1228)
 

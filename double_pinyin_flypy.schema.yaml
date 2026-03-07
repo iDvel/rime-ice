@@ -101,6 +101,8 @@ date_translator:
   week: week            # 星期： 星期二
   datetime: datetime    # ISO 8601： 2022-11-29T18:13:11+08:00
   timestamp: timestamp  # 时间戳： 1669716794
+  datezh: datezh        # 中文日期： 二〇二六年二月二十五日 | 二零二六年二月二十五日
+  dateen: dateen        # 英文日期： 英式 8 March 2026 | 美式 March 8, 2026
 
 
 # Lua 配置：农历的触发关键字
