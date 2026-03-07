@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2026-03-03"
+version: "2026-03-08"
 sort: by_weight
 ...
 ##### 容错词
@@ -218,6 +218,7 @@ sort: by_weight
 模棱两可	mo ling liang ke
 鄱阳湖	po yang hu
 鄱阳湖	pan yang hu
+鄱阳湖	bo yang hu
 脖颈	bo geng
 脖颈	bo jing
 脖颈儿	bo geng er
@@ -448,8 +449,6 @@ sort: by_weight
 博闻强识	bo wen qiang shi
 贲临	bi lin
 贲临	ben lin
-鄱阳湖	po yang hu
-鄱阳湖	bo yang hu
 倾轧	qing ya
 倾轧	qing zha
 妊娠	ren shen
@@ -522,6 +521,8 @@ sort: by_weight
 鞭挞	bian da
 鞭笞	bian chi
 鞭笞	bian tai
+附骨之疽	fu gu zhi ju
+附骨之疽	fu gu zhi qu
 ### 错字
 曾经	ceng jing
 曾今	ceng jin

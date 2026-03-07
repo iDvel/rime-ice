@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-03-03"
+version: "2026-03-08"
 sort: by_weight
 ...
 # +_+
@@ -913,6 +913,7 @@ anticipated	anticipated
 anticipation	anticipation
 antigen	antigen
 antigens	antigens
+antigravity	antigravity
 Antigua	Antigua
 Antilles	Antilles
 antimony	antimony
@@ -2293,6 +2294,7 @@ bonding	bonding
 bonds	bonds
 bone	bone
 bones	bones
+bonfire	bonfire
 Bonn	Bonn
 bonnie	bonnie
 Bono	Bono
@@ -4068,6 +4070,8 @@ complied	complied
 complies	complies
 compliment	compliment
 complimentary	complimentary
+complimented	complimented
+complimenting	complimenting
 compliments	compliments
 comply	comply
 complying	complying
@@ -5202,6 +5206,7 @@ decriers	decriers
 decries	decries
 decry	decry
 decrying	decrying
+decrypt	decrypt
 dedicate	dedicate
 dedicated	dedicated
 dedication	dedication
@@ -8912,6 +8917,7 @@ Hague	Hague
 haha	haha
 Hahn	Hahn
 # hai	hai
+haiku	haiku
 hail	hail
 hair	hair
 haired	haired
@@ -12698,6 +12704,7 @@ mini	mini
 miniature	miniature
 miniatures	miniatures
 minimal	minimal
+minimax	minimax
 minimize	minimize
 minimized	minimized
 minimizing	minimizing
@@ -12871,6 +12878,7 @@ molecular	molecular
 molecule	molecule
 molecules	molecules
 Molly	Molly
+molt	molt
 molybdenum	molybdenum
 mom	mom
 moment	moment
@@ -13233,7 +13241,7 @@ NAS	NAS
 NASA	NASA
 nasal	nasal
 NASCAR	NASCAR
-Nasdaq	Nasdaq
+NASDAQ	NASDAQ
 Nash	Nash
 Nashville	Nashville
 Nassau	Nassau
@@ -14947,6 +14955,7 @@ pistols	pistols
 piston	piston
 pistons	pistons
 pit	pit
+pitaya	pitaya
 # pitbull	pitbull
 Pitcairn	Pitcairn
 pitch	pitch
@@ -16626,6 +16635,7 @@ rentals	rentals
 rented	rented
 renting	renting
 rents	rents
+reorder	reorder
 reorganization	reorganization
 rep	rep
 repair	repair
@@ -16897,6 +16907,7 @@ reward	reward
 rewarded	rewarded
 rewarding	rewarding
 rewards	rewards
+rewind	rewind
 rewrite	rewrite
 rewritten	rewritten
 Rex	Rex

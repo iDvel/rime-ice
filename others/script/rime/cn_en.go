@@ -108,6 +108,7 @@ var polyphones = map[string]string{
 	"5G网络 > 络":      "luo",
 	"2B铅笔 > 铅":      "qian",
 	"HB铅笔 > 铅":      "qian",
+	"p进数 > 数":       "shu",
 }
 
 var digitMap = map[string]string{
