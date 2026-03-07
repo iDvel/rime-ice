@@ -53,7 +53,7 @@ function M.func(input, seg, env)
             period_name = "中午"
         elseif hour >= 13 and hour < 18 then
             period_name = "下午"
-        elseif hour >= 18 and hour < 23 then
+        elseif hour >= 18 and hour < 24 then
             period_name = "晚上"
         else
             period_name = "凌晨"
