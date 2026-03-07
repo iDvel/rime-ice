@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "2026-01-29"
+  version: "2026-03-08"
   author:
     - Dvel
   description: |
@@ -92,6 +92,8 @@ date_translator:
   week: xq       # 星期： 星期二
   datetime: dt   # ISO 8601： 2022-11-29T18:13:11+08:00
   timestamp: ts  # 时间戳： 1669716794
+  datezh: rqzh   # 中文日期： 二〇二六年二月二十五日 | 二零二六年二月二十五日
+  dateen: rqen   # 英文日期： 英式 8 March 2026 | 美式 March 8, 2026
 
 
 # Lua 配置：农历的触发关键字
