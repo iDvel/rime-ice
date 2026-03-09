@@ -4,7 +4,7 @@
 schema:
   schema_id: radical_pinyin
   name: "部件拆字 | 全拼双拼"
-  version: "2.0.0"
+  version: "2.1.0"
   author: Mirtle
   description: |
     用拼音按顺序打出偏旁部件，组合出汉字
@@ -308,3 +308,4 @@ algebra_jiajia:
   - xform/([a-z>])ou(?=^|$|')/$1<p>/
   - xform/in(?=^|$|')/<l>/
   - xform/'|<|>//
+
