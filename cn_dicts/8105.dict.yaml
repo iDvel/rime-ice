@@ -27,7 +27,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2026-03-03"
+version: "2026-03-08"
 sort: by_weight
 ...
 ### 按需启用
@@ -3285,7 +3285,7 @@ sort: by_weight
 玃	jue	9
 噱	jue	5
 砄	jue	3
-㵐	jue	0
+㵐	jue	1
 𫔎	jue	0
 𫘝	jue	0
 均	jun	316506
@@ -7428,6 +7428,7 @@ sort: by_weight
 猺	yao	3
 侥	yao	1
 媱	yao	1
+繇	yao	1
 㙘	yao	0
 也	ye	9508702
 业	ye	938051
@@ -8417,6 +8418,7 @@ sort: by_weight
 鸼	zhou	3
 荮	zhou	2
 婤	zhou	1
+繇	zhou	1
 㑇	zhou	0
 㤘	zhou	0
 住	zhu	2114870
@@ -8470,8 +8472,9 @@ sort: by_weight
 疰	zhu	18
 蠋	zhu	13
 瘃	zhu	8
+𬣞	zhu	2
 术	zhu	1
-𬣞	zhu	0
+褚	zhu	1
 抓	zhua	82875
 爪	zhua	74674
 髽	zhua	9
