@@ -109,7 +109,7 @@ function M.func(input, seg, env)
 
         yield_cand(seg, string.format('%s年%s月%s日', year_0, month, day))
         yield_cand(seg, string.format('%s年%s月%s日', year_zero, month, day))
-        yield_cand(seg, os.date('%Y年%m月%d日', current_time):gsub('年0', '年'):gsub('月', '月'))
+        yield_cand(seg, os.date('%Y年%m月%d日', current_time):gsub('年0', '年'):gsub('月0', '月'))
 
         -- 英文日期
     elseif (input == M.date_en) then
