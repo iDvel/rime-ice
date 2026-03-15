@@ -76,10 +76,21 @@ function M.func(input, seg, env)
         yield_cand(seg, '礼拜' .. text)
         yield_cand(seg, '周' .. text)
 
-        -- ISO 8601/RFC 3339 的时间格式 （固定东八区）（示例 2022-01-07T20:42:51+08:00）
+        -- ISO 8601/RFC 3339 的时间格式
     elseif (input == M.datetime) then
         local current_time = os.time()
-        yield_cand(seg, os.date('%Y-%m-%dT%H:%M:%S+08:00', current_time))
+
+        -- 获取偏移量，例如 "+0800" 或 "+0000"
+        local tz = os.date("%z", current_time)
+
+        -- 格式化时区
+        -- 如果是零时区 (+0000/-0000)，根据规范输出 "Z"
+        -- 否则将 "+0800" 转换为 "+08:00"
+        local iso_tz = (tz == "+0000" or tz == "-0000")
+            and "Z"
+            or tz:gsub("(%d%d)$", ":%1")
+
+        yield_cand(seg, os.date('%Y-%m-%dT%H:%M:%S', current_time) .. iso_tz)
         yield_cand(seg, os.date('%Y-%m-%d %H:%M:%S', current_time))
         yield_cand(seg, os.date('%Y%m%d%H%M%S', current_time))
 
@@ -116,7 +127,7 @@ function M.func(input, seg, env)
         --     suffix = "rd"
         -- end
 
-        yield_cand(seg, string.format("%d %s %s", day, month_names_long[month], year)) -- en_UK
+        yield_cand(seg, string.format("%d %s %s", day, month_names_long[month], year))  -- en_UK
         yield_cand(seg, string.format("%s %d, %s", month_names_long[month], day, year)) -- en_US
     end
 
