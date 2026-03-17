@@ -30,7 +30,7 @@
 淈 gu
 鱥 gui
 脝 heng
-魟 hong
+𫚉 hong
 睺 hou
 泘 hu
 沕 hu
@@ -52,6 +52,7 @@
 峠 ka
 窾 kuan
 鞟 kuo
+筈 kuo
 鯻 la
 鿶 lang
 𧒽 lei
@@ -77,7 +78,6 @@
 魮 pi
 𫚙 pu
 碁 qi
-箝 qian
 犭 quan
 荵 ren
 叡 rui
