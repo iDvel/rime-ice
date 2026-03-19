@@ -1,0 +1,123 @@
+# Rime schema
+# encoding: utf-8
+#
+# 日语假名输入方案（罗马字输入）
+# 输入罗马字，输出平假名；可切换为片假名模式。
+#
+# 常见罗马字规则：
+#   a i u e o → あ い う え お
+#   ka ki ku ke ko → か き く け こ
+#   shi / si → し   chi / ti → ち   tsu / tu → つ
+#   fu / hu → ふ    ji / zi → じ
+#   nn / xn → ん    n' → ん（元音前）
+#   xtu / ltu / xtsu / ltsu → っ
+#   kka ssa tta ... → っか っさ った ...（促音）
+#   - → ー（长音符）
+#
+
+
+# 方案说明
+schema:
+  schema_id: kana
+  name: 日本語かな
+  version: "2026-03-19"
+  author:
+    - rime-ice
+  description: |
+    日语假名输入（罗马字）
+    罗马字 → 平假名，可切换片假名模式
+
+
+# 开关
+switches:
+  - name: ascii_mode
+    states: [ かな, Ａ ]
+  - name: katakana_mode
+    states: [ ひらがな, カタカナ ]
+    reset: 0
+  - name: ascii_punct
+    states: [ JP, $ ]
+    reset: 0
+
+
+# 输入引擎
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator
+  filters:
+    - simplifier@katakana  # 平假名 → 片假名
+    - uniquifier
+
+
+# 拼写规则
+speller:
+  alphabet: "abcdefghijklmnopqrstuvwxyz-'"
+  delimiter: " "
+  # 允许以辅音字母开头时部分匹配（用于促音、nn 等）
+  max_code_length: 6
+
+
+# 翻译器
+translator:
+  dictionary: kana
+  enable_completion: true
+  enable_sentence: true
+  enable_user_dict: false
+
+
+# 片假名转换（平假名 → 片假名）
+katakana:
+  option_name: katakana_mode
+  opencc_config: hira2kata.json
+  tips: none
+  comment_format:
+    - "xform/^//"
+
+
+# 日语标点
+punctuator:
+  half_shape: &punct
+    "," : "、"
+    "." : "。"
+    "?" : "？"
+    "!" : "！"
+    "~" : "〜"
+    ":" : "："
+    ";" : "；"
+    "[" : "「"
+    "]" : "」"
+    "{" : "『"
+    "}" : "』"
+    "(" : "（"
+    ")" : "）"
+    "\\" : "・"
+    "/" : "・"
+    "<" : "《"
+    ">" : "》"
+  full_shape: *punct
+
+
+# 快捷键
+key_binder:
+  import_preset: default
+
+
+# 识别规则
+recognizer:
+  import_preset: default

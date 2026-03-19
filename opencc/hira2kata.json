@@ -1,0 +1,18 @@
+{
+	"name": "Hiragana to Katakana",
+	"segmentation": {
+		"type": "mmseg",
+		"dict": {
+			"type": "text",
+			"file": "hira2kata.txt"
+		}
+	},
+	"conversion_chain": [
+		{
+			"dict": {
+				"type": "text",
+				"file": "hira2kata.txt"
+			}
+		}
+	]
+}
