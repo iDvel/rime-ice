@@ -116,6 +116,9 @@ punctuator:
 # 快捷键
 key_binder:
   import_preset: default
+  bindings:
+    - { accept: F6, toggle: katakana_mode, when: always }  # F6: ひらがな/カタカナ 切换
+    - { accept: F7, toggle: katakana_mode, when: always }  # F7: 同上（日语 IME 惯例）
 
 
 # 识别规则
