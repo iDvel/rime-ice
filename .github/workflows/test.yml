@@ -29,7 +29,7 @@ jobs:
         run: |
           python3 -m pip install yamllint
           sudo apt install -y luarocks
-          luarocks install luacheck
+          sudo luarocks install luacheck
 
       - name: Cache rime cli bundle
         uses: actions/cache@v5
