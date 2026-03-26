@@ -150,6 +150,8 @@ run_lua_lint() {
   require_tool luacheck
   local lint_output=''
   local lint_status=0
+  local last_line=''
+  local normalized_last_line=''
   log_step 'lua-lint checking lua/**/*.lua'
 
   set +e
@@ -163,19 +165,19 @@ run_lua_lint() {
   set -e
 
   printf '%s\n' "${lint_output}"
-
+  last_line="$(printf '%s\n' "${lint_output}" | tail -n 1)"
+  normalized_last_line="$(printf '%s\n' "${last_line}" | sed -E $'s/\x1B\\[[0-9;]*[[:alpha:]]//g')"
   if [[ "${lint_status}" -eq 0 ]]; then
-    log_pass 'lua-lint completed without warnings'
+    log_pass 'lua-lint passed'
     return 0
   fi
 
-  if printf '%s\n' "${lint_output}" | grep -Eq 'Total: [0-9]+ warnings / 0 errors'; then
-    log_warn 'lua-lint completed with warnings only'
+  if printf '%s\n' "${normalized_last_line}" | grep -Eq '0 errors?'; then
+    log_warn 'lua-lint completed with warnings'
     return 0
   fi
-
-  log_fail 'lua-lint failed'
-  return "${lint_status}"
+  log_fail 'lua-lint completed with errors'
+  return 1
 }
 
 run_lua_format_check() {
