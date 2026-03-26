@@ -91,6 +91,26 @@ download_file() {
   curl -fsSL --retry 3 -o "${output_path}" "${file_url}"
 }
 
+prepare_cli_archive() {
+  local cli_url="$1"
+  local output_path="$2"
+  local cache_path="${RIME_CLI_CACHE_PATH:-}"
+
+  if [[ -n "${cache_path}" && -f "${cache_path}" ]]; then
+    log_step "using cached rime cli bundle ${cache_path}" >&2
+    cp "${cache_path}" "${output_path}"
+    return 0
+  fi
+
+  log_step "downloading rime cli bundle" >&2
+  download_file "${cli_url}" "${output_path}"
+
+  if [[ -n "${cache_path}" ]]; then
+    mkdir -p "$(dirname "${cache_path}")"
+    cp "${output_path}" "${cache_path}"
+  fi
+}
+
 extract_zip() {
   local archive_path="$1"
   local output_dir="$2"
@@ -134,9 +154,7 @@ resolve_cli_commands() {
     cli_archive="${work_root}/rime-cli.zip"
     extract_root="${work_root}/cli"
 
-    log_step "downloading rime cli bundle" >&2
-    download_file "${cli_url}" "${cli_archive}"
-
+    prepare_cli_archive "${cli_url}" "${cli_archive}"
     log_step "extracting rime cli bundle" >&2
     bundle_root="$(prepare_cli_bundle "${cli_archive}" "${extract_root}")"
     deployer_path="${bundle_root}/bin/rime_deployer"
