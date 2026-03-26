@@ -26,17 +26,26 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
+      - name: Install lint dependencies
+        run: |
+          python3 -m pip install yamllint
+          sudo apt install -y luarocks
+          sudo luarocks install luacheck
+
       - name: Cache rime cli bundle
         uses: actions/cache@v5
         with:
           path: ${{ runner.temp }}/rime-cli-cache/rime-cli-linux-1.6.1.zip
           key: rime-cli-linux-1.6.1
 
+      - name: Run lint
+        run: make -C others/script lint
+
       - name: Run smoke test suite
         env:
           RIME_CLI_URL: https://github.com/mirtlecn/public/releases/download/v1.6.1/rime-cli-linux-1.6.1.zip
           RIME_CLI_CACHE_PATH: ${{ runner.temp }}/rime-cli-cache/rime-cli-linux-1.6.1.zip
-        run: bash ./others/script/smoke/run.sh rime_ice
+        run: make -C others/script smoke
 
   package:
     name: Package and release
