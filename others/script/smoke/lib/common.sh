@@ -69,6 +69,22 @@ ensure_clean_dir() {
   mkdir -p "${dir_path}"
 }
 
+require_destructive_cleanup_approval() {
+  local config_root="$1"
+  local build_dir="${config_root}/build"
+
+  if [[ "${CI:-}" == "true" || "${GITHUB_ACTIONS:-}" == "true" ]]; then
+    return 0
+  fi
+
+  if [[ "${SMOKE_ALLOW_DESTRUCTIVE:-}" == "1" ]]; then
+    log_warn "destructive cleanup approved by SMOKE_ALLOW_DESTRUCTIVE=1"
+    return 0
+  fi
+
+  fail "smoke test will remove ${build_dir} and ${config_root}/*.userdb; rerun with SMOKE_ALLOW_DESTRUCTIVE=1 for local execution, or run in CI"
+}
+
 clean_config_artifacts() {
   local config_root="$1"
   local build_dir="${config_root}/build"

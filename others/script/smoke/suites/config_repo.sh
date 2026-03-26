@@ -22,6 +22,7 @@ run_config_repo_suite() {
 
   assert_file_exists "${config_root}/default.yaml"
   assert_file_exists "${config_root}/${suite_name}.schema.yaml"
+  require_destructive_cleanup_approval "${config_root}"
   clean_config_artifacts "${config_root}"
 
   resolve_cli_commands "${cli_url}" "${work_root}" >"${cli_paths_file}"

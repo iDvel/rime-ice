@@ -21,6 +21,20 @@ This directory contains the shell-based smoke test framework for the current rep
 
 - `RIME_CLI_URL`: optional public CLI bundle URL
 - `RIME_CONFIG_ROOT`: optional repository root override
+- `SMOKE_ALLOW_DESTRUCTIVE=1`: required for local runs because the smoke suite removes `${RIME_CONFIG_ROOT:-repo}/build` and `${RIME_CONFIG_ROOT:-repo}/*.userdb`
+
+## Destructive Cleanup
+
+The smoke suite removes the following paths under `RIME_CONFIG_ROOT` before deployment:
+
+- `build/`
+- `*.userdb/`
+
+This cleanup is allowed automatically in CI. Local runs must opt in explicitly:
+
+```bash
+SMOKE_ALLOW_DESTRUCTIVE=1 ./others/script/smoke/run.sh
+```
 
 ## Extending
 
