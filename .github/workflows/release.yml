@@ -14,9 +14,29 @@ on:
   workflow_dispatch:
 
 jobs:
-  Release:
-    runs-on: ubuntu-latest
+  smoke:
+    name: Smoke test before release
+    runs-on: ubuntu-24.04
+    # if: github.repository == 'iDvel/rime-ice'
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Run smoke test suite
+        env:
+          RIME_CLI_URL: https://github.com/mirtlecn/public/releases/download/v1.6.1/rime-cli-linux-1.6.1.zip
+        run: bash ./others/script/smoke/run.sh rime_ice
+
+  package:
+    name: Package and release
+    runs-on: ubuntu-24.04
     if: github.repository == 'iDvel/rime-ice'
+    needs:
+      - smoke
 
     steps:
       - name: Checkout
@@ -56,7 +76,7 @@ jobs:
 
       - name: Create nightly release
         if: ${{ github.ref == 'refs/heads/main' }}
-        uses: "softprops/action-gh-release@v2"
+        uses: softprops/action-gh-release@v2
         with:
           body: |
             ## 说明
@@ -79,7 +99,7 @@ jobs:
 
       - name: Create stable release
         if: startsWith(github.ref, 'refs/tags/')
-        uses: "softprops/action-gh-release@v2"
+        uses: softprops/action-gh-release@v2
         with:
           body: |
             ## 说明
