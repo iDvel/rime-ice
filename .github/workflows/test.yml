@@ -19,6 +19,7 @@ jobs:
   smoke-linux:
     name: Rime smoke test
     runs-on: ubuntu-24.04
+    if: github.repository == 'iDvel/rime-ice'
 
     steps:
       - name: Checkout repository

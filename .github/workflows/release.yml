@@ -17,7 +17,7 @@ jobs:
   smoke:
     name: Smoke test before release
     runs-on: ubuntu-24.04
-    # if: github.repository == 'iDvel/rime-ice'
+    if: github.repository == 'iDvel/rime-ice'
 
     permissions:
       contents: read
