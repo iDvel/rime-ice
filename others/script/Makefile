@@ -6,7 +6,7 @@ default:
 	@:
 
 build:
-	go run . --rime_path "$$(cd ../.. && pwd)"
+	go mod tidy && go run . --rime_path "$$(cd ../.. && pwd)" --auto_confirm
 
 lint:
 	bash lint/run.sh all

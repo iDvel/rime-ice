@@ -8,6 +8,14 @@
 # 鼠须管界面配置指南： https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/鼠鬚管介面配置指南.md
 # 鼠须管作者写的图形化的皮肤设计器： https://github.com/LEOYoon-Tsaw/Squirrel-Designer
 
+# Squirrel 部分命令行选项：
+# squirrel="/Library/Input Methods/Squirrel.app/Contents/MacOS/Squirrel"
+# --quit：退出所有 Squirrel 进程
+# --reload：重新部署
+# --sync：触发同步用户数据
+# --build：构建
+# --help：帮助输出帮助文本
+
 
 # 要比共享目录的同名文件的 config_version 大才可以生效
 config_version: '2026-01-31'  # 对应的鼠须管版本: 1.1.2
