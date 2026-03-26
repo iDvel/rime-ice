@@ -1,0 +1,30 @@
+name: Smoke test
+
+on:
+  push:
+    branches:
+      - '**'
+    paths:
+      - "**/**"
+      - "!**.md"
+      - "!**.gitignore"
+      - "!.github/**"
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke-linux:
+    name: Rime smoke test
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Run smoke test suite
+        env:
+          RIME_CLI_URL: https://github.com/mirtlecn/public/releases/download/v1.6.1/rime-cli-linux-1.6.1.zip
+        run: bash ./others/script/smoke/run.sh rime_ice

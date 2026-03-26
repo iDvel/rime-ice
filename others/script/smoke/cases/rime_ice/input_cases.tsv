@@ -1,0 +1,242 @@
+# ------------------
+# 方案：rime_ice
+# ------ 基础 ------
+# case_id	schema_id	key_sequence	expected_text
+基础：中文输入	rime_ice	wusongpinyin{space}	雾凇拼音
+基础：英文输入	rime_ice	hello{space}	hello
+基础：英文派生	rime_ice	PtwoP{space}	P2P
+基础：中英混输	rime_ice	Xguang{space}	X光
+基础：自定义短语	rime_ice	ig{space}	一个
+基础：Emoji输入	rime_ice	nihao{2}	👋
+基础：uU拆字反查	rime_ice	uUrenrenren{space}	众
+基础：v键符号输入	rime_ice	v1{space}	一
+
+# ------ 插件 ------
+# case_id    schema_id	key_sequence	expected_text
+插件：英文全大写	rime_ice	HELLO{space}	HELLO
+插件：英文首字母大写	rime_ice	Hello{space}	Hello
+插件：置顶候选	rime_ice	d{space}	的
+插件：Unicode输入	rime_ice	U4f60{space}	你
+插件：日期输入	rime_ice	rq{space}	@today:%Y-%m-%d
+插件：UUID输入	rime_ice	uuid{space}	@regex:^commit: [0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$
+插件：英文降权	rime_ice	ranch{space}	染成
+插件：英文降权	rime_ice	ranch{2}	ranch
+插件：数字输入	rime_ice	R123{space}	一百二十三
+插件：计算器	rime_ice	cC1+2{space}	3
+插件：农历输入：农历	rime_ice	N19700101{space}	一九六九年冬月廿四
+插件：农历输入：干支	rime_ice	N19700101{2}	己酉年（鸡）冬月廿四
+插件：以词定字：左中括号取首字	rime_ice	nihao{bracketleft}	你
+插件：以词定字：右中括号取尾字	rime_ice	nihao{bracketright}	好
+插件：部件辅码	rime_ice	ni`ren{space}	你
+插件：错字错音提示	rime_ice	qikefu{Control+Shift+Return}	契诃(hē)夫
+
+# ------------------
+# 方案：自然码双拼
+# ------ 基础 ------
+基础：中文输入	double_pinyin	wusspnyn{space}	雾凇拼音
+基础：英文输入	double_pinyin	hello{space}	hello
+基础：英文派生	double_pinyin	PtwoP{space}	P2P
+基础：中英混输	double_pinyin	Xgd{space}	X光
+# 基础：自定义短语	double_pinyin	ig{space}	一个
+基础：Emoji输入	double_pinyin	nihk{2}	👋
+基础：uU拆字反查	double_pinyin	uUrenrenren{space}	众
+基础：v键符号输入	double_pinyin	V1{space}	一
+
+# ------ 插件 ------
+插件：英文全大写	double_pinyin	HELLO{space}	HELLO
+插件：英文首字母大写	double_pinyin	Hello{space}	Hello
+插件：置顶候选	double_pinyin	d{space}	的
+插件：Unicode输入	double_pinyin	U4f60{space}	你
+插件：日期输入	double_pinyin	date{space}	@today:%Y-%m-%d
+插件：UUID输入	double_pinyin	uuid{space}	@regex:^commit: [0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$
+插件：英文降权	double_pinyin	bail{space}	把拆
+插件：英文降权	double_pinyin	bail{2}	bail
+插件：数字输入	double_pinyin	R123{space}	一百二十三
+插件：计算器	double_pinyin	cC1+2{space}	3
+插件：农历输入：农历	double_pinyin	N19700101{space}	一九六九年冬月廿四
+插件：农历输入：干支	double_pinyin	N19700101{2}	己酉年（鸡）冬月廿四
+插件：以词定字：左中括号取首字	double_pinyin	nihk{bracketleft}	你
+插件：以词定字：右中括号取尾字	double_pinyin	nihk{bracketright}	好
+插件：部件辅码	double_pinyin	ni`ren{space}	你
+插件：错字错音提示	double_pinyin	qikefu{Control+Shift+Return}	契诃(hē)夫
+
+# ------------------
+# 方案：智能 ABC 双拼
+# ------ 基础 ------
+基础：中文输入	double_pinyin_abc	wusspcyc{space}	雾凇拼音
+基础：英文输入	double_pinyin_abc	hello{space}	hello
+基础：英文派生	double_pinyin_abc	PtwoP{space}	P2P
+基础：中英混输	double_pinyin_abc	Xgt{space}	X光
+# 基础：自定义短语	double_pinyin_abc	ig{space}	一个
+基础：Emoji输入	double_pinyin_abc	nihk{2}	👋
+基础：uU拆字反查	double_pinyin_abc	uUrenrenren{space}	众
+基础：v键符号输入	double_pinyin_abc	V1{space}	一
+
+# ------ 插件 ------
+插件：英文全大写	double_pinyin_abc	HELLO{space}	HELLO
+插件：英文首字母大写	double_pinyin_abc	Hello{space}	Hello
+插件：置顶候选	double_pinyin_abc	d{space}	的
+插件：Unicode输入	double_pinyin_abc	U4f60{space}	你
+插件：日期输入	double_pinyin_abc	date{space}	@today:%Y-%m-%d
+插件：UUID输入	double_pinyin_abc	uuid{space}	@regex:^commit: [0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$
+# 插件：英文降权	double_pinyin_abc	bail{space}	不确定
+# 插件：英文降权	double_pinyin_abc	bail{2}	不确定
+插件：数字输入	double_pinyin_abc	R123{space}	一百二十三
+插件：计算器	double_pinyin_abc	cC1+2{space}	3
+插件：农历输入：农历	double_pinyin_abc	N19700101{space}	一九六九年冬月廿四
+插件：农历输入：干支	double_pinyin_abc	N19700101{2}	己酉年（鸡）冬月廿四
+插件：以词定字：左中括号取首字	double_pinyin_abc	nihk{bracketleft}	你
+插件：以词定字：右中括号取尾字	double_pinyin_abc	nihk{bracketright}	好
+插件：部件辅码	double_pinyin_abc	ni`ren{space}	你
+插件：错字错音提示	double_pinyin_abc	qikefu{Control+Shift+Return}	契诃(hē)夫
+
+# ------------------
+# 方案：微软双拼
+# ------ 基础 ------
+基础：中文输入	double_pinyin_mspy	wusspnyn{space}	雾凇拼音
+基础：英文输入	double_pinyin_mspy	hello{space}	hello
+基础：英文派生	double_pinyin_mspy	PtwoP{space}	P2P
+基础：中英混输	double_pinyin_mspy	Xgd{space}	X光
+# 基础：自定义短语	double_pinyin_mspy	ig{space}	一个
+基础：Emoji输入	double_pinyin_mspy	nihk{2}	👋
+基础：uU拆字反查	double_pinyin_mspy	uUrenrenren{space}	众
+基础：v键符号输入	double_pinyin_mspy	V1{space}	一
+
+# ------ 插件 ------
+插件：英文全大写	double_pinyin_mspy	HELLO{space}	HELLO
+插件：英文首字母大写	double_pinyin_mspy	Hello{space}	Hello
+插件：置顶候选	double_pinyin_mspy	d{space}	的
+插件：Unicode输入	double_pinyin_mspy	U4f60{space}	你
+插件：日期输入	double_pinyin_mspy	date{space}	@today:%Y-%m-%d
+插件：UUID输入	double_pinyin_mspy	uuid{space}	@regex:^commit: [0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$
+插件：英文降权	double_pinyin_mspy	bail{space}	把拆
+插件：英文降权	double_pinyin_mspy	bail{2}	bail
+插件：数字输入	double_pinyin_mspy	R123{space}	一百二十三
+插件：计算器	double_pinyin_mspy	cC1+2{space}	3
+插件：农历输入：农历	double_pinyin_mspy	N19700101{space}	一九六九年冬月廿四
+插件：农历输入：干支	double_pinyin_mspy	N19700101{2}	己酉年（鸡）冬月廿四
+插件：以词定字：左中括号取首字	double_pinyin_mspy	nihk{bracketleft}	你
+插件：以词定字：右中括号取尾字	double_pinyin_mspy	nihk{bracketright}	好
+插件：部件辅码	double_pinyin_mspy	ni`ren{space}	你
+插件：错字错音提示	double_pinyin_mspy	qikefu{Control+Shift+Return}	契诃(hē)夫
+
+# ------------------
+# 方案：搜狗双拼
+# ------ 基础 ------
+基础：中文输入	double_pinyin_sogou	wusspnyn{space}	雾凇拼音
+基础：英文输入	double_pinyin_sogou	hello{space}	hello
+基础：英文派生	double_pinyin_sogou	PtwoP{space}	P2P
+基础：中英混输	double_pinyin_sogou	Xgd{space}	X光
+# 基础：自定义短语	double_pinyin_sogou	ig{space}	一个
+基础：Emoji输入	double_pinyin_sogou	nihk{2}	👋
+基础：uU拆字反查	double_pinyin_sogou	uUrenrenren{space}	众
+基础：v键符号输入	double_pinyin_sogou	V1{space}	一
+
+# ------ 插件 ------
+插件：英文全大写	double_pinyin_sogou	HELLO{space}	HELLO
+插件：英文首字母大写	double_pinyin_sogou	Hello{space}	Hello
+插件：置顶候选	double_pinyin_sogou	d{space}	的
+插件：Unicode输入	double_pinyin_sogou	U4f60{space}	你
+插件：日期输入	double_pinyin_sogou	date{space}	@today:%Y-%m-%d
+插件：UUID输入	double_pinyin_sogou	uuid{space}	@regex:^commit: [0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$
+插件：英文降权	double_pinyin_sogou	bail{space}	把拆
+插件：英文降权	double_pinyin_sogou	bail{2}	bail
+插件：数字输入	double_pinyin_sogou	R123{space}	一百二十三
+插件：计算器	double_pinyin_sogou	cC1+2{space}	3
+插件：农历输入：农历	double_pinyin_sogou	N19700101{space}	一九六九年冬月廿四
+插件：农历输入：干支	double_pinyin_sogou	N19700101{2}	己酉年（鸡）冬月廿四
+插件：以词定字：左中括号取首字	double_pinyin_sogou	nihk{bracketleft}	你
+插件：以词定字：右中括号取尾字	double_pinyin_sogou	nihk{bracketright}	好
+插件：部件辅码	double_pinyin_sogou	ni`ren{space}	你
+插件：错字错音提示	double_pinyin_sogou	qikefu{Control+Shift+Return}	契诃(hē)夫
+
+# ------------------
+# 方案：紫光双拼
+# ------ 基础 ------
+基础：中文输入	double_pinyin_ziguang	wushpyyy{space}	雾凇拼音
+基础：英文输入	double_pinyin_ziguang	hello{space}	hello
+基础：英文派生	double_pinyin_ziguang	PtwoP{space}	P2P
+基础：中英混输	double_pinyin_ziguang	Xgg{space}	X光
+# 基础：自定义短语	double_pinyin_ziguang	ig{space}	一个
+基础：Emoji输入	double_pinyin_ziguang	nihq{2}	👋
+基础：uU拆字反查	double_pinyin_ziguang	uUrenrenren{space}	众
+基础：v键符号输入	double_pinyin_ziguang	V1{space}	一
+
+# ------ 插件 ------
+插件：英文全大写	double_pinyin_ziguang	HELLO{space}	HELLO
+插件：英文首字母大写	double_pinyin_ziguang	Hello{space}	Hello
+插件：置顶候选	double_pinyin_ziguang	d{space}	的
+插件：Unicode输入	double_pinyin_ziguang	U4f60{space}	你
+插件：日期输入	double_pinyin_ziguang	date{space}	@today:%Y-%m-%d
+插件：UUID输入	double_pinyin_ziguang	uuid{space}	@regex:^commit: [0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$
+插件：英文降权	double_pinyin_ziguang	bail{space}	把栓
+插件：英文降权	double_pinyin_ziguang	bail{2}	bail
+插件：数字输入	double_pinyin_ziguang	R123{space}	一百二十三
+插件：计算器	double_pinyin_ziguang	cC1+2{space}	3
+插件：农历输入：农历	double_pinyin_ziguang	N19700101{space}	一九六九年冬月廿四
+插件：农历输入：干支	double_pinyin_ziguang	N19700101{2}	己酉年（鸡）冬月廿四
+插件：以词定字：左中括号取首字	double_pinyin_ziguang	nihq{bracketleft}	你
+插件：以词定字：右中括号取尾字	double_pinyin_ziguang	nihq{bracketright}	好
+插件：部件辅码	double_pinyin_ziguang	ni`ren{space}	你
+插件：错字错音提示	double_pinyin_ziguang	qikefu{Control+Shift+Return}	契诃(hē)夫
+
+# ------------------
+# 方案：拼音加加双拼
+# ------ 基础 ------
+基础：中文输入	double_pinyin_jiajia	wusyplyl{space}	雾凇拼音
+基础：英文输入	double_pinyin_jiajia	hello{space}	hello
+基础：英文派生	double_pinyin_jiajia	PtwoP{space}	P2P
+基础：中英混输	double_pinyin_jiajia	Xgh{space}	X光
+# 基础：自定义短语	double_pinyin_jiajia	ig{space}	一个
+基础：Emoji输入	double_pinyin_jiajia	nihd{2}	👋
+基础：uU拆字反查	double_pinyin_jiajia	uUrenrenren{space}	众
+基础：v键符号输入	double_pinyin_jiajia	V1{space}	一
+
+# ------ 插件 ------
+插件：英文全大写	double_pinyin_jiajia	HELLO{space}	HELLO
+插件：英文首字母大写	double_pinyin_jiajia	Hello{space}	Hello
+插件：置顶候选	double_pinyin_jiajia	d{space}	的
+插件：Unicode输入	double_pinyin_jiajia	U4f60{space}	你
+插件：日期输入	double_pinyin_jiajia	date{space}	@today:%Y-%m-%d
+插件：UUID输入	double_pinyin_jiajia	uuid{space}	@regex:^commit: [0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$
+# 插件：英文降权	double_pinyin_jiajia	bail{space}	不确定
+# 插件：英文降权	double_pinyin_jiajia	bail{2}	不确定
+插件：数字输入	double_pinyin_jiajia	R123{space}	一百二十三
+插件：计算器	double_pinyin_jiajia	cC1+2{space}	3
+插件：农历输入：农历	double_pinyin_jiajia	N19700101{space}	一九六九年冬月廿四
+插件：农历输入：干支	double_pinyin_jiajia	N19700101{2}	己酉年（鸡）冬月廿四
+插件：以词定字：左中括号取首字	double_pinyin_jiajia	nihd{bracketleft}	你
+插件：以词定字：右中括号取尾字	double_pinyin_jiajia	nihd{bracketright}	好
+插件：部件辅码	double_pinyin_jiajia	ni`ren{space}	你
+插件：错字错音提示	double_pinyin_jiajia	qikefu{Control+Shift+Return}	契诃(hē)夫
+
+# ------------------
+# 方案：小鹤双拼
+# ------ 基础 ------
+基础：中文输入	double_pinyin_flypy	wusspbyb{space}	雾凇拼音
+基础：英文输入	double_pinyin_flypy	hello{space}	hello
+基础：英文派生	double_pinyin_flypy	PtwoP{space}	P2P
+基础：中英混输	double_pinyin_flypy	Xgl{space}	X光
+# 基础：自定义短语	double_pinyin_flypy	ig{space}	一个
+基础：Emoji输入	double_pinyin_flypy	nihc{2}	👋
+基础：uU拆字反查	double_pinyin_flypy	uUrenrenren{space}	众
+基础：v键符号输入	double_pinyin_flypy	V1{space}	一
+
+# ------ 插件 ------
+# case_id    schema_id	key_sequence	expected_text
+插件：英文全大写	double_pinyin_flypy	HELLO{space}	HELLO
+插件：英文首字母大写	double_pinyin_flypy	Hello{space}	Hello
+插件：置顶候选	double_pinyin_flypy	d{space}	的
+插件：Unicode输入	double_pinyin_flypy	U4f60{space}	你
+插件：日期输入	double_pinyin_flypy	date{space}	@today:%Y-%m-%d
+插件：UUID输入	double_pinyin_flypy	uuid{space}	@regex:^commit: [0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$
+插件：英文降权	double_pinyin_flypy	bail{space}	把床
+插件：英文降权	double_pinyin_flypy	bail{2}	bail
+插件：数字输入	double_pinyin_flypy	R123{space}	一百二十三
+插件：计算器	double_pinyin_flypy	cC1+2{space}	3
+插件：农历输入：农历	double_pinyin_flypy	N19700101{space}	一九六九年冬月廿四
+插件：农历输入：干支	double_pinyin_flypy	N19700101{2}	己酉年（鸡）冬月廿四
+插件：以词定字：左中括号取首字	double_pinyin_flypy	nihc{bracketleft}	你
+插件：以词定字：右中括号取尾字	double_pinyin_flypy	nihc{bracketright}	好
+插件：部件辅码	double_pinyin_flypy	ni`ren{space}	你
+插件：错字错音提示	double_pinyin_flypy	qikefu{Control+Shift+Return}	契诃(hē)夫
