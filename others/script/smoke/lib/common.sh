@@ -238,7 +238,7 @@ resolve_expected_text() {
 assert_no_error_lines() {
   local file_path="$1"
   local match_path="${file_path}.errors"
-  if grep -En '(^E[0-9]{4}[[:space:]])|(^F[0-9]{4}[[:space:]])|(^ERROR[:[:space:]])|(^Error([^[:alpha:]]|$))' "${file_path}" >"${match_path}"; then
+  if grep -Ein '(^E[0-9]+[[:space:]])|(^ERROR[:[:space:]])|(^Error([^[:alpha:]]|$))|(^error([^[:alpha:]]|$))|(^fatal([^[:alpha:]]|$))|([^[:alpha:]]error:)' "${file_path}" >"${match_path}"; then
     cat "${match_path}" >&2
     fail "unexpected error output detected in ${file_path}"
   fi
@@ -248,7 +248,7 @@ assert_no_error_lines() {
 collect_warning_lines() {
   local file_path="$1"
   local output_path="$2"
-  grep -En '(^W[0-9]{4}[[:space:]])|(^WARNING[:[:space:]])|([Ww]arning)' "${file_path}" >"${output_path}" || true
+  grep -En '(^W[0-9]+[[:space:]])|(^WARNING[:[:space:]])|([Ww]arning)' "${file_path}" >"${output_path}" || true
 }
 
 run_deployer() {

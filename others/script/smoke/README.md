@@ -15,6 +15,7 @@ This directory contains the shell-based smoke test framework for the current rep
 - otherwise downloads the public Linux CLI bundle when `RIME_CLI_URL` is set
 - deploys the current repository with `rime_deployer --build`
 - runs `rime_api_console`
+- fails on error-level stderr lines, including Rime logs such as `E20260329 ...`
 - verifies basic pinyin commit and a stable Lua-driven Unicode commit
 
 ## Environment Variables
