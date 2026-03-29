@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-03-08"
+version: "2026-03-28"
 sort: by_weight
 ...
 # +_+
@@ -543,6 +543,8 @@ Alberta	Alberta
 Alberto	Alberto
 Albion	Albion
 album	album
+albumen	albumen
+albumin	albumin
 albums	albums
 Albuquerque	Albuquerque
 # Alcatel	Alcatel
@@ -1070,6 +1072,7 @@ arbitrary	arbitrary
 arbitration	arbitration
 arbor	arbor
 arboreal	arboreal
+arboretum	arboretum
 arbour	arbour
 arc	arc
 arcade	arcade
@@ -1136,6 +1139,7 @@ Arkansas	Arkansas
 Arlington	Arlington
 arm	arm
 armada	armada
+armadillo	armadillo
 Armani	Armani
 armed	armed
 Armenia	Armenia
@@ -1766,6 +1770,7 @@ baskets	baskets
 basque	basque
 bass	bass
 bastard	bastard
+baste	baste
 bastion	bastion
 bat	bat
 batch	batch
@@ -2155,6 +2160,7 @@ blankets	blankets
 blanks	blanks
 blast	blast
 blaster	blaster
+blastodisc	blastodisc
 blaze	blaze
 blazer	blazer
 # bldg	bldg
@@ -2385,6 +2391,7 @@ bounds	bounds
 bounty	bounty
 bouquet	bouquet
 bouquets	bouquets
+bourbon	bourbon
 bourgeois	bourgeois
 Bournemouth	Bournemouth
 bout	bout
@@ -2717,6 +2724,7 @@ burning	burning
 burns	burns
 burnt	burnt
 burr	burr
+burrow	burrow
 burst	burst
 Burt	Burt
 burton	burton
@@ -2996,6 +3004,9 @@ Carmel	Carmel
 Carmen	Carmen
 Carnegie	Carnegie
 carnival	carnival
+carnivore	carnivore
+carnivores	carnivores
+carnivorous	carnivorous
 carol	carol
 Carol	Carol
 Carole	Carole
@@ -3247,6 +3258,7 @@ chaired	chaired
 chairman	chairman
 chairperson	chairperson
 chairs	chairs
+chalaza	chalaza
 chalet	chalet
 chalk	chalk
 challenge	challenge
@@ -3837,6 +3849,7 @@ Coleman	Coleman
 coli	coli
 colic	colic
 colin	colin
+coliseum	coliseum
 coll	coll
 collaborate	collaborate
 collaboration	collaboration
@@ -3892,6 +3905,7 @@ colored	colored
 colorful	colorful
 coloring	coloring
 colors	colors
+colosseum	colosseum
 colour	colour
 coloured	coloured
 colours	colours
@@ -4122,8 +4136,11 @@ Conan	Conan
 conceal	conceal
 concealed	concealed
 concede	concede
+conceivable	conceivable
 conceive	conceive
 conceived	conceived
+conceives	conceives
+conceiving	conceiving
 concentrate	concentrate
 concentrated	concentrated
 concentrating	concentrating
@@ -5705,6 +5722,7 @@ dine	dine
 diner	diner
 diners	diners
 ding	ding
+dingo	dingo
 dining	dining
 dinner	dinner
 dinners	dinners
@@ -6184,6 +6202,7 @@ drought	drought
 drove	drove
 drown	drown
 drowning	drowning
+drudge	drudge
 drug	drug
 drugs	drugs
 drum	drum
@@ -6366,6 +6385,7 @@ ecard	ecard
 eCards	eCards
 # ecc	ecc
 eccentric	eccentric
+echidna	echidna
 echo	echo
 echoes	echoes
 eclectic	eclectic
@@ -6654,6 +6674,10 @@ enactment	enactment
 enamel	enamel
 # enb	enb
 Encarta	Encarta
+encase	encase
+encased	encased
+encases	encases
+encasing	encasing
 enchant	enchant
 enchanted	enchanted
 enclose	enclose
@@ -7744,6 +7768,9 @@ flat	flat
 flatbed	flatbed
 flats	flats
 flatten	flatten
+flattened	flattened
+flattening	flattening
+flattens	flattens
 flatter	flatter
 flavor	flavor
 flavored	flavored
@@ -8822,6 +8849,7 @@ grown	grown
 grown-up	grown-up
 grows	grows
 growth	growth
+grub	grub
 grumble	grumble
 grunt	grunt
 # gs	gs
@@ -12216,6 +12244,7 @@ Mars	Mars
 marsh	marsh
 marshal	marshal
 Marshall	Marshall
+marsupial	marsupial
 mart	mart
 Martha	Martha
 martial	martial
@@ -13318,6 +13347,7 @@ Nebraska	Nebraska
 necessarily	necessarily
 necessary	necessary
 necessitate	necessitate
+necessities	necessities
 necessity	necessity
 neck	neck
 necklace	necklace
@@ -13529,6 +13559,7 @@ Noah	Noah
 Nobel	Nobel
 noble	noble
 nobody	nobody
+nocturnal	nocturnal
 nod	nod
 nodded	nodded
 node	node
@@ -14231,6 +14262,7 @@ overwhelmed	overwhelmed
 overwhelming	overwhelming
 ovule	ovule
 ovules	ovules
+ovum	ovum
 # ow	ow
 owe	owe
 owed	owed
@@ -14782,6 +14814,7 @@ Pfizer	Pfizer
 # pga	pga
 # pgp	pgp
 pH	pH
+phalanger	phalanger
 phantom	phantom
 # phantomnode	phantomnode
 # pharma	pharma
@@ -15036,6 +15069,7 @@ platform	platform
 platforms	platforms
 platinum	platinum
 Plato	Plato
+platypus	platypus
 plausible	plausible
 play	play
 playa	playa
@@ -15275,6 +15309,7 @@ possibilities	possibilities
 possibility	possibility
 possible	possible
 possibly	possibly
+possum	possum
 post	post
 post-training	post-training
 postage	postage
@@ -16743,6 +16778,9 @@ reseller	reseller
 resellers	resellers
 resemblance	resemblance
 resemble	resemble
+resembled	resembled
+resembles	resembles
+resembling	resembling
 resent	resent
 reservation	reservation
 reservations	reservations
@@ -17223,6 +17261,7 @@ RSS	RSS
 # rts	rts
 # ru	ru
 rub	rub
+rubato	rubato
 rubber	rubber
 rubbing	rubbing
 rubbish	rubbish
@@ -18150,6 +18189,7 @@ shrank	shrank
 shred	shred
 Shrek	Shrek
 Shreveport	Shreveport
+shrew	shrew
 shrewd	shrewd
 shrimp	shrimp
 shrine	shrine
@@ -18411,6 +18451,7 @@ slit	slit
 Sloan	Sloan
 slobber	slobber
 slogan	slogan
+slop	slop
 slope	slope
 slopes	slopes
 slot	slot
@@ -18504,6 +18545,7 @@ SNMP	SNMP
 snooker	snooker
 snoop	snoop
 snorkeling	snorkeling
+snout	snout
 snow	snow
 snowboard	snowboard
 snowboarding	snowboarding
@@ -18801,7 +18843,9 @@ spinach	spinach
 spinal	spinal
 spindle	spindle
 spine	spine
+spines	spines
 spinning	spinning
+spiny	spiny
 spiral	spiral
 spires	spires
 spirit	spirit
@@ -19121,6 +19165,7 @@ stocking	stocking
 stockings	stockings
 stocks	stocks
 Stockton	Stockton
+stocky	stocky
 stoke	stoke
 stokes	stokes
 stole	stole
@@ -19329,6 +19374,11 @@ subsidiary	subsidiary
 subsidies	subsidies
 subsiding	subsiding
 subsidy	subsidy
+subsist	subsist
+subsisted	subsisted
+subsisting	subsisting
+subsists	subsists
+subspecies	subspecies
 substance	substance
 substances	substances
 substantial	substantial
@@ -19429,6 +19479,7 @@ summon	summon
 sums	sums
 sun	sun
 Sun.	Sun.
+sundae	sundae
 Sundance	Sundance
 Sunday	Sunday
 Sundays	Sundays
@@ -20352,6 +20403,7 @@ toes	toes
 together	together
 toggle	toggle
 Togo	Togo
+toil	toil
 toilet	toilet
 toilets	toilets
 toilette	toilette
@@ -20398,6 +20450,7 @@ tools	tools
 toon	toon
 toons	toons
 tooth	tooth
+toothless	toothless
 toothsome	toothsome
 top	top
 topaz	topaz
@@ -21393,6 +21446,7 @@ veritas	veritas
 verizon	verizon
 # verlag	verlag
 Vermont	Vermont
+vernacular	vernacular
 vernon	vernon
 Verona	Verona
 veronica	veronica
@@ -21563,6 +21617,7 @@ vitality	vitality
 vitamin	vitamin
 vitamins	vitamins
 vite	vite
+vitelline	vitelline
 # vitro	vitro
 viva	viva
 Vivian	Vivian
@@ -21844,6 +21899,7 @@ weaver	weaver
 weaving	weaving
 web	web
 Webb	Webb
+webbed	webbed
 webcam	webcam
 webcams	webcams
 webcast	webcast
