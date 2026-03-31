@@ -6,11 +6,12 @@ local F = {}
 function F.func( input, env )
     local latest_text = env.engine.context.commit_history:latest_text()
     for cand in input:iter() do
-        if cand.text:match( '^[%a\']+[%a\']*$' ) and latest_text and #latest_text > 0 and
+        local c = cand
+        if c.text:match( '^[%a\']+[%a\']*$' ) and latest_text and #latest_text > 0 and
             latest_text:find( '^ ?[%a\']+[%a\']*$' ) then
-            cand = cand:to_shadow_candidate( 'en_spacer', cand.text:gsub( '(%a+\'?%a*)', ' %1' ), cand.comment )
+            c = c:to_shadow_candidate( 'en_spacer', c.text:gsub( '(%a+\'?%a*)', ' %1' ), c.comment )
         end
-        yield( cand )
+        yield( c )
     end
 end
 
