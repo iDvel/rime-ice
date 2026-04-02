@@ -27,7 +27,7 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: 8105
-version: "2026-03-08"
+version: "2026-03-28"
 sort: by_weight
 ...
 ### 按需启用
@@ -44,6 +44,7 @@ sort: by_weight
 𰻝	biang	1
 蟌	cong	1
 鿕	dan	1
+氹	dang	1
 㨃	dui	1
 诶	ei	1
 奀	en	1
@@ -55,12 +56,15 @@ sort: by_weight
 睆	huan	1
 檵	ji	1
 朘	juan	1
+罥	juan	1
 佧	ka	1
 堀	ku	1
 菈	la	1
 𫟷	li	1
+脢	mei	1
 濛	meng	1
 蒾	mi	1
+麿	mo	1
 霂	mu	1
 鿭	ni	1
 嬢	niang	1
