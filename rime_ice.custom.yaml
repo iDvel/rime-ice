@@ -1,0 +1,24 @@
+patch:
+  # ==================== 全局默认英文模式 ====================
+  # 把 ascii_mode 开关的初始状态设为 1（英文）
+  # 0 = 中文，1 = 英文（这是最常用且稳定的全局默认英文方式）
+  "switches/@0/reset": 1
+  # ==================== 可选增强设置（推荐一起加）===================
+  # 中英切换快捷键优化（你可以根据习惯改）
+  ascii_composer/switch_key:
+    Caps_Lock: clear # Caps Lock 清空并切换
+    Shift_L: commit_code # 左 Shift 上屏当前编码（适合快速打英文）
+    Shift_R: inline_ascii # 右 Shift 临时英文
+  # 如果你希望在某些常用程序里强制默认英文，可以在这里加（示例）
+  # app_options:
+  #   Code.exe:               # VS Code
+  #     ascii_mode: true
+  #   WindowsTerminal.exe:    # 终端
+  #     ascii_mode: true
+  #   powershell.exe:
+  #     ascii_mode: true
+  #   explorer.exe:           # 资源管理器
+  #     ascii_mode: true
+
+  # 候选词数量（可选，改成你喜欢的数字）
+  menu/page_size: 6
