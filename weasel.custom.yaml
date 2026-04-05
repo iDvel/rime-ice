@@ -1,0 +1,16 @@
+patch:
+  style/color_scheme: sogou_style
+  preset_color_schemes/sogou_style:
+    name: "搜狗风格"
+    author: custom
+    text_color: 0x000000
+    back_color: 0xffffff
+    border_color: 0xcccccc
+    label_color: 0x888888
+    comment_text_color: 0x888888
+    candidate_text_color: 0x000000
+    hilited_text_color: 0x000000
+    hilited_back_color: 0xffffff
+    hilited_candidate_text_color: 0xffffff
+    hilited_candidate_back_color: 0xe06000
+    hilited_candidate_border_color: 0xe06000
