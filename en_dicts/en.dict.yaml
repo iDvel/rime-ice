@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-03-28"
+version: "2026-04-01"
 sort: by_weight
 ...
 # +_+
@@ -9585,6 +9585,10 @@ housework	housework
 housing	housing
 Houston	Houston
 hover	hover
+hovered	hovered
+hoverfly	hoverfly
+hovering	hovering
+hovers	hovers
 how	how
 how-to	how-to
 Howard	Howard
@@ -11263,6 +11267,7 @@ Larry	Larry
 Lars	Lars
 Larsen	Larsen
 Larson	Larson
+larva	larva
 larvae	larvae
 # las	las
 Las Vegas	LasVegas
@@ -11538,6 +11543,7 @@ library	library
 Libya	Libya
 Libyan	Libyan
 # lic	lic
+lice	lice
 licence	licence
 licences	licences
 license	license
@@ -11864,6 +11870,7 @@ Louise	Louise
 Louisiana	Louisiana
 Louisville	Louisville
 lounge	lounge
+louse	louse
 love	love
 loved	loved
 lovely	lovely
@@ -12468,6 +12475,7 @@ melancholy	melancholy
 Melanie	Melanie
 melanoma	melanoma
 Melbourne	Melbourne
+melee	melee
 Melinda	Melinda
 Melissa	Melissa
 Mellon	Mellon
@@ -16981,7 +16989,7 @@ rheumatoid	rheumatoid
 rhino	rhino
 rhinoceros	rhinoceros
 rhizome	rhizome
-rhode	rhode
+Rhode	Rhode
 Rhodes	Rhodes
 rhodium	rhodium
 rhyme	rhyme
@@ -18860,6 +18868,7 @@ spittle	spittle
 splash	splash
 splatter	splatter
 splendid	splendid
+splint	splint
 splinter	splinter
 split	split
 splits	splits
@@ -20090,7 +20099,7 @@ tests	tests
 Tetris	Tetris
 tex	tex
 Texans	Texans
-texas	texas
+Texas	Texas
 text	text
 textbook	textbook
 textbooks	textbooks
