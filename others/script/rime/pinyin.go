@@ -236,6 +236,7 @@ var onlyOne = map[string]string{
 	"凹":   "ao",
 	"给":   "gei",
 	"栖":   "qi",
+	"契":   "qi",
 	"窨":   "yin",
 	"谷":   "gu",
 }
