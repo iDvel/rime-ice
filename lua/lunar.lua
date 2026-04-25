@@ -6,7 +6,7 @@
 -- ================================
 -- 安装：
 -- lunar.lua --> lua/lunar.lua
--- lunar.db.lua --> lua/lunar.db.lua
+-- lunar.db --> lua/lunar.db
 -- 配置：
 -- ```yaml
 -- engine/translator:
