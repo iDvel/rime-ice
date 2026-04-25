@@ -10,7 +10,7 @@ run_config_repo_suite() {
   local cli_paths_file="${work_root}/cli-paths.txt"
   local deployer_path
   local api_console_path
-  local user_data_dir="${work_root}/user-data"
+  local user_data_dir="${SMOKE_REPO_ROOT}"
   local deploy_stdout="${log_root}/deploy.stdout.log"
   local deploy_stderr="${log_root}/deploy.stderr.log"
   local deploy_combined="${log_root}/deploy.combined.log"

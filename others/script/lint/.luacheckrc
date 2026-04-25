@@ -24,6 +24,7 @@ globals = {
   "yield",
   "log",
   "rime_api",
+  "ReverseDb"
 }
 
 ignore = {

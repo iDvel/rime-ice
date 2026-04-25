@@ -41,7 +41,7 @@ function lunar_translator.init( env )
     if ns == '' then ns = 'lunar' end
     local config = env.engine.schema.config
 
-    env.db = ReverseDb( 'lua/lunar.db.lua' )
+    env.db = ReverseDb( 'lua/lunar.db' )
     env.lunar_call_prefix = config:get_string( ns ) or 'lunar'
     env.seg_tag = 'gregorian_to_lunar'
 
@@ -58,7 +58,7 @@ end
 
 function lunar_translator.func( input, seg, env )
     local date
-    if input == env.lunar_call_prefix then date = os.date( '%Y%m%d' ) 
+    if input == env.lunar_call_prefix then date = os.date( '%Y%m%d' )
     elseif seg:has_tag( env.seg_tag ) then
         date = input:match( '%d+' )
         if date and #date < 8 then
