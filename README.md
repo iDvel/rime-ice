@@ -352,7 +352,6 @@ bash others/fcitx4/install_to_fcitx4.sh --legacy-no-lua
 - [长词优先插件](https://github.com/tumuyan/rime-melt/blob/master/lua/melt.lua)（@tumuyan | [Apache 2.0](https://github.com/tumuyan/rime-melt/blob/master/LICENSE)）
 - [Unicode 插件](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)（@shewer | [MIT](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)）
 - [数字、人民币大写插件](https://github.com/yanhuacuo/98wubi/blob/master/lua/number.lua)（@98wubi）
-- [农历插件](https://github.com/boomker/rime-fast-xhup)（@boomker | [LGPL 3.0](https://github.com/boomker/rime-fast-xhup/blob/master/LICENSE)）
 - 未能在此处详述的、在本库源码注释中提及的项目及作者给予的帮助和参考
 
 感谢 [校对标准论坛](http://www.jiaodui.org/bbs/) 的存在。
