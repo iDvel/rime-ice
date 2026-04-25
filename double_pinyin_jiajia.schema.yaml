@@ -105,8 +105,11 @@ date_translator:
   dateen: dateen        # 英文日期： 英式 8 March 2026 | 美式 March 8, 2026
 
 
-# Lua 配置：农历的触发关键字
-lunar: lunar  # 农历： 二〇二三年冬月二十 癸卯年（兔）冬月二十
+# Lua 配置：农历
+# 农历触发关键字
+# template 字段：{干支年} {农历月} {农历日} {星期} {生肖} {俗称农历月} {简记农历日}
+lunar: lunar
+lunar_template: "{干支年}{生肖}年{俗称农历月}{农历日}"
 
 
 # Lua 配置: 生成 UUID 的触发关键字
