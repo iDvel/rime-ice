@@ -1,380 +1,394 @@
 # 雾凇拼音
 
-[![License: GPL 3.0](https://img.shields.io/badge/License-GPL--3.0--only-34ad9b)](https://www.gnu.org/licenses/gpl-3.0.txt)
-[![GitHub Release](https://img.shields.io/github/v/release/iDvel/rime-ice?filter=!nightly)](https://github.com/iDvel/rime-ice/releases/)
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/iDvel/rime-ice/release.yml)](https://github.com/iDvel/rime-ice/actions/workflows/release.yml)
-![GitHub Repo stars](https://img.shields.io/github/stars/iDvel/rime-ice)
+![demo](./others/asserts/overview.png)
+
+**雾凇拼音**是一份开箱即用的简体中文 Rime 输入法配置，词库长期维护，基本功能齐全，使用完全离线，质量稳定可靠。
+
+雾凇拼音包含全拼和双拼输入方案、长期维护的精校词库、各类扩展功能和详尽的注释。适配小狼毫 Weasel、鼠须管 Squirrel、Fcitx5、iBus 等几乎所有 Rime 前端。你可以不折腾，一键下载部署后即刻使用；可以借着完善的注释和社区生态，让 AI 帮你定制改造；也可以将之作为深入了解和自定义 Rime 的起点。
+
+使用雾凇拼音，享受跨平台一致、隐私友好、个性化门槛低的 Rime 简体中文输入体验。
+
+[立即下载安装](#安装) | [功能演示和教程](#功能演示和使用教程) | [常见问题](#常见问题) | [词库共建](https://github.com/iDvel/rime-ice/issues/666) | [更新日志](./others/docs/Changelog.md) | [详细介绍](https://dvel.me/posts/rime-ice/) ↗ | [在线体验](https://www.mintimate.cc/zh/demo/fcitx5Online.html)[^1] ↗
 
 
-![demo](./others/demo.webp)
+## 安装
 
-功能齐全，词库体验良好，长期更新修订。
+到 Rime [官网](https://rime.im/) 或 app 商店下载安装 Rime 输入法应用。然后：
 
-<br>
+1. 下载 [雾凇拼音](https://github.com/iDvel/rime-ice/releases/latest/download/full.zip)；
+2. 解压，复制并覆盖所有文件到输入法的「用户目录」；
+3. 重新部署。
 
-[Rime Input Method Engine / 中州韵输入法引擎](https://rime.im/) 是一个跨平台的输入法算法框架。
+部署完成后就可以打字了。按 <kbd>F4</kbd> 可以切换输入方案或开关各项功能。重做以上三步可以更新/还原雾凇拼音。
 
-基于这一框架，Rime 开发者与其他开源社区的参与者在多个平台上创造了不同的输入法前端实现。
+也可以使用 [/plum/](https://github.com/rime/plum) ℞ 配方管理工具，一行命令就能安装和更新雾凇拼音：
 
-这里是 Rime 的一份配置仓库，用户需要下载 [各平台对应的前端](https://github.com/rime/librime/#frontends)，并将此配置应用到配置目录。
+```bash
+bash rime-install iDvel/rime-ice
+```
 
-雾凇拼音提供了一套开箱即用的完整配置，包含输入方案（全拼、常见双拼）、长期维护的开源词库及各项扩展功能。
+了解更多细节以及其他支持的安装方式，参考 [详细安装指导](./others/docs/Installation.md)。
 
-[详细介绍](https://dvel.me/posts/rime-ice/)  |  [常见问题](https://github.com/iDvel/rime-ice/issues/133)  |  [更新日志](./others/CHANGELOG.md)
+## 介绍
 
-[在线体验](https://www.mintimate.cc/zh/demo/fcitx5Online.html)（由 [fcitx5-rime.js](https://github.com/rimeinn/fcitx5-rime.js) 支持，感谢 [@Mintimate](https://github.com/Mintimate) 友情构建）
+雾凇拼音包含：
 
-<br>
+1. 为简体中文设计的全拼和常见双拼方案，包括雾凇拼音（全拼）、智能 ABC、自然码、小鹤双拼、搜狗双拼、微软双拼、紫光双拼、拼音加加、9 键[^2] 和轻量的英文方案。
+2. 长期维护、精心调教且开源的百万中英词库：[了解 >](#长期维护的中英词库)
+3. 完善的基础输入体验，以及丰富的扩展功能：[了解 >](#功能演示和使用教程)
+4. 对 Rime 部分及主流前端每一项配置的详细注释，方便学习和自定义：[示例 >](./default.yaml)
 
-## 基本套路
-
-- 简体 | 全拼 | 双拼
-- 主要功能
-    -   轻量的英文输入，支持中英混输
-    -   [优化英文输入体验](https://dvel.me/posts/make-rime-en-better/)
-    -   拆字反查（<kbd>uU</kbd>+拼音），拆字辅码（拼音+<kbd>`</kbd>+拆字辅码）
-    -   自整理的 Emoji
-    -   以词定字（左右中括号：<kbd>[</kbd>、<kbd>]</kbd>）
-    -   长词优先
-    -   Unicode（<kbd>U</kbd>+Unicode 码位）
-    -   数字、人民币大写（<kbd>R</kbd>+数字）
-    -   日期、时间、星期（详见方案 `/date_translator` 节点）
-    -   农历（转写：<kbd>N</kbd>+八位数字；获取当前农历：全拼<kbd>nl</kbd>，双拼<kbd>lunar</kbd>）
-    -   简易计算器（<kbd>cC</kbd>+算式）
-    -   UUID（<kbd>uuid</kbd>）
-    -   常见错音错字提示
-    -   置顶候选项（详见方案 `/pin_cand_filter` 节点）
-    -   所有标点符号直接上屏
-    -   特殊符号、字符输入（全拼<kbd>v</kbd>+首字母缩写；双拼<kbd>V</kbd>+首字母缩写）
-    -   拼音纠错（模糊音）
-    -   更多默认未启用的功能请参考 `lua/` 及方案注释
-- 简体字表、词库
-    -   [通用规范汉字表](https://github.com/iDvel/The-Table-of-General-Standard-Chinese-Characters)（by 中华人民共和国教育部）8K 常用汉字
-    -   [Unihan 字库](https://www.unicode.org/Public/)（by Unicode lnc | [UNICODE LICENSE V3](https://www.unicode.org/license.txt)）40K 大字库， **默认未启用**
-    -   [现代汉语常用词表](https://zh.wikipedia.org/wiki/%E7%8E%B0%E4%BB%A3%E6%B1%89%E8%AF%AD%E5%B8%B8%E7%94%A8%E8%AF%8D%E8%A1%A8)（by 中国国家语言文字工作委员会）
-    -   [华宇野风词库](http://bbs.pinyin.thunisoft.com/forum.php?mod=viewthread&tid=30049)（by 野风）
-    -   [简化字八股文](https://github.com/rime/rime-essay-simp)（by rime | [LGPL](https://github.com/rime/rime-essay-simp/blob/master/LICENSE)）
-    -   [清华大学开源词库](https://github.com/thunlp/THUOCL)（by THUNLP | [MIT](https://github.com/thunlp/THUOCL/blob/master/LICENSE)）
-    -   [腾讯词向量](https://ai.tencent.com/ailab/nlp/en/download.html)（@Huandeep [整理](https://github.com/iDvel/rime-ice/issues/24) | by Tencent AI Lab | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)）
-- 词库修订
-    - 校对大量异形词、错别字、错误注音
-    - 全词库完成注音
-    - 同义多音字注音
-    - 参考
-      -   《现代汉语词典》
-      -   《同义词词林》
-      -   《新华成语大词典》
-      -   [校对标准论坛](http://www.jiaodui.org/bbs/)
-- Rime、Squirrel、Weasel 常用配置项的详尽注释
-
-<br>
-
-## 长期维护词库
+### 长期维护的中英词库
 
 因为没有找到一份比较好的词库，干脆自己维护一个。综合了几个不错的词库，精心调教了很多。
 
 词库简介：
 
 - 字表：
-
-    - `8105` 常用字表，《通用规范汉字表》+基本的扩充。
-
-    - `41448` Unihan 大字表，默认未启用。
-
-
+  - `8105` 常用字表，《通用规范汉字表》+基本的扩充。
+  - `41448` Unihan 大字表，默认未启用。
 - 词库：
-    - `base` 基础词库，含两字词及调频。
-    - `ext` 扩展词库，小词库，含多音字注音。
-    - `tencent` 扩展词库，大词库，无注音（由 Rime 自动注音），含非多音字、只发一种音的多音字、同义多音字。
-
+  - `base` 基础词库，含两字词及调频。
+  - `ext` 扩展词库，小词库，含多音字注音。
+  - `tencent` 扩展词库，大词库，无注音（由 Rime 自动注音），含非多音字、只发一种音的多音字、同义多音字。
 - 纯手搓的 Emoji
 - 英文词库：
-    - `en` 20k 左右的常见单词 + 少许补充。
-    - `en_ext` 扩展词库，大部分是缩写或互联网相关。
+  - `en` 20k 左右的常见单词 + 少许补充。
+  - `en_ext` 扩展词库，大部分是缩写或互联网相关。
 
+维护内容主要是异形词、错别字的校对，错误注音的修正，缺失的常用词汇的增添，词频的调整。欢迎在词库方面提 [issue](https://github.com/iDvel/rime-ice/issues/666)，我会及时更新修正。
 
-维护内容主要是异形词、错别字的校对，错误注音的修正，缺失的常用词汇的增添，词频的调整。
+### 功能演示和使用教程
 
-欢迎在词库方面提 issue [#666](https://github.com/iDvel/rime-ice/issues/666) ，我会及时更新修正。
+<h4 align="center"><strong>—— ⌨️ 基础输入 ⌨️ ——</strong></h4>
+
+| **1. 方案选单** | **2. 中文输入** |
+| -------- | -------- |
+| ![](./others/asserts/基础-方案设定_compressed.webp) | ![](./others/asserts/基础-中文输入_compressed.webp) |
+
+| **3. 英文输入** | **4. 中英混合输入** |
+| -------- | -------- |
+| ![](./others/asserts/基础-英文输入_compressed.webp) | ![](./others/asserts/基础-中英混合输入_compressed.webp) |
+
+| **5. Emoji** | **6. 模糊音** |
+| -------- | -------- |
+| ![](./others/asserts/基础-Emoji_compressed.webp) | ![](./others/asserts/基础-模糊音_compressed.webp) |
+
+| **7. 自动纠错** | **8. 繁简转换** |
+| -------- | -------- |
+| ![](./others/asserts/基础-自动纠错_compressed.webp) | ![](./others/asserts/基础-繁简转换_compressed.webp) |
 
 <br>
 
-## 使用说明
-
-### 选择和安装 RIME 前端
-
-要使用雾凇拼音默认提供的所有功能，请保证
-- 您的 RIME 前端提供的 librime 版本 ≥ 1.8.5 且
-- 含有 librime-lua 依赖
-
-以下是主流平台上的一些 RIME 前端安装建议。部分信息具有时效性，请以当下具体情况为准：
-
-| 系统    | RIME 前端                                                    | 雾凇拼音版本要求                  | 备注                                                         |
-| ------- | ------------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------ |
-| Android | [fcitx5-android](https://github.com/fcitx5-android/fcitx5-android/releases) + plugin.rime（小企鹅输入法） | ≥ 0.0.8                           | 暂不支持九宫格                                               |
-| Android | [Trime](https://github.com/osfans/trime)（同文输入法）       | ≥ 3.2.11                          |                                                              |
-| iOS     | [Hamster](https://apps.apple.com/cn/app/%E4%BB%93%E8%BE%93%E5%85%A5%E6%B3%95/id6446617683)（仓输入法） | N/A                               | 闭源；有内购                                                 |
-| Linux   | ibus + [ibus-rime](https://github.com/rime/ibus-rime)        | librime ≥ 1.8.5 且装有 librime-lua | 部分发行版需手动安装 librime-lua                             |
-| Linux   | fcitx4 + [fcitx-rime](https://github.com/fcitx/fcitx-rime)   | 完整模式：librime ≥ 1.8.5 且装有 librime-lua | 仅支持 Linux 的 fcitx4 + fcitx-rime；配置目录为 `$HOME/.config/fcitx/rime/` |
-| Linux   | fcitx5 + [fcitx5-rime](https://github.com/fcitx/fcitx5-rime) | librime ≥ 1.8.5 且装有 librime-lua | 部分发行版需手动安装 librime-lua                             |
-| macOS   | [Squirrel](https://github.com/rime/squirrel)（鼠须管）       | ≥ 1.0.0                           | 0.16.0 - 0.18.0 版本请参考[🔗](https://github.com/iDvel/rime-ice/issues/1062) |
-| macOS   | [fcitx5-macos](https://github.com/fcitx-contrib/fcitx5-macos) | N/A                               | 支持[卷轴模式](https://github.com/iDvel/rime-ice/issues/941) |
-| Windows | [Weasel](https://github.com/rime/weasel)（小狼毫）           | ≥ 0.15.0                            | 0.14.3 可手动更新 [rime.dll](https://github.com/iDvel/rime-ice/issues/197)（但不支持彩色 emoji）<br />Weasel 当下有兼容性问题，建议安装其他输入法备用 |
-
-Linux 依赖问题的具体解释请参考 [#840](https://github.com/iDvel/rime-ice/issues/840)。
-
-> [!NOTE]
-> 本仓库中提供的 fcitx4 兼容（`others/fcitx4/`）仅支持 **Linux + fcitx4 + fcitx-rime**。
-> 不适用于 fcitx5、ibus、macOS、Windows 等其他前端或平台。
-
-雾凇拼音的部分配置可能要求更高的 librime 或者客户端版本，这些功能已在具体配置文件中注明。
-
-以下安装方式，选择其一：
-
-- [手动安装](#手动安装)
-- [Git 安装](#git-安装)
-- [东风破 plum](#东风破-plum)
-- [自动部署脚本](#自动部署脚本)
-- [仓输入法](#仓输入法-hamster)
-- [Arch Linux](#arch-linux)（AUR）
-
-### 手动安装
-
-您可以将仓库打包下载，将所有文件复制粘贴到 RIME 前端的配置目录，重新部署。
-
-只需要使用或者更新词库的话，可以手动粘贴覆盖 `cn_dicts` `en_dicts` `opencc` 三个文件夹。
-
-> [!NOTE]
-> 雾凇拼音中多个文件可能与其他方案同名冲突，如果是新手想一键安装，建议**备份原先配置，清空配置目录**再导入。
-
-> [!NOTE]
->
-> 单独使用词库注意事项：`rime_ice.dict.yaml` 下面包含了大写字母，这和配置有些许绑定，可以直接删除，详细说明：[#356](https://github.com/iDvel/rime-ice/issues/356)
-
-您也可以前往 [Release](https://github.com/iDvel/rime-ice/releases) 界面，下载特定版本的词典文件（具体描述见 Release 说明），覆盖配置目录的对应文件。
-
-### Git 安装
-
-您如果熟悉 git 常用操作，可以使用 git clone 命令将本仓库克隆到对应前端的用户目录。由于本库提交历史较多且更改频繁，添加 `--depth` 参数可以显著减少传输体积。
-
-```bash
-git clone https://github.com/iDvel/rime-ice.git Rime --depth 1
-
-# 更新
-cd Rime
-git pull
-```
-
-通过 checkout 命令，您也可以实现更新部分文件的效果。
-
-### 东风破 [plum](https://github.com/rime/plum)
-
-选择配方（`others/recipes/*.recipe.yaml`）来进行安装或更新。
-
-<details>
-<summary>/plum/ 简易安装教程</summary>
-
----
-
-安装 plum
-```bash
-# 请先安装 git 和 bash，并加入环境变量
-# 请确保和 github.com 的连接稳定
-cd ~
-git clone https://github.com/rime/plum.git plum
-# 卸载 plum 只需要删除 ~/plum 文件夹即可
-```
-
-使用 plum
-```bash
-cd ~/plum
-bash rime-install <recipe_name>
-```
-部分发行版可能需要手动指定安装位置
-
-```bash
-# 为 fictx5 安装
-rime_frontend=fcitx5-rime bash rime-install <recipe_name>
-
-# 为 fcitx4 安装
-rime_frontend=fcitx-rime bash rime-install <recipe_name>
-```
-
----
-
-</details>
-
-词库配方只是更新具体词库文件，并不更新 `rime_ice.dict.yaml` 和 `melt_eng.dict.yaml`，因为用户可能会挂载其他词库。如果更新后部署时报错，可能是增、删、改了文件名，需要检查上面两个文件和词库的对应关系。
-
-℞ 安装或更新全部文件
-
-```
-bash rime-install iDvel/rime-ice:others/recipes/full
-```
-
-℞ 安装或更新所有词库文件（包含下面三个）
-
-```
-bash rime-install iDvel/rime-ice:others/recipes/all_dicts
-```
-
-℞ 安装或更新拼音词库文件（ `cn_dicts/` 目录内所有文件）
-
-```
-bash rime-install iDvel/rime-ice:others/recipes/cn_dicts
-```
-
-℞ 安装或更新英文词库文件（ `en_dicts/` 目录内所有文件）
-
-```
-bash rime-install iDvel/rime-ice:others/recipes/en_dicts
-```
-
-℞ 安装或更新 opencc （ `opencc/` 目录内所有文件）
-
-```
-bash rime-install iDvel/rime-ice:others/recipes/opencc
-```
-
-下面这个配方会在 `radical_pinyin.custom.yaml` 和 `melt_eng.custom.yaml` 里将 `speller/algebra` 修改为对应的双拼拼写，选择一个自己使用的双拼作为参数。
-
-℞ 双拼补丁
-
-```
-bash rime-install iDvel/rime-ice:others/recipes/config:schema=flypy
-bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin
-bash rime-install iDvel/rime-ice:others/recipes/config:schema=mspy
-bash rime-install iDvel/rime-ice:others/recipes/config:schema=sogou
-bash rime-install iDvel/rime-ice:others/recipes/config:schema=abc
-bash rime-install iDvel/rime-ice:others/recipes/config:schema=ziguang
-```
-
-℞ 下载特定版本的配置
-
-在仓库后加 `@tag` 即可，例如：
-
-```sh
-bash rime-install iDvel/rime-ice@2024.05.21:others/recipes/full
-```
-
-### 仓输入法 [Hamster](https://github.com/imfuxiao/Hamster)
-
-参考 [如何导入"雾凇拼音输入方案"](https://github.com/imfuxiao/Hamster/wiki/%E5%A6%82%E4%BD%95%E5%AF%BC%E5%85%A5%22%E9%9B%BE%E6%B7%9E%E6%8B%BC%E9%9F%B3%E8%BE%93%E5%85%A5%E6%96%B9%E6%A1%88%22)
-
-仓输入法目前已内置雾凇拼音。
-
-使用九宫格，需要同时启用九宫格方案（输入方案设置）和九宫格布局（键盘设置 - 键盘布局 - 中文 9 键）。
-
-### 自动部署脚本
-
-[Mark24Code/rime-auto-deploy](https://github.com/Mark24Code/rime-auto-deploy) 一个自动部署脚本，集成了雾凇拼音，帮助无痛快速安装、部署 Rime 输入法（中州韵、小狼毫，鼠须管）以及部署配置。
-
-### Arch Linux
-
-使用 AUR helper 安装 [rime-ice-git](https://aur.archlinux.org/packages/rime-ice-git) 包即可。
-
-```bash
-# paru 默认会每次重新评估 pkgver，所以有新的提交时 paru 会自动更新，
-# yay 默认未开启此功能，可以通过此命令开启
-# yay -Y --devel --save
-
-paru -S rime-ice-git
-# yay -S rime-ice-git
-```
-
-推荐使用[补丁](https://github.com/rime/home/wiki/Configuration#補靪)的方式启用。
-
-参考下面的配置示例，修改对应输入法框架用户目录（见下）中的 `default.custom.yaml` 文件
-
-- iBus 为 `$HOME/.config/ibus/rime/`
-- Fcitx5 为 `$HOME/.local/share/fcitx5/rime/`
-
-<details>
-<summary>default.custom.yaml</summary>
-
-```yaml
-patch:
-  # 仅使用「雾凇拼音」的默认配置，配置此行即可
-  __include: rime_ice_suggestion:/
-  # 以下根据自己所需自行定义，仅做参考。
-  # 针对对应处方的定制条目，请使用 <recipe>.custom.yaml 中配置，例如 rime_ice.custom.yaml
-  __patch:
-    key_binder/bindings/+:
-      # 开启逗号句号翻页
-      - { when: paging, accept: comma, send: Page_Up }
-      - { when: has_menu, accept: period, send: Page_Down }
-```
-
-</details>
-
-### Linux Fcitx4
-如果您使用的是 Linux + Fcitx4，可使用仓库自带脚本自动备份并同步配置：
-
-```bash
-bash others/fcitx4/install_to_fcitx4.sh
-```
-
-如果系统较旧（例如 `librime < 1.8.5` 或缺少 `librime-lua`），可使用兼容模式（禁用 Lua 扩展功能，仅保留基础拼音/词库能力）：
-
-```bash
-bash others/fcitx4/install_to_fcitx4.sh --legacy-no-lua
-```
-
-说明：默认执行 `bash others/fcitx4/install_to_fcitx4.sh` 时，脚本会自动检测环境；若版本过旧或缺少 `librime-lua`，会自动切换到兼容模式。
-
-兼容模式（`--legacy-no-lua`）会关闭以下 Lua 扩展能力：
-- 以词定字（`[`、`]`）
-- 日期、时间、星期
-- 农历
-- UUID
-- Unicode 输入（`U` 前缀）
-- 数字、金额大写（`R` 前缀）
-- 简易计算器（`cC` 前缀）
-- 错音错字提示
-- 英文自动大写
-- v 模式 symbols 优先
-- 置顶候选项
-- 长词优先
-- 英文候选降权
-- 部件拆字辅码（`search.lua`）
-
-兼容模式仍保留：基础拼音输入、词库、`melt_eng` 英文输入、中英混输、简繁切换、Emoji、用户短语。
+<h4 align="center"><strong>—— 🔍 反查和符号 🔍 ——</strong></h4>
+
+| **1. 拆字反查** | **2. 数字符号转写** |
+| ---- | ---- |
+| ![](./others/asserts/基础-拆字反查_compressed.webp) | ![](./others/asserts/基础-数字符号便携输入_compressed.webp) |
+| 碰到生僻字，输入 <kbd>uU</kbd> + 字的部件拼音，得到汉字和注音 | 用拼音、英文输入短语中的数字和符号 |
+
+| **3. 符号输入** | **4. 词汇别名** |
+| ---- | ---- |
+| ![](./others/asserts/基础-符号输入_compressed.webp) | ![](./others/asserts/基础-词汇别名_compressed.webp) |
+| 全拼 <kbd>v</kbd> + 拼音首字母；双拼 <kbd>V</kbd> + 拼音首字母 | 部分常用词，自动展示其翻译、别名、化学式、简称等 |
 
 <br>
 
-## 感谢 ❤️
+<h4 align="center"><strong>—— ✨ 扩展功能 ✨ ——</strong></h4>
 
-特别感谢上文已经提及的词库、词典的作者、贡献者及整理者；特别感谢以及下列词库、方案、脚本的作者及贡献者（提及的均为 GitHub id）：
+| **1. 以词定字** | **2. 辅码检字** |
+| ---- | ---- |
+| ![](./others/asserts/扩展-以词定字_compressed.webp) | ![](./others/asserts/扩展-辅码检字_compressed.webp) |
+| 用左右中括号键，输入候选的开头或末尾的字 | 输入拼音后，再输入 <kbd>`</kbd> + 字的偏旁部首拼音，筛选候选 |
 
-- @mozillazg 开发的汉字转拼音工具和数据库（MIT）
-- [melt_eng](https://github.com/tumuyan/rime-melt)（@tumuyan | [Apache 2.0](https://github.com/tumuyan/rime-melt/blob/master/LICENSE)） ：提供了部分（约 1000 条）英文词汇以及原始英文方案参考；
-- [部件拆字方案](https://github.com/mirtlecn/rime-radical-pinyin)（@mirtlecn | [GPL 3.0](https://github.com/mirtlecn/rime-radical-pinyin/blob/master/LICENSE)）：提供的拆字反查和候选筛选插件；
-- [长词优先插件](https://github.com/tumuyan/rime-melt/blob/master/lua/melt.lua)（@tumuyan | [Apache 2.0](https://github.com/tumuyan/rime-melt/blob/master/LICENSE)）
-- [Unicode 插件](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)（@shewer | [MIT](https://github.com/shewer/librime-lua-script/blob/main/lua/component/unicode.lua)）
-- [数字、人民币大写插件](https://github.com/yanhuacuo/98wubi/blob/master/lua/number.lua)（@98wubi）
-- 未能在此处详述的、在本库源码注释中提及的项目及作者给予的帮助和参考
+| **3. 错字错音提示** | **4. 英文自动大小写** |
+| -------- | -------- |
+| ![](./others/asserts/扩展-错字错音提示_compressed.webp) | ![](./others/asserts/扩展-英文自动大小写_compressed.webp) |
+| 输了错字错音，雾凇会提示正确的音形 | 大写开头，得到首字母大写的单词；多个大写字母开头，得到全大写的单词 |
 
-感谢 [校对标准论坛](http://www.jiaodui.org/bbs/) 的存在。
+| **5. 日期输入** | **6. 农历输入** |
+| -------- | -------- |
+| ![](./others/asserts/扩展-时间日期_compressed.webp) | ![](./others/asserts/扩展-农历转换_compressed.webp) |
+| 全拼输 <kbd>rq</kbd>，双拼输 <kbd>date</kbd>，得到各种格式的当前日期和时间 | 全拼输 <kbd>nl</kbd>，双拼输 <kbd>lunar</kbd>，获取当前农历；输入 <kbd>N</kbd> + 日期，获取指定日期农历和节气 |
 
-感谢 [@Huandeep](https://github.com/Huandeep) 整理的多个词库。
+<br>
 
-感谢 [@Mirtle](https://github.com/mirtlecn) 完善的多个功能。
+<h4 align="center"><strong>—— 🧰 便捷工具 🧰 ——</strong></h4>
 
-感谢 [@Lithium-7](https://github.com/Lithium-7) 对词库的大量修订。
+| **1. 计算器** | **2. Unicode 输入** |
+| ---- | ---- |
+| ![](./others/asserts/扩展-计算器_compressed.webp) | ![](./others/asserts/扩展-Unicode_compressed.webp) |
+| 输入 <kbd>cC</kbd> 后加上算式，得到计算结果 | 输入 <kbd>U</kbd> + Unicode 编码，得到对应字符 |
 
-感谢所有贡献者。
+| **3. UUID 生成** | **4. 数字货币转写** |
+| ---- | ---- |
+| ![](./others/asserts/扩展-uuid_compressed.webp) | ![](./others/asserts/扩展-数字货币大写_compressed.webp) |
+| 输入 <kbd>uuid</kbd>，得到一个随机生成的 UUID | 输入 <kbd>R</kbd> + 数字，自动转写为数字大写或者人民币大写 |
 
-<!-- 搜狗转 Rime：[lewangdev/scel2txt](https://github.com/lewangdev/scel2txt) -->
+功能快捷键和行为定制，以及更多其他功能，请参考 lua 文件和方案文件中的注释。
+
+## 鸣谢
+
+- [这些项目和脚本](./others/docs/Credits.md) 为雾凇拼音提供的支持和参考。
+- [校对标准论坛](http://www.jiaodui.org/bbs/) 的存在。
+- [@Huandeep](https://github.com/Huandeep) 整理的多个词库。
+- [@Mirtle](https://github.com/mirtlecn) 完善的多个功能。
+- [@Lithium-7](https://github.com/Lithium-7) 对词库的大量修订。
 
 Thanks to JetBrains for the OSS development license.
 
 [![JetBrains](https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg)](https://jb.gg/OpenSourceSupport)
 
-<br>
+## 常见问题
 
-## 赞助 ☕
+<details>
+<summary>🛠️ 怎么修改雾凇拼音的配置</summary>
+
+可以根据注释，直接在文件上修改，这样修改也简单，适合初次尝试。但注意，这会在更新后被覆盖掉。
+
+熟悉后，推荐使用 [打补丁的方式](https://dvel.me/posts/rime-ice/#%E4%BB%A5-patch-%E7%9A%84%E6%96%B9%E5%BC%8F%E6%89%93%E8%A1%A5%E4%B8%81) 来覆盖原配置的选项，不修改仓库中已有的文件，这样可放心全量拉取更新，通过 plum 或 git pull 时不用担心由于更新文件导致自定义的配置被覆盖。
+
+</details>
+
+<details>
+<summary>⌨️ 双拼怎么添加自定义短语，怎么让拆字/英文的编码支持双拼</summary>
+
+相对于全拼，双拼的一些配置有所不同：
+
+- 双拼的自定义短语文件默认为 `custom_phrase_double.txt`，需要手动创建。
+- 英文方案 `melt_eng.schema.yaml` 中有一些不通用的派生规则，默认启用的是全拼的。
+- 部件拆字方案 `radical_pinyin.schema.yaml` 的反查和辅码，有一些不通用的派生规则，默认启用的是全拼的。
+- 双拼是显示全拼编码还是双拼编码？比如小鹤双拼输入 `zz` 时，是显示 `zz` 还是 `zou`，默认是转换为全拼编码。`translator` 下的 `preedit_format` 属性会影响输入框和 Shift+回车时的显示，删除这部分就不转换。
+
+双拼可以直接用 plum 自动打补丁，也可以手写，下面以小鹤双拼方案 `double_pinyin_flypy.schema.yaml` 为例。
+
+（补丁放到仓库里了 [others/双拼补丁示例](https://github.com/iDvel/rime-ice/tree/main/others/%E5%8F%8C%E6%8B%BC%E8%A1%A5%E4%B8%81%E7%A4%BA%E4%BE%8B)）
+
+1. 创建 `melt_eng.custom.yaml` 修改英文派生规则：
+
+```yaml
+patch:
+  # 修改为小鹤双拼的拼写派生规则，因为不在同一个文件了，前面要加上文件名
+  speller/algebra:
+    __include: melt_eng.schema.yaml:/algebra_flypy
+```
+
+2. 创建 `radical_pinyin.custom.yaml` 修改反查及辅码派生规则：
+
+```yaml
+patch:
+  # 修改为小鹤双拼的拼写派生规则，因为不在同一个文件了，前面要加上文件名
+  speller/algebra:
+    __include: radical_pinyin.schema.yaml:/algebra_flypy
+```
+
+3. （按需选择）创建 `double_pinyin_flypy.custom.yaml`：
+
+```yaml
+patch:
+  # （按需选择）清空 preedit_format 中的内容，输入时显示双拼编码
+  translator/preedit_format: []
+```
+
+</details>
+
+<details>
+<summary>🔀 能实现全拼双拼混输吗</summary>
+
+参考：<https://dvel.me/posts/rime-full-pinyin-double-pinyin-mixed-input/>
+
+</details>
+
+<details>
+<summary>🚫 xx 字打不出来 / xx 读音没有</summary>
+
+可能为生僻字，请尝试开启大字表。若确实为常用字（如常见于人名、物品名、术语），请 PR 或在 #666 补充。
+
+</details>
+
+<details>
+<summary>🔲 部分候选项变成豆腐块、方块、问号</summary>
+
+系统缺少相关字体导致。请尝试下载或更换显示字体。
+
+关于部分生僻字，参考 <https://github.com/iDvel/rime-ice/issues/841> 的推荐。
+
+- [MiSans + MiSans L3](https://hyperos.mi.com/font/zh/rare-word/)
+- [遍黑体](https://github.com/Fitzgerald-Porthmouth-Koenigsegg/Plangothic-Project)
+- 花园明朝
+
+Windows 10 平台部分 Emoji 用系统默认字体无法显示，请尝试下载 [Noto Color Emoji](https://fonts.google.com/noto/specimen/Noto+Color+Emoji) 或用 Windows 11 Emoji 字体替换。
+
+</details>
+
+<details>
+<summary>⚠️ 部署失败或者报错</summary>
+
+如果缩进错误，或用了 Tab，可能部署时并不会报错，而是自动加载默认配置。
+
+如果发现方案选单里是朙月拼音，打的是繁体，那可能是配置有问题，Rime 自动加载了默认配置，检查一下修改过的地方。
+
+配置错误也可能导致 `default.yaml` 文件被移入 `trash/` 目录，你需要移动回来，改好后重新部署，然后可以直接删除 `trash/` 目录。
+
+</details>
+
+<details>
+<summary>🔄 中英文、大小写切换行为如何修改</summary>
+
+Shift 是否切换中英，切换时的行为等等，参考 `default.yaml` 中 `ascii_composer` 下的详细注释。
+
+</details>
+
+<details>
+<summary>📝 怎么修改标点符号映射</summary>
+
+标点符号相关配置在 `default.yaml` 中定义，再在多个方案中引用。
+
+修改 `default.yaml` 或在 `default.custom.yaml` 中打补丁即可全局修改。
+
+</details>
+
+<details>
+<summary>🎨 怎么设置皮肤横向竖向排列</summary>
+
+皮肤配置不通用，要参考各前端自己的配置方式。
+
+小狼毫由 `style/horizontal` 属性决定：
+
+```yaml
+patch:
+  "style/horizontal": true  # true 横向 | false 竖向
+```
+
+鼠须管的 `horizontal` 属性已经弃用，在 `squirrel.yaml` 皮肤的选项中使用以下两个属性：
+
+```yaml
+preset_color_schemes:
+  皮肤名:
+    candidate_list_layout: stacked  # stacked | linear  候选项排列方向
+    text_orientation: horizontal    # horizontal | vertical  文字排列方向
+```
+
+⚠️ 注意具体皮肤的优先级比 `style` 的高。
+
+鼠须管效果展示：
+
+<img width="668" alt="图片" src="https://user-images.githubusercontent.com/14658234/230854033-af8e97ee-1dca-43dd-88d7-eb1ade95b767.png">
+
+</details>
+
+<details>
+<summary>📌 怎么自定义短语</summary>
+
+自定义短语用 Tab 分割词汇、编码、权重。
+
+`custom_phrase.txt` 中是我自己的习惯，仅供参考，这个每个人的习惯都不一样，可以换成自己的。
+
+可以新建一个文件，并在方案的 `custom_phrase/user_dict:` 下指定使用哪个文件。
+
+</details>
+
+<details>
+<summary>💱 怎么设置台湾繁体</summary>
+
+默认 OpenCC 的选项 `traditionalize/opencc_config: s2t.json` 是香港繁体。
+
+台湾繁体有以下两种方式供参考，先修改为 `s2tw.json`：
+
+- 参考 #291，修改 opencc
+- 参考 #575，补加一个 t2tw
+    （因为不知道什么原因，`s2tw.json` 选项并没有真正转换为台湾繁体，所以又补了一个 `t2tw.json`）
+    （librime 1.10 已修复，新版本不再需要折腾了。）
+
+</details>
+
+<details>
+<summary>😀 可以支持颜文字吗？</summary>
+
+没有加入颜文字，可参考 #920。
+
+</details>
+
+<details>
+<summary>🐧 Linux 系统无候选 & 雾凇拼音候选后出现拼音注释等</summary>
+
+输入 `rq`（双拼是 `date`），如若没有出现当前日期，则表示 Lua 没有成功加载，您就可能遇到上述问题。
+
+请确保你已经正确安装了 librime 包，并以插件或其他形式安装了其依赖包 librime-lua（部分发行版——特别是红帽系——需要手动安装）；如果仍存在问题，或者你无法判断是否达成此条件，请：
+
+- 若使用 fcitx 框架，请改用其继承者 fcitx5；若使用 fcitx5 框架，请保证安装的是 **fcitx5-rime** 而非 ~~fcitx-rime~~
+- 若使用 ibus 框架，出现意外，可以考虑使用 [AppImage](https://github.com/hchunhui/ibus-rime.AppImage)，以跟进 librime 更新
+- 若使用 fcitx5 框架，出现意外，请考虑使用 [Flatpak](https://flathub.org/apps/org.fcitx.Fcitx5)，参考 Fcitx5 官方 [wiki](https://fcitx-im.org/wiki/Install_Fcitx_5#Install_Fcitx_5_from_Flatpak)
+
+AppImage 和 Flatpak 可以确保没有依赖问题。
+
+请参考：<https://github.com/iDvel/rime-ice/issues/840>
+
+</details>
+
+<details>
+<summary>🐧 Linux Fcitx5 首次安装雾凇拼音后，无法输入</summary>
+
+请尝试修改任意 yaml 文件，再重新部署 Rime，不要仅依赖重启输入法框架。
+
+请参考 <https://github.com/iDvel/rime-ice/issues/1439>
+
+</details>
+
+<details>
+<summary>🌙 怎么添加或修改 Lua？</summary>
+
+做好自己的 Lua 放在 `lua/` 文件夹内，使用[新版 librime-lua 引入模块的方式](https://github.com/hchunhui/librime-lua/wiki/Scripting#%E6%96%B0%E7%89%88-librime-lua)，不用修改 `rime.lua`：
+
+```yaml
+- lua_translator@*my_translator  # 多了一个星号
+```
+
+比如想将自己修改后的 `new_date_translator.lua` 替换掉 `date_translator`：
+
+```yaml
+# 方式一、复制完整的 translators 的内容过来
+patch:
+  engine/translators:
+    # 。。。
+    - lua_translator@*new_date_translator  # 将此处替换为自己的 Lua
+    # 。。。
+
+# 方式二、仅替换修改项，但依赖于原始排序（从 0 开始数），如果排序变动就替换错了
+patch:
+  engine/translators/@2: lua_translator@*new_date_translator
+```
+
+</details>
+
+<details>
+<summary>📋 我看到了日志里面的 WARNING</summary>
+
+WARNING 日志仅为警告，一般可以忽视。ERROR 文件若有日志，则需要留神。
+
+```
+accessing blocking node with unresolved dependencies:
+```
+
+这是因为 melt_eng 和 radical_pinyin 引用了自身的节点，RIME build 时认为这可能会导致引用了一个未编译完成的文件，因而抛出警告。无视即可。
+
+```
+duplicate definition:
+```
+
+因为某些词典有重复的条目，build 时 RIME 认为这可能会造成编码和权重的覆写，因而抛出警告，无视即可。
+
+</details>
+
+## 许可证
+
+GPL-3.0 (only) License.
+
+## 赞助
 
 如果觉得项目不错，可以请 Dvel 吃个煎饼馃子。
 
-<img src="./others/sponsor.webp" alt="请 Dvel 吃个煎饼馃子" width=300 />
+<img src="./others/asserts/sponsor.webp" alt="请 Dvel 吃个煎饼馃子" width=300 />
 
+[^1]: 由 @Mintimate 友情构建
+[^2]: 九键方案仅适用于 iOS 平台的特定软件
