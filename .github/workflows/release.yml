@@ -1,4 +1,4 @@
-name: Build and Release
+name: Test and Release
 
 on:
   push:
@@ -14,8 +14,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  smoke:
-    name: Smoke test before release
+  release:
+    name: Test and Release
     runs-on: ubuntu-24.04
     if: github.repository == 'iDvel/rime-ice'
 
@@ -79,10 +79,8 @@ jobs:
           zip -r dist/en_dicts.zip en_dicts
           echo "Pack opencc ..."
           zip -r dist/opencc.zip opencc
+          echo "Pack binary for fcitx5.js ..."
           zip -r dist/fcitx5_rime_js-rime_ice.zip build lua opencc custom_phrase.txt
-          echo "copy LICENSE and README.md..."
-          cp LICENSE dist/LICENSE.txt
-          cp README.md dist/README.md
 
       - name: Create nightly release
         if: ${{ github.ref == 'refs/heads/main' }}
@@ -93,40 +91,53 @@ jobs:
 
             这里是每次提交后自动打包的版本，包含最新的功能和词库
 
-            - `README.md`：简易的使用说明
             - `full.zip` : 包含所有词典和方案文件
             - `cn_dicts.zip`：中文词库
             - `en_dicts.zip`：英文词库
             - `opencc.zip`：opencc 词库（emoji 等）
             - `all_dicts.zip`：以上三个词库的整合
             - `fcitx5_rime_js-rime_ice.zip`：适用于 fcitx5-rime.js 的预构建包
-            - `LICENSE.txt`：开源协议
 
           tag_name: nightly
+          preserve_order: true
           name: "nightly build"
           make_latest: true
           files: |
-            dist/*
+            dist/full.zip
+            dist/all_dicts.zip
+            dist/cn_dicts.zip
+            dist/en_dicts.zip
+            dist/opencc.zip
+            dist/fcitx5_rime_js-rime_ice.zip
 
       - name: Create stable release
         if: startsWith(github.ref, 'refs/tags/')
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           body: |
+            ## 重要更新
+
+            **release notes**
+
             ## 说明
 
-            - `README.md`：简易的使用说明
             - `full.zip` : 包含所有词典和方案文件
             - `cn_dicts.zip`：中文词库
             - `en_dicts.zip`：英文词库
             - `opencc.zip`：opencc 词库（emoji 等）
             - `all_dicts.zip`：以上三个词库的整合
             - `fcitx5_rime_js-rime_ice.zip`：适用于 fcitx5-rime.js 的预构建包
-            - `LICENSE.txt`：开源协议
+
           draft: true
+          preserve_order: true
           make_latest: true
           files: |
-            dist/*
+            dist/full.zip
+            dist/all_dicts.zip
+            dist/cn_dicts.zip
+            dist/en_dicts.zip
+            dist/opencc.zip
+            dist/fcitx5_rime_js-rime_ice.zip
 
       - name: Push and commit
         if: ${{ steps.check_and_build.outcome == 'success' }}
