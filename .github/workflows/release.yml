@@ -20,14 +20,16 @@ jobs:
     if: github.repository == 'iDvel/rime-ice'
 
     permissions:
-      contents: read
+      contents: write
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v6
 
+      # Test
       - name: Install lint dependencies
         run: |
+          echo "Install lint dependencies..."
           python3 -m pip install yamllint
           sudo apt install -y luarocks
           sudo luarocks install luacheck
@@ -47,17 +49,7 @@ jobs:
           RIME_CLI_CACHE_PATH: ${{ runner.temp }}/rime-cli-cache/rime-cli-linux-1.6.1.zip
         run: make -C others/script smoke
 
-  package:
-    name: Package and release
-    runs-on: ubuntu-24.04
-    if: github.repository == 'iDvel/rime-ice'
-    needs:
-      - smoke
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-
+      # build
       - name: Setup Go
         if: ${{ contains(github.event.head_commit.message, ' [build]') || github.event_name == 'workflow_dispatch' }}
         uses: actions/setup-go@v5
@@ -74,6 +66,7 @@ jobs:
 
       - name: Pack dicts
         run: |
+          rm -rf dist
           mkdir dist
           echo "Pack all ..."
           find . -maxdepth 1 -name "*.lua" -o -name "*.yaml" -o -name "*.txt" | zip dist/full.zip -@
@@ -86,6 +79,7 @@ jobs:
           zip -r dist/en_dicts.zip en_dicts
           echo "Pack opencc ..."
           zip -r dist/opencc.zip opencc
+          zip -r dist/fcitx5_rime_js-rime_ice.zip build lua opencc custom_phrase.txt
           echo "copy LICENSE and README.md..."
           cp LICENSE dist/LICENSE.txt
           cp README.md dist/README.md
@@ -105,6 +99,7 @@ jobs:
             - `en_dicts.zip`：英文词库
             - `opencc.zip`：opencc 词库（emoji 等）
             - `all_dicts.zip`：以上三个词库的整合
+            - `fcitx5_rime_js-rime_ice.zip`：适用于 fcitx5-rime.js 的预构建包
             - `LICENSE.txt`：开源协议
 
           tag_name: nightly
@@ -126,6 +121,7 @@ jobs:
             - `en_dicts.zip`：英文词库
             - `opencc.zip`：opencc 词库（emoji 等）
             - `all_dicts.zip`：以上三个词库的整合
+            - `fcitx5_rime_js-rime_ice.zip`：适用于 fcitx5-rime.js 的预构建包
             - `LICENSE.txt`：开源协议
           draft: true
           make_latest: true
