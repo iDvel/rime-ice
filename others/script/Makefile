@@ -6,6 +6,7 @@ default:
 	@:
 
 build:
+	go version || (echo "请先安装 Go"; exit 1)
 	go mod tidy && go run . --rime_path "$$(cd ../.. && pwd)" --auto_confirm
 
 lint:
