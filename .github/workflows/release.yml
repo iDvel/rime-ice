@@ -84,7 +84,7 @@ jobs:
 
       - name: Create nightly release
         if: ${{ github.ref == 'refs/heads/main' }}
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           body: |
             ## 说明
