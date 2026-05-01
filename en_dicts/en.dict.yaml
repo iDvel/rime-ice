@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-04-18"
+version: "2026-05-01"
 sort: by_weight
 ...
 # +_+
@@ -1287,6 +1287,8 @@ assets	assets
 asshole	asshole
 assign	assign
 assigned	assigned
+assignee	assignee
+assignees	assignees
 assigning	assigning
 assignment	assignment
 assignments	assignments
@@ -3982,6 +3984,7 @@ commerce	commerce
 commercial	commercial
 commercially	commercially
 commercials	commercials
+commissary	commissary
 commission	commission
 commissioned	commissioned
 commissioner	commissioner
@@ -5462,6 +5465,7 @@ deprived	deprived
 dept	dept
 depth	depth
 depths	depths
+deputies	deputies
 deputy	deputy
 der	der
 derby	derby
@@ -6853,6 +6857,8 @@ environmental	environmental
 environmentally	environmentally
 environments	environments
 envisage	envisage
+envoy	envoy
+envoys	envoys
 envy	envy
 Enya	Enya
 enzyme	enzyme
@@ -11959,6 +11965,7 @@ Luna	Luna
 lunar	lunar
 lunch	lunch
 luncheon	luncheon
+lunchroom	lunchroom
 Lund	Lund
 lung	lung
 lungs	lungs
@@ -14892,7 +14899,7 @@ phenomenon	phenomenon
 phenotype	phenotype
 phentermine	phentermine
 phi	phi
-phil	phil
+Phil	Phil
 Philadelphia	Philadelphia
 philanthropy	philanthropy
 Philip	Philip
@@ -14904,6 +14911,8 @@ Phillies	Phillies
 Phillip	Phillip
 Phillips	Phillips
 Philly	Philly
+philologist	philologist
+philology	philology
 philosopher	philosopher
 philosophers	philosophers
 philosophical	philosophical
