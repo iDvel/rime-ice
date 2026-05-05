@@ -139,6 +139,10 @@ Thanks to JetBrains for the OSS development license.
 
 [![JetBrains](https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg)](https://jb.gg/OpenSourceSupport)
 
+Thanks to all contributors.
+
+[![Contributors Avatars](https://contrib.rocks/image?repo=iDvel/rime-ice)](https://github.com/iDvel/rime-ice/graphs/contributors)
+
 ## 常见问题
 
 <details>
