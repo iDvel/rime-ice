@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-05-01"
+version: "2026-05-05"
 sort: by_weight
 ...
 # +_+
@@ -338,6 +338,10 @@ adopting	adopting
 adoption	adoption
 adorable	adorable
 adore	adore
+adorn	adorn
+adorned	adorned
+adorning	adorning
+adorns	adorns
 # adp	adp
 # adr	adr
 adrenaline	adrenaline
@@ -6373,6 +6377,7 @@ earth	earth
 earthenware	earthenware
 earthquake	earthquake
 earthquakes	earthquakes
+earthy	earthy
 # eas	eas
 ease	ease
 easier	easier
@@ -7080,6 +7085,7 @@ ewe	ewe
 exact	exact
 exactly	exactly
 exaggerate	exaggerate
+exalt	exalt
 exam	exam
 examination	examination
 examinations	examinations
@@ -7292,6 +7298,7 @@ extinct	extinct
 extinction	extinction
 extinguish	extinguish
 extirpate	extirpate
+extol	extol
 extra	extra
 extract	extract
 extracted	extracted
@@ -7557,6 +7564,7 @@ fern	fern
 Fernandez	Fernandez
 Fernando	Fernando
 Ferrari	Ferrari
+ferric	ferric
 ferries	ferries
 Ferris	Ferris
 ferrous	ferrous
@@ -8783,6 +8791,7 @@ gratuite	gratuite
 grave	grave
 gravel	gravel
 graves	graves
+graveyard	graveyard
 gravity	gravity
 gray	gray
 Gray	Gray
@@ -8982,6 +8991,9 @@ Hahn	Hahn
 # hai	hai
 haiku	haiku
 hail	hail
+hailed	hailed
+hailing	hailing
+hails	hails
 hair	hair
 haired	haired
 hairy	hairy
@@ -9281,6 +9293,7 @@ helpline	helpline
 helps	helps
 Helsinki	Helsinki
 hem	hem
+hematite	hematite
 hemisphere	hemisphere
 hemispherical	hemispherical
 hemp	hemp
@@ -9358,6 +9371,7 @@ hierarchy	hierarchy
 Higgins	Higgins
 high	high
 # highbeam	highbeam
+highbrow	highbrow
 higher	higher
 highest	highest
 highfalutin	highfalutin
@@ -11340,7 +11354,11 @@ latter	latter
 lattice	lattice
 Latvia	Latvia
 Latvian	Latvian
+laud	laud
+lauded	lauded
 # lauderdale	lauderdale
+lauding	lauding
+lauds	lauds
 laugh	laugh
 laughed	laughed
 laughing	laughing
@@ -12550,6 +12568,7 @@ memos	memos
 Memphis	Memphis
 men	men
 menace	menace
+Mencius	Mencius
 mend	mend
 menopause	menopause
 mens	mens
@@ -13889,6 +13908,8 @@ Oceania	Oceania
 oceanic	oceanic
 oceans	oceans
 # och	och
+ocher	ocher
+ochre	ochre
 # oclc	oclc
 # ocr	ocr
 Oct.	Oct.
@@ -14920,7 +14941,6 @@ philosophy	philosophy
 phishing	phishing
 phoenix	phoenix
 phone	phone
-# phonephone	phonephone
 phones	phones
 phoney	phoney
 phoneys	phoneys
@@ -16070,6 +16090,7 @@ Qatar	Qatar
 # qd	qd
 # qi	qi
 # qld	qld
+Qomolangma	Qomolangma
 QoS	QoS
 QQ	QQ
 # qr	qr
@@ -16178,6 +16199,7 @@ racket	racket
 racks	racks
 rad	rad
 radar	radar
+raddle	raddle
 Radeon	Radeon
 radial	radial
 radiant	radiant
@@ -16972,6 +16994,8 @@ retort	retort
 retractable	retractable
 retreat	retreat
 retreats	retreats
+retried	retried
+retries	retries
 retrieval	retrieval
 retrieve	retrieve
 retrieved	retrieved
@@ -16980,6 +17004,8 @@ retrieving	retrieving
 retro	retro
 retrospect	retrospect
 retrospective	retrospective
+retry	retry
+retrying	retrying
 return	return
 returned	returned
 returning	returning
@@ -17580,6 +17606,7 @@ Sauvignon	Sauvignon
 savage	savage
 savanna	savanna
 savannah	savannah
+savant	savant
 save	save
 saved	saved
 saver	saver
@@ -18605,6 +18632,7 @@ snapdragon	snapdragon
 snapper	snapper
 snapshot	snapshot
 snapshots	snapshots
+snare	snare
 snarl	snarl
 snatch	snatch
 sneak	sneak
@@ -20260,6 +20288,7 @@ thin	thin
 thing	thing
 things	things
 think	think
+thinker	thinker
 thinking	thinking
 thinks	thinks
 third	third
@@ -21382,7 +21411,9 @@ vail	vail
 vain	vain
 # vaio	vaio
 # val	val
+valance	valance
 vale	vale
+valence	valence
 Valencia	Valencia
 valentine	valentine
 valentines	valentines
@@ -21447,6 +21478,10 @@ varies	varies
 varieties	varieties
 variety	variety
 various	various
+varnish	varnish
+varnished	varnished
+varnishes	varnishes
+varnishing	varnishing
 varsity	varsity
 vary	vary
 varying	varying
@@ -21664,6 +21699,7 @@ virtual	virtual
 virtually	virtually
 virtue	virtue
 virtues	virtues
+virtuoso	virtuoso
 virus	virus
 viruses	viruses
 # vis	vis
@@ -22130,6 +22166,7 @@ whitewater	whitewater
 whitish	whitish
 Whitman	Whitman
 Whitney	Whitney
+whiz	whiz
 who	who
 whoever	whoever
 whois	whois
