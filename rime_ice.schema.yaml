@@ -15,6 +15,7 @@ schema:
   dependencies:
     - melt_eng        # 英文输入，作为次翻译器挂载到拼音方案
     - radical_pinyin  # 部件拆字，反查及辅码
+    - kana            # 日语假名输入
 
 
 # 开关
@@ -55,6 +56,7 @@ engine:
     - matcher
     - abc_segmentor
     - affix_segmentor@radical_lookup  # 部件拆字自定义 tag
+    - affix_segmentor@kana_lookup     # 日语假名自定义 tag
     - punct_segmentor
     - fallback_segmentor
   translators:
@@ -67,6 +69,7 @@ engine:
     - table_translator@melt_eng          # 英文输入
     - table_translator@cn_en             # 中英混合词汇
     - table_translator@radical_lookup    # 部件拆字反查
+    - table_translator@kana_lookup       # 日语假名输入
     - lua_translator@*unicode            # Unicode
     - lua_translator@*number_translator  # 数字、金额大写
     - lua_translator@*calc_translator    # 计算器
@@ -245,6 +248,17 @@ punctuator:
     __include: symbols_v:/symbols              # 从 symbols_v.yaml 导入配置
 
 
+# 日语假名输入（J 前缀触发，如输入 Jka 得到「か」）
+kana_lookup:
+  tag: kana_lookup
+  dictionary: kana
+  enable_user_dict: false
+  prefix: "J"
+  tips: "  〔かな〕"
+  comment_format:
+    - erase/^.*$//
+
+
 # 部件拆字反查
 radical_lookup:
   tag: radical_lookup
@@ -271,6 +285,7 @@ recognizer:
   patterns:                             # 再增加方案专有的：
     punct: "^v([0-9]|10|[A-Za-z]+)$"    # 响应 symbols_v.yaml 的 symbols，用 'v' 替换 '/'
     radical_lookup: "^uU[a-z]+$"        # 响应部件拆字的反查，触发前缀与 radical_lookup/prefix 匹配
+    kana_lookup: "^J[a-z'-]+$"          # 响应日语假名输入，触发前缀与 kana_lookup/prefix 匹配
     unicode: "^U[a-f0-9]+"              # 脚本将自动获取第 2 个字符 U 作为触发前缀，响应 lua_translator@*unicode，输出 Unicode 字符
     number: "^R[0-9]+[.]?[0-9]*"        # 脚本将自动获取第 2 个字符 R 作为触发前缀，响应 lua_translator@*number_translator，数字金额大写
     calculator: "^cC.+"                 # 响应 lua_translator@*calc_translator，计算器。前缀设定项 calculator/prefix
