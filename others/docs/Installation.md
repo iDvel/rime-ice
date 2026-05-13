@@ -8,7 +8,7 @@
   - [仓输入法 Hamster](#仓输入法-hamster)
   - [Arch Linux](#arch-linux)（AUR）
   - [Linux Fcitx4](#linux-fcitx4)
-  - [Fcitx For Android / 小企鹅输入法](#Fcitx-For-Android-小企鹅输入法)
+  - [Fcitx For Android / 小企鹅输入法](#fcitx-for-android--小企鹅输入法)
 
 ## 要求
 
