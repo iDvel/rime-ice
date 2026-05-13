@@ -8,6 +8,7 @@
   - [仓输入法 Hamster](#仓输入法-hamster)
   - [Arch Linux](#arch-linux)（AUR）
   - [Linux Fcitx4](#linux-fcitx4)
+  - [Fcitx For Android / 小企鹅输入法](#Fcitx-For-Android-小企鹅输入法)
 
 ## 要求
 
@@ -205,3 +206,14 @@ bash others/fcitx4/install_to_fcitx4.sh --legacy-no-lua
 兼容模式（`--legacy-no-lua`）会关闭以下 Lua 扩展能力。
 
 兼容模式仍保留：基础拼音输入、词库、`melt_eng` 英文输入、中英混输、简繁切换、Emoji、用户短语。
+
+### Fcitx For Android / 小企鹅输入法
+
+首先下载并安装 `Fcitx For Android app` + `plugin.rime`。
+
+1. 下载Release的 `full.zip` 包
+2. 用MT管理器导航到：`/storage/emulated/0/Android/data/org.fcitx.fcitx5.android/files/data/`
+3. 在此文件夹新建`rime`，并将上述压缩包里面的所有内容解压到里面
+4. 单击输入法界面的`…`进入设置界面，点击`Addons`，启用Rime插件，返回设置界面，点击`Input Methods`，加入Rime
+5. 返回主界面，点击`Reload Config`，通常会卡住几秒，再点击`🌐`，切换为Rime
+6. 此时用输入法打出`rimeice`若出现`rime-ice`，即代表安装成功。
