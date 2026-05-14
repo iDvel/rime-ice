@@ -206,7 +206,7 @@ patch:
 <details>
 <summary>🚫 xx 字打不出来 / xx 读音没有</summary>
 
-可能为生僻字，请尝试开启大字表。若确实为常用字（如常见于人名、物品名、术语），请 PR 或在 #666 补充。
+可能为生僻字，请尝试开启大字表。若确实为常用字（如常见于人名、物品名、术语），请 PR 或在 <https://github.com/iDvel/rime-ice/issues/666> 补充。
 
 </details>
 
@@ -299,8 +299,8 @@ preset_color_schemes:
 
 台湾繁体有以下两种方式供参考，先修改为 `s2tw.json`：
 
-- 参考 #291，修改 opencc
-- 参考 #575，补加一个 t2tw
+- 参考 <https://github.com/iDvel/rime-ice/issues/291>，修改 opencc
+- 参考 <https://github.com/iDvel/rime-ice/issues/575>，补加一个 t2tw
     （因为不知道什么原因，`s2tw.json` 选项并没有真正转换为台湾繁体，所以又补了一个 `t2tw.json`）
     （librime 1.10 已修复，新版本不再需要折腾了。）
 
@@ -309,7 +309,7 @@ preset_color_schemes:
 <details>
 <summary>😀 可以支持颜文字吗？</summary>
 
-没有加入颜文字，可参考 #920。
+没有加入颜文字，可参考 <https://github.com/iDvel/rime-ice/pull/920>。
 
 </details>
 
