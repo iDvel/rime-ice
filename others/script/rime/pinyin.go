@@ -227,6 +227,7 @@ var onlyOne = map[string]string{
 	"省":   "sheng",
 	"卡":   "ka",
 	"奇":   "qi",
+	"齐":   "qi",
 	"择":   "ze",
 	"峙":   "zhi",
 	"戛":   "jia",
