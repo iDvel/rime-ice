@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-05-08"
+version: "2026-05-16"
 sort: by_weight
 ...
 # +_+
@@ -934,6 +934,7 @@ antique	antique
 antiques	antiques
 antitrust	antitrust
 antivirus	antivirus
+antler	antler
 Anton	Anton
 Antonio	Antonio
 Antony	Antony
@@ -1562,6 +1563,7 @@ Avril	Avril
 await	await
 awaited	awaited
 awaiting	awaiting
+awaits	awaits
 awake	awake
 awakening	awakening
 awakenings	awakenings
@@ -2010,7 +2012,11 @@ beth	beth
 Bethany	Bethany
 bethel	bethel
 Bethesda	Bethesda
+bethink	bethink
+bethinking	bethinking
+bethinks	bethinks
 Bethlehem	Bethlehem
+bethought	bethought
 betray	betray
 bets	bets
 Betsy	Betsy
@@ -4668,6 +4674,7 @@ counselling	counselling
 counselor	counselor
 counselors	counselors
 count	count
+countable	countable
 countdown	countdown
 counted	counted
 counter	counter
@@ -5301,6 +5308,8 @@ defect	defect
 defective	defective
 defects	defects
 defence	defence
+defenceless	defenceless
+defences	defences
 defend	defend
 defendant	defendant
 defendants	defendants
@@ -5309,6 +5318,7 @@ defender	defender
 defenders	defenders
 defending	defending
 defense	defense
+defenseless	defenseless
 defenses	defenses
 defensive	defensive
 defer	defer
@@ -5627,6 +5637,7 @@ devilish	devilish
 devils	devils
 devise	devise
 devised	devised
+devoid	devoid
 Devon	Devon
 devote	devote
 devoted	devoted
@@ -6196,7 +6207,11 @@ dramatic	dramatic
 dramatically	dramatically
 dramatist	dramatist
 drank	drank
+drape	drape
+draped	draped
 draper	draper
+drapes	drapes
+draping	draping
 drastic	drastic
 draught	draught
 draughty	draughty
@@ -10384,6 +10399,7 @@ instant	instant
 instantaneous	instantaneous
 instantly	instantly
 instead	instead
+instep	instep
 instinct	instinct
 institut	institut
 institute	institute
@@ -13387,6 +13403,7 @@ Nairobi	Nairobi
 naive	naive
 naively	naively
 naked	naked
+nakedly	nakedly
 # nam	nam
 name	name
 named	named
@@ -13410,6 +13427,9 @@ NAPA	NAPA
 napkin	napkin
 Naples	Naples
 Napoleon	Napoleon
+napped	napped
+napping	napping
+naps	naps
 # Napster	Napster
 narcotic	narcotic
 Narnia	Narnia
@@ -13930,6 +13950,8 @@ oblique	oblique
 oblong	oblong
 # obs	obs
 obscene	obscene
+obscenities	obscenities
+obscenity	obscenity
 obscure	obscure
 observability	observability
 observation	observation
@@ -14438,6 +14460,7 @@ owning	owning
 owns	owns
 # ox	ox
 oxford	oxford
+Oxford	Oxford
 Oxfordshire	Oxfordshire
 oxidation	oxidation
 oxide	oxide
@@ -16491,6 +16514,7 @@ rebuke	rebuke
 # rec	rec
 recall	recall
 recalled	recalled
+recalling	recalling
 recalls	recalls
 recap	recap
 recapitulate	recapitulate
@@ -16818,6 +16842,7 @@ remind	remind
 reminded	reminded
 reminder	reminder
 reminders	reminders
+reminding	reminding
 reminds	reminds
 Remington	Remington
 remix	remix
@@ -16850,6 +16875,8 @@ renew	renew
 renewable	renewable
 renewal	renewal
 renewed	renewed
+renewing	renewing
+renews	renews
 Reno	Reno
 renovate	renovate
 renovated	renovated
@@ -17037,6 +17064,7 @@ restless	restless
 restoration	restoration
 restore	restore
 restored	restored
+restores	restores
 restoring	restoring
 restrain	restrain
 restraint	restraint
@@ -17131,9 +17159,17 @@ revision	revision
 revisions	revisions
 revisited	revisited
 revival	revival
+revivalism	revivalism
+revivalist	revivalist
 revive	revive
+revived	revived
+revives	revives
+reviving	reviving
 revocation	revocation
+revoke	revoke
 revoked	revoked
+revokes	revokes
+revoking	revoking
 revolt	revolt
 revolution	revolution
 revolutionary	revolutionary
@@ -18140,6 +18176,7 @@ serviced	serviced
 # servicemagic	servicemagic
 services	services
 servicing	servicing
+serviette	serviette
 serving	serving
 servings	servings
 servlet	servlet
@@ -18671,6 +18708,7 @@ slower	slower
 slowest	slowest
 slowing	slowing
 slowly	slowly
+slows	slows
 # slr	slr
 sludge	sludge
 slug	slug
@@ -21245,9 +21283,11 @@ umbrella	umbrella
 unable	unable
 unabridged	unabridged
 unacceptable	unacceptable
+unadorned	unadorned
 unanimous	unanimous
 unanimously	unanimously
 unanswered	unanswered
+unarmed	unarmed
 unary	unary
 unauthorized	unauthorized
 unavailable	unavailable
@@ -21268,6 +21308,7 @@ unclear	unclear
 uncomfortable	uncomfortable
 uncommon	uncommon
 unconscious	unconscious
+uncountable	uncountable
 uncover	uncover
 uncovered	uncovered
 uncut	uncut
@@ -21791,6 +21832,7 @@ viewpoint	viewpoint
 viewpoints	viewpoints
 views	views
 # ViewSonic	ViewSonic
+vignette	vignette
 vigorous	vigorous
 vigour	vigour
 # vii	vii
