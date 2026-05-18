@@ -897,6 +897,7 @@ i次幂	icimi
 n次方	ncifang
 n次幂	ncimi
 p进数	pjinshu
+p进数域	pjinshuyu
 Z变换	Zbianhuan
 Z变换	zbianhuan
 逆Z变换	niZbianhuan

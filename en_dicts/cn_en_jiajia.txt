@@ -897,6 +897,7 @@ i次幂	icimi
 n次方	ncifg
 n次幂	ncimi
 p进数	pjliu
+p进数域	pjliuyu
 Z变换	Zbjhc
 Z变换	zbjhc
 逆Z变换	niZbjhc
