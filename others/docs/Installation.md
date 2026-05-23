@@ -8,6 +8,7 @@
   - [仓输入法 Hamster](#仓输入法-hamster)
   - [Arch Linux](#arch-linux)（AUR）
   - [Linux Fcitx4](#linux-fcitx4)
+  - [Fcitx For Android](#fcitx-for-android)
 
 ## 要求
 
@@ -205,3 +206,14 @@ bash others/fcitx4/install_to_fcitx4.sh --legacy-no-lua
 兼容模式（`--legacy-no-lua`）会关闭以下 Lua 扩展能力。
 
 兼容模式仍保留：基础拼音输入、词库、`melt_eng` 英文输入、中英混输、简繁切换、Emoji、用户短语。
+
+### Fcitx For Android
+
+先下载并安装 `Fcitx For Android app` + `plugin.rime`：
+
+1. 在输入法设置界面里面，点击 `Addons`，启用 Rime 插件，然后返回设置界面，点击 `Input Methods`，添加 Rime 中州韵输入法。
+2. 到雾凇拼音 Release 界面下载 `full.zip`。
+3. 在文件浏览器导航到：`/storage/emulated/0/Android/data/org.fcitx.fcitx5.android/files/data/`。
+4. 文件夹若不存在 `rime` 目录，新建名为 `rime` 的文件夹；如果存在，首次安装请清空该文件夹，后续更新不需要清空。
+5. 解压、替换压缩包里面的所有内容到 `rime` 目录下
+6. 返回主界面，点击 `Reload Config`，部署完成后，点击 `🌐`，切换为 Rime。
