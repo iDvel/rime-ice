@@ -90,7 +90,7 @@ bash rime-install iDvel/rime-ice
 | **3. 符号输入** | **4. 词汇别名** |
 | ---- | ---- |
 | ![](./others/asserts/基础-符号输入_compressed.webp) | ![](./others/asserts/基础-词汇别名_compressed.webp) |
-| 全拼 <kbd>v</kbd> + 拼音首字母；双拼 <kbd>V</kbd> + 拼音首字母 | 部分常用词，自动展示其翻译、别名、化学式、简称等 |
+| 全拼 <kbd>vhelp</kbd>；双拼 <kbd>Vhelp</kbd> 浏览支持列表 | 部分常用词，自动展示其翻译、别名、化学式、简称等 |
 
 <br>
 
