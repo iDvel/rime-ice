@@ -3,7 +3,7 @@
 
 
 # 要比共享目录的同名文件的 config_version 大才可以生效
-config_version: '2026-02-06'
+config_version: '2025-02-25'
 
 
 # 方案列表
@@ -11,19 +11,18 @@ schema_list:
   # 可以直接删除或注释不需要的方案，对应的 *.schema.yaml 方案文件也可以直接删除
   # 除了 t9，它依赖于 rime_ice，用九宫格别删 rime_ice.schema.yaml
   - schema: rime_ice               # 雾凇拼音（全拼）
-  - schema: t9                     # 中文九键（仓输入法 & 元书输入法）
-  - schema: double_pinyin          # 自然码双拼
-  - schema: double_pinyin_abc      # 智能 ABC 双拼
+#  - schema: t9                     # 九宫格（仓输入法）
+#  - schema: double_pinyin          # 自然码双拼
+#  - schema: double_pinyin_abc      # 智能 ABC 双拼
   - schema: double_pinyin_mspy     # 微软双拼
-  - schema: double_pinyin_sogou    # 搜狗双拼
-  - schema: double_pinyin_flypy    # 小鹤双拼
-  - schema: double_pinyin_ziguang  # 紫光双拼
-  - schema: double_pinyin_jiajia   # 拼音加加双拼
+#  - schema: double_pinyin_sogou    # 搜狗双拼
+#  - schema: double_pinyin_flypy    # 小鹤双拼
+#  - schema: double_pinyin_ziguang  # 紫光双拼
 
 
 # 菜单
 menu:
-  page_size: 5  # 候选词个数
+  page_size: 8  # 候选词个数
   # alternative_select_labels: [ ①, ②, ③, ④, ⑤, ⑥, ⑦, ⑧, ⑨, ⑩ ]  # 修改候选项标签
   # alternative_select_keys: ASDFGHJKL  # 如编码字符占用数字键，则需另设选字键（注意在雾凇中，大写字母也作为编码了）
 
@@ -36,11 +35,7 @@ switcher:
     - Control+grave
     - Control+Shift+grave
     # - Alt+grave
-  # 开关记忆（方案中的 switches），从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
-  # 部分前端（如小企鹅），实现了全局状态，切换后在任何焦点都会记住；
-  # 部分前端（如鼠须管），仅在当前会话中记住，每个App或一个App的不同输入框都会单独管理；
-  # 部分前端（如小狼毫），仅实现了中英全局状态，其他开关仍然是单独管理。
-  save_options:
+  save_options:  # 开关记忆（方案中的 switches），从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
     - ascii_punct
     - traditionalization
     - emoji
@@ -65,45 +60,14 @@ switcher:
 # clear        清除未上屏内容，然后切换到英文
 # inline_ascii 切换到临时英文模式，按回车上屏后回到中文状态
 # noop         屏蔽快捷键，不切换中英，但不要屏蔽 CapsLock
-#
-# 使用Shift, Control, Alt, Super等修饰键切换中英。# librime >= 1.14.0
-# set_ascii_mode   切换到英文模式
-# unset_ascii_mode 切换到中文模式
 ascii_composer:
   good_old_caps_lock: true  # true | false
   switch_key:
     Caps_Lock: clear      # commit_code | commit_text | clear
-    Shift_L: commit_code  # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
-    Shift_R: noop         # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
-    Control_L: noop       # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
-    Control_R: noop       # commit_code | commit_text | inline_ascii | clear | noop | set_ascii_mode | unset_ascii_mode
-
-
-# 处理输入栏内光标的移动
-# 需要 librime >= 1.16.0 才有 no_loop 等属性，才会自动在方案引用 default:/{navigator,selector}
-# 在边界按音节移动，在音节内部按字符移动  rewind | forward
-# 按字符移动（循环）       left_by_char | right_by_char
-# 按字符移动（不循环）     left_by_char_no_loop | right_by_char_no_loop
-# 按音节跳转（循环）       left_by_syllable | right_by_syllable
-# 按音节跳转（不循环）     left_by_syllable_no_loop | right_by_syllable_no_loop
-# 首尾跳转               home | end
-navigator:
-  bindings:
-    Left: left_by_char_no_loop
-    Right: right_by_char_no_loop
-    Shift+Left: left_by_syllable
-    Shift+Right: right_by_syllable
-    # 其他键 KP_Left KP_Right Home KP_Home End KP_End
-
-
-# 选字处理器，感觉这个没有自定义的必要
-# selector:
-#   bindings:
-#     Up: previous_candidate # 上一个
-#     Down: next_candidate   # 下一个
-#     Prior: previous_page   # 上一页
-#     Next: next_page        # 下一页
-#     # 其他键 KP_Up KP_Down KP_Prior KP_Next Home KP_Home End KP_End
+    Shift_L: commit_text  # commit_code | commit_text | inline_ascii | clear | noop
+    Shift_R: commit_code  # commit_code | commit_text | inline_ascii | clear | noop
+    Control_L: noop       # commit_code | commit_text | inline_ascii | clear | noop
+    Control_R: noop       # commit_code | commit_text | inline_ascii | clear | noop
 
 
 ###################################################################################
@@ -118,9 +82,10 @@ navigator:
 #   full_shape: 全角没改，使用预设值
 #   half_shape: 标点符号全部直接上屏，和 macOS 自带输入法的区别是
 #              '|' 是半角的，
-#              '~' 是半角的。
+#              '~' 是半角的，
+#              '`'（反引号）没有改成 '·'（间隔号）。
 punctuator:
-  digit_separators: ",.:"  # 在此处指定的字符，在数字后被输入，若再次输入数字，则连同数字直接上屏；若双击，则恢复映射。 # librime >= 1.13.0
+  digit_separators: ",.:"  # 在此处指定的字符，在数字后被输入，若再次输入数字，则连同数字直接上屏；若双击，则恢复映射。 # librime >= 28a234f
   # digit_separator_action: commit  # 关闭上述行为 librime >= 1.13.1
   full_shape:
     ' ' : { commit: '　' }
@@ -145,7 +110,7 @@ punctuator:
     '$' : [ ￥, '$', '€', '£', '¥', '¢', '¤' ]
     '^' : { commit: …… }
     '&' : ＆
-    '*' : [ ＊, ·, ・, ×, ※, ❂ ]
+    '*' : [ ＊, ·, ・, ×, ※,  ]
     '(' : （
     ')' : ）
     '-' : －
@@ -169,7 +134,7 @@ punctuator:
     '"' : { pair: [ '“', '”' ] }
     '\' : '、'
     '|' : '|'
-    '`' : '·'
+    '`' : '`'
     '~' : '~'
     '!' : '！'
     '@' : '@'
@@ -205,8 +170,9 @@ recognizer:
 # 快捷键
 key_binder:
   # Lua 配置: 以词定字（上屏当前词句的第一个或最后一个字），和中括号翻页有冲突
-  select_first_character: "bracketleft"  # 左中括号 [
-  select_last_character: "bracketright"  # 右中括号 ]
+  select_first_character: "bracketleft"   # [
+  select_last_character: "bracketright"  # ]
+  select_max_chars: "4"            # 候选超过此字数时禁用以词定字，直接输入标点
 
   bindings:
     # Tab / Shift+Tab 切换光标至下/上一个拼音
@@ -220,21 +186,17 @@ key_binder:
     - { when: composing, accept: Alt+Left, send: Shift+Left }
     - { when: composing, accept: Alt+Right, send: Shift+Right }
 
-    # 翻页的【上一页】按键效果，可按需选择：
-    # paging 在第一页时按下，会直接上屏并输出此符号。
-    # has_menu 始终不会输出。
-
     # 翻页 - =
-    - { when: has_menu, accept: minus, send: Page_Up }
-    - { when: has_menu, accept: equal, send: Page_Down }
+    # - { when: has_menu, accept: minus, send: Page_Up }  # 上一页设置为 paging 时会导致直接上屏并输出减号
+    # - { when: has_menu, accept: equal, send: Page_Down }
 
     # 翻页 , .
-    # - { when: has_menu, accept: comma, send: Page_Up }
+    # - { when: paging, accept: comma, send: Page_Up }
     # - { when: has_menu, accept: period, send: Page_Down }
 
     # 翻页 [ ]  ⚠️ 开启时请修改上面以词定字的快捷键
-    # - { when: has_menu, accept: bracketleft, send: Page_Up }
-    # - { when: has_menu, accept: bracketright, send: Page_Down }
+    - { when: paging, accept: bracketleft, send: Page_Up }
+    - { when: has_menu, accept: bracketright, send: Page_Down }
 
     # 两种按键配置，鼠须管 Control+Shift+4 生效，小狼毫 Control+Shift+dollar 生效，都写上了。
     # numbered_mode_switch:
@@ -289,8 +251,6 @@ key_binder:
     - {accept: KP_Add,      send: plus,     when: composing}
     - {accept: KP_Subtract, send: minus,    when: composing}
     - {accept: KP_Divide,   send: slash,    when: composing}
-    # 将小键盘回车映射到主键盘回车
-    - {accept: KP_Enter,    send: Return,   when: composing}
 
 
 # 按键速查
