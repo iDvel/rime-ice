@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-05-20"
+version: "2026-05-30"
 sort: by_weight
 ...
 # +_+
@@ -867,6 +867,9 @@ annals	annals
 Annapolis	Annapolis
 Anne	Anne
 anneal	anneal
+annealed	annealed
+annealing	annealing
+anneals	anneals
 Annette	Annette
 annex	annex
 Annie	Annie
@@ -943,6 +946,7 @@ Antony	Antony
 antonym	antonym
 antonymous	antonymous
 ants	ants
+anus	anus
 anxiety	anxiety
 anxious	anxious
 any	any
@@ -1068,6 +1072,7 @@ apt	apt
 # aq	aq
 aqua	aqua
 aquaculture	aquaculture
+aquamarine	aquamarine
 aquarium	aquarium
 Aquarius	Aquarius
 aquatic	aquatic
@@ -1424,6 +1429,7 @@ attributed	attributed
 attributes	attributes
 attribution	attribution
 attributive	attributive
+attrition	attrition
 ATV	ATV
 # atx	atx
 # au	au
@@ -2886,7 +2892,11 @@ calm	calm
 calmer	calmer
 calorie	calorie
 calories	calories
+calve	calve
+calved	calved
+calves	calves
 Calvin	Calvin
+calving	calving
 calyx	calyx
 cam	cam
 Camaro	Camaro
@@ -2984,6 +2994,7 @@ capper	capper
 Capri	Capri
 Capricorn	Capricorn
 Caps	Caps
+capsid	capsid
 capsule	capsule
 capsules	capsules
 captain	captain
@@ -3510,6 +3521,7 @@ chives	chives
 Chloe	Chloe
 chloride	chloride
 chlorine	chlorine
+chloroform	chloroform
 # cho	cho
 chocolate	chocolate
 chocolates	chocolates
@@ -5532,6 +5544,7 @@ derive	derive
 derived	derived
 dermal	dermal
 dermatology	dermatology
+derogate	derogate
 derrick	derrick
 # des	des
 desc	desc
@@ -5623,6 +5636,10 @@ determined	determined
 determines	determines
 determining	determining
 detox	detox
+detract	detract
+detracted	detracted
+detracting	detracting
+detracts	detracts
 Detroit	Detroit
 deutsch	deutsch
 deutsche	deutsche
@@ -7902,6 +7919,10 @@ flawed	flawed
 flaws	flaws
 flea	flea
 fled	fled
+fledge	fledge
+fledged	fledged
+fledges	fledges
+fledgling	fledgling
 flee	flee
 fleece	fleece
 fleet	fleet
@@ -7937,7 +7958,10 @@ floor	floor
 flooring	flooring
 floors	floors
 flop	flop
+flopped	flopped
+flopping	flopping
 floppy	floppy
+flops	flops
 flora	flora
 floral	floral
 Florence	Florence
@@ -8198,6 +8222,9 @@ Fraser	Fraser
 fraternity	fraternity
 # frau	frau
 fraud	fraud
+frauds	frauds
+fraudster	fraudster
+fraudsters	fraudsters
 fraudulent	fraudulent
 # frauen	frauen
 # fre	fre
@@ -10026,6 +10053,7 @@ immigrants	immigrants
 immigrate	immigrate
 immigration	immigration
 imminent	imminent
+imminently	imminently
 immortal	immortal
 immune	immune
 immunity	immunity
@@ -10043,6 +10071,7 @@ impart	impart
 impartial	impartial
 impatient	impatient
 impedance	impedance
+impending	impending
 imperative	imperative
 imperial	imperial
 imperium	imperium
@@ -11176,6 +11205,7 @@ killer	killer
 killers	killers
 killing	killing
 kills	kills
+kiln	kiln
 kilo	kilo
 kilogram	kilogram
 kilograms	kilograms
@@ -14576,6 +14606,7 @@ Pakistan	Pakistan
 Pakistani	Pakistani
 pal	pal
 palace	palace
+palatable	palatable
 Palau	Palau
 pale	pale
 Palestine	Palestine
@@ -14613,6 +14644,7 @@ panther	panther
 panthers	panthers
 pantie	pantie
 panties	panties
+pantograph	pantograph
 pantry	pantry
 pants	pants
 panty	panty
@@ -15677,6 +15709,7 @@ predators	predators
 predatory	predatory
 predecessor	predecessor
 predicate	predicate
+predicative	predicative
 predict	predict
 predictable	predictable
 predicted	predicted
@@ -15837,6 +15870,7 @@ printf	printf
 printing	printing
 # printprinter	printprinter
 prints	prints
+prion	prion
 prior	prior
 priorities	priorities
 priority	priority
@@ -15961,6 +15995,8 @@ prolonged	prolonged
 prom	prom
 prominence	prominence
 prominent	prominent
+promiscuity	promiscuity
+promiscuous	promiscuous
 promise	promise
 promised	promised
 promises	promises
@@ -16207,6 +16243,7 @@ pursued	pursued
 pursuing	pursuing
 pursuit	pursuit
 push	push
+pushchair	pushchair
 pushed	pushed
 pushes	pushes
 pushing	pushing
@@ -17155,6 +17192,7 @@ retains	retains
 retard	retard
 retardation	retardation
 retention	retention
+retentive	retentive
 reticle	reticle
 retina	retina
 retire	retire
@@ -17465,6 +17503,7 @@ Roosevelt	Roosevelt
 rooster	rooster
 root	root
 rooted	rooted
+rooting	rooting
 roots	roots
 rope	rope
 ropes	ropes
@@ -17979,6 +18018,7 @@ scripts	scripts
 scripture	scripture
 scriptures	scriptures
 scroll	scroll
+scrolled	scrolled
 scrolling	scrolling
 scrolls	scrolls
 scrub	scrub
@@ -18138,6 +18178,7 @@ semi	semi
 semicolon	semicolon
 semiconductor	semiconductor
 semiconductors	semiconductors
+seminal	seminal
 seminar	seminar
 seminars	seminars
 seminary	seminary
@@ -18412,6 +18453,7 @@ shine	shine
 Shinedown	Shinedown
 shines	shines
 shining	shining
+shins	shins
 shiny	shiny
 ship	ship
 shipment	shipment
@@ -19472,6 +19514,7 @@ stimulation	stimulation
 stimuli	stimuli
 stimulus	stimulus
 sting	sting
+stingray	stingray
 stinker	stinker
 stir	stir
 Stirling	Stirling
@@ -19538,6 +19581,10 @@ strange	strange
 stranger	stranger
 strangers	strangers
 strangest	strangest
+strangle	strangle
+strangled	strangled
+strangles	strangles
+strangling	strangling
 strap	strap
 strapon	strapon
 straps	straps
@@ -19635,6 +19682,7 @@ studying	studying
 stuff	stuff
 stuffed	stuffed
 stuffing	stuffing
+stuffs	stuffs
 stumble	stumble
 stump	stump
 stun	stun
