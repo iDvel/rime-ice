@@ -121,7 +121,7 @@ bash rime-install iDvel/rime-ice:others/recipes/opencc
 
 下面这个配方会在 `radical_pinyin.custom.yaml` 和 `melt_eng.custom.yaml` 里将 `speller/algebra` 修改为对应的双拼拼写，选择一个自己使用的双拼作为参数。
 
-℞ 双拼补丁
+℞ 双拼补丁（首次安装后执行，后续更新不需要执行）
 
 ```bash
 bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin_flypy
@@ -133,8 +133,10 @@ bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin_zigu
 bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin_jiajia
 ```
 
-℞ 语法模型（万象语法模型）
+℞ 添加语法模型（万象语法模型）（首次安装后执行，后续更新不需要执行）
+
 ```bash
+bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=rime_ice
 bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_flypy
 bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin
 bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_mspy
@@ -142,6 +144,19 @@ bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_dso
 bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_abc
 bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_ziguang
 bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_jiajia
+```
+
+℞ 给反查添加音调（首次安装后执行，后续更新不需要执行）
+
+```bash
+bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=rime_ice
+bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin_flypy
+bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin
+bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin_mspy
+bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin_dsogou
+bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin_abc
+bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin_ziguang
+bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin_jiajia
 ```
 
 ℞ 下载特定版本的配置

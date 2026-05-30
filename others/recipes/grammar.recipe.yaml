@@ -5,7 +5,7 @@ recipe:
   args:
     - schema=rime_ice
   description: >-
-    Customize input schema to enable double_pinyin.
+    配置语法模型（万象）。
       - rime_ice（雾凇拼音、全拼）
       - double_pinyin（自然码双拼）
       - double_pinyin_flypy（小鹤双拼）
