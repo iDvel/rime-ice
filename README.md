@@ -4,7 +4,7 @@
 
 **雾凇拼音**是一份开箱即用的简体中文 Rime 输入法配置，词库长期维护，基本功能齐全，使用完全离线，质量稳定可靠。
 
-雾凇拼音包含全拼和双拼输入方案、长期维护的精校词库、各类扩展功能和详尽的注释。适配小狼毫 Weasel、鼠须管 Squirrel、Fcitx5、iBus 等几乎所有 Rime 前端。你可以不折腾，一键下载部署后即刻使用；可以借着完善的注释和社区生态，让 AI 帮你定制改造；也可以将之作为深入了解和自定义 Rime 的起点。
+雾凇拼音包含全拼和双拼输入方案、长期维护的精校词库、各类扩展功能和详尽的注释。适配小狼毫 Weasel、鼠须管 Squirrel、Fcitx5、iBus 等几乎所有 Rime 应用。你可以不折腾，一键下载部署后即刻使用；可以借着完善的注释和社区生态，让 AI 帮你定制改造；也可以将之作为深入了解和自定义 Rime 的起点。
 
 使用雾凇拼音，享受跨平台一致、隐私友好、个性化门槛低的 Rime 简体中文输入体验。
 
@@ -21,10 +21,35 @@
 
 部署完成后就可以打字了。按 <kbd>F4</kbd> 可以切换输入方案或开关各项功能。重做以上三步可以更新/还原雾凇拼音。
 
-也可以使用 [/plum/](https://github.com/rime/plum) ℞ 配方管理工具，一行命令就能安装和更新雾凇拼音：
+也可以使用 [/plum/](https://github.com/rime/plum) ℞ 自动化安装和配置，请确保已安装 git，依次在终端执行以下命令：
 
 ```bash
+# 1. 安装 plum
+cd ~
+git clone https://github.com/rime/plum.git plum
+
+# 2. 安装雾凇拼音到默认客户端（Weasel，Squirrel，iBus-rime），其他客户端需指定 rime_dir 变量。
+# 更新配置只要直接这一步，3、4 步不需要
+cd ~/plum
 bash rime-install iDvel/rime-ice
+
+# 3. 双拼用户额外执行，全拼用户跳过。替换「方案名称」为你使用的方案
+bash rime-install iDvel/rime-ice:others/recipes/config:schema=方案名称
+
+# 4. 如需万象语法模型，额外执行。替换「方案名称」为你使用的方案
+bash rime-install iDvel/rime-ice:others/recipes/grammer:schema=方案名称
+
+# 5. 重新部署
+
+# 方案名称
+# rime_ice（雾凇拼音、全拼）
+# double_pinyin（自然码双拼）
+# double_pinyin_flypy（小鹤双拼）
+# double_pinyin_mspy（微软双拼）
+# double_pinyin_sogou（搜狗双拼）
+# double_pinyin_abc（智能 ABC 双拼）
+# double_pinyin_jiajia（拼音加加双拼）
+# double_pinyin_ziguang（紫光双拼）
 ```
 
 了解更多细节以及其他支持的安装方式，参考 [详细安装指导](./others/docs/Installation.md)。
@@ -36,7 +61,7 @@ bash rime-install iDvel/rime-ice
 1. 为简体中文设计的全拼和常见双拼方案，包括雾凇拼音（全拼）、智能 ABC、自然码、小鹤双拼、搜狗双拼、微软双拼、紫光双拼、拼音加加、9 键[^3] 和轻量的英文方案。
 2. 长期维护、精心调教且开源的百万中英词库：[了解 >](#长期维护的中英词库)
 3. 完善的基础输入体验，以及丰富的扩展功能：[了解 >](#功能演示和使用教程)
-4. 对 Rime 部分及主流前端每一项配置的详细注释，方便学习和自定义：[示例 >](./default.yaml)
+4. 对 Rime 部分及主流客户端每一项配置的详细注释，方便学习和自定义：[示例 >](./default.yaml)
 
 ### 长期维护的中英词库
 
@@ -144,6 +169,49 @@ Thanks to all contributors.
 [![Contributors Avatars](https://contrib.rocks/image?repo=iDvel/rime-ice)](https://github.com/iDvel/rime-ice/graphs/contributors)
 
 ## 常见问题
+
+<details>
+<summary>📚 我是否需要语法模型 && 如何安装</summary>
+
+### Rime 语法模型介绍
+
+Rime 语法模型功能基于佛振开发的 [八股文语法插件](https://github.com/lotem/librime-octagram)。主流客户端均预装此插件。如果需要使用，只要额外安装模型文件和对方案配置打补丁即可。
+
+语法模型期望提升长句输入的准确率，但受词典和用户自造词影响，可能会对部分造句有负面效果。
+
+### 有哪些语法模型文件可供下载
+
+- https://github.com/lotem/rime-octagram-data （八股文语法模型，适合朙月拼音用户）
+- https://github.com/amzxyz/RIME-LMDG （基于更全的数据，仓库 plum 配方使用这个项目）
+
+### 给雾凇拼音安装语法模型
+
+使用 plum 安装并打补丁
+
+```bash
+# 请先参考安装部分，完成 plum 安装
+bash rime-install iDvel/rime-ice:others/recipes/grammer:schema=方案名称
+
+# 重新部署后生效
+
+# 方案名称
+# rime_ice（雾凇拼音、全拼）
+# double_pinyin（自然码双拼）
+# double_pinyin_flypy（小鹤双拼）
+# double_pinyin_mspy（微软双拼）
+# double_pinyin_sogou（搜狗双拼）
+# double_pinyin_abc（智能 ABC 双拼）
+# double_pinyin_jiajia（拼音加加双拼）
+# double_pinyin_ziguang（紫光双拼）
+```
+
+手动安装：
+
+1. 下载语法模型文件到 Rime 用户文件夹内；
+2. 按语法模型的说明，给方案文件打补丁；
+3. 重新部署后生效。
+
+</details>
 
 <details>
 <summary>🛠️ 怎么修改雾凇拼音的配置</summary>

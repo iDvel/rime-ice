@@ -35,20 +35,20 @@ speller:
   delimiter: " '"
   algebra:
     # 根据当前所用拼音方案选择 __include 的值
-    __include: algebra_pinyin           # 全拼
-    # __include: algebra_double_pinyin  # 自然码双拼
-    # __include: algebra_flypy          # 小鹤双拼
-    # __include: algebra_mspy           # 微软双拼
-    # __include: algebra_sogou          # 搜狗双拼
-    # __include: algebra_abc            # 智能ABC双拼
-    # __include: algebra_ziguang        # 紫光双拼
-    # __include: algebra_jiajia         # 拼音加加双拼
+    __include: algebra_rime_ice                       # 全拼
+    # __include: algebra_double_pinyin                # 自然码双拼
+    # __include: algebra_double_pinyin_flypy          # 小鹤双拼
+    # __include: algebra_double_pinyin_mspy           # 微软双拼
+    # __include: algebra_double_pinyin_sogou          # 搜狗双拼
+    # __include: algebra_double_pinyin_abc            # 智能ABC双拼
+    # __include: algebra_double_pinyin_ziguang        # 紫光双拼
+    # __include: algebra_double_pinyin_jiajia         # 拼音加加双拼
 
 translator:
   dictionary: radical_pinyin
   enable_user_dict: false
 
-algebra_pinyin:
+algebra_rime_ice:
   - xform/'//
   - derive/^([nl])ue$/$1ve/
   - derive/'([nl])ue$/'$1ve/
@@ -92,7 +92,7 @@ algebra_double_pinyin:
   - xform/in(?=^|$|')/<n>/
   - xform/'|<|>//
 
-algebra_flypy:
+algebra_double_pinyin_flypy:
   - derive/^([jqxy])u(?=^|$|')/$1v/
   - derive/'([jqxy])u(?=^|$|')/'$1v/
   - derive/^([aoe])([ioun])(?=^|$|')/$1$1$2/
@@ -129,7 +129,7 @@ algebra_flypy:
   - xform/in(?=^|$|')/<b>/
   - xform/'|<|>//
 
-algebra_mspy:
+algebra_double_pinyin_mspy:
   - derive/^([jqxy])u(?=^|$|')/$1v/
   - derive/'([jqxy])u(?=^|$|')/'$1v/
   - derive/^([aoe].*)(?=^|$|')/o$1/
@@ -168,7 +168,7 @@ algebra_mspy:
   - xform/ing(?=^|$|')/;/
   - xform/'|<|>//
 
-algebra_sogou:
+algebra_double_pinyin_sogou:
   - derive/^([jqxy])u(?=^|$|')/$1v/
   - derive/'([jqxy])u(?=^|$|')/'$1v/
   - derive/^([aoe].*)(?=^|$|')/o$1/
@@ -206,7 +206,7 @@ algebra_sogou:
   - xform/ing(?=^|$|')/;/
   - xform/'|<|>//
 
-algebra_abc:
+algebra_double_pinyin_abc:
   - xform/^zh/<a>/
   - xform/^ch/<e>/
   - xform/^sh/<v>/
@@ -238,7 +238,7 @@ algebra_abc:
   - xform/[uv]e(?=^|$|')|ui(?=^|$|')/<m>/
   - xform/'|<|>//
 
-algebra_ziguang:
+algebra_double_pinyin_ziguang:
   - derive/^([jqxy])u(?=^|$|')/$1v/
   - derive/'([jqxy])u(?=^|$|')/'$1v/
   - xform/'([aoe].*)(?=^|$|')/'<o>$1/
@@ -272,7 +272,7 @@ algebra_ziguang:
   - xform/an(?=^|$|')/<r>/
   - xform/'|<|>//
 
-algebra_jiajia:
+algebra_double_pinyin_jiajia:
   - derive/^([jqxy])u(?=^|$|')/$1v/
   - derive/'([jqxy])u(?=^|$|')/'$1v/
   - derive/^([aoe])([ioun])(?=^|$|')/$1$1$2/
