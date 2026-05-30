@@ -9,6 +9,7 @@ install_files: >-
   en_dicts/*.*
   opencc/*.*
   lua/*.*
+  build/.gitkeep
   lua/cold_word_drop/*.*
   default.yaml
   squirrel.yaml

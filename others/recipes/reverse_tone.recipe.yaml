@@ -18,9 +18,9 @@ recipe:
 download_files:
   - build/kMandarin.reverse.bin::https://cdn.jsdelivr.net/gh/mirtlecn/rime-radical-pinyin@master/build/kMandarin.reverse.bin
 
-install_files:
-  - build/*.*
-  - build/kMandarin.reverse.bin
+install_files: >-
+  build/.gitkeep
+  build/kMandarin.reverse.bin
 
 patch_files:
   ${schema:-rime_ice}.custom.yaml:
