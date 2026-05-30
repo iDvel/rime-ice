@@ -174,7 +174,7 @@ Windows 7	Windows	7
 Windows 8	Windows	8
 Windows 10	Windows	10
 Windows 11	Windows	11
-# Windows 12	Windows	12
+Microsoft Defender	MicrosoftDefender
 # +_+
 iPhone 3G	iPhone3G
 iPhone 3GS	iPhone3GS
@@ -505,8 +505,8 @@ Shadowsocks	Shadowsocks
 PC	PC
 iStat	iStat
 ClashX	ClashX
+Clash Verge	ClashVerge
 ClashX Pro	ClashXPro
-Clash for Windows	ClashForWindows
 Clash for Android	ClashForAndroid
 OpenClash	OpenClash
 passwall	passwall
@@ -1886,6 +1886,8 @@ GPT-4.5	GPT-4.5
 GPT-5	GPT-5
 GPT-5.1	GPT-5.1
 GPT-5.2	GPT-5.2
+GPT-5.5	GPT-5.5
+GPT-5.4	GPT-5.4
 LaMDA	LaMDA
 Language Model for Dialogue Applications	LaMDA
 Coinbase Wallet	CoinbaseWallet
@@ -1994,6 +1996,9 @@ UUID	UUID
 Universally Unique Identifier	UUID
 Fyne	Fyne
 Claude	Claude
+Claude Opus	ClaudeOpus
+Claude Sonnet	ClaudeSonnet
+Claude Haiku	ClaudeHaiku
 Cinderella	Cinderella
 WebGPU	WebGPU
 Mailfence	Mailfence
@@ -2475,3 +2480,7 @@ Seedance	Seedance
 Dependabot	Dependabot
 KaTeX	KaTeX
 MathJax	MathJax
+Codex	Codex
+Codex CLI	CodexCLI
+Claude Code	ClaudeCode
+MCP	MCP
