@@ -133,15 +133,15 @@ bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin_zigu
 bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin_jiajia
 ```
 
-℞ 语法模型（万象语法模型）测试
+℞ 语法模型（万象语法模型）
 ```bash
-bash rime-install iDvel/rime-ice:others/recipes/grammer:schema=double_pinyin_flypy
-bash rime-install iDvel/rime-ice:others/recipes/grammer:schema=double_pinyin
-bash rime-install iDvel/rime-ice:others/recipes/grammer:schema=double_pinyin_mspy
-bash rime-install iDvel/rime-ice:others/recipes/grammer:schema=double_pinyin_dsogou
-bash rime-install iDvel/rime-ice:others/recipes/grammer:schema=double_pinyin_abc
-bash rime-install iDvel/rime-ice:others/recipes/grammer:schema=double_pinyin_ziguang
-bash rime-install iDvel/rime-ice:others/recipes/grammer:schema=double_pinyin_jiajia
+bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_flypy
+bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin
+bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_mspy
+bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_dsogou
+bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_abc
+bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_ziguang
+bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_jiajia
 ```
 
 ℞ 下载特定版本的配置

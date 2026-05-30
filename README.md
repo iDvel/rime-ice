@@ -28,8 +28,10 @@
 cd ~
 git clone https://github.com/rime/plum.git plum
 
-# 2. 安装雾凇拼音到默认客户端（Weasel，Squirrel，iBus-rime），其他客户端需指定 rime_dir 变量。
-# 更新配置只要直接这一步，3、4 步不需要
+# 2. 安装雾凇拼音到默认客户端（Weasel，Squirrel，iBus-rime），更新词库只要执行这一步，3、4 步不需要。
+# 如使用其他客户端请手动指定 rime_dir 变量。
+# e.g. rime_dir="$HOME/.config/fcitx5/rime" bash rime-install iDvel/rime-ice
+
 cd ~/plum
 bash rime-install iDvel/rime-ice
 
@@ -37,7 +39,7 @@ bash rime-install iDvel/rime-ice
 bash rime-install iDvel/rime-ice:others/recipes/config:schema=方案名称
 
 # 4. 如需万象语法模型，额外执行。替换「方案名称」为你使用的方案
-bash rime-install iDvel/rime-ice:others/recipes/grammer:schema=方案名称
+bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=方案名称
 
 # 5. 重新部署
 
@@ -175,22 +177,22 @@ Thanks to all contributors.
 
 ### Rime 语法模型介绍
 
-Rime 语法模型功能基于佛振开发的 [八股文语法插件](https://github.com/lotem/librime-octagram)。主流客户端均预装此插件。如果需要使用，只要额外安装模型文件和对方案配置打补丁即可。
+Rime 语法模型功能基于佛振开发的 [八股文语法插件](https://github.com/lotem/librime-octagram)。主流客户端均预装此插件。但如果需要使用，要额外安装与否模型文件和对方案配置打补丁。
 
-语法模型期望提升长句输入的准确率，但受词典和用户自造词影响，可能会对部分造句有负面效果。
+语法模型期望提升长句输入的准确率，但受训练数据、词典和用户自造词影响，不保证在所有情况下的准确率均能有提升。
 
-### 有哪些语法模型文件可供下载
+### 目前能用的部分语法模型
 
 - https://github.com/lotem/rime-octagram-data （八股文语法模型，适合朙月拼音用户）
 - https://github.com/amzxyz/RIME-LMDG （基于更全的数据，仓库 plum 配方使用这个项目）
 
 ### 给雾凇拼音安装语法模型
 
-使用 plum 安装并打补丁
+使用 plum 安装，并打补丁
 
 ```bash
 # 请先参考安装部分，完成 plum 安装
-bash rime-install iDvel/rime-ice:others/recipes/grammer:schema=方案名称
+bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=方案名称
 
 # 重新部署后生效
 
@@ -242,7 +244,7 @@ bash rime-install iDvel/rime-ice:others/recipes/grammer:schema=方案名称
 patch:
   # 修改为小鹤双拼的拼写派生规则，因为不在同一个文件了，前面要加上文件名
   speller/algebra:
-    __include: melt_eng.schema.yaml:/algebra_flypy
+    __include: melt_eng.schema.yaml:/algebra_double_pinyin_flypy
 ```
 
 2. 创建 `radical_pinyin.custom.yaml` 修改反查及辅码派生规则：
@@ -251,7 +253,7 @@ patch:
 patch:
   # 修改为小鹤双拼的拼写派生规则，因为不在同一个文件了，前面要加上文件名
   speller/algebra:
-    __include: radical_pinyin.schema.yaml:/algebra_flypy
+    __include: radical_pinyin.schema.yaml:/algebra_double_pinyin_flypy
 ```
 
 3. （按需选择）创建 `double_pinyin_flypy.custom.yaml`：
