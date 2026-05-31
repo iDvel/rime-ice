@@ -21,11 +21,11 @@
 部署完成后就可以打字了。按 <kbd>F4</kbd> 可以切换输入方案或开关各项功能。重做以上三步可以更新/还原雾凇拼音。
 
 <details>
-<summary>此外，雾凇拼音也支持命令行自动化安装、打补丁和配置语法模型。</summary>
+<summary>↓ 雾凇拼音也支持命令行自动安装、打补丁和配置语法模型 ↓</summary>
 
 ```bash
 * 需要安装 git 及 bash
-* Windows 环境 bash 命令被系统 WSL 占用，可请进入 git bash 环境再执行。
+* Windows 环境 bash 命令被系统 WSL 占用，进入 git bash 环境再执行以下命令
 
 # 1. 安装 plum
 cd ~
@@ -58,9 +58,7 @@ bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=rime_ice
 
 </details>
 
-</br>
-
-要了解更多细节，及其他支持的安装方式，参考 [详细安装指导](./others/docs/Installation.md)。
+要了解更多细节及其他支持的安装方式，请参考 [详细安装指导](./others/docs/Installation.md)。
 
 ## 介绍
 
