@@ -10,7 +10,6 @@
 
 [立即下载安装](#安装) | [功能演示和教程](#功能演示和使用教程) | [常见问题](#常见问题) | [词库共建](https://github.com/iDvel/rime-ice/issues/666) | [更新日志](./others/docs/Changelog.md) | [详细介绍](https://dvel.me/posts/rime-ice/) ↗ | [在线体验](https://www.mintimate.cc/zh/demo/fcitx5Online.html)[^1] ↗
 
-
 ## 安装
 
 到 Rime [官网](https://rime.im/) 或 app 商店下载安装 Rime 输入法应用。然后：
@@ -21,9 +20,13 @@
 
 部署完成后就可以打字了。按 <kbd>F4</kbd> 可以切换输入方案或开关各项功能。重做以上三步可以更新/还原雾凇拼音。
 
-也可以使用 [/plum/](https://github.com/rime/plum) ℞ 自动化安装和配置，请确保已安装 git，依次在终端执行以下命令：
+<details>
+<summary>此外，雾凇拼音也支持命令行自动化安装、打补丁和配置语法模型。</summary>
 
 ```bash
+* 需要安装 git 及 bash
+* Windows 环境 bash 命令被系统 WSL 占用，可请进入 git bash 环境再执行。
+
 # 1. 安装 plum
 cd ~
 git clone https://github.com/rime/plum.git plum
@@ -31,15 +34,14 @@ git clone https://github.com/rime/plum.git plum
 # 2. 安装雾凇拼音到默认客户端（Weasel，Squirrel，iBus-rime），更新词库只要执行这一步，3、4 步不需要。
 # 如使用其他客户端请手动指定 rime_dir 变量。
 # e.g. rime_dir="$HOME/.config/fcitx5/rime" bash rime-install iDvel/rime-ice
-
 cd ~/plum
 bash rime-install iDvel/rime-ice
 
-# 3. 双拼用户额外执行，全拼用户跳过。替换「方案名称」为你使用的方案
-bash rime-install iDvel/rime-ice:others/recipes/config:schema=方案名称
+# 3. 双拼用户额外执行，全拼用户跳过。替换「double_pinyin_flypy」为你使用的方案
+bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin_flypy
 
-# 4. 如需万象语法模型，额外执行。替换「方案名称」为你使用的方案
-bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=方案名称
+# 4. 如需万象语法模型，额外执行。替换「rime_ice」为你使用的方案
+bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=rime_ice
 
 # 5. 重新部署
 
@@ -54,7 +56,11 @@ bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=方案名称
 # double_pinyin_ziguang（紫光双拼）
 ```
 
-了解更多细节以及其他支持的安装方式，参考 [详细安装指导](./others/docs/Installation.md)。
+</details>
+
+</br>
+
+要了解更多细节，及其他支持的安装方式，参考 [详细安装指导](./others/docs/Installation.md)。
 
 ## 介绍
 

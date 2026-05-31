@@ -3,23 +3,26 @@
 - [要求](#要求)
 - [安装](#安装)
   - [手动安装](#手动安装)
-  - [Git 安装](#git-安装)
   - [东风破 plum](#东风破-plum)
+  - [Git 安装](#git-安装)
   - [仓输入法 Hamster](#仓输入法-hamster)
   - [Arch Linux](#arch-linux)（AUR）
+  - [Fcitx5.js](#fcitx5.js)
   - [Linux Fcitx4](#linux-fcitx4)
   - [Fcitx For Android](#fcitx-for-android)
 
 ## 要求
 
-要使用雾凇拼音，需要
+雾凇拼音适配当前主流 Rime 客户端，前往 Rime 官网 & app 商店下载最新版客户端即可。
 
-- 您的 Rime 前端提供的 librime 版本 ≥ 1.8.5 且
+如使用 Linux/Unix 或其他小众客户端，请要注意雾凇拼音需要：
+
+- Rime 客户端提供的 librime 版本 ≥ 1.8.5
 - 含有 librime-lua 依赖
 
-可参考 [rime/librime](https://github.com/rime/librime#frontends) 查看使用 librime 的前端。
+你可以参考 [rime/librime](https://github.com/rime/librime#frontends) 选择你 librime 的前端。
 
-雾凇拼音的部分配置可能要求更高的 librime 或者客户端版本，这些功能已在具体配置文件中注明。
+雾凇拼音的部分功能可能要求更高的 librime 或者客户端版本，这些功能会在文档中注明。
 
 ## 安装
 
@@ -32,9 +35,140 @@
 
 只需要使用或者更新词库的话，可以手动粘贴覆盖 `cn_dicts` `en_dicts` `opencc` 三个文件夹。
 
-注意：雾凇拼音中多个文件可能与其他方案同名冲突，如果是新手想一键安装，建议**备份原先配置，清空配置目录**再导入。
+注意：雾凇拼音中多个文件可能与其他方案同名冲突，如果是新手想一键安装，请**备份原先配置，清空配置目录**再导入。
 
 如果单独使用词库，注意：`rime_ice.dict.yaml` 下面包含了大写字母，这和配置有些许绑定，可以直接删除，详细说明：[#356](https://github.com/iDvel/rime-ice/issues/356)
+
+### 东风破 plum
+
+Plum 这是 [Rime 官方](https://github.com/rime/plum) 使用配置管理工具，可以一行命令安装、配置和更新雾凇拼音。
+
+**1. 安装 plum：**
+
+```bash
+# 请先安装 git 和 bash，并加入环境变量
+# 请确保和 github.com 的连接稳定
+cd ~
+git clone https://github.com/rime/plum.git plum
+# 卸载 plum 只需要删除 ~/plum 文件夹即可
+```
+
+plum 的一般用法是：
+
+```bash
+cd ~/plum
+# 安装配方到官方客户端的 Rime 目录：
+bash rime-install {recipe_name}
+# 对于非 Squirrel、Weasel 和 iBus 客户端，请通过 rime_dir 变量，手动指定 Rime 用户目录：
+rime_dir="$HOME/.local/share/fcitx5/rime" bash rime-install {recipe_name}
+```
+
+**2. 安装雾凇拼音配方**
+
+<details>
+<summary>℞ 安装或更新全部文件（初次安装先执行这个）</summary>
+
+```bash
+bash rime-install iDvel/rime-ice
+```
+
+</details>
+
+<details>
+<summary>℞ 安装或更新所有词库文件（中文、英文和 Emoji）</summary>
+
+词库配方只是更新具体词库文件，并不更新 `rime_ice.dict.yaml` 和 `melt_eng.dict.yaml`，因为用户可能会挂载其他词库。如果更新后部署时报错，可能是增、删、改了文件名，需要检查上面两个文件和词库的对应关系。
+
+```bash
+bash rime-install iDvel/rime-ice:others/recipes/all_dicts
+```
+
+</details>
+
+<details>
+<summary>℞ 安装或更新中文词库（`cn_dicts/` 目录内所有文件）</summary>
+
+词库配方只是更新具体词库文件，并不更新 `rime_ice.dict.yaml` 和 `melt_eng.dict.yaml`，因为用户可能会挂载其他词库。如果更新后部署时报错，可能是增、删、改了文件名，需要检查上面两个文件和词库的对应关系。
+
+```bash
+bash rime-install iDvel/rime-ice:others/recipes/cn_dicts
+```
+
+</details>
+
+<details>
+<summary>℞ 安装或更新英文词库（`en_dicts/` 目录内所有文件）</summary>
+
+```bash
+bash rime-install iDvel/rime-ice:others/recipes/en_dicts
+```
+
+</details>
+
+<details>
+<summary>℞ 安装或更新 Emoji（`opencc/` 目录内所有文件）</summary>
+
+```bash
+bash rime-install iDvel/rime-ice:others/recipes/opencc
+```
+
+</details>
+
+<details><summary>℞ 自动双拼补丁（首次安装后执行，后续更新不需要执行）</summary>
+
+这个配方会在 `radical_pinyin.custom.yaml` 和 `melt_eng.custom.yaml` 里将 `speller/algebra` 修改为对应的双拼拼写，选择一个自己使用的双拼作为参数。
+
+```bash
+bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin_flypy
+bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin
+bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin_mspy
+bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin_dsogou
+bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin_abc
+bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin_ziguang
+bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin_jiajia
+```
+
+</details>
+
+<details><summary>℞ 添加语法模型（万象语法模型）（首次安装后执行，后续更新不需要执行）</summary>
+
+```bash
+bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=rime_ice
+bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_flypy
+bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin
+bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_mspy
+bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_dsogou
+bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_abc
+bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_ziguang
+bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_jiajia
+```
+
+</details>
+
+<details><summary>℞ 给反查添加音调（首次安装后执行，后续更新不需要执行）</summary>
+
+```bash
+bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=rime_ice
+bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin_flypy
+bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin
+bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin_mspy
+bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin_dsogou
+bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin_abc
+bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin_ziguang
+bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin_jiajia
+```
+
+</details>
+
+<details><summary>℞ 下载特定版本的配置</summary>
+
+在仓库后加 `@tag` 即可，例如：
+
+```sh
+bash rime-install iDvel/rime-ice@2024.05.21:others/recipes/full
+```
+
+</details>
 
 ### Git 安装
 
@@ -49,123 +183,6 @@ git pull
 ```
 
 通过 checkout 命令，您也可以实现更新部分文件的效果。
-
-### 东风破 plum
-
-先根据 /plum/ 说明安装 plum。
-
-<details>
-<summary>/plum/ 简易教程</summary>
-
-安装 plum
-
-```bash
-# 请先安装 git 和 bash，并加入环境变量
-# 请确保和 github.com 的连接稳定
-cd ~
-git clone https://github.com/rime/plum.git plum
-# 卸载 plum 只需要删除 ~/plum 文件夹即可
-```
-
-使用 plum
-
-```bash
-cd ~/plum
-bash rime-install <recipe_name>
-```
-部分发行版可能需要手动指定安装位置
-
-```bash
-# 为 fcitx5 安装
-rime_frontend=fcitx5-rime bash rime-install <recipe_name>
-
-# 或指定位置
-rime_dir="$HOME/.local/share/fcitx5/rime" bash rime-install <recipe_name>
-```
-
-</details>
-
-然后选择配方（`others/recipes/*.recipe.yaml`）来进行安装或更新。
-
-词库配方只是更新具体词库文件，并不更新 `rime_ice.dict.yaml` 和 `melt_eng.dict.yaml`，因为用户可能会挂载其他词库。如果更新后部署时报错，可能是增、删、改了文件名，需要检查上面两个文件和词库的对应关系。
-
-℞ 安装或更新全部文件
-
-```bash
-bash rime-install iDvel/rime-ice
-```
-
-℞ 安装或更新所有词库文件（包含下面三个）
-
-```bash
-bash rime-install iDvel/rime-ice:others/recipes/all_dicts
-```
-
-℞ 安装或更新拼音词库文件（`cn_dicts/` 目录内所有文件）
-
-```bash
-bash rime-install iDvel/rime-ice:others/recipes/cn_dicts
-```
-
-℞ 安装或更新英文词库文件（`en_dicts/` 目录内所有文件）
-
-```bash
-bash rime-install iDvel/rime-ice:others/recipes/en_dicts
-```
-
-℞ 安装或更新 opencc（`opencc/` 目录内所有文件）
-
-```bash
-bash rime-install iDvel/rime-ice:others/recipes/opencc
-```
-
-下面这个配方会在 `radical_pinyin.custom.yaml` 和 `melt_eng.custom.yaml` 里将 `speller/algebra` 修改为对应的双拼拼写，选择一个自己使用的双拼作为参数。
-
-℞ 双拼补丁（首次安装后执行，后续更新不需要执行）
-
-```bash
-bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin_flypy
-bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin
-bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin_mspy
-bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin_dsogou
-bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin_abc
-bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin_ziguang
-bash rime-install iDvel/rime-ice:others/recipes/config:schema=double_pinyin_jiajia
-```
-
-℞ 添加语法模型（万象语法模型）（首次安装后执行，后续更新不需要执行）
-
-```bash
-bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=rime_ice
-bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_flypy
-bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin
-bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_mspy
-bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_dsogou
-bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_abc
-bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_ziguang
-bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=double_pinyin_jiajia
-```
-
-℞ 给反查添加音调（首次安装后执行，后续更新不需要执行）
-
-```bash
-bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=rime_ice
-bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin_flypy
-bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin
-bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin_mspy
-bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin_dsogou
-bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin_abc
-bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin_ziguang
-bash rime-install iDvel/rime-ice:others/recipes/reverse_tone:schema=double_pinyin_jiajia
-```
-
-℞ 下载特定版本的配置
-
-在仓库后加 `@tag` 即可，例如：
-
-```sh
-bash rime-install iDvel/rime-ice@2024.05.21:others/recipes/full
-```
 
 ### 仓输入法 Hamster
 
@@ -212,6 +229,10 @@ patch:
 ```
 
 </details>
+
+### Fcitx5.js
+
+在 Release 界面，下载 fcitx5_rime_js-rime_ice.zip，将配置 zip 目标指向此压缩包即可。
 
 ### Linux Fcitx4
 
