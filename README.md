@@ -181,7 +181,7 @@ Thanks to all contributors.
 
 ### Rime 语法模型介绍
 
-Rime 语法模型功能基于佛振开发的 [八股文语法插件](https://github.com/lotem/librime-octagram)。主流客户端均预装此插件。但如果需要使用，要额外安装与否模型文件和对方案配置打补丁。
+Rime 语法模型功能基于佛振开发的 [八股文语法插件](https://github.com/lotem/librime-octagram)。主流客户端均预装此插件。需要使用的话，要额外安装模型文件和方案配置补丁。
 
 语法模型期望提升长句输入的准确率，但受训练数据、词典和用户自造词影响，不保证在所有情况下的准确率均能有提升。
 
@@ -240,7 +240,7 @@ bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=方案名称
 
 双拼可以直接用 plum 自动打补丁，也可以手写，下面以小鹤双拼方案 `double_pinyin_flypy.schema.yaml` 为例。
 
-（补丁放到仓库里了 [others/双拼补丁示例](https://github.com/iDvel/rime-ice/tree/main/others/%E5%8F%8C%E6%8B%BC%E8%A1%A5%E4%B8%81%E7%A4%BA%E4%BE%8B)）
+（补丁放到仓库里了 [others/patch_examples](https://github.com/iDvel/rime-ice/tree/main/others/patch_examples)）
 
 1. 创建 `melt_eng.custom.yaml` 修改英文派生规则：
 

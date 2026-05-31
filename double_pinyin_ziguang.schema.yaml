@@ -10,7 +10,7 @@
 # 目前配置中有个别功能仍然是全拼拼写，不能自动适配，所以需要手动修改一下：
 # - 英文中部分符号的派生规则：在英文方案文件 melt_eng.schema.yaml > speller > algebra 修改为对应的双拼拼写运算
 # - 部件拆字的拼写规则：在部件拆字方案 radical_pinyin.schema.yaml > speller > algebra 修改为对应的双拼拼写运算
-# 打个补丁一劳永逸，补丁写法参考 [常见问题](https://github.com/iDvel/rime-ice/issues/133) 或 others/双拼补丁示例/ 文件夹
+# 打个补丁一劳永逸，补丁写法参考 [常见问题](https://github.com/iDvel/rime-ice/issues/133) 或 others/patch_examples/ 文件夹
 
 
 # 方案说明

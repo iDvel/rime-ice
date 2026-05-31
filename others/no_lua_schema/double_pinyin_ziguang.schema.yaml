@@ -12,16 +12,16 @@
 # - 部件拆字的拼写规则：在部件拆字方案 radical_pinyin.schema.yaml > speller > algebra 修改为对应的双拼拼写运算
 # 打个补丁一劳永逸，补丁写法参考 [常见问题](https://github.com/iDvel/rime-ice/issues/133) 或 others/patch_examples/ 文件夹
 
-
+# 去除 lua 版本
 # 方案说明
 schema:
-  schema_id: double_pinyin
-  name: 自然码双拼
+  schema_id: double_pinyin_ziguang
+  name: 紫光双拼
   version: "1"
   author:
     - Dvel
   description: |
-    雾凇拼音 - 自然码双拼
+    雾凇拼音 - 紫光双拼
     https://github.com/iDvel/rime-ice
   dependencies:
     - melt_eng        # 英文输入，作为次翻译器挂载到拼音方案
@@ -44,15 +44,11 @@ switches:
     reset: 1
   - name: full_shape
     states: [ 半角, 全角 ]
-  - name: search_single_char  # search.lua 的功能开关，辅码查词时是否单字优先
-    states: [正常, 单字]
-    abbrev: [词, 单]
 
 
 # 输入引擎
 engine:
   processors:
-    - lua_processor@*select_character  # 以词定字
     - ascii_composer
     - recognizer
     - key_binder
@@ -71,141 +67,58 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    - lua_translator@*date_translator    # 时间、日期、星期
-    - lua_translator@*lunar              # 农历
-    - lua_translator@*uuid               # UUID
     - table_translator@custom_phrase     # 自定义短语 custom_phrase_double.txt
     - table_translator@melt_eng          # 英文输入
     - table_translator@cn_en             # 中英混合词汇
     - table_translator@radical_lookup    # 部件拆字反查
-    - lua_translator@*unicode            # Unicode
-    - lua_translator@*number_translator  # 数字、金额大写
-    - lua_translator@*calc_translator    # 计算器
-    - lua_translator@*force_gc           # 暴力 GC
   filters:
-    - lua_filter@*corrector                         # 错音错字提示
     - reverse_lookup_filter@radical_reverse_lookup  # 部件拆字滤镜
-    - lua_filter@*autocap_filter                    # 英文自动大写
-    - lua_filter@*pin_cand_filter                   # 置顶候选项（顺序要求：置顶候选项 > Emoji > 简繁切换）
-    - lua_filter@*reduce_english_filter             # 降低部分英语单词在候选项的位置
     - simplifier@emoji                              # Emoji
     - simplifier@traditionalize                     # 简繁切换
-    - lua_filter@*search@radical_pinyin             # 部件拆字辅码
     - uniquifier                                    # 去重
-
-
-# Lua 配置: 日期、时间、星期、ISO 8601、时间戳的触发关键字
-date_translator:
-  date: date            # 日期： 2022-11-29
-  time: time            # 时间： 18:13
-  week: week            # 星期： 星期二
-  datetime: datetime    # ISO 8601： 2022-11-29T18:13:11+08:00
-  timestamp: timestamp  # 时间戳： 1669716794
-  datezh: datezh        # 中文日期： 二〇二六年二月二十五日 | 二零二六年二月二十五日
-  dateen: dateen        # 英文日期： 英式 8 March 2026 | 美式 March 8, 2026
-
-
-# Lua 配置：农历
-# 农历触发关键字
-# template 字段：{干支年} {农历月} {农历日} {生肖} {俗称农历月} {简记农历日}
-lunar: lunar
-lunar_template: "{干支年}{生肖}年{俗称农历月}{农历日}"
-
-
-# Lua 配置: 生成 UUID 的触发关键字
-uuid: uuid
-
-
-# Lua 配置: 降低部分英语单词在候选项的位置。
-# 详细介绍 https://dvel.me/posts/make-rime-en-better/#短单词置顶的问题
-# 正常情况： 输入 rug 得到 「1.rug 2.如果 …… 」
-# 降低之后： 输入 rug 得到 「1.如果 2.rug …… 」
-# 几种模式：
-# all     降低脚本内置的单词（所有 3~4 位长度、前 2~3 位是完整拼音、最后一位是声母），words 作为自定义的额外补充
-# custom  完全自定义，只降低 words 里的
-# none    不降低任何单词，相当于没有启用这个 Lua
-# （匹配的是编码，不是单词）
-reduce_english_filter:
-  mode: custom  # all | custom | none
-  idx: 2        # 降低到第 idx 个位置
-  # 自定义的单词列表，示例列表没有降低部分常用单词，如 and cat mail Mac but bad shit ……
-  words: [
-    aid, ann,
-    bail, bait, bam, band, bans, bat, bay, bend, bent, benz, bib, bid, bien, biz, boc, bop, bos, bud, buf, bach, bench, bush,
-    cab, cad, cain, cam, cans, cap, cef, chad, chan, chap, chef, cher, chew, chic, chin, chip, chit, coup, cum, cunt, cur, couch,
-    dab, dag, dal, dam, dent, dew, dial, diet, dim, din, dip, dis, dit, doug, dub, dug, dunn,
-    fab, fax, fob, fog, foul, fur,
-    gag, gail, gain, gal, gam, gaol, ged, gel, ger, guam, gus, gut,
-    hail, ham, hank, hans, hat, hay, heil, heir, hem, hep, hud, hum, hung, hunk, hut, hush,
-    jim, jug,
-    kat,
-    lab, lad, lag, laid, lam, laos, lap, lat, lax, lay, led, leg, lex, liam, lib, lid, lied, lien, lies, linn, lip, lit, liz, lob, lug, lund, lung, lux, lash, loch, lush,
-    mag, maid, mann, mar, mat, med, mel, mend, mens, ment, mil, mins, mint, mob, moc, mop, mos, mot, mud, mug, mum, mesh,
-    nap, nat, nay, neil, nib, nip, noun, nous, nun, nut, nail, nash,
-    pac, paid, pail, pain, pair, pak, pal, pam, pans, pant, pap, par, pat, paw, pax, pens, pic, pier, pies, pins, pint, pit, pix, pod, pop, pos, pot, pour, pow, pub, pinch, pouch,
-    rand, rant, rent, rep, res, ret, rex, rib, rid, rig, rim, rub, rug, rum, runc, runs, ranch,
-    sac, sail, sal, sam, sans, sap, saw, sax, sew, sham, shaw, shin, sig, sin, sip, sis, suit, sung, suns, sup, sur, sus,
-    tad, tail, taj, tar, tax, tec, ted, tel, ter, tex, tic, tied, tier, ties, tim, tin, tit, tour, tout, tum,
-    wag, wand, womens, wap, wax, weir, won,
-    yan, yen,
-    zach
-  ]
-
-
-# Lua 配置: 置顶候选项
-# 注释太长了，请参考 pin_cand_filter.lua 开头的说明书。
-pin_cand_filter:
-  # 格式：编码<Tab>字词1<Space>字词2……
-  - d	的
 
 
 # 主翻译器，拼音
 translator:
   dictionary: rime_ice          # 挂载词库 rime_ice.dict.yaml
   enable_word_completion: true  # 大于 4 音节的词条自动补全，librime > 1.11.2
-  prism: double_pinyin          # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
-  spelling_hints: 8             # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
-  always_show_comments: true    # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。
+  prism: double_pinyin_ziguang  # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
   initial_quality: 1.2          # 拼音的权重应该比英文大
-  comment_format:               # 标记拼音注释，供 corrector.lua 做判断用
-    - xform/^/［/
-    - xform/$/］/
   preedit_format:               # preedit_format 影响到输入框的显示和“Shift+回车”上屏的字符
-    - xform/(^|[ '])aa/$1a/
-    - xform/(^|[ '])ee/$1e/
-    - xform/(^|[ '])oo/$1o/
-    - xform/([bpmnljqxy])n/$1in/
-    - xform/(\w)g/$1eng/
-    - xform/(\w)q/$1iu/
-    - xform/([gkhvuirzcs])w/$1ua/
-    - xform/(\w)w/$1ia/
-    - xform/([dtnlgkhjqxyvuirzcs])r/$1uan/
-    - xform/(\w)t/$1ve/
-    - xform/([gkhvuirzcs])y/$1uai/
-    - xform/(\w)y/$1ing/
-    - xform/([dtnlgkhvuirzcs])o/$1uo/
-    - xform/(\w)p/$1un/
-    - xform/([jqx])s/$1iong/
-    - xform/(\w)s/$1ong/
-    - xform/([jqxnlb])d/$1iang/
-    - xform/(\w)d/$1uang/
-    - xform/(\w)f/$1en/
-    - xform/(\w)h/$1ang/
-    - xform/(\w)j/$1an/
-    - xform/(\w)k/$1ao/
-    - xform/(\w)l/$1ai/
-    - xform/(\w)z/$1ei/
-    - xform/(\w)x/$1ie/
-    - xform/(\w)c/$1iao/
-    - xform/([dtgkhvuirzcs])v/$1ui/
-    - xform/(\w)b/$1ou/
-    - xform/(\w)m/$1ian/
-    - xform/([aoe])\1(\w)/$1$2/
-    - "xform/(^|[ '])v/$1zh/"
-    - "xform/(^|[ '])i/$1ch/"
-    - "xform/(^|[ '])u/$1sh/"
-    - xform/([jqxy])v/$1u/
-    - xform/([nl])v/$1ü/
+    - xform/o(\w)/0$1/              # 零聲母先改爲0，以方便後面的轉換
+    - xform/([jqxy])n/$1ue/         # 提前轉換雙拼碼 n 和 g，因爲轉換後的拼音裏就快要出現這兩個字母了，那時將難以分辨出雙拼碼
+    - xform/([nl])n/$1ve/
+    - xform/([dtgkhzcsuai])n/$1ui/
+    - xform/([nljqxb])g/$1iang/
+    - xform/([gkhuai])g/$1uang/
+    - xform/(\w)w/$1en/
+    - xform/(\w)r/$1an/
+    - xform/(\w)t/$1eng/
+    - xform/([jqxylmnbp])y/$1in/
+    - xform/([zcsuaigkh])y/$1uai/
+    - xform/([dtnlgkhrzcsuai])o/$1uo/
+    - xform/(\w)q/$1ao/
+    - xform/(\w)p/$1ai/
+    - xform/(\w)s/$1ang/
+    - xform/(\w)d/$1ie/
+    - xform/(\w)f/$1ian/
+    - xform/([jqx])h/$1iong/
+    - xform/([dtnlgkhrzcsuai])h/$1ong/
+    - xform/0j/0er/
+    - xform/([dnlmjqx])j/$1iu/
+    - xform/(\w)k/$1ei/
+    - xform/(\w)l/$1uan/
+    - xform/(\w)z/$1ou/
+    - xform/([jqxl])x/$1ia/
+    - xform/([gkhuai])x/$1ua/
+    - xform/(\w);/$1ing/
+    - xform/(\w)b/$1iao/
+    - xform/(\w)m/$1un/
+    - "xform/(^|[ '])u/$1zh/"  # 復原聲母，音節開始處的雙拼字母a改寫爲zh；其他位置的才真正是a
+    - "xform/(^|[ '])a/$1ch/"
+    - "xform/(^|[ '])i/$1sh/"
+    - xform/0(\w)/$1/          # 好了，現在可以把零聲母拿掉啦
+    - xform/([nljqxy])v/$1ü/   # 這樣纔是漢語拼音 :-)
     - xform/ü/v/  # ü 显示为 v
     - xform/(?<=[A-Z])\s(?=[A-Z])//  # 消除大写字母之间的空格
   # dictionary_exclude: [肏屄, 鸡巴]  # 如有屏蔽 NSFW 词汇需求 librime >= 1.14.0 等价于从 .dict.yaml 中删除对应词条，但不影响组句和用户词库。
@@ -224,7 +137,7 @@ melt_eng:
 # 中英混合词汇
 cn_en:
   dictionary: ""
-  user_dict: en_dicts/cn_en_double_pinyin
+  user_dict: en_dicts/cn_en_ziguang
   db_class: stabledb
   enable_completion: true
   enable_sentence: false
@@ -247,7 +160,7 @@ custom_phrase:
 emoji:
   option_name: emoji         # 对应 switches 中的 name
   opencc_config: emoji.json  # 选择要加载的 OpenCC 配置
-  inherit_comment: false     # 在 corrector.lua 及反查中，emoji 的 comment 显示为空
+  inherit_comment: false     # 在反查中，emoji 的 comment 显示为空
 
 
 # 简繁切换
@@ -255,7 +168,7 @@ traditionalize:
   option_name: traditionalization  # 对应 switches 中的 name
   opencc_config: s2t.json          # s2t.json | s2hk.json | s2tw.json | s2twp.json （Rime 内置配置，在程序目录可找到）
   tips: none                       # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
-  tags: [ abc, number, gregorian_to_lunar ]  # 限制在对应 tag，不对其他如反查的内容做简繁转换
+  tags: [ abc ]  # 限制在对应 tag，不对其他如反查的内容做简繁转换
 
 
 # 标点符号
@@ -300,17 +213,12 @@ recognizer:
   import_preset: default                # 从 default.yaml 继承通用的
   patterns:                             # 再增加方案专有的：
     punct: "^V([0-9]|10|[A-Za-z]+)$"    # 响应 symbols_caps_v.yaml 的 symbols
-    radical_lookup: "^uU[a-z]+$"        # 响应部件拆字的反查，触发前缀与 radical_lookup/prefix 匹配
-    unicode: "^U[a-f0-9]+"              # 脚本将自动获取第 2 个字符 U 作为触发前缀，响应 lua_translator@*unicode，输出 Unicode 字符
-    number: "^R[0-9]+[.]?[0-9]*"        # 脚本将自动获取第 2 个字符 R 作为触发前缀，响应 lua_translator@*number_translator，数字金额大写
-    calculator: "^cC.+"                 # 响应 lua_translator@*calc_translator，计算器。前缀设定项 calculator/prefix
-    gregorian_to_lunar: "^N[0-9]{1,8}"  # 响应 lua_translator@*lunar，公历转农历
+    radical_lookup: "^uU[a-z;]+$"       # 响应部件拆字的反查，触发前缀与 radical_lookup/prefix 匹配
 
 
 # 从 default 继承快捷键
 key_binder:
   import_preset: default  # 从 default.yaml 继承通用的
-  search: "`"             # 辅码引导符，要添加到 speller/alphabet
   # bindings:             # 也可以再增加方案专有的
 
 
@@ -331,39 +239,35 @@ editor:
 # 拼写设定
 speller:
   # 如果不想让什么标点直接上屏，可以加在 alphabet，或者编辑标点符号为两个及以上的映射
-  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA`
-  # initials 定义仅作为始码的按键，排除 ` 让单个的 ` 可以直接上屏
-  initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA;
   delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
     - erase/^xx$/
     - derive/^([jqxy])u$/$1v/
-    - derive/^([aoe])([ioun])$/$1$1$2/
-    - xform/^([aoe])(ng)?$/$1$1$2/
-    - xform/iu$/Ⓠ/
-    - xform/[iu]a$/Ⓦ/
-    - xform/[uv]an$/Ⓡ/
-    - xform/[uv]e$/Ⓣ/
-    - xform/ing$|uai$/Ⓨ/
-    - xform/^sh/Ⓤ/
-    - xform/^ch/Ⓘ/
-    - xform/^zh/Ⓥ/
+    - xform/^([aoe].*)$/Ⓞ$1/  # 添上固定的零聲母o，先標記爲大寫O
+    - xform/en$/Ⓦ/
+    - xform/eng$/Ⓣ/
+    - xform/in$|uai$/Ⓨ/
+    - xform/^zh/Ⓤ/
+    - xform/^sh/Ⓘ/
     - xform/uo$/Ⓞ/
-    - xform/[uv]n$/Ⓟ/
-    - xform/(.)i?ong$/$1Ⓢ/
-    - xform/[iu]ang$/Ⓓ/
-    - xform/(.)en$/$1Ⓕ/
-    - xform/(.)eng$/$1Ⓖ/
-    - xform/(.)ang$/$1Ⓗ/
-    - xform/ian$/Ⓜ/
-    - xform/(.)an$/$1Ⓙ/
-    - xform/iao$/Ⓒ/
-    - xform/(.)ao$/$1Ⓚ/
-    - xform/(.)ai$/$1Ⓛ/
-    - xform/(.)ei$/$1Ⓩ/
-    - xform/ie$/Ⓧ/
-    - xform/ui$/Ⓥ/
-    - xform/(.)ou$/$1Ⓑ/
-    - xform/in$/Ⓝ/
-    - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⓂⒿⒸⓀⓁⓏⓍⓋⒷⓃ/qwrtyuiopsdfghmjcklzxvbn/
+    - xform/ai$/Ⓟ/
+    - xform/^ch/Ⓐ/
+    - xform/[iu]ang$/Ⓖ/
+    - xform/ang$/Ⓢ/  # ang should be placed after iang/uang
+    - xform/ie$/Ⓓ/
+    - xform/ian$/Ⓕ/
+    - xform/(.)i?ong$/$1Ⓗ/
+    - xform/er$|iu$/Ⓙ/
+    - xform/ei$/Ⓚ/
+    - xform/uan$/Ⓛ/
+    - xform/ing$/;/
+    - xform/ou$/Ⓩ/
+    - xform/[iu]a$/Ⓧ/
+    - xform/iao$/Ⓑ/
+    - xform/ue$|ui$|ve$/Ⓝ/
+    - xform/un$/Ⓜ/
+    - xform/ao$/Ⓠ/ # ao should be placed after iao
+    - xform/an$/Ⓡ/ # an should be placed after uan/ian
+    - xlit/ⓌⓉⓎⓊⒾⓄⓅⒶⒼⓈⒹⒻⒽⒿⓀⓁⓏⓍⒷⓃⓂⓆⓇ/wtyuiopagsdfhjklzxbnmqr/
     # - abbrev/^(.).+$/$1/  # 首字母简拼，开启后会导致 3 个字母时 kj'x 变成 k'jx 的问题

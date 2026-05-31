@@ -7,8 +7,8 @@
   - [Git 安装](#git-安装)
   - [仓输入法 Hamster](#仓输入法-hamster)
   - [Arch Linux](#arch-linux)（AUR）
-  - [Fcitx5.js](#fcitx5.js)
-  - [Linux Fcitx4](#linux-fcitx4)
+  - [Fcitx5.js](#fcitx5js)
+  - [无法使用 lua 的客户端（e.g. Fcitx4）](#linux-fcitx4-或其他无法使用-lua-的客户端)
   - [Fcitx For Android](#fcitx-for-android)
 
 ## 要求
@@ -170,6 +170,14 @@ bash rime-install iDvel/rime-ice@2024.05.21:others/recipes/full
 
 </details>
 
+<details><summary>℞ 移除所有 lua 依赖</summary>
+
+```bash
+bash rime-install iDvel/rime-ice:others/recipes/no_lua_schema
+```
+
+</details>
+
 ### Git 安装
 
 您如果熟悉 git 常用操作，可以使用 git clone 命令将本仓库克隆到对应前端的用户目录。由于本库提交历史较多且更改频繁，添加 `--depth` 参数可以显著减少传输体积。
@@ -234,28 +242,15 @@ patch:
 
 在 Release 界面，下载 fcitx5_rime_js-rime_ice.zip，将配置 zip 目标指向此压缩包即可。
 
-### Linux Fcitx4
+### Linux Fcitx4 或其他无法使用 lua 的客户端
 
-> [!NOTE]
-> Fcitx4 于 2024 停止更新。以下安装方式不保证可用性。
-
-执行：
+1. 完整安装雾凇拼音后，再使用 plum 配方安装无 lua 配置：
 
 ```bash
-bash others/fcitx4/install_to_fcitx4.sh
+bash rime-install iDvel/rime-ice:others/recipes/no_lua_schema
 ```
 
-如果系统较旧（例如 `librime < 1.8.5` 或缺少 `librime-lua`），可使用兼容模式（禁用 Lua 扩展功能，仅保留基础拼音/词库能力）：
-
-```bash
-bash others/fcitx4/install_to_fcitx4.sh --legacy-no-lua
-```
-
-说明：默认执行 `bash others/fcitx4/install_to_fcitx4.sh` 时，脚本会自动检测环境；若版本过旧或缺少 `librime-lua`，会自动切换到兼容模式。
-
-兼容模式（`--legacy-no-lua`）会关闭以下 Lua 扩展能力。
-
-兼容模式仍保留：基础拼音输入、词库、`melt_eng` 英文输入、中英混输、简繁切换、Emoji、用户短语。
+2. 或者手动将 `others/no_lua_schema/` 目录下的文件粘贴并替换用户目录下文件。
 
 ### Fcitx For Android
 
