@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-05-30"
+version: "2026-06-01"
 sort: by_weight
 ...
 # +_+
@@ -2068,6 +2068,7 @@ biennial	biennial
 big	big
 bigger	bigger
 biggest	biggest
+bigot	bigot
 bike	bike
 biker	biker
 bikes	bikes
@@ -2310,6 +2311,7 @@ boil	boil
 boiled	boiled
 boiler	boiler
 boiling	boiling
+boils	boils
 boing	boing
 Boise	Boise
 bold	bold
@@ -2723,6 +2725,7 @@ bullet	bullet
 bulletin	bulletin
 bulletins	bulletins
 bullets	bullets
+bullion	bullion
 bullock	bullock
 bulls	bulls
 bullshit	bullshit
@@ -5514,6 +5517,7 @@ deployment	deployment
 deploys	deploys
 deposit	deposit
 deposited	deposited
+depositing	depositing
 deposition	deposition
 deposits	deposits
 depot	depot
@@ -5941,6 +5945,9 @@ dishes	dishes
 dishwasher	dishwasher
 disillusion	disillusion
 disintegrate	disintegrate
+disintegrated	disintegrated
+disintegrates	disintegrates
+disintegrating	disintegrating
 disjunction	disjunction
 disjunctions	disjunctions
 disk	disk
@@ -5993,6 +6000,8 @@ dissipate	dissipate
 dissolution	dissolution
 dissolve	dissolve
 dissolved	dissolved
+dissolves	dissolves
+dissolving	dissolving
 dist	dist
 distance	distance
 distances	distances
@@ -6489,6 +6498,7 @@ ebb	ebb
 ebony	ebony
 ebook	ebook
 ebooks	ebooks
+ebullition	ebullition
 # ec	ec
 ecard	ecard
 eCards	eCards
@@ -6953,6 +6963,7 @@ Enya	Enya
 enzyme	enzyme
 enzymes	enzymes
 # eo	eo
+eon	eon
 # eos	eos
 # ep	ep
 # epa	epa
@@ -7985,6 +7996,7 @@ fluctuate	fluctuate
 fluctuation	fluctuation
 fluctuations	fluctuations
 fluent	fluent
+fluff	fluff
 fluffy	fluffy
 fluid	fluid
 fluids	fluids
@@ -8252,6 +8264,7 @@ freeway	freeway
 freeze	freeze
 freezer	freezer
 freezers	freezers
+freezes	freezes
 freezing	freezing
 freight	freight
 Fremont	Fremont
@@ -8307,6 +8320,7 @@ frontline	frontline
 fronts	fronts
 frost	frost
 frown	frown
+froze	froze
 frozen	frozen
 fruit	fruit
 fruitful	fruitful
@@ -8394,6 +8408,7 @@ futile	futile
 Futuna	Futuna
 future	future
 futures	futures
+fuzz	fuzz
 fuzzy	fuzzy
 # fw	fw
 # fwd	fwd
@@ -8595,6 +8610,7 @@ geographic	geographic
 geographical	geographical
 geographically	geographically
 geography	geography
+geologic	geologic
 geological	geological
 geology	geology
 geometric	geometric
@@ -8842,6 +8858,7 @@ grabbed	grabbed
 grabs	grabs
 grace	grace
 graceful	graceful
+gracefully	gracefully
 gracious	gracious
 grad	grad
 gradation	gradation
@@ -9073,6 +9090,7 @@ guts	guts
 gutter	gutter
 guy	guy
 Guyana	Guyana
+guyot	guyot
 guys	guys
 # gv	gv
 # gw	gw
@@ -9598,6 +9616,9 @@ hog	hog
 hogan	hogan
 hogtied	hogtied
 hoist	hoist
+hoisted	hoisted
+hoisting	hoisting
+hoists	hoists
 Hokkaido	Hokkaido
 hold	hold
 holdem	holdem
@@ -10342,6 +10363,8 @@ ingenious	ingenious
 ingenuity	ingenuity
 ingest	ingest
 ingestion	ingestion
+ingot	ingot
+ingots	ingots
 Ingram	Ingram
 ingredient	ingredient
 ingredients	ingredients
@@ -11280,6 +11303,7 @@ knobs	knobs
 knock	knock
 knocked	knocked
 knocking	knocking
+knoll	knoll
 knot	knot
 knots	knots
 know	know
@@ -11869,6 +11893,10 @@ Lipitor	Lipitor
 liposuction	liposuction
 lips	lips
 lipstick	lipstick
+liquefied	liquefied
+liquefies	liquefies
+liquefy	liquefy
+liquefying	liquefying
 liquid	liquid
 liquidation	liquidation
 liquidity	liquidity
@@ -12694,6 +12722,7 @@ melon	melon
 melt	melt
 melted	melted
 melting	melting
+melts	melts
 Melvin	Melvin
 # mem	mem
 member	member
@@ -14386,6 +14415,11 @@ Osaka	Osaka
 Osama	Osama
 Osborne	Osborne
 Oscar	Oscar
+oscillate	oscillate
+oscillated	oscillated
+oscillates	oscillates
+oscillating	oscillating
+oscillation	oscillation
 oscilloscope	oscilloscope
 # oscommerce	oscommerce
 # osha	osha
@@ -18046,6 +18080,7 @@ sealing	sealing
 seals	seals
 seam	seam
 seamless	seamless
+seamount	seamount
 Sean	Sean
 seance	seance
 seaport	seaport
@@ -18137,7 +18172,11 @@ seemingly	seemingly
 seems	seems
 seen	seen
 sees	sees
-Seether	Seether
+seethe	seethe
+seethed	seethed
+# Seether	Seether
+seethes	seethes
+seething	seething
 sega	sega
 segment	segment
 segmentation	segmentation
@@ -19264,6 +19303,7 @@ spreading	spreading
 spreads	spreads
 spreadsheet	spreadsheet
 spreadsheets	spreadsheets
+spree	spree
 spring	spring
 springer	springer
 Springfield	Springfield
@@ -19318,6 +19358,7 @@ SSL	SSL
 # sta	sta
 # staa	staa
 stab	stab
+stabiliser	stabiliser
 stability	stability
 stabilization	stabilization
 stable	stable
@@ -19492,6 +19533,9 @@ stew	stew
 steward	steward
 stewardship	stewardship
 Stewart	Stewart
+stewed	stewed
+stewing	stewing
+stews	stews
 # sti	sti
 stibium	stibium
 stick	stick
@@ -19716,6 +19760,11 @@ subject	subject
 subjected	subjected
 subjective	subjective
 subjects	subjects
+sublimate	sublimate
+sublimated	sublimated
+sublimates	sublimates
+sublimating	sublimating
+sublimation	sublimation
 sublime	sublime
 sublimedirectory	sublimedirectory
 submarine	submarine
@@ -19902,6 +19951,7 @@ supervisors	supervisors
 supervisory	supervisory
 # supp	supp
 supper	supper
+suppertime	suppertime
 # suppl	suppl
 supplement	supplement
 supplemental	supplemental
@@ -20309,6 +20359,7 @@ team	team
 teamed	teamed
 teams	teams
 teamwork	teamwork
+teapot	teapot
 tear	tear
 tearful	tearful
 tears	tears
@@ -20660,6 +20711,7 @@ thumbs	thumbs
 thumbzilla	thumbzilla
 thunder	thunder
 thunderbird	thunderbird
+thunderstorm	thunderstorm
 # thurs	thurs
 Thursday	Thursday
 Thursdays	Thursdays
@@ -21912,6 +21964,8 @@ Viagra	Viagra
 vibe	vibe
 vibrant	vibrant
 vibrate	vibrate
+vibrated	vibrated
+vibrates	vibrates
 vibrating	vibrating
 vibration	vibration
 vibrator	vibrator
@@ -22291,6 +22345,9 @@ wave	wave
 waveform	waveform
 wavelength	wavelength
 waver	waver
+wavered	wavered
+wavering	wavering
+wavers	wavers
 waves	waves
 wax	wax
 way	way
