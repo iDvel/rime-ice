@@ -1219,6 +1219,7 @@ Counter-Strike	CS
 Backblaze	Backblaze
 WebP	WebP
 WebM	WebM
+AHK	AHK
 CleanShot X	CleanShotX
 Setapp	Setapp
 GraphQL	GraphQL
@@ -1240,6 +1241,7 @@ eXtensible HyperText Markup Language	XHTML
 eXtensible HyperText Markup Language	eXtensibleHyperTextMarkupLanguage
 Baiduspider	Baiduspider
 Bingbot	Bingbot
+Bing	Bing
 SogouSpider	SogouSpider
 YoudaoBot	YoudaoBot
 GitHub Copilot	GitHubCopilot
@@ -1344,6 +1346,8 @@ Basic Input/Output System	BasicInput/OutputSystem
 goroutine	goroutine
 goroutines	goroutines
 Celsius	Celsius
+AHK	AHK
+88VIP	88VIP
 Fahrenheit	Fahrenheit
 Mojito	Mojito
 Niconico	Niconico
@@ -1905,6 +1909,9 @@ Rocky Linux	RockyLinux
 Vultr	Vultr
 GoFrame	GoFrame
 ORM	ORM
+AppImage	AppImage
+AutoHotkey	AutoHotkey
+hotkey	hotkey
 Object Relational Mapping	ORM
 Object Relational Mapping	ObjectRelationalMapping
 KPI	KPI
@@ -2486,3 +2493,78 @@ Claude Code	ClaudeCode
 MCP	MCP
 IELTS	IELTS
 Mencius	Mencius
+LINUX DO	LINUXDO
+Capoo	Capoo
+OAuth	OAuth
+OAuth2	OAuth2
+2FA	2FA
+Hashsum	Hashsum
+Canva	Canva
+DISM	DISM
+FHD	FHD
+FHD+	FHD+
+HMCL	HMCL
+Hyper-V	Hyper-V
+HostUS	HostUS
+KOOK	KOOK
+KeepassXC	KeepassXC
+Keypirinha	Keypirinha
+Klei	Klei
+Koofr	Koofr
+Kong	Kong
+LTS	LTS
+LTSC	LTSC
+Manjaro	Manjaro
+mockup	mockup
+mockups	mockups
+linter	linter
+Nvdia	Nvdia
+OP	OP
+OptFine	OptFine
+Pinterest	Pinterest
+QHD+	QHD+
+QWERT	QWERT
+QuickLook	QuickLook
+Red Hat	RedHat
+rclone	rclone
+ShareX	ShareX
+Shopify	Shopify
+Termux	Termux
+VirtualBox	VirtualBox
+Oracle VirtualBox	OracleVirtualBox
+Xperia	Xperia
+alacritty	alacritty
+admx	admx
+chezmoi	chezmoi
+foobar	foobar
+gist	gist
+HEVC	HEVC
+H.265	H.265
+H.264	H.264
+keepass	keepass
+litemetica	litemetica
+pandoc	pandoc
+OnePlus	OnePlus
+stabledb	stabledb
+synthesia	synthesia
+tabledb	tabledb
+tabliss	tabliss
+pypinyin	pypinyin
+LineageOS	LineageOS
+referer	referer
+speedrun	speedrun
+RSSHub	RSSHub
+QA	QA
+Mothra	Mothra
+Koopa	Koopa
+NA	NA
+XD	XD
+Trime	Trime
+TPM	TPM
+CI	CI
+CP	CP
+GIPHY	GIPHY
+Feinberg	Feinberg
+Deadpool	Deadpool
+crDroid	crDroid
+Windsurf	Windsurf

@@ -55,6 +55,13 @@ algebra_rime_ice:
   - derive/^([jqxy])u/$1v/
   - derive/'([jqxy])u/'$1v/
 
+algebra_pinyin:
+  - xform/'//
+  - derive/^([nl])ue$/$1ve/
+  - derive/'([nl])ue$/'$1ve/
+  - derive/^([jqxy])u/$1v/
+  - derive/'([jqxy])u/'$1v/
+
 algebra_double_pinyin:
   - derive/^([jqxy])u(?=^|$|')/$1v/
   - derive/'([jqxy])u(?=^|$|')/'$1v/

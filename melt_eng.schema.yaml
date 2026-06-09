@@ -163,6 +163,30 @@ algebra_rime_ice:
     - derive/9/jiu/
     - derive/\+/jia/
     - derive/#/jing/
+algebra_pinyin:
+  __include: algebra_common
+  __append:
+    - derive/(?<!\d)1([1-9])(?!\d)/shi$1/
+    - derive/([1-9])0000(?!0)/$1wan/
+    - derive/([1-9])000(?!0)/$1qian/
+    - derive/([1-9])00(?!0)/$1bai/
+    - derive/([2-9])0(?!0)/$1shi/
+    - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1shi$2/
+    - derive/\./dian/
+    - derive/10/shi/
+    - derive/0/ling/
+    - derive/1/yi/
+    - derive/2/er/
+    - derive/2/liang/
+    - derive/3/san/
+    - derive/4/si/
+    - derive/5/wu/
+    - derive/6/liu/
+    - derive/7/qi/
+    - derive/8/ba/
+    - derive/9/jiu/
+    - derive/\+/jia/
+    - derive/#/jing/
 # 自然码双拼
 algebra_double_pinyin:
   __include: algebra_common

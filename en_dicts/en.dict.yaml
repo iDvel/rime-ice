@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-06-01"
+version: "2026-06-09"
 sort: by_weight
 ...
 # +_+
@@ -2912,6 +2912,8 @@ Camden	Camden
 came	came
 camel	camel
 # cameltoe	cameltoe
+cameo	cameo
+cameos	cameos
 camera	camera
 cameras	cameras
 Cameron	Cameron
@@ -4839,6 +4841,7 @@ credits	credits
 creed	creed
 creek	creek
 creep	creep
+creeper	creeper
 creepy	creepy
 creme	creme
 Creole	Creole
@@ -8810,6 +8813,7 @@ goods	goods
 goodwill	goodwill
 Goodwin	Goodwin
 gooey	gooey
+goof	goof
 Google	Google
 goose	goose
 # gop	gop
@@ -10688,6 +10692,7 @@ investment	investment
 investments	investments
 investor	investor
 investors	investors
+invidious	invidious
 invisible	invisible
 invision	invision
 invitation	invitation
@@ -17013,6 +17018,7 @@ rentals	rentals
 rented	rented
 renting	renting
 rents	rents
+reopen	reopen
 reorder	reorder
 reorganization	reorganization
 rep	rep
@@ -17311,6 +17317,7 @@ rewarded	rewarded
 rewarding	rewarding
 rewards	rewards
 rewind	rewind
+reword	reword
 rewrite	rewrite
 rewritten	rewritten
 Rex	Rex
@@ -17695,6 +17702,7 @@ rye	rye
 Saab	Saab
 Sabbath	Sabbath
 sac	sac
+sachet	sachet
 sack	sack
 sacks	sacks
 Sacramento	Sacramento
@@ -17734,6 +17742,7 @@ saint	saint
 saints	saints
 Sakai	Sakai
 sake	sake
+sakura	sakura
 sal	sal
 salad	salad
 salads	salads
@@ -19210,6 +19219,7 @@ speedway	speedway
 speedy	speedy
 spell	spell
 spelled	spelled
+speller	speller
 spelling	spelling
 spells	spells
 spencer	spencer
@@ -21602,6 +21612,7 @@ unrestricted	unrestricted
 unsafe	unsafe
 unsecured	unsecured
 unseen	unseen
+unselfish	unselfish
 unsigned	unsigned
 unsolicited	unsolicited
 unspecified	unspecified
@@ -21718,6 +21729,7 @@ Utah	Utah
 UTC	UTC
 utensil	utensil
 utensils	utensils
+uteri	uteri
 # utf	utf
 util	util
 utilisation	utilisation
