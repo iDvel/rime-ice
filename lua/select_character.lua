@@ -28,7 +28,7 @@ function select.func(key, env)
         local selected_candidate = context:get_selected_candidate()
         selected_candidate = selected_candidate and selected_candidate.text or input
 
-        local selected_char = ""
+        local selected_char
         if (key:repr() == env.first_key) then
             selected_char = selected_candidate:sub(1, utf8.offset(selected_candidate, 2) - 1)
         elseif (key:repr() == env.last_key) then

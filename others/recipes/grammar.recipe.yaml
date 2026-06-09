@@ -1,0 +1,37 @@
+# encoding: utf-8
+---
+recipe:
+  Rx: others/recipes/grammar
+  args:
+    - schema=rime_ice
+  description: >-
+    配置语法模型（万象）。
+      - rime_ice（雾凇拼音、全拼）
+      - double_pinyin（自然码双拼）
+      - double_pinyin_flypy（小鹤双拼）
+      - double_pinyin_mspy（微软双拼）
+      - double_pinyin_sogou（搜狗双拼）
+      - double_pinyin_abc（智能 ABC 双拼）
+      - double_pinyin_jiajia（拼音加加双拼）
+      - double_pinyin_ziguang（紫光双拼）
+
+download_files:
+  - wanxiang-lts-zh-hans.gram::https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram
+
+install_files:
+  - wanxiang-lts-zh-hans.gram
+
+patch_files:
+  ${schema:-rime_ice}.custom.yaml:
+    - patch/+:
+        grammar:
+          language: wanxiang-lts-zh-hans
+          collocation_max_length: 8
+          collocation_min_length: 2
+          collocation_penalty: -15
+          non_collocation_penalty: -5
+          weak_collocation_penalty: -100
+          rear_penalty: -10
+        translator/contextual_suggestions: false
+        translator/max_homophones: 8
+        translator/max_homographs: 8

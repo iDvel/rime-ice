@@ -6,7 +6,7 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "2025-11-02"
+  version: "2026-03-08"
   author:
     - Dvel
   description: |
@@ -92,10 +92,15 @@ date_translator:
   week: xq       # 星期： 星期二
   datetime: dt   # ISO 8601： 2022-11-29T18:13:11+08:00
   timestamp: ts  # 时间戳： 1669716794
+  datezh: rqzh   # 中文日期： 二〇二六年二月二十五日 | 二零二六年二月二十五日
+  dateen: rqen   # 英文日期： 英式 8 March 2026 | 美式 March 8, 2026
 
 
-# Lua 配置：农历的触发关键字
-lunar: nl  # 农历： 二〇二三年冬月二十 癸卯年（兔）冬月二十
+# Lua 配置：农历
+# 农历触发关键字
+# template 字段：{干支年} {农历月} {农历日} {生肖} {俗称农历月} {简记农历日}
+lunar: nl
+lunar_template: "{干支年}{生肖}年{俗称农历月}{农历日}"
 
 
 # Lua 配置: 生成 UUID 的触发关键字
@@ -126,7 +131,7 @@ reduce_english_filter:
   words: [
     aid, ann,
     bail, bait, bam, band, bans, bat, bay, bend, bent, benz, bib, bid, bien, biz, boc, bop, bos, bud, buf, bus, bach, bench, bush, bog,
-    cab, cad, cain, cam, cans, cap, cef, chad, chan, chap, chef, cher, chew, chic, chin, chip, chit, coup, cum, cunt, cur, couch,
+    cab, cad, cain, cam, cans, cap, cef, chad, chan, chap, chef, cher, chew, chic, chime, chin, chip, chit, coup, cum, cunt, cur, couch,
     dab, dag, dal, dam, dent, dew, dial, diet, dim, din, dip, dis, dit, doug, dub, dug, dunn, don,
     fab, fax, fob, fog, foul, fur, fend,
     gag, gail, gain, gal, gam, gaol, ged, gel, ger, guam, gus, gut,
@@ -136,7 +141,7 @@ reduce_english_filter:
     lab, lad, lag, laid, lam, laos, lap, lat, lax, lay, led, leg, lex, liam, lib, lichen, lid, lied, lien, lies, linn, lip, lit, liz, lob, lug, lund, lung, lux, lash, loch, lush,
     mag, maid, mann, mar, mat, med, mel, mend, mens, ment, mil, mins, mint, mob, moc, mop, mos, mot, mud, mug, mum, mesh,
     nap, nat, nay, neil, nib, nip, noun, nous, nun, nut, nail, nash,
-    pac, paid, pail, pain, pair, pak, pal, pam, pans, pant, pap, par, pat, paw, pax, pens, pic, pier, pies, pins, pint, pit, pix, pod, pop, pos, pot, pour, pow, pub, pinch, pouch,
+    pac, paid, pail, pain, pair, pak, pal, pam, pans, pant, pap, par, pat, paw, pax, pens, pic, pier, pies, pins, pint, pit, pix, pod, pop, pos, posh, pot, pour, pow, pub, pinch, pouch,
     rand, rant, rent, rep, res, ret, rex, rib, rid, rig, rim, rub, rug, rum, runc, runs, ranch,
     sac, sail, sal, sam, sans, sap, saw, sax, sew, sham, shaw, shin, sig, sin, sip, sis, suit, sung, suns, sup, sur, sus,
     tad, tail, taj, tar, tax, tec, ted, tel, ter, tex, tic, tied, tier, ties, tim, tin, tit, tour, tout, tum,
@@ -174,6 +179,7 @@ translator:
     - xform/([nl])v/$1v/       # 显示为 nv lv
     - xform/([nl])ue/$1ve/     # 显示为 nve lve
     - xform/(?<=[A-Z])\s(?=[A-Z])//  # 消除大写字母之间的空格
+  # dictionary_exclude: [肏屄, 鸡巴]  # 如有屏蔽 NSFW 词汇需求 librime >= 1.14.0 等价于从 .dict.yaml 中删除对应词条，但不影响组句和用户词库。
 
 
 # 次翻译器，英文
@@ -268,7 +274,7 @@ recognizer:
     unicode: "^U[a-f0-9]+"              # 脚本将自动获取第 2 个字符 U 作为触发前缀，响应 lua_translator@*unicode，输出 Unicode 字符
     number: "^R[0-9]+[.]?[0-9]*"        # 脚本将自动获取第 2 个字符 R 作为触发前缀，响应 lua_translator@*number_translator，数字金额大写
     calculator: "^cC.+"                 # 响应 lua_translator@*calc_translator，计算器。前缀设定项 calculator/prefix
-    gregorian_to_lunar: "^N[0-9]{1,8}"  # 脚本将自动获取第 2 个字符 N 作为触发前缀，响应 lua_translator@*lunar，公历转农历，输入 N20240115 得到「二〇二三年腊月初五」
+    gregorian_to_lunar: "^N[0-9]{1,8}"  # 响应 lua_translator@*lunar，公历转农历
 
 
 # 从 default 继承快捷键

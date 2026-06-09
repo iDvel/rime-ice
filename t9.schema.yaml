@@ -9,20 +9,29 @@
 
 __include: rime_ice.schema.yaml:/
 
+t9:
+  # 是否显示 rime 中原始的预编辑文本，默认为 true
+  # true: 对 preedit 不做处理，显示 rime 返回的原始 preedit 值。
+  #       如果想通过 lua 自己调整 preedit 的显示，可以设置为 true。
+  # false: 根据候选字 comment 显示转换后的 preedit 内容。
+  #        注意：请务必保证候选字 comment 有效且正确，否则可能导致预编辑文本显示异常。
+  isDisplayOriginalPreedit: false
+
 schema:
   schema_id: t9
-  name: 仓·九宫格
-  version: "2.0.0"
+  name: 中文九键
+  version: "3.0.0"
   author:
     - Dvel
     - "[morse.hsiao](https://github.com/imfuxiao)"
   description: |
-    九宫格 for 仓输入法
+    中文九键 for 仓输入法 & 元书输入法
   dependencies:
     - melt_eng # 英文输入，作为次翻译器挂载到拼音方案
 
 engine:
   processors:
+    - t9_processor
     - ascii_composer
     - recognizer
     - key_binder
@@ -43,15 +52,28 @@ engine:
     - lua_translator@*date_translator # 时间、日期、星期
     - table_translator@custom_phrase # 自定义短语 custom_phrase_t9.txt
     # - table_translator@melt_eng     # 英文输入
+    - lua_translator@*calc_translator    # 计算器
+    - lua_translator@*force_gc           # 暴力 GC
   filters:
     - simplifier@emoji # Emoji
     - simplifier@traditionalize # 简繁切换
     - uniquifier # 去重
 
+calculator:
+  prefix: =
+  show_prefix: true
+
+# 处理符合特定规则的输入码，如网址、反查
+recognizer:
+  import_preset: default                # 从 default.yaml 继承通用的
+  patterns:                             # 再增加方案专有的：
+    calculator: "^=.+"                 # 响应 lua_translator@*calc_translator，计算器。前缀设定项 calculator/prefix
+
 translator:
   prism: t9
   spelling_hints: 100
   comment_format: []
+  # dictionary_exclude: [肏屄, 鸡巴]  # 如有屏蔽 NSFW 词汇需求 librime >= 1.14.0 等价于从 .dict.yaml 中删除对应词条，但不影响组句和用户词库。
 
 # 自定义短语：custom_phrase_t9.txt
 # ⚠️ 编码要用数字
@@ -76,8 +98,8 @@ key_binder:
     - { when: has_menu, accept: 1, send: apostrophe }
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA987654321
-  initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA987654321
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA9876543210=
+  initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA9876543210=
   algebra:
     # ### 超级简拼
     - abbrev/^([a-z]).+$/$1/ # 超级简拼

@@ -1,0 +1,28 @@
+# encoding: utf-8
+---
+recipe:
+  Rx: others/recipes/reverse_tone
+  args:
+    - schema=rime_ice
+  description: >-
+    给反查添加音调注音。
+      - rime_ice（雾凇拼音、全拼）
+      - double_pinyin（自然码双拼）
+      - double_pinyin_flypy（小鹤双拼）
+      - double_pinyin_mspy（微软双拼）
+      - double_pinyin_sogou（搜狗双拼）
+      - double_pinyin_abc（智能 ABC 双拼）
+      - double_pinyin_jiajia（拼音加加双拼）
+      - double_pinyin_ziguang（紫光双拼）
+
+download_files:
+  - build/kMandarin.reverse.bin::https://cdn.jsdelivr.net/gh/mirtlecn/rime-radical-pinyin@master/build/kMandarin.reverse.bin
+
+install_files: >-
+  build/.gitkeep
+  build/kMandarin.reverse.bin
+
+patch_files:
+  ${schema:-rime_ice}.custom.yaml:
+    - patch/+:
+        radical_reverse_lookup/dictionary: kMandarin

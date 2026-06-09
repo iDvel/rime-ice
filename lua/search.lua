@@ -21,7 +21,6 @@ local function get_pos( text, char )
             local first_char = tmp:sub( 1, utf8.offset( tmp, 2 ) - 1 )
             if first_char == char then pos[i] = true end
             tmp = tmp:gsub( '^' .. first_char, '' )
-            i = i + 1
         end
     end
     return pos
@@ -46,9 +45,7 @@ local function update_dict_entry( s, code, mem, proj )
         local code_convert = code:sub( i, i + 1 )
         local p = proj:apply( code_convert, true )
         if p and #p > 0 then code_convert = p end
-        if code_convert == 'dian' and pos[loop] then
-            -- Ignored
-        else
+        if code_convert ~= 'dian' or not pos[loop] then
             table.insert( custom_code, code_convert )
         end
         loop = loop + 1
@@ -284,12 +281,12 @@ function f.func( input, env )
     end
 
     -- 上屏其余的候选
-    for i, cand in ipairs( long_word_cands ) do yield( cand ) end
-    if env.show_other_cands then for i, cand in ipairs( other_cand ) do yield( cand ) end end
+    for _, cand in ipairs( long_word_cands ) do yield( cand ) end
+    if env.show_other_cands then for _, cand in ipairs( other_cand ) do yield( cand ) end end
 end
 
 function f.tags_match( seg, env )
-    for i, v in ipairs( env.tag ) do if seg.tags[v] then return true end end
+    for _, v in ipairs( env.tag ) do if seg.tags[v] then return true end end
     return false
 end
 

@@ -10,7 +10,7 @@
 # 目前配置中有个别功能仍然是全拼拼写，不能自动适配，所以需要手动修改一下：
 # - 英文中部分符号的派生规则：在英文方案文件 melt_eng.schema.yaml > speller > algebra 修改为对应的双拼拼写运算
 # - 部件拆字的拼写规则：在部件拆字方案 radical_pinyin.schema.yaml > speller > algebra 修改为对应的双拼拼写运算
-# 打个补丁一劳永逸，补丁写法参考 [常见问题](https://github.com/iDvel/rime-ice/issues/133) 或 others/双拼补丁示例/ 文件夹
+# 打个补丁一劳永逸，补丁写法参考 [常见问题](https://github.com/iDvel/rime-ice/issues/133) 或 others/patch_examples/ 文件夹
 
 
 # 方案说明
@@ -101,10 +101,15 @@ date_translator:
   week: week            # 星期： 星期二
   datetime: datetime    # ISO 8601： 2022-11-29T18:13:11+08:00
   timestamp: timestamp  # 时间戳： 1669716794
+  datezh: datezh        # 中文日期： 二〇二六年二月二十五日 | 二零二六年二月二十五日
+  dateen: dateen        # 英文日期： 英式 8 March 2026 | 美式 March 8, 2026
 
 
-# Lua 配置：农历的触发关键字
-lunar: lunar  # 农历： 二〇二三年冬月二十 癸卯年（兔）冬月二十
+# Lua 配置：农历
+# 农历触发关键字
+# template 字段：{干支年} {农历月} {农历日} {生肖} {俗称农历月} {简记农历日}
+lunar: lunar
+lunar_template: "{干支年}{生肖}年{俗称农历月}{农历日}"
 
 
 # Lua 配置: 生成 UUID 的触发关键字
@@ -204,6 +209,7 @@ translator:
     - xform/([nl])v/$1ü/
     - xform/ü/v/  # ü 显示为 v
     - xform/(?<=[A-Z])\s(?=[A-Z])//  # 消除大写字母之间的空格
+  # dictionary_exclude: [肏屄, 鸡巴]  # 如有屏蔽 NSFW 词汇需求 librime >= 1.14.0 等价于从 .dict.yaml 中删除对应词条，但不影响组句和用户词库。
 
 
 # 次翻译器，英文
@@ -299,7 +305,7 @@ recognizer:
     unicode: "^U[a-f0-9]+"              # 脚本将自动获取第 2 个字符 U 作为触发前缀，响应 lua_translator@*unicode，输出 Unicode 字符
     number: "^R[0-9]+[.]?[0-9]*"        # 脚本将自动获取第 2 个字符 R 作为触发前缀，响应 lua_translator@*number_translator，数字金额大写
     calculator: "^cC.+"                 # 响应 lua_translator@*calc_translator，计算器。前缀设定项 calculator/prefix
-    gregorian_to_lunar: "^N[0-9]{1,8}"  # 脚本将自动获取第 2 个字符 N 作为触发前缀，响应 lua_translator@*lunar，公历转农历，输入 N20240115 得到「二〇二三年腊月初五」
+    gregorian_to_lunar: "^N[0-9]{1,8}"  # 响应 lua_translator@*lunar，公历转农历
 
 
 # 从 default 继承快捷键

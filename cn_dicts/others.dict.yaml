@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2026-01-05"
+version: "2026-03-08"
 sort: by_weight
 ...
 ##### 容错词
@@ -68,6 +68,11 @@ sort: by_weight
 走单骑	zou dan ji
 千里走单骑	qian li zou dan qi
 千里走单骑	qian li zou dan ji
+# 「齐」表示合金时读作jì，然而今多读qí
+汞齐	gong ji
+汞齐	gong qi
+汞齐电极	gong ji dian ji
+汞齐电极	gong qi dian ji
 # 「街」的粤语和东北话读音及常见的两种写法
 仆街	pu jie
 仆街	pu gai
@@ -203,6 +208,8 @@ sort: by_weight
 发酵	fa xiao
 酵母菌	jiao mu jun
 酵母菌	xiao mu jun
+酵母	jiao mu
+酵母	xiao mu
 殷红	yan hong
 殷红	yin hong
 暖和	nuan huo
@@ -211,6 +218,7 @@ sort: by_weight
 模棱两可	mo ling liang ke
 鄱阳湖	po yang hu
 鄱阳湖	pan yang hu
+鄱阳湖	bo yang hu
 脖颈	bo geng
 脖颈	bo jing
 脖颈儿	bo geng er
@@ -283,6 +291,10 @@ sort: by_weight
 粘贴	nian tie
 粘一粘	zhan yi zhan
 粘一粘	nian yi nian
+吐蕃	tu bo
+吐蕃	tu fan
+吐谷浑	tu yu hun
+吐谷浑	tu gu hun
 高句丽	gao gou li
 高句丽	gao ju li
 角斗士	jue dou shi
@@ -397,12 +409,120 @@ sort: by_weight
 暴殄天物	bao lian tian wu
 以己度人	yi ji duo ren
 以己度人	yi ji du ren
+一语成谶	yi yu cheng chen
+一语成谶	yi yu cheng zhen
 甑糕	zeng gao
 甑糕	jing gao
 着想	zhuo xiang
 着想	zhao xiang
 胳肢窝	ga zhi wo
 胳肢窝	ge zhi wo
+潏河	jue he
+潏河	yu he
+校正	jiao zheng
+校正	xiao zheng
+校对	jiao dui
+校对	xiao dui
+结束	jie shu
+结束	jie su
+自怨自艾	zi yuan zi yi
+自怨自艾	zi yuan zi ai
+呱呱坠地	gu gu zhui di
+呱呱坠地	gua gua zhui di
+拗口	ao kou
+拗口	niu kou
+蚌埠	beng bu
+蚌埠	bang bu
+秘鲁	bi lu
+秘鲁	mi lu
+炽热	chi re
+炽热	zhi re
+裨益	bi yi
+裨益	pi yi
+刚愎自用	gang bi zi yong
+刚愎自用	gang fu zi yong
+戛然而止	jia ran er zhi
+戛然而止	ga ran er zhi
+一叶扁舟	yi ye pian zhou
+一叶扁舟	yi ye bian zhou
+博闻强识	bo wen qiang zhi
+博闻强识	bo wen qiang shi
+贲临	bi lin
+贲临	ben lin
+倾轧	qing ya
+倾轧	qing zha
+妊娠	ren shen
+妊娠	ren chen
+莘莘学子	shen shen xue zi
+莘莘学子	xin xin xue zi
+拓本	ta ben
+拓本	tuo ben
+唾手可得	tuo shou ke de
+唾手可得	chui shou ke de
+吸吮	xi shun
+吸吮	xi yun
+心广体胖	xin guang ti pan
+心广体胖	xin guang ti pang
+星宿	xing xiu
+星宿	xing su
+赝品	yan pin
+赝品	ying pin
+一曝十寒	yi pu shi han
+一曝十寒	yi bao shi han
+粗犷	cu guang
+粗犷	cu kuang
+巷道	hang dao
+巷道	xiang dao
+恫吓	dong he
+恫吓	tong xia
+诡谲	gui jue
+诡谲	gui ju
+游说	you shui
+游说	you shuo
+阴霾	yin mai
+阴霾	yin li
+噱头	xue tou
+噱头	ju tou
+商贾	shang gu
+商贾	shang jia
+剽悍	piao han
+剽悍	biao han
+淙淙	cong cong
+淙淙	zong zong
+整饬	zheng chi
+整饬	zheng shang
+捯饬	dao chi
+捯饬	dao shang
+谬论	miu lun
+谬论	miao lun
+面面相觑	mian mian xiang qu
+面面相觑	mian mian xiang xu
+恪守	ke shou
+恪守	ge shou
+角逐	jue zhu
+角逐	jiao zhu
+蛤蜊	ge li
+蛤蜊	ga li
+饿殍	e piao
+饿殍	e fu
+堤岸	di an
+堤岸	ti an
+粗糙	cu cao
+粗糙	cu zao
+肄业	yi ye
+肄业	si ye
+瞠目结舌	cheng mu jie she
+瞠目结舌	tang mu jie she
+谄媚	chan mei
+谄媚	xian mei
+不啻	bu chi
+不啻	bu di
+鞭挞	bian ta
+鞭挞	bian da
+鞭笞	bian chi
+鞭笞	bian tai
+附骨之疽	fu gu zhi ju
+附骨之疽	fu gu zhi qu
 ### 错字
 曾经	ceng jing
 曾今	ceng jin

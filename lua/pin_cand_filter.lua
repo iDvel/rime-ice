@@ -126,9 +126,9 @@ function M.init(env)
             -- 额外处理包含空格的 preedit，增加最后一个拼音的首字母和 zh, ch, sh 的简码
             if preedit:find(" ") then
                 local preceding_part, last_part = preedit:match("^(.+)%s(%S+)$")
-                local p1, p2 = "", ""
+                local p2 = ""
                 -- p1 生成最后一个拼音的首字母简码拼写（最后一个空格后的首字母），如 ni hao 生成 nih
-                p1 = preceding_part:gsub(" ", "") .. last_part:sub(1, 1)
+                local p1 = preceding_part:gsub(" ", "") .. last_part:sub(1, 1)
                 -- p2 生成最后一个拼音的 zh, ch, sh 的简码拼写（最后一个空格后以 zh ch sh 开头），如 zhi chi 生成 zhich
                 if last_part:match("^[zcs]h") then
                     p2 = preceding_part:gsub(" ", "") .. last_part:sub(1, 2)
