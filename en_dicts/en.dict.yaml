@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-06-09"
+version: "2026-06-20"
 sort: by_weight
 ...
 # +_+
@@ -810,6 +810,7 @@ ancestry	ancestry
 anchor	anchor
 anchorage	anchorage
 anchors	anchors
+anchovy	anchovy
 ancient	ancient
 ancillary	ancillary
 and	and
@@ -2075,6 +2076,7 @@ bikes	bikes
 biking	biking
 bikini	bikini
 bilateral	bilateral
+bilberry	bilberry
 Bild	Bild
 Bilder	Bilder
 bilingual	bilingual
@@ -2213,12 +2215,17 @@ blessed	blessed
 blessing	blessing
 blessings	blessings
 blew	blew
+blight	blight
+blighted	blighted
+blighting	blighting
+blights	blights
 blind	blind
 blindness	blindness
 blinds	blinds
 bling	bling
 blink	blink
 bliss	bliss
+blissful	blissful
 blitz	blitz
 blizzard	blizzard
 # blk	blk
@@ -2999,6 +3006,7 @@ capper	capper
 Capri	Capri
 Capricorn	Capricorn
 Caps	Caps
+capsicum	capsicum
 capsid	capsid
 capsule	capsule
 capsules	capsules
@@ -3161,6 +3169,7 @@ cater	cater
 caterer	caterer
 catering	catering
 caterpillar	caterpillar
+catfish	catfish
 cathedral	cathedral
 Catherine	Catherine
 Catholic	Catholic
@@ -3732,6 +3741,7 @@ clearly	clearly
 clears	clears
 # Clearwater	Clearwater
 cleavage	cleavage
+cleave	cleave
 clef	clef
 clement	clement
 Clemson	Clemson
@@ -3797,6 +3807,7 @@ closet	closet
 closing	closing
 closure	closure
 closures	closures
+clot	clot
 cloth	cloth
 clothe	clothe
 clothes	clothes
@@ -3804,7 +3815,9 @@ clothing	clothing
 cloud	cloud
 clouds	clouds
 cloudy	cloudy
+clove	clove
 clover	clover
+cloves	cloves
 clown	clown
 cloy	cloy
 cloying	cloying
@@ -3837,6 +3850,7 @@ CNN	CNN
 coach	coach
 coaches	coaches
 coaching	coaching
+coagulate	coagulate
 coal	coal
 coalition	coalition
 coarse	coarse
@@ -4516,9 +4530,13 @@ controls	controls
 controversial	controversial
 controversy	controversy
 convection	convection
+convene	convene
+convened	convened
+convenes	convenes
 convenience	convenience
 convenient	convenient
 conveniently	conveniently
+convening	convening
 convention	convention
 conventional	conventional
 conventions	conventions
@@ -4723,6 +4741,7 @@ coupe	coupe
 couple	couple
 coupled	coupled
 couples	couples
+couplet	couplet
 coupling	coupling
 coupon	coupon
 coupons	coupons
@@ -4897,6 +4916,7 @@ crossing	crossing
 crossover	crossover
 crossroads	crossroads
 crossword	crossword
+crotchety	crotchety
 crow	crow
 crowd	crowd
 crowded	crowded
@@ -5034,6 +5054,7 @@ customizing	customizing
 customs	customs
 cut	cut
 cute	cute
+cuticle	cuticle
 cutie	cutie
 cutlery	cutlery
 cuts	cuts
@@ -5681,6 +5702,7 @@ devote	devote
 devoted	devoted
 devotion	devotion
 devour	devour
+devout	devout
 dew	dew
 # DEWALT	DEWALT
 Dewey	Dewey
@@ -6166,9 +6188,10 @@ Donovan	Donovan
 doom	doom
 doomed	doomed
 door	door
+doorkeeper	doorkeeper
 doors	doors
 doorway	doorway
-dooyoo	dooyoo
+# dooyoo	dooyoo
 Doppler	Doppler
 Dora	Dora
 dorado	dorado
@@ -6312,6 +6335,7 @@ drizzle	drizzle
 # drm	drm
 drool	drool
 drop	drop
+droplet	droplet
 dropped	dropped
 dropping	dropping
 drops	drops
@@ -6330,6 +6354,8 @@ drumsticks	drumsticks
 drunk	drunk
 drunken	drunken
 Drupal	Drupal
+drupe	drupe
+drupelet	drupelet
 dry	dry
 dryer	dryer
 dryers	dryers
@@ -6941,6 +6967,7 @@ entity	entity
 entrance	entrance
 # entre	entre
 entreat	entreat
+entree	entree
 entrepreneur	entrepreneur
 entrepreneurial	entrepreneurial
 entrepreneurs	entrepreneurs
@@ -7758,6 +7785,7 @@ FilePlanet	FilePlanet
 files	files
 filesize	filesize
 filesystem	filesystem
+filial	filial
 filing	filing
 filings	filings
 Filipino	Filipino
@@ -8463,7 +8491,7 @@ gamer	gamer
 gamers	gamers
 games	games
 gamespot	gamespot
-GameSpy	GameSpy
+# GameSpy	GameSpy
 gaming	gaming
 gamma	gamma
 gan	gan
@@ -8771,6 +8799,7 @@ GNU	GNU
 go	go
 # goa	goa
 goal	goal
+goalkeeper	goalkeeper
 goals	goals
 goat	goat
 goats	goats
@@ -9427,6 +9456,7 @@ heights	heights
 Heinz	Heinz
 heir	heir
 Heisenberg	Heisenberg
+heist	heist
 held	held
 Helen	Helen
 Helena	Helena
@@ -9821,6 +9851,7 @@ HTTPS	HTTPS
 hub	hub
 Hubbard	Hubbard
 hubs	hubs
+huckleberry	huckleberry
 HUD	HUD
 huddle	huddle
 Hudson	Hudson
@@ -10100,6 +10131,7 @@ impending	impending
 imperative	imperative
 imperial	imperial
 imperium	imperium
+impertinent	impertinent
 impetus	impetus
 implant	implant
 implants	implants
@@ -10694,7 +10726,7 @@ investor	investor
 investors	investors
 invidious	invidious
 invisible	invisible
-invision	invision
+# invision	invision
 invitation	invitation
 invitational	invitational
 invitations	invitations
@@ -10764,6 +10796,7 @@ irrelevant	irrelevant
 irreproducible	irreproducible
 irrespective	irrespective
 irretrievable	irretrievable
+irreverent	irreverent
 irrigate	irrigate
 irrigation	irrigation
 irritate	irritate
@@ -10882,6 +10915,7 @@ Jane	Jane
 Janet	Janet
 Janice	Janice
 Janis	Janis
+janitor	janitor
 janitorial	janitorial
 January	January
 Japan	Japan
@@ -12794,6 +12828,8 @@ merging	merging
 meridia	meridia
 meridian	meridian
 merit	merit
+meritocracy	meritocracy
+meritocratic	meritocratic
 merits	merits
 merlin	merlin
 mermaid	mermaid
@@ -13933,6 +13969,9 @@ notwithstanding	notwithstanding
 nought	nought
 noun	noun
 nourish	nourish
+nourished	nourished
+nourishes	nourishes
+nourishing	nourishing
 nourishment	nourishment
 nous	nous
 nouveau	nouveau
@@ -13999,6 +14038,8 @@ nurses	nurses
 nursing	nursing
 nurture	nurture
 nut	nut
+nutlet	nutlet
+nutlets	nutlets
 nutrient	nutrient
 nutrients	nutrients
 nutrition	nutrition
@@ -14413,6 +14454,8 @@ orphan	orphan
 # ors	ors
 ortho	ortho
 orthodox	orthodox
+orthodoxy	orthodoxy
+orthogonal	orthogonal
 orthography	orthography
 orthopedic	orthopedic
 OS	OS
@@ -15240,6 +15283,7 @@ piercing	piercing
 Pierre	Pierre
 pierrot	pierrot
 pies	pies
+piety	piety
 pig	pig
 pigeon	pigeon
 pigment	pigment
@@ -16028,6 +16072,7 @@ projectors	projectors
 projects	projects
 # proliant	proliant
 proliferation	proliferation
+prolific	prolific
 prolong	prolong
 prolonged	prolonged
 # prolyte	prolyte
@@ -16358,6 +16403,7 @@ quarterly	quarterly
 quarters	quarters
 quartet	quartet
 quartz	quartz
+quasar	quasar
 quasi	quasi
 quay	quay
 # que	que
@@ -17833,6 +17879,7 @@ Sarah	Sarah
 Sarasota	Sarasota
 Saratoga	Saratoga
 Sarbanes	Sarbanes
+sarcasm	sarcasm
 sarcastic	sarcastic
 sardine	sardine
 SARS	SARS
@@ -18592,6 +18639,7 @@ shrinkage	shrinkage
 shrinking	shrinking
 shrinks	shrinks
 Shropshire	Shropshire
+shrub	shrub
 shrubs	shrubs
 shrug	shrug
 shrunk	shrunk
@@ -18930,9 +18978,11 @@ snakes	snakes
 snap	snap
 snapdragon	snapdragon
 snapper	snapper
+snappish	snappish
 snapshot	snapshot
 snapshots	snapshots
 snare	snare
+snarky	snarky
 snarl	snarl
 snatch	snatch
 sneak	sneak
@@ -19605,6 +19655,7 @@ stops	stops
 storage	storage
 store	store
 stored	stored
+storekeeper	storekeeper
 stores	stores
 # storesshop	storesshop
 storey	storey
@@ -19695,7 +19746,9 @@ strips	strips
 strive	strive
 striving	striving
 stroke	stroke
+stroked	stroked
 strokes	strokes
+stroking	stroking
 stroll	stroll
 stroller	stroller
 strollers	strollers
@@ -20763,6 +20816,7 @@ tightly	tightly
 tights	tights
 tiki	tiki
 # til	til
+tilapia	tilapia
 tilde	tilde
 tile	tile
 tiles	tiles
@@ -20775,6 +20829,7 @@ timberland	timberland
 time	time
 # time capsule	timecapsule
 timed	timed
+timekeeper	timekeeper
 timeless	timeless
 timeline	timeline
 timeliness	timeliness
@@ -20880,6 +20935,8 @@ tom	tom
 tomato	tomato
 tomatoes	tomatoes
 tomb	tomb
+tomboy	tomboy
+tombstone	tombstone
 tomcat	tomcat
 tome	tome
 tommy	tommy
@@ -21312,7 +21369,10 @@ tulip	tulip
 Tulsa	Tulsa
 tum	tum
 tumble	tumble
+tumbled	tumbled
 tumbler	tumbler
+tumbles	tumbles
+tumbling	tumbling
 tummy	tummy
 tumor	tumor
 tumors	tumors
@@ -21730,6 +21790,7 @@ UTC	UTC
 utensil	utensil
 utensils	utensils
 uteri	uteri
+uterus	uterus
 # utf	utf
 util	util
 utilisation	utilisation
@@ -23031,7 +23092,8 @@ zone	zone
 zones	zones
 zoning	zoning
 zoo	zoo
-zoofilia	zoofilia
+# zoofilia	zoofilia
+zookeeper	zookeeper
 zoology	zoology
 zoom	zoom
 zoomorphic	zoomorphic
