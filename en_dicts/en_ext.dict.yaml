@@ -10,7 +10,7 @@
 # 少数单词与 en 重复，纯粹是为了排版美观，部署时的报错 duplicate word definition 可忽略，无任何影响
 ---
 name: en_ext
-version: "2026-03-08"
+version: "2026-06-14"
 sort: by_weight
 ...
 # 一些杂项
@@ -162,6 +162,7 @@ macOS Ventura	macOS	7
 macOS Sonoma	macOS	8
 macOS Sequoia	macOS	9
 macOS Tahoe	macOS	10
+macOS Golden Gate	macOS	11
 Windows	Windows	999
 Windows 95	Windows	1
 Windows 98	Windows	2
@@ -247,6 +248,7 @@ macOS Ventura	macOSVentura
 macOS Sonoma	macOSSonoma
 macOS Sequoia	macOSSequoia
 macOS Tahoe	macOSTahoe
+macOS Golden Gate	macOSGoldenGate
 Windows 95	Windows95
 Windows 98	Windows98
 Windows Me	WindowsMe
@@ -1002,6 +1004,7 @@ Software Development Kit	SoftwareDevelopmentKit
 Should I Sleep	ShouldISleep
 Simplenote	Simplenote
 Siri	Siri
+Siri AI	SiriAI
 Slicy	Slicy
 Snagit	Snagit
 Sparkbox	Sparkbox
@@ -1590,6 +1593,7 @@ Peace & Love	Peace&Love
 LCD	LCD
 Liquid Crystal Display	LCD
 Liquid Crystal Display	LiquidCrystalDisplay
+Liquid Glass	LiquidGlass
 Emotional Damage	EmotionalDamage
 GitLab	GitLab
 GitLab Runner	GitLabRunner
