@@ -1,8 +1,6 @@
--- 辅码，https://github.com/mirtlecn/rime-radical-pinyin/blob/master/search.lua.md
---
 -- Copyright (C) [Mirtle](https://github.com/mirtlecn)
--- License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 -- 使用说明：<https://github.com/mirtlecn/rime-radical-pinyin/blob/master/search.lua.md>
+
 -- 处理 lua 中的特殊字符用于匹配
 local function alt_lua_punc( s )
     if s then
@@ -140,7 +138,7 @@ function f.init( env )
     env.search = Memory( env.engine, Schema( schema_name ) )
     if schema_name and env.search then
         env.if_schema_lookup = true
-        env.search_limit = config:get_int( ns .. '/schema_search_limit' ) or 1000
+        env.search_limit = config:get_int( ns .. '/schema_search_limit' ) or 2000
     end
 
     ::checkdb::
