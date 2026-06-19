@@ -26,12 +26,11 @@ patch_files:
     - patch/+:
         grammar:
           language: wanxiang-lts-zh-hans
-          collocation_max_length: 8
-          collocation_min_length: 2
-          collocation_penalty: -15
-          non_collocation_penalty: -5
+          collocation_max_length: 6
+          collocation_min_length: 3
+          collocation_penalty: -14
+          non_collocation_penalty: -6
           weak_collocation_penalty: -100
-          rear_penalty: -10
+          rear_penalty: -20
         translator/contextual_suggestions: false
         translator/max_homophones: 8
-        translator/max_homographs: 8
