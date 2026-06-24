@@ -40,10 +40,10 @@ jobs:
           path: ${{ runner.temp }}/rime-cli-cache/rime-cli-linux-1.6.1.zip
           key: rime-cli-linux-1.6.1
 
-      - name: Run lint
+      - name: Lint yaml and lua files
         run: make -C others/script lint
 
-      - name: Run smoke test suite
+      - name: Compile and smoke test
         env:
           RIME_CLI_URL: https://github.com/mirtlecn/public/releases/download/v1.6.1/rime-cli-linux-1.6.1.zip
           RIME_CLI_CACHE_PATH: ${{ runner.temp }}/rime-cli-cache/rime-cli-linux-1.6.1.zip
@@ -51,14 +51,14 @@ jobs:
 
       # build
       - name: Setup Go
-        if: ${{ contains(github.event.head_commit.message, ' [build]') || github.event_name == 'workflow_dispatch' }}
+        if: ${{ contains(github.event.head_commit.message, ' [build]') }}
         uses: actions/setup-go@v5
         with:
           go-version: 1.22
 
       - name: Check and build
         id: check_and_build
-        if: ${{ contains(github.event.head_commit.message, ' [build]') || github.event_name == 'workflow_dispatch' }}
+        if: ${{ contains(github.event.head_commit.message, ' [build]') }}
         run: |
           cd others/script
           go mod tidy
@@ -100,7 +100,7 @@ jobs:
             - `opencc.zip`：opencc 词库（emoji 等）
             - `all_dicts.zip`：以上三个词库的整合
             - `fcitx5_rime_js-rime_ice.zip`：适用于 fcitx5-rime.js 的预构建包
-            - `full_compiled.zip`：所有词典和方案的预编译包
+            - `full_compiled.zip`：所有词典和方案的预构建包
 
           tag_name: nightly
           preserve_order: true
@@ -132,7 +132,7 @@ jobs:
             - `opencc.zip`：opencc 词库（emoji 等）
             - `all_dicts.zip`：以上三个词库的整合
             - `fcitx5_rime_js-rime_ice.zip`：适用于 fcitx5-rime.js 的预构建包
-            - `full_compiled.zip`：所有词典和方案的预编译包
+            - `full_compiled.zip`：所有词典和方案的预构建包
 
           draft: true
           preserve_order: true
