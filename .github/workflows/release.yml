@@ -79,8 +79,11 @@ jobs:
           zip -r dist/en_dicts.zip en_dicts
           echo "Pack opencc ..."
           zip -r dist/opencc.zip opencc
-          echo "Pack binary for fcitx5.js ..."
+          echo "Pack compiled binary for fcitx5.js ..."
           zip -r dist/fcitx5_rime_js-rime_ice.zip build lua opencc custom_phrase.txt
+          echo "Pack full compiled ..."
+          find . -maxdepth 1 -name "*.lua" -o -name "*.yaml" -o -name "*.txt" | zip dist/full_compiled.zip -@
+          zip -r dist/full_compiled.zip build lua opencc custom_phrase.txt cn_dicts en_dicts LICENSE
 
       - name: Create nightly release
         if: ${{ github.ref == 'refs/heads/main' }}
@@ -97,6 +100,7 @@ jobs:
             - `opencc.zip`：opencc 词库（emoji 等）
             - `all_dicts.zip`：以上三个词库的整合
             - `fcitx5_rime_js-rime_ice.zip`：适用于 fcitx5-rime.js 的预构建包
+            - `full_compiled.zip`：所有词典和方案的预编译包
 
           tag_name: nightly
           preserve_order: true
@@ -109,6 +113,7 @@ jobs:
             dist/en_dicts.zip
             dist/opencc.zip
             dist/fcitx5_rime_js-rime_ice.zip
+            dist/full_compiled.zip
 
       - name: Create stable release
         if: startsWith(github.ref, 'refs/tags/')
@@ -127,6 +132,7 @@ jobs:
             - `opencc.zip`：opencc 词库（emoji 等）
             - `all_dicts.zip`：以上三个词库的整合
             - `fcitx5_rime_js-rime_ice.zip`：适用于 fcitx5-rime.js 的预构建包
+            - `full_compiled.zip`：所有词典和方案的预编译包
 
           draft: true
           preserve_order: true
@@ -138,6 +144,7 @@ jobs:
             dist/en_dicts.zip
             dist/opencc.zip
             dist/fcitx5_rime_js-rime_ice.zip
+            dist/full_compiled.zip
 
       - name: Push and commit
         if: ${{ steps.check_and_build.outcome == 'success' }}
