@@ -39,7 +39,8 @@ make -C others/script smoke
   tab-separated list does not break generic YAML parsing.
 - `lua-lint` first runs `luac -p` to check Lua syntax, then runs `luacheck`
   with a repository-local configuration derived from the librime-lua globals
-  currently used by this repository.
+  currently used by this repository. The syntax check uses `$LUAC` when set,
+  otherwise it prefers `luac5.5`, then `luac5.4`, then `luac`.
 - `lua-format-check` is reserved for a later stage.
 - `smoke` mirrors the current CI smoke invocation and runs
   `bash ./others/script/smoke/run.sh rime_ice` through Make.

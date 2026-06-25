@@ -103,14 +103,36 @@ find_lua_files() {
   )
 }
 
-run_lua_syntax_check() {
-  require_tool luac
+resolve_luac() {
+  if [[ -n "${LUAC:-}" ]]; then
+    command -v "${LUAC}"
+    return
+  fi
 
+  local candidate
+  for candidate in luac5.5 luac5.4 luac; do
+    if command -v "${candidate}" >/dev/null 2>&1; then
+      command -v "${candidate}"
+      return
+    fi
+  done
+
+  return 1
+}
+
+run_lua_syntax_check() {
+  local luac_bin=''
   local lua_files=()
   local syntax_output=''
   local syntax_status=0
   local total_start_time
   total_start_time="$(date +%s)"
+
+  if ! luac_bin="$(resolve_luac)"; then
+    log_fail 'missing required tool: luac'
+    return 1
+  fi
+
   while IFS= read -r lua_file; do
     lua_files+=("${lua_file}")
   done < <(find_lua_files)
@@ -120,10 +142,10 @@ run_lua_syntax_check() {
     return 0
   fi
 
-  log_step "lua-syntax checking ${#lua_files[@]} file(s)"
+  log_step "lua-syntax checking ${#lua_files[@]} file(s) with $(${luac_bin} -v 2>&1)"
 
   for lua_file in "${lua_files[@]}"; do
-    if ! syntax_output="$(cd "${REPO_ROOT}" && luac -p "${lua_file}" 2>&1)"; then
+    if ! syntax_output="$(cd "${REPO_ROOT}" && "${luac_bin}" -p "${lua_file}" 2>&1)"; then
       syntax_status=1
       printf '%s\n' "${syntax_output}"
       log_fail "lua-syntax failed for ${lua_file}"
