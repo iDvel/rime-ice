@@ -10,7 +10,7 @@ permissions:
 jobs:
   smoke-linux:
     name: Lint and Test
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     if: github.repository == 'iDvel/rime-ice'
 
     steps:
@@ -19,8 +19,7 @@ jobs:
 
       - name: Install lint dependencies
         run: |
-          python3 -m pip install yamllint
-          sudo apt install -y luarocks
+          sudo apt install -y lua5.5 luarocks yamllint
           sudo luarocks install luacheck
 
       - name: Cache rime cli bundle
