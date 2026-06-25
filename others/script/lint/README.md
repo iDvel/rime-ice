@@ -7,6 +7,7 @@ This directory contains the lightweight lint entrypoint used by local commands.
 Current stage:
 
 - `yamllint`
+- `luac`
 - `luacheck`
 
 Example install on macOS:
@@ -36,8 +37,9 @@ make -C others/script smoke
   `*.schema.yaml` files, and `others/no_lua_schema/*.yaml` files.
 - `*.schema.yaml` files are preprocessed before linting so the `pin_cand_filter`
   tab-separated list does not break generic YAML parsing.
-- `lua-lint` runs `luacheck` with a repository-local configuration derived from
-  the librime-lua globals currently used by this repository.
+- `lua-lint` first runs `luac -p` to check Lua syntax, then runs `luacheck`
+  with a repository-local configuration derived from the librime-lua globals
+  currently used by this repository.
 - `lua-format-check` is reserved for a later stage.
 - `smoke` mirrors the current CI smoke invocation and runs
   `bash ./others/script/smoke/run.sh rime_ice` through Make.
