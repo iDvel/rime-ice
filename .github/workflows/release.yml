@@ -37,19 +37,18 @@ jobs:
       - name: Cache rime cli bundle
         uses: actions/cache@v5
         with:
-          path: ${{ runner.temp }}/rime-cli-cache/rime-cli-linux-1.6.1.zip
-          key: rime-cli-linux-1.6.1
+          path: ${{ runner.temp }}/rime-cli-cache/rime-cli.zip
+          key: rime-cli
 
-      - name: Lint yaml and lua files
+      - name: Lint yaml and lua
         run: make -C others/script lint
 
-      - name: Compile and smoke test
+      - name: Compile and test
         env:
-          RIME_CLI_URL: https://github.com/mirtlecn/public/releases/download/v1.6.1/rime-cli-linux-1.6.1.zip
-          RIME_CLI_CACHE_PATH: ${{ runner.temp }}/rime-cli-cache/rime-cli-linux-1.6.1.zip
+          RIME_CLI_URL: https://github.com/iDvel/rime-ice/releases/download/tools/rime-1.17.0-lua-5.4-cli-linux-x86_64.zip
+          RIME_CLI_CACHE_PATH: ${{ runner.temp }}/rime-cli-cache/rime-cli.zip
         run: make -C others/script smoke
 
-      # build
       - name: Setup Go
         if: ${{ contains(github.event.head_commit.message, ' [build]') }}
         uses: actions/setup-go@v5
@@ -147,7 +146,8 @@ jobs:
             dist/full_compiled.zip
 
       - name: Push and commit
-        if: ${{ steps.check_and_build.outcome == 'success' }}
+        # if: ${{ steps.check_and_build.outcome == 'success' }}
+        if: false # Disable auto commit for now
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"

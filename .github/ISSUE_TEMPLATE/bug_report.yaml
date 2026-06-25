@@ -58,7 +58,7 @@ body:
     id: app_version
     attributes:
       label: 应用信息
-      description: 提供议题涉及的、或者你使用的 RIME 前端和版本号，自构建前端请说明
+      description: 提供议题涉及的、或者你使用的 RIME 客户端和版本号
       placeholder: Squirrel 1.0.2 / Weasel 0.16.1
     validations:
       required: true
@@ -96,7 +96,7 @@ body:
     id: info
     attributes:
       label: '补充信息'
-      description: ' 请提供你认为重要的其他信息，例如截图、视频、Rime 的报错信息等'
+      description: '请提供你认为重要的其他信息，例如截图、视频、报错信息等'
   - type: textarea
     id: config
     attributes:

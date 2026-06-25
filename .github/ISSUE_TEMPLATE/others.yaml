@@ -33,7 +33,7 @@ body:
     id: app_version
     attributes:
       label: 相关应用
-      description: 这个议题涉及的，或者是你在使用的 RIME 前端
+      description: 这个议题涉及的，或者是你在使用的 RIME 客户端和版本号
       placeholder: e.g. Squirrel 1.0.2 / Fcitx5 for Android 0.9 / Weasel CI 9bc58
     validations:
       required: true
@@ -49,7 +49,7 @@ body:
     id: content
     attributes:
       label: 详细说明
-      description: 请详细说明你的问题或者想法，越具体越好。可以辅以图片、视频等资料。
+      description: 请详细说明你的问题或者想法。可以辅以图片、视频等资料。
     validations:
       required: true
   - type: textarea
