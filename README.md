@@ -15,24 +15,24 @@
 到 Rime [官网](https://rime.im/) 或 app 商店下载安装 Rime 输入法应用。然后：
 
 1. 下载 [雾凇拼音](https://github.com/iDvel/rime-ice/releases/latest/download/full.zip) 压缩包；
-2. 先**清空**[^2]输入法 `用户文件夹`/`用户设定` 内的全部文件，再将压缩包内的所有文件复制进去；
+2. **清空**输入法用户目录[^2]内的全部文件，再将压缩包内的所有文件复制进去；
 3. 重新部署。
 
 部署完成后就可以打字了。按 <kbd>F4</kbd> 可以切换输入方案或开关各项功能。重做以上三步可以更新/还原雾凇拼音。
 
 <details>
-<summary>↓ 雾凇拼音也支持命令行自动安装、打补丁和配置语法模型 ↓</summary>
+<summary>雾凇拼音也支持命令行自动安装、打补丁和配置语法模型。</summary>
 
 ```bash
-* 需要安装 git 及 bash
-* Windows 环境 bash 命令被系统 WSL 占用，进入 git bash 环境再执行以下命令
+# 需要安装 git 及 bash
+# Windows 下 bash 命令被系统 WSL 占用，进入 git bash 环境再执行以下命令
 
 # 1. 安装 plum
 cd ~
 git clone https://github.com/rime/plum.git plum
 
 # 2. 安装雾凇拼音到默认客户端（Weasel，Squirrel，iBus-rime），更新词库只要执行这一步，3、4 步不需要。
-# 如使用其他客户端请手动指定 rime_dir 变量。
+# 如使用其他客户端请手动指定 rime_dir 变量为对应的用户目录。
 # e.g. rime_dir="$HOME/.config/fcitx5/rime" bash rime-install iDvel/rime-ice
 cd ~/plum
 bash rime-install iDvel/rime-ice
@@ -65,9 +65,9 @@ bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=rime_ice
 雾凇拼音包含：
 
 1. 为简体中文设计的全拼和常见双拼方案，包括雾凇拼音（全拼）、智能 ABC、自然码、小鹤双拼、搜狗双拼、微软双拼、紫光双拼、拼音加加、9 键[^3] 和轻量的英文方案。
-2. 长期维护、精心调教且开源的百万中英词库：[了解 >](#长期维护的中英词库)
-3. 完善的基础输入体验，以及丰富的扩展功能：[了解 >](#功能演示和使用教程)
-4. 对 Rime 部分及主流客户端每一项配置的详细注释，方便学习和自定义：[示例 >](./default.yaml)
+2. 长期维护、精心校对且开源的百万中英词库：[了解 ›](#长期维护的中英词库)
+3. 完善的基础输入体验，以及丰富的扩展功能：[了解 ›](#功能演示和使用教程)
+4. 对 Rime 部分及主流客户端每一项配置的详细注释，方便学习和自定义：[示例 ›](./default.yaml)
 
 ### 长期维护的中英词库
 
@@ -469,5 +469,5 @@ GPL-3.0 (only) License.
 <img src="./others/asserts/sponsor.webp" alt="请 Dvel 吃个煎饼馃子" width=300 />
 
 [^1]: 由 @Mintimate 友情构建
-[^2]: 这将清空你之前的用户偏好和词库，如需要，请先备份
+[^2]: 小狼毫（右键 › `用户文件夹`）；鼠须管（右键 › `用户设定...`）；iBus（`~/.config/ibus/rime`）；Fcitx5（`~/.local/share/fcitx5/rime`）；Fcitx5 android（`/Android/data/org.fcitx.fcitx5.android/files/data/rime`）
 [^3]: 九键方案仅适用于 iOS 平台的特定软件
