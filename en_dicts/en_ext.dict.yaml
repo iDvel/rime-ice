@@ -2007,6 +2007,8 @@ UUID	UUID
 Universally Unique Identifier	UUID
 Fyne	Fyne
 Claude	Claude
+Claude Mythos	ClaudeMythos
+Claude Fable	ClaudeFable
 Claude Opus	ClaudeOpus
 Claude Sonnet	ClaudeSonnet
 Claude Haiku	ClaudeHaiku
@@ -2442,6 +2444,9 @@ Heptabase	Heptabase
 Ghostty	Ghostty
 WezTerm	WezTerm
 Wez's Terminal Emulator	WezTerm
+MobaXterm	MobaXterm
+MobaTextEditor	MobaTextEditor
+MobaDiff	MobaDiff
 Tailscale	Tailscale
 Shadowrocket	Shadowrocket
 Quantumult	Quantumult
@@ -2572,3 +2577,48 @@ Feinberg	Feinberg
 Deadpool	Deadpool
 crDroid	crDroid
 Windsurf	Windsurf
+MiniMax	MiniMax
+OpenCode	OpenCode
+OpenCode Go	OpenCodeGo
+CLIProxyAPI	CLIProxyAPI
+NewAPI	NewAPI
+CC Switch	CCSwitch
+Trae	Trae
+Qoder	Qoder
+Comate	Comate
+CodeBuddy	CodeBuddy
+LibreChat	LibreChat
+LobeHub	LobeHub
+Open WebUI	OpenWebUI
+Kelivo	Kelivo
+AnythingLLM	AnythingLLM
+ChatBox	ChatBox
+FastGPT	FastGPT
+SearXNG	SearXNG
+SEGGER	SEGGER
+J-Link	J-Link
+J-Trace	J-Trace
+J-Flash	J-Flash
+J-Mem	J-Mem
+J-Scope	J-Scope
+JTAG	JTAG
+Joint Test Action Group	JTAG
+WinMerge	WinMerge
+Araxis Merge	AraxisMerge
+Source Insight	SourceInsight
+SourceMonitor	SourceMonitor
+WinSCP	WinSCP
+PuTTY	PuTTY
+Renesas	Renesas
+Infineon	Infineon
+AURIX	AURIX
+TriCore	TriCore
+Qualcomm	Qualcomm
+Hynix	Hynix
+Broadcom	Broadcom
+MediaTek	MediaTek
+KIOXIA	KIOXIA
+Microchip	Microchip
+Marvell	Marvell
+Realtek	Realtek
+GigaDevice	GigaDevice
