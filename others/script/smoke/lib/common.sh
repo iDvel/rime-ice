@@ -71,7 +71,7 @@ ensure_clean_dir() {
 
 require_destructive_cleanup_approval() {
   local config_root="$1"
-  local build_dir="${config_root}/build"
+  # local build_dir="${config_root}/build"
 
   if [[ "${CI:-}" == "true" || "${GITHUB_ACTIONS:-}" == "true" ]]; then
     return 0
@@ -82,17 +82,17 @@ require_destructive_cleanup_approval() {
     return 0
   fi
 
-  fail "smoke test will remove ${build_dir} and ${config_root}/*.userdb; rerun with SMOKE_ALLOW_DESTRUCTIVE=1 for local execution, or run in CI"
+  fail "smoke test will ${config_root}/*.userdb; rerun with SMOKE_ALLOW_DESTRUCTIVE=1 for local execution, or run in CI"
 }
 
 clean_config_artifacts() {
   local config_root="$1"
-  local build_dir="${config_root}/build"
+  # local build_dir="${config_root}/build"
 
-  if [[ -d "${build_dir}" ]]; then
-    log_step "removing ${build_dir}"
-    rm -rf "${build_dir}"
-  fi
+  # if [[ -d "${build_dir}" ]]; then
+  #   log_step "removing ${build_dir}"
+  #   rm -rf "${build_dir}"
+  # fi
 
   find "${config_root}" -mindepth 1 -maxdepth 1 -type d -name '*.userdb' -print0 |
     while IFS= read -r -d '' userdb_dir; do
