@@ -67,7 +67,7 @@ jobs:
           rm -rf dist
           mkdir dist
           echo "Pack all ..."
-          find . -maxdepth 1 -name "*.lua" -o -name "*.yaml" -o -name "*.txt" | zip dist/full.zip -@
+          find . -maxdepth 1 -name "*.lua" -o -name "*.yaml" -o -name "*.txt" | grep -v -E "(recipe|installation|user)\.yaml" | zip dist/full.zip -@
           zip -r dist/full.zip cn_dicts en_dicts lua opencc LICENSE
           echo "Pack dicts ..."
           zip -r dist/all_dicts.zip cn_dicts en_dicts opencc radical_pinyin.dict.yaml
@@ -80,7 +80,7 @@ jobs:
           echo "Pack compiled binary for fcitx5.js ..."
           zip -r dist/fcitx5_rime_js-rime_ice.zip build lua opencc custom_phrase.txt
           echo "Pack full compiled ..."
-          find . -maxdepth 1 -name "*.lua" -o -name "*.yaml" -o -name "*.txt" | zip dist/full_compiled.zip -@
+          find . -maxdepth 1 -name "*.lua" -o -name "*.yaml" -o -name "*.txt" | grep -v -E "(recipe|installation|user)\.yaml" | zip dist/full_compiled.zip -@
           zip -r dist/full_compiled.zip build lua opencc custom_phrase.txt cn_dicts en_dicts LICENSE
 
       - name: Create nightly release
