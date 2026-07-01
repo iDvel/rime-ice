@@ -36,6 +36,7 @@ var polyphones = map[string]string{
 	"USIM卡 > 卡":     "ka",
 	"X染色体 > 色":      "se",
 	"Y染色体 > 色":      "se",
+	"乔治·R.R.马丁 > 丁": "ding",
 	"蒙奇·D·路飞 > 奇":   "qi",
 	"蒙奇·D·龙 > 奇":    "qi",
 	"马歇尔·D·蒂奇 > 奇":  "qi",
