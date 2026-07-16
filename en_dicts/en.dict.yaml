@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-07-01"
+version: "2026-07-11"
 sort: by_weight
 ...
 # +_+
@@ -3100,6 +3100,7 @@ cars	cars
 Carson	Carson
 cart	cart
 Carte	Carte
+cartel	cartel
 carter	carter
 Cartier	Cartier
 cartilage	cartilage
@@ -5081,6 +5082,7 @@ cycle	cycle
 cycles	cycles
 cyclic	cyclic
 cycling	cycling
+cyclist	cyclist
 cyclone	cyclone
 Cygwin	Cygwin
 cylinder	cylinder
@@ -7596,6 +7598,7 @@ faster	faster
 fastest	fastest
 fat	fat
 fatal	fatal
+fatality	fatality
 fate	fate
 father	father
 fathers	fathers
@@ -9186,6 +9189,7 @@ hall	hall
 hallmark	hallmark
 Halloween	Halloween
 halls	halls
+hallucination	hallucination
 halo	halo
 halogen	halogen
 halt	halt
@@ -12079,6 +12083,10 @@ Lohan	Lohan
 loin	loin
 loins	loins
 Lois	Lois
+loiter	loiter
+loitered	loitered
+loitering	loitering
+loiters	loiters
 LOL	LOL
 Lola	Lola
 Lolita	Lolita
@@ -20382,6 +20390,7 @@ tapping	tapping
 taps	taps
 tar	tar
 # tara	tara
+tardy	tardy
 target	target
 targeted	targeted
 targeting	targeting
