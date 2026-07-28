@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-07-11"
+version: "2026-07-25"
 sort: by_weight
 ...
 # +_+
@@ -4328,7 +4328,8 @@ conformity	conformity
 confront	confront
 confrontation	confrontation
 confronted	confronted
-Conftest	Conftest
+# Conftest	Conftest
+Confucius	Confucius
 confuse	confuse
 confused	confused
 confusing	confusing
@@ -10869,6 +10870,7 @@ italicized	italicized
 # Italilian	Italilian
 Italy	Italy
 # itc	itc
+itchy	itchy
 item	item
 items	items
 iteration	iteration
@@ -18287,6 +18289,8 @@ selects	selects
 selenium	selenium
 self	self
 self-attention	Self-attention
+selfie	selfie
+selfies	selfies
 selfish	selfish
 sell	sell
 seller	seller
