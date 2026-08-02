@@ -101,7 +101,11 @@ var polyphones = map[string]string{
 	"VIP会员 > 员":     "yuan",
 	"Chromium系 > 系": "xi",
 	"Chrome系 > 系":   "xi",
+	"红Buff > 红":     "hong",
+	"关底BOSS > 底":    "di",
+	"QQ游戏 > 戏":      "xi",
 	"QQ游戏大厅 > 大":    "da",
+	"QQ游戏大厅 > 戏":    "xi",
 	"QQ飞车 > 车":      "che",
 	"2G网络 > 络":      "luo",
 	"3G网络 > 络":      "luo",
@@ -111,6 +115,7 @@ var polyphones = map[string]string{
 	"HB铅笔 > 铅":      "qian",
 	"p进数 > 数":       "shu",
 	"p进数域 > 数":      "shu",
+	"OK么 > 么":       "me",
 }
 
 var digitMap = map[string]string{
