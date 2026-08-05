@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-07-25"
+version: "2026-08-05"
 sort: by_weight
 ...
 # +_+
@@ -3746,6 +3746,7 @@ cleavage	cleavage
 cleave	cleave
 clef	clef
 clement	clement
+clementine	clementine
 Clemson	Clemson
 clergy	clergy
 clerical	clerical
@@ -4332,6 +4333,7 @@ confronted	confronted
 Confucius	Confucius
 confuse	confuse
 confused	confused
+confuses	confuses
 confusing	confusing
 confusion	confusion
 congenital	congenital
@@ -13104,6 +13106,7 @@ misfortune	misfortune
 mishief	mishief
 mislead	mislead
 misleading	misleading
+misnomer	misnomer
 misplace	misplace
 Miss	Miss
 miss	miss
@@ -19407,6 +19410,7 @@ sprinkle	sprinkle
 sprint	sprint
 sprout	sprout
 spruce	spruce
+spud	spud
 spun	spun
 spur	spur
 spurious	spurious
@@ -19432,6 +19436,7 @@ squeezed	squeezed
 squeezes	squeezes
 squeezing	squeezing
 squid	squid
+squiggle	squiggle
 squirrel	squirrel
 squirt	squirt
 squirting	squirting
