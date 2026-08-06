@@ -82,6 +82,7 @@ bash rime-install iDvel/rime-ice:others/recipes/grammar:schema=rime_ice
   - `base` 基础词库，含两字词及调频。
   - `ext` 扩展词库，小词库，含多音字注音。
   - `tencent` 扩展词库，大词库，无注音（由 Rime 自动注音），含非多音字、只发一种音的多音字、同义多音字。
+  - `tencent_lite` 腾讯词向量 LLM 精简版，约 17 万词，默认未启用。
 - 纯手搓的 Emoji
 - 英文词库：
   - `en` 20k 左右的常见单词 + 少许补充。
