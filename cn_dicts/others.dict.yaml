@@ -8,7 +8,7 @@
 #
 ---
 name: others
-version: "2026-03-08"
+version: "2026-08-08"
 sort: by_weight
 ...
 ##### 容错词
@@ -73,6 +73,21 @@ sort: by_weight
 汞齐	gong qi
 汞齐电极	gong ji dian ji
 汞齐电极	gong qi dian ji
+金汞齐	jin gong ji
+金汞齐	jin gong qi
+# 「蔚山」读音混乱，说法不一
+蔚山	yu shan
+蔚山	wei shan
+蔚山市	yu shan shi
+蔚山市	wei shan shi
+蔚山广域市	yu shan guang yu shi
+蔚山广域市	wei shan guang yu shi
+韩国蔚山	han guo yu shan
+韩国蔚山	han guo wei shan
+蔚山工厂	yu shan gong chang
+蔚山工厂	wei shan gong chang
+蔚山现代	yu shan xian dai
+蔚山现代	wei shan xian dai
 # 「街」的粤语和东北话读音及常见的两种写法
 仆街	pu jie
 仆街	pu gai
@@ -291,6 +306,14 @@ sort: by_weight
 粘贴	nian tie
 粘一粘	zhan yi zhan
 粘一粘	nian yi nian
+神荼	shen shu
+神荼	shen tu
+郁垒	yu lv
+郁垒	yu lei
+神荼郁垒	shen shu yu lv
+神荼郁垒	shen tu yu lei
+郁垒神荼	yu lv shen shu
+郁垒神荼	yu lei shen tu
 吐蕃	tu bo
 吐蕃	tu fan
 吐谷浑	tu yu hun
