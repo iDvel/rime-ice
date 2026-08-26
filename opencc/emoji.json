@@ -11,6 +11,7 @@
 		{
 			"dict": {
 				"type": "group",
+				"match_policy": "short_circuit",
 				"dicts": [
 					{
 						"type": "text",
