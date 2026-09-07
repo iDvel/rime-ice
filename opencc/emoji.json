@@ -1,0 +1,27 @@
+{
+	"name": "Chinese to Emoji",
+	"segmentation": {
+		"type": "mmseg",
+		"dict": {
+			"type": "text",
+			"file": "emoji.txt"
+		}
+	},
+	"conversion_chain": [
+		{
+			"dict": {
+				"type": "group",
+				"dicts": [
+					{
+						"type": "text",
+						"file": "emoji.txt"
+					},
+					{
+						"type": "text",
+						"file": "others.txt"
+					}
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,34 @@
+# Rime schema
+# encoding: utf-8
+
+
+patch:
+
+  # 中文键盘空格键上会显示方案名称
+  # （英文键盘的空格在主题的 `theme.yaml` 文件下的 `space: {label:` 处修改）
+  schema/name: "rime-ice"
+
+  # 增加数字按键
+  speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA1234567890
+
+  # 去掉电脑上的固顶字
+  custom_phrase: ~
+
+  # 九宫格拼写映射，直接覆盖，放弃 26 键的纠错，否则重码太多了
+  speller/algebra:
+    - derive/^[abc].*$/2/
+    - derive/^[def].*$/3/
+    - derive/^[mno].*$/6/
+    - xlit/abcdefghijklmnopqrstuvwxyz/22233344455566677778889999/
+
+  # 让输入框从数字变成字母
+  engine/filters/@before 0: lua_filter@*t9_preedit
+  translator/spelling_hints: 16
+
+  # 重写了，因为需要 @ 和 # 的映射，否则键盘上那俩按钮不起作用。
+  punctuator/half_shape:
+    '@' : [ 1,'@',！,：,、,……,～, ]
+    '#' : [ 0,'#','$','%','^','&','*','(',')' ]
+
+  sytle:
+    theme_name: T9

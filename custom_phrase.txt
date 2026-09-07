@@ -1,0 +1,64 @@
+# Rime table
+# coding: utf-8
+#@/db_name	custom_phrase.txt
+#@/db_type	tabledb
+#
+# 自定义短语
+# 可为方案增加一些要置顶的词汇及短语，例如邮箱、手机号、常用短语等等。编码可以随便起，不限于拼音。
+#
+# 适用于全拼。双拼默认为 custom_phrase_double.txt 需要手动创建，并更改上面的 db_name 为 custom_phrase_double.txt
+#
+# 以下固定的词汇及顺序纯属个人偏好，仅作示例，
+# 可以增加自己的 .txt 文件，并在方案的 custom_phrase/user_dict 指定为自己的文件。
+#
+# 以 Tab 分割：词汇<Tab>编码<Tab>权重
+#
+# 这个文件内的字词会占据最高权重（即排在候选项的最前面，因为指定了高权重 custom_phrase/initial_quality: 99）。
+# 但不与其他翻译器互相造词，如果使用了完整编码，那么这个字或词将无法参与造词，即自造词无法被记住。
+# 所以只建议固定非完整拼音的编码，如果需求是置顶指定拼音的候选项，请参考方案中的 pin_cand_filter。
+#
+# 最下面的英文是因为一些常用单词的第一候选项被纠错覆盖了，如 Amazon 被纠错为「a ma zong 阿妈粽」，期望的 Amazon 跑到第二个候选项了，所以这里给它固定死喽。
+#
+# version: "2024-03-12"
+#
+# 此行之后不能写注释
+
+噷	hm
+呣	m
+呒	m
+
+有	u	3
+又	u	2
+由	u	1
+
+一	i	4
+以	i	3
+已	i	2
+亦	i	1
+
+一个	ig
+有个	ug
+是一个	sig
+有一个	uig
+有一个	uyig
+有一个	uyige
+有没有	umu
+有没有	umeiu
+又有	uu
+又又又	uuu
+又双叒叕	uuuu
+
+go	go
+Golang	golang
+Hugo	hugo
+goto	goto
+domain	domain
+TODO	todo
+Dota	dota
+main	main
+Amazon	amazon
+NASA	nasa
+gone	gone
+Go程	gocheng
+code	code
+SOHO	soho

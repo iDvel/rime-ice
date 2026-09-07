@@ -1,0 +1,26 @@
+# encoding: utf-8
+---
+recipe:
+  Rx: others/recipes/no_lua_schema
+  description: >-
+    移除所有 lua 依赖。用于某些不支持 lua 的客户端或者不想使用 lua 的用户。
+
+download_files:
+  - rime_ice.schema.yaml::https://raw.githubusercontent.com/iDvel/rime-ice/refs/heads/main/others/no_lua_schema/rime_ice.schema.yaml
+  - double_pinyin.schema.yaml::https://raw.githubusercontent.com/iDvel/rime-ice/refs/heads/main/others/no_lua_schema/double_pinyin.schema.yaml
+  - double_pinyin_flypy.schema.yaml::https://raw.githubusercontent.com/iDvel/rime-ice/refs/heads/main/others/no_lua_schema/double_pinyin_flypy.schema.yaml
+  - double_pinyin_mspy.schema.yaml::https://raw.githubusercontent.com/iDvel/rime-ice/refs/heads/main/others/no_lua_schema/double_pinyin_mspy.schema.yaml
+  - double_pinyin_sogou.schema.yaml::https://raw.githubusercontent.com/iDvel/rime-ice/refs/heads/main/others/no_lua_schema/double_pinyin_sogou.schema.yaml
+  - double_pinyin_abc.schema.yaml::https://raw.githubusercontent.com/iDvel/rime-ice/refs/heads/main/others/no_lua_schema/double_pinyin_abc.schema.yaml
+  - double_pinyin_jiajia.schema.yaml::https://raw.githubusercontent.com/iDvel/rime-ice/refs/heads/main/others/no_lua_schema/double_pinyin_jiajia.schema.yaml
+  - double_pinyin_ziguang.schema.yaml::https://raw.githubusercontent.com/iDvel/rime-ice/refs/heads/main/others/no_lua_schema/double_pinyin_ziguang.schema.yaml
+
+install_files:
+  - rime_ice.schema.yaml
+  - double_pinyin.schema.yaml
+  - double_pinyin_flypy.schema.yaml
+  - double_pinyin_mspy.schema.yaml
+  - double_pinyin_sogou.schema.yaml
+  - double_pinyin_abc.schema.yaml
+  - double_pinyin_jiajia.schema.yaml
+  - double_pinyin_ziguang.schema.yaml

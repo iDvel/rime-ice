@@ -1,0 +1,9 @@
+# encoding: utf-8
+---
+recipe:
+  Rx: others/recipes/opencc
+  args:
+  description: >-
+    opencc(Emoji)安装、更新
+install_files: >-
+  opencc/*.*

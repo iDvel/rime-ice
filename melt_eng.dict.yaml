@@ -1,0 +1,13 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# 挂载英文输入方案的词库
+#
+
+---
+name: melt_eng
+version: "2023-05-09"
+import_tables:
+  - en_dicts/en_ext # 补充（里面有些许带权重的，且和 en 重复，需要把 en_ext 放在上面）
+  - en_dicts/en     # 英文主词库
+...

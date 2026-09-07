@@ -1,0 +1,20 @@
+extends: default
+
+rules:
+  braces: disable
+  brackets: disable
+  colons: disable
+  commas: disable
+  comments: disable
+  comments-indentation: disable
+  document-start: disable
+  empty-lines:
+    max: 2
+    max-end: 1
+    max-start: 0
+  hyphens: disable
+  indentation:
+    indent-sequences: consistent
+  line-length: disable
+  new-line-at-end-of-file: disable
+  truthy: disable

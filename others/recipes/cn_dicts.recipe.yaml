@@ -1,0 +1,10 @@
+# encoding: utf-8
+---
+recipe:
+  Rx: others/recipes/cn_dicts
+  args:
+  description: >-
+    拼音词库安装、更新
+install_files: >-
+  radical_pinyin.dict.yaml
+  cn_dicts/*.*

@@ -1,0 +1,279 @@
+# Trime default style settings
+# encoding: utf-8
+#
+# 以 iRime 自带的「iPhone默认键盘」为模板，修改了一些：
+#
+# 按钮调换描述文字：中文键盘显示为「中」，英文键盘显示为「abc」。
+#
+# 修改键盘符号的映射，不调用 punctuator/half_shape，直接输出指定标点。
+# 一般是上滑为全角的，下滑改为半角的。
+# / @ # - _ 永远是半角的，上下滑都一样。
+# 右引号上滑为直角引号「」
+# 括号下滑为输入单个括号，中文的输出全角，英文的输出半角。
+#
+# 取消符号键盘，点击「符」直接跳转到「更多」那个界面。
+
+config_version: "0.9"
+name: 默认键盘 #方案名称
+author: 筋斗云#作者资讯
+
+#键盘高度等
+height:
+  1: &jpgd1 43.6 #符号键盘
+  2: &jpgd2 46 #主键盘
+  3: &jpgd3 41.5 #数字键盘
+  4: &jpgd4 12 #主键盘圆角
+  5: &jpgd5 36 #候选区高度
+  6: &jpgd6 0.5 #符号键盘行间距
+  7: &jpgd7 0.5 #符号键盘水平间距
+  8: &jpgd8 0.0 #符号键盘圆角
+  9: &jpgd9 11 #主键盘数字键盘行间距
+  10: &jpgd10 4 #主键盘数字键盘水平间距
+
+style:
+  key_height: *jpgd2 #键高
+  keyboards: [default, number, .symbols, english, .number] #键盘配置,所有跳转键盘都需要在这里配置，不然会出错
+  text_size: 12 #编码字体大小 默认值为：12
+  text_height: 20 #编码框高度 默认值为：20
+  candidate_text_size: 24 #候选字体大小 默认值为：24
+  candidate_view_height: 44 #候选高度 默认值为：44
+  candidate_padding: 14 #候选间距 默认值为：14
+  comment_text_size: 14 #逐码字体大小 默认值为：14
+  comment_height: 16 #逐码高度 默认值为：16
+  show_preview: true #是否显示气泡 默认显示
+  round_corner: 0 #值为0的话默认 iphone为4，ipad为8
+  color_scheme: default #配色方案
+
+
+
+
+#键盘布局
+preset_keyboards:
+  default:
+    ascii_mode: 0
+    author: "筋斗云"
+    height: *jpgd2
+    horizontal_gap: *jpgd10
+    vertical_gap: *jpgd9
+    round_corner: *jpgd4
+#现在只支持配置click,swipe_up,swipe_down键盘
+    keys:
+      - {click: q, label: Q, swipe_up: commit1,  swipe_down: "一"}
+      - {click: w, label: W, swipe_up: commit2,  swipe_down: "二"}
+      - {click: e, label: E, swipe_up: commit3,  swipe_down: "三"}
+      - {click: r, label: R, swipe_up: commit4,  swipe_down: "四"}
+      - {click: t, label: T, swipe_up: commit5,  swipe_down: "五"}
+      - {click: y, label: Y, swipe_up: commit6,  swipe_down: "六"}
+      - {click: u, label: U, swipe_up: commit7,  swipe_down: "七"}
+      - {click: i, label: I, swipe_up: commit8,  swipe_down: "八"}
+      - {click: o, label: O, swipe_up: commit9,  swipe_down: "九"}
+      - {click: p, label: P, swipe_up: commit0,  swipe_down: "〇"}
+      - {width: 5}
+      - {click: a, label: A, swipe_up: commit～, swipe_down: commit～half}
+      - {click: s, label: S, swipe_up: commitgan, swipe_down: commitgan}
+      - {click: d, label: D, swipe_up: commit：, swipe_down: commit：half}
+      - {click: f, label: F, swipe_up: commit；, swipe_down: commit；half}
+      - {click: g, label: G, swipe_up: bracket3, swipe_down: commit（}
+      - {click: h, label: H, swipe_up: commit）, swipe_down: commit）}
+      - {click: j, label: J, swipe_up: commit@,  swipe_down: commit@}
+      - {click: k, label: K, swipe_up: quotationMarkFull2,  swipe_down: '"'}
+      - {click: l, label: L, swipe_up: quotationMar「」,  swipe_down: "'"}
+      - {width: 5}
+      - {click: Shift, width: 14}
+      - {width: 1}
+      - {click: z, label: Z, swipe_up: commit-,  swipe_down: commit-}
+      - {click: x, label: X, swipe_up: commit_,  swipe_down: commit_}
+      - {click: c, label: C, swipe_up: commitJin,  swipe_down: commitJin}
+      - {click: v, label: V, swipe_up: commit？,  swipe_down: commit？half}
+      - {click: b, label: B, swipe_up: commit！,  swipe_down: commit！half}
+      - {click: n, label: N, swipe_up: commit，,  swipe_down: commaHalf}
+      - {click: m, label: M, swipe_up: commit。,  swipe_down: periodHalf}
+      - {width: 1}
+      - {click: BackSpace, width: 14}
+      - {click: symbols, width: 14}
+      - {click: .number, width: 12}
+      - {click: space, width: 42}
+      - {click: english, width: 12}
+      - {click: Return, width: 20}
+    name: "默认键盘"
+    width: 10
+
+  english:
+    ascii_mode: 1
+    author: "筋斗云"
+    height: *jpgd2
+    horizontal_gap: *jpgd10
+    vertical_gap: *jpgd9
+    round_corner: *jpgd4
+    keys:
+      - {click: q, swipe_up: "1",  swipe_down: "一"}
+      - {click: w, swipe_up: "2",  swipe_down: "二"}
+      - {click: e, swipe_up: "3",  swipe_down: "三"}
+      - {click: r, swipe_up: "4",  swipe_down: "四"}
+      - {click: t, swipe_up: "5",  swipe_down: "五"}
+      - {click: y, swipe_up: "6",  swipe_down: "六"}
+      - {click: u, swipe_up: "7",  swipe_down: "七"}
+      - {click: i, swipe_up: "8",  swipe_down: "八"}
+      - {click: o, swipe_up: "9",  swipe_down: "九"}
+      - {click: p, swipe_up: "0",  swipe_down: "〇"}
+      - {width: 5}
+      - {click: a, swipe_up: "~", swipe_down: "~"}
+      - {click: s, swipe_up: "/", swipe_down: "/"}
+      - {click: d, swipe_up: ":", swipe_down: ":"}
+      - {click: f, swipe_up: ";", swipe_down: ";"}
+      - {click: g, swipe_up: bracket2, swipe_down: "("}
+      - {click: h, swipe_up: ")", swipe_down: ")"}
+      - {click: j, swipe_up: "@",  swipe_down: "@"}
+      - {click: k, swipe_up: quotationMarkHalf2,  swipe_down: '"'}
+      - {click: l, swipe_up: quotationMarkHalf1,  swipe_down: "'"}
+      - {width: 5}
+      - {click: Shift, width: 14}
+      - {width: 1}
+      - {click: z, swipe_up: "-",  swipe_down: "-"}
+      - {click: x, swipe_up: "_",  swipe_down: "_"}
+      - {click: c, swipe_up: "#",  swipe_down: "#"}
+      - {click: v, swipe_up: "?",  swipe_down: "?"}
+      - {click: b, swipe_up: "!",  swipe_down: "!"}
+      - {click: n, swipe_up: ",",  swipe_down: ","}
+      - {click: m, swipe_up: ".",  swipe_down: "."}
+      - {width: 1}
+      - {click: BackSpace, width: 14}
+      - {click: symbols, width: 14}
+      - {click: .number, width: 12}
+      - {click: ., swipe_up: ",", width: 10}
+      - {click: space, width: 34}
+      - {click: DefaultKeyboard2, width: 10}
+      - {click: Return, width: 20}
+    name: "英文键盘"
+    width: 10
+
+
+  number:
+    ascii_mode: 0
+    author: "筋斗云"
+    height: *jpgd2
+    horizontal_gap: *jpgd10
+    vertical_gap: *jpgd9
+    round_corner: *jpgd4
+    keys:
+      - {click: 1}
+      - {click: 2}
+      - {click: 3}
+      - {click: 4}
+      - {click: 5}
+      - {click: 6}
+      - {click: 7}
+      - {click: 8}
+      - {click: 9}
+      - {click: 0}
+      - {click: "-"}
+      - {click: "/"}
+      - {click: ":"}
+      - {click: semicolon}
+      - {click: bracket}
+      - {click: bracket1}
+      - {click: "¥"}
+      - {click: "@"}
+      - {click: quotationMarkFull}
+      - {click: quotationMarkFull1}
+      - {click: .symbols1, width: 14}
+      - {width: 3}
+      - {click: periodFull, width: 11}
+      - {click: commaFull, width: 11}
+      - {click: dunHalf, width: 11}
+      - {click: questionMark, width: 11}
+      - {click: point, width: 11}
+      - {click: ., width: 11}
+      - {width: 3}
+      - {click: BackSpace, width: 14}
+      - {click: DefaultKeyboard, width: 25}
+      - {click: space, width: 50}
+      - {click: Return, width: 25}
+    name: "苹果数字键盘"
+    width: 10
+
+preset_color_schemes:
+  default:
+    back_color: 0xffffff
+
+
+preset_keys:
+  # 键盘类型需要在这里跳转，目前只支持下面的配置。
+  # 只支持 Shift Return BackSpace  space 特殊键盘配置
+  # 现在text的命令只支持:
+  #   1,Left(光标向左移动一格);
+  #   2,Right(光标向右移动一格)
+  #   3,跳转到指定键盘;
+  #   其它暂时不支持,具体看事例;
+  # 现在支持commit命令,直接上屏指定字符
+  #
+  Shift: {label: Shift, send: Shift_L}
+  Return: {label: Enter, send: Return}
+  BackSpace: {send: BackSpace}
+  space: {label: "␣", send: space}
+  number: {label: 123, send: Eisu_toggle, select: number}
+  # english: {label: "abc", send: Eisu_toggle, select: english}
+  # 修改：中文状态下显示「中」
+  english: {label: "中", send: Eisu_toggle, select: english}
+  # symbols: {label: "符", send: Eisu_toggle, select: number}
+  # 修改：直接跳到「更多」
+  symbols: {label: "符", send: Eisu_toggle, select: .symbols}
+  .symbols: {label: "更多", send: Eisu_toggle, select: .symbols} #默认的符号键盘
+  .symbols1: {label: "更多", text: "{.symbols}{DefaultKeyboard}"} #默认的符号键盘
+  .number: {label: 123, send: Eisu_toggle, select: .number} #默认的9宫格数据键盘
+  DefaultKeyboard: {label: 中, send: Eisu_toggle, select: default}
+  # DefaultKeyboard2: {label: 中, send: Eisu_toggle, select: default}
+  # 修改：英文状态下显示「abc」
+  DefaultKeyboard2: {label: "abc", send: Eisu_toggle, select: default}
+  periodHalf: {label: ".", commit: "."} #直接上屏半角句号
+  periodFull: {label: "。", text: "。{DefaultKeyboard}"} #上屏全角句号再跳转到default键盘
+  commaHalf: {label: ",", commit: ","}
+  commaFull: {label: "，", text: "，{DefaultKeyboard}"}
+  dunHalf: {label: "、", text: "、{DefaultKeyboard}"}
+  questionMark: {label: "？", text: "？{DefaultKeyboard}"}
+  point: {label: "！", text: "！{DefaultKeyboard}"}
+  semicolon: {label: "；", text: ";{DefaultKeyboard}"} #先上屏；再跳转到default键盘
+  bracket: {label: "(", text: "(){Left}{DefaultKeyboard}"} #先上屏()光标往左移动一格再跳转到default键盘
+  bracket3: {label: "（", text: "（）{Left}"} #先上屏()光标往左移动一格
+  bracket2: {label: "(", text: "(){Left}"} #先上屏()光标往左移动一格
+  bracket1: {label: ")", text: "){DefaultKeyboard}"} #先上屏)再跳转到default键盘
+  quotationMarkFull: {label: "〝", text: "〝〞{Left}{DefaultKeyboard}"}
+  quotationMarkFull1: {label: "〞", text: "〞＂{Left}{DefaultKeyboard}"}
+  quotationMarkFull2: {label: "〝", text: "〝〞{Left}"}
+  quotationMar「」: {label: "「", text: "「」{Left}"}
+  quotationMarkHalf1: {label: "\"", text: "\""}
+  quotationMarkHalf2: {label: "\"", text: "\"\"{Left}"}
+  quotationMarkFull１: {label: "\"", text: "＂{DefaultKeyboard}"}
+  commit1: {label: "1", commit: "1"}
+  commit2: {label: "2", commit: "2"}
+  commit3: {label: "3", commit: "3"}
+  commit4: {label: "4", commit: "4"}
+  commit5: {label: "5", commit: "5"}
+  commit6: {label: "6", commit: "6"}
+  commit7: {label: "7", commit: "7"}
+  commit8: {label: "8", commit: "8"}
+  commit9: {label: "9", commit: "9"}
+  commit0: {label: "0", commit: "0"}
+  commit～: {label: "～", commit: "～"}
+  commit～half: {label: "~", commit: "~"}
+  commitgan: {label: "/", commit: "/"}
+  commit：: {label: "：", commit: "："}
+  commit：half: {label: ":", commit: ":"}
+  commit；: {label: "；", commit: "；"}
+  commit；half: {label: ";", commit: ";"}
+  commit（: {label: "（", commit: "（"}
+  commit）: {label: "）", commit: "）"}
+  commit@: {label: "@", commit: "@"}
+  commit-: {label: "-", commit: "-"}
+  commit_: {label: "_", commit: "_"}
+  commitJin: {label: "#", commit: "#"}
+  commit？: {label: "？", commit: "？"}
+  commit？half: {label: "?", commit: "?"}
+  commit！: {label: "！", commit: "！"}
+  commit！half: {label: "!", commit: "!"}
+  commit，: {label: "，", commit: "，"}
+  commit，half: {label: ",", commit: ","}
+  commit。: {label: "。", commit: "。"}
+  commit。half: {label: ".", commit: "."}
+  commit”: {label: "”", commit: "”"}
+  commit_single_quote: {label: "'", commit: "'"}

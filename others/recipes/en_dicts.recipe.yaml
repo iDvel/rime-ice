@@ -1,0 +1,9 @@
+# encoding: utf-8
+---
+recipe:
+  Rx: others/recipes/en_dicts
+  args:
+  description: >-
+    英文词库安装、更新
+install_files: >-
+  en_dicts/*.*

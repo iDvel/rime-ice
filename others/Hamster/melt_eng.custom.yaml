@@ -1,0 +1,4 @@
+﻿# 此补丁可以在仓输入法九宫格布局中输入英文
+patch:
+  speller/algebra/+:
+    - xlit/abcdefghijklmnopqrstuvwxyz/22233344455566677778889999/
