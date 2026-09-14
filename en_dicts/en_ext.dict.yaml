@@ -10,7 +10,7 @@
 # 少数单词与 en 重复，纯粹是为了排版美观，部署时的报错 duplicate word definition 可忽略，无任何影响
 ---
 name: en_ext
-version: "2026-07-25"
+version: "2026-09-10"
 sort: by_weight
 ...
 # 一些杂项
@@ -133,10 +133,9 @@ net	net	2
 .NET	dotnet
 # 带权重的系列
 iPhone	iPhone	999
-iPhone 17	iPhone	4
-iPhone 17 Pro	iPhone	3
-iPhone 17 Pro Max	iPhone	2
-iPhone 17e	iPhone	1
+iPhone 18 Pro	iPhone	3
+iPhone 18 Pro Max	iPhone	2
+iPhone Duo	iPhone	1
 Mac OS X	MacOSX	999
 Mac OS X Cheetah	MacOSX	1
 Mac OS X Puma	MacOSX	2
@@ -226,6 +225,9 @@ iPhone 17e	iPhone17e
 iPhone Air	iPhoneAir
 iPhone 17 Pro	iPhone17Pro
 iPhone 17 Pro Max	iPhone17ProMax
+iPhone 18 Pro	iPhone18Pro
+iPhone 18 Pro Max	iPhone18ProMax
+iPhone Duo	iPhoneDuo
 Mac OS X Cheetah	MacOSXCheetah
 Mac OS X Puma	MacOSXPuma
 Mac OS X Jaguar	MacOSXJaguar
@@ -1256,6 +1258,9 @@ GitHub Copilot CLI	GitHubCopilotCLI
 GitHub Copilot chat	GitHubCopilotchat
 iPadOS	iPadOS
 Apple Pencil	ApplePencil
+Apple Pencil Pro	ApplePencilPro
+Magic Mouse	MagicMouse
+Magic Keyboard	MagicKeyboard
 Reddit	Reddit
 HHKB	HHKB
 Happy Hacking Keyboard	HHKB
