@@ -109,7 +109,7 @@ function M.init(env)
         local preedit, texts = list:get_value_at(i).value:match("([^\t]+)\t(.+)")
         if #preedit > 0 and #texts > 0 then
             -- 按照 " > " 或 " " 分割词汇
-            local delimiter = "\0"
+            local delimiter = "\x1f"
             if texts:find(" > ") then
                 texts = texts:gsub(" > ", delimiter)
             else
