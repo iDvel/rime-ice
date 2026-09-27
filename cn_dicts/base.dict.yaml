@@ -3275,7 +3275,7 @@
 #///
 ---
 name: base
-version: "2026-09-11"
+version: "2026-09-27"
 sort: by_weight
 ...
 # +_+
@@ -33355,6 +33355,7 @@ sort: by_weight
 不播	bu bo	1080
 不薄	bu bo	599
 布帛	bu bo	331
+布拨	bu bo	100
 不拨不明	bu bo bu ming	30
 步步	bu bu	35680
 不不	bu bu	9999
@@ -44053,6 +44054,7 @@ sort: by_weight
 苍霞村	cang xia cun	1
 苍霞新城	cang xia xin cheng	21
 沧县	cang xian	4155
+苍响	cang xiang	100
 仓巷	cang xiang	79
 仓箱可期	cang xiang ke qi	1
 仓鸮	cang xiao	32
@@ -235619,6 +235621,7 @@ sort: by_weight
 蓝雪	lan xue	111
 兰薰桂馥	lan xun gui fu	3
 蓝牙	lan ya	157840
+蓝鸦	lan ya	100
 蓝牙产品	lan ya chan pin	1855
 蓝牙低功耗	lan ya di gong hao	227
 蓝牙耳机	lan ya er ji	25590
@@ -274561,6 +274564,7 @@ sort: by_weight
 淼淼	miao miao	3590
 瞄瞄	miao miao	2010
 邈邈	miao miao	165
+妙喵	miao miao	100
 庙庙湖	miao miao hu	109
 眇眇忽忽	miao miao hu hu	1
 描描画画	miao miao hua hua	85
@@ -398359,6 +398363,7 @@ sort: by_weight
 同享	tong xiang	6375
 同相	tong xiang	5310
 通项	tong xiang	310
+铜象	tong xiang	100
 同向春风各自愁	tong xiang chun feng ge zi chou	4
 同向的	tong xiang de	456
 同乡的	tong xiang de	123
@@ -401882,6 +401887,7 @@ sort: by_weight
 兔丸	tu wan	111
 # 土湾	tu wan	0
 图网	tu wang	4060
+土王	tu wang	100
 突围	tu wei	42420
 土味	tu wei	1220
 土围	tu wei	960
@@ -553131,6 +553137,7 @@ sort: by_weight
 走进去	zou jin qu	13110
 走进群众	zou jin qun zhong	116
 走进校园	zou jin xiao yuan	2890
+走鲸	zou jing	100
 邹靖	zou jing	4
 邹敬园	zou jing yuan	152
 走就走	zou jiu zou	3040
