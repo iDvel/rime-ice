@@ -41,6 +41,7 @@
 沕 hu
 㺀 hu
 𬴐 huan
+懽 huan
 獚 huang
 𫚔 hui
 䇲 jia
@@ -60,6 +61,7 @@
 鞟 kuo
 筈 kuo
 鯻 la
+㻋 la
 鿶 lang
 𧒽 lei
 睖 leng
@@ -88,6 +90,7 @@
 叡 rui
 睒 shan
 昰 shi
+笹 shi
 糸 si
 楤 song
 𧊕 song
@@ -174,6 +177,7 @@
 矽 xi
 雫 xia
 咲 xiao
+厓 ya
 蓺 yi
 哟 yo
 唷 yo
@@ -712,7 +716,6 @@
 朱载坖
 明穆宗朱载坖
 妺喜
-和世㻋
 白帢青衫
 劈地价来
 十夫桡椎
@@ -731,7 +734,7 @@
 一之日觱发
 栗烈觱发
 万古钦躅
-禽滑釐
+禽滑厘
 𦗒狐
 不亦说乎
 日掛中天
