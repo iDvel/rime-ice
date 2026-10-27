@@ -244,6 +244,7 @@ var onlyOne = map[string]string{
 	"广":   "guang",
 	"厂":   "chang",
 	"家":   "jia",
+	"景":   "jing",
 	"虾":   "xia",
 	"蛇":   "she",
 	"蹲":   "dun",
