@@ -353,17 +353,20 @@ China Central Television	ChinaCentralTelevision
 GTA	GTA
 Grand Theft Auto	GTA
 Grand Theft Auto	GrandTheftAuto
-GTAV	GTAV
-Grand Theft Auto V	GTAV
-Grand Theft Auto V	GrandTheftAutoV
-GTAVI	GTAVI
-Grand Theft Auto VI	GTAVI
-Grand Theft Auto VI	GrandTheftAutoVI
+GTA5	GTA5
+GTA Ⅴ	GTA5
+Grand Theft Auto Ⅴ	GTA5
+GTA6	GTA6
+GTA ⅤⅠ	GTA6
+Grand Theft Auto ⅤⅠ	GTA6
 LGBT	LGBT
+LGBTQ	LGBTQ
 GPS	GPS
 ATM	ATM
 automated teller machine	ATM
 automated teller machine	automatedtellermachine
+ASN	ASN
+Autonomous System Number	ASN
 CentOS	CentOS
 Debian	Debian
 BBC	BBC
@@ -686,6 +689,7 @@ ECharts	ECharts
 Apache ECharts	ECharts
 Apache ECharts	ApacheECharts
 CPython	CPython
+PyPI	PyPI
 OpenJDK	OpenJDK
 OCaml	OCaml
 Clojure	Clojure
@@ -806,7 +810,6 @@ AMD	AMD
 AMDgpu	AMDgpu
 App Store	AppStore
 AirDrop	AirDrop
-Alfred	Alfred
 Amazon	Amazon
 Adobe	Adobe
 Axure	Axure
@@ -932,7 +935,6 @@ Keyboard Maestro	KeyboardMaestro
 Keycard	Keycard
 KeyCue	KeyCue
 LaTeXian	LaTeXian
-Launcher	Launcher
 Little Snitch	LittleSnitch
 Live Photos	LivePhotos
 LiveReload	LiveReload
@@ -1603,6 +1605,10 @@ LCD	LCD
 Liquid Crystal Display	LCD
 Liquid Crystal Display	LiquidCrystalDisplay
 Liquid Glass	LiquidGlass
+LED	LED
+Light-Emitting Diode	LED
+OLED	OLED
+Organic Light-Emitting Diode	OLED
 Emotional Damage	EmotionalDamage
 GitLab	GitLab
 GitLab Runner	GitLabRunner
@@ -2156,8 +2162,16 @@ Minikube	Minikube
 shitwork	shitwork
 W3C	W3C
 World Wide Web Consortium	W3C
-A4	A4
 3D	3D
+A1	A1
+A2	A2
+A3	A3
+A4	A4
+A5	A5
+A6	A6
+A7	A7
+A8	A8
+F1	F1
 Loki	Loki
 dict	dict
 Hughie	Hughie
@@ -2447,6 +2461,10 @@ PyTorch	PyTorch
 DeepSeek	DeepSeek
 Mercedes-Benz	Mercedes-Benz
 1Password	1Password
+SHA-1	SHA-1
+SHA-256	SHA-256
+SHA-512	SHA-512
+MD5	MD5
 WD-40	WD-40
 OpenStreetMap	OpenStreetMap
 OsmAnd	OsmAnd
@@ -2638,6 +2656,7 @@ GigaDevice	GigaDevice
 GPT‑5.6 Sol	GPT‑5.6Sol
 GPT-5.6 Terra	GPT-5.6Terra
 GPT-5.6 Luna	GPT-5.6Luna
+Kaspersky	Kaspersky
 Nust	Nust
 MacPorts	MacPorts
 WorkBuddy	WorkBuddy

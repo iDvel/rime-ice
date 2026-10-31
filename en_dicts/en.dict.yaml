@@ -17,7 +17,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2026-09-01"
+version: "2026-10-01"
 sort: by_weight
 ...
 # +_+
@@ -1386,6 +1386,7 @@ atomic	atomic
 atoms	atoms
 # atp	atp
 Atreyu	Atreyu
+atropine	atropine
 # ats	ats
 # att	att
 attach	attach
@@ -1748,6 +1749,7 @@ barker	barker
 barking	barking
 barley	barley
 barn	barn
+barnacle	barnacle
 Barnes	Barnes
 Barnett	Barnett
 barney	barney
@@ -3034,6 +3036,7 @@ carbs	carbs
 carcass	carcass
 carcinoma	carcinoma
 card	card
+cardamom	cardamom
 cardboard	cardboard
 cardiac	cardiac
 Cardiff	Cardiff
@@ -3254,6 +3257,7 @@ cellphone	cellphone
 cells	cells
 cellular	cellular
 celluloid	celluloid
+cellulose	cellulose
 Celtic	Celtic
 cement	cement
 cemeteries	cemeteries
@@ -3379,6 +3383,8 @@ characteristics	characteristics
 characterization	characterization
 characterize	characterize
 characterized	characterized
+characterizes	characterizes
+characterizing	characterizing
 characters	characters
 charcoal	charcoal
 charge	charge
@@ -3429,6 +3435,8 @@ cheap	cheap
 cheaper	cheaper
 cheapest	cheapest
 cheat	cheat
+cheated	cheated
+cheater	cheater
 cheating	cheating
 cheats	cheats
 check	check
@@ -3560,6 +3568,8 @@ choral	choral
 chord	chord
 chords	chords
 chore	chore
+choreograph	choreograph
+choreography	choreography
 chores	chores
 chorus	chorus
 chose	chose
@@ -3919,6 +3929,7 @@ coin	coin
 coincide	coincide
 coincidence	coincidence
 coins	coins
+coir	coir
 coke	coke
 col	col
 cola	cola
@@ -4989,6 +5000,7 @@ cubes	cubes
 cubic	cubic
 cubs	cubs
 cucumber	cucumber
+cuddly	cuddly
 cue	cue
 cues	cues
 cuff	cuff
@@ -5007,6 +5019,7 @@ cum	cum
 Cumberland	Cumberland
 Cumbria	Cumbria
 cumfiesta	cumfiesta
+cumin	cumin
 cumming	cumming
 Cummings	Cummings
 cumshot	cumshot
@@ -5084,6 +5097,7 @@ cuttlefish	cuttlefish
 # cx	cx
 # cy	cy
 cyan	cyan
+cyanide	cyanide
 cyber	cyber
 cyberpunk	cyberpunk
 cyberspace	cyberspace
@@ -5434,8 +5448,10 @@ delegates	delegates
 delegation	delegation
 delete	delete
 deleted	deleted
+deletes	deletes
 deleting	deleting
 deletion	deletion
+deletions	deletions
 Delhi	Delhi
 # deli	deli
 deliberate	deliberate
@@ -5459,6 +5475,7 @@ Della	Della
 Delphi	Delphi
 Delphic	Delphic
 delta	delta
+delusional	delusional
 deluxe	deluxe
 # dem	dem
 demand	demand
@@ -5514,6 +5531,7 @@ Denny	Denny
 denote	denote
 denoted	denoted
 denotes	denotes
+denoting	denoting
 denounce	denounce
 dense	dense
 densities	densities
@@ -5677,6 +5695,7 @@ deter	deter
 deteriorate	deteriorate
 deterioration	deterioration
 determinants	determinants
+determinate	determinate
 determination	determination
 determinations	determinations
 determine	determine
@@ -6796,7 +6815,11 @@ emirates	emirates
 emission	emission
 emissions	emissions
 emit	emit
+emits	emits
+emittance	emittance
+emitted	emitted
 emitter	emitter
+emitting	emitting
 Emma	Emma
 Emmanuel	Emmanuel
 emo	emo
@@ -7001,6 +7024,7 @@ entropy	entropy
 entry	entry
 enum	enum
 enumeration	enumeration
+enunciation	enunciation
 env	env
 envelope	envelope
 envelopes	envelopes
@@ -7215,6 +7239,10 @@ everyone	everyone
 everything	everything
 everytime	everytime
 everywhere	everywhere
+evict	evict
+evicted	evicted
+evicting	evicting
+evicts	evicts
 evidence	evidence
 evidenced	evidenced
 evident	evident
@@ -8357,6 +8385,7 @@ fries	fries
 frieze	frieze
 fright	fright
 frighten	frighten
+frightening	frightening
 frightful	frightful
 fringe	fringe
 Fritz	Fritz
@@ -9949,6 +9978,7 @@ hurts	hurts
 husband	husband
 husbands	husbands
 hush	hush
+husk	husk
 huskies	huskies
 husky	husky
 Hussein	Hussein
@@ -9987,6 +10017,7 @@ hyphening	hyphening
 hyphens	hyphens
 hypnosis	hypnosis
 hypocrisy	hypocrisy
+hypocrite	hypocrite
 hypotheses	hypotheses
 hypothesis	hypothesis
 hypothetical	hypothetical
@@ -10629,6 +10660,7 @@ interceptive	interceptive
 interceptor	interceptor
 intercepts	intercepts
 interchange	interchange
+intercom	intercom
 interconnect	interconnect
 interconnection	interconnection
 intercontinental	intercontinental
@@ -10755,6 +10787,7 @@ investments	investments
 investor	investor
 investors	investors
 invidious	invidious
+invincible	invincible
 invisible	invisible
 # invision	invision
 invitation	invitation
@@ -11741,7 +11774,6 @@ lend	lend
 lender	lender
 lenders	lenders
 lending	lending
-LendingTree	LendingTree
 length	length
 lengthen	lengthen
 lengths	lengths
@@ -11761,7 +11793,6 @@ leopard	leopard
 Leroy	Leroy
 # les	les
 lesbian	lesbian
-lesbianas	lesbianas
 lesbians	lesbians
 Lesbo	Lesbo
 Lesbos	Lesbos
@@ -12229,6 +12260,7 @@ Luke	Luke
 lullaby	lullaby
 lulu	lulu
 lumber	lumber
+luminance	luminance
 luminous	luminous
 lump	lump
 Luna	Luna
@@ -13121,7 +13153,7 @@ miser	miser
 miserable	miserable
 misery	misery
 misfortune	misfortune
-mishief	mishief
+mishap	mishap
 mislead	mislead
 misleading	misleading
 misnomer	misnomer
@@ -13520,6 +13552,7 @@ musician	musician
 musicians	musicians
 # musik	musik
 musings	musings
+musk	musk
 Muslim	Muslim
 Muslims	Muslims
 mussel	mussel
@@ -13774,10 +13807,12 @@ neu	neu
 neural	neural
 neurological	neurological
 neurology	neurology
+neuron	neuron
 neurons	neurons
 neuroscience	neuroscience
 neuter	neuter
 neutral	neutral
+neutrino	neutrino
 neutron	neutron
 Nevada	Nevada
 never	never
@@ -14080,6 +14115,7 @@ nurture	nurture
 nut	nut
 nutlet	nutlet
 nutlets	nutlets
+nutmeg	nutmeg
 nutrient	nutrient
 nutrients	nutrients
 nutrition	nutrition
@@ -14580,6 +14616,7 @@ outs	outs
 outset	outset
 outside	outside
 outskirts	outskirts
+outsole	outsole
 outsourcing	outsourcing
 outstanding	outstanding
 outward	outward
@@ -14803,11 +14840,14 @@ paragon	paragon
 paragraph	paragraph
 paragraphs	paragraphs
 Paraguay	Paraguay
+parakeet	parakeet
 paralegal	paralegal
 parallel	parallel
 paralyse	paralyse
 paralyze	paralyze
 param	param
+paramedic	paramedic
+paramedics	paramedics
 parameter	parameter
 parameters	parameters
 parametric	parametric
@@ -15119,6 +15159,7 @@ periodicals	periodicals
 periods	periods
 peripheral	peripheral
 peripherals	peripherals
+periphery	periphery
 perish	perish
 perk	perk
 Perkins	Perkins
@@ -15861,6 +15902,8 @@ predominant	predominant
 predominantly	predominantly
 preedit	preedit
 preface	preface
+prefecture	prefecture
+prefectures	prefectures
 prefer	prefer
 preferable	preferable
 preferably	preferably
@@ -16210,6 +16253,7 @@ prostate	prostate
 prostitution	prostitution
 prostores	prostores
 # prot	prot
+protagonist	protagonist
 protect	protect
 protected	protected
 protecting	protecting
@@ -17344,6 +17388,7 @@ retort	retort
 retractable	retractable
 retreat	retreat
 retreats	retreats
+retribution	retribution
 retried	retried
 retries	retries
 retrieval	retrieval
@@ -17447,6 +17492,7 @@ rhodium	rhodium
 rhyme	rhyme
 rhymes	rhymes
 rhythm	rhythm
+rhythmical	rhythmical
 rhythms	rhythms
 # ri	ri
 rib	rib
@@ -19317,6 +19363,7 @@ spectacular	spectacular
 spectator	spectator
 spectra	spectra
 spectral	spectral
+spectre	spectre
 spectroscopy	spectroscopy
 spectrum	spectrum
 speculate	speculate
@@ -19400,6 +19447,8 @@ sponsoring	sponsoring
 sponsors	sponsors
 sponsorship	sponsorship
 spontaneous	spontaneous
+spook	spook
+spooky	spooky
 spoon	spoon
 spore	spore
 sport	sport
@@ -19454,6 +19503,9 @@ square	square
 squared	squared
 squares	squares
 squash	squash
+squashed	squashed
+squashes	squashes
+squashing	squashing
 squeeze	squeeze
 squeezed	squeezed
 squeezes	squeezes
@@ -20255,8 +20307,10 @@ swords	swords
 sworn	sworn
 # sx	sx
 # sy	sy
-Sybase	Sybase
 Sydney	Sydney
+syllabic	syllabic
+syllable	syllable
+syllables	syllables
 syllabus	syllabus
 Sylvia	Sylvia
 symantec	symantec
@@ -21385,6 +21439,8 @@ trudgers	trudgers
 trudges	trudges
 trudging	trudging
 true	true
+truffle	truffle
+truffles	truffles
 truly	truly
 Truman	Truman
 Trump	Trump
@@ -21508,7 +21564,14 @@ twinks	twinks
 twins	twins
 twist	twist
 twisted	twisted
-Twiztid	Twiztid
+twitch	twitch
+twitched	twitched
+twitches	twitches
+twitching	twitching
+twitter	twitter
+twittered	twittered
+twittering	twittering
+twitters	twitters
 two	two
 # twp	twp
 # tx	tx
@@ -21741,10 +21804,12 @@ unsafe	unsafe
 unsecured	unsecured
 unseen	unseen
 unselfish	unselfish
+unsettling	unsettling
 unsigned	unsigned
 unsolicited	unsolicited
 unspecified	unspecified
 unstable	unstable
+unstressed	unstressed
 unsubscribe	unsubscribe
 unsuccessful	unsuccessful
 unsupported	unsupported
@@ -22123,6 +22188,7 @@ victor	victor
 Victoria	Victoria
 Victorian	Victorian
 victories	victories
+victorious	victorious
 victory	victory
 # vid	vid
 Vida	Vida
@@ -22995,7 +23061,7 @@ Wyoming	Wyoming
 # x	x
 X-ray	X-ray
 # xa	xa
-Xanax	Xanax
+# Xanax	Xanax
 Xavier	Xavier
 # xb	xb
 Xbox	Xbox
