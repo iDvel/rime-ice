@@ -16,7 +16,7 @@
 # - 简化字八股文 https://github.com/rime/rime-essay-simp
 ---
 name: ext
-version: "2026-09-20"
+version: "2026-11-01"
 sort: by_weight
 ...
 # +_+
@@ -355,6 +355,8 @@ sort: by_weight
 阿罗拉地区	a luo la di qu	100
 阿罗娜	a luo na	100
 阿洛伊	a luo yi	100
+阿洛伊西	a luo yi xi	100
+阿洛伊西奥	a luo yi xi ao	100
 阿罗约	a luo yue	100
 阿马多拉	a ma duo la	100
 阿玛菲	a ma fei	100
@@ -7903,8 +7905,6 @@ sort: by_weight
 百足蜈蚣	bai zu wu gong	100
 白族扎染	bai zu za ran	100
 绊爱斗	ban ai dou	100
-班艾佛列克	ban ai fo lie ke	100
-班艾伏列克	ban ai fu lie ke	100
 绊爱叫	ban ai jiao	100
 办案模式	ban an mo shi	100
 办案系统	ban an xi tong	100
@@ -7913,7 +7913,6 @@ sort: by_weight
 拌白糖	ban bai tang	100
 斑斑可考	ban ban ke kao	100
 班班可考	ban ban ke kao	100
-板板六十四	ban ban liu shi si	100
 版版六十四	ban ban liu shi si	100
 斑斑马	ban ban ma	100
 半饱半饿	ban bao ban e	100
@@ -11821,6 +11820,7 @@ sort: by_weight
 被尊重	bei zun zhong	100
 被尊重的感觉	bei zun zhong de gan jue	100
 碑座儿	bei zuo er	100
+本·阿弗莱克	ben a fu lai ke	100
 本办法	ben ban fa	100
 笨办法	ben ban fa	100
 本班级	ben ban ji	100
@@ -32723,6 +32723,7 @@ sort: by_weight
 陈力就列	chen li jiu lie	100
 陈立强	chen li qiang	100
 陈丽斯	chen li si	100
+陈立武	chen li wu	100
 陈黎钟	chen li zhong	100
 晨凉漫记	chen liang man ji	100
 陈列窗	chen lie chuang	100
@@ -59769,7 +59770,10 @@ sort: by_weight
 定当是	ding dang shi	100
 叮当镯	ding dang zhuo	100
 叮当作响	ding dang zuo xiang	100
+盯得不紧	ding de bu jin	100
 盯得紧	ding de jin	100
+盯得严	ding de yan	100
+盯得严一点	ding de yan yi dian	100
 顶得住啊	ding de zhu a	100
 顶得住压力	ding de zhu ya li	100
 定地点	ding di dian	100
@@ -59876,6 +59880,8 @@ sort: by_weight
 钉进来	ding jin lai	100
 钉进去	ding jin qu	100
 顶进去	ding jin qu	100
+盯紧一点	ding jin yi dian	100
+盯紧一点儿	ding jin yi dian er	100
 盯紧重点	ding jin zhong dian	100
 订酒店了	ding jiu dian le	100
 订酒店了吗	ding jiu dian le ma	100
@@ -60052,6 +60058,10 @@ sort: by_weight
 定性理论	ding xing li lun	100
 定型水	ding xing shui	100
 定型于此	ding xing yu ci	100
+盯严点	ding yan dian	100
+盯严点儿	ding yan dian er	100
+盯严一点	ding yan yi dian	100
+盯严一点儿	ding yan yi dian er	100
 定要撑住	ding yao cheng zhu	100
 顶叶纸虎啸山林	ding ye zhi hu xiao shan lin	100
 定义的	ding yi de	100
@@ -65109,7 +65119,6 @@ sort: by_weight
 都市言情剧	du shi yan qing ju	100
 都市言情小说	du shi yan qing xiao shuo	100
 都市阳光	du shi yang guang	100
-都市妖怪生存指南	du shi yao guai sheng cun zhi nan	100
 都市妖奇谈	du shi yao qi tan	100
 都市夜归人	du shi ye gui ren	100
 都市夜景	du shi ye jing	100
@@ -78490,15 +78499,12 @@ sort: by_weight
 封装继承	feng zhuang ji cheng	100
 封装块	feng zhuang kuai	100
 封装系统	feng zhuang xi tong	100
-冯子京	feng zi jing	100
 丰姿俊秀	feng zi jun xiu	100
 凤子龙孙	feng zi long sun	100
-蜂姿水	feng zi shui	100
 风姿物语	feng zi wu yu	100
 丰姿秀发	feng zi xiu fa	100
 丰姿冶丽	feng zi ye li	100
 风阻尼器	feng zu ni qi	100
-佛布兹	fo bu zi	100
 佛诞日	fo dan ri	100
 佛挡杀佛	fo dang sha fo	100
 佛得角群岛	fo de jiao qun dao	100
@@ -98683,8 +98689,6 @@ sort: by_weight
 韩国电影分级制度	han guo dian ying fen ji zhi du	100
 韩国犯规	han guo fan gui	100
 韩国房价	han guo fang jia	100
-韩国房价大跌	han guo fang jia da die	100
-韩国共和国	han guo gong he guo	100
 韩国国歌	han guo guo ge	100
 韩国话	han guo hua	100
 韩国货	han guo huo	100
@@ -133978,7 +133982,6 @@ sort: by_weight
 觉得冷	jue de leng	100
 觉得厉害	jue de li hai	100
 觉得理所当然	jue de li suo dang ran	100
-觉得两个人在一起	jue de liang ge ren zai yi qi	100
 觉得麻烦	jue de ma fan	100
 觉得慢	jue de man	100
 觉得美	jue de mei	100
@@ -136371,8 +136374,10 @@ sort: by_weight
 看到这种	kan dao zhe zhong	100
 看得不多	kan de bu duo	100
 看得不过瘾	kan de bu guo yin	100
+看得不紧	kan de bu jin	100
 看得不开	kan de bu kai	100
 看得不少	kan de bu shao	100
+看得不严	kan de bu yan	100
 看得长远	kan de chang yuan	100
 看得出啊	kan de chu a	100
 看得出你	kan de chu ni	100
@@ -136475,6 +136480,7 @@ sort: by_weight
 看得透彻	kan de tou che	100
 看得完	kan de wan	100
 看得下去	kan de xia qu	100
+看得严	kan de yan	100
 看得眼花缭乱	kan de yan hua liao luan	100
 看得一清二楚	kan de yi qing er chu	100
 看得着吗	kan de zhao ma	100
@@ -137183,7 +137189,11 @@ sort: by_weight
 看行李	kan xing li	100
 看熊出没	kan xiong chu mo	100
 看学校	kan xue xiao	100
+看严点	kan yan dian	100
+看严点儿	kan yan dian er	100
 看烟花了	kan yan hua le	100
+看严一点	kan yan yi dian	100
+看严一点儿	kan yan yi dian er	100
 看样东西	kan yang dong xi	100
 看秧歌	kan yang ge	100
 看也看不完	kan ye kan bu wan	100
@@ -148490,6 +148500,7 @@ sort: by_weight
 镰刀盔	lian dao kui	100
 练到什么程度	lian dao shen me cheng du	100
 镰刀状	lian dao zhuang	100
+练得差	lian de cha	100
 练得好	lian de hao	100
 练得好吗	lian de hao ma	100
 练得身形似鹤形	lian de shen xing si he xing	100
@@ -149596,14 +149607,11 @@ sort: by_weight
 两个人的旅行	liang ge ren de lv xing	100
 两个人的相处模式	liang ge ren de xiang chu mo shi	100
 两个人都好	liang ge ren dou hao	100
-两个人都喜欢	liang ge ren dou xi huan	100
 两个人对决	liang ge ren dui jue	100
 两个人还在一起	liang ge ren hai zai yi qi	100
 两个人结了婚	liang ge ren jie le hun	100
-两个人手牵着手	liang ge ren shou qian zhe shou	100
 两个人在对决	liang ge ren zai dui jue	100
 两个人之间的关系	liang ge ren zhi jian de guan xi	100
-两个人走到了一起	liang ge ren zou dao le yi qi	100
 两个省	liang ge sheng	100
 两个省份	liang ge sheng fen	100
 两个时辰	liang ge shi chen	100
@@ -155603,7 +155611,6 @@ sort: by_weight
 龙战于野	long zhan yu ye	100
 龙章凤姿	long zhang feng zi	100
 龙长老	long zhang lao	100
-龙喆一	long zhe yi	100
 龙震天	long zhen tian	100
 龙之传奇	long zhi chuan qi	100
 龙之家族	long zhi jia zu	100
@@ -258643,12 +258650,9 @@ sort: by_weight
 五百多年	wu bai duo nian	100
 五百多万	wu bai duo wan	100
 五百级	wu bai ji	100
-五百快	wu bai kuai	100
 五百块钱	wu bai kuai qian	100
 五百六十万	wu bai liu shi wan	100
-吴百伦	wu bai lun	100
 乌白马角	wu bai ma jiao	100
-吴白起	wu bai qi	100
 五百兆	wu bai zhao	100
 无版号	wu ban hao	100
 乌班图	wu ban tu	100
@@ -258945,7 +258949,6 @@ sort: by_weight
 五灯会元	wu deng hui yuan	100
 五灯奖	wu deng jiang	100
 五等爵位	wu deng jue wei	100
-伍迪艾伦	wu di ai lun	100
 无敌不克	wu di bu ke	100
 武帝城	wu di cheng	100
 舞帝传媒	wu di chuan mei	100
@@ -265643,9 +265646,7 @@ sort: by_weight
 蜥蜴女孩	xi yi nv hai	100
 系一片	xi yi pian	100
 洗衣商	xi yi shang	100
-洗衣裳	xi yi shang	100
 洗衣社	xi yi she	100
-洗衣室	xi yi shi	100
 习艺所	xi yi suo	100
 檄医头疾	xi yi tou ji	100
 洗衣拖地	xi yi tuo di	100
@@ -299108,7 +299109,6 @@ sort: by_weight
 阴香树	yin xiang shu	100
 印象系列	yin xiang xi lie	100
 音箱系统	yin xiang xi tong	100
-印相纸	yin xiang zhi	100
 印象至深	yin xiang zhi shen	100
 印象中的	yin xiang zhong de	100
 印象最深的一次	yin xiang zui shen de yi ci	100
@@ -305419,7 +305419,7 @@ sort: by_weight
 饫甘餍肥	yu gan yan fei	100
 渔港村	yu gang cun	100
 与高校合作	yu gao xiao he zuo	100
-余歌沧	yu ge cang	100
+余割函数	yu ge han shu	100
 渔歌互答	yu ge hu da	100
 于根伟	yu gen wei	100
 愚公谷	yu gong gu	100
@@ -306275,6 +306275,7 @@ sort: by_weight
 逾墙钻穴	yu qiang zuan xue	100
 渔樵耕读	yu qiao geng du	100
 渔樵闲话	yu qiao xian hua	100
+余切函数	yu qie han shu	100
 瑜伽师地论	yu qie shi di lun	100
 雨怯云娇	yu qie yun jiao	100
 欲擒故纵之计	yu qin gu zong zhi ji	100
@@ -306683,6 +306684,7 @@ sort: by_weight
 预下载了	yu xia zai le	100
 雨下整夜	yu xia zheng ye	100
 逾闲荡检	yu xian dang jian	100
+余弦函数	yu xian han shu	100
 余贤明	yu xian ming	100
 遇险之后	yu xian zhi hou	100
 余宪忠	yu xian zhong	100
@@ -309720,6 +309722,7 @@ sort: by_weight
 扎线机	za xian ji	100
 咋想出来	za xiang chu lai	100
 咋想出来的	za xiang chu lai de	100
+咋想的	za xiang de	100
 杂项费用	za xiang fei yong	100
 杂项收入	za xiang shou ru	100
 咋样呀	za yang ya	100
@@ -315346,7 +315349,6 @@ sort: by_weight
 找回证据	zhao hui zheng ju	100
 召回制度	zhao hui zhi du	100
 招魂幡	zhao hun fan	100
-找活干	zhao huo gan	100
 着火啦	zhao huo la	100
 着火温度	zhao huo wen du	100
 朝活族	zhao huo zu	100
@@ -319676,6 +319678,7 @@ sort: by_weight
 整个国家都	zheng ge guo jia dou	100
 整个国家都洋溢着	zheng ge guo jia dou yang yi zhe	100
 整个国家都洋溢着乐观向上的氛围	zheng ge guo jia dou yang yi zhe le guan xiang shang de fen wei	100
+正割函数	zheng ge han shu	100
 整个含住	zheng ge han zhu	100
 整个行业的发展	zheng ge hang ye de fa zhan	100
 整个华东地区	zheng ge hua dong di qu	100
@@ -319967,8 +319970,6 @@ sort: by_weight
 证明出来	zheng ming chu lai	100
 正名定分	zheng ming ding fen	100
 争名竞利	zheng ming jing li	100
-证明了自己的能力	zheng ming le zi ji de neng li	100
-证明了自己的实力	zheng ming le zi ji de shi li	100
 争名利	zheng ming li	100
 证明力	zheng ming li	100
 争名谋位	zheng ming mou wei	100
@@ -320037,6 +320038,7 @@ sort: by_weight
 争强显胜	zheng qiang xian sheng	100
 正巧会	zheng qiao hui	100
 正巧在	zheng qiao zai	100
+正切函数	zheng qie han shu	100
 正切圆	zheng qie yuan	100
 蒸茄子	zheng qie zi	100
 正青春	zheng qing chun	100
@@ -320303,6 +320305,7 @@ sort: by_weight
 政务信息系统	zheng wu xin xi xi tong	100
 正五行	zheng wu xing	100
 争先创优	zheng xian chuang you	100
+正弦函数	zheng xian han shu	100
 争先后	zheng xian hou	100
 争先恐后地	zheng xian kong hou de	100
 郑贤民	zheng xian min	100
@@ -326286,15 +326289,11 @@ sort: by_weight
 中国饭碗	zhong guo fan wan	100
 中国反邪教	zhong guo fan xie jiao	100
 中国房地产	zhong guo fang di chan	100
-中国房地产报	zhong guo fang di chan bao	100
-中国房地产估价师	zhong guo fang di chan gu jia shi	100
 中国房地产企业	zhong guo fang di chan qi ye	100
 中国房地产市场	zhong guo fang di chan shi chang	100
-中国房地产网	zhong guo fang di chan wang	100
 中国房地产协会	zhong guo fang di chan xie hui	100
 中国房地产业	zhong guo fang di chan ye	100
 中国房地产业协会	zhong guo fang di chan ye xie hui	100
-中国房价行情网	zhong guo fang jia hang qing wang	100
 中国飞行员	zhong guo fei xing yuan	100
 中过风	zhong guo feng	100
 中国风采	zhong guo feng cai	100
@@ -331342,6 +331341,8 @@ sort: by_weight
 抓到你啦	zhua dao ni la	100
 抓到你了	zhua dao ni le	100
 抓到现行	zhua dao xian xing	100
+抓得不紧	zhua de bu jin	100
+抓得不严	zhua de bu yan	100
 抓得到	zhua de dao	100
 抓得非常紧	zhua de fei chang jin	100
 抓得好	zhua de hao	100
@@ -331430,7 +331431,11 @@ sort: by_weight
 抓下去	zhua xia qu	100
 抓现行	zhua xian xing	100
 抓宣传	zhua xuan chuan	100
+抓严点	zhua yan dian	100
+抓严点儿	zhua yan dian er	100
 抓岩机	zhua yan ji	100
+抓严一点	zhua yan yi dian	100
+抓严一点儿	zhua yan yi dian er	100
 抓要犯	zhua yao fan	100
 抓也抓不完	zhua ye zhua bu wan	100
 抓在掌中	zhua zai zhang zhong	100
