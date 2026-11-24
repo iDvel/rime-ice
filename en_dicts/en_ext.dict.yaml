@@ -1751,6 +1751,7 @@ Android	Android
 Android Auto	AndroidAuto
 Android TV	AndroidTV
 iOS	iOS
+iOS	ios	100
 Linux	Linux
 Ubuntu	Ubuntu
 RHEL	RHEL
