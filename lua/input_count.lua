@@ -11,7 +11,7 @@ local M = {}
 
 local command_key = "sS"
 
--- 留空则自动读取主机名；也可手动指定如 "PC-Win11"、"Arch-Laptop"
+-- 留空则优先从 installation.yaml 读取，其次读取主机名；也可手动指定如 "PC-Win11"、"Arch-Laptop"
 local custom_device_name = ""
 
 -- 统计文件名（位于 Rime 用户配置目录下）
@@ -26,19 +26,8 @@ local save_interval_sec = 10
 -- ==================== 路径与工具函数 ====================
 
 local cached_db_path = nil
+local cached_user_dir = nil
 local last_save_time = 0
-
-local function get_device_id()
-    if custom_device_name and custom_device_name ~= "" then
-        return custom_device_name:gsub("[%[%]\r\n]", "_")
-    end
-    local host = os.getenv("COMPUTERNAME") or os.getenv("HOSTNAME") or "default"
-    host = host:gsub("%s+", "")
-    if host == "" then
-        host = "default"
-    end
-    return host:gsub("[%[%]\r\n]", "_")
-end
 
 local function join_path(dir, filename)
     if not dir or dir == "" then
@@ -54,9 +43,9 @@ local function join_path(dir, filename)
     return dir .. "/" .. filename
 end
 
-local function get_db_path(env)
-    if cached_db_path then
-        return cached_db_path
+local function get_rime_user_dir(env)
+    if cached_user_dir ~= nil then
+        return cached_user_dir
     end
 
     local dir = ""
@@ -74,8 +63,83 @@ local function get_db_path(env)
         end
     end
 
+    cached_user_dir = dir
+    return cached_user_dir
+end
+
+local function get_db_path(env)
+    if cached_db_path then
+        return cached_db_path
+    end
+
+    local dir = get_rime_user_dir(env)
     cached_db_path = join_path(dir, db_filename)
     return cached_db_path
+end
+
+-- 从 Rime 配置目录下的 installation.yaml 读取设备标识
+-- 优先提取 installation_id（也兼容可选的 device_name），读不到则返回 nil
+local function read_device_from_installation_yaml(rime_dir)
+    local yaml_path
+    if rime_dir and rime_dir ~= "" then
+        local sep = rime_dir:find("\\", 1, true) and "\\" or "/"
+        local clean_dir = rime_dir:gsub("[/\\]+$", "")
+        yaml_path = clean_dir .. sep .. "installation.yaml"
+    else
+        yaml_path = "installation.yaml"
+    end
+
+    local f = io.open(yaml_path, "r")
+    if not f then
+        return nil
+    end
+
+    local installation_id = nil
+    local device_name = nil
+
+    for line in f:lines() do
+        line = line:gsub("\r$", "")
+        if not line:match("^%s*#") then
+            local key, val = line:match("^%s*([%w_]+)%s*:%s*(.-)%s*$")
+            if key and val and val ~= "" then
+                val = val:gsub('^"(.*)"$', "%1"):gsub("^'(.*)'$", "%1")
+                val = val:gsub("%s+#.*$", ""):gsub("^%s+", ""):gsub("%s+$", "")
+
+                if key == "device_name" and val ~= "" then
+                    device_name = val
+                elseif key == "installation_id" and val ~= "" then
+                    installation_id = val
+                end
+            end
+        end
+    end
+    f:close()
+
+    local chosen = device_name or installation_id
+    if chosen and chosen ~= "" then
+        chosen = chosen:gsub("[%[%]\r\n]", "_")
+        return chosen
+    end
+
+    return nil
+end
+
+local function get_device_id(env)
+    if custom_device_name and custom_device_name ~= "" then
+        return custom_device_name:gsub("[%[%]\r\n]", "_")
+    end
+
+    local from_yaml = read_device_from_installation_yaml(get_rime_user_dir(env))
+    if from_yaml and from_yaml ~= "" then
+        return from_yaml
+    end
+
+    local host = os.getenv("COMPUTERNAME") or os.getenv("HOSTNAME") or "default"
+    host = host:gsub("%s+", "")
+    if host == "" then
+        host = "default"
+    end
+    return host:gsub("[%[%]\r\n]", "_")
 end
 
 local function format_count(n)
@@ -207,8 +271,8 @@ local function new_device_record(dev_id, today, now_iso)
     }
 end
 
--- 解析 input_count.txt 中所有设备段落；兼容旧版无 [device:...] 头部的单机格式
-local function parse_all_devices_from_file(path, fallback_dev)
+-- 解析 input_count.txt 中所有设备段落
+local function parse_all_devices_from_file(path)
     local devices = {}
     local today = os.date("%Y%m%d")
     local now_iso = os.date("%Y-%m-%d %H:%M:%S")
@@ -219,24 +283,20 @@ local function parse_all_devices_from_file(path, fallback_dev)
     end
 
     local current = nil
-    local function ensure_current(dev_name)
-        local name = (dev_name and dev_name ~= "") and dev_name or fallback_dev
-        if not devices[name] then
-            devices[name] = new_device_record(name, today, now_iso)
-        end
-        current = devices[name]
-    end
 
     for line in f:lines() do
         line = line:gsub("\r$", "")
         local dev_header = line:match("^%[device:(.+)%]$")
         if dev_header then
-            ensure_current(dev_header)
-        else
-            if not current then
-                ensure_current(fallback_dev)
+            if dev_header ~= "" then
+                if not devices[dev_header] then
+                    devices[dev_header] = new_device_record(dev_header, today, now_iso)
+                end
+                current = devices[dev_header]
+            else
+                current = nil
             end
-
+        elseif current then
             local day1, day_words1, day_keys1 = line:match("^day=(%d+)%s+day_words=(%d+)%s+day_keys=(%d+)$")
             if day1 then
                 table.insert(current.history, {
@@ -274,14 +334,11 @@ local function parse_all_devices_from_file(path, fallback_dev)
                 rec.day = last.day
                 rec.day_words = last.day_words
                 rec.day_keys = last.day_keys
-            else
-                -- 跨天后若该设备今天尚无记录，则今日计数归零
-                if rec.day ~= today then
-                    rec.day = today
-                    rec.day_words = 0
-                    rec.day_keys = 0
-                    rec.day_edit_count = 0
-                end
+            elseif rec.day ~= today then
+                rec.day = today
+                rec.day_words = 0
+                rec.day_keys = 0
+                rec.day_edit_count = 0
             end
         elseif rec.day ~= today then
             rec.day = today
@@ -329,7 +386,7 @@ local function save_stat(env, force)
     end
 
     local path = get_db_path(env)
-    local all_devices = parse_all_devices_from_file(path, s.device)
+    local all_devices = parse_all_devices_from_file(path)
 
     sync_history(s)
     all_devices[s.device] = {
@@ -378,12 +435,12 @@ end
 -- ==================== 内存状态加载（仅初始化与跨天执行） ====================
 
 local function load_stat(env)
-    local dev_id = get_device_id()
+    local dev_id = get_device_id(env)
     local today = os.date("%Y%m%d")
 
     if not _G.my_stat or _G.my_stat.device ~= dev_id then
         local path = get_db_path(env)
-        local devices = parse_all_devices_from_file(path, dev_id)
+        local devices = parse_all_devices_from_file(path)
         local rec = devices[dev_id] or new_device_record(dev_id, today, os.date("%Y-%m-%d %H:%M:%S"))
 
         _G.my_stat = {
@@ -465,7 +522,7 @@ function M.func(input, seg, env)
     if input == command_key then
         -- 强制落盘一次并刷新所有设备缓存，保证 sS 时数据最新且不调用外部命令
         save_stat(env, true)
-        local all_devices = parse_all_devices_from_file(get_db_path(env), s.device)
+        local all_devices = parse_all_devices_from_file(get_db_path(env))
         all_devices[s.device] = {
             device = s.device,
             start_iso = s.start_iso,
