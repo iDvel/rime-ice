@@ -570,21 +570,24 @@ function M.func(input, seg, env)
         local sum_edit_rate = (sum_total_keys > 0) and (sum_edits / sum_total_keys * 100) or 0
         local from_date = (s.start_iso or ""):match("^(%d%d%d%d%-%d%d%-%d%d)") or ""
 
-        local total_text = string.format(
-            "全端总计：%s字/%s键（今%s字/%s键）| %.0f键/分 %.0f字/分 | 删改%d次(%.1f%%)",
-            format_count(sum_total_words),
-            format_count(sum_total_keys),
-            format_count(sum_day_words),
-            format_count(sum_day_keys),
-            kpm,
-            wpm,
-            sum_edits,
-            sum_edit_rate
-        )
-        yield(Candidate("stat_all", seg.start, seg._end, total_text, string.format("[共%d台设备 · %s起]", #names, from_date)))
+        if #names > 1 then
+            local total_text = string.format(
+                "全端总计：%s字/%s键（今%s字/%s键）| %.0f键/分 %.0f字/分 | 删改%d次(%.1f%%)",
+                format_count(sum_total_words),
+                format_count(sum_total_keys),
+                format_count(sum_day_words),
+                format_count(sum_day_keys),
+                kpm,
+                wpm,
+                sum_edits,
+                sum_edit_rate
+            )
+            yield(Candidate("stat_all", seg.start, seg._end, total_text, string.format("[共%d台设备 · %s起]", #names, from_date)))
+        end
 
         local per_dev_text = table.concat(dev_parts, " | ")
         yield(Candidate("stat_devices", seg.start, seg._end, per_dev_text, string.format("[本机:%s · 删改%d次/%.1f%%]", s.device, s.edit_count or 0, edit_rate)))
+        return
     end
 end
 
