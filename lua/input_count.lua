@@ -253,6 +253,33 @@ local function calc_commit_wpm(events, now, window_sec)
     return (total_chars / span) * 60
 end
 
+local function format_stat_line(total_words, total_keys, day_words, day_keys, edit_count, kpm, wpm)
+    local edit_rate = (total_keys > 0) and ((edit_count or 0) / total_keys * 100) or 0
+    local base = string.format(
+        "%s字/%s键（今%s字/%s键）",
+        format_count(total_words),
+        format_count(total_keys),
+        format_count(day_words),
+        format_count(day_keys)
+    )
+    if kpm ~= nil and wpm ~= nil then
+        return string.format(
+            "%s | %.0f键/分 %.0f字/分 | 删改%d次(%.1f%%)",
+            base,
+            kpm,
+            wpm,
+            edit_count or 0,
+            edit_rate
+        )
+    end
+    return string.format(
+        "%s | 删改%d次(%.1f%%)",
+        base,
+        edit_count or 0,
+        edit_rate
+    )
+end
+
 -- ==================== 单文件解析与合并保存 ====================
 
 local function new_device_record(dev_id, today, now_iso)
@@ -544,7 +571,6 @@ function M.func(input, seg, env)
         local sum_day_words, sum_day_keys = 0, 0
         local sum_total_words, sum_total_keys = 0, 0
         local sum_edits = 0
-        local dev_parts = {}
 
         for _, name in ipairs(names) do
             local d = all_devices[name]
@@ -553,40 +579,32 @@ function M.func(input, seg, env)
             sum_total_words = sum_total_words + (d.total_words or 0)
             sum_total_keys = sum_total_keys + (d.total_keys or 0)
             sum_edits = sum_edits + (d.edit_count or 0)
-
-            dev_parts[#dev_parts + 1] = string.format(
-                "[%s] 今%s字/%s键 总%s字/%s键",
-                name,
-                format_count(d.day_words),
-                format_count(d.day_keys),
-                format_count(d.total_words),
-                format_count(d.total_keys)
-            )
         end
 
         local kpm = calc_rate_per_min(s.key_timestamps, now, speed_window_sec)
         local wpm = calc_commit_wpm(s.commit_events, now, speed_window_sec)
-        local edit_rate = (s.total_keys > 0) and ((s.edit_count or 0) / s.total_keys * 100) or 0
-        local sum_edit_rate = (sum_total_keys > 0) and (sum_edits / sum_total_keys * 100) or 0
         local from_date = (s.start_iso or ""):match("^(%d%d%d%d%-%d%d%-%d%d)") or ""
 
         if #names > 1 then
-            local total_text = string.format(
-                "全端总计：%s字/%s键（今%s字/%s键）| %.0f键/分 %.0f字/分 | 删改%d次(%.1f%%)",
-                format_count(sum_total_words),
-                format_count(sum_total_keys),
-                format_count(sum_day_words),
-                format_count(sum_day_keys),
-                kpm,
-                wpm,
-                sum_edits,
-                sum_edit_rate
+            local total_text = format_stat_line(
+                sum_total_words,
+                sum_total_keys,
+                sum_day_words,
+                sum_day_keys,
+                sum_edits
             )
-            yield(Candidate("stat_all", seg.start, seg._end, total_text, string.format("[共%d台设备 · %s起]", #names, from_date)))
+            yield(Candidate("stat_all", seg.start, seg._end, total_text, string.format("[全端·%d台·%s起]", #names, from_date)))
         end
 
-        local per_dev_text = table.concat(dev_parts, " | ")
-        yield(Candidate("stat_devices", seg.start, seg._end, per_dev_text, string.format("[本机:%s · 删改%d次/%.1f%%]", s.device, s.edit_count or 0, edit_rate)))
+        for _, name in ipairs(names) do
+            local d = all_devices[name]
+            local is_self = (name == s.device)
+            local dev_text = is_self
+                and format_stat_line(d.total_words, d.total_keys, d.day_words, d.day_keys, d.edit_count, kpm, wpm)
+                or format_stat_line(d.total_words, d.total_keys, d.day_words, d.day_keys, d.edit_count)
+            local comment = is_self and string.format("[%s·本机]", name) or string.format("[%s]", name)
+            yield(Candidate("stat_device", seg.start, seg._end, dev_text, comment))
+        end
         return
     end
 end
