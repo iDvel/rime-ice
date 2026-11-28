@@ -143,9 +143,13 @@ local function number_translatorFunc(num)
 end
 
 local function number_translator(input, seg, env)
+    -- 仅响应命中 recognizer/patterns/number 的输入，避免劫持 R 开头的邮箱、域名等
+    if not seg:has_tag("number") then return end
     -- 获取 recognizer/patterns/number 的第 2 个字符作为触发前缀
-    env.number_keyword = env.number_keyword or
-        env.engine.schema.config:get_string('recognizer/patterns/number'):sub(2, 2)
+    if env.number_keyword == nil then
+        local pattern = env.engine.schema.config:get_string('recognizer/patterns/number') or ''
+        env.number_keyword = pattern:sub(2, 2)
+    end
     local str, num, numberPart
     if env.number_keyword ~= '' and input:sub(1, 1) == env.number_keyword then
         str = string.gsub(input, "^(%a+)", "")

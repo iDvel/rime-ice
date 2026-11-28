@@ -23,6 +23,9 @@
 插件：农历输入：农历	rime_ice	N19700101{space}	己酉鸡年十一月二十四
 插件：以词定字：左中括号取首字	rime_ice	nihao{bracketleft}	你
 插件：以词定字：右中括号取尾字	rime_ice	nihao{bracketright}	好
+插件：以词定字：URL识别态放行左中括号	rime_ice	http://{bracketleft}{space}	http://[
+插件：以词定字：URL含模式字符不报错	rime_ice	http://my-site.com{bracketleft}{space}	http://my-site.com[
+插件：数字输入：不劫持R开头邮箱	rime_ice	R123@a.com{space}	R123@a.com
 插件：部件辅码	rime_ice	ni`ren{space}	你
 插件：错字错音提示	rime_ice	qikefu{Control+Shift+Return}	契诃(hē)夫
 
