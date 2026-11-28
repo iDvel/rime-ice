@@ -21,12 +21,14 @@ function select.func(key, env)
 
     if
         not key:release()
-        and (context:is_composing() or context:has_menu())
+        and context:has_menu()
         and (env.first_key or env.last_key)
     then
         local input = context.input
-        local selected_candidate = context:get_selected_candidate()
-        selected_candidate = selected_candidate and selected_candidate.text or input
+        -- 没有候选菜单时（如 URL、邮箱识别态）放行按键，交给后续处理器
+        local candidate = context:get_selected_candidate()
+        if not candidate then return 2 end
+        local selected_candidate = candidate.text
 
         local selected_char
         if (key:repr() == env.first_key) then
@@ -38,10 +40,12 @@ function select.func(key, env)
         end
 
         local commit_text = context:get_commit_text()
-        local _, end_pos = commit_text:find(selected_candidate)
+        -- 候选文本可能含 - . + % 等 Lua 模式元字符，必须按纯文本查找和切片
+        local start_pos, end_pos = commit_text:find(selected_candidate, 1, true)
+        if not end_pos then return 2 end
         local caret_pos = context.caret_pos
 
-        local part1 = commit_text:sub(1, end_pos):gsub(selected_candidate, selected_char)
+        local part1 = commit_text:sub(1, start_pos - 1) .. selected_char
         local part2 = commit_text:sub(end_pos + 1)
 
         engine:commit_text(part1)
